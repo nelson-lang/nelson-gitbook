@@ -22,7 +22,8 @@ Write data to a variable in a netCDF file.
 
 ## 📄 Description
 
-ncwrite writes an entire variable or a hyperslab of a variable. High-level indexing uses one-based subscripts.
+
+ncwrite writes an entire variable or a hyperslab of a variable. High-level indexing uses one-based subscripts. 
 
 The data type is converted by the netCDF C library when the conversion is valid.
 
@@ -37,13 +38,14 @@ ncwrite(filename, 'temperature', [10 20 30]);
 data = ncread(filename, 'temperature')
 ```
 
+
 ## 🔗 See also
 
 [nccreate](../netcdf/nccreate.md), [ncread](../netcdf/ncread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

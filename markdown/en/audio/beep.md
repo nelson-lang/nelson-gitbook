@@ -18,17 +18,20 @@ Produces a beep sound.
 
 ## 📄 Description
 
-<b>beep</b> produces a beep sound.
 
-If the optional argument is 'off', the beep sound is disabled.
+<b>beep</b> produces a beep sound. 
 
-If the optional argument is 'on', the beep sound is enabled.
+If the optional argument is 'off', the beep sound is disabled. 
 
-If no argument is provided, the current state is toggled.
+If the optional argument is 'on', the beep sound is enabled. 
+
+If no argument is provided, the current state is toggled. 
 
 If an output argument is provided, the current state ('on' or 'off') is returned.
 
 ## 💡 Example
+
+
 
 ```matlab
 beep('off')
@@ -38,9 +41,10 @@ beep
 s = beep
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

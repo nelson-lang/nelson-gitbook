@@ -19,6 +19,7 @@ Create tree or check box tree component.
 
 ## 📄 Description
 
+
 <b>t = uitree</b> creates a tree; <b>uitree(parent, 'checkbox')</b> creates a check box tree. Children are uitreenode objects. Properties: <b>SelectedNodes</b>, <b>Multiselect</b> (standard tree), <b>CheckedNodes</b>/<b>CheckedNodesChangedFcn</b> (checkbox tree), <b>Editable</b>, <b>SelectionChangedFcn</b>, <b>NodeExpandedFcn</b>, <b>NodeCollapsedFcn</b>. Use <b>expand(t)</b> / <b>collapse(t)</b>.
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ uitreenode(n1, 'Text', 'Banana');
 expand(tr);
 drawnow();
 ```
-
 <img src="uitree_example.svg" align="middle"/>
 uitree
 
@@ -48,13 +48,14 @@ expand(t);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

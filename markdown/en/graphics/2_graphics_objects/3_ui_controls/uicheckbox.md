@@ -19,6 +19,7 @@ Create check box component.
 
 ## 📄 Description
 
+
 <b>cbx = uicheckbox</b> creates a check box with a logical <b>Value</b>, a <b>Text</b> label, <b>WordWrap</b>, fonts and a <b>ValueChangedFcn</b> callback (event data: <b>Value</b>, <b>PreviousValue</b>).
 
 ## 💡 Examples
@@ -30,7 +31,6 @@ f = uifigure('Visible', 'off', 'Name', 'Check box', 'Position', [100 100 420 260
 cb = uicheckbox(f, 'Text', 'Enable alerts', 'Value', true, 'Position', [130 120 170 24]);
 drawnow();
 ```
-
 <img src="uicheckbox_example.svg" align="middle"/>
 uicheckbox
 
@@ -41,13 +41,14 @@ cbx = uicheckbox(f, 'Text', 'Accept', 'Value', true, 'ValueChangedFcn', @(s, e) 
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

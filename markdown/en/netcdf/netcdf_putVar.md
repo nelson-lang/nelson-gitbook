@@ -22,7 +22,8 @@ Work with netCDF variables.
 
 ## 📄 Description
 
-netcdf.putVar exposes low-level variable access.
+
+netcdf.putVar exposes low-level variable access. 
 
 Low-level start and count arguments use zero-based netCDF C indexing semantics.
 
@@ -40,13 +41,14 @@ netcdf.putVar(ncid, varid, [1 2 3]);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.defDim](../netcdf/netcdf.defDim.md), [netcdf.putAtt](../netcdf/netcdf.putAtt.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.defDim](../netcdf/netcdf_defDim.md), [netcdf.putAtt](../netcdf/netcdf_putAtt.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

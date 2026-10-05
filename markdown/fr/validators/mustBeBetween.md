@@ -19,19 +19,24 @@ Valide que tous les elements sont compris dans une plage specifiee.
 
 ## 📄 Description
 
+
 <b>mustBeBetween</b> leve une erreur si un element selectionne de <b>A</b> est en dehors de l'intervalle defini par <b>lower</b> et <b>upper</b>. L'intervalle par defaut est ferme.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 mustBeBetween([3 4 5], 0, 5)
 mustBeBetween([3 4], 0, 5, 'open')
 ```
 
+
 ```matlab
 T = table([2; 3; 4], [10; 11; 12], 'VariableNames', {'A', 'B'});
 mustBeBetween(T, 2, 4, 'DataVariables', 'A')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -39,9 +44,9 @@ mustBeBetween(T, 2, 4, 'DataVariables', 'A')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

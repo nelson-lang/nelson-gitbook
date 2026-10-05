@@ -21,9 +21,10 @@ Ajoute un callback ecouteur a un evenement classdef.
 
 ## 📄 Description
 
-<b>addlistener</b> enregistre un callback pour un evenement d'objet handle classdef.
 
-Pour les proprietes observables, utilisez <b>PreGet</b>, <b>PostGet</b>, <b>PreSet</b> ou <b>PostSet</b>. Les donnees d'evenement de propriete contiennent <b>EventName</b>, <b>PropertyName</b> et <b>AffectedObject</b>.
+<b>addlistener</b> enregistre un callback pour un evenement d'objet handle classdef. 
+
+Pour les proprietes observables, utilisez <b>PreGet</b>, <b>PostGet</b>, <b>PreSet</b> ou <b>PostSet</b>. Les donnees d'evenement de propriete contiennent <b>EventName</b>, <b>PropertyName</b> et <b>AffectedObject</b>. 
 
 Supprimez le handle ecouteur retourne pour le detacher de l'objet source.
 
@@ -42,7 +43,6 @@ counter.trigger();
 delete(lh);
 delete(counter)
 ```
-
 Attacher un callback a une propriete observable.
 
 ```matlab
@@ -60,14 +60,15 @@ delete(lh);
 delete(counter)
 ```
 
+
 ## 🔗 Voir aussi
 
 [listener](../handle/listener.md), [notify](../handle/notify.md), [events](../handle/events.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                        |
-| ------- | ------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | support des ecouteurs classdef ajoute |
 
 <!--

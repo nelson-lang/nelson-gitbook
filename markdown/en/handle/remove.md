@@ -18,13 +18,16 @@ Remove entries from an object.
 
 ## 📄 Description
 
-remove dispatches removal to the object type passed as first argument.
+
+remove dispatches removal to the object type passed as first argument. 
 
 If the first argument does not implement removal, Nelson reports that the function is not implemented for that type.
 
 ## Used function(s)
 
+
     dictionary
+  
 
 ## 💡 Example
 
@@ -35,13 +38,14 @@ d = dictionary(["one" "two"], [1 2]);
 d = remove(d, "one")
 ```
 
+
 ## 🔗 See also
 
 [dictionary](../dictionary/dictionary.md), [lookup](../handle/lookup.md), [isKey](../handle/isKey.md), [insert](../handle/insert.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

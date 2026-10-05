@@ -18,9 +18,12 @@ Blackman-Harris window.
 
 ## 📄 Description
 
+
 <b>blackmanharris</b> returns a minimum four-term Blackman-Harris window.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ w = blackmanharris(5);
 
 ```
 
+
 ## 🔗 See also
 
-[blackman](../../signal_processing/blackman.md).
+[blackman](../../signal_processing/5_spectral_analysis/blackman.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

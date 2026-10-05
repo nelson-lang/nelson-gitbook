@@ -23,6 +23,7 @@ Create predefined 2-D image filters.
 
 ## 📄 Description
 
+
 Create predefined 2-D image filters. Supported types include average, disk, gaussian, sobel, prewitt, laplacian and log.
 
 ## 💡 Example
@@ -33,16 +34,16 @@ Create and display a Gaussian filter
 H=fspecial('gaussian',[21 21],3);
 figure; imagesc(H); g=linspace(0,1,64)'; colormap([g g g]); title('Gaussian filter');
 ```
-
 <img src="fspecial_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imfilter](../../../image_processing/imfilter.md), [imgaussfilt](../../../image_processing/imgaussfilt.md).
+[imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md), [imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,14 +1,24 @@
 # Traitement du signal
 
+
+    
 Le module Traitement du signal fournit des outils pour analyser, filtrer, transformer et reechantillonner des signaux echantillonnes dans Nelson.
 
+    
 Il inclut des fonctions de fenetrage, de conception de filtres FIR et IIR, de filtrage numerique, de conversions poles-zeros et sections du second ordre, de correlation croisee, et de conversions entre representations en magnitude, puissance et decibels.
 
+    
 Le module prend egalement en charge le traitement multirate, l'estimation spectrale, l'analyse temps-frequence, la generation de formes d'onde et les mesures courantes de signal.
+
+  
 
 ## Generation et pretraitement des signaux
 
+
+    
 Fonctions pour creer, reechantillonner, lisser, filtrer et preparer des signaux.
+
+  
 
 ### Functions
 
@@ -32,7 +42,11 @@ Fonctions pour creer, reechantillonner, lisser, filtrer et preparer des signaux.
 
 ## Mesures et extraction de caracteristiques
 
+
+    
 Mesures, caracteristiques et metriques de qualite des signaux.
+
+  
 
 ### Functions
 
@@ -47,7 +61,11 @@ Mesures, caracteristiques et metriques de qualite des signaux.
 
 ## Transformees, correlation et modelisation
 
+
+    
 Transformees, estimations de correlation, coherence et estimations de fonctions de transfert.
+
+  
 
 ### Functions
 
@@ -65,7 +83,11 @@ Transformees, estimations de correlation, coherence et estimations de fonctions 
 
 ## Filtres numeriques
 
+
+    
 Fonctions de conception, analyse, conversion et implementation de filtres.
+
+  
 
 ### Functions
 
@@ -101,7 +123,11 @@ Fonctions de conception, analyse, conversion et implementation de filtres.
 
 ## Analyse spectrale
 
+
+    
 Fonctions de spectre de puissance, fenetres et conversions d echelle.
+
+  
 
 ### Functions
 
@@ -127,10 +153,15 @@ Fonctions de spectre de puissance, fenetres et conversions d echelle.
 
 ## Analyse temps-frequence
 
+
+    
 Fonctions de representation temps-frequence et temps court.
+
+  
 
 ### Functions
 
 - [istft](6_time_frequency_analysis/istft.md) - Transformee de Fourier court terme inverse.
 - [spectrogram](6_time_frequency_analysis/spectrogram.md) - Spectrogramme par transformees de Fourier locales.
 - [stft](6_time_frequency_analysis/stft.md) - Transformee de Fourier court terme.
+

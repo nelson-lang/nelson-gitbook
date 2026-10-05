@@ -20,11 +20,13 @@ Trier les lignes d'une table ou d'une timetable.
 
 ## 📄 Description
 
+
 <b>sortrows</b> trie les lignes d'une table selon les variables selectionnees, ou les lignes d'une timetable par temps de lignes ou variables selectionnees.
 
 Les lignes sont comparees variable apres variable. Chaque variable est triee dans l'ordre de son propre type (numerique, logique, texte, categorical, datetime, duration) ; une variable a plusieurs colonnes est comparee colonne par colonne. Les valeurs manquantes sont placees en dernier en ordre croissant comme decroissant. Les egalites conservent leur ordre d'origine.
 
 ## 💡 Exemple
+
 
 ```matlab
 TT = timetable(seconds([2; 1]), [20; 10], 'VariableNames', {'A'});
@@ -34,14 +36,15 @@ T = table([10; 9; 2], {'a'; 'b'; 'c'});
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[issortedrows](../../table/issortedrows.md), [timetable](../../table/timetable.md).
+[issortedrows](../../table/8_timetables_events/issortedrows.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

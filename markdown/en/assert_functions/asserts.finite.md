@@ -18,7 +18,8 @@ Check that every numeric entry is finite.
 
 ## 📄 Description
 
-The assertion passes when every entry is finite.
+
+The assertion passes when every entry is finite. 
 
 NaN, Inf and -Inf fail this assertion.
 
@@ -29,12 +30,12 @@ Finite values
 ```matlab
 asserts.finite([1 2 3]);
 ```
-
 Capture an infinite value
 
 ```matlab
 [res, msg] = asserts.finite([1 Inf]);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture an infinite value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

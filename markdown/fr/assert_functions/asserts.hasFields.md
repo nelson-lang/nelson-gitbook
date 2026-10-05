@@ -19,7 +19,8 @@ Verifie qu'une structure possede tous les champs attendus.
 
 ## 📄 Description
 
-L'assertion reussit lorsque chaque champ attendu existe dans s.
+
+L'assertion reussit lorsque chaque champ attendu existe dans s. 
 
 Les champs supplementaires dans s sont autorises.
 
@@ -30,12 +31,12 @@ Fields present
 ```matlab
 S = struct('a', 1, 'b', 2); asserts.hasFields(S, {'a', 'b'});
 ```
-
 Capture a missing field
 
 ```matlab
 S = struct('a', 1); [res, msg] = asserts.hasFields(S, {'a', 'b'});
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ S = struct('a', 1); [res, msg] = asserts.hasFields(S, {'a', 'b'});
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

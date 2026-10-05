@@ -28,13 +28,16 @@ graphique en cascade.
 
 ## 📄 Description
 
-<b>waterfall</b> crée un graphique en cascade, qui est un graphique en maillage avec un rideau partiel le long de la dimension y.
 
-Cela donne un effet de 'cascade'.
+<b>waterfall</b> crée un graphique en cascade, qui est un graphique en maillage avec un rideau partiel le long de la dimension y. 
+
+Cela donne un effet de 'cascade'. 
 
 La fonction prend les mêmes arguments d'entrée que la fonction<b>mesh</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -43,8 +46,8 @@ waterfall(Z);
 title ("fonction waterfall");
 
 ```
-
 <img src="waterfall_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -53,17 +56,17 @@ Z = Y.*sin(X) - X.*cos(Y);
 p = waterfall(X, Y, Z);
 
 ```
-
 <img src="waterfall_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,98 +16,114 @@
 
 ## 📄 Description
 
-<b>writematrix</b> écrit une matrice numérique dans un fichier au format CSV.
 
-<b>writematrix</b> ne prend pas en charge les matrices creuses (sparse).
+<b>writematrix</b> écrit une matrice numérique dans un fichier au format CSV. 
 
-<b>writematrix</b> formate les données numériques en utilisant le format long G.
+<b>writematrix</b> ne prend pas en charge les matrices creuses (sparse). 
 
-Arguments Nom-Valeur disponibles
+<b>writematrix</b> formate les données numériques en utilisant le format long G. 
 
-Les paires nom-valeur doivent suivre tous les autres arguments.
+ 
 
-L'ordre des paires nom-valeur n'a pas d'importance
+Arguments Nom-Valeur disponibles 
 
-Les options Delimiter et QuoteStrings ne s'appliquent qu'aux fichiers texte délimités.
+ 
 
-<b>FileType</b>: Specifies the type of output file
+Les paires nom-valeur doivent suivre tous les autres arguments. 
 
-Syntaxe : <b>
-'FileType','text'
-</b>
+L'ordre des paires nom-valeur n'a pas d'importance 
 
-Prend en charge les fichiers texte délimités (.txt, .dat, .csv)
+Les options Delimiter et QuoteStrings ne s'appliquent qu'aux fichiers texte délimités. 
 
-<b>WriteMode</b>: Controls how data is written to the file
+ 
 
-Syntaxe : <b>
-'WriteMode', mode</b>
-
-Options :
-
-'overwrite' (par défaut) - crée un nouveau fichier ou remplace le contenu existant
-
-'append' - ajoute les données à la fin du fichier existant
-
-Si le fichier cible n'existe pas, un nouveau fichier sera créé quel que soit le mode.
-
-<b>Delimiter</b>: Defines the character used to separate fields
+<b>FileType</b>: Specifies the type of output file 
 
 Syntaxe : <b>
-'Delimiter', delimiter</b>
+        'FileType','text'
+      </b> 
 
-Délimiteurs disponibles : uniquement applicables aux fichiers texte délimités.
+Prend en charge les fichiers texte délimités (.txt, .dat, .csv) 
 
-| Spécificateur | Alternative | Description |
-| ------------- | ----------- | ----------- |
+ 
 
-| <code>
-','
-</code> | <code>
-'comma'
-</code> | Virgule (par défaut) |
-| <code>
-'
-'
-</code> | <code>
-'space'
-</code> | Caractère espace |
-| <code>
-'\t'
-</code> | <code>
-'tab'
-</code> | Tabulation |
-| <code>
-';'
-</code> | <code>
-'semi'
-</code> | Point-virgule |
-| <code>
-'|'
-</code> | <code>
-'bar'
-</code> | Barre verticale |
+<b>WriteMode</b>: Controls how data is written to the file 
 
-<b>QuoteStrings</b> : contrôle le comportement de citation des textes (applicable uniquement aux fichiers texte délimités).
+Syntaxe : <b>
+        'WriteMode', mode</b> 
+
+Options : 
+
+'overwrite' (par défaut) - crée un nouveau fichier ou remplace le contenu existant 
+
+'append' - ajoute les données à la fin du fichier existant 
+
+Si le fichier cible n'existe pas, un nouveau fichier sera créé quel que soit le mode. 
+
+ 
+
+<b>Delimiter</b>: Defines the character used to separate fields 
+
+Syntaxe : <b>
+        'Delimiter', delimiter</b> 
+
+Délimiteurs disponibles : uniquement applicables aux fichiers texte délimités. 
+
+| Spécificateur | Alternative | Description | 
+| --- | --- | --- | 
+| <code>
+              ','
+            </code> | <code>
+              'comma'
+            </code> | Virgule (par défaut) | 
+| <code>
+              '
+              '
+            </code> | <code>
+              'space'
+            </code> | Caractère espace | 
+| <code>
+              '\t'
+            </code> | <code>
+              'tab'
+            </code> | Tabulation | 
+| <code>
+              ';'
+            </code> | <code>
+              'semi'
+            </code> | Point-virgule | 
+| <code>
+              '|'
+            </code> | <code>
+              'bar'
+            </code> | Barre verticale | 
+
+ 
+
+ 
+
+<b>QuoteStrings</b> : contrôle le comportement de citation des textes (applicable uniquement aux fichiers texte délimités). 
 
 <b>
-        'QuoteStrings', option</b>
+        'QuoteStrings', option</b> 
 
-with <b>options</b>
+with <b>options</b> 
 
 <b>
         'minimal'
-      </b> (par défaut) : cite uniquement les textes contenant des délimiteurs, des fins de ligne ou des guillemets.
+      </b> (par défaut) : cite uniquement les textes contenant des délimiteurs, des fins de ligne ou des guillemets. 
 
 <b>
         'all'
-      </b> : cite toutes les variables texte.
+      </b> : cite toutes les variables texte. 
 
 <b>
         'none'
       </b> : n'utilise pas de guillemets.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -117,15 +133,16 @@ R = fileread(filename)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [readcell](../spreadsheet/readcell.md), [csvwrite](../spreadsheet/csvwrite.md), [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.10.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.10.0   | version initiale |
 
 <!--
 ## 👤 Auteur

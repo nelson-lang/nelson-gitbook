@@ -18,9 +18,12 @@ Fenêtre gaussienne.
 
 ## 📄 Description
 
+
 <b>gausswin</b> retourne une fenêtre gaussienne de M points.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ w = gausswin(5, 2.5);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[kaiser](../../signal_processing/kaiser.md).
+[kaiser](../../signal_processing/5_spectral_analysis/kaiser.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

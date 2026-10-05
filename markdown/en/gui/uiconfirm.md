@@ -20,6 +20,7 @@ Displays a confirmation dialog for a UI figure.
 
 ## 📄 Description
 
+
 uiconfirm displays a confirmation dialog and returns the selected button text.
 
 ## 💡 Examples
@@ -38,7 +39,6 @@ patch([0.54 0.70 0.70 0.54], [0.25 0.25 0.36 0.36], [0.95 0.95 0.95], 'EdgeColor
 text(0.36, 0.30, 'Yes', 'HorizontalAlignment', 'center', 'FontSize', 10);
 text(0.62, 0.30, 'No', 'HorizontalAlignment', 'center', 'FontSize', 10);
 ```
-
 <img src="uiconfirm_example.svg" align="middle"/>
 Ask a basic confirmation question.
 
@@ -49,14 +49,15 @@ close(f);
 disp(answer)
 ```
 
+
 ## 🔗 See also
 
 [uialert](../gui/uialert.md), [questdlg](../gui/questdlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

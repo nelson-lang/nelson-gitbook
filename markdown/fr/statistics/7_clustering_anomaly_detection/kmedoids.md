@@ -9,14 +9,17 @@ Partitionner des donnees en groupes avec des medoides.
 
 ## 📄 Description
 
+
 <b>kmedoids</b> groupe les lignes de X avec une boucle serie de type PAM et le generateur aleatoire de Nelson pour les depart aleatoires.
 
 ## Fonction(s) utilisée(s)
+
 
     kmeans
     pdist2
     statset
     rng
+  
 
 ## 💡 Exemples
 
@@ -26,7 +29,6 @@ Classer des observations et retourner les informations de medoides.
 X = [0; 1; 10; 11];
 [idx, C, sumd, D, midx, info] = kmedoids(X, 2, 'Start', [1; 3])
 ```
-
 Utiliser la distance cityblock pour des observations bidimensionnelles.
 
 ```matlab

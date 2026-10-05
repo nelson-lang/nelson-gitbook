@@ -20,11 +20,12 @@ Renvoie le nom de classe d'une variable ou cree un objet nomme ancien style.
 
 ## 📄 Description
 
-<b>class(var)</b> renvoie le nom de classe de <b>var</b>.
 
-Pour les tableaux sparse, <b>class</b> renvoie la classe de valeur stockee, par exemple <b>double</b> ou <b>logical</b>. Utiliser <b>issparse</b> pour tester le stockage sparse.
+<b>class(var)</b> renvoie le nom de classe de <b>var</b>. 
 
-Pour les objets classdef valeur et handle, <b>class</b> renvoie le nom de la classe classdef, avec le paquet si necessaire.
+Pour les tableaux sparse, <b>class</b> renvoie la classe de valeur stockee, par exemple <b>double</b> ou <b>logical</b>. Utiliser <b>issparse</b> pour tester le stockage sparse. 
+
+Pour les objets classdef valeur et handle, <b>class</b> renvoie le nom de la classe classdef, avec le paquet si necessaire. 
 
 <b>class(st, className)</b> conserve la creation d'objets Nelson ancien style et reste independant des definitions classdef.
 
@@ -36,7 +37,6 @@ Renvoie le nom d'une classe integree.
 A = 3;
 name = class(A)
 ```
-
 Renvoie la classe de valeur stockee d'un tableau sparse.
 
 ```matlab
@@ -44,7 +44,6 @@ S = sparse([2 0 3]);
 name = class(S)
 tf = issparse(S)
 ```
-
 Renvoie les noms de classes classdef valeur et handle.
 
 ```matlab
@@ -61,15 +60,16 @@ handleClass = class(h)
 delete(h)
 ```
 
+
 ## 🔗 Voir aussi
 
 [isa](../types/isa.md), [issparse](../types/issparse.md), [isobject](../types/isobject.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                              |
-| ------- | ----------------------------------------------------------- |
-| 1.0.0   | version initiale                                            |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | comportement des objets classdef valeur et handle documente |
 | 2.0.0   | les tableaux sparse indiquent leur classe de valeur stockee |
 

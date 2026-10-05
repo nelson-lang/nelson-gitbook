@@ -4,51 +4,54 @@ Fonctions anonymes.
 
 ## 📄 Description
 
-Les fonctions anonymes offrent un moyen pratique de créer rapidement des fonctions simples sans avoir à créer un fichier M séparé à chaque fois.
 
-Ces fonctions anonymes peuvent être définies directement dans la ligne de commande ou à l'intérieur d'une fonction ou d'un script M-file.
+Les fonctions anonymes offrent un moyen pratique de créer rapidement des fonctions simples sans avoir à créer un fichier M séparé à chaque fois. 
 
-Pour créer une fonction anonyme à partir d'une expression, utilisez la syntaxe suivante :
+Ces fonctions anonymes peuvent être définies directement dans la ligne de commande ou à l'intérieur d'une fonction ou d'un script M-file. 
 
-function_handle = @(argument_list) expression
+Pour créer une fonction anonyme à partir d'une expression, utilisez la syntaxe suivante : 
 
-Dans cette syntaxe,<b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale.
+function\_handle = @(argument\_list) expression 
 
-Cette partie doit être une expression valide. Ensuite, <b>argument_list</b> est la liste d'arguments d'entrée séparés par des virgules passés à la fonction.
+Dans cette syntaxe,<b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale. 
 
-Ces composants correspondent au corps et à la liste d'arguments d'une fonction classique.
+Cette partie doit être une expression valide. Ensuite, <b>argument\_list</b> est la liste d'arguments d'entrée séparés par des virgules passés à la fonction. 
 
-Au début de cette déclaration, on trouve le signe <b>@</b>.
+Ces composants correspondent au corps et à la liste d'arguments d'une fonction classique. 
 
-Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function handle).
+Au début de cette déclaration, on trouve le signe <b>@</b>. 
 
-La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction.
+Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function handle). 
 
-Le signe <b>@</b> est requis dans la définition d'une fonction anonyme.
+La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction. 
 
-Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction.
+Le signe <b>@</b> est requis dans la définition d'une fonction anonyme. 
 
-La syntaxe pour créer un handle vers une fonction régulière est différente :
+Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction. 
 
-function_handle = @function_name
+La syntaxe pour créer un handle vers une fonction régulière est différente : 
 
-Par exemple : <b>f = @cos</b>
+function\_handle = @function\_name 
 
-Vous pouvez enregistrer des function handles et leurs valeurs associées dans un fichier MAT.
+Par exemple : <b>f = @cos</b> 
 
-Plus tard, dans une autre session, vous pouvez les restaurer avec <b>save</b> et <b>load</b>.
+Vous pouvez enregistrer des function handles et leurs valeurs associées dans un fichier MAT. 
 
-Par exemple : <b>a = 1; b = 2; f = @(x) a + b + x; save('test.nH5', f);</b>
+Plus tard, dans une autre session, vous pouvez les restaurer avec <b>save</b> et <b>load</b>. 
 
-Seuls les fichiers .nh5 permettent de sauvegarder et recharger correctement le type function_handle.
+Par exemple : <b>a = 1; b = 2; f = @(x) a + b + x; save('test.nH5', f);</b> 
 
-Vous pouvez créer une fonction anonyme avec plusieurs arguments d'entrée, par exemple x et y.
+Seuls les fichiers .nh5 permettent de sauvegarder et recharger correctement le type function\_handle. 
 
-Si les variables A et B sont définies, vous pouvez définir :
+Vous pouvez créer une fonction anonyme avec plusieurs arguments d'entrée, par exemple x et y. 
+
+Si les variables A et B sont définies, vous pouvez définir : 
 
 <b>A = 10; B = 100; r = @(x, y) (A\*y + B\*x);</b>
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 10;
@@ -59,6 +62,7 @@ f1()
 
 ```
 
+
 ```matlab
 f2 = @cos;
 f2
@@ -66,13 +70,13 @@ f2(0.6)
 
 ```
 
+
 ```matlab
 f3 = @(x)cos(x) + 1;
 f2
 f3(0.6)
 
 ```
-
 Multiple input arguments
 
 ```matlab
@@ -83,7 +87,6 @@ f4
 f4(0.6, 0.2)
 
 ```
-
 Save/Load function handle
 
 ```matlab
@@ -97,7 +100,6 @@ f5
 f5(10)
 
 ```
-
 Multiple output arguments
 
 ```matlab
@@ -109,14 +111,15 @@ mesh(x, y, z)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [func2str](../function_handle/func2str.md), [str2func](../function_handle/str2func.md), [isfunction_handle](../function_handle/isfunction_handle.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

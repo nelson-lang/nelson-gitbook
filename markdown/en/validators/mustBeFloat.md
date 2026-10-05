@@ -15,9 +15,12 @@ Checks that value is floating-point or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeFloat</b> checks that value is floating-point (single or double) or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeFloat(true)
@@ -25,13 +28,14 @@ mustBeFloat([])
 mustBeFloat(single([true false]))
 ```
 
+
 ## 🔗 See also
 
 [isfloat](../types/isfloat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

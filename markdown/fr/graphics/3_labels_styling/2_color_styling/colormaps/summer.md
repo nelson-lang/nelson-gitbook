@@ -17,17 +17,20 @@ Table de couleurs 'summer'.
 
 ## 📄 Description
 
+
 <b>summer</b> retourne la table de couleurs avec des couleurs d'été.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('summer');
 ```
-
 <img src="summer.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('summer');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

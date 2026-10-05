@@ -16,9 +16,10 @@ Determine whether input is a character array (deprecated).
 
 ## 📄 Description
 
-<b>isstr</b> is the deprecated MATLAB name for <b>ischar</b>. It returns <b>true</b> when <b>x</b> is a character array and <b>false</b> otherwise.
 
-A string array (created with double quotes) is not a character array, so <b>isstr</b> returns <b>false</b> for it.
+<b>isstr</b> is a deprecated alias for <b>ischar</b>. It returns <b>true</b> when <b>x</b> is a character array and <b>false</b> otherwise. 
+
+A string array (created with double quotes) is not a character array, so <b>isstr</b> returns <b>false</b> for it. 
 
 <b>isstr</b> is kept for compatibility with legacy code. Use <b>ischar</b> instead in new code.
 
@@ -29,18 +30,17 @@ A character array:
 ```matlab
 tf = isstr('hello')
 ```
-
 A numeric value is not a character array:
 
 ```matlab
 tf = isstr(42)
 ```
-
 A string is not a character array:
 
 ```matlab
 tf = isstr("hello")
 ```
+
 
 ## 🔗 See also
 
@@ -48,7 +48,7 @@ tf = isstr("hello")
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

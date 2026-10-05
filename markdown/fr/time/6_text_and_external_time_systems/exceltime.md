@@ -16,9 +16,10 @@ Convertit des valeurs datetime en numeros de date serie tableur.
 
 ## 📄 Description
 
-Convertit des valeurs datetime en numeros de date serie tableur.
 
-exceltime utilise l origine 1899-12-30 employee par les calculs courants de dates serie de tableur.
+Convertit des valeurs datetime en numeros de date serie tableur. 
+
+exceltime utilise l origine 1899-12-30 employee par les calculs courants de dates serie de tableur. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,14 +33,15 @@ exceltime(datetime(1900, 1, 1))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

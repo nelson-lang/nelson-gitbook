@@ -15,14 +15,16 @@ Inverse cotangent of angle in radians
 - res - a numeric value
 
 ## 📄 Description
-
 <b>acot</b> computes the inverse cotangent of angle for each element of <b>x</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = acot([-i pi+i*pi/2 -1+i*4])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +32,7 @@ R = acot([-i pi+i*pi/2 -1+i*4])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

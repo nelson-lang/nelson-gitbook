@@ -17,21 +17,25 @@ Compare arrays while treating NaN values as equal.
 
 ## 📄 Description
 
+
 <b>isequalwithequalnans</b> is equivalent to <b>isequaln</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 tf = isequalwithequalnans([NaN 1], [NaN 1])
 ```
 
+
 ## 🔗 See also
 
-[isequaln](../../elementary_functions/isequaln.md).
+[isequaln](../../elementary_functions/7_indexing_dimensions/isequaln.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

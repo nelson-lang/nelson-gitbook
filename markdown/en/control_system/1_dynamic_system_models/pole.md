@@ -16,9 +16,12 @@ Poles of dynamic system.
 
 ## 📄 Description
 
+
 <b>P = pole(sys)</b> returns the poles of <b>sys</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [-15, -20; 10, 0];
@@ -29,13 +32,14 @@ sys = ss(A, B, C, D);
 P = pole(sys)
 ```
 
+
 ## 🔗 See also
 
-[zero](../../control_system/zero.md).
+[zero](../../control_system/1_dynamic_system_models/zero.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

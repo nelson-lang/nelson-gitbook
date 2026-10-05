@@ -1,0 +1,50 @@
+#import "nelson_help.typ": *
+
+= compiler.build.standaloneApplication <compiler:compiler.build.standaloneApplication>
+
+Construire une application autonome native.
+
+== Syntaxe
+
+- #raw("result = compiler.build.standaloneApplication(AppFile)");
+- #raw("result = compiler.build.standaloneApplication(AppFile, Name, Value, ...)");
+- #raw("result = compiler.build.standaloneApplication(options)");
+
+== Description
+
+Charger le module optionnel avec ncc('--help') ou addmodule(fullfile(nelsonroot(), 'modules', 'compiler'), 'compiler'). Cette fonction reutilise le packager applicatif existant, sans chaine de compilation des sources.
+
+ Fournir un point d'entree .m existant et des paires nom-valeur, ou un objet scalaire compiler.build.StandaloneApplicationOptions. Les surcharges nom-valeur apres un objet options sont refusees. La sortie est facultative.
+
+ Le resultat est un objet compiler.build.Results. Files contient l'executable natif, l'archive .nca si EmbedArchive vaut false, et readme.txt. Windows utilise le sous-systeme Console ; les autres plateformes utilisent leur format natif. Il n'y a pas de compilation croisee.
+
+ Sous macOS, le lanceur cible l'architecture de l'hote. Une application graphique selectionnee par ses dependances utilise la boucle d'evenements native et compiler.package.installer l'enveloppe dans un bundle .app ; une application console reste directement executable. compiler.build.standaloneWindowsApplication reste reserve a Windows.
+
+ Cette fonction ne copie et n'embarque ni runtime ni installateur. Sur la machine destinataire, definir NELSONC\_RUNTIME\_ROOT vers un runtime installe compatible. Le mode ncc avec RuntimeMode\='bundled' reste disponible pour un runtime adjacent.
+
+ Par defaut, l'executable embarque le code applicatif et les donnees selectionnees. EmbedArchive\=false les place dans une archive .nca adjacente, a distribuer avec l'executable. AdditionalFiles accepte fichiers, dossiers et motifs, notamment les ressources .nh5 et .mat. AutoDetectDataFiles controle la detection automatique. Les services graphiques sont selectionnes selon les dependances, independamment de la console.
+
+ Une construction precedente verifiee du meme ExecutableName et de la meme architecture peut etre reconstruite dans OutputDir. Le compilateur controle buildresult.json et chaque sortie enregistree avant la construction, puis verifie de nouveau leurs empreintes avant remplacement. Les sorties manquantes, modifiees ou sans rapport ne sont pas ecrasees ; choisir alors un nouveau dossier. Les autres fichiers et dossiers sont conserves. Repasser EmbedArchive a true retire le fichier .nca precedent verifie.
+
+ Les nouvelles sorties et un journal d'integrite sont prepares avant remplacement. La publication conserve les anciens fichiers et les restaure en cas d'erreur recuperable, notamment lorsqu'une sortie est verrouillee sous Windows. Un verrou du systeme refuse les publications simultanees et se libere a la fin du processus. Son fichier vide .nelsonc-publish.lock reste dans OutputDir et ne doit pas etre supprime pendant une construction.
+
+ Apres une interruption du processus, la construction suivante controle automatiquement .nelsonc-publish avant de lire l'ancien rapport. Elle restaure les anciennes sorties enregistrees ou termine le nettoyage si toutes les nouvelles sorties sont deja verifiees en place. Une premiere construction interrompue pendant la publication revient a un etat sans sorties generees. Des fichiers modifies ou inconnus, un journal invalide ou des sauvegardes manquantes arretent la recuperation sans supprimer ces fichiers. Les anciens dossiers de publication sans journal necessitent toujours une inspection. Seuls les fichiers du compilateur verifies par empreinte participent a la recuperation ; les empreintes ne sont pas des signatures d'editeur.
+
+ Ne pas executer l'application ni modifier ses sorties pendant la publication. Ce mecanisme n'est ni un remplacement atomique de dossier ni une garantie contre les coupures de courant. Un arret pendant la preparation peut laisser un dossier prive .nelsonc-stage-\*, avant toute modification des anciennes sorties ; il ne bloque pas les constructions suivantes et n'est pas supprime automatiquement. Le journal, le verrou et les fichiers de preparation sont propres a la construction, pas aux ressources applicatives ni aux dependances du runtime.
+
+ Seules les options listees dans StandaloneApplicationOptions sont operationnelles. Les noms non pris en charge echouent explicitement ; le chiffrement, la conversion des arguments et les politiques de packages restent a implementer.
+
+ Le dossier de sortie contient aussi buildresult.json, un rapport de preparation de la distribution. Il ne fait pas partie de Results.Files et n'est pas necessaire pour executer l'application. Une reconstruction verifiee publie le nouveau rapport en dernier. Utiliser le nouvel objet Results apres reconstruction ; les anciens resultats restent des instantanes des anciens fichiers. Voir compiler.build.Results pour le contenu et les limites du rapport.
+
+ Les erreurs de chargement natif renvoient le code de sortie 2 avant le point d'entree applicatif. Sous Windows, le diagnostic indique le chemin de la bibliotheque et le code systeme : 126 pour une bibliotheque ou dependance absente, 193 pour un binaire invalide, et 127 lorsque l'export de demarrage manque. Ces messages vont vers la sortie d'erreur et, si configure, vers RuntimeLogFile.
+
+ #strong[TreatInputsAsNumeric]; (false par defaut) active une conversion unique des arguments de fonction par la builtin str2double. Les formes de commande sont #strong[-n]; et #strong[--numeric-inputs];. Le texte invalide donne NaN, aucun argument n'est execute comme du code et argv('user') conserve le texte original. Voir #nlink(<compiler:compiler.build.StandaloneApplicationOptions>)[compiler.build.StandaloneApplicationOptions]; pour les valeurs prises en charge et le runtime requis.
+
+ #strong[SupportPackages]; selectionne la detection automatique, aucun paquet enregistre ou une liste de noms nmm autorises. Voir #nlink(<compiler:compiler.build.StandaloneApplicationOptions>)[compiler.build.StandaloneApplicationOptions]; pour la politique de dependances et ses limites.
+
+
+== Voir aussi
+
+#nlink(<compiler:compiler.build.StandaloneApplicationOptions>)[compiler.build.StandaloneApplicationOptions];, #nlink(<compiler:compiler.build.Results>)[compiler.build.Results];, #nlink(<compiler:compiler_build_tutorial>)[compiler\_build\_tutorial];.
+
+// Auteur: Allan CORNET

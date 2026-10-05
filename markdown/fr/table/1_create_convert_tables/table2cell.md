@@ -17,13 +17,16 @@ Convertir une table en tableau de cellules
 
 ## 📄 Description
 
-<b>C = table2cell(T)</b> convertit la table <b>T</b> en un tableau de cellules <b>C</b>, où chaque variable de <b>T</b> est transformée en une colonne de cellules dans <b>C</b>.
 
-La sortie <b>C</b> n'inclut aucune propriété de <b>T.Properties</b>.
+<b>C = table2cell(T)</b> convertit la table <b>T</b> en un tableau de cellules <b>C</b>, où chaque variable de <b>T</b> est transformée en une colonne de cellules dans <b>C</b>. 
+
+La sortie <b>C</b> n'inclut aucune propriété de <b>T.Properties</b>. 
 
 Si <b>T</b> contient des noms de lignes, ceux-ci ne seront pas inclus dans <b>C</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 S = ["Y";"Y";"N";"N";"N"];
@@ -33,14 +36,15 @@ T = table(S, A, B, 'VariableNames',["Smoker" "Age" "BloodPressure"], 'RowNames',
 C = table2cell(T)
 ```
 
+
 ## 🔗 Voir aussi
 
-[cell2table](../../table/cell2table.md), [table](../../table/table.md).
+[cell2table](../../table/1_create_convert_tables/cell2table.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.8.0   | version initiale |
 
 <!--

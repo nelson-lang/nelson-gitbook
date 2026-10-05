@@ -1,10 +1,16 @@
 # Fonctions de fichiers et dossiers
 
+
+    
 Le module Fichiers et Dossiers fournit des outils pour gérer les fichiers, répertoires et chemins dans Nelson.
 
+    
 Ce module prend en charge la navigation du système de fichiers, la création et la suppression de fichiers et répertoires, l'interrogation des propriétés, la construction et la résolution de chemins, ainsi que la gestion des séparateurs spécifiques à la plateforme.
 
+    
 Ce module permet des opérations sur le système de fichiers efficaces et multi-plateformes dans les scripts et applications Nelson.
+
+  
 
 ## Functions
 
@@ -31,3 +37,4 @@ Ce module permet des opérations sur le système de fichiers efficaces et multi-
 - [tempdir](tempdir.md) - Renvoie le chemin du répertoire temporaire.
 - [tempname](tempname.md) - Renvoie un nom de fichier temporaire unique.
 - [userdir](userdir.md) - Renvoie le chemin du répertoire utilisateur courant.
+

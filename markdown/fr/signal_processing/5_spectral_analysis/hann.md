@@ -18,6 +18,7 @@ Fenêtre de Hann.
 
 ## 📄 Description
 
+
 <b>c = hann(m)</b> calcule les coefficients d'une fenêtre de Hann de longueur <b>m</b>.
 
 ## 📚 Bibliographie
@@ -26,19 +27,22 @@ Oppenheim, Alan V., Ronald W. Schafer, et John R. Buck. Discrete-Time Signal Pro
 
 ## 💡 Exemple
 
+
+
 ```matlab
 c = hann(8)
 c = hann(8, 'periodic')
 ```
 
+
 ## 🔗 Voir aussi
 
-[hamming](../../signal_processing/hamming.md), [blackman](../../signal_processing/blackman.md).
+[hamming](../../signal_processing/5_spectral_analysis/hamming.md), [blackman](../../signal_processing/5_spectral_analysis/blackman.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

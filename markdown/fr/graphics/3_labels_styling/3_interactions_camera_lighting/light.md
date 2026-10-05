@@ -21,11 +21,14 @@ Cree un objet lumiere dans des axes.
 
 ## 📄 Description
 
-<b>light</b> cree une lumiere qui agit sur les surfaces et les patchs du meme axe lorsque leur eclairage est actif.
+
+<b>light</b> cree une lumiere qui agit sur les surfaces et les patchs du meme axe lorsque leur eclairage est actif. 
 
 Voir [proprietes de light](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.light.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,8 +39,8 @@ material('shiny');
 view(35, 28);
 
 ```
-
 <img src="light_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +48,8 @@ view(35, 28);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -21,7 +21,9 @@ charger/libérer la bibliothèque FFTW dynamiquement.
 
 ## 📄 Description
 
+
 <b>FFTWwrapper</b> est une fonction interne utilisée pour charger la bibliothèque FFTW dynamiquement.
+
 
 ## 🔗 Voir aussi
 
@@ -29,8 +31,8 @@ charger/libérer la bibliothèque FFTW dynamiquement.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

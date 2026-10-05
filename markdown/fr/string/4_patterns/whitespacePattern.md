@@ -8,22 +8,26 @@ Motif pour les caracteres d'espacement.
 
 ## 📄 Description
 
+
 <b>whitespacePattern</b> Motif pour les caracteres d'espacement.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = whitespacePattern; extract("a b", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[whitespaceBoundary](../../string/whitespaceBoundary.md), [alphanumericsPattern](../../string/alphanumericsPattern.md), [pattern](../../string/pattern.md).
+[whitespaceBoundary](../../string/4_patterns/whitespaceBoundary.md), [alphanumericsPattern](../../string/4_patterns/alphanumericsPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

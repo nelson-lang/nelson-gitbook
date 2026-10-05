@@ -19,7 +19,8 @@ Faire pivoter les etiquettes de l'axe des z.
 
 ## 📄 Description
 
-<b>ztickangle</b> fait pivoter les etiquettes de l'axe des z des axes courants de l'angle indique.
+
+<b>ztickangle</b> fait pivoter les etiquettes de l'axe des z des axes courants de l'angle indique. 
 
 Un angle positif fait pivoter les etiquettes dans le sens anti-horaire ; un angle negatif dans le sens horaire.
 
@@ -35,13 +36,14 @@ ztickangle(45);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [zticks](../../../graphics/3_labels_styling/1_axes_appearance/zticks.md), [zticklabels](../../../graphics/3_labels_styling/1_axes_appearance/zticklabels.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

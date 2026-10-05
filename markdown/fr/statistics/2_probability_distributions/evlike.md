@@ -21,9 +21,12 @@ Oppose de la log-vraisemblance de la loi extreme value
 
 ## 📄 Description
 
+
 <b>evlike</b> evalue l'oppose de la log-vraisemblance de la loi extreme value.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-2 -1 0 1 2 3];
@@ -31,14 +34,15 @@ phat = evfit(x);
 nlogL = evlike(phat, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[evfit](../../statistics/evfit.md), [evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md).
+[evfit](../../statistics/2_probability_distributions/evfit.md), [evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

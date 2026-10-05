@@ -1,4 +1,4 @@
-# compiler_build_tutorial
+# compiler\_build\_tutorial
 
 Tutorial: build console and no-console applications.
 
@@ -9,17 +9,18 @@ Tutorial: build console and no-console applications.
 
 ## 📄 Description
 
-Execute the three blocks in order in one session. This example builds a multi-file application and embeds its factor.txt data file. Each executable prints TUTORIAL_RESULT=30 for the input 5.
 
-The console application is native to the current platform. On Windows, the second build creates a separate Windows-subsystem executable without requesting graphical services for this numerical example.
+Execute the three blocks in order in one session. This example builds a multi-file application and embeds its factor.txt data file. Each executable prints TUTORIAL\_RESULT=30 for the input 5. 
 
-Each output directory contains an executable, readme.txt and the build-time report buildresult.json, not a runtime or an installer. Results.Files contains the executable and readme.txt, plus the .nca for the external variant. Distribute that archive beside its executable, with the same base name. The last block selects the currently running Nelson installation as the compatible runtime. On another machine, install a compatible runtime and set NELSONC_RUNTIME_ROOT to its root.
+The console application is native to the current platform. On Windows, the second build creates a separate Windows-subsystem executable without requesting graphical services for this numerical example. 
 
-RuntimeDependencies.Required is the captured runtime file inventory; inspecting it does not copy these files. The selected application code and factor.txt are already inside the executable or its external archive, so the copied source directory is not needed at execution time.
+Each output directory contains an executable, readme.txt and the build-time report buildresult.json, not a runtime or an installer. Results.Files contains the executable and readme.txt, plus the .nca for the external variant. Distribute that archive beside its executable, with the same base name. The last block selects the currently running Nelson installation as the compatible runtime. On another machine, install a compatible runtime and set NELSONC\_RUNTIME\_ROOT to its root. 
 
-Additional option effects remain separate implementation work. Windows application installers and shared minimal-runtime installers are described in compiler_installer_tutorial and compiler_runtime_tutorial. The ncc bundled-runtime path is described in compiler_standalone_tutorial.
+RuntimeDependencies.Required is the captured runtime file inventory; inspecting it does not copy these files. The selected application code and factor.txt are already inside the executable or its external archive, so the copied source directory is not needed at execution time. 
 
-TreatInputsAsNumeric passes the input 5 as a double to app_entry. The supplied example also accepts character input when the option is false. Invalid numeric text becomes NaN; applications must validate input before calculation.
+Additional option effects remain separate implementation work. Windows application installers and shared minimal-runtime installers are described in compiler\_installer\_tutorial and compiler\_runtime\_tutorial. The ncc bundled-runtime path is described in compiler\_standalone\_tutorial. 
+
+TreatInputsAsNumeric passes the input 5 as a double to app\_entry. The supplied example also accepts character input when the option is false. Invalid numeric text becomes NaN; applications must validate input before calculation. 
 
 SupportPackages filters installed nmm dependencies; this example uses none because its sources do not need an external package.
 
@@ -38,7 +39,6 @@ for name = {'app_entry.m', 'helper_value.m', 'factor.txt', 'app_icon.png'}
   copyfile(fullfile(example, name{1}), source);
 end
 ```
-
 2. Build and inspect the results
 
 ```matlab
@@ -68,7 +68,6 @@ if ispc()
   windowed = compiler.build.standaloneWindowsApplication(options);
 end
 ```
-
 3. Run with an installed runtime
 
 ```matlab
@@ -93,10 +92,10 @@ end
 clear restoreRuntime;
 ```
 
+
 ## 🔗 See also
 
 [compiler.build.StandaloneApplicationOptions](../compiler/compiler.build.StandaloneApplicationOptions.md), [compiler.build.Results](../compiler/compiler.build.Results.md), [compiler.runtime.Dependencies](../compiler/compiler.runtime.Dependencies.md), [compiler_standalone_tutorial](../compiler/compiler_standalone_tutorial.md).
-
 <!--
 ## 👤 Author
 

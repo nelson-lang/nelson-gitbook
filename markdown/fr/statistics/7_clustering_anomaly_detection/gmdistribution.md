@@ -13,7 +13,8 @@ Distribution de melange gaussien.
 
 ## 📄 Description
 
-<b>gmdistribution</b> cree un objet de modele de melange gaussien a partir des moyennes, matrices de covariance et proportions optionnelles des composantes.
+
+<b>gmdistribution</b> cree un objet de modele de melange gaussien a partir des moyennes, matrices de covariance et proportions optionnelles des composantes. 
 
 L'objet prend en charge l'evaluation de densite avec <b>pdf</b>, les probabilites posterieures avec <b>posterior</b>, l'affectation par posteriori maximal avec <b>cluster</b> et l'echantillonnage aleatoire avec <b>random</b>.
 
@@ -27,14 +28,15 @@ y = pdf(gm, [0; 10; 5])
 P = posterior(gm, [0; 10; 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[fitgmdist](../../statistics/fitgmdist.md), [kmeans](../../statistics/kmeans.md).
+[fitgmdist](../../statistics/7_clustering_anomaly_detection/fitgmdist.md), [kmeans](../../statistics/7_clustering_anomaly_detection/kmeans.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

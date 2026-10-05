@@ -24,18 +24,21 @@ Solve a system of nonlinear equations.
 
 ## 📄 Description
 
-<b>fsolve</b> solves systems of nonlinear equations F(x) = 0.
 
-The <b>Algorithm</b> option selects the engine: <b>'trust-region-dogleg'</b> (default, square systems), <b>'trust-region'</b> or <b>'levenberg-marquardt'</b>. Non-square systems automatically switch to Levenberg-Marquardt with a warning.
+<b>fsolve</b> solves systems of nonlinear equations F(x) = 0. 
 
-The default <b>MaxFunctionEvaluations</b> is <b>100\*numberOfVariables</b>, <b>MaxIterations</b> is 400 and <b>FunctionTolerance</b> and <b>StepTolerance</b> are 1e-6. The <b>Display</b> option supports 'off', 'none', 'final', 'final-detailed', 'notify', 'notify-detailed', 'iter' and 'iter-detailed'.
+The <b>Algorithm</b> option selects the engine: <b>'trust-region-dogleg'</b> (default, square systems), <b>'trust-region'</b> or <b>'levenberg-marquardt'</b>. Non-square systems automatically switch to Levenberg-Marquardt with a warning. 
+
+The default <b>MaxFunctionEvaluations</b> is <b>100\*numberOfVariables</b>, <b>MaxIterations</b> is 400 and <b>FunctionTolerance</b> and <b>StepTolerance</b> are 1e-6. The <b>Display</b> option supports 'off', 'none', 'final', 'final-detailed', 'notify', 'notify-detailed', 'iter' and 'iter-detailed'. 
 
 If <b>Jacobian</b> is 'on' or <b>SpecifyObjectiveGradient</b> is true, fun must also return the Jacobian of the residuals.
 
 ## Used function(s)
 
+
     optimoptions
     lsqnonlin
+  
 
 ## 📚 Bibliography
 
@@ -44,11 +47,14 @@ J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Example
 
+
+
 ```matlab
 fun = @(x) [x(1) - 3; x(2) + 4];
 [x, fval] = fsolve(fun, [0; 0])
 
 ```
+
 
 ## 🔗 See also
 
@@ -56,7 +62,7 @@ fun = @(x) [x(1) - 3; x(2) + 4];
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

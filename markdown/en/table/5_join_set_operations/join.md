@@ -20,9 +20,12 @@ Join tables by key variables.
 
 ## 📄 Description
 
+
 <b>join</b> combines rows from two tables using matching key values.
 
 ## 💡 Example
+
+
 
 ```matlab
 L = table([1; 2], [10; 20], 'VariableNames', {'Key', 'LeftValue'});
@@ -30,13 +33,14 @@ R = table([2; 3], [200; 300], 'VariableNames', {'Key', 'RightValue'});
 J = join(L, R, 'Keys', 'Key')
 ```
 
+
 ## 🔗 See also
 
-[innerjoin](../../table/innerjoin.md), [outerjoin](../../table/outerjoin.md).
+[innerjoin](../../table/5_join_set_operations/innerjoin.md), [outerjoin](../../table/5_join_set_operations/outerjoin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

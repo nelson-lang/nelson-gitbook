@@ -280,7 +280,7 @@
     <p>The Types module provides tools for managing and inspecting data types in Nelson.</p>
     <p>It provides functions to query variable types, distinguish numeric, logical, string, and object values, and work with specialized types such as sparse or integer arrays.</p>
     <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.</p>
-    <p>For C++ extension and embedding code, see <link linkend="${types}cpp_api">C++ value API</link>.</p>
+    <p>For C++ extension and embedding code, see <link linkend="${types}cpp_api" href="./types/cpp_api.html">C++ value API</link>.</p>
   </chapter_description>
       <keyword name="class" link="./types/class.html" description="Return a variable class name or create an old-style named object."></keyword>
       <keyword name="cpp_api" link="./types/cpp_api.html" description="C++ value API conventions for Nelson core types."></keyword>
@@ -1074,6 +1074,7 @@
       <keyword name="isprime" link="./special_functions/isprime.html" description="Determine which array elements are prime."></keyword>
       <keyword name="lcm" link="./special_functions/lcm.html" description="Least common multiple."></keyword>
       <keyword name="makima" link="./special_functions/makima.html" description="Modified Akima piecewise cubic interpolation."></keyword>
+      <keyword name="pchip" link="./special_functions/pchip.html" description="Piecewise Cubic Hermite Interpolating Polynomial (PCHIP)."></keyword>
       <keyword name="peaks" link="./special_functions/peaks.html" description="Peaks function"></keyword>
       <keyword name="primes" link="./special_functions/primes.html" description="Prime numbers less than or equal to input value"></keyword>
       <keyword name="quadgk" link="./special_functions/quadgk.html" description="Numerically evaluate an integral with Gauss-Kronrod quadrature."></keyword>
@@ -3561,6 +3562,7 @@
       <keyword name="buildhelp" link="./help_tools/buildhelp.html" description="Build help of Nelson's modules."></keyword>
       <keyword name="buildhelpjson" link="./help_tools/buildhelpjson.html" description="Build help of Nelson JSON format."></keyword>
       <keyword name="buildhelpmd" link="./help_tools/buildhelpmd.html" description="Build help of Nelson's modules for GitBook."></keyword>
+      <keyword name="buildhelptypst" link="./help_tools/buildhelptypst.html" description="Build help of Nelson's modules as Typst sources."></keyword>
       <keyword name="buildhelpweb" link="./help_tools/buildhelpweb.html" description="Build help of Nelson's modules for website."></keyword>
       <keyword name="deployhelp" link="./help_tools/deployhelp.html" description="Install, uninstall and manage the local Nelson help system and module help files."></keyword>
       <keyword name="doc" link="./help_tools/doc.html" description="Displays documentation."></keyword>
@@ -3574,9 +3576,9 @@
       <keyword name="xmldocchecker" link="./help_tools/xmldocchecker.html" description="Checks a xml documentation file."></keyword>
       <keyword name="xmldoclinkchecker" link="./help_tools/xmldoclinkchecker.html" description="Checks unresolved cross-references in Nelson help XML files."></keyword>
       <keyword name="xmldocrenderimages" link="./help_tools/xmldocrenderimages.html" description="Render the example images of Nelson help files."></keyword>
-      <keyword name="xmldoctohelp" link="./help_tools/xmldoctohelp.html" description="Converts xml Nelson help files to Nelson format."></keyword>
       <keyword name="xmldoctohtml" link="./help_tools/xmldoctohtml.html" description="Converts xml Nelson help files to html."></keyword>
       <keyword name="xmldoctomd" link="./help_tools/xmldoctomd.html" description="Converts xml Nelson help files to markdown format."></keyword>
+      <keyword name="xmldoctotypst" link="./help_tools/xmldoctotypst.html" description="Converts xml Nelson help files to Typst sources."></keyword>
     </section>
     <section name="Optimization">
       <chapter_description>
@@ -4305,7 +4307,7 @@
       <keyword name="delete_line" link="./nflow_engine/delete_line.html" description="Delete a connection between two block ports."></keyword>
       <keyword name="find_system" link="./nflow_engine/find_system.html" description="List the blocks of a model, optionally filtered by type."></keyword>
       <keyword name="gcbh" link="./nflow_engine/gcbh.html" description="Return the handle of the current block."></keyword>
-      <keyword name="getSimulinkBlockHandle" link="./nflow_engine/getSimulinkBlockHandle.html" description="Return the handle of a block by path, or -1 if not found."></keyword>
+      <keyword name="getNFlowBlockHandle" link="./nflow_engine/getNFlowBlockHandle.html" description="Return the handle of a block by path, or -1 if not found."></keyword>
       <keyword name="get_param" link="./nflow_engine/get_param.html" description="Query a model or block parameter."></keyword>
       <keyword name="getfullname" link="./nflow_engine/getfullname.html" description="Return the full path of a block or model from its handle."></keyword>
       <keyword name="linmod" link="./nflow_engine/linmod.html" description="Numerical linearization of an nflow model."></keyword>

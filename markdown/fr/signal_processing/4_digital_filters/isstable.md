@@ -18,9 +18,12 @@ Détermine si un filtre numérique est stable.
 
 ## 📄 Description
 
+
 <b>isstable</b> vérifie les rayons des pôles d'un filtre numérique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ tf = isstable([1], [1 -0.5]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf2zp](../../signal_processing/tf2zp.md).
+[tf2zp](../../signal_processing/4_digital_filters/tf2zp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,10 +1,16 @@
 # Types entiers
 
+
+    
 Le module Types entiers fournit des outils pour travailler avec des entiers signés et non signés de différentes tailles dans Nelson.
 
+    
 Ces types sont particulièrement utiles pour stocker et traiter efficacement de grands jeux de données, tels que des images ou de grands tableaux numériques.
 
+    
 Le module prend en charge les conversions entre formats entiers et fournit l'accès aux valeurs minimale et maximale représentables pour chaque type entier, garantissant des calculs entiers sûrs et précis.
+
+  
 
 ## Functions
 
@@ -18,3 +24,4 @@ Le module prend en charge les conversions entre formats entiers et fournit l'acc
 - [uint32](uint32.md) - Convertit en entier non signé 32 bits.
 - [uint64](uint64.md) - Convertit en entier non signé 64 bits.
 - [uint8](uint8.md) - Convertit en entier non signé 8 bits.
+

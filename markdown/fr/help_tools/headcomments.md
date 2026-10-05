@@ -4,12 +4,12 @@ Affiche les commentaires d'en-tête d'une fonction Nelson.
 
 ## 📝 Syntaxe
 
-- headcomments(function_name)
-- ce = headcomments(function_name)
+- headcomments(function\_name)
+- ce = headcomments(function\_name)
 
 ## 📥 Argument d'entrée
 
-- function_name - une chaîne : nom de la fonction ou nom de fichier .m.
+- function\_name - une chaîne : nom de la fonction ou nom de fichier .m.
 
 ## 📤 Argument de sortie
 
@@ -17,19 +17,22 @@ Affiche les commentaires d'en-tête d'une fonction Nelson.
 
 ## 📄 Description
 
-<b>head_comments</b> affiche les commentaires d'en-tête d'une fonction.
 
-Les commentaires sont lus depuis le fichier .m associé.
+<b>head\_comments</b> affiche les commentaires d'en-tête d'une fonction. 
+
+Les commentaires sont lus depuis le fichier .m associé. 
 
 Les fonctions prédéfinies de Nelson n'ont pas de commentaires d'en-tête.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 ```
-
 <img src="headcomments.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -37,8 +40,8 @@ comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

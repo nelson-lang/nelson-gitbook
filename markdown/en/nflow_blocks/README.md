@@ -1,12 +1,21 @@
 # NFlow blocks
 
+
+    
 The nflow_blocks module provides the simulation blocks used by NFlow, including their ports, parameters, phases, and runtime behavior.
 
+    
 NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.
+
+  
 
 ## Electrical (acausal)
 
+
+    
 Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.
+
+  
 
 ### Functions
 
@@ -24,7 +33,7 @@ Acausal (physical) blocks with undirected pins, simulated natively through the d
 - [Gyrator](acausal_electrical/Gyrator.md) - Gyrator: i1 = G2 v2, i2 = -G1 v1 (across<->through transducer).
 - [HeatingResistor](acausal_electrical/HeatingResistor.md) - Resistor that dissipates its power P = v^2 / R as heat into a thermal port.
 - [IdealDiode](acausal_electrical/IdealDiode.md) - Ideal diode switching at the knee voltage Vknee: off below it (leak conductance Goff), on above it (on-resistance Ron in series with Vknee); the mode flip is an event.
-- [IdealOpAmp](acausal_electrical/IdealOpAmp.md) - Ideal op-amp (nullor): virtual short e*+ = e*-, output current free.
+- [IdealOpAmp](acausal_electrical/IdealOpAmp.md) - Ideal op-amp (nullor): virtual short e_+ = e_-, output current free.
 - [IdealSwitch](acausal_electrical/IdealSwitch.md) - Ideal switch: control > 0.5 -> closed short, else open (i = 0).
 - [IdealTransformer](acausal_electrical/IdealTransformer.md) - Ideal transformer: v1 = n v2, i2 = -n i1 (structural, no state storage).
 - [Idle](acausal_electrical/Idle.md) - Ideal open branch: i = 0 (branch voltage free).
@@ -55,7 +64,11 @@ Acausal (physical) blocks with undirected pins, simulated natively through the d
 
 ## Planar (acausal)
 
+
+    
 Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.
+
+  
 
 ### Functions
 
@@ -81,7 +94,11 @@ Acausal (physical) blocks with undirected pins, simulated natively through the d
 
 ## Rotational (acausal)
 
+
+    
 Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.
+
+  
 
 ### Functions
 
@@ -116,7 +133,11 @@ Acausal (physical) blocks with undirected pins, simulated natively through the d
 
 ## Thermal (acausal)
 
+
+    
 Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.
+
+  
 
 ### Functions
 
@@ -136,7 +157,11 @@ Acausal (physical) blocks with undirected pins, simulated natively through the d
 
 ## Translational (acausal)
 
+
+    
 Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.
+
+  
 
 ### Functions
 
@@ -173,7 +198,11 @@ Acausal (physical) blocks with undirected pins, simulated natively through the d
 
 ## Continuous blocks
 
+
+    
 Stateful continuous-time blocks updated with the simulation step.
+
+  
 
 ### Functions
 
@@ -189,7 +218,11 @@ Stateful continuous-time blocks updated with the simulation step.
 
 ## Dashboard blocks
 
+
+    
 Interactive dashboard widgets that bind to signals and parameters to observe or drive a running model.
+
+  
 
 ### Functions
 
@@ -216,7 +249,11 @@ Interactive dashboard widgets that bind to signals and parameters to observe or 
 
 ## Discrete blocks
 
+
+    
 Sampled blocks that store values, histories, or discrete states.
+
+  
 
 ### Functions
 
@@ -236,7 +273,11 @@ Sampled blocks that store values, histories, or discrete states.
 
 ## FMI and Modelica blocks
 
+
+    
 Blocks that import, execute, or compile Functional Mock-up Units and models.
+
+  
 
 ### Functions
 
@@ -246,7 +287,11 @@ Blocks that import, execute, or compile Functional Mock-up Units and models.
 
 ## Logic blocks
 
+
+    
 Boolean and comparison blocks for numeric signals.
+
+  
 
 ### Functions
 
@@ -271,7 +316,11 @@ Boolean and comparison blocks for numeric signals.
 
 ## Lookup Tables
 
+
+    
 Interpolated and direct lookup-table blocks (1-D, 2-D, n-D and direct).
+
+  
 
 ### Functions
 
@@ -285,7 +334,11 @@ Interpolated and direct lookup-table blocks (1-D, 2-D, n-D and direct).
 
 ## Math blocks
 
+
+    
 Algebraic scalar math operations.
+
+  
 
 ### Functions
 
@@ -319,7 +372,11 @@ Algebraic scalar math operations.
 
 ## Nonlinear blocks
 
+
+    
 Blocks with saturation, thresholds, hysteresis, or rate limits.
+
+  
 
 ### Functions
 
@@ -334,7 +391,11 @@ Blocks with saturation, thresholds, hysteresis, or rate limits.
 
 ## Sink blocks
 
+
+    
 Blocks that consume, display, or name signals.
+
+  
 
 ### Functions
 
@@ -350,7 +411,11 @@ Blocks that consume, display, or name signals.
 
 ## Source blocks
 
+
+    
 Blocks that generate signals from parameters, time, labels, or files.
+
+  
 
 ### Functions
 
@@ -375,7 +440,11 @@ Blocks that generate signals from parameters, time, labels, or files.
 
 ## User-Defined Function blocks
 
+
+    
 Blocks that evaluate user-provided expressions or Nelson functions.
+
+  
 
 ### Functions
 
@@ -384,7 +453,11 @@ Blocks that evaluate user-provided expressions or Nelson functions.
 
 ## Utility blocks
 
+
+    
 Blocks for routing, grouping, annotation, and interactive switching.
+
+  
 
 ### Functions
 
@@ -414,3 +487,4 @@ Blocks for routing, grouping, annotation, and interactive switching.
 - [switch](utility/switch.md) - Selects between top and bottom inputs using a condition input.
 - [toggleSwitch](utility/toggleSwitch.md) - Outputs one of two configured values from state.
 - [width](utility/width.md) - Outputs the number of elements (width) of its input signal, as a scalar.
+

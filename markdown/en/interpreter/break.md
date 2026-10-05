@@ -8,11 +8,14 @@ exit evaluation loop.
 
 ## 📄 Description
 
-<b>break</b> statement is used to exit a loop prematurely.
+
+<b>break</b> statement is used to exit a loop prematurely. 
 
 <b>break</b> statement can be used inside a <b>for</b> or a<b>while</b> loop.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -26,13 +29,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [return](../interpreter/abort.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

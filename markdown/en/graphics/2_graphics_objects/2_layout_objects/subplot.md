@@ -22,11 +22,14 @@ Create axes in tiled positions.
 
 ## 📄 Description
 
-<b>subplot(n, m, p)</b> divides the current figure into a 2-dimensional grid.
+
+<b>subplot(n, m, p)</b> divides the current figure into a 2-dimensional grid. 
 
 Each of which can contain a plot of some kind.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -45,8 +48,8 @@ plot(X, Y3, 'g');
 subplot(4, 1, 4);
 plot(X, Y4, 'k');
 ```
-
 <img src="subplot_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -65,8 +68,8 @@ plot(t, Y);
 subplot(2, 2, 4);
 plot(t, Z);
 ```
-
 <img src="subplot_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -74,7 +77,7 @@ plot(t, Z);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

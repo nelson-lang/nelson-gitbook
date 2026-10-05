@@ -19,6 +19,7 @@ Crée un groupe de boutons.
 
 ## 📄 Description
 
+
 <b>bg = uibuttongroup</b> crée un conteneur gérant la sélection exclusive de boutons radio et boutons bascule. Propriétés principales : <b>Title</b>, <b>TitlePosition</b>, <b>SelectedObject</b>, <b>Buttons</b> (lecture seule), <b>SelectionChangedFcn</b> (event avec <b>OldValue</b> et <b>NewValue</b>), plus les propriétés de bordure et police du panneau.
 
 ## 💡 Exemples
@@ -33,7 +34,6 @@ r2 = uiradiobutton(bg, 'Text', 'High', 'Position', [20 55 120 22]);
 r2.Value = true;
 drawnow();
 ```
-
 <img src="uibuttongroup_example.svg" align="middle"/>
 uibuttongroup
 
@@ -44,14 +44,15 @@ bg = uibuttongroup(f, 'Title', 'Choix', 'Position', [20 20 260 210]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

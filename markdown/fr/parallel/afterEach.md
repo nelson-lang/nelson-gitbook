@@ -18,13 +18,16 @@ Exécuter une fonction après chaque fin d'exécution en arrière-plan.
 
 ## 📄 Description
 
-<b>B = afterEach(F, fcn, n)</b> renvoie un objet AfterEachFuture <b>B</b>.
 
-La fonction<b>fcn</b> est automatiquement exécutée après chaque élément du tableau Future <b>F</b> lorsqu'il est terminé.
+<b>B = afterEach(F, fcn, n)</b> renvoie un objet AfterEachFuture <b>B</b>. 
+
+La fonction<b>fcn</b> est automatiquement exécutée après chaque élément du tableau Future <b>F</b> lorsqu'il est terminé. 
 
 Si l'un des éléments de <b>F</b> rencontre une erreur, la propriété <b>Error</b> de <b>B</b> contient l'erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pool = backgroundPool()
@@ -40,14 +43,15 @@ fetchOutputs(minFuture)
 fetchOutputs(maxFuture)
 ```
 
+
 ## 🔗 Voir aussi
 
 [backgroundPool](../parallel/backgroundPool.md), [fetchOutputs](../parallel/fetchOutputs.md), [afterAll](../parallel/afterAll.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -1,6 +1,10 @@
 # Traitement XML
 
+
+    
 Le module XML fournit des fonctions pour créer, convertir et gérer des documents XML pour Nelson.
+
+  
 
 ## Functions
 
@@ -12,3 +16,4 @@ Le module XML fournit des fonctions pour créer, convertir et gérer des documen
 - [xmltransform](xmltransform.md) - Transformation XML utilisant XSLT
 - [xmlwrite](xmlwrite.md) - Sérialiser un objet document XML
 - [xslt](xslt.md) - Transformer du XML avec XSLT
+

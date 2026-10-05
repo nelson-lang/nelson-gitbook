@@ -17,16 +17,20 @@ Create 2-D comet plot.
 
 ## 📄 Description
 
-<b>comet</b> animates a marker head, a trailing body, and a complete trace for a two-dimensional comet plot.
+
+<b>comet</b> animates a marker head, a trailing body, and a complete trace for a two-dimensional comet plot. 
 
 The final axes state contains two animated line objects and one marker-only line object.
 
 ## 💡 Example
 
+
+
 ```matlab
 t = 0:pi/80:2*pi;
 comet(cos(t), sin(t), 0.2)
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ comet(cos(t), sin(t), 0.2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

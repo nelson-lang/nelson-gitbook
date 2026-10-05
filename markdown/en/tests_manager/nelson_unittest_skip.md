@@ -10,8 +10,10 @@ Skip the current test.
 
 ## 📄 Description
 
-<b>nelson.unittest.skip</b> marks the current test as skipped. <b>skip_testsuite</b> is the compatibility alias.
+
+<b>nelson.unittest.skip</b> marks the current test as skipped. <b>skip\_testsuite</b> is the compatibility alias.
+
 
 ## 🔗 See also
 
-[skip_testsuite](../tests_manager/skip_testsuite.md), [nelson.unittest.assume](../tests_manager/nelson.unittest.assume.md).
+[skip_testsuite](../tests_manager/test_skip_testsuite.md), [nelson.unittest.assume](../tests_manager/nelson_unittest_assume.md).

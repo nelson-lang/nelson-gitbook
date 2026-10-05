@@ -18,7 +18,8 @@ Matrice de Toeplitz
 
 ## 📄 Description
 
-<b>T = toeplitz(c, r)</b> renvoie la matrice de Toeplitz dont la première ligne est<b>r</b> et la première colonne est <b>c</b>.
+
+<b>T = toeplitz(c, r)</b> renvoie la matrice de Toeplitz dont la première ligne est<b>r</b> et la première colonne est <b>c</b>. 
 
 <b>T = toeplitz(c)</b> renvoie la matrice de Toeplitz symétrique.
 
@@ -28,18 +29,21 @@ https://en.wikipedia.org/wiki/Toeplitz_matrix
 
 ## 💡 Exemple
 
+
+
 ```matlab
 T = toeplitz(1:5, 1:2:7)
 ```
 
+
 ## 🔗 Voir aussi
 
-[hankel](../../elementary_functions/hankel.md).
+[hankel](../../elementary_functions/6_matrix_generation/hankel.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

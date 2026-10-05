@@ -29,19 +29,22 @@ Stairstep graph.
 
 ## 📄 Description
 
-Stairstep graphs are a valuable tool for creating time-history plots of digitally sampled data.
 
-<b>stairs(Y)</b> function is used to generate such graphs by plotting the elements of the vector<b>Y.</b>
+Stairstep graphs are a valuable tool for creating time-history plots of digitally sampled data. 
 
-If <b>Y</b> is a matrix, it draws one line for each column, with the color of the lines determined by the ColorOrder property of the axes.
+<b>stairs(Y)</b> function is used to generate such graphs by plotting the elements of the vector<b>Y.</b> 
 
-In the case of a vector<b>Y</b>, the x-axis scale spans from 1 to the length of <b>Y</b>, while for a matrix<b>Y</b>, the x-axis scale ranges from 1 to the number of rows in<b>Y</b>.
+If <b>Y</b> is a matrix, it draws one line for each column, with the color of the lines determined by the ColorOrder property of the axes. 
 
-<b>stairs(X, Y)</b> allows you to plot the elements in<b>Y</b> at specific locations defined by the vector <b>X</b>.
+In the case of a vector<b>Y</b>, the x-axis scale spans from 1 to the length of <b>Y</b>, while for a matrix<b>Y</b>, the x-axis scale ranges from 1 to the number of rows in<b>Y</b>. 
+
+<b>stairs(X, Y)</b> allows you to plot the elements in<b>Y</b> at specific locations defined by the vector <b>X</b>. 
 
 It's important to note that the elements in <b>X</b> must be in a monotonic order to create a valid stairstep graph.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -53,8 +56,8 @@ ax = gca();
 stairs(ax, X,Y)
 
 ```
-
 <img src="stairs_1.svg" align="middle"/>
+
 
 ```matlab
 X = linspace(0,1,45)';
@@ -66,8 +69,8 @@ h(2).Marker = '+';
 h(2).MarkerFaceColor = 'm';
 
 ```
-
 <img src="stairs_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -75,7 +78,7 @@ h(2).MarkerFaceColor = 'm';
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

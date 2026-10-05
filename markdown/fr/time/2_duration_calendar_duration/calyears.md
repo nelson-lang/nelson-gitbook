@@ -16,9 +16,10 @@ Cree des durees calendaires contenant des annees calendaires.
 
 ## 📄 Description
 
-Cree des durees calendaires contenant des annees calendaires.
 
-calyears sert a l arithmetique calendaire, pas a une conversion fixe de temps ecoule. Ajouter calyears a datetime preserve le comportement de fin de mois.
+Cree des durees calendaires contenant des annees calendaires. 
+
+calyears sert a l arithmetique calendaire, pas a une conversion fixe de temps ecoule. Ajouter calyears a datetime preserve le comportement de fin de mois. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -31,14 +32,15 @@ datetime(2024, 2, 29) + calyears(1)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

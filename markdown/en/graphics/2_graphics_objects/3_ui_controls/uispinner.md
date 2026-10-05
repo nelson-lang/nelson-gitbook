@@ -19,6 +19,7 @@ Create spinner component.
 
 ## 📄 Description
 
+
 <b>spn = uispinner</b> creates a numeric spinner. Properties: <b>Value</b>, <b>Step</b>, <b>Limits</b>, <b>LowerLimitInclusive</b>/<b>UpperLimitInclusive</b>, <b>RoundFractionalValues</b>, <b>ValueDisplayFormat</b>, <b>AllowEmpty</b>, <b>Editable</b>, <b>ValueChangedFcn</b>, <b>ValueChangingFcn</b>.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ uilabel(f, 'Text', 'Ratio', 'FontWeight', 'bold', 'Position', [80 130 100 24]);
 ratio = uispinner(f, 'Value', 0.75, 'Step', 0.05, 'Limits', [0 1], 'Position', [210 125 130 30]);
 drawnow();
 ```
-
 <img src="uispinner_example.svg" align="middle"/>
 uispinner
 
@@ -44,13 +44,14 @@ spn = uispinner(f, 'Value', 5, 'Step', 0.5, 'Limits', [0 10]);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

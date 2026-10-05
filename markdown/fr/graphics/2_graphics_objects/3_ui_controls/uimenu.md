@@ -21,11 +21,12 @@ Creer un objet graphique menu ou entree de menu.
 
 ## 📄 Description
 
-<b>uimenu</b> cree un menu dans la barre de menus d'une figure, un sous-menu ou une entree de menu contextuel selon le parent.
 
-La propriete <b>Text</b> controle le libelle affiche. Les caracteres esperluette sont conserves afin que la boite a outils native expose les mnemoniques clavier.
+<b>uimenu</b> cree un menu dans la barre de menus d'une figure, un sous-menu ou une entree de menu contextuel selon le parent. 
 
-La propriete <b>Position</b> ordonne les menus freres. La propriete <b>Children</b> liste les enfants dans la hierarchie graphique.
+La propriete <b>Text</b> controle le libelle affiche. Les caracteres esperluette sont conserves afin que la boite a outils native expose les mnemoniques clavier. 
+
+La propriete <b>Position</b> ordonne les menus freres. La propriete <b>Children</b> liste les enfants dans la hierarchie graphique. 
 
 Voir [proprietes de uimenu](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.uimenu.properties.md) pour la liste complete des proprietes.
 
@@ -41,6 +42,7 @@ uimenu(fileMenu, 'Text', 'Open', 'Accelerator', 'O');
 uimenu(fileMenu, 'Text', 'Checked item', 'Checked', 'on', 'Separator', 'on');
 
 ```
+
 
 ## 🔗 Voir aussi
 

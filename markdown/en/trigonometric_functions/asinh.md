@@ -15,15 +15,17 @@ Inverse hyperbolic sine function
 - res - a numeric value
 
 ## 📄 Description
-
 <b>cosh</b> computes the inverse hyperbolic sine in radians for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
 res = asinh(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ res = asinh(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

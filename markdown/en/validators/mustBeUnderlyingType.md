@@ -17,13 +17,17 @@ Validate that value has a specified underlying type.
 
 ## 📄 Description
 
+
 <b>mustBeUnderlyingType</b> throws an error if the underlying type of A (as returned by underlyingType) is not equal to typename. This function does not return a value.
 
 ## 💡 Example
 
+
+
 ```matlab
 mustBeUnderlyingType(int32(5), 'int32')
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ mustBeUnderlyingType(int32(5), 'int32')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

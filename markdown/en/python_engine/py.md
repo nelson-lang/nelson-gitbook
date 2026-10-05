@@ -14,13 +14,16 @@ Python namespace proxy.
 
 ## 📄 Description
 
-py returns a proxy object used to access Python builtins and modules from Nelson.
+
+py returns a proxy object used to access Python builtins and modules from Nelson. 
 
 Use attribute access on the returned object to import modules or call Python functions.
 
 ## Used function(s)
 
+
     pyenv
+  
 
 ## 💡 Example
 
@@ -31,13 +34,14 @@ p = py();
 pyValue = p.int(42)
 ```
 
+
 ## 🔗 See also
 
 [pyenv](../python_engine/pyenv.md), [pyrun](../python_engine/pyrun.md), [pyrunfile](../python_engine/pyrunfile.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

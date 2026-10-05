@@ -15,14 +15,16 @@ Inverse secant of argument in degrees.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>asecd</b> computes the inverse secant of argument in degrees for each element of <b>x</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = asecd([1, 10+3i, 15+2i, 35+i])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +32,7 @@ R = asecd([1, 10+3i, 15+2i, 35+i])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

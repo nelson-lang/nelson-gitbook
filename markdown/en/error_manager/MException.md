@@ -30,28 +30,32 @@ Exception information.
 
 ## 📄 Description
 
-All Nelson code that detects an error and throws an exception constructs an MException object.
 
-identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty').
+All Nelson code that detects an error and throws an exception constructs an MException object. 
 
-<b>MException</b> is a built-in class. It has the read-only properties <b>identifier</b>, <b>message</b>, <b>cause</b>, <b>stack</b>, and <b>Correction</b>.
+identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty'). 
 
-<b>ME = MException(identifier, format, A, ...)</b> formats the message using the same formatting rules as <b>sprintf</b>.
+<b>MException</b> is a built-in class. It has the read-only properties <b>identifier</b>, <b>message</b>, <b>cause</b>, <b>stack</b>, and <b>Correction</b>. 
 
-<b>addCause</b> returns a new MException object with an additional cause.
+<b>ME = MException(identifier, format, A, ...)</b> formats the message using the same formatting rules as <b>sprintf</b>. 
 
-<b>addCorrection</b> returns a new MException object with a correction object. Nelson correction objects are in the <b>nelson.lang.correction</b> package.
+<b>addCause</b> returns a new MException object with an additional cause. 
 
-<b>getReport</b> returns a formatted exception report.
+<b>addCorrection</b> returns a new MException object with a correction object. Nelson correction objects are in the <b>nelson.lang.correction</b> package. 
+
+<b>getReport</b> returns a formatted exception report. 
 
 <b>MException.last</b> returns the last uncaught exception recorded by the evaluator. <b>MException.last('reset')</b> clears it.
 
 ## 💡 Examples
 
+
+
 ```matlab
 ME = MException('nelson:identifier', 'your error message.');
 throw(ME)
 ```
+
 
 ```matlab
 ME = MException('nelson:badIndex', 'Unable to index into array %s.', 'A');
@@ -60,6 +64,7 @@ ME = ME.addCause(causeException)
 getReport(ME, 'basic')
 ```
 
+
 ```matlab
 ME = MException('nelson:missingArgument', 'Missing argument.');
 correction = nelson.lang.correction.AppendArgumentsCorrection('value');
@@ -67,13 +72,14 @@ ME = addCorrection(ME, correction)
 ME.Correction
 ```
 
+
 ## 🔗 See also
 
 [error](../error_manager/error.md), [try](../interpreter/try.md), [throw](../error_manager/throw.md), [rethrow](../error_manager/rethrow.md), [throwAsCaller](../error_manager/throwAsCaller.md), [addCause](../error_manager/addCause.md), [addCorrection](../error_manager/addCorrection.md), [getReport](../error_manager/getReport.md), [MException.last](../error_manager/MException.last.md), [lasterror](../error_manager/lasterror.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

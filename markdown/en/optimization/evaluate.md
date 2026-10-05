@@ -17,18 +17,23 @@ Evaluate an optimization expression.
 
 ## 📄 Description
 
+
 <b>evaluate</b> computes the numeric value of a problem-based expression for a given assignment of variables.
 
 ## Used function(s)
 
+
     optimexpr
     optimvar
+  
 
 ## 📚 Bibliography
 
 J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = optimvar('x');
@@ -37,13 +42,14 @@ value = evaluate(expr, struct('x', 3))
 
 ```
 
+
 ## 🔗 See also
 
 [optimexpr](../optimization/optimexpr.md), [show](../optimization/show.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

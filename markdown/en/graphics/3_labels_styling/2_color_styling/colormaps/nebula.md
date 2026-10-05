@@ -17,9 +17,12 @@ Nebula colormap array.
 
 ## 📄 Description
 
+
 <b>nebula</b> returns the colormap with nebula colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -30,8 +33,8 @@ imagesc(peaks(100));
 colorbar;
 title(['Nebula Colormap with ', num2str(n), ' Colors']);
 ```
-
 <img src="nebula.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -39,9 +42,9 @@ title(['Nebula Colormap with ', num2str(n), ' Colors']);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.14.0  | initial version |
+| 1.14.0   | initial version |
 
 <!--
 ## 👤 Author

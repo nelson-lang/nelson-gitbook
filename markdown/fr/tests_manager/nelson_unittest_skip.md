@@ -10,8 +10,10 @@ Ignorer le test courant.
 
 ## 📄 Description
 
-<b>nelson.unittest.skip</b> marque le test courant comme ignore. <b>skip_testsuite</b> est l'alias de compatibilite.
+
+<b>nelson.unittest.skip</b> marque le test courant comme ignore. <b>skip\_testsuite</b> est l'alias de compatibilite.
+
 
 ## 🔗 Voir aussi
 
-[skip_testsuite](../tests_manager/skip_testsuite.md), [nelson.unittest.assume](../tests_manager/nelson.unittest.assume.md).
+[skip_testsuite](../tests_manager/test_skip_testsuite.md), [nelson.unittest.assume](../tests_manager/nelson_unittest_assume.md).

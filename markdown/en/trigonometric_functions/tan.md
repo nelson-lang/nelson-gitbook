@@ -16,22 +16,28 @@ Computes the tangent in radians for each element of x.
 
 ## 📄 Description
 
-<b>tan</b> computes the tangent in radians for each element of <b>x</b>.
 
-The tangent function is defined as:
+<b>tan</b> computes the tangent in radians for each element of <b>x</b>. 
+
+The tangent function is defined as: 
 $$\tan(x) = \frac{\sin(x)}{\cos(x)} = \frac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})}$$
+ 
 
-It has vertical asymptotes at
+It has vertical asymptotes at 
 $$x = \frac{\pi}{2} + n\pi$$
+ 
 
 for integer <b>n</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 A = eye(3, 3);
 res = tan(A)
 ```
+
 
 ## 🔗 See also
 
@@ -39,7 +45,7 @@ res = tan(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

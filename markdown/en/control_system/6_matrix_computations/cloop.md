@@ -21,11 +21,14 @@ Feedback connection of multiple models.
 
 ## 📄 Description
 
-<b>cloop</b> forms the closed-loop system when unity feedback is used.
+
+<b>cloop</b> forms the closed-loop system when unity feedback is used. 
 
 This function is deprecated and has limitations, please see <b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".
 
 ## 💡 Example
+
+
 
 ```matlab
 m = 1000;
@@ -43,13 +46,14 @@ R = cloop(sys, OUTPUTS, INPUTS)
 
 ```
 
+
 ## 🔗 See also
 
-[feedback](../../control_system/feedback.md), [append](../../control_system/append.md), [ssselect](../../control_system/ssselect.md).
+[feedback](../../control_system/2_model_conversion_interconnection/feedback.md), [append](../../control_system/2_model_conversion_interconnection/append.md), [ssselect](../../control_system/2_model_conversion_interconnection/ssselect.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,29 +16,35 @@ Sélectionne une sortie d'action à partir d'une expression booléenne sur les e
 
 ## 📄 Description
 
-Sélectionne une sortie d'action à partir d'une expression booléenne sur les entrées.
 
-La clause if et chaque clause elseif sont évaluées dans l'ordre sur les entrées <code>u1..un</code> ; la première clause vraie met sa sortie à <code>1.0</code> et toutes les autres à <code>0.0</code>. Avec <code>ShowElse</code> à <code>on</code>, un résultat entièrement faux pilote la dernière sortie (else). La grammaire d'expression est restreinte : comparaisons (<code>< <= > >= == ~=</code>), logique (<code>& | ~</code>), parenthèses, moins unaire, littéraux numériques et entrées <code>u<k></code>. Ces sorties servent à activer des sous-systèmes d'action.
+Sélectionne une sortie d'action à partir d'une expression booléenne sur les entrées. 
 
-<b>Paramètres</b>
+La clause if et chaque clause elseif sont évaluées dans l'ordre sur les entrées <code>u1..un</code> ; la première clause vraie met sa sortie à <code>1.0</code> et toutes les autres à <code>0.0</code>. Avec <code>ShowElse</code> à <code>on</code>, un résultat entièrement faux pilote la dernière sortie (else). La grammaire d'expression est restreinte : comparaisons (<code>< <= > >= == ~=</code>), logique (<code>& | ~</code>), parenthèses, moins unaire, littéraux numériques et entrées <code>u<k></code>. Ces sorties servent à activer des sous-systèmes d'action. 
 
-| Paramètre                      | Valeur par défaut                            |
-| ------------------------------ | -------------------------------------------- |
-| <code>IfExpression</code>      | u1 > 0                                       |
-| <code>ElseIfExpressions</code> | (séparées par des virgules, vide par défaut) |
-| <code>ShowElse</code>          | on                                           |
+<b>Paramètres</b> 
 
-<b>Caractéristiques du bloc</b>
+| Paramètre | Valeur par défaut | 
+| --- | --- | 
+| <code>IfExpression</code> | u1 > 0 | 
+| <code>ElseIfExpressions</code> | (séparées par des virgules, vide par défaut) | 
+| <code>ShowElse</code> | on | 
 
-| Champ        | Valeur         |
-| ------------ | -------------- |
-| Type de bloc | if             |
-| Famille      | Blocs logiques |
-| Phases       | ALGEBRAIC      |
+ 
 
-<b>Capacites etendues</b>
+<b>Caractéristiques du bloc</b> 
+
+| Champ | Valeur |
+| --- | --- |
+| Type de bloc | if | 
+| Famille | Blocs logiques | 
+| Phases | ALGEBRAIC | 
+
+ 
+
+<b>Capacites etendues</b> 
 
 Generation de code : prise en charge pour C et Rust.
+
 
 ## 🔗 Voir aussi
 
@@ -46,8 +52,8 @@ Generation de code : prise en charge pour C et Rust.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

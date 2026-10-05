@@ -16,14 +16,18 @@ string array constructor.
 
 ## 📄 Description
 
+
 <b>string</b> converts input into string array.
 
 ## 💡 Examples
+
+
 
 ```matlab
 R = string({'these', 'are'; 'test', 'strings'})
 R2 = ["these", "are"; "test", "strings"];
 ```
+
 
 ```matlab
 M = [ 104   101   108   108   111;
@@ -32,13 +36,14 @@ R = string(M)
 D = double(R)
 ```
 
+
 ## 🔗 See also
 
-[strings](../../string/strings.md), [double](../../double/double.md).
+[strings](../../string/1_create_convert_text/strings.md), [double](../../double/double.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

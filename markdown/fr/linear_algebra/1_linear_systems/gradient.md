@@ -22,17 +22,20 @@ Gradient numérique.
 
 ## 📄 Description
 
-<b>gradient(F)</b> calcule le gradient numérique unidimensionnel du vecteur ou de la matrice F.
 
-La sortie FX représente les différences dans la direction x (horizontale), correspondant à ∂F/∂x.
+<b>gradient(F)</b> calcule le gradient numérique unidimensionnel du vecteur ou de la matrice F. 
 
-Elle suppose que l'espacement entre les points est 1.
+La sortie FX représente les différences dans la direction x (horizontale), correspondant à ∂F/∂x. 
 
-<b>gradient(F, h)</b> permet de spécifier un espacement uniforme h entre les points dans chaque direction.
+Elle suppose que l'espacement entre les points est 1. 
+
+<b>gradient(F, h)</b> permet de spécifier un espacement uniforme h entre les points dans chaque direction. 
 
 Cet espacement uniforme peut également être spécifié individuellement pour chaque dimension de F en utilisant <b>gradient(F, hx, hy, ..., hN)</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [X, Y] = meshgrid(-2:0.2:2);
@@ -41,14 +44,15 @@ Z = X .* exp(-X.^2 - Y.^2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[diff](../../linear_algebra/diff.md).
+[diff](../../linear_algebra/1_linear_systems/diff.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.3.0   | version initiale |
 
 <!--

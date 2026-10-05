@@ -22,9 +22,12 @@ Réponse impulsionnelle d'un filtre numérique.
 
 ## 📄 Description
 
+
 <b>impz</b> filtre une impulsion unité avec le filtre défini par B et A.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ Réponse impulsionnelle d'un filtre numérique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[stepz](../../signal_processing/stepz.md).
+[stepz](../../signal_processing/4_digital_filters/stepz.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

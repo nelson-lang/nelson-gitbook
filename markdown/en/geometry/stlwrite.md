@@ -10,7 +10,8 @@ Create STL file from triangulation
 
 ## 📄 Description
 
-<b>stlwrite</b> writes a <b>triangulation</b> object to a binary STL file by default.
+
+<b>stlwrite</b> writes a <b>triangulation</b> object to a binary STL file by default. 
 
 <b>fileformat</b> can be <b>'binary'</b> or <b>'text'</b>. Use <b>'Attribute'</b> with binary files to write one <b>uint16</b> value per triangle. Use <b>'SolidIndex'</b> with text files to group triangles into solid sections.
 
@@ -26,14 +27,15 @@ filename = [tempdir(), 'simple_text.stl'];
 stlwrite(TR, filename, 'text')
 ```
 
+
 ## 🔗 See also
 
 [stlread](../geometry/stlread.md), [triangulation](../geometry/triangulation.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

@@ -26,9 +26,12 @@ Transformee de Fourier court terme.
 
 ## 📄 Description
 
+
 <b>stft</b> decoupe le vecteur d'entree en trames fenetrees recouvrantes puis calcule une FFT par trame. La sortie peut etre centree, bilaterale ou unilaterale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,14 +39,15 @@ Transformee de Fourier court terme.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[istft](../../signal_processing/istft.md), [spectrogram](../../signal_processing/spectrogram.md).
+[istft](../../signal_processing/6_time_frequency_analysis/istft.md), [spectrogram](../../signal_processing/6_time_frequency_analysis/spectrogram.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

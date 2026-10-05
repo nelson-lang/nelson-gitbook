@@ -16,14 +16,18 @@ Inverse hyperbolic cosine.
 
 ## 📄 Description
 
+
 <b>acosh</b> computes the inverse hyperbolic cosine.
 
 ## 💡 Example
+
+
 
 ```matlab
 A =  [1+2i, 2, -3];
 res = acosh(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ res = acosh(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

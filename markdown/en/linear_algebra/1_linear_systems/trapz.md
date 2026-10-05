@@ -21,26 +21,30 @@ Trapezoidal numerical integration.
 
 ## 📄 Description
 
-<b>trapz(Y)</b> computes the approximate integral of <b>Y</b> using the trapezoidal method with unit spacing, along the first non-singleton dimension.
 
-<b>trapz(X, Y)</b> integrates <b>Y</b> with respect to the coordinates given by <b>X</b>.
+<b>trapz(Y)</b> computes the approximate integral of <b>Y</b> using the trapezoidal method with unit spacing, along the first non-singleton dimension. 
+
+<b>trapz(X, Y)</b> integrates <b>Y</b> with respect to the coordinates given by <b>X</b>. 
 
 Use <b>dim</b> to integrate along a specific dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:0.1:pi;
 Z = trapz(x, sin(x))
 ```
 
+
 ## 🔗 See also
 
-[cumtrapz](../cumtrapz.md), [sum](../../data_analysis/sum.md).
+[cumtrapz](../1_linear_systems/cumtrapz.md), [sum](../../data_analysis/sum.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

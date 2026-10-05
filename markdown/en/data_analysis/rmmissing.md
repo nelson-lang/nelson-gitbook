@@ -18,19 +18,24 @@ Remove missing data.
 
 ## 📄 Description
 
+
 <b>rmmissing</b> removes missing data from arrays and removes rows or variables containing missing values from tables.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = [1 NaN; 2 3; NaN 4];
 B = rmmissing(A)
 ```
 
+
 ```matlab
 T = table([1; NaN; 3], {'a'; ''; 'c'}, 'VariableNames', {'A', 'B'});
 R = rmmissing(T)
 ```
+
 
 ## 🔗 See also
 
@@ -38,7 +43,7 @@ R = rmmissing(T)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

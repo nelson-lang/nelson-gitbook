@@ -19,7 +19,8 @@ Definit un type tableau de longueur variable netCDF.
 
 ## 📄 Description
 
-netcdf.defVlen expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.defVlen expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -35,14 +36,15 @@ typeid = netcdf.defVlen(ncid, 'sample_vlen', netcdf.getConstant('NC_DOUBLE'));
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.getConstant](../netcdf/netcdf.getConstant.md), [netcdf.defVar](../netcdf/netcdf.defVar.md).
+[netcdf.getConstant](../netcdf/netcdf_getConstant.md), [netcdf.defVar](../netcdf/netcdf_defVar.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

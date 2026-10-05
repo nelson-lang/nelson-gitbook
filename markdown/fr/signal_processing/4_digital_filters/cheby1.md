@@ -22,9 +22,12 @@ Conception de filtre numerique Chebyshev type I.
 
 ## 📄 Description
 
+
 <b>cheby1</b> concoit des filtres numeriques Chebyshev type I passe-bas, passe-haut, passe-bande et coupe-bande.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ Conception de filtre numerique Chebyshev type I.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[butter](../../signal_processing/butter.md), [cheb1ord](../../signal_processing/cheb1ord.md).
+[butter](../../signal_processing/4_digital_filters/butter.md), [cheb1ord](../../signal_processing/4_digital_filters/cheb1ord.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -26,23 +26,28 @@ Sparse matrix definition.
 
 ## 📄 Description
 
-<b>sparse</b> is used to build a sparse matrix. Only non-zero entries are stored.
 
-If <b>M</b> is a full matrix,<b>sparse</b> converts it to a sparse matrix representation, removing all zero values.
+<b>sparse</b> is used to build a sparse matrix. Only non-zero entries are stored. 
 
-If nz is not specified,<b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)])
+If <b>M</b> is a full matrix,<b>sparse</b> converts it to a sparse matrix representation, removing all zero values. 
+
+If nz is not specified,<b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)]) 
 
 If multiple values are specified with the same i, j indices, the associated value will be the sum of the values at the repeated index.
 
 ## 💡 Examples
 
+
+
 ```matlab
 sp = sparse(eye(3,3))
 ```
 
+
 ```matlab
 sp = sparse(3, 3)
 ```
+
 
 ```matlab
 I = [1 2 3];
@@ -51,6 +56,7 @@ V = [32 42 53];
 sp = sparse(I, J, V)
 size(sp)
 ```
+
 
 ```matlab
 I = [1 2 3];
@@ -62,6 +68,7 @@ nnz(sp)
 nzmax(sp)
 ```
 
+
 ```matlab
 I = [1 2 3];
 J = [3 1 2];
@@ -72,13 +79,14 @@ nnz(sp)
 nzmax(sp)
 ```
 
+
 ## 🔗 See also
 
 [full](../sparse/full.md), [IJV](../sparse/IJV.md), [nnz](../sparse/nnz.md), [nzmax](../sparse/nzmax.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

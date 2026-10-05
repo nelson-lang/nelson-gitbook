@@ -8,9 +8,11 @@ Fonction utilitaire pour les séries temporelles.
 
 ## 📄 Description
 
+
 <b>resample</b> opère sur des objets timeseries ou tscollection.
 
 ## 💡 Exemple
+
 
 ```matlab
 count1 = timeseries([11; 7; 14; 11], (1:4)', 'Name', 'Intersection1');
@@ -23,14 +25,15 @@ tsc1.Intersection1.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md), [tscollection](../../time/tscollection.md).
+[timeseries](../../time/8_timeseries/timeseries.md), [tscollection](../../time/8_timeseries/tscollection.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

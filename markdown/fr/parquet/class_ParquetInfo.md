@@ -16,13 +16,16 @@ Objet de metadonnees retourne par parquetinfo.
 
 ## 📄 Description
 
-<b>nelson.io.parquet.ParquetInfo</b> stocke les metadonnees retournees par <b>parquetinfo</b>.
 
-Les proprietes sont <b>Filename</b>, <b>FileSize</b>, <b>NumRows</b>, <b>NumVariables</b>, <b>NumRowGroups</b>, <b>RowGroups</b>, <b>Variables</b>, <b>CreatedBy</b> et la propriete dependante <b>VariableNames</b>.
+<b>nelson.io.parquet.ParquetInfo</b> stocke les metadonnees retournees par <b>parquetinfo</b>. 
+
+Les proprietes sont <b>Filename</b>, <b>FileSize</b>, <b>NumRows</b>, <b>NumVariables</b>, <b>NumRowGroups</b>, <b>RowGroups</b>, <b>Variables</b>, <b>CreatedBy</b> et la propriete dependante <b>VariableNames</b>. 
 
 <b>RowGroups</b> est une table contenant les metadonnees des groupes de lignes. <b>Variables</b> est une structure contenant les noms de variables, les types Parquet et les informations de compression.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 filename = [tempdir(), 'doc_ParquetInfo.parquet'];
@@ -34,14 +37,15 @@ info.Filename
 info.VariableNames
 ```
 
+
 ## 🔗 Voir aussi
 
 [parquetinfo](../parquet/parquetinfo.md), [parquetread](../parquet/parquetread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -14,14 +14,18 @@ Skip a test when a runtime assumption is not satisfied.
 
 ## 📄 Description
 
+
 <b>nelson.unittest.assume</b> marks the current test as skipped when a runtime prerequisite is false.
 
 ## 💡 Example
+
+
 
 ```matlab
 nelson.unittest.assume(ispc(), 'Requires Windows');
 ```
 
+
 ## 🔗 See also
 
-[nelson.unittest.skip](../tests_manager/nelson.unittest.skip.md), [skip_testsuite](../tests_manager/skip_testsuite.md).
+[nelson.unittest.skip](../tests_manager/nelson_unittest_skip.md), [skip_testsuite](../tests_manager/test_skip_testsuite.md).

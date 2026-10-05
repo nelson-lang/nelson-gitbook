@@ -18,11 +18,14 @@ Crée un nombre complexe.
 
 ## 📄 Description
 
-<b>complex</b> renvoie une valeur complexe à partir d'arguments réels.
+
+<b>complex</b> renvoie une valeur complexe à partir d'arguments réels. 
 
 Avec un seul argument d'entrée,<b>complex</b> renvoie la valeur complexe a + 0\*i.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 z = complex(3, 2)
@@ -30,14 +33,15 @@ z2 = complex(Inf, Inf)
 z3 = Inf + Inf * i
 ```
 
+
 ## 🔗 Voir aussi
 
-[real](../../elementary_functions/real.md), [imag](../../elementary_functions/imag.md).
+[real](../../elementary_functions/3_complex_numbers/real.md), [imag](../../elementary_functions/3_complex_numbers/imag.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

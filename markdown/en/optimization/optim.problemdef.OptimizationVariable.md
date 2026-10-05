@@ -19,13 +19,16 @@ Variable for optimization expressions.
 
 ## 📄 Description
 
-optim.problemdef.OptimizationVariable represents scalar or array variables used to build optimization expressions.
+
+optim.problemdef.OptimizationVariable represents scalar or array variables used to build optimization expressions. 
 
 Create variables with optimvar, then combine them into objectives and constraints.
 
 ## Used function(s)
 
+
     optimvar
+  
 
 ## 💡 Example
 
@@ -36,13 +39,14 @@ x = optimvar('x', 2, 1, 'LowerBound', 0);
 expr = (x(1) - 1)^2 + (x(2) - 2)^2
 ```
 
+
 ## 🔗 See also
 
 [optimvar](../optimization/optimvar.md), [optimexpr](../optimization/optimexpr.md), [optimproblem](../optimization/optimproblem.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

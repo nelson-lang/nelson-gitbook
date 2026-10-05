@@ -24,11 +24,12 @@ Objet graphique en secteurs.
 
 ## 📄 Description
 
-<b>piechart(data)</b> cree un objet graphique en secteurs dans la figure courante.
 
-L'objet expose les proprietes de donnees, etiquettes, couleurs, traits, police, legende, visibilite, disposition et ordre d'affichage. Les valeurs affichees sont recalculees quand les donnees ou les proprietes d'affichage changent.
+<b>piechart(data)</b> cree un objet graphique en secteurs dans la figure courante. 
 
-<b>FaceColor</b> peut valoir <b>flat</b>, <b>none</b> ou une couleur RGB. <b>FaceAlpha</b>, <b>EdgeColor</b> et <b>LineWidth</b> modifient le rendu des secteurs. <b>Proportions</b>, <b>CategoryCounts</b>, <b>WedgeDisplayData</b> et <b>WedgeDisplayNames</b> sont des proprietes derivees en lecture seule.
+L'objet expose les proprietes de donnees, etiquettes, couleurs, traits, police, legende, visibilite, disposition et ordre d'affichage. Les valeurs affichees sont recalculees quand les donnees ou les proprietes d'affichage changent. 
+
+<b>FaceColor</b> peut valoir <b>flat</b>, <b>none</b> ou une couleur RGB. <b>FaceAlpha</b>, <b>EdgeColor</b> et <b>LineWidth</b> modifient le rendu des secteurs. <b>Proportions</b>, <b>CategoryCounts</b>, <b>WedgeDisplayData</b> et <b>WedgeDisplayNames</b> sont des proprietes derivees en lecture seule. 
 
 Voir [proprietes de piechart](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.piechart.properties.md) pour la liste complete des proprietes.
 
@@ -40,7 +41,6 @@ Graphique en secteurs avec etiquettes en pourcentage.
 figure('Color', [1 1 1]);
 p = piechart([1 2 3 4]);
 ```
-
 <img src="piechart_1.svg" align="middle"/>
 Secteurs nommes avec legende.
 
@@ -49,7 +49,6 @@ figure('Color', [1 1 1]);
 p = piechart([4 3 2], ["A", "B", "C"], 'LegendVisible', 'on', ...
   'LegendTitle', 'Names', 'FaceAlpha', 0.7);
 ```
-
 <img src="piechart_2.svg" align="middle"/>
 Secteurs sans remplissage.
 
@@ -58,8 +57,8 @@ figure('Color', [1 1 1]);
 p = piechart([3 2 1], 'FaceColor', 'none', 'EdgeColor', [0 0 0], ...
   'LineWidth', 2);
 ```
-
 <img src="piechart_3.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -67,8 +66,8 @@ p = piechart([3 2 1], 'FaceColor', 'none', 'EdgeColor', [0 0 0], ...
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

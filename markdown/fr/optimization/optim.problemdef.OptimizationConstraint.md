@@ -18,14 +18,17 @@ Contraintes d'optimisation.
 
 ## 📄 Description
 
-optim.problemdef.OptimizationConstraint represente des contraintes construites a partir de variables et d'expressions d'optimisation.
+
+optim.problemdef.OptimizationConstraint represente des contraintes construites a partir de variables et d'expressions d'optimisation. 
 
 Les contraintes sont attachees a un OptimizationProblem via sa propriete Constraints.
 
 ## Fonction(s) utilisée(s)
 
+
     optimvar
     optimproblem
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ x = optimvar('x', 2, 1, 'LowerBound', 0);
 constr = x(1) + x(2) <= 4
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimconstr](../optimization/optimconstr.md), [optimproblem](../optimization/optimproblem.md), [solve](../optimization/solve.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,7 +18,8 @@ Verifie qu'une valeur est scalaire.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value est scalaire.
+
+L'assertion reussit lorsque value est scalaire. 
 
 Les diagnostics incluent les dimensions calculees.
 
@@ -29,12 +30,12 @@ Scalar value
 ```matlab
 asserts.scalar(1);
 ```
-
 Capture a non-scalar value
 
 ```matlab
 [res, msg] = asserts.scalar([1 2]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a non-scalar value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

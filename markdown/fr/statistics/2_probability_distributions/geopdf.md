@@ -17,23 +17,27 @@ Probabilite de la loi geometrique
 
 ## 📄 Description
 
+
 <b>geopdf</b> evalue les probabilites geometriques element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 5];
 y = geopdf(x, 0.25);
 ```
 
+
 ## 🔗 Voir aussi
 
-[geocdf](../../statistics/geocdf.md), [geoinv](../../statistics/geoinv.md), [geornd](../../statistics/geornd.md), [geostat](../../statistics/geostat.md).
+[geocdf](../../statistics/2_probability_distributions/geocdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md), [geornd](../../statistics/2_probability_distributions/geornd.md), [geostat](../../statistics/2_probability_distributions/geostat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

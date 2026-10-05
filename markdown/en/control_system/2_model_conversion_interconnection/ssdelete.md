@@ -20,9 +20,12 @@ Remove inputs, outputs and states from state-space system.
 
 ## 📄 Description
 
+
 <b>ssdelete</b> removes inputs, outputs and states from state-space system.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [33,2,5; 23,200,2; 9,2,45];
@@ -36,13 +39,14 @@ outputs = 1;
 R = ssdelete(sys1, inputs, outputs)
 ```
 
+
 ## 🔗 See also
 
-[ssselect](../../control_system/ssselect.md).
+[ssselect](../../control_system/2_model_conversion_interconnection/ssselect.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

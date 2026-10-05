@@ -29,17 +29,20 @@ LSQR method for sparse linear equations and least squares.
 
 ## 📄 Description
 
-<b>lsqr</b> solves sparse linear equations and least-squares problems using a Lanczos bidiagonalization method.
 
-The method supports square and rectangular sparse double, single, complex double, and complex single matrices.
+<b>lsqr</b> solves sparse linear equations and least-squares problems using a Lanczos bidiagonalization method. 
 
-<b>M1</b> and <b>M2</b> are right preconditioners. They can be diagonal vectors, sparse or dense square matrices, or function handles accepting a vector and the transpose flag <b>'notransp'</b> or <b>'transp'</b>.
+The method supports square and rectangular sparse double, single, complex double, and complex single matrices. 
 
-If any compatible input, preconditioner, or initial guess is complex, the iteration is performed in the matching complex class.
+<b>M1</b> and <b>M2</b> are right preconditioners. They can be diagonal vectors, sparse or dense square matrices, or function handles accepting a vector and the transpose flag <b>'notransp'</b> or <b>'transp'</b>. 
+
+If any compatible input, preconditioner, or initial guess is complex, the iteration is performed in the matching complex class. 
 
 <b>resvec</b> stores residual norms and <b>lsvec</b> stores normal-equation residual norms for each iteration.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = sparse([1 0; 0 1; 1 1; 2 -1]);
@@ -47,7 +50,6 @@ b = [1; 2; 4; 1];
 [x, flag, relres, iter] = lsqr(A, b, 1e-12, 20)
 
 ```
-
 Least-squares solve with split right preconditioners.
 
 ```matlab
@@ -58,15 +60,16 @@ M2 = [1 0.5; 0 3];
 [x, flag, relres, iter] = lsqr(A, b, 1e-12, 20, M1, M2)
 ```
 
+
 ## 🔗 See also
 
-[lsmr](../../linear_algebra/lsmr.md), [gmres](../../linear_algebra/gmres.md), [bicgstab](../../linear_algebra/bicgstab.md).
+[lsmr](../../linear_algebra/6_iterative_solvers/lsmr.md), [gmres](../../linear_algebra/6_iterative_solvers/gmres.md), [bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                   |
-| ------- | ------------------------------------------------------------------------------------------------ |
-| 2.0.0   | initial version                                                                                  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | added single, complex single, right-preconditioner, initial guess, and residual-history coverage |
 
 <!--

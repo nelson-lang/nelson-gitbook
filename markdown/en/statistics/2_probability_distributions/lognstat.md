@@ -18,21 +18,25 @@ Lognormal mean and variance
 
 ## 📄 Description
 
+
 <b>lognstat</b> returns the element-wise mean and variance of lognormal distributions.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = lognstat(0, 1);
 ```
 
+
 ## 🔗 See also
 
-[lognpdf](../../statistics/lognpdf.md), [lognrnd](../../statistics/lognrnd.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [lognrnd](../../statistics/2_probability_distributions/lognrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

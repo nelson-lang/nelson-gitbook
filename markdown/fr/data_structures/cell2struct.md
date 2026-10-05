@@ -19,9 +19,12 @@ Créer un struct à partir d'un tableau cellulaire.
 
 ## 📄 Description
 
+
 <b>st = cell2struct(ce, fields)</b> crée un struct à partir d'un tableau cellulaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
@@ -29,14 +32,15 @@ fields = {'Height','Name'}
 A = cell2struct (ce, fields, 1)
 ```
 
+
 ## 🔗 Voir aussi
 
 [cell](../data_structures/cell.md), [struct](../data_structures/struct.md), [struct2cell](../data_structures/struct2cell.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

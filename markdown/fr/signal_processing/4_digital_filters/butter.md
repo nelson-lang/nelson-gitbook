@@ -22,9 +22,12 @@ Conception de filtre numérique de Butterworth.
 
 ## 📄 Description
 
+
 <b>butter</b> conçoit un filtre numérique IIR de Butterworth.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -33,14 +36,15 @@ Conception de filtre numérique de Butterworth.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[buttord](../../signal_processing/buttord.md), [freqz](../../signal_processing/freqz.md).
+[buttord](../../signal_processing/4_digital_filters/buttord.md), [freqz](../../signal_processing/4_digital_filters/freqz.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

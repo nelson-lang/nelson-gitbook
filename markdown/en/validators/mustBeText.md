@@ -15,9 +15,12 @@ Checks that value is piece of text or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeText</b> that value is piece of text or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeText('true')
@@ -25,13 +28,14 @@ mustBeText(["f", "ff"])
 mustBeText("hello")
 ```
 
+
 ## 🔗 See also
 
 [ischar](../types/ischar.md), [isstring](../types/isstring.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

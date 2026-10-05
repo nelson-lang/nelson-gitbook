@@ -1,10 +1,10 @@
-# audioplayer_fieldnames
+# audioplayer\_fieldnames
 
 Returns the properties name of an audioplayer object.
 
 ## 📝 Syntax
 
-- l = audioplayer_fieldnames(h)
+- l = audioplayer\_fieldnames(h)
 - l = fieldnames(h)
 
 ## 📥 Input argument
@@ -16,10 +16,11 @@ Returns the properties name of an audioplayer object.
 - l - a cell of strings.
 
 ## 📄 Description
-
 <b>fieldnames</b> returns a cell of strings with properties name.
 
 ## 💡 Example
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -29,13 +30,14 @@ delete(playObj)
 clear playObj
 ```
 
+
 ## 🔗 See also
 
 [audioplayer_set](../audio/audioplayer_set.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,9 +16,12 @@ Checks if dynamic system model is in discrete time.
 
 ## 📄 Description
 
+
 Checks if dynamic system model is in discrete time.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -31,13 +34,14 @@ sys2 = ss(A, B, C, D, 0.2);
 isdt(sys2)
 ```
 
+
 ## 🔗 See also
 
-[isct](../../control_system/isct.md).
+[isct](../../control_system/1_dynamic_system_models/isct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

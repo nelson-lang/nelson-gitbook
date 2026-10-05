@@ -1,15 +1,22 @@
 # Operators
 
+
+    
 The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.
 
+    
 It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.
 
+    
 This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.
+
+  
 
 ## Functions
 
 - [all](all.md) - all of the elements of a matrix satisfy some condition.
 - [and](and.md) - logical 'AND' operator, &
+  
 - [any](any.md) - any of the elements of a matrix satisfy some condition.
 - [bitand](bitand.md) - Bit-wise AND
 - [bitget](bitget.md) - Get selected bits.
@@ -30,7 +37,7 @@ This module enables flexible manipulation of data structures and numerical array
 - [mldivide](mldivide.md) - Matrix left division, \ operator.
 - [mpower](mpower.md) - Matrix power, ^ operator
 - [mrdivide](mrdivide.md) - Matrix right division, / operator.
-- [mtimes](mtimes.md) - Matrix multiplication, \* operator
+- [mtimes](mtimes.md) - Matrix multiplication, * operator
 - [ne](ne.md) - Inequality, ~= operator
 - [not](not.md) - not logical, ~ operator
 - [or](or.md) - logical 'OR' operator, |
@@ -38,13 +45,15 @@ This module enables flexible manipulation of data structures and numerical array
 - [power](power.md) - Element wise power, .^ operator
 - [rdivide](rdivide.md) - Right division, ./ operator
 - [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &
-  &
+    &
+  
 - [shortcutor](shortcutor.md) - Short circuit 'OR' operator, ||
 - [subsasgn](subsasgn.md) - Redefine subscripted assignment.
 - [subsindex](subsindex.md) - Convert an object to an index vector.
 - [subsref](subsref.md) - Subscripted reference.
-- [mtimes](times.md) - Element wise multiplication, .\* operator
+- [mtimes](times.md) - Element wise multiplication, .* operator
 - [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.
 - [uminus](uminus.md) - Unary minus, - operator
 - [uplus](uplus.md) - Unary plus, + operator
 - [vertcat](vertcat.md) - Vertical concatenation.
+

@@ -4,66 +4,69 @@ Proprietes de l'objet graphique scatterhistogram.
 
 ## 📄 Description
 
-Cette page documente les proprietes visibles retournees par <b>properties</b> pour un objet graphique <b>scatterhistogram</b>.
 
-| Propriete                 | Action                                                                          | Type et valeurs prises en charge                                                                                                                         |
-| ------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Annotation**            | stocke les metadonnees d'annotation pour les outils graphiques.                 | Type: objet d'annotation graphique ou handle vide. Valeurs prises en charge: objet d'annotation ou handle graphique vide.                                |
-| **BeingDeleted**          | indique si une suppression est en cours.                                        | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'off', 'on'.                                                             |
-| **BinWidths**             | stocke les largeurs de classes des histogrammes.                                | Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies positives [xWidth yWidth].                                                  |
-| **BusyAction**            | controle la mise en file des callbacks pendant l'execution d'un autre callback. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'queue', 'cancel'.                                                       |
-| **ButtonDownFcn**         | s'execute quand le graphique recoit un evenement bouton souris.                 | Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.                      |
-| **Children**              | liste les enfants graphiques appartenant au graphique.                          | Type: graphics object handle vector. Valeurs prises en charge: vecteur vide ou handles enfants.                                                          |
-| **Color**                 | definit la couleur des marqueurs du nuage.                                      | Type: triplet RGB ou nom de couleur. Valeurs prises en charge: vecteur numerique 1-by-3 ou nom de couleur comme 'r', 'g' ou 'blue'.                      |
-| **ContextMenu**           | attache un menu contextuel au graphique.                                        | Type: graphics object handle scalar. Valeurs prises en charge: [] ou handle uicontextmenu.                                                               |
-| **CreateFcn**             | s'execute lors de la creation du graphique.                                     | Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.                      |
-| **DeleteFcn**             | s'execute lors de la suppression du graphique.                                  | Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.                      |
-| **DisplayName**           | definit le libelle utilise par les outils de legende.                           | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.                     |
-| **FontName**              | definit la famille de police du texte.                                          | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: noms de polices installees ou ''.                                        |
-| **FontSize**              | definit la taille du texte.                                                     | Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives.                                                                       |
-| **GroupData**             | stocke les donnees de groupement.                                               | Type: vecteur. Valeurs prises en charge: [] ou une valeur par point.                                                                                     |
-| **GroupVariable**         | stocke la variable de table utilisee pour le groupement.                        | Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source.                                  |
-| **HandleVisibility**      | controle la decouverte du handle par les recherches graphiques.                 | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off', 'callback'.                                                 |
-| **HistogramDisplayStyle** | definit le style des histogrammes marginaux.                                    | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'bar', 'stairs'.                                                         |
-| **HitTest**               | controle si le graphique repond aux clics souris.                               | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **InnerPosition**         | stocke le rectangle interne du graphique.                                       | Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height].                                               |
-| **Interruptible**         | controle l'interruption des callbacks en cours.                                 | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **Layout**                | stocke les informations de placement dans une disposition en tuiles.            | Type: graphics object handle scalar. Valeurs prises en charge: [] ou handle d'options de layout.                                                         |
-| **LegendTitle**           | definit le titre de la legende de groupes.                                      | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.                     |
-| **LegendVisible**         | controle l'affichage de la legende de groupes.                                  | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **LineStyle**             | definit le style de ligne du nuage.                                             | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: '-', '--', ':', '-.', 'none'.                                            |
-| **LineWidth**             | definit la largeur de ligne du nuage.                                           | Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives.                                                                       |
-| **MarkerAlpha**           | definit la transparence des marqueurs.                                          | Type: scalaire numerique fini. Valeurs prises en charge: valeurs de 0 a 1.                                                                               |
-| **MarkerFilled**          | controle si les marqueurs sont remplis.                                         | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **MarkerSize**            | definit la taille des marqueurs.                                                | Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives.                                                                       |
-| **MarkerStyle**           | definit le style des marqueurs.                                                 | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'o', '+', '\*', '.', 'x', 'square' et autres symboles.                   |
-| **NumBins**               | definit le nombre de classes dans les deux histogrammes marginaux.              | Type: entier positif scalaire ou vecteur numerique a deux elements. Valeurs prises en charge: entiers finis positifs.                                    |
-| **OuterPosition**         | stocke le rectangle externe du graphique.                                       | Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height].                                               |
-| **Parent**                | stocke le parent graphique.                                                     | Type: graphics object handle scalar. Valeurs prises en charge: handle de figure.                                                                         |
-| **PickableParts**         | controle quelles parties visibles peuvent etre selectionnees.                   | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'visible', 'all', 'none'.                                                |
-| **Position**              | stocke le rectangle de position du graphique.                                   | Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height].                                               |
-| **PositionConstraint**    | choisit le rectangle de position conserve pendant la mise en page.              | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'outerposition', 'innerposition'.                                        |
-| **ScatterPlotLocation**   | definit l'emplacement du nuage dans le graphique.                               | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'southwest', 'southeast', 'northwest', 'northeast'.                      |
-| **ScatterPlotProportion** | definit la proportion de surface du nuage.                                      | Type: scalaire numerique fini. Valeurs prises en charge: valeurs de 0 a 1.                                                                               |
-| **Selected**              | controle l'etat de selection.                                                   | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **SelectionHighlight**    | controle l'affichage du surlignage de selection.                                | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **SourceTable**           | stocke la table utilisee pour creer le graphique.                               | Type: table ou valeur vide. Valeurs prises en charge: [] ou table fournie a scatterhistogram.                                                            |
-| **Tag**                   | stocke un texte defini par l'utilisateur.                                       | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.                     |
-| **Title**                 | definit le titre du graphique.                                                  | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.                     |
-| **Type**                  | identifie le type d'objet graphique.                                            | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'scatterhistogram'.                                                      |
-| **Units**                 | definit les unites utilisees par les proprietes de position.                    | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'normalized', 'pixels', 'inches', 'centimeters', 'points', 'characters'. |
-| **UserData**              | stocke les donnees utilisateur attachees au graphique.                          | Type: toute valeur Nelson. Valeurs prises en charge: toute valeur.                                                                                       |
-| **Visible**               | controle la visibilite du graphique.                                            | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.                                                             |
-| **XData**                 | stocke les donnees x du nuage.                                                  | Type: vecteur numerique. Valeurs prises en charge: une valeur par point.                                                                                 |
-| **XHistogramDirection**   | definit la direction de l'histogramme x.                                        | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'up', 'down'.                                                            |
-| **XLabel**                | definit le libelle de l'axe x.                                                  | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.                     |
-| **XLimits**               | stocke les limites de l'axe x.                                                  | Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies croissantes [min max].                                                      |
-| **XVariable**             | stocke la variable de table utilisee pour les donnees x.                        | Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source.                                  |
-| **YData**                 | stocke les donnees y du nuage.                                                  | Type: vecteur numerique. Valeurs prises en charge: une valeur par point.                                                                                 |
-| **YHistogramDirection**   | definit la direction de l'histogramme y.                                        | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'left', 'right'.                                                         |
-| **YLabel**                | definit le libelle de l'axe y.                                                  | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.                     |
-| **YLimits**               | stocke les limites de l'axe y.                                                  | Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies croissantes [min max].                                                      |
-| **YVariable**             | stocke la variable de table utilisee pour les donnees y.                        | Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source.                                  |
+Cette page documente les proprietes visibles retournees par <b>properties</b> pour un objet graphique <b>scatterhistogram</b>. 
+
+| Propriete | Action | Type et valeurs prises en charge | 
+| --- | --- | --- | 
+| **Annotation** | stocke les metadonnees d'annotation pour les outils graphiques. | Type: objet d'annotation graphique ou handle vide. Valeurs prises en charge: objet d'annotation ou handle graphique vide. | 
+| **BeingDeleted** | indique si une suppression est en cours. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'off', 'on'. | 
+| **BinWidths** | stocke les largeurs de classes des histogrammes. | Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies positives [xWidth yWidth]. | 
+| **BusyAction** | controle la mise en file des callbacks pendant l'execution d'un autre callback. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'queue', 'cancel'. | 
+| **ButtonDownFcn** | s'execute quand le graphique recoit un evenement bouton souris. | Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback. | 
+| **Children** | liste les enfants graphiques appartenant au graphique. | Type: graphics object handle vector. Valeurs prises en charge: vecteur vide ou handles enfants. | 
+| **Color** | definit la couleur des marqueurs du nuage. | Type: triplet RGB ou nom de couleur. Valeurs prises en charge: vecteur numerique 1-by-3 ou nom de couleur comme 'r', 'g' ou 'blue'. | 
+| **ContextMenu** | attache un menu contextuel au graphique. | Type: graphics object handle scalar. Valeurs prises en charge: [] ou handle uicontextmenu. | 
+| **CreateFcn** | s'execute lors de la creation du graphique. | Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback. | 
+| **DeleteFcn** | s'execute lors de la suppression du graphique. | Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback. | 
+| **DisplayName** | definit le libelle utilise par les outils de legende. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire. | 
+| **FontName** | definit la famille de police du texte. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: noms de polices installees ou ''. | 
+| **FontSize** | definit la taille du texte. | Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives. | 
+| **GroupData** | stocke les donnees de groupement. | Type: vecteur. Valeurs prises en charge: [] ou une valeur par point. | 
+| **GroupVariable** | stocke la variable de table utilisee pour le groupement. | Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source. | 
+| **HandleVisibility** | controle la decouverte du handle par les recherches graphiques. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off', 'callback'. | 
+| **HistogramDisplayStyle** | definit le style des histogrammes marginaux. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'bar', 'stairs'. | 
+| **HitTest** | controle si le graphique repond aux clics souris. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **InnerPosition** | stocke le rectangle interne du graphique. | Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height]. | 
+| **Interruptible** | controle l'interruption des callbacks en cours. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **Layout** | stocke les informations de placement dans une disposition en tuiles. | Type: graphics object handle scalar. Valeurs prises en charge: [] ou handle d'options de layout. | 
+| **LegendTitle** | definit le titre de la legende de groupes. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire. | 
+| **LegendVisible** | controle l'affichage de la legende de groupes. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **LineStyle** | definit le style de ligne du nuage. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: '-', '--', ':', '-.', 'none'. | 
+| **LineWidth** | definit la largeur de ligne du nuage. | Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives. | 
+| **MarkerAlpha** | definit la transparence des marqueurs. | Type: scalaire numerique fini. Valeurs prises en charge: valeurs de 0 a 1. | 
+| **MarkerFilled** | controle si les marqueurs sont remplis. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **MarkerSize** | definit la taille des marqueurs. | Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives. | 
+| **MarkerStyle** | definit le style des marqueurs. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'o', '+', '\*', '.', 'x', 'square' et autres symboles. | 
+| **NumBins** | definit le nombre de classes dans les deux histogrammes marginaux. | Type: entier positif scalaire ou vecteur numerique a deux elements. Valeurs prises en charge: entiers finis positifs. | 
+| **OuterPosition** | stocke le rectangle externe du graphique. | Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height]. | 
+| **Parent** | stocke le parent graphique. | Type: graphics object handle scalar. Valeurs prises en charge: handle de figure. | 
+| **PickableParts** | controle quelles parties visibles peuvent etre selectionnees. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'visible', 'all', 'none'. | 
+| **Position** | stocke le rectangle de position du graphique. | Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height]. | 
+| **PositionConstraint** | choisit le rectangle de position conserve pendant la mise en page. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'outerposition', 'innerposition'. | 
+| **ScatterPlotLocation** | definit l'emplacement du nuage dans le graphique. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'southwest', 'southeast', 'northwest', 'northeast'. | 
+| **ScatterPlotProportion** | definit la proportion de surface du nuage. | Type: scalaire numerique fini. Valeurs prises en charge: valeurs de 0 a 1. | 
+| **Selected** | controle l'etat de selection. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **SelectionHighlight** | controle l'affichage du surlignage de selection. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **SourceTable** | stocke la table utilisee pour creer le graphique. | Type: table ou valeur vide. Valeurs prises en charge: [] ou table fournie a scatterhistogram. | 
+| **Tag** | stocke un texte defini par l'utilisateur. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire. | 
+| **Title** | definit le titre du graphique. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire. | 
+| **Type** | identifie le type d'objet graphique. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'scatterhistogram'. | 
+| **Units** | definit les unites utilisees par les proprietes de position. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'normalized', 'pixels', 'inches', 'centimeters', 'points', 'characters'. | 
+| **UserData** | stocke les donnees utilisateur attachees au graphique. | Type: toute valeur Nelson. Valeurs prises en charge: toute valeur. | 
+| **Visible** | controle la visibilite du graphique. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'. | 
+| **XData** | stocke les donnees x du nuage. | Type: vecteur numerique. Valeurs prises en charge: une valeur par point. | 
+| **XHistogramDirection** | definit la direction de l'histogramme x. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'up', 'down'. | 
+| **XLabel** | definit le libelle de l'axe x. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire. | 
+| **XLimits** | stocke les limites de l'axe x. | Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies croissantes [min max]. | 
+| **XVariable** | stocke la variable de table utilisee pour les donnees x. | Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source. | 
+| **YData** | stocke les donnees y du nuage. | Type: vecteur numerique. Valeurs prises en charge: une valeur par point. | 
+| **YHistogramDirection** | definit la direction de l'histogramme y. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'left', 'right'. | 
+| **YLabel** | definit le libelle de l'axe y. | Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire. | 
+| **YLimits** | stocke les limites de l'axe y. | Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies croissantes [min max]. | 
+| **YVariable** | stocke la variable de table utilisee pour les donnees y. | Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source. | 
+
+
 
 ## 💡 Exemple
 
@@ -73,6 +76,7 @@ Inspecter les proprietes de scatterhistogram.
 h = scatterhistogram(1:6, [2 3 2 4 5 4]);
 properties(h)
 ```
+
 
 ## 🔗 Voir aussi
 

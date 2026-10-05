@@ -19,9 +19,12 @@ Lower and upper matrix bandwidth.
 
 ## 📄 Description
 
+
 <b>[lower, upper] = bandwidth(A)</b> returns <b>lower</b> and<b>upper</b> bandwidths of matrix <b>A</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = [10 -20 40; -50 20 0; 10 0 30]
@@ -29,13 +32,14 @@ M = [10 -20 40; -50 20 0; 10 0 30]
 
 ```
 
+
 ## 🔗 See also
 
-[isbanded](../../linear_algebra/isbanded.md).
+[isbanded](../../linear_algebra/5_matrix_properties/isbanded.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

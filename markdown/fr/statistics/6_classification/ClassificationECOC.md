@@ -22,14 +22,17 @@ Modele de classification par codes correcteurs d'erreurs.
 
 ## 📄 Description
 
-ClassificationECOC stocke un classifieur multiclasses represente par un ensemble d'apprenants binaires et un codage.
+
+ClassificationECOC stocke un classifieur multiclasses represente par un ensemble d'apprenants binaires et un codage. 
 
 Creez cet objet avec fitcecoc. Utilisez predict pour classer de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitcecoc
     predict
+  
 
 ## 💡 Exemple
 
@@ -42,14 +45,15 @@ mdl = fitcecoc(X, Y);
 label = predict(mdl, [0.2 0.1; 5.2 5.1; 8.8 0.2])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitcecoc](../../statistics/fitcecoc.md).
+[predict](../../statistics/5_regression/predict.md), [fitcecoc](../../statistics/6_classification/fitcecoc.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

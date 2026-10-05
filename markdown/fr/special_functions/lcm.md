@@ -17,9 +17,12 @@ Plus petit commun multiple
 
 ## 📄 Description
 
+
 <b>lcm</b> retourne le plus petit commun multiple des éléments correspondants de A et B. Les entrées doivent être des entiers réels.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [4 6 8];
@@ -27,14 +30,15 @@ B = [6 9 12];
 L = lcm(A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
 [gcd](../special_functions/gcd.md), [factor](../special_functions/factor.md), [primes](../special_functions/primes.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

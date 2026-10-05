@@ -18,19 +18,23 @@ Probabilites binomiales negatives
 
 ## 📄 Description
 
+
 <b>nbinpdf</b> calcule les probabilites de la loi binomiale negative.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:5;
 y = nbinpdf(x, 3, 0.4);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

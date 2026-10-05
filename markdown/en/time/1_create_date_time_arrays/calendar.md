@@ -21,11 +21,14 @@ Calendar.
 
 ## 📄 Description
 
-<b>calendar()</b> returns the currently monthly calendar.
+
+<b>calendar()</b> returns the currently monthly calendar. 
 
 If no output arguments are specified,the calendar is displayed on the screen instead of returning a matrix 6x7.
 
 ## 💡 Example
+
+
 
 ```matlab
 calendar()
@@ -33,13 +36,14 @@ c = calendar(1973, 8)
 c = calendar(datenum(1973, 8, 4))
 ```
 
+
 ## 🔗 See also
 
-[datenum](../../time/datenum.md).
+[datenum](../../time/1_create_date_time_arrays/datenum.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

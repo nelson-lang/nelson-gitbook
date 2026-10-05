@@ -19,7 +19,8 @@ Retourne l'identifiant d'un attribut netCDF.
 
 ## 📄 Description
 
-netcdf.inqAttID expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.inqAttID expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -35,14 +36,15 @@ attid = netcdf.inqAttID(ncid, netcdf.getConstant('NC_GLOBAL'), 'title');
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.putVar](../netcdf/netcdf.putVar.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.putVar](../netcdf/netcdf_putVar.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -28,15 +28,18 @@ BiConjugate gradients stabilized method.
 
 ## 📄 Description
 
-<b>bicgstab</b> solves <b>A \* x = b</b> with the BiConjugate gradients stabilized method.
 
-The method supports sparse double, sparse single, sparse double complex, and sparse single complex matrices.
+<b>bicgstab</b> solves <b>A \* x = b</b> with the BiConjugate gradients stabilized method. 
 
-When <b>M1</b> or <b>M2</b> is a matrix, the solver applies it through an internal linear solve. A vector preconditioner is interpreted as the diagonal of a square preconditioner. A function handle preconditioner must accept one vector input and return a vector with the same length.
+The method supports sparse double, sparse single, sparse double complex, and sparse single complex matrices. 
+
+When <b>M1</b> or <b>M2</b> is a matrix, the solver applies it through an internal linear solve. A vector preconditioner is interpreted as the diagonal of a square preconditioner. A function handle preconditioner must accept one vector input and return a vector with the same length. 
 
 If <b>M1</b>, <b>M2</b>, or <b>x0</b> is complex, the computation uses the matching complex solver path.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
@@ -45,13 +48,13 @@ b = [1; 2; 3];
 
 ```
 
+
 ```matlab
 A = sparse([3 + 1i 1; 0 2 - 1i]);
 b = [4 + 2i; 3 - 1i];
 x = bicgstab(A, b, 1e-12, 20)
 
 ```
-
 Solve with a matrix preconditioner.
 
 ```matlab
@@ -60,7 +63,6 @@ b = [1; 2; 3];
 M = diag(diag(full(A)));
 [x, flag] = bicgstab(A, b, 1e-12, 20, M)
 ```
-
 Solve with split matrix preconditioners.
 
 ```matlab
@@ -70,7 +72,6 @@ M1 = [2 0; 0 1];
 M2 = [2 0.5; 2 3];
 [x, flag, relres, iter] = bicgstab(A, b, 1e-12, 10, M1, M2)
 ```
-
 Solve a sparse single complex system with an ILU preconditioner.
 
 ```matlab
@@ -80,15 +81,16 @@ b = single([1; 2]);
 [x, flag] = bicgstab(A, b, 1e-6, 20, L, U)
 ```
 
+
 ## 🔗 See also
 
-[pcg](../../linear_algebra/pcg.md), [ilu](../../linear_algebra/ilu.md).
+[pcg](../../linear_algebra/6_iterative_solvers/pcg.md), [ilu](../../linear_algebra/7_preconditioners/ilu.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                                         |
-| ------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                                                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | sparse single and sparse single complex inputs, matrix preconditioners, and function handle preconditioners supported. |
 
 <!--

@@ -16,9 +16,10 @@ Calcule les candidats de completion de texte.
 
 ## 📄 Description
 
-<b>completion</b> expose le moteur utilise par la console, le terminal graphique et l'editeur de texte.
 
-La structure retournee contient <b>prefix</b>, <b>showpopup</b>, <b>files</b>, <b>builtin</b>, <b>macros</b>, <b>variables</b>, <b>fields</b>, <b>properties</b> et <b>methods</b>.
+<b>completion</b> expose le moteur utilise par la console, le terminal graphique et l'editeur de texte. 
+
+La structure retournee contient <b>prefix</b>, <b>showpopup</b>, <b>files</b>, <b>builtin</b>, <b>macros</b>, <b>variables</b>, <b>fields</b>, <b>properties</b> et <b>methods</b>. 
 
 Les objets et noms de classes classdef sont completes a partir de leurs proprietes et methodes publiques, y compris les constantes de classe et methodes statiques.
 
@@ -37,14 +38,15 @@ objectCompletion = completion('p.')
 classCompletion = completion('NelsonHelpCompletionPointFr.')
 ```
 
+
 ## 🔗 Voir aussi
 
 [methods](../handle/methods.md), [properties](../handle/properties.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                        |
-| ------- | ----------------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | moteur de completion expose pour les tests et scripts |
 
 <!--

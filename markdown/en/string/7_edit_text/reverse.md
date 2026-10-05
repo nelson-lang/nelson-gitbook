@@ -8,21 +8,25 @@ Reverse characters in text.
 
 ## 📄 Description
 
+
 <b>reverse</b> Reverse characters in text.
 
 ## 💡 Example
+
+
 
 ```matlab
 reverse("abc")
 ```
 
+
 ## 🔗 See also
 
-[fliplr](../../elementary_functions/fliplr.md), [flip](../../elementary_functions/flip.md).
+[fliplr](../../elementary_functions/7_indexing_dimensions/fliplr.md), [flip](../../elementary_functions/7_indexing_dimensions/flip.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

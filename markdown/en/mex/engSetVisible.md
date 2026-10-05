@@ -18,13 +18,17 @@ Show or hide Nelson engine session
 
 ## 📄 Description
 
+
 Show or hide Nelson engine session
 
 ## 💡 Example
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -13,13 +13,17 @@ Renvoie le chemin du répertoire utilisateur courant.
 
 ## 📄 Description
 
+
 Renvoie le nom du répertoire de l'utilisateur.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 r = userdir()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -27,8 +31,8 @@ r = userdir()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

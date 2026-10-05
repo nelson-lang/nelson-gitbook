@@ -1,8 +1,13 @@
 # Standalone application compiler
 
+
+    
 The optional compiler module analyzes dependencies and builds native applications from .m files.
 
+    
 Use ncc to load the module on demand. compiler.build provides console and no-console standalone builds, shared options and read-only results with runtime dependency tables. The nelson.compiler interfaces retain the existing bundled-runtime path. Tutorials cover multiple functions, embedded data and both build interfaces.
+
+  
 
 ## Functions
 
@@ -48,3 +53,4 @@ Use ncc to load the module on demand. compiler.build provides console and no-con
 - [nelson.compiler.analyze](nelson.compiler.analyze.md) - Inspect application dependencies without producing an executable.
 - [nelson.compiler.build](nelson.compiler.build.md) - Build a native executable from structured options.
 - [nelson.compiler.build](nelson.compiler.build.md) - Build a native executable from structured options.
+

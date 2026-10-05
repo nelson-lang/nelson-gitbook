@@ -1,12 +1,19 @@
 # Error manager
 
+
+    
 The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.
 
+    
 It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.
 
+    
 It lets programs control execution after failures, capture diagnostic reports, and display warnings without stopping execution.
 
+    
 It provides the common error and warning primitives used by Nelson code.
+
+  
 
 ## Functions
 
@@ -27,3 +34,4 @@ It provides the common error and warning primitives used by Nelson code.
 - [throw](throw.md) - throw error.
 - [throwAsCaller](throwAsCaller.md) - Throw exception as if occurs within calling function.
 - [warning](warning.md) - Display a warning message.
+

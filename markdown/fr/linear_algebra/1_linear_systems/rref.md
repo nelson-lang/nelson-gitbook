@@ -21,7 +21,8 @@
 
 ## 📄 Description
 
-<b>R = rref(A)</b> retourne la forme échelonnée réduite par lignes de <b>A</b>.
+
+<b>R = rref(A)</b> retourne la forme échelonnée réduite par lignes de <b>A</b>. 
 
 <b>[R, p] = rref(A)</b> retourne également les pivots non nuls <b>p</b>.
 
@@ -31,19 +32,22 @@ https://en.wikipedia.org/wiki/Gaussian_elimination
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = [magic(4), eye(4)]
 [R, p] = rref(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[rank](../../linear_algebra/rank.md).
+[rank](../../linear_algebra/1_linear_systems/rank.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

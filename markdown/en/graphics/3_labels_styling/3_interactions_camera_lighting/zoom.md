@@ -19,55 +19,60 @@ Enable zoom mode.
 
 ## 📄 Description
 
-Use zoom mode to adjust axis limits during interactive data exploration.
 
-Enable or disable the zoom mode and configure additional basic settings using the zoom function.
+Use zoom mode to adjust axis limits during interactive data exploration. 
 
-Zoom mode works with line, bar, histogram, and surface charts. These charts typically provide zoom in and zoom out icons on the toolbar.
+Enable or disable the zoom mode and configure additional basic settings using the zoom function. 
 
-<b>zoom option</b> configures the zoom mode for all axes within the current figure.
+Zoom mode works with line, bar, histogram, and surface charts. These charts typically provide zoom in and zoom out icons on the toolbar. 
 
-For instance, <b>zoom('on')</b> activates zoom mode,<b>zoom('xon')</b> enables zoom mode exclusively for the x-dimension, while <b>zoom('off')</b> disables zoom mode altogether.
+<b>zoom option</b> configures the zoom mode for all axes within the current figure. 
 
-Once zoom mode is active, you can adjust the view of axes using the cursor, scroll wheel, or keyboard:
+For instance, <b>zoom('on')</b> activates zoom mode,<b>zoom('xon')</b> enables zoom mode exclusively for the x-dimension, while <b>zoom('off')</b> disables zoom mode altogether. 
 
-Cursor: Click to zoom in at the cursor position; Drag to zoom into a rectangular region.
+Once zoom mode is active, you can adjust the view of axes using the cursor, scroll wheel, or keyboard: 
 
-Scroll wheel: Scroll up to zoom in, scroll down to zoom out.
+Cursor: Click to zoom in at the cursor position; Drag to zoom into a rectangular region. 
 
-Keyboard: Press the up arrow (↑) key to zoom in, and the down arrow (↓) key to zoom out.
+Scroll wheel: Scroll up to zoom in, scroll down to zoom out. 
 
-The zoom mode option can be specified using one of the following values:
+Keyboard: Press the up arrow (↑) key to zoom in, and the down arrow (↓) key to zoom out. 
+
+ 
+
+The zoom mode option can be specified using one of the following values: 
 
 <b>
         'toggle'
-      </b>: Toggles the zoom mode. If zoom mode is disabled, 'toggle' reverts to the most recently used zoom option of 'on', 'xon', or 'yon'. This option behaves the same as calling zoom without any arguments.
+      </b>: Toggles the zoom mode. If zoom mode is disabled, 'toggle' reverts to the most recently used zoom option of 'on', 'xon', or 'yon'. This option behaves the same as calling zoom without any arguments. 
 
 <b>
         'xon'
-      </b>: Enables zoom mode for the x-dimension exclusively.
+      </b>: Enables zoom mode for the x-dimension exclusively. 
 
 <b>
         'yon'
-      </b>: Activates zoom mode for the y-dimension exclusively.
+      </b>: Activates zoom mode for the y-dimension exclusively. 
 
 <b>
         'on'
-      </b>: Activates zoom mode.
+      </b>: Activates zoom mode. 
 
 <b>
         'off'
-      </b>: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode.
+      </b>: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode. 
 
 <b>
         'reset'
-      </b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the <b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level.
+      </b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the <b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level. 
 
 <b>
         'out'
       </b>: Restores the current axes to its baseline zoom level.
 
 ## 💡 Example
+
+
 
 ```matlab
 surf(peaks)
@@ -78,13 +83,14 @@ sleep(5);
 zoom out
 ```
 
+
 ## 🔗 See also
 
 [rotate3d](../../../graphics/3_labels_styling/3_interactions_camera_lighting/rotate3d.md), [pan](../../../graphics/3_labels_styling/3_interactions_camera_lighting/pan.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.2.0   | initial version |
 

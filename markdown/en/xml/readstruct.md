@@ -18,6 +18,7 @@ Read XML data as a structure
 
 ## 📄 Description
 
+
 readstruct reads XML elements into Nelson values. Attributes are imported by default with the suffix 'Attribute'.
 
 ## 💡 Examples
@@ -37,7 +38,6 @@ s.book(1).idAttribute
 s.book(1).title
 s.book(1).year
 ```
-
 Read one selected XML element with an XPath selector.
 
 ```matlab
@@ -52,13 +52,14 @@ book.idAttribute
 book.title
 ```
 
+
 ## 🔗 See also
 
 [writestruct](../xml/writestruct.md), [xmlread](../xml/xmlread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

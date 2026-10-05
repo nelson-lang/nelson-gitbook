@@ -18,25 +18,29 @@ Division entiere avec option d'arrondi.
 
 ## 📄 Description
 
-<b>idivide(A, B)</b> divise <b>A</b> par <b>B</b> et arrondit le resultat vers zero (<b>'fix'</b>), en conservant la classe entiere des entrees.
+
+<b>idivide(A, B)</b> divise <b>A</b> par <b>B</b> et arrondit le resultat vers zero (<b>'fix'</b>), en conservant la classe entiere des entrees. 
 
 Utilisez <b>opt</b> pour choisir une autre regle d'arrondi : <b>'round'</b>, <b>'floor'</b> ou <b>'ceil'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 idivide(int32(7), int32(2))
 idivide(int32(7), int32(2), 'ceil')
 ```
 
+
 ## 🔗 Voir aussi
 
-[mod](../../elementary_functions/mod.md), [rem](../../elementary_functions/rem.md).
+[mod](../../elementary_functions/2_elementary_math/mod.md), [rem](../../elementary_functions/2_elementary_math/rem.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

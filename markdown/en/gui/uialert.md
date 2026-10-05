@@ -16,6 +16,7 @@ Displays an alert dialog for a UI figure.
 
 ## 📄 Description
 
+
 uialert displays a modal alert message associated with a UI figure.
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ text(0.34, 0.54, 'Operation completed.', 'FontSize', 11);
 patch([0.42 0.58 0.58 0.42], [0.25 0.25 0.36 0.36], [0.95 0.95 0.95], 'EdgeColor', [0.55 0.55 0.55]);
 text(0.50, 0.30, 'OK', 'HorizontalAlignment', 'center', 'FontSize', 10);
 ```
-
 <img src="uialert_example.svg" align="middle"/>
 Display a warning alert.
 
@@ -44,14 +44,15 @@ uialert(f, 'No file was selected.', 'Import', 'Icon', 'warning');
 close(f)
 ```
 
+
 ## 🔗 See also
 
 [uiconfirm](../gui/uiconfirm.md), [uiprogressdlg](../gui/uiprogressdlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

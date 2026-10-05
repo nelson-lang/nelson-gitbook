@@ -4,17 +4,18 @@ Persistent variable.
 
 ## 📝 Syntax
 
-- persistent variable_name
-- persistent('variable_name')
-- persistent variable_name1, ..., variable_nameN
+- persistent variable\_name
+- persistent('variable\_name')
+- persistent variable\_name1, ..., variable\_nameN
 
 ## 📥 Input argument
 
-- variable_name - a string: variable name.
+- variable\_name - a string: variable name.
 
 ## 📄 Description
 
-<b>persistent</b> defines a variable defined by his name <b>variable_name</b> as persistent in a function.
+
+<b>persistent</b> defines a variable defined by his name <b>variable\_name</b> as persistent in a function. 
 
 Before to use a persistent variable, it is necessary to initializ value.
 
@@ -33,7 +34,6 @@ function r = test_persistent_function()
  calls = calls + 1;
 end
 ```
-
 calls test_persistent_function
 
 ```matlab
@@ -43,13 +43,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [clear](../memory_manager/clear.md), [who](../memory_manager/who.md), [global](../memory_manager/global.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

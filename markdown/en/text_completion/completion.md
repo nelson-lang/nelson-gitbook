@@ -16,9 +16,10 @@ Compute text completion candidates.
 
 ## 📄 Description
 
-<b>completion</b> exposes the same completion engine used by the console, GUI terminal, and text editor.
 
-The returned structure contains <b>prefix</b>, <b>showpopup</b>, <b>files</b>, <b>builtin</b>, <b>macros</b>, <b>variables</b>, <b>fields</b>, <b>properties</b>, and <b>methods</b>.
+<b>completion</b> exposes the same completion engine used by the console, GUI terminal, and text editor. 
+
+The returned structure contains <b>prefix</b>, <b>showpopup</b>, <b>files</b>, <b>builtin</b>, <b>macros</b>, <b>variables</b>, <b>fields</b>, <b>properties</b>, and <b>methods</b>. 
 
 Classdef objects and class names are completed through their public properties and methods, including class constants and static methods.
 
@@ -37,14 +38,15 @@ objectCompletion = completion('p.')
 classCompletion = completion('NelsonHelpCompletionPoint.')
 ```
 
+
 ## 🔗 See also
 
 [methods](../handle/methods.md), [properties](../handle/properties.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                  |
-| ------- | ----------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | completion engine exposed for tests and scripts |
 
 <!--

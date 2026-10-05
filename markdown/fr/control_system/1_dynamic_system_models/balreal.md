@@ -20,11 +20,14 @@
 
 ## 📄 Description
 
-<b>balreal(sys)</b> calcule une réalisation équilibrée, notée <b>sysb</b>, pour la partie stable du modèle linéaire invariant dans le temps (LTI) <b>sys</b>.
+
+<b>balreal(sys)</b> calcule une réalisation équilibrée, notée <b>sysb</b>, pour la partie stable du modèle linéaire invariant dans le temps (LTI) <b>sys</b>. 
 
 Ce processus s'applique aussi bien aux systèmes continus que discrets. Si <b>sys</b> n'est pas initialement sous forme d'espace d'état, la fonction le convertit automatiquement en espace d'état à l'aide de <b>ss</b> avant de procéder à l'équilibrage.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sys = ss([-1, 0; 0.1, -3], [1, 0]', [0, 1], 0);
@@ -32,14 +35,15 @@ sys = ss([-1, 0; 0.1, -3], [1, 0]', [0, 1], 0);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[gram](../../control_system/gram.md).
+[gram](../../control_system/6_matrix_computations/gram.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

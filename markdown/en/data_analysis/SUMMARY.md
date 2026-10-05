@@ -18,9 +18,10 @@ Summarize table variables or categorical values.
 
 ## 📄 Description
 
-<b>summary</b> returns size and type information for each table variable.
 
-Numeric table variables also include minimum, maximum, mean, median, standard deviation, and missing value counts.
+<b>summary</b> returns size and type information for each table variable. 
+
+Numeric table variables also include minimum, maximum, mean, median, standard deviation, and missing value counts. 
 
 For categorical arrays, <b>summary</b> displays the count for each category and for undefined values.
 
@@ -32,7 +33,6 @@ Summarize a table.
 T = table([1; 2; 3], ["a"; "b"; "c"], 'VariableNames', {'A', 'Label'});
 S = summary(T)
 ```
-
 Display categorical counts.
 
 ```matlab
@@ -40,13 +40,14 @@ A = categorical({'red','blue','red',''});
 summary(A)
 ```
 
+
 ## 🔗 See also
 
-[table](../table/table.md), [categorical](../categorical/categorical.md), [countcats](../categorical/countcats.md).
+[table](../table/1_create_convert_tables/table.md), [categorical](../categorical/categorical.md), [countcats](../categorical/countcats.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

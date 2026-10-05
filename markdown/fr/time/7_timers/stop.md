@@ -12,7 +12,8 @@ Arreter un objet timer en cours d'execution.
 
 ## 📄 Description
 
-<b>stop</b> arrete les timers en cours d'execution. Si un timer a une propriete <b>StopFcn</b>, Nelson l'execute lorsque le timer passe de l'etat en cours a l'etat arrete.
+
+<b>stop</b> arrete les timers en cours d'execution. Si un timer a une propriete <b>StopFcn</b>, Nelson l'execute lorsque le timer passe de l'etat en cours a l'etat arrete. 
 
 L'appel de <b>stop</b> sur un timer deja arrete laisse le timer arrete.
 
@@ -32,14 +33,15 @@ stop(t);
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [start](../../time/start.md), [wait](../../time/wait.md).
+[timer](../../time/7_timers/timer.md), [start](../../time/7_timers/start.md), [wait](../../time/7_timers/wait.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

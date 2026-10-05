@@ -25,9 +25,12 @@ default current application look and feel.
 
 ## 📄 Description
 
+
 <b>lookandfeel</b> manages look and feel Nelson application.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -41,6 +44,7 @@ lookandfeel(currentlf)
 
 ```
 
+
 ```matlab
 
 currentstylesheet = lookandfeel('stylesheet')
@@ -53,9 +57,10 @@ lookandfeel('stylesheet', previousstylesheet)
 
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

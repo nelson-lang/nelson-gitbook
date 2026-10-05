@@ -1,11 +1,11 @@
-# close_system
+# close\_system
 
 Décharge un modèle nflow ; un modèle modifié requiert un indicateur de sauvegarde explicite.
 
 ## 📝 Syntaxe
 
-- close_system(model)
-- close_system(model, saveFlag)
+- close\_system(model)
+- close\_system(model, saveFlag)
 
 ## 📥 Argument d'entrée
 
@@ -17,9 +17,12 @@ Décharge un modèle nflow ; un modèle modifié requiert un indicateur de sauve
 
 ## 📄 Description
 
-<b>close_system</b> décharge un modèle nflow ; un modèle modifié requiert un indicateur de sauvegarde explicite.
+
+<b>close\_system</b> décharge un modèle nflow ; un modèle modifié requiert un indicateur de sauvegarde explicite.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 new_system('demo');
@@ -29,13 +32,14 @@ add_line('demo', 'Sine/1', 'Gain/1');
 bdclose('demo');
 ```
 
+
 ## 🔗 Voir aussi
 
 [new_system](../nflow_engine/new_system.md), [add_block](../nflow_engine/add_block.md), [add_line](../nflow_engine/add_line.md), [set_param](../nflow_engine/set_param.md), [get_param](../nflow_engine/get_param.md), [save_system](../nflow_engine/save_system.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

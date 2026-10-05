@@ -17,23 +17,27 @@ Fonction de repartition inverse de Poisson
 
 ## 📄 Description
 
+
 <b>poissinv</b> calcule les probabilites inverses de queue inferieure de Poisson.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 y = [0.025 0.5 0.975];
 x = poissinv(y, 4);
 ```
 
+
 ## 🔗 Voir aussi
 
-[poisscdf](../../statistics/poisscdf.md), [poisspdf](../../statistics/poisspdf.md).
+[poisscdf](../../statistics/2_probability_distributions/poisscdf.md), [poisspdf](../../statistics/2_probability_distributions/poisspdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

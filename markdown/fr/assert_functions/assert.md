@@ -25,9 +25,10 @@ Verifie qu'une condition est vraie.
 
 ## 📄 Description
 
-<b>assert</b> leve une erreur lorsque condition est fausse et qu'aucune sortie n'est demandee.
 
-Avec sorties, les echecs d'assertion sont retournes dans <b>res</b> et <b>msg</b> au lieu d'etre leves.
+<b>assert</b> leve une erreur lorsque condition est fausse et qu'aucune sortie n'est demandee. 
+
+Avec sorties, les echecs d'assertion sont retournes dans <b>res</b> et <b>msg</b> au lieu d'etre leves. 
 
 Utiliser le package <b>asserts</b> pour les helpers d'assertion qualifies, par exemple <b>asserts.isequal(...)</b>.
 
@@ -38,24 +39,22 @@ Condition vraie
 ```matlab
 assert(5 > 3);
 ```
-
 Message personnalise
 
 ```matlab
 [res, msg] = assert(false, 'condition failed');
 ```
-
 Message formate
 
 ```matlab
 [res, msg] = assert(false, 'value %.2f', 1.234);
 ```
-
 Identifiant d'erreur
 
 ```matlab
 [res, msg] = assert(false, 'Nelson:asserts:example', 'condition failed');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -63,9 +62,9 @@ Identifiant d'erreur
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                 |
-| ------- | ------------------------------------------------------------------------------ |
-| 1.0.0   | version initiale                                                               |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | ajout des messages formates, des identifiants d'erreur et du mode avec sorties |
 
 <!--

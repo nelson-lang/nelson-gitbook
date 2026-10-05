@@ -19,14 +19,18 @@ RÃ©ponse en frÃ©quence du systÃ¨me.
 
 ## 📄 Description
 
+
 Calcule la rÃ©ponse en frÃ©quence (rÃ©ponse complexe) d'un systÃ¨me LTI pour une gamme de frÃ©quences donnÃ©e.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 G = tf(1,[1 1]);
 h1 = freqresp(G, 3)
 ```
+
 
 ```matlab
 num = [1 2];
@@ -45,17 +49,17 @@ ylabel(_('Phase (degrees)'));
 xlabel(_('Frequency (Hz)'));
 
 ```
-
 <img src="freqresp.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bode](../../control_system/bode.md), [evalfr](../../control_system/evalfr.md).
+[bode](../../control_system/3_linear_analysis/bode.md), [evalfr](../../control_system/3_linear_analysis/evalfr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

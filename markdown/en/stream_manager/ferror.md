@@ -19,13 +19,16 @@ Test for i/o read/write errors.
 
 ## 📄 Description
 
-<b>ferror</b> inquires about file error status.
 
-<b>ferror(fid, 'clear')</b> clears the error indicator for the specified file.
+<b>ferror</b> inquires about file error status. 
+
+<b>ferror(fid, 'clear')</b> clears the error indicator for the specified file. 
 
 For more help about returned message, consult C run-time library manual for further details.
 
 ## 💡 Example
+
+
 
 ```matlab
 filename = [tempdir(), 'test_ferror.csv'];
@@ -35,13 +38,14 @@ res = fgets(fid);
 
 ```
 
+
 ## 🔗 See also
 
 [fopen](../stream_manager/fopen.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,7 +16,8 @@ Change le format netCDF par defaut.
 
 ## 📄 Description
 
-netcdf.setDefaultFormat expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.setDefaultFormat expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -29,14 +30,15 @@ oldFormat = netcdf.setDefaultFormat(netcdf.getConstant('NC_FORMAT_NETCDF4'));
 netcdf.setDefaultFormat(oldFormat);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.create](../netcdf/netcdf.create.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.create](../netcdf/netcdf_create.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

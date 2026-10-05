@@ -1,17 +1,17 @@
-# MPI_Recv
+# MPI\_Recv
 
 Réception bloquante d'un message.
 
 ## 📝 Syntaxe
 
-- r = MPI_Recv(Source, Tag)
-- [r, mpi\_source, mpi\_tag] = MPI_Reduce(Source, Tag, Comm)
+- r = MPI\_Recv(Source, Tag)
+- [r, mpi\_source, mpi\_tag] = MPI\_Reduce(Source, Tag, Comm)
 
 ## 📥 Argument d'entrée
 
 - Source - entier : rang de la source.
 - Tag - an integer value: message tag.
-- Comm - a MPI_Comm object.
+- Comm - a MPI\_Comm object.
 
 ## 📤 Argument de sortie
 
@@ -19,9 +19,10 @@ Réception bloquante d'un message.
 
 ## 📄 Description
 
-Cette fonction reçoit un tableau depuis un nœud source sur un communicateur donné avec le tag spécifié.
 
-Lance une exception en cas d'erreur.
+Cette fonction reçoit un tableau depuis un nœud source sur un communicateur donné avec le tag spécifié. 
+
+Lance une exception en cas d'erreur. 
 
 Permet de recevoir des tableaux de complexité arbitraire, y compris cellules, structures, chaînes, matrices creuses, etc.
 
@@ -55,14 +56,15 @@ if MPI_Initialized()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Send](../mpi/MPI_Send.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

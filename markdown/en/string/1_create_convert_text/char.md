@@ -18,10 +18,11 @@ Converts to a character array.
 - res - a string
 
 ## 📄 Description
-
 <b>char</b> converts numerical input into character data by taking the corresponding unicode character for each element.
 
 ## 💡 Examples
+
+
 
 ```matlab
 M = [ 104   101   108   108   111;
@@ -29,13 +30,16 @@ M = [ 104   101   108   108   111;
 char(M)
 ```
 
+
 ```matlab
 R = char('these', 'are', 'test', 'strings')
 ```
 
+
 ```matlab
 R = char(["these"; "are"; "test"; "strings"])
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +47,7 @@ R = char(["these"; "are"; "test"; "strings"])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

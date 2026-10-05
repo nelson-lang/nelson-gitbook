@@ -17,9 +17,11 @@ Ajoute un evenement a un objet timeseries.
 
 ## 📄 Description
 
+
 <b>addevent</b> Ajoute un evenement nomme a la liste Events d'un objet timeseries. Les temps des evenements utilisent le meme axe temporel que la serie.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12], 'Name', 'speed');
@@ -29,14 +31,15 @@ ts.Events(1).Name
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -16,25 +16,30 @@ Converts a variable to single precision type.
 
 ## 📄 Description
 
+
 <b>single(V)</b> converts to the single-precision type.
 
 ## 💡 Examples
+
+
 
 ```matlab
 single('Nelson')
 ```
 
+
 ```matlab
 A = single(pi)
 ```
 
+
 ## 🔗 See also
 
-[char](../string/char.md), [double](../double/double.md), [numeric types](../interpreter/numeric_types.md).
+[char](../string/1_create_convert_text/char.md), [double](../double/double.md), [numeric types](../interpreter/numeric_types.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,14 +16,18 @@ Computes the inverse hyperbolic tangent.
 
 ## 📄 Description
 
+
 <b>atanh</b> computes the inverse hyperbolic tangent.
 
 ## 💡 Example
+
+
 
 ```matlab
 A =  [1+2i, 2, -3];
 res = atanh(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ res = atanh(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -4,21 +4,25 @@ InsÃ¨re du HTML dans la console GUI.
 
 ## 📝 Syntaxe
 
-- inserthtml(html_txt)
+- inserthtml(html\_txt)
 
 ## 📥 Argument d'entrée
 
-- html_txt - a string: html text
+- html\_txt - a string: html text
 
 ## 📄 Description
+
 
 <b>inserthtml</b> insÃ¨re du code HTML dans la console GUI.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 inserthtml(markdown(fileread([nelsonroot(),'/CHANGELOG.md'])))
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ inserthtml(markdown(fileread([nelsonroot(),'/CHANGELOG.md'])))
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

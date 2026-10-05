@@ -1,0 +1,56 @@
+#import "nelson_help.typ": *
+
+= sprandn <sparse:sprandn>
+
+Sparse normally distributed random matrix.
+
+== Syntax
+
+- #raw("R = sprandn(S)");
+- #raw("R = sprandn(m,n,density)");
+
+== Input argument
+
+/ S: Input matrix
+/ m: Number of rows
+/ density: Density of the non-zero elements
+
+== Output argument
+
+/ S: a sparse matrix.
+
+== Description
+
+#strong[R \= sprandn(S)]; creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.
+
+ #strong[R \= sprandn(m,n,density)]; creates a random m-by-n sparse matrix with approximately density\*m\*n normally distributed nonzero entries for density in the interval \[0,1\].
+
+
+== Examples
+
+sprandn with matrix pattern
+
+``````matlab
+S = [1 0 0; 0 1 0; 0 0 1]; R = sprandn(S)
+``````
+
+sprandn with size and density
+
+``````matlab
+R = sprandn(5, 5, 0.2)
+``````
+
+
+== See also
+
+#nlink(<sparse:sprand>)[sprand];, #nlink(<random:rng>)[rng];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.15.0], [initial version],
+)
+
+// Author: Allan CORNET

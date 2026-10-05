@@ -16,16 +16,20 @@ Vérifie que la valeur d'entrée appartient à l'une des classes spécifiées.
 
 ## 📄 Description
 
-<b>mustBeA</b> vérifie que la valeur d'entrée appartient à l'une des classes spécifiées.
+
+<b>mustBeA</b> vérifie que la valeur d'entrée appartient à l'une des classes spécifiées. 
 
 Une valeur est acceptée quand sa classe, l'une de ses superclasses, ou l'une des catégories <b>numeric</b>, <b>float</b> et <b>integer</b> figure dans <b>classNames</b> (mêmes règles que <b>isa</b>).
 
 ## 💡 Exemple
 
+
+
 ```matlab
 mustBeA(1, 'double')
 mustBeA([], ["double", "single"])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,9 +37,9 @@ mustBeA([], ["double", "single"])
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                |
-| ------- | ------------------------------------------------------------- |
-| 1.0.0   | version initiale                                              |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | superclasses et catégories numeric, float, integer acceptées. |
 
 <!--

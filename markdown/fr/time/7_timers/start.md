@@ -12,7 +12,8 @@ Demarrer un objet timer.
 
 ## 📄 Description
 
-<b>start</b> demarre le timer en utilisant ses proprietes <b>StartDelay</b>, <b>ExecutionMode</b>, <b>Period</b> et <b>TasksToExecute</b>. Le timer doit avoir une propriete <b>TimerFcn</b> non vide.
+
+<b>start</b> demarre le timer en utilisant ses proprietes <b>StartDelay</b>, <b>ExecutionMode</b>, <b>Period</b> et <b>TasksToExecute</b>. Le timer doit avoir une propriete <b>TimerFcn</b> non vide. 
 
 <b>start</b> retourne immediatement apres la planification du timer. Utilisez <b>wait</b> lorsque la sequence de commandes courante doit bloquer jusqu'a la fin du timer.
 
@@ -27,7 +28,6 @@ start(t);
 wait(t);
 delete(t);
 ```
-
 Demarrer un timer repete.
 
 ```matlab
@@ -40,14 +40,15 @@ wait(t);
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [startat](../../time/startat.md), [stop](../../time/stop.md), [wait](../../time/wait.md).
+[timer](../../time/7_timers/timer.md), [startat](../../time/7_timers/startat.md), [stop](../../time/7_timers/stop.md), [wait](../../time/7_timers/wait.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

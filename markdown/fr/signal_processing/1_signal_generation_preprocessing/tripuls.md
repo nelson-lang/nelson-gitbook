@@ -20,9 +20,12 @@ Impulsion triangulaire échantillonnée.
 
 ## 📄 Description
 
+
 <b>tripuls</b> retourne une impulsion triangulaire avec inclinaison optionnelle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ y = tripuls([-0.5 0 0.5], 1);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[rectpuls](../../signal_processing/rectpuls.md).
+[rectpuls](../../signal_processing/1_signal_generation_preprocessing/rectpuls.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

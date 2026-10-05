@@ -11,13 +11,16 @@ Ajuste un modele de regression lineaire generalise.
 
 ## 📄 Description
 
-<b>fitglm</b> cree un objet <b>GeneralizedLinearModel</b> a partir des predicteurs numeriques <b>X</b> et de la reponse <b>y</b>.
 
-Les distributions prises en charge sont <b>normal</b>, <b>binomial</b> et <b>poisson</b>. Les liens pris en charge sont <b>identity</b>, <b>log</b> et <b>logit</b>, avec des valeurs par defaut canoniques pour chaque distribution.
+<b>fitglm</b> cree un objet <b>GeneralizedLinearModel</b> a partir des predicteurs numeriques <b>X</b> et de la reponse <b>y</b>. 
+
+Les distributions prises en charge sont <b>normal</b>, <b>binomial</b> et <b>poisson</b>. Les liens pris en charge sont <b>identity</b>, <b>log</b> et <b>logit</b>, avec des valeurs par defaut canoniques pour chaque distribution. 
 
 Les specifications de modele prises en charge incluent <b>constant</b>, <b>linear</b>, <b>interactions</b>, <b>quadratic</b>, <b>purequadratic</b> et les matrices de termes numeriques. Les arguments nom-valeur incluent <b>Distribution</b>, <b>Link</b>, <b>Intercept</b>, <b>PredictorNames</b>, <b>ResponseName</b>, <b>MaxIter</b> et <b>TolFun</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [0; 1; 2; 3; 4; 5; 6; 7];
@@ -26,14 +29,15 @@ mdl = fitglm(X, y, 'Distribution', 'poisson');
 yfit = predict(mdl, [2; 4; 6])
 ```
 
+
 ## 🔗 Voir aussi
 
-[fitlm](../../statistics/fitlm.md), [regress](../../statistics/regress.md), [robustfit](../../statistics/robustfit.md).
+[fitlm](../../statistics/5_regression/fitlm.md), [regress](../../statistics/5_regression/regress.md), [robustfit](../../statistics/5_regression/robustfit.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

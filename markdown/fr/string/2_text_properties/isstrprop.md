@@ -8,22 +8,26 @@ Determine les categories de caracteres.
 
 ## 📄 Description
 
+
 <b>isstrprop</b> Determine les categories de caracteres.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 isstrprop("A1 ", "alpha")
 ```
 
+
 ## 🔗 Voir aussi
 
-[isletter](../../string/isletter.md), [isspace](../../string/isspace.md), [isStringScalar](../../string/isStringScalar.md).
+[isletter](../../string/2_text_properties/isletter.md), [isspace](../../string/2_text_properties/isspace.md), [isStringScalar](../../string/2_text_properties/isStringScalar.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

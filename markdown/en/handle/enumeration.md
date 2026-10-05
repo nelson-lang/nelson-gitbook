@@ -18,9 +18,10 @@ Returns enumeration member names for a classdef enumeration class.
 
 ## 📄 Description
 
-<b>enumeration</b> returns the public enumeration members declared by a classdef class.
 
-Enumeration members can be accessed as <b>ClassName.MemberName</b>.
+<b>enumeration</b> returns the public enumeration members declared by a classdef class. 
+
+Enumeration members can be accessed as <b>ClassName.MemberName</b>. 
 
 Enumeration members can pass constructor arguments; stored properties initialized by the constructor are copied to the member value.
 
@@ -35,7 +36,6 @@ filewrite([d, '/NelsonHelpColor.m'], ["classdef NelsonHelpColor"; "  enumeration
 addpath(d);
 members = enumeration('NelsonHelpColor')
 ```
-
 Use constructor arguments in enumeration members.
 
 ```matlab
@@ -49,14 +49,15 @@ high = eval('NelsonHelpLevel.High');
 high.Code
 ```
 
+
 ## 🔗 See also
 
 [metaclass](../handle/metaclass.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                     |
-| ------- | ---------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | classdef enumeration support added |
 
 <!--

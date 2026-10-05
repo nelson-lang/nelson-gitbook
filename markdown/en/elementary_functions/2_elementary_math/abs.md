@@ -16,24 +16,28 @@ Absolute value
 
 ## 📄 Description
 
-<b>abs</b> computes the absolute value.
+
+<b>abs</b> computes the absolute value. 
 
 If input argument is a complex number,<b>abs</b> computes the complex magnitude.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = abs(x)
 ```
 
+
 ## 🔗 See also
 
-[conj](../../elementary_functions/conj.md).
+[conj](../../elementary_functions/3_complex_numbers/conj.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

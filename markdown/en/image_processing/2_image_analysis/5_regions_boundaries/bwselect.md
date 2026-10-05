@@ -22,6 +22,7 @@ Select connected binary objects.
 
 ## 📄 Description
 
+
 Select connected components in a 2-D binary image that contain at least one query point. Coordinates are passed as columns c and rows r. Supported connectivities are 4 and 8.
 
 ## 💡 Example
@@ -34,16 +35,16 @@ BW2=bwselect(BW, 16, 18, 8);
 figure; subplot(1,2,1); imagesc(BW); title('Input');
 subplot(1,2,2); imagesc(BW2); title('Selected');
 ```
-
 <img src="bwselect_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[bwlabel](../../../image_processing/bwlabel.md), [bwconncomp](../../../image_processing/bwconncomp.md).
+[bwlabel](../../../image_processing/2_image_analysis/5_regions_boundaries/bwlabel.md), [bwconncomp](../../../image_processing/2_image_analysis/5_regions_boundaries/bwconncomp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -22,15 +22,18 @@ Schur decomposition.
 
 ## 📄 Description
 
-<b>schur(M)</b> computes the schur decomposition.
 
-With the flag 'complex', the complex schur form is upper triangular with the eigenvalues of M on the diagonal.
+<b>schur(M)</b> computes the schur decomposition. 
 
-If A is real, the real schur form is returned.
+With the flag 'complex', the complex schur form is upper triangular with the eigenvalues of M on the diagonal. 
+
+If A is real, the real schur form is returned. 
 
 With the flag 'real', the real schur form has the real eigenvalues on the diagonal and the complex eigenvalues in 2-by-2 blocks on the diagonal.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [1 2; 3 4];
@@ -39,13 +42,14 @@ X = [1 2; 3 4];
 [U, T] = schur(X * i, 'real')
 ```
 
+
 ## 🔗 See also
 
-[eig](../../linear_algebra/eig.md).
+[eig](../../linear_algebra/3_eigen_singular_values/eig.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

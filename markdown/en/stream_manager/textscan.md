@@ -23,50 +23,56 @@ Read formatted data from a character vector, string or file.
 
 ## 📄 Description
 
-<b>textscan</b> reads formatted data and returns a cell array <b>C</b>. Each cell holds one output column collected across all repetitions of the format string, since the format is cycled over the whole input.
 
-Numeric conversion specifiers produce column vectors, while <b>%s</b>, <b>%q</b> and <b>%[...]</b> produce cell arrays of character vectors.
+<b>textscan</b> reads formatted data and returns a cell array <b>C</b>. Each cell holds one output column collected across all repetitions of the format string, since the format is cycled over the whole input. 
 
-Supported conversion specifiers:
+Numeric conversion specifiers produce column vectors, while <b>%s</b>, <b>%q</b> and <b>%[...]</b> produce cell arrays of character vectors. 
 
-<b>%d</b> signed integer (int32), <b>%u</b> unsigned integer (uint32), <b>%f</b> floating point (double), <b>%s</b> whitespace or delimiter separated text, <b>%q</b> optionally double quoted text, <b>%c</b> a fixed number of characters, <b>%[...]</b> and <b>%[^...]</b> character set scanning.
+Supported conversion specifiers: 
 
-A field width may be given (for example <b>%5d</b> or <b>%3s</b>). A conversion prefixed with <b>\*</b> (for example <b>%\*d</b>) is read but not stored. A size suffix selects the numeric class (<b>%d8</b>, <b>%d16</b>, <b>%d32</b>, <b>%d64</b>, <b>%u8</b> and <b>%f32</b>). Literal text between specifiers must be matched in the input.
+<b>%d</b> signed integer (int32), <b>%u</b> unsigned integer (uint32), <b>%f</b> floating point (double), <b>%s</b> whitespace or delimiter separated text, <b>%q</b> optionally double quoted text, <b>%c</b> a fixed number of characters, <b>%[...]</b> and <b>%[^...]</b> character set scanning. 
 
-Supported name/value options:
+A field width may be given (for example <b>%5d</b> or <b>%3s</b>). A conversion prefixed with <b>\*</b> (for example <b>%\*d</b>) is read but not stored. A size suffix selects the numeric class (<b>%d8</b>, <b>%d16</b>, <b>%d32</b>, <b>%d64</b>, <b>%u8</b> and <b>%f32</b>). Literal text between specifiers must be matched in the input. 
 
-<b>Delimiter</b> a character vector, or a cell array of character vectors, used to separate fields.
+Supported name/value options: 
 
-<b>HeaderLines</b> the number of leading lines to skip.
+<b>Delimiter</b> a character vector, or a cell array of character vectors, used to separate fields. 
 
-<b>CollectOutput</b> when true, consecutive columns of the same class are concatenated into a single array.
+<b>HeaderLines</b> the number of leading lines to skip. 
 
-<b>EmptyValue</b> the numeric value used for empty numeric fields.
+<b>CollectOutput</b> when true, consecutive columns of the same class are concatenated into a single array. 
 
-<b>Whitespace</b> the characters treated as whitespace.
+<b>EmptyValue</b> the numeric value used for empty numeric fields. 
 
-<b>MultipleDelimsAsOne</b> when true, consecutive delimiters are treated as a single delimiter.
+<b>Whitespace</b> the characters treated as whitespace. 
 
-<b>CommentStyle</b> a comment marker, or a start and end pair, whose text is ignored.
+<b>MultipleDelimsAsOne</b> when true, consecutive delimiters are treated as a single delimiter. 
 
-<b>TreatAsEmpty</b> text values that are treated as empty numeric fields.
+<b>CommentStyle</b> a comment marker, or a start and end pair, whose text is ignored. 
+
+<b>TreatAsEmpty</b> text values that are treated as empty numeric fields. 
 
 <b>EndOfLine</b> accepted for compatibility; end of line characters are always treated as whitespace separators.
 
 ## 💡 Examples
 
+
+
 ```matlab
 C = textscan('1 2 3', '%d')
 ```
+
 
 ```matlab
 C = textscan('a,b,c', '%s', 'Delimiter', ',');
 C{1}
 ```
 
+
 ```matlab
 C = textscan('name:42', '%[^:]:%d')
 ```
+
 
 ## 🔗 See also
 
@@ -74,7 +80,7 @@ C = textscan('name:42', '%[^:]:%d')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

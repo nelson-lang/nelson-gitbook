@@ -17,9 +17,11 @@ Delete an event from a timeseries object.
 
 ## 📄 Description
 
+
 <b>delevent</b> Removes matching named events from the Events list.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12]);
@@ -29,13 +31,14 @@ numel(ts.Events)
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

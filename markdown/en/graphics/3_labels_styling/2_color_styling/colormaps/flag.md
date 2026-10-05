@@ -17,17 +17,20 @@ Flag colormap array.
 
 ## 📄 Description
 
+
 <b>flag</b> returns the colormap with flag colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('flag');
 ```
-
 <img src="flag.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('flag');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

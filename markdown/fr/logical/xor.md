@@ -19,9 +19,12 @@ Ou exclusif (XOR).
 
 ## 📄 Description
 
+
 <b>xor</b> effectue un OU exclusif logique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 0 1];
@@ -29,14 +32,15 @@ y = [0 0 1 1];
 R = xor(x, y)
 ```
 
+
 ## 🔗 Voir aussi
 
 [or](../operators/or.md), [and](../operators/and.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

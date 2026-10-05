@@ -4,11 +4,11 @@ C or Fortran Foreign function call.
 
 ## 📝 Syntax
 
-- [x1, ... , xN] = dlcall(dlsym_handle, arg1, ..., argN)
+- [x1, ... , xN] = dlcall(dlsym\_handle, arg1, ..., argN)
 
 ## 📥 Input argument
 
-- dlsym_handle - a dlsym handle.
+- dlsym\_handle - a dlsym handle.
 - arg1, ..., argN - input arguments.
 
 ## 📤 Output argument
@@ -17,11 +17,14 @@ C or Fortran Foreign function call.
 
 ## 📄 Description
 
-<b>dlcall</b> calls an external C or Fortran function loaded from an shared library.
+
+<b>dlcall</b> calls an external C or Fortran function loaded from an shared library. 
 
 <b>dlcall</b> validates input argument types before calling based on dlsym handle definition.
 
 ## 💡 Examples
+
+
 
 ```matlab
 lib = dlopen([modulepath('nelson', 'builtin'), '/libnlsDynamic_link', getdynlibext()]);
@@ -34,19 +37,18 @@ delete(f);
 delete(lib);
 
 ```
-
 Call C getpid function
 
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_c.m']);
 
 ```
-
 Call fortran DASUM (blas) function
 
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ```
+
 
 ## 🔗 See also
 
@@ -54,7 +56,7 @@ run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

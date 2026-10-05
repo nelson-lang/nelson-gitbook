@@ -18,13 +18,16 @@ Hessenberg form of a square matrix.
 
 ## 📄 Description
 
-hess reduces a square numeric matrix to upper Hessenberg form by unitary similarity transformations.
+
+hess reduces a square numeric matrix to upper Hessenberg form by unitary similarity transformations. 
 
 With two outputs, hess also returns the accumulated transformation matrix P such that A = P \* H \* P'.
 
 ## Used function(s)
 
+
     LAPACK
+  
 
 ## 💡 Example
 
@@ -36,13 +39,14 @@ A = [1 2 3; 4 5 6; 7 8 10];
 residual = norm(A - P * H * transpose(P), 'fro')
 ```
 
+
 ## 🔗 See also
 
-[schur](../../linear_algebra/schur.md), [eig](../../linear_algebra/eig.md).
+[schur](../../linear_algebra/3_eigen_singular_values/schur.md), [eig](../../linear_algebra/3_eigen_singular_values/eig.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

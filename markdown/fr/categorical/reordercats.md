@@ -18,7 +18,8 @@ Reordonner les categories d'un tableau categoriel.
 
 ## 📄 Description
 
-<b>reordercats</b> modifie l'ordre des categories. Si <b>newOrder</b> est omis, les categories sont triees par nom.
+
+<b>reordercats</b> modifie l'ordre des categories. Si <b>newOrder</b> est omis, les categories sont triees par nom. 
 
 Pour les tableaux ordinaux, le nouvel ordre modifie les comparaisons et l'ordre de tri.
 
@@ -29,12 +30,12 @@ Specifier un nouvel ordre.
 ```matlab
 A = categorical({'red','blue'}, {'red','blue'}); B = reordercats(A, {'blue','red'}); categories(B)
 ```
-
 Trier les categories par nom.
 
 ```matlab
 A = categorical({'plane','car','train'}); B = reordercats(A); categories(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ A = categorical({'plane','car','train'}); B = reordercats(A); categories(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

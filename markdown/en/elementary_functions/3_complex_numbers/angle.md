@@ -16,14 +16,18 @@ Phase angle
 
 ## 📄 Description
 
+
 <b>angle</b> computes the phase angle, equivalent to <b>atan2(imag(Z), real(Z))</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = angle(x)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ r = angle(x)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

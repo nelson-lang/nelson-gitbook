@@ -20,6 +20,7 @@ Liste les variables d'un fichier .mat valide.
 
 ## 📄 Description
 
+
 <b>whomat</b> liste les variables d'un fichier .mat valide.
 
 ## 📚 Bibliographie
@@ -27,6 +28,8 @@ Liste les variables d'un fichier .mat valide.
 Remerciements à la bibliothèque MATIO (http://sourceforge.net/projects/matio/).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -38,14 +41,15 @@ whomat([tempdir(), 'example_whomat-v7.3.mat'])
 ce = whomat([tempdir(), 'example_whomat-v7.3.mat'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [whonh5](../hdf5/whonh5.md), [who](../memory_manager/who.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

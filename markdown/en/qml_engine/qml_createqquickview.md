@@ -1,10 +1,10 @@
-# qml_createqquickview
+# qml\_createqquickview
 
 Load a QML file and creates a window.
 
 ## 📝 Syntax
 
-- h = qml_createqquickview(filename)
+- h = qml\_createqquickview(filename)
 
 ## 📥 Input argument
 
@@ -16,15 +16,19 @@ Load a QML file and creates a window.
 
 ## 📄 Description
 
-Load a QML file
+
+Load a QML file 
 
 It creates a QML component, a window, and load .qml file.
 
 ## 💡 Example
 
+
+
 ```matlab
  % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ It creates a QML component, a window, and load .qml file.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,14 +16,18 @@ Inverse hyperbolic cotangent.
 
 ## 📄 Description
 
+
 <b>acoth</b> computes the inverse hyperbolic cotangent.
 
 ## 💡 Example
+
+
 
 ```matlab
 A =  [1+2i, 2, -3];
 res = acoth(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ res = acoth(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

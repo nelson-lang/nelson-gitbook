@@ -1,18 +1,19 @@
-# MPI_Comm_used
+# MPI\_Comm\_used
 
-Returns the current valid MPI_Comm handles.
+Returns the current valid MPI\_Comm handles.
 
 ## 📝 Syntax
 
-- r = MPI_Comm_used()
+- r = MPI\_Comm\_used()
 
 ## 📤 Output argument
 
-- h - a vector of MPI_Comm handle.
+- h - a vector of MPI\_Comm handle.
 
 ## 📄 Description
 
-Returns the current valid MPI_Comm handles.
+
+Returns the current valid MPI\_Comm handles.
 
 ## 💡 Example
 
@@ -33,13 +34,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [MPI_Comm_delete](../mpi/MPI_Comm_delete.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

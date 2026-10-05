@@ -16,18 +16,19 @@ Vérifier les valeurs manquantes.
 
 ## 📄 Description
 
-<b>ismissing</b> renvoie un tableau logique qui est vrai lorsque les éléments de M sont des valeurs <b>manquantes</b>.
 
-Les données manquantes sont définies comme :
+<b>ismissing</b> renvoie un tableau logique qui est vrai lorsque les éléments de M sont des valeurs <b>manquantes</b>. 
 
-<b>NaN</b> pour double ou single
+Les données manquantes sont définies comme : 
 
-<b>missing</b> pour les tableaux de type string
+<b>NaN</b> pour double ou single 
+
+<b>missing</b> pour les tableaux de type string 
 
 <b>
         '
         '
-      </b> pour les tableaux de caractères
+      </b> pour les tableaux de caractères 
 
 <b>
         '
@@ -35,6 +36,8 @@ Les données manquantes sont définies comme :
       </b> pour une cellule de tableaux de caractères
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = ["Nel", NaN, "son"];
@@ -48,14 +51,15 @@ ismissing(D)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[isfinite](../elementary_functions/isfinite.md).
+[isfinite](../elementary_functions/7_indexing_dimensions/isfinite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

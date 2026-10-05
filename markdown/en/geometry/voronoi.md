@@ -12,7 +12,8 @@ Voronoi diagram of planar points
 
 ## 📄 Description
 
-<b>voronoi</b> computes Voronoi line segments for planar points.
+
+<b>voronoi</b> computes Voronoi line segments for planar points. 
 
 When called without output, it plots the diagram.
 
@@ -25,14 +26,15 @@ P = [0 0; 1 0; 1 1; 0 1; 0.4 0.6];
 voronoi(P)
 ```
 
+
 ## 🔗 See also
 
 [voronoin](../geometry/voronoin.md), [delaunay](../geometry/delaunay.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

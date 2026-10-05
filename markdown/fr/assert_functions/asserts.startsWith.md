@@ -19,7 +19,8 @@ Verifie qu'un texte commence par un prefixe.
 
 ## 📄 Description
 
-L'assertion reussit lorsque text commence par prefix.
+
+L'assertion reussit lorsque text commence par prefix. 
 
 Avec sorties, un prefixe manquant est retourne comme echec d'assertion.
 
@@ -30,12 +31,12 @@ Expected prefix
 ```matlab
 asserts.startsWith('Nelson language', 'Nelson');
 ```
-
 Capture a prefix failure
 
 ```matlab
 [res, msg] = asserts.startsWith('Nelson language', 'language');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a prefix failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

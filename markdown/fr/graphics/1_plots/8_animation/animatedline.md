@@ -23,19 +23,22 @@ Creer une ligne animee.
 
 ## 📄 Description
 
-<b>animatedline</b> cree une ligne animee sans point stocke.
 
-<b>animatedline(x, y)</b> cree une ligne animee initialisee avec des coordonnees deux dimensions.
+<b>animatedline</b> cree une ligne animee sans point stocke. 
 
-<b>animatedline(x, y, z)</b> cree une ligne animee initialisee avec des coordonnees trois dimensions.
+<b>animatedline(x, y)</b> cree une ligne animee initialisee avec des coordonnees deux dimensions. 
 
-Utilisez <b>addpoints</b>, <b>clearpoints</b> et <b>getpoints</b> pour modifier ou lire les coordonnees stockees.
+<b>animatedline(x, y, z)</b> cree une ligne animee initialisee avec des coordonnees trois dimensions. 
 
-<b>MaximumNumPoints</b> limite le nombre de points stockes et conserve les points les plus recents.
+Utilisez <b>addpoints</b>, <b>clearpoints</b> et <b>getpoints</b> pour modifier ou lire les coordonnees stockees. 
+
+<b>MaximumNumPoints</b> limite le nombre de points stockes et conserve les points les plus recents. 
 
 Voir [proprietes de animatedline](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.animatedline.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -46,14 +49,15 @@ addpoints(an, x, sin(x));
 drawnow
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de animatedline](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.animatedline.properties.md), [addpoints](../../../graphics/1_plots/8_animation/addpoints.md), [clearpoints](../../../graphics/1_plots/8_animation/clearpoints.md), [getpoints](../../../graphics/1_plots/8_animation/getpoints.md), [comet](../../../graphics/1_plots/8_animation/comet.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

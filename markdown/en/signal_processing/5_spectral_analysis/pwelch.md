@@ -26,9 +26,12 @@ Welch power spectral density estimate.
 
 ## 📄 Description
 
+
 <b>pwelch</b> estimates a spectrum by averaging periodograms of overlapped segments.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -36,13 +39,14 @@ Welch power spectral density estimate.
 
 ```
 
+
 ## 🔗 See also
 
-[periodogram](../../signal_processing/periodogram.md), [cpsd](../../signal_processing/cpsd.md).
+[periodogram](../../signal_processing/5_spectral_analysis/periodogram.md), [cpsd](../../signal_processing/3_transforms_correlation_modeling/cpsd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

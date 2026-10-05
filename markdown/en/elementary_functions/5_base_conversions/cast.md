@@ -4,13 +4,13 @@ Converts variable to a different data type
 
 ## 📝 Syntax
 
-- R = cast(V, type_destination)
+- R = cast(V, type\_destination)
 - R = cast(V, 'like', W)
 
 ## 📥 Input argument
 
 - V - a variable
-- type_destination - a string: name of destination data type.
+- type\_destination - a string: name of destination data type.
 - W - a variable
 
 ## 📤 Output argument
@@ -19,16 +19,20 @@ Converts variable to a different data type
 
 ## 📄 Description
 
-<b>cast</b> converts variable to a different data type.
+
+<b>cast</b> converts variable to a different data type. 
 
 <b>R = cast(V, 'like', W)</b> converts variable V to sparsity and same data type than W.
 
 ## 💡 Example
 
+
+
 ```matlab
 r = cast([3.6 1.2 -2.4], 'like', int64(3))
 r = cast([3.6 1.2 -2.4], 'int64')
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ r = cast([3.6 1.2 -2.4], 'int64')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -26,11 +26,12 @@ Programmation linéaire mixte en nombres entiers.
 
 ## 📄 Description
 
-<b>intlinprog</b> résout des problèmes d'optimisation linéaire où certaines variables sont entières. Nelson utilise HiGHS lorsque disponible.
 
-La structure de problème acceptée peut contenir les champs solver, f, intcon, Aineq ou A, bineq ou b, Aeq, beq, lb, ub, x0 et options.
+<b>intlinprog</b> résout des problèmes d'optimisation linéaire où certaines variables sont entières. Nelson utilise HiGHS lorsque disponible. 
 
-La structure <b>output</b> indique l'écart relatif et absolu, le nombre de points faisables, le nombre de noeuds, la violation des contraintes, les itérations, le temps écoulé, l'algorithme, le statut backend normalisé, le statut de solution primale et le message du backend. <b>exitflag</b> distingue les statuts optimal, infaisable, non borné, limite atteinte et arrêt anticipé lorsque le backend fournit ce statut.
+La structure de problème acceptée peut contenir les champs solver, f, intcon, Aineq ou A, bineq ou b, Aeq, beq, lb, ub, x0 et options. 
+
+La structure <b>output</b> indique l'écart relatif et absolu, le nombre de points faisables, le nombre de noeuds, la violation des contraintes, les itérations, le temps écoulé, l'algorithme, le statut backend normalisé, le statut de solution primale et le message du backend. <b>exitflag</b> distingue les statuts optimal, infaisable, non borné, limite atteinte et arrêt anticipé lorsque le backend fournit ce statut. 
 
 Les options comme <b>MaxTime</b>, <b>MaxNodes</b>, <b>MaxIterations</b>, <b>MaxFeasiblePoints</b>, <b>AbsoluteGapTolerance</b>, <b>RelativeGapTolerance</b>, <b>IntegerTolerance</b>, <b>LPPreprocess</b>, <b>RootLPAlgorithm</b>, <b>Heuristics</b> et <b>CutGeneration</b> sont converties en options HiGHS lorsque possible. Les options reconnues sans équivalent direct dans le backend sont acceptées et ignorées.
 
@@ -46,6 +47,8 @@ Nemhauser, G. L. et Wolsey, L. A., Integer and Combinatorial Optimization, Wiley
 
 ## 💡 Exemple
 
+
+
 ```matlab
 f = [8; 1];
 intcon = 2;
@@ -56,14 +59,15 @@ opts = optimoptions('intlinprog', 'Display', 'off');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [linprog](../optimization/linprog.md), [optimoptions](../optimization/optimoptions.md), [prob2struct](../optimization/prob2struct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

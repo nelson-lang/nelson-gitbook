@@ -8,22 +8,26 @@ Recherche un motif en ignorant la casse.
 
 ## 📄 Description
 
+
 <b>caseInsensitivePattern</b> Recherche un motif en ignorant la casse.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = caseInsensitivePattern("nelson"); extract("Nelson", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[caseSensitivePattern](../../string/caseSensitivePattern.md), [pattern](../../string/pattern.md).
+[caseSensitivePattern](../../string/4_patterns/caseSensitivePattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

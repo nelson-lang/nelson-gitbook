@@ -18,15 +18,18 @@ Jouer des séquences d'images enregistrées (movie).
 
 ## 📄 Description
 
-<b>movie(M)</b> joue une fois les images stockées dans le tableau M. Pour capturer une image de film depuis la figure ou les axes courants, utilisez getframe.
 
-<b>movie(M, n)</b> rejoue le film n fois. Si n est un tableau numérique, le premier élément détermine le nombre de répétitions, les éléments suivants définissent la séquence d'images à afficher.
+<b>movie(M)</b> joue une fois les images stockées dans le tableau M. Pour capturer une image de film depuis la figure ou les axes courants, utilisez getframe. 
 
-<b>movie(M, n, fps)</b> définit la vitesse de lecture à fps images par seconde.
+<b>movie(M, n)</b> rejoue le film n fois. Si n est un tableau numérique, le premier élément détermine le nombre de répétitions, les éléments suivants définissent la séquence d'images à afficher. 
+
+<b>movie(M, n, fps)</b> définit la vitesse de lecture à fps images par seconde. 
 
 <b>movie(h, ...)</b> affiche le film centré dans la figure ou les axes spécifiés par h, en ajustant la taille du film à l'espace disponible.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 % Create a figure
@@ -58,11 +61,13 @@ figure();
 movie(M, 3, 10);
 ```
 
+
 ```matlab
 examples_directory = [modulepath('graphics', 'root'), '/', 'examples/'];
 edit([examples_directory, 'movie/demo_movie.m']);
 run([examples_directory, 'movie/demo_movie.m']);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -70,9 +75,9 @@ run([examples_directory, 'movie/demo_movie.m']);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.13.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.13.0   | version initiale |
 
 <!--
 ## 👤 Auteur

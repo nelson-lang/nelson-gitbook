@@ -16,7 +16,8 @@ Determiner si un tableau categoriel est protege.
 
 ## 📄 Description
 
-<b>isprotected</b> indique si un tableau categoriel empeche l'ajout implicite de categories pendant une affectation.
+
+<b>isprotected</b> indique si un tableau categoriel empeche l'ajout implicite de categories pendant une affectation. 
 
 Les tableaux categoriels ordinaux sont automatiquement proteges.
 
@@ -28,14 +29,15 @@ Creer puis tester un tableau protege.
 A = categorical({'low','high'}, {'low','high'}, 'Protected', true); tf = isprotected(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [categorical](../categorical/categorical.md), [isordinal](../categorical/isordinal.md), [addcats](../categorical/addcats.md), [setcats](../categorical/setcats.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

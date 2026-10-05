@@ -20,9 +20,12 @@ Minimum order for an elliptic filter.
 
 ## 📄 Description
 
+
 <b>ellipord</b> estimates an order and cutoff for elliptic filter design.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,13 +33,14 @@ Minimum order for an elliptic filter.
 
 ```
 
+
 ## 🔗 See also
 
-[ellip](../../signal_processing/ellip.md), [buttord](../../signal_processing/buttord.md).
+[ellip](../../signal_processing/4_digital_filters/ellip.md), [buttord](../../signal_processing/4_digital_filters/buttord.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,13 +18,16 @@ Renommer les variables dans une table.
 
 ## 📄 Description
 
-<b>TB = renamevars(TA, varsNames, newNames)</b> renomme les variables dans la table <b>TA</b> telles que spécifiées par<b>varsNames</b> et leur assigne les nouveaux noms fournis dans<b>newNames</b>.
 
-Vous pouvez également renommer toutes les variables d'une table en assignant de nouveaux noms à sa propriété <b>VariableNames</b> en utilisant <b>T.Properties.VariableNames = newNames</b>.
+<b>TB = renamevars(TA, varsNames, newNames)</b> renomme les variables dans la table <b>TA</b> telles que spécifiées par<b>varsNames</b> et leur assigne les nouveaux noms fournis dans<b>newNames</b>. 
+
+Vous pouvez également renommer toutes les variables d'une table en assignant de nouveaux noms à sa propriété <b>VariableNames</b> en utilisant <b>T.Properties.VariableNames = newNames</b>. 
 
 Dans ce cas, <b>newNames</b> doit être un tableau de chaînes ou un tableau de cellules de vecteurs de caractères.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
@@ -36,14 +39,15 @@ T3.Properties.VariableNames = {'Name', 'Age', 'Married'};
 T3
 ```
 
+
 ## 🔗 Voir aussi
 
-[table](../../table/table.md), [removevars](../../table/removevars.md).
+[table](../../table/1_create_convert_tables/table.md), [removevars](../../table/4_sort_filter_rearrange/removevars.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.9.0   | version initiale |
 
 <!--

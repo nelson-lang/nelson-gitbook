@@ -17,14 +17,18 @@ Writes HDF5 attribute.
 
 ## 📄 Description
 
+
 <b>h5writeatt</b> writes attribute named<b>attname</b> with the value <b>attvalue</b> to the HDF5 file.
 
 ## 💡 Example
+
+
 
 ```matlab
 h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
 h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

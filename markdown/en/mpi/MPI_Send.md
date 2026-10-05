@@ -1,24 +1,25 @@
-# MPI_Send
+# MPI\_Send
 
 Performs a blocking send.
 
 ## 📝 Syntax
 
-- MPI_Send(A, destination, tag)
-- MPI_Send(A, destination, tag, comm)
+- MPI\_Send(A, destination, tag)
+- MPI\_Send(A, destination, tag, comm)
 
 ## 📥 Input argument
 
 - A - an nelson array to send.
 - destination - an integer value: rank of source.
 - tag - an integer value: message tag.
-- comm - a MPI_Comm object.
+- comm - a MPI\_Comm object.
 
 ## 📄 Description
 
-This function sends an array to a destination node on a given communicator with a specific message tag.
 
-Note that there has to be a matching receive issued by the destination node.
+This function sends an array to a destination node on a given communicator with a specific message tag. 
+
+Note that there has to be a matching receive issued by the destination node. 
 
 Throws an exception if there is an error.
 
@@ -52,13 +53,14 @@ if MPI_Initialized()
 end
 ```
 
+
 ## 🔗 See also
 
 [MPI_Recv](../mpi/MPI_Recv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

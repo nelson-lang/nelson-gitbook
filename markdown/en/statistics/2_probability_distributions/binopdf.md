@@ -18,22 +18,26 @@ Binomial probability density function
 
 ## 📄 Description
 
+
 <b>binopdf</b> computes binomial probability mass values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:10;
 y = binopdf(x, 10, 0.4);
 ```
 
+
 ## 🔗 See also
 
-[binocdf](../../statistics/binocdf.md), [binoinv](../../statistics/binoinv.md).
+[binocdf](../../statistics/2_probability_distributions/binocdf.md), [binoinv](../../statistics/2_probability_distributions/binoinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

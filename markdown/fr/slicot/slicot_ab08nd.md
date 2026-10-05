@@ -1,10 +1,10 @@
-# slicot_ab08nd
+# slicot\_ab08nd
 
 Construction d'un pencil régulier pour un système donné dont les valeurs propres généralisées sont les zéros invariants du système.
 
 ## 📝 Syntaxe
 
-- [NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
+- [NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot\_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
 
 ## 📥 Argument d'entrée
 
@@ -34,7 +34,8 @@ Construction d'un pencil régulier pour un système donné dont les valeurs prop
 
 ## 📄 Description
 
-Construire, pour un système multivariable linéaire décrit par un modèle d'espace d'état (A,B,C,D), un pencil régulier (A - lambda\*B) dont les zéros invariants du système sont les valeurs propres généralisées.
+
+Construire, pour un système multivariable linéaire décrit par un modèle d'espace d'état (A,B,C,D), un pencil régulier (A - lambda\*B) dont les zéros invariants du système sont les valeurs propres généralisées. 
 
 La routine calcule également les ordres des zéros infinis et les indices de Kronecker droits et gauches du système (A,B,C,D).
 
@@ -47,6 +48,8 @@ AB08ND
 http://slicot.org/objects/software/shared/doc/AB08ND.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 N = 6;
@@ -87,14 +90,15 @@ D = [0.0   0.0;
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_ag08bd](../slicot/slicot_ag08bd.md), [tzero](../control_system/tzero.md).
+[slicot_ag08bd](../slicot/slicot_ag08bd.md), [tzero](../control_system/1_dynamic_system_models/tzero.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -8,11 +8,13 @@ Changes the language used in Nelson.
 
 ## 📥 Input argument
 
-- language - a string: 'en_US', 'fr_FR' or others by default.
+- language - a string: 'en\_US', 'fr\_FR' or others by default.
 
 ## 📄 Description
 
+
 <b>setlanguage</b> changes the language used by Nelson and saves this changes for subsequent runs of Nelson.
+
 
 ## 🔗 See also
 
@@ -20,7 +22,7 @@ Changes the language used in Nelson.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

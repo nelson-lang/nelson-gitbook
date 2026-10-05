@@ -15,14 +15,18 @@ Checks that value is nonnegative or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeNonnegative</b> checks that value is nonnegative or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeNonnegative(1)
 mustBeNonnegative(-1)
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ mustBeNonnegative(-1)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

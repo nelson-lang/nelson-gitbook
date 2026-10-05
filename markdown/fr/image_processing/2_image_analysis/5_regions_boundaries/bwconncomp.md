@@ -18,7 +18,8 @@ Trouver les composantes connexes dans une image ou un volume binaire.
 
 ## 📄 Description
 
-Trouver les composantes connexes de premier plan dans une image binaire 2-D ou un volume binaire 3-D.
+
+Trouver les composantes connexes de premier plan dans une image binaire 2-D ou un volume binaire 3-D. 
 
 La structure renvoyee contient les champs Connectivity, ImageSize, NumObjects et PixelIdxList.
 
@@ -32,8 +33,8 @@ CC=bwconncomp(BW);
 L=labelmatrix(CC);
 figure; imagesc(L); title('Connected components');
 ```
-
 <img src="bwconncomp_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -41,8 +42,8 @@ figure; imagesc(L); title('Connected components');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

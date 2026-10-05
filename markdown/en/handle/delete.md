@@ -18,19 +18,20 @@ Delete handle objects or files.
 
 ## 📄 Description
 
-<b>delete(h)</b> invalidates the handle objects referenced by h and releases their native resources.
 
-When deleted, all aliases to the same objects become invalid.
+<b>delete(h)</b> invalidates the handle objects referenced by h and releases their native resources. 
 
-For classdef handle objects, <b>delete</b> calls the class destructor method when it exists and notifies <b>ObjectBeingDestroyed</b> before the object becomes invalid.
+When deleted, all aliases to the same objects become invalid. 
 
-For handle arrays, each valid element is invalidated.
+For classdef handle objects, <b>delete</b> calls the class destructor method when it exists and notifies <b>ObjectBeingDestroyed</b> before the object becomes invalid. 
 
-To remove only a variable, use the clear function. Other aliases remain valid until delete is called.
+For handle arrays, each valid element is invalidated. 
 
-<b>delete(filename)</b> permanently removes the file <b>filename</b> from disk. Folders are not removed (see <b>rmdir</b>).
+To remove only a variable, use the clear function. Other aliases remain valid until delete is called. 
 
-<b>delete(filenames)</b> removes several files given as a string array or a cell array of character vectors. Several filenames can also be given as separate arguments.
+<b>delete(filename)</b> permanently removes the file <b>filename</b> from disk. Folders are not removed (see <b>rmdir</b>). 
+
+<b>delete(filenames)</b> removes several files given as a string array or a cell array of character vectors. Several filenames can also be given as separate arguments. 
 
 Each filename can contain the wildcard <b>\*</b>. When no file matches a filename, a warning (identifier <b>Nelson:FileNotFound</b>) is displayed and the remaining files are still removed.
 
@@ -49,7 +50,6 @@ delete(string(fullfile(d, "*.dat")));
 dir(d)
 rmdir(d);
 ```
-
 Delete a classdef handle array.
 
 ```matlab
@@ -66,16 +66,17 @@ isvalid(a)
 isvalid(b)
 ```
 
+
 ## 🔗 See also
 
 [clear](../memory_manager/clear.md), [classdef](../interpreter/classdef.md), [addlistener](../handle/addlistener.md), [rmfile](../files_folders_functions/rmfile.md), [rmdir](../files_folders_functions/rmdir.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                        |
-| ------- | --------------------------------------------------------------------- |
-| 1.0.0   | initial version                                                       |
-| 2.0.0   | classdef handle destructor and handle array behavior documented       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 2.0.0   | classdef handle destructor and handle array behavior documented |
 | 2.0.0   | files can be removed with a string array or a cell array of filenames |
 
 <!--

@@ -22,22 +22,26 @@ Exponential negative log-likelihood
 
 ## 📄 Description
 
+
 <b>explike</b> returns the negative log-likelihood for exponential distribution data and the asymptotic variance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [nlogL, avar] = explike(3.25, x);
 ```
 
+
 ## 🔗 See also
 
-[expfit](../../statistics/expfit.md), [exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md).
+[expfit](../../statistics/2_probability_distributions/expfit.md), [exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

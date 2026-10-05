@@ -19,22 +19,26 @@ Rayleigh random numbers
 
 ## 📄 Description
 
+
 <b>raylrnd</b> generates Rayleigh random numbers using Nelson's global random generator.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = raylrnd(2, [2 3]);
 ```
 
+
 ## 🔗 See also
 
-[raylpdf](../../statistics/raylpdf.md), [raylstat](../../statistics/raylstat.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylstat](../../statistics/2_probability_distributions/raylstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

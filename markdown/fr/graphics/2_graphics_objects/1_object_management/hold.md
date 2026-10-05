@@ -23,9 +23,12 @@ Conserver le tracé courant lors de l'ajout de nouveaux tracés.
 
 ## 📄 Description
 
+
 <b>hold</b> permet de construire une séquence de tracés de façon incrémentale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -38,8 +41,8 @@ plot(x, y2)
 hold off
 
 ```
-
 <img src="hold.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -47,8 +50,8 @@ hold off
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

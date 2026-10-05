@@ -24,22 +24,26 @@ Lognormal cumulative distribution function
 
 ## 📄 Description
 
+
 <b>logncdf</b> evaluates lognormal cumulative probabilities element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = logncdf([0 1 exp(1)]);
 q = logncdf(exp(10), 'upper');
 ```
 
+
 ## 🔗 See also
 
-[lognpdf](../../statistics/lognpdf.md), [logninv](../../statistics/logninv.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [logninv](../../statistics/2_probability_distributions/logninv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

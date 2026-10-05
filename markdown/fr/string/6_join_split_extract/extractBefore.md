@@ -8,22 +8,26 @@ Extrait le texte avant une limite.
 
 ## 📄 Description
 
+
 <b>extractBefore</b> Extrait le texte avant une limite.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 extractBefore("abc.def", ".")
 ```
 
+
 ## 🔗 Voir aussi
 
-[extractAfter](../../string/extractAfter.md), [extractBetween](../../string/extractBetween.md), [extract](../../string/extract.md).
+[extractAfter](../../string/6_join_split_extract/extractAfter.md), [extractBetween](../../string/6_join_split_extract/extractBetween.md), [extract](../../string/6_join_split_extract/extract.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

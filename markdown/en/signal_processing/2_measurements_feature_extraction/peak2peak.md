@@ -21,9 +21,12 @@ Difference between maximum and minimum values.
 
 ## 📄 Description
 
+
 <b>peak2peak</b> computes max(X) - min(X).
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ y = peak2peak([1 4 -2]);
 
 ```
 
+
 ## 🔗 See also
 
-[rms](../../signal_processing/rms.md).
+[rms](../../signal_processing/2_measurements_feature_extraction/rms.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

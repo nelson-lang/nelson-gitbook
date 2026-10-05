@@ -22,11 +22,14 @@ Graphique en pseudo-couleurs.
 
 ## 📄 Description
 
-<b>pcolor(C)</b> crée un graphique en pseudo-couleurs des données de la matrice <b>C</b>, où chaque cellule ou « face » du graphique est colorée selon la valeur correspondante dans la matrice.
+
+<b>pcolor(C)</b> crée un graphique en pseudo-couleurs des données de la matrice <b>C</b>, où chaque cellule ou « face » du graphique est colorée selon la valeur correspondante dans la matrice. 
 
 La couleur de chaque face est déterminée par une palette de couleurs (colormap), qui associe les valeurs des données à des couleurs.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 X = linspace(0, 2*pi, 100);
@@ -35,8 +38,8 @@ Z = sin(X' * Y);
 f = figure()
 pcolor(X, Y, Z)
 ```
-
 <img src="pcolor_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -48,17 +51,17 @@ ax2 = subplot(1, 2, 2);
 C2 = rand(50, 10);
 pcolor(ax2, C2)
 ```
-
 <img src="pcolor_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

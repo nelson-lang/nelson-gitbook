@@ -17,17 +17,20 @@ Palette de couleurs cool.
 
 ## 📄 Description
 
+
 <b>cool</b> retourne la palette de couleurs cool.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('cool');
 ```
-
 <img src="cool.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('cool');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

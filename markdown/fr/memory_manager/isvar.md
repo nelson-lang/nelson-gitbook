@@ -18,9 +18,12 @@ Vérifie l'existence d'une variable.
 
 ## 📄 Description
 
+
 <b>isvar</b> vérifie l'existence d'une variable.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 isvar('A')
@@ -31,14 +34,15 @@ global B
 isvar('global','B')
 ```
 
+
 ## 🔗 Voir aussi
 
 [exist](../core/exist.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

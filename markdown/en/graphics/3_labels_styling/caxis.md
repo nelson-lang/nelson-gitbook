@@ -20,21 +20,25 @@ Query or set axes color limits.
 
 ## 📄 Description
 
+
 <b>caxis</b> is a compatibility interface for axes color limits.
 
 ## 💡 Example
+
+
 
 ```matlab
 imagesc([1 2; 3 4]); caxis([0 5]); limits = caxis()
 ```
 
+
 ## 🔗 See also
 
-[clim](../../graphics/clim.md).
+[clim](../../graphics/3_labels_styling/2_color_styling/clim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

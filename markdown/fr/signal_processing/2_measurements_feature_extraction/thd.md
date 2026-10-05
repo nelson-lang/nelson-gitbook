@@ -18,9 +18,12 @@ Estimation de distorsion harmonique totale.
 
 ## 📄 Description
 
+
 <b>thd</b> estime la distorsion harmonique totale a partir des amplitudes de FFT.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ d = thd(sin((0:255)' * 0.1));
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[snr](../../signal_processing/snr.md).
+[snr](../../signal_processing/2_measurements_feature_extraction/snr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

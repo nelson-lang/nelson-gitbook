@@ -18,9 +18,10 @@ Return calendar differences between adjacent datetime values.
 
 ## 📄 Description
 
-Return calendar differences between adjacent datetime values.
 
-caldiff computes pairwise adjacent differences by delegating each interval to between.
+Return calendar differences between adjacent datetime values. 
+
+caldiff computes pairwise adjacent differences by delegating each interval to between. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -35,13 +36,14 @@ split(c, 'months')
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

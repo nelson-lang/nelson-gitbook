@@ -4,11 +4,11 @@ Renvoie le chemin d'un module.
 
 ## 📝 Syntaxe
 
-- p = toolboxdir(module_short_name)
+- p = toolboxdir(module\_short\_name)
 
 ## 📥 Argument d'entrée
 
-- module_short_name - chaîne : nom court du module.
+- module\_short\_name - chaîne : nom court du module.
 
 ## 📤 Argument de sortie
 
@@ -16,13 +16,17 @@ Renvoie le chemin d'un module.
 
 ## 📄 Description
 
+
 <b>toolboxdir</b> est une fonction d'aide qui renvoie le chemin racine d'un module.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 toolboxdir('core')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ toolboxdir('core')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

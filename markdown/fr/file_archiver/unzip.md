@@ -18,14 +18,18 @@ Décompresser une archive zip.
 
 ## 📄 Description
 
+
 <b>unzip</b> extracts archived contents. Timestamps and attributes are preserved for each file.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton']);
 r = unzip([tempdir(), 'test.zip'], [tempdir(), createGUID()])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ r = unzip([tempdir(), 'test.zip'], [tempdir(), createGUID()])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

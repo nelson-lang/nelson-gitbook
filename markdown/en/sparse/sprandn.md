@@ -19,7 +19,8 @@ Sparse normally distributed random matrix.
 
 ## 📄 Description
 
-<b>R = sprandn(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.
+
+<b>R = sprandn(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries. 
 
 <b>R = sprandn(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density\*m\*n normally distributed nonzero entries for density in the interval [0,1].
 
@@ -30,12 +31,12 @@ sprandn with matrix pattern
 ```matlab
 S = [1 0 0; 0 1 0; 0 0 1]; R = sprandn(S)
 ```
-
 sprandn with size and density
 
 ```matlab
 R = sprandn(5, 5, 0.2)
 ```
+
 
 ## 🔗 See also
 
@@ -43,9 +44,9 @@ R = sprandn(5, 5, 0.2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

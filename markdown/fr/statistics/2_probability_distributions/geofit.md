@@ -19,23 +19,27 @@ Estimation de probabilite geometrique
 
 ## 📄 Description
 
+
 <b>geofit</b> estime la probabilite de succes de la loi geometrique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [pHat, pCI] = geofit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[geolike](../../statistics/geolike.md), [geopdf](../../statistics/geopdf.md).
+[geolike](../../statistics/2_probability_distributions/geolike.md), [geopdf](../../statistics/2_probability_distributions/geopdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

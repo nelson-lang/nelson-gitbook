@@ -17,17 +17,20 @@ Pink colormap array.
 
 ## 📄 Description
 
+
 <b>pink</b> returns the colormap with pink colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('pink');
 ```
-
 <img src="pink.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('pink');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

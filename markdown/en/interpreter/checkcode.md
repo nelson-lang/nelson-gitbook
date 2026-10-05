@@ -19,11 +19,12 @@ Analyze Nelson source files and report code issues.
 
 ## 📄 Description
 
-<b>checkcode</b> analyzes Nelson source files and reports syntax, style, data-flow, naming, and complexity issues.
 
-The option '-notok' includes diagnostics suppressed by <b>%#ok</b> or <b>%#ok<NLS0001></b> comments.
+<b>checkcode</b> analyzes Nelson source files and reports syntax, style, data-flow, naming, and complexity issues. 
 
-The option '-config=file' loads a JSON configuration file. The default file name used by command-line workflows is <b>nelson-lint.json</b>.
+The option '-notok' includes diagnostics suppressed by <b>%#ok</b> or <b>%#ok<NLS0001></b> comments. 
+
+The option '-config=file' loads a JSON configuration file. The default file name used by command-line workflows is <b>nelson-lint.json</b>. 
 
 The JSON configuration must use schema version 2 and can contain <b>extends</b>, <b>files</b>, <b>rules</b>, and <b>ci</b> keys.
 
@@ -38,7 +39,6 @@ Analyze one file and return a structure array.
 ```matlab
 issues = checkcode([nelsonroot(), '/etc/startup.m'], '-struct', '-id')
 ```
-
 Example JSON configuration file.
 
 ```matlab
@@ -60,9 +60,10 @@ Example JSON configuration file.
 }
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

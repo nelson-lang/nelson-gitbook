@@ -16,29 +16,35 @@ Selects an action output from a boolean expression over the inputs.
 
 ## 📄 Description
 
-Selects an action output from a boolean expression over the inputs.
 
-The if clause and each elseif clause are evaluated in order over the inputs <code>u1..un</code>; the first true clause drives its output to <code>1.0</code> and every other output to <code>0.0</code>. With <code>ShowElse</code> set to <code>on</code>, an all-false result drives the last (else) output. The expression grammar is restricted: comparisons (<code>< <= > >= == ~=</code>), logic (<code>& | ~</code>), parentheses, unary minus, numeric literals and <code>u<k></code> inputs. These outputs are meant to gate action subsystems.
+Selects an action output from a boolean expression over the inputs. 
 
-<b>Parameters</b>
+The if clause and each elseif clause are evaluated in order over the inputs <code>u1..un</code>; the first true clause drives its output to <code>1.0</code> and every other output to <code>0.0</code>. With <code>ShowElse</code> set to <code>on</code>, an all-false result drives the last (else) output. The expression grammar is restricted: comparisons (<code>< <= > >= == ~=</code>), logic (<code>& | ~</code>), parentheses, unary minus, numeric literals and <code>u<k></code> inputs. These outputs are meant to gate action subsystems. 
 
-| Parameter                      | Default value                       |
-| ------------------------------ | ----------------------------------- |
-| <code>IfExpression</code>      | u1 > 0                              |
-| <code>ElseIfExpressions</code> | (comma-separated, empty by default) |
-| <code>ShowElse</code>          | on                                  |
+<b>Parameters</b> 
 
-<b>Block Characteristics</b>
+| Parameter | Default value | 
+| --- | --- | 
+| <code>IfExpression</code> | u1 > 0 | 
+| <code>ElseIfExpressions</code> | (comma-separated, empty by default) | 
+| <code>ShowElse</code> | on | 
 
-| Field      | Value        |
-| ---------- | ------------ |
-| Block type | if           |
-| Family     | Logic blocks |
-| Phases     | ALGEBRAIC    |
+ 
 
-<b>Extended Capabilities</b>
+<b>Block Characteristics</b> 
+
+| Field | Value |
+| --- | --- |
+| Block type | if | 
+| Family | Logic blocks | 
+| Phases | ALGEBRAIC | 
+
+ 
+
+<b>Extended Capabilities</b> 
 
 Code generation: supported for C and Rust.
+
 
 ## 🔗 See also
 
@@ -46,7 +52,7 @@ Code generation: supported for C and Rust.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

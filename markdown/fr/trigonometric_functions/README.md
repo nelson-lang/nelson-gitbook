@@ -1,10 +1,16 @@
 # Fonctions trigonometriques
 
+
+    
 Le module Fonctions trigonometriques fournit les fonctions de base pour les calculs trigonometriques dans Nelson.
 
+    
 Il inclut sinus, cosinus, tangente, leurs inverses et leurs variantes hyperboliques. Les fonctions acceptent des angles en degres ou en radians selon l'interface appelee.
 
+    
 Il fournit aussi les conversions entre degres et radians.
+
+  
 
 ## Functions
 
@@ -34,7 +40,7 @@ Il fournit aussi les conversions entre degres et radians.
 - [cosd](cosd.md) - Calcule le cosinus en degrés pour chaque élément de x.
 - [cosh](cosh.md) - Calcule le cosinus hyperbolique en radians pour chaque élément de x.
 - [cosm](cosm.md) - Calcule le cosinus matriciel d'une matrice carrée.
-- [cospi](cospi.md) - Calcule précisément cos(X \* pi).
+- [cospi](cospi.md) - Calcule précisément cos(X * pi).
 - [cot](cot.md) - Cotangente d'un angle en radians
 - [cotd](cotd.md) - Cotangente de l'argument en degrés
 - [coth](coth.md) - Cotangente hyperbolique.
@@ -51,7 +57,7 @@ Il fournit aussi les conversions entre degres et radians.
 - [sind](sind.md) - Calcule le sinus en degrés pour chaque élément de x.
 - [sinh](sinh.md) - Calcule le sinus hyperbolique en radians pour chaque élément de x.
 - [sinm](sinm.md) - Calcule le sinus matriciel d'une matrice carrée.
-- [sinpi](sinpi.md) - Calcule précisément sin(X \* pi).
+- [sinpi](sinpi.md) - Calcule précisément sin(X * pi).
 - [sph2cart](sph2cart.md) - Transforme des coordonnées sphériques en coordonnées cartésiennes.
 - [tan](tan.md) - Calcule la tangente en radians pour chaque élément de x.
 - [tand](tand.md) - Calcule la tangente en degrés pour chaque élément de x.
@@ -61,3 +67,4 @@ Il fournit aussi les conversions entre degres et radians.
 - [wrapTo2Pi](wrapTo2Pi.md) - Ramene un angle en radians dans [0, 2*pi].
 - [wrapTo360](wrapTo360.md) - Ramene un angle en degres dans [0, 360].
 - [wrapToPi](wrapToPi.md) - Ramene un angle en radians dans [-pi, pi].
+

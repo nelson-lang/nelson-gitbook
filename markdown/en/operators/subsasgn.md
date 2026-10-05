@@ -18,6 +18,7 @@ Redefine subscripted assignment.
 
 ## 📄 Description
 
+
 <b>B = subsasgn(A, S, B)</b> assigns a value to an element of a cell or matrix.
 
 ## 💡 Example
@@ -30,13 +31,14 @@ S = substruct('{}', {1, 3});
 R2 = subsasgn(R1, S, 'Hello')
 ```
 
+
 ## 🔗 See also
 
-[substruct](../elementary_functions/substruct.md), [subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
+[substruct](../elementary_functions/7_indexing_dimensions/substruct.md), [subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

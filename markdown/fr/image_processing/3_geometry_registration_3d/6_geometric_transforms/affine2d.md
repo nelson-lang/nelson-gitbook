@@ -17,6 +17,7 @@ Cree une structure de transformation affine 2-D.
 
 ## 📄 Description
 
+
 Cree une structure de transformation affine 2-D contenant une matrice T en convention vecteur ligne. La structure peut etre passee a imwarp.
 
 ## 💡 Exemple
@@ -30,17 +31,17 @@ J=imwarp(I,tform,'Interpolation','nearest');
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Affine');
 ```
-
 <img src="affine2d_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[projective2d](../../../image_processing/projective2d.md), [affine3d](../../../image_processing/affine3d.md), [imwarp](../../../image_processing/imwarp.md), [fitgeotrans](../../../image_processing/fitgeotrans.md).
+[projective2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/projective2d.md), [affine3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine3d.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md), [fitgeotrans](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/fitgeotrans.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -23,13 +23,16 @@ Lit un fichier audio.
 
 ## 📄 Description
 
-<b>audioread</b> lit un fichier audio.
 
-Formats supportés : 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. Voir la fonction <b>audiosupportedformats</b> pour tous les formats supportés.
+<b>audioread</b> lit un fichier audio. 
+
+Formats supportés : 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. Voir la fonction <b>audiosupportedformats</b> pour tous les formats supportés. 
 
 Si <b>type</b> est 'native', les données audio dépendent du format du fichier (single, double, entiers).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 wav_audio = [modulepath('audio'), '/examples/haha.wav'];
@@ -40,14 +43,15 @@ delete(playObj)
 clear playObj
 ```
 
+
 ## 🔗 Voir aussi
 
 [playblocking](../audio/playblocking.md), [audioplayer](../audio/audioplayer.md), [audiosupportedformats](../audio/audiosupportedformats.md), [audiowrite](../audio/audiowrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

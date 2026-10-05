@@ -13,9 +13,11 @@ Redraw current figure.
 
 ## 📄 Description
 
-<b>refresh</b> erases and redraws the current figure.
+
+<b>refresh</b> erases and redraws the current figure. 
 
 <b>refresh(F)</b> redraws the figure identified by <b>F</b>.
+
 
 ## 🔗 See also
 
@@ -23,7 +25,7 @@ Redraw current figure.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

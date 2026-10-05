@@ -22,7 +22,8 @@ Lit les donnees d'une variable netCDF.
 
 ## 📄 Description
 
-ncread lit les donnees d'une variable depuis une source netCDF.
+
+ncread lit les donnees d'une variable depuis une source netCDF. 
 
 Les arguments optionnels start, count et stride permettent de lire un sous-ensemble des donnees.
 
@@ -37,14 +38,15 @@ ncwrite(filename, 'temperature', [10 20 30 40]);
 data = ncread(filename, 'temperature', 2, 2)
 ```
 
+
 ## 🔗 Voir aussi
 
 [nccreate](../netcdf/nccreate.md), [ncwrite](../netcdf/ncwrite.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -17,9 +17,10 @@ Ajouter une méthode copy à une classe handle.
 
 ## 📄 Description
 
-Dérivez une classe handle de <b>nelson.mixin.Copyable</b> pour lui donner une méthode <b>copy</b> qui renvoie une copie superficielle indépendante d'un objet.
 
-<b>copy(a)</b> crée un nouvel objet et copie chaque valeur de propriété de <b>a</b>. Les propriétés déclarées <b>NonCopyable</b> ne sont pas copiées et gardent leur valeur par défaut dans la copie. La copie est superficielle : les propriétés à valeur handle sont partagées entre l'original et la copie.
+Dérivez une classe handle de <b>nelson.mixin.Copyable</b> pour lui donner une méthode <b>copy</b> qui renvoie une copie superficielle indépendante d'un objet. 
+
+<b>copy(a)</b> crée un nouvel objet et copie chaque valeur de propriété de <b>a</b>. Les propriétés déclarées <b>NonCopyable</b> ne sont pas copiées et gardent leur valeur par défaut dans la copie. La copie est superficielle : les propriétés à valeur handle sont partagées entre l'original et la copie. 
 
 <b>nelson.mixin.Copyable</b> est elle-même une classe handle.
 
@@ -40,14 +41,15 @@ b.Value = 7;
 a.Value   % toujours 42
 ```
 
+
 ## 🔗 Voir aussi
 
 [handle](../handle/handle.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

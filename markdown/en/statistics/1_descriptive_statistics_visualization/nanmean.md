@@ -11,11 +11,14 @@ Mean, ignoring NaN values.
 
 ## 📄 Description
 
-<b>nanmean</b> computes the mean after removing <b>NaN</b> values from each operated slice.
+
+<b>nanmean</b> computes the mean after removing <b>NaN</b> values from each operated slice. 
 
 The default operating dimension is the first nonsingleton dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = magic(3);
@@ -23,13 +26,14 @@ X([1 6:9]) = NaN;
 m = nanmean(X)
 ```
 
+
 ## 🔗 See also
 
-[mean](../../statistics/mean.md), [nanmedian](../../statistics/nanmedian.md), [nanstd](../../statistics/nanstd.md), [nanvar](../../statistics/nanvar.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [nanmedian](../../statistics/1_descriptive_statistics_visualization/nanmedian.md), [nanstd](../../statistics/1_descriptive_statistics_visualization/nanstd.md), [nanvar](../../statistics/1_descriptive_statistics_visualization/nanvar.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

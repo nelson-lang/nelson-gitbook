@@ -12,16 +12,20 @@ Display dictionary.
 
 ## 📄 Description
 
-<b>disp(d)</b> displays a summary of dictionary <b>d</b>, including key and value types, number of entries, and visible key-value pairs.
+
+<b>disp(d)</b> displays a summary of dictionary <b>d</b>, including key and value types, number of entries, and visible key-value pairs. 
 
 Unconfigured dictionaries and configured dictionaries with no entries are displayed with dedicated summary messages.
 
 ## 💡 Example
 
+
+
 ```matlab
 d = dictionary(["one", "two"], [1, 2]);
 disp(d)
 ```
+
 
 ## 🔗 See also
 
@@ -29,8 +33,8 @@ disp(d)
 
 ## 🕔 History
 
-| Version | 📄 Description              |
-| ------- | --------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | dictionary classdef display |
 
 <!--

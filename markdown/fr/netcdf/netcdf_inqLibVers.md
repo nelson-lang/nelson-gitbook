@@ -16,7 +16,8 @@ Retourne les informations de version de la bibliotheque netCDF.
 
 ## 📄 Description
 
-netcdf.inqLibVers expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.inqLibVers expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -28,14 +29,15 @@ Exemple copiable pour netcdf.inqLibVers.
 version = netcdf.inqLibVers()
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

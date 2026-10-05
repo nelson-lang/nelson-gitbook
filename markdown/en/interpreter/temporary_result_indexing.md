@@ -13,9 +13,10 @@ index into the result of a function call or expression.
 
 ## 📄 Description
 
-Temporary result indexing applies field, parenthesis, or brace indexing directly to the result of a function call or expression.
 
-This syntax avoids assigning an intermediate value when only one field or element is needed.
+Temporary result indexing applies field, parenthesis, or brace indexing directly to the result of a function call or expression. 
+
+This syntax avoids assigning an intermediate value when only one field or element is needed. 
 
 Supported forms include dot indexing, matrix or array indexing with parentheses, and cell content indexing with braces.
 
@@ -29,7 +30,6 @@ names = dir(nelsonroot())(3).name;
 secondCharacter = dir(nelsonroot())(3).name(2);
 
 ```
-
 Index literal temporary values.
 
 ```matlab
@@ -40,13 +40,14 @@ z = 'abc'(2);
 
 ```
 
+
 ## 🔗 See also
 
 [function](../interpreter/function.md), [name=value](../interpreter/name_value_syntax.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,23 +21,27 @@ Oppose de la log-vraisemblance binomiale negative
 
 ## 📄 Description
 
+
 <b>nbinlike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi binomiale negative et l'estimation de covariance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 4 6 9 12 15];
 [nlogL, avar] = nbinlike([4 0.45], x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[nbinfit](../../statistics/nbinfit.md), [nbinpdf](../../statistics/nbinpdf.md), [nbincdf](../../statistics/nbincdf.md), [nbinrnd](../../statistics/nbinrnd.md).
+[nbinfit](../../statistics/2_probability_distributions/nbinfit.md), [nbinpdf](../../statistics/2_probability_distributions/nbinpdf.md), [nbincdf](../../statistics/2_probability_distributions/nbincdf.md), [nbinrnd](../../statistics/2_probability_distributions/nbinrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

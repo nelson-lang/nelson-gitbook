@@ -35,6 +35,7 @@
       <keyword name="isprime" link="isprime.html" description="Détermine quels éléments d'un tableau sont premiers"/>
       <keyword name="lcm" link="lcm.html" description="Plus petit commun multiple"/>
       <keyword name="makima" link="makima.html" description="Interpolation cubique d'Akima modifiee."/>
+      <keyword name="pchip" link="pchip.html" description="Interpolation polynomiale cubique de Hermite par morceaux (PCHIP)."/>
       <keyword name="peaks" link="peaks.html" description="Fonction peaks"/>
       <keyword name="primes" link="primes.html" description="Nombres premiers inférieurs ou égaux à la valeur d'entrée"/>
       <keyword name="quadgk" link="quadgk.html" description="Evalue numeriquement une integrale par quadrature Gauss-Kronrod."/>

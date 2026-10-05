@@ -18,27 +18,34 @@ Creates an matrix made of zeros.
 
 ## 📄 Description
 
+
 <b>zeros</b> returns a matrix made of zeros.
 
 ## 💡 Examples
+
+
 
 ```matlab
 zeros(3, 2)
 ```
 
+
 ```matlab
 zeros(3, 1, 3, 'single')
 ```
+
 
 ```matlab
 A = single([3 3])
 B = zeros(2, 4, 'like', A)
 ```
 
+
 ```matlab
 tic(); single(1) * zeros(1000); toc()
 tic();zeros(1000, 'single'); toc()
 ```
+
 
 ## 🔗 See also
 
@@ -46,7 +53,7 @@ tic();zeros(1000, 'single'); toc()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

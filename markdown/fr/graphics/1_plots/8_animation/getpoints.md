@@ -17,16 +17,20 @@ Retourner les points d'une ligne animee.
 
 ## 📄 Description
 
-<b>getpoints</b> retourne uniquement les coordonnees stockees dans la ligne animee.
+
+<b>getpoints</b> retourne uniquement les coordonnees stockees dans la ligne animee. 
 
 Les lignes deux dimensions stockent et retournent des coordonnees z nulles lorsqu'une troisieme sortie est demandee.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 an = animatedline(1:4, [1 4 2 3]);
 [x, y, z] = getpoints(an)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ an = animatedline(1:4, [1 4 2 3]);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

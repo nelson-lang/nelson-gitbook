@@ -19,19 +19,23 @@ Nombres aleatoires uniformes discrets
 
 ## 📄 Description
 
+
 <b>unidrnd</b> genere des entiers aleatoires uniformes entre 1 et <b>n</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = unidrnd(5, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

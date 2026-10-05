@@ -23,29 +23,33 @@ Verifies the dimensional compatibility of matrices A, B, C, and D.
 
 ## 📄 Description
 
-<b>abcdchk</b> verify dimensional consistency of the matrices A, B, C, D, E.
 
-It additionally adjusts the dimensions of any empty 0-by-0 matrices to ensure their alignment with the rest.
+<b>abcdchk</b> verify dimensional consistency of the matrices A, B, C, D, E. 
+
+It additionally adjusts the dimensions of any empty 0-by-0 matrices to ensure their alignment with the rest. 
 
 This is a low-level validation helper used internally by the state-space model construction and conversion functions to check that A, B, C, and D are dimensionally consistent before further processing.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [0 1; -2 -3];
 B = [0;  1];
 C = [1 0];
 D = 0;
-[msg, AA, BB, CC, DD] = abcdchk(A, B, C, D)
+[msg, AA, BB, CC, DD] = abcdchk(A, B, C, D) 
 ```
+
 
 ## 🔗 See also
 
-[ss2tf](../../control_system/ss2tf.md), [tf2ss](../../control_system/tf2ss.md).
+[ss2tf](../../control_system/2_model_conversion_interconnection/ss2tf.md), [tf2ss](../../control_system/2_model_conversion_interconnection/tf2ss.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

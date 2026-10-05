@@ -12,13 +12,17 @@ obtenir le nom d'hôte de cet ordinateur.
 
 ## 📄 Description
 
+
 <b>hostname</b> renvoie le nom d'hôte de cet ordinateur.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 hostname()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ hostname()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

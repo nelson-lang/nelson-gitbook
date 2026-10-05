@@ -1,16 +1,27 @@
 # Control System functions
 
+
+    
 The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.
 
+    
 It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.
 
+    
 The module also includes system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic responses.
 
+    
 These tools are used to model, analyze, and control linear dynamic systems in engineering and research code.
+
+  
 
 ## Dynamic System Models
 
+
+    
 Functions for creating, inspecting, and reducing dynamic system models.
+
+  
 
 ### Functions
 
@@ -31,7 +42,11 @@ Functions for creating, inspecting, and reducing dynamic system models.
 
 ## Model Conversion and Interconnection
 
+
+    
 Functions for model conversion, composition, selection, and interconnection.
+
+  
 
 ### Functions
 
@@ -52,7 +67,11 @@ Functions for model conversion, composition, selection, and interconnection.
 
 ## Linear Analysis
 
+
+    
 Functions for time-domain, frequency-domain, and model-response analysis.
+
+  
 
 ### Functions
 
@@ -67,7 +86,11 @@ Functions for time-domain, frequency-domain, and model-response analysis.
 
 ## Time and Frequency Responses
 
+
+    
 Simulation and response functions for dynamic systems.
+
+  
 
 ### Functions
 
@@ -78,7 +101,11 @@ Simulation and response functions for dynamic systems.
 
 ## Control Design and Tuning
 
+
+    
 Functions for controller design, estimators, and regulator computations.
+
+  
 
 ### Functions
 
@@ -96,7 +123,11 @@ Functions for controller design, estimators, and regulator computations.
 
 ## Matrix Computations
 
+
+    
 Control-oriented matrix computations for state-space analysis.
+
+  
 
 ### Functions
 
@@ -113,3 +144,4 @@ Control-oriented matrix computations for state-space analysis.
 - [obsv](6_matrix_computations/obsv.md) - Observability of state-space model.
 - [obsvf](6_matrix_computations/obsvf.md) - Compute observability staircase form.
 - [schord](6_matrix_computations/schord.md) - Order a Schur decomposition.
+

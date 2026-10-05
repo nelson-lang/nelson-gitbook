@@ -12,9 +12,12 @@ rethrow error.
 
 ## 📄 Description
 
+
 <b>rethrow(MException)</b> reissues the error specified by<b>MException</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -27,13 +30,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [MException](../error_manager/MException.md), [throw](../error_manager/throw.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

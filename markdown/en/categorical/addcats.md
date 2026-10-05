@@ -20,7 +20,8 @@ Add categories to a categorical array.
 
 ## 📄 Description
 
-<b>addcats</b> appends categories to a categorical array without changing the stored elements.
+
+<b>addcats</b> appends categories to a categorical array without changing the stored elements. 
 
 For ordinal categorical arrays, the insertion position must be explicit because category order defines comparisons.
 
@@ -31,12 +32,12 @@ Add a category at the end of the list.
 ```matlab
 A = categorical({'red','blue'}); B = addcats(A, 'green'); categories(B)
 ```
-
 Insert a category before an existing category.
 
 ```matlab
 A = categorical({'low','high'}, {'low','high'}, 'Ordinal', true); B = addcats(A, 'mid', 'Before', 'high'); categories(B)
 ```
+
 
 ## 🔗 See also
 
@@ -44,7 +45,7 @@ A = categorical({'low','high'}, {'low','high'}, 'Ordinal', true); B = addcats(A,
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

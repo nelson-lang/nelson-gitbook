@@ -16,13 +16,17 @@ Insere des operateurs element par element dans une expression texte.
 
 ## 📄 Description
 
+
 <b>vectorize</b> prefixe les operateurs puissance, multiplication et division par des points lorsque necessaire.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 s = vectorize('x^2 + y*z')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,7 +34,7 @@ s = vectorize('x^2 + y*z')
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

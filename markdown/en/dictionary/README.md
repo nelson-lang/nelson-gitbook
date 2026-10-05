@@ -1,10 +1,16 @@
 # Dictionaries
 
+
+    
 The Dictionary module provides tools for working with key-value mappings in Nelson.
 
+    
 It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.
 
+    
 This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.
+
+  
 
 ## Functions
 
@@ -27,3 +33,4 @@ This module enables efficient storage, retrieval, and manipulation of data index
 - [types](types.md) - Types of dictionary keys and values.
 - [values](values.md) - Values of dictionary.
 - [writedictionary](writedictionary.md) - Write dictionary to file.
+

@@ -12,9 +12,12 @@ Tracer une palette de couleurs.
 
 ## 📄 Description
 
+
 <b>rgbplot(cmap)</b> trace les intensités R (rouge), G (vert) et B (bleu) de la palette de couleurs<b>cmap</b> spécifiée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f  = figure();
@@ -25,8 +28,8 @@ colormap = [0.2 0.1 0.5;
     0.9 1 0];
 rgbplot(colormap);
 ```
-
 <img src="rgbplot.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +37,8 @@ rgbplot(colormap);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

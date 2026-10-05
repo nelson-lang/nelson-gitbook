@@ -22,15 +22,19 @@ Construit un modèle de fonction de transfert.
 
 ## 📄 Description
 
+
 Crée un modèle de fonction de transfert continu ou discret à partir des coefficients du numérateur et du dénominateur, et d'un temps d'échantillonnage optionnel.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 numerator = 10;
 denominator = [20, 33, 44];
 sys = tf(numerator, denominator)
 ```
+
 
 ```matlab
 numerator = 10;
@@ -39,14 +43,15 @@ Ts = 1.5;
 sys = tf(numerator, denominator, Ts)
 ```
 
+
 ## 🔗 Voir aussi
 
-[ss](../../control_system/ss.md).
+[ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

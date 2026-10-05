@@ -17,17 +17,21 @@ Chi-square mean and variance
 
 ## 📄 Description
 
+
 <b>chi2stat</b> returns the mean and variance of the chi-square distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = chi2stat([1 2 3]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

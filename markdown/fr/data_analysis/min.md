@@ -33,15 +33,18 @@ Valeurs minimales d'un tableau.
 
 ## 📄 Description
 
-<b>min</b> trouve les valeurs minimales dans un tableau.
 
-Si <b>A</b> est une matrice alors <b>M = min(A)</b> est un vecteur ligne contenant la valeur minimale de chaque colonne.
+<b>min</b> trouve les valeurs minimales dans un tableau. 
 
-Si <b>A</b> est un vecteur alors <b>M = min(A)</b> renverra le minimum de <b>A</b>.
+Si <b>A</b> est une matrice alors <b>M = min(A)</b> est un vecteur ligne contenant la valeur minimale de chaque colonne. 
+
+Si <b>A</b> est un vecteur alors <b>M = min(A)</b> renverra le minimum de <b>A</b>. 
 
 Si <b>A</b> est un nombre complexe alors <b>M = min(A)</b> renverra le nombre complexe ayant la plus grande magnitude.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6];
@@ -49,14 +52,15 @@ M = min(A)
 M = min(A, [], 'all')
 ```
 
+
 ## 🔗 Voir aussi
 
 [max](../data_analysis/max.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

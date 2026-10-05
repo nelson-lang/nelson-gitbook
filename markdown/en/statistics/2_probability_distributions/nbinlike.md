@@ -21,22 +21,26 @@ Negative binomial negative log-likelihood
 
 ## 📄 Description
 
+
 <b>nbinlike</b> returns the negative log-likelihood for negative binomial distribution data and the asymptotic covariance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 2 4 6 9 12 15];
 [nlogL, avar] = nbinlike([4 0.45], x);
 ```
 
+
 ## 🔗 See also
 
-[nbinfit](../../statistics/nbinfit.md), [nbinpdf](../../statistics/nbinpdf.md), [nbincdf](../../statistics/nbincdf.md), [nbinrnd](../../statistics/nbinrnd.md).
+[nbinfit](../../statistics/2_probability_distributions/nbinfit.md), [nbinpdf](../../statistics/2_probability_distributions/nbinpdf.md), [nbincdf](../../statistics/2_probability_distributions/nbincdf.md), [nbinrnd](../../statistics/2_probability_distributions/nbinrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

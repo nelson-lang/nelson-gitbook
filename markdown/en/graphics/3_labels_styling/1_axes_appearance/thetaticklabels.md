@@ -26,7 +26,8 @@ Set or get angular tick labels for polar axes.
 
 ## 📄 Description
 
-<b>thetaticklabels</b> gets or sets labels displayed next to angular ticks.
+
+<b>thetaticklabels</b> gets or sets labels displayed next to angular ticks. 
 
 Setting labels switches angular tick label mode to <b>manual</b>. The number of displayed labels is matched with the number of visible angular ticks.
 
@@ -43,13 +44,14 @@ labels = thetaticklabels()
 
 ```
 
+
 ## 🔗 See also
 
 [thetaticks](../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.md), [rticklabels](../../../graphics/3_labels_styling/1_axes_appearance/rticklabels.md), [polarplot](../../../graphics/1_plots/2_polar_plots/polarplot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

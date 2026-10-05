@@ -26,13 +26,16 @@ Crée un nouveau répertoire.
 
 ## 📄 Description
 
-Crée un répertoire nommé<b>dirname</b> dans le répertoire parent.
 
-Si aucun répertoire parent n'est précisé, le répertoire de travail actuel est utilisé.
+Crée un répertoire nommé<b>dirname</b> dans le répertoire parent. 
+
+Si aucun répertoire parent n'est précisé, le répertoire de travail actuel est utilisé. 
 
 Si le répertoire est créé ou existe déjà, <b>status</b> vaut true, sinon false.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mkdir(tempdir(), 'subdir_example')
@@ -44,17 +47,18 @@ end
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [isdir](../files_folders_functions/isdir.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                   |
-| ------- | ------------------------------------------------ |
-| 1.0.0   | version initiale                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 1.4.0   | input arguments support scalar string array type |
-| 2.0.0   | ajout de l'argument de sortie msgID.             |
+| 2.0.0   | ajout de l'argument de sortie msgID. |
 
 <!--
 ## 👤 Auteur

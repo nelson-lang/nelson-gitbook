@@ -18,9 +18,12 @@ Solution d'equation algebrique de Riccati.
 
 ## 📄 Description
 
+
 <b>are</b> resout <b>A' \* X + X \* A - X \* B \* X + C = 0</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ X = are(A, B, C)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[care](../../control_system/care.md).
+[care](../../control_system/5_control_design_tuning/care.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

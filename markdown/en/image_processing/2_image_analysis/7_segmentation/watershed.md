@@ -18,9 +18,10 @@ Compute watershed regions of a 2-D image or 3-D volume.
 
 ## 📄 Description
 
-Compute watershed regions of a finite real 2-D image or 3-D volume.
 
-Connectivity can be 4, 8, or an equivalent 3-by-3 matrix for images, and 6, 18, 26, or an equivalent 3-by-3-by-3 array for volumes.
+Compute watershed regions of a finite real 2-D image or 3-D volume. 
+
+Connectivity can be 4, 8, or an equivalent 3-by-3 matrix for images, and 6, 18, 26, or an equivalent 3-by-3-by-3 array for volumes. 
 
 Labels identify catchment basins, and watershed ridge elements are set to 0.
 
@@ -35,16 +36,16 @@ L=watershed(I,4);
 figure; subplot(1,2,1); imagesc(I); title('Relief');
 subplot(1,2,2); imagesc(L); title('Watershed labels');
 ```
-
 <img src="watershed_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imhmin](../../../image_processing/imhmin.md), [imextendedmin](../../../image_processing/imextendedmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [imimposemin](../../../image_processing/imimposemin.md), [activecontour](../../../image_processing/activecontour.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imextendedmin](../../../image_processing/2_image_analysis/7_segmentation/imextendedmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [imimposemin](../../../image_processing/2_image_analysis/7_segmentation/imimposemin.md), [activecontour](../../../image_processing/2_image_analysis/7_segmentation/activecontour.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

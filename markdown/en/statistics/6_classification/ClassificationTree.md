@@ -22,14 +22,17 @@ Decision tree classification model.
 
 ## 📄 Description
 
-ClassificationTree stores a classification tree built from predictor data and class labels.
+
+ClassificationTree stores a classification tree built from predictor data and class labels. 
 
 Create this object with fitctree. Use predict to classify new observations.
 
 ## Used function(s)
 
+
     fitctree
     predict
+  
 
 ## 💡 Example
 
@@ -42,13 +45,14 @@ mdl = fitctree(X, Y);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitctree](../../statistics/fitctree.md).
+[predict](../../statistics/5_regression/predict.md), [fitctree](../../statistics/6_classification/fitctree.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

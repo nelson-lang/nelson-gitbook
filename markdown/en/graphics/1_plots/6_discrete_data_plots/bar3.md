@@ -27,7 +27,8 @@ Display a 3-D vertical bar chart.
 
 ## 📄 Description
 
-<b>bar3</b> displays columns as 3-D cuboids. Matrix columns are shown along the x direction and matrix rows along the y direction.
+
+<b>bar3</b> displays columns as 3-D cuboids. Matrix columns are shown along the x direction and matrix rows along the y direction. 
 
 Use <b>'grouped'</b> to group matrix columns at each row position and <b>'stacked'</b> to stack matrix columns at each row position.
 
@@ -41,7 +42,6 @@ Y = [1 2 3; 4 5 6];
 bar3(Y);
 
 ```
-
 <img src="bar3_1.svg" align="middle"/>
 3-D bars from a vector.
 
@@ -51,7 +51,6 @@ z = [50 40 30 20 10];
 bar3(z);
 
 ```
-
 <img src="bar3_2.svg" align="middle"/>
 3-D bars with explicit row positions.
 
@@ -62,7 +61,6 @@ y = [16 8 4 2 1];
 bar3(z, y);
 
 ```
-
 <img src="bar3_3.svg" align="middle"/>
 Grouped 3-D bars.
 
@@ -72,7 +70,6 @@ y = [1 2; 3 4; 5 6];
 bar3(y, 'grouped');
 
 ```
-
 <img src="bar3_4.svg" align="middle"/>
 Stacked 3-D bars with positive and negative values.
 
@@ -82,7 +79,6 @@ y = [1 -2; -3 4];
 bar3(y, 'stacked');
 
 ```
-
 <img src="bar3_5.svg" align="middle"/>
 Set color and transparency.
 
@@ -92,8 +88,8 @@ h = bar3(peaks(5), 0.6);
 set(h, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.8);
 
 ```
-
 <img src="bar3_6.svg" align="middle"/>
+
 
 ## 🔗 See also
 

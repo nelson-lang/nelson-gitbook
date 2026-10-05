@@ -17,23 +17,27 @@ Fonction de repartition inverse de Student t
 
 ## 📄 Description
 
+
 <b>tinv</b> calcule les probabilites inverses de queue inferieure de Student t.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = tinv(p, 5);
 ```
 
+
 ## 🔗 Voir aussi
 
-[tcdf](../../statistics/tcdf.md), [tpdf](../../statistics/tpdf.md).
+[tcdf](../../statistics/2_probability_distributions/tcdf.md), [tpdf](../../statistics/2_probability_distributions/tpdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

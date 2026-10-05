@@ -16,13 +16,16 @@ Convertir un tableau de structures en format tabulaire.
 
 ## 📄 Description
 
-<b>T = struct2table(S)</b> transforme un tableau de structures en une table, où chaque champ de la structure d'entrée est représenté comme une variable dans la table résultante.
 
-Si l'entrée est une structure scalaire contenant 𝑛 champs, chacun avec 𝑚 lignes, la sortie sera une table 𝑚×𝑛.
+<b>T = struct2table(S)</b> transforme un tableau de structures en une table, où chaque champ de la structure d'entrée est représenté comme une variable dans la table résultante. 
+
+Si l'entrée est une structure scalaire contenant 𝑛 champs, chacun avec 𝑚 lignes, la sortie sera une table 𝑚×𝑛. 
 
 Si l'entrée est un tableau de structures 𝑚×1 ou 1×𝑚 avec 𝑛 champs, la sortie sera également une table 𝑚×𝑛.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 % Define a structure array
@@ -39,6 +42,7 @@ T = struct2table(S)
 
 ```
 
+
 ```matlab
 S = struct();
 S(1).a = [10 20];
@@ -48,12 +52,14 @@ S(2).b = 60;
 T = struct2table(S)
 ```
 
+
 ```matlab
 S = struct();
 S.a = [1;2;3]
 S.b = [4 5;6 7;8 9]
 T = struct2table(S)
 ```
+
 
 ```matlab
 S = struct();
@@ -64,14 +70,15 @@ S(2).b = 80;
 T = struct2table(S)
 ```
 
+
 ## 🔗 Voir aussi
 
-[table2struct](../../table/table2struct.md), [table](../../table/table.md).
+[table2struct](../../table/1_create_convert_tables/table2struct.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.8.0   | version initiale |
 
 <!--

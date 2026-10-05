@@ -1,10 +1,10 @@
-# qml_loadfile
+# qml\_loadfile
 
 Charger un fichier QML.
 
 ## 📝 Syntaxe
 
-- h = qml_loadfile(filename)
+- h = qml\_loadfile(filename)
 
 ## 📥 Argument d'entrée
 
@@ -16,15 +16,19 @@ Charger un fichier QML.
 
 ## 📄 Description
 
-Charge un fichier QML
+
+Charge un fichier QML 
 
 Il crée un composant QML et charge le fichier .qml.
 
 ## 💡 Exemple
 
+
+
 ```matlab
  % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ Il crée un composant QML et charge le fichier .qml.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

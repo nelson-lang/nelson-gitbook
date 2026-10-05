@@ -22,17 +22,22 @@ Nonnegative linear least-squares solution.
 
 ## 📄 Description
 
+
 <b>lsqnonneg</b> solves min norm(C\*x-d)^2 subject to x >= 0 using an active-set method.
 
 ## Used function(s)
 
+
     optimset
+  
 
 ## 📚 Bibliography
 
 C. L. Lawson and R. J. Hanson, Solving Least Squares Problems, SIAM, 1995.
 
 ## 💡 Example
+
+
 
 ```matlab
 C = [1 0; 0 1; 1 1];
@@ -41,13 +46,14 @@ d = [1; 2; 3];
 
 ```
 
+
 ## 🔗 See also
 
 [lsqnonlin](../optimization/lsqnonlin.md), [quadprog](../optimization/quadprog.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,7 +18,8 @@ Verifie qu'une valeur est reelle.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value n'a pas de partie complexe.
+
+L'assertion reussit lorsque value n'a pas de partie complexe. 
 
 Les diagnostics incluent la classe et les dimensions calculees.
 
@@ -29,12 +30,12 @@ Real value
 ```matlab
 asserts.real([1 2]);
 ```
-
 Capture a complex value
 
 ```matlab
 [res, msg] = asserts.real(1 + i);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a complex value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

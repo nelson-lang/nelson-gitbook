@@ -16,9 +16,12 @@ Rectangular window.
 
 ## 📄 Description
 
+
 <b>rectwin</b> returns an M-point rectangular window.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -26,13 +29,14 @@ w = rectwin(4);
 
 ```
 
+
 ## 🔗 See also
 
-[hann](../../signal_processing/hann.md), [hamming](../../signal_processing/hamming.md).
+[hann](../../signal_processing/5_spectral_analysis/hann.md), [hamming](../../signal_processing/5_spectral_analysis/hamming.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

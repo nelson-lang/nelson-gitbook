@@ -22,9 +22,12 @@ Détermine si un tableau est trié.
 
 ## 📄 Description
 
+
 <b>tf = issorted(A)</b> renvoie vrai si les éléments de <b>A</b> sont triés par ordre croissant, et faux sinon.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 2 3 4];
@@ -39,14 +42,15 @@ A = [1 2 3; 7 8 9; 4 5 6];
 issorted(A, 'rows') % returns false
 ```
 
+
 ## 🔗 Voir aussi
 
 [sort](../data_analysis/sort.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

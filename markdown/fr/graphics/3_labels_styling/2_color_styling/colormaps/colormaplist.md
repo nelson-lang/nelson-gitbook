@@ -12,9 +12,12 @@ Fournit la liste des palettes de couleurs.
 
 ## 📄 Description
 
+
 <b>colormaplist</b> retourne les palettes de couleurs disponibles sous forme de tableau de chaines <b>m</b>-par-<b>1</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure('Position', [100, 100, 600, 400], 'Resize', 'off');
@@ -25,8 +28,8 @@ listbox = uicontrol('Style', 'listbox', 'Position', [450, 100, 100, 200], 'Strin
 listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
 
 ```
-
 <img src="colormaplist.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -34,9 +37,9 @@ listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.14.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.14.0   | version initiale |
 
 <!--
 ## 👤 Auteur

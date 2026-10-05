@@ -19,9 +19,12 @@ Plus grand entier consécutif représentable en virgule flottante.
 
 ## 📄 Description
 
+
 <b>flintmax</b> renvoie le plus grand entier consécutif représentable au format virgule flottante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 flintmax
@@ -30,14 +33,15 @@ flintmax('like', pi)
 flintmax('single')
 ```
 
+
 ## 🔗 Voir aussi
 
 [intmax](../integer/intmax.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,9 +18,12 @@ Fonction de repartition chi-square
 
 ## 📄 Description
 
+
 <b>chi2cdf</b> calcule les probabilites chi-square de queue inferieure par defaut et de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 5];
@@ -28,14 +31,15 @@ p = chi2cdf(x, 4);
 q = chi2cdf(x, 4, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[chi2pdf](../../statistics/chi2pdf.md), [chi2inv](../../statistics/chi2inv.md).
+[chi2pdf](../../statistics/2_probability_distributions/chi2pdf.md), [chi2inv](../../statistics/2_probability_distributions/chi2inv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

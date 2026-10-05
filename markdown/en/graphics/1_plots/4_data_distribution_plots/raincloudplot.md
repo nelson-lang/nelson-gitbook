@@ -29,15 +29,16 @@ Visualize grouped numeric data by using rain cloud plots.
 
 ## 📄 Description
 
-<b>raincloudplot</b> visualizes the empirical distribution of a data sample together with the samples themselves. One half of a rain cloud plot is a half violin plot (the cloud) showing a kernel density estimate of the sample; the other half is a swarm of markers (the rain), one marker per sample, offset away from the cloud baseline so that points do not overlap.
 
-With the default horizontal orientation, the cloud is drawn above the group position and the rain below it. With the vertical orientation, the cloud is drawn on the right of the group position and the rain on the left.
+<b>raincloudplot</b> visualizes the empirical distribution of a data sample together with the samples themselves. One half of a rain cloud plot is a half violin plot (the cloud) showing a kernel density estimate of the sample; the other half is a swarm of markers (the rain), one marker per sample, offset away from the cloud baseline so that points do not overlap. 
 
-The kernel density estimate is the one used by <b>violinplot</b>. The cloud widths of all groups of one object are scaled together so that the widest cloud reaches half of <b>DensityWidth</b>. The spread of the rain follows the local density.
+With the default horizontal orientation, the cloud is drawn above the group position and the rain below it. With the vertical orientation, the cloud is drawn on the right of the group position and the rain on the left. 
 
-Each object has its own color: <b>FaceColor</b> is taken from the axes <b>ColorOrder</b> using <b>SeriesIndex</b>, which follows the creation order in the axes. <b>EdgeColor</b>, <b>MarkerFaceColor</b> and <b>MarkerEdgeColor</b> follow <b>FaceColor</b> while their mode is 'auto'.
+The kernel density estimate is the one used by <b>violinplot</b>. The cloud widths of all groups of one object are scaled together so that the widest cloud reaches half of <b>DensityWidth</b>. The spread of the rain follows the local density. 
 
-Categorical grouping data are placed at consecutive integer positions labeled with the category names. When several table variables are used as grouping data, categories with the same name share the same position.
+Each object has its own color: <b>FaceColor</b> is taken from the axes <b>ColorOrder</b> using <b>SeriesIndex</b>, which follows the creation order in the axes. <b>EdgeColor</b>, <b>MarkerFaceColor</b> and <b>MarkerEdgeColor</b> follow <b>FaceColor</b> while their mode is 'auto'. 
+
+Categorical grouping data are placed at consecutive integer positions labeled with the category names. When several table variables are used as grouping data, categories with the same name share the same position. 
 
 The [raincloudplot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.raincloudplot.properties.md) page lists the supported object properties.
 
@@ -50,7 +51,6 @@ ydata = randn(100, 1);
 xgroupdata = categorical(repelem(["group1"; "group2"; "group3"], [20, 50, 30]));
 raincloudplot(xgroupdata, ydata)
 ```
-
 <img src="raincloudplot_1.svg" align="middle"/>
 Overlaid rain cloud plots with custom colors.
 
@@ -63,7 +63,6 @@ r1.FaceColor = "g";
 r2.FaceColor = "m";
 legend("Smoker", "Nonsmoker")
 ```
-
 Rain cloud plots from table variables.
 
 ```matlab
@@ -74,13 +73,14 @@ figure
 raincloudplot(tbl, ["X1", "X3"], ["Y1", "Y2"])
 ```
 
+
 ## 🔗 See also
 
 [violinplot](../../../graphics/1_plots/4_data_distribution_plots/violinplot.md), [swarmchart](../../../graphics/1_plots/4_data_distribution_plots/swarmchart.md), [boxchart](../../../graphics/1_plots/4_data_distribution_plots/boxchart.md), [raincloudplot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.raincloudplot.properties.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

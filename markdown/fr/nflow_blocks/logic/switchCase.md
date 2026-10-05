@@ -16,28 +16,34 @@ Aiguille un contrôle entier vers l'une de plusieurs sorties d'action.
 
 ## 📄 Description
 
-Aiguille un contrôle entier vers l'une de plusieurs sorties d'action.
 
-L'entrée scalaire est tronquée vers zéro en entier puis comparée à <code>CaseConditions</code>, un littéral de tableau tel que <code>{1, [7 9 4]}</code>. Le premier cas qui correspond met sa sortie à <code>1.0</code> et toutes les autres à <code>0.0</code>. Avec <code>ShowDefaultCase</code> à <code>on</code>, une valeur non appariée pilote la dernière sortie (par défaut). Pas de fall-through. Ces sorties servent à activer des sous-systèmes d'action.
+Aiguille un contrôle entier vers l'une de plusieurs sorties d'action. 
 
-<b>Paramètres</b>
+L'entrée scalaire est tronquée vers zéro en entier puis comparée à <code>CaseConditions</code>, un littéral de tableau tel que <code>{1, [7 9 4]}</code>. Le premier cas qui correspond met sa sortie à <code>1.0</code> et toutes les autres à <code>0.0</code>. Avec <code>ShowDefaultCase</code> à <code>on</code>, une valeur non appariée pilote la dernière sortie (par défaut). Pas de fall-through. Ces sorties servent à activer des sous-systèmes d'action. 
 
-| Paramètre                    | Valeur par défaut |
-| ---------------------------- | ----------------- |
-| <code>CaseConditions</code>  | {1}               |
-| <code>ShowDefaultCase</code> | on                |
+<b>Paramètres</b> 
 
-<b>Caractéristiques du bloc</b>
+| Paramètre | Valeur par défaut | 
+| --- | --- | 
+| <code>CaseConditions</code> | {1} | 
+| <code>ShowDefaultCase</code> | on | 
 
-| Champ        | Valeur         |
-| ------------ | -------------- |
-| Type de bloc | switchCase     |
-| Famille      | Blocs logiques |
-| Phases       | ALGEBRAIC      |
+ 
 
-<b>Capacites etendues</b>
+<b>Caractéristiques du bloc</b> 
+
+| Champ | Valeur |
+| --- | --- |
+| Type de bloc | switchCase | 
+| Famille | Blocs logiques | 
+| Phases | ALGEBRAIC | 
+
+ 
+
+<b>Capacites etendues</b> 
 
 Generation de code : prise en charge pour C et Rust.
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +51,8 @@ Generation de code : prise en charge pour C et Rust.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

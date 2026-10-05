@@ -19,7 +19,8 @@ Check the length of a value.
 
 ## 📄 Description
 
-The assertion passes when the largest dimension length of value equals n.
+
+The assertion passes when the largest dimension length of value equals n. 
 
 Invalid n raises an argument error immediately.
 
@@ -30,12 +31,12 @@ Length three
 ```matlab
 asserts.length(ones(2, 3), 3);
 ```
-
 Capture a length failure
 
 ```matlab
 [res, msg] = asserts.length(ones(2, 3), 2);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a length failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

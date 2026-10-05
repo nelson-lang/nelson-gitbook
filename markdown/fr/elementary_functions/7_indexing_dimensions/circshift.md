@@ -19,9 +19,12 @@ Rotation circulaire
 
 ## 📄 Description
 
+
 <b>circshift</b> effectue une rotation circulaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [10, 20, 30; 40, 50, 60; 70, 80, 90];
@@ -29,14 +32,15 @@ circshift (x, 1
 circshift (x, -2))
 ```
 
+
 ## 🔗 Voir aussi
 
-[repmat](../../elementary_functions/repmat.md), [reshape](../../elementary_functions/reshape.md).
+[repmat](../../elementary_functions/1_array_creation_shape/repmat.md), [reshape](../../elementary_functions/1_array_creation_shape/reshape.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

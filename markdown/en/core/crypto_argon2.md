@@ -4,8 +4,8 @@ Argon2 password hashing and key derivation.
 
 ## 📝 Syntax
 
-- hexa_hash = crypto.argon2(password, salt)
-- hexa_hash = crypto.argon2(password, salt, name, value, ...)
+- hexa\_hash = crypto.argon2(password, salt)
+- hexa\_hash = crypto.argon2(password, salt, name, value, ...)
 
 ## 📥 Input argument
 
@@ -21,11 +21,12 @@ Argon2 password hashing and key derivation.
 
 ## 📤 Output argument
 
-- hexa_hash - a character vector: 2 \* Length lowercase hexadecimal characters.
+- hexa\_hash - a character vector: 2 \* Length lowercase hexadecimal characters.
 
 ## 📄 Description
 
-<b>crypto.argon2</b> computes an Argon2 hash (RFC 9106), the memory-hard function recommended for password storage and for deriving encryption keys from passphrases. Store the salt and the parameters next to the hash: verifying a password means recomputing the hash with the same inputs and comparing.
+
+<b>crypto.argon2</b> computes an Argon2 hash (RFC 9106), the memory-hard function recommended for password storage and for deriving encryption keys from passphrases. Store the salt and the parameters next to the hash: verifying a password means recomputing the hash with the same inputs and comparing. 
 
 The defaults (argon2id, 64 MiB, 3 passes, 1 lane) take a fraction of a second on a desktop machine; raise <b>Memory</b> or <b>Passes</b> for stronger protection, lower them only for tests. The work area is allocated for each call and wiped afterwards.
 
@@ -44,7 +45,6 @@ hash a passphrase (small parameters for the example)
 ```matlab
 R = crypto.argon2('correct horse battery staple', 'salt-of-16-bytes', 'Memory', 1024, 'Passes', 2)
 ```
-
 RFC 9106 argon2id test vector
 
 ```matlab
@@ -53,13 +53,14 @@ salt = uint8(repmat(2, 1, 16));
 R = crypto.argon2(password, salt, 'Memory', 32, 'Passes', 3, 'Lanes', 4, 'Key', uint8(repmat(3, 1, 8)), 'AssociatedData', uint8(repmat(4, 1, 12)))
 ```
 
+
 ## 🔗 See also
 
-[crypto.blake2b](../core/crypto.blake2b.md), [crypto.hmac](../core/crypto.hmac.md).
+[crypto.blake2b](../core/crypto_blake2b.md), [crypto.hmac](../core/crypto_hmac.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

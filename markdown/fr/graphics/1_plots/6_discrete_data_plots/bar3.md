@@ -27,7 +27,8 @@ Afficher un diagramme en barres verticales 3-D.
 
 ## 📄 Description
 
-<b>bar3</b> affiche les colonnes sous forme de cuboides 3-D. Les colonnes de la matrice sont placees selon x et les lignes selon y.
+
+<b>bar3</b> affiche les colonnes sous forme de cuboides 3-D. Les colonnes de la matrice sont placees selon x et les lignes selon y. 
 
 Utiliser <b>'grouped'</b> pour grouper les colonnes de matrice a chaque position de ligne et <b>'stacked'</b> pour les empiler.
 
@@ -41,7 +42,6 @@ Y = [1 2 3; 4 5 6];
 bar3(Y);
 
 ```
-
 <img src="bar3_1.svg" align="middle"/>
 Barres 3-D depuis un vecteur.
 
@@ -51,7 +51,6 @@ z = [50 40 30 20 10];
 bar3(z);
 
 ```
-
 <img src="bar3_2.svg" align="middle"/>
 Barres 3-D avec positions de lignes explicites.
 
@@ -62,7 +61,6 @@ y = [16 8 4 2 1];
 bar3(z, y);
 
 ```
-
 <img src="bar3_3.svg" align="middle"/>
 Barres 3-D groupees.
 
@@ -72,7 +70,6 @@ y = [1 2; 3 4; 5 6];
 bar3(y, 'grouped');
 
 ```
-
 <img src="bar3_4.svg" align="middle"/>
 Barres 3-D empilees avec valeurs positives et negatives.
 
@@ -82,7 +79,6 @@ y = [1 -2; -3 4];
 bar3(y, 'stacked');
 
 ```
-
 <img src="bar3_5.svg" align="middle"/>
 Definir la couleur et la transparence.
 
@@ -92,8 +88,8 @@ h = bar3(peaks(5), 0.6);
 set(h, 'FaceColor', [0.2 0.5 0.8], 'FaceAlpha', 0.8);
 
 ```
-
 <img src="bar3_6.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

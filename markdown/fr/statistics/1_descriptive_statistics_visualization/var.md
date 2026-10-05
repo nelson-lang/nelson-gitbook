@@ -27,31 +27,34 @@ Variance
 
 ## 📄 Description
 
-<b>V = var(A)</b> renvoie la variance des éléments de A le long de la première dimension du tableau dont la taille n'est pas égale à 1.
 
-<b>[V, M] = var(...)</b> renvoie aussi la moyenne <b>M</b> calculée avec les mêmes poids, dimensions et nanflag que la variance.
+<b>V = var(A)</b> renvoie la variance des éléments de A le long de la première dimension du tableau dont la taille n'est pas égale à 1. 
+
+<b>[V, M] = var(...)</b> renvoie aussi la moyenne <b>M</b> calculée avec les mêmes poids, dimensions et nanflag que la variance. 
 
 Pour des données entières (int8, int16, int32, int64, uint8, uint16, uint32, uint64), la variance est calculée en double précision et <b>V</b> et <b>M</b> sont de type double.
 
 ## Fonction(s) utilisée(s)
 
+
     std
     mean
     cov
+  
 
 ## 💡 Exemples
+
+
 
 ```matlab
 M = [4 -7 3; 1 4 -2; 10 7 9];
 V = var(M)
 ```
-
 Données entières
 
 ```matlab
 V = var(int8([-128 127 0]))
 ```
-
 Variance pondérée et moyenne pondérée
 
 ```matlab
@@ -59,16 +62,17 @@ A = [4 -7 3; 1 4 -2; 10 7 9];
 [V, M] = var(A, [1 2 3])
 ```
 
+
 ## 🔗 Voir aussi
 
-[cov](../../statistics/cov.md), [mean](../../statistics/mean.md).
+[cov](../../statistics/1_descriptive_statistics_visualization/cov.md), [mean](../../statistics/1_descriptive_statistics_visualization/mean.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                  |
-| ------- | --------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                |
-| 2.0.0   | Données entières supportées.                                    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 2.0.0   | Données entières supportées. |
 | 2.0.0   | Second résultat M : moyenne utilisée pour calculer la variance. |
 
 <!--

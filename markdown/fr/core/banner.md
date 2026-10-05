@@ -8,13 +8,17 @@ Affiche la bannière d'accueil de Nelson.
 
 ## 📄 Description
 
+
 Affiche la bannière ou le message d'accueil utilisé par l'environnement Nelson.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 clc();banner
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -22,8 +26,8 @@ clc();banner
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

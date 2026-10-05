@@ -1,14 +1,24 @@
 # Statistics
 
+
+    
 The Statistics module provides tools for analyzing and summarizing data in Nelson.
 
+    
 It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.
 
+    
 The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.
+
+  
 
 ## Descriptive Statistics and Visualization
 
+
+    
 Functions for summarizing, exploring, ranking, and visualizing statistical data.
+
+  
 
 ### Functions
 
@@ -55,7 +65,11 @@ Functions for summarizing, exploring, ranking, and visualizing statistical data.
 
 ## Probability Distributions
 
+
+    
 Distribution functions for density, cumulative probability, inverse probability, fitting, likelihood, random sampling, and summary statistics.
+
+  
 
 ### Functions
 
@@ -183,7 +197,11 @@ Distribution functions for density, cumulative probability, inverse probability,
 
 ## Hypothesis Tests
 
+
+    
 Statistical tests for distribution fit, location, variance, ranks, independence, and comparisons.
+
+  
 
 ### Functions
 
@@ -210,7 +228,11 @@ Statistical tests for distribution fit, location, variance, ranks, independence,
 
 ## ANOVA
 
+
+    
 Analysis of variance functions.
+
+  
 
 ### Functions
 
@@ -219,7 +241,11 @@ Analysis of variance functions.
 
 ## Regression
 
+
+    
 Regression, correlation, and supervised prediction functions.
+
+  
 
 ### Functions
 
@@ -248,7 +274,11 @@ Regression, correlation, and supervised prediction functions.
 
 ## Classification
 
+
+    
 Classification model functions and helpers for grouped data.
+
+  
 
 ### Functions
 
@@ -271,7 +301,11 @@ Classification model functions and helpers for grouped data.
 
 ## Clustering and Anomaly Detection
 
+
+    
 Unsupervised learning, nearest-neighbor search, outlier handling, and sequence model functions.
+
+  
 
 ### Functions
 
@@ -305,7 +339,11 @@ Unsupervised learning, nearest-neighbor search, outlier handling, and sequence m
 
 ## Dimensionality Reduction and Feature Selection
 
+
+    
 Functions for dimensionality reduction, factor analysis, feature ranking, and low-rank representations.
+
+  
 
 ### Functions
 
@@ -323,7 +361,11 @@ Functions for dimensionality reduction, factor analysis, feature ranking, and lo
 
 ## Design of Experiments
 
+
+    
 Functions for experimental design and model configuration.
+
+  
 
 ### Functions
 
@@ -335,3 +377,4 @@ Functions for experimental design and model configuration.
 - [statget](9_design_of_experiments/statget.md) - Access field values in statistics options structures.
 - [statset](9_design_of_experiments/statset.md) - Create or update statistics options structures.
 - [x2fx](9_design_of_experiments/x2fx.md) - Convert factor settings to a design matrix.
+

@@ -1,14 +1,24 @@
 # Date and Time
 
+
+    
 The Time Functions module provides tools for working with dates, times, and durations in Nelson.
 
+    
 It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.
 
+    
 This module enables precise time management, scheduling, and performance measurement in scripts and applications.
+
+  
 
 ## Create Date and Time Arrays
 
+
+    
 Functions for creating date and time values and alternate date representations.
+
+  
 
 ### Functions
 
@@ -28,7 +38,11 @@ Functions for creating date and time values and alternate date representations.
 
 ## Duration and Calendar Duration
 
+
+    
 Functions for fixed-length and calendar-based durations.
+
+  
 
 ### Functions
 
@@ -48,7 +62,11 @@ Functions for fixed-length and calendar-based durations.
 
 ## Date and Time Components
 
+
+    
 Functions for extracting and splitting date and time components.
+
+  
 
 ### Functions
 
@@ -68,7 +86,11 @@ Functions for extracting and splitting date and time components.
 
 ## Date Arithmetic and Ranges
 
+
+    
 Functions for date shifts, differences, ranges, and elapsed time.
+
+  
 
 ### Functions
 
@@ -82,7 +104,11 @@ Functions for date shifts, differences, ranges, and elapsed time.
 
 ## Query Date and Time Arrays
 
+
+    
 Predicates and query functions for date, time, duration, and timezone data.
+
+  
 
 ### Functions
 
@@ -101,7 +127,11 @@ Predicates and query functions for date, time, duration, and timezone data.
 
 ## Text and External Time Systems
 
+
+    
 Conversions between date and time values, text, and external numeric time systems.
+
+  
 
 ### Functions
 
@@ -116,7 +146,11 @@ Conversions between date and time values, text, and external numeric time system
 
 ## Timers and Timing
 
+
+    
 Timer objects, scheduling, waits, and timing utilities.
+
+  
 
 ### Functions
 
@@ -155,7 +189,11 @@ Timer objects, scheduling, waits, and timing utilities.
 
 ## Time Series
 
+
+    
 Time series, time series collections, events, metadata, and related operations.
+
+  
 
 ### Functions
 
@@ -236,3 +274,4 @@ Time series, time series collections, events, metadata, and related operations.
 - [tsdata.interpolation](8_timeseries/tsdata.interpolation.md) - Time series object function.
 - [tsdata.qualmetadata](8_timeseries/tsdata.qualmetadata.md) - Time series object function.
 - [tsdata.timemetadata](8_timeseries/tsdata.timemetadata.md) - Time series object function.
+

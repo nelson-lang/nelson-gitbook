@@ -8,22 +8,26 @@ Motif avec nom d'affichage.
 
 ## 📄 Description
 
+
 <b>maskedPattern</b> Motif avec nom d'affichage.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = maskedPattern(digitsPattern(3), "area code"); extract("phone 123", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[namedPattern](../../string/namedPattern.md), [pattern](../../string/pattern.md).
+[namedPattern](../../string/4_patterns/namedPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

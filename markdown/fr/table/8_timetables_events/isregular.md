@@ -16,9 +16,11 @@ Determiner si les temps de lignes sont regulierement espaces.
 
 ## 📄 Description
 
+
 <b>isregular</b> renvoie vrai quand toutes les differences entre temps adjacents sont egales.
 
 ## 💡 Exemple
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3]), [10; 20; 30], 'VariableNames', {'A'});
@@ -26,14 +28,15 @@ isregular(TT)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable](../../table/timetable.md).
+[timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

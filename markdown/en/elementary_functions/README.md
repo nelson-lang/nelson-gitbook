@@ -1,14 +1,24 @@
 # Elementary functions
 
+
+    
 The Elementary Functions module provides fundamental mathematical operations and matrix manipulations in Nelson.
 
+    
 It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.
 
+    
 The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.
+
+  
 
 ## Array Creation and Shape
 
+
+    
 Functions for creating, reshaping, and arranging arrays.
+
+  
 
 ### Functions
 
@@ -25,7 +35,11 @@ Functions for creating, reshaping, and arranging arrays.
 
 ## Elementary Math
 
+
+    
 Elementary numerical functions, norms, rounding, powers, roots, logarithms, and remainders.
+
+  
 
 ### Functions
 
@@ -64,7 +78,11 @@ Elementary numerical functions, norms, rounding, powers, roots, logarithms, and 
 
 ## Complex Numbers
 
+
+    
 Functions for complex values and real-valued variants of elementary functions.
+
+  
 
 ### Functions
 
@@ -80,7 +98,11 @@ Functions for complex values and real-valued variants of elementary functions.
 
 ## Base Conversions
 
+
+    
 Functions for numeric base conversion, type conversion, and byte order.
+
+  
 
 ### Functions
 
@@ -100,7 +122,11 @@ Functions for numeric base conversion, type conversion, and byte order.
 
 ## Matrix Generation
 
+
+    
 Functions for generating special matrices.
+
+  
 
 ### Functions
 
@@ -119,7 +145,11 @@ Functions for generating special matrices.
 
 ## Indexing and Dimensions
 
+
+    
 Functions for indexing, dimensions, shape checks, rearrangement, and structural predicates.
+
+  
 
 ### Functions
 
@@ -164,3 +194,4 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - [substruct](7_indexing_dimensions/substruct.md) - Create structure argument for subsasgn or subsref
 - [tril](7_indexing_dimensions/tril.md) - Lower triangular part of matrix
 - [triu](7_indexing_dimensions/triu.md) - Upper triangular part of matrix
+

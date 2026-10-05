@@ -20,30 +20,30 @@ Lire des données depuis un service web RESTful vers une variable Nelson
 
 ## 📄 Description
 
+
 <b>webread()</b> lit du contenu depuis le web et le charge dans une variable Nelson.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 url = 'https://httpbin.org/get';
 res = webread(url,weboptions('ContentType','json'));
 
 ```
-
 More demos
 
 ```matlab
 edit([modulepath('webtools'),'/examples/webread_demo_1.m'])
 
 ```
-
 Use function_handle with weboptions and webread
 
 ```matlab
 edit([modulepath('webtools'),'/examples/webread_demo_2.m'])
 
 ```
-
 Read data from National Agricultural Statistics Service
 
 ```matlab
@@ -51,14 +51,15 @@ edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [weboptions](../webtools/weboptions.md), [websave](../webtools/websave.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

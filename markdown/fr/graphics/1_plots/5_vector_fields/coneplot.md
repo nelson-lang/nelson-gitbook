@@ -11,6 +11,7 @@ Afficher des directions vectorielles 3-D avec des fleches de style cone.
 
 ## 📄 Description
 
+
 <b>coneplot</b> affiche des directions vectorielles 3-D echantillonnees au moyen d'un objet patch.
 
 ## 💡 Exemple
@@ -41,8 +42,8 @@ daspect([1 1 1])
 axis tight
 grid on
 ```
-
 <img src="coneplot_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

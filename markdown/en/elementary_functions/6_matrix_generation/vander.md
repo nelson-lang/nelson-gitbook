@@ -16,6 +16,7 @@ Vandermonde matrix
 
 ## 📄 Description
 
+
 <b>A = vander(v)</b> returns the Vandermonde Matrix.
 
 ## 📚 Bibliography
@@ -24,17 +25,20 @@ https://en.wikipedia.org/wiki/Vandermonde_matrix
 
 ## 💡 Example
 
+
+
 ```matlab
 A = vander(1:.5:3)
 ```
 
+
 ## 🔗 See also
 
-[toeplitz](../../elementary_functions/toeplitz.md).
+[toeplitz](../../elementary_functions/6_matrix_generation/toeplitz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

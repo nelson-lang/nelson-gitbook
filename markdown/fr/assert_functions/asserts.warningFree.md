@@ -18,7 +18,8 @@ Verifie qu'une commande se termine sans avertissement.
 
 ## 📄 Description
 
-L'assertion reussit lorsque la commande n'emet aucun avertissement et ne leve aucune erreur.
+
+L'assertion reussit lorsque la commande n'emet aucun avertissement et ne leve aucune erreur. 
 
 Les avertissements inattendus sont retournes dans msg lorsque des sorties sont demandees.
 
@@ -29,12 +30,12 @@ Warning-free command
 ```matlab
 asserts.warningFree('1 + 1');
 ```
-
 Capture an unexpected warning
 
 ```matlab
 [res, msg] = asserts.warningFree('warning(''Nelson:asserts:example'', ''expected warning'');');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture an unexpected warning
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

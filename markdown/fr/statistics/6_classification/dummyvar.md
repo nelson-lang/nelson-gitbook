@@ -8,25 +8,29 @@ Cree des variables indicatrices depuis des variables de groupe.
 
 ## 📄 Description
 
-<b>dummyvar</b> cree une matrice numerique de colonnes indicatrices pour les variables de groupe dans <b>group</b>.
+
+<b>dummyvar</b> cree une matrice numerique de colonnes indicatrices pour les variables de groupe dans <b>group</b>. 
 
 Chaque colonne de matrice numerique, vecteur categoriel, vecteur texte ou element de cellule dans <b>group</b> contribue un bloc de variables indicatrices. Les valeurs de groupe manquantes produisent des lignes <b>NaN</b> dans leur bloc.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 Colors = categorical({'Red'; 'Blue'; 'Green'; 'Red'; 'Green'; 'Blue'});
 D = dummyvar(Colors)
 ```
 
+
 ## 🔗 Voir aussi
 
-[grp2idx](../../statistics/grp2idx.md), [anova1](../../statistics/anova1.md), [x2fx](../../statistics/x2fx.md).
+[grp2idx](../../statistics/6_classification/grp2idx.md), [anova1](../../statistics/4_anova/anova1.md), [x2fx](../../statistics/9_design_of_experiments/x2fx.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

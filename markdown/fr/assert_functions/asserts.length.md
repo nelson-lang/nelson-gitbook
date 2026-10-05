@@ -19,7 +19,8 @@ Verifie la longueur d'une valeur.
 
 ## 📄 Description
 
-L'assertion reussit lorsque la plus grande dimension de value est egale a n.
+
+L'assertion reussit lorsque la plus grande dimension de value est egale a n. 
 
 Un n invalide leve immediatement une erreur d'argument.
 
@@ -30,12 +31,12 @@ Length three
 ```matlab
 asserts.length(ones(2, 3), 3);
 ```
-
 Capture a length failure
 
 ```matlab
 [res, msg] = asserts.length(ones(2, 3), 2);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a length failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

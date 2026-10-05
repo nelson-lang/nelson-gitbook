@@ -1,22 +1,23 @@
-# MPI_Comm_split
+# MPI\_Comm\_split
 
 Partitionne le groupe associé au communicateur spécifié en un nombre donné de sous-groupes disjoints.
 
 ## 📝 Syntaxe
 
-- newcomm = MPI_Comm_split(comm, color, key)
+- newcomm = MPI\_Comm\_split(comm, color, key)
 
 ## 📥 Argument d'entrée
 
-- comm - objet MPI_Comm.
+- comm - objet MPI\_Comm.
 - color - entier : identifiant du sous-groupe auquel le processus appelant sera affecté. La valeur de<code>color</code>doit être non négative.
 - key - entier : rang relatif du processus appelant dans le groupe du nouveau communicateur.
 
 ## 📤 Argument de sortie
 
-- newcomm - objet MPI_Comm : descripteur d'un nouveau communicateur.
+- newcomm - objet MPI\_Comm : descripteur d'un nouveau communicateur.
 
 ## 📄 Description
+
 
 Partitionne le groupe associé au communicateur spécifié en un nombre donné de sous-groupes disjoints.
 
@@ -47,14 +48,15 @@ if MPI_Initialized()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Comm_rank](../mpi/MPI_Comm_rank.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -20,11 +20,13 @@ Sort rows of a table or timetable.
 
 ## 📄 Description
 
+
 <b>sortrows</b> sorts table rows by the selected variables, or timetable rows by row times or selected variables.
 
 Rows are compared variable after variable. Each variable is sorted in the order of its own type (numeric, logical, text, categorical, datetime, duration); a variable with several columns is compared column by column. Missing values are placed last in both ascending and descending order. Ties keep their original order.
 
 ## 💡 Example
+
 
 ```matlab
 TT = timetable(seconds([2; 1]), [20; 10], 'VariableNames', {'A'});
@@ -34,13 +36,14 @@ T = table([10; 9; 2], {'a'; 'b'; 'c'});
 
 ```
 
+
 ## 🔗 See also
 
-[issortedrows](../../table/issortedrows.md), [timetable](../../table/timetable.md).
+[issortedrows](../../table/8_timetables_events/issortedrows.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

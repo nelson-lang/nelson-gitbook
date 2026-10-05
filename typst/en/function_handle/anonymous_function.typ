@@ -1,0 +1,134 @@
+#import "nelson_help.typ": *
+
+= Anonymous Functions <function_handle:anonymous_function>
+
+Anonymous Functions.
+
+== Description
+
+Anonymous functions provide a convenient way to swiftly create straightforward functions without the need to generate separate M-files on every occasion.
+
+ These anonymous functions can be built either directly at the command line or within any M-file function or script.
+
+ To create an anonymous function from an expression, use the following syntax:
+
+ function\_handle \= \@(argument\_list) expression
+
+ 
+
+ Breaking down this syntax,#strong[expression]; represents the body of the function, which contains the code that performs the primary task of your function.
+
+ This part consists of a valid expression. Next, there's #strong[argument\_list];, which is a comma-separated list of input arguments to be passed to the function.
+
+ These components are similar to the body and argument list of any regular function.
+
+ 
+
+ At the beginning of this syntax statement, you'll notice the #strong[\@]; sign.
+
+ This#strong[\@]; sign is the operator that constructs a function handle.
+
+ Creating a function handle for an anonymous function allows you to invoke the function and is useful when passing your anonymous function as an argument to another function.
+
+ The #strong[\@]; sign is a necessary part of the anonymous function definition.
+
+ 
+
+ Function handles not only apply to anonymous functions but also to any function.
+
+ The syntax for creating a function handle to a regular function is different and looks like this:
+
+ function\_handle \= \@function\_name
+
+ For example: #strong[f \= \@cos];
+
+ You have the option to store function handles along with their associated values in a MAT-file.
+
+ Later, in another session, you can retrieve them with the save and load functions.
+
+ for example #strong[a \= 1;b \= 2; f \= \@(x) a + b + x; save('test.nH5', f);];
+
+ Only .nh5 files allows to save and load function\_handle type as expected.
+
+ You can create an anonymous function that takes multiple input arguments, x and y.
+
+ Assuming that variables A and B are already defined, you can define the function as follows:
+
+ #strong[A \= 10; B \= 100; r \= \@(x, y) (A\*y + B\*x);];
+
+
+== Examples
+
+``````matlab
+A = 10;
+f1 = @() sqr(A);
+clear A
+f1
+f1()
+
+``````
+
+``````matlab
+f2 = @cos;
+f2
+f2(0.6)
+
+``````
+
+``````matlab
+f3 = @(x)cos(x) + 1;
+f2
+f3(0.6)
+
+``````
+
+Multiple input arguments
+
+``````matlab
+A = 10;
+B = 100;
+f4 = @(x, y) (A*y + B*x);
+f4
+f4(0.6, 0.2)
+
+``````
+
+Save\/Load function handle
+
+``````matlab
+a = 1;
+b = 2;
+f5 = @(x) a + b + x;
+save([tempdir(), 'test.nh5'], 'f5');
+clear all
+load([tempdir(), 'test.nh5'])
+f5
+f5(10)
+
+``````
+
+Multiple output arguments
+
+``````matlab
+P = pi * 3;
+mymeshgrid = @(X, Y) meshgrid((-X:X/P:X),(-Y:Y/P:Y));
+[x, y] = mymeshgrid(pi, 2 * pi);
+z = cos(x) + sin(y);
+mesh(x, y, z)
+
+``````
+
+
+== See also
+
+#nlink(<function_handle:func2str>)[func2str];, #nlink(<function_handle:str2func>)[str2func];, #nlink(<function_handle:isfunction_handle>)[isfunction\_handle];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [initial version],
+)
+
+// Author: Allan CORNET

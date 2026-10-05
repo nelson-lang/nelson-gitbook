@@ -1,10 +1,10 @@
-# terminal_size
+# terminal\_size
 
 Interroger la taille de la fenêtre du terminal.
 
 ## 📝 Syntaxe
 
-- [r, c] = terminal_size()
+- [r, c] = terminal\_size()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Interroger la taille de la fenêtre du terminal.
 
 ## 📄 Description
 
-<b>terminal_size()</b> retourne un vecteur avec la taille de la fenêtre du terminal en caractères (lignes et colonnes).
+
+<b>terminal\_size()</b> retourne un vecteur avec la taille de la fenêtre du terminal en caractères (lignes et colonnes).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 terminal_size()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ terminal_size()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

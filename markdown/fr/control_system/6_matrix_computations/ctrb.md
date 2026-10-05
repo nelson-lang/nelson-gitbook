@@ -19,15 +19,18 @@ Contrôlabilité du modèle d'espace d'état.
 
 ## 📄 Description
 
-La contrôlabilité dans un système dynamique fait référence à la capacité du système à être guidé vers n'importe quel état souhaité dans un délai fini grâce à l'application de signaux de contrôle appropriés.
 
-Cette propriété est communément connue sous le nom d'accessibilité.
+La contrôlabilité dans un système dynamique fait référence à la capacité du système à être guidé vers n'importe quel état souhaité dans un délai fini grâce à l'application de signaux de contrôle appropriés. 
 
-La fonction <b>ctrb</b> est utilisée pour calculer une matrice de contrôlabilité, soit à partir des matrices d'état, soit à partir d'un modèle d'espace d'état.
+Cette propriété est communément connue sous le nom d'accessibilité. 
+
+La fonction <b>ctrb</b> est utilisée pour calculer une matrice de contrôlabilité, soit à partir des matrices d'état, soit à partir d'un modèle d'espace d'état. 
 
 La matrice résultante sert d'outil pour évaluer et confirmer la contrôlabilité du système.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2; 0 3];
@@ -38,14 +41,15 @@ sys = ss(A, B, C, D);
 Co = ctrb(sys)
 ```
 
+
 ## 🔗 Voir aussi
 
-[ctrbf](../../control_system/ctrbf.md), [obsv](../../control_system/obsv.md).
+[ctrbf](../../control_system/6_matrix_computations/ctrbf.md), [obsv](../../control_system/6_matrix_computations/obsv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

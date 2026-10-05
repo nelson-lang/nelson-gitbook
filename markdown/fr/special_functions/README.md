@@ -1,10 +1,16 @@
 # Fonctions spéciales
 
+
+    
 Le module Fonctions Spéciales fournit des outils pour effectuer des opérations mathématiques avancées dans Nelson.
 
+    
 Il inclut des fonctions pour les distributions statistiques, les calculs combinatoires, et d'autres calculs mathématiques spécialisés qui sont essentiels dans diverses applications scientifiques et d'ingénierie.
 
+    
 Ce module améliore les capacités de Nelson en offrant une gamme de fonctions qui supportent des analyses complexes et des tâches de modélisation.
+
+  
 
 ## Functions
 
@@ -35,7 +41,9 @@ Ce module améliore les capacités de Nelson en offrant une gamme de fonctions q
 - [isprime](isprime.md) - Détermine quels éléments d'un tableau sont premiers
 - [lcm](lcm.md) - Plus petit commun multiple
 - [makima](makima.md) - Interpolation cubique d'Akima modifiee.
+- [pchip](pchip.md) - Interpolation polynomiale cubique de Hermite par morceaux (PCHIP).
 - [peaks](peaks.md) - Fonction peaks
 - [primes](primes.md) - Nombres premiers inférieurs ou égaux à la valeur d'entrée
 - [quadgk](quadgk.md) - Evalue numeriquement une integrale par quadrature Gauss-Kronrod.
 - [spline](spline.md) - Interpolation par spline cubique.
+

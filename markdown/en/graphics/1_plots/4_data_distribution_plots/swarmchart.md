@@ -11,7 +11,8 @@ Display a 2-D swarm chart.
 
 ## 📄 Description
 
-<b>swarmchart</b> displays points using a scatter object. The returned object keeps the original <b>XData</b> and <b>YData</b> and uses scatter jitter properties for the displayed x positions.
+
+<b>swarmchart</b> displays points using a scatter object. The returned object keeps the original <b>XData</b> and <b>YData</b> and uses scatter jitter properties for the displayed x positions. 
 
 Supported chart properties are <b>XJitter</b>, <b>XJitterWidth</b>, and <b>ColorVariable</b>. Other arguments are forwarded to <b>scatter</b>.
 
@@ -22,8 +23,8 @@ Display grouped observations.
 ```matlab
 swarmchart([1 1 1 2 2 2], [4 5 3 7 6 8], 'filled');
 ```
-
 <img src="swarmchart_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

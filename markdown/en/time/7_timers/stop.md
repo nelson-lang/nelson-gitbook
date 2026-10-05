@@ -12,7 +12,8 @@ Stop a running timer object.
 
 ## 📄 Description
 
-<b>stop</b> stops running timers. If a timer has a <b>StopFcn</b>, Nelson executes it when the timer transitions from running to stopped.
+
+<b>stop</b> stops running timers. If a timer has a <b>StopFcn</b>, Nelson executes it when the timer transitions from running to stopped. 
 
 Calling <b>stop</b> on a timer that is already stopped leaves the timer stopped.
 
@@ -32,13 +33,14 @@ stop(t);
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [start](../../time/start.md), [wait](../../time/wait.md).
+[timer](../../time/7_timers/timer.md), [start](../../time/7_timers/start.md), [wait](../../time/7_timers/wait.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

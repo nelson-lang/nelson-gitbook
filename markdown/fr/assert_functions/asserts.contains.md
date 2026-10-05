@@ -19,7 +19,8 @@ Verifie qu'un texte contient un motif.
 
 ## 📄 Description
 
-L'assertion reussit lorsque pattern est trouve dans text.
+
+L'assertion reussit lorsque pattern est trouve dans text. 
 
 Utiliser asserts.containsAll ou asserts.containsAny pour une liste de motifs.
 
@@ -30,12 +31,12 @@ Pattern present
 ```matlab
 asserts.contains('Nelson language', 'language');
 ```
-
 Capture a missing pattern
 
 ```matlab
 [res, msg] = asserts.contains('Nelson language', 'toolbox');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a missing pattern
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

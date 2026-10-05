@@ -1,31 +1,32 @@
-# slicot_tg01ad
+# slicot\_tg01ad
 
 Équilibrage des matrices du pinceau système correspondant au triplet descripteur (A - λ E, B, C).
 
 ## 📝 Syntaxe
 
-- [A\_OUT, E\_OUT, B\_OUT, C\_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
+- [A\_OUT, E\_OUT, B\_OUT, C\_OUT, LSCALE, RSCALE, INFO] = slicot\_tg01ad(JOB, THRESH, A\_IN, E\_IN, B\_IN, C\_IN)
 
 ## 📥 Argument d'entrée
 
 - JOB - = 'A': Toutes les matrices sont impliquées dans l'équilibrage ; = 'B': Les matrices B, A et E sont impliquées ; = 'C': Les matrices C, A et E sont impliquées ; = 'N': Les matrices B et C ne sont pas impliquées dans l'équilibrage.
 - THRESH - Valeur seuil pour la magnitude des éléments : les éléments de magnitude inférieure ou égale à THRESH sont ignorés pour l'équilibrage.
-- A_IN - La partie principale L-by-N de ce tableau doit contenir la matrice de dynamique d'état A.
-- E_IN - La partie principale L-by-N de ce tableau doit contenir la matrice descripteur E.
-- B_IN - La partie principale L-by-M de ce tableau doit contenir la matrice entrée/état B.
-- C_IN - La partie principale P-by-N de ce tableau doit contenir la matrice état/sortie C.
+- A\_IN - La partie principale L-by-N de ce tableau doit contenir la matrice de dynamique d'état A.
+- E\_IN - La partie principale L-by-N de ce tableau doit contenir la matrice descripteur E.
+- B\_IN - La partie principale L-by-M de ce tableau doit contenir la matrice entrée/état B.
+- C\_IN - La partie principale P-by-N de ce tableau doit contenir la matrice état/sortie C.
 
 ## 📤 Argument de sortie
 
-- A_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl\*A\*Dr.
-- E_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl\*E\*Dr.
-- B_OUT - La partie principale L-by-M de ce tableau contient la matrice équilibrée Dl\*B.
-- C_OUT - La partie principale P-by-N de ce tableau contient la matrice équilibrée C\*Dr.
+- A\_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl\*A\*Dr.
+- E\_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl\*E\*Dr.
+- B\_OUT - La partie principale L-by-M de ce tableau contient la matrice équilibrée Dl\*B.
+- C\_OUT - La partie principale P-by-N de ce tableau contient la matrice équilibrée C\*Dr.
 - LSCALE - Les facteurs d'échelle appliqués à S par la gauche.
 - RSCALE - Les facteurs d'échelle appliqués à S par la droite.
 - INFO - = 0 : sortie réussie.
 
 ## 📄 Description
+
 
 Équilibrer les matrices du pinceau du système correspondant au triplet descripteur (A - λ E, B, C).
 
@@ -38,6 +39,8 @@ TG01AD
 http://slicot.org/objects/software/shared/doc/TG01AD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 L = 4;
@@ -68,14 +71,15 @@ C_IN = [-0.1      0.0    0.001    0.0;
 [A_OUT, E_OUT, B_OUT, C_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_tb01id](../slicot/slicot_tb01id.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [balreal](../control_system/balreal.md).
+[slicot_tb01id](../slicot/slicot_tb01id.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [balreal](../control_system/1_dynamic_system_models/balreal.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

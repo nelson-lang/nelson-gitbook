@@ -16,11 +16,14 @@ Renvoie vrai si la variable var est une matrice vide.
 
 ## 📄 Description
 
-<b>isempty</b> renvoie vrai (1 logique) si l'argument est une matrice vide.
+
+<b>isempty</b> renvoie vrai (1 logique) si l'argument est une matrice vide. 
 
 Au moins une de ses dimensions est nulle.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = rand(3, 3, 3);
@@ -29,6 +32,7 @@ A(:, :, :) = [];
 res = isempty(A)
 
 ```
+
 
 ```matlab
 B = {};
@@ -39,14 +43,15 @@ C = struct([])
 res = isempty(C)
 ```
 
+
 ## 🔗 Voir aussi
 
 [class](../types/class.md), [isstruct](../types/isstruct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

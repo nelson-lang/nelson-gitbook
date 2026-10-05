@@ -26,50 +26,67 @@ Linear 2-D plot.
 
 ## 📄 Description
 
-<b>plot(Y)</b> plots the columns of <b>Y</b> versus their index.
 
-<b>plot(X, Y)</b> plots line defined by <b>X</b> versus<b>Y</b> pair.
+<b>plot(Y)</b> plots the columns of <b>Y</b> versus their index. 
 
-<b>go = plot(...)</b> returns a column vector of line graphics objects.
+<b>plot(X, Y)</b> plots line defined by <b>X</b> versus<b>Y</b> pair. 
 
-<b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order:
+<b>go = plot(...)</b> returns a column vector of line graphics objects. 
 
-The SymbolSpec specifies the symbol to be drawn at each data point:
+ 
 
-| Symbol    | Description                       |
-| --------- | --------------------------------- |
-| **'o'**   | Circle symbol                     |
-| **'x'**   | Times symbol                      |
-| **'+'**   | Plus symbol                       |
-| **'\*'**  | Asterisk symbol                   |
-| **'.'**   | Dot symbol                        |
-| **'s'**   | Square symbol                     |
-| **'d'**   | Diamond symbol                    |
-| **'v'**   | Downward-pointing triangle symbol |
-| **'^'**   | Upward-pointing triangle symbol   |
-| **' > '** | Left-pointing triangle symbol     |
-| **' < '** | Right-pointing triangle symbol    |
+<b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order: 
 
-The LineStyleSpec specifies the line style to use for each data series:
+ 
 
-| Style    | Description                  |
-| -------- | ---------------------------- |
-| **'-'**  | Solid line style             |
-| **'--'** | Dashed line style            |
-| **'-.'** | Dot-Dash-Dot-Dash line style |
-| **':'**  | Dotted line style            |
+The SymbolSpec specifies the symbol to be drawn at each data point: 
 
-The ColorSpec specifies the line color to use for each data series:
+| Symbol | Description | 
+| --- | --- | 
+| **'o'** | Circle symbol | 
+| **'x'** | Times symbol | 
+| **'+'** | Plus symbol | 
+| **'\*'** | Asterisk symbol | 
+| **'.'** | Dot symbol | 
+| **'s'** | Square symbol | 
+| **'d'** | Diamond symbol | 
+| **'v'** | Downward-pointing triangle symbol | 
+| **'^'** | Upward-pointing triangle symbol | 
+| **' > '** | Left-pointing triangle symbol | 
+| **' < '** | Right-pointing triangle symbol | 
 
-| Color   | Description   |
-| ------- | ------------- |
-| **'k'** | Color Black   |
-| **'y'** | Color Yellow  |
-| **'m'** | Color Magenta |
-| **'c'** | Color Cyan    |
-| **'r'** | Color Red     |
-| **'b'** | Color Blue    |
-| **'g'** | Color Green   |
+ 
+
+ 
+
+The LineStyleSpec specifies the line style to use for each data series: 
+
+| Style | Description | 
+| --- | --- | 
+| **'-'** | Solid line style | 
+| **'--'** | Dashed line style | 
+| **'-.'** | Dot-Dash-Dot-Dash line style | 
+| **':'** | Dotted line style | 
+
+ 
+
+ 
+
+The ColorSpec specifies the line color to use for each data series: 
+
+| Color | Description | 
+| --- | --- | 
+| **'k'** | Color Black | 
+| **'y'** | Color Yellow | 
+| **'m'** | Color Magenta | 
+| **'c'** | Color Cyan | 
+| **'r'** | Color Red | 
+| **'b'** | Color Blue | 
+| **'g'** | Color Green | 
+
+ 
+
+ 
 
 see <b>line</b> for more information about properties
 
@@ -81,7 +98,6 @@ Default abscissae using indices:
 f = figure()
 plot(sin(0:0.1:2*pi))
 ```
-
 <img src="plot_y.svg" align="middle"/>
 Using explicit abscissae:
 
@@ -90,7 +106,6 @@ f = figure()
 x = [0:0.1:2*pi]';
 plot(x, sin(x))
 ```
-
 <img src="plot_xy.svg" align="middle"/>
 Multiple curves with shared abscissae:
 
@@ -99,7 +114,6 @@ f = figure()
 x = [0:0.1:2*pi]';
 plot(x, [cos(x), cos(2*x), cos(3*x)])
 ```
-
 <img src="plot_multiple.svg" align="middle"/>
 Color and Size of Markers:
 
@@ -109,7 +123,6 @@ x = -pi:pi/10:pi;
 y = tan(sin(x)) - sin(tan(x));
 plot(x ,y, '--rs', LineWidth=2, MarkerEdgeColor='k', MarkerFaceColor='g', MarkerSize=11)
 ```
-
 <img src="plot_markers.svg" align="middle"/>
 Adding Title and Axis Labels:
 
@@ -122,8 +135,8 @@ title('2-D Line Plot')
 xlabel('x')
 ylabel('sin(5x)')
 ```
-
 <img src="plot_title.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -131,7 +144,7 @@ ylabel('sin(5x)')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

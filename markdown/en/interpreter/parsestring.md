@@ -16,9 +16,12 @@ Parse a string.
 
 ## 📄 Description
 
+
 <b>parsestring</b> parse a string and returns if it is a valid script, a valid function or an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 parsestring('1 + 1')
@@ -26,9 +29,10 @@ parsestring('1 +++ 1')
 parsestring('1 +*+ 1')
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

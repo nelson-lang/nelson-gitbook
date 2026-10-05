@@ -4,28 +4,31 @@ Renvoie le dernier message d'avertissement enregistré.
 
 ## 📝 Syntaxe
 
-- last_message = lastwarn()
+- last\_message = lastwarn()
 - [last\_message, last\_identifier] = lastwarn()
 - lastwarn(' ')
-- lastwarn(new_message)
-- lastwarn(new_message, new_identifier)
+- lastwarn(new\_message)
+- lastwarn(new\_message, new\_identifier)
 - [last\_message, last\_identifier] = lastwarn(' ')
-- [last\_message, last\_identifier] = lastwarn(new_message)
-- [last\_message, last\_identifier] = lastwarn(new_message, new_identifier)
+- [last\_message, last\_identifier] = lastwarn(new\_message)
+- [last\_message, last\_identifier] = lastwarn(new\_message, new\_identifier)
 
 ## 📤 Argument de sortie
 
-- last_message - chaîne : dernier message d'avertissement.
-- last_identifier - chaîne : identifiant.
+- last\_message - chaîne : dernier message d'avertissement.
+- last\_identifier - chaîne : identifiant.
 
 ## 📄 Description
 
-<b>last_message = lastwarn()</b> renvoie une chaîne contenant le dernier message d'avertissement.
+
+<b>last\_message = lastwarn()</b> renvoie une chaîne contenant le dernier message d'avertissement. 
 
 <b>lastwarn('
-')</b> efface le dernier avertissement.
+        ')</b> efface le dernier avertissement.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,8 +37,9 @@ Renvoie le dernier message d'avertissement enregistré.
     [msg, id] = lastwarn()
     lastwarn('')
     [msg, id] = lastwarn()
-
+    
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +47,8 @@ Renvoie le dernier message d'avertissement enregistré.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

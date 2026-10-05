@@ -20,6 +20,7 @@ Calcule les effectifs de l histogramme d image.
 
 ## 📄 Description
 
+
 Calcule les effectifs de l histogramme d image. Les emplacements de bins utilisent l echelle native des images entieres et l intervalle [0, 1] pour les images flottantes et logiques.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ I=repmat(linspace(0,1,96),64,1);
 [counts,bins]=imhist(I,32);
 figure; bar(bins,counts); title('Histogram');
 ```
-
 <img src="imhist_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imadjust](../../../image_processing/imadjust.md), [graythresh](../../../image_processing/graythresh.md).
+[imadjust](../../../image_processing/1_image_basics/2_contrast_thresholding/imadjust.md), [graythresh](../../../image_processing/1_image_basics/2_contrast_thresholding/graythresh.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

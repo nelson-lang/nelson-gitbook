@@ -17,9 +17,12 @@ FIR filtering helper.
 
 ## 📄 Description
 
+
 <b>fftfilt</b> returns the first length(X) samples of convolution between B and X. Matrix inputs are filtered column by column.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -27,13 +30,14 @@ y = fftfilt([1 1], [1 2 3]);
 
 ```
 
+
 ## 🔗 See also
 
-[filter](../../elementary_functions/filter.md).
+[filter](../../elementary_functions/7_indexing_dimensions/filter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

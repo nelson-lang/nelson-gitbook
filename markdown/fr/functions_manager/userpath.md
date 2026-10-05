@@ -21,17 +21,20 @@ Affiche ou modifie le répertoire par défaut des fonctions utilisateur.
 
 ## 📄 Description
 
-<b>userpath</b> modifie ou affiche le chemin de chargement de l'utilisateur.
 
-Par défaut, le répertoire <b>userpath</b> dépend de la plateforme :
+<b>userpath</b> modifie ou affiche le chemin de chargement de l'utilisateur. 
 
-Plateformes Windows : %USERPROFILE%/Documents/Nelson
+Par défaut, le répertoire <b>userpath</b> dépend de la plateforme : 
 
-Autres plateformes : $home/Documents/Nelson
+Plateformes Windows : %USERPROFILE%/Documents/Nelson 
 
-Il est possible de forcer userpath en définissant une variable d'environnement : NELSON_USERPATH avec un chemin existant.
+Autres plateformes : $home/Documents/Nelson 
+
+Il est possible de forcer userpath en définissant une variable d'environnement : NELSON\_USERPATH avec un chemin existant.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 path
@@ -39,14 +42,15 @@ userpath
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [path](../functions_manager/path.md), [addpath](../functions_manager/addpath.md), [rehash](../functions_manager/rehash.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

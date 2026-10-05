@@ -18,7 +18,8 @@ Verifie qu'une valeur est vide.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value n'a aucun element.
+
+L'assertion reussit lorsque value n'a aucun element. 
 
 Les diagnostics incluent les dimensions calculees.
 
@@ -29,12 +30,12 @@ Empty value
 ```matlab
 asserts.empty([]);
 ```
-
 Capture a non-empty value
 
 ```matlab
 [res, msg] = asserts.empty(1);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a non-empty value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

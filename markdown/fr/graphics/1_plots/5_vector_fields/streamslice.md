@@ -13,7 +13,8 @@ Afficher la direction d'un champ vectoriel sur un plan.
 
 ## 📄 Description
 
-<b>streamslice</b> affiche la direction d'un champ vectoriel au moyen d'objets line pour les chemins de courant et les fleches de direction.
+
+<b>streamslice</b> affiche la direction d'un champ vectoriel au moyen d'objets line pour les chemins de courant et les fleches de direction. 
 
 Avec deux sorties, <b>streamslice</b> retourne des tableaux de cellules de sommets de lignes de courant et de sommets de fleches au lieu de tracer.
 
@@ -25,8 +26,8 @@ Afficher la direction dans un champ 2-D.
 [x, y] = meshgrid(-2:2, -2:2);
 streamslice(x, y, -y, x);
 ```
-
 <img src="streamslice_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

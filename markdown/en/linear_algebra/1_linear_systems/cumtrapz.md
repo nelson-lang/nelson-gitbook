@@ -21,26 +21,30 @@ Cumulative trapezoidal numerical integration.
 
 ## 📄 Description
 
-<b>cumtrapz(Y)</b> computes the cumulative integral of <b>Y</b> using the trapezoidal method with unit spacing, along the first non-singleton dimension.
 
-<b>cumtrapz(X, Y)</b> integrates <b>Y</b> with respect to the coordinates given by <b>X</b>.
+<b>cumtrapz(Y)</b> computes the cumulative integral of <b>Y</b> using the trapezoidal method with unit spacing, along the first non-singleton dimension. 
+
+<b>cumtrapz(X, Y)</b> integrates <b>Y</b> with respect to the coordinates given by <b>X</b>. 
 
 The result has the same size as <b>Y</b>, and its first value along the working dimension is <b>0</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:0.1:pi;
 Z = cumtrapz(x, sin(x))
 ```
 
+
 ## 🔗 See also
 
-[trapz](../trapz.md), [cumsum](../../elementary_functions/cumsum.md).
+[trapz](../1_linear_systems/trapz.md), [cumsum](../../data_analysis/cumsum.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

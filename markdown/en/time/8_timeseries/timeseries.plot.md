@@ -20,9 +20,11 @@ Plot timeseries data against time.
 
 ## 📄 Description
 
+
 <b>plot</b> Plots sample time on the x-axis and timeseries data on the y-axis. Zero-order hold interpolation uses stair-step drawing.
 
 ## 💡 Example
+
 
 ```matlab
 f = figure();
@@ -31,13 +33,14 @@ h = plot(ts);
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

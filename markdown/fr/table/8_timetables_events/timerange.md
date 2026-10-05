@@ -20,24 +20,28 @@ Intervalle temporel pour indexer les lignes d'un timetable.
 
 ## 📄 Description
 
-<b>timerange</b> cree un indice de lignes pour les timetables. L'intervalle par defaut inclut la borne de debut et exclut la borne de fin.
+
+<b>timerange</b> cree un indice de lignes pour les timetables. L'intervalle par defaut inclut la borne de debut et exclut la borne de fin. 
 
 Les bornes texte <b>'-inf'</b> et <b>'inf'</b> creent des intervalles non bornes d'un cote.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 TT = timetable(seconds((1:5)'), (10:10:50)', 'VariableNames', {'A'});
 TT(timerange(seconds(2), seconds(4), 'closed'), :)
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable](../../table/timetable.md), [withtol](../../table/withtol.md), [retime](../../table/retime.md), [synchronize](../../table/synchronize.md).
+[timetable](../../table/1_create_convert_tables/timetable.md), [withtol](../../table/8_timetables_events/withtol.md), [retime](../../table/8_timetables_events/retime.md), [synchronize](../../table/8_timetables_events/synchronize.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

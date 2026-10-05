@@ -13,7 +13,8 @@ Gaussian mixture distribution.
 
 ## 📄 Description
 
-<b>gmdistribution</b> creates a Gaussian mixture model object from component means, covariance matrices, and optional component proportions.
+
+<b>gmdistribution</b> creates a Gaussian mixture model object from component means, covariance matrices, and optional component proportions. 
 
 The object supports density evaluation with <b>pdf</b>, posterior probabilities with <b>posterior</b>, maximum-posterior assignment with <b>cluster</b>, and random sampling with <b>random</b>.
 
@@ -27,13 +28,14 @@ y = pdf(gm, [0; 10; 5])
 P = posterior(gm, [0; 10; 5])
 ```
 
+
 ## 🔗 See also
 
-[fitgmdist](../../statistics/fitgmdist.md), [kmeans](../../statistics/kmeans.md).
+[fitgmdist](../../statistics/7_clustering_anomaly_detection/fitgmdist.md), [kmeans](../../statistics/7_clustering_anomaly_detection/kmeans.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

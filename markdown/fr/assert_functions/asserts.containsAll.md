@@ -19,7 +19,8 @@ Verifie qu'un texte contient tous les motifs attendus.
 
 ## 📄 Description
 
-L'assertion reussit lorsque chaque motif est trouve dans text.
+
+L'assertion reussit lorsque chaque motif est trouve dans text. 
 
 Utiliser asserts.containsAny lorsqu'un seul motif correspondant suffit.
 
@@ -30,12 +31,12 @@ All patterns present
 ```matlab
 asserts.containsAll('Nelson language', {'Nelson', 'language'});
 ```
-
 Capture a missing pattern
 
 ```matlab
 [res, msg] = asserts.containsAll('Nelson language', {'Nelson', 'toolbox'});
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a missing pattern
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

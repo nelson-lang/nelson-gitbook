@@ -1,10 +1,10 @@
-# QObject_iswindowtype
+# QObject\_iswindowtype
 
 Returns true if the QObject is a window.
 
 ## 📝 Syntax
 
-- R = QObject_iswindowtype(h)
+- R = QObject\_iswindowtype(h)
 
 ## 📥 Input argument
 
@@ -16,14 +16,18 @@ Returns true if the QObject is a window.
 
 ## 📄 Description
 
+
 Returns true if the QObject is a window; otherwise returns false.
 
 ## 💡 Example
+
+
 
 ```matlab
 h = errordlg()
 r = QObject_iswindowtype(h)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ r = QObject_iswindowtype(h)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

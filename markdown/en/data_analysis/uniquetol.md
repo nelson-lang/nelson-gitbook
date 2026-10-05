@@ -23,15 +23,19 @@ Unique values within a tolerance.
 
 ## 📄 Description
 
-<b>uniquetol</b> returns the unique values of <b>A</b> using tolerance <b>tol</b>. Two elements are considered equal when their absolute difference is less than or equal to <b>tol</b> scaled by the data. By default the scaling is the largest absolute value of <b>A</b>, or the largest absolute value of each column when <b>'ByRows'</b> is true.
+
+<b>uniquetol</b> returns the unique values of <b>A</b> using tolerance <b>tol</b>. Two elements are considered equal when their absolute difference is less than or equal to <b>tol</b> scaled by the data. By default the scaling is the largest absolute value of <b>A</b>, or the largest absolute value of each column when <b>'ByRows'</b> is true. 
 
 The output <b>C</b> is sorted in ascending order and, for each group of nearby values, keeps the smallest one.
 
 ## 💡 Example
 
+
+
 ```matlab
 [C, ia, ic] = uniquetol([2 1 2 1.0000001], 1e-6)
 ```
+
 
 ## 🔗 See also
 
@@ -39,7 +43,7 @@ The output <b>C</b> is sorted in ascending order and, for each group of nearby v
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -15,9 +15,12 @@ Checks that value is a scalar or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeScalar</b> checks that value is a scalar or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeScalar(true)
@@ -25,15 +28,16 @@ mustBeScalar(zeros(0, 1))
 mustBeScalar([true false])
 ```
 
+
 ## 🔗 See also
 
-[isscalar](../elementary_functions/isscalar.md), [mustBeScalarOrEmpty](../validators/mustBeScalarOrEmpty.md).
+[isscalar](../elementary_functions/7_indexing_dimensions/isscalar.md), [mustBeScalarOrEmpty](../validators/mustBeScalarOrEmpty.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

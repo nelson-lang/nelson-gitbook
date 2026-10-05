@@ -21,27 +21,28 @@ Reference faible vers un objet handle.
 
 ## 📄 Description
 
-<b>nelson.lang.WeakReference</b> stocke une reference faible vers un objet handle scalaire.
 
-La reference faible ne maintient pas la cible en vie. Si toutes les references fortes vers la cible sont effacees, <b>w.Handle</b> retourne un handle invalide avec le nom de classe de la cible.
+<b>nelson.lang.WeakReference</b> stocke une reference faible vers un objet handle scalaire. 
 
-Si la cible a ete supprimee, <b>w.Handle</b> retourne aussi un handle invalide avec le nom de classe de la cible.
+La reference faible ne maintient pas la cible en vie. Si toutes les references fortes vers la cible sont effacees, <b>w.Handle</b> retourne un handle invalide avec le nom de classe de la cible. 
 
-La propriete dependante <b>Handle</b> peut etre lue et affectee. L'affectation remplace la cible faible.
+Si la cible a ete supprimee, <b>w.Handle</b> retourne aussi un handle invalide avec le nom de classe de la cible. 
 
-La propriete dependante <b>ValidHandle</b> retourne la cible vivante. Si la cible est absente, expiree ou supprimee, la lecture de <b>ValidHandle</b> leve une erreur.
+La propriete dependante <b>Handle</b> peut etre lue et affectee. L'affectation remplace la cible faible. 
 
-Une reference faible creee sans entree retourne un handle invalide <b>nelson.lang.HandlePlaceholder</b> via <b>Handle</b>.
+La propriete dependante <b>ValidHandle</b> retourne la cible vivante. Si la cible est absente, expiree ou supprimee, la lecture de <b>ValidHandle</b> leve une erreur. 
 
-Lire <b>Handle</b> depuis une reference faible vivante retourne une valeur handle forte normale. Conserver cette valeur dans une variable maintient la cible en vie jusqu'a ce que cette variable soit effacee ou remplacee.
+Une reference faible creee sans entree retourne un handle invalide <b>nelson.lang.HandlePlaceholder</b> via <b>Handle</b>. 
 
-L'affectation d'un handle invalide est autorisee. La reference faible memorise alors la classe du handle et retourne un handle invalide de cette classe.
+Lire <b>Handle</b> depuis une reference faible vivante retourne une valeur handle forte normale. Conserver cette valeur dans une variable maintient la cible en vie jusqu'a ce que cette variable soit effacee ou remplacee. 
 
-La cible affectee doit etre un handle scalaire. Les valeurs numeriques, strings, structs, cellules et tableaux de handles de plus d'un element sont refuses.
+L'affectation d'un handle invalide est autorisee. La reference faible memorise alors la classe du handle et retourne un handle invalide de cette classe. 
 
-Utiliser <b>isvalid(w.Handle)</b> quand une cible absente est une condition ordinaire. Utiliser <b>w.ValidHandle</b> quand une cible absente doit etre traitee comme une erreur.
+La cible affectee doit etre un handle scalaire. Les valeurs numeriques, strings, structs, cellules et tableaux de handles de plus d'un element sont refuses. 
 
-<b>nelson.lang.WeakReference</b> est elle-meme un objet handle. Supprimer ou effacer l'objet reference faible ne supprime pas l'objet cible.
+Utiliser <b>isvalid(w.Handle)</b> quand une cible absente est une condition ordinaire. Utiliser <b>w.ValidHandle</b> quand une cible absente doit etre traitee comme une erreur. 
+
+<b>nelson.lang.WeakReference</b> est elle-meme un objet handle. Supprimer ou effacer l'objet reference faible ne supprime pas l'objet cible. 
 
 L'objet reference faible ne stocke que l'identite du handle cible et le nom de classe de repli. Il ne copie pas les proprietes ni les donnees de la cible.
 
@@ -55,7 +56,6 @@ h = w.Handle;
 class(h)
 isvalid(h)
 ```
-
 Observer que la reference faible ne maintient pas la cible en vie.
 
 ```matlab
@@ -72,7 +72,6 @@ h = w.Handle;
 isvalid(h)
 class(h)
 ```
-
 Maintenir la cible en vie avec un handle fort retourne par Handle.
 
 ```matlab
@@ -89,7 +88,6 @@ strongTarget.Value
 clear strongTarget;
 isvalid(w.Handle)
 ```
-
 Utiliser ValidHandle quand une cible invalide doit etre traitee comme une erreur.
 
 ```matlab
@@ -107,7 +105,6 @@ catch exception
   disp(exception.message)
 end
 ```
-
 Remplacer la cible faible.
 
 ```matlab
@@ -126,14 +123,15 @@ delete(b);
 isvalid(w.Handle)
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.lang.HandlePlaceholder](../handle/nelson.lang.HandlePlaceholder.md), [nelson.lang.invalidHandle](../handle/nelson.lang.invalidHandle.md), [isvalid](../handle/isvalid.md), [delete](../handle/delete.md), [isa](../types/isa.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

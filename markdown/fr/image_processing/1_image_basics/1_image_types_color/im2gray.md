@@ -16,7 +16,8 @@ Convertit une image RGB en niveaux de gris et conserve les images deja grises.
 
 ## 📄 Description
 
-Convertit une image RGB en niveaux de gris et conserve les images deja grises.
+
+Convertit une image RGB en niveaux de gris et conserve les images deja grises. 
 
 L'entree doit etre numerique et non logique. Les entrees 3-D doivent etre des images RGB avec exactement trois plans de couleur.
 
@@ -31,17 +32,17 @@ RGB(:,:,1)=X; RGB(:,:,2)=Y; RGB(:,:,3)=1-X;
 G=im2gray(RGB);
 figure; imagesc(G); g=linspace(0,1,64)'; colormap([g g g]); title('Gray image');
 ```
-
 <img src="im2gray_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[rgb2gray](../../../image_processing/rgb2gray.md), [ind2gray](../../../image_processing/ind2gray.md), [im2double](../../../image_processing/im2double.md).
+[rgb2gray](../../../image_processing/1_image_basics/1_image_types_color/rgb2gray.md), [ind2gray](../../../image_processing/1_image_basics/1_image_types_color/ind2gray.md), [im2double](../../../image_processing/1_image_basics/1_image_types_color/im2double.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,22 +20,26 @@ Beta random numbers
 
 ## 📄 Description
 
+
 <b>betarnd</b> generates beta distributed random values. Scalar parameters are expanded to match array inputs or the requested output size.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = betarnd(2, 5, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[betapdf](../../statistics/betapdf.md), [betacdf](../../statistics/betacdf.md), [betainv](../../statistics/betainv.md), [betastat](../../statistics/betastat.md).
+[betapdf](../../statistics/2_probability_distributions/betapdf.md), [betacdf](../../statistics/2_probability_distributions/betacdf.md), [betainv](../../statistics/2_probability_distributions/betainv.md), [betastat](../../statistics/2_probability_distributions/betastat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

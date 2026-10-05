@@ -17,9 +17,12 @@ Vérifie que la valeur est un vecteur ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeVector</b> vérifie que la valeur est un vecteur ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeVector(true)
@@ -28,14 +31,15 @@ mustBeVector([])
 mustBeVector([], 'allows-all-empties')
 ```
 
+
 ## 🔗 Voir aussi
 
-[isvector](../elementary_functions/isvector.md).
+[isvector](../elementary_functions/7_indexing_dimensions/isvector.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

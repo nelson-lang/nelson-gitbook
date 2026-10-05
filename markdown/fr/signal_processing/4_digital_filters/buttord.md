@@ -20,9 +20,12 @@ Ordre minimal pour un filtre Butterworth.
 
 ## 📄 Description
 
+
 <b>buttord</b> estime le plus petit ordre Butterworth satisfaisant les specifications.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ Ordre minimal pour un filtre Butterworth.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[butter](../../signal_processing/butter.md).
+[butter](../../signal_processing/4_digital_filters/butter.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

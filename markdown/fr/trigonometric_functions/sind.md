@@ -16,14 +16,18 @@ Calcule le sinus en degrés pour chaque élément de x.
 
 ## 📄 Description
 
+
 <b>sind</b> calcule le sinus en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [0 30 45 60 90 360];
 sind(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ sind(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

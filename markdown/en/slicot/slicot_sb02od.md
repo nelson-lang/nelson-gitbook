@@ -1,10 +1,10 @@
-# slicot_sb02od
+# slicot\_sb02od
 
 Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method).
 
 ## 📝 Syntax
 
-- [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
+- [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot\_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
 
 ## 📥 Input argument
 
@@ -34,9 +34,10 @@ Solution of continuous- or discrete-time algebraic Riccati equations (generalize
 
 ## 📄 Description
 
-Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)
 
-The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.
+Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method) 
+
+The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair. 
 
 A standard eigenproblem is solved in the continuous-time case if G is given.
 
@@ -49,6 +50,8 @@ SB02OD
 http://slicot.org/objects/software/shared/doc/SB02OD.html
 
 ## 💡 Example
+
+
 
 ```matlab
 N = 2;
@@ -74,13 +77,14 @@ L = zeros(N, M);
 [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
 ```
 
+
 ## 🔗 See also
 
-[slicot_sg02ad](../slicot/slicot_sg02ad.md), [slicot_sb03md](../slicot/slicot_sb03md.md), [care](../control_system/care.md), [dare](../control_system/dare.md).
+[slicot_sg02ad](../slicot/slicot_sg02ad.md), [slicot_sb03md](../slicot/slicot_sb03md.md), [care](../control_system/5_control_design_tuning/care.md), [dare](../control_system/5_control_design_tuning/dare.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

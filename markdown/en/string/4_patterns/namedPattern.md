@@ -8,21 +8,25 @@ Named pattern.
 
 ## 📄 Description
 
+
 <b>namedPattern</b> Named pattern.
 
 ## 💡 Example
+
+
 
 ```matlab
 pat = namedPattern(digitsPattern(3), "code"); extract("code 123", pat)
 ```
 
+
 ## 🔗 See also
 
-[maskedPattern](../../string/maskedPattern.md), [pattern](../../string/pattern.md).
+[maskedPattern](../../string/4_patterns/maskedPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

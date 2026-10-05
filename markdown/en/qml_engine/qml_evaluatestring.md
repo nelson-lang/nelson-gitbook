@@ -1,14 +1,14 @@
-# qml_evaluatestring
+# qml\_evaluatestring
 
 Evaluates a js string.
 
 ## 📝 Syntax
 
-- r = qml_evaluatestring(string_to_eval)
+- r = qml\_evaluatestring(string\_to\_eval)
 
 ## 📥 Input argument
 
-- string_to_eval - a string: a js code.
+- string\_to\_eval - a string: a js code.
 
 ## 📤 Output argument
 
@@ -16,15 +16,19 @@ Evaluates a js string.
 
 ## 📄 Description
 
-Evaluates a js string.
+
+Evaluates a js string. 
 
 If returned value cannot be converted to a basic type, it will converted to string.
 
 ## 💡 Example
 
+
+
 ```matlab
 qml_evaluatestring('a = 2 + 4')
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ qml_evaluatestring('a = 2 + 4')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -19,9 +19,12 @@ Trouve une chaîne dans une autre.
 
 ## 📄 Description
 
+
 <b>strfind</b> trouve une chaîne dans une autre.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -39,14 +42,15 @@ k = strfind(str,'in','ForceCellOutput',false)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[strcmp](../../string/strcmp.md).
+[strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

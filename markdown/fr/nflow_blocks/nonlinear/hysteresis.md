@@ -1,7 +1,8 @@
 # hysteresis
 
+
 <p align="center">
-<img src="hysteresis.svg"/>
+<img src="hysteresis.svg" width="192"/>
 </p>
 Relais : bascule à deux seuils avec mémoire (uHigh, uLow, yHigh, yLow).
 
@@ -19,478 +20,85 @@ Relais : bascule à deux seuils avec mémoire (uHigh, uLow, yHigh, yLow).
 
 ## 📄 Description
 
-Relais : une bascule à mémoire avec deux seuils (hystérésis).
 
-| Champ        | Valeur                    |
-| ------------ | ------------------------- |
-| Module       | <code>nflow_blocks</code> |
-| Bibliothèque | Nonlinear                 |
-| Type         | <code>hysteresis</code>   |
-| Libellé      | Relay                     |
+Relais : une bascule à mémoire avec deux seuils (hystérésis). 
 
-<b>Description</b>
+| Champ | Valeur |
+| --- | --- |
+| Module | <code>nflow_blocks</code> | 
+| Bibliothèque | Nonlinear | 
+| Type | <code>hysteresis</code> | 
+| Libellé | Relay | 
 
-La sortie est mémorisée : elle bascule à <code>yHigh</code> quand l'entrée atteint ou dépasse <code>uHigh</code>, à <code>yLow</code> quand elle atteint ou passe sous <code>uLow</code>, et conserve sa valeur précédente entre les deux. Ce comportement à deux seuils est le relais classique avec hystérésis. Avec état (sortie mémorisée).
+  
 
-<b>Ports</b>
+<b>Description</b> 
 
-| Port   | Rôle                                    | Côté   | Position  |
-| ------ | --------------------------------------- | ------ | --------- |
-| Port_1 | Entrée de commande comparée aux seuils. | gauche | x=0, y=40 |
+La sortie est mémorisée : elle bascule à <code>yHigh</code> quand l'entrée atteint ou dépasse <code>uHigh</code>, à <code>yLow</code> quand elle atteint ou passe sous <code>uLow</code>, et conserve sa valeur précédente entre les deux. Ce comportement à deux seuils est le relais classique avec hystérésis. Avec état (sortie mémorisée). 
 
-<b>Sortie(s)</b>
+<b>Ports</b> 
 
-| Port   | Rôle                                     | Côté   | Position   |
-| ------ | ---------------------------------------- | ------ | ---------- |
-| Port_1 | Sortie relais mémorisée (yHigh ou yLow). | droite | x=80, y=40 |
+| Port | Rôle | Côté | Position | 
+| --- | --- | --- | --- | 
+| Port\_1 | Entrée de commande comparée aux seuils. | gauche | x=0, y=40 | 
 
-<b>Paramètres</b>
+ 
 
-| Paramètre          | Valeur par défaut |
-| ------------------ | ----------------- |
-| <code>uHigh</code> | 1                 |
-| <code>uLow</code>  | -1                |
-| <code>yHigh</code> | 1                 |
-| <code>yLow</code>  | 0                 |
+<b>Sortie(s)</b> 
 
-<b>Caractéristiques du bloc</b>
+| Port | Rôle | Côté | Position | 
+| --- | --- | --- | --- | 
+| Port\_1 | Sortie relais mémorisée (yHigh ou yLow). | droite | x=80, y=40 | 
 
-| Champ                      | Valeur                    |
-| -------------------------- | ------------------------- |
-| Type de bloc               | hysteresis                |
-| Famille                    | Nonlinear                 |
-| Taille de rendu            | 80 x 80                   |
-| Phases                     | INIT, OUTPUT, UPDATE      |
-| État interne ou historique | oui (sortie mémorisée)    |
-| Type de données du signal  | valeurs numériques double |
+ 
 
-<b>Algorithmes</b>
+<b>Paramètres</b> 
 
-- INIT : démarre à yLow.
-- OUTPUT : émet la valeur mémorisée.
-- UPDATE : bascule à yHigh au-dessus de uHigh, à yLow sous uLow, sinon conserve.
+| Paramètre | Valeur par défaut | 
+| --- | --- | 
+| <code>uHigh</code> | 1 | 
+| <code>uLow</code> | -1 | 
+| <code>yHigh</code> | 1 | 
+| <code>yLow</code> | 0 | 
 
-<b>Équation ou règle</b>
+ 
+
+<b>Caractéristiques du bloc</b> 
+
+| Champ | Valeur |
+| --- | --- |
+| Type de bloc | hysteresis | 
+| Famille | Nonlinear | 
+| Taille de rendu | 80 x 80 | 
+| Phases | INIT, OUTPUT, UPDATE | 
+| État interne ou historique | oui (sortie mémorisée) | 
+| Type de données du signal | valeurs numériques double | 
+
+ 
+
+<b>Algorithmes</b> 
+
+- INIT : démarre à yLow. 
+- OUTPUT : émet la valeur mémorisée. 
+- UPDATE : bascule à yHigh au-dessus de uHigh, à yLow sous uLow, sinon conserve. 
+
+<b>Équation ou règle</b> 
 $$y \leftarrow \begin{cases} y_{High} & u \ge u_{High} \\ y_{Low} & u \le u_{Low} \\ y & \text{sinon} \end{cases}$$
+ 
 
-<b>Capacités étendues</b>
+<b>Capacités étendues</b> 
 
-Génération de code : supportée pour C et Rust.
+Génération de code : supportée pour C et Rust. 
 
-<b>Sources d'implémentation</b>
+<b>Sources d'implémentation</b> 
 
-Generation de code : prise en charge pour C et Rust.
+Generation de code : prise en charge pour C et Rust. 
 
-<details>
-<summary>Manifest: <code>modules/nflow_blocks/libraries/nonlinear/library.json</code></summary>
+**Manifest:** `modules/nflow_blocks/libraries/nonlinear/library.json`
+ 
 
-```json
-{
-  "id": "builtin.nonlinear",
-  "title": "Non-Linear",
-  "version": "1.0.0",
-  "format": "nflow-2",
-  "metadata": {
-    "author": "Allan CORNET",
-    "created": "2026-03-21",
-    "tool": "Nelson nflow"
-  },
-  "comment": "Blocks for non-linearities",
-  "license": "LGPL-3.0",
-  "builtin": true,
-  "blocks": [
-    {
-      "type": "saturation",
-      "icon": "saturation.svg",
-      "label": "Saturation",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "LowerLimit": -1,
-        "UpperLimit": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "saturation.svg"
-      }
-    },
-    {
-      "type": "hysteresis",
-      "label": "Relay",
-      "icon": "hysteresis.svg",
-      "phases": ["INIT", "OUTPUT", "UPDATE"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "uHigh": 1,
-        "uLow": -1,
-        "yHigh": 1,
-        "yLow": 0
-      },
-      "render": {
-        "type": "image",
-        "src": "hysteresis.svg"
-      }
-    },
-    {
-      "type": "rate",
-      "label": "Rate Lim.",
-      "icon": "rate.svg",
-      "phases": ["INIT", "OUTPUT", "UPDATE"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "RisingSlewLimit": 1,
-        "FallingSlewLimit": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "rate.svg"
-      }
-    },
-    {
-      "type": "backlash",
-      "label": "Backlash",
-      "icon": "backlash.svg",
-      "phases": ["INIT", "OUTPUT", "UPDATE"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "BacklashWidth": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "backlash.svg"
-      }
-    },
-    {
-      "type": "deadZone",
-      "label": "Dead Zone",
-      "icon": "deadZone.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "LowerValue": -1,
-        "UpperValue": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "deadZone.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 80,
-        "height": 80
-      }
-    },
-    {
-      "type": "quantizer",
-      "label": "Quantizer",
-      "icon": "quantizer.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "QuantizationInterval": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "quantizer.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 80,
-        "height": 80
-      }
-    },
-    {
-      "type": "hitCrossing",
-      "icon": "hitCrossing.svg",
-      "label": "Hit Crossing",
-      "phases": ["INIT", "OUTPUT", "UPDATE"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "HitCrossingOffset": 0,
-        "HitCrossingDirection": "either"
-      },
-      "render": {
-        "type": "image",
-        "src": "hitCrossing.svg"
-      }
-    },
-    {
-      "type": "coulombViscousFriction",
-      "label": "Coulomb & Viscous Friction",
-      "icon": "coulombViscousFriction.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "Gain": 1,
-        "Offset": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "coulombViscousFriction.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 80,
-        "height": 80
-      }
-    }
-  ]
-}
-```
+**Runtime:** `modules/nflow_blocks/src/cpp/nonlinear/hysteresis.cpp`
 
-</details>
-
-
-<details>
-<summary>Runtime: <code>modules/nflow_blocks/src/cpp/nonlinear/hysteresis.cpp</code></summary>
-
-```cpp
-//=============================================================================
-// Copyright (c) 2016-present Allan CORNET (Nelson)
-//=============================================================================
-// This file is part of Nelson.
-//=============================================================================
-// LICENCE_BLOCK_BEGIN
-// SPDX-License-Identifier: LGPL-3.0-or-later
-// LICENCE_BLOCK_END
-//=============================================================================
-// hysteresis (relay with two thresholds, Coselica Blocks.Nonlinear.Hysteresis).
-// The output latches: it switches to yHigh when the input rises past uHigh, to
-// yLow when it falls past uLow, and holds otherwise. Stateful (INIT/OUTPUT/
-// UPDATE, latched output), with C / Rust code generation.
-//=============================================================================
-#include "SimEngineTypes.hpp"
-#include "BlockRegistry.hpp"
-#include "FieldNames.hpp"
-#include "NFlowBlockDescriptor.hpp"
-#include <cmath>
-#include "nonlinear_blocks.hpp"
-//=============================================================================
-namespace Nelson {
-namespace NFlow {
-    //=============================================================================
-    bool
-    handleHysteresis(SimCtx& ctx, const Block& b, Phase phase)
-    {
-        auto& st = getState(ctx, b.nid);
-        if (phase == Phase::INIT) {
-            nflow::BlockDescriptor bd(b, ctx.variables);
-            // Initial branch: start low unless the initial input is already high.
-            st.output = bd.paramDouble("yLow", 0.0);
-            return false;
-        }
-        if (phase == Phase::ALGEBRAIC) {
-            // Direct feedthrough, as the emitted C/Rust step is: the relay
-            // answers the current input and only holds the latched branch
-            // inside the dead band. Emitting the latch alone delayed every
-            // switch by one step. Pure: UPDATE owns the latch, so an RK stage
-            // or an algebraic sweep may re-enter this freely.
-            nflow::BlockDescriptor bd(b, ctx.variables);
-            const double uHigh = bd.paramDouble("uHigh", 1.0);
-            const double uLow = bd.paramDouble("uLow", -1.0);
-            const double yHigh = bd.paramDouble("yHigh", 1.0);
-            const double yLow = bd.paramDouble("yLow", 0.0);
-            const double u = getInput(ctx, b.nid, 0, 0.0);
-            double y = st.output;
-            if (u >= uHigh) {
-                y = yHigh;
-            } else if (u <= uLow) {
-                y = yLow;
-            }
-            setOutput(ctx, b.nid, y);
-            return false;
-        }
-        if (phase == Phase::UPDATE) {
-            nflow::BlockDescriptor bd(b, ctx.variables);
-            const double uHigh = bd.paramDouble("uHigh", 1.0);
-            const double uLow = bd.paramDouble("uLow", -1.0);
-            const double yHigh = bd.paramDouble("yHigh", 1.0);
-            const double yLow = bd.paramDouble("yLow", 0.0);
-            const double u = getInput(ctx, b.nid, 0, 0.0);
-            if (u >= uHigh) {
-                st.output = yHigh;
-            } else if (u <= uLow) {
-                st.output = yLow;
-            } // else: hold the latched output
-            return false;
-        }
-        return false;
-    }
-    //=============================================================================
-    BlockCodegenTemplate
-    getCodeGenCHysteresis()
-    {
-        BlockCodegenTemplate t;
-        t.emitState = [](const BlockCodegenStateArgs& a) {
-            nflow::BlockDescriptor bd(*a.block, *a.variables);
-            a.addState("hyst_" + a.id, a.fmt(bd.paramDouble("yLow", 0.0)), "");
-        };
-        t.emitStep = [](const BlockCodegenArgs& a) {
-            nflow::BlockDescriptor bd(*a.block, *a.variables);
-            const std::string uHigh = a.fmt(bd.paramDouble("uHigh", 1.0));
-            const std::string uLow = a.fmt(bd.paramDouble("uLow", -1.0));
-            const std::string yHigh = a.fmt(bd.paramDouble("yHigh", 1.0));
-            const std::string yLow = a.fmt(bd.paramDouble("yLow", 0.0));
-            a.line("if (" + a.in[0] + " >= " + uHigh + ") s->hyst_" + a.id + " = " + yHigh + ";");
-            a.line(
-                "else if (" + a.in[0] + " <= " + uLow + ") s->hyst_" + a.id + " = " + yLow + ";");
-            a.line("out_" + a.id + " = s->hyst_" + a.id + ";");
-        };
-        return t;
-    }
-    //=============================================================================
-    BlockCodegenTemplate
-    getCodeGenRustHysteresis()
-    {
-        BlockCodegenTemplate t;
-        t.emitState = [](const BlockCodegenStateArgs& a) {
-            nflow::BlockDescriptor bd(*a.block, *a.variables);
-            a.addState("hyst_" + a.id, a.fmt(bd.paramDouble("yLow", 0.0)), "");
-        };
-        t.emitStep = [](const BlockCodegenArgs& a) {
-            nflow::BlockDescriptor bd(*a.block, *a.variables);
-            const std::string uHigh = a.fmt(bd.paramDouble("uHigh", 1.0));
-            const std::string uLow = a.fmt(bd.paramDouble("uLow", -1.0));
-            const std::string yHigh = a.fmt(bd.paramDouble("yHigh", 1.0));
-            const std::string yLow = a.fmt(bd.paramDouble("yLow", 0.0));
-            a.line("if " + a.in[0] + " >= " + uHigh + " { s.hyst_" + a.id + " = " + yHigh + "; }");
-            a.line(
-                "else if " + a.in[0] + " <= " + uLow + " { s.hyst_" + a.id + " = " + yLow + "; }");
-            a.line("out_" + a.id + " = s.hyst_" + a.id + ";");
-        };
-        return t;
-    }
-    //=============================================================================
-} // namespace NFlow
-} // namespace Nelson
-//=============================================================================
-
-```
-
-</details>
 
 ## 💡 Exemple
 
@@ -503,14 +111,15 @@ d.sampleTime=0.02; d.duration=2.0; d.solver='discrete'; d.variables=struct();
 r=jsondecode(__nflow_simulate__(jsonencode(d)));
 ```
 
+
 ## 🔗 Voir aussi
 
 [saturation](../../nflow_blocks/nonlinear/saturation.md), [deadZone](../../nflow_blocks/nonlinear/deadZone.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

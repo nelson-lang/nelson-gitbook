@@ -1,12 +1,19 @@
 # Dictionnaires
 
+
+    
 Le module Dictionnaire fournit des outils pour travailler avec des paires clé-valeur dans Nelson.
 
+    
 Il permet la création et la configuration de dictionnaires avec des types définis pour les clés et les valeurs, la consultation et la modification des entrées, ainsi que la gestion de la structure globale.
 
+    
 Ce module permet un stockage, une récupération et une manipulation efficaces des données indexées par des clés uniques, ce qui le rend adapté aux tableaux associatifs, recherches et gestion dynamique des données.
 
+    
 Les variables dictionnaire peuvent etre conservees dans des fichiers MAT et NH5, et les dictionnaires peuvent etre echanges comme fichiers JSON avec readdictionary et writedictionary.
+
+  
 
 ## Functions
 
@@ -29,3 +36,4 @@ Les variables dictionnaire peuvent etre conservees dans des fichiers MAT et NH5,
 - [types](types.md) - Types des clés et valeurs du dictionnaire.
 - [values](values.md) - Valeurs du dictionnaire.
 - [writedictionary](writedictionary.md) - Ecrit un dictionnaire dans un fichier.
+

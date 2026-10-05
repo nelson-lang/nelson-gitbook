@@ -17,9 +17,11 @@ Definit la date de debut absolue des temps d'echantillon.
 
 ## 📄 Description
 
+
 <b>setabstime</b> Stocke une date de debut absolue dans TimeInfo. Les temps d'echantillon numeriques restent relatifs a cette date de debut.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2], [0; 1]);
@@ -28,14 +30,15 @@ ts.TimeInfo.StartDate
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

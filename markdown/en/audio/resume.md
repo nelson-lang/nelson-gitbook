@@ -12,9 +12,12 @@ Resumes an audioplayer object.
 
 ## 📄 Description
 
+
 <b>resume</b> resumes an audioplayer object.
 
 ## 💡 Example
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,13 +29,14 @@ resume(playObj)
 playObj
 ```
 
+
 ## 🔗 See also
 
 [audioplayer_pause](../audio/audioplayer_pause.md), [play](../audio/play.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

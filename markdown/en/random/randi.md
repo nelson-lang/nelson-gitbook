@@ -26,21 +26,24 @@ Random Integer.
 
 ## 📄 Description
 
-<b>randi</b> returns random integers drawn from a discrete uniform distribution.
 
-X = randi(imax) returns a random scalar integer between 1 and imax.
+<b>randi</b> returns random integers drawn from a discrete uniform distribution. 
 
-X = randi(imax, n) returns an n-by-n matrix of random integers between 1 and imax.
+X = randi(imax) returns a random scalar integer between 1 and imax. 
 
-X = randi(imax, sz) returns an array where size vector sz defines size(X).
+X = randi(imax, n) returns an n-by-n matrix of random integers between 1 and imax. 
 
-X = randi(imax, ..., typename) returns an array of random integers of type typename.
+X = randi(imax, sz) returns an array where size vector sz defines size(X). 
 
-X = randi(imax, ..., 'like', p) returns an array of random integers like p (same type and complexity).
+X = randi(imax, ..., typename) returns an array of random integers of type typename. 
+
+X = randi(imax, ..., 'like', p) returns an array of random integers like p (same type and complexity). 
 
 X = randi([imin, imax], ...) returns random integers between imin and imax.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -48,11 +51,13 @@ X = randi(10)
 
 ```
 
+
 ```matlab
 
 X = randi(10, 3, 4)
 
 ```
+
 
 ```matlab
 
@@ -60,11 +65,13 @@ X = randi(10, [3 4])
 
 ```
 
+
 ```matlab
 
 X = randi(10, 3, 4, 'int32')
 
 ```
+
 
 ```matlab
 
@@ -73,11 +80,13 @@ X = randi(10, 3, 3, 'like', p)
 
 ```
 
+
 ```matlab
 
 X = randi([5, 15], 2, 3)
 
 ```
+
 
 ## 🔗 See also
 
@@ -85,9 +94,9 @@ X = randi([5, 15], 2, 3)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

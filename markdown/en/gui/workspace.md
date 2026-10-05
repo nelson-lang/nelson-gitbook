@@ -8,9 +8,13 @@ Workspace Browser
 
 ## 📄 Description
 
-The Workspace browser allows you to observe and actively oversee the contents of the workspace within Nelson, providing access and control over each variable or object present.
+
+The Workspace browser allows you to observe and actively oversee the contents of the workspace within Nelson, providing access and control over each variable or object present. 
+
 
 <img src="workspace.png" align="middle"/>
+
+
 
 ## 🔗 See also
 
@@ -18,7 +22,7 @@ The Workspace browser allows you to observe and actively oversee the contents of
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.1.0   | initial version |
 

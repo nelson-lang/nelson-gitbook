@@ -19,7 +19,8 @@ Convertit des valeurs couleur RGB en valeurs HSV.
 
 ## 📄 Description
 
-Convertit des valeurs couleur RGB en valeurs HSV. Les images RGB doivent etre des tableaux reels double, single, uint8 ou uint16. Les valeurs d images RGB flottantes sont converties sans clipping. Les images RGB vides conservent leur taille.
+
+Convertit des valeurs couleur RGB en valeurs HSV. Les images RGB doivent etre des tableaux reels double, single, uint8 ou uint16. Les valeurs d images RGB flottantes sont converties sans clipping. Les images RGB vides conservent leur taille. 
 
 Une colormap RGB double avec des valeurs dans [0, 1] est convertie ligne par ligne.
 
@@ -35,17 +36,17 @@ HSV=rgb2hsv(RGB);
 figure; subplot(1,2,1); image(RGB); title('RGB');
 subplot(1,2,2); imagesc(HSV(:,:,1)); t=linspace(0,1,64)'; colormap([t zeros(64,1) 1-t]); title('Hue');
 ```
-
 <img src="rgb2hsv_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[hsv2rgb](../../../image_processing/hsv2rgb.md), [rgb2ycbcr](../../../image_processing/rgb2ycbcr.md).
+[hsv2rgb](../../../image_processing/1_image_basics/1_image_types_color/hsv2rgb.md), [rgb2ycbcr](../../../image_processing/1_image_basics/1_image_types_color/rgb2ycbcr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,10 +1,16 @@
 # Fonctions de lecture audio
 
+
+    
 Le module audio fournit des fonctions pour lire, écrire, analyser et jouer des fichiers audio.
 
+    
 Il prend en charge le contrôle de lecture via l'objet audioplayer, la manipulation des propriétés de lecture et la gestion des métadonnées.
 
+    
 Il comprend également des utilitaires pour la conversion de signaux et la génération de sons.
+
+  
 
 ## Functions
 
@@ -44,3 +50,4 @@ Il comprend également des utilitaires pour la conversion de signaux et la gén�
 - [sound](sound.md) - Convertit une matrice de données de signal en son et le joue.
 - [soundsc](soundsc.md) - Met à l'échelle les données et joue comme son.
 - [stop](stop.md) - Arrête un objet audioplayer.
+

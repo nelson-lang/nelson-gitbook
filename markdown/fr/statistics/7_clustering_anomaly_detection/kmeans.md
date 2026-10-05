@@ -25,16 +25,19 @@ Classification k-means.
 
 ## 📄 Description
 
-<b>kmeans</b> partitionne les observations en k groupes en affectant iterativement chaque observation au centroide le plus proche puis en recalculant les centroides.
+
+<b>kmeans</b> partitionne les observations en k groupes en affectant iterativement chaque observation au centroide le plus proche puis en recalculant les centroides. 
 
 Les initialisations aleatoires utilisent le generateur global de Nelson. Utiliser <b>rng</b> avant <b>kmeans</b>, ou transmettre <b>Options</b> cree avec <b>statset</b> et un <b>RandStream</b> dans <b>Streams</b>, pour obtenir une initialisation reproductible.
 
 ## Fonction(s) utilisée(s)
 
+
     statset
     statget
     rng
     table
+  
 
 ## 💡 Exemples
 
@@ -44,7 +47,6 @@ Classer deux groupes.
 X = [0 0; 0 1; 5 5; 5 6];
 [idx, C] = kmeans(X, 2, 'Start', [0 0; 5 5])
 ```
-
 Tracer trois groupes et leurs centroides.
 
 ```matlab
@@ -71,7 +73,6 @@ title('Groupes k-means et centroides');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="kmeans_1.svg" align="middle"/>
 Tracer une initialisation aleatoire reproductible.
 
@@ -92,7 +93,6 @@ title('Depart aleatoire k-means reproductible');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="kmeans_2.svg" align="middle"/>
 Tracer des groupes calcules avec la distance cityblock.
 
@@ -120,5 +120,4 @@ title('k-means avec distance cityblock');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="kmeans_3.svg" align="middle"/>

@@ -111,35 +111,35 @@
         <keyword name="cputime" link="7_timers/cputime.html" description="Return the CPU time used by your Nelon session."/>
         <keyword name="sleep" link="7_timers/sleep.html" description="Suspend code execution."/>
         <keyword name="start" link="7_timers/start.html" description="Start a timer object."/>
-        <keyword name="timer.start" link="7_timers/start.html" description="Start a timer object."/>
+        <keyword name="timer.start" link="7_timers/start.html" description="Start a timer object." alias="true"/>
         <keyword name="startat" link="7_timers/startat.html" description="Start a timer at a specified date and time."/>
-        <keyword name="timer.startat" link="7_timers/startat.html" description="Start a timer at a specified date and time."/>
+        <keyword name="timer.startat" link="7_timers/startat.html" description="Start a timer at a specified date and time." alias="true"/>
         <keyword name="stop" link="7_timers/stop.html" description="Stop a running timer object."/>
-        <keyword name="timer.stop" link="7_timers/stop.html" description="Stop a running timer object."/>
+        <keyword name="timer.stop" link="7_timers/stop.html" description="Stop a running timer object." alias="true"/>
         <keyword name="tic" link="7_timers/tic.html" description="Starts a stopwatch timer."/>
         <keyword name="time" link="7_timers/time.html" description="Return the current time as the number of seconds or nanoseconds since the epoch."/>
         <keyword name="timeit" link="7_timers/timeit.html" description="Measure time required to run function."/>
         <keyword name="timer.delete" link="7_timers/timer.delete.html" description="Stop and invalidate timer objects."/>
-        <keyword name="delete timer" link="7_timers/timer.delete.html" description="Stop and invalidate timer objects."/>
+        <keyword name="delete timer" link="7_timers/timer.delete.html" description="Stop and invalidate timer objects." alias="true"/>
         <keyword name="timer.get" link="7_timers/timer.get.html" description="Get timer property values."/>
-        <keyword name="get timer" link="7_timers/timer.get.html" description="Get timer property values."/>
+        <keyword name="get timer" link="7_timers/timer.get.html" description="Get timer property values." alias="true"/>
         <keyword name="timer.isvalid" link="7_timers/timer.isvalid.html" description="Determine which timer handles are valid."/>
-        <keyword name="isvalid timer" link="7_timers/timer.isvalid.html" description="Determine which timer handles are valid."/>
+        <keyword name="isvalid timer" link="7_timers/timer.isvalid.html" description="Determine which timer handles are valid." alias="true"/>
         <keyword name="timer.set" link="7_timers/timer.set.html" description="Set timer property values."/>
-        <keyword name="set timer" link="7_timers/timer.set.html" description="Set timer property values."/>
+        <keyword name="set timer" link="7_timers/timer.set.html" description="Set timer property values." alias="true"/>
         <keyword name="timer" link="7_timers/timer.html" description="Create a timer object that runs commands after a delay or at repeated intervals."/>
-        <keyword name="timer object" link="7_timers/timer.html" description="Create a timer object that runs commands after a delay or at repeated intervals."/>
+        <keyword name="timer object" link="7_timers/timer.html" description="Create a timer object that runs commands after a delay or at repeated intervals." alias="true"/>
         <keyword name="Timer Callback Functions" link="7_timers/timer_callback_functions.html" description="Define commands that execute when timer events occur."/>
-        <keyword name="timer callback functions" link="7_timers/timer_callback_functions.html" description="Define commands that execute when timer events occur."/>
-        <keyword name="timer callbacks" link="7_timers/timer_callback_functions.html" description="Define commands that execute when timer events occur."/>
+        <keyword name="timer callback functions" link="7_timers/timer_callback_functions.html" description="Define commands that execute when timer events occur." alias="true"/>
+        <keyword name="timer callbacks" link="7_timers/timer_callback_functions.html" description="Define commands that execute when timer events occur." alias="true"/>
         <keyword name="Timer Queuing Conflicts" link="7_timers/timer_queuing_conflicts.html" description="Control what happens when timer callbacks are still queued when a fixed-rate timer fires again."/>
-        <keyword name="handling timer queuing conflicts" link="7_timers/timer_queuing_conflicts.html" description="Control what happens when timer callbacks are still queued when a fixed-rate timer fires again."/>
-        <keyword name="timer busy mode" link="7_timers/timer_queuing_conflicts.html" description="Control what happens when timer callbacks are still queued when a fixed-rate timer fires again."/>
+        <keyword name="handling timer queuing conflicts" link="7_timers/timer_queuing_conflicts.html" description="Control what happens when timer callbacks are still queued when a fixed-rate timer fires again." alias="true"/>
+        <keyword name="timer busy mode" link="7_timers/timer_queuing_conflicts.html" description="Control what happens when timer callbacks are still queued when a fixed-rate timer fires again." alias="true"/>
         <keyword name="timerfind" link="7_timers/timerfind.html" description="Find visible timer objects that match property criteria."/>
         <keyword name="timerfindall" link="7_timers/timerfindall.html" description="Find all timer objects that match property criteria, including hidden timers."/>
         <keyword name="toc" link="7_timers/toc.html" description="Read the stopwatch timer."/>
         <keyword name="wait" link="7_timers/wait.html" description="Wait for timer objects to stop."/>
-        <keyword name="timer.wait" link="7_timers/wait.html" description="Wait for timer objects to stop."/>
+        <keyword name="timer.wait" link="7_timers/wait.html" description="Wait for timer objects to stop." alias="true"/>
       </section>
       <section name="Time Series">
         <chapter_description>

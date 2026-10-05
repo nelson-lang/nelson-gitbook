@@ -5,14 +5,14 @@ Read the Windows registry (Windows only).
 ## 📝 Syntax
 
 - c = winqueryreg ('name', rootkey, subkey)
-- v = winqueryreg (rootkey, subkey, value_name)
+- v = winqueryreg (rootkey, subkey, value\_name)
 - v = winqueryreg (rootkey, subkey)
 
 ## 📥 Input argument
 
 - rootkey - a string: root key.
 - subkey - a string: subkey path.
-- value_name - a string: name of value.
+- value\_name - a string: name of value.
 
 ## 📤 Output argument
 
@@ -21,32 +21,36 @@ Read the Windows registry (Windows only).
 
 ## 📄 Description
 
-<b>c = winqueryreg ('name', rootkey, subkey)</b> returns a cell of strings with key names in rootkey\\subkey.
 
-<b>v = winqueryreg (rootkey, subkey, value_name)</b> returns the value associated to value_name in rootkey\\subkey.
+<b>c = winqueryreg ('name', rootkey, subkey)</b> returns a cell of strings with key names in rootkey\\subkey. 
 
-If the value is a 32-bit integer,<b>winqueryreg</b> returns the value as int32. If this value is a string, it is a string.
+<b>v = winqueryreg (rootkey, subkey, value\_name)</b> returns the value associated to value\_name in rootkey\\subkey. 
 
-<b>v = winqueryreg (rootkey, subkey)</b> returns value in rootkey\\subkey that has no value name property.
+If the value is a 32-bit integer,<b>winqueryreg</b> returns the value as int32. If this value is a string, it is a string. 
 
-Supported root keys:
+<b>v = winqueryreg (rootkey, subkey)</b> returns value in rootkey\\subkey that has no value name property. 
 
-'HKEY_CLASSES_ROOT', 'HKCR',
+Supported root keys: 
 
-'HKEY_CURRENT_USER', 'HKCU',
+'HKEY\_CLASSES\_ROOT', 'HKCR', 
 
-'HKEY_LOCAL_MACHINE', 'HKLM',
+'HKEY\_CURRENT\_USER', 'HKCU', 
 
-'HKEY_USERS', 'HKU',
+'HKEY\_LOCAL\_MACHINE', 'HKLM', 
 
-'HKEY_CURRENT_CONFIG', 'HKCC'
+'HKEY\_USERS', 'HKU', 
+
+'HKEY\_CURRENT\_CONFIG', 'HKCC'
 
 ## 💡 Example
+
+
 
 ```matlab
 winqueryreg('name', 'HKEY_LOCAL_MACHINE', 'HARDWARE\DESCRIPTION\System')
 winqueryreg('HKLM', 'HARDWARE\DESCRIPTION\System\CentralProcessor\1\', 'ProcessorNameString')
 ```
+
 
 ## 🔗 See also
 
@@ -54,7 +58,7 @@ winqueryreg('HKLM', 'HARDWARE\DESCRIPTION\System\CentralProcessor\1\', 'Processo
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -18,6 +18,7 @@ Rogne une image avec un rectangle.
 
 ## 📄 Description
 
+
 Rogne une image avec un rectangle [x y width height]. Le rectangle doit etre un vecteur numerique a 4 elements avec une largeur et une hauteur non negatives.
 
 ## 💡 Exemple
@@ -30,17 +31,17 @@ J=imcrop(I,[16 16 31 31]);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Crop');
 ```
-
 <img src="imcrop_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imresize](../../../image_processing/imresize.md), [imrotate](../../../image_processing/imrotate.md), [imtranslate](../../../image_processing/imtranslate.md).
+[imresize](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imresize.md), [imrotate](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imrotate.md), [imtranslate](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imtranslate.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

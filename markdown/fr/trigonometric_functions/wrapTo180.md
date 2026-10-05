@@ -16,13 +16,17 @@ Ramene un angle en degres dans [-180, 180].
 
 ## 📄 Description
 
+
 <b>wrapTo180(alpha)</b> ramene les angles en degres dans l'intervalle <b>[-180, 180]</b>. Les multiples positifs de 180 donnent 180, les multiples negatifs donnent -180.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 wrapTo180([190 -190 360])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ wrapTo180([190 -190 360])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

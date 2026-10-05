@@ -4,13 +4,14 @@ Use Nelson through MCP from an AI agent.
 
 ## 📄 Description
 
-<b>mcpusage</b> explains how to connect an MCP-capable AI agent to Nelson.
 
-Nelson runs the MCP server with <b>mcpserver</b>. The AI agent is the MCP client. A local model provider such as Ollama can run the language model, but Ollama itself is not the MCP client.
+<b>mcpusage</b> explains how to connect an MCP-capable AI agent to Nelson. 
 
-The recommended executable is <b>nelson-adv-cli</b>, because it can run graphical commands used by <b>create_nelson_plot</b> while keeping standard output reserved for MCP JSON-RPC messages.
+Nelson runs the MCP server with <b>mcpserver</b>. The AI agent is the MCP client. A local model provider such as Ollama can run the language model, but Ollama itself is not the MCP client. 
 
-Registering Nelson in an MCP client is usually a one-time configuration step. Repeat it only when the Nelson executable path, server name, workspace root, or server options change.
+The recommended executable is <b>nelson-adv-cli</b>, because it can run graphical commands used by <b>create\_nelson\_plot</b> while keeping standard output reserved for MCP JSON-RPC messages. 
+
+Registering Nelson in an MCP client is usually a one-time configuration step. Repeat it only when the Nelson executable path, server name, workspace root, or server options change. 
 
 Use <b>--workspace-root</b> to restrict file-based tools to a project folder. Use <b>--allow-execution=false</b> to disable execution tools, and <b>--allow-format=false</b> to disable formatting tools.
 
@@ -23,7 +24,6 @@ Start the Nelson MCP server manually.
 nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
 
 ```
-
 Register Nelson as an MCP server in Codex.
 
 ```matlab
@@ -32,7 +32,6 @@ Register Nelson as an MCP server in Codex.
 codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
 
 ```
-
 Generic MCP client configuration using a local Ollama model.
 
 ```matlab
@@ -59,7 +58,6 @@ Generic MCP client configuration using a local Ollama model.
 }
 
 ```
-
 Suggested first prompt for an MCP agent.
 
 ```matlab
@@ -72,7 +70,6 @@ Before editing files, inspect them with read-only tools.
 When creating a plot, use create_nelson_plot and return the PNG path.
 
 ```
-
 Useful MCP tools exposed by Nelson.
 
 ```matlab
@@ -92,7 +89,6 @@ format_nelson_file        Format a .m file inside the workspace root.
 create_nelson_plot        Execute plotting code and return a PNG path.
 
 ```
-
 Diagnose common MCP setup problems.
 
 ```matlab
@@ -119,12 +115,13 @@ If responses are too large:
 
 ```
 
+
 ## 🔗 See also
 
 [mcpserver](../ai/mcpserver.md), [mcpinfo](../ai/mcpinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |

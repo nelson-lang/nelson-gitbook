@@ -26,23 +26,27 @@ Estimation de la moyenne et de l'ecart type normaux
 
 ## 📄 Description
 
+
 <b>normfit</b> estime les parametres de moyenne et d'ecart type de la loi normale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-2 -1 0 1 3 5];
 [muhat, sigmahat] = normfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[normlike](../../statistics/normlike.md), [normpdf](../../statistics/normpdf.md), [normcdf](../../statistics/normcdf.md).
+[normlike](../../statistics/2_probability_distributions/normlike.md), [normpdf](../../statistics/2_probability_distributions/normpdf.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

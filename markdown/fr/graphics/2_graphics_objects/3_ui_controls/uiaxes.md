@@ -19,6 +19,7 @@ Crée des axes pour les applications de style App Designer.
 
 ## 📄 Description
 
+
 <b>ax = uiaxes</b> crée des axes adaptés aux applications basées sur uifigure et retourne l'objet axes. Se comporte comme <b>axes</b> avec les défauts UIAxes : <b>Units</b> = 'pixels', <b>Position</b> = [10 10 400 300], <b>NextPlot</b> = 'replacechildren', <b>FontUnits</b> = 'pixels'. Passez les axes aux fonctions de tracé : <b>plot(ax, ...)</b>.
 
 ## 💡 Exemples
@@ -34,7 +35,6 @@ plot(ax, x, sin(x), 'LineWidth', 1.5);
 title(ax, 'Sine');
 drawnow();
 ```
-
 <img src="uiaxes_example.svg" align="middle"/>
 uiaxes
 
@@ -46,14 +46,15 @@ plot(ax, 1:10, (1:10).^2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

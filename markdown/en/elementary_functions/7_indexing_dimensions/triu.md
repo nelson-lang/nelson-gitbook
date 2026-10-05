@@ -18,18 +18,22 @@ Upper triangular part of matrix
 
 ## 📄 Description
 
-<b>triu</b> computes Upper Triangular Portions of Matrix.
 
-<b>R = triu(M, k)</b> returns the elements on and above the kth diagonal of M.
+<b>triu</b> computes Upper Triangular Portions of Matrix. 
+
+<b>R = triu(M, k)</b> returns the elements on and above the kth diagonal of M. 
 
 Sparse double, single, complex double, and complex single inputs keep sparse storage and preserve the input numeric class.
 
 ## 💡 Example
 
+
+
 ```matlab
 x = [1+i,-i;i,2i];
 r = triu(x)
 ```
+
 
 ## 🔗 See also
 
@@ -37,9 +41,9 @@ r = triu(x)
 
 ## 🕔 History
 
-| Version | 📄 Description                                 |
-| ------- | ---------------------------------------------- |
-| 1.0.0   | initial version                                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | added sparse single and complex single support |
 
 <!--

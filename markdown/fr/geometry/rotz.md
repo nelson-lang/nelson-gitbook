@@ -16,6 +16,7 @@ Matrice de transformation 3x3 pour rotation autour de l'axe z
 
 ## 📄 Description
 
+
 <b>rotz</b> renvoie la matrice de transformation 3x3 correspondant à une rotation autour de l'axe z.
 
 ## 📚 Bibliographie
@@ -24,9 +25,12 @@ Goldstein, H., C. Poole and J. Safko, Classical Mechanics, 3rd Edition, San Fran
 
 ## 💡 Exemple
 
+
+
 ```matlab
 r = rotz(90)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ r = rotz(90)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

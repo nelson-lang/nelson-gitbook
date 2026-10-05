@@ -8,22 +8,26 @@ Efface le texte entre des limites.
 
 ## 📄 Description
 
+
 <b>eraseBetween</b> Efface le texte entre des limites.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 eraseBetween("a[secret]b", "[", "]")
 ```
 
+
 ## 🔗 Voir aussi
 
-[erase](../../string/erase.md), [replaceBetween](../../string/replaceBetween.md), [extractBetween](../../string/extractBetween.md).
+[erase](../../string/3_find_replace/erase.md), [replaceBetween](../../string/3_find_replace/replaceBetween.md), [extractBetween](../../string/6_join_split_extract/extractBetween.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

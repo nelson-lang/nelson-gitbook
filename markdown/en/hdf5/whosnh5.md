@@ -20,9 +20,12 @@ List variables in an valid .nh5 file with sizes and types.
 
 ## 📄 Description
 
+
 <b>whosnh5</b> lists variables in an valid .nh5 file.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -34,13 +37,14 @@ whosnh5([tempdir(), 'example_whosnh5.nh5'])
 st = whosnh5([tempdir(), 'example_whosnh5.nh5'])
 ```
 
+
 ## 🔗 See also
 
 [whosmat](../matio/whosmat.md), [whos](../memory_manager/whos.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

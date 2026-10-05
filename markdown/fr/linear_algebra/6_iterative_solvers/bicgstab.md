@@ -28,15 +28,18 @@ Methode des gradients biconjugues stabilises.
 
 ## 📄 Description
 
-<b>bicgstab</b> resout <b>A \* x = b</b> avec la methode des gradients biconjugues stabilises.
 
-La methode prend en charge les matrices sparse double, single, double complexes et single complexes.
+<b>bicgstab</b> resout <b>A \* x = b</b> avec la methode des gradients biconjugues stabilises. 
 
-Lorsque <b>M1</b> ou <b>M2</b> est une matrice, le solveur l'applique par resolution lineaire interne. Un preconditionneur vectoriel est interprete comme la diagonale d'un preconditionneur carre. Un handle de fonction doit accepter un vecteur en entree et retourner un vecteur de meme longueur.
+La methode prend en charge les matrices sparse double, single, double complexes et single complexes. 
+
+Lorsque <b>M1</b> ou <b>M2</b> est une matrice, le solveur l'applique par resolution lineaire interne. Un preconditionneur vectoriel est interprete comme la diagonale d'un preconditionneur carre. Un handle de fonction doit accepter un vecteur en entree et retourner un vecteur de meme longueur. 
 
 Si <b>M1</b>, <b>M2</b> ou <b>x0</b> est complexe, le calcul utilise le chemin complexe adapte.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
@@ -45,13 +48,13 @@ b = [1; 2; 3];
 
 ```
 
+
 ```matlab
 A = sparse([3 + 1i 1; 0 2 - 1i]);
 b = [4 + 2i; 3 - 1i];
 x = bicgstab(A, b, 1e-12, 20)
 
 ```
-
 Resolution avec preconditionneur matriciel.
 
 ```matlab
@@ -60,7 +63,6 @@ b = [1; 2; 3];
 M = diag(diag(full(A)));
 [x, flag] = bicgstab(A, b, 1e-12, 20, M)
 ```
-
 Resolution avec preconditionneurs matriciels separes.
 
 ```matlab
@@ -70,7 +72,6 @@ M1 = [2 0; 0 1];
 M2 = [2 0.5; 2 3];
 [x, flag, relres, iter] = bicgstab(A, b, 1e-12, 10, M1, M2)
 ```
-
 Resolution sparse single complexe avec preconditionneur ILU.
 
 ```matlab
@@ -80,15 +81,16 @@ b = single([1; 2]);
 [x, flag] = bicgstab(A, b, 1e-6, 20, L, U)
 ```
 
+
 ## 🔗 Voir aussi
 
-[pcg](../../linear_algebra/pcg.md), [ilu](../../linear_algebra/ilu.md).
+[pcg](../../linear_algebra/6_iterative_solvers/pcg.md), [ilu](../../linear_algebra/7_preconditioners/ilu.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                                                   |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                                                                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | prise en charge des donnees sparse single, sparse single complexes, des preconditionneurs matriciels et des handles de fonction. |
 
 <!--

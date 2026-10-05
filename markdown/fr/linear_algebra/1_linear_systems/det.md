@@ -16,18 +16,20 @@ Déterminant d'une matrice.
 
 ## 📄 Description
 
-<b>res = det(x)</b> retourne le déterminant de la matrice carrée x.
+
+<b>res = det(x)</b> retourne le déterminant de la matrice carrée x. 
 
 Les matrices sparse single et sparse single complexes sont prises en charge. Le resultat conserve la precision single lorsque l'entree est single.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [10 -20 40; -50 20 0; 10 0 30]
 D = det(A)
 
 ```
-
 Determinant d'une matrice sparse single.
 
 ```matlab
@@ -35,15 +37,16 @@ A = sparse(single([4 1; 2 3]));
 D = det(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[rcond](../../linear_algebra/rcond.md).
+[rcond](../../linear_algebra/5_matrix_properties/rcond.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                         |
-| ------- | ---------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | prise en charge des matrices sparse single et sparse single complexes. |
 
 <!--

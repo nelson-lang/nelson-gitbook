@@ -18,23 +18,29 @@ Crée un epsilon (précision machine)
 
 ## 📄 Description
 
-<b>eps</b> retourne la précision machine 2^(-52) pour double et 2^(-23) pour single.
+
+<b>eps</b> retourne la précision machine 2^(-52) pour double et 2^(-23) pour single. 
 
 eps(Inf), eps(-Inf) et eps(NaN) retournent NaN.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 eps
 ```
+
 
 ```matlab
 eps('double')
 ```
 
+
 ```matlab
 eps('single')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +48,8 @@ eps('single')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

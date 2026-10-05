@@ -1,4 +1,4 @@
-# audioplayer_pause
+# audioplayer\_pause
 
 Pause an audioplayer object.
 
@@ -12,9 +12,12 @@ Pause an audioplayer object.
 
 ## 📄 Description
 
+
 <b>pause</b> pauses an audioplayer object.
 
 ## 💡 Example
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,13 +29,14 @@ delete(playObj)
 playObj
 ```
 
+
 ## 🔗 See also
 
 [audioplayer](../audio/audioplayer.md), [stop](../audio/stop.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

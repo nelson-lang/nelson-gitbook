@@ -19,9 +19,12 @@ Filtre numérique 2-D.
 
 ## 📄 Description
 
+
 <b>Y = filter2(H, X)</b> applique un filtre à réponse impulsionnelle finie à une matrice de données X selon les coefficients de la matrice <b>H</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = zeros(10);
@@ -30,14 +33,15 @@ H = [1 2 1; 0 0 0; -1 -2 -1];
 R = filter2(H, A, 'valid')
 ```
 
+
 ## 🔗 Voir aussi
 
 [conv2](../../data_analysis/conv2.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

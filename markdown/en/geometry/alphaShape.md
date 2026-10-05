@@ -15,6 +15,7 @@ Alpha shape object
 
 ## 📄 Description
 
+
 <b>alphaShape</b> stores points and alpha parameters for boundary and shape queries.
 
 ## 💡 Example
@@ -28,14 +29,15 @@ A = area(SHP);
 plot(SHP)
 ```
 
+
 ## 🔗 See also
 
 [boundary](../geometry/boundary.md), [convhull](../geometry/convhull.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

@@ -17,17 +17,20 @@ Abyss colormap array.
 
 ## 📄 Description
 
+
 <b>abyss</b> returns the colormap with abyss colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('abyss');
 ```
-
 <img src="abyss.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('abyss');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

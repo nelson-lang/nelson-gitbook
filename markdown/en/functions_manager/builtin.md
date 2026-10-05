@@ -4,15 +4,15 @@ Executes built-in function.
 
 ## 📝 Syntax
 
-- builtin(function_name; x1, ..., xn)
-- builtin(function_handle; x1, ..., xn)
-- [r1, ..., rn] = builtin(function_name, x1, ..., xn)
-- [r1, ..., rn] = builtin(function_handle, x1, ..., xn)
+- builtin(function\_name; x1, ..., xn)
+- builtin(function\_handle; x1, ..., xn)
+- [r1, ..., rn] = builtin(function\_name, x1, ..., xn)
+- [r1, ..., rn] = builtin(function\_handle, x1, ..., xn)
 
 ## 📥 Input argument
 
-- function_name - a string: function name.
-- function_handle - a function handle.
+- function\_name - a string: function name.
+- function\_handle - a function handle.
 - x1, ..., xn - input arguments of the builtin.
 
 ## 📤 Output argument
@@ -21,14 +21,18 @@ Executes built-in function.
 
 ## 📄 Description
 
+
 <b>builtin</b> calls the base built-in described by its name or function handle and input arguments.
 
 ## 💡 Example
+
+
 
 ```matlab
 a = builtin('cos', 0)
 b = builtin(str2func('cos'), 0)
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ b = builtin(str2func('cos'), 0)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

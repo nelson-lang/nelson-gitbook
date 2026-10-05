@@ -17,13 +17,17 @@ Random permutation of integers values.
 
 ## 📄 Description
 
+
 <b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 randperm(7)
 ```
+
 
 ## 🔗 See also
 
@@ -31,10 +35,10 @@ randperm(7)
 
 ## 🕔 History
 
-| Version | 📄 Description                                             |
-| ------- | ---------------------------------------------------------- |
-| 1.0.0   | initial version                                            |
-| 1.15.0  | add second input argument for number of elements to select |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.15.0   | add second input argument for number of elements to select |
 
 <!--
 ## 👤 Author

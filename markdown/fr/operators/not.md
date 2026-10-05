@@ -17,14 +17,18 @@ négation logique, opérateur ~
 
 ## 📄 Description
 
+
 <b>C = not(A)</b> effectue la négation logique : ~A.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = false(3, 3);
 ~M
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ M = false(3, 3);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

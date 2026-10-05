@@ -14,9 +14,12 @@ Largest positive floating-point number.
 
 ## 📄 Description
 
+
 <b>realmax</b> returns largest positive floating-point number.
 
 ## 💡 Example
+
+
 
 ```matlab
 realmax
@@ -24,13 +27,14 @@ realmax('double')
 realmax('single')
 ```
 
+
 ## 🔗 See also
 
 [intmax](../integer/intmax.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

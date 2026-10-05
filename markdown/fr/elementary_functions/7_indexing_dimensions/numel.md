@@ -16,9 +16,12 @@ Nombre d'éléments.
 
 ## 📄 Description
 
+
 Renvoie le nombre d'éléments de l'objet M.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 numel(ones(3, 0))
@@ -26,14 +29,15 @@ numel(ones(3,4))
 numel(ones(3,4,5))
 ```
 
+
 ## 🔗 Voir aussi
 
-[size](../../elementary_functions/size.md), [length](../../elementary_functions/length.md).
+[size](../../elementary_functions/7_indexing_dimensions/size.md), [length](../../elementary_functions/7_indexing_dimensions/length.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

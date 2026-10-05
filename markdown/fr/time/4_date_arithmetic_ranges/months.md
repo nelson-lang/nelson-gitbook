@@ -16,9 +16,10 @@ Renvoie les mois calendaires entiers entre deux dates.
 
 ## 📄 Description
 
-Renvoie les mois calendaires entiers entre deux dates.
 
-Le resultat compte les mois calendaires complets et ajuste lorsque le jour du second argument precede le premier.
+Renvoie les mois calendaires entiers entre deux dates. 
+
+Le resultat compte les mois calendaires complets et ajuste lorsque le jour du second argument precede le premier. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -31,14 +32,15 @@ months(datetime(2024, 1, 31), datetime(2024, 3, 30))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

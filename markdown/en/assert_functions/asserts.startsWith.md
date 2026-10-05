@@ -19,7 +19,8 @@ Check that text starts with a prefix.
 
 ## 📄 Description
 
-The assertion passes when text begins with prefix.
+
+The assertion passes when text begins with prefix. 
 
 With outputs, a missing prefix is returned as an assertion failure.
 
@@ -30,12 +31,12 @@ Expected prefix
 ```matlab
 asserts.startsWith('Nelson language', 'Nelson');
 ```
-
 Capture a prefix failure
 
 ```matlab
 [res, msg] = asserts.startsWith('Nelson language', 'language');
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a prefix failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,13 +18,17 @@ Decoupe un tableau en tableau de cellules.
 
 ## 📄 Description
 
+
 <b>mat2cell</b> decoupe <b>A</b> en cellules dont les tailles sont donnees pour chaque dimension.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 C = mat2cell(reshape(1:12, [3 4]), [1 2], [3 1])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,7 +36,7 @@ C = mat2cell(reshape(1:12, [3 4]), [1 2], [3 1])
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

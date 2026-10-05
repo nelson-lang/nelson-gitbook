@@ -19,9 +19,12 @@ Ordonne une decomposition de Schur.
 
 ## 📄 Description
 
+
 <b>schord</b> applique des rotations unitaires adjacentes pour ordonner une decomposition de Schur selon les valeurs croissantes de <b>index</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ A = [1 2; 3 4];
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[schur](../../linear_algebra/schur.md), [bdschur](../../control_system/bdschur.md).
+[schur](../../linear_algebra/3_eigen_singular_values/schur.md), [bdschur](../../control_system/6_matrix_computations/bdschur.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

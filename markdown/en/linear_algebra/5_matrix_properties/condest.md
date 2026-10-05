@@ -20,13 +20,16 @@
 
 ## 📄 Description
 
-<b>condest</b> estimates <b>norm(A, 1) \* norm(inv(A), 1)</b> without explicitly forming <b>inv(A)</b>.
 
-The implementation uses repeated solves with <b>A</b> and <b>A'</b>, which is suitable for sparse matrices.
+<b>condest</b> estimates <b>norm(A, 1) \* norm(inv(A), 1)</b> without explicitly forming <b>inv(A)</b>. 
+
+The implementation uses repeated solves with <b>A</b> and <b>A'</b>, which is suitable for sparse matrices. 
 
 Sparse double, sparse single, sparse double complex, and sparse single complex matrices are supported. Stored zero entries in sparse input do not contribute to the structural singularity check.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
@@ -34,15 +37,16 @@ A = sparse([4 1 0; 2 3 1; 0 1 2]);
 
 ```
 
+
 ## 🔗 See also
 
-[cond](../../linear_algebra/cond.md), [rcond](../../linear_algebra/rcond.md), [normest](../../elementary_functions/normest.md).
+[cond](../../linear_algebra/5_matrix_properties/cond.md), [rcond](../../linear_algebra/5_matrix_properties/rcond.md), [normest](../../elementary_functions/2_elementary_math/normest.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                               |
-| ------- | ------------------------------------------------------------ |
-| 2.0.0   | initial version                                              |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | sparse single and sparse single complex behavior documented. |
 
 <!--

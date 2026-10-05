@@ -19,6 +19,7 @@ Create button group container.
 
 ## 📄 Description
 
+
 <b>bg = uibuttongroup</b> creates a button group container used to manage exclusive selection of radio buttons and toggle buttons. Main properties: <b>Title</b>, <b>TitlePosition</b>, <b>SelectedObject</b>, <b>Buttons</b> (read-only), <b>SelectionChangedFcn</b> (event data with <b>OldValue</b> and <b>NewValue</b>), plus panel-style border and font properties.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ r2 = uiradiobutton(bg, 'Text', 'High', 'Position', [20 55 120 22]);
 r2.Value = true;
 drawnow();
 ```
-
 <img src="uibuttongroup_example.svg" align="middle"/>
 uibuttongroup
 
@@ -44,13 +44,14 @@ bg = uibuttongroup(f, 'Title', 'Choices', 'Position', [20 20 260 210]);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

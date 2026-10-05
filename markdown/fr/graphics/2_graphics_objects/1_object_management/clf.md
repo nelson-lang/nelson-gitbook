@@ -18,9 +18,12 @@ Efface la figure.
 
 ## 📄 Description
 
+
 <b>clf</b> efface la figure courante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -31,14 +34,15 @@ sleep(5)
 clf
 ```
 
+
 ## 🔗 Voir aussi
 
 [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [cla](../../../graphics/2_graphics_objects/1_object_management/cla.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

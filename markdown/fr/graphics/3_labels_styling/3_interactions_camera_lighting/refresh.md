@@ -13,9 +13,11 @@ Rafraîchir la figure courante.
 
 ## 📄 Description
 
-<b>refresh</b> efface et redessine la figure courante.
+
+<b>refresh</b> efface et redessine la figure courante. 
 
 <b>refresh(F)</b> redessine la figure identifiée par <b>F</b>.
+
 
 ## 🔗 Voir aussi
 
@@ -23,8 +25,8 @@ Rafraîchir la figure courante.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

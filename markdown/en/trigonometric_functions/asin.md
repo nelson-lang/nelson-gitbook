@@ -16,14 +16,18 @@ Computes the inverse sine in radians for each element of x.
 
 ## 📄 Description
 
+
 <b>asin</b> computes the inverse sine in radians for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
 res = asin(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ res = asin(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

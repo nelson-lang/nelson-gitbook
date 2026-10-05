@@ -30,11 +30,12 @@ Objet d'interpolation de donnees sur grille
 
 ## 📄 Description
 
-<b>griddedInterpolant</b> stocke des points et des valeurs sur grille pour des requetes d'interpolation repetees.
 
-L'objet expose quatre proprietes accessibles en lecture et en ecriture : <b>GridVectors</b> (un tableau de cellules de vecteurs de grille), <b>Values</b>, <b>Method</b> et <b>ExtrapolationMethod</b>.
+<b>griddedInterpolant</b> stocke des points et des valeurs sur grille pour des requetes d'interpolation repetees. 
 
-On evalue l'interpolant en appelant l'objet comme une fonction, soit avec un tableau de requete par dimension, soit avec un unique tableau de cellules de vecteurs de requete.
+L'objet expose quatre proprietes accessibles en lecture et en ecriture : <b>GridVectors</b> (un tableau de cellules de vecteurs de grille), <b>Values</b>, <b>Method</b> et <b>ExtrapolationMethod</b>. 
+
+On evalue l'interpolant en appelant l'objet comme une fonction, soit avec un tableau de requete par dimension, soit avec un unique tableau de cellules de vecteurs de requete. 
 
 La methode <b>'cubic'</b> utilise la convolution cubique et requiert une grille a espacement uniforme ; sur une grille non uniforme elle bascule vers <b>'spline'</b>. La convolution cubique ne gere pas l'extrapolation : les points hors grille renvoient <b>NaN</b> lorsque <b>ExtrapolationMethod</b> vaut <b>'cubic'</b>.
 
@@ -46,14 +47,12 @@ Interpolation 1-D.
 F = griddedInterpolant([1 2 3], [10 20 30]);
 Vq = F(2.5)
 ```
-
 Grille N-D donnee comme un tableau de cellules de vecteurs de grille.
 
 ```matlab
 F = griddedInterpolant({1:3, 1:3}, magic(3));
 Vq = F(2, 2)
 ```
-
 Interpolation spline et lecture des proprietes.
 
 ```matlab
@@ -63,14 +62,15 @@ F.Method
 F.ExtrapolationMethod
 ```
 
+
 ## 🔗 Voir aussi
 
 [interp1](../special_functions/interp1.md), [interpn](../special_functions/interpn.md), [scatteredInterpolant](../geometry/scatteredInterpolant.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

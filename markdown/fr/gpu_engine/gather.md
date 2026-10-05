@@ -16,16 +16,20 @@ Transfère un gpuArray vers l'espace de travail hôte.
 
 ## 📄 Description
 
-<b>A = gather(G)</b> copie le <b>gpuArray</b> <b>G</b> du périphérique vers l'espace de travail hôte. Le résultat est un tableau <b>single</b>, <b>logical</b> ou <b>single</b> complexe, correspondant au type sous-jacent de <b>G</b>.
+
+<b>A = gather(G)</b> copie le <b>gpuArray</b> <b>G</b> du périphérique vers l'espace de travail hôte. Le résultat est un tableau <b>single</b>, <b>logical</b> ou <b>single</b> complexe, correspondant au type sous-jacent de <b>G</b>. 
 
 Lorsque <b>G</b> est déjà une valeur hôte, <b>gather</b> la renvoie inchangée.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 G = gpuArray(single([1 2 3]));
 A = gather(G + 1)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ A = gather(G + 1)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

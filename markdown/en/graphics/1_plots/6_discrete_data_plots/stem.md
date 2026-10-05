@@ -27,29 +27,32 @@ Plot discrete sequence data.
 
 ## 📄 Description
 
-A two-dimensional<b>stem</b> plot is a way to visualize data by representing it as lines extending from a horizontal baseline along the x-axis.
 
-At the end of each line, there is a circle (which is the default marker), and the vertical position of this circle corresponds to the value of the data it represents.
+A two-dimensional<b>stem</b> plot is a way to visualize data by representing it as lines extending from a horizontal baseline along the x-axis. 
 
-<b>stem(Y)</b> creates a stem plot by taking the data sequence <b>Y</b> and drawing stems that extend from regularly spaced and automatically determined points along the x-axis.
+At the end of each line, there is a circle (which is the default marker), and the vertical position of this circle corresponds to the value of the data it represents. 
 
-If <b>Y</b> is a matrix, the stem function plots all elements in a row against the same x-value.
+<b>stem(Y)</b> creates a stem plot by taking the data sequence <b>Y</b> and drawing stems that extend from regularly spaced and automatically determined points along the x-axis. 
 
-<b>stem(X, Y)</b> creates a stem plot that shows how<b>X</b> relates to the columns of <b>Y</b>.
+If <b>Y</b> is a matrix, the stem function plots all elements in a row against the same x-value. 
 
-Both <b>X</b> and<b>Y</b> can be vectors or matrices of the same size.
+<b>stem(X, Y)</b> creates a stem plot that shows how<b>X</b> relates to the columns of <b>Y</b>. 
 
-<b>X</b> can be either a row or a column vector, and<b>Y</b> should be a matrix with the same number of rows as the length of <b>X</b>.
+Both <b>X</b> and<b>Y</b> can be vectors or matrices of the same size. 
 
-If you want to specify whether to fill the circle at the end of each stem, you can use <b>stem(...,'fill')</b>.
+<b>X</b> can be either a row or a column vector, and<b>Y</b> should be a matrix with the same number of rows as the length of <b>X</b>. 
 
-Moreover, by using<b>stem(..., LineSpec)</b>, you can define the line style, marker symbol, and color for the stems and the top marker.
+If you want to specify whether to fill the circle at the end of each stem, you can use <b>stem(...,'fill')</b>. 
 
-Refer to <b>LineSpec</b> for more details on how to customize the appearance of the stem plot.
+Moreover, by using<b>stem(..., LineSpec)</b>, you can define the line style, marker symbol, and color for the stems and the top marker. 
+
+Refer to <b>LineSpec</b> for more details on how to customize the appearance of the stem plot. 
 
 See [nelson.graphics.stem.properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stem.properties.md) for supported stem object properties.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -58,8 +61,8 @@ y = 2*x;
 h = stem (x, y, 'MarkerFaceColor', [1 0 1]);
 title('stem plot modified with property/value pair');
 ```
-
 <img src="stem_1.svg" align="middle"/>
+
 
 ```matlab
 f =figure();
@@ -70,8 +73,8 @@ Y = exp(-3*X/4) .* cos(2*X);
 % Third, we use the 'stem' function to plot discrete values
 stem(X,Y)
 ```
-
 <img src="stem_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -79,7 +82,7 @@ stem(X,Y)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

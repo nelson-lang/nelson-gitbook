@@ -12,6 +12,7 @@ Interpolate scattered data
 
 ## 📄 Description
 
+
 <b>griddata</b> interpolates scattered samples at query coordinates.
 
 ## 💡 Example
@@ -25,14 +26,15 @@ V = x + y;
 Vq = griddata(x, y, V, 0.25, 0.25)
 ```
 
+
 ## 🔗 See also
 
 [scatteredInterpolant](../geometry/scatteredInterpolant.md), [delaunayn](../geometry/delaunayn.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

@@ -21,13 +21,16 @@ Synchroniser des timetables sur des temps communs.
 
 ## 📄 Description
 
-<b>synchronize</b> combine des timetables et aligne leurs variables sur des temps de lignes communs.
 
-Les bases temporelles prises en charge incluent union, intersection, first, last, les grilles regulieres, les pas nommes et les vecteurs temporels explicites.
+<b>synchronize</b> combine des timetables et aligne leurs variables sur des temps de lignes communs. 
+
+Les bases temporelles prises en charge incluent union, intersection, first, last, les grilles regulieres, les pas nommes et les vecteurs temporels explicites. 
 
 La methode de retiming est transmise a <b>retime</b>, y compris les methodes de remplissage, voisinage, interpolation et agregation.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:1)';
@@ -36,14 +39,15 @@ TT2 = timetable(t, [10; 20], 'VariableNames', {'B'});
 TT = synchronize(TT1, TT2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[retime](../../table/retime.md), [timetable](../../table/timetable.md).
+[retime](../../table/8_timetables_events/retime.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

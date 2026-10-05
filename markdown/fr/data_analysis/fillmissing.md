@@ -36,27 +36,29 @@ Remplit les valeurs manquantes.
 
 ## 📄 Description
 
-<b>fillmissing</b> remplace les valeurs manquantes avec la méthode indiquée, selon la dimension de travail dim.
 
-'previous' et 'next' recopient la valeur non manquante précédente ou suivante, 'nearest' la plus proche (la suivante en cas d'égalité). 'linear', 'spline', 'pchip' et 'makima' interpolent les valeurs non manquantes de la tranche et extrapolent à ses extrémités ; elles nécessitent au moins deux valeurs non manquantes. 'movmean' et 'movmedian' utilisent la moyenne ou la médiane des valeurs non manquantes de la fenêtre.
+<b>fillmissing</b> remplace les valeurs manquantes avec la méthode indiquée, selon la dimension de travail dim. 
 
-'knn' compare des observations entières : les lignes d'une matrice (dim = 1), ses colonnes (dim = 2) ou les lignes des variables de données d'une table. Chaque valeur manquante prend la moyenne des valeurs des k observations les plus proches qui en possèdent une, la distance étant mesurée sur les coordonnées non manquantes de l'observation ; une observation à laquelle il manque l'une d'elles n'est pas un voisin, et les égalités conservent l'ordre des observations. 'knn' accepte les matrices double et single ('Distance' sous forme de handle de fonction accepte aussi les autres données numériques) et ne prend pas en charge 'EndValues', 'MaxGap' et 'SamplePoints'.
+'previous' et 'next' recopient la valeur non manquante précédente ou suivante, 'nearest' la plus proche (la suivante en cas d'égalité). 'linear', 'spline', 'pchip' et 'makima' interpolent les valeurs non manquantes de la tranche et extrapolent à ses extrémités ; elles nécessitent au moins deux valeurs non manquantes. 'movmean' et 'movmedian' utilisent la moyenne ou la médiane des valeurs non manquantes de la fenêtre. 
 
-Une constante de remplissage ou une valeur numérique de 'EndValues' est un scalaire ou un vecteur avec une valeur par tranche (par variable de données pour une table).
+'knn' compare des observations entières : les lignes d'une matrice (dim = 1), ses colonnes (dim = 2) ou les lignes des variables de données d'une table. Chaque valeur manquante prend la moyenne des valeurs des k observations les plus proches qui en possèdent une, la distance étant mesurée sur les coordonnées non manquantes de l'observation ; une observation à laquelle il manque l'une d'elles n'est pas un voisin, et les égalités conservent l'ordre des observations. 'knn' accepte les matrices double et single ('Distance' sous forme de handle de fonction accepte aussi les autres données numériques) et ne prend pas en charge 'EndValues', 'MaxGap' et 'SamplePoints'. 
 
-Pour une table ou une timetable, dim n'est pas pris en charge : chaque variable de données est remplie selon ses lignes, les temps des lignes d'une timetable étant les points d'échantillonnage. TF a une colonne par variable de B, vraie pour les lignes où la variable a été remplie.
+Une constante de remplissage ou une valeur numérique de 'EndValues' est un scalaire ou un vecteur avec une valeur par tranche (par variable de données pour une table). 
 
-'EndValues' et 'MaxGap' s'appliquent à toutes les autres méthodes. TF est faux pour un élément rempli avec une valeur manquante.
+Pour une table ou une timetable, dim n'est pas pris en charge : chaque variable de données est remplie selon ses lignes, les temps des lignes d'une timetable étant les points d'échantillonnage. TF a une colonne par variable de B, vraie pour les lignes où la variable a été remplie. 
+
+'EndValues' et 'MaxGap' s'appliquent à toutes les autres méthodes. TF est faux pour un élément rempli avec une valeur manquante. 
 
 Les méthodes 'mean', 'median' et 'mode' remplacent chaque valeur manquante par la moyenne, la médiane ou le mode des valeurs non manquantes de sa tranche selon la dimension de travail. Elles acceptent les données numériques et logiques. Une tranche sans valeur non manquante reste manquante (sauf si 'EndValues' est une constante).
 
 ## 💡 Exemples
 
+
+
 ```matlab
 T = table([1; NaN; 3], 'VariableNames', {'A'});
 R = fillmissing(T, 'constant', 0)
 ```
-
 Remplissage par la moyenne, la médiane ou le mode des valeurs non manquantes
 
 ```matlab
@@ -65,7 +67,6 @@ B1 = fillmissing(A, 'mean')
 B2 = fillmissing(A, 'median')
 B3 = fillmissing(A, 'mode', 'EndValues', 'none')
 ```
-
 Remplissage selon les lignes d'une matrice
 
 ```matlab
@@ -74,7 +75,6 @@ B1 = fillmissing(A, 'linear', 2)
 B2 = fillmissing(A, 'previous', 2)
 B3 = fillmissing(A, 'movmean', 3, 2)
 ```
-
 Remplissage à partir des lignes les plus proches
 
 ```matlab
@@ -83,7 +83,6 @@ F1 = fillmissing(A, 'knn')
 F2 = fillmissing(A, 'knn', 2)
 F3 = fillmissing(A, 'knn', 'Distance', @(x, m) sum(abs(x(1, :) - x(2, :)), 'omitnan'))
 ```
-
 Timetable et points d'échantillonnage de type duration
 
 ```matlab
@@ -92,18 +91,19 @@ R = fillmissing(TT, 'linear')
 F = fillmissing([1 NaN 3 NaN NaN 9], 'linear', 'SamplePoints', hours(0:5), 'MaxGap', hours(2))
 ```
 
+
 ## 🔗 Voir aussi
 
 [rmmissing](../data_analysis/rmmissing.md), [standardizeMissing](../data_analysis/standardizeMissing.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                        |
-| ------- | ------------------------------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                                      |
-| 2.0.0   | méthodes de remplissage 'mean', 'median' et 'mode'.                                   |
-| 2.0.0   | toutes les méthodes opèrent selon dim ; méthodes 'spline', 'pchip' et 'makima'.       |
-| 2.0.0   | méthode 'knn' et option 'Distance'.                                                   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
+| 2.0.0   | méthodes de remplissage 'mean', 'median' et 'mode'. |
+| 2.0.0   | toutes les méthodes opèrent selon dim ; méthodes 'spline', 'pchip' et 'makima'. |
+| 2.0.0   | méthode 'knn' et option 'Distance'. |
 | 2.0.0   | timetables, points d'échantillonnage datetime et duration ; validation des arguments. |
 
 <!--

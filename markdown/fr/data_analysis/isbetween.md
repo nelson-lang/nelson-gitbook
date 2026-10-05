@@ -21,9 +21,12 @@ Determine les elements compris entre des bornes inferieure et superieure.
 
 ## 📄 Description
 
+
 <b>isbetween</b> renvoie true lorsque <b>A</b> est dans l'intervalle defini par <b>lower</b> et <b>upper</b>. L'intervalle par defaut est ferme.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [1 2 3 4 5];
@@ -31,11 +34,13 @@ isbetween(A, 2, 4)
 isbetween(A, 2, 4, 'open')
 ```
 
+
 ```matlab
 T = table([1; 2; 3], [4; 5; 6], 'VariableNames', {'A', 'B'});
 isbetween(T, 2, 5)
 isbetween(T, 2, 5, 'DataVariables', 'B', 'OutputFormat', 'tabular')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,9 +48,9 @@ isbetween(T, 2, 5, 'DataVariables', 'B', 'OutputFormat', 'tabular')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

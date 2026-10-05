@@ -12,15 +12,19 @@ Display rendered Markdown text.
 
 ## 📄 Description
 
-<b>markdowndisp</b> renders Markdown text and LaTeX equations in the GUI Command Window.
+
+<b>markdowndisp</b> renders Markdown text and LaTeX equations in the GUI Command Window. 
 
 When Nelson is not running with the GUI Command Window, <b>markdowndisp</b> displays the input text with <b>disp</b>.
 
 ## 💡 Examples
 
+
+
 ```matlab
 markdowndisp('**bold text** and $E=mc^2$')
 ```
+
 
 ```matlab
 mdText = sprintf([ ...
@@ -41,13 +45,14 @@ mdText = sprintf([ ...
 markdowndisp(mdText)
 ```
 
+
 ## 🔗 See also
 
 [markdown](../help_tools/markdown.md), [disp](../display_format/disp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

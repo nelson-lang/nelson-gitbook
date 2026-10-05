@@ -19,7 +19,8 @@ Check that text contains at least one expected pattern.
 
 ## 📄 Description
 
-The assertion passes when at least one pattern is found in text.
+
+The assertion passes when at least one pattern is found in text. 
 
 Use asserts.containsAll when every pattern must match.
 
@@ -30,12 +31,12 @@ One pattern present
 ```matlab
 asserts.containsAny('Nelson language', {'toolbox', 'Nelson'});
 ```
-
 Capture missing patterns
 
 ```matlab
 [res, msg] = asserts.containsAny('Nelson language', {'toolbox', 'module'});
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture missing patterns
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

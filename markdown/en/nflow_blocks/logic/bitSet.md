@@ -1,7 +1,8 @@
 # bitSet
 
+
 <p align="center">
-<img src="bitSet.svg"/>
+<img src="bitSet.svg" width="72"/>
 </p>
 Sets the bit at position BitIndex of the integer input to 1.
 
@@ -19,871 +20,81 @@ Sets the bit at position BitIndex of the integer input to 1.
 
 ## 📄 Description
 
-Sets the bit at position BitIndex of the integer input to 1.
 
-| Field   | Value                     |
-| ------- | ------------------------- |
-| Module  | <code>nflow_blocks</code> |
-| Library | Logic / Bit Operations    |
-| Type    | <code>bitSet</code>       |
-| Label   | Bit Set                   |
+Sets the bit at position BitIndex of the integer input to 1. 
 
-<b>Description</b>
+| Field | Value |
+| --- | --- |
+| Module | <code>nflow_blocks</code> | 
+| Library | Logic / Bit Operations | 
+| Type | <code>bitSet</code> | 
+| Label | Bit Set | 
 
-Sets a single bit (0-based <code>BitIndex</code>) of the integer-valued input to 1 by OR-ing in a one-bit mask. Values are reinterpreted as <code>NumBits</code>-wide unsigned integers. Element-wise over the input width.
+  
 
-<b>Ports</b>
+<b>Description</b> 
 
-<b>Input(s)</b>
+Sets a single bit (0-based <code>BitIndex</code>) of the integer-valued input to 1 by OR-ing in a one-bit mask. Values are reinterpreted as <code>NumBits</code>-wide unsigned integers. Element-wise over the input width. 
 
-| Port   | Role                              | Side | Position  |
-| ------ | --------------------------------- | ---- | --------- |
-| Port_1 | Numeric signal read by the block. | left | x=0, y=40 |
+<b>Ports</b> 
 
-<b>Output(s)</b>
+<b>Input(s)</b> 
 
-| Port   | Role                                  | Side  | Position   |
-| ------ | ------------------------------------- | ----- | ---------- |
-| Port_1 | Numeric signal produced by the block. | right | x=80, y=40 |
+| Port | Role | Side | Position | 
+| --- | --- | --- | --- | 
+| Port\_1 | Numeric signal read by the block. | left | x=0, y=40 | 
 
-<b>Parameters</b>
+ 
 
-| Parameter             | Default value |
-| --------------------- | ------------- |
-| <code>BitIndex</code> | 0             |
-| <code>NumBits</code>  | 32            |
+<b>Output(s)</b> 
 
-<b>Block Characteristics</b>
+| Port | Role | Side | Position | 
+| --- | --- | --- | --- | 
+| Port\_1 | Numeric signal produced by the block. | right | x=80, y=40 | 
 
-| Field                     | Value                  |
-| ------------------------- | ---------------------- |
-| Block type                | bitSet                 |
-| Family                    | Logic / Bit Operations |
-| Rendered size             | 80 x 80                |
-| Phases                    | ALGEBRAIC              |
-| Internal state or history | no                     |
-| Signal data type          | double numeric values  |
+ 
 
-<b>Algorithms</b>
+<b>Parameters</b> 
 
-- ALGEBRAIC: out = (x \| (1 << BitIndex)) & fullmask.
+| Parameter | Default value | 
+| --- | --- | 
+| <code>BitIndex</code> | 0 | 
+| <code>NumBits</code> | 32 | 
 
-<b>Equation or Rule</b>
+ 
+
+<b>Block Characteristics</b> 
+
+| Field | Value |
+| --- | --- |
+| Block type | bitSet | 
+| Family | Logic / Bit Operations | 
+| Rendered size | 80 x 80 | 
+| Phases | ALGEBRAIC | 
+| Internal state or history | no | 
+| Signal data type | double numeric values | 
+
+ 
+
+<b>Algorithms</b> 
+
+- ALGEBRAIC: out = (x \| (1 << BitIndex)) & fullmask. 
+
+<b>Equation or Rule</b> 
 $$y = u \,|\, 2^{\text{BitIndex}}$$
+ 
 
-<b>Extended Capabilities</b>
+<b>Extended Capabilities</b> 
 
-Code generation: supported for C and Rust.
+Code generation: supported for C and Rust. 
 
-<b>Implementation Sources</b>
+<b>Implementation Sources</b> 
 
-<details>
-<summary>Manifest: <code>modules/nflow_blocks/libraries/logic/library.json</code></summary>
+**Manifest:** `modules/nflow_blocks/libraries/logic/library.json`
+ 
 
-```json
-{
-  "id": "builtin.logic",
-  "title": "Logic / Bit Operations",
-  "version": "0.1.0",
-  "format": "nflow-2",
-  "builtin": true,
-  "blocks": [
-    {
-      "type": "and",
-      "label": "AND",
-      "icon": "and.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 20,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 60,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "render": {
-        "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "and-math",
-        "formula": "\\text{AND}",
-        "textSize": "16px"
-      }
-    },
-    {
-      "type": "or",
-      "label": "OR",
-      "icon": "or.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 20,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 60,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "render": {
-        "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "or-math",
-        "formula": "\\text{OR}",
-        "textSize": "16px"
-      }
-    },
-    {
-      "type": "xor",
-      "label": "XOR",
-      "icon": "xor.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 20,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 60,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "render": {
-        "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "xor-math",
-        "formula": "\\text{XOR}",
-        "textSize": "16px"
-      }
-    },
-    {
-      "type": "not",
-      "label": "NOT",
-      "icon": "not.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "render": {
-        "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "not-math",
-        "formula": "\\text{NOT}",
-        "textSize": "16px"
-      }
-    },
-    {
-      "type": "compareToConstant",
-      "label": "Compare Const",
-      "icon": "compareToConstant.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "relop": "ge",
-        "const": 0
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/compareToConstant.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "intervalTest",
-      "label": "Interval Test",
-      "icon": "intervalTest.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "LowerLimit": 0,
-        "UpperLimit": 1,
-        "IntervalClosedLeft": 1,
-        "IntervalClosedRight": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/intervalTest.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "intervalTestDynamic",
-      "label": "Interval Test Dynamic",
-      "icon": "intervalTestDynamic.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 20,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 60,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "IntervalClosedLeft": 1,
-        "IntervalClosedRight": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/intervalTestDynamic.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "bitwiseOperator",
-      "label": "Bitwise Operator",
-      "icon": "bitwiseOperator.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 90,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 90,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "Operation": "AND",
-        "BitMask": 0,
-        "NumBits": 32
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/bitwiseOperator.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 90,
-        "height": 80
-      }
-    },
-    {
-      "type": "bitSet",
-      "label": "Bit Set",
-      "icon": "bitSet.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "BitIndex": 0,
-        "NumBits": 32
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/bitSet.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 80,
-        "height": 80
-      }
-    },
-    {
-      "type": "bitClear",
-      "label": "Bit Clear",
-      "icon": "bitClear.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "BitIndex": 0,
-        "NumBits": 32
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/bitClear.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 80,
-        "height": 80
-      }
-    },
-    {
-      "type": "extractBits",
-      "label": "Extract Bits",
-      "icon": "extractBits.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 90,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 90,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "StartBit": 0,
-        "NumBitsToExtract": 8,
-        "NumBits": 32,
-        "OutputScaling": "keepWeight"
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/extractBits.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 90,
-        "height": 80
-      }
-    },
-    {
-      "type": "shiftArithmetic",
-      "label": "Shift Arithmetic",
-      "icon": "shiftArithmetic.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 90,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 90,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "ShiftDirection": "Left",
-        "ShiftNumber": 1
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/shiftArithmetic.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 90,
-        "height": 80
-      }
-    },
-    {
-      "type": "combinatorialLogic",
-      "label": "Combinatorial Logic",
-      "icon": "combinatorialLogic.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 90,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 90,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "TruthTable": [0, 1, 1, 0]
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/combinatorialLogic.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 90,
-        "height": 80
-      }
-    },
-    {
-      "type": "compareToZero",
-      "label": "Compare Zero",
-      "icon": "compareToZero.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "relop": "ne"
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/compareToZero.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "relationalOperator",
-      "label": "Relational",
-      "icon": "relationalOperator.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 30,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 50,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "Operator": "ge"
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/relationalOperator.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "switchCase",
-      "label": "Switch Case",
-      "icon": "switchCase.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 40,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 30,
-          "side": "right"
-        },
-        {
-          "x": 100,
-          "y": 50,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "CaseConditions": "{1}",
-        "ShowDefaultCase": "on"
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/switchCase.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "if",
-      "label": "If",
-      "icon": "if.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 100,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 30,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 50,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 100,
-          "y": 30,
-          "side": "right"
-        },
-        {
-          "x": 100,
-          "y": 50,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "IfExpression": "u1 > 0",
-        "ElseIfExpressions": "",
-        "ShowElse": "on"
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/if.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 100,
-        "height": 80
-      }
-    },
-    {
-      "type": "logicalOperator",
-      "label": "Logical Operator",
-      "icon": "logicalOperator.svg",
-      "phases": ["ALGEBRAIC"],
-      "width": 80,
-      "height": 80,
-      "inputs": [
-        {
-          "x": 0,
-          "y": 30,
-          "side": "left"
-        },
-        {
-          "x": 0,
-          "y": 50,
-          "side": "left"
-        }
-      ],
-      "outputs": [
-        {
-          "x": 80,
-          "y": 40,
-          "side": "right"
-        }
-      ],
-      "defaultParams": {
-        "Operator": "AND"
-      },
-      "render": {
-        "type": "image",
-        "src": "exports/logicalOperator.svg",
-        "svgMode": "element",
-        "preserveAspectRatio": "none",
-        "x": 0,
-        "y": 0,
-        "width": 80,
-        "height": 80
-      }
-    }
-  ]
-}
-```
+**Runtime:** `modules/nflow_blocks/src/cpp/logic/bitSet.cpp`
 
-</details>
-
-
-<details>
-<summary>Runtime: <code>modules/nflow_blocks/src/cpp/logic/bitSet.cpp</code></summary>
-
-```cpp
-//=============================================================================
-// Copyright (c) 2016-present Allan CORNET (Nelson)
-//=============================================================================
-// This file is part of Nelson.
-//=============================================================================
-// LICENCE_BLOCK_BEGIN
-// SPDX-License-Identifier: LGPL-3.0-or-later
-// LICENCE_BLOCK_END
-//=============================================================================
-// bitSet: sets the bit at position BitIndex in the (integer-valued) input to 1
-// (Bit Set). BitIndex is 0-based; values are reinterpreted as NumBits-wide
-// unsigned integers (default 32). Pure algebraic feedthrough, element-wise over
-// the input width. C / Rust code generation.
-//=============================================================================
-#include "SimEngineTypes.hpp"
-#include "BlockRegistry.hpp"
-#include "FieldNames.hpp"
-#include "NFlowBlockDescriptor.hpp"
-#include "NFlowCodegenHelpers.hpp"
-#include <cmath>
-#include <cstdint>
-#include <string>
-#include "logic_blocks.hpp"
-//=============================================================================
-namespace Nelson {
-namespace NFlow {
-    //=============================================================================
-    static uint64_t
-    bitSetFullMask(const nflow::BlockDescriptor& bd)
-    {
-        double nb = std::floor(bd.paramDouble("NumBits", 32.0));
-        if (nb < 1.0) {
-            nb = 1.0;
-        }
-        if (nb >= 64.0) {
-            return ~0ULL;
-        }
-        return (1ULL << static_cast<unsigned>(nb)) - 1ULL;
-    }
-    //=============================================================================
-    static uint64_t
-    bitSetBitOf(const nflow::BlockDescriptor& bd)
-    {
-        long long idx = std::llround(bd.paramDouble("BitIndex", 0.0));
-        if (idx < 0 || idx > 63) {
-            return 0ULL;
-        }
-        return 1ULL << static_cast<unsigned>(idx);
-    }
-    //=============================================================================
-    bool
-    handleBitSet(SimCtx& ctx, const Block& b, Phase phase)
-    {
-        if (phase != Phase::ALGEBRAIC) {
-            return false;
-        }
-        if (!hasInput(ctx, b.nid, 0)) {
-            return false;
-        }
-        nflow::BlockDescriptor bd(b, ctx.variables);
-        const uint64_t fm = bitSetFullMask(bd);
-        const uint64_t bit = bitSetBitOf(bd) & fm;
-        SigView u = getInputSig(ctx, b.nid, 0);
-        return emitElementwise(ctx, b.nid, [&](int i) -> double {
-            const uint64_t x = static_cast<uint64_t>(std::llround(sigAt(u, i))) & fm;
-            return static_cast<double>((x | bit) & fm);
-        });
-    }
-    //=============================================================================
-    BlockCodegenTemplate
-    getCodeGenCBitSet()
-    {
-        BlockCodegenTemplate t;
-        t.emitStep = [](const BlockCodegenArgs& a) {
-            nflow::BlockDescriptor bd(*a.block, *a.variables);
-            const uint64_t fm = bitSetFullMask(bd);
-            const uint64_t bit = bitSetBitOf(bd) & fm;
-            const std::string xu = "(((unsigned long long)llround(" + a.in[0] + ")) & "
-                + std::to_string(fm) + "ULL)";
-            a.line("out_" + a.id + " = (double)((" + xu + " | " + std::to_string(bit) + "ULL) & "
-                + std::to_string(fm) + "ULL);");
-        };
-        return t;
-    }
-    //=============================================================================
-    BlockCodegenTemplate
-    getCodeGenRustBitSet()
-    {
-        BlockCodegenTemplate t;
-        t.emitStep = [](const BlockCodegenArgs& a) {
-            nflow::BlockDescriptor bd(*a.block, *a.variables);
-            const uint64_t fm = bitSetFullMask(bd);
-            const uint64_t bit = bitSetBitOf(bd) & fm;
-            // Round to the nearest integer, then reinterpret as unsigned via a
-            // two's-complement wrap (i64 -> u64), matching the interpreter's
-            // static_cast<uint64_t>(llround(...)) and the C backend. A direct
-            // `as u64` cast SATURATES negatives to 0 in Rust, diverging for any
-            // negative-valued input.
-            const std::string xu = "(((libm::round(" + a.in[0] + ") as i64) as u64) & "
-                + std::to_string(fm) + "u64)";
-            a.line("out_" + a.id + " = ((" + xu + " | " + std::to_string(bit) + "u64) & "
-                + std::to_string(fm) + "u64) as f64;");
-        };
-        return t;
-    }
-    //=============================================================================
-} // namespace NFlow
-} // namespace Nelson
-//=============================================================================
-
-```
-
-</details>
 
 ## 💡 Example
 
@@ -896,13 +107,14 @@ d.sampleTime=0.1; d.duration=0.2; d.solver='discrete'; d.variables=struct();
 r=jsondecode(__nflow_simulate__(jsonencode(d)));
 ```
 
+
 ## 🔗 See also
 
 [bitClear](../../nflow_blocks/logic/bitClear.md), [bitwiseOperator](../../nflow_blocks/logic/bitwiseOperator.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

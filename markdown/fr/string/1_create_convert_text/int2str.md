@@ -15,27 +15,30 @@ Convertit un tableau d'entiers en chaîne
 - res - une chaîne
 
 ## 📄 Description
-
 <b>int2str</b> convert un tableau numérique en chaîne au format entier. Les entrées sont arrondies avant la conversion.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 R = int2str ([-Inf, 2, NaN; 4, Inf, 6])
 ```
 
+
 ```matlab
 R = int2str(uint64(intmax('uint64')))
 ```
 
+
 ## 🔗 Voir aussi
 
-[char](../../string/char.md).
+[char](../../string/1_create_convert_text/char.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

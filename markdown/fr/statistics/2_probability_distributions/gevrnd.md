@@ -20,22 +20,26 @@ Nombres aleatoires de loi extreme generalisee
 
 ## 📄 Description
 
+
 <b>gevrnd</b> genere des valeurs aleatoires de loi extreme generalisee.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 r = gevrnd(0.2, 1, 0, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md), [gevinv](../../statistics/gevinv.md), [gevstat](../../statistics/gevstat.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md), [gevinv](../../statistics/2_probability_distributions/gevinv.md), [gevstat](../../statistics/2_probability_distributions/gevstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

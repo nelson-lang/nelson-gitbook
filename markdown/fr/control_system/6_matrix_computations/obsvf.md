@@ -24,9 +24,12 @@ Calcul de la forme en escalier d'observabilité.
 
 ## 📄 Description
 
+
 Calcule la transformation en forme en escalier d'observabilité du système et renvoie les matrices transformées ainsi que la transformation T.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-1.5  -0.5; 1     0];
@@ -35,14 +38,15 @@ C = [0   1];
 [Abar, Bbar, Cbar, T, k] = obsvf(A, B, C)
 ```
 
+
 ## 🔗 Voir aussi
 
-[obsv](../../control_system/obsv.md), [ctrbf](../../control_system/ctrbf.md).
+[obsv](../../control_system/6_matrix_computations/obsv.md), [ctrbf](../../control_system/6_matrix_computations/ctrbf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

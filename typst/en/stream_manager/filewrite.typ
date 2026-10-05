@@ -1,0 +1,55 @@
+#import "nelson_help.typ": *
+
+= filewrite <stream_manager:filewrite>
+
+Write text to a file.
+
+== Syntax
+
+- #raw("filewrite(filename, txt)");
+- #raw("filewrite(filename, txt, eol)");
+- #raw("filewrite(filename, txt, eol, encoding)");
+
+== Input argument
+
+/ filename: a string: a filename
+/ txt: a string, cell of string or string array: content to save in file
+/ eol: a string: 'native' (system default), 'pc' \[(char(13), char(10)\], 'unix' \[char(10)\]
+/ encoding: a string: 'UTF-8' (default), 'ISO-8859-1', 'windows-1251', 'windows-1252', ...
+
+== Description
+
+#strong[filewrite]; saves a character array, cell of string or string array to a file.
+
+ file saved uses by default UTF-8 (NO-BOM) encoding.
+
+
+== Examples
+
+``````matlab
+str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
+    	filewrite([tempdir(), 'CHANGELOG.md'], str)
+``````
+
+characters encoding
+
+``````matlab
+
+str = 'живете зело, земля, и иже и како люди';
+filewrite([tempdir(), 'example_filewrite.txt'], str, 'native', 'windows-1251')
+``````
+
+
+== See also
+
+#nlink(<stream_manager:fileread>)[fileread];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [initial version],
+)
+
+// Author: Allan CORNET

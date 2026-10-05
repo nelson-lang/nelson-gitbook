@@ -20,9 +20,12 @@ Supprime un fichier.
 
 ## 📄 Description
 
+
 <b>res = rmfile(filename)</b> supprime le fichier <b>filename</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 fd = fopen([tempdir(), 'test_rmfile.txt'], 'wt')
@@ -33,14 +36,15 @@ isfile([tempdir(), 'test_rmfile.txt'])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [isfile](../files_folders_functions/isfile.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

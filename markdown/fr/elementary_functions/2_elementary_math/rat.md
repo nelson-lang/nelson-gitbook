@@ -21,27 +21,31 @@ Approximation par une fraction rationnelle.
 
 ## 📄 Description
 
-<b>[N, D] = rat(X)</b> renvoie deux tableaux d'entiers tels que <b>N ./ D</b> soit proche de <b>X</b> au sens où <b>abs(N ./ D - X) <= tol</b>.
 
-Les approximations rationnelles sont obtenues en tronquant des développements en fraction continue.
+<b>[N, D] = rat(X)</b> renvoie deux tableaux d'entiers tels que <b>N ./ D</b> soit proche de <b>X</b> au sens où <b>abs(N ./ D - X) <= tol</b>. 
+
+Les approximations rationnelles sont obtenues en tronquant des développements en fraction continue. 
 
 <b>S = rat(X)</b> renvoie la représentation en fraction continue sous forme d'un tableau de caractères.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [N, D] = rat(pi)
 S = rat(pi)
 ```
 
+
 ## 🔗 Voir aussi
 
-[rats](../../elementary_functions/rats.md), [format](../../display_format/format.md).
+[rats](../../elementary_functions/2_elementary_math/rats.md), [format](../../display_format/format.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

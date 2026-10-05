@@ -13,11 +13,14 @@ Starts a stopwatch timer.
 
 ## 📄 Description
 
-The sequence of commands<b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands.
+
+The sequence of commands<b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands. 
 
 Consecutive <b>tic</b> commands overwrite the tic timer.
 
 ## 💡 Example
+
+
 
 ```matlab
 tic()
@@ -30,13 +33,14 @@ t = toc()
 
 ```
 
+
 ## 🔗 See also
 
-[toc](../../time/toc.md), [sleep](../../time/sleep.md), [time](../../time/time.md).
+[toc](../../time/7_timers/toc.md), [sleep](../../time/7_timers/sleep.md), [time](../../time/7_timers/time.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

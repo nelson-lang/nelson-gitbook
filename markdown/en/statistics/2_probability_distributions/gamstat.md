@@ -18,17 +18,21 @@ Gamma mean and variance
 
 ## 📄 Description
 
+
 <b>gamstat</b> returns the mean and variance of the gamma distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = gamstat([1 2 3], [4 5 6]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

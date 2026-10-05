@@ -1,6 +1,10 @@
 # Categorical arrays
 
+
+    
 The Categorical module provides arrays whose elements belong to a fixed set of text categories.
+
+  
 
 ## Functions
 
@@ -20,3 +24,4 @@ The Categorical module provides arrays whose elements belong to a fixed set of t
 - [renamecats](renamecats.md) - Rename categories in a categorical array.
 - [reordercats](reordercats.md) - Reorder categories in a categorical array.
 - [setcats](setcats.md) - Set the category list of a categorical array.
+

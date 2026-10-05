@@ -4,14 +4,14 @@ Localise les fonctions et intégrées.
 
 ## 📝 Syntaxe
 
-- which(function_name)
-- p = which(function_name)
-- c = which(function_name, '-all')
-- m = which(function_name, '-module')
+- which(function\_name)
+- p = which(function\_name)
+- c = which(function\_name, '-all')
+- m = which(function\_name, '-module')
 
 ## 📥 Argument d'entrée
 
-- function_name - une chaîne : nom de fonction.
+- function\_name - une chaîne : nom de fonction.
 
 ## 📤 Argument de sortie
 
@@ -21,9 +21,12 @@ Localise les fonctions et intégrées.
 
 ## 📄 Description
 
+
 <b>which</b> retourne le chemin d'une fonction ou d'une intégrée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 which('cos')
@@ -33,14 +36,15 @@ m = which('cos', '-module')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [what](../functions_manager/what.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

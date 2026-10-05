@@ -19,7 +19,8 @@ Write an attribute to a netCDF file or variable.
 
 ## 📄 Description
 
-ncwriteatt writes metadata as a netCDF attribute. Use location '/' for global file metadata.
+
+ncwriteatt writes metadata as a netCDF attribute. Use location '/' for global file metadata. 
 
 Attributes are useful for units, titles, scale factors, and provenance metadata.
 
@@ -34,13 +35,14 @@ ncwriteatt(filename, '/', 'title', 'sample file');
 title = ncreadatt(filename, '/', 'title')
 ```
 
+
 ## 🔗 See also
 
 [ncreadatt](../netcdf/ncreadatt.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

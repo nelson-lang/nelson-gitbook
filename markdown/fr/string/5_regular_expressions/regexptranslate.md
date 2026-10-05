@@ -18,9 +18,12 @@ Traduit du texte en expression reguliere.
 
 ## 📄 Description
 
+
 <b>regexptranslate</b> echappe les caracteres speciaux ou traduit les jokers en syntaxe d'expression reguliere.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -29,15 +32,16 @@ regexptranslate('wildcard', '*.m')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[regexp](../../string/regexp.md), [regexprep](../../string/regexprep.md).
+[regexp](../../string/5_regular_expressions/regexp.md), [regexprep](../../string/5_regular_expressions/regexprep.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

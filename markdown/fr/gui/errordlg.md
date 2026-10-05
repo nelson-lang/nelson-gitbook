@@ -19,6 +19,7 @@ Cree une boite de dialogue d'erreur.
 
 ## 📄 Description
 
+
 errordlg creates an error message dialog and returns a graphics figure handle.
 
 ## 💡 Exemples
@@ -28,7 +29,6 @@ Creer une boite d erreur.
 ```matlab
 h = errordlg('Invalid value.', 'Error', 'non-modal');
 ```
-
 <img src="errordlg_example.svg" align="middle"/>
 Create the default error dialog.
 
@@ -37,14 +37,15 @@ h = errordlg();
 close(h)
 ```
 
+
 ## 🔗 Voir aussi
 
 [msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [warndlg](../gui/warndlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--

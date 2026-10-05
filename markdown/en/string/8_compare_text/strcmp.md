@@ -17,9 +17,12 @@ Strings comparison.
 
 ## 📄 Description
 
+
 <b>strcmp</b> compares two strings.
 
 ## 💡 Example
+
+
 
 ```matlab
 strcmp('Nelson', 'nelSon')
@@ -34,13 +37,14 @@ strcmp(C, 'C')
 
 ```
 
+
 ## 🔗 See also
 
-[char](../../string/char.md).
+[char](../../string/1_create_convert_text/char.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

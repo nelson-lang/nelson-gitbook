@@ -21,13 +21,16 @@ Companion realization of transfer functions.
 
 ## 📄 Description
 
-<b>[A, B, C, D, E] = compreal(numerator, denominator)</b> calculates a state-space realization represented by matrices A, B, C, D, and E.
 
-The <b>E</b> matrix is an empty matrix (identity matrix) when there are at least as many poles as zeros.
+<b>[A, B, C, D, E] = compreal(numerator, denominator)</b> calculates a state-space realization represented by matrices A, B, C, D, and E. 
+
+The <b>E</b> matrix is an empty matrix (identity matrix) when there are at least as many poles as zeros. 
 
 However, if there are more zeros than poles, the <b>E</b> matrix becomes singular.
 
 ## 💡 Example
+
+
 
 ```matlab
 numerator = [0 10 10];
@@ -35,13 +38,14 @@ denominator = [1 1 10];
 [A, B, C, D, E] = compreal(numerator, denominator)
 ```
 
+
 ## 🔗 See also
 
-[tf](../../control_system/tf.md), [ss](../../control_system/ss.md), [balance](../../linear_algebra/balance.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md), [ss](../../control_system/1_dynamic_system_models/ss.md), [balance](../../linear_algebra/3_eigen_singular_values/balance.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

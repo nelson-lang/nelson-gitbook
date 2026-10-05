@@ -21,9 +21,12 @@ Forme un régulateur LQ (rétroaction d'état) avec pondération sur la sortie.
 
 ## 📄 Description
 
+
 Construit le régulateur LQ en tenant compte d'une pondération sur les sorties et renvoie le gain K, la matrice de coût S et les valeurs propres correspondantes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [0.6, 0.25; 0, 0.9];
@@ -35,14 +38,15 @@ R = 1;
 [K, S, e] = lqry(A, B, C, D, Q, R)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lqr](../../control_system/lqr.md).
+[lqr](../../control_system/5_control_design_tuning/lqr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

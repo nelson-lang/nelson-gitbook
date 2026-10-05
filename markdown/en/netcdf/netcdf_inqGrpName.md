@@ -18,7 +18,8 @@ Work with netCDF groups.
 
 ## 📄 Description
 
-netcdf.inqGrpName exposes group operations available in netCDF-4 files.
+
+netcdf.inqGrpName exposes group operations available in netCDF-4 files. 
 
 Groups organize dimensions, variables, and attributes into a hierarchy.
 
@@ -35,13 +36,14 @@ name = netcdf.inqGrpName(gid);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.create](../netcdf/netcdf.create.md), [netcdf.defDim](../netcdf/netcdf.defDim.md), [netcdf.defVar](../netcdf/netcdf.defVar.md).
+[netcdf.create](../netcdf/netcdf_create.md), [netcdf.defDim](../netcdf/netcdf_defDim.md), [netcdf.defVar](../netcdf/netcdf_defVar.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

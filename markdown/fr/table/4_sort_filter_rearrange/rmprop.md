@@ -17,6 +17,7 @@ Supprime une propriete personnalisee d'une table.
 
 ## 📄 Description
 
+
 <b>rmprop</b> supprime une propriete personnalisee de <b>T.Properties.CustomProperties</b>.
 
 ## 💡 Exemple
@@ -30,14 +31,15 @@ T.Properties.CustomProperties.Source = 'demo';
 T = rmprop(T, 'Source')
 ```
 
+
 ## 🔗 Voir aussi
 
-[addprop](../../table/addprop.md), [table](../../table/table.md).
+[addprop](../../table/4_sort_filter_rearrange/addprop.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

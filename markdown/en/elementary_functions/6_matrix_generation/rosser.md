@@ -17,6 +17,7 @@ Classic symmetric eigenvalue test problem.
 
 ## 📄 Description
 
+
 <b>R = rosser()</b> returns the Rosser Matrix.
 
 ## 📚 Bibliography
@@ -25,17 +26,20 @@ https://archive.org/details/jresv47n4p291
 
 ## 💡 Example
 
+
+
 ```matlab
 R = rosser()
 ```
 
+
 ## 🔗 See also
 
-[toeplitz](../../elementary_functions/toeplitz.md), [eig](../../linear_algebra/eig.md).
+[toeplitz](../../elementary_functions/6_matrix_generation/toeplitz.md), [eig](../../linear_algebra/3_eigen_singular_values/eig.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

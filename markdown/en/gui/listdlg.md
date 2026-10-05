@@ -16,6 +16,7 @@ Opens a list selection dialog box.
 
 ## 📄 Description
 
+
 listdlg displays selectable text entries and returns the selected indices.
 
 ## 💡 Examples
@@ -29,7 +30,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'red', 'green', 'blue'}, 'Value', 2,
 uicontrol(f, 'Style', 'pushbutton', 'String', 'OK', 'Position', [170 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [250 28 70 24]);
 ```
-
 <img src="listdlg_example.svg" align="middle"/>
 Select several entries from a list.
 
@@ -39,14 +39,15 @@ items = {'low', 'medium', 'high'};
 if ok, disp(selection); end
 ```
 
+
 ## 🔗 See also
 
 [inputdlg](../gui/inputdlg.md), [questdlg](../gui/questdlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

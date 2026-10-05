@@ -1,4 +1,4 @@
-# libpointer_isNull
+# libpointer\_isNull
 
 Vérifie si un handle libpointer pointe vers NULL
 
@@ -17,9 +17,12 @@ Vérifie si un handle libpointer pointe vers NULL
 
 ## 📄 Description
 
+
 Vérifie si un handle libpointer pointe vers un pointeur NULL.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = libpointer('int8Ptr', int8([3 4]));
@@ -29,14 +32,15 @@ p2.isNull()
 isNull(p2)
 ```
 
+
 ## 🔗 Voir aussi
 
 [libpointer](../dynamic_link/libpointer.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

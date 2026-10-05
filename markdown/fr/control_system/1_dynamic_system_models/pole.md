@@ -16,9 +16,12 @@ Pôles d'un système dynamique.
 
 ## 📄 Description
 
+
 <b>P = pole(sys)</b> renvoie les pôles de <b>sys</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-15, -20; 10, 0];
@@ -29,14 +32,15 @@ sys = ss(A, B, C, D);
 P = pole(sys)
 ```
 
+
 ## 🔗 Voir aussi
 
-[zero](../../control_system/zero.md).
+[zero](../../control_system/1_dynamic_system_models/zero.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

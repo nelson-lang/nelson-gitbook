@@ -14,11 +14,14 @@ Met à jour les figures et traite les callbacks
 
 ## 📄 Description
 
-<b>drawnow</b> vide la file d'attente des événements et met à jour la fenêtre de la figure.
+
+<b>drawnow</b> vide la file d'attente des événements et met à jour la fenêtre de la figure. 
 
 <b>drawnow('limitrate')</b> et <b>drawnow limitrate</b> traitent les callbacks en attente mais ignorent la mise à jour des figures lorsque la mise à jour précédente est récente. Ce mode est utile dans les boucles d'animation.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 x = -pi:pi/20:pi;
@@ -27,8 +30,8 @@ drawnow
 title('Title Here ...')
 grid on
 ```
-
 <img src="drawnow_1.svg" align="middle"/>
+
 
 ```matlab
 x = linspace(0, 2*pi, 200);
@@ -39,14 +42,15 @@ for k = 1:20
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [refresh](../../../graphics/3_labels_styling/3_interactions_camera_lighting/refresh.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

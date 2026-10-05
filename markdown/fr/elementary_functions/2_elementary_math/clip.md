@@ -18,27 +18,31 @@ Limiter des valeurs a un intervalle.
 
 ## 📄 Description
 
-<b>clip</b> limite les valeurs de <b>X</b> a l'intervalle <b>[lowerBound, upperBound]</b>.
 
-Les valeurs inferieures a <b>lowerBound</b> sont fixees a <b>lowerBound</b> et les valeurs superieures a <b>upperBound</b> sont fixees a <b>upperBound</b>.
+<b>clip</b> limite les valeurs de <b>X</b> a l'intervalle <b>[lowerBound, upperBound]</b>. 
+
+Les valeurs inferieures a <b>lowerBound</b> sont fixees a <b>lowerBound</b> et les valeurs superieures a <b>upperBound</b> sont fixees a <b>upperBound</b>. 
 
 Les valeurs <b>NaN</b> d'une entree en virgule flottante sont preservees.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 Y = clip([-2 0 5 10], 0, 8)
 ```
 
+
 ## 🔗 Voir aussi
 
-[min](../../elementary_functions/min.md), [max](../../elementary_functions/max.md).
+[min](../../data_analysis/min.md), [max](../../data_analysis/max.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.13.0  | initial version |
+| 1.13.0   | initial version |
 
 <!--
 ## 👤 Auteur

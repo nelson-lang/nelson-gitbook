@@ -18,12 +18,14 @@ Interroge les fonctionnalités disponibles.
 
 ## 📄 Description
 
+
 Retourne des informations sur les fonctionnalités ou options disponibles dans l'environnement Nelson.
+
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.2.0   | version initiale |
 
 <!--

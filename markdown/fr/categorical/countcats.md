@@ -18,7 +18,8 @@ Compter les elements categoriels par categorie.
 
 ## 📄 Description
 
-<b>countcats</b> compte le nombre d'elements appartenant a chaque categorie de <b>A</b>.
+
+<b>countcats</b> compte le nombre d'elements appartenant a chaque categorie de <b>A</b>. 
 
 Pour les matrices, <b>dim</b> indique si le comptage se fait par colonne ou par ligne.
 
@@ -29,12 +30,12 @@ Compter les elements dans chaque categorie.
 ```matlab
 A = categorical({'red','blue','red',''}); counts = countcats(A)
 ```
-
 Compter par ligne.
 
 ```matlab
 A = categorical({'red','blue'; 'red','red'}); counts = countcats(A, 2)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ A = categorical({'red','blue'; 'red','red'}); counts = countcats(A, 2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

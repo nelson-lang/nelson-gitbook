@@ -19,6 +19,7 @@ Cree un ecouteur d'evenement classdef.
 
 ## 📄 Description
 
+
 <b>listener</b> est un alias de <b>addlistener</b> pour les objets handle classdef et les proprietes observables.
 
 ## 💡 Exemple
@@ -37,14 +38,15 @@ delete(lh);
 delete(counter)
 ```
 
+
 ## 🔗 Voir aussi
 
 [addlistener](../handle/addlistener.md), [notify](../handle/notify.md), [events](../handle/events.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                        |
-| ------- | ------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | support des ecouteurs classdef ajoute |
 
 <!--

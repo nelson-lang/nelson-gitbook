@@ -28,9 +28,10 @@
 
 ## 📄 Description
 
-<b>quiver3(Z,U,V,W)</b> plots 3-D arrows on a regular x-y grid using <b>Z</b> as the z-coordinate data.
 
-<b>quiver3(X,Y,Z,U,V,W)</b> plots arrows at the coordinates specified by <b>X</b>, <b>Y</b>, and <b>Z</b>.
+<b>quiver3(Z,U,V,W)</b> plots 3-D arrows on a regular x-y grid using <b>Z</b> as the z-coordinate data. 
+
+<b>quiver3(X,Y,Z,U,V,W)</b> plots arrows at the coordinates specified by <b>X</b>, <b>Y</b>, and <b>Z</b>. 
 
 The returned object has type <b>quiver</b>. Its public properties include <b>XData</b>, <b>YData</b>, <b>ZData</b>, <b>UData</b>, <b>VData</b>, <b>WData</b>, <b>AutoScale</b>, <b>AutoScaleFactor</b>, <b>ScaleFactor</b>, <b>Color</b>, <b>LineStyle</b>, <b>LineWidth</b>, <b>Marker</b>, <b>MarkerSize</b>, <b>MaxHeadSize</b>, <b>ShowArrowHead</b>, <b>Alignment</b>, <b>DisplayName</b>, and common graphics interaction properties.
 
@@ -46,7 +47,6 @@ w = z;
 quiver3(x, y, z, u, v, w);
 axis equal
 ```
-
 <img src="quiver3_1.svg" align="middle"/>
 Disable automatic scaling and style the arrows.
 
@@ -60,7 +60,6 @@ w = [0.5 0.5 1];
 h = quiver3(x, y, z, u, v, w, 0, 'r--o');
 h.LineWidth = 1.5;
 ```
-
 Plot surface normals as 3-D arrows.
 
 ```matlab
@@ -73,14 +72,15 @@ surf(X,Y,Z)
 axis equal
 ```
 
+
 ## 🔗 See also
 
-[quiver](../../../graphics/1_plots/5_vector_fields/quiver.md), [plot3](../../../graphics/1_plots/1_line_plots/plot3.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[quiver](../../../graphics/1_plots/5_vector_fields/quiver.md), [plot3](../../../graphics/1_plots/1_line_plots/plot3.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | native quiver graphics object |
 
 <!--

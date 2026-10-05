@@ -11,24 +11,28 @@ Quantile-quantile plot.
 
 ## 📄 Description
 
-<b>qqplot</b> creates a quantile-quantile plot for sample data.
+
+<b>qqplot</b> creates a quantile-quantile plot for sample data. 
 
 With one sample, Nelson compares sample quantiles with standard normal quantiles. With two samples, Nelson compares empirical quantiles from both samples. The returned value contains the line handles for the data, the quartile line, and the extrapolated reference line.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = randn(100, 1);
 qqplot(x)
 ```
 
+
 ## 🔗 See also
 
-[quantile](../../statistics/quantile.md), [norminv](../../statistics/norminv.md).
+[quantile](../../statistics/1_descriptive_statistics_visualization/quantile.md), [norminv](../../statistics/2_probability_distributions/norminv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

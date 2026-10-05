@@ -12,6 +12,7 @@ Interpolation de donnees dispersees
 
 ## 📄 Description
 
+
 <b>griddata</b> interpole des echantillons disperses aux coordonnees de requete.
 
 ## 💡 Exemple
@@ -25,14 +26,15 @@ V = x + y;
 Vq = griddata(x, y, V, 0.25, 0.25)
 ```
 
+
 ## 🔗 Voir aussi
 
 [scatteredInterpolant](../geometry/scatteredInterpolant.md), [delaunayn](../geometry/delaunayn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

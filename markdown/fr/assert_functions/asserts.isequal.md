@@ -21,7 +21,8 @@ Verifie que les valeurs calculee et attendue sont egales.
 
 ## 📄 Description
 
-Forme methode de assert_isequal.
+
+Forme methode de assert\_isequal. 
 
 Les diagnostics d'echec incluent classe, dimensions et, pour les tableaux denses numeriques ou logiques de meme taille, le premier index different.
 
@@ -32,12 +33,12 @@ Equal arrays
 ```matlab
 asserts.isequal([1 2], [1 2]);
 ```
-
 Capture a diagnostic
 
 ```matlab
 [res, msg] = asserts.isequal([1 2], [1 3]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +46,8 @@ Capture a diagnostic
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -24,22 +24,26 @@ Generalized extreme value parameter estimates
 
 ## 📄 Description
 
+
 <b>gevfit</b> estimates the parameters of the generalized extreme value distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-1.2 -0.4 0.1 0.8 1.5 2.8 4.0];
 [phat, pci] = gevfit(x);
 ```
 
+
 ## 🔗 See also
 
-[gevlike](../../statistics/gevlike.md), [gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md).
+[gevlike](../../statistics/2_probability_distributions/gevlike.md), [gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

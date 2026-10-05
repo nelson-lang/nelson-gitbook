@@ -4,11 +4,11 @@ Configure Nelson to use MinGW as default C compiler
 
 ## 📝 Syntax
 
-- [res, message] = configuremingw(mingw_path)
+- [res, message] = configuremingw(mingw\_path)
 
 ## 📥 Input argument
 
-- mingw_path - a string: mingw root path.
+- mingw\_path - a string: mingw root path.
 
 ## 📤 Output argument
 
@@ -17,17 +17,21 @@ Configure Nelson to use MinGW as default C compiler
 
 ## 📄 Description
 
-By default, Nelson has no C/C++ compiler defined as default on Windows.
 
-On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function.
+By default, Nelson has no C/C++ compiler defined as default on Windows. 
+
+On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function. 
 
 On Windows, you need to call once <b>configuremingw</b> if you want to use MinGW as default C compiler.
 
 ## 💡 Example
 
+
+
 ```matlab
 configuremingw('c:/mingw')
 ```
+
 
 ## 🔗 See also
 
@@ -35,7 +39,7 @@ configuremingw('c:/mingw')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

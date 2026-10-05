@@ -20,16 +20,20 @@ any of the elements of a matrix satisfy some condition.
 
 ## 📄 Description
 
-<b>any</b> returns true if any of the elements of a matrix satisfy some condition.
+
+<b>any</b> returns true if any of the elements of a matrix satisfy some condition. 
 
 Sparse logical, double, single, complex double, and complex single inputs are supported. Sparse numeric zeros are treated as false and nonzero real or complex entries are treated as true.
 
 ## 💡 Examples
 
+
+
 ```matlab
 any([33, 22; 11, 0])
 any([33, 22; 11, 0], 2)
 ```
+
 
 ```matlab
 S = sparse(single([0 0; 2 + 1i 3]));
@@ -37,17 +41,18 @@ any(S)
 any(S, 'all')
 ```
 
+
 ## 🔗 See also
 
 [all](../operators/all.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                 |
-| ------- | ---------------------------------------------- |
-| 1.0.0   | initial version                                |
-| 1.6.0   | manages input argument 'all'                   |
-|  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.6.0   | manages input argument 'all'
+       |
 | 2.0.0   | added sparse single and complex single support |
 
 <!--

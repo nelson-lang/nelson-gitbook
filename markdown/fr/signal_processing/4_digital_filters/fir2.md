@@ -20,9 +20,12 @@ Conception de filtre FIR par echantillonnage frequentiel.
 
 ## 📄 Description
 
+
 <b>fir2</b> concoit un filtre FIR a phase lineaire depuis une reponse frequentielle arbitraire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ b = fir2(16, [0 0.4 0.6 1], [1 1 0 0]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[fir1](../../signal_processing/fir1.md), [freqz](../../signal_processing/freqz.md).
+[fir1](../../signal_processing/4_digital_filters/fir1.md), [freqz](../../signal_processing/4_digital_filters/freqz.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -13,13 +13,17 @@ Returns the current user's path.
 
 ## 📄 Description
 
+
 Returns the name of the user's directory.
 
 ## 💡 Example
 
+
+
 ```matlab
 r = userdir()
 ```
+
 
 ## 🔗 See also
 
@@ -27,7 +31,7 @@ r = userdir()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

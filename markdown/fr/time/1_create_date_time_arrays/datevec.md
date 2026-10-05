@@ -18,13 +18,16 @@ Convertit un numéro de date série en vecteur date.
 
 ## 📄 Description
 
-<b>datevec</b> convertit un numéro de date série en vecteur date.
 
-Pour une entree sparse, <b>datevec</b> convertit les valeurs non nulles stockees et renvoie des sorties denses.
+<b>datevec</b> convertit un numéro de date série en vecteur date. 
+
+Pour une entree sparse, <b>datevec</b> convertit les valeurs non nulles stockees et renvoie des sorties denses. 
 
 Pour mesurer les performances, il est préférable d'utiliser les fonctions tic et toc.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 datevec(now())
@@ -35,15 +38,16 @@ V = datevec(sparse([720840, now()]))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tic](../../time/tic.md), [toc](../../time/toc.md).
+[tic](../../time/7_timers/tic.md), [toc](../../time/7_timers/toc.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                  |
-| ------- | ----------------------------------------------- |
-| 1.0.0   | version initiale                                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | entree sparse double prise en charge nativement |
 
 <!--

@@ -20,11 +20,14 @@ Normal random numbers
 
 ## 📄 Description
 
-<b>normrnd</b> generates random numbers from normal distributions using Nelson's global random generator.
+
+<b>normrnd</b> generates random numbers from normal distributions using Nelson's global random generator. 
 
 Scalar parameters are expanded to the requested output size. Negative standard deviations produce NaN values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
@@ -32,13 +35,14 @@ r = normrnd(0, 1, 3, 4);
 r2 = normrnd([0 10], [1 2]);
 ```
 
+
 ## 🔗 See also
 
-[normcdf](../../statistics/normcdf.md), [norminv](../../statistics/norminv.md).
+[normcdf](../../statistics/2_probability_distributions/normcdf.md), [norminv](../../statistics/2_probability_distributions/norminv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

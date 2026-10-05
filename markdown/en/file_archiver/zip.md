@@ -19,18 +19,22 @@ Compress files into zip file.
 
 ## 📄 Description
 
-<b>zip</b> compress files and directories into zip archive.
 
-Each individual file must be smaller than 4 GB.
+<b>zip</b> compress files and directories into zip archive. 
+
+Each individual file must be smaller than 4 GB. 
 
 Number of files specified must be less than 65535.
 
 ## 💡 Example
 
+
+
 ```matlab
 zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton'])
 
 ```
+
 
 ## 🔗 See also
 
@@ -38,7 +42,7 @@ zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

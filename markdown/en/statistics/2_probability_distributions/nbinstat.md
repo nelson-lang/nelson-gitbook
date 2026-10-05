@@ -19,17 +19,21 @@ Negative binomial mean and variance
 
 ## 📄 Description
 
+
 <b>nbinstat</b> computes mean and variance for the negative binomial distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = nbinstat([1 3], [0.5 0.4]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

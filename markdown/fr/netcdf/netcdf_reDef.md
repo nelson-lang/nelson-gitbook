@@ -18,7 +18,8 @@ Place un fichier netCDF ouvert en mode definition.
 
 ## 📄 Description
 
-netcdf.reDef expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.reDef expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -34,14 +35,15 @@ netcdf.reDef(ncid);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.create](../netcdf/netcdf.create.md), [netcdf.open](../netcdf/netcdf.open.md), [netcdf.close](../netcdf/netcdf.close.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.create](../netcdf/netcdf_create.md), [netcdf.open](../netcdf/netcdf_open.md), [netcdf.close](../netcdf/netcdf_close.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

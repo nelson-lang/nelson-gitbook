@@ -18,13 +18,16 @@ Nom du fichier en cours d'execution.
 
 ## 📄 Description
 
-mfilename renvoie le nom de la fonction ou du script en cours d'execution.
+
+mfilename renvoie le nom de la fonction ou du script en cours d'execution. 
 
 Avec une option, la fonction peut renvoyer une forme qualifiee par le chemin prise en charge par Nelson.
 
 ## Fonction(s) utilisée(s)
 
+
     nfilename
+  
 
 ## 💡 Exemple
 
@@ -35,14 +38,15 @@ name = mfilename()
 nameWithPath = mfilename('fullpath')
 ```
 
+
 ## 🔗 Voir aussi
 
 [nfilename](../core/nfilename.md), [run](../core/run.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,9 +20,12 @@ Inner join of two tables.
 
 ## 📄 Description
 
+
 <b>innerjoin</b> keeps only rows whose key values are present in both tables.
 
 ## 💡 Example
+
+
 
 ```matlab
 L = table([1; 2; 3], [10; 20; 30], 'VariableNames', {'Key', 'LeftValue'});
@@ -30,13 +33,14 @@ R = table([2; 3; 4], [200; 300; 400], 'VariableNames', {'Key', 'RightValue'});
 J = innerjoin(L, R, 'Keys', 'Key')
 ```
 
+
 ## 🔗 See also
 
-[join](../../table/join.md), [outerjoin](../../table/outerjoin.md).
+[join](../../table/5_join_set_operations/join.md), [outerjoin](../../table/5_join_set_operations/outerjoin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,9 +18,12 @@ logical 'OR' operator, \|
 
 ## 📄 Description
 
+
 <b>C = or(A, B)</b> performs a logical <b>OR</b> operation.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
@@ -30,13 +33,14 @@ D = or(B, A)
 C == D
 ```
 
+
 ## 🔗 See also
 
 [and](../operators/and.md), [xor](../logical/xor.md), [all](../operators/all.md), [any](../operators/any.md), [not](../operators/not.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

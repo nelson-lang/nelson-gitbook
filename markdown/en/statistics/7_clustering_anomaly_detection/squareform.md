@@ -16,9 +16,12 @@ Convert between condensed distance vector and square distance matrix.
 
 ## 📄 Description
 
+
 <b>squareform</b> converts a condensed distance vector to a square symmetric matrix, or the reverse.
 
 ## 💡 Example
+
+
 
 ```matlab
 D = [1 2 3];
@@ -26,13 +29,14 @@ Z = squareform(D)
 D2 = squareform(Z)
 ```
 
+
 ## 🔗 See also
 
-[pdist](../../statistics/pdist.md).
+[pdist](../../statistics/7_clustering_anomaly_detection/pdist.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

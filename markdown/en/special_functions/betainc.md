@@ -20,18 +20,22 @@ Incomplete beta function
 
 ## 📄 Description
 
-<b>betainc</b> computes the incomplete beta function (regularized).
 
-The incomplete beta function is defined as:
+<b>betainc</b> computes the incomplete beta function (regularized). 
+
+The incomplete beta function is defined as: 
 $$I_x(a,b) = \frac{B(x; a,b)}{B(a,b)} = \frac{1}{B(a,b)} \int_0^x t^{a-1} (1-t)^{b-1} \, dt$$
+ 
 
-where
+where 
 $$B(a,b) = \int_0^1 t^{a-1} (1-t)^{b-1} \, dt$$
+ 
 
-is the complete beta function, and:
+is the complete beta function, and: 
 $$B(a,b) = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$$
+ 
 
-The function is normalized so that
+The function is normalized so that 
 $$I_1(a,b) = 1$$
 .
 
@@ -39,9 +43,12 @@ All arrays must be the same size or any of them can be scalar.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = betainc(0.5, 1:10, 3)
 ```
+
 
 ## 🔗 See also
 
@@ -49,7 +56,7 @@ R = betainc(0.5, 1:10, 3)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

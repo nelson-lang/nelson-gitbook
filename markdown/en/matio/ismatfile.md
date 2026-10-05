@@ -18,6 +18,7 @@ Checks if filename a valid .mat file
 
 ## 📄 Description
 
+
 <b>ismatfile</b> checks if filename a valid .mat file.
 
 ## 📚 Bibliography
@@ -25,6 +26,8 @@ Checks if filename a valid .mat file
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -38,13 +41,14 @@ savemat([tempdir(), 'example_loadmat-v6.mat'], 'A', '-v6')
 
 ```
 
+
 ## 🔗 See also
 
 [isnh5file](../hdf5/isnh5file.md), [loadmat](../matio/loadmat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -20,35 +20,45 @@ Normal probability density function
 
 ## 📄 Description
 
-<b>normpdf</b> computes the probability density function of the normal (Gaussian) distribution.
 
-The general formula for the normal distribution PDF is:
+<b>normpdf</b> computes the probability density function of the normal (Gaussian) distribution. 
+
+The general formula for the normal distribution PDF is: 
 $$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+ 
 
-where
+where 
 $$\mu$$
+ 
 
-is the mean and
+is the mean and 
 $$\sigma^2$$
+ 
 
-is the variance.
+is the variance. 
 
-For the standard normal distribution (
+For the standard normal distribution ( 
 $$\mu = 0, \sigma = 1$$
+ 
 
-):
+): 
 $$\phi(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$$
+
 
 ## Used function(s)
 
+
     exp
     sqrt
+  
 
 ## 📚 Bibliography
 
 Evans, M., N. Hastings, and B. Peacock. Statistical Distributions. 2nd ed. Hoboken, NJ: John Wiley and Sons, Inc., 1993.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-0.2, -0.1, 0, 0.1, 0.2];
@@ -60,13 +70,14 @@ R = normpdf(x, 2, 1);
 R = normpdf(0, [-0.2, -0.1, 0, 0.1, 0.2], 1);
 ```
 
+
 ## 🔗 See also
 
-[mean](../../statistics/mean.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

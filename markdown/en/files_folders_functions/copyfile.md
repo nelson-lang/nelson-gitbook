@@ -24,18 +24,22 @@ Copy files or folder.
 
 ## 📄 Description
 
-<b>copyfile(source , destination)</b> copies the file or directory ,<b>source</b> (and subdirectories) to the file or directory,<b>destination</b>.
 
-If <b>source</b> is a directory,<b>destination</b> can not be a file.
+<b>copyfile(source , destination)</b> copies the file or directory ,<b>source</b> (and subdirectories) to the file or directory,<b>destination</b>. 
+
+If <b>source</b> is a directory,<b>destination</b> can not be a file. 
 
 <b>copyfile</b> replaces existing files without warning.
 
 ## 💡 Example
 
+
+
 ```matlab
 copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 [status, msg] = copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 ```
+
 
 ## 🔗 See also
 
@@ -43,11 +47,11 @@ copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 
 ## 🕔 History
 
-| Version | 📄 Description                                   |
-| ------- | ------------------------------------------------ |
-| 1.0.0   | initial version                                  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 1.4.0   | input arguments support scalar string array type |
-| 2.0.0   | msgID output argument added.                     |
+| 2.0.0   | msgID output argument added. |
 
 <!--
 ## 👤 Author

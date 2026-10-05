@@ -19,7 +19,8 @@ Check that text ends with a suffix.
 
 ## 📄 Description
 
-The assertion passes when text ends with suffix.
+
+The assertion passes when text ends with suffix. 
 
 With outputs, a missing suffix is returned as an assertion failure.
 
@@ -30,12 +31,12 @@ Expected suffix
 ```matlab
 asserts.endsWith('Nelson language', 'language');
 ```
-
 Capture a suffix failure
 
 ```matlab
 [res, msg] = asserts.endsWith('Nelson language', 'Nelson');
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a suffix failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

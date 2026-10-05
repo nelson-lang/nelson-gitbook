@@ -11,25 +11,29 @@ Test de normalite de Jarque-Bera.
 
 ## 📄 Description
 
-<b>jbtest</b> effectue un test de normalite de Jarque-Bera avec moyenne et variance inconnues. Les observations <b>NaN</b> sont omises.
+
+<b>jbtest</b> effectue un test de normalite de Jarque-Bera avec moyenne et variance inconnues. Les observations <b>NaN</b> sont omises. 
 
 L'argument optionnel <b>alpha</b> definit le niveau de signification. L'argument optionnel <b>mctol</b> est accepte pour la compatibilite de syntaxe; cette implementation utilise l'approximation deterministe du chi-carre.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 2 3 4 5];
 [h, p, jbstat, critval] = jbtest(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[chi2gof](../../statistics/chi2gof.md), [kstest](../../statistics/kstest.md), [normcdf](../../statistics/normcdf.md).
+[chi2gof](../../statistics/3_hypothesis_tests/chi2gof.md), [kstest](../../statistics/3_hypothesis_tests/kstest.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -21,9 +21,10 @@ Adds a listener callback to a classdef event.
 
 ## 📄 Description
 
-<b>addlistener</b> registers a callback for a classdef handle object event.
 
-For observable properties, use <b>PreGet</b>, <b>PostGet</b>, <b>PreSet</b>, or <b>PostSet</b>. Property event data contains <b>EventName</b>, <b>PropertyName</b>, and <b>AffectedObject</b>.
+<b>addlistener</b> registers a callback for a classdef handle object event. 
+
+For observable properties, use <b>PreGet</b>, <b>PostGet</b>, <b>PreSet</b>, or <b>PostSet</b>. Property event data contains <b>EventName</b>, <b>PropertyName</b>, and <b>AffectedObject</b>. 
 
 Delete the returned listener handle to detach it from the source object.
 
@@ -42,7 +43,6 @@ counter.trigger();
 delete(lh);
 delete(counter)
 ```
-
 Attach a callback to an observable property.
 
 ```matlab
@@ -60,14 +60,15 @@ delete(lh);
 delete(counter)
 ```
 
+
 ## 🔗 See also
 
 [listener](../handle/listener.md), [notify](../handle/notify.md), [events](../handle/events.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                  |
-| ------- | ------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | classdef listener support added |
 
 <!--

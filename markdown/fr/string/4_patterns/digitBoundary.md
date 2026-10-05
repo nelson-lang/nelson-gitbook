@@ -8,22 +8,26 @@ Limite pour le texte numerique.
 
 ## 📄 Description
 
+
 <b>digitBoundary</b> Limite pour le texte numerique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = digitBoundary("start") + digitsPattern(3); extract("ID123 A45", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[letterBoundary](../../string/letterBoundary.md), [alphanumericBoundary](../../string/alphanumericBoundary.md), [digitsPattern](../../string/digitsPattern.md).
+[letterBoundary](../../string/4_patterns/letterBoundary.md), [alphanumericBoundary](../../string/4_patterns/alphanumericBoundary.md), [digitsPattern](../../string/4_patterns/digitsPattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -16,14 +16,18 @@ Returns list of available symbols in an shared library.
 
 ## 📄 Description
 
+
 <b>dllibinfo</b> returns list of available symbols in an shared library.
 
 ## 💡 Example
+
+
 
 ```matlab
 lib = dlopen(modulepath('dynamic_link', 'builtin'))
 c = dllibinfo(lib)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ c = dllibinfo(lib)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

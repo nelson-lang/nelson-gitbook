@@ -22,9 +22,12 @@ Chebyshev type II digital filter design.
 
 ## 📄 Description
 
+
 <b>cheby2</b> designs lowpass, highpass, bandpass, and bandstop Chebyshev type II digital filters.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Chebyshev type II digital filter design.
 
 ```
 
+
 ## 🔗 See also
 
-[cheby1](../../signal_processing/cheby1.md), [ellip](../../signal_processing/ellip.md).
+[cheby1](../../signal_processing/4_digital_filters/cheby1.md), [ellip](../../signal_processing/4_digital_filters/ellip.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

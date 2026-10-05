@@ -9,7 +9,8 @@ Localisation de point dans une triangulation
 
 ## 📄 Description
 
-<b>tsearchn</b> trouve le simplexe contenant chaque point de requete.
+
+<b>tsearchn</b> trouve le simplexe contenant chaque point de requete. 
 
 Les points hors triangulation retournent <b>NaN</b>.
 
@@ -23,14 +24,15 @@ T = delaunayn(P);
 [idx, bary] = tsearchn(P, T, [0.25 0.25])
 ```
 
+
 ## 🔗 Voir aussi
 
 [dsearchn](../geometry/dsearchn.md), [delaunayn](../geometry/delaunayn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

@@ -8,22 +8,26 @@ Recherche un motif de maniere possessive.
 
 ## 📄 Description
 
+
 <b>possessivePattern</b> Recherche un motif de maniere possessive.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = possessivePattern("a"); char(pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[asManyOfPattern](../../string/asManyOfPattern.md), [optionalPattern](../../string/optionalPattern.md), [pattern](../../string/pattern.md).
+[asManyOfPattern](../../string/4_patterns/asManyOfPattern.md), [optionalPattern](../../string/4_patterns/optionalPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

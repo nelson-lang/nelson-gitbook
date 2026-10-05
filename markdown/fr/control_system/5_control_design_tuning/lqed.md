@@ -25,9 +25,12 @@ Calcule l'estimateur de Kalman discret basé sur un critère de coût continu.
 
 ## 📄 Description
 
+
 La fonction détermine la configuration discrète de l'estimateur de Kalman à partir d'un coût quadratique continu pour le bruit de processus et de mesure.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [10     1.2;  3.3     4];
@@ -42,14 +45,15 @@ Ts = 0.004;
 [L, P, Z, E] = lqed(A, G, C, Q, R, Ts)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lqr](../../control_system/lqr.md), [lqe](../../control_system/lqe.md).
+[lqr](../../control_system/5_control_design_tuning/lqr.md), [lqe](../../control_system/5_control_design_tuning/lqe.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

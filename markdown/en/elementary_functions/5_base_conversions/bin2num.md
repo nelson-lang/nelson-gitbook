@@ -16,11 +16,12 @@ Convert two's complement binary string to number.
 
 ## 📄 Description
 
-<b>bin2num</b> converts binary character array to a numeric array.
 
-Note:
+<b>bin2num</b> converts binary character array to a numeric array. 
 
-- <b>num2bin</b> always returns the binary representations in a column
+Note: 
+
+- <b>num2bin</b> always returns the binary representations in a column 
 
 - <b>bin2num</b> and <b>num2bin</b> are inverses of one another.
 
@@ -34,19 +35,22 @@ http://www.oxfordmathcenter.com/drupal7/node/43
 
 ## 💡 Example
 
+
+
 ```matlab
 X = [65535 128; 1 0]
 Y = num2bin(X)
 bin2num(Y)
 ```
 
+
 ## 🔗 See also
 
-[num2bin](../../elementary_functions/num2bin.md).
+[num2bin](../../elementary_functions/5_base_conversions/num2bin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

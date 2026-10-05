@@ -16,14 +16,18 @@ Check for the existence of a macro (function).
 
 ## 📄 Description
 
+
 <b>ismacro</b> checks for the existence of a macro.
 
 ## 💡 Example
+
+
 
 ```matlab
 ismacro('isbuiltin')
 ismacro('exist')
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ ismacro('exist')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

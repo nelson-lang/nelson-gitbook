@@ -24,13 +24,16 @@ Polynomial evaluation.
 
 ## 📄 Description
 
-<b>polyval</b> evaluates polynomial at several points.
 
-When <b>mu</b> is provided, the polynomial is evaluated at the centered and scaled points (x - mu(1)) / mu(2), matching a fit produced by <b>polyfit</b> with three outputs.
+<b>polyval</b> evaluates polynomial at several points. 
+
+When <b>mu</b> is provided, the polynomial is evaluated at the centered and scaled points (x - mu(1)) / mu(2), matching a fit produced by <b>polyfit</b> with three outputs. 
 
 When the second output <b>delta</b> is requested, <b>S</b> must be supplied and is used to return an estimate of the standard error of the prediction.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -39,13 +42,14 @@ x = [5 7 9];
 R = polyval(p, x)
 ```
 
+
 ## 🔗 See also
 
 [polyvalm](../polynomial_functions/polyvalm.md), [polyfit](../polynomial_functions/polyfit.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

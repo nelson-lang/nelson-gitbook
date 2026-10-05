@@ -17,16 +17,20 @@ Creer un trace comete 2-D.
 
 ## 📄 Description
 
-<b>comet</b> anime une tete avec marqueur, un corps mobile et une trace complete pour un trace comete deux dimensions.
+
+<b>comet</b> anime une tete avec marqueur, un corps mobile et une trace complete pour un trace comete deux dimensions. 
 
 L'etat final des axes contient deux objets animatedline et un objet line avec marqueur seulement.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 t = 0:pi/80:2*pi;
 comet(cos(t), sin(t), 0.2)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ comet(cos(t), sin(t), 0.2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,9 +20,12 @@ Inverse Fast Fourier transform.
 
 ## 📄 Description
 
+
 <b>ifft(X)</b> computes the inverse discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1:10]
@@ -30,13 +33,14 @@ Y = fft(A)
 R = ifft(Y)
 ```
 
+
 ## 🔗 See also
 
 [fft](../fftw/fft.md), [fftw](../fftw/fftw.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

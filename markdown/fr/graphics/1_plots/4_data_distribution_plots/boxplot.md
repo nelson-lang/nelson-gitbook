@@ -22,7 +22,8 @@ Afficher des boites a moustaches pour des donnees numeriques.
 
 ## 📄 Description
 
-<b>boxplot</b> affiche les quartiles, la mediane, les moustaches et les valeurs aberrantes de donnees numeriques. Les valeurs NaN sont ignorees.
+
+<b>boxplot</b> affiche les quartiles, la mediane, les moustaches et les valeurs aberrantes de donnees numeriques. Les valeurs NaN sont ignorees. 
 
 Les proprietes prises en charge sont <b>Labels</b>, <b>Orientation</b>, <b>Widths</b>, <b>Whisker</b>, <b>Symbol</b>, <b>Colors</b>, <b>LineWidth</b>, <b>ShowOutliers</b>, <b>Notch</b>, <b>Positions</b> et <b>BoxStyle</b>.
 
@@ -34,7 +35,6 @@ Boites pour les colonnes d'une matrice.
 X = [1 2 3; 2 4 6; 3 6 9; 8 7 12];
 boxplot(X, 'Labels', {'A', 'B', 'C'});
 ```
-
 <img src="boxplot_1.svg" align="middle"/>
 Tailles groupees avec etiquettes.
 
@@ -47,7 +47,6 @@ boxplot(heights, sex, 'Labels', {'girls', 'boys'});
 xlim([0 3]);
 title('Grade 3 heights');
 ```
-
 Groupes avec positions explicites.
 
 ```matlab
@@ -60,7 +59,6 @@ boxplot(data, groups, 'Notch', 'on', 'Labels', labels, 'Positions', pos, ...
   'BoxStyle', 'filled', 'Widths', 0.45);
 title('Group splitting with paired vectors');
 ```
-
 Couleurs specifiees avec caracteres.
 
 ```matlab
@@ -68,7 +66,6 @@ boxplot(randn(100, 9), 'Notch', 'on', 'BoxStyle', 'filled', ...
   'Colors', 'ygcwkmb', 'Whisker', 1.2);
 title('Different colors specified with characters');
 ```
-
 Couleurs specifiees en RGB.
 
 ```matlab
@@ -78,7 +75,6 @@ boxplot(randn(100, 13), 'Notch', 'on', 'BoxStyle', 'filled', ...
   'Colors', colors, 'Whisker', 1.3, 'Widths', 0.45);
 title('Different colors specified as RGB values');
 ```
-
 Boites groupees horizontales.
 
 ```matlab
@@ -86,6 +82,7 @@ y = [1 2 3 4 10 11 12 25];
 g = {'left', 'left', 'left', 'left', 'right', 'right', 'right', 'right'};
 boxplot(y, g, 'Orientation', 'horizontal', 'Symbol', 'rx');
 ```
+
 
 ## 🔗 Voir aussi
 

@@ -1,8 +1,13 @@
 # Optimization
 
+
+    
 Le module Optimization fournit la minimisation scalaire, la minimisation sans contrainte, la recherche de zéro, les systèmes non linéaires, les moindres carrés non linéaires, les moindres carrés non négatifs, la programmation quadratique, les options de solveurs et une première couche de modélisation par problème.
 
+    
 Les algorithmes fournis sont des méthodes numériques denses déterministes pour des modèles de petite et moyenne taille dans Nelson.
+
+  
 
 ## Functions
 
@@ -36,3 +41,4 @@ Les algorithmes fournis sont des méthodes numériques denses déterministes pou
 - [quadprog](quadprog.md) - Programmation quadratique.
 - [show](show.md) - Afficher un objet d'optimization.
 - [solve](solve.md) - Résoudre un objet problème d'optimization.
+

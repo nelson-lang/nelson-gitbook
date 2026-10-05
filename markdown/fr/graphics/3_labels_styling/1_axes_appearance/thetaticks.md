@@ -26,7 +26,8 @@ Definit ou retourne les graduations angulaires des axes polaires.
 
 ## 📄 Description
 
-<b>thetaticks</b> retourne ou definit les valeurs des graduations angulaires de l'axes polaire courant. Les valeurs sont exprimees en degres.
+
+<b>thetaticks</b> retourne ou definit les valeurs des graduations angulaires de l'axes polaire courant. Les valeurs sont exprimees en degres. 
 
 La definition de valeurs numeriques passe le mode a <b>manual</b>. Si les etiquettes angulaires sont en mode automatique, elles sont regenerees depuis les nouvelles valeurs.
 
@@ -42,14 +43,15 @@ ticks = thetaticks()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [thetaticklabels](../../../graphics/3_labels_styling/1_axes_appearance/thetaticklabels.md), [thetalim](../../../graphics/3_labels_styling/1_axes_appearance/thetalim.md), [rticks](../../../graphics/3_labels_styling/1_axes_appearance/rticks.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

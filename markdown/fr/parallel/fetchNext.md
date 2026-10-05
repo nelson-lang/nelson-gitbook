@@ -19,9 +19,14 @@ Récupérer les prochaines sorties non lues d'un tableau FevalFuture.
 
 ## 📄 Description
 
-<b>[idx, y1, ... , ym] = fetchNext(f)</b> récupère l'indice <b>idx</b> du nouvel objet <b>FevalFuture</b> lisible dans le tableau <b>f</b> qui est terminé, ainsi que <b>m</b> résultats de ce FevalFuture en tant que <b>Y1, ... , Ym</b>.
+
+<b>[idx, y1, ... , ym] = fetchNext(f)</b> récupère l'indice <b>idx</b> du nouvel objet <b>FevalFuture</b> lisible dans le tableau <b>f</b> qui est terminé, ainsi que <b>m</b> résultats de ce FevalFuture en tant que <b>Y1, ... , Ym</b>. 
+
+
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -40,14 +45,15 @@ toc()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [parfeval](../parallel/parfeval.md), [fetchOutputs](../parallel/fetchOutputs.md), [backgroundPool](../parallel/backgroundPool.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

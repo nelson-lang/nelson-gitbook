@@ -12,7 +12,9 @@ Terminate Nelson program (same as quit)
 
 ## 📄 Description
 
+
 This function is equivalent to the <b>quit</b> function.
+
 
 ## 🔗 See also
 
@@ -20,7 +22,7 @@ This function is equivalent to the <b>quit</b> function.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

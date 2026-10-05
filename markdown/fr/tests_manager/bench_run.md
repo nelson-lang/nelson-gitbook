@@ -1,12 +1,12 @@
-# bench_run
+# bench\_run
 
 Exécuter les benchmarks
 
 ## 📝 Syntaxe
 
-- status = bench_run()
-- status = bench_run(targets)
-- status = bench_run(targets, Name, Value)
+- status = bench\_run()
+- status = bench\_run(targets)
+- status = bench\_run(targets, Name, Value)
 
 ## 📥 Argument d'entrée
 
@@ -19,22 +19,25 @@ Exécuter les benchmarks
 
 ## 📄 Description
 
-<b>bench_run</b> découvre et exécute uniquement les fichiers 'bench\_\*.m'.
 
-Les benchmarks sont toujours exécutés dans des processus enfants. Un processus de benchmark est utilisé avec au plus huit threads disponibles ; deux processus sont utilisés au-delà de huit threads.
+<b>bench\_run</b> découvre et exécute uniquement les fichiers 'bench\_\*.m'. 
+
+Les benchmarks sont toujours exécutés dans des processus enfants. Un processus de benchmark est utilisé avec au plus huit threads disponibles ; deux processus sont utilisés au-delà de huit threads. 
 
 Utilisez <b>nelson.unittest.run</b> avec <b>Kind</b> défini à <b>bench</b> pour obtenir des résultats structurés.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 bench_run('string')
 ```
 
+
 ## 🔗 Voir aussi
 
 [test_run](../tests_manager/test_run.md), [nelson.unittest.run](../tests_manager/nelson_unittest_run.md).
-
 <!--
 ## 👤 Auteur
 

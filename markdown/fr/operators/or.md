@@ -18,9 +18,12 @@ Opérateur logique 'OU', \|
 
 ## 📄 Description
 
+
 <b>C = or(A, B)</b> effectue une opération logique <b>OU</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
@@ -30,14 +33,15 @@ D = or(B, A)
 C == D
 ```
 
+
 ## 🔗 Voir aussi
 
 [and](../operators/and.md), [xor](../logical/xor.md), [all](../operators/all.md), [any](../operators/any.md), [not](../operators/not.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,22 +16,26 @@ Complex conjugate
 
 ## 📄 Description
 
+
 <b>conj</b> returns the complex conjugate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = conj(x)
 ```
 
+
 ## 🔗 See also
 
-[real](../../elementary_functions/real.md).
+[real](../../elementary_functions/3_complex_numbers/real.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

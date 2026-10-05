@@ -19,6 +19,7 @@ Verifie que deux valeurs ont la meme taille.
 
 ## 📄 Description
 
+
 <b>asserts.sameSize</b> compare les dimensions.
 
 ## Fonction(s) utilisée(s)
@@ -33,14 +34,15 @@ Verifier des tailles identiques :
 asserts.sameSize(ones(2, 3), zeros(2, 3));
 ```
 
+
 ## 🔗 Voir aussi
 
 [asserts.size](../assert_functions/asserts.size.md), [asserts.numel](../assert_functions/asserts.numel.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

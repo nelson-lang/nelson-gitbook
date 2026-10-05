@@ -19,6 +19,7 @@ Create grid layout manager.
 
 ## 📄 Description
 
+
 <b>g = uigridlayout</b> creates a grid layout manager that positions its children in a configurable grid. <b>g = uigridlayout(parent, [r c])</b> creates an r-by-c grid. <b>RowHeight</b> and <b>ColumnWidth</b> accept fixed pixel sizes, weighted sizes ('1x', '2x', ...), and 'fit'. Children are placed via their <b>Layout.Row</b> / <b>Layout.Column</b> options (scalar or [start end] span); components added without explicit placement fill the grid left to right, top to bottom. Other properties: <b>RowSpacing</b>, <b>ColumnSpacing</b>, <b>Padding</b>, <b>BackgroundColor</b>, <b>Scrollable</b>.
 
 ## 💡 Examples
@@ -35,7 +36,6 @@ b3.Layout.Row = 2;
 b3.Layout.Column = [1 2];
 drawnow();
 ```
-
 <img src="uigridlayout_example.svg" align="middle"/>
 uigridlayout
 
@@ -51,13 +51,14 @@ g.RowHeight = {22, '1x'};
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

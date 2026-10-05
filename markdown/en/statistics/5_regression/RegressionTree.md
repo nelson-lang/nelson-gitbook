@@ -21,14 +21,17 @@ Decision tree regression model.
 
 ## 📄 Description
 
-RegressionTree stores a regression tree built from predictor data and a numeric response.
+
+RegressionTree stores a regression tree built from predictor data and a numeric response. 
 
 Create this object with fitrtree. Use predict to estimate responses for new observations.
 
 ## Used function(s)
 
+
     fitrtree
     predict
+  
 
 ## 💡 Example
 
@@ -41,13 +44,14 @@ mdl = fitrtree(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitrtree](../../statistics/fitrtree.md).
+[predict](../../statistics/5_regression/predict.md), [fitrtree](../../statistics/5_regression/fitrtree.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

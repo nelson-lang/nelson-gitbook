@@ -20,9 +20,12 @@ Convertit les paramètres d'un filtre en fonction de transfert en forme état-es
 
 ## 📄 Description
 
+
 Convertit un numérateur et un dénominateur de fonction de transfert en matrices d'état A, B, C, D.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 Fs = 6;
@@ -33,14 +36,15 @@ a = [1 -3*cos(dt) 1];
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[ss2tf](../../control_system/ss2tf.md), [ss](../../control_system/ss.md), [tf](../../control_system/tf.md).
+[ss2tf](../../control_system/2_model_conversion_interconnection/ss2tf.md), [ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

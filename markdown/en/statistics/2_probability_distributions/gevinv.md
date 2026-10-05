@@ -19,22 +19,26 @@ Generalized extreme value inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>gevinv</b> computes generalized extreme value quantiles element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.1 0.5 0.9];
 x = gevinv(p, 0.2, 1, 0);
 ```
 
+
 ## 🔗 See also
 
-[gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md), [gevrnd](../../statistics/gevrnd.md), [gevstat](../../statistics/gevstat.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md), [gevrnd](../../statistics/2_probability_distributions/gevrnd.md), [gevstat](../../statistics/2_probability_distributions/gevstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

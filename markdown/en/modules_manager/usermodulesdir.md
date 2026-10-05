@@ -12,15 +12,19 @@ Returns path where external modules are saved.
 
 ## 📄 Description
 
-<b>usermodulesdir</b> is an helper's function to return path where users modules are saved.
 
-This path can be overloaded by defining NELSON_EXTERNAL_MODULES_PATH environment variable on your system.
+<b>usermodulesdir</b> is an helper's function to return path where users modules are saved. 
+
+This path can be overloaded by defining NELSON\_EXTERNAL\_MODULES\_PATH environment variable on your system.
 
 ## 💡 Example
+
+
 
 ```matlab
 usermodulesdir()
 ```
+
 
 ## 🔗 See also
 
@@ -28,7 +32,7 @@ usermodulesdir()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

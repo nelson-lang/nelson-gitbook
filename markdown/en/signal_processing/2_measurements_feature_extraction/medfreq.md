@@ -22,9 +22,12 @@ Median frequency of a signal spectrum.
 
 ## 📄 Description
 
+
 <b>medfreq</b> computes the median frequency with rectangular spectral integration and linear interpolation between bin borders.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Median frequency of a signal spectrum.
 
 ```
 
+
 ## 🔗 See also
 
-[meanfreq](../../signal_processing/meanfreq.md), [bandpower](../../signal_processing/bandpower.md).
+[meanfreq](../../signal_processing/2_measurements_feature_extraction/meanfreq.md), [bandpower](../../signal_processing/2_measurements_feature_extraction/bandpower.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

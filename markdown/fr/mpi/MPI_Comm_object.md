@@ -1,19 +1,20 @@
-# MPI_Comm_object
+# MPI\_Comm\_object
 
-Crée un objet MPI_Comm.
+Crée un objet MPI\_Comm.
 
 ## 📝 Syntaxe
 
-- comm = MPI_Comm_object()
-- comm = MPI_Comm_object(str)
+- comm = MPI\_Comm\_object()
+- comm = MPI\_Comm\_object(str)
 
 ## 📥 Argument d'entrée
 
-- str - une chaîne : MPI_COMM_SELF ou MPI_COMM_WORLD.
+- str - une chaîne : MPI\_COMM\_SELF ou MPI\_COMM\_WORLD.
 
 ## 📄 Description
 
-<b>MPI_Comm_object(h)</b> crée un objet MPI_Comm.
+
+<b>MPI\_Comm\_object(h)</b> crée un objet MPI\_Comm.
 
 ## 💡 Exemple
 
@@ -23,14 +24,15 @@ CLI required
 used = MPI_Comm_used()
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Comm_used](../mpi/MPI_Comm_used.md), [MPI_Comm_delete](../mpi/MPI_Comm_delete.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

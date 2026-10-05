@@ -19,11 +19,14 @@ Lire la valeur d'une option d'optimization.
 
 ## 📄 Description
 
+
 <b>optimget</b> retourne une option nommée et utilise la valeur de repli lorsque l'option est absente ou vide.
 
 ## Fonction(s) utilisée(s)
 
+
     optimset
+  
 
 ## 📚 Bibliographie
 
@@ -31,11 +34,14 @@ J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 opts = optimset('MaxIter', 200);
 maxiter = optimget(opts, 'MaxIter', 100)
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +49,8 @@ maxiter = optimget(opts, 'MaxIter', 100)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

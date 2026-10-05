@@ -18,12 +18,15 @@ Créer une contrainte d'optimization.
 
 ## 📄 Description
 
+
 <b>optimconstr</b> crée des contraintes utilisées par les problèmes d'optimization. Les opérateurs relationnels sur expressions créent aussi des contraintes.
 
 ## Fonction(s) utilisée(s)
 
+
     optimproblem
     optimexpr
+  
 
 ## 📚 Bibliographie
 
@@ -31,11 +34,14 @@ P. E. Gill, W. Murray and M. H. Wright, Practical Optimization, Academic Press, 
 
 ## 💡 Exemple
 
+
+
 ```matlab
 x = optimvar('x');
 c = optimconstr(x, '<=', 5)
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +49,8 @@ c = optimconstr(x, '<=', 5)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,10 +1,16 @@
 # Assertion functions
 
+
+    
 The assert_functions module provides assertion tools for unit tests, runtime contracts and diagnostic checks.
 
+    
 All assertions share the same contract: with no output they raise an error on failure; with outputs they return **[res, msg]**.
 
+    
 The canonical API uses qualified assertion names, for example **asserts.isequal**, **asserts.warning** and **asserts.satisfies**.
+
+  
 
 ## Functions
 
@@ -66,3 +72,4 @@ The canonical API uses qualified assertion names, for example **asserts.isequal*
 - [asserts.vector](asserts.vector.md) - Check that a value is a vector.
 - [asserts.warning](asserts.warning.md) - Check that a command emits the expected warning.
 - [asserts.warningFree](asserts.warningFree.md) - Check that a command completes without warning.
+

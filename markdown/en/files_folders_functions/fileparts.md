@@ -21,9 +21,12 @@ Returns the path, filename and extension of a file path.
 
 ## 📄 Description
 
+
 <b>[p ,f, e] = fileparts(fullpath)</b> splits in its three parts: path, filename, extension including the dot.
 
 ## 💡 Example
+
+
 
 ```matlab
 [p, f, e] = fileparts([nelsonroot(), '/etc/finish.m'])
@@ -32,13 +35,14 @@ f = fileparts([nelsonroot(), '/etc/finish.m'], 'filename')
 e = fileparts([nelsonroot(), '/etc/finish.m'], 'extension')
 ```
 
+
 ## 🔗 See also
 
 [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md), [pathsep](../files_folders_functions/pathsep.md), [filesep](../files_folders_functions/filesep.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

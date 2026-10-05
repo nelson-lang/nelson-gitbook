@@ -16,13 +16,16 @@ Wait for condition.
 
 ## 📄 Description
 
-<b>waitfor(obj)</b> pauses the execution of statements until the specified object is closed (or deleted). Once the object is no longer present,<b>waitfor</b> returns, allowing the execution to continue. If the object does not exist at the time of the call,<b>waitfor</b> returns immediately.
 
-<b>waitfor(obj, propertyName)</b> halts execution until the specified property of the object changes or the object is closed. For example,<b>waitfor(hFig, 'UserData')</b> pauses execution until the 'UserData' property of <b>hFig</b> changes. If the specified property name is invalid, an error stops execution.
+<b>waitfor(obj)</b> pauses the execution of statements until the specified object is closed (or deleted). Once the object is no longer present,<b>waitfor</b> returns, allowing the execution to continue. If the object does not exist at the time of the call,<b>waitfor</b> returns immediately. 
+
+<b>waitfor(obj, propertyName)</b> halts execution until the specified property of the object changes or the object is closed. For example,<b>waitfor(hFig, 'UserData')</b> pauses execution until the 'UserData' property of <b>hFig</b> changes. If the specified property name is invalid, an error stops execution. 
 
 <b>waitfor(obj, propertyName, propertyValue)</b> pauses execution until the specified property of the object changes to the given value. If the property is already equal to propvalue when<b>waitfor</b> is called, it returns immediately, allowing execution to resume.
 
 ## 💡 Examples
+
+
 
 ```matlab
 h = figure()
@@ -30,6 +33,7 @@ waitfor(h);
 % close figure to continue
 
 ```
+
 
 ```matlab
 hFig = figure('Position', [300, 300, 300, 150]);
@@ -40,6 +44,7 @@ waitfor(hButton, 'Value');
 
 ```
 
+
 ```matlab
 hFig = figure('Position', [300, 300, 300, 150]);
 hButton = uicontrol('Style', 'togglebutton', 'String', 'Toggle Me', 'Position', [100, 50, 100, 40], 'Value', 0);
@@ -49,13 +54,14 @@ waitfor(hButton, 'Value', 1);
 
 ```
 
+
 ## 🔗 See also
 
 [figure](../../../graphics/2_graphics_objects/1_object_management/figure.md), [waitforbuttonpress](../../../graphics/3_labels_styling/3_interactions_camera_lighting/waitforbuttonpress.md), [pause](../../../core/pause.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.7.0   | initial version |
 

@@ -17,23 +17,26 @@ Afficher ou masquer le contour d'un objet graphique.
 
 ## 📄 Description
 
-<b>box()</b> active ou desactive le contour des axes courants.
 
-<b>box('on')</b> affiche le contour des axes courants.
+<b>box()</b> active ou desactive le contour des axes courants. 
 
-<b>box('off')</b> masque le contour des axes courants.
+<b>box('on')</b> affiche le contour des axes courants. 
+
+<b>box('off')</b> masque le contour des axes courants. 
 
 <b>box(target, ...)</b> modifie le contour de la cible specifiee au lieu des axes courants.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 plot(1:10)
 box on
 ```
-
 <img src="box.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -41,8 +44,8 @@ box on
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

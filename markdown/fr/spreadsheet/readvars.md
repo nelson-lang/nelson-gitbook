@@ -18,21 +18,25 @@ Créer des variables en lisant les colonnes d'un fichier.
 
 ## 📄 Description
 
-<b>[Var1, Var2, ..., VarN] = readvars(filename)</b> cree des variables en important les donnees orientees colonnes d'un fichier texte ou tableur.
 
-Chaque colonne du fichier est retournee comme une variable de sortie distincte. Les colonnes de texte sont retournees sous forme de tableau de cellules de vecteurs de caracteres, et les colonnes numeriques sous forme de vecteur colonne de type <b>double</b>, selon les memes conventions que <b>readtable</b>. Utilisez l'option nom-valeur <b>'TextType'</b> avec la valeur <b>'string'</b> pour retourner les colonnes de texte sous forme de tableau <b>string</b>.
+<b>[Var1, Var2, ..., VarN] = readvars(filename)</b> cree des variables en important les donnees orientees colonnes d'un fichier texte ou tableur. 
 
-Les options nom-valeur acceptees par <b>readtable</b>, comme <b>'Range'</b>, sont transmises. L'utilisation de <b>'Range'</b> restreint les colonnes et les lignes retournees comme variables.
+Chaque colonne du fichier est retournee comme une variable de sortie distincte. Les colonnes de texte sont retournees sous forme de tableau de cellules de vecteurs de caracteres, et les colonnes numeriques sous forme de vecteur colonne de type <b>double</b>, selon les memes conventions que <b>readtable</b>. Utilisez l'option nom-valeur <b>'TextType'</b> avec la valeur <b>'string'</b> pour retourner les colonnes de texte sous forme de tableau <b>string</b>. 
 
-Si moins de variables de sortie sont demandees que le nombre de colonnes du fichier, seules les premieres colonnes sont retournees. Demander plus de variables de sortie qu'il n'y a de colonnes provoque une erreur.
+Les options nom-valeur acceptees par <b>readtable</b>, comme <b>'Range'</b>, sont transmises. L'utilisation de <b>'Range'</b> restreint les colonnes et les lignes retournees comme variables. 
+
+Si moins de variables de sortie sont demandees que le nombre de colonnes du fichier, seules les premieres colonnes sont retournees. Demander plus de variables de sortie qu'il n'y a de colonnes provoque une erreur. 
 
 <b>[Var1, Var2, ..., VarN] = readvars(filename, opts)</b> utilise les parametres definis dans l'objet d'options d'import <b>opts</b>. Tout argument supplementaire est transmis a <b>readtable</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 filename = [tempdir, 'readvars_1.csv']; Names = {'John'; 'Alice'; 'Bob'; 'Diana'}; Age = [28; 34; 22; 30]; Height = [175; 160; 180; 165]; T = table(Names, Age, Height); writetable(T, filename) [N, A, H] = readvars(filename)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +44,8 @@ filename = [tempdir, 'readvars_1.csv']; Names = {'John'; 'Alice'; 'Bob'; 'Diana'
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

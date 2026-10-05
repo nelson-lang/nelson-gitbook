@@ -16,15 +16,19 @@ Prime numbers less than or equal to input value
 
 ## 📄 Description
 
-<b>p = primes(n)</b> returns a row vector containing all the prime numbers less than or equal to n.
+
+<b>p = primes(n)</b> returns a row vector containing all the prime numbers less than or equal to n. 
 
 The data type of p is the same as that of n.
 
 ## 💡 Example
 
+
+
 ```matlab
 p = primes(15)
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ p = primes(15)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

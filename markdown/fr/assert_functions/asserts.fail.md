@@ -19,7 +19,8 @@ Force un echec d'assertion.
 
 ## 📄 Description
 
-Utiliser cette assertion pour marquer un chemin d'execution qui ne doit pas etre atteint.
+
+Utiliser cette assertion pour marquer un chemin d'execution qui ne doit pas etre atteint. 
 
 Avec sorties, aucune erreur n'est levee et res vaut false.
 
@@ -30,12 +31,12 @@ Capture a forced failure
 ```matlab
 [res, msg] = asserts.fail('unreachable branch');
 ```
-
 Raise a forced failure
 
 ```matlab
 try; asserts.fail('unreachable branch'); catch ME; disp(ME.message); end
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ try; asserts.fail('unreachable branch'); catch ME; disp(ME.message); end
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

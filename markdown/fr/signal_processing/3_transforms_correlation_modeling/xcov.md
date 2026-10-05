@@ -23,9 +23,12 @@ Covariance croisée de signaux discrets.
 
 ## 📄 Description
 
+
 <b>xcov</b> retire la moyenne de chaque signal puis calcule la séquence de corrélation correspondante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -33,14 +36,15 @@ Covariance croisée de signaux discrets.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[xcorr](../../signal_processing/xcorr.md).
+[xcorr](../../signal_processing/3_transforms_correlation_modeling/xcorr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,22 +19,26 @@ constructeur de vecteur à espacement linéaire.
 
 ## 📄 Description
 
+
 <b>linspace</b> génère un vecteur à espacement linéaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 V = linspace(1+2i, 10+10i, 4)
 ```
 
+
 ## 🔗 Voir aussi
 
-[logspace](../../elementary_functions/logspace.md).
+[logspace](../../elementary_functions/1_array_creation_shape/logspace.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

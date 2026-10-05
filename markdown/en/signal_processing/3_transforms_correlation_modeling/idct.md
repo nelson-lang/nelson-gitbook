@@ -20,9 +20,12 @@ Inverse discrete cosine transform.
 
 ## 📄 Description
 
+
 <b>idct</b> computes the inverse of the orthonormal type-II discrete cosine transform along the first non-singleton dimension by default. For matrices, each column is transformed independently.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ x = idct(y);
 
 ```
 
+
 ## 🔗 See also
 
-[dct](../../signal_processing/dct.md), [ifft](../../fftw/ifft.md).
+[dct](../../signal_processing/3_transforms_correlation_modeling/dct.md), [ifft](../../fftw/ifft.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,7 +18,8 @@ Verifie qu'une valeur est un vecteur.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value est un vecteur ligne ou colonne.
+
+L'assertion reussit lorsque value est un vecteur ligne ou colonne. 
 
 Les diagnostics incluent les dimensions calculees.
 
@@ -29,12 +30,12 @@ Vector value
 ```matlab
 asserts.vector([1 2]);
 ```
-
 Capture a matrix value
 
 ```matlab
 [res, msg] = asserts.vector(ones(2, 2));
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a matrix value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

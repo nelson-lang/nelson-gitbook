@@ -23,13 +23,16 @@ Comptage par classes d'histogramme.
 
 ## 📄 Description
 
-histcounts compte les elements de X qui appartiennent a des classes consecutives d'histogramme.
+
+histcounts compte les elements de X qui appartiennent a des classes consecutives d'histogramme. 
 
 Vous pouvez specifier un nombre de classes ou un vecteur de bornes strictement croissantes. La derniere classe inclut sa borne droite.
 
 ## Fonction(s) utilisée(s)
 
+
     histcounts
+  
 
 ## 💡 Exemple
 
@@ -40,14 +43,15 @@ x = [0 1 1 2 3 3 4];
 [N, edges, bin] = histcounts(x, 0:2:4)
 ```
 
+
 ## 🔗 Voir aussi
 
-[sortrows](../../elementary_functions/sortrows.md), [histogram](../../graphics/histogram.md).
+[sortrows](../../elementary_functions/7_indexing_dimensions/sortrows.md), [histogram](../../graphics/1_plots/4_data_distribution_plots/histogram.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

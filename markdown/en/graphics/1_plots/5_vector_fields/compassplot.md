@@ -11,7 +11,8 @@ Display vectors from the origin in polar coordinates.
 
 ## 📄 Description
 
-<b>compassplot</b> displays complex values or polar coordinate pairs as arrows starting from the origin. The returned handle is a <b>compassplot</b> object.
+
+<b>compassplot</b> displays complex values or polar coordinate pairs as arrows starting from the origin. The returned handle is a <b>compassplot</b> object. 
 
 The [compassplot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.compassplot.properties.md) page lists the supported object properties.
 
@@ -23,8 +24,8 @@ Display complex vectors.
 z = [1 + 1i, 1 - 1i, -1 + 0.5i];
 compassplot(z);
 ```
-
 <img src="compassplot_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

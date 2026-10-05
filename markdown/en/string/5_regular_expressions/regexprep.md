@@ -20,9 +20,12 @@ Replace text using regular expression.
 
 ## 📄 Description
 
+
 <b>regexprep</b> replaces text matched by a regular expression. Replacement text can reference ordinal and named tokens.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,15 +34,16 @@ regexprep('My flowers may bloom in May', 'M(\w+)y', 'April', 'preservecase')
 
 ```
 
+
 ## 🔗 See also
 
-[regexp](../../string/regexp.md), [regexptranslate](../../string/regexptranslate.md).
+[regexp](../../string/5_regular_expressions/regexp.md), [regexptranslate](../../string/5_regular_expressions/regexptranslate.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

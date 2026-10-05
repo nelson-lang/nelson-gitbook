@@ -18,7 +18,8 @@ Check that a value is a vector.
 
 ## 📄 Description
 
-The assertion passes when value is a row vector or a column vector.
+
+The assertion passes when value is a row vector or a column vector. 
 
 Diagnostics include the computed dimensions.
 
@@ -29,12 +30,12 @@ Vector value
 ```matlab
 asserts.vector([1 2]);
 ```
-
 Capture a matrix value
 
 ```matlab
 [res, msg] = asserts.vector(ones(2, 2));
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a matrix value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

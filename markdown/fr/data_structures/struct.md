@@ -22,9 +22,10 @@ Cree une structure ou convertit un objet en structure.
 
 ## 📄 Description
 
-<b>struct</b> cree une structure a partir de paires champ/valeur.
 
-<b>struct(object)</b> convertit un objet en structure contenant ses champs publics ou ses proprietes publiques classdef.
+<b>struct</b> cree une structure a partir de paires champ/valeur. 
+
+<b>struct(object)</b> convertit un objet en structure contenant ses champs publics ou ses proprietes publiques classdef. 
 
 Pour les objets handle classdef, <b>struct</b> lit les valeurs courantes des proprietes publiques depuis le handle.
 
@@ -35,7 +36,6 @@ Creer une structure avec des paires champ/valeur.
 ```matlab
 date_st = struct('day', 15, 'month', 'August', 'year', 1974)
 ```
-
 Convertir un objet classdef en structure.
 
 ```matlab
@@ -50,17 +50,18 @@ obj.Y = 4;
 st = struct(obj)
 ```
 
+
 ## 🔗 Voir aussi
 
 [cell](../data_structures/cell.md), [fieldnames](../data_structures/fieldnames.md), [isstruct](../types/isstruct.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                      |
-| ------- | --------------------------------------------------- |
-| 1.0.0   | version initiale                                    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 1.3.0   | nom de champ accepte sous forme de chaine scalaire. |
-| 2.0.0   | conversion des objets classdef documentee           |
+| 2.0.0   | conversion des objets classdef documentee |
 
 <!--
 ## 👤 Auteur

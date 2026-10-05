@@ -21,28 +21,34 @@ Most frequent values.
 
 ## 📄 Description
 
+
 <b>mode</b> returns the most frequent values of A along the selected dimension.
 
 ## Used function(s)
 
+
     mean
     median
     std
+  
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 2; 3 3 4];
 [M, F, C] = mode(A)
 ```
 
+
 ## 🔗 See also
 
-[median](../../statistics/median.md), [sort](../../data_analysis/sort.md).
+[median](../../statistics/1_descriptive_statistics_visualization/median.md), [sort](../../data_analysis/sort.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

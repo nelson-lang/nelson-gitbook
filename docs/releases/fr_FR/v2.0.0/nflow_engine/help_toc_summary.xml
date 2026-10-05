@@ -18,7 +18,7 @@
       <keyword name="delete_line" link="delete_line.html" description="Supprime une connexion entre deux ports de blocs."/>
       <keyword name="find_system" link="find_system.html" description="Liste les blocs d'un modèle, éventuellement filtrés par type."/>
       <keyword name="gcbh" link="gcbh.html" description="Renvoie le handle du bloc courant."/>
-      <keyword name="getSimulinkBlockHandle" link="getSimulinkBlockHandle.html" description="Renvoie le handle d'un bloc par chemin, ou -1 si introuvable."/>
+      <keyword name="getNFlowBlockHandle" link="getNFlowBlockHandle.html" description="Renvoie le handle d'un bloc par chemin, ou -1 si introuvable."/>
       <keyword name="get_param" link="get_param.html" description="Interroge un paramètre de modèle ou de bloc."/>
       <keyword name="getfullname" link="getfullname.html" description="Renvoie le chemin complet d'un bloc ou d'un modèle depuis son handle."/>
       <keyword name="linmod" link="linmod.html" description="Linéarisation numérique d'un modèle nflow."/>

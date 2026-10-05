@@ -22,13 +22,16 @@ Remove polynomial trend.
 
 ## 📄 Description
 
-<b>detrend</b> removes a low-order polynomial trend from data by a least-squares fit and returns the residual.
 
-By default it removes a straight-line trend. With <b>n</b> equal to 0 (or the method <b>'constant'</b>) it removes only the mean. Breakpoints produce a continuous piecewise-linear trend joined at the given row indices.
+<b>detrend</b> removes a low-order polynomial trend from data by a least-squares fit and returns the residual. 
+
+By default it removes a straight-line trend. With <b>n</b> equal to 0 (or the method <b>'constant'</b>) it removes only the mean. Breakpoints produce a continuous piecewise-linear trend joined at the given row indices. 
 
 A row vector input returns a row vector; a column vector returns a column vector.
 
 ## 💡 Examples
+
+
 
 ```matlab
 t = 0:0.1:2;
@@ -37,18 +40,20 @@ y = detrend(x)
 
 ```
 
+
 ```matlab
 y = detrend([1 3 2 4 6], 'constant')
 
 ```
 
+
 ## 🔗 See also
 
-[cumsum](../data_analysis/cumsum.md), [mean](../statistics/mean.md), [polyfit](../polynomial_functions/polyfit.md).
+[cumsum](../data_analysis/cumsum.md), [mean](../statistics/1_descriptive_statistics_visualization/mean.md), [polyfit](../polynomial_functions/polyfit.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -22,15 +22,18 @@ Optimization problem object.
 
 ## 📄 Description
 
-optim.problemdef.OptimizationProblem stores an objective, constraints, variables, objective sense, and description.
+
+optim.problemdef.OptimizationProblem stores an objective, constraints, variables, objective sense, and description. 
 
 Use optimproblem to create the object and solve to compute a solution.
 
 ## Used function(s)
 
+
     optimproblem
     optimvar
     solve
+  
 
 ## 💡 Example
 
@@ -43,13 +46,14 @@ prob.Constraints.limit = x(1) + x(2) <= 4;
 [sol, fval] = solve(prob)
 ```
 
+
 ## 🔗 See also
 
 [optimproblem](../optimization/optimproblem.md), [optimvar](../optimization/optimvar.md), [solve](../optimization/solve.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

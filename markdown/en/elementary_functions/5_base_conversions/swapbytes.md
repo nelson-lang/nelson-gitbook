@@ -16,24 +16,28 @@ Swap byte ordering.
 
 ## 📄 Description
 
-<b>swapbytes</b> Swap byte ordering.
+
+<b>swapbytes</b> Swap byte ordering. 
 
 endian (little - big) converter
 
 ## 💡 Example
+
+
 
 ```matlab
 X = uint16([65535 128; 1 0])
 Y = swapbytes(X)
 ```
 
+
 ## 🔗 See also
 
-[num2bin](../../elementary_functions/num2bin.md), [bin2num](../../elementary_functions/bin2num.md).
+[num2bin](../../elementary_functions/5_base_conversions/num2bin.md), [bin2num](../../elementary_functions/5_base_conversions/bin2num.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

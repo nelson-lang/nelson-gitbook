@@ -18,19 +18,23 @@ Inverse de repartition binomiale negative
 
 ## 📄 Description
 
+
 <b>nbininv</b> calcule l'inverse de repartition de la loi binomiale negative.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 y = [0.1 0.5 0.9];
 x = nbininv(y, 3, 0.4);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

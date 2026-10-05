@@ -18,9 +18,12 @@ Division gauche, opérateur .\\
 
 ## 📄 Description
 
+
 <b>C = ldivide(A, B)</b> retourne la division élément par élément A .\\ B.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 B = ones(3, 4)
@@ -28,11 +31,13 @@ A = B *2
 A .\ B
 ```
 
+
 ```matlab
 B = 2
 A = B *2
 A .\ B
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +45,8 @@ A .\ B
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

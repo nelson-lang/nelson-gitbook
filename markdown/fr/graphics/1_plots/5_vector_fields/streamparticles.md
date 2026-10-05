@@ -20,6 +20,7 @@ Afficher des marqueurs de particules le long de chemins de courant.
 
 ## 📄 Description
 
+
 <b>streamparticles</b> affiche des marqueurs aux positions echantillonnees depuis des sommets de lignes de courant pre-calcules.
 
 ## 💡 Exemples
@@ -30,7 +31,6 @@ Afficher des particules de courant.
 vertices = {[0 0; 0.5 0.2; 1 0.5; 1.5 0.8]};
 streamparticles(vertices);
 ```
-
 <img src="streamparticles_1.svg" align="middle"/>
 Afficher des particules depuis des sommets de lignes de courant pre-calcules.
 
@@ -38,8 +38,8 @@ Afficher des particules depuis des sommets de lignes de courant pre-calcules.
 vertices = {[0 0; 0.5 0.2; 1 0.5; 1.5 0.8]};
 streamparticles(vertices, 4, 'MarkerFaceColor', 'red');
 ```
-
 <img src="streamparticles_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

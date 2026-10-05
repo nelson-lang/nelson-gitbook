@@ -19,23 +19,27 @@ Oppose de la log-vraisemblance geometrique
 
 ## 📄 Description
 
+
 <b>geolike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi geometrique et l'estimation de variance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [nlogL, avar] = geolike(0.25, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[geofit](../../statistics/geofit.md), [geopdf](../../statistics/geopdf.md).
+[geofit](../../statistics/2_probability_distributions/geofit.md), [geopdf](../../statistics/2_probability_distributions/geopdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

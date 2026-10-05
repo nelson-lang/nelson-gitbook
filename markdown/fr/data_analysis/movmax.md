@@ -19,14 +19,18 @@ Maximum mobile.
 
 ## 📄 Description
 
+
 <b>movmax</b> calcule les valeurs maximales sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmax(A, 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ R = movmax(A, 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

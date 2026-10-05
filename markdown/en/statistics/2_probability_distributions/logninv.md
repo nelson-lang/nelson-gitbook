@@ -23,22 +23,26 @@ Lognormal inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>logninv</b> evaluates lognormal inverse cumulative values element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.15865525393145707 0.5 0.8413447460685429];
 x = logninv(p);
 ```
 
+
 ## 🔗 See also
 
-[lognpdf](../../statistics/lognpdf.md), [logncdf](../../statistics/logncdf.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [logncdf](../../statistics/2_probability_distributions/logncdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

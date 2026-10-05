@@ -12,23 +12,26 @@ Query the selected GPU device.
 
 ## 📄 Description
 
-<b>d = gpuDevice()</b> returns a struct describing the selected GPU device, with the following fields:
 
-<b>Index</b>: the device index.
+<b>d = gpuDevice()</b> returns a struct describing the selected GPU device, with the following fields: 
 
-<b>Name</b>: the adapter name.
+<b>Index</b>: the device index. 
 
-<b>Vendor</b>: the hardware vendor.
+<b>Name</b>: the adapter name. 
 
-<b>Architecture</b>: the device architecture.
+<b>Vendor</b>: the hardware vendor. 
 
-<b>Backend</b>: the graphics backend in use (Vulkan, Metal or D3D12).
+<b>Architecture</b>: the device architecture. 
 
-<b>MaxBufferSize</b>: the maximum size in bytes of a single device buffer.
+<b>Backend</b>: the graphics backend in use (Vulkan, Metal or D3D12). 
+
+<b>MaxBufferSize</b>: the maximum size in bytes of a single device buffer. 
 
 An error is raised when no compatible GPU device is available.
 
 ## 💡 Example
+
+
 
 ```matlab
 if canUseGPU()
@@ -36,13 +39,14 @@ if canUseGPU()
 end
 ```
 
+
 ## 🔗 See also
 
 [gpuDeviceCount](../gpu_engine/gpuDeviceCount.md), [canUseGPU](../gpu_engine/canUseGPU.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -24,9 +24,10 @@ Verifie qu'un texte correspond a une valeur autorisee.
 
 ## 📄 Description
 
-<b>validatestring</b> accepte les correspondances exactes et les correspondances partielles de debut de texte, sans tenir compte de la casse. Les correspondances exactes sont prioritaires.
 
-Si une seule correspondance partielle existe, cette valeur est renvoyee. Si plusieurs correspondances partielles existent et que toutes les valeurs correspondantes forment une chaine de sous-chaines, la valeur la plus courte est renvoyee. Sinon une erreur d'ambiguite est emise.
+<b>validatestring</b> accepte les correspondances exactes et les correspondances partielles de debut de texte, sans tenir compte de la casse. Les correspondances exactes sont prioritaires. 
+
+Si une seule correspondance partielle existe, cette valeur est renvoyee. Si plusieurs correspondances partielles existent et que toutes les valeurs correspondantes forment une chaine de sous-chaines, la valeur la plus courte est renvoyee. Sinon une erreur d'ambiguite est emise. 
 
 Les messages d'erreur peuvent inclure une position d'argument, un nom de variable et un nom de fonction selon la syntaxe utilisee.
 
@@ -38,13 +39,11 @@ Correspondances exactes et partielles sans tenir compte de la casse.
 shape = validatestring('Rect', {'square', 'rectangle', 'triangle'});
 direction = validatestring("LEFT", ["left", "right"])
 ```
-
 Correspondance la plus courte dans une chaine de correspondances partielles.
 
 ```matlab
 value = validatestring('rig', {'righteously', 'right', 'righteous'})
 ```
-
 Utiliser les arguments de contexte pour les erreurs generees.
 
 ```matlab
@@ -52,14 +51,15 @@ units = {'cm', 'm', 'in', 'ft'};
 choice = validatestring('CM', units, 'findArea', 'units', 4)
 ```
 
+
 ## 🔗 Voir aussi
 
 [validateattributes](../validators/validateattributes.md), [inputParser](../validators/inputParser.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

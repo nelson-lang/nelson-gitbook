@@ -16,7 +16,8 @@ Determine whether a categorical array is protected.
 
 ## 📄 Description
 
-<b>isprotected</b> reports whether a categorical array prevents implicit category expansion during assignment.
+
+<b>isprotected</b> reports whether a categorical array prevents implicit category expansion during assignment. 
 
 Ordinal categorical arrays are protected automatically.
 
@@ -28,13 +29,14 @@ Create a protected categorical array and test it.
 A = categorical({'low','high'}, {'low','high'}, 'Protected', true); tf = isprotected(A)
 ```
 
+
 ## 🔗 See also
 
 [categorical](../categorical/categorical.md), [isordinal](../categorical/isordinal.md), [addcats](../categorical/addcats.md), [setcats](../categorical/setcats.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

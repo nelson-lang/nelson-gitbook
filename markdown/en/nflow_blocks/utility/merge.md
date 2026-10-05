@@ -16,27 +16,33 @@ Recombines the outputs of mutually-exclusive conditional subsystems.
 
 ## 📄 Description
 
-Recombines the outputs of mutually-exclusive conditional subsystems.
 
-The inputs are driven directly by conditional subsystems, only one of which executes on a given step. The output takes the value of the input whose source subsystem ran this step; when no source ran, it holds its previous value (starting from <code>InitialOutput</code>). If two sources run on the same step, the later input port wins.
+Recombines the outputs of mutually-exclusive conditional subsystems. 
 
-<b>Parameters</b>
+The inputs are driven directly by conditional subsystems, only one of which executes on a given step. The output takes the value of the input whose source subsystem ran this step; when no source ran, it holds its previous value (starting from <code>InitialOutput</code>). If two sources run on the same step, the later input port wins. 
 
-| Parameter                  | Default value |
-| -------------------------- | ------------- |
-| <code>InitialOutput</code> | 0             |
+<b>Parameters</b> 
 
-<b>Block Characteristics</b>
+| Parameter | Default value | 
+| --- | --- | 
+| <code>InitialOutput</code> | 0 | 
 
-| Field      | Value           |
-| ---------- | --------------- |
-| Block type | merge           |
-| Family     | Utility blocks  |
-| Phases     | INIT, ALGEBRAIC |
+ 
 
-<b>Extended Capabilities</b>
+<b>Block Characteristics</b> 
+
+| Field | Value |
+| --- | --- |
+| Block type | merge | 
+| Family | Utility blocks | 
+| Phases | INIT, ALGEBRAIC | 
+
+ 
+
+<b>Extended Capabilities</b> 
 
 Code generation: supported for C and Rust.
+
 
 ## 🔗 See also
 
@@ -44,7 +50,7 @@ Code generation: supported for C and Rust.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

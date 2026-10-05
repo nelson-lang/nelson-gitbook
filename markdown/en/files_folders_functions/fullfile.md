@@ -16,13 +16,17 @@ Build full file name from parts.
 
 ## 📄 Description
 
+
 <b>R = fullfile(part1, ... , partN)</b> build full file name from parts.
 
 ## 💡 Example
 
+
+
 ```matlab
 fullfile([nelsonroot(), '/./toto'])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ fullfile([nelsonroot(), '/./toto'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

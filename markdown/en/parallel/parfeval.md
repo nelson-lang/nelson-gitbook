@@ -19,13 +19,16 @@ Run function in background.
 
 ## 📄 Description
 
-<b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background.
 
-backgroundPool has<b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.
+<b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background. 
+
+backgroundPool has<b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool. 
 
 <b>parfeval</b> runs the function<b>fptr</b> on a background worker.
 
 ## 💡 Example
+
+
 
 ```matlab
 b = backgroundPool()
@@ -34,13 +37,14 @@ f = parfeval(b, fptr, 1, 5);
 r = fetchOutputs(f)
 ```
 
+
 ## 🔗 See also
 
 [backgroundPool](../parallel/backgroundPool.md), [fetchOutputs](../parallel/fetchOutputs.md), [feval](../functions_manager/feval.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

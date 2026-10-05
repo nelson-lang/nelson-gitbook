@@ -1,10 +1,10 @@
-# qt_version
+# qt\_version
 
 Returns Qt version used.
 
 ## 📝 Syntax
 
-- v = qt_version()
+- v = qt\_version()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns Qt version used.
 
 ## 📄 Description
 
-<b>v = qt_version()</b> returns the version number of Qt at run-time as a string (for example, "6.2.4").
+
+<b>v = qt\_version()</b> returns the version number of Qt at run-time as a string (for example, "6.2.4").
 
 ## 💡 Example
+
+
 
 ```matlab
 semver(qt_version(), '>=6.2')
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ semver(qt_version(), '>=6.2')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

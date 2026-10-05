@@ -4,12 +4,12 @@ Acquires variable value from a specified variables scope.
 
 ## 📝 Syntax
 
-- value = acquirevar(scope, variable_name)
+- value = acquirevar(scope, variable\_name)
 
 ## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
-- variable_name - a string: the name of symbol to search.
+- variable\_name - a string: the name of symbol to search.
 
 ## 📤 Output argument
 
@@ -17,9 +17,12 @@ Acquires variable value from a specified variables scope.
 
 ## 📄 Description
 
+
 <b>acquirevar</b> search a symbol in a specific scope and copy the value in current scope.
 
 ## 💡 Example
+
+
 
 ```matlab
  Y = 'variable in base scope';
@@ -29,13 +32,14 @@ end
 myfun()
 ```
 
+
 ## 🔗 See also
 
 [assignin](../memory_manager/assignin.md), [who](../memory_manager/who.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

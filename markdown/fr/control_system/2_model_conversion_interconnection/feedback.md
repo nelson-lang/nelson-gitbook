@@ -18,9 +18,12 @@ Connexion en boucle fermée de plusieurs modèles.
 
 ## 📄 Description
 
+
 <b>sys = feedback(sys1, sys2)</b> génère un objet modèle,<b>sys</b>, représentant l'interconnexion en rétroaction négative des objets modèle <b>sys1</b> et <b>sys2</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 G = tf([2 5 1], [1 2 3]);
@@ -29,14 +32,15 @@ sys = feedback(G, C, +1)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[cloop](../../control_system/cloop.md), [append](../../control_system/append.md), [ssselect](../../control_system/ssselect.md).
+[cloop](../../control_system/6_matrix_computations/cloop.md), [append](../../control_system/2_model_conversion_interconnection/append.md), [ssselect](../../control_system/2_model_conversion_interconnection/ssselect.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

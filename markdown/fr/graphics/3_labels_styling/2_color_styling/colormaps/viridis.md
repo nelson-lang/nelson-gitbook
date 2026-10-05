@@ -17,6 +17,7 @@ Tableau de couleurs Viridis.
 
 ## 📄 Description
 
+
 <b>viridis</b> retourne la carte de couleurs avec les couleurs Viridis.
 
 ## 📚 Bibliographie
@@ -25,14 +26,16 @@ Carte de couleurs créée par Stéfan van der Walt et Nathaniel Smith
 
 ## 💡 Exemple
 
+
+
 ```matlab
 f = figure();
 surf(peaks);
 view(2);
 colormap('viridis');
 ```
-
 <img src="viridis.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +43,8 @@ colormap('viridis');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | Version initiale |
 
 <!--

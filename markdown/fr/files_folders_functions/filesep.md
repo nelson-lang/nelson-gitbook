@@ -11,14 +11,16 @@ Renvoie le caractère séparateur de fichiers pour la plateforme courante.
 - res - a string: '/' ou '\\\\'
 
 ## 📄 Description
-
 <b>filesep</b> renvoie '\\\\' sur Windows et '/' sur les autres plateformes.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = filesep
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +28,8 @@ A = filesep
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

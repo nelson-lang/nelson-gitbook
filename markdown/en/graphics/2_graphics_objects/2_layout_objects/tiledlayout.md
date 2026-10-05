@@ -25,15 +25,16 @@ Create tiled chart layout.
 
 ## 📄 Description
 
-<b>tiledlayout</b> creates a tiled chart layout in the current figure for displaying multiple plots in a grid arrangement.
 
-<b>tiledlayout</b> with no input arguments creates a flow layout.
+<b>tiledlayout</b> creates a tiled chart layout in the current figure for displaying multiple plots in a grid arrangement. 
 
-<b>tiledlayout(m, n)</b> creates a layout with m rows and n columns of tiles.
+<b>tiledlayout</b> with no input arguments creates a flow layout. 
 
-<b>tiledlayout('flow')</b> creates a layout that automatically adjusts the grid as axes are added. <b>tiledlayout('vertical')</b> stacks axes from top to bottom, and <b>tiledlayout('horizontal')</b> stacks axes from left to right.
+<b>tiledlayout(m, n)</b> creates a layout with m rows and n columns of tiles. 
 
-Use <b>nexttile</b> to create axes within the layout.
+<b>tiledlayout('flow')</b> creates a layout that automatically adjusts the grid as axes are added. <b>tiledlayout('vertical')</b> stacks axes from top to bottom, and <b>tiledlayout('horizontal')</b> stacks axes from left to right. 
+
+Use <b>nexttile</b> to create axes within the layout. 
 
 See [tiledlayout properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.tiledlayout.properties.md) for the complete property list.
 
@@ -50,8 +51,8 @@ plot(ax2, 1:10, sqrt(1:10));
 t.TileSpacing = 'compact';
 
 ```
-
 <img src="tiledlayout.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -59,9 +60,9 @@ t.TileSpacing = 'compact';
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

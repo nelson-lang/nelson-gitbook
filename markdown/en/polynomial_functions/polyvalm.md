@@ -17,14 +17,18 @@ Matrix polynomial evaluation.
 
 ## 📄 Description
 
+
 <b>polyvalm</b> evaluates matrix polynomial.
 
 ## 💡 Example
+
+
 
 ```matlab
 
 R = polyvalm ([1, 2, 3, 4], [3, -4, 1; -2, 0, 2; -1, 4, -3])
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ R = polyvalm ([1, 2, 3, 4], [3, -4, 1; -2, 0, 2; -1, 4, -3])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

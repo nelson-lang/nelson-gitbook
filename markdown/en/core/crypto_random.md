@@ -19,22 +19,26 @@ Get cryptographically secure random bytes.
 
 ## 📄 Description
 
+
 <b>crypto.random</b> returns random bytes from the operating system secure random source (<b>BCryptGenRandom</b> on Windows, <b>/dev/urandom</b> on other systems). Use it for keys, nonces and salts. Unlike <b>rand</b>, its output is unpredictable and must not be seeded.
 
 ## 💡 Example
+
+
 
 ```matlab
 key = crypto.random(32)
 nonce = crypto.random(24, '-hex')
 ```
 
+
 ## 🔗 See also
 
-[crypto.aead.encrypt](../core/crypto.aead.encrypt.md), [crypto.x25519.keypair](../core/crypto.x25519.keypair.md).
+[crypto.aead.encrypt](../core/crypto_aead_encrypt.md), [crypto.x25519.keypair](../core/crypto_x25519_keypair.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

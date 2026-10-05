@@ -8,22 +8,26 @@ Motif pour les caracteres alphanumeriques.
 
 ## 📄 Description
 
+
 <b>alphanumericsPattern</b> Motif pour les caracteres alphanumeriques.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = alphanumericsPattern; extract("A1 !", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lettersPattern](../../string/lettersPattern.md), [digitsPattern](../../string/digitsPattern.md), [characterListPattern](../../string/characterListPattern.md), [pattern](../../string/pattern.md).
+[lettersPattern](../../string/4_patterns/lettersPattern.md), [digitsPattern](../../string/4_patterns/digitsPattern.md), [characterListPattern](../../string/4_patterns/characterListPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

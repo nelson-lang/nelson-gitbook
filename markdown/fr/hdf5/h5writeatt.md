@@ -17,14 +17,18 @@
 
 ## 📄 Description
 
+
 <b>h5writeatt</b> écrit l'attribut nommé<b>attname</b> avec la valeur <b>attvalue</b> dans le fichier HDF5.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
 h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -25,9 +25,12 @@ Logical true.
 
 ## 📄 Description
 
+
 <b>true</b> builds an array of logical true values.
 
 ## 💡 Example
+
+
 
 ```matlab
 true
@@ -39,13 +42,14 @@ L = logical(sparse(1, 2))
 L2 = true(3,'like', L);
 ```
 
+
 ## 🔗 See also
 
 [false](../logical/false.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

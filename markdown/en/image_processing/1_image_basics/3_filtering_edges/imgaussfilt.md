@@ -24,9 +24,10 @@ Apply Gaussian filtering to an image.
 
 ## 📄 Description
 
-Apply Gaussian filtering to a 2-D image or to each plane of an RGB/RGBA image.
 
-Sigma values must be positive and FilterSize must contain positive odd integers.
+Apply Gaussian filtering to a 2-D image or to each plane of an RGB/RGBA image. 
+
+Sigma values must be positive and FilterSize must contain positive odd integers. 
 
 The supported options are FilterSize, Padding, and FilterDomain.
 
@@ -40,7 +41,6 @@ J=imgaussfilt(I,1.5);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Gaussian filtered');
 ```
-
 <img src="imgaussfilt_1.png" align="middle"/>
 Specify filter size and padding
 
@@ -49,13 +49,14 @@ A = [1 2; 3 4];
 B = imgaussfilt(A, 0.5, 'FilterSize', [3 3], 'Padding', 0)
 ```
 
+
 ## 🔗 See also
 
-[imfilter](../../../image_processing/imfilter.md), [fspecial](../../../image_processing/fspecial.md), [imboxfilt](../../../image_processing/imboxfilt.md).
+[imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md), [fspecial](../../../image_processing/1_image_basics/3_filtering_edges/fspecial.md), [imboxfilt](../../../image_processing/1_image_basics/3_filtering_edges/imboxfilt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -23,11 +23,14 @@ Zéro d'une fonction scalaire.
 
 ## 📄 Description
 
+
 <b>fzero</b> utilise une méthode de Brent-Dekker avec encadrement. Si x0 est scalaire, Nelson recherche un intervalle avec changement de signe autour de x0. Une structure problem peut contenir les champs objective, x0 et options.
 
 ## Fonction(s) utilisée(s)
 
+
     optimset
+  
 
 ## 📚 Bibliographie
 
@@ -36,10 +39,13 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [x, fval] = fzero(@(x) x^2 - 4, [0 5])
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -47,8 +53,8 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

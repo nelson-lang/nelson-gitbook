@@ -22,9 +22,12 @@ Cumulative sum of array elements.
 
 ## 📄 Description
 
+
 <b>R = cumsum(M)</b> returns the cumulative sum of the array elements of M.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
@@ -32,13 +35,14 @@ R = cumsum(M)
 R = cumsum(M, 'reverse')
 ```
 
+
 ## 🔗 See also
 
-[ndims](../elementary_functions/ndims.md), [sum](../data_analysis/sum.md), [cumprod](../data_analysis/cumprod.md).
+[ndims](../elementary_functions/7_indexing_dimensions/ndims.md), [sum](../data_analysis/sum.md), [cumprod](../data_analysis/cumprod.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -13,13 +13,17 @@ Returns the temporary directory path.
 
 ## 📄 Description
 
+
 Returns the name of the host system’s directory for temporary files.
 
 ## 💡 Example
 
+
+
 ```matlab
 r = tempdir()
 ```
+
 
 ## 🔗 See also
 
@@ -27,7 +31,7 @@ r = tempdir()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

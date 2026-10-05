@@ -1,10 +1,16 @@
 # Fonctions du système d'exploitation
 
+
+    
 Le module Fonctions OS fournit des outils pour interagir avec le système d'exploitation dans Nelson.
 
+    
 Il inclut des fonctions pour interroger les informations système, gérer les variables d'environnement, exécuter des commandes shell, générer des GUID et effectuer des opérations spécifiques à la plateforme.
 
+    
 Ce module permet aux scripts Nelson d'interagir avec le système d'exploitation sous-jacent sur Windows, macOS et Linux/Unix.
+
+  
 
 ## Functions
 
@@ -30,3 +36,4 @@ Ce module permet aux scripts Nelson d'interagir avec le système d'exploitation 
 - [username](username.md) - obtenir le nom d'utilisateur courant.
 - [winopen](winopen.md) - Ouvrir un fichier dans l'application appropriée (Windows seulement).
 - [winqueryreg](winqueryreg.md) - Lire le registre Windows (Windows seulement).
+

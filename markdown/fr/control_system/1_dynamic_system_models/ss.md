@@ -24,9 +24,12 @@ Modèle en espace d'état.
 
 ## 📄 Description
 
+
 Crée un modèle d'état continu à partir des matrices A, B, C et D, acceptant des matrices réelles ou complexes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -36,6 +39,7 @@ D = 0;
 sys = ss(A, B, C, D)
 ```
 
+
 ```matlab
 num = [3 4];
 den = [3 1 5];
@@ -44,14 +48,15 @@ sysIn = tf(num, den, Ts)
 sys = ss(sysIn)
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf](../../control_system/tf.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

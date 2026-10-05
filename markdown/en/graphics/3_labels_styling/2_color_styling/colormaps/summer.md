@@ -17,17 +17,20 @@ Summer colormap array.
 
 ## 📄 Description
 
+
 <b>summer</b> returns the colormap with summer colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('summer');
 ```
-
 <img src="summer.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('summer');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

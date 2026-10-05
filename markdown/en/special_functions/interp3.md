@@ -24,23 +24,28 @@ Interpolation for 3-D gridded data in meshgrid format
 
 ## 📄 Description
 
-<b>interp3</b> interpolates 3-D gridded data using meshgrid conventions. The default grid is X=1:size(V,2), Y=1:size(V,1), Z=1:size(V,3).
 
-The cubic-family methods use a native tensor-product four-point stencil, with linear fallback on dimensions that have fewer than four samples.
+<b>interp3</b> interpolates 3-D gridded data using meshgrid conventions. The default grid is X=1:size(V,2), Y=1:size(V,1), Z=1:size(V,3). 
+
+The cubic-family methods use a native tensor-product four-point stencil, with linear fallback on dimensions that have fewer than four samples. 
 
 <b>interp3(V)</b> and <b>interp3(V,k)</b> refine the default grid. Grid vectors must be strictly monotonic.
 
 ## 💡 Examples
+
+
 
 ```matlab
 V = reshape(1:8, [2 2 2]);
 Vq = interp3(V, 1.5, 1.5, 1.5)
 ```
 
+
 ```matlab
 V = reshape(1:8, [2 2 2]);
 Vq = interp3(V, 1)
 ```
+
 
 ```matlab
 x = 1:2;
@@ -51,15 +56,16 @@ V = reshape(1:8, [2 2 2]);
 Vq = interp3(X, Y, Z, V, 1.5, 1.5, 1.5, 'linear')
 ```
 
+
 ```matlab
 V = reshape(1:8, [2 2 2]);
 Vq = interp3(V, 0, 1.5, 1.5, 'linear', -1)
 ```
 
+
 ## 🔗 See also
 
-[interp1](../special_functions/interp1.md), [interp2](../special_functions/interp2.md), [interpn](../special_functions/interpn.md), [meshgrid](../elementary_functions/meshgrid.md).
-
+[interp1](../special_functions/interp1.md), [interp2](../special_functions/interp2.md), [interpn](../special_functions/interpn.md), [meshgrid](../elementary_functions/1_array_creation_shape/meshgrid.md).
 <!--
 ## 👤 Author
 

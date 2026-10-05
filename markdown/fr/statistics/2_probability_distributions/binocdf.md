@@ -19,9 +19,12 @@ Fonction de repartition binomiale
 
 ## 📄 Description
 
+
 <b>binocdf</b> calcule par defaut les probabilites de queue inferieure binomiale et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:10;
@@ -29,14 +32,15 @@ p = binocdf(x, 10, 0.4);
 q = binocdf(x, 10, 0.4, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[binopdf](../../statistics/binopdf.md), [binoinv](../../statistics/binoinv.md).
+[binopdf](../../statistics/2_probability_distributions/binopdf.md), [binoinv](../../statistics/2_probability_distributions/binoinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

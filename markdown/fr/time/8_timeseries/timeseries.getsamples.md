@@ -17,9 +17,11 @@ Renvoie un sous-ensemble timeseries par indice.
 
 ## 📄 Description
 
+
 <b>getsamples</b> Selectionne des echantillons et preserve les evenements et les metadonnees.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([10; 20; 30], [1; 2; 3]);
@@ -28,14 +30,15 @@ ts2.Time
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

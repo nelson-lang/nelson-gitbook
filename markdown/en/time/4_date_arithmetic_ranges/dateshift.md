@@ -19,9 +19,10 @@ Shift datetime values to calendar boundaries or selected weekdays.
 
 ## 📄 Description
 
-Shift datetime values to calendar boundaries or selected weekdays.
 
-Supported boundary units include year, quarter, month, week, day, hour, minute, and second. Weekday shifting accepts weekday names, numbers, weekday, and weekend.
+Shift datetime values to calendar boundaries or selected weekdays. 
+
+Supported boundary units include year, quarter, month, week, day, hour, minute, and second. Weekday shifting accepts weekday names, numbers, weekday, and weekend. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -36,13 +37,14 @@ dateshift(t, 'dayofweek', 'Monday', 'next')
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

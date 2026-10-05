@@ -19,23 +19,27 @@ Oppose de la log-vraisemblance uniforme discrete
 
 ## 📄 Description
 
+
 <b>unidlike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi uniforme discrete.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 2 4 5 5];
 [nlogL, avar] = unidlike(5, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unidfit](../../statistics/unidfit.md), [unidpdf](../../statistics/unidpdf.md), [unidcdf](../../statistics/unidcdf.md), [unidrnd](../../statistics/unidrnd.md).
+[unidfit](../../statistics/2_probability_distributions/unidfit.md), [unidpdf](../../statistics/2_probability_distributions/unidpdf.md), [unidcdf](../../statistics/2_probability_distributions/unidcdf.md), [unidrnd](../../statistics/2_probability_distributions/unidrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

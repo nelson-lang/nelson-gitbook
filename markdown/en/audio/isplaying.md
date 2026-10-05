@@ -15,10 +15,11 @@ get info about audio playback is in progress.
 - play - an logical.
 
 ## 📄 Description
-
 <b>isplaying</b> get information about audio playback is in progress.
 
 ## 💡 Example
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -31,13 +32,14 @@ delete(playObj)
 playObj
 ```
 
+
 ## 🔗 See also
 
 [audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

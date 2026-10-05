@@ -9,9 +9,10 @@ Interroge un fournisseur IA externe depuis Nelson.
 
 ## 📄 Description
 
-<b>aiask</b> appelle un fournisseur IA configure tel qu'Ollama ou un endpoint HTTP compatible OpenAI.
 
-Pour Ollama, <b>aiask</b> utilise par defaut l'endpoint HTTP local <b>http://127.0.0.1:11434/api/generate</b> et envoie des requetes sans streaming.
+<b>aiask</b> appelle un fournisseur IA configure tel qu'Ollama ou un endpoint HTTP compatible OpenAI. 
+
+Pour Ollama, <b>aiask</b> utilise par defaut l'endpoint HTTP local <b>http://127.0.0.1:11434/api/generate</b> et envoie des requetes sans streaming. 
 
 Cette fonction interroge le fournisseur directement depuis Nelson. Elle n'expose pas les outils MCP. Utiliser <b>mcpserver</b> lorsqu'un agent externe doit appeler les outils Nelson.
 
@@ -37,7 +38,6 @@ opts = aioptions('Provider', 'ollama', ...
 answer = aiask('Ecris une fonction y = vector_mean(x). Utilise y = mean(x).', opts)
 
 ```
-
 Retourner le texte genere et la reponse Ollama brute.
 
 ```matlab
@@ -48,7 +48,6 @@ disp(text)
 disp(response.total_duration)
 
 ```
-
 Utiliser le premier modele Ollama local avec une reponse limitee.
 
 ```matlab
@@ -64,12 +63,13 @@ answer = aiask('Ecris une fonction y = vector_mean(x). Utilise y = mean(x).', op
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [aimodels](../ai/aimodels.md), [aioptions](../ai/aioptions.md), [mcpserver](../ai/mcpserver.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |

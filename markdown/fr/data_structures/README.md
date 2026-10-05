@@ -1,10 +1,16 @@
 # Structures de données
 
+
+    
 Le module Structures de données fournit des outils pour créer, manipuler et inspecter des tableaux, cellules et structures dans Nelson.
 
+    
 Il permet la conversion entre différents formats de données, l'accès et la modification des champs, l'application de fonctions aux éléments de tableaux et l'organisation des données structurées.
 
+    
 Ce module gère les données complexes au moyen d'opérations programmatiques et d'une gestion dynamique des données.
+
+  
 
 ## Functions
 
@@ -29,3 +35,4 @@ Ce module gère les données complexes au moyen d'opérations programmatiques et
 - [struct](struct.md) - Cree une structure ou convertit un objet en structure.
 - [struct2cell](struct2cell.md) - Créer un tableau cellulaire à partir d'une structure.
 - [structfun](structfun.md) - Applique une fonction a chaque champ d'une structure scalaire.
+

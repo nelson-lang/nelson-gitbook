@@ -18,9 +18,11 @@ Add timeseries data.
 
 ## 📄 Description
 
+
 <b>plus</b> Adds data values and preserves the time axis from a timeseries input.
 
 ## 💡 Example
+
 
 ```matlab
 a = timeseries([1; 2], [1; 2]);
@@ -30,13 +32,14 @@ out.Data
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

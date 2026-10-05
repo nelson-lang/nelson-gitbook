@@ -19,22 +19,26 @@ Geometric probability estimate
 
 ## 📄 Description
 
+
 <b>geofit</b> estimates the success probability of the geometric distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [pHat, pCI] = geofit(x);
 ```
 
+
 ## 🔗 See also
 
-[geolike](../../statistics/geolike.md), [geopdf](../../statistics/geopdf.md).
+[geolike](../../statistics/2_probability_distributions/geolike.md), [geopdf](../../statistics/2_probability_distributions/geopdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

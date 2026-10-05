@@ -9,11 +9,14 @@ Train a discrete hidden Markov model.
 
 ## 📄 Description
 
+
 <b>hmmtrain</b> refines transition and emission probability matrices for a symbol sequence using Baum-Welch iterations.
 
 Name-value arguments include MaxIterations, Tolerance, Verbose, PseudoTransitions, and PseudoEmissions.
 
 ## 💡 Example
+
+
 
 ```matlab
 seq = [1 2 3 2 1];
@@ -22,13 +25,14 @@ emis0 = [0.5 0.4 0.1; 0.1 0.3 0.6];
 [trans, emis] = hmmtrain(seq, trans0, emis0)
 ```
 
+
 ## 🔗 See also
 
-[hmmestimate](../../statistics/hmmestimate.md), [hmmdecode](../../statistics/hmmdecode.md).
+[hmmestimate](../../statistics/7_clustering_anomaly_detection/hmmestimate.md), [hmmdecode](../../statistics/7_clustering_anomaly_detection/hmmdecode.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

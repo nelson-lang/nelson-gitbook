@@ -23,15 +23,19 @@ Vérifie que la valeur se situe dans la plage spécifiée.
 
 ## 📄 Description
 
-<b>mustBeInRange</b> vérifie que la valeur se situe dans la plage spécifiée ou renvoie une erreur.
+
+<b>mustBeInRange</b> vérifie que la valeur se situe dans la plage spécifiée ou renvoie une erreur. 
 
 La seule combinaison valide des indicateurs est<b>exclude-lower</b> avec <b>exclude-upper</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 mustBeInRange(3, 2, 4)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -39,8 +43,8 @@ mustBeInRange(3, 2, 4)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

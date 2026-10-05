@@ -19,22 +19,26 @@ Poisson random numbers
 
 ## 📄 Description
 
+
 <b>poissrnd</b> generates Poisson distributed random values. Scalar parameters are expanded to match the requested output size.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = poissrnd(4, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[poisspdf](../../statistics/poisspdf.md), [poisscdf](../../statistics/poisscdf.md), [poissinv](../../statistics/poissinv.md), [poissstat](../../statistics/poissstat.md).
+[poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poisscdf](../../statistics/2_probability_distributions/poisscdf.md), [poissinv](../../statistics/2_probability_distributions/poissinv.md), [poissstat](../../statistics/2_probability_distributions/poissstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -19,14 +19,18 @@ Moving minimum.
 
 ## 📄 Description
 
+
 <b>movmin</b> computes minimum values over a centered moving window.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmin(A, 3)
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ R = movmin(A, 3)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -27,11 +27,14 @@ Test F pour egalite des variances
 
 ## 📄 Description
 
-<b>vartest2</b> effectue un test F comparant deux variances d'echantillons le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie.
+
+<b>vartest2</b> effectue un test F comparant deux variances d'echantillons le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie. 
 
 Les valeurs NaN sont ignorees independamment dans chaque echantillon teste.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [4.5 4.8 5.1 5.4 5.7 6.0];
@@ -39,14 +42,15 @@ y = [3.9 4.1 4.2 4.4 4.5];
 [h, p, ci, stats] = vartest2(x, y);
 ```
 
+
 ## 🔗 Voir aussi
 
-[vartest](../../statistics/vartest.md), [var](../../statistics/var.md).
+[vartest](../../statistics/3_hypothesis_tests/vartest.md), [var](../../statistics/1_descriptive_statistics_visualization/var.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

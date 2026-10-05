@@ -18,7 +18,8 @@ Retourne les reglages par defaut du cache de blocs netCDF.
 
 ## 📄 Description
 
-netcdf.getChunkCache expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.getChunkCache expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -30,14 +31,15 @@ Exemple copiable pour netcdf.getChunkCache.
 [cacheSize, nelems, preemption] = netcdf.getChunkCache()
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.setChunkCache](../netcdf/netcdf.setChunkCache.md).
+[netcdf.setChunkCache](../netcdf/netcdf_setChunkCache.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

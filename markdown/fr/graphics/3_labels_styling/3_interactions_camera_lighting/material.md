@@ -15,9 +15,12 @@ Definit les proprietes de materiau.
 
 ## 📄 Description
 
+
 <b>material</b> modifie les coefficients ambiant, diffus, speculaire, exposant et reflectance.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,8 +31,8 @@ material('metal');
 view(35, 28);
 
 ```
-
 <img src="material_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -37,8 +40,8 @@ view(35, 28);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

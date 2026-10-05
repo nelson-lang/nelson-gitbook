@@ -20,11 +20,12 @@ Return a variable class name or create an old-style named object.
 
 ## 📄 Description
 
-<b>class(var)</b> returns the class name of <b>var</b>.
 
-For sparse arrays, <b>class</b> returns the stored value class, such as <b>double</b> or <b>logical</b>. Use <b>issparse</b> to test sparse storage.
+<b>class(var)</b> returns the class name of <b>var</b>. 
 
-For classdef value and handle objects, <b>class</b> returns the classdef class name, including package qualification when applicable.
+For sparse arrays, <b>class</b> returns the stored value class, such as <b>double</b> or <b>logical</b>. Use <b>issparse</b> to test sparse storage. 
+
+For classdef value and handle objects, <b>class</b> returns the classdef class name, including package qualification when applicable. 
 
 <b>class(st, className)</b> preserves Nelson old-style object creation and is independent from classdef class definitions.
 
@@ -36,7 +37,6 @@ Return a built-in class name.
 A = 3;
 name = class(A)
 ```
-
 Return the stored value class of a sparse array.
 
 ```matlab
@@ -44,7 +44,6 @@ S = sparse([2 0 3]);
 name = class(S)
 tf = issparse(S)
 ```
-
 Return classdef value and handle class names.
 
 ```matlab
@@ -61,17 +60,18 @@ handleClass = class(h)
 delete(h)
 ```
 
+
 ## 🔗 See also
 
 [isa](../types/isa.md), [issparse](../types/issparse.md), [isobject](../types/isobject.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                       |
-| ------- | ---------------------------------------------------- |
-| 1.0.0   | initial version                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | classdef value and handle object behavior documented |
-| 2.0.0   | sparse arrays report their stored value class        |
+| 2.0.0   | sparse arrays report their stored value class |
 
 <!--
 ## 👤 Author

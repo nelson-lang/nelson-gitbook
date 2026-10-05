@@ -17,17 +17,20 @@ Jet colormap array.
 
 ## 📄 Description
 
+
 <b>jet</b> returns the colormap with jet colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('jet');
 ```
-
 <img src="jet.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('jet');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,9 +16,10 @@ Cree des durees calendaires contenant des semaines entieres.
 
 ## 📄 Description
 
-Cree des durees calendaires contenant des semaines entieres.
 
-calweeks stocke les semaines dans le composant jours de calendarDuration. C est utile pour une arithmetique de dates qui doit rester en duree calendaire.
+Cree des durees calendaires contenant des semaines entieres. 
+
+calweeks stocke les semaines dans le composant jours de calendarDuration. C est utile pour une arithmetique de dates qui doit rester en duree calendaire. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -31,14 +32,15 @@ datetime(2024, 1, 1) + calweeks(2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

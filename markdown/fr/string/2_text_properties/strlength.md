@@ -16,9 +16,12 @@ Longueur des chaînes dans un tableau ou une cellule de chaînes.
 
 ## 📄 Description
 
+
 <b>strlength</b> renvoie la longueur des chaînes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -33,14 +36,15 @@ k = strlength(B)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[strcmp](../../string/strcmp.md).
+[strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

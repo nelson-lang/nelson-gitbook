@@ -16,9 +16,12 @@ Check if all array elements are finite.
 
 ## 📄 Description
 
+
 <b>allfinite</b> returns a logical scalar which is true where elements of M are all finite values.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = sparse([1 2 NaN 3 0 Inf 0 4]);
@@ -26,13 +29,14 @@ R = allfinite(X)
 R2 = isfinite(X)
 ```
 
+
 ## 🔗 See also
 
-[isfinite](../../elementary_functions/isfinite.md), [isnan](../../elementary_functions/isnan.md), [all](../../operators/all.md).
+[isfinite](../../elementary_functions/7_indexing_dimensions/isfinite.md), [isnan](../../elementary_functions/7_indexing_dimensions/isnan.md), [all](../../operators/all.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.6.0   | initial version |
 

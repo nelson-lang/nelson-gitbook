@@ -17,9 +17,10 @@ Cree des durees depuis des secondes ou extrait les secondes de durees.
 
 ## 📄 Description
 
-Cree des durees depuis des secondes ou extrait les secondes de durees.
 
-seconds est l unite de base de temps ecoule utilisee par duration. Elle est utile pour les comparaisons numeriques, l arithmetique et la conversion depuis d autres unites.
+Cree des durees depuis des secondes ou extrait les secondes de durees. 
+
+seconds est l unite de base de temps ecoule utilisee par duration. Elle est utile pour les comparaisons numeriques, l arithmetique et la conversion depuis d autres unites. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -33,14 +34,15 @@ seconds(minutes(2))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

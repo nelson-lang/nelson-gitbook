@@ -16,22 +16,26 @@ Page-wise matrix inverse.
 
 ## 📄 Description
 
+
 <b>pageinv</b> computes the inverse of each page (the first two dimensions) of the N-D array X: Y(:,:,i) = inv(X(:,:,i)). Each page must be a square matrix.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = cat(3, [2 0; 0 4], [1 2; 3 4]);
 Y = pageinv(M)
 ```
 
+
 ## 🔗 See also
 
-[inv](../../linear_algebra/inv.md), [pagemtimes](../../linear_algebra/pagemtimes.md).
+[inv](../../linear_algebra/1_linear_systems/inv.md), [pagemtimes](../../linear_algebra/4_matrix_functions/pagemtimes.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

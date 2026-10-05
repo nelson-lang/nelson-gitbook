@@ -18,12 +18,15 @@ Create an optimization constraint placeholder.
 
 ## 📄 Description
 
+
 <b>optimconstr</b> creates constraints used by optimization problems. Relational operators on expressions also create constraints.
 
 ## Used function(s)
 
+
     optimproblem
     optimexpr
+  
 
 ## 📚 Bibliography
 
@@ -31,11 +34,14 @@ P. E. Gill, W. Murray and M. H. Wright, Practical Optimization, Academic Press, 
 
 ## 💡 Example
 
+
+
 ```matlab
 x = optimvar('x');
 c = optimconstr(x, '<=', 5)
 
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +49,7 @@ c = optimconstr(x, '<=', 5)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,7 +16,8 @@ Compter les valeurs categorielles pour des resumes de type histogramme.
 
 ## 📄 Description
 
-<b>histcounts</b> retourne les comptes de categories d'un tableau categoriel.
+
+<b>histcounts</b> retourne les comptes de categories d'un tableau categoriel. 
 
 Le resultat est equivalent a <b>countcats(A)</b>; les elements non definis sont ignores.
 
@@ -28,14 +29,15 @@ Compter les valeurs de chaque categorie.
 A = categorical({'red','blue','red'}); counts = histcounts(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [countcats](../categorical/countcats.md), [categories](../categorical/categories.md), [isundefined](../categorical/isundefined.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

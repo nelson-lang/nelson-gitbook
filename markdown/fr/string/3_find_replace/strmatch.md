@@ -8,22 +8,26 @@ Recherche les chaines qui commencent par un texte.
 
 ## 📄 Description
 
+
 <b>strmatch</b> Recherche les chaines qui commencent par un texte.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 strmatch("max", ["max"; "min"; "maximum"])
 ```
 
+
 ## 🔗 Voir aussi
 
-[strfind](../../string/strfind.md), [startsWith](../../string/startsWith.md), [strcmp](../../string/strcmp.md).
+[strfind](../../string/3_find_replace/strfind.md), [startsWith](../../string/3_find_replace/startsWith.md), [strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -22,11 +22,12 @@ Collect Nelson code analyzer issues as tables.
 
 ## 📄 Description
 
-<b>codeIssues</b> runs the Nelson code analyzer and stores active and suppressed diagnostics in table properties.
 
-The JSON configuration file uses the same version 2 format as <b>checkcode</b>: <b>extends</b>, <b>files.include</b>, <b>files.exclude</b>, <b>rules</b>, and <b>ci.failOn</b>.
+<b>codeIssues</b> runs the Nelson code analyzer and stores active and suppressed diagnostics in table properties. 
 
-The <b>export</b> method writes JSON, CSV, or text according to the output file extension.
+The JSON configuration file uses the same version 2 format as <b>checkcode</b>: <b>extends</b>, <b>files.include</b>, <b>files.exclude</b>, <b>rules</b>, and <b>ci.failOn</b>. 
+
+The <b>export</b> method writes JSON, CSV, or text according to the output file extension. 
 
 The <b>fix</b> method applies only trivial automatic fixes in this version: trailing whitespace and missing final newline.
 
@@ -44,7 +45,6 @@ ci = codeIssues([nelsonroot(), '/modules/interpreter/functions'], ...
   'IncludeSubfolders', true);
 ci.Issues
 ```
-
 Configuration file shape.
 
 ```matlab
@@ -63,9 +63,10 @@ Configuration file shape.
 }
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

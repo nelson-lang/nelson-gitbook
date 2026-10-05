@@ -17,10 +17,11 @@ Compare les n premiers caractères des chaînes (insensible à la casse).
 - res - un booléen : vrai si les deux sont identiques, sinon faux.
 
 ## 📄 Description
-
 <b>strncmpi</b> compare les n premiers caractères de deux chaînes (insensible à la casse).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 strncmpi('Nelson', 'nelSon', 3)
@@ -35,14 +36,15 @@ strncmpi(C, 'C', 4)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[strncmp](../../string/strncmp.md), [strcmp](../../string/strcmp.md).
+[strncmp](../../string/8_compare_text/strncmp.md), [strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

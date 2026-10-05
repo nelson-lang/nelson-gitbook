@@ -19,11 +19,14 @@ Connexion en série de deux modèles.
 
 ## 📄 Description
 
-Connecte deux systèmes en série. Les systèmes doivent être tous deux continus ou discrets et avoir le même temps d'échantillonnage.
+
+Connecte deux systèmes en série. Les systèmes doivent être tous deux continus ou discrets et avoir le même temps d'échantillonnage. 
 
 Les gains statiques sont considérés comme neutres et peuvent être définis par des matrices classiques.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [A, B, C, D] = ord2(1, 3);
@@ -36,14 +39,15 @@ sys = series(sys1, sys2, outputs1, inputs2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[feedback](../../control_system/feedback.md), [append](../../control_system/append.md).
+[feedback](../../control_system/2_model_conversion_interconnection/feedback.md), [append](../../control_system/2_model_conversion_interconnection/append.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

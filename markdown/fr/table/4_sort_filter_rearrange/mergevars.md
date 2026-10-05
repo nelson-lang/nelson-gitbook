@@ -18,23 +18,27 @@ Fusionne des variables de table.
 
 ## 📄 Description
 
+
 <b>mergevars</b> combine plusieurs variables selectionnees en une seule variable de table.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table([1; 2], [3; 4], 'VariableNames', {'A', 'B'});
 R = mergevars(T, {'A', 'B'}, 'NewVariableName', 'AB')
 ```
 
+
 ## 🔗 Voir aussi
 
-[splitvars](../../table/splitvars.md).
+[splitvars](../../table/4_sort_filter_rearrange/splitvars.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -21,6 +21,7 @@ Recale une image mobile sur une image fixe.
 
 ## 📄 Description
 
+
 imregister estime une transformation 2-D avec imregtform et reechantillonne l'image mobile sur la grille de l'image fixe avec imwarp. Les methodes d'interpolation prises en charge sont nearest, linear, bilinear et cubic.
 
 ## 💡 Exemple
@@ -36,17 +37,17 @@ figure; subplot(1,3,1); imagesc(I); axis image; title('Mobile');
 subplot(1,3,2); imagesc(J); axis image; title('Fixe');
 subplot(1,3,3); imagesc(K); axis image; title('Recalee');
 ```
-
 <img src="imregister_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imregconfig](../../../image_processing/imregconfig.md), [imregcorr](../../../image_processing/imregcorr.md), [imregtform](../../../image_processing/imregtform.md), [imwarp](../../../image_processing/imwarp.md).
+[imregconfig](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregconfig.md), [imregcorr](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregcorr.md), [imregtform](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregtform.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

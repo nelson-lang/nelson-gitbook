@@ -1,0 +1,85 @@
+#import "../../nelson_help.typ": *
+
+= zoom <graphics:3_labels_styling.3_interactions_camera_lighting.zoom>
+
+Enable zoom mode.
+
+== Syntax
+
+- #raw("zoom");
+- #raw("zoom option");
+- #raw("zoom(factor)");
+- #raw("zoom(fig, ...)");
+- #raw("zoom(ax, ...)");
+
+== Input argument
+
+/ option: string: 'on', 'off', 'reset', 'out', 'xon', 'yon' or 'toggle'.
+/ factor: positive number: To zoom in, indicate a factor greater than 1. To zoom out, specify a factor between 0 and 1. When zooming out, the axes will zoom out by a factor of 1\/factor.
+/ fig: Figure object: Target figure
+/ ax: a scalar graphics object value: parent container, specified as a axes.
+
+== Description
+
+Use zoom mode to adjust axis limits during interactive data exploration.
+
+ Enable or disable the zoom mode and configure additional basic settings using the zoom function.
+
+ Zoom mode works with line, bar, histogram, and surface charts. These charts typically provide zoom in and zoom out icons on the toolbar.
+
+ #strong[zoom option]; configures the zoom mode for all axes within the current figure.
+
+ For instance, #strong[zoom('on')]; activates zoom mode,#strong[zoom('xon')]; enables zoom mode exclusively for the x-dimension, while #strong[zoom('off')]; disables zoom mode altogether.
+
+ Once zoom mode is active, you can adjust the view of axes using the cursor, scroll wheel, or keyboard:
+
+ Cursor: Click to zoom in at the cursor position; Drag to zoom into a rectangular region.
+
+ Scroll wheel: Scroll up to zoom in, scroll down to zoom out.
+
+ Keyboard: Press the up arrow (↑) key to zoom in, and the down arrow (↓) key to zoom out.
+
+ 
+
+ The zoom mode option can be specified using one of the following values:
+
+ #strong['toggle'];: Toggles the zoom mode. If zoom mode is disabled, 'toggle' reverts to the most recently used zoom option of 'on', 'xon', or 'yon'. This option behaves the same as calling zoom without any arguments.
+
+ #strong['xon'];: Enables zoom mode for the x-dimension exclusively.
+
+ #strong['yon'];: Activates zoom mode for the y-dimension exclusively.
+
+ #strong['on'];: Activates zoom mode.
+
+ #strong['off'];: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode.
+
+ #strong['reset'];: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the #strong[Restore View]; icon on the axes toolbar will revert the axes to this baseline zoom level.
+
+ #strong['out'];: Restores the current axes to its baseline zoom level.
+
+
+== Example
+
+``````matlab
+surf(peaks)
+zoom on
+zoom reset
+zoom(1.5);
+sleep(5);
+zoom out
+``````
+
+
+== See also
+
+#nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.rotate3d>)[rotate3d];, #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.pan>)[pan];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.2.0], [initial version],
+)
+
+// Author: Allan CORNET

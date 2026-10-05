@@ -16,13 +16,17 @@ Wrap angle in degrees to [-180, 180].
 
 ## 📄 Description
 
+
 <b>wrapTo180(alpha)</b> wraps angles in degrees to the interval <b>[-180, 180]</b>. Positive multiples of 180 map to 180, negative multiples map to -180.
 
 ## 💡 Example
 
+
+
 ```matlab
 wrapTo180([190 -190 360])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ wrapTo180([190 -190 360])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

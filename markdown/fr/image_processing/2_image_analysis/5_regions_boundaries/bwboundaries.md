@@ -22,6 +22,7 @@ Trouve les pixels de frontiere des regions binaires.
 
 ## 📄 Description
 
+
 Trouve les coordonnees de perimetre des regions binaires connexes. Les connectivites prises en charge sont 4 et 8. L option 'holes' ajoute les frontieres des trous remplis.
 
 ## 💡 Exemple
@@ -35,17 +36,17 @@ figure; imagesc(BW); hold on;
 for k=1:length(B), plot(B{k}(:,2), B{k}(:,1), 'r.'); end
 title('Boundaries');
 ```
-
 <img src="bwboundaries_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bwtraceboundary](../../../image_processing/bwtraceboundary.md), [bwperim](../../../image_processing/bwperim.md), [bwlabel](../../../image_processing/bwlabel.md).
+[bwtraceboundary](../../../image_processing/2_image_analysis/5_regions_boundaries/bwtraceboundary.md), [bwperim](../../../image_processing/2_image_analysis/4_morphology/bwperim.md), [bwlabel](../../../image_processing/2_image_analysis/5_regions_boundaries/bwlabel.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

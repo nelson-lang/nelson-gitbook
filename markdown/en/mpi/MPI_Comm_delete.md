@@ -1,19 +1,20 @@
-# MPI_Comm_delete
+# MPI\_Comm\_delete
 
-Removes MPI_Comm object.
+Removes MPI\_Comm object.
 
 ## 📝 Syntax
 
-- MPI_Comm_delete(h)
+- MPI\_Comm\_delete(h)
 - delete(h)
 
 ## 📥 Input argument
 
-- h - a handle: a MPI_Comm object.
+- h - a handle: a MPI\_Comm object.
 
 ## 📄 Description
 
-<b>delete(h)</b> deletes MPI_Comm object itself.
+
+<b>delete(h)</b> deletes MPI\_Comm object itself. 
 
 Do not forget to clear variable afterward.
 
@@ -25,13 +26,14 @@ CLI required
 used = MPI_Comm_used()
 ```
 
+
 ## 🔗 See also
 
 [MPI_Comm_used](../mpi/MPI_Comm_used.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

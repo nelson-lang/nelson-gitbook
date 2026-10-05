@@ -16,9 +16,12 @@ Vérifie si une matrice est triangulaire supérieure.
 
 ## 📄 Description
 
+
 <b>istriu</b> renvoie un logique scalaire indiquant si l'entrée est triangulaire supérieure.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -26,14 +29,15 @@ R = istriu(A)
 R = istriu(A(:,1))
 ```
 
+
 ## 🔗 Voir aussi
 
-[isdiag](../../elementary_functions/7_indexing_dimensions/isdiag.md), [istril](../../elementary_functions/istril.md).
+[isdiag](../../elementary_functions/7_indexing_dimensions/isdiag.md), [istril](../../elementary_functions/7_indexing_dimensions/istril.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

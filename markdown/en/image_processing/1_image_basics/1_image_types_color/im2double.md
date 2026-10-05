@@ -17,9 +17,10 @@ Convert image to double precision.
 
 ## 📄 Description
 
-<b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting,<b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1].
 
-For an indexed image,<b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.
+<b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting,<b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1]. 
+
+For an indexed image,<b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types. 
 
 Indexed images can be uint8, uint16, double, single, or logical arrays.
 
@@ -32,16 +33,16 @@ I=reshape(uint8(linspace(1,255,100)),[10 10]);
 IM=im2double(I);
 figure; imagesc(IM); g=linspace(0,1,64)'; colormap([g g g]); title('Double image');
 ```
-
 <img src="im2double_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[double](../../../double/double.md), [imread](../../../graphics_io/imread.md), [im2single](../../../image_processing/im2single.md), [im2uint8](../../../image_processing/im2uint8.md), [im2uint16](../../../image_processing/im2uint16.md), [im2gray](../../../image_processing/im2gray.md).
+[double](../../../double/double.md), [imread](../../../graphics_io/imread.md), [im2single](../../../image_processing/1_image_basics/1_image_types_color/im2single.md), [im2uint8](../../../image_processing/1_image_basics/1_image_types_color/im2uint8.md), [im2uint16](../../../image_processing/1_image_basics/1_image_types_color/im2uint16.md), [im2gray](../../../image_processing/1_image_basics/1_image_types_color/im2gray.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

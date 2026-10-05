@@ -16,19 +16,22 @@ concatène des chaînes horizontalement.
 
 ## 📄 Description
 
-<b>strcat</b> concatène les chaînes horizontalement.
 
-Si toutes les entrées sont des tableaux de caractères, alors<b>res</b> est un tableau de caractères.
+<b>strcat</b> concatène les chaînes horizontalement. 
 
-Si une entrée est un tableau de chaînes, alors<b>res</b> est un tableau de chaînes.
+Si toutes les entrées sont des tableaux de caractères, alors<b>res</b> est un tableau de caractères. 
 
-Si une entrée est un tableau de cellules, et qu'aucune n'est un tableau de chaînes, alors<b>res</b> est un tableau de cellules de vecteurs de caractères.
+Si une entrée est un tableau de chaînes, alors<b>res</b> est un tableau de chaînes. 
 
-Pour les entrées de tableau de cellules et de chaînes,<b>strcat</b> ne supprime pas les espaces blancs à la fin.
+Si une entrée est un tableau de cellules, et qu'aucune n'est un tableau de chaînes, alors<b>res</b> est un tableau de cellules de vecteurs de caractères. 
+
+Pour les entrées de tableau de cellules et de chaînes,<b>strcat</b> ne supprime pas les espaces blancs à la fin. 
 
 Pour les entrées de tableau de caractères,<b>strcat</b> supprime les caractères d'espacement ASCII à la fin.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 strcat("Nelson", 'nelSon')
@@ -37,14 +40,15 @@ B = {'jkl','mn'};
 C = strcat(A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
-[append](../../string/append.md), [join](../../string/join.md).
+[append](../../string/1_create_convert_text/append.md), [join](../../string/6_join_split_extract/join.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

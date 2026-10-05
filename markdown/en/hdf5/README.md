@@ -1,12 +1,19 @@
 # HDF5
 
+
+    
 The HDF5 module provides support for working with Hierarchical Data Format (HDF5) files in Nelson.
 
+    
 It creates datasets, reads and writes data and attributes, and inspects file contents.
 
+    
 In addition to standard HDF5 support, it includes utilities for Nelson's native .nh5 format, enabling users to save, load, and inspect workspace variables efficiently.
 
+    
 This module is essential for managing large, structured, and portable scientific data.
+
+  
 
 ## Functions
 
@@ -22,3 +29,4 @@ This module is essential for managing large, structured, and portable scientific
 - [savenh5](savenh5.md) - save workspace variables to .nh5 file
 - [whonh5](whonh5.md) - List variables in an valid .nh5 file.
 - [whosnh5](whosnh5.md) - List variables in an valid .nh5 file with sizes and types.
+

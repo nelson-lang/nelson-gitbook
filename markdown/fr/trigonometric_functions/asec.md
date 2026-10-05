@@ -15,15 +15,17 @@ Sécante inverse d'un angle en radians.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>asec</b> calcule la sécante inverse de l'argument en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = -pi:0.75:pi;
 R = asec(x)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ R = asec(x)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

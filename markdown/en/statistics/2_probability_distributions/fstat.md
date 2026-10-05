@@ -18,17 +18,21 @@ F mean and variance
 
 ## 📄 Description
 
+
 <b>fstat</b> returns the mean and variance of the F distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = fstat(5, 6);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

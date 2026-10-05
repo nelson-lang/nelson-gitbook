@@ -19,13 +19,16 @@ Capture une figure ou des axes comme image vidéo.
 
 ## 📄 Description
 
-<b>F = getframe</b> capture les axes courants affichés à l'écran comme une image vidéo. F est une structure contenant les données de l'image. La capture préserve la taille à l'écran des axes mais n'inclut pas les étiquettes de graduations ni tout contenu en dehors des limites des axes.
 
-<b>F = getframe(ax)</b> capture les axes spécifiés par ax au lieu des axes courants.
+<b>F = getframe</b> capture les axes courants affichés à l'écran comme une image vidéo. F est une structure contenant les données de l'image. La capture préserve la taille à l'écran des axes mais n'inclut pas les étiquettes de graduations ni tout contenu en dehors des limites des axes. 
+
+<b>F = getframe(ax)</b> capture les axes spécifiés par ax au lieu des axes courants. 
 
 <b>F = getframe(fig)</b> capture la fenêtre de figure entière spécifiée par fig, y compris le titre des axes, les étiquettes et les graduations. Cependant, l'image capturée n'inclut pas le menu ou les barres d'outils de la figure.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -35,6 +38,7 @@ figure('Color',[0.5 0.5 0.5]);
 imshow(F.cdata)
 
 ```
+
 
 ```matlab
 f = figure();
@@ -51,15 +55,16 @@ imshow(F2.cdata)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [image](../../graphics/4_images/image.md), [imshow](../../graphics/4_images/imshow.md), [imwrite](../../graphics_io/imwrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.13.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.13.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -16,21 +16,25 @@ Convert power to decibel.
 
 ## 📄 Description
 
+
 <b>db = pow2db(pow)</b> returns corresponding values in decibels.
 
 ## 💡 Example
+
+
 
 ```matlab
 DB = pow2db([1, 0.01])
 ```
 
+
 ## 🔗 See also
 
-[db2pow](../../signal_processing/db2pow.md).
+[db2pow](../../signal_processing/5_spectral_analysis/db2pow.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

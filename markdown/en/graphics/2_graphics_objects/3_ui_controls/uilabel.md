@@ -20,9 +20,10 @@ Create label component.
 
 ## 📄 Description
 
-<b>lbl = uilabel</b> creates a label in a new figure and returns the Label object. Nelson calls the uifigure function to create the figure.
 
-<b>lbl = uilabel(parent)</b> creates the label in the specified parent container.
+<b>lbl = uilabel</b> creates a label in a new figure and returns the Label object. Nelson calls the uifigure function to create the figure. 
+
+<b>lbl = uilabel(parent)</b> creates the label in the specified parent container. 
 
 <b>lbl = uilabel(..., propertyName, propertyValue)</b> specifies label properties as one or more name-value arguments: <b>Text</b>, <b>Interpreter</b>, <b>HorizontalAlignment</b>, <b>VerticalAlignment</b>, <b>WordWrap</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontWeight</b>, <b>FontAngle</b>, <b>FontColor</b>, <b>BackgroundColor</b>, <b>Enable</b>, <b>Visible</b>, <b>Tooltip</b>, <b>Position</b>, ...
 
@@ -36,7 +37,6 @@ titleLabel = uilabel(f, 'Text', 'Sensor status', 'FontSize', 18, 'FontWeight', '
 valueLabel = uilabel(f, 'Text', '42.5 C', 'FontSize', 32, 'FontWeight', 'bold', 'FontColor', [0.10 0.35 0.72], 'HorizontalAlignment', 'center', 'BackgroundColor', [0.94 0.96 0.98], 'Position', [55 85 350 64]);
 drawnow();
 ```
-
 <img src="uilabel_example.svg" align="middle"/>
 Label in a uifigure
 
@@ -47,13 +47,14 @@ lbl = uilabel(f, 'Text', 'Result:', 'Position', [100 100 100 22], 'FontWeight', 
 
 ```
 
+
 ## 🔗 See also
 
-[uibutton](../../../graphics/uibutton.md), [uifigure](../../../gui/uifigure.md).
+[uibutton](../../../graphics/2_graphics_objects/3_ui_controls/uibutton.md), [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

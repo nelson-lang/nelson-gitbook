@@ -20,25 +20,29 @@ Convertit des nombres en tableau de caractères.
 
 ## 📄 Description
 
-<b>num2str</b> convertit des nombres en tableau de caractères.
+
+<b>num2str</b> convertit des nombres en tableau de caractères. 
 
 <b>num2str</b> supprime les espaces en tête d'un tableau de caractères. Pour un meilleur contrôle du résultat, utilisez<b>sprintf</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 R = num2str(pi, 4)
 R = num2str(magic(3))
 ```
 
+
 ## 🔗 Voir aussi
 
-[int2str](../../string/int2str.md), [sprintf](../../string/sprintf.md), [mat2str](../../string/mat2str.md).
+[int2str](../../string/1_create_convert_text/int2str.md), [sprintf](../../string/1_create_convert_text/sprintf.md), [mat2str](../../string/1_create_convert_text/mat2str.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

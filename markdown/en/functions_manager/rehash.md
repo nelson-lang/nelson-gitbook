@@ -8,17 +8,21 @@ Reinitialize Nelson’s search path directory cache.
 
 ## 📄 Description
 
-<b>rehash()</b> reinitializes Nelson’s search path directory cache.
 
-This happens each time Nelson displays the prompt.
+<b>rehash()</b> reinitializes Nelson’s search path directory cache. 
+
+This happens each time Nelson displays the prompt. 
 
 You should use <b>rehash()</b> only when you run a .m file that updates another .m file
 
 ## 💡 Example
 
+
+
 ```matlab
 rehash()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ rehash()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

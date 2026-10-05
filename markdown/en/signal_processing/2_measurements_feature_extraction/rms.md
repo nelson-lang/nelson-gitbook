@@ -26,16 +26,20 @@ Root mean square value.
 
 ## 📄 Description
 
-<b>rms</b> computes sqrt(mean(abs(X) .^ 2)) along the selected dimension:
+
+<b>rms</b> computes sqrt(mean(abs(X) .^ 2)) along the selected dimension: 
 $$\mathrm{RMS}(X) = \sqrt{ \frac{1}{N} \sum_{n=1}^{N} |x_n|^2 }$$
+ 
 
-where N is the number of elements along that dimension.
+where N is the number of elements along that dimension. 
 
-- If <b>X</b> is a vector, <b>Y</b> is a scalar.
-- If <b>X</b> is a matrix, <b>Y</b> is a row vector holding the value of each column.
-- If <b>X</b> is a multidimensional array, <b>Y</b> is computed along the first dimension whose size is not 1, unless a dimension is given.
 
-<b>Class of the result:</b> the square and the mean always run in double, so an integer input never saturates. <b>"native"</b> returns the class of the input, <b>"double"</b> returns double, and <b>"default"</b> returns double for an integer input and the class of the input otherwise. A logical input is not an integer class and returns double.
+
+- If <b>X</b> is a vector, <b>Y</b> is a scalar. 
+- If <b>X</b> is a matrix, <b>Y</b> is a row vector holding the value of each column. 
+- If <b>X</b> is a multidimensional array, <b>Y</b> is computed along the first dimension whose size is not 1, unless a dimension is given. 
+
+<b>Class of the result:</b> the square and the mean always run in double, so an integer input never saturates. <b>"native"</b> returns the class of the input, <b>"double"</b> returns double, and <b>"default"</b> returns double for an integer input and the class of the input otherwise. A logical input is not an integer class and returns double. 
 
 <b>Missing values:</b> NaN values are included by default. Use <b>"omitnan"</b> or <b>"omitmissing"</b> to leave them out.
 
@@ -51,7 +55,6 @@ y = rms(x)
 % y = 0.7071
 
 ```
-
 one value per column
 
 ```matlab
@@ -61,7 +64,6 @@ y = rms(x)
 % y = [5.8023 3.4157 5.0000]
 
 ```
-
 one value per row
 
 ```matlab
@@ -71,7 +73,6 @@ y = rms(x, 2)
 % y = [12.1450; 8.9163; 4.8477]
 
 ```
-
 leaving missing values out
 
 ```matlab
@@ -81,7 +82,6 @@ y = rms(x, "omitnan")
 % y = [1.7700 0.2404 nan 2.0903]
 
 ```
-
 integer input with a native result
 
 ```matlab
@@ -94,15 +94,16 @@ D = rms(M)
 
 ```
 
+
 ## 🔗 See also
 
-[peak2peak](../../signal_processing/peak2peak.md), [max](../../data_analysis/max.md), [min](../../data_analysis/min.md).
+[peak2peak](../../signal_processing/2_measurements_feature_extraction/peak2peak.md), [max](../../data_analysis/max.md), [min](../../data_analysis/min.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

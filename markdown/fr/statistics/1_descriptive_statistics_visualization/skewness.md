@@ -12,25 +12,29 @@ Asymetrie d'un jeu de donnees.
 
 ## 📄 Description
 
-<b>skewness</b> calcule l'asymetrie d'echantillon de donnees numeriques. Les valeurs <b>NaN</b> sont omises.
+
+<b>skewness</b> calcule l'asymetrie d'echantillon de donnees numeriques. Les valeurs <b>NaN</b> sont omises. 
 
 <b>flag</b> vaut 1 par defaut. Mettre <b>flag</b> a 0 applique la correction de biais.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [1 2 5; 2 4 8; 3 8 13];
 y = skewness(X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[kurtosis](../../statistics/kurtosis.md), [mean](../../statistics/mean.md), [std](../../statistics/std.md).
+[kurtosis](../../statistics/1_descriptive_statistics_visualization/kurtosis.md), [mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [std](../../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

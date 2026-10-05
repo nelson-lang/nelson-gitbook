@@ -20,7 +20,8 @@ Add set and get property access to a handle class.
 
 ## 📄 Description
 
-Derive a handle class from <b>nelson.mixin.SetGet</b> to give it <b>set</b> and <b>get</b>methods for reading and writing properties by name.
+
+Derive a handle class from <b>nelson.mixin.SetGet</b> to give it <b>set</b> and <b>get</b>methods for reading and writing properties by name. 
 
 <b>set(obj, name, value)</b> assigns a property; <b>set(obj, n1, v1, n2, v2, ...)</b> assigns several. <b>get(obj, name)</b> returns a property value; <b>get(obj)</b> returns a structure of all properties. Property names are matched case-insensitively.
 
@@ -40,13 +41,14 @@ set(w, 'Width', 100, 'Height', 40);
 get(w, 'Width')
 ```
 
+
 ## 🔗 See also
 
 [handle](../handle/handle.md), [nelson.mixin.SetGetExactNames](../handle/nelson.mixin.SetGetExactNames.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

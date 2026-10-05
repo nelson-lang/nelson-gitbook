@@ -13,6 +13,7 @@ Génère le fichier loader.m pour une gateway C++
 
 ## 📄 Description
 
+
 <b>dlgenerateloader</b> génère un fichier 'loader.m' pour charger des bibliothèques dynamiques externes.
 
 ## 💡 Exemple
@@ -25,14 +26,15 @@ dlgenerateloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
 text = fileread([tempdir(), 'loader.m'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlgenerateunloader](../dynamic_link/dlgenerateunloader.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

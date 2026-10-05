@@ -18,16 +18,19 @@ Selection D-optimale de lignes depuis un ensemble candidat.
 
 ## 📄 Description
 
-<b>candexch</b> selectionne des lignes dans une matrice candidate avec une recherche par echange de lignes qui ameliore le determinant de X' \* X.
+
+<b>candexch</b> selectionne des lignes dans une matrice candidate avec une recherche par echange de lignes qui ameliore le determinant de X' \* X. 
 
 Les options nom-valeur prises en charge sont 'AvoidDuplicates', 'Display', 'InitialDesign', 'MaxIterations', 'Options', 'FixedRows' et 'NumTries'. Les champs d'options paralleles sont acceptes et l'execution reste serie.
 
 ## Fonction(s) utilisée(s)
 
+
     candgen
     rowexch
     cordexch
     daugment
+  
 
 ## 💡 Exemple
 

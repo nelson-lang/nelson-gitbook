@@ -4,12 +4,12 @@ Afficher une invite et attendre l'entrée utilisateur.
 
 ## 📝 Syntaxe
 
-- r = input(prompt_str)
-- r = input(prompt_str, 's')
+- r = input(prompt\_str)
+- r = input(prompt\_str, 's')
 
 ## 📥 Argument d'entrée
 
-- prompt_str - une chaîne : invite temporaire affichée
+- prompt\_str - une chaîne : invite temporaire affichée
 
 ## 📤 Argument de sortie
 
@@ -17,9 +17,12 @@ Afficher une invite et attendre l'entrée utilisateur.
 
 ## 📄 Description
 
+
 Afficher une invite et attendre l'entrée utilisateur. input retourne une chaîne qui est l'expression saisie au clavier.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 res = input('Please input a value ', 's');
@@ -32,14 +35,15 @@ else
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [execstr](../core/execstr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

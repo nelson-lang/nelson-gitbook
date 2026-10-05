@@ -4,7 +4,7 @@ Renvoie si une variable est un tableau cellulaire de chaînes.
 
 ## 📝 Syntaxe
 
-- true_or_false = iscellstr(A)
+- true\_or\_false = iscellstr(A)
 
 ## 📥 Argument d'entrée
 
@@ -12,25 +12,31 @@ Renvoie si une variable est un tableau cellulaire de chaînes.
 
 ## 📤 Argument de sortie
 
-- true_or_false - un logique
+- true\_or\_false - un logique
 
 ## 📄 Description
+
 
 <b>iscellstr(A)</b> renvoie vrai si<b>A</b> est un tableau cellulaire de chaînes ou un tableau cellulaire vide.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 iscellstr('Nelson')
 ```
+
 
 ```matlab
 iscellstr({'Nelson'})
 ```
 
+
 ```matlab
 iscellstr({})
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -38,8 +44,8 @@ iscellstr({})
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

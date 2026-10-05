@@ -28,13 +28,16 @@ Methode des gradients conjugues preconditionnes.
 
 ## 📄 Description
 
-<b>pcg</b> resout <b>A \* x = b</b> avec la methode des gradients conjugues preconditionnes.
 
-La methode est destinee aux matrices sparse flottantes symetriques ou hermitiennes definies positives.
+<b>pcg</b> resout <b>A \* x = b</b> avec la methode des gradients conjugues preconditionnes. 
+
+La methode est destinee aux matrices sparse flottantes symetriques ou hermitiennes definies positives. 
 
 Les matrices sparse single et sparse single complexes sont prises en charge. Si <b>M1</b>, <b>M2</b> ou <b>x0</b> est complexe, le calcul utilise le chemin complexe adapte.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = sparse([4 -1 0; -1 4 -1; 0 -1 3]);
@@ -43,6 +46,7 @@ b = [15; 10; 10];
 
 ```
 
+
 ```matlab
 A = sparse([4 -1 0; -1 4 -1; 0 -1 3]);
 b = [15; 10; 10];
@@ -50,7 +54,6 @@ L = ichol(A);
 [x, flag, relres, iter] = pcg(A, b, 1e-12, 20, L, L')
 
 ```
-
 Resolution sparse single complexe avec ichol.
 
 ```matlab
@@ -60,15 +63,16 @@ L = ichol(A);
 [x, flag] = pcg(A, b, 1e-6, 20, L, L')
 ```
 
+
 ## 🔗 Voir aussi
 
-[bicgstab](../../linear_algebra/bicgstab.md), [ichol](../../linear_algebra/ichol.md).
+[bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md), [ichol](../../linear_algebra/7_preconditioners/ichol.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                        |
-| ------- | --------------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | prise en charge des donnees sparse single et sparse single complexes. |
 
 <!--

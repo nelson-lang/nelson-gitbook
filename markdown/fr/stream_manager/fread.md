@@ -26,19 +26,22 @@ Lire des données en format binaire depuis le fichier spécifié par le descript
 
 ## 📄 Description
 
-Lit des données en format binaire depuis le fichier spécifié par le descripteur fid.
 
-Architectures supportées :
+Lit des données en format binaire depuis le fichier spécifié par le descripteur fid. 
 
-<b>native</b> , <b>n</b> : format de la machine courante.
+Architectures supportées : 
 
-<b>ieee-be</b>, <b>b</b> : IEEE big endian.
+<b>native</b> , <b>n</b> : format de la machine courante. 
 
-<b>ieee-le</b>, <b>l</b> : IEEE little endian.
+<b>ieee-be</b>, <b>b</b> : IEEE big endian. 
+
+<b>ieee-le</b>, <b>l</b> : IEEE little endian. 
 
 L'encodage des caractères utilise le paramètre <b>fopen</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 
@@ -53,6 +56,7 @@ fclose(fileID);
 
 ```
 
+
 ```matlab
 
 fileID = fopen([tempdir(), 'uint16nine.bin'],'w');
@@ -65,14 +69,15 @@ fclose(fileID);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [fopen](../stream_manager/fopen.md), [fclose](../stream_manager/fclose.md), [fwrite](../stream_manager/fwrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

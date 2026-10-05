@@ -18,9 +18,12 @@ Trie les pôles en temps discret par magnitude.
 
 ## 📄 Description
 
+
 <b>dsort</b> organise les pôles en temps discret dans le vecteur <b>p</b> dans un ordre décroissant basé sur leur magnitude, les pôles instables prenant la priorité au début de la liste triée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [-2.410 + 5.573i;
@@ -29,17 +32,18 @@ p = [-2.410 + 5.573i;
 -0.972;
 -2.590];
 [s, ndx] = dsort(p)
-
+  
 ```
+
 
 ## 🔗 Voir aussi
 
-[esort](../../control_system/esort.md).
+[esort](../../control_system/6_matrix_computations/esort.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

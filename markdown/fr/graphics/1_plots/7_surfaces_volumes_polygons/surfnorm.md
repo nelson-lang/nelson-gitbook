@@ -21,7 +21,8 @@ Calculer ou afficher les vecteurs normaux d'une surface.
 
 ## 📄 Description
 
-<b>surfnorm</b> calcule les vecteurs normaux unitaires d'une surface. Sans argument de sortie, elle affiche la surface et trace un segment normal a chaque point de surface.
+
+<b>surfnorm</b> calcule les vecteurs normaux unitaires d'une surface. Sans argument de sortie, elle affiche la surface et trace un segment normal a chaque point de surface. 
 
 Lorsque seul Z est specifie, les coordonnees x et y correspondent aux indices de colonne et de ligne de Z.
 
@@ -33,7 +34,6 @@ Afficher les normales sur une surface.
 [X, Y, Z] = peaks(20);
 surfnorm(X, Y, Z);
 ```
-
 <img src="surfnorm_1.svg" align="middle"/>
 Calculer les composantes des vecteurs normaux.
 
@@ -41,6 +41,7 @@ Calculer les composantes des vecteurs normaux.
 [Nx, Ny, Nz] = surfnorm(peaks(10));
 ```
 
+
 ## 🔗 Voir aussi
 
-[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [quiver3](../../../graphics/1_plots/5_vector_fields/quiver3.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [quiver3](../../../graphics/1_plots/5_vector_fields/quiver3.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).

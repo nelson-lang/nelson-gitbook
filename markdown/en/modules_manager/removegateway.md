@@ -4,17 +4,18 @@ Removes dynamically builtin at runtime.
 
 ## 📝 Syntax
 
-- removegateway(dyn_lib_path)
+- removegateway(dyn\_lib\_path)
 
 ## 📥 Input argument
 
-- dyn_lib_path - a string: path of a dynamic library prepared for Nelson.
+- dyn\_lib\_path - a string: path of a dynamic library prepared for Nelson.
 
 ## 📄 Description
 
-<b>removegateway(dyn_lib_path)</b> removes dynamically builtin at runtime.
 
-The dynamic library loaded must have at least an C entry point<b>RemoveGateway</b>.
+<b>removegateway(dyn\_lib\_path)</b> removes dynamically builtin at runtime. 
+
+The dynamic library loaded must have at least an C entry point<b>RemoveGateway</b>. 
 
 If gateway was not loaded, no error or warning will be raised. If file does not exist an error is raised.
 
@@ -28,13 +29,14 @@ removegateway(modulepath('time', 'builtin'))
 calendar
 ```
 
+
 ## 🔗 See also
 
 [addgateway](../modules_manager/addgateway.md), [gatewayinfo](../modules_manager/gatewayinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

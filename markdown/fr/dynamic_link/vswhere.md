@@ -12,7 +12,8 @@ Localiser les installations de Visual Studio (2017, 2019 et versions ultérieure
 
 ## 📄 Description
 
-<b>vswhere</b> permet de trouver facilement Visual Studio.
+
+<b>vswhere</b> permet de trouver facilement Visual Studio. 
 
 <b>vswhere</b> est actuellement implémenté seulement sur la plateforme Windows.
 
@@ -22,9 +23,12 @@ https://github.com/Microsoft/vswhere
 
 ## 💡 Exemple
 
+
+
 ```matlab
 vswhere()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ vswhere()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

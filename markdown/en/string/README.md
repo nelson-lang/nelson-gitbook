@@ -1,14 +1,24 @@
 # String type
 
+
+    
 The String Type module provides functions for creating, manipulating, and analyzing text in Nelson.
 
+    
 It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.
 
+    
 The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.
+
+  
 
 ## Create and Convert Text
 
+
+    
 Functions for creating text, formatting text, and converting between text and other data.
+
+  
 
 ### Functions
 
@@ -32,7 +42,11 @@ Functions for creating text, formatting text, and converting between text and ot
 
 ## Text Properties
 
+
+    
 Functions for checking text type, length, and character properties.
+
+  
 
 ### Functions
 
@@ -44,7 +58,11 @@ Functions for checking text type, length, and character properties.
 
 ## Find and Replace
 
+
+    
 Functions for locating, counting, erasing, and replacing text.
+
+  
 
 ### Functions
 
@@ -63,7 +81,11 @@ Functions for locating, counting, erasing, and replacing text.
 
 ## Patterns
 
+
+    
 Pattern-building functions and boundary definitions for text matching.
+
+  
 
 ### Functions
 
@@ -93,7 +115,11 @@ Pattern-building functions and boundary definitions for text matching.
 
 ## Regular Expressions
 
+
+    
 Regular expression search, replacement, translation, and pattern helpers.
+
+  
 
 ### Functions
 
@@ -105,7 +131,11 @@ Regular expression search, replacement, translation, and pattern helpers.
 
 ## Join, Split, and Extract
 
+
+    
 Functions for extracting parts of text and combining or splitting text values.
+
+  
 
 ### Functions
 
@@ -124,7 +154,11 @@ Functions for extracting parts of text and combining or splitting text values.
 
 ## Edit Text
 
+
+    
 Functions for trimming, padding, inserting, reversing, and changing text case.
+
+  
 
 ### Functions
 
@@ -143,7 +177,11 @@ Functions for trimming, padding, inserting, reversing, and changing text case.
 
 ## Compare Text
 
+
+    
 Functions for comparing and matching text values.
+
+  
 
 ### Functions
 
@@ -157,3 +195,4 @@ Functions for comparing and matching text values.
 
 - [symvar](symvar.md) - Determine the variables in an expression.
 - [vectorize](vectorize.md) - Insert element-wise operators in an expression string.
+

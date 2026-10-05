@@ -20,9 +20,12 @@ Minimum order for a Chebyshev type II filter.
 
 ## 📄 Description
 
+
 <b>cheb2ord</b> estimates an order and cutoff for Chebyshev type II filter design.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,13 +33,14 @@ Minimum order for a Chebyshev type II filter.
 
 ```
 
+
 ## 🔗 See also
 
-[cheby2](../../signal_processing/cheby2.md), [cheb1ord](../../signal_processing/cheb1ord.md).
+[cheby2](../../signal_processing/4_digital_filters/cheby2.md), [cheb1ord](../../signal_processing/4_digital_filters/cheb1ord.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

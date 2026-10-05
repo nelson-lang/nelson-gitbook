@@ -28,11 +28,14 @@ Affiche une image à partir d'un tableau.
 
 ## 📄 Description
 
-<b>image</b> affiche les données C sous forme d'image.
+
+<b>image</b> affiche les données C sous forme d'image. 
 
 Voir [proprietes de image](../../graphics/2_graphics_objects/4_properties/nelson.graphics.image.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -45,15 +48,15 @@ C(:, :, 2) = G;
 C(:, :, 3) = B;
 im = image(C)
 ```
-
 <img src="image_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
 image();
 ```
-
 <img src="image_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -61,11 +64,11 @@ image();
 
 ## 🕔 Historique
 
-| Version | 📄 Description                            |
-| ------- | ----------------------------------------- |
-| 1.0.0   | version initiale                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn. |
-| --      | Ajout de la propriété BeingDeleted.       |
+| --   | Ajout de la propriété BeingDeleted. |
 
 <!--
 ## 👤 Auteur

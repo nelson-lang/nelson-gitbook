@@ -18,7 +18,8 @@ Creates a UI progress dialog.
 
 ## 📄 Description
 
-uiprogressdlg displays progress for an operation.
+
+uiprogressdlg displays progress for an operation. 
 
 In a web desktop, the dialog is non-blocking. Use the handle properties windowTitle, labelText, value, minimum, maximum and visible to update or hide it.
 
@@ -39,7 +40,6 @@ patch([0.42 0.58 0.58 0.42], [0.24 0.24 0.35 0.35], [0.95 0.95 0.95], 'EdgeColor
 text(0.50, 0.29, 'Cancel', 'HorizontalAlignment', 'center', 'FontSize', 10);
 drawnow();
 ```
-
 <img src="uiprogressdlg_example.svg" align="middle"/>
 Show an indeterminate progress dialog.
 
@@ -48,7 +48,6 @@ f = uifigure('Visible', 'off', 'Name', 'Import');
 d = uiprogressdlg(f, 'Title', 'Import', 'Message', 'Reading data', 'Indeterminate', true);
 close(f)
 ```
-
 Create, update and delete a progress dialog.
 
 ```matlab
@@ -60,14 +59,15 @@ delete(d);
 close(f)
 ```
 
+
 ## 🔗 See also
 
 [waitbar](../gui/waitbar.md), [uialert](../gui/uialert.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

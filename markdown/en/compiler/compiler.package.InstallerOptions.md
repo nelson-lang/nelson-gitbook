@@ -10,36 +10,37 @@ Configure application installer generation.
 
 ## 📄 Description
 
-This value object describes the installer, not the application build. Construct it from one compiler.build.Results object or an explicit ApplicationName. Assign supported properties with dot notation, then pass it to compiler.package.installer through Options. Invalid and unknown properties fail explicitly.
 
-ApplicationName: installed application display name and default installation folder component. InstallerName: output file stem, default MyAppInstaller. Both accept spaces but reject path separators, reserved device names and trailing dots or spaces.
+This value object describes the installer, not the application build. Construct it from one compiler.build.Results object or an explicit ApplicationName. Assign supported properties with dot notation, then pass it to compiler.package.installer through Options. Invalid and unknown properties fail explicitly. 
 
-OutputDir: output folder, default ApplicationName followed by installer. Relative build paths are anchored when assigned. DefaultInstallationDir: absolute target installation path, default %ProgramFiles%/ApplicationName on Windows, /Applications/ApplicationName on macOS or /usr/ApplicationName on Linux. macOS uses this value as the native package install location.
+ApplicationName: installed application display name and default installation folder component. InstallerName: output file stem, default MyAppInstaller. Both accept spaces but reject path separators, reserved device names and trailing dots or spaces. 
 
-RuntimeDelivery: web (default, unavailable), installer (offline dependency-selected runtime) or none (external runtime). OptionalDependencies: all (default) or none. Current dependency reports contain no optional files, so both choices retain the same required files; required modules are never removed.
+OutputDir: output folder, default ApplicationName followed by installer. Relative build paths are anchored when assigned. DefaultInstallationDir: absolute target installation path, default %ProgramFiles%/ApplicationName on Windows, /Applications/ApplicationName on macOS or /usr/ApplicationName on Linux. macOS uses this value as the native package install location. 
 
-AdditionalFiles: files or recursive folders to install beside the executable. These are not embedded application resources. Shortcut: included file or folder for a Windows Start menu shortcut or a Linux relative symbolic link named Launch ApplicationName within the installation folder; on macOS it must be empty or the application executable because graphical applications are represented by their .app bundle. Constructing from Results defaults to its executable. The target must occur in the installer input inventory.
+RuntimeDelivery: web (default, unavailable), installer (offline dependency-selected runtime) or none (external runtime). OptionalDependencies: all (default) or none. Current dependency reports contain no optional files, so both choices retain the same required files; required modules are never removed. 
 
-AuthorName, AuthorCompany, AuthorEmail, Summary, Description and InstallationNotes: descriptive information included in the installed nelson-installation.txt. Windows also displays it before installation and records company/summary in native installer metadata. Description and InstallationNotes accept multiple lines; other metadata rejects control characters.
+AdditionalFiles: files or recursive folders to install beside the executable. These are not embedded application resources. Shortcut: included file or folder for a Windows Start menu shortcut or a Linux relative symbolic link named Launch ApplicationName within the installation folder; on macOS it must be empty or the application executable because graphical applications are represented by their .app bundle. Constructing from Results defaults to its executable. The target must occur in the installer input inventory. 
 
-Version: installed application version, default 1.0, with one to four integer components between 0 and 65535. This does not rewrite the already-built executable version. PackageType: auto (default) or zip (Windows only). Verbose: false by default; also accepts on/off and logical or numeric zero/one. Compression: normal (default), fast, max or none. It selects the Windows installer payload compression, trading installer size for generation time; other platforms ignore it.
+AuthorName, AuthorCompany, AuthorEmail, Summary, Description and InstallationNotes: descriptive information included in the installed nelson-installation.txt. Windows also displays it before installation and records company/summary in native installer metadata. Description and InstallationNotes accept multiple lines; other metadata rejects control characters. 
 
-InstallerIcon: image used for the native setup/uninstaller and the installed Start menu shortcut. AddRemoveProgramsIcon: separate image for the Windows installed-application list. Neither option rewrites the application executable; use the build option ExecutableIcon for that.
+Version: installed application version, default 1.0, with one to four integer components between 0 and 65535. This does not rewrite the already-built executable version. PackageType: auto (default) or zip (Windows only). Verbose: false by default; also accepts on/off and logical or numeric zero/one. Compression: normal (default), fast, max or none. It selects the Windows installer payload compression, trading installer size for generation time; other platforms ignore it. 
 
-InstallerLogo: image fitted within a 112 by 290 pixel white canvas, preserving its aspect ratio. It appears on the native installer's welcome and completion pages. Transparency is composited on white. The installer engine applies its normal display scaling.
+InstallerIcon: image used for the native setup/uninstaller and the installed Start menu shortcut. AddRemoveProgramsIcon: separate image for the Windows installed-application list. Neither option rewrites the application executable; use the build option ExecutableIcon for that. 
 
-These three Windows-only image properties default to empty, retaining the installer engine's artwork. They accept an existing JPG, JPEG, PNG, BMP or GIF file as a character vector or scalar string. Relative paths are anchored when assigned; decoded images are limited to 16 megapixels. Icons include seven resolutions from 16 to 256 pixels with transparency. Image conversion occurs only during packaging and does not add image modules to the application runtime.
+InstallerLogo: image fitted within a 112 by 290 pixel white canvas, preserving its aspect ratio. It appears on the native installer's welcome and completion pages. Transparency is composited on white. The installer engine applies its normal display scaling. 
 
-Custom icon files are installed under the reserved nelson-installer-assets directory. Conflicting application inputs are rejected. The source images are not needed after generation, and the converted images preserve installer reproducibility. Silent and portable modes remain supported; portable mode does not create a global shortcut or application-list entry.
+These three Windows-only image properties default to empty, retaining the installer engine's artwork. They accept an existing JPG, JPEG, PNG, BMP or GIF file as a character vector or scalar string. Relative paths are anchored when assigned; decoded images are limited to 16 megapixels. Icons include seven resolutions from 16 to 256 pixels with transparency. Image conversion occurs only during packaging and does not add image modules to the application runtime. 
 
-Windows and Linux installation-time -runtimeFolder can place an included runtime in a separate shared location. It is an argument of the generated installer, not a property of this options object. macOS application packages keep an included runtime private; use compiler.runtime.customInstaller to create the separate shared runtime package. See compiler.package.installer for path, ownership and launcher requirements.
+Custom icon files are installed under the reserved nelson-installer-assets directory. Conflicting application inputs are rejected. The source images are not needed after generation, and the converted images preserve installer reproducibility. Silent and portable modes remain supported; portable mode does not create a global shortcut or application-list entry. 
+
+Windows and Linux installation-time -runtimeFolder can place an included runtime in a separate shared location. It is an argument of the generated installer, not a property of this options object. macOS application packages keep an included runtime private; use compiler.runtime.customInstaller to create the separate shared runtime package. See compiler.package.installer for path, ownership and launcher requirements. 
 
 Creating an options object does not run a build, install anything or download a runtime.
+
 
 ## 🔗 See also
 
 [compiler.package.installer](../compiler/compiler.package.installer.md), [compiler_installer_tutorial](../compiler/compiler_installer_tutorial.md).
-
 <!--
 ## 👤 Author
 

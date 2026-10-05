@@ -17,9 +17,12 @@ Tri et réordonnancement des valeurs propres.
 
 ## 📄 Description
 
+
 Trie et réordonne les valeurs propres et, éventuellement, leurs vecteurs propres selon des critères spécifiés.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [-2.410 + 5.573i;
@@ -28,17 +31,18 @@ p = [-2.410 + 5.573i;
 -0.972;
 -2.590];
 [s, ndx] = esort(p)
-
+  
 ```
+
 
 ## 🔗 Voir aussi
 
-[dsort](../../control_system/dsort.md).
+[dsort](../../control_system/6_matrix_computations/dsort.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

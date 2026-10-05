@@ -18,21 +18,25 @@ Fonction de compatibilite pour la fenetre de Hann.
 
 ## 📄 Description
 
+
 <b>hanning</b> retourne la meme fenetre que <b>hann</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 w = hanning(6, 'periodic')
 ```
 
+
 ## 🔗 Voir aussi
 
-[hann](../../signal_processing/hann.md).
+[hann](../../signal_processing/5_spectral_analysis/hann.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

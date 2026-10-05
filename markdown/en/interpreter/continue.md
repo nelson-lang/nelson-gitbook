@@ -8,11 +8,14 @@ continue evaluation in loop.
 
 ## 📄 Description
 
-<b>continue</b> statement can be used inside a <b>for</b> or a<b>while</b> loop.
+
+<b>continue</b> statement can be used inside a <b>for</b> or a<b>while</b> loop. 
 
 <b>continue</b> statement is used to pass control to the next iteration of a loop.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [for](../interpreter/for.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

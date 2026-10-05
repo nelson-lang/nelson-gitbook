@@ -1,0 +1,20 @@
+#import "nelson_help.typ": *
+
+- Type sparse
+  - #nlink(<sparse:IJV>)[IJV]
+  - #nlink(<sparse:full>)[full]
+  - #nlink(<sparse:nnz>)[nnz]
+  - #nlink(<sparse:nonzeros>)[nonzeros]
+  - #nlink(<sparse:nzmax>)[nzmax]
+  - #nlink(<sparse:spalloc>)[spalloc]
+  - #nlink(<sparse:sparse>)[sparse]
+  - #nlink(<sparse:spaugment>)[spaugment]
+  - #nlink(<sparse:spconvert>)[spconvert]
+  - #nlink(<sparse:spdiags>)[spdiags]
+  - #nlink(<sparse:speye>)[speye]
+  - #nlink(<sparse:spfun>)[spfun]
+  - #nlink(<sparse:spones>)[spones]
+  - #nlink(<sparse:sprand>)[sprand]
+  - #nlink(<sparse:sprandn>)[sprandn]
+  - #nlink(<sparse:sprank>)[sprank]
+  - #nlink(<sparse:symrcm>)[symrcm]

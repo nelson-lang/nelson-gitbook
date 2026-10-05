@@ -18,6 +18,7 @@ Convertit des coordonnees monde en coordonnees intrinseques.
 
 ## 📄 Description
 
+
 Convertit les coordonnees monde en coordonnees intrinseques. Les coordonnees hors limites sont extrapolees.
 
 ## 💡 Exemple
@@ -29,14 +30,15 @@ R = imref2d([2 3], 2, 3);
 [xIntrinsic, yIntrinsic] = worldToIntrinsic(R, [2 6], [3 6])
 ```
 
+
 ## 🔗 Voir aussi
 
-[intrinsicToWorld](../../../image_processing/intrinsicToWorld.md), [worldToSubscript](../../../image_processing/worldToSubscript.md).
+[intrinsicToWorld](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/intrinsicToWorld.md), [worldToSubscript](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

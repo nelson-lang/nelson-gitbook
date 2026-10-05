@@ -23,6 +23,7 @@ Open a web page, local file, or HTML text.
 
 ## 📄 Description
 
+
 <b>web</b> opens external addresses in the system browser and opens local or inline HTML content in the Nelson HTML viewer.
 
 ## 💡 Example
@@ -33,13 +34,14 @@ Display inline HTML text.
 [stat, h] = web('text://<html><body><h1>Hello</h1></body></html>');
 ```
 
+
 ## 🔗 See also
 
-[nelson.htmlviewer.htmlviewer](../webview/nelson.htmlviewer.htmlviewer.md).
+[nelson.htmlviewer.htmlviewer](../webview/nelson_htmlviewer_htmlviewer.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

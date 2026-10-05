@@ -20,9 +20,10 @@ Renvoie les noms des champs d'une structure ou les proprietes publiques classdef
 
 ## 📄 Description
 
-<b>fieldnames(st)</b> renvoie un tableau de chaines contenant les noms des champs de la structure d'entree.
 
-Pour les objets classdef, <b>fieldnames(obj)</b> renvoie les memes noms de proprietes publiques que <b>properties(obj)</b>.
+<b>fieldnames(st)</b> renvoie un tableau de chaines contenant les noms des champs de la structure d'entree. 
+
+Pour les objets classdef, <b>fieldnames(obj)</b> renvoie les memes noms de proprietes publiques que <b>properties(obj)</b>. 
 
 Pour les tableaux d'objets classdef, les noms renvoyes sont les proprietes publiques de la classe des elements.
 
@@ -41,15 +42,16 @@ b = NelsonHelpFieldPoint();
 names = fieldnames([a, b])
 ```
 
+
 ## 🔗 Voir aussi
 
 [getfield](../data_structures/getfield.md), [properties](../handle/properties.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                     |
-| ------- | ---------------------------------- |
-| 1.0.0   | version initiale                   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | support des objets classdef ajoute |
 
 <!--

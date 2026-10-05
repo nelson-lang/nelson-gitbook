@@ -20,13 +20,16 @@ Créer un objet groupe.
 
 ## 📄 Description
 
-<b>hggroup</b> crée un objet hggroup comme enfant des axes courants et retourne son handle, h.
 
-L'objet <b>hggroup</b> est utilisé pour regrouper des objets graphiques, tels que des lignes, des patches et du texte, afin qu'ils puissent être manipulés ensemble.
+<b>hggroup</b> crée un objet hggroup comme enfant des axes courants et retourne son handle, h. 
+
+L'objet <b>hggroup</b> est utilisé pour regrouper des objets graphiques, tels que des lignes, des patches et du texte, afin qu'ils puissent être manipulés ensemble. 
 
 Voir [proprietes de hggroup](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.hggroup.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 figure();
@@ -39,14 +42,15 @@ h.Visible = 'off';
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de hggroup](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.hggroup.properties.md), [gca](../../../graphics/2_graphics_objects/1_object_management/gca.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

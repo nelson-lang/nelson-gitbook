@@ -18,11 +18,14 @@ Composante heures de la date et de l'heure d'entrée.
 
 ## 📄 Description
 
-<b>h = hour(t)</b> extrait la composante heures de chaque date et heure spécifiées dans<b>t</b>.
+
+<b>h = hour(t)</b> extrait la composante heures de chaque date et heure spécifiées dans<b>t</b>. 
 
 La sortie <b>h</b> est un tableau de double contenant des valeurs entières comprises entre 0 et 23.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h = hour(738427.656845093)
@@ -30,15 +33,16 @@ h = hour("2021/09/28 15:45:51", 'YYYY/M/DD HH:MM:SS')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[minute](../../time/minute.md), [second](../../time/second.md).
+[minute](../../time/3_date_time_components/minute.md), [second](../../time/3_date_time_components/second.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.10.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.10.0   | version initiale |
 
 <!--
 ## 👤 Auteur

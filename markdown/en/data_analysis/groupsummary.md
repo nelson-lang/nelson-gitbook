@@ -20,14 +20,18 @@ Compute grouped table summaries.
 
 ## 📄 Description
 
+
 <b>groupsummary</b> groups table rows and computes summary values for selected variables.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table({'a'; 'a'; 'b'}, [1; 2; 4], 'VariableNames', {'G', 'X'});
 G = groupsummary(T, 'G', 'sum', 'X')
 ```
+
 
 ## 🔗 See also
 
@@ -35,7 +39,7 @@ G = groupsummary(T, 'G', 'sum', 'X')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

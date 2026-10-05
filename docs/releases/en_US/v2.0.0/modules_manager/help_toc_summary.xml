@@ -13,7 +13,7 @@
       <keyword name="addgateway" link="addgateway.html" description="Adds dynamically builtin at runtime."/>
       <keyword name="addmodule" link="addmodule.html" description="Add module to Nelson."/>
       <keyword name="deploytool" link="deploytool.html" description="Open the standalone application project editor."/>
-      <keyword name="deploytool" link="deploytool.html" description="Open the standalone application project editor."/>
+      <keyword name="deploytool" link="deploytool.html" description="Open the standalone application project editor." alias="true"/>
       <keyword name="gatewayinfo" link="gatewayinfo.html" description="Returns information about an gateway."/>
       <keyword name="getmodules" link="getmodules.html" description="Returns list of modules loaded in Nelson."/>
       <keyword name="ismodule" link="ismodule.html" description="Checks if a module is loaded."/>
@@ -29,7 +29,7 @@
       <keyword name="requiremodule" link="requiremodule.html" description="Returns an error if module is not loaded in Nelson."/>
       <keyword name="semver" link="semver.html" description="semantic versioner."/>
       <keyword name="standaloneApplicationCompiler" link="standaloneApplicationCompiler.html" description="Open the standalone application project editor."/>
-      <keyword name="standaloneApplicationCompiler" link="standaloneApplicationCompiler.html" description="Open the standalone application project editor."/>
+      <keyword name="standaloneApplicationCompiler" link="standaloneApplicationCompiler.html" description="Open the standalone application project editor." alias="true"/>
       <keyword name="toolboxdir" link="toolboxdir.html" description="Returns path of a module."/>
       <keyword name="usermodulesdir" link="usermodulesdir.html" description="Returns path where external modules are saved."/>
     </section>

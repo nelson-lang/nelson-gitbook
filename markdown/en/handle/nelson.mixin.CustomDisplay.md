@@ -16,15 +16,16 @@ Customize how an object is displayed.
 
 ## 📄 Description
 
-Derive from <b>nelson.mixin.CustomDisplay</b> to customize how instances of a class are displayed. A subclass may override any of these protected methods and let the default composition render the rest:
 
-<b>getHeader(obj)</b> - the header text (a char vector or a string scalar). Default: the class name followed by <b>with properties:</b>.
+Derive from <b>nelson.mixin.CustomDisplay</b> to customize how instances of a class are displayed. A subclass may override any of these protected methods and let the default composition render the rest: 
 
-<b>getFooter(obj)</b> - the footer text (char or string). Default: empty.
+<b>getHeader(obj)</b> - the header text (a char vector or a string scalar). Default: the class name followed by <b>with properties:</b>. 
 
-<b>getPropertyGroups(obj)</b> - an array of <b>nelson.mixin.util.PropertyGroup</b> objects describing which properties are shown and how they are grouped. Default: one group with all public properties.
+<b>getFooter(obj)</b> - the footer text (char or string). Default: empty. 
 
-<b>displayScalarObject(obj)</b>, <b>displayNonScalarObject(obj)</b> and <b>displayEmptyObject(obj)</b> - take full control of the display of a scalar object, an object array, or an empty object array respectively.
+<b>getPropertyGroups(obj)</b> - an array of <b>nelson.mixin.util.PropertyGroup</b> objects describing which properties are shown and how they are grouped. Default: one group with all public properties. 
+
+<b>displayScalarObject(obj)</b>, <b>displayNonScalarObject(obj)</b> and <b>displayEmptyObject(obj)</b> - take full control of the display of a scalar object, an object array, or an empty object array respectively. 
 
 When none of the display methods is overridden, the object is shown as <b>getHeader</b>, then the property groups, then <b>getFooter</b>.
 
@@ -49,13 +50,14 @@ classdef Point < nelson.mixin.CustomDisplay
 end
 ```
 
+
 ## 🔗 See also
 
 [nelson.mixin.util.PropertyGroup](../types/nelson.mixin.util.PropertyGroup.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

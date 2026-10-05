@@ -16,9 +16,10 @@ Renvoie le temps ecoule depuis minuit pour des valeurs datetime.
 
 ## 📄 Description
 
-Renvoie le temps ecoule depuis minuit pour des valeurs datetime.
 
-timeofday ignore la date calendaire et conserve seulement la fraction du jour, exprimee comme duration au format hh:mm:ss.
+Renvoie le temps ecoule depuis minuit pour des valeurs datetime. 
+
+timeofday ignore la date calendaire et conserve seulement la fraction du jour, exprimee comme duration au format hh:mm:ss. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,14 +33,15 @@ seconds(d)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

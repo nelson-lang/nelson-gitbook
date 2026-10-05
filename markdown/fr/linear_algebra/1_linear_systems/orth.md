@@ -18,9 +18,12 @@ Base orthonormée de l'espace image d'une matrice.
 
 ## 📄 Description
 
+
 <b>O = orth(A)</b> retourne une base orthonormée de l'image (range) de <b>A</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = [10 -20 40; -50 20 0; 10 0 30]
@@ -28,14 +31,15 @@ O = orth(M)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[svd](../../linear_algebra/svd.md), [rank](../../linear_algebra/rank.md).
+[svd](../../linear_algebra/3_eigen_singular_values/svd.md), [rank](../../linear_algebra/1_linear_systems/rank.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

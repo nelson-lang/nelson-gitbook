@@ -16,11 +16,14 @@ Return metadata for a Parquet file.
 
 ## 📄 Description
 
-<b>info = parquetinfo(filename)</b> reads Parquet metadata without importing the full table data.
+
+<b>info = parquetinfo(filename)</b> reads Parquet metadata without importing the full table data. 
 
 The returned object exposes file-level metadata such as filename, file size, number of rows, number of variables, number of row groups, row group sizes, variable names, variable types, compression, and the writer description when available.
 
 ## 💡 Example
+
+
 
 ```matlab
 filename = [tempdir(), 'doc_parquetinfo.parquet'];
@@ -32,13 +35,14 @@ info.VariableNames
 info.RowGroups
 ```
 
+
 ## 🔗 See also
 
 [nelson.io.parquet.ParquetInfo](../parquet/class_ParquetInfo.md), [parquetread](../parquet/parquetread.md), [parquetwrite](../parquet/parquetwrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

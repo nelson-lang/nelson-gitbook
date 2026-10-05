@@ -18,7 +18,8 @@ Verifie qu'une valeur est un vecteur ligne.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value a la forme d'un vecteur ligne.
+
+L'assertion reussit lorsque value a la forme d'un vecteur ligne. 
 
 Les diagnostics indiquent la classe et les dimensions calculees.
 
@@ -29,12 +30,12 @@ Row vector
 ```matlab
 asserts.rowVector([1 2]);
 ```
-
 Capture a shape failure
 
 ```matlab
 [res, msg] = asserts.rowVector([1; 2]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a shape failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

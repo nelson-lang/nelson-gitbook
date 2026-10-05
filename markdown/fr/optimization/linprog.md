@@ -26,9 +26,10 @@ Programmation linéaire.
 
 ## 📄 Description
 
-<b>linprog</b> résout des problèmes d'optimisation linéaire avec contraintes linéaires et bornes. Nelson utilise HiGHS lorsque disponible.
 
-Les structures acceptées peuvent contenir <b>f</b>, <b>Aineq</b> ou <b>A</b>, <b>bineq</b> ou <b>b</b>, <b>Aeq</b>, <b>beq</b>, <b>lb</b>, <b>ub</b>, <b>x0</b> et <b>options</b>. La structure <b>output</b> indique l'algorithme, le statut backend normalisé, le statut de solution primale, le message, la violation des contraintes, les itérations et une estimation du résidu de premier ordre. La structure <b>lambda</b> est remplie pour les programmes linéaires continus à partir des informations duales du backend.
+<b>linprog</b> résout des problèmes d'optimisation linéaire avec contraintes linéaires et bornes. Nelson utilise HiGHS lorsque disponible. 
+
+Les structures acceptées peuvent contenir <b>f</b>, <b>Aineq</b> ou <b>A</b>, <b>bineq</b> ou <b>b</b>, <b>Aeq</b>, <b>beq</b>, <b>lb</b>, <b>ub</b>, <b>x0</b> et <b>options</b>. La structure <b>output</b> indique l'algorithme, le statut backend normalisé, le statut de solution primale, le message, la violation des contraintes, les itérations et une estimation du résidu de premier ordre. La structure <b>lambda</b> est remplie pour les programmes linéaires continus à partir des informations duales du backend. 
 
 Les options comme <b>Display</b>, <b>MaxTime</b>, <b>MaxIterations</b>, <b>LPMaxIterations</b>, <b>ConstraintTolerance</b>, <b>LPOptimalityTolerance</b>, <b>LPPreprocess</b> et <b>RootLPAlgorithm</b> sont converties en options HiGHS lorsque possible. Les autres options reconnues sont acceptées et ignorées lorsqu'il n'existe pas d'équivalent backend.
 
@@ -44,6 +45,8 @@ Nocedal, J. et Wright, S. J., Numerical Optimization, Springer, 2006.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 f = [-1; -1];
 A = [1 2; 4 2];
@@ -53,14 +56,15 @@ opts = optimoptions('linprog', 'Display', 'off');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [intlinprog](../optimization/intlinprog.md), [quadprog](../optimization/quadprog.md), [optimoptions](../optimization/optimoptions.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

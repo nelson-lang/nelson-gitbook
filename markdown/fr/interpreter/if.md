@@ -4,13 +4,16 @@ instruction conditionnelle.
 
 ## 📝 Syntaxe
 
-- if conditional_expression_1, statements_1, elseif conditional_expression_2, statements_2, else statements_N end
+- if conditional\_expression\_1, statements\_1, elseif conditional\_expression\_2, statements\_2, else statements\_N end
 
 ## 📄 Description
+
 
 Les instructions <b>if</b> et<b>else</b> forment une structure de contrôle pour l'exécution conditionnelle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 i = 0;
@@ -23,14 +26,15 @@ else
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [for](../interpreter/for.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

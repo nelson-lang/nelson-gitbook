@@ -1,29 +1,30 @@
-# slicot_tb01id
+# slicot\_tb01id
 
 Balancing a system matrix corresponding to a triplet (A, B, C).
 
 ## 📝 Syntax
 
-- [MAXRED\_OUT, A\_OUT, B\_OUT, C\_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
+- [MAXRED\_OUT, A\_OUT, B\_OUT, C\_OUT, SCALE, INFO] = slicot\_tb01id(JOB, MAXRED\_IN, A\_IN, B\_IN, C\_IN)
 
 ## 📥 Input argument
 
 - JOB - = 'A': All matrices are involved in balancing; = 'B': B and A matrices are involved in balancing; = 'C': C and A matrices are involved in balancing; = 'N': B and C matrices are not involved in balancing.
-- MAXRED_IN - the maximum allowed reduction in the 1-norm of S (in an iteration) if zero rows or columns are encountered.
-- A_IN - The leading N-by-N part of this array must contain the system state matrix A.
-- B_IN - The leading N-by-M part of this array must contain the system input matrix B.
-- C_IN - The leading P-by-N part of this array must contain the system output matrix C.
+- MAXRED\_IN - the maximum allowed reduction in the 1-norm of S (in an iteration) if zero rows or columns are encountered.
+- A\_IN - The leading N-by-N part of this array must contain the system state matrix A.
+- B\_IN - The leading N-by-M part of this array must contain the system input matrix B.
+- C\_IN - The leading P-by-N part of this array must contain the system output matrix C.
 
 ## 📤 Output argument
 
-- MAXRED_OUT - if the 1-norm of the given matrix S is non-zero, the ratio between the 1-norm of the given matrix and the 1-norm of the balanced matrix.
-- A_OUT - The leading N-by-N part of this array contains the balanced matrix inv(D)\*A\*D.
-- B_OUT - The leading N-by-M part of this array contains the balanced matrix inv(D)\*B.
-- C_OUT - The leading P-by-N part of this array contains the balanced matrix C\*D.
+- MAXRED\_OUT - if the 1-norm of the given matrix S is non-zero, the ratio between the 1-norm of the given matrix and the 1-norm of the balanced matrix.
+- A\_OUT - The leading N-by-N part of this array contains the balanced matrix inv(D)\*A\*D.
+- B\_OUT - The leading N-by-M part of this array contains the balanced matrix inv(D)\*B.
+- C\_OUT - The leading P-by-N part of this array contains the balanced matrix C\*D.
 - SCALE - The scaling factors applied to S.
 - INFO - = 0: successful exit.
 
 ## 📄 Description
+
 
 To reduce the 1-norm of a system matrix corresponding to the triple (A,B,C), by balancing.
 
@@ -36,6 +37,8 @@ TB01ID
 http://slicot.org/objects/software/shared/doc/TB01ID.html
 
 ## 💡 Example
+
+
 
 ```matlab
 N = 5;
@@ -64,13 +67,14 @@ C_IN = [1.0000e+000          0.0          0.0          0.0          0.0;
 [MAXRED_OUT, A_OUT, B_OUT, C_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
 ```
 
+
 ## 🔗 See also
 
-[slicot_mb04md](../slicot/slicot_mb04md.md), [slicot_tg01ad](../slicot/slicot_tg01ad.md), [slicot_ab01od](../slicot/slicot_ab01od.md), [balreal](../control_system/balreal.md), [ss](../control_system/ss.md).
+[slicot_mb04md](../slicot/slicot_mb04md.md), [slicot_tg01ad](../slicot/slicot_tg01ad.md), [slicot_ab01od](../slicot/slicot_ab01od.md), [balreal](../control_system/1_dynamic_system_models/balreal.md), [ss](../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -12,13 +12,17 @@ Renvoie le mode de lancement effectif de Nelson WebView.
 
 ## 📄 Description
 
+
 <b>getwebmode()</b> indique comment le bureau Nelson WebView courant a effectivement ete lance. La fonction renvoie <b>'none'</b> en dehors d'un lancement web actif.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 getwebmode()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ getwebmode()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

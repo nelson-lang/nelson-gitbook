@@ -4,13 +4,13 @@ Efface une fonction intégrée.
 
 ## 📝 Syntaxe
 
-- l = clearfun(function_name)
-- l = clearfun(function_handle)
+- l = clearfun(function\_name)
+- l = clearfun(function\_handle)
 
 ## 📥 Argument d'entrée
 
-- function_name - une chaîne : nom de fonction.
-- function_handle - un handle de fonction.
+- function\_name - une chaîne : nom de fonction.
+- function\_handle - un handle de fonction.
 
 ## 📤 Argument de sortie
 
@@ -18,9 +18,12 @@ Efface une fonction intégrée.
 
 ## 📄 Description
 
+
 <b>clearfun</b> efface une fonction intégrée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 cos(3)
@@ -33,14 +36,15 @@ sin(3)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [feval](../functions_manager/feval.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

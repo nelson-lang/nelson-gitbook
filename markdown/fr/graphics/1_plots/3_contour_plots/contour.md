@@ -28,17 +28,20 @@ Tracé de contours d'une matrice
 
 ## 📄 Description
 
-<b>contour(Z)</b> génère un tracé de contours représentant les isolignes de la matrice Z. Chaque isoligne correspond à une valeur de hauteur spécifique sur le plan x-y.
 
-Nelson sélectionne automatiquement les lignes de contour à afficher en fonction des valeurs de Z. Les indices de colonnes et de lignes de Z servent respectivement de coordonnées x et y dans le plan.
+<b>contour(Z)</b> génère un tracé de contours représentant les isolignes de la matrice Z. Chaque isoligne correspond à une valeur de hauteur spécifique sur le plan x-y. 
 
-<b>contour(X, Y, Z)</b> permet à l'utilisateur de spécifier les coordonnées x et y correspondant aux valeurs de la matrice Z. Cela permet un contrôle plus précis du positionnement du tracé de contours sur le plan x-y.
+Nelson sélectionne automatiquement les lignes de contour à afficher en fonction des valeurs de Z. Les indices de colonnes et de lignes de Z servent respectivement de coordonnées x et y dans le plan. 
 
-Les matrices X et Y fournissent les coordonnées, tandis que Z contient les valeurs de hauteur pour générer le tracé de contours.
+<b>contour(X, Y, Z)</b> permet à l'utilisateur de spécifier les coordonnées x et y correspondant aux valeurs de la matrice Z. Cela permet un contrôle plus précis du positionnement du tracé de contours sur le plan x-y. 
+
+Les matrices X et Y fournissent les coordonnées, tandis que Z contient les valeurs de hauteur pour générer le tracé de contours. 
 
 Voir [proprietes de contour](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.contour.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -68,17 +71,17 @@ f = figure();
     Z = sin (2*theta) .* (1-r);
     contour (X, Y, abs (Z), 10);
 ```
-
 <img src="contour_1.svg" align="middle"/>
+
 
 ```matlab
 rng('default');
     f = figure();
     N = 50;
-    contour(1:N, 1:N, rand(N), 5)
+    contour(1:N, 1:N, rand(N), 5) 
 ```
-
 <img src="contour_2.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -86,7 +89,6 @@ f = figure();
     Z(:,26) = NaN;
     contour(Z)
 ```
-
 <img src="contour_nan.svg" align="middle"/>
 Lignes de contour avec etiquettes.
 
@@ -100,17 +102,18 @@ clabel(C, h);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de contour](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.contour.properties.md), [contourc](../../../graphics/1_plots/3_contour_plots/contourc.md), [contourf](../../../graphics/1_plots/3_contour_plots/contourf.md), [contour3](../../../graphics/1_plots/3_contour_plots/contour3.md), [clabel](../../../graphics/1_plots/3_contour_plots/clabel.md), [surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                            |
-| ------- | ----------------------------------------- |
-| 1.3.0   | version initiale                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.3.0   | version initiale |
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn. |
-| --      | Ajout de la propriete BeingDeleted.       |
+| --   | Ajout de la propriete BeingDeleted. |
 
 <!--
 ## 👤 Auteur

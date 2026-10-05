@@ -4,12 +4,12 @@ decodes a JSON string to Nelson object.
 
 ## 📝 Syntax
 
-- res = jsondecode(json_str)
-- res = jsondecode(json_str, '-file')
+- res = jsondecode(json\_str)
+- res = jsondecode(json\_str, '-file')
 
 ## 📥 Input argument
 
-- json_str - a json string.
+- json\_str - a json string.
 - '-file' - a string, first argument is the file path.
 
 ## 📤 Output argument
@@ -18,6 +18,7 @@ decodes a JSON string to Nelson object.
 
 ## 📄 Description
 
+
 <b>jsondecode</b> converts JSON object field names to Nelson structure field names
 
 ## 📚 Bibliography
@@ -25,6 +26,8 @@ decodes a JSON string to Nelson object.
 http://www.rfc-editor.org/rfc/rfc7159.txt
 
 ## 💡 Examples
+
+
 
 ```matlab
 field1 = 'f1';  value1 = zeros(1,10);
@@ -36,11 +39,13 @@ r = jsonencode(s)
 r2 = jsondecode(r)
 ```
 
+
 ```matlab
 
 jsondecode([modulepath('json'), '/examples/patient.json'], '-file')
-
+    
 ```
+
 
 ## 🔗 See also
 
@@ -48,11 +53,11 @@ jsondecode([modulepath('json'), '/examples/patient.json'], '-file')
 
 ## 🕔 History
 
-| Version | 📄 Description                       |
-| ------- | ------------------------------------ |
-| 1.0.0   | initial version                      |
-| 1.15.0  | second argument added for file input |
-| 1.15.0  | simdjson library used                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.15.0   | second argument added for file input |
+| 1.15.0   | simdjson library used |
 
 <!--
 ## 👤 Author

@@ -22,11 +22,14 @@ Read contents of file as text.
 
 ## 📄 Description
 
-<b>fileread</b> read contents of file as text.
+
+<b>fileread</b> read contents of file as text. 
 
 if encoding is 'auto', nelson will try to detect best encoding to read contents of file as text.
 
 ## 💡 Examples
+
+
 
 ```matlab
 str = fileread([nelsonroot(),'/CHANGELOG.md'])
@@ -36,6 +39,7 @@ str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
 
 ```
 
+
 ```matlab
 str = 'живете зело, земля, и иже и како люди';
 filewrite([tempdir(), 'example_fileread.txt'], str, 'native', 'windows-1251')
@@ -44,13 +48,14 @@ T2 = fileread([tempdir(), 'example_fileread.txt'], 'string', 'native', 'auto')
 
 ```
 
+
 ## 🔗 See also
 
 [fgetl](../stream_manager/fgetl.md), [filewrite](../stream_manager/filewrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

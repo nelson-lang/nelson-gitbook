@@ -21,7 +21,8 @@ Applique une transformation geometrique inverse a des points.
 
 ## 📄 Description
 
-Applique l'inverse de la transformation geometrique contenue dans <b>tform</b> a un ensemble de points, selon la convention vecteur ligne <b>[u ... 1] = [x ... 1] \* inv(tform.T)</b>. Pour une transformation projective, le resultat est normalise par sa coordonnee homogene.
+
+Applique l'inverse de la transformation geometrique contenue dans <b>tform</b> a un ensemble de points, selon la convention vecteur ligne <b>[u ... 1] = [x ... 1] \* inv(tform.T)</b>. Pour une transformation projective, le resultat est normalise par sa coordonnee homogene. 
 
 Les points peuvent etre fournis soit comme des tableaux de coordonnees distincts de meme taille, soit comme une seule matrice compactee avec une colonne par dimension. C'est l'operation inverse de <b>transformPointsForward</b>.
 
@@ -35,13 +36,14 @@ tform = affine2d([cosd(30) sind(30) 0; -sind(30) cosd(30) 0; 0 0 1]);
 [u, v] = transformPointsInverse(tform, x, y)
 ```
 
+
 ## 🔗 Voir aussi
 
-[transformPointsForward](../../../image_processing/transformPointsForward.md), [affine2d](../../../image_processing/affine2d.md), [affine3d](../../../image_processing/affine3d.md), [projective2d](../../../image_processing/projective2d.md).
+[transformPointsForward](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.md), [affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [affine3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine3d.md), [projective2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/projective2d.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

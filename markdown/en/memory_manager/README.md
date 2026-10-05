@@ -1,10 +1,16 @@
 # Memory manager functions
 
+
+    
 The Memory Manager module provides tools for managing variables and memory in Nelson.
 
+    
 It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.
 
+    
 The module also supports memory inspection, variable locking, and listing of workspace contents for controlled memory usage in scripts and applications.
+
+  
 
 ## Functions
 
@@ -22,3 +28,4 @@ The module also supports memory inspection, variable locking, and listing of wor
 - [varunlock](varunlock.md) - Unlocks a variable.
 - [who](who.md) - List variables in memory or in .nh5 or in .mat file.
 - [whos](whos.md) - List variables in memory or in .nh5 or in .mat file with sizes and types.
+

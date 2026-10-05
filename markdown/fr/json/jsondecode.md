@@ -4,12 +4,12 @@ décodage d'une chaîne JSON en objet Nelson.
 
 ## 📝 Syntaxe
 
-- res = jsondecode(json_str)
-- res = jsondecode(json_str, '-file')
+- res = jsondecode(json\_str)
+- res = jsondecode(json\_str, '-file')
 
 ## 📥 Argument d'entrée
 
-- json_str - une chaîne JSON.
+- json\_str - une chaîne JSON.
 - '-file' - une chaîne ; le premier argument est le chemin du fichier.
 
 ## 📤 Argument de sortie
@@ -18,6 +18,7 @@ décodage d'une chaîne JSON en objet Nelson.
 
 ## 📄 Description
 
+
 <b>jsondecode</b> convertit les noms de champs d'un objet JSON en noms de champs d'une structure Nelson.
 
 ## 📚 Bibliographie
@@ -25,6 +26,8 @@ décodage d'une chaîne JSON en objet Nelson.
 http://www.rfc-editor.org/rfc/rfc7159.txt
 
 ## 💡 Exemples
+
+
 
 ```matlab
 field1 = 'f1';  value1 = zeros(1,10);
@@ -36,11 +39,13 @@ r = jsonencode(s)
 r2 = jsondecode(r)
 ```
 
+
 ```matlab
 
 jsondecode([modulepath('json'), '/examples/patient.json'], '-file')
-
+    
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -48,11 +53,11 @@ jsondecode([modulepath('json'), '/examples/patient.json'], '-file')
 
 ## 🕔 Historique
 
-| Version | 📄 Description                       |
-| ------- | ------------------------------------ |
-| 1.0.0   | version initiale                     |
-| 1.15.0  | second argument added for file input |
-| 1.15.0  | simdjson library used                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.15.0   | second argument added for file input |
+| 1.15.0   | simdjson library used |
 
 <!--
 ## 👤 Auteur

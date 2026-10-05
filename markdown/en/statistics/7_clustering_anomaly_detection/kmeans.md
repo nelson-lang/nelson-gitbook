@@ -25,16 +25,19 @@ k-means clustering.
 
 ## 📄 Description
 
-<b>kmeans</b> partitions observations into k clusters by iteratively assigning each observation to the nearest centroid and recomputing centroids from assigned observations.
+
+<b>kmeans</b> partitions observations into k clusters by iteratively assigning each observation to the nearest centroid and recomputing centroids from assigned observations. 
 
 Random starts use Nelson's global random generator. Use <b>rng</b> before calling <b>kmeans</b>, or pass <b>Options</b> created by <b>statset</b> with a <b>RandStream</b> in <b>Streams</b>, for reproducible random initialization.
 
 ## Used function(s)
 
+
     statset
     statget
     rng
     table
+  
 
 ## 💡 Examples
 
@@ -44,7 +47,6 @@ Cluster two groups.
 X = [0 0; 0 1; 5 5; 5 6];
 [idx, C] = kmeans(X, 2, 'Start', [0 0; 5 5])
 ```
-
 Plot three clusters and their centroids.
 
 ```matlab
@@ -71,7 +73,6 @@ title('k-means clusters and centroids');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="kmeans_1.svg" align="middle"/>
 Plot a reproducible random initialization.
 
@@ -92,7 +93,6 @@ title('Reproducible k-means random start');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="kmeans_2.svg" align="middle"/>
 Plot clusters computed with cityblock distance.
 
@@ -120,5 +120,4 @@ title('k-means with cityblock distance');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="kmeans_3.svg" align="middle"/>

@@ -6,7 +6,7 @@ call the embedded text editor.
 
 - editor()
 - editor(filename)
-- editor('editor_command', cmd)
+- editor('editor\_command', cmd)
 
 ## 📥 Input argument
 
@@ -15,22 +15,25 @@ call the embedded text editor.
 
 ## 📄 Description
 
-<b>editor</b> opens an existing file in the nelson's editor.
 
-<b>editor</b> must be considered as internal and <b>edit</b> must be preferred.
+<b>editor</b> opens an existing file in the nelson's editor. 
 
-Set another text editor as default: (example with VS code)
+<b>editor</b> must be considered as internal and <b>edit</b> must be preferred. 
 
-<code>editor('editor_command', 'code')</code>
+Set another text editor as default: (example with VS code) 
 
-To restore the default editor, use:
+<code>editor('editor_command', 'code')</code> 
+
+To restore the default editor, use: 
 
 <code>editor('editor_command', '
-')</code>
+        ')</code> 
 
 Change text editor is persistent and will be saved in a configuration file.
 
 ## 💡 Example
+
+
 
 ```matlab
 edit('edit')
@@ -45,16 +48,17 @@ editor('editor_command ', '')
 
 ```
 
+
 ## 🔗 See also
 
 [edit](../text_editor/edit.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                       |
-| ------- | ------------------------------------ |
-| 1.0.0   | initial version                      |
-| 1.10.0  | Option to change default text editor |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.10.0   | Option to change default text editor |
 
 <!--
 ## 👤 Author

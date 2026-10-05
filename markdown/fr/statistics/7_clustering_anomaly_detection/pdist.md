@@ -20,7 +20,8 @@ Distances deux a deux entre observations.
 
 ## 📄 Description
 
-<b>pdist</b> calcule les distances entre paires de lignes de <b>X</b>.
+
+<b>pdist</b> calcule les distances entre paires de lignes de <b>X</b>. 
 
 L'ordre de sortie est compatible avec <b>squareform</b> : les paires sont stockees sous la forme (2,1), (3,1), (3,2), puis ainsi de suite.
 
@@ -34,14 +35,15 @@ D = pdist(X)
 Z = squareform(D)
 ```
 
+
 ## 🔗 Voir aussi
 
-[squareform](../../statistics/squareform.md), [pdist2](../../statistics/pdist2.md).
+[squareform](../../statistics/7_clustering_anomaly_detection/squareform.md), [pdist2](../../statistics/7_clustering_anomaly_detection/pdist2.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -17,17 +17,20 @@ Palette de couleurs abyss.
 
 ## 📄 Description
 
+
 <b>abyss</b> retourne la palette de couleurs abyss.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('abyss');
 ```
-
 <img src="abyss.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('abyss');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

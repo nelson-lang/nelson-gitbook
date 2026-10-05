@@ -17,22 +17,26 @@ Rayleigh inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>raylinv</b> evaluates Rayleigh inverse cumulative values element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0 0.3934693402873666 0.8646647167633873];
 x = raylinv(p, 2);
 ```
 
+
 ## 🔗 See also
 
-[raylpdf](../../statistics/raylpdf.md), [raylcdf](../../statistics/raylcdf.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylcdf](../../statistics/2_probability_distributions/raylcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

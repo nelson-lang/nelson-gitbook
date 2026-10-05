@@ -12,7 +12,8 @@ Return handles to local functions in the current file.
 
 ## 📄 Description
 
-<b>localfunctions</b> returns a cell array of handles to local functions defined in the current file.
+
+<b>localfunctions</b> returns a cell array of handles to local functions defined in the current file. 
 
 If the current context is not a file with local functions, the result is an empty cell array.
 
@@ -24,7 +25,6 @@ Call localfunctions from the command context.
 fh = localfunctions()
 isequal(fh, {})
 ```
-
 Return and call handles to local functions from a file.
 
 ```matlab
@@ -50,13 +50,14 @@ names = localfunctions_demo()
 % {'add_one'; 'double_value'}
 ```
 
+
 ## 🔗 See also
 
 [which](../functions_manager/which.md), [func2str](../function_handle/func2str.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

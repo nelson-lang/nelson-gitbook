@@ -19,22 +19,26 @@ constructeur de vecteur à espacement logarithmique.
 
 ## 📄 Description
 
+
 <b>logspace</b> génère un vecteur à espacement logarithmique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 V = logspace(1+2i, 10+10i, 4)
 ```
 
+
 ## 🔗 Voir aussi
 
-[linspace](../../elementary_functions/linspace.md).
+[linspace](../../elementary_functions/1_array_creation_shape/linspace.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

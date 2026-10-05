@@ -17,6 +17,7 @@ Convert indexed image to grayscale using a colormap.
 
 ## 📄 Description
 
+
 Convert indexed image to grayscale using a colormap.
 
 ## 💡 Example
@@ -29,16 +30,16 @@ v=linspace(0,1,64)'; map=[v 1-v 0.5*ones(64,1)];
 G=ind2gray(X,map);
 figure; imagesc(G); g=linspace(0,1,64)'; colormap([g g g]); title('Indexed to gray');
 ```
-
 <img src="ind2gray_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[ind2rgb](../../../image_processing/ind2rgb.md), [rgb2gray](../../../image_processing/rgb2gray.md), [im2gray](../../../image_processing/im2gray.md).
+[ind2rgb](../../../image_processing/1_image_basics/1_image_types_color/ind2rgb.md), [rgb2gray](../../../image_processing/1_image_basics/1_image_types_color/rgb2gray.md), [im2gray](../../../image_processing/1_image_basics/1_image_types_color/im2gray.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

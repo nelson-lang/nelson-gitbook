@@ -1,56 +1,75 @@
 # AccÃ¨s et manipulation des tables dans Nelson
 
+
+
 ## 📄 Description
 
-<b>Insertion dans une table</b>
 
-Pour insÃ©rer de nouvelles donnÃ©es dans une table, utilisez la notation par point ou les accolades<b>{}</b> pour une insertion Ã©lÃ©ment par Ã©lÃ©ment. Vous pouvez ajouter de nouvelles lignes, colonnes ou mettre Ã  jour des donnÃ©es existantes.
+<b>Insertion dans une table</b> 
 
-voir exemples : <b>Ajout d'une nouvelle colonne</b> et <b>Mise Ã  jour d'un Ã©lÃ©ment existant</b>
+Pour insÃ©rer de nouvelles donnÃ©es dans une table, utilisez la notation par point ou les accolades<b>{}</b> pour une insertion Ã©lÃ©ment par Ã©lÃ©ment. Vous pouvez ajouter de nouvelles lignes, colonnes ou mettre Ã  jour des donnÃ©es existantes. 
 
-<b>Extraction depuis une table</b>
+voir exemples : <b>Ajout d'une nouvelle colonne</b> et <b>Mise Ã  jour d'un Ã©lÃ©ment existant</b> 
 
-Vous pouvez extraire des lignes, colonnes ou Ã©lÃ©ments individuels en utilisant l'indexation ou en rÃ©fÃ©rant les noms de variables.
+ 
 
-voir exemples : <b>Extraction de colonnes spÃ©cifiques</b> et <b>Extraction de lignes spÃ©cifiques</b>
+<b>Extraction depuis une table</b> 
 
-<b>Suppression de donnÃ©es dans une table</b>
+Vous pouvez extraire des lignes, colonnes ou Ã©lÃ©ments individuels en utilisant l'indexation ou en rÃ©fÃ©rant les noms de variables. 
 
-Dans Nelson, vous pouvez supprimer des lignes, colonnes ou Ã©lÃ©ments spÃ©cifiques d'une table en utilisant l'indexation ou la fonction removevars. Les lignes ou colonnes peuvent Ãªtre supprimÃ©es en dÃ©finissant les indices sur des crochets vides [].
+voir exemples : <b>Extraction de colonnes spÃ©cifiques</b> et <b>Extraction de lignes spÃ©cifiques</b> 
 
-voir exemples : <b>Suppression de lignes</b> et <b>Suppression de colonnes</b>
+ 
 
-<b>ConcatÃ©nation horizontale (horzcat)</b>
+<b>Suppression de donnÃ©es dans une table</b> 
 
-Vous pouvez concatÃ©ner des tables horizontalement (cÃ´te Ã  cÃ´te) en utilisant la fonction horzcat. Cette fonction combine les tables en ajoutant les colonnes d'une table aux colonnes d'une autre.
+Dans Nelson, vous pouvez supprimer des lignes, colonnes ou Ã©lÃ©ments spÃ©cifiques d'une table en utilisant l'indexation ou la fonction removevars. Les lignes ou colonnes peuvent Ãªtre supprimÃ©es en dÃ©finissant les indices sur des crochets vides []. 
 
-voir exemples : <b>ConcatÃ©nation horizontale</b>
+voir exemples : <b>Suppression de lignes</b> et <b>Suppression de colonnes</b> 
 
-<b>ConcatÃ©nation verticale (vertcat)</b>
+ 
 
-Vous pouvez concatÃ©ner des tables verticalement (l'une sous l'autre) en utilisant la fonction vertcat. Cette fonction combine les tables en ajoutant les lignes d'une table aux lignes d'une autre.
+<b>ConcatÃ©nation horizontale (horzcat)</b> 
 
-voir exemples : <b>ConcatÃ©nation verticale</b>
+Vous pouvez concatÃ©ner des tables horizontalement (cÃ´te Ã  cÃ´te) en utilisant la fonction horzcat. Cette fonction combine les tables en ajoutant les colonnes d'une table aux colonnes d'une autre. 
 
-<b>Conversion des types de variables</b>
+voir exemples : <b>ConcatÃ©nation horizontale</b> 
 
-Vous pouvez convertir les variables d'une table en utilisant la propriÃ©tÃ©<b>VariableTypes</b>.
+ 
 
-voir exemples : exemple <b>VariableTypes</b>
+<b>ConcatÃ©nation verticale (vertcat)</b> 
 
-<b>Organisation des variables</b>
+Vous pouvez concatÃ©ner des tables verticalement (l'une sous l'autre) en utilisant la fonction vertcat. Cette fonction combine les tables en ajoutant les lignes d'une table aux lignes d'une autre. 
 
-Utilisez <b>addvars</b>, <b>movevars</b>, <b>renamevars</b> et <b>removevars</b> pour manipuler les variables tout en conservant les metadonnees de table.
+voir exemples : <b>ConcatÃ©nation verticale</b> 
 
-voir exemples : <b>Organisation des variables</b>
+ 
 
-<b>Metadonnees personnalisees</b>
+<b>Conversion des types de variables</b> 
 
-Utilisez <b>addprop</b> et <b>rmprop</b> pour gerer les metadonnees personnalisees stockees dans <b>T.Properties.CustomProperties</b>.
+Vous pouvez convertir les variables d'une table en utilisant la propriÃ©tÃ©<b>VariableTypes</b>. 
 
-voir exemples : <b>Metadonnees personnalisees</b>
+voir exemples : exemple <b>VariableTypes</b> 
 
-<b>RÃ©sumÃ©</b>
+ 
+
+<b>Organisation des variables</b> 
+
+Utilisez <b>addvars</b>, <b>movevars</b>, <b>renamevars</b> et <b>removevars</b> pour manipuler les variables tout en conservant les metadonnees de table. 
+
+voir exemples : <b>Organisation des variables</b> 
+
+ 
+
+<b>Metadonnees personnalisees</b> 
+
+Utilisez <b>addprop</b> et <b>rmprop</b> pour gerer les metadonnees personnalisees stockees dans <b>T.Properties.CustomProperties</b>. 
+
+voir exemples : <b>Metadonnees personnalisees</b> 
+
+ 
+
+<b>RÃ©sumÃ©</b> 
 
 Dans Nelson, les tables stockent et manipulent des données hétérogènes. La notation par point et les fonctions de concaténation (horzcat, vertcat) permettent d'insérer des données, d'extraire des parties de table et de concaténer des tables horizontalement ou verticalement.
 
@@ -64,7 +83,6 @@ T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
 T.Score = [10; 20]
 
 ```
-
 Updating an Existing Element
 
 ```matlab
@@ -75,7 +93,6 @@ T.Score = [10; 20]
 T{1, 'Score'} = 15
 
 ```
-
 Extracting Specific Columns
 
 ```matlab
@@ -88,7 +105,6 @@ T{1, 'Score'} = 15
 ID_column = T.ID
 
 ```
-
 Extracting Specific Rows
 
 ```matlab
@@ -101,7 +117,6 @@ T{1, 'Score'} = 15
 rows_1_2 = T(1:2, :)
 
 ```
-
 Removing a Column
 
 ```matlab
@@ -112,7 +127,6 @@ T.Score = [10; 20]
 T(:, 'Score') = [];
 
 ```
-
 Removing a Row
 
 ```matlab
@@ -123,7 +137,6 @@ T.Score = [10; 20]
 T(2, :) = [];
 
 ```
-
 Horizontal Concatenation
 
 ```matlab
@@ -135,7 +148,6 @@ T2 = table([10; 20], {'X'; 'Y'}, 'VariableNames', {'Score', 'Grade'});
 T_horz = [T1, T2]  % or T_horz = horzcat(T1, T2);
 
 ```
-
 Vertical Concatenation
 
 ```matlab
@@ -147,7 +159,6 @@ T3 = table([3; 4], {'C'; 'D'}, 'VariableNames', {'ID', 'Label'});
 T_vert = [T1; T3]  % or T_vert = vertcat(T1, T3)
 
 ```
-
 Convert variable types
 
 ```matlab
@@ -164,7 +175,6 @@ T{:,1}
 T{:,2}
 T.Properties.VariableTypes
 ```
-
 Ajouter et deplacer des variables
 
 ```matlab
@@ -172,7 +182,6 @@ T = table([1; 2], [5; 6], 'VariableNames', {'A', 'C'});
 T = addvars(T, [3; 4], 'NewVariableNames', {'B'}, 'Before', 'C');
 T = movevars(T, 'C', 'Before', 1)
 ```
-
 Proprietes personnalisees
 
 ```matlab
@@ -183,16 +192,17 @@ T.Properties.CustomProperties.Source
 T = rmprop(T, 'Source')
 ```
 
+
 ## 🔗 Voir aussi
 
-[table](../../table/table.md), [Direct computation with Table](../../table/7_apply_functions/2_direct_computation_with_table.md), [addvars](../../table/addvars.md), [movevars](../../table/movevars.md), [summary](../../data_analysis/summary.md).
+[table](../../table/1_create_convert_tables/table.md), [Direct computation with Table](../../table/7_apply_functions/2_direct_computation_with_table.md), [addvars](../../table/4_sort_filter_rearrange/addvars.md), [movevars](../../table/4_sort_filter_rearrange/movevars.md), [summary](../../data_analysis/summary.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                      |
-| ------- | ------------------------------------------------------------------- |
-| 1.8.0   | version initiale                                                    |
-| 1.10.0  | VariableTypes property                                              |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.8.0   | version initiale |
+| 1.10.0   | VariableTypes property |
 | 2.0.0   | fonctions d'organisation des variables et proprietes personnalisees |
 
 <!--

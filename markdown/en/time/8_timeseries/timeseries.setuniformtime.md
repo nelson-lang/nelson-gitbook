@@ -19,9 +19,11 @@ Set a uniformly spaced time vector.
 
 ## 📄 Description
 
+
 <b>setuniformtime</b> Generates a uniform time vector from name-value settings and assigns it to the object.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2; 3; 4]);
@@ -30,13 +32,14 @@ ts.Time
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

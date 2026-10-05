@@ -18,9 +18,12 @@ Ajustement polynomiale (polynomial curve fitting).
 
 ## 📄 Description
 
+
 <b>p = polyfit(x, y, n)</b> renvoie les coefficients d'un polynôme <b>p(x)</b> de degré <b>n</b> qui réalise le meilleur ajustement (least-squares) des données <b>y</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -29,14 +32,15 @@ y = sin(x);
 p = polyfit(x, y, 7)
 ```
 
+
 ## 🔗 Voir aussi
 
 [roots](../polynomial_functions/roots.md), [poly](../polynomial_functions/poly.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

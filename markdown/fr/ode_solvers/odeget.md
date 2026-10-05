@@ -9,18 +9,23 @@ Lire une option EDO.
 
 ## 📄 Description
 
-<b>odeget</b> renvoie une option nommee ou une valeur par defaut.
 
-| Appel                                   | Role                                                  |
-| --------------------------------------- | ----------------------------------------------------- |
-| **value = \*get(options,name)**         | Retourne la valeur stockee pour **name**.             |
-| **value = \*get(options,name,default)** | Retourne **default** si l option est absente ou vide. |
+<b>odeget</b> renvoie une option nommee ou une valeur par defaut. 
+
+| Appel | Role | 
+| --- | --- | 
+| **value = \*get(options,name)** | Retourne la valeur stockee pour **name**. | 
+| **value = \*get(options,name,default)** | Retourne **default** si l option est absente ou vide. | 
+
+
 
 ## 💡 Exemple
+
 
 ```matlab
 options = odeset('RelTol', 1e-4); value = odeget(options, 'RelTol')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -28,8 +33,8 @@ options = odeset('RelTol', 1e-4); value = odeget(options, 'RelTol')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

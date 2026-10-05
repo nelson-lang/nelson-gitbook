@@ -18,7 +18,8 @@ Check that a value is not empty.
 
 ## 📄 Description
 
-The assertion passes when value has at least one element.
+
+The assertion passes when value has at least one element. 
 
 Use asserts.empty for the inverse assertion.
 
@@ -29,12 +30,12 @@ Non-empty value
 ```matlab
 asserts.notempty(1);
 ```
-
 Capture an empty value
 
 ```matlab
 [res, msg] = asserts.notempty([]);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture an empty value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

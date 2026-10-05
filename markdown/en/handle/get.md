@@ -4,12 +4,12 @@ Retrieve a property value from an handle object.
 
 ## 📝 Syntax
 
-- R = get(h, property_name)
+- R = get(h, property\_name)
 
 ## 📥 Input argument
 
 - h - an handle object.
-- property_name - a string: property name.
+- property\_name - a string: property name.
 
 ## 📤 Output argument
 
@@ -17,7 +17,9 @@ Retrieve a property value from an handle object.
 
 ## 📄 Description
 
-<b>R = get(h, property_name)</b> returns the value of property asked.
+
+<b>R = get(h, property\_name)</b> returns the value of property asked.
+
 
 ## 🔗 See also
 
@@ -25,7 +27,7 @@ Retrieve a property value from an handle object.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

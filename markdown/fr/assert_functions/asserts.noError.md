@@ -18,7 +18,8 @@ Verifie qu'une commande se termine sans erreur.
 
 ## 📄 Description
 
-L'assertion reussit lorsque l'evaluation de la commande ne leve pas d'erreur.
+
+L'assertion reussit lorsque l'evaluation de la commande ne leve pas d'erreur. 
 
 Avec sorties, les erreurs inattendues sont retournees comme echecs d'assertion au lieu d'etre levees directement.
 
@@ -29,12 +30,12 @@ Command without error
 ```matlab
 asserts.noError('1 + 1');
 ```
-
 Capture an unexpected error
 
 ```matlab
 [res, msg] = asserts.noError('cos');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture an unexpected error
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

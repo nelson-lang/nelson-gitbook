@@ -4,12 +4,12 @@ Set a property value of an handle object.
 
 ## 📝 Syntax
 
-- R = set(h, property_name, value)
+- R = set(h, property\_name, value)
 
 ## 📥 Input argument
 
 - h - an handle object.
-- property_name - a string: property name.
+- property\_name - a string: property name.
 - value - a variable.
 
 ## 📤 Output argument
@@ -18,7 +18,9 @@ Set a property value of an handle object.
 
 ## 📄 Description
 
+
 This routine can be used to modify the value of a specified property from an handle object.
+
 
 ## 🔗 See also
 
@@ -26,7 +28,7 @@ This routine can be used to modify the value of a specified property from an han
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

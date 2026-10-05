@@ -8,22 +8,26 @@ Limite pour le texte alphanumerique.
 
 ## 📄 Description
 
+
 <b>alphanumericBoundary</b> Limite pour le texte alphanumerique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = alphanumericBoundary("start") + alphanumericsPattern(3); extract("ID A12", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[digitBoundary](../../string/digitBoundary.md), [letterBoundary](../../string/letterBoundary.md), [textBoundary](../../string/textBoundary.md), [pattern](../../string/pattern.md).
+[digitBoundary](../../string/4_patterns/digitBoundary.md), [letterBoundary](../../string/4_patterns/letterBoundary.md), [textBoundary](../../string/4_patterns/textBoundary.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

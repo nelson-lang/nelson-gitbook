@@ -1,4 +1,4 @@
-# compiler_linux_installer_tutorial
+# compiler\_linux\_installer\_tutorial
 
 Construire, installer et supprimer une application Linux.
 
@@ -8,17 +8,18 @@ Construire, installer et supprimer une application Linux.
 
 ## 📄 Description
 
-Executer les quatre blocs dans une meme session Nelson sous Linux, avec un utilisateur ordinaire. La generation demande Bash 4 ou ulterieur, GNU tar, gzip et les utilitaires de base GNU. Le fichier .install est autonome : son installation ne demande pas Nelson sur la machine cible. L'application demande toujours un systeme Linux et une architecture compatibles.
 
-Le premier bloc construit une application console. Le deuxieme prepare l'application et son runtime minimal pour une distribution hors ligne. Le troisieme installe dans un dossier temporaire prive, execute sans runtime selectionne de l'exterieur puis supprime l'application installee. La sortie attendue est LINUX_INSTALLER_TUTORIAL_OK. Aucun privilege administrateur, raccourci global ou changement d'environnement n'est necessaire.
+Executer les quatre blocs dans une meme session Nelson sous Linux, avec un utilisateur ordinaire. La generation demande Bash 4 ou ulterieur, GNU tar, gzip et les utilitaires de base GNU. Le fichier .install est autonome : son installation ne demande pas Nelson sur la machine cible. L'application demande toujours un systeme Linux et une architecture compatibles. 
 
-Distribuer le fichier .install en conservant sa permission executable. Le lancer avec <b>-agreeToLicense yes</b> en premier, puis <b>-applicationFolder</b> suivi du chemin absolu de destination. Son dossier parent doit deja exister et etre accessible en ecriture. <b>-outputFile</b> sauvegarde aussi la sortie console dans un nouveau fichier. L'installation interactive n'est pas encore disponible.
+Le premier bloc construit une application console. Le deuxieme prepare l'application et son runtime minimal pour une distribution hors ligne. Le troisieme installe dans un dossier temporaire prive, execute sans runtime selectionne de l'exterieur puis supprime l'application installee. La sortie attendue est LINUX\_INSTALLER\_TUTORIAL\_OK. Aucun privilege administrateur, raccourci global ou changement d'environnement n'est necessaire. 
 
-Il est aussi possible d'utiliser <b>-inputFile</b> suivi d'un fichier de controle UTF-8 contenant une paire cle=valeur par ligne. Commencer par agreeToLicense=yes, puis applicationFolder=/chemin/absolu. Les lignes vides et celles commencant par # sont ignorees. Ces valeurs restent des donnees et ne sont jamais executees comme des commandes shell.
+Distribuer le fichier .install en conservant sa permission executable. Le lancer avec <b>-agreeToLicense yes</b> en premier, puis <b>-applicationFolder</b> suivi du chemin absolu de destination. Son dossier parent doit deja exister et etre accessible en ecriture. <b>-outputFile</b> sauvegarde aussi la sortie console dans un nouveau fichier. L'installation interactive n'est pas encore disponible. 
 
-RuntimeDelivery='installer' inclut par defaut un runtime adjacent prive ; RuntimeDelivery='none' demande un runtime compatible deja accessible au lanceur. Le quatrieme bloc installe le meme paquet avec -runtimeFolder, puis retire l'application et le runtime independamment. Le runtime occupe un sous-dossier nomme par l'empreinte du moteur. -runtimeFolder peut accompagner -applicationFolder mais pas -destinationFolder. Les deux racines installees ne doivent pas se chevaucher.
+Il est aussi possible d'utiliser <b>-inputFile</b> suivi d'un fichier de controle UTF-8 contenant une paire cle=valeur par ligne. Commencer par agreeToLicense=yes, puis applicationFolder=/chemin/absolu. Les lignes vides et celles commencant par # sont ignorees. Ces valeurs restent des donnees et ne sont jamais executees comme des commandes shell. 
 
-L'installation partagee requiert un lanceur actuel et RuntimeDelivery='installer'. Elle enregistre le runtime dans le dossier de configuration utilisateur. Les applications compatibles ajoutent seulement les composants manquants a ce runtime. La suppression applicative ne le retire jamais. Une reinstallation verifie ou reprend aussi l'installation du runtime partage ; changer de mode prive/partage demande de supprimer d'abord l'application. La distribution web, les paquets ZIP et les mises a jour d'installation applicative ne sont pas encore disponibles sous Linux.
+RuntimeDelivery='installer' inclut par defaut un runtime adjacent prive ; RuntimeDelivery='none' demande un runtime compatible deja accessible au lanceur. Le quatrieme bloc installe le meme paquet avec -runtimeFolder, puis retire l'application et le runtime independamment. Le runtime occupe un sous-dossier nomme par l'empreinte du moteur. -runtimeFolder peut accompagner -applicationFolder mais pas -destinationFolder. Les deux racines installees ne doivent pas se chevaucher. 
+
+L'installation partagee requiert un lanceur actuel et RuntimeDelivery='installer'. Elle enregistre le runtime dans le dossier de configuration utilisateur. Les applications compatibles ajoutent seulement les composants manquants a ce runtime. La suppression applicative ne le retire jamais. Une reinstallation verifie ou reprend aussi l'installation du runtime partage ; changer de mode prive/partage demande de supprimer d'abord l'application. La distribution web, les paquets ZIP et les mises a jour d'installation applicative ne sont pas encore disponibles sous Linux. 
 
 Le desinstallateur est .nelson-install/uninstall.sh dans le dossier de destination. Il supprime seulement les fichiers inchanges du manifeste et les dossiers vides. Les fichiers modifies, les remplacements par des liens symboliques et les nouveaux fichiers utilisateur sont conserves. Si des fichiers distribues modifies restent presents, conserver le manifeste et le desinstallateur pour un nouvel essai. Ne pas modifier manuellement les metadonnees d'installation.
 
@@ -35,7 +36,6 @@ filewrite(entry, 'function hello_install(); disp(''LINUX_INSTALLER_TUTORIAL_OK''
 result = compiler.build.standaloneApplication(entry, ...
   'OutputDir', fullfile(work, 'build'));
 ```
-
 Etape 2
 
 ```matlab
@@ -46,7 +46,6 @@ compiler.package.installer(result, 'Options', options);
 setup = fullfile(options.OutputDir, [options.InstallerName, '.install']);
 report = jsondecode(fileread(fullfile(result.Options.OutputDir, 'buildresult.json')));
 ```
-
 Etape 3
 
 ```matlab
@@ -62,7 +61,6 @@ disp(output);
 [status, output] = system(quote(fullfile(target, '.nelson-install', 'uninstall.sh')), 180);
 if status ~= 0; error(output); end
 ```
-
 Etape 4 : runtime partage separe
 
 ```matlab
@@ -86,10 +84,10 @@ asserts.istrue(isfile(fullfile(runtime, 'runtime.json')));
 if status ~= 0; error(output); end
 ```
 
+
 ## 🔗 Voir aussi
 
 [compiler.package.installer](../compiler/compiler.package.installer.md), [compiler.package.InstallerOptions](../compiler/compiler.package.InstallerOptions.md), [compiler_installer_tutorial](../compiler/compiler_installer_tutorial.md).
-
 <!--
 ## 👤 Auteur
 

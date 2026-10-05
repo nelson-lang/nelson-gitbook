@@ -20,9 +20,12 @@ Binomial negative log-likelihood
 
 ## 📄 Description
 
+
 <b>binolike</b> returns the negative log-likelihood for binomial distribution data and the asymptotic variance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 2 5 8 10];
@@ -30,13 +33,14 @@ n = 10;
 [nlogL, avar] = binolike(0.4, x, n);
 ```
 
+
 ## 🔗 See also
 
-[binofit](../../statistics/binofit.md), [binopdf](../../statistics/binopdf.md), [binocdf](../../statistics/binocdf.md), [binornd](../../statistics/binornd.md).
+[binofit](../../statistics/2_probability_distributions/binofit.md), [binopdf](../../statistics/2_probability_distributions/binopdf.md), [binocdf](../../statistics/2_probability_distributions/binocdf.md), [binornd](../../statistics/2_probability_distributions/binornd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

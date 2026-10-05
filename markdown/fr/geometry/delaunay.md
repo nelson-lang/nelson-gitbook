@@ -10,6 +10,7 @@ Triangulation de Delaunay de points 2-D ou 3-D
 
 ## 📄 Description
 
+
 <b>delaunay</b> calcule une triangulation de Delaunay a partir de vecteurs de coordonnees ou d'une matrice de points.
 
 ## 💡 Exemple
@@ -24,14 +25,15 @@ DT = delaunay(x, y);
 triplot(DT, x, y)
 ```
 
+
 ## 🔗 Voir aussi
 
 [delaunayn](../geometry/delaunayn.md), [delaunayTriangulation](../geometry/delaunayTriangulation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

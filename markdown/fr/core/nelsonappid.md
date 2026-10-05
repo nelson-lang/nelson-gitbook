@@ -8,13 +8,17 @@ Identifiant de l'application Nelson.
 
 ## 📄 Description
 
+
 Renvoie l'identifiant unique utilisé par l'application Nelson sur cette installation.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 nelsonappid()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -22,9 +26,9 @@ nelsonappid()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.14.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.14.0   | version initiale |
 
 <!--
 ## 👤 Auteur

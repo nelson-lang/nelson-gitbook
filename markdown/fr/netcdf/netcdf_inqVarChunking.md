@@ -20,7 +20,8 @@ Retourne le decoupage en blocs d'une variable netCDF.
 
 ## 📄 Description
 
-netcdf.inqVarChunking expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.inqVarChunking expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -39,14 +40,15 @@ netcdf.defVarChunking(ncid, varid, netcdf.getConstant('NC_CHUNKED'), 2);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.defVar](../netcdf/netcdf.defVar.md), [netcdf.endDef](../netcdf/netcdf.endDef.md).
+[netcdf.defVar](../netcdf/netcdf_defVar.md), [netcdf.endDef](../netcdf/netcdf_endDef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

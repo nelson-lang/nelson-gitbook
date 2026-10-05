@@ -14,9 +14,12 @@ Definit le mode d'ombrage des surfaces et patchs.
 
 ## 📄 Description
 
+
 <b>shading</b> modifie <b>FaceColor</b> et <b>EdgeColor</b> pour les surfaces et patchs des axes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -24,8 +27,8 @@ surf(peaks(20));
 shading interp;
 
 ```
-
 <img src="shading_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +36,8 @@ shading interp;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

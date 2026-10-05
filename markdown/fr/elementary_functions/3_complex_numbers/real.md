@@ -16,23 +16,27 @@ Partie réelle d'un nombre complexe.
 
 ## 📄 Description
 
+
 <b>R = real(M)</b> renvoie la partie réelle de M.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 cplx = 22+34*i;
 r = real(cplx)
 ```
 
+
 ## 🔗 Voir aussi
 
-[imag](../../elementary_functions/imag.md).
+[imag](../../elementary_functions/3_complex_numbers/imag.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

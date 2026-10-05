@@ -20,9 +20,12 @@ Oppose de la log-vraisemblance binomiale
 
 ## 📄 Description
 
+
 <b>binolike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi binomiale et l'estimation de variance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 2 5 8 10];
@@ -30,14 +33,15 @@ n = 10;
 [nlogL, avar] = binolike(0.4, x, n);
 ```
 
+
 ## 🔗 Voir aussi
 
-[binofit](../../statistics/binofit.md), [binopdf](../../statistics/binopdf.md), [binocdf](../../statistics/binocdf.md), [binornd](../../statistics/binornd.md).
+[binofit](../../statistics/2_probability_distributions/binofit.md), [binopdf](../../statistics/2_probability_distributions/binopdf.md), [binocdf](../../statistics/2_probability_distributions/binocdf.md), [binornd](../../statistics/2_probability_distributions/binornd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

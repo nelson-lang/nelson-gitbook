@@ -35,7 +35,8 @@ Horizontal bar graph.
 
 ## 📄 Description
 
-<b>barh</b> creates a horizontal bar graph. Matrix input creates grouped bars by default. Use <b>'stacked'</b> to stack columns in each group.
+
+<b>barh</b> creates a horizontal bar graph. Matrix input creates grouped bars by default. Use <b>'stacked'</b> to stack columns in each group. 
 
 For table input, select one variable for labels or positions and one or more numeric variables for values.
 
@@ -49,7 +50,6 @@ y = [3 5 2 7 4];
 barh(y);
 
 ```
-
 <img src="barh_1.svg" align="middle"/>
 Grouped horizontal bars.
 
@@ -59,7 +59,6 @@ y = [1 2; 3 4; 5 6];
 barh(y, 'grouped');
 
 ```
-
 <img src="barh_2.svg" align="middle"/>
 Stacked horizontal bars with positive and negative values.
 
@@ -69,13 +68,12 @@ y = [3 -2 5; -4 1 -3];
 barh(y, 'stacked');
 
 ```
-
 <img src="barh_3.svg" align="middle"/>
+
 
 ## 🔗 See also
 
 [bar](../../../graphics/1_plots/6_discrete_data_plots/bar.md), [bar3h](../../../graphics/1_plots/6_discrete_data_plots/bar3h.md).
-
 <!--
 ## 👤 Author
 

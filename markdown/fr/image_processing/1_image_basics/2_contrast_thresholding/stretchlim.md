@@ -18,6 +18,7 @@ Determine les limites pour etirer le contraste.
 
 ## 📄 Description
 
+
 Determine les limites pour etirer le contraste.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ J=imadjust(I,limits,[0;1]);
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Adjusted');
 ```
-
 <img src="stretchlim_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imadjust](../../../image_processing/imadjust.md), [imhist](../../../image_processing/imhist.md).
+[imadjust](../../../image_processing/1_image_basics/2_contrast_thresholding/imadjust.md), [imhist](../../../image_processing/1_image_basics/2_contrast_thresholding/imhist.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

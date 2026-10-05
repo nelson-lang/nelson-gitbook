@@ -19,9 +19,12 @@ Convert transfer function coefficients to zero-pole-gain form.
 
 ## 📄 Description
 
+
 <b>tf2zp</b> converts polynomial filter coefficients to a zero-pole-gain representation.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,13 +32,14 @@ Convert transfer function coefficients to zero-pole-gain form.
 
 ```
 
+
 ## 🔗 See also
 
-[zp2tf](../../signal_processing/zp2tf.md), [tf2sos](../../signal_processing/tf2sos.md).
+[zp2tf](../../signal_processing/4_digital_filters/zp2tf.md), [tf2sos](../../signal_processing/4_digital_filters/tf2sos.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

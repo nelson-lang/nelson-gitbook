@@ -16,9 +16,12 @@ Check for the existence of a builtin.
 
 ## 📄 Description
 
+
 <b>isbuiltin</b> checks for the existence of a builtin.
 
 ## 💡 Example
+
+
 
 ```matlab
 isbuiltin('isbuiltin')
@@ -26,13 +29,14 @@ isbuiltin('exist')
 ismacro('exist')
 ```
 
+
 ## 🔗 See also
 
 [ismacro](../functions_manager/ismacro.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

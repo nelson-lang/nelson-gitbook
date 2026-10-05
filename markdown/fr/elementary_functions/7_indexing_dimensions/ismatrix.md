@@ -16,11 +16,14 @@ détermine si l'entrée est une matrice ou non
 
 ## 📄 Description
 
-<b>TF = ismatrix(A)</b> renvoie true si A est une matrice.
+
+<b>TF = ismatrix(A)</b> renvoie true si A est une matrice. 
 
 Une matrice est un tableau bidimensionnel de taille m par n, où m et n sont des entiers positifs ou nuls.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
@@ -28,14 +31,15 @@ ismatrix(x)
 ismatrix(ones(3,1,2))
 ```
 
+
 ## 🔗 Voir aussi
 
-[isvector](../../elementary_functions/isvector.md).
+[isvector](../../elementary_functions/7_indexing_dimensions/isvector.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

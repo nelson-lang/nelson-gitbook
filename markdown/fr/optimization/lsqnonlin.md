@@ -30,17 +30,20 @@ Moindres carrés non linéaires.
 
 ## 📄 Description
 
-<b>lsqnonlin</b> résout des problèmes de moindres carrés non linéaires min sum(fun(x).^2), éventuellement soumis à des bornes et des contraintes.
 
-L'option <b>Algorithm</b> sélectionne le moteur : <b>'trust-region-reflective'</b> (défaut), <b>'levenberg-marquardt'</b> (accepte aussi les bornes) ou <b>'interior-point'</b>. Les contraintes linéaires ou non linéaires utilisent automatiquement l'algorithme <b>interior-point</b>.
+<b>lsqnonlin</b> résout des problèmes de moindres carrés non linéaires min sum(fun(x).^2), éventuellement soumis à des bornes et des contraintes. 
 
-Le défaut de <b>MaxFunctionEvaluations</b> est <b>100\*numberOfVariables</b>, <b>MaxIterations</b> vaut 400 et <b>FunctionTolerance</b> et <b>StepTolerance</b> valent 1e-6. L'option <b>Display</b> accepte 'off', 'none', 'final', 'final-detailed', 'notify', 'notify-detailed', 'iter' et 'iter-detailed'.
+L'option <b>Algorithm</b> sélectionne le moteur : <b>'trust-region-reflective'</b> (défaut), <b>'levenberg-marquardt'</b> (accepte aussi les bornes) ou <b>'interior-point'</b>. Les contraintes linéaires ou non linéaires utilisent automatiquement l'algorithme <b>interior-point</b>. 
+
+Le défaut de <b>MaxFunctionEvaluations</b> est <b>100\*numberOfVariables</b>, <b>MaxIterations</b> vaut 400 et <b>FunctionTolerance</b> et <b>StepTolerance</b> valent 1e-6. L'option <b>Display</b> accepte 'off', 'none', 'final', 'final-detailed', 'notify', 'notify-detailed', 'iter' et 'iter-detailed'. 
 
 Si <b>Jacobian</b> vaut 'on' ou si <b>SpecifyObjectiveGradient</b> vaut true, fun doit aussi retourner la jacobienne des résidus.
 
 ## Fonction(s) utilisée(s)
 
+
     optimoptions
+  
 
 ## 📚 Bibliographie
 
@@ -49,11 +52,14 @@ D. W. Marquardt, "An algorithm for least-squares estimation of nonlinear paramet
 
 ## 💡 Exemple
 
+
+
 ```matlab
 fun = @(x) [x(1) - 2; x(2) + 1];
 [x, resnorm] = lsqnonlin(fun, [0; 0])
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -61,8 +67,8 @@ fun = @(x) [x(1) - 2; x(2) + 1];
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

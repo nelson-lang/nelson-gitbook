@@ -12,11 +12,14 @@ Agglomerative hierarchical cluster tree.
 
 ## 📄 Description
 
-<b>linkage</b> builds a hierarchical cluster tree from rows of <b>X</b> or from a condensed distance vector <b>D</b>.
+
+<b>linkage</b> builds a hierarchical cluster tree from rows of <b>X</b> or from a condensed distance vector <b>D</b>. 
 
 Supported methods are single, complete, average, weighted, centroid, median, and ward.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [0 0; 1 0; 0 2; 4 4];
@@ -24,13 +27,14 @@ Z = linkage(X, 'average');
 T = cluster(Z, 'MaxClust', 2)
 ```
 
+
 ## 🔗 See also
 
-[cluster](../../statistics/cluster.md), [pdist](../../statistics/pdist.md), [squareform](../../statistics/squareform.md).
+[cluster](../../statistics/7_clustering_anomaly_detection/cluster.md), [pdist](../../statistics/7_clustering_anomaly_detection/pdist.md), [squareform](../../statistics/7_clustering_anomaly_detection/squareform.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

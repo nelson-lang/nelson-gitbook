@@ -21,25 +21,29 @@ Accède aux données d'un modèle en espace d'état.
 
 ## 📄 Description
 
-La fonction <b>ssdata(sys)</b> récupère les matrices <b>A</b>, <b>B</b>, <b>C</b>, <b>D</b> du modèle d'état (tableau LTI) représenté par <b>sys</b>.
+
+La fonction <b>ssdata(sys)</b> récupère les matrices <b>A</b>, <b>B</b>, <b>C</b>, <b>D</b> du modèle d'état (tableau LTI) représenté par <b>sys</b>. 
 
 Si <b>sys</b> est initialement sous la forme d'une fonction de transfert ou d'un modèle zéro-pôle-gain (tableau LTI), il est automatiquement converti en représentation d'état avant l'extraction des données matricielles.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sysIn = ss([1 0;0 -2], [-1;0], [2 1], 0, 3.2);
 [a, b, c, d, Ts] = ssdata(sysIn)
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf](../../control_system/tf.md), [ss](../../control_system/ss.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md), [ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

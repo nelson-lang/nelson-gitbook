@@ -1,14 +1,24 @@
 # Algèbre linéaire
 
+
+    
 Le module Algèbre Linéaire fournit des outils complets pour effectuer des calculs matriciels et vectoriels dans Nelson.
 
+    
 Il inclut des fonctions pour la factorisation, la décomposition, l'inversion et l'analyse de matrices, ainsi que des opérations sur les valeurs propres, valeurs singulières et sous-espaces.
 
+    
 Le module prend en charge des méthodes numériques avancées pour évaluer les propriétés des matrices, les nombres de condition et les transformations, permettant des solutions efficaces et précises pour un large éventail de problèmes d'algèbre linéaire.
+
+  
 
 ## Systemes lineaires
 
+
+    
 Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites vectorielles ou matricielles.
+
+  
 
 ### Functions
 
@@ -31,7 +41,11 @@ Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites
 
 ## Decompositions
 
+
+    
 Fonctions de factorisation matricielle et de rotation plane.
+
+  
 
 ### Functions
 
@@ -43,7 +57,11 @@ Fonctions de factorisation matricielle et de rotation plane.
 
 ## Valeurs propres et valeurs singulieres
 
+
+    
 Fonctions pour calculs de valeurs propres, valeurs singulieres et formes de Schur.
+
+  
 
 ### Functions
 
@@ -57,7 +75,11 @@ Fonctions pour calculs de valeurs propres, valeurs singulieres et formes de Schu
 
 ## Fonctions matricielles
 
+
+    
 Fonctions qui evaluent des fonctions elementaires sur des matrices.
+
+  
 
 ### Functions
 
@@ -72,7 +94,11 @@ Fonctions qui evaluent des fonctions elementaires sur des matrices.
 
 ## Proprietes matricielles
 
+
+    
 Fonctions pour estimations de conditionnement, controles de structure et proprietes matricielles.
+
+  
 
 ### Functions
 
@@ -87,7 +113,11 @@ Fonctions pour estimations de conditionnement, controles de structure et proprie
 
 ## Solveurs iteratifs
 
+
+    
 Solveurs iteratifs pour systemes lineaires.
+
+  
 
 ### Functions
 
@@ -103,9 +133,14 @@ Solveurs iteratifs pour systemes lineaires.
 
 ## Preconditionneurs
 
+
+    
 Fonctions de factorisation incomplete utilisees comme preconditionneurs.
+
+  
 
 ### Functions
 
 - [ichol](7_preconditioners/ichol.md) - Factorisation de Cholesky incomplete.
 - [ilu](7_preconditioners/ilu.md) - Factorisation LU incomplete.
+

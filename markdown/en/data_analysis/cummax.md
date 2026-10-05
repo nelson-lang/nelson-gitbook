@@ -18,14 +18,18 @@ Cumulative maximum of array elements.
 
 ## 📄 Description
 
+
 <b>cummax</b> returns cumulative maximum values along the selected dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [3 1 4 2];
 R = cummax(A)
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ R = cummax(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

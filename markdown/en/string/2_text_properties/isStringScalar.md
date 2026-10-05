@@ -16,9 +16,12 @@ checks if input is string array with one element.
 
 ## 📄 Description
 
+
 <b>isStringScalar</b> checks if input is string array with one element.
 
 ## 💡 Example
+
+
 
 ```matlab
 r = isStringScalar('hello')
@@ -26,13 +29,14 @@ r = isStringScalar("hello")
 r = isStringScalar(["hello", "world"])
 ```
 
+
 ## 🔗 See also
 
 [ischar](../../types/ischar.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

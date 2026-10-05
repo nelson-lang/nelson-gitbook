@@ -4,11 +4,12 @@ switch statement.
 
 ## 📝 Syntax
 
-- switch(expression), case test_expression_1, statements, case test_expression_2, statements, otherwise statements, end
+- switch(expression), case test\_expression\_1, statements, case test\_expression\_2, statements, otherwise statements, end
 
 ## 📄 Description
 
-<b>switch</b> statement is used to selective execute code based on the value of either scalar value or a string.
+
+<b>switch</b> statement is used to selective execute code based on the value of either scalar value or a string. 
 
 <b>otherwise</b> clause is optional.
 
@@ -30,6 +31,7 @@ end
 
 ```
 
+
 ```matlab
 demo_switch('hello')
 demo_switch('red')
@@ -37,13 +39,14 @@ demo_switch('?')
 
 ```
 
+
 ## 🔗 See also
 
 [for](../interpreter/for.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -19,7 +19,8 @@ Check the number of dimensions.
 
 ## 📄 Description
 
-The assertion passes when ndims(value) equals n.
+
+The assertion passes when ndims(value) equals n. 
 
 Invalid n raises an argument error immediately.
 
@@ -30,12 +31,12 @@ Two dimensions
 ```matlab
 asserts.ndims(ones(2, 3), 2);
 ```
-
 Capture a dimension failure
 
 ```matlab
 [res, msg] = asserts.ndims(ones(2, 3, 2), 2);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a dimension failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,22 +16,26 @@ Real part of an complex number.
 
 ## 📄 Description
 
+
 <b>R = real(M)</b> Return the real part of M.
 
 ## 💡 Example
+
+
 
 ```matlab
 cplx = 22+34*i;
 r = real(cplx)
 ```
 
+
 ## 🔗 See also
 
-[imag](../../elementary_functions/imag.md).
+[imag](../../elementary_functions/3_complex_numbers/imag.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -1,10 +1,10 @@
-# slicot_sg02ad
+# slicot\_sg02ad
 
 Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.
 
 ## 📝 Syntax
 
-- [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
+- [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot\_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 
 ## 📥 Input argument
 
@@ -40,6 +40,7 @@ Solution of continuous- or discrete-time algebraic Riccati equations for descrip
 
 ## 📄 Description
 
+
 To solve for X either the continuous-time algebraic Riccatiequation or the discrete-time algebraic Riccati equation
 
 ## Used function(s)
@@ -51,6 +52,8 @@ SG02AD
 http://slicot.org/objects/software/shared/doc/SG02AD.html
 
 ## 💡 Example
+
+
 
 ```matlab
 N = 2;
@@ -81,13 +84,14 @@ L = zeros(N, N);
 [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 ```
 
+
 ## 🔗 See also
 
-[slicot_sb02od](../slicot/slicot_sb02od.md), [care](../control_system/care.md), [dare](../control_system/dare.md).
+[slicot_sb02od](../slicot/slicot_sb02od.md), [care](../control_system/5_control_design_tuning/care.md), [dare](../control_system/5_control_design_tuning/dare.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

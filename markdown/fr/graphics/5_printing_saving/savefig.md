@@ -17,19 +17,20 @@ Enregistre une figure dans un fichier FIG Nelson.
 
 ## 📄 Description
 
-<b>savefig()</b> enregistre la figure courante retournee par <b>gcf()</b> dans <b>Untitled.fig</b>.
 
-<b>savefig(filename)</b> enregistre la figure courante dans <b>filename</b>.
+<b>savefig()</b> enregistre la figure courante retournee par <b>gcf()</b> dans <b>Untitled.fig</b>. 
 
-<b>savefig(fig, filename)</b> enregistre la figure indiquee, ou un tableau de figures, dans un seul fichier.
+<b>savefig(filename)</b> enregistre la figure courante dans <b>filename</b>. 
 
-<b>savefig(fig, filename, version)</b> accepte une option de version pour compatibilite syntaxique. Cette option ne change pas le format du fichier Nelson.
+<b>savefig(fig, filename)</b> enregistre la figure indiquee, ou un tableau de figures, dans un seul fichier. 
 
-Le fichier enregistre contient une charge utile de figure Nelson dans un conteneur HDF5/NH5. Il est destine a rouvrir des figures avec <b>openfig</b>, avec leur arbre d'objets graphiques et les proprietes persistantes prises en charge.
+<b>savefig(fig, filename, version)</b> accepte une option de version pour compatibilite syntaxique. Cette option ne change pas le format du fichier Nelson. 
 
-<b>Avertissement :</b> les fichiers <b>.fig</b> Nelson sont specifiques a Nelson. Ils ne sont pas compatibles avec les fichiers <b>.fig</b> qui n'ont pas ete generes par Nelson, et Nelson ne garantit pas l'ouverture de fichiers <b>.fig</b> externes.
+Le fichier enregistre contient une charge utile de figure Nelson dans un conteneur HDF5/NH5. Il est destine a rouvrir des figures avec <b>openfig</b>, avec leur arbre d'objets graphiques et les proprietes persistantes prises en charge. 
 
-<b>savefig</b> enregistre des figures completes. Pour exporter une image bitmap ou vectorielle, utilisez les fonctions d'export d'image comme <b>saveas</b> lorsqu'elles sont disponibles. Pour sauvegarder des variables de l'espace de travail, utilisez les fonctions de sauvegarde de donnees.
+<b>Avertissement :</b> les fichiers <b>.fig</b> Nelson sont specifiques a Nelson. Ils ne sont pas compatibles avec les fichiers <b>.fig</b> qui n'ont pas ete generes par Nelson, et Nelson ne garantit pas l'ouverture de fichiers <b>.fig</b> externes. 
+
+<b>savefig</b> enregistre des figures completes. Pour exporter une image bitmap ou vectorielle, utilisez les fonctions d'export d'image comme <b>saveas</b> lorsqu'elles sont disponibles. Pour sauvegarder des variables de l'espace de travail, utilisez les fonctions de sauvegarde de donnees. 
 
 Les valeurs d'execution comme les handles graphiques places dans des proprietes arbitraires et les function handles ne sont pas restaurees comme etat portable de figure.
 
@@ -50,7 +51,6 @@ assert(isgraphics(restored, 'figure'));
 close(restored);
 
 ```
-
 Enregistrer avec ajout automatique de l'extension .fig.
 
 ```matlab
@@ -63,7 +63,6 @@ assert(isfile([figfile, '.fig']));
 close(f);
 
 ```
-
 Enregistrer plusieurs figures dans un seul fichier.
 
 ```matlab
@@ -80,7 +79,6 @@ assert(isequal(numel(restored), 2));
 close(restored);
 
 ```
-
 Utiliser une option de version acceptee pour compatibilite.
 
 ```matlab
@@ -93,14 +91,15 @@ close(f);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [openfig](../../graphics/5_printing_saving/openfig.md), [gcf](../../graphics/2_graphics_objects/1_object_management/gcf.md), [saveas](../../graphics_io/saveas.md), [savenh5](../../hdf5/savenh5.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -21,9 +21,12 @@ Determine array elements between lower and upper bounds.
 
 ## 📄 Description
 
+
 <b>isbetween</b> returns true where <b>A</b> is inside the interval defined by <b>lower</b> and <b>upper</b>. The default interval is closed.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = [1 2 3 4 5];
@@ -31,11 +34,13 @@ isbetween(A, 2, 4)
 isbetween(A, 2, 4, 'open')
 ```
 
+
 ```matlab
 T = table([1; 2; 3], [4; 5; 6], 'VariableNames', {'A', 'B'});
 isbetween(T, 2, 5)
 isbetween(T, 2, 5, 'DataVariables', 'B', 'OutputFormat', 'tabular')
 ```
+
 
 ## 🔗 See also
 
@@ -43,9 +48,9 @@ isbetween(T, 2, 5, 'DataVariables', 'B', 'OutputFormat', 'tabular')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

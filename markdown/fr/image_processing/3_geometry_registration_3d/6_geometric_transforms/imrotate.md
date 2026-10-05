@@ -21,40 +21,45 @@ Fait pivoter une image d'un angle spécifié
 
 ## 📄 Description
 
-La fonction<b>imrotate</b> fait pivoter une image de l'angle spécifié autour de son centre. La rotation utilise la méthode d'interpolation spécifiée.
 
-La fonction prend en charge les images en niveaux de gris, RGB et RGBA. L'image de sortie conserve le meme type de donnees que l'image d'entree.
+La fonction<b>imrotate</b> fait pivoter une image de l'angle spécifié autour de son centre. La rotation utilise la méthode d'interpolation spécifiée. 
 
-Pour les angles multiples de 90°, la rotation est effectuée exactement sans interpolation afin de préserver la qualité. Pour les autres angles, l'interpolation est utilisée pour estimer les valeurs de pixels aux coordonnées non entières.
+La fonction prend en charge les images en niveaux de gris, RGB et RGBA. L'image de sortie conserve le meme type de donnees que l'image d'entree. 
 
-L'option de boîte englobante contrôle la taille de l'image de sortie :
+Pour les angles multiples de 90°, la rotation est effectuée exactement sans interpolation afin de préserver la qualité. Pour les autres angles, l'interpolation est utilisée pour estimer les valeurs de pixels aux coordonnées non entières. 
+
+L'option de boîte englobante contrôle la taille de l'image de sortie : 
 
 - <b>
           'loose'
-        </b> : l'image de sortie est dimensionnée pour contenir l'image tournée en entier. Cela peut donner une image plus grande que l'entrée.
+        </b> : l'image de sortie est dimensionnée pour contenir l'image tournée en entier. Cela peut donner une image plus grande que l'entrée. 
 - <b>
           'crop'
-        </b> : l'image de sortie est recadrée à la même taille que l'image d'entrée. Des parties de l'image tournée peuvent être coupées.
+        </b> : l'image de sortie est recadrée à la même taille que l'image d'entrée. Des parties de l'image tournée peuvent être coupées. 
 
-Les pixels de fond (zones non couvertes par l'image tournée) sont remplis de zéros.
+Les pixels de fond (zones non couvertes par l'image tournée) sont remplis de zéros. 
 
-Note:
+ 
 
-<b>Note de performance :</b> pour des rotations exactes de 90° (0°, 90°, 180°, 270°), la fonction utilise des algorithmes optimisés qui préservent les valeurs exactes des pixels sans interpolation.
+Note: 
 
-<b>Utilisation mémoire :</b> en utilisant 'loose' avec de grands angles de rotation, l'image de sortie peut être significativement plus grande que l'entrée. Envisagez 'crop' pour les applications avec contrainte mémoire.
+<b>Note de performance :</b> pour des rotations exactes de 90° (0°, 90°, 180°, 270°), la fonction utilise des algorithmes optimisés qui préservent les valeurs exactes des pixels sans interpolation. 
 
-<b>Conservation du type de données :</b> l'image de sortie conserve le même type de données que l'entrée. Pour les entrées en virgule flottante, les valeurs de pixels peuvent dépasser la plage habituelle [0,1] après interpolation.
+<b>Utilisation mémoire :</b> en utilisant 'loose' avec de grands angles de rotation, l'image de sortie peut être significativement plus grande que l'entrée. Envisagez 'crop' pour les applications avec contrainte mémoire. 
 
-<b>Convention d'angle :</b> les angles positifs tournent dans le sens anti-horaire, conformément à la convention mathématique standard. Cela peut être l'inverse de certaines applications de traitement d'images qui utilisent la rotation positive dans le sens horaire.
+<b>Conservation du type de données :</b> l'image de sortie conserve le même type de données que l'entrée. Pour les entrées en virgule flottante, les valeurs de pixels peuvent dépasser la plage habituelle [0,1] après interpolation. 
 
-Limitations:
+<b>Convention d'angle :</b> les angles positifs tournent dans le sens anti-horaire, conformément à la convention mathématique standard. Cela peut être l'inverse de certaines applications de traitement d'images qui utilisent la rotation positive dans le sens horaire. 
 
-L'image d'entree doit etre 2D en niveaux de gris, RGB ou RGBA. Les autres espaces colorimetriques ne sont pas directement supportes.
+ 
 
-La rotation est toujours effectuée autour du centre de l'image. Les rotations hors-centre requièrent un prétraitement supplémentaire.
+Limitations: 
 
-Pour des angles très grands (>360°), considérez l'utilisation de l'arithmétique modulo pour normaliser l'angle et améliorer les performances.
+L'image d'entree doit etre 2D en niveaux de gris, RGB ou RGBA. Les autres espaces colorimetriques ne sont pas directement supportes. 
+
+La rotation est toujours effectuée autour du centre de l'image. Les rotations hors-centre requièrent un prétraitement supplémentaire. 
+
+Pour des angles très grands (>360°), considérez l'utilisation de l'arithmétique modulo pour normaliser l'angle et améliorer les performances. 
 
 L'interpolation bicubique peut produire des artefacts de dépassement près des contours nets de l'image.
 
@@ -91,9 +96,8 @@ for i = 1:length(angles)
     fprintf('Angle %3d°: size %dx%d, non-zero pixels: %d\n', ...
             angles(i), size(J, 1), size(J, 2), sum(J(:) > 0));
 end
-
+        
 ```
-
 <img src="imrotate_1.svg" align="middle"/>
 Interactive rotation visualization (Part 2)
 
@@ -118,10 +122,10 @@ for i = 1:length(methods)
     axis equal; axis tight;
     title(sprintf('%s interpolation', methods{i}));
 end
-
+        
 ```
-
 <img src="imrotate_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -129,9 +133,9 @@ end
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.14.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.14.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -20,11 +20,12 @@ Renvoie les noms des evenements d'un objet ou d'une classe classdef.
 
 ## 📄 Description
 
-<b>events</b> renvoie les noms des evenements publics declares par une classe classdef.
 
-Les evenements caches et les evenements avec un acces d'ecoute non public sont omis de la liste retournee.
+<b>events</b> renvoie les noms des evenements publics declares par une classe classdef. 
 
-Pour les tableaux d'objets classdef, <b>events</b> renvoie les evenements de la classe des elements.
+Les evenements caches et les evenements avec un acces d'ecoute non public sont omis de la liste retournee. 
+
+Pour les tableaux d'objets classdef, <b>events</b> renvoie les evenements de la classe des elements. 
 
 Les classes handle exposent aussi l'evenement <b>ObjectBeingDestroyed</b>.
 
@@ -44,15 +45,16 @@ e = events([a, b]);
 delete([a, b])
 ```
 
+
 ## 🔗 Voir aussi
 
 [addlistener](../handle/addlistener.md), [notify](../handle/notify.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                   |
-| ------- | ------------------------------------------------ |
-| 2.0.0   | support classdef ajoute                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | support classdef ajoute |
 | 2.0.0   | support des tableaux d'objets classdef documente |
 
 <!--

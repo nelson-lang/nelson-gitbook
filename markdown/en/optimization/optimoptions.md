@@ -18,11 +18,14 @@ Create solver options.
 
 ## 📄 Description
 
+
 <b>optimoptions</b> validates option names against the selected solver and returns an object convertible to a structure for direct solvers.
 
 ## Used function(s)
 
+
     optimset
+  
 
 ## 📚 Bibliography
 
@@ -30,11 +33,14 @@ P. E. Gill, W. Murray and M. H. Wright, Practical Optimization, Academic Press, 
 
 ## 💡 Example
 
+
+
 ```matlab
 opts = optimoptions('fsolve', 'TolFun', 1e-8);
 [x, fval] = fsolve(@(x) x - 3, 0, opts)
 
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +48,7 @@ opts = optimoptions('fsolve', 'TolFun', 1e-8);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

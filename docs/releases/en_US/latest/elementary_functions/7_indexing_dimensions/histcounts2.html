@@ -88,7 +88,7 @@ N = histcounts2(..., 'Normalization', method)
 <div>
     <p>histcounts2 partitions the (X, Y) pairs into a two-dimensional grid of bins and counts how many pairs fall into each bin.</p>
     <p>N(i, j) counts the pairs for which Xedges(i) &lt;= X &lt; Xedges(i+1) and Yedges(j) &lt;= Y &lt; Yedges(j+1). The last bin of each dimension is closed on both ends.</p>
-    <p>You can supply the number of bins (a scalar, or [nx ny]) or the explicit edge vectors Xedges and Yedges. When a number of bins is requested, the edges are chosen on a 'nice' grid, the same way as <a href="../../elementary_functions/histcounts.html">histcounts</a>. Pairs with a NaN coordinate are ignored.</p>
+    <p>You can supply the number of bins (a scalar, or [nx ny]) or the explicit edge vectors Xedges and Yedges. When a number of bins is requested, the edges are chosen on a 'nice' grid, the same way as <a href="../../elementary_functions/7_indexing_dimensions/histcounts.html">histcounts</a>. Pairs with a NaN coordinate are ignored.</p>
   </div>
 </div>
 <div class="section">
@@ -115,7 +115,7 @@ N = histcounts2(x, y, [0 2 4], [0 2 4])</code></pre>
 <div class="section-title">
 <span class="syntax-icon">🔗</span>See Also</div>
 <div>
-<a class="see-also-link" href="../../elementary_functions/histcounts.html">histcounts</a><a class="see-also-link" href="../../data_analysis/discretize.html">discretize</a>
+<a class="see-also-link" href="../../elementary_functions/7_indexing_dimensions/histcounts.html">histcounts</a><a class="see-also-link" href="../../data_analysis/discretize.html">discretize</a>
 </div>
 </div>
 <div class="section">

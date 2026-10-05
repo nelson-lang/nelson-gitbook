@@ -15,14 +15,18 @@ Vérifie que le chemin d'entrée correspond à un dossier.
 
 ## 📄 Description
 
+
 <b>mustBeFolder</b> vérifie que le chemin d'entrée correspond à un dossier ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeFolder(tempdir())
 mustBeFolder('hello_nelson')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ mustBeFolder('hello_nelson')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

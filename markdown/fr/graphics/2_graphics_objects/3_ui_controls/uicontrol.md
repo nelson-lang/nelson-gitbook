@@ -23,15 +23,18 @@ Créer un composant d'interface utilisateur.
 
 ## 📄 Description
 
-<b>c = uicontrol</b> crée un bouton poussoir, qui est le contrôle d'interface utilisateur par défaut, dans la figure actuelle et retourne l'objet uicontrol associé. Si aucune figure n'est actuellement ouverte, Nelson en génère une à l'aide de la fonction figure.
 
-<b>c = uicontrol(propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur avec des propriétés définies par un ou plusieurs arguments nom-valeur. Par exemple, spécifier 'Style', 'button' créera un bouton.
+<b>c = uicontrol</b> crée un bouton poussoir, qui est le contrôle d'interface utilisateur par défaut, dans la figure actuelle et retourne l'objet uicontrol associé. Si aucune figure n'est actuellement ouverte, Nelson en génère une à l'aide de la fonction figure. 
 
-<b>c = uicontrol(parent)</b> crée le contrôle d'interface utilisateur par défaut (bouton poussoir) dans le conteneur parent spécifié, au lieu de se baser sur la figure actuelle.
+<b>c = uicontrol(propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur avec des propriétés définies par un ou plusieurs arguments nom-valeur. Par exemple, spécifier 'Style', 'button' créera un bouton. 
 
-<b>c = uicontrol(parent, propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur dans le conteneur parent spécifié, permettant de définir ses propriétés à l'aide d'un ou plusieurs arguments nom-valeur.
+<b>c = uicontrol(parent)</b> crée le contrôle d'interface utilisateur par défaut (bouton poussoir) dans le conteneur parent spécifié, au lieu de se baser sur la figure actuelle. 
 
-<b>uicontrol(c)</b> met le focus sur un contrôle d'interface utilisateur précédemment défini, le plaçant au premier plan pour l'interaction utilisateur.
+<b>c = uicontrol(parent, propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur dans le conteneur parent spécifié, permettant de définir ses propriétés à l'aide d'un ou plusieurs arguments nom-valeur. 
+
+<b>uicontrol(c)</b> met le focus sur un contrôle d'interface utilisateur précédemment défini, le plaçant au premier plan pour l'interaction utilisateur. 
+
+ 
 
 Voir [proprietes de uicontrol](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.uicontrol.properties.md) pour la liste complete des proprietes.
 
@@ -45,7 +48,6 @@ f = figure;
 b = uicontrol(f,'Style','pushbutton', 'String', 'Cliquez-moi', 'Position', [100 100 60 30], 'Callback', 'disp(''Bonjour tout le monde!'')')
 
 ```
-
 <img src="uicontrol_1.png" align="middle"/>
 Case à cocher
 
@@ -55,7 +57,6 @@ f = figure();
 h = uicontrol(Style='checkbox', String='Cliquez-moi!', Position=[100, 100, 100, 50]);
 
 ```
-
 <img src="uicontrol_2.png" align="middle"/>
 Édition
 
@@ -65,7 +66,6 @@ f = figure();
 h = uicontrol(Style='edit', String='Cliquez-moi!', Position=[100, 100, 100, 50]);
 
 ```
-
 <img src="uicontrol_3.png" align="middle"/>
 Image
 
@@ -79,7 +79,6 @@ CData = im2double(CData);  % S'assurer que l'image est de type double
 hButton = uicontrol(Style='pushbutton',  Position=[100, 100, 100, 100], CData=CData, String='Cliquez-moi!');
 
 ```
-
 <img src="uicontrol_4.png" align="middle"/>
 Démo uicontrol
 
@@ -90,7 +89,6 @@ edit uicontrol_demo
 uicontrol_demo
 
 ```
-
 <img src="uicontrol_5.png" align="middle"/>
 Démo uicontrol Interruptible
 
@@ -101,8 +99,8 @@ edit uicontrol_demo_interruptible
 uicontrol_demo_interruptible
 
 ```
-
 <img src="uicontrol_6.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -110,10 +108,10 @@ uicontrol_demo_interruptible
 
 ## 🕔 Historique
 
-| Version | 📄 Description          |
-| ------- | ----------------------- |
-| 1.7.0   | Version initiale        |
-| 1.14.0  | Propriété Units ajoutée |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.7.0   | Version initiale |
+| 1.14.0   | Propriété Units ajoutée |
 
 <!--
 ## 👤 Auteur

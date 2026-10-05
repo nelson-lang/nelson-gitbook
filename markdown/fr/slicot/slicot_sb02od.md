@@ -1,10 +1,10 @@
-# slicot_sb02od
+# slicot\_sb02od
 
 Résolution des équations de Riccati algébriques temps continu ou discret (méthode des vecteurs de Schur généralisés).
 
 ## 📝 Syntaxe
 
-- [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
+- [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot\_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
 
 ## 📥 Argument d'entrée
 
@@ -34,9 +34,10 @@ Résolution des équations de Riccati algébriques temps continu ou discret (mé
 
 ## 📄 Description
 
-Résolution des équations de Riccati algébriques temps continu ou discret (méthode des vecteurs de Schur généralisés).
 
-La routine utilise la méthode des sous-espaces déflants, basée sur le réordonnancement des valeurs propres dans une paire de matrices de Schur généralisée.
+Résolution des équations de Riccati algébriques temps continu ou discret (méthode des vecteurs de Schur généralisés). 
+
+La routine utilise la méthode des sous-espaces déflants, basée sur le réordonnancement des valeurs propres dans une paire de matrices de Schur généralisée. 
 
 Un problème propre standard est résolu dans le cas continu si G est fourni.
 
@@ -49,6 +50,8 @@ SB02OD
 http://slicot.org/objects/software/shared/doc/SB02OD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 N = 2;
@@ -74,14 +77,15 @@ L = zeros(N, M);
 [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_sg02ad](../slicot/slicot_sg02ad.md), [slicot_sb03md](../slicot/slicot_sb03md.md), [care](../control_system/care.md), [dare](../control_system/dare.md).
+[slicot_sg02ad](../slicot/slicot_sg02ad.md), [slicot_sb03md](../slicot/slicot_sb03md.md), [care](../control_system/5_control_design_tuning/care.md), [dare](../control_system/5_control_design_tuning/dare.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

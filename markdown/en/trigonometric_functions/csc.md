@@ -15,14 +15,16 @@ Cosecant of input angle in radians.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>csc</b> computes the cosecant of argument in radians for each element of <b>x</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = csc(-pi+0.01:0.01:-0.01)
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +32,7 @@ R = csc(-pi+0.01:0.01:-0.01)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

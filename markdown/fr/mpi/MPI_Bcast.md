@@ -1,23 +1,24 @@
-# MPI_Bcast
+# MPI\_Bcast
 
 Diffuse un message depuis le processus "root" vers tous les autres processus du communicateur
 
 ## 📝 Syntaxe
 
-- A = MPI_Bcast(A, Root)
-- A = MPI_Bcast(A, Root, Comm)
+- A = MPI\_Bcast(A, Root)
+- A = MPI\_Bcast(A, Root, Comm)
 
 ## 📥 Argument d'entrée
 
 - A - variable Nelson.
 - Root - entier : rang du root de diffusion.
-- Comm - objet MPI_Comm.
+- Comm - objet MPI\_Comm.
 
 ## 📤 Argument de sortie
 
 - A - tableau diffusé.
 
 ## 📄 Description
+
 
 Cette fonction est utilisée pour diffuser un tableau à tous les membres du groupe.
 
@@ -47,14 +48,15 @@ end
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Barrier](../mpi/MPI_Barrier.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

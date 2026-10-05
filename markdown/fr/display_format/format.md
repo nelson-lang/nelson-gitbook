@@ -7,14 +7,14 @@ Format d'affichage et impression des nombres.
 - fmt = format()
 - format()
 - format('default')
-- format(new_style)
+- format(new\_style)
 - format('truncateMatrices', 'on')
 - format('truncateMatrices', 'off')
 - format(fmt)
 
 ## 📥 Argument d'entrée
 
-- new_style - une chaine ou un vecteur de caracteres
+- new\_style - une chaine ou un vecteur de caracteres
 - fmt - un objet nelson.display.DisplayFormatOptions
 
 ## 📤 Argument de sortie
@@ -23,49 +23,56 @@ Format d'affichage et impression des nombres.
 
 ## 📄 Description
 
-<b>format(new_style)</b> modifie le format d'affichage et l'impression des nombres pour la session courante.
 
-<b>format('default')</b> reinitialise le format par defaut (short, loose, truncateMatrices on).
+<b>format(new\_style)</b> modifie le format d'affichage et l'impression des nombres pour la session courante. 
 
-<b>fmt = format()</b> retourne un objet <b>nelson.display.DisplayFormatOptions</b> avec les valeurs courantes de <b>NumericFormat</b>, <b>LineSpacing</b> et <b>TruncateMatrices</b>.
+<b>format('default')</b> reinitialise le format par defaut (short, loose, truncateMatrices on). 
 
-<b>format(fmt)</b> restaure le format d'affichage stocke dans un objet <b>nelson.display.DisplayFormatOptions</b>.
+<b>fmt = format()</b> retourne un objet <b>nelson.display.DisplayFormatOptions</b> avec les valeurs courantes de <b>NumericFormat</b>, <b>LineSpacing</b> et <b>TruncateMatrices</b>. 
 
-Formats numeriques pris en charge :
+<b>format(fmt)</b> restaure le format d'affichage stocke dans un objet <b>nelson.display.DisplayFormatOptions</b>. 
 
-<b>short</b>
+ 
 
-<b>long</b>
+Formats numeriques pris en charge : 
 
-<b>shortE</b>
+<b>short</b> 
 
-<b>longE</b>
+<b>long</b> 
 
-<b>shortG</b>
+<b>shortE</b> 
 
-<b>longG</b>
+<b>longE</b> 
 
-<b>shortEng</b>
+<b>shortG</b> 
 
-<b>longEng</b>
+<b>longG</b> 
 
-<b>+</b>
+<b>shortEng</b> 
 
-<b>bank</b>
+<b>longEng</b> 
 
-<b>rational</b>
+<b>+</b> 
 
-<b>hex</b>
+<b>bank</b> 
 
-Formats d'espacement de ligne pris en charge :
+<b>rational</b> 
 
-<b>loose</b>
+<b>hex</b> 
 
-<b>compact</b>
+ 
 
-Formats de troncature de matrice pris en charge :
+Formats d'espacement de ligne pris en charge : 
 
-<b>format('truncateMatrices', 'on')</b>
+<b>loose</b> 
+
+<b>compact</b> 
+
+ 
+
+Formats de troncature de matrice pris en charge : 
+
+<b>format('truncateMatrices', 'on')</b> 
 
 <b>format('truncateMatrices', 'off')</b>
 
@@ -84,15 +91,16 @@ format(current_style)
 pi
 ```
 
+
 ## 🔗 Voir aussi
 
-[nelson.display.DisplayFormatOptions](../display_format/nelson.display.DisplayFormatOptions.md), [disp](../display_format/disp.md), [display](../display_format/display.md).
+[nelson.display.DisplayFormatOptions](../display_format/DisplayFormatOptions.md), [disp](../display_format/disp.md), [display](../display_format/display.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                      |
-| ------- | ----------------------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                                    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | format retourne et accepte des objets classdef nelson.display.DisplayFormatOptions. |
 
 <!--

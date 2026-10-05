@@ -19,6 +19,7 @@ Create radio button in a button group.
 
 ## 📄 Description
 
+
 <b>rb = uiradiobutton(bg)</b> creates a radio button inside a uibuttongroup. The first button added to a group is selected. Selection is exclusive; changes are reported by the group <b>SelectionChangedFcn</b>. Properties: <b>Value</b> (logical), <b>Text</b>, <b>WordWrap</b>, fonts.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ r2 = uiradiobutton(bg, 'Text', 'Imperial', 'Position', [25 55 120 22]);
 r1.Value = true;
 drawnow();
 ```
-
 <img src="uiradiobutton_example.svg" align="middle"/>
 uiradiobutton
 
@@ -47,13 +47,14 @@ rb2.Value = true;
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

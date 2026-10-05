@@ -5,7 +5,7 @@ Appelle une fonction NELSON
 ## 📝 Syntaxe
 
 - #include "mex.h"
-- int mexCallMATLAB(int nlhs, mxArray \*plhs[], int nrhs, mxArray \*prhs[], const char \*command_name);
+- int mexCallMATLAB(int nlhs, mxArray \*plhs[], int nrhs, mxArray \*prhs[], const char \*command\_name);
 
 ## 📥 Argument d'entrée
 
@@ -13,7 +13,7 @@ Appelle une fonction NELSON
 - plhs - pointeur vers un tableau de mxArray (sortie).
 - nrhs - nombre d'arguments d'entrée souhaités.
 - prhs - pointeur vers un tableau de mxArray (entrée).
-- command_name - chaîne de caractères contenant le nom de la fonction NELSON appelée.
+- command\_name - chaîne de caractères contenant le nom de la fonction NELSON appelée.
 
 ## 📤 Argument de sortie
 
@@ -21,15 +21,19 @@ Appelle une fonction NELSON
 
 ## 📄 Description
 
-<b>mexCallMATLAB</b> appelle une fonction NELSON.
+
+<b>mexCallMATLAB</b> appelle une fonction NELSON. 
 
 Si la fonction appelée détecte une erreur, NELSON terminera le MEX et rendra le contrôle à NELSON.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_mexCallMATLAB.m'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -37,8 +41,8 @@ edit([modulepath('mex', 'tests'), '/test_mexCallMATLAB.m'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

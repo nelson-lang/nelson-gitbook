@@ -9,7 +9,7 @@ Génère l'en-tête d'un fichier PO.
 ## 📥 Argument d'entrée
 
 - domain - une chaîne : domaine du message.
-- language - une chaîne : langue, ex. 'fr_FR' ou 'fr_FR'.
+- language - une chaîne : langue, ex. 'fr\_FR' ou 'fr\_FR'.
 
 ## 📤 Argument de sortie
 
@@ -17,13 +17,17 @@ Génère l'en-tête d'un fichier PO.
 
 ## 📄 Description
 
+
 <b>ce = poheader(domain, language)</b> generates po file header.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 poheader('nelson', 'fr_FR')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ poheader('nelson', 'fr_FR')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

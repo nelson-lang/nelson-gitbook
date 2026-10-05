@@ -21,7 +21,8 @@ Trouver tous les objets timer qui correspondent a des criteres de proprietes, y 
 
 ## 📄 Description
 
-<b>timerfindall</b> retourne les objets timer qui correspondent a tous les criteres de proprietes specifies. Contrairement a <b>timerfind</b>, elle inclut les timers caches.
+
+<b>timerfindall</b> retourne les objets timer qui correspondent a tous les criteres de proprietes specifies. Contrairement a <b>timerfind</b>, elle inclut les timers caches. 
 
 Elle peut aussi retourner les objets timer dont la variable d'origine est sortie de portee, jusqu'a leur suppression.
 
@@ -37,7 +38,6 @@ visibleOnly = timerfind('Tag', 'demo-hidden')
 includingHidden = timerfindall('Tag', 'demo-hidden')
 delete(t);
 ```
-
 Utiliser une structure de criteres.
 
 ```matlab
@@ -49,14 +49,15 @@ found = timerfindall(criteria)
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [timerfind](../../time/timerfind.md), [get](../../time/timer.get.md).
+[timer](../../time/7_timers/timer.md), [timerfind](../../time/7_timers/timerfind.md), [get](../../time/7_timers/timer.get.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

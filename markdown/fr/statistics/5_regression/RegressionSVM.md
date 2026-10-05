@@ -20,14 +20,17 @@ Modele de regression par machine a vecteurs de support.
 
 ## 📄 Description
 
-RegressionSVM stocke un modele de regression a vecteurs de support, notamment les vecteurs support, les informations de noyau et les donnees de reponse.
+
+RegressionSVM stocke un modele de regression a vecteurs de support, notamment les vecteurs support, les informations de noyau et les donnees de reponse. 
 
 Creez cet objet avec fitrsvm. Utilisez predict pour estimer les reponses de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitrsvm
     predict
+  
 
 ## 💡 Exemple
 
@@ -40,14 +43,15 @@ mdl = fitrsvm(X, y, 'KernelFunction', 'linear');
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitrsvm](../../statistics/fitrsvm.md).
+[predict](../../statistics/5_regression/predict.md), [fitrsvm](../../statistics/5_regression/fitrsvm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

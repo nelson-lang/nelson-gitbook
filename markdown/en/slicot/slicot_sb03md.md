@@ -1,10 +1,10 @@
-# slicot_sb03md
+# slicot\_sb03md
 
 Solution of continuous- or discrete-time Lyapunov equations and separation estimation.
 
 ## 📝 Syntax
 
-- [U\_OUT, C\_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
+- [U\_OUT, C\_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot\_sb03md(DICO, JOB, FACT, TRANA, A, U\_IN, C\_IN)
 
 ## 📥 Input argument
 
@@ -13,13 +13,13 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 - FACT - Specifies whether or not the real Schur factorization of the matrix A is supplied on entry. = 'F': On entry, A and Q contain the factors from the real Schur factorization of the matrix A; = 'N': The Schur factorization of A will be computed and the factors will be stored in A and Q.
 - TRANA - Specifies the form of op(A) to be used: = 'N': op(A) = A (No transpose); = 'T': op(A) = A\*\*T (Transpose); = 'C': op(A) = A\*\*T (Conjugate transpose = Transpose).
 - A - the leading N-by-N part of this array must contain the matrix A. If FACT = 'F', then A contains an upper quasi-triangular matrix in Schur canonical form; the elements below the upper Hessenberg part of the array A are not referenced.
-- U_IN - If FACT = 'N', zeros(N, N); If FACT = 'F', then U is an input argument and on entry the leading N-by-N part of this array must contain the orthogonal matrix U of the real Schur factorization of A.
-- C_IN - With JOB = 'X' or 'B', the leading N-by-N part of this array must contain the symmetric matrix C.
+- U\_IN - If FACT = 'N', zeros(N, N); If FACT = 'F', then U is an input argument and on entry the leading N-by-N part of this array must contain the orthogonal matrix U of the real Schur factorization of A.
+- C\_IN - With JOB = 'X' or 'B', the leading N-by-N part of this array must contain the symmetric matrix C.
 
 ## 📤 Output argument
 
-- U_OUT - if INFO = 0 or INFO = N+1, it contains the orthogonal N-by-N matrix from the real Schur factorization of A.
-- C_OUT - With JOB = 'X' or 'B', if INFO = 0 or INFO = N+1, the leading N-by-N part of C has been overwritten by the symmetric solution matrix X.
+- U\_OUT - if INFO = 0 or INFO = N+1, it contains the orthogonal N-by-N matrix from the real Schur factorization of A.
+- C\_OUT - With JOB = 'X' or 'B', if INFO = 0 or INFO = N+1, the leading N-by-N part of C has been overwritten by the symmetric solution matrix X.
 - SCALE - The scale factor, scale, set less than or equal to 1 to prevent the solution overflowing.
 - SEP - If JOB = 'S' or JOB = 'B', and INFO = 0 or INFO = N+1, SEP contains the estimated separation of the matrices op(A) and -op(A)', if DICO = 'C' or of op(A) and op(A)', if DICO = 'D'.
 - FERR - If JOB = 'B', and INFO = 0 or INFO = N+1, FERR contains an estimated forward error bound for the solution X.
@@ -29,13 +29,14 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 
 ## 📄 Description
 
-To solve for X either the real continuous-time Lyapunov equation
 
-op(A)'\*X + X\*op(A) = scale\*C
+To solve for X either the real continuous-time Lyapunov equation 
 
-or the real discrete-time Lyapunov equation
+op(A)'\*X + X\*op(A) = scale\*C 
 
-op(A)'\*X\*op(A) - X = scale\*C
+or the real discrete-time Lyapunov equation 
+
+op(A)'\*X\*op(A) - X = scale\*C 
 
 and/or estimate an associated condition number, called separation, where op(A) = A or A' (A\*\*T) and C is symmetric (C = C').
 
@@ -48,6 +49,8 @@ SB03MD
 http://slicot.org/objects/software/shared/doc/SB03MD.html
 
 ## 💡 Example
+
+
 
 ```matlab
 N = 3;
@@ -69,13 +72,14 @@ C_IN = [25.0  24.0  15.0;
 [U_OUT, C_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
 ```
 
+
 ## 🔗 See also
 
-[slicot_sb03od](../slicot/slicot_sb03od.md), [slicot_sb02od](../slicot/slicot_sb02od.md), [slicot_sb04md](../slicot/slicot_sb04md.md), [lyap](../control_system/lyap.md), [dlyap](../control_system/dlyap.md).
+[slicot_sb03od](../slicot/slicot_sb03od.md), [slicot_sb02od](../slicot/slicot_sb02od.md), [slicot_sb04md](../slicot/slicot_sb04md.md), [lyap](../control_system/6_matrix_computations/lyap.md), [dlyap](../control_system/6_matrix_computations/dlyap.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

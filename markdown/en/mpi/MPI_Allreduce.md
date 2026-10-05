@@ -1,16 +1,16 @@
-# MPI_Allreduce
+# MPI\_Allreduce
 
 Combines values from all processes and distributes the result back to all processes.
 
 ## 📝 Syntax
 
-- r = MPI_Allreduce(Value, Operation, Comm)
+- r = MPI\_Allreduce(Value, Operation, Comm)
 
 ## 📥 Input argument
 
 - Value - value to send: numeric or logical array (sparse not supported).
-- Operation - a string: MPI_SUM, MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND, MPI_LOR, MPI_BAND, MPI_BOR, MPI_LXOR or MPI_BXOR
-- Comm - a MPI_Comm object.
+- Operation - a string: MPI\_SUM, MPI\_MAX, MPI\_MIN, MPI\_SUM, MPI\_PROD, MPI\_LAND, MPI\_LOR, MPI\_BAND, MPI\_BOR, MPI\_LXOR or MPI\_BXOR
+- Comm - a MPI\_Comm object.
 
 ## 📤 Output argument
 
@@ -18,11 +18,12 @@ Combines values from all processes and distributes the result back to all proces
 
 ## 📄 Description
 
-Combines values from all processes and distributes the result back to all processes.
 
-Nelson does not check to ensure that the reduction operation are all the same size across the various processes in the group.
+Combines values from all processes and distributes the result back to all processes. 
 
-Please be sure that each process passes the same sized array to the MPI_Allreduce operation.
+Nelson does not check to ensure that the reduction operation are all the same size across the various processes in the group. 
+
+Please be sure that each process passes the same sized array to the MPI\_Allreduce operation.
 
 ## 💡 Example
 
@@ -49,13 +50,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [MPI_Reduce](../mpi/MPI_Reduce.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

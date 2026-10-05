@@ -1,24 +1,25 @@
-# slicot_mb04gd
+# slicot\_mb04gd
 
 Factorisation RQ avec pivotement de lignes d'une matrice.
 
 ## 📝 Syntaxe
 
-- [A\_OUT, JPVT\_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
+- [A\_OUT, JPVT\_OUT, TAU, INFO] = slicot\_mb04gd(A\_IN, JPVT\_IN)
 
 ## 📥 Argument d'entrée
 
-- A_IN - La matrice m-by-n A.
-- JPVT_IN - Si JPVT(i) != 0, la i-ème ligne de A est permutée vers le bas de P\*A (ligne finale) ; si JPVT(i) = 0, la i-ème ligne est une ligne libre.
+- A\_IN - La matrice m-by-n A.
+- JPVT\_IN - Si JPVT(i) != 0, la i-ème ligne de A est permutée vers le bas de P\*A (ligne finale) ; si JPVT(i) = 0, la i-ème ligne est une ligne libre.
 
 ## 📤 Argument de sortie
 
-- A_OUT - Si m ≤ n, le triangle supérieur de la sous-matrice A(1:m,n-m+1:n) contient la matrice triangulaire supérieure M-by-M R ; si m ≥ n, les éléments sur et au-dessus de la (m-n)-ième sous-diagonale contiennent la matrice trapézoïdale supérieure m-by-n R ; les éléments restants, avec le tableau TAU, représentent la matrice orthogonale Q comme produit de min(m,n) réflecteurs élémentaires.
-- JPVT_OUT - Si JPVT(i) = k, alors la i-ème ligne de P\*A était la k-ème ligne de A.
+- A\_OUT - Si m ≤ n, le triangle supérieur de la sous-matrice A(1:m,n-m+1:n) contient la matrice triangulaire supérieure M-by-M R ; si m ≥ n, les éléments sur et au-dessus de la (m-n)-ième sous-diagonale contiennent la matrice trapézoïdale supérieure m-by-n R ; les éléments restants, avec le tableau TAU, représentent la matrice orthogonale Q comme produit de min(m,n) réflecteurs élémentaires.
+- JPVT\_OUT - Si JPVT(i) = k, alors la i-ème ligne de P\*A était la k-ème ligne de A.
 - TAU - Les facteurs scalaires des réflecteurs élémentaires.
 - INFO - = 0 : sortie réussie.
 
 ## 📄 Description
+
 
 Calculer une factorisation RQ avec pivotement de lignes d'une matrice réelle m-by-n A : P \* A = R \* Q.
 
@@ -31,6 +32,8 @@ MB04GD
 http://slicot.org/objects/software/shared/doc/MB04GD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = 6;
@@ -45,14 +48,15 @@ JPVT_IN = zeros(1, M);
 [A_OUT, JPVT_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
 ```
 
+
 ## 🔗 Voir aussi
 
 [slicot_mb03od](../slicot/slicot_mb03od.md), [slicot_mb03pd](../slicot/slicot_mb03pd.md), [slicot_mb02md](../slicot/slicot_mb02md.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

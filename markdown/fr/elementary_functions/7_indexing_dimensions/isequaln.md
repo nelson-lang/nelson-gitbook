@@ -18,15 +18,17 @@ Renvoie true si tous les arguments x1, x2, ... , xn sont égaux (mêmes dimensio
 - res - une valeur logique
 
 ## 📄 Description
-
 <b>isequaln</b> renvoie true si x1 et x2 ont la même taille et les mêmes valeurs ; sinon, elle renvoie false.<b>isequaln</b> compare les parties réelle et imaginaire des tableaux numériques. Les valeurs NaN (Not a Number) sont considérées comme <b>égales</b> aux autres éléments.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = eye(3, 3);
 res = isequaln(A, A)
 ```
+
 
 ```matlab
 A = eye(3, 3);
@@ -35,22 +37,25 @@ res = isequaln(A, B)
 res = isequalto(A, B)
 ```
 
+
 ```matlab
 res = isequaln('nel', 'son')
 ```
+
 
 ```matlab
 res = isequaln(NaN, NaN)
 ```
 
+
 ## 🔗 Voir aussi
 
-[isequal](../../elementary_functions/isequal.md), [isequalto](../../elementary_functions/isequalto.md).
+[isequal](../../elementary_functions/7_indexing_dimensions/isequal.md), [isequalto](../../elementary_functions/7_indexing_dimensions/isequalto.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

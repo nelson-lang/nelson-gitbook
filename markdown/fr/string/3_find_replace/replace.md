@@ -18,25 +18,29 @@ Remplace des sous-chaînes dans une chaîne.
 
 ## 📄 Description
 
-<b>replace</b> remplace des sous-chaînes dans une chaîne.
+
+<b>replace</b> remplace des sous-chaînes dans une chaîne. 
 
 <b>replace</b> et <b>strrep</b> remplacent des chaînes, mais<b>replace</b> est recommandé.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 r = replace('This is a string.', 'is', 'is not')
 r = replace({'cccc','ccbbcca'},{'cc','bb'},{'cc'})
 ```
 
+
 ## 🔗 Voir aussi
 
-[strrep](../../string/strrep.md).
+[strrep](../../string/3_find_replace/strrep.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

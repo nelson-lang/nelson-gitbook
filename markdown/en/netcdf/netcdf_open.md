@@ -18,7 +18,8 @@ Open a netCDF data source.
 
 ## 📄 Description
 
-netcdf.open is a low-level wrapper around the corresponding netCDF C library operation.
+
+netcdf.open is a low-level wrapper around the corresponding netCDF C library operation. 
 
 Low-level functions use numeric identifiers returned by netcdf.create, netcdf.open, and related calls.
 
@@ -34,13 +35,14 @@ ncid = netcdf.open(filename, netcdf.getConstant('NC_NOWRITE'));
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.create](../netcdf/netcdf.create.md), [netcdf.open](../netcdf/netcdf.open.md), [netcdf.close](../netcdf/netcdf.close.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.create](../netcdf/netcdf_create.md), [netcdf.open](../netcdf/netcdf_open.md), [netcdf.close](../netcdf/netcdf_close.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

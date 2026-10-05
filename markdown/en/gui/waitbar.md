@@ -19,6 +19,7 @@ Creates or updates a wait bar figure.
 
 ## 📄 Description
 
+
 waitbar creates a progress figure or updates an existing one. The handle supports set, get, close, delete, and waitfor.
 
 ## 💡 Examples
@@ -30,7 +31,6 @@ h = waitbar(0.25, 'Starting');
 pause(0.1);
 h = waitbar(0.75, h, 'Almost done');
 ```
-
 <img src="waitbar_example.svg" align="middle"/>
 Update a wait bar inside a loop.
 
@@ -42,14 +42,15 @@ end
 close(h)
 ```
 
+
 ## 🔗 See also
 
 [dialog](../gui/dialog.md), [uiprogressdlg](../gui/uiprogressdlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

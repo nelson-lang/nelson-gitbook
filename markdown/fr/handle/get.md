@@ -4,12 +4,12 @@ Récupère la valeur d'une propriété d'un objet handle.
 
 ## 📝 Syntaxe
 
-- R = get(h, property_name)
+- R = get(h, property\_name)
 
 ## 📥 Argument d'entrée
 
 - h - un objet handle.
-- property_name - une chaîne : nom de la propriété.
+- property\_name - une chaîne : nom de la propriété.
 
 ## 📤 Argument de sortie
 
@@ -17,7 +17,9 @@ Récupère la valeur d'une propriété d'un objet handle.
 
 ## 📄 Description
 
-<b>R = get(h, property_name)</b> renvoie la valeur de la propriété demandée.
+
+<b>R = get(h, property\_name)</b> renvoie la valeur de la propriété demandée.
+
 
 ## 🔗 Voir aussi
 
@@ -25,8 +27,8 @@ Récupère la valeur d'une propriété d'un objet handle.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

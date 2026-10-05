@@ -1,12 +1,19 @@
 # Handle
 
+
+    
 The Handle module provides tools for creating and manipulating handle objects in Nelson.
 
+    
 Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.
 
+    
 This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.
 
+    
 It also includes classdef reflection, event, listener, dynamic property, weak reference, and typed invalid handle helpers.
+
+  
 
 ## Functions
 
@@ -43,3 +50,4 @@ It also includes classdef reflection, event, listener, dynamic property, weak re
 - [remove](remove.md) - Remove entries from an object.
 - [set](set.md) - Set a property value of an handle object.
 - [superclasses](superclasses.md) - Names of the superclasses of a class.
+

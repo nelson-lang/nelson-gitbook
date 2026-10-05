@@ -19,7 +19,8 @@ Verifie une valeur avec un predicat personnalise.
 
 ## 📄 Description
 
-L'assertion reussit lorsque predicate(value) retourne le scalaire logique true.
+
+L'assertion reussit lorsque predicate(value) retourne le scalaire logique true. 
 
 Les predicats invalides ou les resultats non logiques levent immediatement une erreur d'argument.
 
@@ -30,18 +31,17 @@ Named predicate
 ```matlab
 asserts.satisfies(1, 'isnumeric');
 ```
-
 Function handle predicate
 
 ```matlab
 asserts.satisfies(1, @(x) isscalar(x));
 ```
-
 Capture predicate failure
 
 ```matlab
 [res, msg] = asserts.satisfies([1 2], @(x) isscalar(x));
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -49,8 +49,8 @@ Capture predicate failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

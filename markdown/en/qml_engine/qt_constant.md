@@ -1,15 +1,15 @@
-# qt_constant
+# qt\_constant
 
 Returns Qt constant value.
 
 ## 📝 Syntax
 
-- v = qt_constant(constant_name)
-- ce = qt_constant()
+- v = qt\_constant(constant\_name)
+- ce = qt\_constant()
 
 ## 📥 Input argument
 
-- constant_name - a string: desired Qt constant.
+- constant\_name - a string: desired Qt constant.
 
 ## 📤 Output argument
 
@@ -18,14 +18,18 @@ Returns Qt constant value.
 
 ## 📄 Description
 
-<b>v = qt_version(constant_name)</b> returns Qt constant value.
+
+<b>v = qt\_version(constant\_name)</b> returns Qt constant value.
 
 ## 💡 Example
+
+
 
 ```matlab
 qt_constant('Qt.WindowModal')
 c = qt_constant()
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ c = qt_constant()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

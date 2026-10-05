@@ -18,18 +18,22 @@ Creer un trace comete 3-D.
 
 ## 📄 Description
 
-<b>comet3</b> anime une tete avec marqueur, un corps mobile et une trace complete pour un trace comete trois dimensions.
 
-<b>comet3(z)</b> trace <b>z</b> en fonction des indices sur les axes x et y.
+<b>comet3</b> anime une tete avec marqueur, un corps mobile et une trace complete pour un trace comete trois dimensions. 
+
+<b>comet3(z)</b> trace <b>z</b> en fonction des indices sur les axes x et y. 
 
 L'etat final des axes contient deux objets animatedline et un objet line pour le marqueur de tete.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 t = -pi:pi/120:pi;
 comet3(sin(5 * t), cos(3 * t), t, 0.2)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -37,8 +41,8 @@ comet3(sin(5 * t), cos(3 * t), t, 0.2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

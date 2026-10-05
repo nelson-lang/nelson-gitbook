@@ -1,6 +1,7 @@
 # colon
 
 Opérateur deux-points ':'
+  
 
 ## 📝 Syntaxe
 
@@ -19,17 +20,21 @@ Opérateur deux-points ':'
 
 ## 📄 Description
 
-<b>colon</b> crée des vecteurs. C'est une fonction utile pour les boucles, l'extraction et l'insertion.
 
-<b>colon(base, limit)</b> est équivalent à <b>base:limit</b>
+<b>colon</b> crée des vecteurs. C'est une fonction utile pour les boucles, l'extraction et l'insertion. 
+
+<b>colon(base, limit)</b> est équivalent à <b>base:limit</b> 
 
 <b>colon(base, increment, limit)</b> est équivalent à <b>base:increment:limit</b>
 
 ## 💡 Exemples
 
+
+
 ```matlab
 1:0.5:4
 ```
+
 
 ```matlab
 A = 1:6
@@ -43,14 +48,15 @@ C(:) = rand(3, 4)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

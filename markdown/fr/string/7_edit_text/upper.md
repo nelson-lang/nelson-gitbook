@@ -16,7 +16,8 @@ Convertir du texte en majuscules.
 
 ## 📄 Description
 
-upper convertit les tableaux de caracteres, les chaines et les tableaux de chaines en majuscules.
+
+upper convertit les tableaux de caracteres, les chaines et les tableaux de chaines en majuscules. 
 
 La forme du texte d'entree est conservee dans le resultat.
 
@@ -28,14 +29,15 @@ Convertir une chaine en majuscules.
 txt = upper("NelSon")
 ```
 
+
 ## 🔗 Voir aussi
 
-[lower](../../string/lower.md), [toupper](../../string/toupper.md).
+[lower](../../string/7_edit_text/lower.md), [toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

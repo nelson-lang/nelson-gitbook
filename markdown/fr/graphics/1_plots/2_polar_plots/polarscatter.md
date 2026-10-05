@@ -13,7 +13,8 @@ Affiche des points en coordonnees polaires.
 
 ## 📄 Description
 
-<b>polarscatter</b> affiche des marqueurs a partir de valeurs d'angle et de rayon.
+
+<b>polarscatter</b> affiche des marqueurs a partir de valeurs d'angle et de rayon. 
 
 L'entree table selectionne les donnees d'angle et de rayon depuis les variables de <b>tbl</b>. Plusieurs variables selectionnees creent plusieurs objets <b>scatter</b>.
 
@@ -26,7 +27,6 @@ theta = linspace(0, 2*pi, 24);
 rho = 1 + sin(3 * theta);
 polarscatter(theta, rho, 49, 'r', 'filled');
 ```
-
 <img src="polarscatter_1.svg" align="middle"/>
 Creer un nuage polaire depuis une table.
 
@@ -34,8 +34,8 @@ Creer un nuage polaire depuis une table.
 t = table([0; pi/4; pi/2], [1; 2; 3], 'VariableNames', {'theta', 'rho'});
 h = polarscatter(t, 'theta', 'rho', 'filled');
 ```
-
 <img src="polarscatter_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

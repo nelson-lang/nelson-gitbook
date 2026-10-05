@@ -25,28 +25,32 @@ Minimal realization or pole-zero cancellation.
 
 ## 📄 Description
 
-<b>minreal</b> function reduces state-space models by eliminating uncontrollable or unobservable states.
 
-In transfer functions or zero-pole-gain models, it cancels pole-zero pairs. The resulting model maintains the same response characteristics as the original model but with minimal order.
+<b>minreal</b> function reduces state-space models by eliminating uncontrollable or unobservable states. 
 
-When using <b>sysOut = minreal(sysIn, tol)</b>, you can customize the tolerance for state elimination or pole-zero cancellation.
+In transfer functions or zero-pole-gain models, it cancels pole-zero pairs. The resulting model maintains the same response characteristics as the original model but with minimal order. 
+
+When using <b>sysOut = minreal(sysIn, tol)</b>, you can customize the tolerance for state elimination or pole-zero cancellation. 
 
 The default tolerance is set to sqrt(eps), and increasing this value prompts more aggressive cancellations, potentially further simplifying the model.
 
 ## 💡 Example
+
+
 
 ```matlab
 sysIn = ss([1 0;0 -2], [-1;0], [2 1], 0, 3.2);
 sysOut = minreal(sysIn)
 ```
 
+
 ## 🔗 See also
 
-[ss](../../control_system/ss.md), [tf](../../control_system/tf.md), [balreal](../../control_system/balreal.md).
+[ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md), [balreal](../../control_system/1_dynamic_system_models/balreal.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -17,7 +17,8 @@ Definir les valeurs des proprietes de timer.
 
 ## 📄 Description
 
-<b>set</b> modifie les proprietes de timer accessibles en ecriture. Ces proprietes incluent <b>BusyMode</b>, <b>ErrorFcn</b>, <b>ExecutionMode</b>, <b>Name</b>, <b>ObjectVisibility</b>, <b>Period</b>, <b>StartDelay</b>, <b>StartFcn</b>, <b>StopFcn</b>, <b>Tag</b>, <b>TasksToExecute</b>, <b>TimerFcn</b> et <b>UserData</b>.
+
+<b>set</b> modifie les proprietes de timer accessibles en ecriture. Ces proprietes incluent <b>BusyMode</b>, <b>ErrorFcn</b>, <b>ExecutionMode</b>, <b>Name</b>, <b>ObjectVisibility</b>, <b>Period</b>, <b>StartDelay</b>, <b>StartFcn</b>, <b>StopFcn</b>, <b>Tag</b>, <b>TasksToExecute</b>, <b>TimerFcn</b> et <b>UserData</b>. 
 
 Ne modifiez pas les proprietes de planification comme <b>BusyMode</b>, <b>ExecutionMode</b>, <b>Period</b> ou <b>StartDelay</b> pendant qu'un timer est en cours d'execution.
 
@@ -36,7 +37,6 @@ start(t);
 wait(t);
 delete(t);
 ```
-
 Definir plusieurs proprietes depuis une structure.
 
 ```matlab
@@ -49,14 +49,15 @@ get(t, 'Tag')
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [get](../../time/timer.get.md).
+[timer](../../time/7_timers/timer.md), [get](../../time/7_timers/timer.get.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

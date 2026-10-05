@@ -24,9 +24,12 @@ Estimation de coherence quadratique.
 
 ## 📄 Description
 
+
 <b>mscohere</b> estime la correlation lineaire normalisee dans le domaine frequentiel.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Estimation de coherence quadratique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[cpsd](../../signal_processing/cpsd.md), [tfestimate](../../signal_processing/tfestimate.md).
+[cpsd](../../signal_processing/3_transforms_correlation_modeling/cpsd.md), [tfestimate](../../signal_processing/3_transforms_correlation_modeling/tfestimate.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

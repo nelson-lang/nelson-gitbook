@@ -22,6 +22,7 @@ Create a 2-D spatial reference structure.
 
 ## 📄 Description
 
+
 Create a 2-D spatial reference structure with image size, world limits, intrinsic limits, world extents and pixel extents. The structure can be used as the OutputView value for imwarp or as the source reference in imwarp.
 
 ## 💡 Examples
@@ -35,7 +36,6 @@ J=imwarp(I,affine2d([1 0 0;0 1 0;12 8 1]),'nearest','OutputView',R);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Referenced');
 ```
-
 <img src="imref2d_1.png" align="middle"/>
 Create a reference from pixel extents
 
@@ -45,13 +45,14 @@ R.XWorldLimits
 R.YWorldLimits
 ```
 
+
 ## 🔗 See also
 
-[imref3d](../../../image_processing/imref3d.md), [imwarp](../../../image_processing/imwarp.md).
+[imref3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref3d.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

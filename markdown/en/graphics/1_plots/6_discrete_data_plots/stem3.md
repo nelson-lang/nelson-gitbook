@@ -25,7 +25,8 @@ Display 3-D stem plot.
 
 ## 📄 Description
 
-<b>stem3</b> displays vertical stems from z = 0 to the values in <b>Z</b>, with markers at the stem tips.
+
+<b>stem3</b> displays vertical stems from z = 0 to the values in <b>Z</b>, with markers at the stem tips. 
 
 The returned object is a <b>stem</b> graphics object. See [nelson.graphics.stem.properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stem.properties.md) for supported properties.
 
@@ -37,7 +38,6 @@ Display a 3-D stem plot from a matrix.
 Z = peaks(8);
 stem3(Z);
 ```
-
 <img src="stem3_1.svg" align="middle"/>
 Specify coordinates and fill markers.
 
@@ -45,8 +45,8 @@ Specify coordinates and fill markers.
 t = 0:0.2:2*pi;
 stem3(cos(t), sin(t), t, 'r--', 'filled');
 ```
-
 <img src="stem3_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 

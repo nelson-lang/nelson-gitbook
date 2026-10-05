@@ -1,37 +1,38 @@
-# slicot_ab01od
+# slicot\_ab01od
 
 Forme en escalier pour systèmes multi-entrées utilisant des transformations orthogonales d'état et d'entrée.
 
 ## 📝 Syntaxe
 
-- [A\_OUT, B\_OUT, U\_OUT, V, NCONT\_OUT, INDCON\_OUT, KSTAIR\_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
+- [A\_OUT, B\_OUT, U\_OUT, V, NCONT\_OUT, INDCON\_OUT, KSTAIR\_OUT, INFO] = slicot\_ab01od(STAGES, JOBU, JOBV, A\_IN, B\_IN, U\_IN, NCONT\_IN, INDCON\_IN, KSTAIR\_IN, TOL)
 
 ## 📥 Argument d'entrée
 
 - STAGES - Spécifie l'étape de réduction : 'F' : effectuer uniquement l'étape avant ; 'B' : effectuer uniquement l'étape arrière ; 'A' : effectuer les deux étapes.
 - JOBU - Indique si l'utilisateur souhaite accumuler dans une matrice U les transformations d'espace d'état : 'N' : ne pas former U ; 'I' : U est initialisée en interne à la matrice identité.
 - JOBV - Indique si l'utilisateur souhaite accumuler dans une matrice V les transformations de l'espace d'entrée : 'N' : ne pas former V ; 'I' : V est initialisée à la matrice identité et la matrice de transformation orthogonale V est retournée.
-- A_IN - La partie principale N-by-N de ce tableau doit contenir la matrice de transition d'état A à transformer.
-- B_IN - La partie principale N-by-M de ce tableau doit contenir la matrice d'entrée B à transformer.
-- U_IN - Si STAGES ≠ 'B' ou JOBU = 'N', U n'a pas besoin d'être fournie à l'entrée. Si STAGES = 'B' et JOBU = 'I', alors à l'entrée, la partie principale N-by-N de ce tableau doit contenir la matrice de transformation U qui a réduit la paire à la forme canonique orthogonale.
-- NCONT_IN - L'ordre de la représentation d'espace d'état controllable. NCONT_IN est en entrée uniquement si STAGES = 'B'.
-- INDCON_IN - Le nombre de marches dans la forme en escalier (aussi l'indice de contrôlabilité de la partie contrôlable de la représentation du système).
+- A\_IN - La partie principale N-by-N de ce tableau doit contenir la matrice de transition d'état A à transformer.
+- B\_IN - La partie principale N-by-M de ce tableau doit contenir la matrice d'entrée B à transformer.
+- U\_IN - Si STAGES ≠ 'B' ou JOBU = 'N', U n'a pas besoin d'être fournie à l'entrée. Si STAGES = 'B' et JOBU = 'I', alors à l'entrée, la partie principale N-by-N de ce tableau doit contenir la matrice de transformation U qui a réduit la paire à la forme canonique orthogonale.
+- NCONT\_IN - L'ordre de la représentation d'espace d'état controllable. NCONT\_IN est en entrée uniquement si STAGES = 'B'.
+- INDCON\_IN - Le nombre de marches dans la forme en escalier (aussi l'indice de contrôlabilité de la partie contrôlable de la représentation du système).
 - TOL - La tolérance utilisée pour la détermination du rang lors de la transformation (A, B).
 
 ## 📤 Argument de sortie
 
-- A_OUT - À la sortie, la partie principale N-by-N de ce tableau contient la matrice de transition d'état transformée U' \* A \* U. La partie principale NCONT-by-NCONT contient la matrice d'état Acont en forme de Hessenberg par blocs, donnée par U' \* A \* U, d'une réalisation contrôlable du système original. Les éléments sous la première sous-diagonale par blocs sont mis à zéro. Si STAGES ≠ 'F', les blocs sous-diagonaux de A sont triangulés par factorisation RQ et les éléments annulés sont explicitement mis à zéro.
-- B_OUT - À la sortie, si STAGES = 'F', la partie principale N-by-M de ce tableau contient la matrice d'entrée transformée U' \* B, avec tous les éléments sauf le premier bloc mis à zéro. Si STAGES ≠ 'F', la partie principale N-by-M contient la matrice transformée U' \* B \* V, avec tous les éléments sauf le premier bloc mis à zéro et le premier bloc en forme triangulaire supérieure.
-- U_OUT - Si JOBU = 'I', la partie principale N-by-N de ce tableau contient la matrice de transformation U qui a effectué la réduction spécifiée. Si JOBU = 'N', le tableau U n'est pas référencé et peut être fourni comme tableau factice.
+- A\_OUT - À la sortie, la partie principale N-by-N de ce tableau contient la matrice de transition d'état transformée U' \* A \* U. La partie principale NCONT-by-NCONT contient la matrice d'état Acont en forme de Hessenberg par blocs, donnée par U' \* A \* U, d'une réalisation contrôlable du système original. Les éléments sous la première sous-diagonale par blocs sont mis à zéro. Si STAGES ≠ 'F', les blocs sous-diagonaux de A sont triangulés par factorisation RQ et les éléments annulés sont explicitement mis à zéro.
+- B\_OUT - À la sortie, si STAGES = 'F', la partie principale N-by-M de ce tableau contient la matrice d'entrée transformée U' \* B, avec tous les éléments sauf le premier bloc mis à zéro. Si STAGES ≠ 'F', la partie principale N-by-M contient la matrice transformée U' \* B \* V, avec tous les éléments sauf le premier bloc mis à zéro et le premier bloc en forme triangulaire supérieure.
+- U\_OUT - Si JOBU = 'I', la partie principale N-by-N de ce tableau contient la matrice de transformation U qui a effectué la réduction spécifiée. Si JOBU = 'N', le tableau U n'est pas référencé et peut être fourni comme tableau factice.
 - V - Si JOBV = 'I', la partie principale M-by-M de ce tableau contient la matrice de transformation V.
-- NCONT_OUT - NCONT_OUT est en entrée uniquement si STAGES = 'B'.
-- INDCON_OUT - INDCON est en entrée uniquement si STAGES = 'B'.
-- KSTAIR_OUT - KSTAIR est en entrée si STAGES = 'B', et en sortie sinon.
+- NCONT\_OUT - NCONT\_OUT est en entrée uniquement si STAGES = 'B'.
+- INDCON\_OUT - INDCON est en entrée uniquement si STAGES = 'B'.
+- KSTAIR\_OUT - KSTAIR est en entrée si STAGES = 'B', et en sortie sinon.
 - INFO - 0 : sortie réussie ; si INFO = -i, le i-ème argument avait une valeur illégale.
 
 ## 📄 Description
 
-Réduire les matrices A et B en utilisant (et en accumulant éventuellement) les transformations d'espace d'état et d'entrée U et V respectivement, telles que la paire de matrices
+
+Réduire les matrices A et B en utilisant (et en accumulant éventuellement) les transformations d'espace d'état et d'entrée U et V respectivement, telles que la paire de matrices 
 
 Ac = U' \* A \* U, Bc = U' \* B \* V
 
@@ -44,6 +45,8 @@ AB01OD
 http://slicot.org/objects/software/shared/doc/AB01OD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 N = 5;
@@ -75,14 +78,15 @@ KSTAIR_IN = zeros(1,N);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_sb01bd](../slicot/slicot_sb01bd.md), [slicot_tb01id](../slicot/slicot_tb01id.md), [ctrb](../control_system/ctrb.md), [ctrbf](../control_system/ctrbf.md).
+[slicot_sb01bd](../slicot/slicot_sb01bd.md), [slicot_tb01id](../slicot/slicot_tb01id.md), [ctrb](../control_system/6_matrix_computations/ctrb.md), [ctrbf](../control_system/6_matrix_computations/ctrbf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

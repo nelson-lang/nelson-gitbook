@@ -12,7 +12,8 @@ Wait for timer objects to stop.
 
 ## 📄 Description
 
-<b>wait</b> blocks until each timer in <b>t</b> stops. While it is waiting, Nelson continues processing timer callbacks so scheduled callbacks can complete.
+
+<b>wait</b> blocks until each timer in <b>t</b> stops. While it is waiting, Nelson continues processing timer callbacks so scheduled callbacks can complete. 
 
 Use <b>wait</b> in scripts and tests when later commands depend on timer callbacks having completed.
 
@@ -32,13 +33,14 @@ get(t, 'TasksExecuted')
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [start](../../time/start.md), [stop](../../time/stop.md).
+[timer](../../time/7_timers/timer.md), [start](../../time/7_timers/start.md), [stop](../../time/7_timers/stop.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

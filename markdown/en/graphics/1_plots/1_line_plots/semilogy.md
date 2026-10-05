@@ -27,11 +27,14 @@ Semilog plot (y-axis has log scale).
 
 ## 📄 Description
 
-<b>semilogy(X, Y)</b> plots data using a base 10 logarithmic scale for the y-axis and a normal (linear) scale for the x-axis.
+
+<b>semilogy(X, Y)</b> plots data using a base 10 logarithmic scale for the y-axis and a normal (linear) scale for the x-axis. 
 
 <b>semilogy</b> has the exact same syntax as the <b>plot</b> command.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -41,8 +44,8 @@ y2 = x.^3;
 semilogy(x,y1,'--',x,y2)
 legend('x^2','x^3','Location','northwest')
 ```
-
 <img src="semilogy_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -55,8 +58,8 @@ y = [ 0.1    1     10
 semilogy(y)
 grid on
 ```
-
 <img src="semilogy_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -64,7 +67,7 @@ grid on
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

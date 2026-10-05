@@ -20,9 +20,12 @@ Ordre minimal pour un filtre elliptique.
 
 ## 📄 Description
 
+
 <b>ellipord</b> estime un ordre et une coupure pour la conception elliptique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ Ordre minimal pour un filtre elliptique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[ellip](../../signal_processing/ellip.md), [buttord](../../signal_processing/buttord.md).
+[ellip](../../signal_processing/4_digital_filters/ellip.md), [buttord](../../signal_processing/4_digital_filters/buttord.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -11,6 +11,7 @@ Display angle data as a polar histogram.
 
 ## 📄 Description
 
+
 <b>polarhistogram</b> bins angle data and displays the bin counts as polar sectors.
 
 ## 💡 Example
@@ -21,8 +22,8 @@ Create a polar histogram.
 theta = 2*pi*rand(200, 1);
 polarhistogram(theta, 16);
 ```
-
 <img src="polarhistogram_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

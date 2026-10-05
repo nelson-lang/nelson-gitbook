@@ -1,4 +1,4 @@
-# nflow_workspace
+# nflow\_workspace
 
 Using the nflow editor workspace.
 
@@ -8,41 +8,43 @@ Using the nflow editor workspace.
 
 ## 📄 Description
 
-The workspace keeps the diagram in the center, with the block library on the left and the contextual inspector on the right. The lower panel contains separate <b>Console</b> and <b>Diagnostics</b> views. Panel visibility and widths are restored when the editor is reopened.
 
-<b>Finding and inserting blocks</b>
+The workspace keeps the diagram in the center, with the block library on the left and the contextual inspector on the right. The lower panel contains separate <b>Console</b> and <b>Diagnostics</b> views. Panel visibility and widths are restored when the editor is reopened. 
 
-Use the always-visible Library search field to filter block names and categories. The search ignores case and accents. Click a result to insert and select it, drag a result onto the diagram, or double-click an empty diagram area to open Quick insert. The Quick insert button exposes the same command without requiring a shortcut.
+<b>Finding and inserting blocks</b> 
 
-<b>Managing libraries</b>
+Use the always-visible Library search field to filter block names and categories. The search ignores case and accents. Click a result to insert and select it, drag a result onto the diagram, or double-click an empty diagram area to open Quick insert. The Quick insert button exposes the same command without requiring a shortcut. 
 
-Open <b>Manage libraries</b> from the Library header to configure ordered search folders and external libraries. The first folder containing a given library identifier has priority. Integrated libraries remain enabled. External libraries can be enabled or disabled, except while blocks from the library are used by the current diagram. Unavailable folders remain listed until they are located again or removed.
+<b>Managing libraries</b> 
 
-<b>Editing properties</b>
+Open <b>Manage libraries</b> from the Library header to configure ordered search folders and external libraries. The first folder containing a given library identifier has priority. Integrated libraries remain enabled. External libraries can be enabled or disabled, except while blocks from the library are used by the current diagram. Unavailable folders remain listed until they are located again or removed. 
 
-Select a block to open the <b>Block</b> inspector. Its parameters stay visible while the diagram is edited. The Capabilities section reports direct or model-dependent C and Rust code-generation support. An OpenModelica requirement is shown only for blocks that need it. Use the <b>Model</b> tab for simulation settings, variables, diagram metadata, routing, and read-only mode.
+<b>Editing properties</b> 
 
-The Model information section shows the model version, creator and creation date, plus the user and date of the last successful save. Description, license and read-only mode are stored with the diagram. Older diagrams without last-save metadata display those values as unavailable.
+Select a block to open the <b>Block</b> inspector. Its parameters stay visible while the diagram is edited. The Capabilities section reports direct or model-dependent C and Rust code-generation support. An OpenModelica requirement is shown only for blocks that need it. Use the <b>Model</b> tab for simulation settings, variables, diagram metadata, routing, and read-only mode. 
 
-In <b>Settings</b>, the Modelica section reports whether OpenModelica was detected and is ready for FMU export. When available, it displays the detected version and executable path; otherwise, it explains why detection or export is unavailable.
+The Model information section shows the model version, creator and creation date, plus the user and date of the last successful save. Description, license and read-only mode are stored with the diagram. Older diagrams without last-save metadata display those values as unavailable. 
 
-<b>Running a simulation</b>
+In <b>Settings</b>, the Modelica section reports whether OpenModelica was detected and is ready for FMU export. When available, it displays the detected version and executable path; otherwise, it explains why detection or export is unavailable. 
 
-The <b>Simulation</b> menu and the compact toolbar above the diagram expose Run or Resume, Pause, Stop, Reset, and Simulation Settings. The toolbar can be hidden or restored from <b>View > Simulation Toolbar</b>; this choice is restored when the editor is reopened. Stop keeps the results already calculated. Reset stops the simulation when necessary, returns time to zero, and clears the displayed results.
+<b>Running a simulation</b> 
 
-<b>Using diagnostics</b>
+The <b>Simulation</b> menu and the compact toolbar above the diagram expose Run or Resume, Pause, Stop, Reset, and Simulation Settings. The toolbar can be hidden or restored from <b>View > Simulation Toolbar</b>; this choice is restored when the editor is reopened. Stop keeps the results already calculated. Reset stops the simulation when necessary, returns time to zero, and clears the displayed results. 
 
-Errors and warnings appear in the Diagnostics tab and in the status-bar counters. Select a diagnostic that references a block to center and select that block in the diagram.
+<b>Using diagnostics</b> 
 
-<b>Responsive layout</b>
+Errors and warnings appear in the Diagnostics tab and in the status-bar counters. Select a diagnostic that references a block to center and select that block in the diagram. 
 
-On wide windows, the library and inspector can remain open together. On narrower windows the inspector opens when needed, and the workspace limits simultaneous side panels so that the diagram remains usable.
+<b>Responsive layout</b> 
 
-<b>Restored preferences</b>
+On wide windows, the library and inspector can remain open together. On narrower windows the inspector opens when needed, and the workspace limits simultaneous side panels so that the diagram remains usable. 
 
-NFlow restores the window geometry, visible panels, panel dimensions and tabs, open library and inspector sections, scroll positions, diagnostic filters, code-generation options, recent file-dialog directories, and new-diagram defaults. Zoom and pan are restored when the same saved diagram is opened again. NFlow does not automatically reopen the last diagram.
+<b>Restored preferences</b> 
+
+NFlow restores the window geometry, visible panels, panel dimensions and tabs, open library and inspector sections, scroll positions, diagnostic filters, code-generation options, recent file-dialog directories, and new-diagram defaults. Zoom and pan are restored when the same saved diagram is opened again. NFlow does not automatically reopen the last diagram. 
 
 Use <b>View > Reset UI Preferences</b> to remove these interface preferences. The current diagram is not modified, and default values apply to newly opened editor windows.
+
 
 ## 🔗 See also
 
@@ -50,7 +52,7 @@ Use <b>View > Reset UI Preferences</b> to remove these interface preferences. Th
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

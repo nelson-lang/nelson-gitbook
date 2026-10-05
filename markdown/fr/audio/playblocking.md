@@ -15,10 +15,11 @@ Lit un objet audioplayer de manière bloquante.
 - end - une valeur entière : dernier échantillon à lire.
 
 ## 📄 Description
-
 <b>playblocking</b> lit un objet audioplayer jusqu'à ce que la lecture soit terminée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -28,14 +29,15 @@ delete(playObj)
 playObj
 ```
 
+
 ## 🔗 Voir aussi
 
 [audioplayer](../audio/audioplayer.md), [play](../audio/play.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,9 +16,12 @@ Returns the offset of the current byte relative to the beginning of a file.
 
 ## 📄 Description
 
+
 <b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.
 
 ## 💡 Example
+
+
 
 ```matlab
 TXT = 'example about ftell.';
@@ -30,13 +33,14 @@ p2 = ftell(fileID)
 status = fclose(fileID);
 ```
 
+
 ## 🔗 See also
 
 [fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md), [fseek](../stream_manager/fseek.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

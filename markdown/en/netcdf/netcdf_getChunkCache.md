@@ -18,7 +18,8 @@ Return default chunk cache settings for the netCDF library.
 
 ## 📄 Description
 
-netcdf.getChunkCache reads the process default chunk cache settings used by the netCDF C library.
+
+netcdf.getChunkCache reads the process default chunk cache settings used by the netCDF C library. 
 
 These settings affect chunked netCDF-4 variable access.
 
@@ -30,13 +31,14 @@ Copy-paste example for netcdf.getChunkCache.
 [cacheSize, nelems, preemption] = netcdf.getChunkCache()
 ```
 
+
 ## 🔗 See also
 
-[netcdf.setChunkCache](../netcdf/netcdf.setChunkCache.md).
+[netcdf.setChunkCache](../netcdf/netcdf_setChunkCache.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

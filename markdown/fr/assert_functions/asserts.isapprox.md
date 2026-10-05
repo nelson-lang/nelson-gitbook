@@ -25,9 +25,10 @@ Verifie que les valeurs numeriques calculee et attendue sont approximativement e
 
 ## 📄 Description
 
-Forme methode de assert_isapprox.
 
-La comparaison relative initiale suit isapprox. Quand absTol est positive, une comparaison supplémentaire accepte les tableaux numériques de mêmes dimensions si chaque différence est au plus max(absTol, relTol \* max(abs(expected), abs(computed))). Les parties réelles et imaginaires sont contrôlées séparément. Les NaN correspondants et les infinis de même signe sont acceptés.
+Forme methode de assert\_isapprox. 
+
+La comparaison relative initiale suit isapprox. Quand absTol est positive, une comparaison supplémentaire accepte les tableaux numériques de mêmes dimensions si chaque différence est au plus max(absTol, relTol \* max(abs(expected), abs(computed))). Les parties réelles et imaginaires sont contrôlées séparément. Les NaN correspondants et les infinis de même signe sont acceptés. 
 
 La comparaison absolue accepte les entrées creuses/creuses et creuses/pleines, y compris les zéros implicites et des motifs de stockage différents. Deux tableaux creux sont comparés sur l'union de leurs coordonnées stockées, sans conversion en tableaux pleins. Un cas mixte parcourt le tableau plein et les coefficients creux stockés. Le diagnostic indique la première coordonnée différente.
 
@@ -38,18 +39,17 @@ Tolérance absolue avec un tableau creux
 ```matlab
 asserts.isapprox(sparse([0; 1e-10]), zeros(2, 1), 0, 1e-9);
 ```
-
 Absolute tolerance
 
 ```matlab
 asserts.isapprox(1, 1 + 1e-8, 0, 1e-7);
 ```
-
 Capture a diagnostic
 
 ```matlab
 [res, msg] = asserts.isapprox([1 2], [1 3], eps);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -57,8 +57,8 @@ Capture a diagnostic
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

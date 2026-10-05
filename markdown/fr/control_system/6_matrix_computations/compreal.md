@@ -21,13 +21,16 @@ Réalisation compagnon des fonctions de transfert.
 
 ## 📄 Description
 
-<b>[A, B, C, D, E] = compreal(numerator, denominator)</b> calcule une réalisation d'espace d'état représentée par les matrices A, B, C, D et E.
 
-La matrice <b>E</b> est une matrice vide (matrice identité) lorsqu'il y a au moins autant de pôles que de zéros.
+<b>[A, B, C, D, E] = compreal(numerator, denominator)</b> calcule une réalisation d'espace d'état représentée par les matrices A, B, C, D et E. 
+
+La matrice <b>E</b> est une matrice vide (matrice identité) lorsqu'il y a au moins autant de pôles que de zéros. 
 
 Cependant, si le nombre de zéros dépasse celui des pôles, la matrice <b>E</b> devient singulière.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 numerator = [0 10 10];
@@ -35,14 +38,15 @@ denominator = [1 1 10];
 [A, B, C, D, E] = compreal(numerator, denominator)
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf](../../control_system/tf.md), [ss](../../control_system/ss.md), [balance](../../linear_algebra/balance.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md), [ss](../../control_system/1_dynamic_system_models/ss.md), [balance](../../linear_algebra/3_eigen_singular_values/balance.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

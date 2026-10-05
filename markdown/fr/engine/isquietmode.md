@@ -12,13 +12,17 @@ Renvoie vrai si Nelson a été démarré avec l'option --quiet.
 
 ## 📄 Description
 
+
 <b>isquietmode</b> renvoie true si Nelson a été démarré avec l'option --quiet et false sinon.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 disp(isquietmode());
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ disp(isquietmode());
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

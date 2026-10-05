@@ -18,6 +18,7 @@ Compute a global threshold using Otsu method.
 
 ## 📄 Description
 
+
 Compute a global threshold using Otsu method. The optional second output is an effectiveness metric in the range [0, 1].
 
 ## 💡 Example
@@ -32,16 +33,16 @@ BW=I>level;
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(BW); g=linspace(0,1,64)'; colormap([g g g]); title('Thresholded');
 ```
-
 <img src="graythresh_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imbinarize](../../../image_processing/imbinarize.md), [adaptthresh](../../../image_processing/adaptthresh.md), [imhist](../../../image_processing/imhist.md).
+[imbinarize](../../../image_processing/1_image_basics/2_contrast_thresholding/imbinarize.md), [adaptthresh](../../../image_processing/1_image_basics/2_contrast_thresholding/adaptthresh.md), [imhist](../../../image_processing/1_image_basics/2_contrast_thresholding/imhist.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

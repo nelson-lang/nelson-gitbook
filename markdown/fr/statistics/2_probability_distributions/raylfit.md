@@ -22,23 +22,27 @@ Estimation de l'echelle Rayleigh
 
 ## 📄 Description
 
+
 <b>raylfit</b> estime le parametre d'echelle de la distribution Rayleigh.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [phat, pci] = raylfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[rayllike](../../statistics/rayllike.md), [raylpdf](../../statistics/raylpdf.md), [raylcdf](../../statistics/raylcdf.md).
+[rayllike](../../statistics/2_probability_distributions/rayllike.md), [raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylcdf](../../statistics/2_probability_distributions/raylcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

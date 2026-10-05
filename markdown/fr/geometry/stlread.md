@@ -9,7 +9,8 @@ Creer une triangulation depuis un fichier STL
 
 ## 📄 Description
 
-<b>stlread</b> lit les fichiers STL binaires ou texte et retourne un objet <b>triangulation</b>.
+
+<b>stlread</b> lit les fichiers STL binaires ou texte et retourne un objet <b>triangulation</b>. 
 
 <b>fileformat</b> vaut <b>'binary'</b> ou <b>'text'</b>. Pour les fichiers binaires, <b>attributes</b> est un vecteur colonne <b>uint16</b>. Pour les fichiers texte, <b>attributes</b> est une matrice <b>uint16</b> vide avec une ligne par triangle. <b>solidID</b> est un vecteur colonne identifiant le groupe solide de chaque triangle.
 
@@ -26,14 +27,15 @@ stlwrite(TR, filename);
 [TR2, fileformat, attributes, solidID] = stlread(filename)
 ```
 
+
 ## 🔗 Voir aussi
 
 [stlwrite](../geometry/stlwrite.md), [triangulation](../geometry/triangulation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

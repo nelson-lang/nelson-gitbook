@@ -18,6 +18,7 @@ Opens a color selection dialog box.
 
 ## 📄 Description
 
+
 uisetcolor returns a color selected by the user.
 
 ## 💡 Examples
@@ -31,7 +32,6 @@ uicontrol(f, 'Style', 'text', 'String', ' ', 'BackgroundColor', [0 0.45 0.74], '
 uicontrol(f, 'Style', 'pushbutton', 'String', 'OK', 'Position', [190 30 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [272 30 70 24]);
 ```
-
 <img src="uisetcolor_example.svg" align="middle"/>
 Choose a color with a custom title.
 
@@ -40,14 +40,15 @@ c = uisetcolor([1 0 0], 'Choose highlight color');
 if ~isequal(c, 0), disp(c); end
 ```
 
+
 ## 🔗 See also
 
 [uisetfont](../gui/uisetfont.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

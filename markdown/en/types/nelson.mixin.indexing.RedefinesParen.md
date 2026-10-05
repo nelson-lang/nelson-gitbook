@@ -16,21 +16,22 @@ Customize parentheses indexing of a class.
 
 ## 📄 Description
 
-Derive from <b>nelson.mixin.indexing.RedefinesParen</b> to give a class its own parentheses indexing behavior, for example to build a container that indexes its stored data rather than an array of objects.
 
-A subclass implements these protected methods:
+Derive from <b>nelson.mixin.indexing.RedefinesParen</b> to give a class its own parentheses indexing behavior, for example to build a container that indexes its stored data rather than an array of objects. 
 
-<b>parenReference(obj, indexOp)</b> - value of <b>obj(...)</b>.
+A subclass implements these protected methods: 
 
-<b>parenAssign(obj, indexOp, value)</b> - result of <b>obj(...) = value</b>.
+<b>parenReference(obj, indexOp)</b> - value of <b>obj(...)</b>. 
 
-<b>parenDelete(obj, indexOp)</b> - result of <b>obj(...) = []</b>.
+<b>parenAssign(obj, indexOp, value)</b> - result of <b>obj(...) = value</b>. 
 
-<b>parenListLength(obj, indexOp, indexContext)</b> - number of values a paren reference produces.
+<b>parenDelete(obj, indexOp)</b> - result of <b>obj(...) = []</b>. 
 
-and these public methods: <b>size(obj)</b>, <b>cat(dim, ...)</b> and the static <b>empty(...)</b>.
+<b>parenListLength(obj, indexOp, indexContext)</b> - number of values a paren reference produces. 
 
-The <b>indexOp</b> argument is a <b>nelson.indexing.IndexingOperation</b> array. For a chained expression such as <b>obj(i).field</b> the hook is called once with the whole chain: <b>numel(indexOp)</b> is the number of operations (2 here), <b>indexOp(1)</b> is the parentheses operation and <b>indexOp(2)</b> the <b>.field</b> operation. Apply the whole chain to the stored data with the dynamic form <b>obj.Data.(indexOp)</b>, or read a single level through <b>indexOp(k).Indices{...}</b> / <b>indexOp(k).Name</b>. The base class provides <b>numel</b>, <b>length</b>, <b>isempty</b>, <b>ndims</b>, <b>end</b>, <b>horzcat</b>and <b>vertcat</b> in terms of the abstract <b>size</b>/<b>cat</b>.
+and these public methods: <b>size(obj)</b>, <b>cat(dim, ...)</b> and the static <b>empty(...)</b>. 
+
+The <b>indexOp</b> argument is a <b>nelson.indexing.IndexingOperation</b> array. For a chained expression such as <b>obj(i).field</b> the hook is called once with the whole chain: <b>numel(indexOp)</b> is the number of operations (2 here), <b>indexOp(1)</b> is the parentheses operation and <b>indexOp(2)</b> the <b>.field</b> operation. Apply the whole chain to the stored data with the dynamic form <b>obj.Data.(indexOp)</b>, or read a single level through <b>indexOp(k).Indices{...}</b> / <b>indexOp(k).Name</b>. The base class provides <b>numel</b>, <b>length</b>, <b>isempty</b>, <b>ndims</b>, <b>end</b>, <b>horzcat</b>and <b>vertcat</b> in terms of the abstract <b>size</b>/<b>cat</b>. 
 
 A single-level index (<b>obj(i)</b>) calls the hook with a scalar <b>indexOp</b>(<b>numel(indexOp) == 1</b>). A few chain shapes are still evaluated one step at a time (the hook sees a single operation, the value is identical): a level of the form <b>.method(args)</b>, a chain using the <b>end</b> keyword after the first level, and chained assignment.
 
@@ -76,13 +77,14 @@ classdef Bag < nelson.mixin.indexing.RedefinesParen
 end
 ```
 
+
 ## 🔗 See also
 
 [nelson.mixin.indexing.RedefinesBrace](../types/nelson.mixin.indexing.RedefinesBrace.md), [nelson.mixin.indexing.RedefinesDot](../types/nelson.mixin.indexing.RedefinesDot.md), [nelson.indexing.IndexingOperation](../types/nelson.indexing.IndexingOperation.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

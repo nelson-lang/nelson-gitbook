@@ -20,15 +20,17 @@ Ajouter et synchroniser les variables de la table d'evenements attachee a une ti
 
 ## 📄 Description
 
-<b>syncevents</b> copie les variables de la table d'evenements attachee a <b>TT</b> dans la timetable. Chaque ligne de <b>TT</b> recoit les valeurs des evenements qui ont lieu a son instant : un evenement sans duree ni fin correspond aux lignes a son instant, un evenement avec une duree ou une fin correspond aux lignes dans [instant, fin). Une ligne correspondant a plusieurs evenements est repetee, une fois par evenement, dans l'ordre de la table d'evenements. Les autres lignes recoivent des valeurs manquantes (NaN, NaT, <missing>, <undefined>, un vecteur de caracteres vide dans une cellule, 0 ou false).
 
-Par defaut, toutes les variables de la table d'evenements sont copiees sauf la variable des durees ou des fins d'evenements. Avec <b>EventDataVariables</b>, seules les variables listees sont copiees, dans cet ordre.
+<b>syncevents</b> copie les variables de la table d'evenements attachee a <b>TT</b> dans la timetable. Chaque ligne de <b>TT</b> recoit les valeurs des evenements qui ont lieu a son instant : un evenement sans duree ni fin correspond aux lignes a son instant, un evenement avec une duree ou une fin correspond aux lignes dans [instant, fin). Une ligne correspondant a plusieurs evenements est repetee, une fois par evenement, dans l'ordre de la table d'evenements. Les autres lignes recoivent des valeurs manquantes (NaN, NaT, <missing>, <undefined>, un vecteur de caracteres vide dans une cellule, 0 ou false). 
 
-Une variable copiee dont le nom est deja une variable de <b>TT</b> est ajoutee avec le suffixe <b>\_et</b>, la variable de <b>TT</b> etant renommee avec le suffixe <b>\_tt</b>. Les unites et descriptions des variables d'evenements sont copiees. La table d'evenements reste attachee au resultat.
+Par defaut, toutes les variables de la table d'evenements sont copiees sauf la variable des durees ou des fins d'evenements. Avec <b>EventDataVariables</b>, seules les variables listees sont copiees, dans cet ordre. 
+
+Une variable copiee dont le nom est deja une variable de <b>TT</b> est ajoutee avec le suffixe <b>\_et</b>, la variable de <b>TT</b> etant renommee avec le suffixe <b>\_tt</b>. Les unites et descriptions des variables d'evenements sont copiees. La table d'evenements reste attachee au resultat. 
 
 Une erreur est levee quand aucune table d'evenements n'est attachee a <b>TT</b>. Pour attacher des evenements, affecter <b>TT.Properties.Events</b>.
 
 ## 💡 Exemples
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], 'VariableNames', {'A'});
@@ -46,14 +48,15 @@ syncevents(TT, 'EventDataVariables', "Power")
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[extractevents](../../table/extractevents.md), [eventtable](../../table/eventtable.md), [timetable](../../table/timetable.md).
+[extractevents](../../table/8_timetables_events/extractevents.md), [eventtable](../../table/8_timetables_events/eventtable.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

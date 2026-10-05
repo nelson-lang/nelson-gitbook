@@ -18,18 +18,22 @@ Negative binomial inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>nbininv</b> computes inverse cumulative probabilities for the negative binomial distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = [0.1 0.5 0.9];
 x = nbininv(y, 3, 0.4);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

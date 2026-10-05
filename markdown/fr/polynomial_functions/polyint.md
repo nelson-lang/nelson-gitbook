@@ -18,9 +18,12 @@ Intégration polynomiale.
 
 ## 📄 Description
 
+
 <b>polyint</b> renvoie l'intégrale du polynôme représenté par les coefficients de <b>p</b> en utilisant une constante d'intégration <b>k</b> (0 par défaut).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ k = 3;
 q = polyint(conv(p,v),k)
 ```
 
+
 ## 🔗 Voir aussi
 
 [polyval](../polynomial_functions/polyval.md), [polyvalm](../polynomial_functions/polyvalm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

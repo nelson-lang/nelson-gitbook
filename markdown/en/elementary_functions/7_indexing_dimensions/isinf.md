@@ -16,9 +16,12 @@ Check for Infinity entries.
 
 ## 📄 Description
 
+
 <b>isinf</b> returns a logical array which is true where elements of M are Infinity values.
 
 ## 💡 Example
+
+
 
 ```matlab
 isnan(pi)
@@ -29,13 +32,14 @@ X = sparse([1 2 NaN 3 0 Inf 0 4]);
 R = isinf(X)
 ```
 
+
 ## 🔗 See also
 
-[isnan](../../elementary_functions/isnan.md).
+[isnan](../../elementary_functions/7_indexing_dimensions/isnan.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

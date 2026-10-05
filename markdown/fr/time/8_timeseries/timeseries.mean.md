@@ -16,9 +16,11 @@ Moyenne des données d'un timeseries.
 
 ## 📄 Description
 
+
 <b>mean</b> calcule la moyenne arithmétique de la propriété Data.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3]);
@@ -26,14 +28,15 @@ mean(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

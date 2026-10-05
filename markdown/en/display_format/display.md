@@ -14,27 +14,34 @@ Show information about variable or result of expression.
 
 ## 📄 Description
 
-<b>display(V)</b> displays information about the variable <b>V</b>.
+
+<b>display(V)</b> displays information about the variable <b>V</b>. 
 
 Nelson calls<b>display</b> function whenever an object is referred to in a statement that is not terminated by a semicolon.
 
 ## 💡 Examples
 
+
+
 ```matlab
 display(33, 'Hello')
 ```
+
 
 ```matlab
 display('Hello Nelson')
 ```
 
+
 ```matlab
 display(pi)
 ```
 
+
 ```matlab
 A = eye(3, 3); disp(A)
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +49,7 @@ A = eye(3, 3); disp(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -21,9 +21,10 @@ Set the color theme of a figure.
 
 ## 📄 Description
 
-<b>theme</b> sets the color theme of a figure to <b>'light'</b> or <b>'dark'</b>.
 
-Applying a theme updates the <b>Theme</b> property of the figure and the colors of the figure and its children that use theme-managed colors.
+<b>theme</b> sets the color theme of a figure to <b>'light'</b> or <b>'dark'</b>. 
+
+Applying a theme updates the <b>Theme</b> property of the figure and the colors of the figure and its children that use theme-managed colors. 
 
 With no figure argument, the theme is applied to the current figure returned by <b>gcf</b>.
 
@@ -37,7 +38,6 @@ surf(peaks);
 theme(f, 'dark');
 
 ```
-
 Query the theme applied to the current figure.
 
 ```matlab
@@ -46,13 +46,14 @@ t = theme('light')
 
 ```
 
+
 ## 🔗 See also
 
 [figure](../../../graphics/2_graphics_objects/1_object_management/figure.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [colororder](../../../graphics/3_labels_styling/2_color_styling/colororder.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

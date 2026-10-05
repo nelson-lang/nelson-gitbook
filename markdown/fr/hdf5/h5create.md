@@ -15,44 +15,48 @@ Créé un jeu de données.
 
 ## 📄 Description
 
-<b>h5create</b> crée un jeu de données et spécifie ses dimensions, son type de données et la taille des chunks.
 
-Name-Values pair supported:
+<b>h5create</b> crée un jeu de données et spécifie ses dimensions, son type de données et la taille des chunks. 
 
-Name: Datatype (Nelson® datatypes).
+Name-Values pair supported: 
 
-Value: 'double' (par défaut), 'uint64', 'uint32', 'uint16', 'uint8', 'single', 'int64', 'int32', 'int16' ou 'int8'.
+Name: Datatype (Nelson® datatypes). 
 
-Name: ChunkSize, chunking layout
+Value: 'double' (par défaut), 'uint64', 'uint32', 'uint16', 'uint8', 'single', 'int64', 'int32', 'int16' ou 'int8'. 
 
-Value: []
+Name: ChunkSize, chunking layout 
 
-Name: Deflate, gzip compression level (0-9)
+Value: [] 
 
-Value: 0 (default)
+Name: Deflate, gzip compression level (0-9) 
 
-Name: FillValue, fill value for numeric data sets.
+Value: 0 (default) 
 
-Value: 0 (default)
+Name: FillValue, fill value for numeric data sets. 
 
-Name: Fletcher32, enable fletcher32 checksum filter.
+Value: 0 (default) 
 
-Value: logical: false by default
+Name: Fletcher32, enable fletcher32 checksum filter. 
 
-Name: Shuffle, enable shuffle filter.
+Value: logical: false by default 
 
-Value: logical: false by default
+Name: Shuffle, enable shuffle filter. 
 
-Name: TextEncoding, Character encoding.
+Value: logical: false by default 
+
+Name: TextEncoding, Character encoding. 
 
 Value: 'system' or 'UTF-8' (default).
 
 ## 💡 Exemple
 
+
+
 ```matlab
 h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
 h5dump([tempdir(), 'myfile.h5'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -60,8 +64,8 @@ h5dump([tempdir(), 'myfile.h5'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

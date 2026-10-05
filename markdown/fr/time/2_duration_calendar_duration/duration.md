@@ -20,13 +20,14 @@ Cree des durees de temps ecoule.
 
 ## 📄 Description
 
-Cree des durees de temps ecoule.
 
-Le constructeur accepte des composants numeriques et des textes separes par deux-points. Utilisez hours, minutes, seconds, milliseconds, days et years pour construire ou convertir par unite.
+Cree des durees de temps ecoule. 
 
-<b>string</b> renvoie le texte affiche de chaque element et <b><missing></b> pour une duree <b>NaN</b> ; l'affichage, <b>char</b> et <b>cellstr</b> conservent le texte NaN (<b>cellstr(d, fmt)</b> utilise le format <b>fmt</b>). <b>duration(missing)</b>, et l'affectation de <b>missing</b> dans un tableau duration, donnent <b>NaN</b>.
+Le constructeur accepte des composants numeriques et des textes separes par deux-points. Utilisez hours, minutes, seconds, milliseconds, days et years pour construire ou convertir par unite. 
 
-<b>duration.empty(m, n, ...)</b> renvoie un tableau duration vide. Une comparaison avec <b>missing</b> est fausse (<b>~=</b> est vraie), comme avec une duree <b>NaN</b>.
+<b>string</b> renvoie le texte affiche de chaque element et <b><missing></b> pour une duree <b>NaN</b> ; l'affichage, <b>char</b> et <b>cellstr</b> conservent le texte NaN (<b>cellstr(d, fmt)</b> utilise le format <b>fmt</b>). <b>duration(missing)</b>, et l'affectation de <b>missing</b> dans un tableau duration, donnent <b>NaN</b>. 
+
+<b>duration.empty(m, n, ...)</b> renvoie un tableau duration vide. Une comparaison avec <b>missing</b> est fausse (<b>~=</b> est vraie), comme avec une duree <b>NaN</b>. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -42,14 +43,15 @@ string(seconds([1 NaN]))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

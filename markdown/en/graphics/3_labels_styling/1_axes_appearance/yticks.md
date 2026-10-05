@@ -26,7 +26,8 @@ Set or get y-axis tick values.
 
 ## 📄 Description
 
-<b>yticks</b> gets or sets the tick values along the y-axis of the current axes.
+
+<b>yticks</b> gets or sets the tick values along the y-axis of the current axes. 
 
 Specifying tick values switches the y-tick mode to <b>manual</b>.
 
@@ -43,13 +44,14 @@ ticks = yticks()
 
 ```
 
+
 ## 🔗 See also
 
 [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md), [ytickangle](../../../graphics/3_labels_styling/1_axes_appearance/ytickangle.md), [ylim](../../../graphics/3_labels_styling/1_axes_appearance/ylim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

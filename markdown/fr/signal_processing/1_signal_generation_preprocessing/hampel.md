@@ -24,9 +24,12 @@ Filtrage d'aberrants par Hampel.
 
 ## 📄 Description
 
+
 <b>hampel</b> remplace les aberrants par la mediane locale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Filtrage d'aberrants par Hampel.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[medfilt1](../../signal_processing/medfilt1.md).
+[medfilt1](../../signal_processing/1_signal_generation_preprocessing/medfilt1.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -21,7 +21,8 @@ Trouver les objets timer visibles qui correspondent a des criteres de proprietes
 
 ## 📄 Description
 
-<b>timerfind</b> retourne les objets timer visibles qui correspondent a tous les criteres de proprietes specifies. Sans critere, elle retourne tous les timers visibles.
+
+<b>timerfind</b> retourne les objets timer visibles qui correspondent a tous les criteres de proprietes specifies. Sans critere, elle retourne tous les timers visibles. 
 
 Utilisez <b>timerfindall</b> pour inclure les timers dont la propriete <b>ObjectVisibility</b> vaut <b>off</b>.
 
@@ -36,7 +37,6 @@ t = timer('Name', 'visibleTimer', ...
 found = timerfind('Tag', 'demo-visible')
 delete(t);
 ```
-
 Rechercher dans un tableau de timers fourni.
 
 ```matlab
@@ -46,14 +46,15 @@ found = timerfind([t1 t2], 'Tag', 'groupB')
 delete([t1 t2]);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [timerfindall](../../time/timerfindall.md), [get](../../time/timer.get.md).
+[timer](../../time/7_timers/timer.md), [timerfindall](../../time/7_timers/timerfindall.md), [get](../../time/7_timers/timer.get.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,23 +18,27 @@ Fonction de repartition Rayleigh
 
 ## 📄 Description
 
+
 <b>raylcdf</b> evalue les probabilites cumulees Rayleigh element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = raylcdf([0 2 4], 2);
 q = raylcdf([0 2 4], 2, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[raylpdf](../../statistics/raylpdf.md), [raylinv](../../statistics/raylinv.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylinv](../../statistics/2_probability_distributions/raylinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

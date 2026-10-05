@@ -19,13 +19,17 @@ Place une variable dans l'espace de travail du moteur Nelson
 
 ## 📄 Description
 
+
 Place une variable dans l'espace de travail du moteur Nelson.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

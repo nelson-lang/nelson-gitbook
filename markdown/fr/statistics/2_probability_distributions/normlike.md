@@ -22,23 +22,27 @@ Oppose de la log-vraisemblance normale
 
 ## 📄 Description
 
+
 <b>normlike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi normale et l'estimation de covariance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-2 -1 0 1 3 5];
 [nlogL, avar] = normlike([1 2], x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[normfit](../../statistics/normfit.md), [normpdf](../../statistics/normpdf.md), [normcdf](../../statistics/normcdf.md).
+[normfit](../../statistics/2_probability_distributions/normfit.md), [normpdf](../../statistics/2_probability_distributions/normpdf.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

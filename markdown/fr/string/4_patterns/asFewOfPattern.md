@@ -8,22 +8,26 @@ Repete le motif le moins de fois possible.
 
 ## 📄 Description
 
+
 <b>asFewOfPattern</b> Repete le motif le moins de fois possible.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = asFewOfPattern("b"); extract("abbbc", "a" + pat + "c")
 ```
 
+
 ## 🔗 Voir aussi
 
-[asManyOfPattern](../../string/asManyOfPattern.md), [optionalPattern](../../string/optionalPattern.md), [pattern](../../string/pattern.md).
+[asManyOfPattern](../../string/4_patterns/asManyOfPattern.md), [optionalPattern](../../string/4_patterns/optionalPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

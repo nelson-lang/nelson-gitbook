@@ -20,9 +20,12 @@ Extraire un sous-système d'un système plus grand.
 
 ## 📄 Description
 
+
 <b>ssselect</b> extrait un sous-système à partir d'un système plus grand.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [33,2,5; 23,200,2; 9,2,45];
@@ -37,14 +40,15 @@ R = ssselect(sys1, inputs, outputs)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[ssdelete](../../control_system/ssdelete.md).
+[ssdelete](../../control_system/2_model_conversion_interconnection/ssdelete.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

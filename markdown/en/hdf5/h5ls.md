@@ -20,9 +20,12 @@ List the content of an HDF5 file.
 
 ## 📄 Description
 
+
 <b>h5dump</b> list the content of hdf5 file.
 
 ## 💡 Example
+
+
 
 ```matlab
 h5create([tempdir(), 'myfile.h5'],'/myDataset2',[10 20]);
@@ -30,13 +33,14 @@ h5ls([tempdir(), 'myfile.h5'])
 R = h5ls([tempdir(), 'myfile.h5'])
 ```
 
+
 ## 🔗 See also
 
 [h5dump](../hdf5/h5dump.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

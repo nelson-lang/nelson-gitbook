@@ -1,10 +1,16 @@
 # Spreadsheet
 
+
+    
 The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.
 
+    
 It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.
 
+    
 This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.
+
+  
 
 ## Functions
 
@@ -27,3 +33,4 @@ This enables smooth interaction with spreadsheet software (Excel, LibreOffice Ca
 - [xlsfinfo](xlsfinfo.md) - Return information about an Open XML spreadsheet file.
 - [xlsread](xlsread.md) - Read data from an Open XML spreadsheet file.
 - [xlswrite](xlswrite.md) - Write data to an Open XML spreadsheet file.
+

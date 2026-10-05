@@ -27,11 +27,14 @@ Graphique semi-logarithmique (axe x en échelle logarithmique).
 
 ## 📄 Description
 
-<b>semilogx(X, Y)</b> trace des données en utilisant une échelle logarithmique en base 10 pour l'axe x et une échelle normale (linéaire) pour l'axe y.
+
+<b>semilogx(X, Y)</b> trace des données en utilisant une échelle logarithmique en base 10 pour l'axe x et une échelle normale (linéaire) pour l'axe y. 
 
 <b>semilogx</b> utilise exactement la même syntaxe que la commande <b>plot</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -39,8 +42,8 @@ x = logspace(-1,2);
 semilogx(x, x);
 grid on
 ```
-
 <img src="semilogx_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -49,8 +52,8 @@ y = 13 + x;
 semilogx(x, y, 'x', 'MarkerFaceColor', [0 0.447 0.741])
 grid on
 ```
-
 <img src="semilogx_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -58,8 +61,8 @@ grid on
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

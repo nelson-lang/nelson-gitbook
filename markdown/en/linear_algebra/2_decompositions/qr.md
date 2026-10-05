@@ -29,9 +29,10 @@ QR matrix factorization.
 
 ## 📄 Description
 
-<b>qr</b> computes a QR factorization. For full matrices, <b>A = Q \* R</b>. With three outputs, a column permutation is returned and <b>A \* P = Q \* R</b>, or <b>A(:, P) = Q \* R</b> when <b>outputForm</b> is <b>'vector'</b>.
 
-The <b>'econ'</b> option returns economy-size factors for tall matrices. The legacy option <b>0</b> is equivalent to economy-size output with permutation vectors.
+<b>qr</b> computes a QR factorization. For full matrices, <b>A = Q \* R</b>. With three outputs, a column permutation is returned and <b>A \* P = Q \* R</b>, or <b>A(:, P) = Q \* R</b> when <b>outputForm</b> is <b>'vector'</b>. 
+
+The <b>'econ'</b> option returns economy-size factors for tall matrices. The legacy option <b>0</b> is equivalent to economy-size output with permutation vectors. 
 
 For sparse <b>S</b> and right-hand side <b>B</b>, <b>qr(S, B)</b> returns <b>C = Q' \* B</b> and <b>R</b> for least-squares solves.
 
@@ -41,12 +42,13 @@ LAPACK dgeqrf, LAPACK sgeqrf, LAPACK zgeqrf, LAPACK cgeqrf, LAPACK dgeqp3, LAPAC
 
 ## 💡 Examples
 
+
+
 ```matlab
 A = magic(5);
 [Q, R] = qr(A);
 norm(A - Q * R)
 ```
-
 Economy-size QR factorization.
 
 ```matlab
@@ -55,13 +57,14 @@ A = rand(10, 3);
 norm(A(:, p) - Q * R)
 ```
 
+
 ## 🔗 See also
 
-[lu](../../linear_algebra/lu.md), [chol](../../linear_algebra/chol.md), [svd](../../linear_algebra/svd.md).
+[lu](../../linear_algebra/2_decompositions/lu.md), [chol](../../linear_algebra/2_decompositions/chol.md), [svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

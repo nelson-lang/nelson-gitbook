@@ -19,7 +19,8 @@ Check the exact set of structure fields.
 
 ## 📄 Description
 
-The assertion passes when s has no missing field and no extra field.
+
+The assertion passes when s has no missing field and no extra field. 
 
 Use asserts.hasFields when extra fields are allowed.
 
@@ -30,12 +31,12 @@ Exact field set
 ```matlab
 S = struct('a', 1, 'b', 2); asserts.fields(S, {'b', 'a'});
 ```
-
 Capture an extra field
 
 ```matlab
 S = struct('a', 1, 'b', 2); [res, msg] = asserts.fields(S, {'a'});
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ S = struct('a', 1, 'b', 2); [res, msg] = asserts.fields(S, {'a'});
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

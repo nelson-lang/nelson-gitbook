@@ -19,13 +19,17 @@ Get selected bits.
 
 ## 📄 Description
 
+
 <b>C = bitget(A, bit)</b> returns the value of the selected bit in each element of <b>A</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = bitget(uint8([1 2 3]), 1)
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ R = bitget(uint8([1 2 3]), 1)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

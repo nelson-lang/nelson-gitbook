@@ -16,7 +16,8 @@ Generate all combinations of categorical values.
 
 ## 📄 Description
 
-<b>combinations</b> forms a table containing the Cartesian product of the supplied arrays.
+
+<b>combinations</b> forms a table containing the Cartesian product of the supplied arrays. 
 
 When an input variable has a name, that name is reused as the corresponding table variable name.
 
@@ -28,13 +29,14 @@ Combine two categorical arrays.
 A = categorical({'small','large'}); B = categorical({'red','blue'}); T = combinations(A, B)
 ```
 
+
 ## 🔗 See also
 
-[categorical](../categorical/categorical.md), [table](../table/table.md), [height](../table/height.md), [width](../table/width.md).
+[categorical](../categorical/categorical.md), [table](../table/1_create_convert_tables/table.md), [height](../table/3_summary_information/height.md), [width](../table/3_summary_information/width.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

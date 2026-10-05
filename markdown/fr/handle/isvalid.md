@@ -16,9 +16,10 @@ Retourne vrai pour les handles valides.
 
 ## 📄 Description
 
-<b>isvalid</b> renvoie vrai pour les handles valides et faux pour les handles invalides par delete.
 
-Supprimer une variable avec clear n'invalide pas les autres alias vers le meme objet handle.
+<b>isvalid</b> renvoie vrai pour les handles valides et faux pour les handles invalides par delete. 
+
+Supprimer une variable avec clear n'invalide pas les autres alias vers le meme objet handle. 
 
 Pour les tableaux de handles, le resultat a la meme taille que le tableau d'entree.
 
@@ -37,15 +38,16 @@ delete(h(2));
 isvalid(h)
 ```
 
+
 ## 🔗 Voir aussi
 
 [isa](../types/isa.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                  |
-| ------- | ----------------------------------------------- |
-| 1.0.0   | version initiale                                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | resultat pour les tableaux de handles documente |
 
 <!--

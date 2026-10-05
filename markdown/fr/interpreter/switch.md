@@ -4,11 +4,12 @@ instruction switch.
 
 ## 📝 Syntaxe
 
-- switch(expression), case test_expression_1, statements, case test_expression_2, statements, otherwise statements, end
+- switch(expression), case test\_expression\_1, statements, case test\_expression\_2, statements, otherwise statements, end
 
 ## 📄 Description
 
-L'instruction <b>switch</b> est utilisée pour exécuter sélectivement du code en fonction de la valeur d'un scalaire ou d'une chaîne.
+
+L'instruction <b>switch</b> est utilisée pour exécuter sélectivement du code en fonction de la valeur d'un scalaire ou d'une chaîne. 
 
 La clause <b>otherwise</b> est optionnelle.
 
@@ -30,6 +31,7 @@ end
 
 ```
 
+
 ```matlab
 demo_switch('hello')
 demo_switch('red')
@@ -37,14 +39,15 @@ demo_switch('?')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [for](../interpreter/for.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

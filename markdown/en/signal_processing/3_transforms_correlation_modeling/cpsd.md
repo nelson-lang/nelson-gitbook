@@ -24,9 +24,12 @@ Cross power spectral density estimate.
 
 ## 📄 Description
 
+
 <b>cpsd</b> estimates cross spectral density between two signals by averaging overlapped segments.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Cross power spectral density estimate.
 
 ```
 
+
 ## 🔗 See also
 
-[pwelch](../../signal_processing/pwelch.md), [mscohere](../../signal_processing/mscohere.md).
+[pwelch](../../signal_processing/5_spectral_analysis/pwelch.md), [mscohere](../../signal_processing/3_transforms_correlation_modeling/mscohere.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -15,20 +15,23 @@ Renvoie vrai si la variable var est un tableau d'entiers non signés 16 bits.
 - res - un logique : vrai ou faux
 
 ## 📄 Description
-
 <b>isuint16</b> renvoie 1 logique si l'argument est un tableau d'entiers non signés 16 bits et 0 logique sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
 res = isuint16(A)
 ```
 
+
 ```matlab
 B = uint16(3);
 res = isuint16(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +39,8 @@ res = isuint16(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

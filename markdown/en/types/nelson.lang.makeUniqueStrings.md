@@ -25,14 +25,18 @@ Make strings unique by adding numeric suffixes.
 
 ## 📄 Description
 
+
 <b>nelson.lang.makeUniqueStrings</b> appends suffixes such as <b>\_1</b> and <b>\_2</b> to selected elements until they are unique.
 
 ## 💡 Example
+
+
 
 ```matlab
 nelson.lang.makeUniqueStrings({'a', 'a', 'b', 'a'})
 nelson.lang.makeUniqueStrings({'a', 'b'}, {'a', 'b'})
 ```
+
 
 ## 🔗 See also
 
@@ -40,7 +44,7 @@ nelson.lang.makeUniqueStrings({'a', 'b'}, {'a', 'b'})
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

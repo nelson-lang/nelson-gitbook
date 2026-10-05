@@ -17,7 +17,8 @@ Ajoute des definitions de schema dans un fichier netCDF.
 
 ## 📄 Description
 
-ncwriteschema cree les definitions de schema decrites par une structure Nelson.
+
+ncwriteschema cree les definitions de schema decrites par une structure Nelson. 
 
 Elle sert a reproduire une organisation de metadonnees avant d'ecrire les donnees des variables.
 
@@ -35,14 +36,15 @@ copyInfo = ncinfo(target);
 copyInfo.Variables(1).Name
 ```
 
+
 ## 🔗 Voir aussi
 
 [ncinfo](../netcdf/ncinfo.md), [nccreate](../netcdf/nccreate.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

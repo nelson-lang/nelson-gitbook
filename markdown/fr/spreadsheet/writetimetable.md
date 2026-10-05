@@ -16,13 +16,14 @@
 
 ## 📄 Description
 
-<b>writetimetable</b> écrit une timetable dans un fichier texte délimité.
 
-Les temps de ligne sont écrits comme première colonne. Les variables de données sont écrites ensuite et conservent leurs noms.
+<b>writetimetable</b> écrit une timetable dans un fichier texte délimité. 
 
-Les options de fichier texte prises en charge correspondent à la surface pratique de <b>writetable</b>, dont <b>Delimiter</b>, <b>WriteVariableNames</b>, <b>WriteMode</b> et <b>QuoteStrings</b>.
+Les temps de ligne sont écrits comme première colonne. Les variables de données sont écrites ensuite et conservent leurs noms. 
 
-Les temps de ligne datetime et duration sont convertis en texte stable avant l'écriture. Le fichier texte délimité obtenu peut être relu avec <b>readtimetable</b>.
+Les options de fichier texte prises en charge correspondent à la surface pratique de <b>writetable</b>, dont <b>Delimiter</b>, <b>WriteVariableNames</b>, <b>WriteMode</b> et <b>QuoteStrings</b>. 
+
+Les temps de ligne datetime et duration sont convertis en texte stable avant l'écriture. Le fichier texte délimité obtenu peut être relu avec <b>readtimetable</b>. 
 
 <b>Fichiers JSON</b> (extension <b>.json</b> ou <b>'FileType', 'json'</b>) : la timetable est écrite comme un tableau JSON avec un objet par ligne. Les temps de ligne sont la première valeur de chaque objet, avec pour clé le premier nom de dimension. <b>PrettyPrint</b> et <b>PreserveInfAndNaN</b> se comportent comme dans <b>writetable</b>.
 
@@ -42,7 +43,6 @@ writetimetable(TT1, filename);
 TT2 = readtimetable(filename)
 
 ```
-
 Utiliser un séparateur point-virgule.
 
 ```matlab
@@ -55,7 +55,6 @@ writetimetable(TT, filename, 'Delimiter', ';');
 fileread(filename)
 
 ```
-
 Écrire des temps de ligne duration.
 
 ```matlab
@@ -68,7 +67,6 @@ writetimetable(TT, filename);
 fileread(filename)
 
 ```
-
 Ajouter des lignes à un fichier texte existant.
 
 ```matlab
@@ -85,22 +83,22 @@ writetimetable(TT2, filename, 'WriteMode', 'append', 'WriteVariableNames', false
 readtimetable(filename)
 
 ```
-
 Écrire une timetable dans un fichier JSON :
 
 ```matlab
 TT = timetable(datetime(2024, 1, 1) + days(0:2)', [12.5; 13; 11.75], 'VariableNames', {'Temperature'}); f = [tempdir, 'timetable_json.json']; writetimetable(TT, f, 'PrettyPrint', false); fileread(f) TT2 = readtimetable(f)
 ```
 
+
 ## 🔗 Voir aussi
 
-[readtimetable](../spreadsheet/readtimetable.md), [writetable](../spreadsheet/writetable.md), [timetable](../table/timetable.md).
+[readtimetable](../spreadsheet/readtimetable.md), [writetable](../spreadsheet/writetable.md), [timetable](../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                   |
-| ------- | ---------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | Fichiers JSON : FileType json, PrettyPrint et PreserveInfAndNaN. |
 
 <!--

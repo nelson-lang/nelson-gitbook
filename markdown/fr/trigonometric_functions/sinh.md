@@ -15,15 +15,17 @@ Calcule le sinus hyperbolique en radians pour chaque élément de x.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>sinh</b> calcule le sinus hyperbolique en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
 res = sinh(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ res = sinh(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -25,15 +25,16 @@ Créer une disposition en mosaïque.
 
 ## 📄 Description
 
-<b>tiledlayout</b> crée une disposition en mosaïque dans la figure courante pour afficher plusieurs tracés dans une grille.
 
-<b>tiledlayout</b> sans argument d'entrée crée une disposition de type flux.
+<b>tiledlayout</b> crée une disposition en mosaïque dans la figure courante pour afficher plusieurs tracés dans une grille. 
 
-<b>tiledlayout(m, n)</b> crée une disposition avec m lignes et n colonnes de tuiles.
+<b>tiledlayout</b> sans argument d'entrée crée une disposition de type flux. 
 
-<b>tiledlayout('flow')</b> crée une disposition qui ajuste automatiquement la grille au fur et à mesure que des axes sont ajoutés. <b>tiledlayout('vertical')</b> empile les axes de haut en bas, et <b>tiledlayout('horizontal')</b> les empile de gauche à droite.
+<b>tiledlayout(m, n)</b> crée une disposition avec m lignes et n colonnes de tuiles. 
 
-Utilisez <b>nexttile</b> pour créer des axes dans la disposition.
+<b>tiledlayout('flow')</b> crée une disposition qui ajuste automatiquement la grille au fur et à mesure que des axes sont ajoutés. <b>tiledlayout('vertical')</b> empile les axes de haut en bas, et <b>tiledlayout('horizontal')</b> les empile de gauche à droite. 
+
+Utilisez <b>nexttile</b> pour créer des axes dans la disposition. 
 
 Voir [proprietes de tiledlayout](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.tiledlayout.properties.md) pour la liste complete des proprietes.
 
@@ -50,8 +51,8 @@ plot(ax2, 1:10, sqrt(1:10));
 t.TileSpacing = 'compact';
 
 ```
-
 <img src="tiledlayout.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -59,9 +60,9 @@ t.TileSpacing = 'compact';
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

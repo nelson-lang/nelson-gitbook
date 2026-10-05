@@ -21,11 +21,14 @@ Estimation de la norme 2
 
 ## 📄 Description
 
-<b>nrm = normest(A)</b> renvoie une estimation de la norme 2 de la matrice<b>A</b>.
+
+<b>nrm = normest(A)</b> renvoie une estimation de la norme 2 de la matrice<b>A</b>. 
 
 Les matrices sparse double, sparse single, sparse double complexes et sparse single complexes sont prises en charge. Une tolerance vide utilise l'estimation initiale par somme des colonnes, et une tolerance non vide controle l'arret de l'iteration de puissance.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = [    0    2.4495         0         0         0         0         0
@@ -41,15 +44,16 @@ norm(M)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[norm](../../elementary_functions/norm.md), [svd](../../linear_algebra/svd.md).
+[norm](../../elementary_functions/2_elementary_math/norm.md), [svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                                                                  |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                                                                                                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | prise en charge des entrees sparse single et sparse single complexes, y compris les valeurs nulles stockees; validation de tolerance renforcee. |
 
 <!--

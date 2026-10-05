@@ -24,13 +24,16 @@
 
 ## 📄 Description
 
-<b>polyval</b> évalue un polynôme en plusieurs points.
 
-Lorsque <b>mu</b> est fourni, le polynôme est évalué aux points centrés et mis à l'échelle (x - mu(1)) / mu(2), en accord avec un ajustement produit par <b>polyfit</b> avec trois sorties.
+<b>polyval</b> évalue un polynôme en plusieurs points. 
+
+Lorsque <b>mu</b> est fourni, le polynôme est évalué aux points centrés et mis à l'échelle (x - mu(1)) / mu(2), en accord avec un ajustement produit par <b>polyfit</b> avec trois sorties. 
 
 Lorsque la deuxième sortie <b>delta</b> est demandée, <b>S</b> doit être fournie et sert à retourner une estimation de l'erreur type de la prédiction.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -39,14 +42,15 @@ x = [5 7 9];
 R = polyval(p, x)
 ```
 
+
 ## 🔗 Voir aussi
 
 [polyvalm](../polynomial_functions/polyvalm.md), [polyfit](../polynomial_functions/polyfit.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

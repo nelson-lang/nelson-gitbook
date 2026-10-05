@@ -23,15 +23,17 @@ Moving variance.
 
 ## 📄 Description
 
+
 <b>movvar</b> computes variances over a centered moving window.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movvar(A, 3)
 ```
-
 Moving variance and moving mean
 
 ```matlab
@@ -39,15 +41,16 @@ A = [4 8 6 -1 -2 -3 -1 3 4 5];
 [R, M] = movvar(A, 3)
 ```
 
+
 ## 🔗 See also
 
-[var](../statistics/var.md).
+[var](../statistics/1_descriptive_statistics_visualization/var.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
-| 2.0.0   | initial version                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | moving mean returned as second output. |
 
 <!--

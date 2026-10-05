@@ -9,7 +9,7 @@
     <p>Ce module aide les développeurs à créer des logiciels pouvant s'adapter dynamiquement à plusieurs langues et contextes culturels.</p>
   </chapter_description>
       <keyword name="gettext" link="gettext.html" description="Obtient le texte traduit pour la locale courante."/>
-      <keyword name="_" link="gettext.html" description="Obtient le texte traduit pour la locale courante."/>
+      <keyword name="_" link="gettext.html" description="Obtient le texte traduit pour la locale courante." alias="true"/>
       <keyword name="i18nHelpers" link="i18nHelpers.html" description="Fonctions utilitaires d'internationalisation (i18n)"/>
       <keyword name="poheader" link="poheader.html" description="Génère l'en-tête d'un fichier PO."/>
     </section>

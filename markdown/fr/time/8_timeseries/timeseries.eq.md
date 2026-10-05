@@ -18,9 +18,11 @@ Compare deux objets timeseries echantillon par echantillon.
 
 ## 📄 Description
 
+
 <b>eq</b> Compare les valeurs de donnees en preservant l'axe temporel lorsqu'une entree timeseries est utilisee.
 
 ## 💡 Exemple
+
 
 ```matlab
 left = timeseries([1; 2], [1; 2]);
@@ -30,14 +32,15 @@ out.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -280,7 +280,7 @@
     <p>Le module Types fournit des outils pour gérer et inspecter les types de données dans Nelson.</p>
     <p>Il permet aux utilisateurs d'interroger la nature des variables, de distinguer les types numériques, logiques, de chaîne et d'objet, et de travailler avec des types spécialisés tels que les tableaux creux (sparse) ou entiers.</p>
     <p>Le module prend également en charge la création d'objets et la validation des noms de variables, contribuant à garantir la sécurité des types et la cohérence des scripts et fonctions.</p>
-    <p>Pour le code C++ d'extension et d'intégration, voir <link linkend="${types}cpp_api">API C++ des valeurs</link>.</p>
+    <p>Pour le code C++ d'extension et d'intégration, voir <link linkend="${types}cpp_api" href="./types/cpp_api.html">API C++ des valeurs</link>.</p>
   </chapter_description>
       <keyword name="class" link="./types/class.html" description="Renvoie le nom de classe d'une variable ou cree un objet nomme ancien style."></keyword>
       <keyword name="cpp_api" link="./types/cpp_api.html" description="Conventions de l'API C++ des valeurs pour les types noyau de Nelson."></keyword>
@@ -1075,6 +1075,7 @@
       <keyword name="isprime" link="./special_functions/isprime.html" description="Détermine quels éléments d'un tableau sont premiers"></keyword>
       <keyword name="lcm" link="./special_functions/lcm.html" description="Plus petit commun multiple"></keyword>
       <keyword name="makima" link="./special_functions/makima.html" description="Interpolation cubique d'Akima modifiee."></keyword>
+      <keyword name="pchip" link="./special_functions/pchip.html" description="Interpolation polynomiale cubique de Hermite par morceaux (PCHIP)."></keyword>
       <keyword name="peaks" link="./special_functions/peaks.html" description="Fonction peaks"></keyword>
       <keyword name="primes" link="./special_functions/primes.html" description="Nombres premiers inférieurs ou égaux à la valeur d'entrée"></keyword>
       <keyword name="quadgk" link="./special_functions/quadgk.html" description="Evalue numeriquement une integrale par quadrature Gauss-Kronrod."></keyword>
@@ -3564,6 +3565,7 @@
       <keyword name="buildhelp" link="./help_tools/buildhelp.html" description="Génère l'aide des modules de Nelson."></keyword>
       <keyword name="buildhelpjson" link="./help_tools/buildhelpjson.html" description="Construire l'aide de Nelson au format JSON."></keyword>
       <keyword name="buildhelpmd" link="./help_tools/buildhelpmd.html" description="Génère l'aide des modules de Nelson pour GitBook."></keyword>
+      <keyword name="buildhelptypst" link="./help_tools/buildhelptypst.html" description="Génère l'aide des modules de Nelson en sources Typst."></keyword>
       <keyword name="buildhelpweb" link="./help_tools/buildhelpweb.html" description="Génère l'aide des modules de Nelson pour un site web."></keyword>
       <keyword name="deployhelp" link="./help_tools/deployhelp.html" description="Installer, désinstaller et gérer le système d'aide local de Nelson et les fichiers d'aide des modules."></keyword>
       <keyword name="doc" link="./help_tools/doc.html" description="Affiche la documentation."></keyword>
@@ -3577,9 +3579,9 @@
       <keyword name="xmldocchecker" link="./help_tools/xmldocchecker.html" description="Vérifie un fichier de documentation XML."></keyword>
       <keyword name="xmldoclinkchecker" link="./help_tools/xmldoclinkchecker.html" description="Vérifie les références croisées non résolues dans les fichiers d'aide XML de Nelson."></keyword>
       <keyword name="xmldocrenderimages" link="./help_tools/xmldocrenderimages.html" description="Génère les images d'exemple des fichiers d'aide de Nelson."></keyword>
-      <keyword name="xmldoctohelp" link="./help_tools/xmldoctohelp.html" description="Convertit des fichiers d'aide XML Nelson au format Nelson."></keyword>
       <keyword name="xmldoctohtml" link="./help_tools/xmldoctohtml.html" description="Convertit des fichiers d'aide XML Nelson en HTML."></keyword>
       <keyword name="xmldoctomd" link="./help_tools/xmldoctomd.html" description="Convertit des fichiers d'aide XML Nelson au format Markdown."></keyword>
+      <keyword name="xmldoctotypst" link="./help_tools/xmldoctotypst.html" description="Convertit des fichiers d'aide XML Nelson en sources Typst."></keyword>
     </section>
     <section name="Optimization">
       <chapter_description>
@@ -4308,7 +4310,7 @@
       <keyword name="delete_line" link="./nflow_engine/delete_line.html" description="Supprime une connexion entre deux ports de blocs."></keyword>
       <keyword name="find_system" link="./nflow_engine/find_system.html" description="Liste les blocs d'un modèle, éventuellement filtrés par type."></keyword>
       <keyword name="gcbh" link="./nflow_engine/gcbh.html" description="Renvoie le handle du bloc courant."></keyword>
-      <keyword name="getSimulinkBlockHandle" link="./nflow_engine/getSimulinkBlockHandle.html" description="Renvoie le handle d'un bloc par chemin, ou -1 si introuvable."></keyword>
+      <keyword name="getNFlowBlockHandle" link="./nflow_engine/getNFlowBlockHandle.html" description="Renvoie le handle d'un bloc par chemin, ou -1 si introuvable."></keyword>
       <keyword name="get_param" link="./nflow_engine/get_param.html" description="Interroge un paramètre de modèle ou de bloc."></keyword>
       <keyword name="getfullname" link="./nflow_engine/getfullname.html" description="Renvoie le chemin complet d'un bloc ou d'un modèle depuis son handle."></keyword>
       <keyword name="linmod" link="./nflow_engine/linmod.html" description="Linéarisation numérique d'un modèle nflow."></keyword>

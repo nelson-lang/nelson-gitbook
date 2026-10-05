@@ -19,6 +19,7 @@ Perform morphological reconstruction by dilation.
 
 ## 📄 Description
 
+
 imreconstruct repeatedly dilates marker under the constraint of mask until stability. It supports finite real 2-D grayscale and binary images.
 
 ## 💡 Example
@@ -33,16 +34,16 @@ figure; subplot(1,3,1); imagesc(mask); title('Mask');
 subplot(1,3,2); imagesc(marker); title('Marker');
 subplot(1,3,3); imagesc(J); title('Reconstructed');
 ```
-
 <img src="imreconstruct_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imhmin](../../../image_processing/imhmin.md), [imhmax](../../../image_processing/imhmax.md), [imregionalmin](../../../image_processing/imregionalmin.md), [watershed](../../../image_processing/watershed.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imhmax](../../../image_processing/2_image_analysis/7_segmentation/imhmax.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

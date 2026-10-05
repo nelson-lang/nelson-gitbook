@@ -4,11 +4,14 @@ Compiler du code C/C++ à la volée
 
 ## 📄 Description
 
-Nelson fournit un outil multiplateforme en ligne de commande, écrit en Nelson, pour compiler des modules natifs (addons).
+
+Nelson fournit un outil multiplateforme en ligne de commande, écrit en Nelson, pour compiler des modules natifs (addons). 
 
 Il réduit les différences entre plateformes de compilation et prend en charge la construction d'extensions natives.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,8 +39,8 @@ R = dlcall(f, 3) % 8 + 3
 dlclose(lib)
 
 ```
-
 <img src="build_c_cpp_on_fly.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +48,8 @@ dlclose(lib)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.2.0   | version initiale |
 
 <!--

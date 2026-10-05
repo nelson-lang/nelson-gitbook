@@ -15,14 +15,18 @@ Vérifie que le chemin d'entrée correspond à un fichier.
 
 ## 📄 Description
 
+
 <b>mustBeFile</b> vérifie que le chemin d'entrée correspond à un fichier ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeFile(tempdir())
  mustBeFile([nelsonroot(), '/etc/startup.m'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ mustBeFile(tempdir())
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

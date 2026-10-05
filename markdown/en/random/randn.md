@@ -24,13 +24,16 @@ Normally distributed random number.
 
 ## 📄 Description
 
-<b>randn</b> returns a matrix with normally distributed random elements having zero mean and variance one.
 
-By default, <b>randn</b> uses the ziggurat algorithm.
+<b>randn</b> returns a matrix with normally distributed random elements having zero mean and variance one. 
+
+By default, <b>randn</b> uses the ziggurat algorithm. 
 
 seed can be modified using <b>rng</b>.
 
 ## 💡 Examples
+
+
 
 ```matlab
 rng('default');
@@ -39,6 +42,7 @@ rng('default');
 randn
 
 ```
+
 
 ```matlab
 rng('default');
@@ -46,17 +50,20 @@ randn(6)
 
 ```
 
+
 ```matlab
 rng('default');
 randn(3, 2, 3)
 
 ```
 
+
 ```matlab
 rng('default');
 randn(3, 2, 'single')
 
 ```
+
 
 ```matlab
 rng('default');
@@ -65,16 +72,17 @@ randn(3, 2, 'like', v)
 
 ```
 
+
 ## 🔗 See also
 
 [rng](../random/rng.md), [randn](../random/randn.md), [eye](../constructors_functions/eye.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
-| 1.15.0  | Algo reworked   |
+| 1.15.0   | Algo reworked |
 
 <!--
 ## 👤 Author

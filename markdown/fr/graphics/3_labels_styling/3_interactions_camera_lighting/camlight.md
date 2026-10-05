@@ -13,9 +13,12 @@ Cree ou positionne une lumiere par rapport a la camera.
 
 ## 📄 Description
 
+
 <b>camlight</b> place une lumiere infinie depuis la camera courante ou une position angulaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -25,8 +28,8 @@ material('shiny');
 view(35, 28);
 
 ```
-
 <img src="camlight_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +37,8 @@ view(35, 28);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

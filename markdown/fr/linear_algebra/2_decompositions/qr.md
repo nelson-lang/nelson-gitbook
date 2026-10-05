@@ -29,9 +29,10 @@ Factorisation QR d'une matrice.
 
 ## 📄 Description
 
-<b>qr</b> calcule une factorisation QR. Pour les matrices pleines, <b>A = Q \* R</b>. Avec trois sorties, une permutation de colonnes est retournee et <b>A \* P = Q \* R</b>, ou <b>A(:, P) = Q \* R</b> lorsque <b>outputForm</b> vaut <b>'vector'</b>.
 
-L'option <b>'econ'</b> retourne des facteurs de taille economique pour les matrices hautes. L'option historique <b>0</b> est equivalente a une sortie economique avec vecteurs de permutation.
+<b>qr</b> calcule une factorisation QR. Pour les matrices pleines, <b>A = Q \* R</b>. Avec trois sorties, une permutation de colonnes est retournee et <b>A \* P = Q \* R</b>, ou <b>A(:, P) = Q \* R</b> lorsque <b>outputForm</b> vaut <b>'vector'</b>. 
+
+L'option <b>'econ'</b> retourne des facteurs de taille economique pour les matrices hautes. L'option historique <b>0</b> est equivalente a une sortie economique avec vecteurs de permutation. 
 
 Pour une matrice sparse <b>S</b> et un second membre <b>B</b>, <b>qr(S, B)</b> retourne <b>C = Q' \* B</b> et <b>R</b> pour les resolutions aux moindres carres.
 
@@ -41,12 +42,13 @@ LAPACK dgeqrf, LAPACK sgeqrf, LAPACK zgeqrf, LAPACK cgeqrf, LAPACK dgeqp3, LAPAC
 
 ## 💡 Exemples
 
+
+
 ```matlab
 A = magic(5);
 [Q, R] = qr(A);
 norm(A - Q * R)
 ```
-
 Factorisation QR economique.
 
 ```matlab
@@ -55,14 +57,15 @@ A = rand(10, 3);
 norm(A(:, p) - Q * R)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lu](../../linear_algebra/lu.md), [chol](../../linear_algebra/chol.md), [svd](../../linear_algebra/svd.md).
+[lu](../../linear_algebra/2_decompositions/lu.md), [chol](../../linear_algebra/2_decompositions/chol.md), [svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -15,14 +15,16 @@ Cosécante d'un angle en radians.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>csc</b> calcule la cosécante de l'argument en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = csc(-pi+0.01:0.01:-0.01)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +32,8 @@ R = csc(-pi+0.01:0.01:-0.01)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

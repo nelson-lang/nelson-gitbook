@@ -21,14 +21,17 @@ Modele d'arbre de regression.
 
 ## 📄 Description
 
-RegressionTree stocke un arbre de regression construit a partir de predicteurs et d'une reponse numerique.
+
+RegressionTree stocke un arbre de regression construit a partir de predicteurs et d'une reponse numerique. 
 
 Creez cet objet avec fitrtree. Utilisez predict pour estimer les reponses de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitrtree
     predict
+  
 
 ## 💡 Exemple
 
@@ -41,14 +44,15 @@ mdl = fitrtree(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitrtree](../../statistics/fitrtree.md).
+[predict](../../statistics/5_regression/predict.md), [fitrtree](../../statistics/5_regression/fitrtree.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

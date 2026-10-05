@@ -16,11 +16,14 @@ Vérifie si le dictionnaire a des types assignés aux clés et aux valeurs.
 
 ## 📄 Description
 
-<b>tf = isConfigured(d)</b> renvoie un logique <b>true</b> si le dictionnaire spécifié est configuré, et un logique <b>false</b> s'il ne l'est pas.
+
+<b>tf = isConfigured(d)</b> renvoie un logique <b>true</b> si le dictionnaire spécifié est configuré, et un logique <b>false</b> s'il ne l'est pas. 
 
 Un dictionnaire est considéré comme configuré lorsqu'il a des types assignés pour ses clés et ses valeurs. L'ajout d'entrées à un dictionnaire non configuré le configure.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -33,14 +36,15 @@ tf = isConfigured(d2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [configureDictionary](../dictionary/configureDictionary.md), [insert](../dictionary/insert.md), [values](../dictionary/values.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

@@ -17,22 +17,26 @@ Permute array dimensions.
 
 ## 📄 Description
 
+
 <b>permute</b> rearranges the dimensions of an array according to the specified order.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1 2 3; 4 5 6]
 y = permute(x,[3 1 2])
 ```
 
+
 ## 🔗 See also
 
-[ipermute](../../elementary_functions/ipermute.md), [reshape](../../elementary_functions/reshape.md), [transpose](../../operators/transpose.md).
+[ipermute](../../elementary_functions/7_indexing_dimensions/ipermute.md), [reshape](../../elementary_functions/1_array_creation_shape/reshape.md), [transpose](../../operators/transpose.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

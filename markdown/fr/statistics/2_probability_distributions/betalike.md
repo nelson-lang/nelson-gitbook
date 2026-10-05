@@ -19,23 +19,27 @@ Oppose de la log-vraisemblance beta
 
 ## 📄 Description
 
+
 <b>betalike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi beta et l'estimation de covariance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.12 0.2 0.35 0.5 0.7 0.85];
 [nlogL, avar] = betalike([1.5 1.8], x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[betafit](../../statistics/betafit.md), [betapdf](../../statistics/betapdf.md), [betacdf](../../statistics/betacdf.md).
+[betafit](../../statistics/2_probability_distributions/betafit.md), [betapdf](../../statistics/2_probability_distributions/betapdf.md), [betacdf](../../statistics/2_probability_distributions/betacdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

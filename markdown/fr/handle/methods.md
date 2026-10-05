@@ -20,9 +20,10 @@ Renvoie les noms des methodes publiques d'un objet ou d'une classe.
 
 ## 📄 Description
 
-<b>methods</b> renvoie un tableau de chaines contenant les noms des methodes publiques.
 
-Pour les classes classdef, les methodes privees ou protegees ne sont pas listees. Les methodes statiques sont listees et peuvent etre appelees avec <b>ClassName.method</b>.
+<b>methods</b> renvoie un tableau de chaines contenant les noms des methodes publiques. 
+
+Pour les classes classdef, les methodes privees ou protegees ne sont pas listees. Les methodes statiques sont listees et peuvent etre appelees avec <b>ClassName.method</b>. 
 
 Pour les tableaux d'objets classdef, <b>methods</b> renvoie les methodes publiques de la classe des elements.
 
@@ -41,16 +42,17 @@ b = NelsonHelpMethodsPoint();
 m = methods([a, b])
 ```
 
+
 ## 🔗 Voir aussi
 
 [isprop](../handle/isprop.md), [ismethod](../handle/ismethod.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                |
-| ------- | --------------------------------------------- |
-| 1.0.0   | version initiale                              |
-| 2.0.0   | support des noms de classe classdef ajoute    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 2.0.0   | support des noms de classe classdef ajoute |
 | 2.0.0   | support des tableaux d'objets classdef ajoute |
 
 <!--

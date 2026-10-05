@@ -20,22 +20,26 @@ Weibull inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>wblinv</b> evaluates Weibull inverse cumulative probabilities element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0 0.5 0.9];
 x = wblinv(p, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md), [wblrnd](../../statistics/wblrnd.md).
+[wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblrnd](../../statistics/2_probability_distributions/wblrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

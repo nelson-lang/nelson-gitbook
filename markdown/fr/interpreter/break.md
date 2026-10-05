@@ -8,11 +8,14 @@ sortir d'une boucle.
 
 ## 📄 Description
 
-L'instruction<b>break</b> est utilisée pour sortir prématurément d'une boucle.
+
+L'instruction<b>break</b> est utilisée pour sortir prématurément d'une boucle. 
 
 L'instruction<b>break</b> peut être utilisée à l'intérieur d'une boucle <b>for</b> ou<b>while</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -26,14 +29,15 @@ end
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [return](../interpreter/abort.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

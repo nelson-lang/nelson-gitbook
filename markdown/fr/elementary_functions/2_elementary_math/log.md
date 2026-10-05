@@ -16,37 +16,45 @@ Logarithme naturel.
 
 ## 📄 Description
 
-<b>log</b> calcule le logarithme naturel.
 
-Pour les nombres réels positifs :
+<b>log</b> calcule le logarithme naturel. 
+
+Pour les nombres réels positifs : 
 $$\ln(x)$$
+ 
 
-Pour les nombres complexes <b>z</b> :
+Pour les nombres complexes <b>z</b> : 
 $$\ln(z) = \ln|z| + i\arg(z)$$
+ 
 
-où
+où 
 $$|z|$$
+ 
 
-est le module et
+est le module et 
 $$\arg(z)$$
+ 
 
 est l'argument de <b>z</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = log(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[exp](../../elementary_functions/exp.md), [abs](../../elementary_functions/abs.md), [angle](../../elementary_functions/angle.md).
+[exp](../../elementary_functions/2_elementary_math/exp.md), [abs](../../elementary_functions/2_elementary_math/abs.md), [angle](../../elementary_functions/3_complex_numbers/angle.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

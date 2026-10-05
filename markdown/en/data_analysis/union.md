@@ -18,9 +18,12 @@ Set union of two arrays.
 
 ## 📄 Description
 
+
 <b>union(A, B)</b> returns the sorted set of values that occur in either input array.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [5 7 1];
@@ -28,13 +31,14 @@ B = [3 1 1];
 C = union(A, B)
 ```
 
+
 ## 🔗 See also
 
 [intersect](../data_analysis/intersect.md), [setdiff](../data_analysis/setdiff.md), [setxor](../data_analysis/setxor.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

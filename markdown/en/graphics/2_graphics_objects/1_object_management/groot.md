@@ -12,7 +12,8 @@ graphic root object.
 
 ## 📄 Description
 
-<b>groot</b> returns the graphics root object.
+
+<b>groot</b> returns the graphics root object. 
 
 See [groot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.groot.properties.md) for the complete property list.
 
@@ -20,10 +21,13 @@ Root defaults can be set with names of the form <b>Default</b><i>Object</i><i>Pr
 
 ## 💡 Example
 
+
+
 ```matlab
 g = groot()
 g.ScreenDepth
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ g.ScreenDepth
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

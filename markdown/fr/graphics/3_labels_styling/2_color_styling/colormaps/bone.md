@@ -17,17 +17,20 @@ Palette de couleurs bone.
 
 ## 📄 Description
 
+
 <b>bone</b> retourne la palette de couleurs bone.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('bone');
 ```
-
 <img src="bone.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('bone');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

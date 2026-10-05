@@ -4,11 +4,11 @@ Returns path of a module.
 
 ## 📝 Syntax
 
-- p = toolboxdir(module_short_name)
+- p = toolboxdir(module\_short\_name)
 
 ## 📥 Input argument
 
-- module_short_name - a string: short module's name.
+- module\_short\_name - a string: short module's name.
 
 ## 📤 Output argument
 
@@ -16,13 +16,17 @@ Returns path of a module.
 
 ## 📄 Description
 
+
 <b>toolboxdir</b> is an helper's function to return module root path.
 
 ## 💡 Example
 
+
+
 ```matlab
 toolboxdir('core')
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ toolboxdir('core')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

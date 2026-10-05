@@ -18,9 +18,12 @@ inverse de fftshift
 
 ## 📄 Description
 
+
 <b>ifftshift(X)</b> calcule l'inverse de <b>fftshift</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = [ 0.,  10.,  20.; 30.,  40., -40.; -30., -20., -10.]
@@ -28,14 +31,15 @@ ifftshift(M)
 ifftshift(M, 1)
 ```
 
+
 ## 🔗 Voir aussi
 
 [ifft](../fftw/ifft.md), [fftshift](../fftw/fftshift.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

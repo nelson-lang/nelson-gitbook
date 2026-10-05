@@ -18,23 +18,27 @@ Densite de probabilite beta
 
 ## 📄 Description
 
+
 <b>betapdf</b> calcule les valeurs de densite de la distribution beta.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 0.1 0.5 0.9 1];
 y = betapdf(x, 2, 5);
 ```
 
+
 ## 🔗 Voir aussi
 
-[betacdf](../../statistics/betacdf.md), [betainv](../../statistics/betainv.md).
+[betacdf](../../statistics/2_probability_distributions/betacdf.md), [betainv](../../statistics/2_probability_distributions/betainv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

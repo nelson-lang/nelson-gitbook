@@ -16,7 +16,8 @@ Derive an X25519 public key.
 
 ## 📄 Description
 
-<b>crypto.x25519.public</b> derives the Curve25519 public key (RFC 7748) matching a 32-byte secret key.
+
+<b>crypto.x25519.public</b> derives the Curve25519 public key (RFC 7748) matching a 32-byte secret key. 
 
 Generate the secret key with <b>crypto.random(32)</b> or use <b>crypto.x25519.keypair</b> to get both at once.
 
@@ -37,13 +38,14 @@ sec = crypto.random(32, '-hex');
 pub = crypto.x25519.public(sec)
 ```
 
+
 ## 🔗 See also
 
-[crypto.x25519.shared](../core/crypto.x25519.shared.md), [crypto.x25519.keypair](../core/crypto.x25519.keypair.md), [crypto.random](../core/crypto.random.md).
+[crypto.x25519.shared](../core/crypto_x25519_shared.md), [crypto.x25519.keypair](../core/crypto_x25519_keypair.md), [crypto.random](../core/crypto_random.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

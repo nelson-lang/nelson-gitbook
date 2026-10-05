@@ -18,24 +18,28 @@ Integer division with rounding option.
 
 ## 📄 Description
 
-<b>idivide(A, B)</b> divides <b>A</b> by <b>B</b> and rounds the result toward zero (<b>'fix'</b>), keeping the integer class of the inputs.
+
+<b>idivide(A, B)</b> divides <b>A</b> by <b>B</b> and rounds the result toward zero (<b>'fix'</b>), keeping the integer class of the inputs. 
 
 Use <b>opt</b> to select another rounding rule: <b>'round'</b>, <b>'floor'</b> or <b>'ceil'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 idivide(int32(7), int32(2))
 idivide(int32(7), int32(2), 'ceil')
 ```
 
+
 ## 🔗 See also
 
-[mod](../../elementary_functions/mod.md), [rem](../../elementary_functions/rem.md).
+[mod](../../elementary_functions/2_elementary_math/mod.md), [rem](../../elementary_functions/2_elementary_math/rem.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

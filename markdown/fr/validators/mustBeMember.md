@@ -16,9 +16,12 @@ Vérifie que la valeur est membre du tableau spécifié ou signale une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeMember</b> vérifie que la valeur est membre d'un tableau ou signale une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = "red";
@@ -27,14 +30,15 @@ mustBeMember(A,B)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [mustBeNonempty](../validators/mustBeNonempty.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

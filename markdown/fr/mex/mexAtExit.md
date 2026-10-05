@@ -17,15 +17,19 @@ Enregistre une fonction à appeler lorsque le fichier MEX est libéré ou lorsqu
 
 ## 📄 Description
 
-Chaque MEX ne peut enregistrer qu'une seule sous-routine de sortie active à la fois.
+
+Chaque MEX ne peut enregistrer qu'une seule sous-routine de sortie active à la fois. 
 
 <b>mexAtExit</b> enregistre une sous-routine qui sera appelée juste avant la fin de Nelson ou lorsque la commande <b>clear</b> est exécutée.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_mexAtExit.m'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ edit([modulepath('mex', 'tests'), '/test_mexAtExit.m'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

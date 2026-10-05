@@ -16,9 +16,12 @@ Checks if dynamic system model is in continuous time.
 
 ## 📄 Description
 
+
 Checks if dynamic system model is in continuous time.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -31,13 +34,14 @@ sys2 = ss(A, B, C, D, 0.2);
 isct(sys2)
 ```
 
+
 ## 🔗 See also
 
-[isdt](../../control_system/isdt.md).
+[isdt](../../control_system/1_dynamic_system_models/isdt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

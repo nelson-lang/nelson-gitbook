@@ -19,7 +19,8 @@ Work with netCDF user-defined variable length types.
 
 ## 📄 Description
 
-netcdf.defVlen exposes user-defined type metadata from netCDF-4 files.
+
+netcdf.defVlen exposes user-defined type metadata from netCDF-4 files. 
 
 Variable length types require netCDF-4 support in the linked library.
 
@@ -35,13 +36,14 @@ typeid = netcdf.defVlen(ncid, 'sample_vlen', netcdf.getConstant('NC_DOUBLE'));
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.getConstant](../netcdf/netcdf.getConstant.md), [netcdf.defVar](../netcdf/netcdf.defVar.md).
+[netcdf.getConstant](../netcdf/netcdf_getConstant.md), [netcdf.defVar](../netcdf/netcdf_defVar.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

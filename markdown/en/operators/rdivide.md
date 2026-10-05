@@ -18,14 +18,18 @@ Right division, ./ operator
 
 ## 📄 Description
 
+
 <b>C = rdivide(A, B)</b> performs right division operation: A ./\* B.
 
 ## 💡 Examples
+
+
 
 ```matlab
 rdivide(3, 4)
 3 ./ 4
 ```
+
 
 ```matlab
 M1 = [2];
@@ -33,13 +37,14 @@ M2 = [-25 88 1];
 M1 ./ M2
 ```
 
+
 ## 🔗 See also
 
 [ldivide](../operators/ldivide.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

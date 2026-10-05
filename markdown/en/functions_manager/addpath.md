@@ -26,15 +26,18 @@ Add directories to functions search path.
 
 ## 📄 Description
 
-<b>addpath</b> add directories to search path.
 
-It is also possible to add lists of directory names separated by pathsep.
+<b>addpath</b> add directories to search path. 
 
-Non-existent path will not be added and a warning will be issued.
+It is also possible to add lists of directory names separated by pathsep. 
+
+Non-existent path will not be added and a warning will be issued. 
 
 files watchers is disabled for internal modules.
 
 ## 💡 Example
+
+
 
 ```matlab
 path()
@@ -44,13 +47,14 @@ rmpath(tempdir())
 path
 ```
 
+
 ## 🔗 See also
 
 [path](../functions_manager/path.md), [rmpath](../functions_manager/rmpath.md), [restoredefaultpath](../functions_manager/restoredefaultpath.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

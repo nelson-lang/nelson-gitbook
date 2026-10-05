@@ -25,22 +25,26 @@ Read formatted data from strings.
 
 ## 📄 Description
 
+
 Read formatted data from strings.
 
 ## 💡 Example
+
+
 
 ```matlab
 str = "2.7183  3.1416  0.0073";
 R = sscanf(str,'%f',[2 2])
 ```
 
+
 ## 🔗 See also
 
-[fscanf](../stream_manager/fscanf.md), [sprintf](../string/sprintf.md).
+[fscanf](../stream_manager/fscanf.md), [sprintf](../string/1_create_convert_text/sprintf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

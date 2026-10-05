@@ -19,6 +19,7 @@ Find extended minima in a 2-D image.
 
 ## 📄 Description
 
+
 imextendedmin applies imhmin and then finds regional minima. It helps build marker masks that ignore minima shallower than h.
 
 ## 💡 Example
@@ -31,16 +32,16 @@ BW=imextendedmin(I,2);
 figure; subplot(1,2,1); imagesc(I); title('Image');
 subplot(1,2,2); imagesc(BW); title('Extended minima');
 ```
-
 <img src="imextendedmin_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imhmin](../../../image_processing/imhmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [imimposemin](../../../image_processing/imimposemin.md), [watershed](../../../image_processing/watershed.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [imimposemin](../../../image_processing/2_image_analysis/7_segmentation/imimposemin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

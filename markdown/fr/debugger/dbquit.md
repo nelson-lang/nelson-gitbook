@@ -1,6 +1,6 @@
 # dbquit
 
-Quitter le mode débogage.
+ Quitter le mode débogage.
 
 ## 📝 Syntaxe
 
@@ -13,14 +13,17 @@ Quitter le mode débogage.
 
 ## 📄 Description
 
-<b>dbquit</b> termine le mode débogage. La fenêtre de commande revient à l'invite standard (<code> > >
-</code>). Le fichier en cours d'exécution n'est pas terminé et aucun argument de sortie n'est renvoyé. Tous les points d'arrêt restent actifs.
 
-Si le débogueur est actif dans plus d'une fonction, <b>dbquit</b> quitte le mode débogage uniquement pour la fonction active. Les autres fonctions en pause restent en mode débogage jusqu'à ce que <b>dbquit</b> soit appelé à nouveau.
+<b>dbquit</b> termine le mode débogage. La fenêtre de commande revient à l'invite standard (<code>
+        >
+        >
+      </code>). Le fichier en cours d'exécution n'est pas terminé et aucun argument de sortie n'est renvoyé. Tous les points d'arrêt restent actifs. 
 
-Si l'exécution est en pause dans une fonction atteinte en entrant dans une autre fonction, <b>dbquit</b> termine le débogage pour les deux fonctions.
+Si le débogueur est actif dans plus d'une fonction, <b>dbquit</b> quitte le mode débogage uniquement pour la fonction active. Les autres fonctions en pause restent en mode débogage jusqu'à ce que <b>dbquit</b> soit appelé à nouveau. 
 
-<b>dbquit all</b> termine le débogage pour tous les fichiers simultanément.
+Si l'exécution est en pause dans une fonction atteinte en entrant dans une autre fonction, <b>dbquit</b> termine le débogage pour les deux fonctions. 
+
+<b>dbquit all</b> termine le débogage pour tous les fichiers simultanément. 
 
 Cette fonction ne peut être appelée que depuis la ligne de commande en mode débogage.
 
@@ -40,7 +43,6 @@ buggy(5)
 dbquit
 
 ```
-
          Quitter le mode débogage pour toutes les fonctions en pause.
 
 ```matlab
@@ -49,15 +51,16 @@ dbquit all
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dbcont](../debugger/dbcont.md), [dbclear](../debugger/dbclear.md), [dbstack](../debugger/dbstack.md), [dbstatus](../debugger/dbstatus.md), [dbstop](../debugger/dbstop.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

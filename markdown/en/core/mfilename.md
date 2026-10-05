@@ -18,13 +18,16 @@ Name of the currently running file.
 
 ## 📄 Description
 
-mfilename returns the name of the currently running function or script.
+
+mfilename returns the name of the currently running function or script. 
 
 With an option, it can return a path-qualified form supported by Nelson.
 
 ## Used function(s)
 
+
     nfilename
+  
 
 ## 💡 Example
 
@@ -35,13 +38,14 @@ name = mfilename()
 nameWithPath = mfilename('fullpath')
 ```
 
+
 ## 🔗 See also
 
 [nfilename](../core/nfilename.md), [run](../core/run.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

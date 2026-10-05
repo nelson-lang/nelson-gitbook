@@ -16,8 +16,10 @@ Creer un fichier de reference pour un test.
 
 ## 📄 Description
 
-<b>nelson.unittest.makeref</b> cree le fichier de reference utilise par les tests a reference. <b>test_makeref</b> est l'alias de compatibilite.
+
+<b>nelson.unittest.makeref</b> cree le fichier de reference utilise par les tests a reference. <b>test\_makeref</b> est l'alias de compatibilite.
+
 
 ## 🔗 Voir aussi
 
-[test_makeref](../tests_manager/test_makeref.md), [nelson.unittest.run](../tests_manager/nelson.unittest.run.md).
+[test_makeref](../tests_manager/test_makeref.md), [nelson.unittest.run](../tests_manager/nelson_unittest_run.md).

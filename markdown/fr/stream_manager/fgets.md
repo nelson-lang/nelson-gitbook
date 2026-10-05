@@ -18,15 +18,18 @@ Lire une chaîne depuis un fichier, s'arrêtant après un saut de ligne, la fin 
 
 ## 📄 Description
 
-Lit une chaîne depuis un fichier, s'arrêtant après un saut de ligne, la fin du fichier (EOF) ou après la lecture de n caractères.
 
-S'il n'y a plus de caractère à lire, <b>fgets</b> renverra -1.
+Lit une chaîne depuis un fichier, s'arrêtant après un saut de ligne, la fin du fichier (EOF) ou après la lecture de n caractères. 
 
-Si n est omis, <b>fgets</b> lit jusqu'au saut de ligne suivant.
+S'il n'y a plus de caractère à lire, <b>fgets</b> renverra -1. 
+
+Si n est omis, <b>fgets</b> lit jusqu'au saut de ligne suivant. 
 
 L'encodage des caractères utilise le paramètre <b>fopen</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
   fid = fopen([nelsonroot(), '/etc/startup.m']);
@@ -38,6 +41,7 @@ L'encodage des caractères utilise le paramètre <b>fopen</b>.
 
   fclose(fid);
 ```
+
 
 ```matlab
 fid = fopen([nelsonroot(), '/etc/startup.m']);
@@ -51,14 +55,15 @@ fid = fopen([nelsonroot(), '/etc/startup.m']);
   fclose(fid);
 ```
 
+
 ## 🔗 Voir aussi
 
 [fclose](../stream_manager/fclose.md), [fopen](../stream_manager/fopen.md), [fgetl](../stream_manager/fgetl.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

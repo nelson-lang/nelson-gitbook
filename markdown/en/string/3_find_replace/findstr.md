@@ -8,21 +8,25 @@ Find one character vector inside another.
 
 ## 📄 Description
 
+
 <b>findstr</b> Find one character vector inside another.
 
 ## 💡 Example
+
+
 
 ```matlab
 findstr("hello", "l")
 ```
 
+
 ## 🔗 See also
 
-[strfind](../../string/strfind.md), [contains](../../string/contains.md), [strcmp](../../string/strcmp.md).
+[strfind](../../string/3_find_replace/strfind.md), [contains](../../string/3_find_replace/contains.md), [strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

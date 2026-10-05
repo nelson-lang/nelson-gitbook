@@ -19,7 +19,8 @@ Verifie qu'une valeur a la classe attendue.
 
 ## 📄 Description
 
-L'assertion reussit lorsque class(value) correspond a expectedClass.
+
+L'assertion reussit lorsque class(value) correspond a expectedClass. 
 
 Utiliser asserts.type pour accepter une classe parmi plusieurs classes autorisees.
 
@@ -30,12 +31,12 @@ Expected class
 ```matlab
 asserts.class(single(1), 'single');
 ```
-
 Capture a class failure
 
 ```matlab
 [res, msg] = asserts.class(int32(1), 'double');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a class failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -8,7 +8,9 @@ Retourne les informations du serveur MCP Nelson.
 
 ## 📄 Description
 
+
 <b>mcpinfo</b> retourne la version, le transport, le mode d'affichage par defaut, la racine de workspace par defaut, la limite de sortie par defaut, les outils, les ressources, les prompts exposes et les politiques par defaut.
+
 
 ## 🔗 Voir aussi
 
@@ -16,6 +18,6 @@ Retourne les informations du serveur MCP Nelson.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |

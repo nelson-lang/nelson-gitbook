@@ -13,7 +13,8 @@ Convex hull of 2-D or 3-D points
 
 ## 📄 Description
 
-<b>convhull</b> computes the convex hull of planar or spatial points.
+
+<b>convhull</b> computes the convex hull of planar or spatial points. 
 
 When called without output for planar points, it plots the hull.
 
@@ -27,14 +28,15 @@ P = [0 0; 1 0; 1 1; 0 1; 0.4 0.6];
 convhull(P)
 ```
 
+
 ## 🔗 See also
 
 [convhulln](../geometry/convhulln.md), [boundary](../geometry/boundary.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

@@ -25,23 +25,27 @@ Lire des données formatées depuis des chaînes.
 
 ## 📄 Description
 
+
 Lit des données formatées depuis des chaînes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 str = "2.7183  3.1416  0.0073";
 R = sscanf(str,'%f',[2 2])
 ```
 
+
 ## 🔗 Voir aussi
 
-[fscanf](../stream_manager/fscanf.md), [sprintf](../string/sprintf.md).
+[fscanf](../stream_manager/fscanf.md), [sprintf](../string/1_create_convert_text/sprintf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

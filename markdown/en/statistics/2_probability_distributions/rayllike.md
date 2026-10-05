@@ -21,9 +21,12 @@ Rayleigh negative log-likelihood
 
 ## 📄 Description
 
+
 <b>rayllike</b> evaluates the negative log-likelihood of the Rayleigh distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
@@ -31,13 +34,14 @@ b = raylfit(x);
 nlogL = rayllike(b, x);
 ```
 
+
 ## 🔗 See also
 
-[raylfit](../../statistics/raylfit.md), [raylpdf](../../statistics/raylpdf.md), [raylcdf](../../statistics/raylcdf.md).
+[raylfit](../../statistics/2_probability_distributions/raylfit.md), [raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylcdf](../../statistics/2_probability_distributions/raylcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

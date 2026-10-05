@@ -22,14 +22,17 @@ Programmation quadratique.
 
 ## 📄 Description
 
-<b>quadprog</b> résout des programmes quadratiques convexes denses avec contraintes linéaires et bornes par une stratégie active-set.
+
+<b>quadprog</b> résout des programmes quadratiques convexes denses avec contraintes linéaires et bornes par une stratégie active-set. 
 
 La forme structure accepte <b>H</b>, <b>f</b>, <b>Aineq</b> ou <b>A</b>, <b>bineq</b> ou <b>b</b>, <b>Aeq</b>, <b>beq</b>, <b>lb</b>, <b>ub</b>, <b>x0</b> et <b>options</b>. Les expressions quadratiques problem-based compilées par <b>prob2struct</b> sont dirigées vers <b>quadprog</b>.
 
 ## Fonction(s) utilisée(s)
 
+
     optimoptions
     prob2struct
+  
 
 ## 📚 Bibliographie
 
@@ -37,6 +40,8 @@ P. E. Gill, W. Murray and M. H. Wright, Practical Optimization, Academic Press, 
 J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 H = [2 0; 0 2];
@@ -46,6 +51,7 @@ lb = [0; 0];
 
 ```
 
+
 ```matlab
 y = optimvar('y', 2, 1);
 prob = optimproblem('Objective', (y(1) - 1)^2 + (y(2) + 3)^2);
@@ -54,14 +60,15 @@ sol.y
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [lsqnonneg](../optimization/lsqnonneg.md), [optimoptions](../optimization/optimoptions.md), [prob2struct](../optimization/prob2struct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

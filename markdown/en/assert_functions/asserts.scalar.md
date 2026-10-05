@@ -18,7 +18,8 @@ Check that a value is scalar.
 
 ## 📄 Description
 
-The assertion passes when value is scalar.
+
+The assertion passes when value is scalar. 
 
 Diagnostics include the computed dimensions.
 
@@ -29,12 +30,12 @@ Scalar value
 ```matlab
 asserts.scalar(1);
 ```
-
 Capture a non-scalar value
 
 ```matlab
 [res, msg] = asserts.scalar([1 2]);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a non-scalar value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

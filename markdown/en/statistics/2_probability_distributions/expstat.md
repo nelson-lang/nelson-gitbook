@@ -17,21 +17,25 @@ Exponential mean and variance
 
 ## 📄 Description
 
+
 <b>expstat</b> returns the mean and variance of the exponential distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = expstat(3);
 ```
 
+
 ## 🔗 See also
 
-[exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md), [expinv](../../statistics/expinv.md), [exprnd](../../statistics/exprnd.md).
+[exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md), [expinv](../../statistics/2_probability_distributions/expinv.md), [exprnd](../../statistics/2_probability_distributions/exprnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

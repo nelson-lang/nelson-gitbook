@@ -26,68 +26,80 @@ Return the date/time input as a serial day number.
 
 ## 📄 Description
 
-<b>d = datenum()</b> returns the serial date number corresponding to current date.
 
-<b>d = datenum(datevec)</b> converts date vector to serial date number.
+<b>d = datenum()</b> returns the serial date number corresponding to current date. 
 
-<b>d = datenum(datestr)</b> and<b>d = datenum(datestr, format)</b> converts string to serial date number.
+<b>d = datenum(datevec)</b> converts date vector to serial date number. 
 
-Supported format conversion:
+<b>d = datenum(datestr)</b> and<b>d = datenum(datestr, format)</b> converts string to serial date number. 
 
-<b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17
+ 
 
-<b>dd-mmm-yyyy</b> 10-Mar-2010
+Supported format conversion: 
 
-<b>mm/dd/yyyy</b> 03/10/2010
+<b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17 
 
-<b>mm/dd/yy</b> 03/10/00
+<b>dd-mmm-yyyy</b> 10-Mar-2010 
 
-<b>mm/dd</b> 03/10
+<b>mm/dd/yyyy</b> 03/10/2010 
 
-<b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17
+<b>mm/dd/yy</b> 03/10/00 
 
-<b>mmm.dd,yyyy</b> Mar.10,2010
+<b>mm/dd</b> 03/10 
 
-<b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17
+<b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17 
 
-<b>yyyy-mm-dd</b> 2010-03-10
+<b>mmm.dd,yyyy</b> Mar.10,2010 
 
-<b>yyyy/mm/dd</b> 2000/03/10
+<b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17 
 
-<b>HH:MM:SS</b> 16:48:17
+<b>yyyy-mm-dd</b> 2010-03-10 
 
-<b>HH:MM:SS PM</b> 3:48:17 PM
+<b>yyyy/mm/dd</b> 2000/03/10 
 
-<b>HH:MM</b> 16:48
+<b>HH:MM:SS</b> 16:48:17 
 
-<b>HH:MM PM</b> 3:35 PM
+<b>HH:MM:SS PM</b> 3:48:17 PM 
 
-If format is not specified, the default format is<b>dd-mmm-yyyy</b>.
+<b>HH:MM</b> 16:48 
 
-If format is specified and not using predefined format, the format must be specified as a character vector or string scalar composed of symbolic identifiers.
+<b>HH:MM PM</b> 3:35 PM 
 
-The format of the input text for representing dates and times, expressed as a character vector or string scalar composed of symbolic identifiers.
+ 
 
-| Symbolic Identifier | Description                                                                     | Example         |
-| ------------------- | ------------------------------------------------------------------------------- | --------------- |
-| yyyy                | Year in full                                                                    | 1995, 2012      |
-| yy                  | Year in two digits                                                              | 89, 01          |
-| QQ                  | Quarter year using letter Q and one digit                                       | Q1              |
-| mmmm                | Month using full name                                                           | March, December |
-| mmm                 | Month using first three letters                                                 | Mar, Dec        |
-| mm                  | Month in two digits                                                             | 04, 12          |
-| m                   | Month using capitalized first letter                                            | M, D            |
-| dddd                | Day using full name                                                             | Monday, Tuesday |
-| ddd                 | Day using first three letters                                                   | Mon, Tue        |
-| dd                  | Day in two digits                                                               | 06, 21          |
-| d                   | Day using capitalized first letter                                              | M, T            |
-| HH                  | Hour in two digits (no leading zeros when symbolic identifier AM or PM is used) | 06, 6 AM        |
-| MM                  | Minute in two digits                                                            | 11, 01          |
-| SS                  | Second in two digits                                                            | 06, 59          |
-| FFF                 | Millisecond in three digits                                                     | 056             |
-| AM or PM            | AM or PM inserted in text representing time                                     | 5:46:02 PM      |
+If format is not specified, the default format is<b>dd-mmm-yyyy</b>. 
+
+ 
+
+If format is specified and not using predefined format, the format must be specified as a character vector or string scalar composed of symbolic identifiers. 
+
+The format of the input text for representing dates and times, expressed as a character vector or string scalar composed of symbolic identifiers. 
+
+ 
+| Symbolic Identifier | Description | Example | 
+| --- | --- | --- | 
+| yyyy | Year in full | 1995, 2012 | 
+| yy | Year in two digits | 89, 01 | 
+| QQ | Quarter year using letter Q and one digit | Q1 | 
+| mmmm | Month using full name | March, December | 
+| mmm | Month using first three letters | Mar, Dec | 
+| mm | Month in two digits | 04, 12 | 
+| m | Month using capitalized first letter | M, D | 
+| dddd | Day using full name | Monday, Tuesday | 
+| ddd | Day using first three letters | Mon, Tue | 
+| dd | Day in two digits | 06, 21 | 
+| d | Day using capitalized first letter | M, T | 
+| HH | Hour in two digits (no leading zeros when symbolic identifier AM or PM is used) | 06, 6 AM | 
+| MM | Minute in two digits | 11, 01 | 
+| SS | Second in two digits | 06, 59 | 
+| FFF | Millisecond in three digits | 056 | 
+| AM or PM | AM or PM inserted in text representing time | 5:46:02 PM | 
+
+
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -98,18 +110,19 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 
 ```
 
+
 ## 🔗 See also
 
-[datevec](../../time/datevec.md).
+[datevec](../../time/1_create_date_time_arrays/datevec.md).
 
 ## 🕔 History
 
-| Version                | 📄 Description                |
-| ---------------------- | ----------------------------- |
-| 1.0.0                  | initial version               |
-| 1.8.0                  | date string parsing extended. |
-| 1.10.0                 | added: format '               |
-| ' means try to detect. |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.8.0   | date string parsing extended. |
+| 1.10.0   | added: format '
+        ' means try to detect. |
 
 <!--
 ## 👤 Author

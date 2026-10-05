@@ -18,9 +18,11 @@ Division matricielle droite pour les donnees timeseries.
 
 ## 📄 Description
 
+
 <b>mrdivide</b> Applique la division matricielle droite aux valeurs de donnees et preserve l'axe temporel d'une entree timeseries.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([10; 20], [1; 2]);
@@ -29,14 +31,15 @@ out.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

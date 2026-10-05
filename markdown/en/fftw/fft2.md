@@ -19,19 +19,23 @@
 
 ## 📄 Description
 
-<b>Y = fft2(X)</b> returns the two-dimensional Fourier transform of <b>X</b> using a Fast Fourier Transform (FFT) algorithm.
 
-Optional arguments <b>m</b> and<b>n</b> may be used specify the number of rows and columns of <b>X</b> to use.
+<b>Y = fft2(X)</b> returns the two-dimensional Fourier transform of <b>X</b> using a Fast Fourier Transform (FFT) algorithm. 
 
-If either of these is larger than the size of <b>X</b>,<b>X</b> is resized and padded with zeros.
+Optional arguments <b>m</b> and<b>n</b> may be used specify the number of rows and columns of <b>X</b> to use. 
+
+If either of these is larger than the size of <b>X</b>,<b>X</b> is resized and padded with zeros. 
 
 If <b>X</b> is a multi-dimensional matrix, each two-dimensional sub-matrix of <b>X</b> is treated separately.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = fft2(eye(5, 5), 2, 3)
 ```
+
 
 ## 🔗 See also
 
@@ -39,7 +43,7 @@ R = fft2(eye(5, 5), 2, 3)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

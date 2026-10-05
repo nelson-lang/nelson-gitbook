@@ -19,23 +19,27 @@ Nombres aleatoires de Poisson
 
 ## 📄 Description
 
+
 <b>poissrnd</b> genere des valeurs aleatoires de loi de Poisson.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = poissrnd(4, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[poisspdf](../../statistics/poisspdf.md), [poisscdf](../../statistics/poisscdf.md), [poissinv](../../statistics/poissinv.md), [poissstat](../../statistics/poissstat.md).
+[poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poisscdf](../../statistics/2_probability_distributions/poisscdf.md), [poissinv](../../statistics/2_probability_distributions/poissinv.md), [poissstat](../../statistics/2_probability_distributions/poissstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

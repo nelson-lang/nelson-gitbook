@@ -4,12 +4,12 @@ Display Nelson function header comments.
 
 ## 📝 Syntax
 
-- headcomments(function_name)
-- ce = headcomments(function_name)
+- headcomments(function\_name)
+- ce = headcomments(function\_name)
 
 ## 📥 Input argument
 
-- function_name - a string: function name or a .m filename.
+- function\_name - a string: function name or a .m filename.
 
 ## 📤 Output argument
 
@@ -17,19 +17,22 @@ Display Nelson function header comments.
 
 ## 📄 Description
 
-<b>head_comments</b> displays the function header comments.
 
-Comments are read from the associated .m file.
+<b>head\_comments</b> displays the function header comments. 
+
+Comments are read from the associated .m file. 
 
 Nelson predefined functions have no header comments.
 
 ## 💡 Example
 
+
+
 ```matlab
 comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 ```
-
 <img src="headcomments.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -37,7 +40,7 @@ comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

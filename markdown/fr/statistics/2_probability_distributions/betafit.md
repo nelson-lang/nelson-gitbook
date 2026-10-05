@@ -19,23 +19,27 @@ Estimation des parametres beta
 
 ## 📄 Description
 
+
 <b>betafit</b> estime les deux parametres de forme de la loi beta.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.12 0.2 0.35 0.5 0.7 0.85];
 [phat, pci] = betafit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[betalike](../../statistics/betalike.md), [betapdf](../../statistics/betapdf.md), [betacdf](../../statistics/betacdf.md).
+[betalike](../../statistics/2_probability_distributions/betalike.md), [betapdf](../../statistics/2_probability_distributions/betapdf.md), [betacdf](../../statistics/2_probability_distributions/betacdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

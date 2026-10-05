@@ -20,9 +20,12 @@ Step response of a digital filter.
 
 ## 📄 Description
 
+
 <b>stepz</b> computes the cumulative sum of the impulse response.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,13 +33,14 @@ Step response of a digital filter.
 
 ```
 
+
 ## 🔗 See also
 
-[impz](../../signal_processing/impz.md).
+[impz](../../signal_processing/4_digital_filters/impz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

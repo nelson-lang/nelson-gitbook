@@ -19,9 +19,12 @@ Initial conditions for digital filtering.
 
 ## 📄 Description
 
+
 <b>filtic</b> computes initial conditions compatible with direct-form filtering.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,13 +32,14 @@ zi = filtic([1 1], 1, 3);
 
 ```
 
+
 ## 🔗 See also
 
-[filter](../../elementary_functions/filter.md).
+[filter](../../elementary_functions/7_indexing_dimensions/filter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

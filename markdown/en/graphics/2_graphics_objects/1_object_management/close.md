@@ -23,15 +23,18 @@ Close one or more figures
 
 ## 📄 Description
 
-<b>close</b> closes the current figure.
 
-<b>close(ID)</b> closes the figure specified by figure ID.
+<b>close</b> closes the current figure. 
 
-<b>close(GO)</b> closes the figure specified by figure graphics object.
+<b>close(ID)</b> closes the figure specified by figure ID. 
+
+<b>close(GO)</b> closes the figure specified by figure graphics object. 
 
 <b>close('all')</b> closes all figures.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure(1)
@@ -43,13 +46,14 @@ f2 = figure()
 close('all')
 ```
 
+
 ## 🔗 See also
 
 [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [figure](../../../graphics/2_graphics_objects/1_object_management/figure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

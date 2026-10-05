@@ -20,21 +20,25 @@ Generalized extreme value random numbers
 
 ## 📄 Description
 
+
 <b>gevrnd</b> generates generalized extreme value random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 r = gevrnd(0.2, 1, 0, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md), [gevinv](../../statistics/gevinv.md), [gevstat](../../statistics/gevstat.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md), [gevinv](../../statistics/2_probability_distributions/gevinv.md), [gevstat](../../statistics/2_probability_distributions/gevstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

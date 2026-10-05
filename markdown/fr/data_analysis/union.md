@@ -18,9 +18,12 @@ Union ensembliste de deux tableaux.
 
 ## 📄 Description
 
+
 <b>union(A, B)</b> retourne l'ensemble trie des valeurs presentes dans au moins un des tableaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [5 7 1];
@@ -28,14 +31,15 @@ B = [3 1 1];
 C = union(A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
 [intersect](../data_analysis/intersect.md), [setdiff](../data_analysis/setdiff.md), [setxor](../data_analysis/setxor.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

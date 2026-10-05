@@ -18,24 +18,28 @@ Exponentiation en base 2 et mise à l'échelle de nombres à virgule flottante.
 
 ## 📄 Description
 
-<b>Y = pow2(E)</b> calcule 2 à la puissance <b>E</b>.
+
+<b>Y = pow2(E)</b> calcule 2 à la puissance <b>E</b>. 
 
 <b>Y = pow2(X, E)</b> calcule X multiplié par 2 à la puissance <b>E</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = pow2([1, 2, 3; 4, 5, 6], [6, 5, 4; 3, 2, 1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[log2](../../elementary_functions/log2.md).
+[log2](../../elementary_functions/2_elementary_math/log2.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

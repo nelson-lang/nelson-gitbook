@@ -20,6 +20,7 @@ Handle vers une fenetre du visualiseur HTML Nelson.
 
 ## 📄 Description
 
+
 La classe <b>nelson.htmlviewer.htmlviewer</b> represente une fenetre du visualiseur HTML. Ses proprietes publiques sont <b>Input</b> et <b>Visible</b>.
 
 ## 💡 Exemple
@@ -33,14 +34,15 @@ close(h);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [web](../webview/web.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

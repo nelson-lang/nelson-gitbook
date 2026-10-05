@@ -16,30 +16,34 @@ Renvoie le chemin complet d'un bloc ou d'un modèle depuis son handle.
 
 ## 📄 Description
 
-<b>getfullname</b> renvoie le chemin complet qui identifie le bloc ou le modèle désigné par un handle. Un handle de bloc donne <b>'modèle/NomDeBloc'</b> ; un handle de modèle donne <b>'modèle'</b>.
 
-C'est l'inverse de <b>getSimulinkBlockHandle</b>. Un chemin (char) est déjà un nom complet et est renvoyé tel quel. Un tableau de cellules de handles renvoie un tableau de cellules de chemins de même forme.
+<b>getfullname</b> renvoie le chemin complet qui identifie le bloc ou le modèle désigné par un handle. Un handle de bloc donne <b>'modèle/NomDeBloc'</b> ; un handle de modèle donne <b>'modèle'</b>. 
+
+C'est l'inverse de <b>getNFlowBlockHandle</b>. Un chemin (char) est déjà un nom complet et est renvoyé tel quel. Un tableau de cellules de handles renvoie un tableau de cellules de chemins de même forme. 
 
 Un handle inconnu lève une erreur.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 new_system('demo');
 add_block('nflow/math/gain', 'demo/Gain');
-h = getSimulinkBlockHandle('demo/Gain');
+h = getNFlowBlockHandle('demo/Gain');
 path = getfullname(h)
 bdclose('demo');
 ```
 
+
 ## 🔗 Voir aussi
 
-[getSimulinkBlockHandle](../nflow_engine/getSimulinkBlockHandle.md), [get_param](../nflow_engine/get_param.md), [find_system](../nflow_engine/find_system.md), [bdroot](../nflow_engine/bdroot.md).
+[getNFlowBlockHandle](../nflow_engine/getNFlowBlockHandle.md), [get_param](../nflow_engine/get_param.md), [find_system](../nflow_engine/find_system.md), [bdroot](../nflow_engine/bdroot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

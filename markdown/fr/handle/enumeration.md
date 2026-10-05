@@ -18,9 +18,10 @@ Renvoie les membres d'une classe d'enumeration classdef.
 
 ## 📄 Description
 
-<b>enumeration</b> renvoie les membres publics declares par une classe d'enumeration classdef.
 
-Les membres d'enumeration peuvent etre lus avec <b>ClassName.MemberName</b>.
+<b>enumeration</b> renvoie les membres publics declares par une classe d'enumeration classdef. 
+
+Les membres d'enumeration peuvent etre lus avec <b>ClassName.MemberName</b>. 
 
 Les membres d'enumeration peuvent passer des arguments au constructeur ; les proprietes stockees initialisees par le constructeur sont copiees dans la valeur du membre.
 
@@ -35,7 +36,6 @@ filewrite([d, '/NelsonHelpColor.m'], ["classdef NelsonHelpColor"; "  enumeration
 addpath(d);
 members = enumeration('NelsonHelpColor')
 ```
-
 Utiliser des arguments de constructeur dans les membres d'enumeration.
 
 ```matlab
@@ -49,14 +49,15 @@ high = eval('NelsonHelpLevel.High');
 high.Code
 ```
 
+
 ## 🔗 Voir aussi
 
 [metaclass](../handle/metaclass.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | support des enumerations classdef ajoute |
 
 <!--

@@ -11,6 +11,7 @@ Display 3-D vector directions with cone-style arrows.
 
 ## 📄 Description
 
+
 <b>coneplot</b> displays sampled 3-D vector directions using a patch object.
 
 ## 💡 Example
@@ -41,8 +42,8 @@ daspect([1 1 1])
 axis tight
 grid on
 ```
-
 <img src="coneplot_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

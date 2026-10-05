@@ -30,15 +30,16 @@ Add a color scale to axes.
 
 ## 📄 Description
 
-<b>colorbar</b> adds a color scale to a plot. The colorbar is a graphics object parented to the figure and associated with a peer axes.
 
-The default location is <b>eastoutside</b>. Outside locations reserve space next to the peer axes. Inside locations draw the colorbar over the axes area. Setting the <b>Position</b> property changes <b>Location</b> to <b>manual</b>.
+<b>colorbar</b> adds a color scale to a plot. The colorbar is a graphics object parented to the figure and associated with a peer axes. 
 
-The <b>Location</b> property also accepts <b>layout</b> for tiled layouts. Use <b>colorbar(ax, 'Location', 'layout')</b> and set <b>c.Layout.Tile</b> to a tile number or to 'east', 'west', 'north', or 'south'. The positional form <b>colorbar(ax, 'layout')</b> is not accepted.
+The default location is <b>eastoutside</b>. Outside locations reserve space next to the peer axes. Inside locations draw the colorbar over the axes area. Setting the <b>Position</b> property changes <b>Location</b> to <b>manual</b>. 
 
-Important visual properties include <b>Box</b>, <b>Color</b>, <b>Direction</b>, <b>FontAngle</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontWeight</b>, <b>Limits</b>, <b>LineWidth</b>, <b>AxisLocation</b>, <b>TickDirection</b>, <b>TickLabelInterpreter</b>, <b>TickLabels</b>, <b>TickLength</b>, <b>Ticks</b>, <b>Units</b>, <b>Visible</b>, and <b>Label</b>.
+The <b>Location</b> property also accepts <b>layout</b> for tiled layouts. Use <b>colorbar(ax, 'Location', 'layout')</b> and set <b>c.Layout.Tile</b> to a tile number or to 'east', 'west', 'north', or 'south'. The positional form <b>colorbar(ax, 'layout')</b> is not accepted. 
 
-Automatic <b>Limits</b>, <b>Ticks</b>, and <b>TickLabels</b> are updated from the peer axes color limits and colormap. Assigning <b>Limits</b>, <b>Ticks</b>, <b>TickLabels</b>, <b>AxisLocation</b>, or <b>Position</b> switches the corresponding mode property to manual when appropriate.
+Important visual properties include <b>Box</b>, <b>Color</b>, <b>Direction</b>, <b>FontAngle</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontWeight</b>, <b>Limits</b>, <b>LineWidth</b>, <b>AxisLocation</b>, <b>TickDirection</b>, <b>TickLabelInterpreter</b>, <b>TickLabels</b>, <b>TickLength</b>, <b>Ticks</b>, <b>Units</b>, <b>Visible</b>, and <b>Label</b>. 
+
+Automatic <b>Limits</b>, <b>Ticks</b>, and <b>TickLabels</b> are updated from the peer axes color limits and colormap. Assigning <b>Limits</b>, <b>Ticks</b>, <b>TickLabels</b>, <b>AxisLocation</b>, or <b>Position</b> switches the corresponding mode property to manual when appropriate. 
 
 See [colorbar properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.colorbar.properties.md) for the complete property list.
 
@@ -52,7 +53,6 @@ surf(peaks);
 colormap('summer');
 colorbar;
 ```
-
 <img src="colorbar_1.svg" align="middle"/>
 Place a horizontal colorbar below filled contours.
 
@@ -62,7 +62,6 @@ contourf(peaks);
 colormap('parula');
 colorbar('southoutside');
 ```
-
 <img src="colorbar_2.svg" align="middle"/>
 Customize ticks, labels, and the colorbar label.
 
@@ -74,7 +73,6 @@ cb = colorbar('Ticks', [-6 -3 0 3 6], ...
 cb.Label.String = 'Scale';
 cb.Direction = 'reverse';
 ```
-
 <img src="colorbar_3.svg" align="middle"/>
 Attach a colorbar to a tiled layout edge.
 
@@ -90,7 +88,6 @@ title(ax2, 'Tile 2');
 cb = colorbar(ax2, 'Location', 'layout');
 cb.Layout.Tile = 'east';
 ```
-
 <img src="colorbar_4.svg" align="middle"/>
 Try every standard location.
 
@@ -106,16 +103,17 @@ for k = 1:length(locations)
 end
 ```
 
+
 ## 🔗 See also
 
 [colorbar properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.colorbar.properties.md), [colormap](../../../graphics/3_labels_styling/2_color_styling/colormaps/colormap.md), [clim](../../../graphics/3_labels_styling/2_color_styling/clim.md), [contourf](../../../graphics/1_plots/3_contour_plots/contourf.md), [tiledlayout](../../../graphics/2_graphics_objects/2_layout_objects/tiledlayout.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                     |
-| ------- | -------------------------------------------------- |
-| 1.0.0   | initial version                                    |
-| 1.15.0  | added support for the location argument            |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.15.0   | added support for the location argument |
 | 2.0.0   | reimplemented as a native colorbar graphics object |
 
 <!--

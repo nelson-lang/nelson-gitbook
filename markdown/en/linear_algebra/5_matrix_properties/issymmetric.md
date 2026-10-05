@@ -20,13 +20,16 @@ Computes if matrix is symmetric.
 
 ## 📄 Description
 
-<b>issymmetric(x)</b> computes if matrix is symmetric.
 
-With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'
+<b>issymmetric(x)</b> computes if matrix is symmetric. 
+
+With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.' 
 
 With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'
 
 ## 💡 Example
+
+
 
 ```matlab
 issymmetric([1, 2; 2, 1])
@@ -36,13 +39,14 @@ issymmetric(A, 'skew')
 issymmetric(A, 'nonskew')
 ```
 
+
 ## 🔗 See also
 
-[ishermitian](../../linear_algebra/ishermitian.md).
+[ishermitian](../../linear_algebra/5_matrix_properties/ishermitian.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

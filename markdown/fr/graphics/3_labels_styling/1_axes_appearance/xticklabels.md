@@ -26,7 +26,8 @@ Definir ou obtenir les etiquettes de l'axe des x.
 
 ## 📄 Description
 
-<b>xticklabels</b> obtient ou definit les etiquettes de l'axe des x des axes courants.
+
+<b>xticklabels</b> obtient ou definit les etiquettes de l'axe des x des axes courants. 
 
 Specifier des etiquettes bascule le mode des etiquettes de l'axe des x sur <b>manual</b>.
 
@@ -43,13 +44,14 @@ labels = xticklabels()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md), [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -8,21 +8,25 @@ Pattern for digit characters.
 
 ## 📄 Description
 
+
 <b>digitsPattern</b> Pattern for digit characters.
 
 ## 💡 Example
+
+
 
 ```matlab
 pat = digitsPattern; extract("abc123", pat)
 ```
 
+
 ## 🔗 See also
 
-[lettersPattern](../../string/lettersPattern.md), [alphanumericsPattern](../../string/alphanumericsPattern.md), [pattern](../../string/pattern.md).
+[lettersPattern](../../string/4_patterns/lettersPattern.md), [alphanumericsPattern](../../string/4_patterns/alphanumericsPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

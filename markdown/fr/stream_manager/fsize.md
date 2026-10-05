@@ -16,9 +16,12 @@ Retourne la taille d'un fichier ouvert.
 
 ## 📄 Description
 
+
 <b>fsize</b> retourne la taille d'un fichier ouvert par <b>fopen</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 TXT = 'example about fsize.';
@@ -29,14 +32,15 @@ length(TXT)
 status = fclose(fileID);
 ```
 
+
 ## 🔗 Voir aussi
 
 [fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

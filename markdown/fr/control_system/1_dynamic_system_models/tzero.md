@@ -27,9 +27,12 @@ Zéros invariants d'un système linéaire.
 
 ## 📄 Description
 
+
 Calcule les zéros invariants d'un système d'état ou renvoie également le rang numérique associé.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2; 3 4];
@@ -41,14 +44,15 @@ z = tzero(sys)
 [z, nrank] = tzero(sys)
 ```
 
+
 ## 🔗 Voir aussi
 
-[append](../../control_system/append.md).
+[append](../../control_system/2_model_conversion_interconnection/append.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

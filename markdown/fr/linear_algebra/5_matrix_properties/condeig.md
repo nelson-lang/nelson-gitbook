@@ -17,23 +17,27 @@ Nombre de condition relatif aux valeurs propres.
 
 ## 📄 Description
 
+
 <b>C = condeig(A)</b> retourne un vecteur de nombres de condition pour les valeurs propres de <b>A</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [10, 20; 30, 40];
 S = condeig(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[eig](../../linear_algebra/eig.md), [cond](../../linear_algebra/cond.md).
+[eig](../../linear_algebra/3_eigen_singular_values/eig.md), [cond](../../linear_algebra/5_matrix_properties/cond.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

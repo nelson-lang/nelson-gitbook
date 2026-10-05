@@ -15,30 +15,35 @@ Return true if variable var is a double matrix.
 - res - a logical: true or false
 
 ## 📄 Description
-
 <b>isdouble</b> returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = 3;
 res = isdouble(A)
 ```
 
+
 ```matlab
 A = single(3);
 res = isdouble(A)
 ```
+
 
 ```matlab
 A = single([3, i]);
 res = isdouble(A)
 ```
 
+
 ```matlab
 A = [3, i];
 res = isdouble(A)
 ```
+
 
 ## 🔗 See also
 
@@ -46,7 +51,7 @@ res = isdouble(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

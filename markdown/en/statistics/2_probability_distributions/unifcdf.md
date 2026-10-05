@@ -20,9 +20,12 @@ Continuous uniform cumulative distribution function
 
 ## 📄 Description
 
+
 <b>unifcdf</b> computes lower-tail continuous uniform probabilities by default and upper-tail probabilities with <b>'upper'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:0.25:1;
@@ -30,13 +33,14 @@ p = unifcdf(x);
 q = unifcdf(x, 'upper');
 ```
 
+
 ## 🔗 See also
 
-[unifpdf](../../statistics/unifpdf.md), [unifinv](../../statistics/unifinv.md).
+[unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

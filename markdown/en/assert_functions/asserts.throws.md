@@ -21,7 +21,8 @@ Check that a command throws an error containing expected text.
 
 ## 📄 Description
 
-The assertion passes when the command raises an error whose message contains expectedSubstring.
+
+The assertion passes when the command raises an error whose message contains expectedSubstring. 
 
 Use asserts.checkerror when the full error message must match.
 
@@ -32,12 +33,12 @@ Expected error substring
 ```matlab
 asserts.throws('cos', _('Wrong number of input arguments.'));
 ```
-
 Capture missing error
 
 ```matlab
 [res, msg] = asserts.throws('1 + 1', 'unused');
 ```
+
 
 ## 🔗 See also
 
@@ -45,7 +46,7 @@ Capture missing error
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

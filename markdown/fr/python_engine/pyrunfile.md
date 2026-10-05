@@ -22,13 +22,14 @@ Exécuter un fichier Python depuis Nelson.
 
 ## 📄 Description
 
-<b>pyrunfile(filename)</b> exécute un fichier Python.
 
-Contrairement à la fonction <b>pyrun</b>, les variables générées dans l'espace Python par<b>pyrunfile</b> ne persistent pas. Ainsi, les appels suivants à<b>pyrunfile</b> ne pourront pas accéder à ces variables.
+<b>pyrunfile(filename)</b> exécute un fichier Python. 
 
-Le code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée.
+Contrairement à la fonction <b>pyrun</b>, les variables générées dans l'espace Python par<b>pyrunfile</b> ne persistent pas. Ainsi, les appels suivants à<b>pyrunfile</b> ne pourront pas accéder à ces variables. 
 
-Limitation connue :
+Le code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée. 
+
+Limitation connue : 
 
 Les fonctions <b>pyrun</b> et<b>pyrunfile</b> ne prennent pas en charge les classes contenant des variables locales initialisées par d'autres variables locales via des méthodes. Dans ce cas, il est conseillé de créer un module et d'y accéder.
 
@@ -40,13 +41,11 @@ pyrunfile_example_1.py
 content = "hello Nelson"
 print(content)
 ```
-
 pyrunfile from Nelson
 
 ```matlab
 pyrunfile('pyrunfile_example_1.py')
 ```
-
 pyrunfile_example_2.py
 
 ```matlab
@@ -56,13 +55,11 @@ for arg in sys.argv[0:]:
     print(arg)
 
 ```
-
 pyrunfile from Nelson with arguments
 
 ```matlab
 pyrunfile('pyrunfile_example_2.py "Hello" "world"')
 ```
-
 pyrunfile_example_3.py
 
 ```matlab
@@ -73,12 +70,12 @@ def minus(a,c):
 z = minus(x, y)
 
 ```
-
 pyrunfile from Nelson with values from Nelson
 
 ```matlab
 pyrunfile('pyrunfile_example_3.py', 'x', 5, 'y', 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -86,8 +83,8 @@ pyrunfile('pyrunfile_example_3.py', 'x', 5, 'y', 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.4.0   | version initiale |
 
 <!--

@@ -19,6 +19,7 @@ Filter an image with a 2-D kernel.
 
 ## 📄 Description
 
+
 Filter an image with a 2-D kernel. By default, the filter is applied by correlation. Options include same, full, valid, replicate, symmetric, circular, corr and conv. Text options are case-insensitive.
 
 ## 💡 Example
@@ -32,16 +33,16 @@ J=imfilter(I,H,'replicate');
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Filtered');
 ```
-
 <img src="imfilter_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[fspecial](../../../image_processing/fspecial.md), [imgaussfilt](../../../image_processing/imgaussfilt.md), [padarray](../../../image_processing/padarray.md).
+[fspecial](../../../image_processing/1_image_basics/3_filtering_edges/fspecial.md), [imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md), [padarray](../../../image_processing/1_image_basics/3_filtering_edges/padarray.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

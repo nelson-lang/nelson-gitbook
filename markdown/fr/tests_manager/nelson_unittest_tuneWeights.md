@@ -23,17 +23,18 @@ Calibrer les poids de planification avec les durees mesurees.
 
 ## 📄 Description
 
-<b>nelson.unittest.tuneWeights</b> calcule des poids statiques de planification depuis les durees mesurees. Aucun cache de durees n'est cree ou consulte.
 
-Le comportement par defaut est une simulation. Les fichiers sources sont modifies uniquement avec <b>Apply</b> egal a true.
+<b>nelson.unittest.tuneWeights</b> calcule des poids statiques de planification depuis les durees mesurees. Aucun cache de durees n'est cree ou consulte. 
 
-Seuls les tests reussis et les benches termines sont eligibles. Les echecs, skips, timeouts, resultats manquants et fichiers supprimes sont ignores.
+Le comportement par defaut est une simulation. Les fichiers sources sont modifies uniquement avec <b>Apply</b> egal a true. 
 
-Les durees sont normalisees separement pour chaque module et pour les categories test et bench. La duree mediane correspond au poids 1. Les durees superieures sont quantifiees en puissances de deux et limitees par <b>MaxWeight</b>. Cette quantification evite les modifications dues a de petites variations.
+Seuls les tests reussis et les benches termines sont eligibles. Les echecs, skips, timeouts, resultats manquants et fichiers supprimes sont ignores. 
 
-Le poids genere 1 est implicite : un tag de poids existant est supprime. Les autres poids ajoutent ou remplacent un seul tag d'entete tout en conservant le style de fin de ligne.
+Les durees sont normalisees separement pour chaque module et pour les categories test et bench. La duree mediane correspond au poids 1. Les durees superieures sont quantifiees en puissances de deux et limitees par <b>MaxWeight</b>. Cette quantification evite les modifications dues a de petites variations. 
 
-Fournir des cibles les execute une fois avant de produire la proposition. Ce run de calibration prepare les executions suivantes ; l'utiliser comme prepass obligatoire executerait les memes tests deux fois.
+Le poids genere 1 est implicite : un tag de poids existant est supprime. Les autres poids ajoutent ou remplacent un seul tag d'entete tout en conservant le style de fin de ligne. 
+
+Fournir des cibles les execute une fois avant de produire la proposition. Ce run de calibration prepare les executions suivantes ; l'utiliser comme prepass obligatoire executerait les memes tests deux fois. 
 
 Si les tags de reutilisation sont aussi calibres, les appliquer d'abord. La calibration des poids doit utiliser un nouveau run effectue avec la configuration finale de reutilisation des processus.
 
@@ -48,7 +49,6 @@ proposal = nelson.unittest.tuneWeights(results);
 proposal = nelson.unittest.tuneWeights(results, 'Apply', true);
 
 ```
-
 Calibrer les poids des tests d'un module, verifier la proposition, puis appliquer les memes mesures sans nouveau run.
 
 ```matlab
@@ -62,6 +62,7 @@ applied = nelson.unittest.tuneWeights(results, 'Apply', true);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[nelson.unittest.run](../tests_manager/nelson.unittest.run.md), [nelson.unittest.plan](../tests_manager/nelson.unittest.plan.md), [nelson.unittest.tuneReuse](../tests_manager/nelson.unittest.tuneReuse.md).
+[nelson.unittest.run](../tests_manager/nelson_unittest_run.md), [nelson.unittest.plan](../tests_manager/nelson_unittest_plan.md), [nelson.unittest.tuneReuse](../tests_manager/nelson_unittest_tuneReuse.md).

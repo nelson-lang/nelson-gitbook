@@ -16,9 +16,12 @@ Computes the matrix cosine of a square matrix.
 
 ## 📄 Description
 
+
 <b>cosm(x)</b> computes the matrix cosine of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -27,13 +30,14 @@ A = [1, 2; 3, 4];
 res = cosm(A)
 ```
 
+
 ## 🔗 See also
 
 [cos](../trigonometric_functions/cos.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

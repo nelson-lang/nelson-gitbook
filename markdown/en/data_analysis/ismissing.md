@@ -16,18 +16,19 @@ Check for missing values.
 
 ## 📄 Description
 
-<b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.
 
-missing data are defined as:
+<b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values. 
 
-<b>NaN</b> for double or single
+missing data are defined as: 
 
-<b>missing</b> for string array
+<b>NaN</b> for double or single 
+
+<b>missing</b> for string array 
 
 <b>
         '
         '
-      </b> for character array
+      </b> for character array 
 
 <b>
         '
@@ -35,6 +36,8 @@ missing data are defined as:
       </b> for cell of character array
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ["Nel", NaN, "son"];
@@ -48,13 +51,14 @@ ismissing(D)
 
 ```
 
+
 ## 🔗 See also
 
-[isfinite](../elementary_functions/isfinite.md).
+[isfinite](../elementary_functions/7_indexing_dimensions/isfinite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

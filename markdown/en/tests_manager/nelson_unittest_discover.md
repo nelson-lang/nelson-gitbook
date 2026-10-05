@@ -18,13 +18,16 @@ Discover test files and return a structured suite.
 
 ## 📄 Description
 
-<b>nelson.unittest.discover</b> finds <b>test\_\*.m</b>, <b>bug\_\*.m</b>, and <b>bench\_\*.m</b> files.
 
-Discovery reads file tags on every call and records stable TestCase fields such as id, module, file, name, kind, tags, mode, resources, timeout, and weight.
+<b>nelson.unittest.discover</b> finds <b>test\_\*.m</b>, <b>bug\_\*.m</b>, and <b>bench\_\*.m</b> files. 
+
+Discovery reads file tags on every call and records stable TestCase fields such as id, module, file, name, kind, tags, mode, resources, timeout, and weight. 
 
 For an external module, the module field comes from its module.json manifest and its root is located by the enclosing etc/startup.m file. This also supports versioned installations, temporary package staging directories, and nested tests. Shipped modules and registered legacy modules are identified from their module roots. A directory name alone does not identify a module; files without a valid module identity have an empty module field.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,6 +35,7 @@ suite = nelson.unittest.discover('string', 'Kind', 'all_tests');
 
 ```
 
+
 ## 🔗 See also
 
-[nelson.unittest](../tests_manager/nelson.unittest.md), [nelson.unittest.select](../tests_manager/nelson.unittest.select.md), [nelson.unittest.run](../tests_manager/nelson.unittest.run.md).
+[nelson.unittest](../tests_manager/nelson_unittest.md), [nelson.unittest.select](../tests_manager/nelson_unittest_select.md), [nelson.unittest.run](../tests_manager/nelson_unittest_run.md).

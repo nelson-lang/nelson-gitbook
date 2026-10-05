@@ -18,13 +18,16 @@ Valider les valeurs de couleur.
 
 ## 📄 Description
 
-La fonction<b>validatecolor</b> est une fonction de validation des couleurs qui vérifie si une couleur donnée est valide selon les standards de Nelson.
 
-Elle prend un argument de couleur en entrée et retourne une erreur si la couleur n'est pas valide.
+La fonction<b>validatecolor</b> est une fonction de validation des couleurs qui vérifie si une couleur donnée est valide selon les standards de Nelson. 
+
+Elle prend un argument de couleur en entrée et retourne une erreur si la couleur n'est pas valide. 
 
 Les codes couleur hexadécimaux utilisent six ('#FF8800') ou trois ('#F80') chiffres hexadécimaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 RGB = validatecolor('red')
@@ -34,11 +37,12 @@ RGB = validatecolor({'red','green','blue'},'multiple')
 
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                                                                                            |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | Version initiale                                                                                                                                                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | Version initiale |
 | 2.0.0   | Codes couleur hexadécimaux à 3 chiffres ('#F80') acceptés, valeurs exactes k/255 pour les codes hexadécimaux, erreur pour les tableaux de cellules ou de chaînes non 1-D. |
 
 <!--

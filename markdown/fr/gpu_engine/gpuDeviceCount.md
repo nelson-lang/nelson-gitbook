@@ -12,13 +12,17 @@ Nombre de périphériques GPU compatibles.
 
 ## 📄 Description
 
+
 <b>n = gpuDeviceCount()</b> renvoie le nombre de périphériques GPU compatibles disponibles sur le système. La valeur <b>0</b> signifie qu'aucun périphérique pris en charge n'a été trouvé.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 gpuDeviceCount()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ gpuDeviceCount()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

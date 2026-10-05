@@ -20,6 +20,7 @@ List variables in an valid .mat file with sizes and types.
 
 ## 📄 Description
 
+
 <b>whosmat</b> lists variables in an valid .mat file.
 
 ## 📚 Bibliography
@@ -27,6 +28,8 @@ List variables in an valid .mat file with sizes and types.
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -38,13 +41,14 @@ whosmat([tempdir(), 'example_whosmat-v7.3.mat'])
 st = whosmat([tempdir(), 'example_whosmat-v7.3.mat'])
 ```
 
+
 ## 🔗 See also
 
 [whosnh5](../hdf5/whosnh5.md), [whos](../memory_manager/whos.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

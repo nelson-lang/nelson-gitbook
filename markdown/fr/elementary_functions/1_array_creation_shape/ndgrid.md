@@ -18,11 +18,14 @@ Grille rectangulaire dans un espace à N dimensions
 
 ## 📄 Description
 
-<b>[X1, X2, â€¦ , Xn] = ndgrid(x1, x2, â€¦ , xn)</b> génère une grille complète à n dimensions en répliquant chaque vecteur de grille.
+
+<b>[X1, X2, â€¦ , Xn] = ndgrid(x1, x2, â€¦ , xn)</b> génère une grille complète à n dimensions en répliquant chaque vecteur de grille. 
 
 <b>[X1, X2, â€¦ , Xn] = ndgrid(xg)</b> Dans ce cas, l'unique vecteur de grille<b>xg</b> est utilisé pour toutes les dimensions. Le nombre d'arguments de sortie détermine la dimensionnalité n de la grille résultante.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 M = {'apple', 'banana', 'cherry'};
@@ -31,18 +34,20 @@ ndgrid(M , N)
 
 ```
 
+
 ```matlab
 [X, Y] = ndgrid(1:2:19, 2:2:12)
 ```
 
+
 ## 🔗 Voir aussi
 
-[meshgrid](../../elementary_functions/meshgrid.md), [mesh](../../graphics/mesh.md).
+[meshgrid](../../elementary_functions/1_array_creation_shape/meshgrid.md), [mesh](../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.6.0   | version initiale |
 
 <!--

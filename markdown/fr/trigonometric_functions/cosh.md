@@ -15,15 +15,17 @@ Calcule le cosinus hyperbolique en radians pour chaque élément de x.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>cosh</b> calcule le cosinus hyperbolique en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
 res = cosh(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ res = cosh(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

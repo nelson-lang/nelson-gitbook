@@ -22,9 +22,12 @@ Estime la puissance d'un signal dans une bande de frequences.
 
 ## 📄 Description
 
+
 <b>bandpower</b> calcule la puissance temporelle moyenne ou integre une estimation PSD par approximation rectangulaire. Pour les mesures de bande depuis un signal temporel, un periodogramme fenetre par Hamming de longueur egale a l'entree est utilise.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ p = bandpower(sin((0:127)' * 0.1), 10, [0 5]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[periodogram](../../signal_processing/periodogram.md), [meanfreq](../../signal_processing/meanfreq.md), [medfreq](../../signal_processing/medfreq.md).
+[periodogram](../../signal_processing/5_spectral_analysis/periodogram.md), [meanfreq](../../signal_processing/2_measurements_feature_extraction/meanfreq.md), [medfreq](../../signal_processing/2_measurements_feature_extraction/medfreq.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

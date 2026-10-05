@@ -16,23 +16,27 @@ Inverse matriciel par page
 
 ## 📄 Description
 
+
 <b>pageinv</b> calcule l'inverse de chaque page (les deux premières dimensions) du tableau N-D X : Y(:,:,i) = inv(X(:,:,i)). Chaque page doit être une matrice carrée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = cat(3, [2 0; 0 4], [1 2; 3 4]);
 Y = pageinv(M)
 ```
 
+
 ## 🔗 Voir aussi
 
-[inv](../../linear_algebra/inv.md), [pagemtimes](../../linear_algebra/pagemtimes.md).
+[inv](../../linear_algebra/1_linear_systems/inv.md), [pagemtimes](../../linear_algebra/4_matrix_functions/pagemtimes.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

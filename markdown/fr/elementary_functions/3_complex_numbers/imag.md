@@ -16,23 +16,27 @@ Partie imaginaire d'un nombre complexe.
 
 ## 📄 Description
 
+
 <b>R = imag(M)</b> Renvoie la partie imaginaire de M.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 cplx = 22+34*i;
 r = imag(cplx)
 ```
 
+
 ## 🔗 Voir aussi
 
-[real](../../elementary_functions/real.md).
+[real](../../elementary_functions/3_complex_numbers/real.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

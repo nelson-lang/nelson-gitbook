@@ -4,7 +4,7 @@ Somme de contrôle SHA-256 (alias de l'espace crypto).
 
 ## 📝 Syntaxe
 
-- hexa_hash = crypto.sha256(...)
+- hexa\_hash = crypto.sha256(...)
 
 ## 📥 Argument d'entrée
 
@@ -12,11 +12,13 @@ Somme de contrôle SHA-256 (alias de l'espace crypto).
 
 ## 📤 Argument de sortie
 
-- hexa_hash - chaîne hexadécimale, identique à <b>sha256</b>.
+- hexa\_hash - chaîne hexadécimale, identique à <b>sha256</b>.
 
 ## 📄 Description
 
+
 <b>crypto.sha256</b> est un alias de <b>sha256</b>, dans l'espace de noms <b>crypto</b> (mêmes arguments et même résultat).
+
 
 ## 🔗 Voir aussi
 
@@ -24,8 +26,8 @@ Somme de contrôle SHA-256 (alias de l'espace crypto).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -17,22 +17,26 @@ Reorient table rows into variables.
 
 ## 📄 Description
 
+
 <b>rows2vars</b> creates table variables from rows of the input table.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table({'r1'; 'r2'}, [10; 20], 'VariableNames', {'Name', 'Value'});
 R = rows2vars(T, 'VariableNamesSource', 'Name')
 ```
 
+
 ## 🔗 See also
 
-[table](../../table/table.md).
+[table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -19,16 +19,20 @@ Applique une fonction a chaque champ d'une structure scalaire.
 
 ## 📄 Description
 
-<b>structfun(fun, S)</b> applique <b>fun</b> a chaque champ de la structure scalaire <b>S</b> et retourne les resultats sous forme de vecteur colonne.
+
+<b>structfun(fun, S)</b> applique <b>fun</b> a chaque champ de la structure scalaire <b>S</b> et retourne les resultats sous forme de vecteur colonne. 
 
 Avec <b>'UniformOutput'</b> a <b>false</b>, les resultats sont retournes dans une structure ayant les memes champs que <b>S</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 s.a = 1; s.b = 2; s.c = 3;
 structfun(@(x) x * 2, s)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +40,8 @@ structfun(@(x) x * 2, s)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

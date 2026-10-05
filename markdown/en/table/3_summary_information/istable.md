@@ -16,9 +16,12 @@ Determine if input is table.
 
 ## 📄 Description
 
+
 <b>tf = istable(A)</b> returns <b>true</b> if <b>A</b> is a table, and <b>false</b> if it is not.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table();
@@ -27,13 +30,14 @@ M = magic(6);
 istable(M)
 ```
 
+
 ## 🔗 See also
 
-[isa](../../types/isa.md), [table](../../table/table.md).
+[isa](../../types/isa.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.8.0   | initial version |
 

@@ -4,17 +4,19 @@ Génère une passerelle MEX en C (fonction interne).
 
 ## 📝 Syntaxe
 
-- dlgeneratemexgateway(destinationdir, function_name)
+- dlgeneratemexgateway(destinationdir, function\_name)
 
 ## 📥 Argument d'entrée
 
 - destinationdir - une chaîne : répertoire de destination où sera généré le fichier passerelle.
-- function_name - une chaîne : nom de la fonction exposée dans Nelson.
+- function\_name - une chaîne : nom de la fonction exposée dans Nelson.
 - interleavedcomplex - un booléen : utiliser la représentation complexe interlacée.
 
 ## 📄 Description
 
+
 <b>dlgeneratemexgateway</b> génère une passerelle MEX en C utilisée par<b>mex</b> (fonction interne).
+
 
 ## 🔗 Voir aussi
 
@@ -22,8 +24,8 @@ Génère une passerelle MEX en C (fonction interne).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

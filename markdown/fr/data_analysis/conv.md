@@ -19,9 +19,12 @@ Convolution et multiplication de polynômes.
 
 ## 📄 Description
 
+
 <b>conv</b> renvoie la convolution des vecteurs <b>u</b> et <b>v</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 U = [-1 2 3 -2 0 1 2];
@@ -29,14 +32,15 @@ V = [2 4 -1 1];
 R = conv(U, V, 'same')
 ```
 
+
 ## 🔗 Voir aussi
 
 [conv](../data_analysis/conv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

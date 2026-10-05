@@ -20,16 +20,18 @@ Transforme des coordonnées cartésiennes en coordonnées polaires ou cylindriqu
 - z - a numeric value: Elevation coordinate.
 
 ## 📄 Description
-
 <b>cart2pol</b> transforms Cartesian coordinates to polar or cylindrical.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 x = [5 3.5355 0 -10];
 y = [0 3.5355 10 0];
 [theta, rho] = cart2pol(x, y)
 ```
+
 
 ```matlab
 x = [1 2.1213 0 -5];
@@ -38,14 +40,15 @@ z = [7 8 9 10];
 [theta, rho, el] = cart2pol(x, y, z)
 ```
 
+
 ## 🔗 Voir aussi
 
 [pol2cart](../trigonometric_functions/pol2cart.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

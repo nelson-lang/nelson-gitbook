@@ -26,7 +26,8 @@ Set or get z-axis tick values.
 
 ## 📄 Description
 
-<b>zticks</b> gets or sets the tick values along the z-axis of the current axes.
+
+<b>zticks</b> gets or sets the tick values along the z-axis of the current axes. 
 
 Specifying tick values switches the z-tick mode to <b>manual</b>.
 
@@ -43,13 +44,14 @@ ticks = zticks()
 
 ```
 
+
 ## 🔗 See also
 
 [zticklabels](../../../graphics/3_labels_styling/1_axes_appearance/zticklabels.md), [ztickangle](../../../graphics/3_labels_styling/1_axes_appearance/ztickangle.md), [zlim](../../../graphics/3_labels_styling/1_axes_appearance/zlim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

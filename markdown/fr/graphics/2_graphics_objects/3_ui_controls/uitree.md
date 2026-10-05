@@ -19,6 +19,7 @@ Crée un arbre ou un arbre à cases à cocher.
 
 ## 📄 Description
 
+
 <b>t = uitree</b> crée un arbre ; <b>uitree(parent, 'checkbox')</b> crée un arbre à cases à cocher. Les enfants sont des objets uitreenode. Propriétés : <b>SelectedNodes</b>, <b>Multiselect</b> (arbre standard), <b>CheckedNodes</b>/<b>CheckedNodesChangedFcn</b> (arbre à cases), <b>Editable</b>, <b>SelectionChangedFcn</b>, <b>NodeExpandedFcn</b>, <b>NodeCollapsedFcn</b>. Utiliser <b>expand(t)</b> / <b>collapse(t)</b>.
 
 ## 💡 Exemples
@@ -34,7 +35,6 @@ uitreenode(n1, 'Text', 'Banana');
 expand(tr);
 drawnow();
 ```
-
 <img src="uitree_example.svg" align="middle"/>
 uitree
 
@@ -48,13 +48,14 @@ expand(t);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

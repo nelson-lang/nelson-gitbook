@@ -17,11 +17,14 @@ Remove dictionary entries.
 
 ## 📄 Description
 
-<b>db = remove(da, key)</b> deletes the entry associated with the key from dictionary da.
+
+<b>db = remove(da, key)</b> deletes the entry associated with the key from dictionary da. 
 
 <b>d = remove(d, key)</b> is equivalent to <b>d[key] = []</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 names = ["Apple" "Banana" "Kiwi"];
@@ -31,13 +34,14 @@ d = remove(d, 2)
 
 ```
 
+
 ## 🔗 See also
 
 [dictionary](../dictionary/dictionary.md), [insert](../dictionary/insert.md), [lookup](../dictionary/lookup.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.5.0   | initial version |
 

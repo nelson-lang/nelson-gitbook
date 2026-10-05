@@ -26,16 +26,19 @@ Linear programming.
 
 ## 📄 Description
 
-<b>linprog</b> solves linear optimization problems with linear constraints and bounds. Nelson uses HiGHS when available.
 
-Supported structures include <b>f</b>, <b>Aineq</b> or <b>A</b>, <b>bineq</b> or <b>b</b>, <b>Aeq</b>, <b>beq</b>, <b>lb</b>, <b>ub</b>, <b>x0</b> and <b>options</b>. The <b>output</b> structure reports the algorithm, normalized backend status, primal solution status, message, constraint violation, iterations and first-order residual estimate. The <b>lambda</b> structure is filled for continuous linear programs from backend dual information.
+<b>linprog</b> solves linear optimization problems with linear constraints and bounds. Nelson uses HiGHS when available. 
+
+Supported structures include <b>f</b>, <b>Aineq</b> or <b>A</b>, <b>bineq</b> or <b>b</b>, <b>Aeq</b>, <b>beq</b>, <b>lb</b>, <b>ub</b>, <b>x0</b> and <b>options</b>. The <b>output</b> structure reports the algorithm, normalized backend status, primal solution status, message, constraint violation, iterations and first-order residual estimate. The <b>lambda</b> structure is filled for continuous linear programs from backend dual information. 
 
 Options such as <b>Display</b>, <b>MaxTime</b>, <b>MaxIterations</b>, <b>LPMaxIterations</b>, <b>ConstraintTolerance</b>, <b>LPOptimalityTolerance</b>, <b>LPPreprocess</b> and <b>RootLPAlgorithm</b> are converted to HiGHS options when possible. Other recognized optimization options are accepted and ignored when no backend equivalent exists.
 
 ## Used function(s)
 
+
     optimoptions
     prob2struct
+  
 
 ## 📚 Bibliography
 
@@ -44,6 +47,8 @@ Huangfu, Q. and Hall, J. A. J., Parallelizing the dual revised simplex method, M
 Nocedal, J. and Wright, S. J., Numerical Optimization, Springer, 2006.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = [-1; -1];
@@ -54,13 +59,14 @@ opts = optimoptions('linprog', 'Display', 'off');
 
 ```
 
+
 ## 🔗 See also
 
 [intlinprog](../optimization/intlinprog.md), [quadprog](../optimization/quadprog.md), [optimoptions](../optimization/optimoptions.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,9 +18,12 @@ Square waveform.
 
 ## 📄 Description
 
+
 <b>square</b> generates a two-level periodic waveform.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ y = square(0:0.1:2*pi, 25);
 
 ```
 
+
 ## 🔗 See also
 
-[sawtooth](../../signal_processing/sawtooth.md).
+[sawtooth](../../signal_processing/1_signal_generation_preprocessing/sawtooth.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

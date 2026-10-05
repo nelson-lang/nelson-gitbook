@@ -22,23 +22,26 @@ Create periodic signals for simulating system response.
 
 ## 📄 Description
 
-The function <b>gensig(type, tau)</b> creates a periodic signal with unit amplitude, characterized by the specified type and period.
 
-The resulting signal, denoted as <b>u</b>, and its corresponding time vector,<b>t</b>, can be used with <b>lsim</b> to simulate the time response of a single-input dynamic system.
+The function <b>gensig(type, tau)</b> creates a periodic signal with unit amplitude, characterized by the specified type and period. 
 
-For multi-input systems, you can generate signals by making repeated calls to <b>gensig</b> and then assemble the resulting <b>u</b> vectors into a matrix. When simulating a dynamic system model with <b>u</b> and <b>t</b>, note that the software interprets the time vector <b>t</b> with units based on the TimeUnit property of the model.
+The resulting signal, denoted as <b>u</b>, and its corresponding time vector,<b>t</b>, can be used with <b>lsim</b> to simulate the time response of a single-input dynamic system. 
 
-To generate a signal with a specific duration <b>Tf</b>, use <b>[u, t] = gensig(type, tau, Tf)</b>.
+For multi-input systems, you can generate signals by making repeated calls to <b>gensig</b> and then assemble the resulting <b>u</b> vectors into a matrix. When simulating a dynamic system model with <b>u</b> and <b>t</b>, note that the software interprets the time vector <b>t</b> with units based on the TimeUnit property of the model. 
 
-The time vector <b>t</b> spans from 0 to <b>Tf</b> in increments of <b>tau/64</b>.
+To generate a signal with a specific duration <b>Tf</b>, use <b>[u, t] = gensig(type, tau, Tf)</b>. 
 
-For a signal with a defined sample time <b>Ts</b>, employ <b>[u, t] = gensig(type, tau, Tf, Ts)</b>.
+The time vector <b>t</b> spans from 0 to <b>Tf</b> in increments of <b>tau/64</b>. 
 
-In this case, the time vector <b>t</b> ranges from 0 to <b>Tf</b> in increments of <b>Ts</b>.
+For a signal with a defined sample time <b>Ts</b>, employ <b>[u, t] = gensig(type, tau, Tf, Ts)</b>. 
+
+In this case, the time vector <b>t</b> ranges from 0 to <b>Tf</b> in increments of <b>Ts</b>. 
 
 This syntax is particularly useful for generating signals tailored for discrete-time model simulations, where <b>Ts</b> corresponds to the sample time of the model.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -72,16 +75,16 @@ plot(t, u)
 title('tan')
 
 ```
-
 <img src="gensig.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[lsim](../../control_system/lsim.md).
+[lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

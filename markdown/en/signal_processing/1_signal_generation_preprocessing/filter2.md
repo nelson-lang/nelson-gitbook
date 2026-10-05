@@ -19,9 +19,12 @@
 
 ## 📄 Description
 
+
 <b>Y = filter2(H, X)</b> applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix<b>H</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = zeros(10);
@@ -30,13 +33,14 @@ H = [1 2 1; 0 0 0; -1 -2 -1];
 R = filter2(H, A, 'valid')
 ```
 
+
 ## 🔗 See also
 
 [conv2](../../data_analysis/conv2.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

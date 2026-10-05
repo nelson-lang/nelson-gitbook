@@ -21,7 +21,8 @@ save workspace variables to .mat file
 
 ## 📄 Description
 
-<b>savemat</b> save workspace variables to .mat file.
+
+<b>savemat</b> save workspace variables to .mat file. 
 
 Nelson's data types are converted into the Mat file equivalents.
 
@@ -30,6 +31,8 @@ Nelson's data types are converted into the Mat file equivalents.
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -48,7 +51,6 @@ A
 B
 
 ```
-
 append variables
 
 ```matlab
@@ -69,7 +71,6 @@ B
 C
 
 ```
-
 compression
 
 ```matlab
@@ -80,13 +81,14 @@ with_compression = dir([tempdir(), 'example_savemat_with_compression.mat'])
 no_compression = dir([tempdir(), 'example_savemat_no_compression.mat'])
 ```
 
+
 ## 🔗 See also
 
 [loadmat](../matio/loadmat.md), [save](../stream_manager/save.md), [savenh5](../hdf5/savenh5.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

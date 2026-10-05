@@ -12,9 +12,11 @@ Display a time series collection object.
 
 ## 📄 Description
 
+
 <b>display</b> prints collection time limits and member time series names.
 
 ## 💡 Example
+
 
 ```matlab
 count1 = timeseries([11; 7; 14], (1:3)', 'Name', 'Intersection1');
@@ -25,13 +27,14 @@ display(tsc)
 
 ```
 
+
 ## 🔗 See also
 
-[tscollection](../../time/tscollection.md).
+[tscollection](../../time/8_timeseries/tscollection.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

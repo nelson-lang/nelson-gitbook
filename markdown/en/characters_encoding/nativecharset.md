@@ -16,9 +16,10 @@ Find all charset matches that appear to be consistent with the input
 
 ## 📄 Description
 
-<b>nativecharset</b> find all charset matches that appear to be consistent with the input, returning a cell of string with results.
 
-The results are ordered with the best quality match first.
+<b>nativecharset</b> find all charset matches that appear to be consistent with the input, returning a cell of string with results. 
+
+The results are ordered with the best quality match first. 
 
 List of characters set:https://www.iana.org/assignments/character-sets/character-sets.xhtml
 
@@ -28,18 +29,21 @@ ICU library
 
 ## 💡 Example
 
+
+
 ```matlab
 C = uint8([194   232   240   242   243   224   235   252   237   224   255]);
 nativecharset(C)
 ```
 
+
 ## 🔗 See also
 
-[unicode2native](../characters_encoding/unicode2native.md), [char](../string/char.md).
+[unicode2native](../characters_encoding/unicode2native.md), [char](../string/1_create_convert_text/char.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

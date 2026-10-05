@@ -16,11 +16,14 @@ Return the top-level model of a block path.
 
 ## 📄 Description
 
-<b>bdroot</b> returns the top-level model of a block path.
+
+<b>bdroot</b> returns the top-level model of a block path. 
 
 <b>bdroot('model')</b> is <b>'model'</b>; <b>bdroot('model/Sub/Blk')</b> is <b>'model'</b>. The root model must be loaded.
 
 ## 💡 Example
+
+
 
 ```matlab
 new_system('demo');
@@ -29,13 +32,14 @@ root = bdroot('demo/Gain')
 bdclose('demo');
 ```
 
+
 ## 🔗 See also
 
 [find_system](../nflow_engine/find_system.md), [new_system](../nflow_engine/new_system.md), [get_param](../nflow_engine/get_param.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

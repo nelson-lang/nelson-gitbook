@@ -22,9 +22,12 @@ Impulse response of a digital filter.
 
 ## 📄 Description
 
+
 <b>impz</b> filters a unit impulse through the filter defined by B and A.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Impulse response of a digital filter.
 
 ```
 
+
 ## 🔗 See also
 
-[stepz](../../signal_processing/stepz.md), [filter](../../elementary_functions/filter.md).
+[stepz](../../signal_processing/4_digital_filters/stepz.md), [filter](../../elementary_functions/7_indexing_dimensions/filter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

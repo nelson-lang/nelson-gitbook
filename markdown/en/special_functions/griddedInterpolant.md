@@ -30,11 +30,12 @@ Gridded data interpolant object
 
 ## 📄 Description
 
-<b>griddedInterpolant</b> stores gridded sample points and values for repeated interpolation queries.
 
-The object exposes four properties that can be read and set: <b>GridVectors</b> (a cell array of grid vectors), <b>Values</b>, <b>Method</b>, and <b>ExtrapolationMethod</b>.
+<b>griddedInterpolant</b> stores gridded sample points and values for repeated interpolation queries. 
 
-Evaluate the interpolant by calling the object like a function, either with one query array per dimension, or with a single cell array of query grid vectors.
+The object exposes four properties that can be read and set: <b>GridVectors</b> (a cell array of grid vectors), <b>Values</b>, <b>Method</b>, and <b>ExtrapolationMethod</b>. 
+
+Evaluate the interpolant by calling the object like a function, either with one query array per dimension, or with a single cell array of query grid vectors. 
 
 The <b>'cubic'</b> method uses cubic convolution and requires a grid with uniform spacing; on a non-uniform grid it switches to <b>'spline'</b>. Cubic convolution does not support extrapolation, so query points outside the grid return <b>NaN</b> when <b>ExtrapolationMethod</b> is <b>'cubic'</b>.
 
@@ -46,14 +47,12 @@ The <b>'cubic'</b> method uses cubic convolution and requires a grid with unifor
 F = griddedInterpolant([1 2 3], [10 20 30]);
 Vq = F(2.5)
 ```
-
 N-D grid given as a cell of grid vectors.
 
 ```matlab
 F = griddedInterpolant({1:3, 1:3}, magic(3));
 Vq = F(2, 2)
 ```
-
 Spline interpolation and property readback.
 
 ```matlab
@@ -63,14 +62,15 @@ F.Method
 F.ExtrapolationMethod
 ```
 
+
 ## 🔗 See also
 
 [interp1](../special_functions/interp1.md), [interpn](../special_functions/interpn.md), [scatteredInterpolant](../geometry/scatteredInterpolant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

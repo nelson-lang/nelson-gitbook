@@ -18,9 +18,12 @@ Signal dent de scie ou triangulaire.
 
 ## 📄 Description
 
+
 <b>sawtooth</b> génère une rampe périodique entre -1 et 1.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ y = sawtooth(0:0.1:2*pi);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[square](../../signal_processing/square.md).
+[square](../../signal_processing/1_signal_generation_preprocessing/square.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -26,11 +26,14 @@ Normal cumulative distribution function
 
 ## 📄 Description
 
-<b>normcdf</b> evaluates the cumulative distribution function of the normal distribution.
+
+<b>normcdf</b> evaluates the cumulative distribution function of the normal distribution. 
 
 Scalar inputs are expanded to match array inputs. If any distribution input uses single precision, the result uses single precision.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 2];
@@ -39,13 +42,14 @@ upperTail = normcdf(x, 0, 1, 'upper');
 [p, pLo, pUp] = normcdf(0, 0, 1, [0.04 0; 0 0.01]);
 ```
 
+
 ## 🔗 See also
 
-[normpdf](../../statistics/normpdf.md), [norminv](../../statistics/norminv.md).
+[normpdf](../../statistics/2_probability_distributions/normpdf.md), [norminv](../../statistics/2_probability_distributions/norminv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

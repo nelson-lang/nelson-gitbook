@@ -19,7 +19,8 @@ Verifie le nombre de lignes.
 
 ## 📄 Description
 
-L'assertion reussit lorsque size(value, 1) est egal a n.
+
+L'assertion reussit lorsque size(value, 1) est egal a n. 
 
 Un n invalide leve immediatement une erreur d'argument.
 
@@ -30,12 +31,12 @@ Two rows
 ```matlab
 asserts.rows(ones(2, 3), 2);
 ```
-
 Capture a row-count failure
 
 ```matlab
 [res, msg] = asserts.rows(ones(2, 3), 3);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a row-count failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

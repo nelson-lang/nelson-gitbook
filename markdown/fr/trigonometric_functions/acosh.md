@@ -16,14 +16,18 @@ Cosinus hyperbolique inverse.
 
 ## 📄 Description
 
+
 <b>acosh</b> calcule le cosinus hyperbolique inverse.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A =  [1+2i, 2, -3];
 res = acosh(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ res = acosh(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

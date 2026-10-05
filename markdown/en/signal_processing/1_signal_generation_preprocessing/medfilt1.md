@@ -23,9 +23,12 @@ One-dimensional median filter.
 
 ## 📄 Description
 
+
 <b>medfilt1</b> replaces each sample by a median over a local window.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -33,13 +36,14 @@ y = medfilt1([1 9 2 3 4], 3);
 
 ```
 
+
 ## 🔗 See also
 
-[hampel](../../signal_processing/hampel.md), [sgolayfilt](../../signal_processing/sgolayfilt.md).
+[hampel](../../signal_processing/1_signal_generation_preprocessing/hampel.md), [sgolayfilt](../../signal_processing/1_signal_generation_preprocessing/sgolayfilt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

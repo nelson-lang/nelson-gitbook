@@ -4,11 +4,14 @@ Build C/C++ code on the fly
 
 ## 📄 Description
 
-Nelson provides a cross-platform command-line tool written in Nelson for compiling native addon modules for Nelson.
+
+Nelson provides a cross-platform command-line tool written in Nelson for compiling native addon modules for Nelson. 
 
 It takes away the pain of dealing with the various differences in build platforms.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -36,8 +39,8 @@ R = dlcall(f, 3) % 8 + 3
 dlclose(lib)
 
 ```
-
 <img src="build_c_cpp_on_fly.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -45,7 +48,7 @@ dlclose(lib)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.2.0   | initial version |
 

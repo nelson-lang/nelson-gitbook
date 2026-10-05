@@ -18,13 +18,16 @@ Fait pivoter un tableau de 90 degrés.
 
 ## 📄 Description
 
-<b>B = rot90(A, k)</b> fait pivoter le tableau <b>A</b> dans le sens antihoraire de <b>k \* 90</b> degrés, où <b>k</b> est une valeur scalaire entière. Les valeurs négatives appliquent une rotation horaire.
 
-Le résultat conserve la classe en entrée et le stockage creux lorsque cela s'applique.
+<b>B = rot90(A, k)</b> fait pivoter le tableau <b>A</b> dans le sens antihoraire de <b>k \* 90</b> degrés, où <b>k</b> est une valeur scalaire entière. Les valeurs négatives appliquent une rotation horaire. 
+
+Le résultat conserve la classe en entrée et le stockage creux lorsque cela s'applique. 
 
 Utilisez la fonction<b>flip</b> pour retourner un tableau selon n'importe quelle dimension.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = eye(3, 2);
@@ -34,14 +37,15 @@ y = rot90(x, 2)
 y = rot90(x, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[flipud](../../elementary_functions/flipud.md), [fliplr](../../elementary_functions/fliplr.md).
+[flipud](../../elementary_functions/7_indexing_dimensions/flipud.md), [fliplr](../../elementary_functions/7_indexing_dimensions/fliplr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

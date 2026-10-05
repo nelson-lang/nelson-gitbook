@@ -20,23 +20,27 @@ Nombres aleatoires Weibull
 
 ## 📄 Description
 
+
 <b>wblrnd</b> genere des valeurs aleatoires de loi Weibull.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = wblrnd(2, 3, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md), [wblinv](../../statistics/wblinv.md).
+[wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblinv](../../statistics/2_probability_distributions/wblinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

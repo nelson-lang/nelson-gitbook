@@ -18,6 +18,7 @@ Convert world coordinates to image subscripts.
 
 ## 📄 Description
 
+
 Converts world coordinates to nearest row, column, and optional plane subscripts.
 
 ## 💡 Example
@@ -29,13 +30,14 @@ R = imref2d([2 3], 2, 3);
 [row, column] = worldToSubscript(R, [2 8], [3 6])
 ```
 
+
 ## 🔗 See also
 
-[worldToIntrinsic](../../../image_processing/worldToIntrinsic.md), [sizesMatch](../../../image_processing/sizesMatch.md).
+[worldToIntrinsic](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.md), [sizesMatch](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/sizesMatch.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

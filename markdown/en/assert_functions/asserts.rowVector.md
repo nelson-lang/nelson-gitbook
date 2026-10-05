@@ -18,7 +18,8 @@ Check that a value is a row vector.
 
 ## 📄 Description
 
-The assertion passes when value has row-vector shape.
+
+The assertion passes when value has row-vector shape. 
 
 Diagnostics report the computed class and dimensions.
 
@@ -29,12 +30,12 @@ Row vector
 ```matlab
 asserts.rowVector([1 2]);
 ```
-
 Capture a shape failure
 
 ```matlab
 [res, msg] = asserts.rowVector([1; 2]);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a shape failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

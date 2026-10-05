@@ -17,35 +17,43 @@ less than or equal, = operator.
 
 ## 📄 Description
 
-<b>C = le(A, B)</b> returns a logical array with elements set to logical<b>true</b> A is less than or equal to B.
 
-<b>le</b> compares only the real part of numeric arrays.
+<b>C = le(A, B)</b> returns a logical array with elements set to logical<b>true</b> A is less than or equal to B. 
 
-When inputs are sparse numeric or logical arrays, the result is a sparse logical array. Sparse <b>single</b> and single-complex operands are supported.
+<b>le</b> compares only the real part of numeric arrays. 
+
+When inputs are sparse numeric or logical arrays, the result is a sparse logical array. Sparse <b>single</b> and single-complex operands are supported. 
 
 For sparse complex arrays, order comparisons use the magnitude of each value.
 
 ## 💡 Examples
 
+
+
 ```matlab
 eye(2,2) &#60;= ones(2, 2)
 ```
+
 
 ```matlab
 0 &#60;= i
 ```
 
+
 ```matlab
 'Nelson' &#60;= 'Noslen'
 ```
+
 
 ```matlab
 'Nelson' &#60;= 'l'
 ```
 
+
 ```matlab
 le(0.8 - 0.6 - 0.2, 0)
 ```
+
 
 ## 🔗 See also
 
@@ -53,9 +61,9 @@ le(0.8 - 0.6 - 0.2, 0)
 
 ## 🕔 History
 
-| Version | 📄 Description                                       |
-| ------- | ---------------------------------------------------- |
-| 1.0.0   | initial version                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | sparse single and single-complex operands supported. |
 
 <!--

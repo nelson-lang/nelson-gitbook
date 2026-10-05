@@ -16,6 +16,7 @@ Determine if recording is in progress.
 
 ## 📄 Description
 
+
 <b>isrecording(recorder)</b> determines if recording is in progress for the specified <b>audiorecorder</b> object.
 
 ## 💡 Example
@@ -38,8 +39,9 @@ stop(recObj)
 playerObj = getplayer(recObj);
 play(playerObj)
 isplaying(playerObj)
-
+      
 ```
+
 
 ## 🔗 See also
 
@@ -47,9 +49,9 @@ isplaying(playerObj)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

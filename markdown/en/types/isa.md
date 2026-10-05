@@ -17,11 +17,12 @@ Return true if a variable has the requested class or type.
 
 ## 📄 Description
 
-<b>isa</b> returns logical 1 when <b>var</b> is an instance of <b>className</b>, and logical 0 otherwise.
 
-<b>className</b> can be a Nelson type name such as <b>double</b>, <b>cell</b>, <b>numeric</b>, <b>float</b>, or <b>integer</b>.
+<b>isa</b> returns logical 1 when <b>var</b> is an instance of <b>className</b>, and logical 0 otherwise. 
 
-For classdef objects, <b>isa</b> accepts the class name and supported superclass names, including <b>handle</b> for handle classes.
+<b>className</b> can be a Nelson type name such as <b>double</b>, <b>cell</b>, <b>numeric</b>, <b>float</b>, or <b>integer</b>. 
+
+For classdef objects, <b>isa</b> accepts the class name and supported superclass names, including <b>handle</b> for handle classes. 
 
 For sparse arrays, <b>isa</b> tests the stored value class, such as <b>double</b> or <b>logical</b>. Use <b>issparse</b> to test sparse storage.
 
@@ -33,7 +34,6 @@ Test a numeric type.
 A = 3;
 res = isa(A, 'double')
 ```
-
 Test the stored value class of a sparse array.
 
 ```matlab
@@ -41,7 +41,6 @@ S = sparse([2 0 3]);
 isDouble = isa(S, 'double')
 isSparse = issparse(S)
 ```
-
 Test a classdef handle object.
 
 ```matlab
@@ -56,16 +55,17 @@ isHandle = isa(obj, 'handle')
 delete(obj)
 ```
 
+
 ## 🔗 See also
 
 [class](../types/class.md), [issparse](../types/issparse.md), [isobject](../types/isobject.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                 |
-| ------- | ---------------------------------------------- |
-| 1.0.0   | initial version                                |
-| 2.0.0   | classdef object support documented             |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 2.0.0   | classdef object support documented |
 | 2.0.0   | sparse arrays are tested by stored value class |
 
 <!--

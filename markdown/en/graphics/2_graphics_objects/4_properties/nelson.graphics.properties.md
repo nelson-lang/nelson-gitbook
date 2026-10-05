@@ -4,9 +4,11 @@ graphics object property reference.
 
 ## 📄 Description
 
-This section contains reference pages for visible graphics object properties.
+
+This section contains reference pages for visible graphics object properties. 
 
 Use <b>properties</b> with a graphics object to list the properties supported by that object.
+
 
 ## 🔗 See also
 
@@ -14,7 +16,7 @@ Use <b>properties</b> with a graphics object to list the properties supported by
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

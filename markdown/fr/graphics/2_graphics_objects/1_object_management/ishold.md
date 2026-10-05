@@ -17,7 +17,9 @@ Obtient l'état actuel du mode hold.
 
 ## 📄 Description
 
+
 <b>tf = ishold(ax)</b> retourne l'état du mode hold de l'objet axes spécifié.
+
 
 ## 🔗 Voir aussi
 
@@ -25,8 +27,8 @@ Obtient l'état actuel du mode hold.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

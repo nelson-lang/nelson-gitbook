@@ -16,9 +16,12 @@ Vérifie si ax est un axe 2D polaire ou cartésien.
 
 ## 📄 Description
 
+
 <b>is2D</b> vérifie si <b>ax</b> est un axe 2D polaire ou cartésien.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -31,14 +34,15 @@ ax = gca();
 assert_isfalse(is2D(ax));
 ```
 
+
 ## 🔗 Voir aussi
 
 [isgraphics](../../../graphics/2_graphics_objects/1_object_management/isgraphics.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

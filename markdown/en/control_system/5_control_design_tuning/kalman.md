@@ -26,11 +26,14 @@ Design Kalman filter for state estimation.
 
 ## 📄 Description
 
-<b>[kalmf, L, P] = kalman(sys, Q, R, N)</b> generates a Kalman filter using the provided plant model <b>sys</b> and noise covariance matrices <b>Q</b>, <b>R</b>, and <b>N</b>.
+
+<b>[kalmf, L, P] = kalman(sys, Q, R, N)</b> generates a Kalman filter using the provided plant model <b>sys</b> and noise covariance matrices <b>Q</b>, <b>R</b>, and <b>N</b>. 
 
 The function calculates a Kalman filter suitable for application in a Kalman estimator, as depicted in the following diagram.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [11.269   -0.4940    1.129; 1.0000         0         0;0    1.0000         0];
@@ -42,13 +45,14 @@ R = 1;
 [kEst, l, p, m, z] = kalman(sys, Q, R, [])
 ```
 
+
 ## 🔗 See also
 
-[care](../../control_system/care.md), [dare](../../control_system/dare.md).
+[care](../../control_system/5_control_design_tuning/care.md), [dare](../../control_system/5_control_design_tuning/dare.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

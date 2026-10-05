@@ -21,14 +21,18 @@ Plus petits et plus grands elements d'un tableau.
 
 ## 📄 Description
 
+
 <b>bounds</b> renvoie les plus petits et les plus grands elements de A selon la dimension choisie.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [3 7 2; 9 1 5];
 [s, l] = bounds(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +40,8 @@ A = [3 7 2; 9 1 5];
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

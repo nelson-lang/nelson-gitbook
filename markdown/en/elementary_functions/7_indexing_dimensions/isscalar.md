@@ -16,11 +16,14 @@ Check if the input is a scalar
 
 ## 📄 Description
 
-<b>TF = isscalar(A)</b> returns logical true if <b>A</b> is a scalar, meaning it is a 1-by-1 two-dimensional array.
+
+<b>TF = isscalar(A)</b> returns logical true if <b>A</b> is a scalar, meaning it is a 1-by-1 two-dimensional array. 
 
 Otherwise, it returns logical false.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1+i, -i ; i, 2i];
@@ -28,15 +31,16 @@ isscalar(x)
 isscalar(1)
 ```
 
+
 ## 🔗 See also
 
-[isvector](../../elementary_functions/isvector.md).
+[isvector](../../elementary_functions/7_indexing_dimensions/isvector.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

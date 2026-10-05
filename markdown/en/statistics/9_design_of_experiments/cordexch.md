@@ -9,14 +9,17 @@ D-optimal design using coordinate-style interface.
 
 ## 📄 Description
 
+
 <b>cordexch</b> provides a coordinate-exchange compatible interface backed by the row-exchange implementation.
 
 ## Used function(s)
+
 
     rowexch
     candgen
     candexch
     rng
+  
 
 ## 💡 Example
 

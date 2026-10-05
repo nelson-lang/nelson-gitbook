@@ -17,17 +17,20 @@ Palette de couleurs Pink.
 
 ## 📄 Description
 
+
 <b>pink</b> retourne la palette de couleurs Pink.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('pink');
 ```
-
 <img src="pink.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('pink');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

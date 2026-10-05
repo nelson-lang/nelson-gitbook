@@ -19,9 +19,12 @@ Concaténation horizontale.
 
 ## 📄 Description
 
+
 <b>R = horzcat(M1, M2, ... , MN)</b> renvoie la concaténation horizontale de M1, M2, ... , MN le long de la dimension 2.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = eye(2, 2);
@@ -30,12 +33,12 @@ C = horzcat(A, B)
 D = [A, B]
 ```
 
+
 ```matlab
 A = 'nel';
 B = 'son';
 C = horzcat(A, B)
 ```
-
 Concatener des caracteres et nombres comme codes caractere.
 
 ```matlab
@@ -43,14 +46,15 @@ C = [char(65) 1];
 double(C)
 ```
 
+
 ## 🔗 Voir aussi
 
 [vertcat](../operators/vertcat.md), [cat](../operators/cat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

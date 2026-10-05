@@ -19,11 +19,14 @@ Récupère les données d'image d'une image vidéo.
 
 ## 📄 Description
 
-<b>RGB = frame2im(F)</b> extrait l'image truecolor (RGB) de l'image vidéo <b>F</b>.
+
+<b>RGB = frame2im(F)</b> extrait l'image truecolor (RGB) de l'image vidéo <b>F</b>. 
 
 <b>[X, map] = frame2im(F)</b> récupère l'image indexée <b>X</b> et sa palette de couleurs associée <b>map</b> à partir de l'image vidéo <b>F</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -34,15 +37,16 @@ figure;
 imshow(RGB);
 ```
 
+
 ## 🔗 Voir aussi
 
 [im2frame](../../graphics/4_images/im2frame.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.13.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.13.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -16,23 +16,27 @@ Convert an IEEE hexadecimal representation to a number.
 
 ## 📄 Description
 
+
 <b>hex2num</b> Convert an IEEE hexadecimal representation to a number.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = hex2num('3ff0000000000000')
 ```
 
+
 ## 🔗 See also
 
-[num2hex](../../elementary_functions/num2hex.md).
+[num2hex](../../elementary_functions/5_base_conversions/num2hex.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.14.0  | initial version |
+| 1.14.0   | initial version |
 
 <!--
 ## 👤 Author

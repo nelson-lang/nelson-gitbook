@@ -21,13 +21,14 @@ Checks that array elements are sorted or raise an error.
 
 ## 📄 Description
 
-<b>mustBeSorted(A)</b> raises an error if the elements of <b>A</b> are not sorted. It does not return a value.
 
-Vectors are checked as a whole, matrices column by column, and multidimensional arrays along the first dimension whose size is not 1.
+<b>mustBeSorted(A)</b> raises an error if the elements of <b>A</b> are not sorted. It does not return a value. 
 
-Empty values and scalars are always sorted.
+Vectors are checked as a whole, matrices column by column, and multidimensional arrays along the first dimension whose size is not 1. 
 
-Real numeric, logical and char arrays are checked natively in a single pass; other types use the comparison operators of their class.
+Empty values and scalars are always sorted. 
+
+Real numeric, logical and char arrays are checked natively in a single pass; other types use the comparison operators of their class. 
 
 <b>mustBeSorted</b> is designed to be used for property and function argument validation.
 
@@ -40,7 +41,6 @@ A = [5 3 3 1];
 mustBeSorted(A, 'descend')
 mustBeSorted(A)
 ```
-
 Missing values and complex values
 
 ```matlab
@@ -50,13 +50,14 @@ mustBeSorted([1 -2 3], 'ComparisonMethod', 'abs')
 mustBeSorted([1+1i, 1-1i])
 ```
 
+
 ## 🔗 See also
 
 [issorted](../data_analysis/issorted.md), [sort](../data_analysis/sort.md), [mustBeVector](../validators/mustBeVector.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

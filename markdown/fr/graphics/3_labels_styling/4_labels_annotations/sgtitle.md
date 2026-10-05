@@ -22,6 +22,7 @@ Ajouter un titre commun a une disposition graphique.
 
 ## 📄 Description
 
+
 <b>sgtitle</b> ajoute un titre commun au tiled layout courant s'il existe. Sinon, il ajoute un titre commun au-dessus des axes subplot de la figure courante.
 
 ## 💡 Exemples
@@ -40,7 +41,6 @@ subplot(2, 2, 4)
 title('Quatrieme subplot')
 sgtitle('Titre de la grille')
 ```
-
 <img src="sgtitle_1.svg" align="middle"/>
 Definir les proprietes du titre commun.
 
@@ -53,7 +53,6 @@ title('Deuxieme subplot')
 sgt = sgtitle('Titre de la grille', 'Color', 'red');
 sgt.FontSize = 20;
 ```
-
 <img src="sgtitle_2.svg" align="middle"/>
 Titre commun pour un tiled layout.
 
@@ -66,14 +65,15 @@ plot((1:10).^2);
 sgtitle(t, 'Titre commun');
 ```
 
+
 ## 🔗 Voir aussi
 
 [title](../../../graphics/3_labels_styling/4_labels_annotations/title.md), [tiledlayout](../../../graphics/2_graphics_objects/2_layout_objects/tiledlayout.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale |
 
 <!--

@@ -4,28 +4,31 @@ Returns last recorded warning message.
 
 ## 📝 Syntax
 
-- last_message = lastwarn()
+- last\_message = lastwarn()
 - [last\_message, last\_identifier] = lastwarn()
 - lastwarn(' ')
-- lastwarn(new_message)
-- lastwarn(new_message, new_identifier)
+- lastwarn(new\_message)
+- lastwarn(new\_message, new\_identifier)
 - [last\_message, last\_identifier] = lastwarn(' ')
-- [last\_message, last\_identifier] = lastwarn(new_message)
-- [last\_message, last\_identifier] = lastwarn(new_message, new_identifier)
+- [last\_message, last\_identifier] = lastwarn(new\_message)
+- [last\_message, last\_identifier] = lastwarn(new\_message, new\_identifier)
 
 ## 📤 Output argument
 
-- last_message - string: last warning message.
-- last_identifier - string: identifier.
+- last\_message - string: last warning message.
+- last\_identifier - string: identifier.
 
 ## 📄 Description
 
-<b>last_message = lastwarn()</b> returns a string containing the last warning message.
+
+<b>last\_message = lastwarn()</b> returns a string containing the last warning message. 
 
 <b>lastwarn('
-')</b> clears last warning.
+        ')</b> clears last warning.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,8 +37,9 @@ Returns last recorded warning message.
     [msg, id] = lastwarn()
     lastwarn('')
     [msg, id] = lastwarn()
-
+    
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +47,7 @@ Returns last recorded warning message.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -26,13 +26,16 @@ Ligne constante verticale.
 
 ## 📄 Description
 
-<b>xline(xvalue)</b> trace une ligne verticale à la valeur <b>xvalue</b>sur les axes courants. La ligne occupe toute la hauteur des axes.
 
-Utilisez un <b>LineSpec</b> pour définir le style et la couleur de la ligne, et un <b>label</b> pour l'annoter.
+<b>xline(xvalue)</b> trace une ligne verticale à la valeur <b>xvalue</b>sur les axes courants. La ligne occupe toute la hauteur des axes. 
+
+Utilisez un <b>LineSpec</b> pour définir le style et la couleur de la ligne, et un <b>label</b> pour l'annoter. 
 
 Lorsque <b>xvalue</b> est un vecteur, une ligne verticale est créée pour chaque valeur.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -41,6 +44,7 @@ xline(5, '--r', 'threshold');
 
 ```
 
+
 ```matlab
 f = figure();
 plot(-10:10, (-10:10).^2);
@@ -48,14 +52,15 @@ xline([-3 3], 'Color', [0 0 1], 'LineWidth', 2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [yline](../../../graphics/1_plots/1_line_plots/yline.md), [line](../../../graphics/1_plots/1_line_plots/line.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

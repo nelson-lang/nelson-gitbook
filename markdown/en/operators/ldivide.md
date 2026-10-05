@@ -18,9 +18,12 @@ Left division, .\\ operator.
 
 ## 📄 Description
 
+
 <b>C = ldivide(A, B)</b> returns the element-by-element left division of A and B.
 
 ## 💡 Examples
+
+
 
 ```matlab
 B = ones(3, 4)
@@ -28,11 +31,13 @@ A = B *2
 A .\ B
 ```
 
+
 ```matlab
 B = 2
 A = B *2
 A .\ B
 ```
+
 
 ## 🔗 See also
 
@@ -40,7 +45,7 @@ A .\ B
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

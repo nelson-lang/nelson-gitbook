@@ -24,22 +24,26 @@ Extreme value parameter estimates
 
 ## 📄 Description
 
+
 <b>evfit</b> estimates the parameters of the extreme value distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 2 3];
 [phat, pci] = evfit(x);
 ```
 
+
 ## 🔗 See also
 
-[evlike](../../statistics/evlike.md), [evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md).
+[evlike](../../statistics/2_probability_distributions/evlike.md), [evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

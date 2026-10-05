@@ -8,21 +8,25 @@ Replace text between boundaries.
 
 ## 📄 Description
 
+
 <b>replaceBetween</b> Replace text between boundaries.
 
 ## 💡 Example
+
+
 
 ```matlab
 replaceBetween("a[old]b", "[", "]", "new")
 ```
 
+
 ## 🔗 See also
 
-[eraseBetween](../../string/eraseBetween.md), [replace](../../string/replace.md), [extractBetween](../../string/extractBetween.md).
+[eraseBetween](../../string/3_find_replace/eraseBetween.md), [replace](../../string/3_find_replace/replace.md), [extractBetween](../../string/6_join_split_extract/extractBetween.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

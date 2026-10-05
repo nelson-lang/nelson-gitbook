@@ -4,27 +4,31 @@ Renvoie la liste des modules chargés dans Nelson.
 
 ## 📝 Syntaxe
 
-- modules_name = getmodules()
+- modules\_name = getmodules()
 - [modules\_name, modules\_root\_path, modules\_version, modules\_protected] = getmodules()
 
 ## 📤 Argument de sortie
 
-- modules_name - cellule de chaînes : noms des modules.
-- modules_root_path - cellule de chaînes : chemins des modules.
-- modules_version - cellule de vecteurs : [major, minor, patch].
-- modules_protected - vecteur logique : true si le module peut être supprimé, sinon false.
+- modules\_name - cellule de chaînes : noms des modules.
+- modules\_root\_path - cellule de chaînes : chemins des modules.
+- modules\_version - cellule de vecteurs : [major, minor, patch].
+- modules\_protected - vecteur logique : true si le module peut être supprimé, sinon false.
 
 ## 📄 Description
 
-<b>getmodules</b> renvoie la liste des modules chargés dans Nelson.
+
+<b>getmodules</b> renvoie la liste des modules chargés dans Nelson. 
 
 Tous les modules du cœur sont protégés et ne peuvent pas être supprimés pendant une session Nelson.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [modules_name, modules_root_path, modules_version, modules_protected] = getmodules()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ Tous les modules du cœur sont protégés et ne peuvent pas être supprimés pen
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

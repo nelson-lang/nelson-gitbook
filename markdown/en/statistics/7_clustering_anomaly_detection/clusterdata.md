@@ -11,24 +11,28 @@ Cluster observations from data.
 
 ## 📄 Description
 
-<b>clusterdata</b> groups rows of <b>X</b> by building a hierarchical cluster tree and cutting it into clusters.
+
+<b>clusterdata</b> groups rows of <b>X</b> by building a hierarchical cluster tree and cutting it into clusters. 
 
 This version supports the distance criterion with MaxClust or Cutoff. Linkage and distance options are passed to <b>linkage</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [0 0; 1 0; 0 2; 4 4];
 T = clusterdata(X, 'MaxClust', 2)
 ```
 
+
 ## 🔗 See also
 
-[cluster](../../statistics/cluster.md), [linkage](../../statistics/linkage.md), [pdist](../../statistics/pdist.md).
+[cluster](../../statistics/7_clustering_anomaly_detection/cluster.md), [linkage](../../statistics/7_clustering_anomaly_detection/linkage.md), [pdist](../../statistics/7_clustering_anomaly_detection/pdist.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

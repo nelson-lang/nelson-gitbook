@@ -18,10 +18,11 @@ Computes the number of occurrences of an pattern.
 - nbocc - a matrix of integer values.
 
 ## 📄 Description
-
 <b>count</b> computes the number of occurrences of an pattern.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -39,13 +40,14 @@ k = count(A, 'son')
 
 ```
 
+
 ## 🔗 See also
 
-[startsWith](../../string/startsWith.md), [endsWith](../../string/endsWith.md), [contains](../../string/contains.md).
+[startsWith](../../string/3_find_replace/startsWith.md), [endsWith](../../string/3_find_replace/endsWith.md), [contains](../../string/3_find_replace/contains.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

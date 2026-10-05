@@ -24,9 +24,12 @@ Kalman estimator design for continuous-time systems.
 
 ## 📄 Description
 
+
 The function computes the optimal steady-state feedback gain matrix, denoted as <b>L</b>, minimizing a quadratic cost function for a linear discrete state-space system model.
 
 ## 💡 Example
+
+
 
 ```matlab
 c = 1;
@@ -41,13 +44,14 @@ R = 0.02;
 [l, p, e] = lqe(A, G, C, Q, R)
 ```
 
+
 ## 🔗 See also
 
-[lqr](../../control_system/lqr.md).
+[lqr](../../control_system/5_control_design_tuning/lqr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -15,9 +15,12 @@ Write comma-separated value file.
 
 ## 📄 Description
 
+
 <b>csvwrite</b> writes an numeric matrix to an CSV format file.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -30,13 +33,14 @@ R = fileread(filename)
 
 ```
 
+
 ## 🔗 See also
 
 [csvread](../spreadsheet/csvread.md), [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

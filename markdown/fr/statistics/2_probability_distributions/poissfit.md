@@ -19,23 +19,27 @@ Estimation du taux de Poisson
 
 ## 📄 Description
 
+
 <b>poissfit</b> estime le parametre de taux de la loi de Poisson.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [lambdaHat, lambdaCI] = poissfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[poisslike](../../statistics/poisslike.md), [poisspdf](../../statistics/poisspdf.md), [poisscdf](../../statistics/poisscdf.md).
+[poisslike](../../statistics/2_probability_distributions/poisslike.md), [poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poisscdf](../../statistics/2_probability_distributions/poisscdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

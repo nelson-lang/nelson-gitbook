@@ -17,6 +17,7 @@ Measure of distance (angle) between two subspaces spanned by columns of matrices
 
 ## 📄 Description
 
+
 <b>subspace</b> computes a scalar measure of the distance between the subspaces spanned by the columns of matrices <b>A</b> and <b>B</b>. The value is derived from the principal angles between the two subspaces (computed from orthonormal bases of the column spaces). This measure is useful to quantify how close two column spaces are; it is zero when the subspaces coincide.
 
 ## Used function(s)
@@ -24,6 +25,8 @@ Measure of distance (angle) between two subspaces spanned by columns of matrices
 orth
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -35,11 +38,12 @@ d = subspace(A, B)
 
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

@@ -17,17 +17,20 @@ Sky colormap array.
 
 ## 📄 Description
 
+
 <b>sky</b> returns the colormap with sky colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('sky');
 ```
-
 <img src="sky.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('sky');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -23,9 +23,12 @@ Set colormap limits.
 
 ## 📄 Description
 
+
 <b>clim</b> set or get colormap limits.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -35,8 +38,8 @@ surf(Z);
 limits = clim()
 
 ```
-
 <img src="clim_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -47,8 +50,8 @@ clim([25 75])
 limits = clim()
 
 ```
-
 <img src="clim_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -56,7 +59,7 @@ limits = clim()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

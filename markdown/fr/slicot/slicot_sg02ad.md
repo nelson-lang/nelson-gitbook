@@ -1,10 +1,10 @@
-# slicot_sg02ad
+# slicot\_sg02ad
 
 Résolution des équations de Riccati algébriques temps continu ou discret pour les systèmes descripteurs.
 
 ## 📝 Syntaxe
 
-- [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
+- [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot\_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 
 ## 📥 Argument d'entrée
 
@@ -40,6 +40,7 @@ Résolution des équations de Riccati algébriques temps continu ou discret pour
 
 ## 📄 Description
 
+
 Résolution en X de l'équation de Riccati algébrique temps continu ou de l'équation de Riccati algébrique temps discret.
 
 ## Fonction(s) utilisée(s)
@@ -51,6 +52,8 @@ SG02AD
 http://slicot.org/objects/software/shared/doc/SG02AD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 N = 2;
@@ -81,14 +84,15 @@ L = zeros(N, N);
 [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_sb02od](../slicot/slicot_sb02od.md), [care](../control_system/care.md), [dare](../control_system/dare.md).
+[slicot_sb02od](../slicot/slicot_sb02od.md), [care](../control_system/5_control_design_tuning/care.md), [dare](../control_system/5_control_design_tuning/dare.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -31,30 +31,33 @@ Constrained nonlinear minimization.
 
 ## 📄 Description
 
-<b>fmincon</b> solves constrained nonlinear minimization problems with linear constraints, bounds and nonlinear constraints.
 
-The <b>sqp</b> path solves quadratic subproblems with active linearized constraints, BFGS Hessian updates and merit-function line search. Nonlinear constraints are handled directly in the SQP subproblem through finite-difference or user-supplied Jacobians.
+<b>fmincon</b> solves constrained nonlinear minimization problems with linear constraints, bounds and nonlinear constraints. 
 
-The <b>interior-point</b> path builds an interior starting point with logarithmic barrier continuation before entering the nonlinear SQP phase. The <b>active-set</b> path keeps an explicit working set and reports active linear rows in <b>output.activeconstraints</b>. The <b>sqp-legacy</b> path uses a separate conservative SQP loop with active-set subproblems and stricter merit decrease.
+The <b>sqp</b> path solves quadratic subproblems with active linearized constraints, BFGS Hessian updates and merit-function line search. Nonlinear constraints are handled directly in the SQP subproblem through finite-difference or user-supplied Jacobians. 
 
-For badly scaled problems, set <b>ScaleProblem</b> to <b>obj-and-constr</b> and provide <b>TypicalX</b>. Nelson scales SQP subproblems, initializes the Hessian with the variable scales and applies scaled merit decrease tests.
+The <b>interior-point</b> path builds an interior starting point with logarithmic barrier continuation before entering the nonlinear SQP phase. The <b>active-set</b> path keeps an explicit working set and reports active linear rows in <b>output.activeconstraints</b>. The <b>sqp-legacy</b> path uses a separate conservative SQP loop with active-set subproblems and stricter merit decrease. 
 
-If nonlinear SQP cannot recover feasibility, Nelson runs a restoration phase based on penalty continuation and reports <b>output.restoration</b> when that phase supplies the returned point.
+For badly scaled problems, set <b>ScaleProblem</b> to <b>obj-and-constr</b> and provide <b>TypicalX</b>. Nelson scales SQP subproblems, initializes the Hessian with the variable scales and applies scaled merit decrease tests. 
 
-The <b>trust-region-reflective</b> path supports bound and linear-equality problems with user gradients, Hessian matrices, Hessian callbacks or Hessian multiply callbacks, projected truncated conjugate gradients, diagonal or band preconditioning, and trust-region radius updates. The <b>output</b> structure includes conjugate-gradient diagnostics such as <b>pcgflag</b>, <b>pcgresidual</b> and <b>trustregionradius</b>.
+If nonlinear SQP cannot recover feasibility, Nelson runs a restoration phase based on penalty continuation and reports <b>output.restoration</b> when that phase supplies the returned point. 
 
-Accepted display modes include <b>off</b>, <b>none</b>, <b>final</b>, <b>final-detailed</b>, <b>notify</b>, <b>notify-detailed</b>, <b>iter</b> and <b>iter-detailed</b>. Setting <b>Diagnostics</b> to <b>on</b> prints a summary of variables, functions, constraints and selected algorithm before solving.
+The <b>trust-region-reflective</b> path supports bound and linear-equality problems with user gradients, Hessian matrices, Hessian callbacks or Hessian multiply callbacks, projected truncated conjugate gradients, diagonal or band preconditioning, and trust-region radius updates. The <b>output</b> structure includes conjugate-gradient diagnostics such as <b>pcgflag</b>, <b>pcgresidual</b> and <b>trustregionradius</b>. 
 
-Default options depend on the algorithm: <b>interior-point</b> uses <b>MaxIterations</b> 1000, <b>MaxFunctionEvaluations</b> 3000, <b>StepTolerance</b> 1e-10 and <b>SubproblemAlgorithm</b> 'factorization'; the other algorithms use <b>MaxIterations</b> 400, <b>MaxFunctionEvaluations</b> '100\*numberOfVariables' and <b>StepTolerance</b> 1e-6.
+Accepted display modes include <b>off</b>, <b>none</b>, <b>final</b>, <b>final-detailed</b>, <b>notify</b>, <b>notify-detailed</b>, <b>iter</b> and <b>iter-detailed</b>. Setting <b>Diagnostics</b> to <b>on</b> prints a summary of variables, functions, constraints and selected algorithm before solving. 
+
+Default options depend on the algorithm: <b>interior-point</b> uses <b>MaxIterations</b> 1000, <b>MaxFunctionEvaluations</b> 3000, <b>StepTolerance</b> 1e-10 and <b>SubproblemAlgorithm</b> 'factorization'; the other algorithms use <b>MaxIterations</b> 400, <b>MaxFunctionEvaluations</b> '100\*numberOfVariables' and <b>StepTolerance</b> 1e-6. 
 
 The <b>exitflag</b> output reports 1 (first-order optimality satisfied), 2 (step below StepTolerance), 3 (objective change below FunctionTolerance, trust-region-reflective), 0 (iteration or evaluation limit), -1 (stopped by output function), -2 (no feasible point found) or -3 (objective below ObjectiveLimit).
 
 ## Used function(s)
 
+
     optimoptions
     optimset
     quadprog
     fminsearch
+  
 
 ## 📚 Bibliography
 
@@ -79,7 +82,6 @@ opts = optimoptions('fmincon', 'Display', 'off', 'Algorithm', 'sqp');
 [x, fval] = fmincon(fun, [0; 0], [], [], [], [], [], [], @unitdisk, opts)
 
 ```
-
 Use linear constraints.
 
 ```matlab
@@ -89,7 +91,6 @@ b = 1;
 [x, fval, exitflag] = fmincon(fun, [-1; 2], A, b)
 
 ```
-
 Use a trust-region-reflective Hessian matrix.
 
 ```matlab
@@ -102,7 +103,6 @@ opts = optimoptions('fmincon', 'Display', 'off', 'Algorithm', 'trust-region-refl
 [x, fval] = fmincon(@quadobj, [0; 0], [], [], [], [], [0; 0], [3; 3], [], opts)
 
 ```
-
 Use a trust-region-reflective Hessian multiply function.
 
 ```matlab
@@ -119,13 +119,14 @@ opts = optimoptions('fmincon', 'Display', 'off', 'Algorithm', 'trust-region-refl
 
 ```
 
+
 ## 🔗 See also
 
 [optimoptions](../optimization/optimoptions.md), [fminsearch](../optimization/fminsearch.md), [quadprog](../optimization/quadprog.md), [solve](../optimization/solve.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

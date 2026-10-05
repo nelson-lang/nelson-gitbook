@@ -11,6 +11,7 @@ Recherche du point le plus proche
 
 ## 📄 Description
 
+
 <b>dsearchn</b> retourne le point le plus proche dans <b>P</b> pour chaque point de requete.
 
 ## 💡 Exemple
@@ -22,14 +23,15 @@ P = [0 0; 1 0; 1 1; 0 1];
 [idx, dist] = dsearchn(P, [0.2 0.1])
 ```
 
+
 ## 🔗 Voir aussi
 
 [tsearchn](../geometry/tsearchn.md), [triangulation](../geometry/triangulation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

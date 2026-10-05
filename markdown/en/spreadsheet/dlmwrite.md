@@ -26,9 +26,12 @@ Write an numeric matrix to a text file file using a delimiter.
 
 ## 📄 Description
 
+
 <b>dlmwrite</b> writes an numeric matrix to an ASCII format file.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -41,13 +44,14 @@ R = fileread(filename)
 
 ```
 
+
 ## 🔗 See also
 
 [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

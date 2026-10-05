@@ -31,9 +31,12 @@ Set axis limits and aspect ratios.
 
 ## 📄 Description
 
+
 <b>axes</b> set axis limits and appearance.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -58,8 +61,8 @@ plot (t, x);
 title('normal plot again');
 axis('normal');
 ```
-
 <img src="axis.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -67,7 +70,7 @@ axis('normal');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

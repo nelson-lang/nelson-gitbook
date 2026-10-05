@@ -11,12 +11,15 @@ Random sample from a population.
 
 ## 📄 Description
 
+
 <b>randsample</b> samples values using Nelson's random generator. Weighted sampling is supported with replacement.
 
 ## Used function(s)
 
+
     rng
     bootstrp
+  
 
 ## 💡 Examples
 
@@ -26,7 +29,6 @@ Draw a reproducible sample without replacement.
 rng(10);
 y = randsample(10, 4)
 ```
-
 Draw a weighted sample with replacement.
 
 ```matlab

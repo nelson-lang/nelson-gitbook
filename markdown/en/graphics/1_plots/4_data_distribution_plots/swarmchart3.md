@@ -11,7 +11,8 @@ Display a 3-D swarm chart.
 
 ## 📄 Description
 
-<b>swarmchart3</b> displays 3-D points using a scatter object. The returned object keeps the original <b>XData</b>, <b>YData</b>, and <b>ZData</b> and uses scatter jitter properties for the displayed x and y positions.
+
+<b>swarmchart3</b> displays 3-D points using a scatter object. The returned object keeps the original <b>XData</b>, <b>YData</b>, and <b>ZData</b> and uses scatter jitter properties for the displayed x and y positions. 
 
 Supported chart properties are <b>XJitter</b>, <b>XJitterWidth</b>, <b>YJitter</b>, <b>YJitterWidth</b>, and <b>ColorVariable</b>.
 
@@ -22,8 +23,8 @@ Display 3-D grouped observations.
 ```matlab
 swarmchart3([1 1 2 2], [1 2 1 2], [4 5 6 7], 40, [0 0.4 0.8], 'filled');
 ```
-
 <img src="swarmchart3_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

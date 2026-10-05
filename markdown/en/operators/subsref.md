@@ -17,6 +17,7 @@ Subscripted reference.
 
 ## 📄 Description
 
+
 <b>B = subsref(A, S)</b> is invoked when using the syntax<b>A(i)</b>, <b>A{i}</b>, or <b>A.i</b> with an object <b>A</b>.
 
 ## 💡 Examples
@@ -29,7 +30,6 @@ S.type='()';
 S.subs={1:2,':'};
 R = subsref(A, S)
 ```
-
 Brace Indexing
 
 ```matlab
@@ -39,7 +39,6 @@ S.type = '{}';
 S.subs = {[1 2]};
 [R1, R2] = subsref(C, S);
 ```
-
 Dot Indexing
 
 ```matlab
@@ -50,13 +49,14 @@ S.subs = 'number';
 R = subsref(A, S)
 ```
 
+
 ## 🔗 See also
 
 [subsasgn](../operators/subsasgn.md), [subsindex](../operators/subsindex.md), [colon](../operators/colon.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

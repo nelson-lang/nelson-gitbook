@@ -26,6 +26,7 @@ Find edges in a grayscale image.
 
 ## 📄 Description
 
+
 Find edges in a grayscale image. Supported methods are sobel, prewitt, roberts, log and canny. The sobel, prewitt and roberts methods accept horizontal, vertical or both as direction. The log and canny methods accept a positive scalar sigma. The canny threshold can be a scalar or a two-element vector.
 
 ## 💡 Example
@@ -39,16 +40,16 @@ BW=edge(I,'sobel');
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(BW); g=linspace(0,1,64)'; colormap([g g g]); title('Edges');
 ```
-
 <img src="edge_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imfilter](../../../image_processing/imfilter.md), [fspecial](../../../image_processing/fspecial.md).
+[imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md), [fspecial](../../../image_processing/1_image_basics/3_filtering_edges/fspecial.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

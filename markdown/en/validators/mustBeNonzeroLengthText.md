@@ -15,9 +15,12 @@ Checks that value is text with nonzero length or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeNonzeroLengthText</b> checks that value is text with nonzero length or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeNonzeroLengthText('true')
@@ -25,13 +28,14 @@ mustBeNonzeroLengthText("hello")
 mustBeNonzeroLengthText('')
 ```
 
+
 ## 🔗 See also
 
 [ischar](../types/ischar.md), [isstring](../types/isstring.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

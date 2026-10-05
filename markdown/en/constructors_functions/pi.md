@@ -8,21 +8,27 @@ Ratio of circle's circumference to its diameter.
 
 ## 📄 Description
 
+
 <b>pi</b> returns the floating-point number nearest the value of <b>π</b>.
 
 ## 💡 Examples
+
+
 
 ```matlab
 cos(pi)
 ```
 
+
 ```matlab
 sin(pi)
 ```
 
+
 ```matlab
 4*atan(1) == pi
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +36,7 @@ sin(pi)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

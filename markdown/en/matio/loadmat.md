@@ -20,6 +20,7 @@ load data from .mat file into Nelson's workspace.
 
 ## 📄 Description
 
+
 <b>loadmat</b> loads data from .mat file to Nelson's workspace.
 
 ## 📚 Bibliography
@@ -27,6 +28,8 @@ load data from .mat file into Nelson's workspace.
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -46,13 +49,14 @@ B
 
 ```
 
+
 ## 🔗 See also
 
 [load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](../matio/savemat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

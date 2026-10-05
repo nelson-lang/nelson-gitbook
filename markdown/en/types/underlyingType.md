@@ -16,13 +16,17 @@ Underlying type of an array.
 
 ## 📄 Description
 
+
 <b>underlyingType</b> returns the name of the underlying class of X. For ordinary arrays this is the same as class(X); for an enumeration built on a fundamental type it returns that fundamental type.
 
 ## 💡 Example
 
+
+
 ```matlab
 underlyingType(int32(5))
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ underlyingType(int32(5))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

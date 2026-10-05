@@ -20,9 +20,12 @@ Ligne de visée de la caméra.
 
 ## 📄 Description
 
+
 <b>view</b> définit la vue dans un tracé.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -30,8 +33,8 @@ f = figure();
 Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 ```
-
 <img src="view_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -40,8 +43,8 @@ Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 view(90, 0)
 ```
-
 <img src="view_2.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -50,8 +53,8 @@ Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 view(2)
 ```
-
 <img src="view_3.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -59,9 +62,9 @@ view(2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                 |
-| ------- | ---------------------------------------------- |
-| 1.0.0   | Version initiale                               |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | Version initiale |
 | 1.2.0   | Azimut et élévation comme arguments de sortie. |
 
 <!--

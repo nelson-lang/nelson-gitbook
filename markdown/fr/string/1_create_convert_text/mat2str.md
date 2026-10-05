@@ -19,11 +19,14 @@ Conversion matrice -> chaîne.
 
 ## 📄 Description
 
-<b>mat2str</b> convertit une matrice en chaîne.
+
+<b>mat2str</b> convertit une matrice en chaîne. 
 
 Cette chaîne peut être utilisée pour reconstruire la matrice d'origine avec la fonction <b>execstr</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 R = mat2str(pi)
@@ -34,14 +37,15 @@ execstr(['RB = ', R])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [execstr](../../core/execstr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

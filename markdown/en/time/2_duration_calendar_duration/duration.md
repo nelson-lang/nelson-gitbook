@@ -20,13 +20,14 @@ Create elapsed time durations.
 
 ## 📄 Description
 
-Create elapsed time durations.
 
-The constructor accepts numeric parts and common colon-separated text forms. Use hours, minutes, seconds, milliseconds, days, and years for unit-specific construction and conversion.
+Create elapsed time durations. 
 
-<b>string</b> returns the display text of each element and <b><missing></b> for a <b>NaN</b> duration; the display, <b>char</b> and <b>cellstr</b> keep the text NaN (<b>cellstr(d, fmt)</b> uses the format <b>fmt</b>). <b>duration(missing)</b>, and assigning <b>missing</b> into a duration array, give <b>NaN</b>.
+The constructor accepts numeric parts and common colon-separated text forms. Use hours, minutes, seconds, milliseconds, days, and years for unit-specific construction and conversion. 
 
-<b>duration.empty(m, n, ...)</b> returns an empty duration array. A comparison with <b>missing</b> is false (<b>~=</b> is true), as with a <b>NaN</b> duration.
+<b>string</b> returns the display text of each element and <b><missing></b> for a <b>NaN</b> duration; the display, <b>char</b> and <b>cellstr</b> keep the text NaN (<b>cellstr(d, fmt)</b> uses the format <b>fmt</b>). <b>duration(missing)</b>, and assigning <b>missing</b> into a duration array, give <b>NaN</b>. 
+
+<b>duration.empty(m, n, ...)</b> returns an empty duration array. A comparison with <b>missing</b> is false (<b>~=</b> is true), as with a <b>NaN</b> duration. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -42,13 +43,14 @@ string(seconds([1 NaN]))
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

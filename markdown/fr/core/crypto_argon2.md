@@ -4,8 +4,8 @@ Hachage de mot de passe et dérivation de clé Argon2.
 
 ## 📝 Syntaxe
 
-- hexa_hash = crypto.argon2(password, salt)
-- hexa_hash = crypto.argon2(password, salt, name, value, ...)
+- hexa\_hash = crypto.argon2(password, salt)
+- hexa\_hash = crypto.argon2(password, salt, name, value, ...)
 
 ## 📥 Argument d'entrée
 
@@ -21,11 +21,12 @@ Hachage de mot de passe et dérivation de clé Argon2.
 
 ## 📤 Argument de sortie
 
-- hexa_hash - vecteur de caractères : 2 \* Length caractères hexadécimaux minuscules.
+- hexa\_hash - vecteur de caractères : 2 \* Length caractères hexadécimaux minuscules.
 
 ## 📄 Description
 
-<b>crypto.argon2</b> calcule un hachage Argon2 (RFC 9106), la fonction à coût mémoire recommandée pour stocker des mots de passe et dériver des clés de chiffrement à partir de phrases secrètes. Conservez le sel et les paramètres à côté du hachage : vérifier un mot de passe consiste à recalculer le hachage avec les mêmes entrées et à comparer.
+
+<b>crypto.argon2</b> calcule un hachage Argon2 (RFC 9106), la fonction à coût mémoire recommandée pour stocker des mots de passe et dériver des clés de chiffrement à partir de phrases secrètes. Conservez le sel et les paramètres à côté du hachage : vérifier un mot de passe consiste à recalculer le hachage avec les mêmes entrées et à comparer. 
 
 Les valeurs par défaut (argon2id, 64 MiB, 3 passes, 1 voie) prennent une fraction de seconde sur une machine de bureau ; augmentez <b>Memory</b> ou <b>Passes</b> pour une protection plus forte, ne les réduisez que pour les tests. La zone de travail est allouée à chaque appel puis effacée.
 
@@ -44,7 +45,6 @@ hacher une phrase secrète (petits paramètres pour l'exemple)
 ```matlab
 R = crypto.argon2('correct horse battery staple', 'salt-of-16-bytes', 'Memory', 1024, 'Passes', 2)
 ```
-
 vecteur de test argon2id de la RFC 9106
 
 ```matlab
@@ -53,14 +53,15 @@ salt = uint8(repmat(2, 1, 16));
 R = crypto.argon2(password, salt, 'Memory', 32, 'Passes', 3, 'Lanes', 4, 'Key', uint8(repmat(3, 1, 8)), 'AssociatedData', uint8(repmat(4, 1, 12)))
 ```
 
+
 ## 🔗 Voir aussi
 
-[crypto.blake2b](../core/crypto.blake2b.md), [crypto.hmac](../core/crypto.hmac.md).
+[crypto.blake2b](../core/crypto_blake2b.md), [crypto.hmac](../core/crypto_hmac.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

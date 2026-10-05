@@ -25,11 +25,14 @@ Matrix and vector norms
 
 ## 📄 Description
 
-<b>norm</b> computes the norm of a vector or a matrix.
+
+<b>norm</b> computes the norm of a vector or a matrix. 
 
 Frobenius norm of M is equal to <b>sqrt (sum (diag (M' \* M)))</b> .
 
 ## 💡 Examples
+
+
 
 ```matlab
 M = [1 2; 3 4];
@@ -46,18 +49,20 @@ norm(V, Inf)
 norm(V, 'fro')
 ```
 
+
 ```matlab
 x = ones(3000, 3000);
 tic();R = norm(x);toc
 ```
 
+
 ## 🔗 See also
 
-[svd](../../linear_algebra/svd.md).
+[svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

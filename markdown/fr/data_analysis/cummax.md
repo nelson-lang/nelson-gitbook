@@ -18,14 +18,18 @@ Maximum cumulatif des elements d'un tableau.
 
 ## 📄 Description
 
+
 <b>cummax</b> renvoie les maximums cumulatifs selon la dimension choisie.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [3 1 4 2];
 R = cummax(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ R = cummax(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

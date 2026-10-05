@@ -18,7 +18,8 @@ Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation.
 
 ## 📄 Description
 
-<b>NFlow.exportfmu</b> genere le modele en C via le pipeline de generation partage (memes gates et diagnostics que <b>nflow_codegenerate</b>, passes interpreteur incluses, donc les ilots acausaux lineaires s'exportent aussi), l'enveloppe d'une interface FMI 3.0 Co-Simulation, et empaquete <code>modelDescription.xml</code> plus les sources C dans un FMU source <code><model>.fmu</code>.
+
+<b>NFlow.exportfmu</b> genere le modele en C via le pipeline de generation partage (memes gates et diagnostics que <b>nflow\_codegenerate</b>, passes interpreteur incluses, donc les ilots acausaux lineaires s'exportent aussi), l'enveloppe d'une interface FMI 3.0 Co-Simulation, et empaquete <code>modelDescription.xml</code> plus les sources C dans un FMU source <code><model>.fmu</code>. 
 
 Les label sources externes deviennent des entrees FMU et les label sinks externes des sorties FMU. Seuls les signaux Float64 sont supportes a la frontiere du FMU ; les constructions conditionnelles au-dela des gates abaisses et les blocs FMU / nelsonFunction sont rejetes avec un message type.
 
@@ -30,13 +31,14 @@ Exporter un modele et recuperer le chemin de l'archive.
 % fmu = NFlow.exportfmu('C:/models/lowpass.nflow', tempdir());
 ```
 
+
 ## 🔗 Voir aussi
 
 [nflow_codegenerate](../nflow_engine/nflow_codegenerate.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

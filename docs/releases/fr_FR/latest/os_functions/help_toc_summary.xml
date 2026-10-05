@@ -23,8 +23,8 @@
       <keyword name="searchenv" link="searchenv.html" description="Recherche un fichier en utilisant les chemins définis dans une variable d'environnement."/>
       <keyword name="setenv" link="setenv.html" description="Definir ou supprimer une variable d'environnement."/>
       <keyword name="system" link="system.html" description="Exécution de commandes shell."/>
-      <keyword name="dos" link="system.html" description="Exécution de commandes shell."/>
-      <keyword name="unix" link="system.html" description="Exécution de commandes shell."/>
+      <keyword name="dos" link="system.html" description="Exécution de commandes shell." alias="true"/>
+      <keyword name="unix" link="system.html" description="Exécution de commandes shell." alias="true"/>
       <keyword name="unix" link="unix.html" description="Executer des commandes avec l'interpreteur du systeme d'exploitation."/>
       <keyword name="unsetenv" link="unsetenv.html" description="Supprime une variable d'environnement."/>
       <keyword name="username" link="username.html" description="obtenir le nom d'utilisateur courant."/>

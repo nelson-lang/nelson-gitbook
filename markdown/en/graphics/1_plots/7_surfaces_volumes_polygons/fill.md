@@ -25,53 +25,58 @@ Create filled 2-D patches.
 
 ## 📄 Description
 
-<b>fill(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by<b>X</b> and <b>Y</b> coordinates, and fills the shape with color<b>C</b>.
 
-<b>fill(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the fill/patch object using name-value pairs.
+<b>fill(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by<b>X</b> and <b>Y</b> coordinates, and fills the shape with color<b>C</b>. 
 
-<b>go = fill(...)</b> returns the handle <b>go</b> to the created patch object.
+<b>fill(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the fill/patch object using name-value pairs. 
 
-Property Name-Value Pairs:
+<b>go = fill(...)</b> returns the handle <b>go</b> to the created patch object. 
+
+Property Name-Value Pairs: 
+
+ 
 
 <b>
         'FaceColor'
       </b>: color of the filled shape. FaceColor can be a character vector or a 3-element RGB vector. Default:<b>
         'flat'
-      </b>.
+      </b>. 
 
 <b>
         'EdgeColor'
       </b>: color of the edges of the polygonal shape. EdgeColor can be a character vector or a 3-element RGB vector. Default:<b>
         'none'
-      </b>.
+      </b>. 
 
 <b>
         'LineWidth'
-      </b>: width of the edges of the polygonal shape. Default:<b>0.5</b>.
+      </b>: width of the edges of the polygonal shape. Default:<b>0.5</b>. 
 
 <b>
         'LineStyle'
       </b>: style of the edges of the polygonal shape. LineStyle can be a character vector or a line style code. Default:<b>
         '-'
-      </b>.
+      </b>. 
 
 <b>
         'FaceAlpha'
-      </b>: transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default:<b>1</b>.
+      </b>: transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default:<b>1</b>. 
 
 <b>
         'EdgeAlpha'
-      </b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default:<b>1</b>.
+      </b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default:<b>1</b>. 
 
 <b>
         'Parent'
-      </b>: handle of the parent object for the patch. Default:<b>gca()</b>.
+      </b>: handle of the parent object for the patch. Default:<b>gca()</b>. 
 
 <b>
         'Vertices'
       </b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -83,8 +88,8 @@ fill(outerX, outerY, 'y');
 hold on
 fill(innerX, innerY, 'r');
 ```
-
 <img src="fill_1.svg" align="middle"/>
+
 
 ```matlab
 % Define the vertices of a colorful geometric pattern
@@ -116,7 +121,6 @@ axis equal;
 title('Colorful Geometric Pattern');
 
 ```
-
 <img src="fill_2.svg" align="middle"/>
 Alpha channel
 
@@ -129,8 +133,8 @@ fill(x, y, 'cyan', 'FaceAlpha', 0.3);
 fill(x + 2, y, 'magenta', 'FaceAlpha', 0.3);
 fill(x + 1, y + 2, 'yellow', 'FaceAlpha', 0.3);
 ```
-
 <img src="fill_3.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -138,7 +142,7 @@ fill(x + 1, y + 2, 'yellow', 'FaceAlpha', 0.3);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

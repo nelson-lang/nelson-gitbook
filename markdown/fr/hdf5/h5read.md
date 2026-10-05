@@ -17,17 +17,21 @@ Lit un jeu de données HDF5.
 
 ## 📄 Description
 
-<b>h5read</b> lit le jeu de données situé à<b>location</b> dans le fichier HDF5.
+
+<b>h5read</b> lit le jeu de données situé à<b>location</b> dans le fichier HDF5. 
 
 Si <b>location</b> identifie un groupe objet Nelson, <b>h5read</b> reconstruit l'objet de classe historique ou l'objet classdef valeur/handle stocké.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 h5_directory = [modulepath('hdf5','tests'), '/h5'];
 double_data = [h5_directory, '/h5ex_t_float.h5'];
 R = h5read(double_data,'/DS1')
 ```
+
 
 ```matlab
 h5filename = [tempdir(), 'doc_h5read_class.h5'];
@@ -41,15 +45,16 @@ R.r
 R.i
 ```
 
+
 ## 🔗 Voir aussi
 
 [h5write](../hdf5/h5write.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                      |
-| ------- | ----------------------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                                    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | Les objets de classe Nelson peuvent être reconstruits depuis les métadonnées objet. |
 
 <!--

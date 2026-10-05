@@ -16,13 +16,17 @@ Construit un nom de fichier complet à partir de ses parties.
 
 ## 📄 Description
 
+
 <b>R = fullfile(part1, ..., partN)</b> construit un nom de fichier complet à partir des parties fournies.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 fullfile([nelsonroot(), '/./toto'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ fullfile([nelsonroot(), '/./toto'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

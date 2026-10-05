@@ -16,13 +16,16 @@ Metadata object returned by parquetinfo.
 
 ## 📄 Description
 
-<b>nelson.io.parquet.ParquetInfo</b> stores metadata returned by <b>parquetinfo</b>.
 
-Properties are <b>Filename</b>, <b>FileSize</b>, <b>NumRows</b>, <b>NumVariables</b>, <b>NumRowGroups</b>, <b>RowGroups</b>, <b>Variables</b>, <b>CreatedBy</b>, and dependent property <b>VariableNames</b>.
+<b>nelson.io.parquet.ParquetInfo</b> stores metadata returned by <b>parquetinfo</b>. 
+
+Properties are <b>Filename</b>, <b>FileSize</b>, <b>NumRows</b>, <b>NumVariables</b>, <b>NumRowGroups</b>, <b>RowGroups</b>, <b>Variables</b>, <b>CreatedBy</b>, and dependent property <b>VariableNames</b>. 
 
 <b>RowGroups</b> is a table with row group metadata. <b>Variables</b> is a structure with variable names, Parquet types, and compression information.
 
 ## 💡 Example
+
+
 
 ```matlab
 filename = [tempdir(), 'doc_ParquetInfo.parquet'];
@@ -34,13 +37,14 @@ info.Filename
 info.VariableNames
 ```
 
+
 ## 🔗 See also
 
 [parquetinfo](../parquet/parquetinfo.md), [parquetread](../parquet/parquetread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,15 +21,18 @@ Form linear-quadratic (LQ) state-feedback regulator with output weighting.
 
 ## 📄 Description
 
-The function <b>lqry</b> computes and returns the optimal gain matrix (<b>K</b>), the Riccati solution (<b>S</b>), and the closed-loop eigenvalues (<b>e</b>) for a given state-space model (<b>sys</b>) with specified weights (<b>Q</b>, <b>R</b>, <b>N</b>).
 
-The plant data is defined by the matrices <b>A</b>, <b>B</b>, <b>C</b>, and <b>D</b>, representing continuous- or discrete-time dynamics.
+The function <b>lqry</b> computes and returns the optimal gain matrix (<b>K</b>), the Riccati solution (<b>S</b>), and the closed-loop eigenvalues (<b>e</b>) for a given state-space model (<b>sys</b>) with specified weights (<b>Q</b>, <b>R</b>, <b>N</b>). 
 
-If the parameter <b>N</b> is not provided, it defaults to N=0.
+The plant data is defined by the matrices <b>A</b>, <b>B</b>, <b>C</b>, and <b>D</b>, representing continuous- or discrete-time dynamics. 
+
+If the parameter <b>N</b> is not provided, it defaults to N=0. 
 
 The closed-loop eigenvalues are determined by the eigenvalues of the matrix <b>A - B \* K</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [0.6, 0.25; 0, 0.9];
@@ -41,13 +44,14 @@ R = 1;
 [K, S, e] = lqry(A, B, C, D, Q, R)
 ```
 
+
 ## 🔗 See also
 
-[lqr](../../control_system/lqr.md).
+[lqr](../../control_system/5_control_design_tuning/lqr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

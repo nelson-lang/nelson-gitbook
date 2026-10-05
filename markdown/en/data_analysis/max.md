@@ -33,15 +33,18 @@ Maximum elements of an array.
 
 ## 📄 Description
 
-<b>max</b> find maximum values in an array.
 
-If <b>A</b> is a matrix then <b>M = max(A)</b> is a row vector containing the maximum value of each column.
+<b>max</b> find maximum values in an array. 
 
-If <b>A</b> is a vector then <b>M = max(A)</b> will return the maximum of <b>A</b>.
+If <b>A</b> is a matrix then <b>M = max(A)</b> is a row vector containing the maximum value of each column. 
+
+If <b>A</b> is a vector then <b>M = max(A)</b> will return the maximum of <b>A</b>. 
 
 If <b>A</b> If A is complex number then <b>M = max(A)</b> will return founded complex number with the largest magnitude.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6];
@@ -49,13 +52,14 @@ M = max(A)
 M = max(A, [], 'all')
 ```
 
+
 ## 🔗 See also
 
 [min](../data_analysis/min.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

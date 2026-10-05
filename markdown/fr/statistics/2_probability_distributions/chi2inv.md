@@ -17,23 +17,27 @@ Inverse de la fonction de repartition chi-square
 
 ## 📄 Description
 
+
 <b>chi2inv</b> calcule l'inverse des probabilites chi-square de queue inferieure.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = chi2inv(p, 4);
 ```
 
+
 ## 🔗 Voir aussi
 
-[chi2cdf](../../statistics/chi2cdf.md), [chi2pdf](../../statistics/chi2pdf.md).
+[chi2cdf](../../statistics/2_probability_distributions/chi2cdf.md), [chi2pdf](../../statistics/2_probability_distributions/chi2pdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

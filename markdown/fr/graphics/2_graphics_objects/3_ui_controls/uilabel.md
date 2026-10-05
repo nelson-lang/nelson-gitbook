@@ -20,9 +20,10 @@ Crée un composant étiquette (label).
 
 ## 📄 Description
 
-<b>lbl = uilabel</b> crée une étiquette dans une nouvelle figure et retourne l'objet Label. Nelson appelle la fonction uifigure pour créer la figure.
 
-<b>lbl = uilabel(parent)</b> crée l'étiquette dans le conteneur parent spécifié.
+<b>lbl = uilabel</b> crée une étiquette dans une nouvelle figure et retourne l'objet Label. Nelson appelle la fonction uifigure pour créer la figure. 
+
+<b>lbl = uilabel(parent)</b> crée l'étiquette dans le conteneur parent spécifié. 
 
 <b>lbl = uilabel(..., propertyName, propertyValue)</b> spécifie les propriétés par paires nom-valeur : <b>Text</b>, <b>Interpreter</b>, <b>HorizontalAlignment</b>, <b>VerticalAlignment</b>, <b>WordWrap</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontWeight</b>, <b>FontAngle</b>, <b>FontColor</b>, <b>BackgroundColor</b>, <b>Enable</b>, <b>Visible</b>, <b>Tooltip</b>, <b>Position</b>, ...
 
@@ -36,7 +37,6 @@ titleLabel = uilabel(f, 'Text', 'Etat du capteur', 'FontSize', 18, 'FontWeight',
 valueLabel = uilabel(f, 'Text', '42.5 C', 'FontSize', 32, 'FontWeight', 'bold', 'FontColor', [0.10 0.35 0.72], 'HorizontalAlignment', 'center', 'BackgroundColor', [0.94 0.96 0.98], 'Position', [55 85 350 64]);
 drawnow();
 ```
-
 <img src="uilabel_example.svg" align="middle"/>
 Étiquette dans une uifigure
 
@@ -47,14 +47,15 @@ lbl = uilabel(f, 'Text', 'Résultat :', 'Position', [100 100 100 22], 'FontWeigh
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[uibutton](../../../graphics/uibutton.md), [uifigure](../../../gui/uifigure.md).
+[uibutton](../../../graphics/2_graphics_objects/3_ui_controls/uibutton.md), [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

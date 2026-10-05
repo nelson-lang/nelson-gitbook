@@ -24,9 +24,12 @@ Phase response of a digital filter.
 
 ## 📄 Description
 
+
 <b>phasez</b> computes the unwrapped phase of the frequency response returned by freqz.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Phase response of a digital filter.
 
 ```
 
+
 ## 🔗 See also
 
-[freqz](../../signal_processing/freqz.md), [grpdelay](../../signal_processing/grpdelay.md).
+[freqz](../../signal_processing/4_digital_filters/freqz.md), [grpdelay](../../signal_processing/4_digital_filters/grpdelay.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

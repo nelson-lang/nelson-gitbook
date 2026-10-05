@@ -16,7 +16,8 @@ Customize brace indexing of a class.
 
 ## 📄 Description
 
-Derive from <b>nelson.mixin.indexing.RedefinesBrace</b> to give a class its own brace indexing behavior. A subclass implements the protected methods <b>braceReference(obj, indexOp)</b> (value of <b>obj{...}</b>), <b>braceAssign(obj, indexOp, value)</b> (<b>obj{...} = value</b>) and <b>braceListLength(obj, indexOp, indexContext)</b>.
+
+Derive from <b>nelson.mixin.indexing.RedefinesBrace</b> to give a class its own brace indexing behavior. A subclass implements the protected methods <b>braceReference(obj, indexOp)</b> (value of <b>obj{...}</b>), <b>braceAssign(obj, indexOp, value)</b> (<b>obj{...} = value</b>) and <b>braceListLength(obj, indexOp, indexContext)</b>. 
 
 <b>indexOp</b> is a <b>nelson.indexing.IndexingOperation</b> whose <b>Indices</b>property is a cell array of the subscripts.
 
@@ -48,13 +49,14 @@ classdef Bag < nelson.mixin.indexing.RedefinesBrace
 end
 ```
 
+
 ## 🔗 See also
 
 [nelson.mixin.indexing.RedefinesParen](../types/nelson.mixin.indexing.RedefinesParen.md), [nelson.indexing.IndexingOperation](../types/nelson.indexing.IndexingOperation.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

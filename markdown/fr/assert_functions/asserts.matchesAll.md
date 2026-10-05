@@ -19,7 +19,8 @@ Verifie qu'un texte correspond a toutes les expressions regulieres.
 
 ## 📄 Description
 
-L'assertion reussit lorsque chaque expression reguliere correspond a text.
+
+L'assertion reussit lorsque chaque expression reguliere correspond a text. 
 
 Les expressions regulieres invalides levent immediatement une erreur d'argument.
 
@@ -30,12 +31,12 @@ All expressions match
 ```matlab
 asserts.matchesAll('abc123', {'^abc', '[0-9]+$'});
 ```
-
 Capture a missing match
 
 ```matlab
 [res, msg] = asserts.matchesAll('abc123', {'^abc', '^xyz'});
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a missing match
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

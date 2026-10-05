@@ -1,16 +1,29 @@
 # Graphics functions
 
+
+    
 The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.
 
+    
 It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.
+
+  
 
 ## 2-D and 3-D Plots
 
+
+    
 Functions grouped by visualization type, including lines, distributions, discrete data, polar plots, contours, vector fields, surfaces, volumes, polygons, and animation.
+
+  
 
 ### Line Plots
 
+
+    
 Functions for line plots, function plots, and plots with error bars.
+
+  
 
 #### Functions
 
@@ -28,7 +41,11 @@ Functions for line plots, function plots, and plots with error bars.
 
 ### Polar Plots
 
+
+    
 Functions for creating and configuring polar plots.
+
+  
 
 #### Functions
 
@@ -41,7 +58,11 @@ Functions for creating and configuring polar plots.
 
 ### Contour Plots
 
+
+    
 Functions for contour computation, contour plots, and contour labels.
+
+  
 
 #### Functions
 
@@ -54,7 +75,11 @@ Functions for contour computation, contour plots, and contour labels.
 
 ### Data Distribution Plots
 
+
+    
 Functions for histograms, scatter plots, distribution charts, and data summary visualizations.
+
+  
 
 #### Functions
 
@@ -86,7 +111,11 @@ Functions for histograms, scatter plots, distribution charts, and data summary v
 
 ### Vector Fields
 
+
+    
 Functions for vector fields and stream visualizations.
+
+  
 
 #### Functions
 
@@ -106,7 +135,11 @@ Functions for vector fields and stream visualizations.
 
 ### Discrete Data Plots
 
+
+    
 Functions for bar charts, stem plots, pie charts, and other discrete data displays.
+
+  
 
 #### Functions
 
@@ -124,7 +157,11 @@ Functions for bar charts, stem plots, pie charts, and other discrete data displa
 
 ### Surfaces, Volumes, and Polygons
 
+
+    
 Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
+
+  
 
 #### Functions
 
@@ -161,7 +198,11 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 
 ### Animation
 
+
+    
 Functions for animated plots and dynamic point updates.
+
+  
 
 #### Functions
 
@@ -174,11 +215,19 @@ Functions for animated plots and dynamic point updates.
 
 ## Graphics Objects
 
+
+    
 Functions and reference pages for graphics object management, layout objects, user interface objects, and object properties.
+
+  
 
 ### Graphics Object Management
 
+
+    
 Functions for creating, finding, querying, clearing, and closing graphics objects.
+
+  
 
 #### Functions
 
@@ -204,7 +253,11 @@ Functions for creating, finding, querying, clearing, and closing graphics object
 
 ### Layout Objects
 
+
+    
 Functions for arranging multiple plots and working with tiled layouts.
+
+  
 
 #### Functions
 
@@ -216,7 +269,11 @@ Functions for arranging multiple plots and working with tiled layouts.
 
 ### User Interface Objects
 
+
+    
 Functions for user interface controls, menus, and context menus.
+
+  
 
 #### Functions
 
@@ -252,7 +309,11 @@ Functions for user interface controls, menus, and context menus.
 
 ### Graphics Object Properties
 
+
+    
 Reference pages for visible graphics object properties, supported value types, and property actions.
+
+  
 
 #### Functions
 
@@ -315,11 +376,19 @@ Reference pages for visible graphics object properties, supported value types, a
 
 ## Labels and Styling
 
+
+    
 Functions for labels, annotations, axes appearance, colors, interaction, camera views, and lighting.
+
+  
 
 ### Axes Appearance
 
+
+    
 Functions for axis limits, ticks, grids, boxes, and aspect ratios.
+
+  
 
 #### Functions
 
@@ -354,11 +423,19 @@ Functions for axis limits, ticks, grids, boxes, and aspect ratios.
 
 ### Color and Styling
 
+
+    
 Functions for colors, colormaps, color limits, color order, and rendering style.
+
+  
 
 #### Colormaps
 
+
+    
 Functions for creating, selecting, and listing colormaps.
+
+  
 
 ##### Functions
 
@@ -401,13 +478,17 @@ Functions for creating, selecting, and listing colormaps.
 
 ### Interactions, Camera Views, and Lighting
 
+
+    
 Functions for interactive graphics, callbacks, camera views, and lighting.
+
+  
 
 #### Functions
 
 - [camlight](3_labels_styling/3_interactions_camera_lighting/camlight.md) - Create or position a light relative to the camera.
 - [drawnow](3_labels_styling/3_interactions_camera_lighting/drawnow.md) - Update figures and process callbacks
-- [Managing Callback Interruptions in Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) -
+- [Managing Callback Interruptions in Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) - 
 - [light](3_labels_styling/3_interactions_camera_lighting/light.md) - Create a light object in axes.
 - [lightangle](3_labels_styling/3_interactions_camera_lighting/lightangle.md) - Create or position a light from angles.
 - [lighting](3_labels_styling/3_interactions_camera_lighting/lighting.md) - Set surface and patch lighting mode.
@@ -422,7 +503,11 @@ Functions for interactive graphics, callbacks, camera views, and lighting.
 
 ### Labels and Annotations
 
+
+    
 Functions for titles, axis labels, legends, color bars, text, and annotations.
+
+  
 
 #### Functions
 
@@ -443,7 +528,11 @@ Functions for titles, axis labels, legends, color bars, text, and annotations.
 
 ## Images
 
+
+    
 Functions for displaying images, converting frames, and playing recorded frames.
+
+  
 
 ### Functions
 
@@ -457,10 +546,15 @@ Functions for displaying images, converting frames, and playing recorded frames.
 
 ## Printing and Saving
 
+
+    
 Functions for opening and saving figure files.
+
+  
 
 ### Functions
 
 - [openfig](5_printing_saving/openfig.md) - Open a Nelson FIG file.
 - [print](5_printing_saving/print.md) - Export a figure to an image or document file.
 - [savefig](5_printing_saving/savefig.md) - Save figure to a Nelson FIG file.
+

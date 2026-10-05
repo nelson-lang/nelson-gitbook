@@ -17,29 +17,33 @@ Démarre un processus Nelson
 
 ## 📄 Description
 
-<b>engOpen</b> démarre un processus Nelson afin d'utiliser Nelson comme moteur de calcul.
 
-Le chemin des bibliothèques doit contenir le chemin de Nelson pour trouver les bibliothèques de Nelson à l'exécution.
+<b>engOpen</b> démarre un processus Nelson afin d'utiliser Nelson comme moteur de calcul. 
 
-Définissez la valeur sur le chemin renvoyé par la commande Nelson suivante :
+Le chemin des bibliothèques doit contenir le chemin de Nelson pour trouver les bibliothèques de Nelson à l'exécution. 
 
-<b>res</b> = modulepath('nelson', 'builtin')
+Définissez la valeur sur le chemin renvoyé par la commande Nelson suivante : 
 
-sur Linux : export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<b>res</b>
+<b>res</b> = modulepath('nelson', 'builtin') 
 
-export PATH=$PATH:<b>res</b>
+sur Linux : export LD\_LIBRARY\_PATH=$LD\_LIBRARY\_PATH:<b>res</b> 
 
-sur macOS : export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:<b>res</b>
+export PATH=$PATH:<b>res</b> 
 
-export PATH=$PATH:<b>res</b>
+sur macOS : export DYLIB\_LIBRARY\_PATH=$DYLIB\_LIBRARY\_PATH:<b>res</b> 
+
+export PATH=$PATH:<b>res</b> 
 
 sur Windows : set PATH=%PATH%;<b>res</b>
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -47,8 +51,8 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

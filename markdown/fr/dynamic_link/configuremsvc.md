@@ -13,19 +13,23 @@ Configurer Nelson pour utiliser Visual Studio comme compilateur par défaut
 
 ## 📄 Description
 
-Par défaut, Nelson n'a pas de compilateur C/C++ défini sous Windows.
 
-Sur les autres plateformes, on suppose qu'un compilateur C/C++ est disponible et l'appel de cette fonction n'est pas requis.
+Par défaut, Nelson n'a pas de compilateur C/C++ défini sous Windows. 
 
-Sous Windows, appelez une fois <b>configuremsvc</b> si vous souhaitez utiliser Visual Studio comme compilateur par défaut.
+Sur les autres plateformes, on suppose qu'un compilateur C/C++ est disponible et l'appel de cette fonction n'est pas requis. 
+
+Sous Windows, appelez une fois <b>configuremsvc</b> si vous souhaitez utiliser Visual Studio comme compilateur par défaut. 
 
 Après chaque mise à jour de Visual Studio, il pourra être nécessaire d'appeler de nouveau<b>configuremsvc</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 configuremsvc()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ configuremsvc()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

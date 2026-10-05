@@ -4,11 +4,11 @@ Calcule le hash SHA-512.
 
 ## 📝 Syntaxe
 
-- hexa_hash = crypto.sha512(str)
-- hexa_hash = crypto.sha512(filename)
-- hexa_hash = crypto.sha512(bytes)
-- hexa_hash = crypto.sha512(str, '-file')
-- hexa_hash = crypto.sha512(str, '-string')
+- hexa\_hash = crypto.sha512(str)
+- hexa\_hash = crypto.sha512(filename)
+- hexa\_hash = crypto.sha512(bytes)
+- hexa\_hash = crypto.sha512(str, '-file')
+- hexa\_hash = crypto.sha512(str, '-string')
 
 ## 📥 Argument d'entrée
 
@@ -19,9 +19,10 @@ Calcule le hash SHA-512.
 
 ## 📤 Argument de sortie
 
-- hexa_hash - vecteur de caractères, cellule de chaînes ou tableau de chaînes : 128 caractères hexadécimaux minuscules par entrée (vide si un fichier ne peut pas être lu).
+- hexa\_hash - vecteur de caractères, cellule de chaînes ou tableau de chaînes : 128 caractères hexadécimaux minuscules par entrée (vide si un fichier ne peut pas être lu).
 
 ## 📄 Description
+
 
 <b>crypto.sha512</b> calcule le condensé SHA-512 (FIPS 180-4) d'un texte, d'octets bruts ou d'un fichier, avec les mêmes conventions que <b>sha256</b>.
 
@@ -35,12 +36,13 @@ https://monocypher.org/
 
 ## 💡 Exemples
 
+
+
 ```matlab
 R = crypto.sha512('abc')
 R = crypto.sha512(uint8('abc'))
 R = crypto.sha512({'Hello', 'World'})
 ```
-
 hacher un fichier
 
 ```matlab
@@ -49,14 +51,15 @@ filewrite(filename, 'abc');
 R = crypto.sha512(filename, '-file')
 ```
 
+
 ## 🔗 Voir aussi
 
-[sha256](../core/sha256.md), [crypto.hmac](../core/crypto.hmac.md).
+[sha256](../core/sha256.md), [crypto.hmac](../core/crypto_hmac.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

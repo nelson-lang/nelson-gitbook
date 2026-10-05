@@ -20,23 +20,27 @@ Nombres aleatoires beta
 
 ## 📄 Description
 
+
 <b>betarnd</b> genere des valeurs aleatoires de loi beta.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = betarnd(2, 5, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[betapdf](../../statistics/betapdf.md), [betacdf](../../statistics/betacdf.md), [betainv](../../statistics/betainv.md), [betastat](../../statistics/betastat.md).
+[betapdf](../../statistics/2_probability_distributions/betapdf.md), [betacdf](../../statistics/2_probability_distributions/betacdf.md), [betainv](../../statistics/2_probability_distributions/betainv.md), [betastat](../../statistics/2_probability_distributions/betastat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

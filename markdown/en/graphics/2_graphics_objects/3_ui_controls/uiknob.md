@@ -19,6 +19,7 @@ Create knob or discrete knob component.
 
 ## 📄 Description
 
+
 <b>kb = uiknob</b> creates a continuous knob (<b>Value</b>/<b>Limits</b>/ticks/<b>ValueChangingFcn</b>); <b>uiknob(parent, 'discrete')</b> creates a discrete knob using <b>Items</b>/<b>ItemsData</b>/<b>ValueIndex</b>.
 
 ## 💡 Examples
@@ -35,7 +36,6 @@ dk.Position = [310 70 260 220];
 dk.Value = 'Medium';
 drawnow();
 ```
-
 <img src="uiknob_example.svg" align="middle"/>
 uiknob
 
@@ -47,13 +47,14 @@ dk = uiknob(f, 'discrete', 'Items', {'Low', 'High'});
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

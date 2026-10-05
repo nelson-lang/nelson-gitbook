@@ -25,9 +25,12 @@ List variables in memory or in .nh5 or in .mat file.
 
 ## 📄 Description
 
+
 <b>who</b> displays current variable names.
 
 ## 💡 Example
+
+
 
 ```matlab
 clear
@@ -38,13 +41,14 @@ who
 s = who()
 ```
 
+
 ## 🔗 See also
 
 [what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [whos](../memory_manager/whos.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

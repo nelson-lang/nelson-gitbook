@@ -21,23 +21,27 @@ Oppose de la log-vraisemblance uniforme continue
 
 ## 📄 Description
 
+
 <b>uniflike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi uniforme continue.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [2 5 3 4];
 [nlogL, avar] = uniflike([1 6], x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unifit](../../statistics/unifit.md), [unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifrnd](../../statistics/unifrnd.md).
+[unifit](../../statistics/2_probability_distributions/unifit.md), [unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifrnd](../../statistics/2_probability_distributions/unifrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,7 +18,8 @@ Read an attribute from a netCDF file or variable.
 
 ## 📄 Description
 
-ncreadatt reads metadata stored as netCDF attributes.
+
+ncreadatt reads metadata stored as netCDF attributes. 
 
 Use this function for high-level attribute access when variable names are known.
 
@@ -33,13 +34,14 @@ ncwriteatt(filename, 'temperature', 'units', 'degree');
 units = ncreadatt(filename, 'temperature', 'units')
 ```
 
+
 ## 🔗 See also
 
 [ncwriteatt](../netcdf/ncwriteatt.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

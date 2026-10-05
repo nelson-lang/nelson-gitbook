@@ -18,9 +18,12 @@ Signal carré.
 
 ## 📄 Description
 
+
 <b>square</b> génère un signal périodique à deux niveaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ y = square(0:0.1:2*pi, 25);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[sawtooth](../../signal_processing/sawtooth.md).
+[sawtooth](../../signal_processing/1_signal_generation_preprocessing/sawtooth.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

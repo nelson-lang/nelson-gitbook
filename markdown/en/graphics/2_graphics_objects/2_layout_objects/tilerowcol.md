@@ -20,9 +20,10 @@ Get row and column indices from tile number or graphics object.
 
 ## 📄 Description
 
-<b>tilerowcol(t, tilenum)</b> returns the row and column indices for the given tile number in the TiledChartLayout t.
 
-<b>tilerowcol(obj)</b> returns the row and column of the tile occupied by the axes object obj.
+<b>tilerowcol(t, tilenum)</b> returns the row and column indices for the given tile number in the TiledChartLayout t. 
+
+<b>tilerowcol(obj)</b> returns the row and column of the tile occupied by the axes object obj. 
 
 Returns NaN for out-of-range tile numbers or for edge tile axes.
 
@@ -36,15 +37,16 @@ t = tiledlayout(2, 3);
 
 ```
 
+
 ## 🔗 See also
 
 [tiledlayout](../../2_graphics_objects/2_layout_objects/tiledlayout.md), [nexttile](../../2_graphics_objects/2_layout_objects/nexttile.md), [tilenum](../../2_graphics_objects/2_layout_objects/tilenum.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

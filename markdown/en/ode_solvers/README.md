@@ -1,20 +1,30 @@
 # ODE solvers
 
+
+    
 The ODE Solvers module provides time integration functions for explicit, stiff, and implicit differential equation workflows in Nelson.
 
+    
 It includes solver entry points, delay and boundary value problem wrappers, option handling, interpolation, solution extension, event detection, and object-oriented problem definitions.
 
+    
 When the optional SUNDIALS backend is built, the object workflow can also select CVODES and IDAS solver values.
 
+    
 The module is designed for numerical experiments, simulations, and teaching examples that need compact solver setup and reproducible result objects.
 
+    
 Tutorial pages cover solver choice, events, tolerances, mass matrices, implicit equations, delay equations, boundary value problems, interpolation, extension, object workflows, and complex states.
 
-| Area                              | Main entries                                                                   |
-| --------------------------------- | ------------------------------------------------------------------------------ |
-| Initial value problems            | **ode23**, **ode45**, **ode78**, **ode89**, **ode113**, **ode15s**, **ode15i** |
-| Delay and boundary value problems | **dde23**, **ddesd**, **ddensd**, **bvp4c**, **bvp5c**                         |
-| Utilities                         | **odeset**, **deval**, **odextend**, **ode**, **odeEvent**, **odeSensitivity** |
+    
+| Area | Main entries |
+| --- | --- |
+| Initial value problems | **ode23**, **ode45**, **ode78**, **ode89**, **ode113**, **ode15s**, **ode15i** |
+| Delay and boundary value problems | **dde23**, **ddesd**, **ddensd**, **bvp4c**, **bvp5c** |
+| Utilities | **odeset**, **deval**, **odextend**, **ode**, **odeEvent**, **odeSensitivity** |
+
+
+  
 
 ## Functions
 
@@ -78,3 +88,4 @@ Tutorial pages cover solver choice, events, tolerances, mass matrices, implicit 
 - [odeprint](odeprint.md) - Command-window ODE output function.
 - [odeset](odeset.md) - Create or update ODE options.
 - [odextend](odextend.md) - Extend an ODE solution.
+

@@ -16,25 +16,29 @@ Convert number in base 16 to decimal.
 
 ## 📄 Description
 
-<b>hex2dec</b> converts number in base 16 to decimal.
 
-Note:
+<b>hex2dec</b> converts number in base 16 to decimal. 
+
+Note: 
 
 - <b>hex2dec</b> and<b>dec2hex</b> are inverses of one another.
 
 ## 💡 Example
 
+
+
 ```matlab
 bin2dec('11')
 ```
 
+
 ## 🔗 See also
 
-[dec2bin](../../elementary_functions/dec2bin.md).
+[dec2bin](../../elementary_functions/5_base_conversions/dec2bin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

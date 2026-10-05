@@ -18,21 +18,25 @@ Weibull mean and variance
 
 ## 📄 Description
 
+
 <b>wblstat</b> returns the mean and variance of the Weibull distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = wblstat(2, 3);
 ```
 
+
 ## 🔗 See also
 
-[wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md), [wblinv](../../statistics/wblinv.md).
+[wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblinv](../../statistics/2_probability_distributions/wblinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

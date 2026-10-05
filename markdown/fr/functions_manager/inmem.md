@@ -20,9 +20,12 @@ Noms des fonctions, fichiers MEX.
 
 ## 📄 Description
 
+
 <b>inmem</b> retourne un tableau de cellules des noms des fonctions et mex actuellement chargés.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 clear all
@@ -32,14 +35,15 @@ inmem('-completenames')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [clear](../memory_manager/clear.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

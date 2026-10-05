@@ -23,7 +23,9 @@ Calculer les normales des sommets d'une isosurface.
 
 ## 📄 Description
 
+
 <b>isonormals</b> calcule les normales aux sommets d'une isosurface. Avec un handle de patch et sans sortie, la propriete VertexNormals est definie.
+
 
 ## 🔗 Voir aussi
 

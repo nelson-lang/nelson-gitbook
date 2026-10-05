@@ -21,9 +21,12 @@ Crée un tableau de chaînes vide.
 
 ## 📄 Description
 
+
 <b>strings</b> renvoie un tableau de chaînes vides.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(2, 4);
@@ -31,14 +34,15 @@ sz = size(A)
 C = strings(sz)
 ```
 
+
 ## 🔗 Voir aussi
 
 [cell](../../data_structures/cell.md), [isstring](../../types/isstring.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

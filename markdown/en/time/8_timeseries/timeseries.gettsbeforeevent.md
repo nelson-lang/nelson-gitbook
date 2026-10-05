@@ -17,9 +17,11 @@ Return samples before an event.
 
 ## 📄 Description
 
+
 <b>gettsbeforeevent</b> Finds the named event and keeps samples whose time is less than the event time.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12]);
@@ -28,13 +30,14 @@ gettsbeforeevent(ts, 'middle').Data
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

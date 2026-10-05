@@ -19,22 +19,26 @@ Poisson negative log-likelihood
 
 ## 📄 Description
 
+
 <b>poisslike</b> returns the negative log-likelihood for Poisson distribution data and the asymptotic variance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [nlogL, avar] = poisslike(3, x);
 ```
 
+
 ## 🔗 See also
 
-[poissfit](../../statistics/poissfit.md), [poisspdf](../../statistics/poisspdf.md), [poisscdf](../../statistics/poisscdf.md).
+[poissfit](../../statistics/2_probability_distributions/poissfit.md), [poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poisscdf](../../statistics/2_probability_distributions/poisscdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

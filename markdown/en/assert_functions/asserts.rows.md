@@ -19,7 +19,8 @@ Check the row count.
 
 ## 📄 Description
 
-The assertion passes when size(value, 1) equals n.
+
+The assertion passes when size(value, 1) equals n. 
 
 Invalid n raises an argument error immediately.
 
@@ -30,12 +31,12 @@ Two rows
 ```matlab
 asserts.rows(ones(2, 3), 2);
 ```
-
 Capture a row-count failure
 
 ```matlab
 [res, msg] = asserts.rows(ones(2, 3), 3);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a row-count failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

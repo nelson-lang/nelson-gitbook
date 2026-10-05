@@ -17,9 +17,11 @@ Renvoie les descriptions de qualite pour les codes de qualite.
 
 ## 📄 Description
 
+
 <b>getqualitydesc</b> Recherche les descriptions des codes de qualite dans ts.QualityInfo.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2], [1; 2]);
@@ -28,14 +30,15 @@ getqualitydesc(ts, [0 1])
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -17,9 +17,12 @@ Comparaison de chaînes (insensible à la casse).
 
 ## 📄 Description
 
+
 <b>strcmpi</b> compares two strings (case insensitive).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 strcmpi('Nelson', 'nelSon')
@@ -34,14 +37,15 @@ strcmpi(C, 'C')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[char](../../string/char.md), [strcmp](../../string/strcmp.md).
+[char](../../string/1_create_convert_text/char.md), [strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -13,7 +13,7 @@
       <keyword name="addgateway" link="addgateway.html" description="Ajoute dynamiquement des builtins au moment de l'execution."/>
       <keyword name="addmodule" link="addmodule.html" description="Ajouter un module à Nelson."/>
       <keyword name="deploytool" link="deploytool.html" description="Ouvrir l'éditeur de projet d'application autonome."/>
-      <keyword name="deploytool" link="deploytool.html" description="Ouvrir l'éditeur de projet d'application autonome."/>
+      <keyword name="deploytool" link="deploytool.html" description="Ouvrir l'éditeur de projet d'application autonome." alias="true"/>
       <keyword name="gatewayinfo" link="gatewayinfo.html" description="Retourne des informations sur une gateway."/>
       <keyword name="getmodules" link="getmodules.html" description="Renvoie la liste des modules chargés dans Nelson."/>
       <keyword name="ismodule" link="ismodule.html" description="Vérifie si un module est chargé."/>
@@ -29,7 +29,7 @@
       <keyword name="requiremodule" link="requiremodule.html" description="Renvoie une erreur si le module n'est pas chargé dans Nelson."/>
       <keyword name="semver" link="semver.html" description="gestionnaire de versions sémantiques."/>
       <keyword name="standaloneApplicationCompiler" link="standaloneApplicationCompiler.html" description="Ouvrir l'éditeur de projet d'application autonome."/>
-      <keyword name="standaloneApplicationCompiler" link="standaloneApplicationCompiler.html" description="Ouvrir l'éditeur de projet d'application autonome."/>
+      <keyword name="standaloneApplicationCompiler" link="standaloneApplicationCompiler.html" description="Ouvrir l'éditeur de projet d'application autonome." alias="true"/>
       <keyword name="toolboxdir" link="toolboxdir.html" description="Renvoie le chemin d'un module."/>
       <keyword name="usermodulesdir" link="usermodulesdir.html" description="Renvoie le chemin où les modules externes sont enregistrés."/>
     </section>

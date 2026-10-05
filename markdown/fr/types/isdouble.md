@@ -16,29 +16,36 @@ Renvoie vrai si la variable var est une matrice de type double.
 
 ## 📄 Description
 
+
 <b>isdouble</b> renvoie 1 logique (vrai) si l'argument est une matrice de type double et 0 logique (faux) sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
 res = isdouble(A)
 ```
 
+
 ```matlab
 A = single(3);
 res = isdouble(A)
 ```
+
 
 ```matlab
 A = single([3, i]);
 res = isdouble(A)
 ```
 
+
 ```matlab
 A = [3, i];
 res = isdouble(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -46,8 +53,8 @@ res = isdouble(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

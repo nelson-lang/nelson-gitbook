@@ -19,6 +19,7 @@ Zero-pole to transfer function conversion.
 
 ## 📄 Description
 
+
 <b>[NUM, DEN] = zp2tf(Z, P, K)</b> returns polynomial transfer function representation from zeros and poles.
 
 ## 📚 Bibliography
@@ -27,6 +28,8 @@ zpk2tf scipy implementation (MIT)
 
 ## 💡 Example
 
+
+
 ```matlab
 p = [0.5;complex(0.45, 0.5);complex(0.45, -0.5)];
 z = [-1;complex(0, 1);complex(0, -1)];
@@ -34,15 +37,16 @@ k = 1;
 [n, d] = zp2tf(z, p, k)
 ```
 
+
 ## 🔗 See also
 
-[tf](../../control_system/tf.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                     |
-| ------- | ---------------------------------- |
-| 1.0.0   | initial version                    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | CLI-runnable documentation example |
 
 <!--

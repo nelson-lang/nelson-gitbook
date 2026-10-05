@@ -4,12 +4,12 @@ Checks if a module is loaded.
 
 ## 📝 Syntax
 
-- state = ismodule(module_short_name)
-- state = ismodule(module_short_name, 'isprotected')
+- state = ismodule(module\_short\_name)
+- state = ismodule(module\_short\_name, 'isprotected')
 
 ## 📥 Input argument
 
-- module_short_name - a string: short module's name to test.
+- module\_short\_name - a string: short module's name to test.
 - 'isprotected' - check module isprotected (ie. internal module).
 
 ## 📤 Output argument
@@ -18,14 +18,18 @@ Checks if a module is loaded.
 
 ## 📄 Description
 
+
 <b>ismodule</b> returns <b>true</b> if module is loaded otherwise <b>false</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 ismodule('core')
 ismodule('mymodule')
 ```
+
 
 ## 🔗 See also
 
@@ -33,11 +37,11 @@ ismodule('mymodule')
 
 ## 🕔 History
 
-| Version                        | 📄 Description  |
-| ------------------------------ | --------------- |
-| 1.0.0                          | initial version |
-| 1.11.0                         |
-| 'isprotected' second argument. |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.11.0   | 
+        'isprotected' second argument. |
 
 <!--
 ## 👤 Author

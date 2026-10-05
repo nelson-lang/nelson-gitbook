@@ -13,7 +13,8 @@ Display bubble chart in polar coordinates.
 
 ## 📄 Description
 
-<b>polarbubblechart</b> displays polar markers whose size is controlled by bubble size data.
+
+<b>polarbubblechart</b> displays polar markers whose size is controlled by bubble size data. 
 
 Table input selects theta, radius, size, and optional color data from variables in <b>tbl</b>. Multiple selected variables create multiple <b>bubblechart</b> objects.
 
@@ -27,7 +28,6 @@ rho = 1 + cos(theta).^2;
 sz = 20 + 60 * abs(sin(theta));
 polarbubblechart(theta, rho, sz, 'b');
 ```
-
 <img src="polarbubblechart_1.svg" align="middle"/>
 Create a polar bubble chart from a table.
 
@@ -36,8 +36,8 @@ t = table([0; pi/4; pi/2], [1; 2; 3], [25; 36; 49], [1; 2; 3], ...
   'VariableNames', {'theta', 'rho', 'sz', 'c'});
 h = polarbubblechart(t, 'theta', 'rho', 'sz', 'c');
 ```
-
 <img src="polarbubblechart_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 

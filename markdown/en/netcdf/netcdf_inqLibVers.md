@@ -16,7 +16,8 @@ Return netCDF C library version information.
 
 ## 📄 Description
 
-netcdf.inqLibVers reports the runtime netCDF C library version.
+
+netcdf.inqLibVers reports the runtime netCDF C library version. 
 
 This is useful when diagnosing format support and optional library features.
 
@@ -28,13 +29,14 @@ Copy-paste example for netcdf.inqLibVers.
 version = netcdf.inqLibVers()
 ```
 
+
 ## 🔗 See also
 
-[netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,26 +16,31 @@ Conversion en minuscules.
 
 ## 📄 Description
 
+
 <b>tolower</b> convertit une chaîne en minuscules.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 tolower('NelSon')
 ```
 
+
 ```matlab
 tolower(["NelSon", "is", "open"])
 ```
 
+
 ## 🔗 Voir aussi
 
-[toupper](../../string/toupper.md).
+[toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

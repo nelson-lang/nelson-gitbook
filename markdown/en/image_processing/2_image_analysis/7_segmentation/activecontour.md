@@ -23,7 +23,8 @@ Segment an image from an initial contour mask.
 
 ## 📄 Description
 
-Segment a finite real 2-D image by evolving a binary initial mask. RGB and RGBA images are converted to luminance, and the alpha channel is ignored. The default method is chan-vese. The edge method uses the same region model with edge-weighted smoothing.
+
+Segment a finite real 2-D image by evolving a binary initial mask. RGB and RGBA images are converted to luminance, and the alpha channel is ignored. The default method is chan-vese. The edge method uses the same region model with edge-weighted smoothing. 
 
 The supported name-value options are <b>Iterations</b>, <b>Method</b>, <b>SmoothFactor</b>, a nonnegative finite scalar, and <b>ContractionBias</b>, a finite scalar in the range [-1, 1]. The default values are 100, chan-vese, 1 and 0.
 
@@ -41,7 +42,6 @@ figure; subplot(1,3,1); imagesc(I); title('Input');
 subplot(1,3,2); imagesc(mask); title('Initial');
 subplot(1,3,3); imagesc(BW); title('Segmented');
 ```
-
 <img src="activecontour_1.png" align="middle"/>
 Use edge mode with explicit smoothing
 
@@ -53,13 +53,14 @@ mask(4,4)=true;
 BW=activecontour(I,mask,'Iterations',8,'Method','edge','SmoothFactor',1,'ContractionBias',0);
 ```
 
+
 ## 🔗 See also
 
-[watershed](../../../image_processing/watershed.md), [imreconstruct](../../../image_processing/imreconstruct.md), [graythresh](../../../image_processing/graythresh.md).
+[watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md), [imreconstruct](../../../image_processing/2_image_analysis/7_segmentation/imreconstruct.md), [graythresh](../../../image_processing/1_image_basics/2_contrast_thresholding/graythresh.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

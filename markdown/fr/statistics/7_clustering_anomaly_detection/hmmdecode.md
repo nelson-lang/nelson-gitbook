@@ -9,9 +9,12 @@ Probabilites posterieures des etats d'un modele de Markov cache discret.
 
 ## 📄 Description
 
+
 <b>hmmdecode</b> utilise un passage forward-backward mis a l'echelle pour calculer les probabilites posterieures des etats et la log-vraisemblance de la sequence.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 seq = [1 2 3 2 1];
@@ -20,14 +23,15 @@ emis = [0.5 0.4 0.1; 0.1 0.3 0.6];
 [pstates, logpseq] = hmmdecode(seq, trans, emis)
 ```
 
+
 ## 🔗 Voir aussi
 
-[hmmviterbi](../../statistics/hmmviterbi.md), [hmmtrain](../../statistics/hmmtrain.md).
+[hmmviterbi](../../statistics/7_clustering_anomaly_detection/hmmviterbi.md), [hmmtrain](../../statistics/7_clustering_anomaly_detection/hmmtrain.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

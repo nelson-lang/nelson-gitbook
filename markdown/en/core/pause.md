@@ -21,7 +21,8 @@ Pauses script execution.
 
 ## 📄 Description
 
-<b>pause(t)</b> suspends execution for t seconds.
+
+<b>pause(t)</b> suspends execution for t seconds. 
 
 <b>pause</b> without input argument wait until return key is pressed.
 
@@ -39,13 +40,14 @@ pause('on')
 pause(5)
 ```
 
+
 ## 🔗 See also
 
-[sleep](../time/sleep.md).
+[sleep](../time/7_timers/sleep.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

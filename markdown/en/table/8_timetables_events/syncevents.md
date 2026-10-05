@@ -20,15 +20,17 @@ Add and synchronize the variables of the attached event table to a timetable.
 
 ## 📄 Description
 
-<b>syncevents</b> copies the variables of the event table attached to <b>TT</b> into the timetable. Each row of <b>TT</b> gets the values of the events that happen at its row time: an event without length or end matches the rows at its time, an event with a length or an end matches the rows in [time, end). A row matched by several events is repeated, once per event, in the order of the event table. The other rows get missing values (NaN, NaT, <missing>, <undefined>, an empty character vector in a cell, 0 or false).
 
-By default, all the variables of the event table are copied except the event lengths or ends variable. With <b>EventDataVariables</b>, only the listed variables are copied, in that order.
+<b>syncevents</b> copies the variables of the event table attached to <b>TT</b> into the timetable. Each row of <b>TT</b> gets the values of the events that happen at its row time: an event without length or end matches the rows at its time, an event with a length or an end matches the rows in [time, end). A row matched by several events is repeated, once per event, in the order of the event table. The other rows get missing values (NaN, NaT, <missing>, <undefined>, an empty character vector in a cell, 0 or false). 
 
-A copied variable whose name is already a variable of <b>TT</b> is added with the suffix <b>\_et</b>, the variable of <b>TT</b> being renamed with the suffix <b>\_tt</b>. The units and descriptions of the event variables are copied. The event table stays attached to the result.
+By default, all the variables of the event table are copied except the event lengths or ends variable. With <b>EventDataVariables</b>, only the listed variables are copied, in that order. 
+
+A copied variable whose name is already a variable of <b>TT</b> is added with the suffix <b>\_et</b>, the variable of <b>TT</b> being renamed with the suffix <b>\_tt</b>. The units and descriptions of the event variables are copied. The event table stays attached to the result. 
 
 An error is raised when no event table is attached to <b>TT</b>. To attach events, assign <b>TT.Properties.Events</b>.
 
 ## 💡 Examples
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], 'VariableNames', {'A'});
@@ -46,13 +48,14 @@ syncevents(TT, 'EventDataVariables', "Power")
 
 ```
 
+
 ## 🔗 See also
 
-[extractevents](../../table/extractevents.md), [eventtable](../../table/eventtable.md), [timetable](../../table/timetable.md).
+[extractevents](../../table/8_timetables_events/extractevents.md), [eventtable](../../table/8_timetables_events/eventtable.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

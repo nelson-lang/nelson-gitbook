@@ -19,6 +19,7 @@ Crée un composant table (style App Designer).
 
 ## 📄 Description
 
+
 <b>t = uitable</b> crée une table. <b>Data</b> accepte des tableaux numériques, logiques ou cell. Propriétés : <b>ColumnName</b> ('numbered' ou cell), <b>RowName</b>, <b>ColumnWidth</b>, <b>ColumnEditable</b>, <b>ColumnSortable</b>, <b>ColumnFormat</b>, <b>RowStriping</b>, <b>Selection</b>/<b>SelectionType</b>/<b>Multiselect</b>, <b>DisplayData</b> (lecture seule). Callbacks : <b>CellEditCallback</b> (event : Indices, EditData, NewData), <b>SelectionChangedFcn</b>.
 
 ## 💡 Exemples
@@ -30,7 +31,6 @@ f = uifigure('Visible', 'off', 'Name', 'Table', 'Position', [100 100 420 260]);
 t = uitable(f, 'Data', magic(4), 'ColumnName', {'A', 'B', 'C', 'D'}, 'Position', [55 40 310 180]);
 drawnow();
 ```
-
 <img src="uitable_example.svg" align="middle"/>
 uitable
 
@@ -41,13 +41,14 @@ t = uitable(f, 'Data', magic(4), 'ColumnName', {'A', 'B', 'C', 'D'}, 'ColumnEdit
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

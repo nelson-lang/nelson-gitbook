@@ -15,11 +15,14 @@ Checks that value is numeric or raise an error.
 
 ## 📄 Description
 
-<b>mustBeNumeric</b> checks that value is numeric or raise an error.
+
+<b>mustBeNumeric</b> checks that value is numeric or raise an error. 
 
 Empty values are ignored.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeNumeric(1)
@@ -27,13 +30,14 @@ mustBeNumeric([])
 mustBeNumeric({1})
 ```
 
+
 ## 🔗 See also
 
 [isnumeric](../types/isnumeric.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

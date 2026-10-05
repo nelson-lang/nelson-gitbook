@@ -17,14 +17,18 @@ Unaire moins, opérateur -
 
 ## 📄 Description
 
+
 <b>C = uminus(A)</b> effectue l'opération unaire moins, c.-à-d. -A.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = 3;
  -M
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ M = 3;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

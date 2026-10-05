@@ -1,12 +1,12 @@
-# assert_checkerror
+# assert\_checkerror
 
 Historical name for asserts.checkerror.
 
 ## 📝 Syntax
 
-- assert_checkerror(command, expectedMessage)
-- assert_checkerror(command, expectedMessage, expectedIdentifier)
-- [res, msg] = assert_checkerror(command, expectedMessage)
+- assert\_checkerror(command, expectedMessage)
+- assert\_checkerror(command, expectedMessage, expectedIdentifier)
+- [res, msg] = assert\_checkerror(command, expectedMessage)
 
 ## 📥 Input argument
 
@@ -21,9 +21,10 @@ Historical name for asserts.checkerror.
 
 ## 📄 Description
 
-<b>assert_checkerror</b> is kept for compatibility.
 
-For complete documentation, use [asserts.checkerror](../assert_functions/asserts.checkerror.md).
+<b>assert\_checkerror</b> is kept for compatibility. 
+
+For complete documentation, use [asserts.checkerror](../assert_functions/asserts.checkerror.md). 
 
 Use [asserts.throws](../assert_functions/asserts.throws.md) when only a message substring must match.
 
@@ -34,12 +35,12 @@ Historical call
 ```matlab
 assert_checkerror('cos', _('Wrong number of input arguments.'));
 ```
-
 Canonical call
 
 ```matlab
 asserts.checkerror('cos', _('Wrong number of input arguments.'));
 ```
+
 
 ## 🔗 See also
 
@@ -47,9 +48,9 @@ asserts.checkerror('cos', _('Wrong number of input arguments.'));
 
 ## 🕔 History
 
-| Version | 📄 Description                                       |
-| ------- | ---------------------------------------------------- |
-| 1.0.0   | initial version                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | documented as historical name for asserts.checkerror |
 
 <!--

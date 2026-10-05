@@ -1,14 +1,14 @@
-# qml_loadstring
+# qml\_loadstring
 
 Load a QML string.
 
 ## 📝 Syntax
 
-- h = qml_loadstring(str_to_eval)
+- h = qml\_loadstring(str\_to\_eval)
 
 ## 📥 Input argument
 
-- str_to_eval - a string.
+- str\_to\_eval - a string.
 
 ## 📤 Output argument
 
@@ -16,15 +16,19 @@ Load a QML string.
 
 ## 📄 Description
 
-Load a QML string
+
+Load a QML string 
 
 It creates a QML component and load .qml file.
 
 ## 💡 Example
 
+
+
 ```matlab
  % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ It creates a QML component and load .qml file.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -26,7 +26,8 @@ Definit ou retourne les etiquettes angulaires des axes polaires.
 
 ## 📄 Description
 
-<b>thetaticklabels</b> retourne ou definit les etiquettes affichees a cote des graduations angulaires.
+
+<b>thetaticklabels</b> retourne ou definit les etiquettes affichees a cote des graduations angulaires. 
 
 La definition d'etiquettes passe le mode a <b>manual</b>. Le nombre d'etiquettes affichees est aligne sur le nombre de graduations angulaires visibles.
 
@@ -43,14 +44,15 @@ labels = thetaticklabels()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [thetaticks](../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.md), [rticklabels](../../../graphics/3_labels_styling/1_axes_appearance/rticklabels.md), [polarplot](../../../graphics/1_plots/2_polar_plots/polarplot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

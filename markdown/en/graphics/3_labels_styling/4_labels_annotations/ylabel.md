@@ -22,9 +22,12 @@ Label y-axis.
 
 ## 📄 Description
 
+
 <b>ylabel('text')</b> labels the y-axis of the current axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -33,8 +36,8 @@ y = sin(2*pi*x);
 plot(x, y);
 ylabel('Y axis Label - Unicode ドラゴンボールY(ゼット)')
 ```
-
 <img src="ylabel.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -42,7 +45,7 @@ ylabel('Y axis Label - Unicode ドラゴンボールY(ゼット)')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,14 +16,18 @@ Add memoization to a function.
 
 ## 📄 Description
 
+
 <b>memoize</b> returns a MemoizedFunction that caches the outputs of the function handle fh. Calling the returned object with a set of inputs evaluates fh once for those inputs and returns the cached result on later calls with the same inputs. Set the Enabled property to false to bypass the cache, and use clearCache to empty it.
 
 ## 💡 Example
+
+
 
 ```matlab
 mf = memoize(@(x) x .^ 2);
 y = mf(4)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ y = mf(4)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

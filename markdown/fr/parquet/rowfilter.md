@@ -20,13 +20,16 @@ Creer une expression de filtre de lignes.
 
 ## 📄 Description
 
-<b>rowfilter</b> cree un objet filtre qui expose les noms de variables avec la notation par point.
 
-Utilisez les operateurs relationnels <b>></b>, <b>>=</b>, <b><</b>, <b><=</b>, <b>==</b> et <b>~=</b> pour creer des comparaisons. Utilisez les operateurs logiques <b>&</b>, <b>\|</b> et <b>~</b> pour combiner les expressions.
+<b>rowfilter</b> cree un objet filtre qui expose les noms de variables avec la notation par point. 
+
+Utilisez les operateurs relationnels <b>></b>, <b>>=</b>, <b><</b>, <b><=</b>, <b>==</b> et <b>~=</b> pour creer des comparaisons. Utilisez les operateurs logiques <b>&</b>, <b>\|</b> et <b>~</b> pour combiner les expressions. 
 
 L'objet obtenu peut etre passe a <b>parquetread</b> ou <b>parquetDatastore</b> avec la paire nom-valeur <b>RowFilter</b>. Il peut aussi etre applique directement a une table avec <b>rf.apply(T)</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 T = table([1; 2; 3; 4], [10; 20; 30; 40], ...
@@ -34,6 +37,7 @@ T = table([1; 2; 3; 4], [10; 20; 30; 40], ...
 rf = rowfilter(T);
 R = (rf.Id >= 2 & rf.Value < 40).apply(T)
 ```
+
 
 ```matlab
 filename = [tempdir(), 'doc_rowfilter.parquet'];
@@ -44,14 +48,15 @@ rf = rowfilter(info);
 R = parquetread(filename, 'RowFilter', rf.Value >= 30)
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.io.RowFilter](../parquet/class_RowFilter.md), [parquetread](../parquet/parquetread.md), [parquetDatastore](../parquet/parquetDatastore.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

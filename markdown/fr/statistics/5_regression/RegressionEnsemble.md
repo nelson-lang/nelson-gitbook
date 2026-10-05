@@ -20,14 +20,17 @@ Modele d'ensemble pour la regression.
 
 ## 📄 Description
 
-RegressionEnsemble stocke un modele de regression qui combine plusieurs apprenants faibles.
+
+RegressionEnsemble stocke un modele de regression qui combine plusieurs apprenants faibles. 
 
 Creez cet objet avec fitrensemble. Utilisez predict pour agreger les reponses des apprenants sur de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitrensemble
     predict
+  
 
 ## 💡 Exemple
 
@@ -40,14 +43,15 @@ mdl = fitrensemble(X, y, 'NumLearningCycles', 3);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitrensemble](../../statistics/fitrensemble.md).
+[predict](../../statistics/5_regression/predict.md), [fitrensemble](../../statistics/5_regression/fitrensemble.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

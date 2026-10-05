@@ -14,6 +14,7 @@ Génère le fichier cleaner.m pour une gateway C++
 
 ## 📄 Description
 
+
 <b>dlgeneratecleaner</b> génère un fichier 'cleaner.m' pour supprimer des fichiers.
 
 ## 💡 Exemple
@@ -26,14 +27,15 @@ dlgeneratecleaner(tempdir());
 text = fileread([tempdir(), 'cleaner.m'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlgenerateunloader](../dynamic_link/dlgenerateunloader.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

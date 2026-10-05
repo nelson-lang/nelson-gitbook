@@ -1,16 +1,27 @@
 # Tables
 
+
+    
 The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.
 
+    
 Tables are array-like structures with named variables (columns), each capable of holding different data types.
 
+    
 Table metadata is available through T.Properties, and helper functions are provided for adding, moving, renaming, removing and summarizing variables.
 
+    
 Timetables store tabular variables together with row times and provide time-based sorting, retiming, synchronization, and range queries.
+
+  
 
 ## Create and Convert Tables
 
+
+    
 Functions for creating tables and timetables and converting between tabular and other data forms.
+
+  
 
 ### Functions
 
@@ -31,15 +42,23 @@ Functions for creating tables and timetables and converting between tabular and 
 
 ## Read and Write Tables
 
+
+    
 Pages for reading and writing table data.
+
+  
 
 ### Functions
 
-- [Read/Write table to files](2_read_write_tables/3_read_write_table.md) -
+- [Read/Write table to files](2_read_write_tables/3_read_write_table.md) - 
 
 ## Summary Information
 
+
+    
 Functions for table size, type checks, and quick previews.
+
+  
 
 ### Functions
 
@@ -53,11 +72,15 @@ Functions for table size, type checks, and quick previews.
 
 ## Sort, Filter, and Rearrange
 
+
+    
 Functions and topics for accessing, sorting, rearranging, and customizing table contents.
+
+  
 
 ### Functions
 
-- [Accessing and Manipulating Tables in Nelson](4_sort_filter_rearrange/1_accessing_manipulating_table.md) -
+- [Accessing and Manipulating Tables in Nelson](4_sort_filter_rearrange/1_accessing_manipulating_table.md) - 
 - [addprop](4_sort_filter_rearrange/addprop.md) - Add custom table property.
 - [addvars](4_sort_filter_rearrange/addvars.md) - Add variables to a table or timetable.
 - [mergevars](4_sort_filter_rearrange/mergevars.md) - Merge table variables.
@@ -74,7 +97,11 @@ Functions and topics for accessing, sorting, rearranging, and customizing table 
 
 ## Join and Set Operations
 
+
+    
 Functions for combining tables with joins and related operations.
+
+  
 
 ### Functions
 
@@ -84,17 +111,25 @@ Functions for combining tables with joins and related operations.
 
 ## Apply Functions to Table Contents
 
+
+    
 Functions and topics for direct calculations and applying functions to table rows or variables.
+
+  
 
 ### Functions
 
-- [Direct computation with Table](7_apply_functions/2_direct_computation_with_table.md) -
+- [Direct computation with Table](7_apply_functions/2_direct_computation_with_table.md) - 
 - [rowfun](7_apply_functions/rowfun.md) - Apply a function to table rows.
 - [varfun](7_apply_functions/varfun.md) - Apply a function to table variables.
 
 ## Timetables and Events
 
+
+    
 Functions for timetable ranges, events, synchronization, and retiming.
+
+  
 
 ### Functions
 
@@ -111,3 +146,4 @@ Functions for timetable ranges, events, synchronization, and retiming.
 - [timerange](8_timetables_events/timerange.md) - Time range for timetable row subscripting.
 - [withinrange](8_timetables_events/withinrange.md) - Find timetable rows within a time range.
 - [withtol](8_timetables_events/withtol.md) - Time tolerance for timetable row subscripting.
+

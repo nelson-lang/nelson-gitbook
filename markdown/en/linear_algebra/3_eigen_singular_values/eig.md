@@ -27,28 +27,36 @@ Eigenvalues and eigenvectors.
 
 ## 📄 Description
 
-<b>eig(A)</b> returns the eigenvalues and eigenvectors.
 
-For a square matrix <b>A</b>, eigenvalues
+<b>eig(A)</b> returns the eigenvalues and eigenvectors. 
+
+For a square matrix <b>A</b>, eigenvalues 
 $$\lambda$$
+ 
 
-and eigenvectors
+and eigenvectors 
 $$\mathbf{v}$$
+ 
 
-satisfy:
+satisfy: 
 $$A\mathbf{v} = \lambda\mathbf{v}$$
+ 
 
-The characteristic equation is:
+The characteristic equation is: 
 $$\det(A - \lambda I) = 0$$
+ 
 
-<b>eig(A, B)</b> returns the generalized eigenvalues and eigenvectors where:
+<b>eig(A, B)</b> returns the generalized eigenvalues and eigenvectors where: 
 $$A\mathbf{v} = \lambda B\mathbf{v}$$
+
 
 ## 📚 Bibliography
 
 [1] Anderson, E., Z. Bai, C. Bischof, S. Blackford, J. Demmel, J. Dongarra, J. Du Croz, A. Greenbaum, S. Hammarling, A. McKenney, and D. Sorensen, LAPACK User's Guide (http://www.netlib.org/lapack/lug/ lapack_lug.html), Third Edition, SIAM, Philadelphia, 1999.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = [10 -20 40; -50 20 0; 10 0 30]
@@ -57,6 +65,7 @@ e = eig(A)
 
 ```
 
+
 ```matlab
 A = [1/sqrt(2) 0; 0 1];
 B = [0 1; -1/sqrt(2) 0];
@@ -64,13 +73,14 @@ B = [0 1; -1/sqrt(2) 0];
 
 ```
 
+
 ## 🔗 See also
 
-[svd](../../linear_algebra/svd.md), [schur](../../linear_algebra/schur.md).
+[svd](../../linear_algebra/3_eigen_singular_values/svd.md), [schur](../../linear_algebra/3_eigen_singular_values/schur.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

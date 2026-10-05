@@ -16,13 +16,16 @@ Correct error by converting to function notation.
 
 ## 📄 Description
 
-Use <b>nelson.lang.correction.ConvertToFunctionNotationCorrection</b> objects in classes whose methods should not be called using dot notation.
 
-<b>correction = nelson.lang.correction.ConvertToFunctionNotationCorrection(method)</b> creates a correction that suggests converting dot notation to function notation syntax for calling <b>method</b>.
+Use <b>nelson.lang.correction.ConvertToFunctionNotationCorrection</b> objects in classes whose methods should not be called using dot notation. 
+
+<b>correction = nelson.lang.correction.ConvertToFunctionNotationCorrection(method)</b> creates a correction that suggests converting dot notation to function notation syntax for calling <b>method</b>. 
 
 The read-only <b>Method</b> property contains the method name.
 
 ## 💡 Example
+
+
 
 ```matlab
 ME = MException('nelson:useFunctionForm', 'Use function syntax to call this method.');
@@ -31,13 +34,14 @@ ME = addCorrection(ME, correction)
 ME.Correction.Method
 ```
 
+
 ## 🔗 See also
 
 [addCorrection](../error_manager/addCorrection.md), [nelson.lang.correction.AppendArgumentsCorrection](../error_manager/nelson.lang.correction.AppendArgumentsCorrection.md), [nelson.lang.correction.ReplaceIdentifierCorrection](../error_manager/nelson.lang.correction.ReplaceIdentifierCorrection.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

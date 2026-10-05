@@ -16,9 +16,12 @@ Checks that value is member of specified array or issue error.
 
 ## 📄 Description
 
+
 <b>mustBeMember</b> checks that value is member of an array or issue error.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = "red";
@@ -27,13 +30,14 @@ mustBeMember(A,B)
 
 ```
 
+
 ## 🔗 See also
 
 [mustBeNonempty](../validators/mustBeNonempty.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

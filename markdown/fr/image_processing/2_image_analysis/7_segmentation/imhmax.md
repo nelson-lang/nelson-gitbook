@@ -19,6 +19,7 @@ Supprime les maxima peu profonds avec la transformation h-maxima.
 
 ## 📄 Description
 
+
 imhmax supprime les maxima moins profonds que h. Cette fonction aide a extraire des marqueurs de premier plan avant segmentation.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ J=imhmax(I,2);
 figure; subplot(1,2,1); imagesc(I); title('Entree');
 subplot(1,2,2); imagesc(J); title('h-maxima');
 ```
-
 <img src="imhmax_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imextendedmax](../../../image_processing/imextendedmax.md), [imregionalmax](../../../image_processing/imregionalmax.md), [imhmin](../../../image_processing/imhmin.md).
+[imextendedmax](../../../image_processing/2_image_analysis/7_segmentation/imextendedmax.md), [imregionalmax](../../../image_processing/2_image_analysis/7_segmentation/imregionalmax.md), [imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,4 +1,4 @@
-# compiler_runtime_tutorial
+# compiler\_runtime\_tutorial
 
 Tutoriel : un runtime pour plusieurs applications.
 
@@ -8,11 +8,12 @@ Tutoriel : un runtime pour plusieurs applications.
 
 ## 📄 Description
 
-Executer ces trois blocs dans l'ordre sous Windows, avec Inno Setup 6 sur la machine de construction. L'installateur produit contient le runtime requis par les deux applications, mais pas les applications. Distribuer separement leurs Results.Files.
 
-Cet exemple installe dans un repertoire temporaire prive avec /PORTABLE=1 et le selectionne explicitement par NELSONC_RUNTIME_ROOT. Une installation normale enregistree est decouverte automatiquement par les lanceurs actuels. Le desinstalleur local dans target retire le runtime partage et conserve les executables des applications.
+Executer ces trois blocs dans l'ordre sous Windows, avec Inno Setup 6 sur la machine de construction. L'installateur produit contient le runtime requis par les deux applications, mais pas les applications. Distribuer separement leurs Results.Files. 
 
-Le bloc 3 utilise les arguments non interactifs du runtime. Pour employer un fichier de reponses, ecrire agreeToLicense=yes, destinationFolder=la cible absolue et outputFile=un nouveau journal sur des lignes separees, puis appeler l'installateur avec -inputfile suivi du chemin du fichier. Conserver /CURRENTUSER /PORTABLE=1 pour cet exemple isole ; omettre /PORTABLE=1 pour enregistrer un runtime partage.
+Cet exemple installe dans un repertoire temporaire prive avec /PORTABLE=1 et le selectionne explicitement par NELSONC\_RUNTIME\_ROOT. Une installation normale enregistree est decouverte automatiquement par les lanceurs actuels. Le desinstalleur local dans target retire le runtime partage et conserve les executables des applications. 
+
+Le bloc 3 utilise les arguments non interactifs du runtime. Pour employer un fichier de reponses, ecrire agreeToLicense=yes, destinationFolder=la cible absolue et outputFile=un nouveau journal sur des lignes separees, puis appeler l'installateur avec -inputfile suivi du chemin du fichier. Conserver /CURRENTUSER /PORTABLE=1 pour cet exemple isole ; omettre /PORTABLE=1 pour enregistrer un runtime partage. 
 
 Si le processus d'installation est interrompu, relancer la commande d'installation du bloc 3 avec le meme installateur et la meme cible. Ne pas supprimer .nelson-runtime-update. L'installateur verifie son journal de reprise et termine l'installation avant le lancement des applications. Un autre paquet est refuse tant qu'une mise a jour incomplete subsiste. Les fichiers modifies ou donnees de reprise alterees exigent une inspection, pas un remplacement force ; voir compiler.runtime.customInstaller pour les limites et repertoires de reprise conserves.
 
@@ -31,7 +32,6 @@ filewrite(entryB, 'function shared_two(); disp(sin(0)); disp(''SHARED_TWO_OK'');
 first = compiler.build.standaloneApplication(entryA, 'OutputDir', fullfile(work, 'one'));
 second = compiler.build.standaloneApplication(entryB, 'OutputDir', fullfile(work, 'two'));
 ```
-
 2. Regrouper leur runtime partage
 
 ```matlab
@@ -40,7 +40,6 @@ compiler.runtime.customInstaller('SharedRuntime', [first, second], ...
   'OutputDir', fullfile(work, 'installer'));
 installer = fullfile(work, 'installer', 'SharedRuntime.exe');
 ```
-
 3. Installer et executer les applications
 
 ```matlab
@@ -60,10 +59,10 @@ disp(output);
 clear restore;
 ```
 
+
 ## 🔗 Voir aussi
 
 [compiler.runtime.customInstaller](../compiler/compiler.runtime.customInstaller.md), [compiler_installer_tutorial](../compiler/compiler_installer_tutorial.md).
-
 <!--
 ## 👤 Auteur
 

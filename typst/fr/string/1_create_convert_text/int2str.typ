@@ -1,0 +1,45 @@
+#import "../nelson_help.typ": *
+
+= int2str <string:1_create_convert_text.int2str>
+
+Convertit un tableau d'entiers en chaîne
+
+== Syntaxe
+
+- #raw("res = int2str(var)");
+
+== Argument d'entrée
+
+/ var: un tableau numérique.
+
+== Argument de sortie
+
+/ res: une chaîne
+
+== Description
+
+#strong[int2str]; convert un tableau numérique en chaîne au format entier. Les entrées sont arrondies avant la conversion.
+== Exemples
+
+``````matlab
+R = int2str ([-Inf, 2, NaN; 4, Inf, 6])
+``````
+
+``````matlab
+R = int2str(uint64(intmax('uint64')))
+``````
+
+
+== Voir aussi
+
+#nlink(<string:1_create_convert_text.char>)[char];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

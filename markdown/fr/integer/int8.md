@@ -16,16 +16,20 @@ Convertit en entier signé 8 bits.
 
 ## 📄 Description
 
-<b>int8</b> convertit la valeur en type entier 8 bits.
+
+<b>int8</b> convertit la valeur en type entier 8 bits. 
 
 La valeur est arrondie à la valeur int8 la plus proche lors de la conversion. Une valeur supérieure ou inférieure à la plage pour la classe int8 est mappée vers l'une des extrémités de la plage [-128, 127].
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = [1 -255 -120 127 128 215]
 B = int8(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ B = int8(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

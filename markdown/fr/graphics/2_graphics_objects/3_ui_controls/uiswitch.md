@@ -19,6 +19,7 @@ Crée un interrupteur (slider, rocker, toggle).
 
 ## 📄 Description
 
+
 <b>sw = uiswitch(parent, style)</b> crée un interrupteur à deux états : styles <b>'slider'</b> (défaut), <b>'rocker'</b>, <b>'toggle'</b>. <b>Items</b> contient les deux libellés ; <b>Value</b>/<b>ValueIndex</b>/<b>ItemsData</b> suivent les règles habituelles ; <b>ValueChangedFcn</b> signale les changements.
 
 ## 💡 Exemples
@@ -34,7 +35,6 @@ rsw.Position = [300 90 48 100];
 rsw.Value = 'On';
 drawnow();
 ```
-
 <img src="uiswitch_example.svg" align="middle"/>
 uiswitch
 
@@ -46,13 +46,14 @@ sw.Value = 'Go';
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

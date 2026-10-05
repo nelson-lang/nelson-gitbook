@@ -16,13 +16,17 @@ Magic square
 
 ## 📄 Description
 
+
 <b>M = magic(N)</b> computes an square matrix constructed as an arrangement of the 1:n^2 such that the row sums, column sums, and diagonal sums are all equal to the same value.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 M = magic(3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ M = magic(3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

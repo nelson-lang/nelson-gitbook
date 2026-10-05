@@ -17,9 +17,11 @@ Plus unaire pour les données d'un timeseries.
 
 ## 📄 Description
 
+
 <b>uplus</b> retourne un timeseries avec des données inchangées.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2], [1; 2]);
@@ -28,14 +30,15 @@ out.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

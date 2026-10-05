@@ -29,7 +29,8 @@ Extract isosurface data from volume data.
 
 ## 📄 Description
 
-<b>isosurface</b> extracts a triangular surface where the volume data reaches a requested scalar value. With no output arguments, the surface is displayed as a patch object in the current axes.
+
+<b>isosurface</b> extracts a triangular surface where the volume data reaches a requested scalar value. With no output arguments, the surface is displayed as a patch object in the current axes. 
 
 The <b>'noshare'</b> option skips shared-vertex reduction. The <b>'verbose'</b> option is accepted for compatibility.
 
@@ -43,8 +44,8 @@ v = x.^2 + y.^2 + z.^2;
 isosurface(x, y, z, v, 1);
 axis equal;
 ```
-
 <img src="isosurface_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

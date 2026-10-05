@@ -24,9 +24,12 @@ Estimation de densite spectrale croisee.
 
 ## 📄 Description
 
+
 <b>cpsd</b> estime une densite spectrale croisee en moyennant des segments recouvrants.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Estimation de densite spectrale croisee.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[pwelch](../../signal_processing/pwelch.md), [mscohere](../../signal_processing/mscohere.md).
+[pwelch](../../signal_processing/5_spectral_analysis/pwelch.md), [mscohere](../../signal_processing/3_transforms_correlation_modeling/mscohere.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

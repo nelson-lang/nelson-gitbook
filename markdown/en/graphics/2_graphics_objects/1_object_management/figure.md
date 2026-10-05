@@ -24,13 +24,18 @@ Creates an figure window.
 
 ## 📄 Description
 
-<b>figure</b> creates figure.
 
-Clicking on an figure automatically sets it as the current figure object.
+<b>figure</b> creates figure. 
+
+Clicking on an figure automatically sets it as the current figure object. 
+
+ 
 
 See [figure properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.figure.properties.md) for the complete property list.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure(1)
@@ -42,22 +47,23 @@ figure('Name', 'Hello')
 
 ```
 
+
 ## 🔗 See also
 
 [figure properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.figure.properties.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [close](../../../graphics/2_graphics_objects/1_object_management/close.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                   |
-| ------- | ------------------------------------------------------------------------------------------------ |
-| 1.0.0   | initial version                                                                                  |
-| 1.2.0   | Clicking on an figure automatically sets it as the current figure object.                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.2.0   | Clicking on an figure automatically sets it as the current figure object. |
 | 1.7.0   | CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn callback added. |
-| --      | BeingDeleted property added.                                                                     |
-| 1.8.0   | Resize property added.                                                                           |
-| 1.13.0  | DevicePixelRatio property added.                                                                 |
-| 1.14.0  | WindowState property added.                                                                      |
-| --      | Figure property documentation updated.                                                           |
+| --   | BeingDeleted property added. |
+| 1.8.0   | Resize property added. |
+| 1.13.0   | DevicePixelRatio property added. |
+| 1.14.0   | WindowState property added. |
+| --   | Figure property documentation updated. |
 
 <!--
 ## 👤 Author

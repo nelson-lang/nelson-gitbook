@@ -15,9 +15,12 @@ Checks that value is real.
 
 ## 📄 Description
 
+
 <b>mustBeReal</b> checks that value is real or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeReal(1)
@@ -25,13 +28,14 @@ mustBeReal(i)
 
 ```
 
+
 ## 🔗 See also
 
 [isreal](../types/isreal.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -20,11 +20,14 @@ Convertit un modèle du temps discret au temps continu.
 
 ## 📄 Description
 
-La fonction <b>sysc = d2c(sysd)</b> transforme un modèle de système dynamique en temps discret <b>sysd</b> en un modèle en temps continu, en utilisant un maintien d'ordre zéro sur les entrées.
+
+La fonction <b>sysc = d2c(sysd)</b> transforme un modèle de système dynamique en temps discret <b>sysd</b> en un modèle en temps continu, en utilisant un maintien d'ordre zéro sur les entrées. 
 
 Par exemple, vous pouvez utiliser <b>sysc = d2c(sysd, method)</b> pour définir explicitement la méthode de conversion.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [0.25, 0.5; 0, 0.1];
@@ -35,14 +38,15 @@ sysc = d2c(sys, 'zoh')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[c2d](../../control_system/c2d.md), [ss](../../control_system/ss.md).
+[c2d](../../control_system/2_model_conversion_interconnection/c2d.md), [ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

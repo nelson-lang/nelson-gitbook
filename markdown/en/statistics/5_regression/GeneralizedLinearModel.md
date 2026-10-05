@@ -21,14 +21,17 @@ Generalized linear regression model.
 
 ## 📄 Description
 
-GeneralizedLinearModel stores a generalized linear model fitted from predictors and a response.
+
+GeneralizedLinearModel stores a generalized linear model fitted from predictors and a response. 
 
 Create this object with fitglm. Use predict to evaluate fitted responses for new predictor values.
 
 ## Used function(s)
 
+
     fitglm
     predict
+  
 
 ## 💡 Example
 
@@ -41,13 +44,14 @@ mdl = fitglm(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitglm](../../statistics/fitglm.md).
+[predict](../../statistics/5_regression/predict.md), [fitglm](../../statistics/5_regression/fitglm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

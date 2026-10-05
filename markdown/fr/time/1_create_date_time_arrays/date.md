@@ -12,23 +12,27 @@ Retourne la date courante sous forme de vecteur de caractères.
 
 ## 📄 Description
 
+
 <b>d = date()</b> renvoie la date courante sous forme de vecteur de caractères au format<b>dd-MMM-yyyy</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 d = date()
 fix(c)
 ```
 
+
 ## 🔗 Voir aussi
 
-[now](../../time/now.md).
+[now](../../time/1_create_date_time_arrays/now.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

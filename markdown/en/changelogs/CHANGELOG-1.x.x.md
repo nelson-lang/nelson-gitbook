@@ -30,38 +30,32 @@ We are grateful for the path he blazed.
 ### Added
 
 - function argument validation using `arguments ... end` blocks
-
   - Support for validation functions (e.g., `mustBeNumeric`, `mustBeMember`)
   - Default values for optional positional and name-value arguments
   - Separate validation blocks for input and output arguments
   - Improved error messages for invalid function arguments
 
 - Debugger Support
-
   - Full breakpoint management with commands: `dbstop`, `dbstep`, `dbcont`, `dbquit`, `dbclear`, `dbdown`, `dbup`, `dbstatus`.
   - Support for setting breakpoints at specific files, functions, and lines.
   - Conditional breakpoints and hit-count breakpoints (if applicable).
 
 - Interactive Debugging in Text Editor
-
   - Real-time feedback on breakpoints directly within the editor.
   - Inline variable inspection while stepping through code.
   - Highlighting of the current execution line.
 
 - Step Execution Controls
-
   - Step Into: move into function calls.
   - Step Over: execute functions without entering them.
   - Continue: resume execution until the next breakpoint.
 
 - Stack Inspection & Variable Evaluation
-
   - Examine the call stack during debugging with `dbup` and `dbdown`.
   - Evaluate and modify variables in the current workspace.
   - Inspect function arguments and local variables.
 
 - Enhanced Debugging Experience
-
   - Integration with the command-line interface and editor interface.
   - Improved visibility of function contexts and nested calls.
 
@@ -69,7 +63,7 @@ We are grateful for the path he blazed.
 
 - `interp2`, `interp3`, `interpn`: interpolation functions
 
-- `regexp`, `regexpi`, `regexprep`, `regextranslate`: regexp functions added.
+- `regexp`, `regexpi`, `regexprep`,  `regextranslate`: regexp functions added.
 
 - [#309](https://github.com/nelson-lang/nelson/issues/309): `erf`, `erfc`, `erfcinv`, `erfcx`, `erfinv` error functions.
 
@@ -91,7 +85,7 @@ We are grateful for the path he blazed.
 
 - Qt 6.11.0 support.
 
-- Full CMake configuration and build system for Visual Studio (x64, Win32, ARM64).
+- Full CMake configuration and build system for Visual Studio  (x64, Win32, ARM64).
 
 - Ubuntu 26.04 ready.
 
@@ -230,7 +224,7 @@ The certificate represents a significant cost for a volunteer effort - any donat
   - `Units` for `UIControl` objects.
   - `DefaultFigureAlphamap`, `DefaultFigureColormap` as root properties.
 - Support for `nix develop`, providing a reproducible Bash shell preconfigured with Nelson’s build environment.
-  See [BUILDING.md](./BUILDING.md) for details.
+  See [BUILDING.md](https://github.com/nelson-lang/nelson/blob/master/BUILDING.md) for details.
 - A [`justfile`](https://just.systems/man/en/) to streamline and standardize the build process across platforms.
 - Support for:
   - Fedora 42.

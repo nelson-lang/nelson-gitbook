@@ -14,7 +14,7 @@ Return the day of week.
 
 - D - Serial date numbers or text representing dates and times (vector, matrix, character vector, cell array of character vectors, string array or character array).
 - form - a string: 'short' (default) or 'long'.
-- language - a string: 'en_US' (default) or 'local'.
+- language - a string: 'en\_US' (default) or 'local'.
 
 ## 📤 Output argument
 
@@ -23,9 +23,12 @@ Return the day of week.
 
 ## 📄 Description
 
+
 <b>dayweek</b> returns the day of the week as a number in<b>number</b> and as a string in <b>name</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Return the day of week.
 
 ```
 
+
 ## 🔗 See also
 
-[datevec](../../time/datevec.md).
+[datevec](../../time/1_create_date_time_arrays/datevec.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

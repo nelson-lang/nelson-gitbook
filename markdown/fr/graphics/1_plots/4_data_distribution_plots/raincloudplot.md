@@ -29,15 +29,16 @@ Visualiser des donnees numeriques groupees avec des graphiques en nuage de pluie
 
 ## 📄 Description
 
-<b>raincloudplot</b> visualise la distribution empirique d'un echantillon ainsi que les valeurs elles-memes. Une moitie du graphique est un demi-violon (le nuage) qui montre une estimation par noyau de la densite; l'autre moitie est un essaim de marqueurs (la pluie), un marqueur par valeur, eloignes de la ligne de base du nuage pour eviter qu'ils se superposent.
 
-Avec l'orientation horizontale par defaut, le nuage est dessine au-dessus de la position du groupe et la pluie en dessous. Avec l'orientation verticale, le nuage est dessine a droite de la position du groupe et la pluie a gauche.
+<b>raincloudplot</b> visualise la distribution empirique d'un echantillon ainsi que les valeurs elles-memes. Une moitie du graphique est un demi-violon (le nuage) qui montre une estimation par noyau de la densite; l'autre moitie est un essaim de marqueurs (la pluie), un marqueur par valeur, eloignes de la ligne de base du nuage pour eviter qu'ils se superposent. 
 
-L'estimation de densite par noyau est celle utilisee par <b>violinplot</b>. Les largeurs des nuages de tous les groupes d'un objet sont mises a l'echelle ensemble de sorte que le nuage le plus large atteigne la moitie de <b>DensityWidth</b>. L'etalement de la pluie suit la densite locale.
+Avec l'orientation horizontale par defaut, le nuage est dessine au-dessus de la position du groupe et la pluie en dessous. Avec l'orientation verticale, le nuage est dessine a droite de la position du groupe et la pluie a gauche. 
 
-Chaque objet a sa propre couleur: <b>FaceColor</b> est pris dans <b>ColorOrder</b> des axes selon <b>SeriesIndex</b>, qui suit l'ordre de creation dans les axes. <b>EdgeColor</b>, <b>MarkerFaceColor</b> et <b>MarkerEdgeColor</b> suivent <b>FaceColor</b> tant que leur mode vaut 'auto'.
+L'estimation de densite par noyau est celle utilisee par <b>violinplot</b>. Les largeurs des nuages de tous les groupes d'un objet sont mises a l'echelle ensemble de sorte que le nuage le plus large atteigne la moitie de <b>DensityWidth</b>. L'etalement de la pluie suit la densite locale. 
 
-Les donnees de groupement categorical sont placees a des positions entieres consecutives etiquetees par le nom des categories. Quand plusieurs variables de table servent de donnees de groupement, les categories de meme nom partagent la meme position.
+Chaque objet a sa propre couleur: <b>FaceColor</b> est pris dans <b>ColorOrder</b> des axes selon <b>SeriesIndex</b>, qui suit l'ordre de creation dans les axes. <b>EdgeColor</b>, <b>MarkerFaceColor</b> et <b>MarkerEdgeColor</b> suivent <b>FaceColor</b> tant que leur mode vaut 'auto'. 
+
+Les donnees de groupement categorical sont placees a des positions entieres consecutives etiquetees par le nom des categories. Quand plusieurs variables de table servent de donnees de groupement, les categories de meme nom partagent la meme position. 
 
 La page [proprietes raincloudplot](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.raincloudplot.properties.md) liste les proprietes d'objet prises en charge.
 
@@ -50,7 +51,6 @@ ydata = randn(100, 1);
 xgroupdata = categorical(repelem(["group1"; "group2"; "group3"], [20, 50, 30]));
 raincloudplot(xgroupdata, ydata)
 ```
-
 <img src="raincloudplot_1.svg" align="middle"/>
 Nuages de pluie superposes avec des couleurs choisies.
 
@@ -63,7 +63,6 @@ r1.FaceColor = "g";
 r2.FaceColor = "m";
 legend("Smoker", "Nonsmoker")
 ```
-
 Nuages de pluie a partir de variables de table.
 
 ```matlab
@@ -74,14 +73,15 @@ figure
 raincloudplot(tbl, ["X1", "X3"], ["Y1", "Y2"])
 ```
 
+
 ## 🔗 Voir aussi
 
 [violinplot](../../../graphics/1_plots/4_data_distribution_plots/violinplot.md), [swarmchart](../../../graphics/1_plots/4_data_distribution_plots/swarmchart.md), [boxchart](../../../graphics/1_plots/4_data_distribution_plots/boxchart.md), [proprietes raincloudplot](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.raincloudplot.properties.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

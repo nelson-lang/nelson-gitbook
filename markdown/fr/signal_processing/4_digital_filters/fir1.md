@@ -21,9 +21,12 @@ Conception de filtre FIR par fenêtrage.
 
 ## 📄 Description
 
+
 <b>fir1</b> conçoit un filtre FIR à phase linéaire par fenêtrage d'une réponse impulsionnelle idéale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ b = fir1(16, 0.25);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[freqz](../../signal_processing/freqz.md), [kaiser](../../signal_processing/kaiser.md).
+[freqz](../../signal_processing/4_digital_filters/freqz.md), [kaiser](../../signal_processing/5_spectral_analysis/kaiser.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

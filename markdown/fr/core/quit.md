@@ -12,6 +12,7 @@ Ferme l'application Nelson.
 
 ## 📄 Description
 
+
 Ferme l'application Nelson et termine la session en cours (équivalent de `exit`).
 
 ## 💡 Exemple
@@ -22,14 +23,15 @@ Attention cet exemple fermera Nelson
 quit
 ```
 
+
 ## 🔗 Voir aussi
 
 [exit](../core/exit.md), [finish.m](../engine/finish.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

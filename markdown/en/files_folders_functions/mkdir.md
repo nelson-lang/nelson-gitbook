@@ -26,13 +26,16 @@ Creates a new directory.
 
 ## 📄 Description
 
-Creates a directory named dirname in the directory parent.
 
-If no parent directory is specified the present working directory is used.
+Creates a directory named dirname in the directory parent. 
+
+If no parent directory is specified the present working directory is used. 
 
 If directory is created or already existing, status is true, otherwise it will be false.
 
 ## 💡 Example
+
+
 
 ```matlab
 mkdir(tempdir(), 'subdir_example')
@@ -44,17 +47,18 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [isdir](../files_folders_functions/isdir.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                   |
-| ------- | ------------------------------------------------ |
-| 1.0.0   | initial version                                  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 1.4.0   | input arguments support scalar string array type |
-| 2.0.0   | msgID output argument added.                     |
+| 2.0.0   | msgID output argument added. |
 
 <!--
 ## 👤 Author

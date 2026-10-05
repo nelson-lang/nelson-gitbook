@@ -20,23 +20,27 @@ Nombres aleatoires de loi extreme value
 
 ## 📄 Description
 
+
 <b>evrnd</b> genere des valeurs aleatoires de loi extreme value.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = evrnd(0, 1, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md), [evinv](../../statistics/evinv.md).
+[evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md), [evinv](../../statistics/2_probability_distributions/evinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

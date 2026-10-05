@@ -1,19 +1,20 @@
-# nmm_build_help
+# nmm\_build\_help
 
 fonction d'aide pour générer l'aide d'un module externe
 
 ## 📝 Syntaxe
 
-- nmm_build_help(module_short_name, module_root_path)
+- nmm\_build\_help(module\_short\_name, module\_root\_path)
 
 ## 📥 Argument d'entrée
 
-- module_short_name - chaîne : nom court du module.
-- module_root_path - chaîne : chemin du module nommé 'module_short_name'.
+- module\_short\_name - chaîne : nom court du module.
+- module\_root\_path - chaîne : chemin du module nommé 'module\_short\_name'.
 
 ## 📄 Description
 
-<b>nmm_build_help</b> génère l'aide d'un module externe.
+
+<b>nmm\_build\_help</b> génère l'aide d'un module externe.
 
 ## 💡 Exemple
 
@@ -23,14 +24,15 @@ See module skeleton for example
 % see builder.m
 ```
 
+
 ## 🔗 Voir aussi
 
 [buildhelp](../help_tools/buildhelp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

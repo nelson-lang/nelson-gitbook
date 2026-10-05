@@ -17,6 +17,7 @@ Remove custom table property.
 
 ## 📄 Description
 
+
 <b>rmprop</b> removes a custom property from <b>T.Properties.CustomProperties</b>.
 
 ## 💡 Example
@@ -30,13 +31,14 @@ T.Properties.CustomProperties.Source = 'demo';
 T = rmprop(T, 'Source')
 ```
 
+
 ## 🔗 See also
 
-[addprop](../../table/addprop.md), [table](../../table/table.md).
+[addprop](../../table/4_sort_filter_rearrange/addprop.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

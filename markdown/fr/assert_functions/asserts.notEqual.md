@@ -19,7 +19,8 @@ Verifie que deux valeurs ne sont pas egales.
 
 ## 📄 Description
 
-L'assertion reussit lorsque asserts.isequal echouerait.
+
+L'assertion reussit lorsque asserts.isequal echouerait. 
 
 Elle sert aux controles negatifs d'egalite dans les tests.
 
@@ -30,12 +31,12 @@ Different values
 ```matlab
 asserts.notEqual(1, 2);
 ```
-
 Capture an equality failure
 
 ```matlab
 [res, msg] = asserts.notEqual(1, 1);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture an equality failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

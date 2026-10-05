@@ -16,13 +16,14 @@ Définir des points d'arrêt pour le débogage.
 
 ## 📄 Description
 
-<b>dbstop</b> définit des points d'arrêt dans les programmes pour le débogage interactif. Lorsque l'exécution atteint un point d'arrêt, l'exécution est suspendue et l'interpréteur entre en mode débogage.
 
-Les points d'arrêt peuvent être définis dans des fichiers spécifiques ou à des emplacements spécifiques.
+<b>dbstop</b> définit des points d'arrêt dans les programmes pour le débogage interactif. Lorsque l'exécution atteint un point d'arrêt, l'exécution est suspendue et l'interpréteur entre en mode débogage. 
 
-Cette fonction ne peut être appelée que depuis la ligne de commande.
+Les points d'arrêt peuvent être définis dans des fichiers spécifiques ou à des emplacements spécifiques. 
 
-Les fonctionnalités de débogage prises en charge par l'éditeur de texte s'intègrent à ces fonctions pour le débogage interactif.
+Cette fonction ne peut être appelée que depuis la ligne de commande. 
+
+Les fonctionnalités de débogage prises en charge par l'éditeur de texte s'intègrent à ces fonctions pour le débogage interactif. 
 
 Voir également le [Flux de travail de débogage](../text_editor/debugging_workflow.md) pour un aperçu du débogage dans Nelson.
 
@@ -41,7 +42,6 @@ dbstop in buggy
 buggy(1:5)
 
 ```
-
         Définir un point d'arrêt à une fonction locale.
 
 ```matlab
@@ -49,7 +49,6 @@ buggy(1:5)
 dbstop in myfile>myfunc
 
 ```
-
         Restaurer les points d'arrêt précédemment sauvegardés.
 
 ```matlab
@@ -60,15 +59,16 @@ dbstop(b)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dbclear](../debugger/dbclear.md), [dbcont](../debugger/dbcont.md), [dbquit](../debugger/dbquit.md), [dbstatus](../debugger/dbstatus.md), [dbstack](../debugger/dbstack.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

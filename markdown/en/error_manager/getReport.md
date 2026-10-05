@@ -19,16 +19,20 @@ Get MException report.
 
 ## 📄 Description
 
-<b>getReport</b> returns a formatted report for an MException object.
+
+<b>getReport</b> returns a formatted report for an MException object. 
 
 The <b>basic</b> report contains the exception message. The <b>extended</b> report includes additional diagnostic information when available.
 
 ## 💡 Example
 
+
+
 ```matlab
 ME = MException('nelson:badIndex', 'Unable to index into array.');
 getReport(ME, 'basic')
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ getReport(ME, 'basic')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

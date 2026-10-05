@@ -12,9 +12,12 @@ Stops an audioplayer object.
 
 ## 📄 Description
 
+
 <b>stop</b> stops an audioplayer object.
 
 ## 💡 Example
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,13 +29,14 @@ delete(playObj)
 playObj
 ```
 
+
 ## 🔗 See also
 
 [audioplayer](../audio/audioplayer.md), [play](../audio/play.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

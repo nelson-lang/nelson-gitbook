@@ -19,7 +19,8 @@ Check that a value has the expected class.
 
 ## 📄 Description
 
-The assertion passes when class(value) matches expectedClass.
+
+The assertion passes when class(value) matches expectedClass. 
 
 Use asserts.type to accept one class among several allowed classes.
 
@@ -30,12 +31,12 @@ Expected class
 ```matlab
 asserts.class(single(1), 'single');
 ```
-
 Capture a class failure
 
 ```matlab
 [res, msg] = asserts.class(int32(1), 'double');
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a class failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

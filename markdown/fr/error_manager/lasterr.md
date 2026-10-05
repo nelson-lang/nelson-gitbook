@@ -21,13 +21,16 @@ Retourne ou definit le dernier message d'erreur.
 
 ## 📄 Description
 
-<b>msg = lasterr()</b> retourne le message de la derniere erreur enregistree.
 
-<b>[msg, id] = lasterr()</b> retourne aussi l'identifiant de l'erreur.
+<b>msg = lasterr()</b> retourne le message de la derniere erreur enregistree. 
+
+<b>[msg, id] = lasterr()</b> retourne aussi l'identifiant de l'erreur. 
 
 <b>lasterr(msg)</b> et <b>lasterr(msg, id)</b> definissent le dernier message d'erreur (et l'identifiant), et retournent le message precedent.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 try
@@ -37,14 +40,15 @@ end
 [msg, id] = lasterr()
 ```
 
+
 ## 🔗 Voir aussi
 
 [lasterror](../error_manager/lasterror.md), [error](../error_manager/error.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

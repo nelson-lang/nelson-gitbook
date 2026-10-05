@@ -24,9 +24,12 @@ Discrete-time algebraic Riccati equation solution.
 
 ## 📄 Description
 
+
 The function <b>dare(A, B, Q)</b> calculates the exclusive solution, denoted as <b>X</b>, for the discrete-time algebraic Riccati equation with matrices <b>A</b>, <b>B</b>, and <b>Q</b>, and also provides additional matrices <b>L</b> and <b>G</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 a = [-3 2;1 1];
@@ -37,13 +40,14 @@ r = 3;
 
 ```
 
+
 ## 🔗 See also
 
 [slicot_sb02od](../../slicot/slicot_sb02od.md), [slicot_sg02ad](../../slicot/slicot_sg02ad.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

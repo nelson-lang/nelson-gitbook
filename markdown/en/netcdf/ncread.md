@@ -22,7 +22,8 @@ Read data from a variable in a netCDF file.
 
 ## 📄 Description
 
-ncread returns variable data as a Nelson array. Primitive netCDF numeric types are mapped to Nelson numeric classes where possible.
+
+ncread returns variable data as a Nelson array. Primitive netCDF numeric types are mapped to Nelson numeric classes where possible. 
 
 High-level start values are one-based, matching regular Nelson indexing.
 
@@ -37,13 +38,14 @@ ncwrite(filename, 'temperature', [10 20 30 40]);
 data = ncread(filename, 'temperature', 2, 2)
 ```
 
+
 ## 🔗 See also
 
 [nccreate](../netcdf/nccreate.md), [ncwrite](../netcdf/ncwrite.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

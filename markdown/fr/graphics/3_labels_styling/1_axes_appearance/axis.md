@@ -32,9 +32,12 @@ Définit les limites et les rapports d'aspect des axes.
 
 ## 📄 Description
 
+
 <b>axes</b> définit les limites et l'apparence des axes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -59,8 +62,8 @@ plot (t, x);
 title('normal plot again');
 axis('normal');
 ```
-
 <img src="axis.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -68,8 +71,8 @@ axis('normal');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -19,7 +19,8 @@ Verifie l'ensemble exact des champs d'une structure.
 
 ## 📄 Description
 
-L'assertion reussit lorsque s n'a aucun champ manquant et aucun champ supplementaire.
+
+L'assertion reussit lorsque s n'a aucun champ manquant et aucun champ supplementaire. 
 
 Utiliser asserts.hasFields lorsque les champs supplementaires sont autorises.
 
@@ -30,12 +31,12 @@ Exact field set
 ```matlab
 S = struct('a', 1, 'b', 2); asserts.fields(S, {'b', 'a'});
 ```
-
 Capture an extra field
 
 ```matlab
 S = struct('a', 1, 'b', 2); [res, msg] = asserts.fields(S, {'a'});
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ S = struct('a', 1, 'b', 2); [res, msg] = asserts.fields(S, {'a'});
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

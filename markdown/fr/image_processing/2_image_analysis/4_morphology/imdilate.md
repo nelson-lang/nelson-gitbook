@@ -17,6 +17,7 @@ Dilate une image ou un volume binaire ou en niveaux de gris.
 
 ## 📄 Description
 
+
 Dilate une image binaire ou en niveaux de gris. Avec un element structurant 3-D, imdilate dilate un volume 3-D.
 
 ## 💡 Exemple
@@ -29,17 +30,17 @@ J=imdilate(BW,strel('square',3));
 figure; subplot(1,2,1); imagesc(BW); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Dilated');
 ```
-
 <img src="imdilate_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imerode](../../../image_processing/imerode.md), [imclose](../../../image_processing/imclose.md), [imopen](../../../image_processing/imopen.md), [strel](../../../image_processing/strel.md).
+[imerode](../../../image_processing/2_image_analysis/4_morphology/imerode.md), [imclose](../../../image_processing/2_image_analysis/4_morphology/imclose.md), [imopen](../../../image_processing/2_image_analysis/4_morphology/imopen.md), [strel](../../../image_processing/2_image_analysis/4_morphology/strel.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -12,13 +12,17 @@ obtenir le nom d'utilisateur courant.
 
 ## 📄 Description
 
+
 <b>username</b> renvoie le nom d'utilisateur actuellement utilisé.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 username()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ username()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

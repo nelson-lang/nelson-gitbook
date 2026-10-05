@@ -19,19 +19,22 @@ Set the file pointer to a location.
 
 ## 📄 Description
 
-<b>fseek</b> moves the file pointer to the location<b>offset</b> within the file <b>fid</b>.
 
-origin can take as value:
+<b>fseek</b> moves the file pointer to the location<b>offset</b> within the file <b>fid</b>. 
 
-'bof' or -1 : beginning of file.
+origin can take as value: 
 
-'cof' or 0 : current position in file.
+'bof' or -1 : beginning of file. 
 
-'eof' or 1 : end of file.
+'cof' or 0 : current position in file. 
 
-<b>offset</b> may be one of the predefined variables<b>SEEK_CUR</b> (current position, or 0),<b>SEEK_SET</b> (beginning, or -1), or<b>SEEK_END</b> (end of file, or 1).
+'eof' or 1 : end of file. 
+
+<b>offset</b> may be one of the predefined variables<b>SEEK\_CUR</b> (current position, or 0),<b>SEEK\_SET</b> (beginning, or -1), or<b>SEEK\_END</b> (end of file, or 1).
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -43,13 +46,14 @@ fclose(fileID);
 R = fileread([tempdir(), 'fseek.txt'])
 ```
 
+
 ## 🔗 See also
 
 [frewind](../stream_manager/frewind.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

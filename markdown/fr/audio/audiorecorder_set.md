@@ -1,11 +1,11 @@
-# audiorecorder_set
+# audiorecorder\_set
 
 Définit la propriété d'un objet ou d'une interface à la valeur spécifiée.
 
 ## 📝 Syntaxe
 
 - set(h, propertyname, value)
-- audiorecorder_set(h, propertyname, value)
+- audiorecorder\_set(h, propertyname, value)
 - h.propertyname = value
 
 ## 📥 Argument d'entrée
@@ -16,14 +16,18 @@ Définit la propriété d'un objet ou d'une interface à la valeur spécifiée.
 
 ## 📄 Description
 
+
 La fonction définit la propriété spécifiée dans la chaîne propertyname à la valeur donnée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 recObj = audiorecorder()
 recObj.Tag = 'my audio object'
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,9 +35,9 @@ recObj.Tag = 'my audio object'
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

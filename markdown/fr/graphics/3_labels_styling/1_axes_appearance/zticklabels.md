@@ -26,7 +26,8 @@ Definir ou obtenir les etiquettes de l'axe des z.
 
 ## 📄 Description
 
-<b>zticklabels</b> obtient ou definit les etiquettes de l'axe des z des axes courants.
+
+<b>zticklabels</b> obtient ou definit les etiquettes de l'axe des z des axes courants. 
 
 Specifier des etiquettes bascule le mode des etiquettes de l'axe des z sur <b>manual</b>.
 
@@ -44,13 +45,14 @@ labels = zticklabels()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [zticks](../../../graphics/3_labels_styling/1_axes_appearance/zticks.md), [ztickangle](../../../graphics/3_labels_styling/1_axes_appearance/ztickangle.md), [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

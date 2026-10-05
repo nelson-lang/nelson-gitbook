@@ -23,15 +23,18 @@ Create cartesian axes.
 
 ## 📄 Description
 
-<b>axes</b> creates axes in the current figure and set it as the current axes.
 
-<b>axes(cax)</b> set current axes.
+<b>axes</b> creates axes in the current figure and set it as the current axes. 
 
-Clicking on an axis automatically sets it as the current axes object.
+<b>axes(cax)</b> set current axes. 
+
+Clicking on an axis automatically sets it as the current axes object. 
 
 See [axes properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.axes.properties.md) for the complete property list.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -43,8 +46,8 @@ y2 = cos(x);
 plot(ax1, x, y1);
 plot(ax2, x, y2);
 ```
-
 <img src="axes.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -52,14 +55,14 @@ plot(ax2, x, y2);
 
 ## 🕔 History
 
-| Version | 📄 Description                                                        |
-| ------- | --------------------------------------------------------------------- |
-| 1.0.0   | initial version                                                       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 1.2.0   | Clicking on an axis automatically sets it as the current axes object. |
-| --      | GridAlpha, GridColor propertiew for Axes.                             |
-| 1.7.0   | CreateFcn, DeleteFcn callback added.                                  |
-| --      | BeingDeleted property added.                                          |
-| --      | Axes property documentation updated.                                  |
+| --   | GridAlpha, GridColor propertiew for Axes. |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --   | BeingDeleted property added. |
+| --   | Axes property documentation updated. |
 
 <!--
 ## 👤 Author

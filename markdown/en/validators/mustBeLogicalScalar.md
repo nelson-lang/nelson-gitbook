@@ -15,9 +15,12 @@ Checks that value is logical scalar or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeLogicalScalar</b> checks that value is logical scalar or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeLogicalScalar(true)
@@ -25,13 +28,14 @@ mustBeLogicalScalar([])
 mustBeLogicalScalar([true false])
 ```
 
+
 ## 🔗 See also
 
-[isscalar](../elementary_functions/isscalar.md), [islogical](../types/islogical.md).
+[isscalar](../elementary_functions/7_indexing_dimensions/isscalar.md), [islogical](../types/islogical.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

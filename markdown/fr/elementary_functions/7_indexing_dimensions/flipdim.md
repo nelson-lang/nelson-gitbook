@@ -17,11 +17,14 @@ Inverser un tableau selon une dimension spécifiée
 
 ## 📄 Description
 
-<b>flipdim</b> renvoie un nouveau tableau de <b>A</b> inversé selon la dimension <b>dim</b>.
+
+<b>flipdim</b> renvoie un nouveau tableau de <b>A</b> inversé selon la dimension <b>dim</b>. 
 
 <b>flipdim</b> est similaire à<b>flip</b> et reste disponible pour compatibilité avec d'anciens scripts.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = eye(3, 2);
@@ -30,14 +33,15 @@ y = flipdim(x, 2)
 y = flipdim(x, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[flip](../../elementary_functions/flip.md), [flipud](../../elementary_functions/flipud.md), [fliplr](../../elementary_functions/fliplr.md).
+[flip](../../elementary_functions/7_indexing_dimensions/flip.md), [flipud](../../elementary_functions/7_indexing_dimensions/flipud.md), [fliplr](../../elementary_functions/7_indexing_dimensions/fliplr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

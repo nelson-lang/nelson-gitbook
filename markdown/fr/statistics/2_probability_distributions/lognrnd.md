@@ -20,25 +20,29 @@ Nombres aleatoires lognormaux
 
 ## 📄 Description
 
-<b>lognrnd</b> genere des nombres aleatoires lognormaux avec le generateur global de Nelson.
+
+<b>lognrnd</b> genere des nombres aleatoires lognormaux avec le generateur global de Nelson. 
 
 Les parametres scalaires sont etendus a la taille demandee. Les ecarts-types negatifs produisent des valeurs NaN.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = lognrnd(0, 1, [2 3]);
 ```
 
+
 ## 🔗 Voir aussi
 
-[lognpdf](../../statistics/lognpdf.md), [lognstat](../../statistics/lognstat.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [lognstat](../../statistics/2_probability_distributions/lognstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

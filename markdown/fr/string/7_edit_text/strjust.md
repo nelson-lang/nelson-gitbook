@@ -18,9 +18,12 @@ Justifie les chaînes
 
 ## 📄 Description
 
+
 <b>J = strjust(str, side)</b> renvoie le texte justifié du côté spécifié par<b>side</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 
@@ -30,18 +33,20 @@ J = strjust (S, 'center')
 J = strjust (S, 'right')
 ```
 
+
 ```matlab
 J = strjust('                 text', 'center')
 ```
 
+
 ## 🔗 Voir aussi
 
-[blanks](../../string/blanks.md).
+[blanks](../../string/1_create_convert_text/blanks.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

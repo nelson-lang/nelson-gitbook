@@ -21,9 +21,12 @@ Parse color and style from string.
 
 ## 📄 Description
 
+
 <b>colstyle</b> parses color and style from string.
 
 ## 💡 Example
+
+
 
 ```matlab
 [l, c, m, msg] = colstyle('r:x')
@@ -31,13 +34,14 @@ Parse color and style from string.
 [l, c, m, msg] = colstyle('*', 'plot')
 ```
 
+
 ## 🔗 See also
 
 [colormap](../../../graphics/3_labels_styling/2_color_styling/colormaps/colormap.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

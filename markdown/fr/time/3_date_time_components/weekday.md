@@ -14,7 +14,7 @@ Renvoie le jour de la semaine.
 
 - D - numéros de date série ou texte représentant des dates et heures (vecteur, matrice, vecteur de caractères, cellule de vecteurs de caractères, tableau de chaînes ou tableau de caractères).
 - form - une chaîne : 'short' (par défaut) ou 'long'.
-- language - une chaîne : 'fr_FR' (par défaut) ou 'local'.
+- language - une chaîne : 'fr\_FR' (par défaut) ou 'local'.
 
 ## 📤 Argument de sortie
 
@@ -23,9 +23,12 @@ Renvoie le jour de la semaine.
 
 ## 📄 Description
 
+
 <b>weekday</b> renvoie le jour de la semaine sous forme numérique dans<b>number</b> et sous forme textuelle dans <b>name</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Renvoie le jour de la semaine.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datevec](../../time/datevec.md).
+[datevec](../../time/1_create_date_time_arrays/datevec.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

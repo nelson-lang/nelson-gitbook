@@ -16,19 +16,24 @@ Calcule le sinus en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>sin</b> calcule le sinus en radians pour chaque élément de <b>x</b>.
 
-La fonction sinus est définie comme :
+<b>sin</b> calcule le sinus en radians pour chaque élément de <b>x</b>. 
+
+La fonction sinus est définie comme : 
 $$\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}$$
+ 
 
 Pour les arguments réels, elle représente la coordonnée y sur le cercle unité.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = eye(3, 3);
 res = sin(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +41,8 @@ res = sin(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

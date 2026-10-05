@@ -18,9 +18,10 @@ Create calendar durations with month, day, and time components.
 
 ## 📄 Description
 
-Create calendar durations with month, day, and time components.
 
-Calendar durations preserve calendar semantics when added to datetimes. Month-based arithmetic clamps dates to month ends when needed.
+Create calendar durations with month, day, and time components. 
+
+Calendar durations preserve calendar semantics when added to datetimes. Month-based arithmetic clamps dates to month ends when needed. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,13 +35,14 @@ t = datetime(2024, 1, 31) + c
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

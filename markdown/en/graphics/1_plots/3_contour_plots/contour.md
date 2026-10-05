@@ -28,17 +28,20 @@ Contour plot of matrix
 
 ## 📄 Description
 
-<b>contour(Z)</b> generates a contour plot representing isolines of the matrix Z. Each isoline corresponds to a specific height value on the x-y plane.
 
-Nelson automatically selects contour lines based on the values in Z. The column and row indices of Z serve as the x and y coordinates in the plane, respectively.
+<b>contour(Z)</b> generates a contour plot representing isolines of the matrix Z. Each isoline corresponds to a specific height value on the x-y plane. 
 
-<b>contour(X, Y, Z)</b> allows the user to specify the x and y coordinates corresponding to the values in matrix Z. This enables more precise control over the positioning of the contour plot on the x-y plane.
+Nelson automatically selects contour lines based on the values in Z. The column and row indices of Z serve as the x and y coordinates in the plane, respectively. 
 
-The matrices X and Y provide the coordinates, while Z contains the height values for generating the contour plot.
+<b>contour(X, Y, Z)</b> allows the user to specify the x and y coordinates corresponding to the values in matrix Z. This enables more precise control over the positioning of the contour plot on the x-y plane. 
+
+The matrices X and Y provide the coordinates, while Z contains the height values for generating the contour plot. 
 
 See [contour properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.contour.properties.md) for the complete property list.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -93,8 +96,8 @@ Z = sin(2 * theta) .* (1 - r);
 contour(X, Y, abs(Z), 10);
 
 ```
-
 <img src="contour_1.svg" align="middle"/>
+
 
 ```matlab
 
@@ -104,8 +107,8 @@ N = 50;
 contour(1:N, 1:N, rand(N), 5)
 
 ```
-
 <img src="contour_2.svg" align="middle"/>
+
 
 ```matlab
 
@@ -115,7 +118,6 @@ Z(:, 26) = NaN;
 contour(Z)
 
 ```
-
 <img src="contour_nan.svg" align="middle"/>
 Labeled contour lines.
 
@@ -129,17 +131,18 @@ clabel(C, h);
 
 ```
 
+
 ## 🔗 See also
 
 [contour properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.contour.properties.md), [contourc](../../../graphics/1_plots/3_contour_plots/contourc.md), [contourf](../../../graphics/1_plots/3_contour_plots/contourf.md), [contour3](../../../graphics/1_plots/3_contour_plots/contour3.md), [clabel](../../../graphics/1_plots/3_contour_plots/clabel.md), [surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
-| 1.3.0   | Initial version.                         |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.3.0   | Initial version. |
 | 1.7.0   | CreateFcn and DeleteFcn callbacks added. |
-| 1.8.0   | BeingDeleted property added.             |
+| 1.8.0   | BeingDeleted property added. |
 
 <!--
 ## 👤 Author

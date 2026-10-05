@@ -16,9 +16,12 @@ Convertir entre vecteur de distances condense et matrice carree de distances.
 
 ## 📄 Description
 
+
 <b>squareform</b> convertit un vecteur de distances condense en matrice symetrique carree, ou l'inverse.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 D = [1 2 3];
@@ -26,14 +29,15 @@ Z = squareform(D)
 D2 = squareform(Z)
 ```
 
+
 ## 🔗 Voir aussi
 
-[pdist](../../statistics/pdist.md).
+[pdist](../../statistics/7_clustering_anomaly_detection/pdist.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

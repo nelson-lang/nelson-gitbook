@@ -19,7 +19,8 @@ Rotate x-axis tick labels.
 
 ## 📄 Description
 
-<b>xtickangle</b> rotates the x-axis tick labels of the current axes by the given angle.
+
+<b>xtickangle</b> rotates the x-axis tick labels of the current axes by the given angle. 
 
 A positive angle rotates the labels counterclockwise; a negative angle rotates them clockwise.
 
@@ -35,13 +36,14 @@ xtickangle(45);
 
 ```
 
+
 ## 🔗 See also
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [ytickangle](../../../graphics/3_labels_styling/1_axes_appearance/ytickangle.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,8 +1,13 @@
 # Optimization
 
+
+    
 The Optimization module provides scalar minimization, unconstrained minimization, zero finding, nonlinear equations, nonlinear least squares, nonnegative least squares, quadratic programming, solver options, and a first problem-based modelling layer.
 
+    
 The implemented algorithms are deterministic dense numerical methods intended for small and medium-size engineering models in Nelson.
+
+  
 
 ## Functions
 
@@ -36,3 +41,4 @@ The implemented algorithms are deterministic dense numerical methods intended fo
 - [quadprog](quadprog.md) - Quadratic programming.
 - [show](show.md) - Display an optimization object.
 - [solve](solve.md) - Solve an optimization problem object.
+

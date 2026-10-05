@@ -26,19 +26,22 @@ Read data in binary form to the file specified by the file descriptor fid.
 
 ## 📄 Description
 
-Read data in binary form to the file specified by the file descriptor fid.
 
-supported architecture:
+Read data in binary form to the file specified by the file descriptor fid. 
 
-<b>native</b> , <b>n</b>: format of the current machine.
+supported architecture: 
 
-<b>ieee-be</b>, <b>b</b>: IEEE big endian.
+<b>native</b> , <b>n</b>: format of the current machine. 
 
-<b>ieee-le</b>, <b>l</b>: IEEE little endian.
+<b>ieee-be</b>, <b>b</b>: IEEE big endian. 
+
+<b>ieee-le</b>, <b>l</b>: IEEE little endian. 
 
 characters encoding uses <b>fopen</b> parameter.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -53,6 +56,7 @@ fclose(fileID);
 
 ```
 
+
 ```matlab
 
 fileID = fopen([tempdir(), 'uint16nine.bin'],'w');
@@ -65,13 +69,14 @@ fclose(fileID);
 
 ```
 
+
 ## 🔗 See also
 
 [fopen](../stream_manager/fopen.md), [fclose](../stream_manager/fclose.md), [fwrite](../stream_manager/fwrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

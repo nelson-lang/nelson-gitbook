@@ -1,4 +1,4 @@
-# compiler_linux_installer_tutorial
+# compiler\_linux\_installer\_tutorial
 
 Build, install and remove a Linux application.
 
@@ -8,17 +8,18 @@ Build, install and remove a Linux application.
 
 ## 📄 Description
 
-Run the four blocks in one Linux Nelson session as an ordinary user. Generation requires Bash 4 or later, GNU tar, gzip and GNU core utilities. The resulting .install is self-contained: installation does not require Nelson on the destination machine. The application still requires a compatible Linux system and architecture.
 
-The first block builds a console application. The second packages the application and its minimal runtime for offline delivery. The third installs into a private temporary directory, runs without an externally selected runtime and removes the installed application. Expected output is LINUX_INSTALLER_TUTORIAL_OK. No administrator privileges, global shortcuts or environment changes are needed.
+Run the four blocks in one Linux Nelson session as an ordinary user. Generation requires Bash 4 or later, GNU tar, gzip and GNU core utilities. The resulting .install is self-contained: installation does not require Nelson on the destination machine. The application still requires a compatible Linux system and architecture. 
 
-For distribution, deliver the .install file and retain its executable permission. Run it with <b>-agreeToLicense yes</b> first and <b>-applicationFolder</b> followed by an absolute destination path. Its parent must already exist and be writable. <b>-outputFile</b> also saves console output to a new file. Interactive installation is not yet available.
+The first block builds a console application. The second packages the application and its minimal runtime for offline delivery. The third installs into a private temporary directory, runs without an externally selected runtime and removes the installed application. Expected output is LINUX\_INSTALLER\_TUTORIAL\_OK. No administrator privileges, global shortcuts or environment changes are needed. 
 
-Alternatively, use <b>-inputFile</b> followed by a UTF-8 control file containing one key=value pair per line. Start with agreeToLicense=yes, then applicationFolder=/absolute/path. Blank lines and lines beginning with # are ignored. These values are data and are never evaluated as shell commands.
+For distribution, deliver the .install file and retain its executable permission. Run it with <b>-agreeToLicense yes</b> first and <b>-applicationFolder</b> followed by an absolute destination path. Its parent must already exist and be writable. <b>-outputFile</b> also saves console output to a new file. Interactive installation is not yet available. 
 
-RuntimeDelivery='installer' includes an application-private adjacent runtime by default; RuntimeDelivery='none' requires a compatible runtime already available to the launcher. The fourth block installs the same package with -runtimeFolder, then removes the application and runtime independently. The runtime occupies a subdirectory named by its engine fingerprint. -runtimeFolder can accompany -applicationFolder but conflicts with -destinationFolder. The two installed roots must not overlap.
+Alternatively, use <b>-inputFile</b> followed by a UTF-8 control file containing one key=value pair per line. Start with agreeToLicense=yes, then applicationFolder=/absolute/path. Blank lines and lines beginning with # are ignored. These values are data and are never evaluated as shell commands. 
 
-Shared installation requires a current launcher and RuntimeDelivery='installer'. It records the runtime in the user's configuration directory. Compatible applications add only missing components to this runtime. Application removal never removes it. Reinstalling also verifies or resumes the shared runtime installation; changing between private and shared layouts requires removing the application first. Web delivery, ZIP packages and application installation upgrades are not yet supported on Linux.
+RuntimeDelivery='installer' includes an application-private adjacent runtime by default; RuntimeDelivery='none' requires a compatible runtime already available to the launcher. The fourth block installs the same package with -runtimeFolder, then removes the application and runtime independently. The runtime occupies a subdirectory named by its engine fingerprint. -runtimeFolder can accompany -applicationFolder but conflicts with -destinationFolder. The two installed roots must not overlap. 
+
+Shared installation requires a current launcher and RuntimeDelivery='installer'. It records the runtime in the user's configuration directory. Compatible applications add only missing components to this runtime. Application removal never removes it. Reinstalling also verifies or resumes the shared runtime installation; changing between private and shared layouts requires removing the application first. Web delivery, ZIP packages and application installation upgrades are not yet supported on Linux. 
 
 The uninstaller is .nelson-install/uninstall.sh inside the destination. It removes only unchanged files from its manifest and empty directories. Changed files, symbolic-link replacements and newly created user files are preserved. When changed owned files remain, retain the manifest and uninstaller for a later retry. Do not manually edit the installation metadata.
 
@@ -35,7 +36,6 @@ filewrite(entry, 'function hello_install(); disp(''LINUX_INSTALLER_TUTORIAL_OK''
 result = compiler.build.standaloneApplication(entry, ...
   'OutputDir', fullfile(work, 'build'));
 ```
-
 Step 2
 
 ```matlab
@@ -46,7 +46,6 @@ compiler.package.installer(result, 'Options', options);
 setup = fullfile(options.OutputDir, [options.InstallerName, '.install']);
 report = jsondecode(fileread(fullfile(result.Options.OutputDir, 'buildresult.json')));
 ```
-
 Step 3
 
 ```matlab
@@ -62,7 +61,6 @@ disp(output);
 [status, output] = system(quote(fullfile(target, '.nelson-install', 'uninstall.sh')), 180);
 if status ~= 0; error(output); end
 ```
-
 Step 4: separate shared runtime
 
 ```matlab
@@ -86,10 +84,10 @@ asserts.istrue(isfile(fullfile(runtime, 'runtime.json')));
 if status ~= 0; error(output); end
 ```
 
+
 ## 🔗 See also
 
 [compiler.package.installer](../compiler/compiler.package.installer.md), [compiler.package.InstallerOptions](../compiler/compiler.package.InstallerOptions.md), [compiler_installer_tutorial](../compiler/compiler_installer_tutorial.md).
-
 <!--
 ## 👤 Author
 

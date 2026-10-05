@@ -1,10 +1,10 @@
-# audioplayer_used
+# audioplayer\_used
 
 Retourne la liste des handles audioplayer actuellement utilisés.
 
 ## 📝 Syntaxe
 
-- r = audioplayer_used()
+- r = audioplayer\_used()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Retourne la liste des handles audioplayer actuellement utilisés.
 
 ## 📄 Description
 
+
 Retourne la liste des handles audioplayer actuellement utilisés.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = audioplayer_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ used = audioplayer_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

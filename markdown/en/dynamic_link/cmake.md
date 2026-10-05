@@ -17,9 +17,11 @@ call CMake tool
 
 ## 📄 Description
 
-<b>cmake</b> used internally to generate makefile used to build C/C++ code.
+
+<b>cmake</b> used internally to generate makefile used to build C/C++ code. 
 
 <b>cmake</b> used by <b>dlgeneratemake</b>.
+
 
 ## 🔗 See also
 
@@ -27,7 +29,7 @@ call CMake tool
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

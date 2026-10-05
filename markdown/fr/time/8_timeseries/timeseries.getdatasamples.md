@@ -17,9 +17,11 @@ Renvoie les echantillons de donnees par indice.
 
 ## 📄 Description
 
+
 <b>getdatasamples</b> Extrait les valeurs de donnees pour les indices d'echantillons demandes sans renvoyer d'enveloppe timeseries.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([10; 20; 30], [1; 2; 3]);
@@ -27,14 +29,15 @@ getdatasamples(ts, [1 3])
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

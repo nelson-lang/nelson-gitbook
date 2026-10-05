@@ -18,22 +18,26 @@ Binomial inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>binoinv</b> computes inverse lower-tail binomial probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = [0.025 0.5 0.975];
 x = binoinv(y, 10, 0.4);
 ```
 
+
 ## 🔗 See also
 
-[binocdf](../../statistics/binocdf.md), [binopdf](../../statistics/binopdf.md).
+[binocdf](../../statistics/2_probability_distributions/binocdf.md), [binopdf](../../statistics/2_probability_distributions/binopdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

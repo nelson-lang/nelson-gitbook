@@ -10,11 +10,12 @@ List models available from an AI provider.
 
 ## 📄 Description
 
-<b>aimodels</b> returns the available model names for a configured AI provider.
 
-For Ollama, <b>aimodels</b> calls the local <b>/api/tags</b> endpoint derived from the endpoint stored in <b>options</b>. The default endpoint is <b>http://127.0.0.1:11434/api/tags</b>.
+<b>aimodels</b> returns the available model names for a configured AI provider. 
 
-For OpenAI-compatible providers, <b>aimodels</b> calls <b>/v1/models</b> derived from the configured endpoint and uses <b>TokenEnvVar</b> as a bearer token when provided.
+For Ollama, <b>aimodels</b> calls the local <b>/api/tags</b> endpoint derived from the endpoint stored in <b>options</b>. The default endpoint is <b>http://127.0.0.1:11434/api/tags</b>. 
+
+For OpenAI-compatible providers, <b>aimodels</b> calls <b>/v1/models</b> derived from the configured endpoint and uses <b>TokenEnvVar</b> as a bearer token when provided. 
 
 The first output is a cell array of model names. The optional second output is the raw provider response.
 
@@ -27,7 +28,6 @@ List local Ollama models.
 models = aimodels()
 
 ```
-
 Use the first available Ollama model with aiask.
 
 ```matlab
@@ -42,7 +42,6 @@ opts = aioptions('Provider', 'ollama', ...
 answer = aiask('Write function y = vector_mean(x). Use y = mean(x).', opts)
 
 ```
-
 Use a known local Ollama model.
 
 ```matlab
@@ -56,7 +55,6 @@ opts = aioptions('Provider', 'ollama', ...
 answer = aiask('Write function y = vector_mean(x). Use y = mean(x).', opts)
 
 ```
-
 List models from an OpenAI-compatible local endpoint.
 
 ```matlab
@@ -67,7 +65,6 @@ opts = aioptions('Provider', 'openai-compatible', ...
 models = aimodels(opts)
 
 ```
-
 List models from an OpenAI-compatible endpoint requiring a token.
 
 ```matlab
@@ -81,12 +78,13 @@ models = aimodels(opts)
 
 ```
 
+
 ## 🔗 See also
 
 [aiask](../ai/aiask.md), [aioptions](../ai/aioptions.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |

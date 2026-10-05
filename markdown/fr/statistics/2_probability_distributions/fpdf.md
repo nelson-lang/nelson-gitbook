@@ -18,23 +18,27 @@ Densite de probabilite F
 
 ## 📄 Description
 
+
 <b>fpdf</b> calcule les valeurs de densite de probabilite de la distribution F. Les entrees scalaires sont etendues a la taille des tableaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 5];
 y = fpdf(x, 5, 20);
 ```
 
+
 ## 🔗 Voir aussi
 
-[fcdf](../../statistics/fcdf.md), [finv](../../statistics/finv.md).
+[fcdf](../../statistics/2_probability_distributions/fcdf.md), [finv](../../statistics/2_probability_distributions/finv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

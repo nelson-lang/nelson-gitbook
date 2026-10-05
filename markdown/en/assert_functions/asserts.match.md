@@ -19,7 +19,8 @@ Check that text matches a regular expression.
 
 ## 📄 Description
 
-The assertion passes when pattern matches text.
+
+The assertion passes when pattern matches text. 
 
 Invalid regular expressions raise an argument error immediately.
 
@@ -30,12 +31,12 @@ Regular expression match
 ```matlab
 asserts.match('abc123', '^abc[0-9]+$');
 ```
-
 Capture a missing match
 
 ```matlab
 [res, msg] = asserts.match('abc', '[0-9]+');
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a missing match
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

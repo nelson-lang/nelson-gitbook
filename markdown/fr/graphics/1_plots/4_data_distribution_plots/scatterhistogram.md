@@ -11,7 +11,8 @@ Affiche un nuage de points avec histogrammes marginaux.
 
 ## 📄 Description
 
-<b>scatterhistogram</b> cree un nuage de points et affiche les histogrammes des distributions x et y.
+
+<b>scatterhistogram</b> cree un nuage de points et affiche les histogrammes des distributions x et y. 
 
 L'objet retourne a le type <b>scatterhistogram</b>. Voir [proprietes de scatterhistogram](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.scatterhistogram.properties.md) pour la liste complete des proprietes.
 
@@ -24,8 +25,8 @@ x = randn(200, 1);
 y = 0.5 * x + randn(200, 1);
 scatterhistogram(x, y, 'NumBins', 20);
 ```
-
 <img src="scatterhistogram_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

@@ -4,15 +4,16 @@ Génère une gateway C++
 
 ## 📝 Syntaxe
 
-- dlgenerategateway(destinationdir, module_name, builtin_table)
+- dlgenerategateway(destinationdir, module\_name, builtin\_table)
 
 ## 📥 Argument d'entrée
 
 - destinationdir - a string: destination directory where is generated the gateway file.
-- module_name - a string: module name exposed in Nelson.
-- builtin_table - a cell composed of cell with {name exposed in Nelson, nb output arguments, nb input arguments}
+- module\_name - a string: module name exposed in Nelson.
+- builtin\_table - a cell composed of cell with {name exposed in Nelson, nb output arguments, nb input arguments}
 
 ## 📄 Description
+
 
 <b>dlgenerategateway</b> génère une gateway C++ utilisée par<b>addmodule</b>.
 
@@ -25,14 +26,15 @@ dlgenerategateway(tempdir(), 'module_skeleton', {{'cpp_sum', 1, 2}; {'cpp_sub', 
 text = fileread([tempdir(), 'Gateway.cpp'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [addmodule](../modules_manager/addmodule.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

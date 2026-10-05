@@ -1,0 +1,22 @@
+#import "nelson_help.typ": *
+
+- Spreadsheet
+  - #nlink(<spreadsheet:csvread>)[csvread]
+  - #nlink(<spreadsheet:csvwrite>)[csvwrite]
+  - #nlink(<spreadsheet:delimitedTextImportOptions>)[delimitedTextImportOptions]
+  - #nlink(<spreadsheet:detectImportOptions>)[detectImportOptions]
+  - #nlink(<spreadsheet:dlmread>)[dlmread]
+  - #nlink(<spreadsheet:dlmwrite>)[dlmwrite]
+  - #nlink(<spreadsheet:jsonImportOptions>)[jsonImportOptions]
+  - #nlink(<spreadsheet:readcell>)[readcell]
+  - #nlink(<spreadsheet:readmatrix>)[readmatrix]
+  - #nlink(<spreadsheet:readtable>)[readtable]
+  - #nlink(<spreadsheet:readtimetable>)[readtimetable]
+  - #nlink(<spreadsheet:readvars>)[readvars]
+  - #nlink(<spreadsheet:writecell>)[writecell]
+  - #nlink(<spreadsheet:writematrix>)[writematrix]
+  - #nlink(<spreadsheet:writetable>)[writetable]
+  - #nlink(<spreadsheet:writetimetable>)[writetimetable]
+  - #nlink(<spreadsheet:xlsfinfo>)[xlsfinfo]
+  - #nlink(<spreadsheet:xlsread>)[xlsread]
+  - #nlink(<spreadsheet:xlswrite>)[xlswrite]

@@ -17,17 +17,20 @@ Palette de couleurs hot.
 
 ## 📄 Description
 
+
 <b>hot</b> retourne la palette de couleurs hot.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('hot');
 ```
-
 <img src="hot.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('hot');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

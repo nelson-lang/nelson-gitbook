@@ -20,9 +20,12 @@ Savitzky-Golay filter coefficients.
 
 ## 📄 Description
 
+
 <b>sgolay</b> computes local polynomial least-squares filter coefficients.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,13 +33,14 @@ Savitzky-Golay filter coefficients.
 
 ```
 
+
 ## 🔗 See also
 
-[sgolayfilt](../../signal_processing/sgolayfilt.md).
+[sgolayfilt](../../signal_processing/1_signal_generation_preprocessing/sgolayfilt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

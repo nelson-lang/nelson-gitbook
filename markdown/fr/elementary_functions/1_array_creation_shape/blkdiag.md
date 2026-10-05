@@ -16,13 +16,17 @@ Matrice diagonale par blocs
 
 ## 📄 Description
 
+
 <b>R = blkdiag(M1, ... , MN)</b> construit la matrice diagonale par blocs obtenue en alignant les matrices d'entrée <b>M1, ... , MN</b> le long de la diagonale de <b>R</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 blkdiag(magic(2), magic(3), magic(4))
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ blkdiag(magic(2), magic(3), magic(4))
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

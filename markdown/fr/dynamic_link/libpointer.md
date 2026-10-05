@@ -19,11 +19,14 @@ Crée un objet pointeur C utilisable dans Nelson
 
 ## 📄 Description
 
-Il s'agit d'une fonctionnalité avancée pour manipuler des pointeurs C.
+
+Il s'agit d'une fonctionnalité avancée pour manipuler des pointeurs C. 
 
 <b>ptr = libpointer()</b> crée un pointeur NULL.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 p = libpointer('int8Ptr', int8([3 4]));
@@ -32,6 +35,7 @@ p.DataType
 p.Value
 ```
 
+
 ```matlab
 NLSDYNAMIC_LINK_IMPEXP double *multiplicationDoubleByReference(double *x)
 {
@@ -39,6 +43,7 @@ NLSDYNAMIC_LINK_IMPEXP double *multiplicationDoubleByReference(double *x)
     return x;
 }
 ```
+
 
 ```matlab
 x = 133.3;
@@ -56,14 +61,15 @@ get(r1)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [C/Nelson equivalent data types](../dynamic_link/C_datatype.md), [isNull](../dynamic_link/libpointer_isNull.md), [libpointer.reshape](../dynamic_link/libpointer_reshape.md), [libpointer.setdatatype](../dynamic_link/libpointer_setdatatype.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

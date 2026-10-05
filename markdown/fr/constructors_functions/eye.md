@@ -18,26 +18,33 @@ Crée une matrice identité.
 
 ## 📄 Description
 
+
 <b>eye</b> retourne une matrice identité.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 eye(3)
 ```
 
+
 ```matlab
 eye(3,1,3,'single')
 ```
+
 
 ```matlab
 A = single([3 3])
 B = eye(2,4,'like', A)
 ```
 
+
 ```matlab
 A = eye(0, 4)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +52,8 @@ A = eye(0, 4)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

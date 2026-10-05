@@ -18,11 +18,14 @@ Replaces strings in another.
 
 ## 📄 Description
 
-<b>replace</b> replaces strings in another.
+
+<b>replace</b> replaces strings in another. 
 
 <b>replace</b> and <b>strrep</b> replace strings but<b>replace</b> is recommended.
 
 ## 💡 Example
+
+
 
 ```matlab
 r = strrep('This is a string.', 'is', 'is not')
@@ -30,13 +33,14 @@ r = strrep({'cccc','ccbbcca'},{'cc','bb'},{'cc'})
 r = strrep("This is a string.", "is", 'is not')
 ```
 
+
 ## 🔗 See also
 
-[replace](../../string/replace.md).
+[replace](../../string/3_find_replace/replace.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

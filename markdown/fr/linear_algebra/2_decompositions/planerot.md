@@ -17,9 +17,12 @@ Rotation plane de Givens.
 
 ## 📄 Description
 
+
 <b>[G, Y] = planerot(X)</b> calcule la matrice de rotation de Givens pour le vecteur colonne à deux éléments<b>X</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [4; 5];
@@ -27,14 +30,15 @@ X = [4; 5];
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[norm](../../elementary_functions/norm.md).
+[norm](../../elementary_functions/2_elementary_math/norm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

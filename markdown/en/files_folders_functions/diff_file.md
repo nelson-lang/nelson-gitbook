@@ -1,16 +1,16 @@
-# diff_file
+# diff\_file
 
 diff two files or strings.
 
 ## 📝 Syntax
 
-- res = diff(filename_1, filename_2, with_eol)
+- res = diff(filename\_1, filename\_2, with\_eol)
 
 ## 📥 Input argument
 
-- filename_1 - a string: a filename.
-- filename_2 - a string: a filename.
-- with_eol - a logical: with end of line considered or not (true by default).
+- filename\_1 - a string: a filename.
+- filename\_2 - a string: a filename.
+- with\_eol - a logical: with end of line considered or not (true by default).
 
 ## 📤 Output argument
 
@@ -19,16 +19,20 @@ diff two files or strings.
 
 ## 📄 Description
 
-<b>diff_file</b> compares two files and returns diff as unified format.
+
+<b>diff\_file</b> compares two files and returns diff as unified format. 
 
 if compared files are equals, res is an empty string.
 
 ## 💡 Example
 
+
+
 ```matlab
 res = diff_file([nelsonroot(), '/etc/startup.m'], [nelsonroot(), '/etc/startup.m'])
 res = diff_file([nelsonroot(), '/etc/startup.m'], [nelsonroot(), '/etc/finish.m'])
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ res = diff_file([nelsonroot(), '/etc/startup.m'], [nelsonroot(), '/etc/finish.m'
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

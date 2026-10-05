@@ -16,9 +16,12 @@ Check for Not a Number entries.
 
 ## 📄 Description
 
+
 <b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.
 
 ## 💡 Example
+
+
 
 ```matlab
 isnan(pi)
@@ -28,13 +31,14 @@ X = sparse([1 2 NaN 3 0 NaN 0 4]);
 R = isnan(X)
 ```
 
+
 ## 🔗 See also
 
-[isinf](../../elementary_functions/isinf.md).
+[isinf](../../elementary_functions/7_indexing_dimensions/isinf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

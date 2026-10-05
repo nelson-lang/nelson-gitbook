@@ -1,0 +1,53 @@
+#import "nelson_help.typ": *
+
+= private functions <functions_manager:private_functions>
+
+Fonctions privées.
+
+== Description
+
+Les fonctions privées servent un objectif précieux lorsque vous souhaitez restreindre l'accessibilité d'une fonction.
+
+ Dans de nombreux cas, une seule fonction peut nécessiter l'accès à une ou plusieurs fonctions auxiliaires.
+
+ lorsqu'une fonction auxiliaire solitaire est utilisée par plusieurs fonctions, il devient nécessaire de déplacer ces fonctions auxiliaires vers un sous-répertoire dédié nommé "private", situé dans le répertoire où se trouvent les fonctions qui nécessitent l'accès à ces fonctions auxiliaires.
+
+ Pour illustrer ce concept, considérons une fonction, appelons-la #strong[function1];, qui repose sur une fonction d'aide,#strong[function2];, pour effectuer une partie substantielle de ses tâches, comme indiqué dans l'exemple ci-dessous.
+
+ Dans ce scénario, si le chemin vers function1 est #strong[directory\/function1.m]; et #strong[function2]; se trouve dans le répertoire #strong[directory\/private\/function2.m];, alors #strong[function2]; n'est accessible qu'aux fonctions dans #strong[directory];, telles que #strong[function1];.
+
+
+== Exemples
+
+directory\/function1.m
+
+``````matlab
+function y = function1(x)
+  y = function2(x)  +  1;
+end
+
+``````
+
+directory\/private\/function2.m
+
+``````matlab
+function y = function2(x)
+  y = 41;
+end
+
+``````
+
+
+== Voir aussi
+
+#nlink(<functions_manager:addpath>)[addpath];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

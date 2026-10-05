@@ -17,14 +17,18 @@ Convert indicator values to standard missing values.
 
 ## 📄 Description
 
+
 <b>standardizeMissing</b> replaces indicator values with standard missing values such as NaN for numeric variables.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table([1; -99; 3], 'VariableNames', {'A'});
 R = standardizeMissing(T, -99)
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ R = standardizeMissing(T, -99)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,22 +21,26 @@ Continuous uniform negative log-likelihood
 
 ## 📄 Description
 
+
 <b>uniflike</b> returns the negative log-likelihood for continuous uniform distribution data.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [2 5 3 4];
 [nlogL, avar] = uniflike([1 6], x);
 ```
 
+
 ## 🔗 See also
 
-[unifit](../../statistics/unifit.md), [unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifrnd](../../statistics/unifrnd.md).
+[unifit](../../statistics/2_probability_distributions/unifit.md), [unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifrnd](../../statistics/2_probability_distributions/unifrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

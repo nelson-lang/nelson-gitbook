@@ -24,9 +24,12 @@ Spectrogram using short-time Fourier transforms.
 
 ## 📄 Description
 
+
 <b>spectrogram</b> splits the signal into overlapping windowed segments and computes an FFT for each segment.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Spectrogram using short-time Fourier transforms.
 
 ```
 
+
 ## 🔗 See also
 
-[stft](../../signal_processing/stft.md), [periodogram](../../signal_processing/periodogram.md).
+[stft](../../signal_processing/6_time_frequency_analysis/stft.md), [periodogram](../../signal_processing/5_spectral_analysis/periodogram.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

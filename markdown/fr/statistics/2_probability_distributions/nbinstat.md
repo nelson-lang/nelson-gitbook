@@ -19,18 +19,22 @@ Moyenne et variance binomiales negatives
 
 ## 📄 Description
 
+
 <b>nbinstat</b> calcule la moyenne et la variance de la loi binomiale negative.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = nbinstat([1 3], [0.5 0.4]);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

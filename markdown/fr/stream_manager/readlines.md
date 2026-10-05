@@ -22,11 +22,12 @@ Lire les lignes d'un fichier texte en tableau de chaînes.
 
 ## 📄 Description
 
-<b>S = readlines(filename)</b> lit le fichier texte <b>filename</b> et renvoie ses lignes sous forme de tableau de chaînes colonne. Les terminaisons de ligne ne font pas partie des lignes.
 
-Par défaut, une ligne se termine par un saut de ligne, un retour chariot ou un retour chariot suivi d'un saut de ligne. Quand le fichier se termine par une terminaison de ligne, le dernier élément de <b>S</b> est une chaîne vide. Un fichier vide renvoie une chaîne vide 1 x 1.
+<b>S = readlines(filename)</b> lit le fichier texte <b>filename</b> et renvoie ses lignes sous forme de tableau de chaînes colonne. Les terminaisons de ligne ne font pas partie des lignes. 
 
-Avec <b>EmptyLineRule</b> à 'skip', les lignes vides sont supprimées. Avec 'error', une erreur est levée sur la première ligne vide, en indiquant son numéro. Dans les deux cas, le texte vide après une terminaison de ligne finale est ignoré.
+Par défaut, une ligne se termine par un saut de ligne, un retour chariot ou un retour chariot suivi d'un saut de ligne. Quand le fichier se termine par une terminaison de ligne, le dernier élément de <b>S</b> est une chaîne vide. Un fichier vide renvoie une chaîne vide 1 x 1. 
+
+Avec <b>EmptyLineRule</b> à 'skip', les lignes vides sont supprimées. Avec 'error', une erreur est levée sur la première ligne vide, en indiquant son numéro. Dans les deux cas, le texte vide après une terminaison de ligne finale est ignoré. 
 
 Une marque d'ordre des octets UTF-8 en début de fichier n'est pas renvoyée.
 
@@ -42,14 +43,15 @@ S = readlines(filename, 'EmptyLineRule', 'skip')
 S = readlines(filename, 'WhitespaceRule', 'trim')
 ```
 
+
 ## 🔗 Voir aussi
 
 [fileread](../stream_manager/fileread.md), [fgetl](../stream_manager/fgetl.md), [filewrite](../stream_manager/filewrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,10 +1,16 @@
 # Polynomials
 
+
+    
 The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.
 
+    
 It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.
 
+    
 This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.
+
+  
 
 ## Functions
 
@@ -20,3 +26,4 @@ This module enables efficient handling of polynomial expressions for mathematica
 - [ppval](ppval.md) - Evaluate a piecewise polynomial form
 - [residue](residue.md) - Partial fraction expansion (residues)
 - [roots](roots.md) - Find polynomial roots.
+

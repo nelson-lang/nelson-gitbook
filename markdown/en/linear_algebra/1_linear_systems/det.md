@@ -16,26 +16,34 @@ Matrix determinant.
 
 ## 📄 Description
 
-<b>res = det(x)</b> returns the determinant of square matrix x.
 
-Sparse double, single, complex double, and complex single matrices are supported. The result keeps single precision for single inputs.
+<b>res = det(x)</b> returns the determinant of square matrix x. 
 
-For a
+Sparse double, single, complex double, and complex single matrices are supported. The result keeps single precision for single inputs. 
+
+For a 
 $$2 \times 2$$
+ 
 
-matrix:
+matrix: 
 $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
+ 
 
-For larger matrices, the determinant can be computed using cofactor expansion:
+For larger matrices, the determinant can be computed using cofactor expansion: 
 $$\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} M_{ij}$$
+ 
 
-where
+where 
 $$M_{ij}$$
+ 
 
-is the minor of element
+is the minor of element 
 $$a_{ij}$$
 
+
 ## 💡 Examples
+
+
 
 ```matlab
 A = [10 -20 40; -50 20 0; 10 0 30]
@@ -43,20 +51,22 @@ D = det(A)
 
 ```
 
+
 ```matlab
 A = sparse(single([1 + 2i 0; 0 3]));
 D = det(A)
 ```
 
+
 ## 🔗 See also
 
-[rcond](../../linear_algebra/rcond.md).
+[rcond](../../linear_algebra/5_matrix_properties/rcond.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                 |
-| ------- | ---------------------------------------------- |
-| 1.0.0   | initial version                                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | added sparse single and complex single support |
 
 <!--

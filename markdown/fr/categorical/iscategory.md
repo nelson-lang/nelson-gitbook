@@ -17,7 +17,8 @@ Determiner si des noms sont des categories.
 
 ## 📄 Description
 
-<b>iscategory</b> teste si les noms demandes sont presents dans la liste des categories de <b>A</b>.
+
+<b>iscategory</b> teste si les noms demandes sont presents dans la liste des categories de <b>A</b>. 
 
 Les elements non definis ne creent pas de categorie.
 
@@ -29,14 +30,15 @@ Tester plusieurs noms de categories.
 A = categorical({'red','blue'}); tf = iscategory(A, {'red','green'})
 ```
 
+
 ## 🔗 Voir aussi
 
 [categories](../categorical/categories.md), [addcats](../categorical/addcats.md), [removecats](../categorical/removecats.md), [isundefined](../categorical/isundefined.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

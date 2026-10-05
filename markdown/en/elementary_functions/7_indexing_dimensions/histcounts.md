@@ -23,13 +23,16 @@ Histogram bin counts.
 
 ## 📄 Description
 
-histcounts counts the elements of X that fall into consecutive histogram bins.
+
+histcounts counts the elements of X that fall into consecutive histogram bins. 
 
 You can specify either a number of bins or a vector of monotonically increasing bin edges. The last bin includes its right edge.
 
 ## Used function(s)
 
+
     histcounts
+  
 
 ## 💡 Example
 
@@ -40,13 +43,14 @@ x = [0 1 1 2 3 3 4];
 [N, edges, bin] = histcounts(x, 0:2:4)
 ```
 
+
 ## 🔗 See also
 
-[sortrows](../../elementary_functions/sortrows.md), [histogram](../../graphics/histogram.md).
+[sortrows](../../elementary_functions/7_indexing_dimensions/sortrows.md), [histogram](../../graphics/1_plots/4_data_distribution_plots/histogram.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,22 +18,26 @@ F inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>finv</b> computes inverse lower-tail F distribution probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = finv(p, 5, 20);
 ```
 
+
 ## 🔗 See also
 
-[fcdf](../../statistics/fcdf.md), [fpdf](../../statistics/fpdf.md).
+[fcdf](../../statistics/2_probability_distributions/fcdf.md), [fpdf](../../statistics/2_probability_distributions/fpdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

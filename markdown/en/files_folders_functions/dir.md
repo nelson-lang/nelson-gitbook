@@ -22,16 +22,20 @@ Returns file list.
 
 ## 📄 Description
 
-<b>dir</b> displays the list of files and folders in the current folder.
+
+<b>dir</b> displays the list of files and folders in the current folder. 
 
 \* (wildcard) is supported in filename and path name.
 
 ## 💡 Example
 
+
+
 ```matlab
 res = dir(nelsonroot())
 res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 ```
+
 
 ## 🔗 See also
 
@@ -39,7 +43,7 @@ res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

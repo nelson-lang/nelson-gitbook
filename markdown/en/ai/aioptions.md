@@ -9,11 +9,12 @@ Create options for AI provider requests.
 
 ## 📄 Description
 
-<b>aioptions</b> creates a scalar struct used by <b>aiask</b>.
 
-The default provider is <b>ollama</b>, the default model is <b>llama3</b>, and the default endpoint is <b>http://127.0.0.1:11434/api/generate</b>.
+<b>aioptions</b> creates a scalar struct used by <b>aiask</b>. 
 
-Supported options are <b>Provider</b>, <b>Model</b>, <b>Endpoint</b>, <b>TokenEnvVar</b>, <b>Timeout</b>, <b>SystemPrompt</b>, <b>Think</b>, <b>NumPredict</b>, and <b>Temperature</b>.
+The default provider is <b>ollama</b>, the default model is <b>llama3</b>, and the default endpoint is <b>http://127.0.0.1:11434/api/generate</b>. 
+
+Supported options are <b>Provider</b>, <b>Model</b>, <b>Endpoint</b>, <b>TokenEnvVar</b>, <b>Timeout</b>, <b>SystemPrompt</b>, <b>Think</b>, <b>NumPredict</b>, and <b>Temperature</b>. 
 
 For Ollama, <b>Think</b>, <b>NumPredict</b>, and <b>Temperature</b> are sent in the request payload. Use them to keep local model responses bounded.
 
@@ -33,12 +34,13 @@ opts = aioptions('Provider', 'ollama', ...
 
 ```
 
+
 ## 🔗 See also
 
 [aiask](../ai/aiask.md), [aimodels](../ai/aimodels.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |

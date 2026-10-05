@@ -4,15 +4,15 @@ Evaluates an function on a cell.
 
 ## 📝 Syntax
 
-- R = cellfun(function_name, ce)
-- R = cellfun(function_handle, ce)
-- [R1, ... , Rp] = cellfun(function_handle, ce1, ..., cep)
-- [R1, ... , Rp] = cellfun(function_handle, ce1, ..., cep, name, value)
+- R = cellfun(function\_name, ce)
+- R = cellfun(function\_handle, ce)
+- [R1, ... , Rp] = cellfun(function\_handle, ce1, ..., cep)
+- [R1, ... , Rp] = cellfun(function\_handle, ce1, ..., cep, name, value)
 
 ## 📥 Input argument
 
-- function_handle - a function handle.
-- ce1, ... , cep - cells with p inputs required for function_handle.
+- function\_handle - a function handle.
+- ce1, ... , cep - cells with p inputs required for function\_handle.
 - name, value pair - 'UniformOutput': true or false, 'ErrorHandler': a error function.
 
 ## 📤 Output argument
@@ -21,9 +21,12 @@ Evaluates an function on a cell.
 
 ## 📄 Description
 
+
 <b>cellfun</b> applies function to each cell elements.
 
 ## 💡 Examples
+
+
 
 ```matlab
 greetings = {'Hello', 'Guten Tag', 'Sawadee', 'Bonjour', 'Namaste', ''};
@@ -31,13 +34,13 @@ R = cellfun('size', greetings, 1)
 R1 = cellfun('size', greetings, 2)
 ```
 
+
 ```matlab
 C = {1:10, eye(3,4), eye(5,6)};
 f = str2func('size');
 [nrows_1, ncols_1] = cellfun(f, C,'UniformOutput', false)
 [nrows_2, ncols_2] = cellfun(f, C,'UniformOutput', true)
 ```
-
 functions to define for next example:
 
 ```matlab
@@ -56,6 +59,7 @@ function result = errorfun(S, varargin)
 end
 ```
 
+
 ```matlab
 R = str2func('fun1');
 H =  str2func('errorfun');
@@ -65,13 +69,14 @@ AgtA = cellfun(R, A, B, 'ErrorHandler', H, 'UniformOutput', true)
 AgtB = cellfun(R, A, B, 'ErrorHandler', H, 'UniformOutput', false)
 ```
 
+
 ## 🔗 See also
 
 [cell](../data_structures/cell.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

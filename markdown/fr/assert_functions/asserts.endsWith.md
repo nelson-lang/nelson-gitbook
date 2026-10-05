@@ -19,7 +19,8 @@ Verifie qu'un texte se termine par un suffixe.
 
 ## 📄 Description
 
-L'assertion reussit lorsque text se termine par suffix.
+
+L'assertion reussit lorsque text se termine par suffix. 
 
 Avec sorties, un suffixe manquant est retourne comme echec d'assertion.
 
@@ -30,12 +31,12 @@ Expected suffix
 ```matlab
 asserts.endsWith('Nelson language', 'language');
 ```
-
 Capture a suffix failure
 
 ```matlab
 [res, msg] = asserts.endsWith('Nelson language', 'Nelson');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a suffix failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

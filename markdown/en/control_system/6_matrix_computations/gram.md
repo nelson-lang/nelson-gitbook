@@ -17,7 +17,10 @@ Controllability and observability Gramians.
 
 ## 📄 Description
 
+
 ## 💡 Example
+
+
 
 ```matlab
 sys = ss([-.1 -1;1 0], [1;0], [0 1], 0);
@@ -26,13 +29,14 @@ wc = gram(sys, 'o')
 
 ```
 
+
 ## 🔗 See also
 
-[lyap](../../control_system/lyap.md), [dlyap](../../control_system/dlyap.md).
+[lyap](../../control_system/6_matrix_computations/lyap.md), [dlyap](../../control_system/6_matrix_computations/dlyap.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

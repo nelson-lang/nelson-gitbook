@@ -18,7 +18,8 @@ Remove categories from a categorical array.
 
 ## 📄 Description
 
-<b>removecats</b> removes categories from the category list.
+
+<b>removecats</b> removes categories from the category list. 
 
 Elements that belonged to removed categories become undefined. When <b>oldCategories</b> is omitted, only unused categories are removed.
 
@@ -29,12 +30,12 @@ Remove an unused category.
 ```matlab
 A = categorical({'red','blue'}, {'red','blue','green'}); B = removecats(A, 'green'); categories(B)
 ```
-
 Remove a used category and create undefined elements.
 
 ```matlab
 A = categorical({'red','blue','green'}); B = removecats(A, 'green'); isundefined(B)
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ A = categorical({'red','blue','green'}); B = removecats(A, 'green'); isundefined
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

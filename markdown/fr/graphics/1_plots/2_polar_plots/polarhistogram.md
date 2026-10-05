@@ -11,6 +11,7 @@ Affiche des angles sous forme d'histogramme polaire.
 
 ## 📄 Description
 
+
 <b>polarhistogram</b> regroupe des angles en classes et affiche les effectifs sous forme de secteurs polaires.
 
 ## 💡 Exemple
@@ -21,8 +22,8 @@ Creer un histogramme polaire.
 theta = 2*pi*rand(200, 1);
 polarhistogram(theta, 16);
 ```
-
 <img src="polarhistogram_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

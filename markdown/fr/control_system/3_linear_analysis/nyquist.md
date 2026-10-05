@@ -22,15 +22,18 @@ Diagramme de Nyquist de la rÃ©ponse en frÃ©quence.
 
 ## 📄 Description
 
-La fonction Nyquist,<b>nyquist(sys)</b>, gÃ©nÃ¨re une reprÃ©sentation graphique connue sous le nom de tracÃ© de Nyquist, illustrant la rÃ©ponse en frÃ©quence d'un modÃ¨le de systÃ¨me dynamique reprÃ©sentÃ© par sys.
 
-Ce tracÃ© affiche les composantes rÃ©elle et imaginaire de la rÃ©ponse du systÃ¨me selon la frÃ©quence.
+La fonction Nyquist,<b>nyquist(sys)</b>, gÃ©nÃ¨re une reprÃ©sentation graphique connue sous le nom de tracÃ© de Nyquist, illustrant la rÃ©ponse en frÃ©quence d'un modÃ¨le de systÃ¨me dynamique reprÃ©sentÃ© par sys. 
 
-Le contour de nyquist couvre les frÃ©quences positives et nÃ©gatives.
+Ce tracÃ© affiche les composantes rÃ©elle et imaginaire de la rÃ©ponse du systÃ¨me selon la frÃ©quence. 
+
+Le contour de nyquist couvre les frÃ©quences positives et nÃ©gatives. 
 
 Le tracÃ© inclut Ã©galement des flÃ¨ches indiquant le sens d'augmentation de la frÃ©quence pour chaque branche.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -38,8 +41,8 @@ sys = tf([1, 1, 3, 3], [1, -3, 3, -1])
 nyquist(sys);
 
 ```
-
 <img src="nyquist_1.svg" align="middle"/>
+
 
 ```matlab
 H = tf([2 5 1], [1 2 3]);
@@ -47,23 +50,24 @@ H = tf([2 5 1], [1 2 3]);
 
 ```
 
+
 ```matlab
 f = figure();
       H = tf([2 5 1], [1 2 3]);
 nyquist(H);
 
 ```
-
 <img src="nyquist_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bode](../../control_system/bode.md).
+[bode](../../control_system/3_linear_analysis/bode.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,6 +18,7 @@ Fenêtre de Blackman.
 
 ## 📄 Description
 
+
 <b>c = blackman(m)</b> calcule les coefficients d'une fenêtre de Blackman de longueur <b>m</b>.
 
 ## 📚 Bibliographie
@@ -26,19 +27,22 @@ Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Pr
 
 ## 💡 Exemple
 
+
+
 ```matlab
 c = blackman(8)
 c = blackman(8, 'periodic')
 ```
 
+
 ## 🔗 Voir aussi
 
-[hamming](../../signal_processing/hamming.md), [hann](../../signal_processing/hann.md).
+[hamming](../../signal_processing/5_spectral_analysis/hamming.md), [hann](../../signal_processing/5_spectral_analysis/hann.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

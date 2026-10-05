@@ -1,18 +1,18 @@
-# slicot_ag08bd
+# slicot\_ag08bd
 
 Zéros et structure de Kronecker d'un pencil de système descripteur.
 
 ## 📝 Syntaxe
 
-- [A\_OUT, E\_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
+- [A\_OUT, E\_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot\_ag08bd(EQUIL, M, P, A\_IN, E\_IN, B, C, D, TOL)
 
 ## 📥 Argument d'entrée
 
 - EQUIL - = 'S' : effectuer un équilibrage (mise à l'échelle) ; = 'N' : ne pas effectuer d'équilibrage.
 - M - Le nombre de colonnes de la matrice B.
 - P - Le nombre de lignes de la matrice C.
-- A_IN - La partie principale L-by-N de ce tableau doit contenir la matrice de dynamique d'état A du système.
-- E_IN - La partie principale L-by-N de ce tableau doit contenir la matrice descripteur E du système.
+- A\_IN - La partie principale L-by-N de ce tableau doit contenir la matrice de dynamique d'état A du système.
+- E\_IN - La partie principale L-by-N de ce tableau doit contenir la matrice descripteur E du système.
 - B - La partie principale L-by-M de ce tableau doit contenir la matrice d'entrée/état B du système.
 - C - La partie principale P-by-N de ce tableau doit contenir la matrice état/sortie C du système.
 - D - La partie principale P-by-M de ce tableau doit contenir la matrice de transmission directe D du système.
@@ -20,8 +20,8 @@ Zéros et structure de Kronecker d'un pencil de système descripteur.
 
 ## 📤 Argument de sortie
 
-- A_OUT - La partie principale NFZ-by-NFZ de ce tableau contient la matrice Af du pencil réduit.
-- E_OUT - La partie principale NFZ-by-NFZ de ce tableau contient la matrice Ef du pencil réduit.
+- A\_OUT - La partie principale NFZ-by-NFZ de ce tableau contient la matrice Af du pencil réduit.
+- E\_OUT - La partie principale NFZ-by-NFZ de ce tableau contient la matrice Ef du pencil réduit.
 - NFZ - Le nombre de zéros finis.
 - NRANK - Le rang normal du pencil du système.
 - NIZ - Le nombre de zéros infinis.
@@ -36,6 +36,7 @@ Zéros et structure de Kronecker d'un pencil de système descripteur.
 
 ## 📄 Description
 
+
 To extract from the system pencil a regular pencil Af-lambda\*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.
 
 ## Fonction(s) utilisée(s)
@@ -47,6 +48,8 @@ AG08BD
 http://slicot.org/objects/software/shared/doc/AG08BD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 L = 9;
@@ -112,14 +115,15 @@ M = 3; P = 0;
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_ab08nd](../slicot/slicot_ab08nd.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [tzero](../control_system/tzero.md).
+[slicot_ab08nd](../slicot/slicot_ab08nd.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [tzero](../control_system/1_dynamic_system_models/tzero.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

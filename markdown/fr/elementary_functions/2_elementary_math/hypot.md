@@ -17,25 +17,29 @@ Racine carrée de la somme des carrés
 
 ## 📄 Description
 
-<b>hypot</b> calcule l'hypoténuse.
+
+<b>hypot</b> calcule l'hypoténuse. 
 
 Si une ou deux entrées sont NaN, alors <b>hypot</b> renvoie <b>NaN</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 R = hypot(1e308, 1e308)
 R = hypot(1e309, 1e309)
 ```
 
+
 ## 🔗 Voir aussi
 
-[abs](../../elementary_functions/abs.md), [sqrt](../../elementary_functions/sqrt.md).
+[abs](../../elementary_functions/2_elementary_math/abs.md), [sqrt](../../elementary_functions/2_elementary_math/sqrt.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

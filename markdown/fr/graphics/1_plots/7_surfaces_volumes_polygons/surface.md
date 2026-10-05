@@ -28,23 +28,28 @@ Tracé de surface primitif.
 
 ## 📄 Description
 
-<b>surf</b> et<b>surface</b> sont deux fonctions utilisées pour créer des tracés de surface 3D, mais il existe quelques différences entre elles.
 
-La fonction<b>surf</b> est utilisée pour tracer une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés.
+<b>surf</b> et<b>surface</b> sont deux fonctions utilisées pour créer des tracés de surface 3D, mais il existe quelques différences entre elles. 
 
-Elle nécessite trois arguments d'entrée : X, Y et Z. X et Y définissent les coordonnées des points de données, et Z définit la hauteur de la surface à chaque point.
+La fonction<b>surf</b> est utilisée pour tracer une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés. 
 
-La fonction <b>surf</b> offre également des options supplémentaires pour personnaliser l'apparence du tracé, telles que l'éclairage et la couleur.
+Elle nécessite trois arguments d'entrée : X, Y et Z. X et Y définissent les coordonnées des points de données, et Z définit la hauteur de la surface à chaque point. 
 
-La fonction <b>surface</b> est utilisée pour tracer une surface définie par une matrice de données. Elle nécessite trois arguments d'entrée : X, Y et Z. X et Y définissent les coordonnées des points de données, et Z est une matrice qui définit la hauteur de la surface à chaque point.
+La fonction <b>surf</b> offre également des options supplémentaires pour personnaliser l'apparence du tracé, telles que l'éclairage et la couleur. 
 
-La taille de Z doit correspondre à la taille de X et Y. La fonction surface offre également des options supplémentaires pour personnaliser l'apparence du tracé, telles que l'éclairage et la couleur.
+ 
 
-En résumé, les fonctions <b>surf</b> et<b>surface</b> sont utilisées pour des tracés de surface 3D, mais<b>surf</b> est utilisée pour une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés, tandis que <b>surface</b> est utilisée pour une surface définie par une matrice de données, et la taille de Z doit correspondre à celle de X et Y.
+La fonction <b>surface</b> est utilisée pour tracer une surface définie par une matrice de données. Elle nécessite trois arguments d'entrée : X, Y et Z. X et Y définissent les coordonnées des points de données, et Z est une matrice qui définit la hauteur de la surface à chaque point. 
+
+La taille de Z doit correspondre à la taille de X et Y. La fonction surface offre également des options supplémentaires pour personnaliser l'apparence du tracé, telles que l'éclairage et la couleur. 
+
+En résumé, les fonctions <b>surf</b> et<b>surface</b> sont utilisées pour des tracés de surface 3D, mais<b>surf</b> est utilisée pour une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés, tandis que <b>surface</b> est utilisée pour une surface définie par une matrice de données, et la taille de Z doit correspondre à celle de X et Y. 
 
 Voir [proprietes de surface](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.surface.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -55,17 +60,17 @@ ax2 = subplot(1, 2, 2);
 s2 = surf(ax2, data);
 
 ```
-
 <img src="surface_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[proprietes de surface](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.surface.properties.md), [surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [view](../../../graphics/3_labels_styling/3_interactions_camera_lighting/view.md), [light](../../../graphics/3_labels_styling/3_interactions_camera_lighting/light.md), [shading](../../../graphics/3_labels_styling/2_color_styling/shading.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[proprietes de surface](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.surface.properties.md), [surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [view](../../../graphics/3_labels_styling/3_interactions_camera_lighting/view.md), [light](../../../graphics/3_labels_styling/3_interactions_camera_lighting/light.md), [shading](../../../graphics/3_labels_styling/2_color_styling/shading.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | Version initiale |
 
 <!--

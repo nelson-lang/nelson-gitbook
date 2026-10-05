@@ -13,16 +13,22 @@ Renvoie le répertoire courant.
 
 ## 📄 Description
 
-Renvoie le répertoire de travail courant.
 
-<b>pwd()</b> sans argument affiche le répertoire courant.
+Renvoie le répertoire de travail courant. 
+
+<b>pwd()</b> sans argument affiche le répertoire courant. 
+
+
 
 ## 💡 Exemple
+
+
 
 ```matlab
 r = pwd()
 pwd()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +36,8 @@ pwd()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,13 +18,16 @@ Forme de Hessenberg d'une matrice carree.
 
 ## 📄 Description
 
-hess reduit une matrice numerique carree en forme de Hessenberg superieure par transformations unitaires de similarite.
+
+hess reduit une matrice numerique carree en forme de Hessenberg superieure par transformations unitaires de similarite. 
 
 Avec deux sorties, hess renvoie aussi la matrice de transformation accumulee P telle que A = P \* H \* P'.
 
 ## Fonction(s) utilisée(s)
 
+
     LAPACK
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ A = [1 2 3; 4 5 6; 7 8 10];
 residual = norm(A - P * H * transpose(P), 'fro')
 ```
 
+
 ## 🔗 Voir aussi
 
-[schur](../../linear_algebra/schur.md), [eig](../../linear_algebra/eig.md).
+[schur](../../linear_algebra/3_eigen_singular_values/schur.md), [eig](../../linear_algebra/3_eigen_singular_values/eig.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

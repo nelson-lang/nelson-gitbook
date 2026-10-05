@@ -27,29 +27,32 @@ Tracer des données discrètes.
 
 ## 📄 Description
 
-Un graphique <b>stem</b> en deux dimensions permet de visualiser des données en les représentant par des lignes partant d'une ligne de base horizontale le long de l'axe x.
 
-À l'extrémité de chaque ligne se trouve un cercle (marqueur par défaut), et la position verticale de ce cercle correspond à la valeur de la donnée représentée.
+Un graphique <b>stem</b> en deux dimensions permet de visualiser des données en les représentant par des lignes partant d'une ligne de base horizontale le long de l'axe x. 
 
-<b>stem(Y)</b> crée un graphique stem en prenant la séquence de données<b>Y</b> et en traçant des tiges partant de points régulièrement espacés et automatiquement déterminés le long de l'axe x.
+À l'extrémité de chaque ligne se trouve un cercle (marqueur par défaut), et la position verticale de ce cercle correspond à la valeur de la donnée représentée. 
 
-Si <b>Y</b> est une matrice, la fonction stem trace tous les éléments d'une ligne pour la même valeur de x.
+<b>stem(Y)</b> crée un graphique stem en prenant la séquence de données<b>Y</b> et en traçant des tiges partant de points régulièrement espacés et automatiquement déterminés le long de l'axe x. 
 
-<b>stem(X, Y)</b> crée un graphique stem qui montre comment<b>X</b> est relié aux colonnes de <b>Y</b>.
+Si <b>Y</b> est une matrice, la fonction stem trace tous les éléments d'une ligne pour la même valeur de x. 
 
-<b>X</b> et<b>Y</b> peuvent être des vecteurs ou des matrices de même taille.
+<b>stem(X, Y)</b> crée un graphique stem qui montre comment<b>X</b> est relié aux colonnes de <b>Y</b>. 
 
-<b>X</b> peut être un vecteur ligne ou colonne, et<b>Y</b> doit être une matrice ayant le même nombre de lignes que la longueur de <b>X</b>.
+<b>X</b> et<b>Y</b> peuvent être des vecteurs ou des matrices de même taille. 
 
-Si vous souhaitez spécifier si le cercle à l'extrémité de chaque tige doit être rempli, vous pouvez utiliser <b>stem(...,'fill')</b>.
+<b>X</b> peut être un vecteur ligne ou colonne, et<b>Y</b> doit être une matrice ayant le même nombre de lignes que la longueur de <b>X</b>. 
 
-De plus, en utilisant <b>stem(..., LineSpec)</b>, vous pouvez définir le style de ligne, le symbole du marqueur et la couleur des tiges et du marqueur supérieur.
+Si vous souhaitez spécifier si le cercle à l'extrémité de chaque tige doit être rempli, vous pouvez utiliser <b>stem(...,'fill')</b>. 
 
-Consultez <b>LineSpec</b> pour plus de détails sur la personnalisation de l'apparence du graphique stem.
+De plus, en utilisant <b>stem(..., LineSpec)</b>, vous pouvez définir le style de ligne, le symbole du marqueur et la couleur des tiges et du marqueur supérieur. 
+
+Consultez <b>LineSpec</b> pour plus de détails sur la personnalisation de l'apparence du graphique stem. 
 
 Voir [nelson.graphics.stem.properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stem.properties.md) pour les proprietes prises en charge de l'objet stem.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -58,8 +61,8 @@ y = 2*x;
 h = stem (x, y, 'MarkerFaceColor', [1 0 1]);
 title('stem plot modified with property/value pair');
 ```
-
 <img src="stem_1.svg" align="middle"/>
+
 
 ```matlab
 f =figure();
@@ -70,8 +73,8 @@ Y = exp(-3*X/4) .* cos(2*X);
 % Third, we use the 'stem' function to plot discrete values
 stem(X,Y)
 ```
-
 <img src="stem_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -79,8 +82,8 @@ stem(X,Y)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

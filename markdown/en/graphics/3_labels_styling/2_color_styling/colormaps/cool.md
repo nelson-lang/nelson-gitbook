@@ -17,17 +17,20 @@ Cool colormap array.
 
 ## 📄 Description
 
+
 <b>cool</b> returns the colormap with cool colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('cool');
 ```
-
 <img src="cool.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('cool');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

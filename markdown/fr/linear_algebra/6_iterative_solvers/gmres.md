@@ -29,17 +29,20 @@ Methode du residu minimal generalise.
 
 ## 📄 Description
 
-<b>gmres</b> resout <b>A \* x = b</b> avec la methode redemarree du residu minimal generalise.
 
-La methode prend en charge les matrices sparse double, single, double complexes et single complexes.
+<b>gmres</b> resout <b>A \* x = b</b> avec la methode redemarree du residu minimal generalise. 
 
-Les preconditionneurs peuvent etre fournis sous forme de vecteurs diagonaux, de facteurs triangulaires sparse, de matrices carrees sparse ou pleines, ou de handles de fonction retournant des vecteurs. Les diagonales nulles et les dimensions incompatibles sont rejetees avant l'iteration.
+La methode prend en charge les matrices sparse double, single, double complexes et single complexes. 
 
-<b>flag</b> vaut 0 en cas de convergence, 1 lorsque la limite d'iterations est atteinte et 4 lorsqu'une rupture numerique est detectee.
+Les preconditionneurs peuvent etre fournis sous forme de vecteurs diagonaux, de facteurs triangulaires sparse, de matrices carrees sparse ou pleines, ou de handles de fonction retournant des vecteurs. Les diagonales nulles et les dimensions incompatibles sont rejetees avant l'iteration. 
+
+<b>flag</b> vaut 0 en cas de convergence, 1 lorsque la limite d'iterations est atteinte et 4 lorsqu'une rupture numerique est detectee. 
 
 Si <b>M1</b>, <b>M2</b> ou <b>x0</b> est complexe, le calcul utilise le chemin complexe adapte.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
@@ -48,6 +51,7 @@ b = [1; 2; 3];
 
 ```
 
+
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
 b = [1; 2; 3];
@@ -55,7 +59,6 @@ b = [1; 2; 3];
 x = gmres(A, b, [], 1e-12, 20, L, U)
 
 ```
-
 Resolution avec preconditionneurs matriciels separes.
 
 ```matlab
@@ -65,7 +68,6 @@ M1 = [2 0; 0 1];
 M2 = [2 0.5; 2 3];
 [x, flag, relres, iter] = gmres(A, b, [], 1e-12, 10, M1, M2)
 ```
-
 Resolution sparse single complexe avec preconditionnement diagonal.
 
 ```matlab
@@ -75,15 +77,16 @@ M = sparse(single(diag([4 3])));
 [x, flag] = gmres(A, b, [], 1e-6, 20, M)
 ```
 
+
 ## 🔗 Voir aussi
 
-[bicgstab](../../linear_algebra/bicgstab.md), [ilu](../../linear_algebra/ilu.md).
+[bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md), [ilu](../../linear_algebra/7_preconditioners/ilu.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                          |
-| ------- | ------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                                                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | ajout de la couverture single, single complexe, preconditionneur, vecteur initial et rupture numerique. |
 
 <!--

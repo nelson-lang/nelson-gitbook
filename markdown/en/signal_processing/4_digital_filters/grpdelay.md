@@ -24,9 +24,12 @@ Group delay of a digital filter.
 
 ## 📄 Description
 
+
 <b>grpdelay</b> computes group delay from the transfer function frequency derivative.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Group delay of a digital filter.
 
 ```
 
+
 ## 🔗 See also
 
-[phasez](../../signal_processing/phasez.md), [freqz](../../signal_processing/freqz.md).
+[phasez](../../signal_processing/4_digital_filters/phasez.md), [freqz](../../signal_processing/4_digital_filters/freqz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

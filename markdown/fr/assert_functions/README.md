@@ -1,10 +1,16 @@
 # Fonctions d'assertion
 
+
+    
 Le module assert_functions fournit des assertions pour les tests unitaires, les contrats d'execution et les diagnostics.
 
+    
 Toutes les assertions partagent le meme contrat : sans sortie elles levent une erreur en cas d'echec ; avec sorties elles retournent **[res, msg]**.
 
+    
 L'API canonique utilise des noms d'assertion qualifies, par exemple **asserts.isequal**, **asserts.warning** et **asserts.satisfies**.
+
+  
 
 ## Functions
 
@@ -66,3 +72,4 @@ L'API canonique utilise des noms d'assertion qualifies, par exemple **asserts.is
 - [asserts.vector](asserts.vector.md) - Verifie qu'une valeur est un vecteur.
 - [asserts.warning](asserts.warning.md) - Verifie qu'une commande emet l'avertissement attendu.
 - [asserts.warningFree](asserts.warningFree.md) - Verifie qu'une commande se termine sans avertissement.
+

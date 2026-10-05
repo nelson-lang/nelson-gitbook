@@ -20,24 +20,28 @@ Lognormal random numbers
 
 ## 📄 Description
 
-<b>lognrnd</b> generates lognormal random numbers using Nelson's global random generator.
+
+<b>lognrnd</b> generates lognormal random numbers using Nelson's global random generator. 
 
 Scalar parameters are expanded to the requested output size. Negative standard deviations produce NaN values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = lognrnd(0, 1, [2 3]);
 ```
 
+
 ## 🔗 See also
 
-[lognpdf](../../statistics/lognpdf.md), [lognstat](../../statistics/lognstat.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [lognstat](../../statistics/2_probability_distributions/lognstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,23 +21,26 @@ Exécute une co-simulation à pas fixe d'une FMU FMI 2.0 ou 3.0.
 
 ## 📄 Description
 
-<b>fmiCoSimulate</b> exécute une <b>co-simulation</b> d'une <b>unité de maquette fonctionnelle</b> (FMU) conforme au standard <b>FMI 2.0</b> ou <b>3.0</b> et renvoie les valeurs de chaque sortie <b>Float64</b> à chaque point de communication.
 
-La FMU est instanciée, initialisée entre les instants <b>0</b> et <b>tStop</b>, puis avancée avec un pas de communication fixe <b>dt</b>. Au début de chaque pas les sorties <b>Float64</b> courantes sont enregistrées ; la FMU est ensuite avancée d'un pas. La boucle s'arrête à <b>tStop</b>, ou plus tôt si la FMU demande l'arrêt. La FMU est toujours terminée et libérée avant le retour de la fonction, y compris en cas d'erreur.
+<b>fmiCoSimulate</b> exécute une <b>co-simulation</b> d'une <b>unité de maquette fonctionnelle</b> (FMU) conforme au standard <b>FMI 2.0</b> ou <b>3.0</b> et renvoie les valeurs de chaque sortie <b>Float64</b> à chaque point de communication. 
 
-Aucune entrée externe n'est appliquée : les paramètres et les entrées de la FMU conservent les valeurs initiales déclarées dans sa description de modèle. La fonction reproduit donc la réponse libre du modèle tel qu'empaqueté. L'application d'entrées personnalisées n'est pas encore prise en charge par ce point d'entrée.
+La FMU est instanciée, initialisée entre les instants <b>0</b> et <b>tStop</b>, puis avancée avec un pas de communication fixe <b>dt</b>. Au début de chaque pas les sorties <b>Float64</b> courantes sont enregistrées ; la FMU est ensuite avancée d'un pas. La boucle s'arrête à <b>tStop</b>, ou plus tôt si la FMU demande l'arrêt. La FMU est toujours terminée et libérée avant le retour de la fonction, y compris en cas d'erreur. 
 
-L'argument <b>fmu</b> accepte aussi bien une archive <b>.fmu</b> qu'un répertoire déjà extrait. Une archive <b>.fmu</b> est décompressée avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire neuf, supprimé automatiquement au retour de la fonction ; les entrées comportant un chemin absolu, une lettre de lecteur ou une remontée <b>..</b> sont rejetées.
+Aucune entrée externe n'est appliquée : les paramètres et les entrées de la FMU conservent les valeurs initiales déclarées dans sa description de modèle. La fonction reproduit donc la réponse libre du modèle tel qu'empaqueté. L'application d'entrées personnalisées n'est pas encore prise en charge par ce point d'entrée. 
 
-La structure renvoyée <b>result</b> comporte les champs suivants :
+L'argument <b>fmu</b> accepte aussi bien une archive <b>.fmu</b> qu'un répertoire déjà extrait. Une archive <b>.fmu</b> est décompressée avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire neuf, supprimé automatiquement au retour de la fonction ; les entrées comportant un chemin absolu, une lettre de lecteur ou une remontée <b>..</b> sont rejetées. 
 
-| Champ       | Taille   | Détails                                                                                                                                                                  |
-| ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| time        | N x 1    | les points de communication, débutant à **0** et strictement croissants par pas de **dt** (le dernier point peut être plus court lorsque la FMU s'arrête prématurément). |
-| outputNames | 1 x nOut | un tableau de cellules des noms des variables de sortie **Float64**, dans l'ordre de déclaration.                                                                        |
-| outputs     | N x nOut | les valeurs de sortie enregistrées ; la colonne **j** est la trajectoire de **outputNames{j}**, la ligne **i** correspond à **time(i)**.                                 |
+La structure renvoyée <b>result</b> comporte les champs suivants : 
 
-Le nombre de lignes <b>N</b> vaut <b>floor(tStop / dt) + 1</b> pour une exécution qui se termine à <b>tStop</b>. Lorsque la FMU ne déclare aucune sortie <b>Float64</b>, <b>outputNames</b> est vide et <b>outputs</b> possède zéro colonne, tandis que <b>time</b> est tout de même renvoyé.
+| Champ | Taille | Détails | 
+| --- | --- | --- | 
+| time | N x 1 | les points de communication, débutant à **0** et strictement croissants par pas de **dt** (le dernier point peut être plus court lorsque la FMU s'arrête prématurément). | 
+| outputNames | 1 x nOut | un tableau de cellules des noms des variables de sortie **Float64**, dans l'ordre de déclaration. | 
+| outputs | N x nOut | les valeurs de sortie enregistrées ; la colonne **j** est la trajectoire de **outputNames{j}**, la ligne **i** correspond à **time(i)**. | 
+
+ 
+
+Le nombre de lignes <b>N</b> vaut <b>floor(tStop / dt) + 1</b> pour une exécution qui se termine à <b>tStop</b>. Lorsque la FMU ne déclare aucune sortie <b>Float64</b>, <b>outputNames</b> est vide et <b>outputs</b> possède zéro colonne, tandis que <b>time</b> est tout de même renvoyé. 
 
 Utilisez d'abord <b>fmiInfo</b> pour inspecter les variables et confirmer la présence de l'interface de co-simulation. Une erreur est levée lorsque <b>tStop</b> n'est pas strictement positif, lorsque la FMU ne gère pas la co-simulation, ou lorsqu'un appel FMI échoue.
 
@@ -48,7 +51,6 @@ Exécuter une co-simulation avec le pas par défaut.
 ```matlab
 result = fmiCoSimulate('VanDerPol.fmu', 20)
 ```
-
 Exécuter avec un pas de communication explicite et tracer les sorties.
 
 ```matlab
@@ -58,7 +60,6 @@ legend(r.outputNames);
 xlabel('temps');
 title('Sorties de co-simulation FMU');
 ```
-
 Extraire une sortie nommée du résultat.
 
 ```matlab
@@ -66,7 +67,6 @@ r = fmiCoSimulate('VanDerPol.fmu', 20, 0.01);
 col = find(strcmp(r.outputNames, 'x0'));
 x0 = r.outputs(:, col);
 ```
-
 Piloter une entrée de FMU avec une valeur constante (FMU Feedthrough livrée).
 
 ```matlab
@@ -76,14 +76,15 @@ col = find(strcmp(r.outputNames, 'Float64_continuous_output'));
 r.outputs(end, col)
 ```
 
+
 ## 🔗 Voir aussi
 
 [fmiInfo](../nflow_fmi/fmiInfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

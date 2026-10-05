@@ -17,17 +17,20 @@ Turbo colormap array.
 
 ## 📄 Description
 
+
 <b>turbo</b> returns the colormap with turbo colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('turbo');
 ```
-
 <img src="turbo.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('turbo');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

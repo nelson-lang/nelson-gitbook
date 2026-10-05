@@ -17,23 +17,27 @@ Ajoute le vecteur d'état au vecteur de sortie.
 
 ## 📄 Description
 
+
 La fonction <b>sysa = augstate(sys)</b> ajoute le vecteur d'état aux sorties d'un modèle d'espace d'état.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sys = ss(10, 10, 20, 0);
 sysa = augstate(sys)
 ```
 
+
 ## 🔗 Voir aussi
 
-[feedback](../../control_system/feedback.md), [series](../../control_system/series.md).
+[feedback](../../control_system/2_model_conversion_interconnection/feedback.md), [series](../../control_system/2_model_conversion_interconnection/series.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

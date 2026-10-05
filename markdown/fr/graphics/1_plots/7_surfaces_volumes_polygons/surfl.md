@@ -12,7 +12,8 @@ Afficher une surface eclairee.
 
 ## 📄 Description
 
-<b>surfl</b> affiche une surface avec une reflectance basee sur l'eclairage stockee dans les donnees de couleur de la surface.
+
+<b>surfl</b> affiche une surface avec une reflectance basee sur l'eclairage stockee dans les donnees de couleur de la surface. 
 
 <b>surfl(..., 'light')</b> cree une lumiere infinie et retourne les handles de la surface et de la lumiere.
 
@@ -24,8 +25,8 @@ Surface eclairee.
 surfl(peaks(30));
 shading interp;
 ```
-
 <img src="surfl_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

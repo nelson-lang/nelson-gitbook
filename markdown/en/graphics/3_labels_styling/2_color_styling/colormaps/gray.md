@@ -17,17 +17,20 @@ Gray colormap array.
 
 ## 📄 Description
 
+
 <b>gray</b> returns the colormap with gray colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('gray');
 ```
-
 <img src="gray.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('gray');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

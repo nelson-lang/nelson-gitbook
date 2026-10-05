@@ -16,15 +16,18 @@ Rang structurel d'une matrice.
 
 ## 📄 Description
 
-<b>sprank</b> retourne le rang structurel d'une matrice, calcule a partir de son motif non nul.
 
-La valeur est la taille d'un couplage maximal entre les lignes et les colonnes de la matrice.
+<b>sprank</b> retourne le rang structurel d'une matrice, calcule a partir de son motif non nul. 
 
-Les matrices double, single, logiques, double complexes et single complexes sont prises en charge, en representation pleine ou sparse. Pour une entree sparse, les valeurs nulles stockees sont ignorees lors de la construction du motif structurel.
+La valeur est la taille d'un couplage maximal entre les lignes et les colonnes de la matrice. 
+
+Les matrices double, single, logiques, double complexes et single complexes sont prises en charge, en representation pleine ou sparse. Pour une entree sparse, les valeurs nulles stockees sont ignorees lors de la construction du motif structurel. 
 
 Le rang structurel peut etre superieur au rang numerique, car il depend uniquement des positions des valeurs non nulles et non des dependances lineaires numeriques.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 S = sparse([1 1; 1 1]);
@@ -32,11 +35,13 @@ r = sprank(S)
 
 ```
 
+
 ```matlab
 S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
 r = sprank(S)
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -44,8 +49,8 @@ r = sprank(S)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

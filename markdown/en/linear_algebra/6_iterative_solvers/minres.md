@@ -28,17 +28,20 @@ Minimum residual method for symmetric or Hermitian sparse systems.
 
 ## 📄 Description
 
-<b>minres</b> solves <b>A \* x = b</b> with a minimum residual Krylov method for sparse symmetric or Hermitian matrices.
 
-The method is useful for symmetric or Hermitian indefinite systems.
+<b>minres</b> solves <b>A \* x = b</b> with a minimum residual Krylov method for sparse symmetric or Hermitian matrices. 
 
-The method supports sparse double, single, complex double, and complex single matrices.
+The method is useful for symmetric or Hermitian indefinite systems. 
 
-Preconditioners can be diagonal vectors, sparse triangular factors, sparse or dense square matrices, or function handles returning vectors. They should preserve the symmetric or Hermitian effective problem.
+The method supports sparse double, single, complex double, and complex single matrices. 
+
+Preconditioners can be diagonal vectors, sparse triangular factors, sparse or dense square matrices, or function handles returning vectors. They should preserve the symmetric or Hermitian effective problem. 
 
 If any compatible input, preconditioner, or initial guess is complex, the iteration is performed in the matching complex class.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = sparse([0 1; 1 0]);
@@ -46,7 +49,6 @@ b = [1; 2];
 [x, flag, relres, iter] = minres(A, b, 1e-12, 20)
 
 ```
-
 Solve with a dense diagonal preconditioner.
 
 ```matlab
@@ -55,7 +57,6 @@ b = [15; 10; 10];
 M = diag(diag(full(A)));
 [x, flag] = minres(A, b, 1e-12, 20, M)
 ```
-
 Solve with split matrix preconditioners.
 
 ```matlab
@@ -66,15 +67,16 @@ M2 = diag([2 2 3]);
 [x, flag, relres, iter] = minres(A, b, 1e-12, 20, M1, M2)
 ```
 
+
 ## 🔗 See also
 
-[pcg](../../linear_algebra/pcg.md), [gmres](../../linear_algebra/gmres.md).
+[pcg](../../linear_algebra/6_iterative_solvers/pcg.md), [gmres](../../linear_algebra/6_iterative_solvers/gmres.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                      |
-| ------- | ----------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                     |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | added single, complex single, preconditioner, initial guess, and breakdown coverage |
 
 <!--

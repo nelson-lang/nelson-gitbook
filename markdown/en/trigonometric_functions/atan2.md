@@ -17,13 +17,17 @@ Computes the four-quadrant inverse tangent.
 
 ## 📄 Description
 
+
 <b>atan2</b> computes the four-quadrant inverse tangent.
 
 ## 💡 Example
 
+
+
 ```matlab
 atan2(1, 0)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ atan2(1, 0)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

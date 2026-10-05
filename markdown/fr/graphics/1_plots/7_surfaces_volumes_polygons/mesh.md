@@ -28,11 +28,14 @@ Tracé de surface en maillage (mesh).
 
 ## 📄 Description
 
-<b>mesh</b> crée un maillage 3D (wireframe).
+
+<b>mesh</b> crée un maillage 3D (wireframe). 
 
 Vous pouvez personnaliser l'apparence du tracé avec différentes options comme la couleur, l'éclairage et l'ombrage.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -42,8 +45,8 @@ Z = sin(R) ./ R;
 mesh(X, Y, Z)
 axis square
 ```
-
 <img src="mesh_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -58,17 +61,17 @@ xlabel('Real')
 ylabel('Imaginary')
 zlabel('Magnitude')
 ```
-
 <img src="mesh_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -1,0 +1,57 @@
+#import "nelson_help.typ": *
+
+= isvalid <handle:isvalid>
+
+Retourne vrai pour les handles valides.
+
+== Syntaxe
+
+- #raw("res = isvalid(h)");
+
+== Argument d'entrée
+
+/ h: un objet handle ou un tableau de handles
+
+== Argument de sortie
+
+/ res: un scalaire logique ou un tableau logique de meme taille que h
+
+== Description
+
+#strong[isvalid]; renvoie vrai pour les handles valides et faux pour les handles invalides par delete.
+
+ Supprimer une variable avec clear n'invalide pas les autres alias vers le meme objet handle.
+
+ Pour les tableaux de handles, le resultat a la meme taille que le tableau d'entree.
+
+
+== Exemple
+
+Verifier un tableau de handles classdef.
+
+``````matlab
+d = [tempdir(), 'nelson_help_isvalid/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpIsValidCounter.m'], ["classdef NelsonHelpIsValidCounter < handle"; "  properties"; "    Count = 0"; "  end"; "end"]);
+addpath(d);
+h(3) = NelsonHelpIsValidCounter();
+isvalid(h)
+delete(h(2));
+isvalid(h)
+``````
+
+
+== Voir aussi
+
+#nlink(<types:isa>)[isa];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+  [2.0.0], [resultat pour les tableaux de handles documente],
+)
+
+// Auteur: Allan CORNET

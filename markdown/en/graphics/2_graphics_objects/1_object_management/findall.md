@@ -23,11 +23,14 @@ Find graphics objects, including hidden handles.
 
 ## 📄 Description
 
-<b>findall</b> searches the graphics object hierarchy like <b>findobj</b>, but includes objects whose <b>HandleVisibility</b> is <b>'off'</b> or <b>'callback'</b>.
+
+<b>findall</b> searches the graphics object hierarchy like <b>findobj</b>, but includes objects whose <b>HandleVisibility</b> is <b>'off'</b> or <b>'callback'</b>. 
 
 When the search starts from <b>groot</b>, hidden figures are traversed even when <b>ShowHiddenHandles</b> is <b>'off'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 close all
@@ -35,15 +38,16 @@ f = figure('Visible', 'off', 'HandleVisibility', 'off', 'Tag', 'hiddenFigure');
 h = findall(groot(), 'Tag', 'hiddenFigure')
 ```
 
+
 ## 🔗 See also
 
 [findobj](../../../graphics/2_graphics_objects/1_object_management/findobj.md), [allchild](../../../graphics/2_graphics_objects/1_object_management/allchild.md), [groot](../../../graphics/2_graphics_objects/1_object_management/groot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

@@ -25,9 +25,12 @@ Liste les variables en mémoire ou dans un fichier .nh5 ou .mat.
 
 ## 📄 Description
 
+
 <b>who</b> affiche les noms des variables courantes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 clear
@@ -38,14 +41,15 @@ who
 s = who()
 ```
 
+
 ## 🔗 Voir aussi
 
 [what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [whos](../memory_manager/whos.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

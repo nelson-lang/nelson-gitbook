@@ -11,11 +11,14 @@ Fit a discriminant analysis classifier.
 
 ## 📄 Description
 
-<b>fitcdiscr</b> creates a <b>ClassificationDiscriminant</b> object from numeric predictors <b>X</b> and class labels <b>Y</b>.
+
+<b>fitcdiscr</b> creates a <b>ClassificationDiscriminant</b> object from numeric predictors <b>X</b> and class labels <b>Y</b>. 
 
 Name-value arguments include <b>ClassNames</b>, <b>Prior</b>, <b>DiscrimType</b>, <b>Gamma</b>, and <b>Delta</b>. Supported discriminant types are linear, quadratic, diaglinear, and diagquadratic. Prediction returns posterior class scores.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [0 0; 0 1; 1 0; 1 1; 5 5; 5 6; 6 5; 6 6];
@@ -24,13 +27,14 @@ mdl = fitcdiscr(X, Y);
 [label, score] = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 See also
 
-[fitcknn](../../statistics/fitcknn.md), [fitcnb](../../statistics/fitcnb.md), [grp2idx](../../statistics/grp2idx.md).
+[fitcknn](../../statistics/6_classification/fitcknn.md), [fitcnb](../../statistics/6_classification/fitcnb.md), [grp2idx](../../statistics/6_classification/grp2idx.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

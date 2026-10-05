@@ -20,13 +20,17 @@ Interpolation par spline cubique.
 
 ## 📄 Description
 
+
 <b>spline</b> evalue une spline cubique not-a-knot ou retourne sa forme polynomiale par morceaux.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 yq = spline(1:4, [0 1 0 1], [1.5 2.5])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,7 +38,7 @@ yq = spline(1:4, [0 1 0 1], [1.5 2.5])
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,6 +21,7 @@ Estimate a 2-D registration transformation from images.
 
 ## 📄 Description
 
+
 imregtform estimates a small 2-D registration transform without external dependencies. Translation uses phase correlation. Rigid, similarity and affine modes use a deterministic angle, scale and shear search scored by the selected metric.
 
 ## 💡 Example
@@ -40,16 +41,16 @@ figure; subplot(1,3,1); imagesc(I); axis image; title('Moving');
 subplot(1,3,2); imagesc(J); axis image; title('Fixed');
 subplot(1,3,3); imagesc(K); axis image; title('Registered');
 ```
-
 <img src="imregtform_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imregconfig](../../../image_processing/imregconfig.md), [imregcorr](../../../image_processing/imregcorr.md), [imregister](../../../image_processing/imregister.md), [imwarp](../../../image_processing/imwarp.md).
+[imregconfig](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregconfig.md), [imregcorr](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregcorr.md), [imregister](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregister.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

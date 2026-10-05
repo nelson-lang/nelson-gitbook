@@ -18,13 +18,17 @@ Evaluate expression in string in base scope
 
 ## 📄 Description
 
+
 Evaluate expression in string in base scope.
 
 ## 💡 Example
 
+
+
 ```matlab
 edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

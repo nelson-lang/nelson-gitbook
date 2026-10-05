@@ -20,9 +20,12 @@ Fréquence naturelle et rapport d'amortissement.
 
 ## 📄 Description
 
+
 La fonction <b>damp(sys)</b> fournit les fréquences naturelles (<b>wn</b>) et les rapports d'amortissement (<b>zeta</b>) associés aux pôles du système représenté par <b>sys</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sys = tf([2, 5, 1], [1, 0, 2, -6]);
@@ -30,14 +33,15 @@ sys = tf([2, 5, 1], [1, 0, 2, -6]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[esort](../../control_system/esort.md), [pole](../../control_system/pole.md).
+[esort](../../control_system/6_matrix_computations/esort.md), [pole](../../control_system/1_dynamic_system_models/pole.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

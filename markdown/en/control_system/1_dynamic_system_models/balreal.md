@@ -20,11 +20,14 @@ Gramian-based balancing of state-space realizations.
 
 ## 📄 Description
 
-<b>balreal(sys)</b> calculates a balanced realization, denoted as <b>sysb</b>, for the stable segment of the linear time-invariant (LTI) model <b>sys</b>.
+
+<b>balreal(sys)</b> calculates a balanced realization, denoted as <b>sysb</b>, for the stable segment of the linear time-invariant (LTI) model <b>sys</b>. 
 
 This process is applicable to both continuous and discrete systems. If <b>sys</b> is not initially in state-space form, the function automatically converts it to state space using <b>ss</b> before proceeding with the balanced realization.
 
 ## 💡 Example
+
+
 
 ```matlab
 sys = ss([-1, 0; 0.1, -3], [1, 0]', [0, 1], 0);
@@ -32,13 +35,14 @@ sys = ss([-1, 0; 0.1, -3], [1, 0]', [0, 1], 0);
 
 ```
 
+
 ## 🔗 See also
 
-[gram](../../control_system/gram.md).
+[gram](../../control_system/6_matrix_computations/gram.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

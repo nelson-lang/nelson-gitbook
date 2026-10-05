@@ -19,18 +19,22 @@ Discrete uniform random numbers
 
 ## 📄 Description
 
+
 <b>unidrnd</b> generates discrete uniform random integers from 1 to <b>n</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = unidrnd(5, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

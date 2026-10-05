@@ -17,14 +17,18 @@ Unaire plus, opérateur +
 
 ## 📄 Description
 
+
 <b>C = uplus(A)</b> effectue l'opération unaire plus, c.-à-d. +A.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = -3;
 +M
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ M = -3;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

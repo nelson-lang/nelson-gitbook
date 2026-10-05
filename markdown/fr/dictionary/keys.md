@@ -17,11 +17,14 @@ Clés du dictionnaire.
 
 ## 📄 Description
 
-<b>k = keys(d)</b> récupère un tableau contenant les clés du dictionnaire spécifié,<b>d</b>.
+
+<b>k = keys(d)</b> récupère un tableau contenant les clés du dictionnaire spécifié,<b>d</b>. 
 
 <b>k = keys(d, 'cell')</b> renvoie éventuellement les clés sous forme de tableau cellulaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -32,14 +35,15 @@ k = keys(d, 'cell')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [values](../dictionary/values.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

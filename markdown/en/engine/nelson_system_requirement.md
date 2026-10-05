@@ -4,39 +4,47 @@ System Requirements by platforms.
 
 ## 📄 Description
 
-<b>Linux</b>:
 
-<b>Operating system</b>: Ubuntu 24.04 LTS, Ubuntu 22.04 LTS, Ubuntu 20.04 LTS, Fedora, ArchLinux, NixOs
+<b>Linux</b>: 
 
-<b>Processor</b>: Any Intel or AMD x86-64 processor.
+<b>Operating system</b>: Ubuntu 24.04 LTS, Ubuntu 22.04 LTS, Ubuntu 20.04 LTS, Fedora, ArchLinux, NixOs 
 
-<b>RAM</b>: See Operating System Requirements (16 GB recommended or more).
+<b>Processor</b>: Any Intel or AMD x86-64 processor. 
 
-<b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended.
+<b>RAM</b>: See Operating System Requirements (16 GB recommended or more). 
 
-<b>Graphics</b>: A hardware-accelerated GPU with OpenGL support and at least 1GB of memory is recommended.
+<b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended. 
 
-<b>Windows</b>:
+<b>Graphics</b>: A hardware-accelerated GPU with OpenGL support and at least 1GB of memory is recommended. 
 
-<b>Operating system</b>: Windows 10, 11 or Windows Server 2022.
+ 
 
-<b>Processor</b>: Any Intel or AMD x86-64 processor with AVX2 instructions set (CPU released from 2015 onwards).
+<b>Windows</b>: 
 
-<b>RAM</b>: See Operating System Requirements (16 GB recommended or more).
+<b>Operating system</b>: Windows 10, 11 or Windows Server 2022. 
 
-<b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended.
+<b>Processor</b>: Any Intel or AMD x86-64 processor with AVX2 instructions set (CPU released from 2015 onwards). 
 
-<b>Graphics</b>: A hardware-accelerated GPU with OpenGL support and at least 1GB of memory is recommended.
+<b>RAM</b>: See Operating System Requirements (16 GB recommended or more). 
 
-<b>MacOs</b>:
+<b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended. 
 
-<b>Operating system</b>: macOS Tahoe, macOS Sequoia, macOS Sonoma, macOS Ventura.
+<b>Graphics</b>: A hardware-accelerated GPU with OpenGL support and at least 1GB of memory is recommended. 
 
-<b>Processor</b>: Any Intel processor support by Apple and any M-series chip.
+ 
 
-<b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended.
+<b>MacOs</b>: 
 
-<b>Graphics</b>: Any Mac capable of running macOS Ventura has a GPU that can run Nelson.
+<b>Operating system</b>: macOS Tahoe, macOS Sequoia, macOS Sonoma, macOS Ventura. 
+
+<b>Processor</b>: Any Intel processor support by Apple and any M-series chip. 
+
+<b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended. 
+
+<b>Graphics</b>: Any Mac capable of running macOS Ventura has a GPU that can run Nelson. 
+
+
+
 
 ## 🔗 See also
 
@@ -44,9 +52,9 @@ System Requirements by platforms.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.13.0  | initial version |
+| 1.13.0   | initial version |
 
 <!--
 ## 👤 Author

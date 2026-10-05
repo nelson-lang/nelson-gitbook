@@ -16,9 +16,10 @@ Create calendar durations containing whole weeks.
 
 ## 📄 Description
 
-Create calendar durations containing whole weeks.
 
-calweeks stores weeks in the day component of calendarDuration. It is useful for date arithmetic that should remain in calendar-duration form.
+Create calendar durations containing whole weeks. 
+
+calweeks stores weeks in the day component of calendarDuration. It is useful for date arithmetic that should remain in calendar-duration form. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -31,13 +32,14 @@ datetime(2024, 1, 1) + calweeks(2)
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

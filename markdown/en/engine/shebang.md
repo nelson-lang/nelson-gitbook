@@ -4,9 +4,12 @@ On Unix, Linux operating systems, Parses the rest of the script's initial line a
 
 ## 📄 Description
 
+
 On Unix, Linux and MacOs X, shebang allows to execute directly a NelSon script.
 
 ## 💡 Example
+
+
 
 ```matlab
 #!nelson-adv-cli -q -f
@@ -17,13 +20,14 @@ exit()
 
 ```
 
+
 ## 🔗 See also
 
 [executable](../engine/executable.md), [argv](../engine/argv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

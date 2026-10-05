@@ -17,17 +17,20 @@ Tableau de colormap base sur l'ordre des couleurs de lignes.
 
 ## 📄 Description
 
+
 <b>lines</b> retourne une colormap basee sur l'ordre de couleurs par defaut des axes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('lines');
 ```
-
 <img src="lines.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,9 +38,9 @@ colormap('lines');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

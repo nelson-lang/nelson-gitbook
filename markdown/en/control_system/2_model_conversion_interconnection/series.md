@@ -19,15 +19,18 @@ Series connection of two models.
 
 ## 📄 Description
 
-<b>series</b> function links two model objects in a sequential manner.
 
-It is versatile and can accept various types of models.
+<b>series</b> function links two model objects in a sequential manner. 
 
-However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times.
+It is versatile and can accept various types of models. 
+
+However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times. 
 
 Static gains are treated as neutral and can be defined using regular matrices.
 
 ## 💡 Example
+
+
 
 ```matlab
 [A, B, C, D] = ord2(1, 3);
@@ -40,13 +43,14 @@ sys = series(sys1, sys2, outputs1, inputs2)
 
 ```
 
+
 ## 🔗 See also
 
-[feedback](../../control_system/feedback.md), [append](../../control_system/append.md).
+[feedback](../../control_system/2_model_conversion_interconnection/feedback.md), [append](../../control_system/2_model_conversion_interconnection/append.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

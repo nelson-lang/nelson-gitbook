@@ -25,11 +25,14 @@ Peaks function
 
 ## 📄 Description
 
-<b>peaks</b> function has the form:
+
+<b>peaks</b> function has the form: 
 
 <b>f(x, y) = 3\*(1-x)^2\*exp(-x^2 - (y+1)^2) - 10\*(x/5 - x^3 - y^5)\*exp(-x^2-y^2) - 1/3\*exp(-(x+1)^2 - y^2)</b>
 
 ## 💡 Example
+
+
 
 ```matlab
 x = -2:0.5:2;
@@ -39,13 +42,14 @@ Z = peaks(X, Y)
 
 ```
 
+
 ## 🔗 See also
 
-[meshgrid](../elementary_functions/meshgrid.md).
+[meshgrid](../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -12,7 +12,8 @@ Objet racine graphique.
 
 ## 📄 Description
 
-<b>groot</b> retourne l'objet racine graphique.
+
+<b>groot</b> retourne l'objet racine graphique. 
 
 Voir [proprietes de groot](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.groot.properties.md) pour la liste complete des proprietes.
 
@@ -20,10 +21,13 @@ Les valeurs par defaut racine utilisent des noms de la forme <b>Default</b><i>Ob
 
 ## 💡 Exemple
 
+
+
 ```matlab
 g = groot()
 g.ScreenDepth
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ g.ScreenDepth
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

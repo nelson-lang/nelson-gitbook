@@ -12,25 +12,26 @@ Terminate Nelson application
 
 ## 📄 Description
 
-<b>quit</b> terminates current Nelson application.
 
-<b>quit('cancel')</b> command is designed specifically for utilization within a finish.m script, preventing the termination process.
+<b>quit</b> terminates current Nelson application. 
 
-Its functionality is restricted to this context.
+<b>quit('cancel')</b> command is designed specifically for utilization within a finish.m script, preventing the termination process. 
 
-On the other hand,<b>quit('force')</b> disregards the finish.m script and immediately concludes Nelson.
+Its functionality is restricted to this context. 
 
-Employ this syntax when you need to override the finish script, ensuring a smooth exit in case the script poses obstacles to quitting.
+On the other hand,<b>quit('force')</b> disregards the finish.m script and immediately concludes Nelson. 
 
-When you use <b>quit(code)</b>, Nelson exits with the specified value as the exit code.
+Employ this syntax when you need to override the finish script, ensuring a smooth exit in case the script poses obstacles to quitting. 
 
-If you append "force" to this command <b>quit(code, 'force')</b> it enforces an immediate termination, bypassing finish.m and incorporating the provided exit code.
+When you use <b>quit(code)</b>, Nelson exits with the specified value as the exit code. 
 
-The exit code, denoted by "code" and specified as a signed integer, determines the status of Nelson termination.
+If you append "force" to this command <b>quit(code, 'force')</b> it enforces an immediate termination, bypassing finish.m and incorporating the provided exit code. 
 
-On Windows® platforms, Nelson furnishes exit codes within the range of INT_MIN to INT_MAX (-2147483647 to 2147483647).
+The exit code, denoted by "code" and specified as a signed integer, determines the status of Nelson termination. 
 
-On Linux® and macOS platforms, Nelson confines exit codes to the range of 0 to 255.
+On Windows® platforms, Nelson furnishes exit codes within the range of INT\_MIN to INT\_MAX (-2147483647 to 2147483647). 
+
+On Linux® and macOS platforms, Nelson confines exit codes to the range of 0 to 255. 
 
 This distinction should be considered when interpreting or handling exit codes in Nelson scripts or processes.
 
@@ -42,13 +43,14 @@ Beware this example will close Nelson
 quit
 ```
 
+
 ## 🔗 See also
 
 [exit](../core/exit.md), [finish.m](../engine/finish.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

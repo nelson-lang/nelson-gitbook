@@ -15,9 +15,12 @@ Vérifie que la valeur est un scalaire logique ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeLogicalScalar</b> vérifie que la valeur est un scalaire logique ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeLogicalScalar(true)
@@ -25,14 +28,15 @@ mustBeLogicalScalar([])
 mustBeLogicalScalar([true false])
 ```
 
+
 ## 🔗 Voir aussi
 
-[isscalar](../elementary_functions/isscalar.md), [islogical](../types/islogical.md).
+[isscalar](../elementary_functions/7_indexing_dimensions/isscalar.md), [islogical](../types/islogical.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

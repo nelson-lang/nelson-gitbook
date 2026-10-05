@@ -17,11 +17,12 @@ Converts unicode characters representation to bytes
 
 ## 📄 Description
 
-<b>unicode2native</b> converts unicode characters to an numeric array.
 
-<b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine).
+<b>unicode2native</b> converts unicode characters to an numeric array. 
 
-<b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set).
+<b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine). 
+
+<b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set). 
 
 List of characters set:http://www.iana.org/assignments/character-sets/character-sets.xhtml
 
@@ -31,17 +32,20 @@ ICU library
 
 ## 💡 Example
 
+
+
 ```matlab
 R = unicode2native('片仮名', 'SHIFT_JIS')
 ```
 
+
 ## 🔗 See also
 
-[native2unicode](../characters_encoding/native2unicode.md), [char](../string/char.md).
+[native2unicode](../characters_encoding/native2unicode.md), [char](../string/1_create_convert_text/char.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

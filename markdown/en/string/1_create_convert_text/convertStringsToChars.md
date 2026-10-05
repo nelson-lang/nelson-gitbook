@@ -19,22 +19,26 @@ Convert string arrays to character arrays.
 
 ## 📄 Description
 
+
 <b>convertStringsToChars</b> converts string arrays to character arrays.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = convertStringsToChars("Nelson")
 A = convertStringsToChars(["Nelson", string(NaN)])
 ```
 
+
 ## 🔗 See also
 
-[convertCharsToStringss](../../string/convertCharsToStrings.md), [cellstr](../../data_structures/cellstr.md), [string](../../string/string.md), [char](../../string/char.md).
+[convertCharsToStringss](../../string/1_create_convert_text/convertCharsToStrings.md), [cellstr](../../data_structures/cellstr.md), [string](../../string/1_create_convert_text/string.md), [char](../../string/1_create_convert_text/char.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

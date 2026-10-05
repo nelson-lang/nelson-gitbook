@@ -18,31 +18,32 @@ Exécute une chaîne comme commande.
 
 ## 📄 Description
 
+
 Exécute la chaîne fournie comme une commande dans l'environnement Nelson.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 execstr('b = ''hello''; disp(b);')
 ```
-
 Cet exemple échouera et renverra un message d'erreur.
 
 ```matlab
 execstr('b = yyyy')
 ```
-
 Cet exemple échouera et renverra un message d'erreur.
 
 ```matlab
 execstr('b = yyyy', 'nocatch')
 ```
-
 Cet exemple ne échouera pas et renverra faux.
 
 ```matlab
 r = execstr('b = yyyy', 'errcatch')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -50,8 +51,8 @@ r = execstr('b = yyyy', 'errcatch')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

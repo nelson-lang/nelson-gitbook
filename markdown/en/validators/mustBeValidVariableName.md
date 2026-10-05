@@ -15,9 +15,12 @@ Checks that value is valid variable name or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeValidVariableName</b> checks that value is valid variable name or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeValidVariableName('8t')
@@ -25,13 +28,14 @@ mustBeValidVariableName('t8')
 mustBeValidVariableName("t8")
 ```
 
+
 ## 🔗 See also
 
 [isvarname](../types/isvarname.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

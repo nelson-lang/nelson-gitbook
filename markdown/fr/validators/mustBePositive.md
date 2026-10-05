@@ -15,14 +15,18 @@ Vérifie que la valeur est positive ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBePositive</b> vérifie que la valeur est positive ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBePositive(1)
 mustBePositive(-1)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ mustBePositive(-1)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

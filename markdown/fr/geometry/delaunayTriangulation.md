@@ -15,6 +15,7 @@ Objet de triangulation de Delaunay
 
 ## 📄 Description
 
+
 <b>delaunayTriangulation</b> construit un objet de triangulation depuis des points et fournit des requetes geometriques associees.
 
 ## 💡 Exemple
@@ -31,14 +32,15 @@ hold on
 plot(IC(:, 1), IC(:, 2), '*r')
 ```
 
+
 ## 🔗 Voir aussi
 
 [triangulation](../geometry/triangulation.md), [delaunay](../geometry/delaunay.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

@@ -16,9 +16,11 @@ Return absolute sample times.
 
 ## 📄 Description
 
+
 <b>getabstime</b> Converts numeric sample times to absolute date strings using TimeInfo.StartDate and TimeInfo.Units.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2], [0; 1]);
@@ -27,13 +29,14 @@ getabstime(ts)
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

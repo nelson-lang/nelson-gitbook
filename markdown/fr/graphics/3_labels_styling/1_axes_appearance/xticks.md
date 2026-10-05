@@ -26,7 +26,8 @@ Definir ou obtenir les graduations de l'axe des x.
 
 ## 📄 Description
 
-<b>xticks</b> obtient ou definit les graduations de l'axe des x des axes courants.
+
+<b>xticks</b> obtient ou definit les graduations de l'axe des x des axes courants. 
 
 Specifier des graduations bascule le mode des graduations de l'axe des x sur <b>manual</b>.
 
@@ -43,13 +44,14 @@ ticks = xticks()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md), [xlim](../../../graphics/3_labels_styling/1_axes_appearance/xlim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

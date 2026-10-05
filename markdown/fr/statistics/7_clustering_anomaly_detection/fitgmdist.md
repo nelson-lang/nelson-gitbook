@@ -9,7 +9,8 @@ Ajuster une distribution de melange gaussien.
 
 ## 📄 Description
 
-<b>fitgmdist</b> ajuste un modele de melange gaussien a <b>k</b> composantes aux lignes de <b>X</b> avec l'algorithme esperance-maximisation.
+
+<b>fitgmdist</b> ajuste un modele de melange gaussien a <b>k</b> composantes aux lignes de <b>X</b> avec l'algorithme esperance-maximisation. 
 
 Les arguments nom-valeur incluent Start, Replicates, RegularizationValue, CovarianceType, SharedCovariance, MaxIter, TolFun et Options.
 
@@ -23,14 +24,15 @@ gm = fitgmdist(X, 2, 'Start', [1; 1; 2; 2]);
 idx = cluster(gm, X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[gmdistribution](../../statistics/gmdistribution.md), [kmeans](../../statistics/kmeans.md), [clusterdata](../../statistics/clusterdata.md).
+[gmdistribution](../../statistics/7_clustering_anomaly_detection/gmdistribution.md), [kmeans](../../statistics/7_clustering_anomaly_detection/kmeans.md), [clusterdata](../../statistics/7_clustering_anomaly_detection/clusterdata.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

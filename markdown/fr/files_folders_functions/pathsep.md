@@ -11,14 +11,16 @@ Renvoie le caractère séparateur de chemins pour la plateforme courante.
 - res - a string: ';' ou ':'
 
 ## 📄 Description
-
 <b>pathsep</b> renvoie ';' sur Windows et ':' sur les autres plateformes.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = pathsep
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +28,8 @@ A = pathsep
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

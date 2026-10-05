@@ -16,24 +16,28 @@ Déterminer les années bissextiles.
 
 ## 📄 Description
 
-<b>leapyear</b> determines leap years.
+
+<b>leapyear</b> determines leap years. 
 
 Leap years is done by Gregorian calendar rules.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 tf = leapyear([2020 2021 2022])
 ```
 
+
 ## 🔗 Voir aussi
 
-[datenum](../../time/datenum.md).
+[datenum](../../time/1_create_date_time_arrays/datenum.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

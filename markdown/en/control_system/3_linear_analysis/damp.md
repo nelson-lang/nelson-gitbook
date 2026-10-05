@@ -20,9 +20,12 @@ Natural frequency and damping ratio.
 
 ## 📄 Description
 
+
 The function <b>damp(sys)</b> provides the natural frequencies (<b>wn</b>) and damping ratios (<b>zeta</b>) associated with the poles of the system represented by <b>sys</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 sys = tf([2, 5, 1], [1, 0, 2, -6]);
@@ -30,13 +33,14 @@ sys = tf([2, 5, 1], [1, 0, 2, -6]);
 
 ```
 
+
 ## 🔗 See also
 
-[esort](../../control_system/esort.md), [pole](../../control_system/pole.md).
+[esort](../../control_system/6_matrix_computations/esort.md), [pole](../../control_system/1_dynamic_system_models/pole.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

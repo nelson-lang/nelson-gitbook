@@ -29,11 +29,14 @@ Two-sample t-test
 
 ## 📄 Description
 
-<b>ttest2</b> performs a two-sample t-test along the first non-singleton dimension unless <b>Dim</b> is specified.
+
+<b>ttest2</b> performs a two-sample t-test along the first non-singleton dimension unless <b>Dim</b> is specified. 
 
 NaN values are omitted independently from each tested sample.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [10 11 13 15 18];
@@ -41,13 +44,14 @@ y = [7 8 8 9];
 [h, p, ci, stats] = ttest2(x, y, 'Vartype', 'unequal', 'Tail', 'right');
 ```
 
+
 ## 🔗 See also
 
-[ttest](../../statistics/ttest.md), [mean](../../statistics/mean.md), [std](../../statistics/std.md).
+[ttest](../../statistics/3_hypothesis_tests/ttest.md), [mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [std](../../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

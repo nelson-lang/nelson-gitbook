@@ -15,20 +15,23 @@ Renvoie vrai si la variable var est un tableau d'entiers non signés 64 bits.
 - res - un logique : vrai ou faux
 
 ## 📄 Description
-
 <b>isuint64</b> renvoie 1 logique si l'argument est un tableau d'entiers non signés 64 bits et 0 logique sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
 res = isuint64(A)
 ```
 
+
 ```matlab
 B = uint64(3);
 res = isuint64(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +39,8 @@ res = isuint64(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

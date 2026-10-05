@@ -18,9 +18,12 @@ Intersection ensembliste de deux tableaux.
 
 ## 📄 Description
 
+
 <b>intersect(A, B)</b> retourne les valeurs triees presentes dans les deux tableaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [5 7 1];
@@ -28,14 +31,15 @@ B = [3 1 1];
 C = intersect(A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
 [union](../data_analysis/union.md), [setdiff](../data_analysis/setdiff.md), [setxor](../data_analysis/setxor.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

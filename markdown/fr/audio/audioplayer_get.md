@@ -1,11 +1,11 @@
-# audioplayer_get
+# audioplayer\_get
 
 Obtient la valeur de propriété de l'interface audioplayer.
 
 ## 📝 Syntaxe
 
 - v = get(h, propertyname)
-- v = audioplayer_get(h, propertyname)
+- v = audioplayer\_get(h, propertyname)
 - v = h.propertyname
 
 ## 📥 Argument d'entrée
@@ -19,9 +19,12 @@ Obtient la valeur de propriété de l'interface audioplayer.
 
 ## 📄 Description
 
+
 La fonction retourne la valeur de la propriété spécifiée dans la chaîne, propertyname.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -30,14 +33,15 @@ playObj.Running
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [audioplayer_set](../audio/audioplayer_set.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

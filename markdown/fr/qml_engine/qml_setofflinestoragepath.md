@@ -1,25 +1,29 @@
-# qml_setofflinestoragepath
+# qml\_setofflinestoragepath
 
 Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne.
 
 ## 📝 Syntaxe
 
-- qml_setofflinestoragepath(path_data)
+- qml\_setofflinestoragepath(path\_data)
 
 ## 📥 Argument d'entrée
 
-- path_data - une chaîne
+- path\_data - une chaîne
 
 ## 📄 Description
+
 
 Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 qml_setofflinestoragepath(tmpdir())
-
+ 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -27,8 +31,8 @@ qml_setofflinestoragepath(tmpdir())
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

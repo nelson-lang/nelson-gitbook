@@ -8,9 +8,11 @@ Time series object function.
 
 ## 📄 Description
 
+
 <b>horzcat</b> operates on timeseries, tscollection, or tsdata metadata objects.
 
 ## 💡 Example
+
 
 ```matlab
 ts1 = timeseries([1; 2], [10; 11], 'Name', 'a');
@@ -20,13 +22,14 @@ gettimeseriesnames(tsc)
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md), [tscollection](../../time/tscollection.md).
+[timeseries](../../time/8_timeseries/timeseries.md), [tscollection](../../time/8_timeseries/tscollection.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

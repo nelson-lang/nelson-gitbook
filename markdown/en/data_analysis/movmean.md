@@ -19,22 +19,26 @@ Moving mean.
 
 ## 📄 Description
 
+
 <b>movmean</b> computes mean values over a centered moving window.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmean(A, 3)
 ```
 
+
 ## 🔗 See also
 
-[mean](../statistics/mean.md).
+[mean](../statistics/1_descriptive_statistics_visualization/mean.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

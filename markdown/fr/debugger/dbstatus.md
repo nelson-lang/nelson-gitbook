@@ -13,14 +13,15 @@ Lister tous les points d'arrêt lors du débogage.
 
 ## 📄 Description
 
-<b>dbstatus</b> liste tous les points d'arrêt actuellement définis.
 
-L'affectation de la sortie à une variable <b>b</b> vous permet de sauvegarder et de restaurer les points d'arrêt ultérieurement en utilisant <b>dbstop(b)</b>.
+<b>dbstatus</b> liste tous les points d'arrêt actuellement définis. 
+
+L'affectation de la sortie à une variable <b>b</b> vous permet de sauvegarder et de restaurer les points d'arrêt ultérieurement en utilisant <b>dbstop(b)</b>. 
 
 Chaque élément de la structure <b>b</b> contient les champs suivants :
 
-- <b>name</b>: Nom de la fonction
-- <b>file</b>: Chemin complet vers le fichier contenant les points d'arrêt
+- <b>name</b>: Nom de la fonction 
+- <b>file</b>: Chemin complet vers le fichier contenant les points d'arrêt 
 - <b>line</b>: Vecteur des numéros de ligne des points d'arrêt
 
 ## 💡 Exemples
@@ -33,7 +34,6 @@ dbstop in myfile
 dbstatus
 
 ```
-
         Sauvegarder les points d'arrêt actuels et les restaurer ultérieurement.
 
 ```matlab
@@ -46,15 +46,16 @@ dbstop(b)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dbstop](../debugger/dbstop.md), [dbclear](../debugger/dbclear.md), [dbquit](../debugger/dbquit.md), [dbstack](../debugger/dbstack.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

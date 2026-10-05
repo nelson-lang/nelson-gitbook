@@ -18,6 +18,7 @@ Ajoute une propriete personnalisee a une table.
 
 ## 📄 Description
 
+
 <b>addprop</b> ajoute une propriete personnalisee dans <b>T.Properties.CustomProperties</b>. Le type suit les proprietes personnalisees de table: <b>'table'</b> ou <b>'variable'</b>.
 
 ## 💡 Exemple
@@ -31,14 +32,15 @@ T.Properties.CustomProperties.Source = 'demo';
 T.Properties.CustomProperties.Source
 ```
 
+
 ## 🔗 Voir aussi
 
-[rmprop](../../table/rmprop.md), [table](../../table/table.md).
+[rmprop](../../table/4_sort_filter_rearrange/rmprop.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -24,9 +24,12 @@ Hampel outlier filtering.
 
 ## 📄 Description
 
+
 <b>hampel</b> replaces outliers by the local median.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Hampel outlier filtering.
 
 ```
 
+
 ## 🔗 See also
 
-[medfilt1](../../signal_processing/medfilt1.md).
+[medfilt1](../../signal_processing/1_signal_generation_preprocessing/medfilt1.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

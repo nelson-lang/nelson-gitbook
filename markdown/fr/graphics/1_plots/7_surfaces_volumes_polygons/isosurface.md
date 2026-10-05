@@ -29,7 +29,8 @@ Extraire une isosurface depuis des donnees volumiques.
 
 ## 📄 Description
 
-<b>isosurface</b> extrait une surface triangulaire ou les donnees volumiques atteignent une valeur scalaire demandee. Sans argument de sortie, la surface est affichee comme un objet patch dans les axes courants.
+
+<b>isosurface</b> extrait une surface triangulaire ou les donnees volumiques atteignent une valeur scalaire demandee. Sans argument de sortie, la surface est affichee comme un objet patch dans les axes courants. 
 
 L'option <b>'noshare'</b> ignore la reduction des sommets partages. L'option <b>'verbose'</b> est acceptee pour compatibilite.
 
@@ -43,8 +44,8 @@ v = x.^2 + y.^2 + z.^2;
 isosurface(x, y, z, v, 1);
 axis equal;
 ```
-
 <img src="isosurface_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

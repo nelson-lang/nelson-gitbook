@@ -26,9 +26,12 @@ Change sample rate by a rational factor.
 
 ## 📄 Description
 
+
 <b>resample</b> changes a signal sample rate by filtering between upsampling and downsampling stages.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -36,13 +39,14 @@ y = resample(1:10, 3, 2);
 
 ```
 
+
 ## 🔗 See also
 
-[upfirdn](../../signal_processing/upfirdn.md), [decimate](../../signal_processing/decimate.md).
+[upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md), [decimate](../../signal_processing/1_signal_generation_preprocessing/decimate.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

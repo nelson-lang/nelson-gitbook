@@ -1,4 +1,4 @@
-# compiler_installer_tutorial
+# compiler\_installer\_tutorial
 
 Build, install and run a Windows application.
 
@@ -8,19 +8,20 @@ Build, install and run a Windows application.
 
 ## 📄 Description
 
-This tutorial requires Windows and Inno Setup 6 on the build machine. Execute all three blocks in one session. They use a temporary destination without uninstall registration or global shortcuts.
 
-The first block builds the application, the second creates an offline installer with its minimal runtime, and the third installs and runs it without an external runtime. Expected output is INSTALLER_TUTORIAL_OK. Rebuild applications with the current launchers to use adjacent-runtime discovery.
+This tutorial requires Windows and Inno Setup 6 on the build machine. Execute all three blocks in one session. They use a temporary destination without uninstall registration or global shortcuts. 
 
-For normal distribution, deliver the generated .exe and run the installer interactively. Omit /PORTABLE=1 to register the application and its shortcut normally. Installation requests elevation by default; /CURRENTUSER selects per-user installation.
+The first block builds the application, the second creates an offline installer with its minimal runtime, and the third installs and runs it without an external runtime. Expected output is INSTALLER\_TUTORIAL\_OK. Rebuild applications with the current launchers to use adjacent-runtime discovery. 
 
-The last block uses the noninteractive deployment arguments and writes a new log. The alternative -inputFile accepts a UTF-8 file with agreeToLicense=yes first, then applicationFolder=absolute-path and outputFile=new-log-path on separate lines. desktopShortcut and startMenuShortcut can be set to true only through that file; both default to false. /PORTABLE=1 always disables global shortcuts.
+For normal distribution, deliver the generated .exe and run the installer interactively. Omit /PORTABLE=1 to register the application and its shortcut normally. Installation requests elevation by default; /CURRENTUSER selects per-user installation. 
 
-RuntimeDelivery='none' delivers only the application when a compatible runtime is already available. RuntimeDelivery='web' is not yet available. Set PackageType='zip' for a ZIP containing the installer. Installer AdditionalFiles installs external files; use build AdditionalFiles to embed resources into the executable.
+The last block uses the noninteractive deployment arguments and writes a new log. The alternative -inputFile accepts a UTF-8 file with agreeToLicense=yes first, then applicationFolder=absolute-path and outputFile=new-log-path on separate lines. desktopShortcut and startMenuShortcut can be set to true only through that file; both default to false. /PORTABLE=1 always disables global shortcuts. 
 
-The installed directory contains an unins\*.exe uninstaller. Uninstallation removes distributed files but retains files subsequently created by the user. Generation does not modify the built executable or the source Nelson runtime.
+RuntimeDelivery='none' delivers only the application when a compatible runtime is already available. RuntimeDelivery='web' is not yet available. Set PackageType='zip' for a ZIP containing the installer. Installer AdditionalFiles installs external files; use build AdditionalFiles to embed resources into the executable. 
 
-To share a runtime, use the same offline installer with -applicationFolder "C:\\Apps\\Hello" -runtimeFolder "C:\\NelsonRuntimes" /CURRENTUSER, after -agreeToLicense yes. Do not use /PORTABLE=1 or -destinationFolder. The runtime is registered beneath C:\\NelsonRuntimes in its engine-fingerprint subdirectory. Other compatible applications can use that parent and extend its dependency inventory. Uninstall a previous private installation before switching; the shared runtime survives application removal and has its own unins\*.exe.
+The installed directory contains an unins\*.exe uninstaller. Uninstallation removes distributed files but retains files subsequently created by the user. Generation does not modify the built executable or the source Nelson runtime. 
+
+To share a runtime, use the same offline installer with -applicationFolder "C:\\Apps\\Hello" -runtimeFolder "C:\\NelsonRuntimes" /CURRENTUSER, after -agreeToLicense yes. Do not use /PORTABLE=1 or -destinationFolder. The runtime is registered beneath C:\\NelsonRuntimes in its engine-fingerprint subdirectory. Other compatible applications can use that parent and extend its dependency inventory. Uninstall a previous private installation before switching; the shared runtime survives application removal and has its own unins\*.exe. 
 
 The second block also rebuilds the installer in a different output directory and compares its SHA-256 digest. With unchanged inputs and the same Inno Setup distribution, both unsigned installers are byte-identical. See the reproducibility conditions in [compiler.package.installer](../compiler/compiler.package.installer.md).
 
@@ -37,7 +38,6 @@ filewrite(entry, 'function hello_install(); disp(''INSTALLER_TUTORIAL_OK''); end
 result = compiler.build.standaloneApplication(entry, ...
   'OutputDir', fullfile(work, 'build'));
 ```
-
 Step 2
 
 ```matlab
@@ -55,7 +55,6 @@ compiler.package.installer(result, 'Options', options);
 repeatedSetup = fullfile(options.OutputDir, [options.InstallerName, '.exe']);
 asserts.isequal(sha256(setup, '-file'), sha256(repeatedSetup, '-file'));
 ```
-
 Step 3
 
 ```matlab
@@ -77,10 +76,10 @@ end
 disp(output);
 ```
 
+
 ## 🔗 See also
 
 [compiler.package.installer](../compiler/compiler.package.installer.md), [compiler.package.InstallerOptions](../compiler/compiler.package.InstallerOptions.md).
-
 <!--
 ## 👤 Author
 

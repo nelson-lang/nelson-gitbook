@@ -26,22 +26,26 @@ Normal mean and standard deviation estimates
 
 ## 📄 Description
 
+
 <b>normfit</b> estimates normal distribution mean and standard deviation parameters.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 3 5];
 [muhat, sigmahat] = normfit(x);
 ```
 
+
 ## 🔗 See also
 
-[normlike](../../statistics/normlike.md), [normpdf](../../statistics/normpdf.md), [normcdf](../../statistics/normcdf.md).
+[normlike](../../statistics/2_probability_distributions/normlike.md), [normpdf](../../statistics/2_probability_distributions/normpdf.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

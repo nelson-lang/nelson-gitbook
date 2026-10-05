@@ -17,21 +17,25 @@ Geometric mean and variance
 
 ## 📄 Description
 
+
 <b>geostat</b> returns the mean and variance of the geometric distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = geostat(0.25);
 ```
 
+
 ## 🔗 See also
 
-[geopdf](../../statistics/geopdf.md), [geocdf](../../statistics/geocdf.md), [geoinv](../../statistics/geoinv.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geocdf](../../statistics/2_probability_distributions/geocdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

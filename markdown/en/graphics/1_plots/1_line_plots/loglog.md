@@ -27,11 +27,14 @@ Log-log scale plot.
 
 ## 📄 Description
 
-<b>loglog(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and the y-axis.
+
+<b>loglog(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and the y-axis. 
 
 <b>loglog</b> has the exact same syntax as the <b>plot</b> command.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -40,8 +43,8 @@ y = 2 .^ x;
 loglog(x,y)
 grid on
 ```
-
 <img src="loglog_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -50,8 +53,8 @@ y = 10 .^ x;
 loglog(x,y,'s','MarkerFaceColor',[0 0.447 0.741])
 grid on
 ```
-
 <img src="loglog_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -59,7 +62,7 @@ grid on
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

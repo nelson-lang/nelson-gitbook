@@ -17,7 +17,8 @@ Determine whether names are categories.
 
 ## 📄 Description
 
-<b>iscategory</b> tests whether requested names are present in the category list of <b>A</b>.
+
+<b>iscategory</b> tests whether requested names are present in the category list of <b>A</b>. 
 
 Undefined elements do not create a category and are not matched by this function.
 
@@ -29,13 +30,14 @@ Check several category names.
 A = categorical({'red','blue'}); tf = iscategory(A, {'red','green'})
 ```
 
+
 ## 🔗 See also
 
 [categories](../categorical/categories.md), [addcats](../categorical/addcats.md), [removecats](../categorical/removecats.md), [isundefined](../categorical/isundefined.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

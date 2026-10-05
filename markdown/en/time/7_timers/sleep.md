@@ -12,11 +12,14 @@ Suspend code execution.
 
 ## 📄 Description
 
-<b>sleep</b> stops Nelson processing any instruction for a specified number of seconds.
+
+<b>sleep</b> stops Nelson processing any instruction for a specified number of seconds. 
 
 CTRL-C interruption stops <b>sleep</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 tic();sleep(1);toc()
@@ -24,13 +27,14 @@ tic();sleep(0.1);toc()
 tic();sleep(0.01);toc()
 ```
 
+
 ## 🔗 See also
 
-[tic](../../time/tic.md), [toc](../../time/toc.md).
+[tic](../../time/7_timers/tic.md), [toc](../../time/7_timers/toc.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

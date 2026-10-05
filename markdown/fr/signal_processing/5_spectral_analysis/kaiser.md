@@ -18,9 +18,12 @@ Fenêtre de Kaiser.
 
 ## 📄 Description
 
+
 <b>kaiser</b> retourne une fenêtre de Kaiser de M points.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ w = kaiser(5, 2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[kaiserord](../../signal_processing/kaiserord.md), [fir1](../../signal_processing/fir1.md).
+[kaiserord](../../signal_processing/5_spectral_analysis/kaiserord.md), [fir1](../../signal_processing/4_digital_filters/fir1.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

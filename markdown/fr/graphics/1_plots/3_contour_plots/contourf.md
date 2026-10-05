@@ -28,7 +28,8 @@ Trace de contours remplis d'une matrice
 
 ## 📄 Description
 
-<b>contourf</b> trace des bandes de contours remplies pour les valeurs de <b>Z</b>. La matrice retournee correspond a la propriete <b>ContourMatrix</b> de l'objet.
+
+<b>contourf</b> trace des bandes de contours remplies pour les valeurs de <b>Z</b>. La matrice retournee correspond a la propriete <b>ContourMatrix</b> de l'objet. 
 
 L'objet contour prend en charge les proprietes de ligne, de remplissage, de transparence, d'etiquetage et de niveaux, notamment <b>FaceColor</b>, <b>FaceAlpha</b>, <b>ShowText</b>, <b>LabelColor</b>, <b>LabelSpacing</b>, <b>LabelFormat</b>, <b>TextList</b>, <b>TextStep</b> et <b>ZLocation</b>.
 
@@ -42,7 +43,6 @@ figure();
 [M,h] = contourf(X,Y,Z,10);
 h.FaceAlpha = 0.75;
 ```
-
 Tracer des contours remplis.
 
 ```matlab
@@ -58,8 +58,8 @@ xlabel('X');
 ylabel('Y');
 colormap parula;
 ```
-
 <img src="contourf.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -67,9 +67,9 @@ colormap parula;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

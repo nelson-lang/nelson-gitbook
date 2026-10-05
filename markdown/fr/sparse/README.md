@@ -1,10 +1,16 @@
 # Type sparse
 
+
+    
 Le module Type Sparse fournit des outils pour créer et manipuler des matrices creuses dans Nelson.
 
+    
 Il prend en charge le stockage et le calcul efficaces pour les matrices avec un grand nombre d'éléments zéro, y compris la conversion entre les représentations creuses et pleines, la génération de matrices creuses spéciales, et l'accès aux éléments non nuls.
 
+    
 Ce module permet une gestion efficace en mémoire de grands ensembles de données et des opérations numériques optimisées sur des structures creuses.
+
+  
 
 ## Functions
 
@@ -25,3 +31,4 @@ Ce module permet une gestion efficace en mémoire de grands ensembles de donnée
 - [sprandn](sprandn.md) - Matrice sparse aléatoire à distribution normale.
 - [sprank](sprank.md) - Rang structurel d'une matrice.
 - [symrcm](symrcm.md) - Permutation Reverse Cuthill-McKee.
+

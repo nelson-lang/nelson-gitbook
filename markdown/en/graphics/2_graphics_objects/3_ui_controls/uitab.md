@@ -19,6 +19,7 @@ Create tab container.
 
 ## 📄 Description
 
+
 <b>t = uitab</b> creates a tab inside a tab group and returns the Tab object. If the given parent is not a TabGroup, an implicit uitabgroup is created. Main properties: <b>Title</b>, <b>BackgroundColor</b>, <b>ForegroundColor</b>, <b>Scrollable</b>. The tab geometry is managed by the parent TabGroup (read-only <b>Position</b>).
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ uitab(tg, 'Title', 'Options');
 uibutton(t, 'Text', 'Apply', 'Position', [25 45 100 28]);
 drawnow();
 ```
-
 <img src="uitab_example.svg" align="middle"/>
 uitab
 
@@ -46,13 +46,14 @@ b = uibutton(t, 'Text', 'Apply', 'Position', [20 20 100 22]);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

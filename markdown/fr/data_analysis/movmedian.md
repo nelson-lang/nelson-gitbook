@@ -19,23 +19,27 @@ Mediane mobile.
 
 ## 📄 Description
 
+
 <b>movmedian</b> calcule les medianes sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmedian(A, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[median](../statistics/median.md).
+[median](../statistics/1_descriptive_statistics_visualization/median.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

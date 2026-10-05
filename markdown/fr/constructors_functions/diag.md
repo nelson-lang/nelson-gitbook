@@ -21,14 +21,18 @@ Obtenir les éléments diagonaux d'une matrice ou créer une matrice diagonale.
 
 ## 📄 Description
 
+
 <b>diag</b> retourne les éléments diagonaux d'une matrice ou crée une matrice diagonale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 diag(eye(3))
 diag(diag(eye(3)))
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +40,8 @@ diag(diag(eye(3)))
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

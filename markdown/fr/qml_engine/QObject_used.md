@@ -1,10 +1,10 @@
-# QObject_used
+# QObject\_used
 
 Renvoie la liste des poignées (handles) QObject actuellement utilisées.
 
 ## 📝 Syntaxe
 
-- r = QObject_used()
+- r = QObject\_used()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Renvoie la liste des poignées (handles) QObject actuellement utilisées.
 
 ## 📄 Description
 
+
 Renvoie la liste des poignées (handles) QObject actuellement utilisées.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = QObject_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ used = QObject_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

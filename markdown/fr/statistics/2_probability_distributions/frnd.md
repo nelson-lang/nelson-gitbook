@@ -20,19 +20,23 @@ Nombres aleatoires F
 
 ## 📄 Description
 
+
 <b>frnd</b> genere des valeurs aleatoires de loi F.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = frnd(5, 7, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

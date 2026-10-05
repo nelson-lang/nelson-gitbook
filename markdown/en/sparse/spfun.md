@@ -17,11 +17,14 @@ Apply a function to the nonzero elements of a sparse matrix.
 
 ## 📄 Description
 
-<b>spfun</b> evaluates <b>fun</b> only on the nonzero elements of <b>S</b>, which avoids applying the function to the many stored zeros and preserves the sparse structure.
+
+<b>spfun</b> evaluates <b>fun</b> only on the nonzero elements of <b>S</b>, which avoids applying the function to the many stored zeros and preserves the sparse structure. 
 
 The function handle must accept and return a column vector of the same length. Any resulting zero value is pruned from the sparse result.
 
 ## 💡 Examples
+
+
 
 ```matlab
 S = sparse([2 0 -3; 0 4 0]);
@@ -29,19 +32,21 @@ R = spfun(@(x) x .* 10, S)
 
 ```
 
+
 ```matlab
 S = sparse([2 0; 0 4]);
 R = spfun(@(x) 1 ./ x, S)
 
 ```
 
+
 ## 🔗 See also
 
-[spones](../sparse/spones.md), [nonzeros](../sparse/nonzeros.md), [find](../elementary_functions/find.md).
+[spones](../sparse/spones.md), [nonzeros](../sparse/nonzeros.md), [find](../elementary_functions/7_indexing_dimensions/find.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -5,22 +5,26 @@ Build help of Nelson's modules.
 ## 📝 Syntax
 
 - buildhelp()
-- buildhelp(module_name)
+- buildhelp(module\_name)
 
 ## 📥 Input argument
 
-- module_name - a string: module name (module must be loaded).
+- module\_name - a string: module name (module must be loaded).
 
 ## 📄 Description
+
 
 <b>buildhelp</b> generates help files.
 
 ## 💡 Example
 
+
+
 ```matlab
 buildhelp();
 buildhelp('core');
 ```
+
 
 ## 🔗 See also
 
@@ -28,10 +32,10 @@ buildhelp('core');
 
 ## 🕔 History
 
-| Version | 📄 Description               |
-| ------- | ---------------------------- |
-| 1.0.0   | initial version              |
-| 1.17.0  | Subchapters management added |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.17.0   | Subchapters management added |
 
 <!--
 ## 👤 Author

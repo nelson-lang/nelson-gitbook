@@ -20,13 +20,17 @@ Deplace un fichier ou un dossier.
 
 ## 📄 Description
 
+
 <b>movefile</b> copie la source vers la destination puis supprime la source lorsque la copie reussit.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [status, msg] = movefile('source.txt', 'destination.txt')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,7 +38,7 @@ Deplace un fichier ou un dossier.
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

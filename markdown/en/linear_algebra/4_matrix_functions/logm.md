@@ -16,11 +16,14 @@ Computes the matrix logarithm of a square matrix.
 
 ## 📄 Description
 
-<b>expm(x)</b> computes the matrix logarithm of x.
+
+<b>expm(x)</b> computes the matrix logarithm of x. 
 
 The computation is performed by first block-diagonalizing x and then applying a Pade approximation on each block.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -28,9 +31,10 @@ res = logm(A)
 res = logm(A+i)
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

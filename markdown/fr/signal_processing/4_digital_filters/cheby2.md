@@ -22,9 +22,12 @@ Conception de filtre numerique Chebyshev type II.
 
 ## 📄 Description
 
+
 <b>cheby2</b> concoit des filtres numeriques Chebyshev type II passe-bas, passe-haut, passe-bande et coupe-bande.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ Conception de filtre numerique Chebyshev type II.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[cheby1](../../signal_processing/cheby1.md), [ellip](../../signal_processing/ellip.md).
+[cheby1](../../signal_processing/4_digital_filters/cheby1.md), [ellip](../../signal_processing/4_digital_filters/ellip.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

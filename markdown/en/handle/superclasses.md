@@ -18,6 +18,7 @@ Names of the superclasses of a class.
 
 ## 📄 Description
 
+
 <b>superclasses</b> returns the names of all visible superclasses of a class, whether specified by name or by an object of that class. Ancestors are returned nearest first, and each name appears once.
 
 ## 💡 Example
@@ -33,13 +34,14 @@ addpath(d);
 superclasses('NelsonHelpDeriv')
 ```
 
+
 ## 🔗 See also
 
 [metaclass](../handle/metaclass.md), [properties](../handle/properties.md), [methods](../handle/methods.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

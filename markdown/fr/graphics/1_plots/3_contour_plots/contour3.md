@@ -28,13 +28,16 @@ Tracé de contours 3D d'une matrice
 
 ## 📄 Description
 
-<b>contour3(Z)</b> génère un tracé de contours 3D illustrant les isolignes de la matrice Z, où Z représente les hauteurs sur le plan x-y.
 
-Les coordonnées x et y dans le plan correspondent respectivement aux indices de colonnes et de lignes de Z.
+<b>contour3(Z)</b> génère un tracé de contours 3D illustrant les isolignes de la matrice Z, où Z représente les hauteurs sur le plan x-y. 
+
+Les coordonnées x et y dans le plan correspondent respectivement aux indices de colonnes et de lignes de Z. 
 
 Pour spécifier les coordonnées x et y pour les valeurs de Z, utilisez <b>contour3(X,Y,Z)</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -42,8 +45,8 @@ f = figure();
 [M, C ]= contour3(X,Y,Z);
 C.LineWidth = 3;
 ```
-
 <img src="contour3_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -51,8 +54,8 @@ C.LineWidth = 3;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.3.0   | version initiale |
 
 <!--

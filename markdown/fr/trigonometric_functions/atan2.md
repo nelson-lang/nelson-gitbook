@@ -16,14 +16,16 @@ Calcule la tangente inverse à quatre quadrants.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>atan2</b> calcule la tangente inverse à quatre quadrants.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 atan2(1, 0)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ atan2(1, 0)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

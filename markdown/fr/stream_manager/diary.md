@@ -25,30 +25,34 @@ Journal d'une session.
 
 ## 📄 Description
 
-<b>diary</b> crée un journal des entrées clavier et du texte de sortie résultant.
 
-<b>diary</b> active ou désactive le mode journal.
+<b>diary</b> crée un journal des entrées clavier et du texte de sortie résultant. 
 
-<b>diary('off')</b> arrête l'enregistrement de la session dans le fichier journal.
+<b>diary</b> active ou désactive le mode journal. 
 
-<b>diary('on')</b> commence l'enregistrement d'une session dans un fichier nommé 'diary' dans le répertoire de travail courant.
+<b>diary('off')</b> arrête l'enregistrement de la session dans le fichier journal. 
 
-<b>diary('set', 'Diary', onoff)</b> permet de démarrer ou d'arrêter le journal.
+<b>diary('on')</b> commence l'enregistrement d'une session dans un fichier nommé 'diary' dans le répertoire de travail courant. 
 
-<b>onoff = diary('get', 'Diary')</b> renvoie l'état 'on' ou 'off' du journal.
+<b>diary('set', 'Diary', onoff)</b> permet de démarrer ou d'arrêter le journal. 
 
-<b>diary(filename)</b> enregistre la session dans le fichier nommé filename.
+<b>onoff = diary('get', 'Diary')</b> renvoie l'état 'on' ou 'off' du journal. 
 
-<b>filename = diary('get', 'DiaryFile')</b> renvoie le nom de fichier utilisé pour le journal.
+<b>diary(filename)</b> enregistre la session dans le fichier nommé filename. 
+
+<b>filename = diary('get', 'DiaryFile')</b> renvoie le nom de fichier utilisé pour le journal. 
 
 <b>diary('set', 'DiaryFile', filename))</b> définit le nom de fichier pour le journal.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 filename = diary('get', 'DiaryFile')
 onoff = diary('get', 'Diary')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -56,8 +60,8 @@ onoff = diary('get', 'Diary')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

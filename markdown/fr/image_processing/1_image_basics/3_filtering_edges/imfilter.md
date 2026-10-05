@@ -19,6 +19,7 @@ Filtre une image avec un noyau 2D.
 
 ## 📄 Description
 
+
 Filtre une image avec un noyau 2D. Par defaut, le filtre est applique par correlation. Les options incluent same, full, valid, replicate, symmetric, circular, corr et conv. Les options textuelles sont insensibles a la casse.
 
 ## 💡 Exemple
@@ -32,17 +33,17 @@ J=imfilter(I,H,'replicate');
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Filtered');
 ```
-
 <img src="imfilter_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[fspecial](../../../image_processing/fspecial.md), [imgaussfilt](../../../image_processing/imgaussfilt.md), [padarray](../../../image_processing/padarray.md).
+[fspecial](../../../image_processing/1_image_basics/3_filtering_edges/fspecial.md), [imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md), [padarray](../../../image_processing/1_image_basics/3_filtering_edges/padarray.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -22,14 +22,17 @@ Discriminant analysis classification model.
 
 ## 📄 Description
 
-ClassificationDiscriminant stores a discriminant analysis classifier trained from predictor data and class labels.
+
+ClassificationDiscriminant stores a discriminant analysis classifier trained from predictor data and class labels. 
 
 Create this object with fitcdiscr. Use predict to classify new observations when the model supports prediction.
 
 ## Used function(s)
 
+
     fitcdiscr
     predict
+  
 
 ## 💡 Example
 
@@ -42,13 +45,14 @@ mdl = fitcdiscr(X, Y);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitcdiscr](../../statistics/fitcdiscr.md).
+[predict](../../statistics/5_regression/predict.md), [fitcdiscr](../../statistics/6_classification/fitcdiscr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

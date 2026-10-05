@@ -9,19 +9,23 @@ Trouver le chemin de CMake
 ## 📤 Argument de sortie
 
 - status - a logical.
-- cmake_path - a string: path of CMake or ' '.
+- cmake\_path - a string: path of CMake or ' '.
 
 ## 📄 Description
 
-Trouve le chemin de CMake.
+
+Trouve le chemin de CMake. 
 
 CMake est utilisé en interne pour générer les makefiles permettant de construire des bibliothèques dynamiques à la volée.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [status, cmake_path] = findcmake()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -29,8 +33,8 @@ CMake est utilisé en interne pour générer les makefiles permettant de constru
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

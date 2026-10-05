@@ -1,13 +1,13 @@
-# assert_istrue
+# assert\_istrue
 
 Nom historique de asserts.istrue.
 
 ## 📝 Syntaxe
 
-- assert_istrue(condition)
-- assert_istrue(condition, message)
-- [res, msg] = assert_istrue(condition)
-- [res, msg] = assert_istrue(condition, message)
+- assert\_istrue(condition)
+- assert\_istrue(condition, message)
+- [res, msg] = assert\_istrue(condition)
+- [res, msg] = assert\_istrue(condition, message)
 
 ## 📥 Argument d'entrée
 
@@ -21,7 +21,8 @@ Nom historique de asserts.istrue.
 
 ## 📄 Description
 
-<b>assert_istrue</b> est conservee pour compatibilite.
+
+<b>assert\_istrue</b> est conservee pour compatibilite. 
 
 Pour la documentation complete, utiliser [asserts.istrue](../assert_functions/asserts.istrue.md).
 
@@ -32,12 +33,12 @@ Appel historique
 ```matlab
 assert_istrue(3 == 3);
 ```
-
 Appel canonique
 
 ```matlab
 asserts.istrue(true);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,9 +46,9 @@ asserts.istrue(true);
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                    |
-| ------- | ------------------------------------------------- |
-| 1.0.0   | version initiale                                  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | documentee comme nom historique de asserts.istrue |
 
 <!--

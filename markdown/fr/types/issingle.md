@@ -16,19 +16,24 @@ Renvoie vrai si la variable var est une matrice de type single.
 
 ## 📄 Description
 
+
 <b>issingle</b> renvoie 1 logique (vrai) si l'argument est une matrice de type single et 0 logique (faux) sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3.6;
 res = issingle(A)
 ```
 
+
 ```matlab
 B = single([1 ; 3]);
 res = issingle(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +41,8 @@ res = issingle(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

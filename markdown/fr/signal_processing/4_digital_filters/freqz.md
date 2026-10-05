@@ -24,9 +24,12 @@ Réponse fréquentielle d'un filtre numérique.
 
 ## 📄 Description
 
+
 <b>freqz</b> évalue la fonction de transfert définie par B et A sur le cercle unité.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Réponse fréquentielle d'un filtre numérique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[phasez](../../signal_processing/phasez.md), [grpdelay](../../signal_processing/grpdelay.md).
+[phasez](../../signal_processing/4_digital_filters/phasez.md), [grpdelay](../../signal_processing/4_digital_filters/grpdelay.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

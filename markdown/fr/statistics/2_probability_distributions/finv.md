@@ -18,23 +18,27 @@ Fonction de repartition inverse F
 
 ## 📄 Description
 
+
 <b>finv</b> calcule les probabilites inverses de queue inferieure de la distribution F.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = finv(p, 5, 20);
 ```
 
+
 ## 🔗 Voir aussi
 
-[fcdf](../../statistics/fcdf.md), [fpdf](../../statistics/fpdf.md).
+[fcdf](../../statistics/2_probability_distributions/fcdf.md), [fpdf](../../statistics/2_probability_distributions/fpdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -26,16 +26,20 @@ Valeur quadratique moyenne.
 
 ## 📄 Description
 
-<b>rms</b> calcule sqrt(mean(abs(X) .^ 2)) sur la dimension choisie :
+
+<b>rms</b> calcule sqrt(mean(abs(X) .^ 2)) sur la dimension choisie : 
 $$\mathrm{RMS}(X) = \sqrt{ \frac{1}{N} \sum_{n=1}^{N} |x_n|^2 }$$
+ 
 
-où N est le nombre d'éléments sur cette dimension.
+où N est le nombre d'éléments sur cette dimension. 
 
-- Si <b>X</b> est un vecteur, <b>Y</b> est un scalaire.
-- Si <b>X</b> est une matrice, <b>Y</b> est un vecteur ligne contenant la valeur de chaque colonne.
-- Si <b>X</b> est un tableau multidimensionnel, <b>Y</b> est calculé sur la première dimension dont la taille n'est pas 1, sauf si une dimension est indiquée.
 
-<b>Classe du résultat :</b> le carré et la moyenne sont toujours calculés en double, donc une entrée entière ne sature jamais. <b>"native"</b> renvoie la classe de l'entrée, <b>"double"</b> renvoie un double, et <b>"default"</b> renvoie un double pour une entrée entière et la classe de l'entrée sinon. Une entrée logique n'est pas une classe entière et renvoie un double.
+
+- Si <b>X</b> est un vecteur, <b>Y</b> est un scalaire. 
+- Si <b>X</b> est une matrice, <b>Y</b> est un vecteur ligne contenant la valeur de chaque colonne. 
+- Si <b>X</b> est un tableau multidimensionnel, <b>Y</b> est calculé sur la première dimension dont la taille n'est pas 1, sauf si une dimension est indiquée. 
+
+<b>Classe du résultat :</b> le carré et la moyenne sont toujours calculés en double, donc une entrée entière ne sature jamais. <b>"native"</b> renvoie la classe de l'entrée, <b>"double"</b> renvoie un double, et <b>"default"</b> renvoie un double pour une entrée entière et la classe de l'entrée sinon. Une entrée logique n'est pas une classe entière et renvoie un double. 
 
 <b>Valeurs manquantes :</b> les NaN sont pris en compte par défaut. Utiliser <b>"omitnan"</b> ou <b>"omitmissing"</b> pour les écarter.
 
@@ -51,7 +55,6 @@ y = rms(x)
 % y = 0.7071
 
 ```
-
 une valeur par colonne
 
 ```matlab
@@ -61,7 +64,6 @@ y = rms(x)
 % y = [5.8023 3.4157 5.0000]
 
 ```
-
 une valeur par ligne
 
 ```matlab
@@ -71,7 +73,6 @@ y = rms(x, 2)
 % y = [12.1450; 8.9163; 4.8477]
 
 ```
-
 en écartant les valeurs manquantes
 
 ```matlab
@@ -81,7 +82,6 @@ y = rms(x, "omitnan")
 % y = [1.7700 0.2404 nan 2.0903]
 
 ```
-
 entrée entière avec un résultat natif
 
 ```matlab
@@ -94,15 +94,16 @@ D = rms(M)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[peak2peak](../../signal_processing/peak2peak.md), [max](../../data_analysis/max.md), [min](../../data_analysis/min.md).
+[peak2peak](../../signal_processing/2_measurements_feature_extraction/peak2peak.md), [max](../../data_analysis/max.md), [min](../../data_analysis/min.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

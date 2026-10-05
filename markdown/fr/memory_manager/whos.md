@@ -25,9 +25,12 @@ Liste les variables en mémoire ou dans un fichier .nh5 ou .mat avec tailles et 
 
 ## 📄 Description
 
+
 <b>whos</b> affiche les variables courantes en mémoire ou dans un fichier .nh5 ou .mat.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 clear
@@ -41,14 +44,15 @@ whos([tempdir(), 'example_who.nh5'])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

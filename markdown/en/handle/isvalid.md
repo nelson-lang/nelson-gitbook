@@ -16,9 +16,10 @@ Return true for valid handles.
 
 ## 📄 Description
 
-<b>isvalid</b> returns true for valid handles and false for handles invalidated by delete.
 
-Clearing one variable does not invalidate other aliases to the same handle object.
+<b>isvalid</b> returns true for valid handles and false for handles invalidated by delete. 
+
+Clearing one variable does not invalidate other aliases to the same handle object. 
 
 For handle arrays, the result has the same size as the input array.
 
@@ -37,15 +38,16 @@ delete(h(2));
 isvalid(h)
 ```
 
+
 ## 🔗 See also
 
 [isa](../types/isa.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                 |
-| ------- | ------------------------------ |
-| 1.0.0   | initial version                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | handle array result documented |
 
 <!--

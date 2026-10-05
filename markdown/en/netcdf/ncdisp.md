@@ -20,7 +20,8 @@ Display a readable summary of a netCDF data source.
 
 ## 📄 Description
 
-ncdisp prints a human-readable summary of the netCDF source in the command window.
+
+ncdisp prints a human-readable summary of the netCDF source in the command window. 
 
 Use ncinfo when the metadata must be consumed by code.
 
@@ -35,13 +36,14 @@ ncwrite(filename, 'temperature', [1 2 3]);
 ncdisp(filename)
 ```
 
+
 ## 🔗 See also
 
 [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

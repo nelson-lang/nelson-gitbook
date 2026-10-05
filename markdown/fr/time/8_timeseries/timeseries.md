@@ -21,11 +21,13 @@ Cree des donnees de serie temporelle.
 
 ## 📄 Description
 
-<b>timeseries</b> stocke des donnees echantillonnees, des temps, des valeurs de qualite optionnelles, des metadonnees et des evenements.
+
+<b>timeseries</b> stocke des donnees echantillonnees, des temps, des valeurs de qualite optionnelles, des metadonnees et des evenements. 
 
 Les methodes couvrent selection, evenements, interpolation, synchronisation, statistiques, arithmetique, trace graphique et conversion vers timetable.
 
 ## 💡 Exemple
+
 
 ```matlab
 x = [-0.2 -0.3 13; -0.1 -0.4 15; NaN 2.8 17; 0.5 0.3 NaN; -0.3 -0.1 15];
@@ -34,14 +36,15 @@ getdatasamplesize(tsPosition)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tscollection](../../time/tscollection.md), [istimeseries](../../time/istimeseries.md), [timeseries2timetable](../../table/timeseries2timetable.md).
+[tscollection](../../time/8_timeseries/tscollection.md), [istimeseries](../../time/5_query_date_time_arrays/istimeseries.md), [timeseries2timetable](../../table/1_create_convert_tables/timeseries2timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

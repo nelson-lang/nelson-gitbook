@@ -17,13 +17,16 @@ Bernstein matrix
 
 ## 📄 Description
 
-<b>B = bernsteinMatrix(n, t)</b> constructs a Bernstein matrix<b>B</b> with dimensions length(t) - by - (n+1), where t is a vector.
 
-The Bernstein matrix is also referred to as the Bezier matrix.
+<b>B = bernsteinMatrix(n, t)</b> constructs a Bernstein matrix<b>B</b> with dimensions length(t) - by - (n+1), where t is a vector. 
+
+The Bernstein matrix is also referred to as the Bezier matrix. 
 
 This function can calculate the points of a Bezier curve.
 
 ## 💡 Example
+
+
 
 ```matlab
 t = 0:1/100:1;
@@ -33,12 +36,12 @@ bezierCurve = B * P;
 plot3(bezierCurve(:,1), bezierCurve(:,2), bezierCurve(:,3))
 
 ```
-
 <img src="bernsteinMatrix.svg" align="middle"/>
+
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.5.0   | initial version |
 

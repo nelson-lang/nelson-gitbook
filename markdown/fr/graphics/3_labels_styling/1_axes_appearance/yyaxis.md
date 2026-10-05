@@ -17,17 +17,20 @@ Cree ou selectionne un axe avec deux axes y.
 
 ## 📄 Description
 
-<b>yyaxis</b> cree un graphique avec deux axes y et selectionne le cote actif. Si l'axe courant n'a pas encore deux axes y, un second est ajoute ; s'il n'y a pas d'axe courant, il est cree.
 
-Les deux cotes partagent le meme axe x mais chacun possede ses propres limites, couleur, echelle, direction, graduations, etiquette et enfants. Les proprietes dont le nom commence par <b>Y</b> (comme <b>YLim</b>, <b>YColor</b> ou <b>YLabel</b>) s'appliquent uniquement au cote actif. Interrogez <b>YAxisLocation</b> pour savoir quel cote est actif.
+<b>yyaxis</b> cree un graphique avec deux axes y et selectionne le cote actif. Si l'axe courant n'a pas encore deux axes y, un second est ajoute ; s'il n'y a pas d'axe courant, il est cree. 
 
-Par defaut, la regle de gauche utilise la premiere couleur du <b>ColorOrder</b> de l'axe et la regle de droite la deuxieme couleur.
+Les deux cotes partagent le meme axe x mais chacun possede ses propres limites, couleur, echelle, direction, graduations, etiquette et enfants. Les proprietes dont le nom commence par <b>Y</b> (comme <b>YLim</b>, <b>YColor</b> ou <b>YLabel</b>) s'appliquent uniquement au cote actif. Interrogez <b>YAxisLocation</b> pour savoir quel cote est actif. 
 
-Les deux regles sont aussi disponibles comme objets via la propriete <b>YAxis</b> de l'axe : <b>YAxis(1)</b> est la regle de gauche et <b>YAxis(2)</b> la regle de droite, quel que soit le cote actif.
+Par defaut, la regle de gauche utilise la premiere couleur du <b>ColorOrder</b> de l'axe et la regle de droite la deuxieme couleur. 
+
+Les deux regles sont aussi disponibles comme objets via la propriete <b>YAxis</b> de l'axe : <b>YAxis(1)</b> est la regle de gauche et <b>YAxis(2)</b> la regle de droite, quel que soit le cote actif. 
 
 <b>cla reset</b> supprime le second axe y et revient a un seul axe y.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -40,8 +43,8 @@ plot(x, 100 * cos(x))
 ylabel('cote droit')
 
 ```
-
 <img src="yyaxis.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -49,7 +52,7 @@ ylabel('cote droit')
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

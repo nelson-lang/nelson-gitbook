@@ -17,13 +17,17 @@ Fonction bêta
 
 ## 📄 Description
 
+
 <b>beta</b> calcule la fonction bêta B(Z,W) = gamma(Z).\*gamma(W)./gamma(Z+W).
 
 ## 💡 Exemple
 
+
+
 ```matlab
 B = beta(2, 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ B = beta(2, 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

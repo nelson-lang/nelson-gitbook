@@ -16,19 +16,24 @@ Renvoie vrai si la variable var est une matrice de type single ou double.
 
 ## 📄 Description
 
+
 <b>isfloat</b> renvoie 1 logique (vrai) si l'argument est une matrice en simple ou double précision et 0 logique (faux) sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
 res = isfloat(A)
 ```
 
+
 ```matlab
 A = single(3);
 res = isfloat(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +41,8 @@ res = isfloat(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

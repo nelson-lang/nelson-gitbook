@@ -1,0 +1,47 @@
+#import "nelson_help.typ": *
+
+= islogical <types:islogical>
+
+Return true if variable var is a logical.
+
+== Syntax
+
+- #raw("res = islogical(var)");
+
+== Input argument
+
+/ var: a variable
+
+== Output argument
+
+/ res: a logical: true or false
+
+== Description
+
+#strong[islogical]; returns a logical 1 if the argument is a logical array and a logical 0 otherwise.
+== Examples
+
+``````matlab
+A = 1;
+res = islogical(A)
+``````
+
+``````matlab
+B = logical(1);
+res = islogical(B)
+``````
+
+
+== See also
+
+#nlink(<logical:logical>)[logical];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [initial version],
+)
+
+// Author: Allan CORNET

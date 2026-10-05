@@ -1,0 +1,53 @@
+#import "nelson_help.typ": *
+
+= netcdf <netcdf:netcdf>
+
+Interface bas niveau du paquet NetCDF.
+
+== Syntaxe
+
+- #raw("netcdf.method(...)");
+- #raw("netcdf.getConstant(name)");
+
+== Argument d'entrée
+
+/ method: nom d'une operation NetCDF bas niveau statique.
+/ name: nom de constante accepte par getConstant.
+
+== Argument de sortie
+
+/ varargout: sorties renvoyees par l'operation bas niveau selectionnee.
+
+== Description
+
+netcdf est une classe qui regroupe les operations NetCDF bas niveau sous forme de methodes statiques.
+
+ Utilisez les fonctions haut niveau ncinfo, ncread, ncwrite et fonctions associees lorsque cela convient a la tache.
+
+
+== Fonction(s) utilisée(s)
+
+NetCDF C library
+
+== Exemple
+
+Interroger la version de la bibliotheque NetCDF liee.
+
+``````matlab
+versionText = netcdf.inqLibVers()
+``````
+
+
+== Voir aussi
+
+#nlink(<netcdf:ncinfo>)[ncinfo];, #nlink(<netcdf:ncread>)[ncread];, #nlink(<netcdf:ncwrite>)[ncwrite];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

@@ -18,18 +18,22 @@ Moyenne et variance uniformes discretes
 
 ## 📄 Description
 
+
 <b>unidstat</b> calcule la moyenne et la variance de la loi uniforme discrete sur les entiers de 1 a <b>n</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = unidstat([1 5 10]);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

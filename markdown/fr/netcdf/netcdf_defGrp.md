@@ -18,7 +18,8 @@ Cree un groupe dans un fichier netCDF.
 
 ## 📄 Description
 
-netcdf.defGrp expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.defGrp expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -34,14 +35,15 @@ gid = netcdf.defGrp(ncid, 'science');
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.create](../netcdf/netcdf.create.md), [netcdf.defDim](../netcdf/netcdf.defDim.md), [netcdf.defVar](../netcdf/netcdf.defVar.md).
+[netcdf.create](../netcdf/netcdf_create.md), [netcdf.defDim](../netcdf/netcdf_defDim.md), [netcdf.defVar](../netcdf/netcdf_defVar.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

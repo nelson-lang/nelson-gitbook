@@ -24,9 +24,10 @@ Donut chart object.
 
 ## 📄 Description
 
-<b>donutchart(data)</b> creates one donut chart object in the current figure.
 
-<b>InnerRadius</b> controls the hole radius as a fraction of the outer radius. <b>CenterLabel</b> draws text in the center of the hole.
+<b>donutchart(data)</b> creates one donut chart object in the current figure. 
+
+<b>InnerRadius</b> controls the hole radius as a fraction of the outer radius. <b>CenterLabel</b> draws text in the center of the hole. 
 
 See [donutchart properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.donutchart.properties.md) for the complete property list.
 
@@ -38,7 +39,6 @@ Donut chart with a center label.
 figure('Color', [1 1 1]);
 d = donutchart([4 3 2], ["A", "B", "C"], 'CenterLabel', '9');
 ```
-
 <img src="donutchart_1.svg" align="middle"/>
 Custom inner radius and colors.
 
@@ -47,8 +47,8 @@ figure('Color', [1 1 1]);
 d = donutchart([5 4 3 2], 'InnerRadius', 0.35, 'FaceAlpha', 0.75, ...
   'ColorOrder', [0.8 0.2 0.2; 0.2 0.7 0.3; 0.2 0.4 0.8]);
 ```
-
 <img src="donutchart_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -56,7 +56,7 @@ d = donutchart([5 4 3 2], 'InnerRadius', 0.35, 'FaceAlpha', 0.75, ...
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

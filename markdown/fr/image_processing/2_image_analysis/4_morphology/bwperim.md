@@ -18,6 +18,7 @@ Trouve les pixels de perimetre des objets binaires.
 
 ## 📄 Description
 
+
 Trouve les pixels de perimetre des objets binaires. Les connectivites prises en charge sont 4 et 8.
 
 ## 💡 Exemple
@@ -29,17 +30,17 @@ BW=false(64,64); BW(20:44,20:44)=true;
 P=bwperim(BW);
 figure; imagesc(P); g=linspace(0,1,64)'; colormap([g g g]); title('Perimeter');
 ```
-
 <img src="bwperim_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bwmorph](../../../image_processing/bwmorph.md), [bwboundaries](../../../image_processing/bwboundaries.md).
+[bwmorph](../../../image_processing/2_image_analysis/4_morphology/bwmorph.md), [bwboundaries](../../../image_processing/2_image_analysis/5_regions_boundaries/bwboundaries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

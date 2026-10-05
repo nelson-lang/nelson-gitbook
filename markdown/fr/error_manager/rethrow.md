@@ -12,9 +12,12 @@ relancer une erreur.
 
 ## 📄 Description
 
+
 <b>rethrow(MException)</b> relance l'erreur spécifiée par <b>MException</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -27,14 +30,15 @@ end
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [MException](../error_manager/MException.md), [throw](../error_manager/throw.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

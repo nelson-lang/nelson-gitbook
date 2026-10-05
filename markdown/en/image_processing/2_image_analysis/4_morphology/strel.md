@@ -31,6 +31,7 @@ Create a structuring element.
 
 ## 📄 Description
 
+
 Create a flat structuring element. Supported 2-D shapes include arbitrary, square, rectangle, line, disk, diamond and octagon. Supported 3-D shapes include arbitrary, cube, cuboid and sphere. The optional disk decomposition count n can be 0, 4, 6 or 8; Nelson currently returns the exact disk neighborhood. The octagon radius must be a nonnegative multiple of 3.
 
 ## 💡 Examples
@@ -41,7 +42,6 @@ Display a structuring element
 SE=strel('disk',8);
 figure; imagesc(SE.nhood); g=linspace(0,1,64)'; colormap([g g g]); title('Structuring element');
 ```
-
 <img src="strel_1.png" align="middle"/>
 Create diamond and arbitrary neighborhoods
 
@@ -49,7 +49,6 @@ Create diamond and arbitrary neighborhoods
 D = strel('diamond', 1);
 A = strel([0 1 0; 1 1 1; 0 1 0])
 ```
-
 Create a 3-D sphere neighborhood
 
 ```matlab
@@ -57,13 +56,14 @@ SE = strel('sphere', 1);
 sum(SE.nhood(:))
 ```
 
+
 ## 🔗 See also
 
-[imdilate](../../../image_processing/imdilate.md), [imerode](../../../image_processing/imerode.md), [imopen](../../../image_processing/imopen.md), [imclose](../../../image_processing/imclose.md).
+[imdilate](../../../image_processing/2_image_analysis/4_morphology/imdilate.md), [imerode](../../../image_processing/2_image_analysis/4_morphology/imerode.md), [imopen](../../../image_processing/2_image_analysis/4_morphology/imopen.md), [imclose](../../../image_processing/2_image_analysis/4_morphology/imclose.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

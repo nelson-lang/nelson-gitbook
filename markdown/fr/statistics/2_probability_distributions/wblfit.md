@@ -24,23 +24,27 @@ Estimation des parametres de la loi Weibull
 
 ## 📄 Description
 
+
 <b>wblfit</b> estime les parametres de la loi Weibull.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [phat, pci] = wblfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[wbllike](../../statistics/wbllike.md), [wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md).
+[wbllike](../../statistics/2_probability_distributions/wbllike.md), [wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

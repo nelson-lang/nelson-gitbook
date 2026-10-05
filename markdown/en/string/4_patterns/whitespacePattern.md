@@ -8,21 +8,25 @@ Pattern for whitespace characters.
 
 ## 📄 Description
 
+
 <b>whitespacePattern</b> Pattern for whitespace characters.
 
 ## 💡 Example
+
+
 
 ```matlab
 pat = whitespacePattern; extract("a b", pat)
 ```
 
+
 ## 🔗 See also
 
-[whitespaceBoundary](../../string/whitespaceBoundary.md), [alphanumericsPattern](../../string/alphanumericsPattern.md), [pattern](../../string/pattern.md).
+[whitespaceBoundary](../../string/4_patterns/whitespaceBoundary.md), [alphanumericsPattern](../../string/4_patterns/alphanumericsPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

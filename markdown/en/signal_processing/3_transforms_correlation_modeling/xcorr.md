@@ -23,9 +23,12 @@ Cross-correlation of discrete-time signals.
 
 ## 📄 Description
 
+
 <b>xcorr</b> computes auto-correlation or cross-correlation for one-dimensional signals.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -33,13 +36,14 @@ Cross-correlation of discrete-time signals.
 
 ```
 
+
 ## 🔗 See also
 
-[xcov](../../signal_processing/xcov.md), [xcorr2](../../signal_processing/xcorr2.md).
+[xcov](../../signal_processing/3_transforms_correlation_modeling/xcov.md), [xcorr2](../../signal_processing/3_transforms_correlation_modeling/xcorr2.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

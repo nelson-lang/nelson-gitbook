@@ -33,17 +33,20 @@ Inter process communicator.
 
 ## 📄 Description
 
-<b>ipc</b> allows to execute, get, put variables between multiple nelson's process.
 
-All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.
+<b>ipc</b> allows to execute, get, put variables between multiple nelson's process. 
 
-LIMITATION:
+All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning. 
 
-The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double.
+LIMITATION: 
+
+The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double. 
 
 Current limitation to limit memory usage.
 
 ## 💡 Examples
+
+
 
 ```matlab
 master_pid = getpid()
@@ -93,14 +96,17 @@ for p = current_pids
 end
 ```
 
+
 ```matlab
 ipc(getpid(), 'eval', 'dir')
 ```
+
 
 ```matlab
 ipc(getpid(), 'minimize', true)
 ipc(getpid(), 'minimize')
 ```
+
 
 ## 🔗 See also
 
@@ -108,7 +114,7 @@ ipc(getpid(), 'minimize')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

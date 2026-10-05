@@ -1,4 +1,4 @@
-# compiler_linux_runtime_tutorial
+# compiler\_linux\_runtime\_tutorial
 
 Tutorial: a shared minimal runtime on Linux.
 
@@ -8,11 +8,12 @@ Tutorial: a shared minimal runtime on Linux.
 
 ## 📄 Description
 
-Run these blocks in order on Linux with the optional compiler module installed. The .install contains only the common runtime, not the applications. This walkthrough uses a private configuration directory and a writable temporary destination; no administrator privileges or global PATH changes are needed.
 
-Both executables discover the installed runtime through their interpreter fingerprint registration. The example then removes the shared runtime with its independent uninstaller, leaving the application executables. Operation locks, a completion receipt and any user files remain in the destination.
+Run these blocks in order on Linux with the optional compiler module installed. The .install contains only the common runtime, not the applications. This walkthrough uses a private configuration directory and a writable temporary destination; no administrator privileges or global PATH changes are needed. 
 
-After an interrupted installation, rerun the same installer command with the same destination and XDG configuration. Do not delete .nelson-runtime/update.json to bypass recovery. See compiler.runtime.customInstaller for validation limits and retained temporary files.
+Both executables discover the installed runtime through their interpreter fingerprint registration. The example then removes the shared runtime with its independent uninstaller, leaving the application executables. Operation locks, a completion receipt and any user files remain in the destination. 
+
+After an interrupted installation, rerun the same installer command with the same destination and XDG configuration. Do not delete .nelson-runtime/update.json to bypass recovery. See compiler.runtime.customInstaller for validation limits and retained temporary files. 
 
 After an interrupted uninstallation, run .nelson-runtime/uninstall again. Its separate remove.json journal supports repeated recovery. A complete receipt means removal finished; the uninstaller removes itself after recording that state. Do not edit or delete the journal. A new installer can reuse the directory only when it contains no preserved user files or unrecognized leftovers.
 
@@ -31,7 +32,6 @@ filewrite(entryB, 'function shared_two(); disp(sin(0)); disp(''SHARED_TWO_OK'');
 first = compiler.build.standaloneApplication(entryA, 'OutputDir', fullfile(work, 'one'));
 second = compiler.build.standaloneApplication(entryB, 'OutputDir', fullfile(work, 'two'));
 ```
-
 2. Package the shared runtime and retain the applications
 
 ```matlab
@@ -46,7 +46,6 @@ copyfile(second.Files{1}, applications);
 applicationA = fullfile(applications, 'shared_one');
 applicationB = fullfile(applications, 'shared_two');
 ```
-
 3. Install, discover, run and uninstall
 
 ```matlab
@@ -82,10 +81,10 @@ clear restoreConfig restoreRoot restorePath restoreLibraries;
 disp('LINUX_SHARED_RUNTIME_TUTORIAL_OK');
 ```
 
+
 ## 🔗 See also
 
 [compiler.runtime.customInstaller](../compiler/compiler.runtime.customInstaller.md), [compiler_linux_installer_tutorial](../compiler/compiler_linux_installer_tutorial.md).
-
 <!--
 ## 👤 Author
 

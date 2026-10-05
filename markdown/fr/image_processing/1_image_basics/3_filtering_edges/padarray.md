@@ -21,6 +21,7 @@ Ajoute des marges a un tableau pour le filtrage ou la morphologie.
 
 ## 📄 Description
 
+
 Ajoute des marges a un tableau pour le filtrage ou la morphologie. Les methodes prises en charge incluent les constantes numeriques, replicate, symmetric et circular. La direction peut etre pre, post ou both. Les options textuelles sont insensibles a la casse.
 
 ## 💡 Exemple
@@ -33,17 +34,17 @@ P=padarray(I,[8 12],'replicate');
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(P); g=linspace(0,1,64)'; colormap([g g g]); title('Padded');
 ```
-
 <img src="padarray_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imfilter](../../../image_processing/imfilter.md), [medfilt2](../../../image_processing/medfilt2.md).
+[imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md), [medfilt2](../../../image_processing/1_image_basics/3_filtering_edges/medfilt2.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

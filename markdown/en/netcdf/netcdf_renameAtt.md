@@ -9,7 +9,7 @@ Work with netCDF attributes.
 ## 📥 Input argument
 
 - ncid - Open netCDF file or group identifier.
-- varid - Variable identifier, or NC_GLOBAL for a global attribute.
+- varid - Variable identifier, or NC\_GLOBAL for a global attribute.
 - attname - Attribute name.
 - attvalue - Attribute value.
 
@@ -19,7 +19,8 @@ Work with netCDF attributes.
 
 ## 📄 Description
 
-netcdf.renameAtt exposes low-level attribute operations.
+
+netcdf.renameAtt exposes low-level attribute operations. 
 
 Attributes store metadata such as units, titles, comments, scale factors, and valid ranges.
 
@@ -35,13 +36,14 @@ netcdf.renameAtt(ncid, netcdf.getConstant('NC_GLOBAL'), 'title', 'description');
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.putVar](../netcdf/netcdf.putVar.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.putVar](../netcdf/netcdf_putVar.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

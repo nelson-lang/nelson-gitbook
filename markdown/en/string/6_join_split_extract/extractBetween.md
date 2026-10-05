@@ -8,21 +8,25 @@ Extract text between boundaries.
 
 ## 📄 Description
 
+
 <b>extractBetween</b> Extract text between boundaries.
 
 ## 💡 Example
+
+
 
 ```matlab
 extractBetween("a[bc]d", "[", "]")
 ```
 
+
 ## 🔗 See also
 
-[extractAfter](../../string/extractAfter.md), [extractBefore](../../string/extractBefore.md), [extract](../../string/extract.md).
+[extractAfter](../../string/6_join_split_extract/extractAfter.md), [extractBefore](../../string/6_join_split_extract/extractBefore.md), [extract](../../string/6_join_split_extract/extract.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

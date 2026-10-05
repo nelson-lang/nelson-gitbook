@@ -16,27 +16,33 @@ Recombine les sorties de sous-systèmes conditionnels mutuellement exclusifs.
 
 ## 📄 Description
 
-Recombine les sorties de sous-systèmes conditionnels mutuellement exclusifs.
 
-Les entrées sont pilotées directement par des sous-systèmes conditionnels, dont un seul s'exécute à un pas donné. La sortie prend la valeur de l'entrée dont le sous-système source s'est exécuté à ce pas ; si aucune source ne s'est exécutée, elle conserve sa valeur précédente (à partir de <code>InitialOutput</code>). Si deux sources s'exécutent au même pas, le dernier port d'entrée l'emporte.
+Recombine les sorties de sous-systèmes conditionnels mutuellement exclusifs. 
 
-<b>Paramètres</b>
+Les entrées sont pilotées directement par des sous-systèmes conditionnels, dont un seul s'exécute à un pas donné. La sortie prend la valeur de l'entrée dont le sous-système source s'est exécuté à ce pas ; si aucune source ne s'est exécutée, elle conserve sa valeur précédente (à partir de <code>InitialOutput</code>). Si deux sources s'exécutent au même pas, le dernier port d'entrée l'emporte. 
 
-| Paramètre                  | Valeur par défaut |
-| -------------------------- | ----------------- |
-| <code>InitialOutput</code> | 0                 |
+<b>Paramètres</b> 
 
-<b>Caractéristiques du bloc</b>
+| Paramètre | Valeur par défaut | 
+| --- | --- | 
+| <code>InitialOutput</code> | 0 | 
 
-| Champ        | Valeur            |
-| ------------ | ----------------- |
-| Type de bloc | merge             |
-| Famille      | Blocs utilitaires |
-| Phases       | INIT, ALGEBRAIC   |
+ 
 
-<b>Capacites etendues</b>
+<b>Caractéristiques du bloc</b> 
+
+| Champ | Valeur |
+| --- | --- |
+| Type de bloc | merge | 
+| Famille | Blocs utilitaires | 
+| Phases | INIT, ALGEBRAIC | 
+
+ 
+
+<b>Capacites etendues</b> 
 
 Generation de code : prise en charge pour C et Rust.
+
 
 ## 🔗 Voir aussi
 
@@ -44,8 +50,8 @@ Generation de code : prise en charge pour C et Rust.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

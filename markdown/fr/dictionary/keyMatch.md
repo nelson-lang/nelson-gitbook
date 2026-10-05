@@ -17,11 +17,14 @@ Vérifie si deux clés de dictionnaire sont identiques.
 
 ## 📄 Description
 
-<b>tf = keyMatch(A, B)</b> renvoie <b>true</b> si les tableaux<b>A</b> et<b>B</b> ont des classes, propriétés, dimensions et valeurs identiques, et renvoie <b>false</b> sinon.
+
+<b>tf = keyMatch(A, B)</b> renvoie <b>true</b> si les tableaux<b>A</b> et<b>B</b> ont des classes, propriétés, dimensions et valeurs identiques, et renvoie <b>false</b> sinon. 
 
 Pour les classes personnalisées, la surcharge de <b>keyMatch</b> peut être nécessaire pour assurer une équivalence précise.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = {'a', 'b', 1};
@@ -33,14 +36,15 @@ keyMatch(A, C)
 keyMatch(B, D)
 ```
 
+
 ## 🔗 Voir aussi
 
 [keyHash](../dictionary/keyHash.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

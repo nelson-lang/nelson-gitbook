@@ -27,126 +27,132 @@ crée des descriptions textuelles pour les points de données.
 
 ## 📄 Description
 
-<b>text</b> crée du texte.
 
-Voir [proprietes de text](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.text.properties.md) pour la liste complete des proprietes.
+<b>text</b> crée du texte. 
 
-La propriété <b>Interpreter</b> choisit comment la chaîne <b>String</b> est analysée : <b>'tex'</b> (par défaut) affiche un sous-ensemble du balisage TeX (les caractères spéciaux ci-dessous, ainsi que les exposants <b>^{ }</b> et les indices <b>\_{ }</b>) ; <b>'none'</b> affiche le texte tel quel.
+Voir [proprietes de text](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.text.properties.md) pour la liste complete des proprietes. 
 
-La valeur <b>'latex'</b> est acceptée, mais un moteur de mise en page LaTeX complet (<b>\\frac</b>, <b>\\sqrt</b>, <b>\\int</b> avec bornes, matrices, etc.) n'est pas encore implémenté. Elle se rabat sur le pipeline <b>'tex'</b> après suppression d'une paire de délimiteurs mathématiques <b>$...$</b> entourants, de sorte que les symboles connus et les exposants/indices sont rendus tandis que les constructions non prises en charge apparaissent sous forme de texte source. Un interpréteur LaTeX complet est prévu pour une version future.
+La propriété <b>Interpreter</b> choisit comment la chaîne <b>String</b> est analysée : <b>'tex'</b> (par défaut) affiche un sous-ensemble du balisage TeX (les caractères spéciaux ci-dessous, ainsi que les exposants <b>^{ }</b> et les indices <b>\_{ }</b>) ; <b>'none'</b> affiche le texte tel quel. 
 
-listes des caractères spéciaux pris en charge par l'interpréteur 'tex' :
+La valeur <b>'latex'</b> est acceptée, mais un moteur de mise en page LaTeX complet (<b>\\frac</b>, <b>\\sqrt</b>, <b>\\int</b> avec bornes, matrices, etc.) n'est pas encore implémenté. Elle se rabat sur le pipeline <b>'tex'</b> après suppression d'une paire de délimiteurs mathématiques <b>$...$</b> entourants, de sorte que les symboles connus et les exposants/indices sont rendus tandis que les constructions non prises en charge apparaissent sous forme de texte source. Un interpréteur LaTeX complet est prévu pour une version future. 
 
-Exposant : ^{ } 'texte^{exposant}'
+listes des caractères spéciaux pris en charge par l'interpréteur 'tex' : 
 
-Indice : \_{ } 'texte\_{indice}'
+Exposant : ^{ } 'texte^{exposant}' 
 
-| Séquence de caractères | Symbole |
-| ---------------------- | ------- |
-| \\alpha                | α       |
-| \\upsilon              | υ       |
-| \\sim                  | ~       |
-| \\angle                | ∠       |
-| \\phi                  | ϕ       |
-| \\leq                  | ≤       |
-| \\ast                  | \*      |
-| \\chi                  | χ       |
-| \\infty                | ∞       |
-| \\beta                 | β       |
-| \\psi                  | ψ       |
-| \\clubsuit             | ♣      |
-| \\gamma                | γ       |
-| \\omega                | ω       |
-| \\diamondsuit          | ♦      |
-| \\delta                | δ       |
-| \\Gamma                | Γ       |
-| \\heartsuit            | ♥      |
-| \\epsilon              | ϵ       |
-| \\Delta                | Δ       |
-| \\spadesuit            | ♠      |
-| \\zeta                 | ζ       |
-| \\Theta                | Θ       |
-| \\leftrightarrow       | ↔      |
-| \\eta                  | η       |
-| \\Lambda               | Λ       |
-| \\leftarrow            | ←       |
-| \\theta                | θ       |
-| \\Xi                   | Ξ       |
-| \\Leftarrow            | ⇐       |
-| \\vartheta             | ϑ       |
-| \\Pi                   | Π       |
-| \\uparrow              | ↑       |
-| \\iota                 | ι       |
-| \\Sigma                | Σ       |
-| \\rightarrow           | ->      |
-| \\kappa                | κ       |
-| \\Upsilon              | ϒ       |
-| \\Rightarrow           | ⇒       |
-| \\lambda               | λ       |
-| \\Phi                  | Φ       |
-| \\downarrow            | ↓       |
-| \\mu                   | µ       |
-| \\Psi                  | Ψ       |
-| \\circ                 | º       |
-| \\nu                   | ν       |
-| \\Omega                | Ω       |
-| \\pm                   | ±       |
-| \\xi                   | ξ       |
-| \\forall               | ∀       |
-| \\geq                  | ≥       |
-| \\pi                   | π       |
-| \\exists               | ∃       |
-| \\propto               | ∝       |
-| \\rho                  | ρ       |
-| \\ni                   | ∍       |
-| \\partial              | ∂       |
-| \\sigma                | σ       |
-| \\cong                 | ≅       |
-| \\bullet               | •       |
-| \\varsigma             | ς       |
-| \\approx               | ≈       |
-| \\div                  | ÷       |
-| \\tau                  | τ       |
-| \\Re                   | ℜ       |
-| \\neq                  | ≠       |
-| \\equiv                | ≡       |
-| \\oplus                | ⊕       |
-| \\aleph                | ℵ       |
-| \\Im                   | ℑ       |
-| \\cup                  | ∪       |
-| \\wp                   | ℘       |
-| \\otimes               | ⊗       |
-| \\subseteq             | ⊆       |
-| \\oslash               | ∅       |
-| \\cap                  | ∩       |
-| \\in                   | ∈       |
-| \\supseteq             | ⊇       |
-| \\supset               | ⊃       |
-| \\lceil                | ⌈       |
-| \\subset               | ⊂       |
-| \\int                  | ∫       |
-| \\cdot                 | ·       |
-| \\o                    | ο       |
-| \\rfloor               | ⌋       |
-| \\neg                  | ¬       |
-| \\nabla                | ∇       |
-| \\lfloor               | ⌊       |
-| \\times                | x       |
-| \\ldots                | ...     |
-| \\perp                 | ⊥       |
-| \\surd                 | √       |
-| \\prime                | ´       |
-| \\wedge                | ∧       |
-| \\varpi                | ϖ       |
-| \\0                    | ∅       |
-| \\rceil                | ⌉       |
-| \\rangle               | 〉      |
-| \\mid                  | \|      |
-| \\vee                  | ∨       |
-| \\langle               | 〈      |
-| \\copyright            | ©      |
+Indice : \_{ } 'texte\_{indice}' 
+
+ 
+| Séquence de caractères | Symbole | 
+| --- | --- | 
+| \\alpha | α | 
+| \\upsilon | υ | 
+| \\sim | ~ | 
+| \\angle | ∠ | 
+| \\phi | ϕ | 
+| \\leq | ≤ | 
+| \\ast | \* | 
+| \\chi | χ | 
+| \\infty | ∞ | 
+| \\beta | β | 
+| \\psi | ψ | 
+| \\clubsuit | ♣ | 
+| \\gamma | γ | 
+| \\omega | ω | 
+| \\diamondsuit | ♦ | 
+| \\delta | δ | 
+| \\Gamma | Γ | 
+| \\heartsuit | ♥ | 
+| \\epsilon | ϵ | 
+| \\Delta | Δ | 
+| \\spadesuit | ♠ | 
+| \\zeta | ζ | 
+| \\Theta | Θ | 
+| \\leftrightarrow | ↔ | 
+| \\eta | η | 
+| \\Lambda | Λ | 
+| \\leftarrow | ← | 
+| \\theta | θ | 
+| \\Xi | Ξ | 
+| \\Leftarrow | ⇐ | 
+| \\vartheta | ϑ | 
+| \\Pi | Π | 
+| \\uparrow | ↑ | 
+| \\iota | ι | 
+| \\Sigma | Σ | 
+| \\rightarrow | -> | 
+| \\kappa | κ | 
+| \\Upsilon | ϒ | 
+| \\Rightarrow | ⇒ | 
+| \\lambda | λ | 
+| \\Phi | Φ | 
+| \\downarrow | ↓ | 
+| \\mu | µ | 
+| \\Psi | Ψ | 
+| \\circ | º | 
+| \\nu | ν | 
+| \\Omega | Ω | 
+| \\pm | ± | 
+| \\xi | ξ | 
+| \\forall | ∀ | 
+| \\geq | ≥ | 
+| \\pi | π | 
+| \\exists | ∃ | 
+| \\propto | ∝ | 
+| \\rho | ρ | 
+| \\ni | ∍ | 
+| \\partial | ∂ | 
+| \\sigma | σ | 
+| \\cong | ≅ | 
+| \\bullet | • | 
+| \\varsigma | ς | 
+| \\approx | ≈ | 
+| \\div | ÷ | 
+| \\tau | τ | 
+| \\Re | ℜ | 
+| \\neq | ≠ | 
+| \\equiv | ≡ | 
+| \\oplus | ⊕ | 
+| \\aleph | ℵ | 
+| \\Im | ℑ | 
+| \\cup | ∪ | 
+| \\wp | ℘ | 
+| \\otimes | ⊗ | 
+| \\subseteq | ⊆ | 
+| \\oslash | ∅ | 
+| \\cap | ∩ | 
+| \\in | ∈ | 
+| \\supseteq | ⊇ | 
+| \\supset | ⊃ | 
+| \\lceil | ⌈ | 
+| \\subset | ⊂ | 
+| \\int | ∫ | 
+| \\cdot | · | 
+| \\o | ο | 
+| \\rfloor | ⌋ | 
+| \\neg | ¬ | 
+| \\nabla | ∇ | 
+| \\lfloor | ⌊ | 
+| \\times | x | 
+| \\ldots | ... | 
+| \\perp | ⊥ | 
+| \\surd | √ | 
+| \\prime | ´ | 
+| \\wedge | ∧ | 
+| \\varpi | ϖ | 
+| \\0 | ∅ | 
+| \\rceil | ⌉ | 
+| \\rangle | 〉 | 
+| \\mid | \| | 
+| \\vee | ∨ | 
+| \\langle | 〈 | 
+| \\copyright | © | 
+
+
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure(1)
@@ -156,8 +162,8 @@ t.FontSize = 12;
 t.Color = 'red';
 
 ```
-
 <img src="text_1.svg" align="middle"/>
+
 
 ```matlab
 figure();
@@ -182,8 +188,8 @@ title ('Text alignment and rotation (0:45:360 degrees)');
 xlabel('Horizontal alignment');
 ylabel ('Vertical alignment');
 ```
-
 <img src="text_2.svg" align="middle"/>
+
 
 ```matlab
 figure();
@@ -194,17 +200,18 @@ h2 = text(0.5, 0.3, 'OU Nelson ©')
 h2.String
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de text](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.text.properties.md), [titre](../../../graphics/3_labels_styling/4_labels_annotations/title.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                          |
-| ------- | --------------------------------------- |
-| 1.0.0   | version initiale                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 1.7.0   | Callbacks CreateFcn, DeleteFcn ajoutés. |
-| --      | Propriété BeingDeleted ajoutée.         |
+| --   | Propriété BeingDeleted ajoutée. |
 
 <!--
 ## 👤 Auteur

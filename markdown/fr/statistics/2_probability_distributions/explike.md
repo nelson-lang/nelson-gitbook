@@ -22,23 +22,27 @@ Oppose de la log-vraisemblance exponentielle
 
 ## 📄 Description
 
+
 <b>explike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi exponentielle et l'estimation de variance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [nlogL, avar] = explike(3.25, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[expfit](../../statistics/expfit.md), [exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md).
+[expfit](../../statistics/2_probability_distributions/expfit.md), [exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

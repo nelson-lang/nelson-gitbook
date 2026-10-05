@@ -22,9 +22,10 @@ Create a structure or convert an object to a structure.
 
 ## 📄 Description
 
-<b>struct</b> creates a structure from field/value pairs.
 
-<b>struct(object)</b> converts an object to a structure containing its public fields or public classdef properties.
+<b>struct</b> creates a structure from field/value pairs. 
+
+<b>struct(object)</b> converts an object to a structure containing its public fields or public classdef properties. 
 
 For classdef handle objects, <b>struct</b> reads the current public property values from the handle object.
 
@@ -35,7 +36,6 @@ Create a structure from field/value pairs.
 ```matlab
 date_st = struct('day', 15, 'month', 'August', 'year', 1974)
 ```
-
 Convert a classdef object to a structure.
 
 ```matlab
@@ -50,16 +50,17 @@ obj.Y = 4;
 st = struct(obj)
 ```
 
+
 ## 🔗 See also
 
 [cell](../data_structures/cell.md), [fieldnames](../data_structures/fieldnames.md), [isstruct](../types/isstruct.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                        |
-| ------- | ------------------------------------- |
-| 1.0.0   | initial version                       |
-| 1.3.0   | Scalar string allowed as field name.  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.3.0   | Scalar string allowed as field name. |
 | 2.0.0   | classdef object conversion documented |
 
 <!--

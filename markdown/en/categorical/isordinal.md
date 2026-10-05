@@ -16,7 +16,8 @@ Determine whether a categorical array is ordinal.
 
 ## 📄 Description
 
-<b>isordinal</b> returns <b>true</b> when <b>A</b> is categorical and category order is meaningful.
+
+<b>isordinal</b> returns <b>true</b> when <b>A</b> is categorical and category order is meaningful. 
 
 Ordinal arrays support relational comparisons based on category order.
 
@@ -28,13 +29,14 @@ Create an ordinal array and test it.
 A = categorical({'low','high'}, {'low','high'}, 'Ordinal', true); tf = isordinal(A)
 ```
 
+
 ## 🔗 See also
 
 [categorical](../categorical/categorical.md), [isprotected](../categorical/isprotected.md), [reordercats](../categorical/reordercats.md), [categories](../categorical/categories.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

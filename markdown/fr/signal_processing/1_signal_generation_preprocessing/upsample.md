@@ -21,9 +21,12 @@ Suréchantillonne une séquence par un facteur entier.
 
 ## 📄 Description
 
+
 <b>upsample</b> insère n - 1 zéros entre les échantillons le long de la dimension choisie.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ Y = upsample([1 2 3], 2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[downsample](../../signal_processing/downsample.md), [upfirdn](../../signal_processing/upfirdn.md).
+[downsample](../../signal_processing/1_signal_generation_preprocessing/downsample.md), [upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -6,7 +6,7 @@ Change le répertoire courant de Nelson.
 
 - cd(dirname)
 - cd dirname
-- previous_path = cd(dirname)
+- previous\_path = cd(dirname)
 - cd ..
 - cd
 
@@ -16,17 +16,22 @@ Change le répertoire courant de Nelson.
 
 ## 📤 Argument de sortie
 
-- previous_path - a string: répertoire précédent.
+- previous\_path - a string: répertoire précédent.
 
 ## 📄 Description
 
-Change le répertoire de travail courant vers <b>dirname</b>.
 
-<b>a = cd()</b> sans argument renvoie le répertoire de travail courant.
+Change le répertoire de travail courant vers <b>dirname</b>. 
 
-<b>cd()</b> sans argument affiche le répertoire de travail courant.
+<b>a = cd()</b> sans argument renvoie le répertoire de travail courant. 
+
+<b>cd()</b> sans argument affiche le répertoire de travail courant. 
+
+
 
 ## 💡 Exemple
+
+
 
 ```matlab
 previous = cd(tempdir())
@@ -35,14 +40,15 @@ cd ..
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [mkdir](../files_folders_functions/mkdir.md), [pwd](../files_folders_functions/pwd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

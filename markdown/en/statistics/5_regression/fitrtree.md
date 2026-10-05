@@ -11,11 +11,14 @@ Fit a regression decision tree.
 
 ## 📄 Description
 
-<b>fitrtree</b> creates a <b>RegressionTree</b> object from numeric predictors <b>X</b> and numeric response <b>Y</b>.
+
+<b>fitrtree</b> creates a <b>RegressionTree</b> object from numeric predictors <b>X</b> and numeric response <b>Y</b>. 
 
 Name-value arguments include <b>MaxNumSplits</b>, <b>MinLeafSize</b>, <b>MinParentSize</b>, <b>PredictorNames</b>, and <b>ResponseName</b>. Numeric predictors are split with binary threshold tests that reduce squared error.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [0; 1; 2; 3; 4; 5];
@@ -24,13 +27,14 @@ mdl = fitrtree(X, Y, 'MaxNumSplits', 2);
 yfit = predict(mdl, [1.5; 4.5])
 ```
 
+
 ## 🔗 See also
 
-[fitctree](../../statistics/fitctree.md), [fitlm](../../statistics/fitlm.md), [fitglm](../../statistics/fitglm.md).
+[fitctree](../../statistics/6_classification/fitctree.md), [fitlm](../../statistics/5_regression/fitlm.md), [fitglm](../../statistics/5_regression/fitglm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

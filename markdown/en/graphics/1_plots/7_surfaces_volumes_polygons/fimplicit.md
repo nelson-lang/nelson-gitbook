@@ -15,9 +15,10 @@ Plot an implicit function curve.
 
 ## 📄 Description
 
-<b>fimplicit</b> samples <b>fun(x,y)</b> and plots the zero contour as an <b>implicitfunctionline</b> graphics object.
 
-When a cell array of function handles is specified, one <b>implicitfunctionline</b> object is created for each function and the returned handle array is a column vector.
+<b>fimplicit</b> samples <b>fun(x,y)</b> and plots the zero contour as an <b>implicitfunctionline</b> graphics object. 
+
+When a cell array of function handles is specified, one <b>implicitfunctionline</b> object is created for each function and the returned handle array is a column vector. 
 
 See [implicitfunctionline properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.implicitfunctionline.properties.md) for the complete property list.
 
@@ -28,14 +29,12 @@ Plot a unit circle.
 ```matlab
 fimplicit(@(x, y) x.^2 + y.^2 - 1, [-2 2 -2 2]);
 ```
-
 <img src="fimplicit_1.svg" align="middle"/>
 Use a line specification and line properties.
 
 ```matlab
 h = fimplicit(@(x, y) x.^2 + y.^2 - 1, [-2 2], '--r', 'LineWidth', 2);
 ```
-
 <img src="fimplicit_2.svg" align="middle"/>
 Plot two implicit curves.
 
@@ -44,8 +43,8 @@ f1 = @(x, y) x.^2 + y.^2 - 1;
 f2 = @(x, y) x - y;
 h = fimplicit({f1, f2});
 ```
-
 <img src="fimplicit_3.svg" align="middle"/>
+
 
 ## 🔗 See also
 

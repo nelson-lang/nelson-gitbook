@@ -17,7 +17,8 @@ Plot a function in polar coordinates.
 
 ## 📄 Description
 
-<b>fpolarplot</b> samples a function over an angle interval and plots the resulting radius values in polar coordinates. The returned object is a <b>functionline</b>.
+
+<b>fpolarplot</b> samples a function over an angle interval and plots the resulting radius values in polar coordinates. The returned object is a <b>functionline</b>. 
 
 Name-value pairs can set line properties and functionline properties such as <b>MeshDensity</b>.
 
@@ -28,8 +29,8 @@ Plot a polar function.
 ```matlab
 fpolarplot(@(t) 1 + sin(4*t), [0 2*pi], 'r-');
 ```
-
 <img src="fpolarplot_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

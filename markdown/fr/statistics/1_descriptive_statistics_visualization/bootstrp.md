@@ -22,14 +22,17 @@ Echantillonnage bootstrap.
 
 ## 📄 Description
 
+
 <b>bootstrp</b> tire des echantillons bootstrap avec le generateur aleatoire de Nelson et applique une fonction statistique a chaque echantillon.
 
 ## Fonction(s) utilisée(s)
+
 
     bootci
     jackknife
     randsample
     rng
+  
 
 ## 💡 Exemple
 

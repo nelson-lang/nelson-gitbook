@@ -4,14 +4,14 @@ Locates functions and built-in.
 
 ## 📝 Syntax
 
-- which(function_name)
-- p = which(function_name)
-- c = which(function_name, '-all')
-- m = which(function_name, '-module')
+- which(function\_name)
+- p = which(function\_name)
+- c = which(function\_name, '-all')
+- m = which(function\_name, '-module')
 
 ## 📥 Input argument
 
-- function_name - a string: function name.
+- function\_name - a string: function name.
 
 ## 📤 Output argument
 
@@ -21,9 +21,12 @@ Locates functions and built-in.
 
 ## 📄 Description
 
+
 <b>which</b> returns the path of a function or a built-in.
 
 ## 💡 Example
+
+
 
 ```matlab
 which('cos')
@@ -33,13 +36,14 @@ m = which('cos', '-module')
 
 ```
 
+
 ## 🔗 See also
 
 [what](../functions_manager/what.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

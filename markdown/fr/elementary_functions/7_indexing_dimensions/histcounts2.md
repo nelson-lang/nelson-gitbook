@@ -26,15 +26,18 @@ Comptage par classes d'histogramme bivarie.
 
 ## 📄 Description
 
-histcounts2 repartit les paires (X, Y) sur une grille de classes bidimensionnelle et compte le nombre de paires dans chaque classe.
 
-N(i, j) compte les paires pour lesquelles Xedges(i) <= X < Xedges(i+1) et Yedges(j) <= Y < Yedges(j+1). La derniere classe de chaque dimension inclut ses deux bornes.
+histcounts2 repartit les paires (X, Y) sur une grille de classes bidimensionnelle et compte le nombre de paires dans chaque classe. 
 
-Vous pouvez fournir un nombre de classes (scalaire ou [nx ny]) ou les vecteurs de bornes explicites Xedges et Yedges. Lorsqu'un nombre de classes est demande, les bornes sont choisies sur une grille reguliere, comme [histcounts](../../elementary_functions/histcounts.md). Les paires ayant une coordonnee NaN sont ignorees.
+N(i, j) compte les paires pour lesquelles Xedges(i) <= X < Xedges(i+1) et Yedges(j) <= Y < Yedges(j+1). La derniere classe de chaque dimension inclut ses deux bornes. 
+
+Vous pouvez fournir un nombre de classes (scalaire ou [nx ny]) ou les vecteurs de bornes explicites Xedges et Yedges. Lorsqu'un nombre de classes est demande, les bornes sont choisies sur une grille reguliere, comme [histcounts](../../elementary_functions/7_indexing_dimensions/histcounts.md). Les paires ayant une coordonnee NaN sont ignorees.
 
 ## Fonction(s) utilisée(s)
 
+
     histcounts2
+  
 
 ## 💡 Exemples
 
@@ -45,21 +48,21 @@ x = [1 2 3];
 y = [1 2 3];
 N = histcounts2(x, y, [0 2 4], [0 2 4])
 ```
-
 Bornes choisies automatiquement avec un nombre de classes.
 
 ```matlab
 [N, xe, ye] = histcounts2([1 5 10 3 7], [2 4 6 8 1], 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[histcounts](../../elementary_functions/histcounts.md), [discretize](../../data_analysis/discretize.md).
+[histcounts](../../elementary_functions/7_indexing_dimensions/histcounts.md), [discretize](../../data_analysis/discretize.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

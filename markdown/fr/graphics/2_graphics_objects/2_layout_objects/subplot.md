@@ -22,11 +22,14 @@ Créer des axes en positions mosaïques.
 
 ## 📄 Description
 
-<b>subplot(n, m, p)</b> divise la figure courante en une grille à deux dimensions.
+
+<b>subplot(n, m, p)</b> divise la figure courante en une grille à deux dimensions. 
 
 Chacune des cases peut contenir un graphique quelconque.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -45,8 +48,8 @@ plot(X, Y3, 'g');
 subplot(4, 1, 4);
 plot(X, Y4, 'k');
 ```
-
 <img src="subplot_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -65,8 +68,8 @@ plot(t, Y);
 subplot(2, 2, 4);
 plot(t, Z);
 ```
-
 <img src="subplot_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -74,8 +77,8 @@ plot(t, Z);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

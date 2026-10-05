@@ -15,9 +15,12 @@ Vérifie que la valeur n'est pas NaN.
 
 ## 📄 Description
 
+
 <b>mustBeNonNan</b> vérifie que la valeur n'est pas NaN ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeNonNan(1)
@@ -26,14 +29,15 @@ mustBeNonNan(NaN)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[isempty](../types/isempty.md), [isnan](../elementary_functions/isnan.md).
+[isempty](../types/isempty.md), [isnan](../elementary_functions/7_indexing_dimensions/isnan.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

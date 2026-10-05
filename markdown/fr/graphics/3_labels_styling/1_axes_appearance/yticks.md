@@ -26,7 +26,8 @@ Definir ou obtenir les graduations de l'axe des y.
 
 ## 📄 Description
 
-<b>yticks</b> obtient ou definit les graduations de l'axe des y des axes courants.
+
+<b>yticks</b> obtient ou definit les graduations de l'axe des y des axes courants. 
 
 Specifier des graduations bascule le mode des graduations de l'axe des y sur <b>manual</b>.
 
@@ -43,13 +44,14 @@ ticks = yticks()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md), [ytickangle](../../../graphics/3_labels_styling/1_axes_appearance/ytickangle.md), [ylim](../../../graphics/3_labels_styling/1_axes_appearance/ylim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -15,10 +15,11 @@ Return true if variable var is a class object.
 - res - a logical: true or false
 
 ## 📄 Description
-
 <b>isclass</b> returns a logical 1 if the argument is a class object and a logical 0 otherwise.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = 3;
@@ -28,13 +29,14 @@ c = complexObj(3,4);
 res = isclass(c)
 ```
 
+
 ## 🔗 See also
 
 [class](../types/class.md), [isstruct](../types/isstruct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

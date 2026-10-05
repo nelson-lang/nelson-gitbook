@@ -21,11 +21,14 @@ Connexion en boucle fermée de plusieurs modèles.
 
 ## 📄 Description
 
-<b>cloop</b> forme le système en boucle fermée lorsque la rétroaction unitaire est utilisée.
+
+<b>cloop</b> forme le système en boucle fermée lorsque la rétroaction unitaire est utilisée. 
 
 Cette fonction est obsolète et a des limitations, veuillez voir <b>feedback</b>. Elle n'est applicable que lorsque le bloc dans le chemin de rétroaction est unitaire. De plus, son utilisation est limitée aux modèles de système exprimés uniquement sous forme de fonction de transfert, et non sous la forme plus générale "system".
 
 ## 💡 Exemple
+
+
 
 ```matlab
 m = 1000;
@@ -43,14 +46,15 @@ R = cloop(sys, OUTPUTS, INPUTS)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[feedback](../../control_system/feedback.md), [append](../../control_system/append.md), [ssselect](../../control_system/ssselect.md).
+[feedback](../../control_system/2_model_conversion_interconnection/feedback.md), [append](../../control_system/2_model_conversion_interconnection/append.md), [ssselect](../../control_system/2_model_conversion_interconnection/ssselect.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

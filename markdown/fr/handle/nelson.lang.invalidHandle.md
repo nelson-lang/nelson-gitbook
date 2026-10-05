@@ -20,25 +20,26 @@ Creer un handle invalide avec une classe handle donnee.
 
 ## 📄 Description
 
-<b>nelson.lang.invalidHandle</b> cree une valeur handle qui possede la classe demandee mais qui n'est pas valide.
 
-<b>isvalid(h)</b> retourne faux pour chaque element du resultat.
+<b>nelson.lang.invalidHandle</b> cree une valeur handle qui possede la classe demandee mais qui n'est pas valide. 
 
-Le nom de classe doit identifier une classe classdef handle. Les classes valeur et les noms de classe inconnus provoquent une erreur.
+<b>isvalid(h)</b> retourne faux pour chaque element du resultat. 
 
-Sans argument de dimension, le resultat est scalaire. Avec une dimension scalaire numerique <b>n</b>, le resultat est <b>n</b>-par-<b>n</b>. Avec plusieurs dimensions scalaires ou un vecteur numerique <b>sz</b>, le resultat a ces dimensions.
+Le nom de classe doit identifier une classe classdef handle. Les classes valeur et les noms de classe inconnus provoquent une erreur. 
 
-Cette fonction est utile pour les API qui doivent conserver la classe d'une cible handle absente.
+Sans argument de dimension, le resultat est scalaire. Avec une dimension scalaire numerique <b>n</b>, le resultat est <b>n</b>-par-<b>n</b>. Avec plusieurs dimensions scalaires ou un vecteur numerique <b>sz</b>, le resultat a ces dimensions. 
 
-La valeur retournee se comporte comme un tableau de handles pour la classe, la taille, la concatenation avec des tableaux de handles compatibles, et <b>isvalid</b>. Aucun objet vivant n'est associe a cette valeur.
+Cette fonction est utile pour les API qui doivent conserver la classe d'une cible handle absente. 
 
-Les handles invalides ne deviennent pas valides ensuite. Pour obtenir un handle vivant, construire un nouvel objet de la meme classe.
+La valeur retournee se comporte comme un tableau de handles pour la classe, la taille, la concatenation avec des tableaux de handles compatibles, et <b>isvalid</b>. Aucun objet vivant n'est associe a cette valeur. 
 
-Toutes les dimensions doivent etre des entiers positifs ou nuls. Un vecteur de dimensions vide cree un tableau de handles vide.
+Les handles invalides ne deviennent pas valides ensuite. Pour obtenir un handle vivant, construire un nouvel objet de la meme classe. 
 
-Une dimension scalaire unique suit la meme convention que les constructeurs de tableaux courants: <b>nelson.lang.invalidHandle(classname, 3)</b> retourne un tableau 3-par-3.
+Toutes les dimensions doivent etre des entiers positifs ou nuls. Un vecteur de dimensions vide cree un tableau de handles vide. 
 
-La classe est chargee avant la creation du tableau de handles. Les classes handle definies par l'utilisateur et presentes sur le path peuvent donc etre utilisees par nom.
+Une dimension scalaire unique suit la meme convention que les constructeurs de tableaux courants: <b>nelson.lang.invalidHandle(classname, 3)</b> retourne un tableau 3-par-3. 
+
+La classe est chargee avant la creation du tableau de handles. Les classes handle definies par l'utilisateur et presentes sur le path peuvent donc etre utilisees par nom. 
 
 Utiliser <b>nelson.lang.HandlePlaceholder</b> quand aucune classe handle plus specifique n'est disponible.
 
@@ -51,7 +52,6 @@ h = nelson.lang.invalidHandle('nelson.lang.HandlePlaceholder');
 class(h)
 isvalid(h)
 ```
-
 Creer un tableau de handles invalides.
 
 ```matlab
@@ -59,7 +59,6 @@ h = nelson.lang.invalidHandle('nelson.lang.HandlePlaceholder', 2, 3);
 size(h)
 isvalid(h)
 ```
-
 Creer un tableau de handles invalides depuis un vecteur de taille.
 
 ```matlab
@@ -68,7 +67,6 @@ size(h)
 class(h)
 isvalid(h)
 ```
-
 Utiliser une classe handle definie par l'utilisateur.
 
 ```matlab
@@ -80,7 +78,6 @@ h = nelson.lang.invalidHandle('NelsonHelpInvalidHandleTarget');
 class(h)
 isvalid(h)
 ```
-
 Refuser un nom de classe valeur.
 
 ```matlab
@@ -91,14 +88,15 @@ catch exception
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.lang.WeakReference](../handle/nelson.lang.WeakReference.md), [nelson.lang.HandlePlaceholder](../handle/nelson.lang.HandlePlaceholder.md), [isvalid](../handle/isvalid.md), [class](../types/class.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

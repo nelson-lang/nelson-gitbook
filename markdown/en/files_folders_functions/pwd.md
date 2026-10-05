@@ -13,16 +13,22 @@ Returns current directory.
 
 ## 📄 Description
 
-Returns the current working directory.
 
-<b>pwd()</b> without input argument displays the current working directory.
+Returns the current working directory. 
+
+<b>pwd()</b> without input argument displays the current working directory. 
+
+
 
 ## 💡 Example
+
+
 
 ```matlab
 r = pwd()
 pwd()
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +36,7 @@ pwd()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

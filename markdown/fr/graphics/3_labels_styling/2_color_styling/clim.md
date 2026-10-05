@@ -23,9 +23,12 @@ Définit les limites de la palette de couleurs.
 
 ## 📄 Description
 
+
 <b>clim</b> définit ou récupère les limites de la palette de couleurs.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -35,8 +38,8 @@ surf(Z);
 limits = clim()
 
 ```
-
 <img src="clim_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -47,8 +50,8 @@ clim([25 75])
 limits = clim()
 
 ```
-
 <img src="clim_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -56,8 +59,8 @@ limits = clim()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

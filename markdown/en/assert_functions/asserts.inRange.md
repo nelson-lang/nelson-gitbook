@@ -20,7 +20,8 @@ Check that every value is inside an inclusive range.
 
 ## 📄 Description
 
-The assertion passes when minValue <= value <= maxValue for every compared element.
+
+The assertion passes when minValue <= value <= maxValue for every compared element. 
 
 Bounds can be scalars or arrays with dimensions compatible with value.
 
@@ -31,12 +32,12 @@ Inclusive range
 ```matlab
 asserts.inRange([1 2], 0, 3);
 ```
-
 Capture an out-of-range value
 
 ```matlab
 [res, msg] = asserts.inRange([1 4], 0, 3);
 ```
+
 
 ## 🔗 See also
 
@@ -44,7 +45,7 @@ Capture an out-of-range value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

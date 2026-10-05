@@ -20,9 +20,12 @@ Concatène des tableaux.
 
 ## 📄 Description
 
+
 <b>R = cat(dim, M1, M2, ... , MN)</b> renvoie la concaténation de M1, M2, ... , MN le long de la dimension <b>dim</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(2, 2);
@@ -30,14 +33,15 @@ B = ones(2, 2);
 C = cat(2, A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
 [vertcat](../operators/vertcat.md), [horzcat](../operators/horzcat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

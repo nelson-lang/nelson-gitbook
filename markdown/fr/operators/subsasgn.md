@@ -18,6 +18,7 @@ Redéfinir l'affectation par indice.
 
 ## 📄 Description
 
+
 <b>B = subsasgn(A, S, B)</b> assigne une valeur à un élément d'une cellule ou d'une matrice.
 
 ## 💡 Exemple
@@ -30,14 +31,15 @@ S = substruct('{}', {1, 3});
 R2 = subsasgn(R1, S, 'Hello')
 ```
 
+
 ## 🔗 Voir aussi
 
-[substruct](../elementary_functions/substruct.md), [subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
+[substruct](../elementary_functions/7_indexing_dimensions/substruct.md), [subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

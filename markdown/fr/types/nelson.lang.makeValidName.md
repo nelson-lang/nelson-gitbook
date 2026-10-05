@@ -22,14 +22,18 @@ Convertit du texte en noms de variables Nelson valides.
 
 ## 📄 Description
 
+
 <b>nelson.lang.makeValidName</b> supprime les espaces, remplace les caractères non pris en charge, ajoute un préfixe si nécessaire et tronque les noms à <b>namelengthmax</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 names = nelson.lang.makeValidName({'a b', 'a-b', '1a'})
 [names, modified] = nelson.lang.makeValidName("a#b", 'ReplacementStyle', 'hex')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -37,8 +41,8 @@ names = nelson.lang.makeValidName({'a b', 'a-b', '1a'})
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

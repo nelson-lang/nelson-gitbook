@@ -16,9 +16,10 @@ Cree des durees calendaires contenant des trimestres calendaires.
 
 ## 📄 Description
 
-Cree des durees calendaires contenant des trimestres calendaires.
 
-Utilisez calquarters pour les decalages calendaires bases sur les mois. Cela differe de days ou duration car la longueur des mois varie.
+Cree des durees calendaires contenant des trimestres calendaires. 
+
+Utilisez calquarters pour les decalages calendaires bases sur les mois. Cela differe de days ou duration car la longueur des mois varie. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -31,14 +32,15 @@ datetime(2024, 1, 31) + calquarters(1)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

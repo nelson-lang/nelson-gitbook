@@ -1,16 +1,29 @@
 # Fonctions graphiques
 
+
+    
 Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques, figures, palettes de couleurs et objets graphiques.
 
-Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.
+    
+Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et              des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.
+
+  
 
 ## Fonctions de traces 2-D et 3-D
 
+
+    
 Fonctions regroupees par type de visualisation, notamment les lignes, distributions, donnees discretes, graphiques polaires, contours, champs de vecteurs, surfaces, volumes, polygones et animations.
+
+  
 
 ### Courbes
 
+
+    
 Fonctions pour les courbes, les traces de fonctions et les traces avec barres d'erreur.
+
+  
 
 #### Functions
 
@@ -28,7 +41,11 @@ Fonctions pour les courbes, les traces de fonctions et les traces avec barres d'
 
 ### Graphiques polaires
 
+
+    
 Fonctions pour creer et configurer des graphiques polaires.
+
+  
 
 #### Functions
 
@@ -41,7 +58,11 @@ Fonctions pour creer et configurer des graphiques polaires.
 
 ### Graphiques de contours
 
+
+    
 Fonctions pour le calcul de contours, les graphiques de contours et leurs etiquettes.
+
+  
 
 #### Functions
 
@@ -54,7 +75,11 @@ Fonctions pour le calcul de contours, les graphiques de contours et leurs etique
 
 ### Graphiques de distribution de donnees
 
+
+    
 Fonctions pour les histogrammes, nuages de points, graphiques de distribution et visualisations de synthese de donnees.
+
+  
 
 #### Functions
 
@@ -86,7 +111,11 @@ Fonctions pour les histogrammes, nuages de points, graphiques de distribution et
 
 ### Champs de vecteurs
 
+
+    
 Fonctions pour les champs de vecteurs et les visualisations de flux.
+
+  
 
 #### Functions
 
@@ -106,7 +135,11 @@ Fonctions pour les champs de vecteurs et les visualisations de flux.
 
 ### Graphiques de donnees discretes
 
+
+    
 Fonctions pour les diagrammes en barres, traces en tiges, diagrammes circulaires et autres affichages de donnees discretes.
+
+  
 
 #### Functions
 
@@ -124,7 +157,11 @@ Fonctions pour les diagrammes en barres, traces en tiges, diagrammes circulaires
 
 ### Surfaces, volumes et polygones
 
+
+    
 Fonctions pour les surfaces, maillages, volumes, zones remplies et graphiques polygonaux.
+
+  
 
 #### Functions
 
@@ -161,7 +198,11 @@ Fonctions pour les surfaces, maillages, volumes, zones remplies et graphiques po
 
 ### Animation
 
+
+    
 Fonctions pour les graphiques animes et les mises a jour dynamiques de points.
+
+  
 
 #### Functions
 
@@ -174,11 +215,19 @@ Fonctions pour les graphiques animes et les mises a jour dynamiques de points.
 
 ## Objets graphiques
 
+
+    
 Fonctions et pages de reference pour la gestion des objets graphiques, objets de disposition, objets d'interface utilisateur et proprietes d'objets.
+
+  
 
 ### Gestion des objets graphiques
 
+
+    
 Fonctions pour creer, rechercher, interroger, effacer et fermer des objets graphiques.
+
+  
 
 #### Functions
 
@@ -204,7 +253,11 @@ Fonctions pour creer, rechercher, interroger, effacer et fermer des objets graph
 
 ### Objets de disposition
 
+
+    
 Fonctions pour organiser plusieurs graphiques et travailler avec les dispositions en tuiles.
+
+  
 
 #### Functions
 
@@ -216,7 +269,11 @@ Fonctions pour organiser plusieurs graphiques et travailler avec les disposition
 
 ### Objets d'interface utilisateur
 
+
+    
 Fonctions pour les controles d'interface utilisateur, menus et menus contextuels.
+
+  
 
 #### Functions
 
@@ -252,7 +309,11 @@ Fonctions pour les controles d'interface utilisateur, menus et menus contextuels
 
 ### Proprietes des objets graphiques
 
+
+    
 Pages de reference des proprietes visibles des objets graphiques, types de valeurs pris en charge et actions associees.
+
+  
 
 #### Functions
 
@@ -315,11 +376,19 @@ Pages de reference des proprietes visibles des objets graphiques, types de valeu
 
 ## Etiquettes et style
 
+
+    
 Fonctions pour les etiquettes, annotations, apparence des axes, couleurs, interactions, vues camera et eclairage.
+
+  
 
 ### Apparence des axes
 
+
+    
 Fonctions pour les limites d'axes, graduations, grilles, boites et rapports d'aspect.
+
+  
 
 #### Functions
 
@@ -354,11 +423,19 @@ Fonctions pour les limites d'axes, graduations, grilles, boites et rapports d'as
 
 ### Couleurs et style
 
+
+    
 Fonctions pour les couleurs, palettes de couleurs, limites de couleur, ordre des couleurs et style de rendu.
+
+  
 
 #### Palettes de couleurs
 
+
+    
 Fonctions pour creer, selectionner et lister les palettes de couleurs.
+
+  
 
 ##### Functions
 
@@ -401,13 +478,17 @@ Fonctions pour creer, selectionner et lister les palettes de couleurs.
 
 ### Interactions, vues camera et eclairage
 
+
+    
 Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.
+
+  
 
 #### Functions
 
 - [camlight](3_labels_styling/3_interactions_camera_lighting/camlight.md) - Cree ou positionne une lumiere par rapport a la camera.
 - [drawnow](3_labels_styling/3_interactions_camera_lighting/drawnow.md) - Met à jour les figures et traite les callbacks
-- [Gestion des interruptions de callback dans Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) -
+- [Gestion des interruptions de callback dans Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) - 
 - [light](3_labels_styling/3_interactions_camera_lighting/light.md) - Cree un objet lumiere dans des axes.
 - [lightangle](3_labels_styling/3_interactions_camera_lighting/lightangle.md) - Cree ou positionne une lumiere a partir d'angles.
 - [lighting](3_labels_styling/3_interactions_camera_lighting/lighting.md) - Definit le mode d'eclairage des surfaces et patchs.
@@ -422,7 +503,11 @@ Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.
 
 ### Etiquettes et annotations
 
+
+    
 Fonctions pour les titres, etiquettes d'axes, legendes, barres de couleur, texte et annotations.
+
+  
 
 #### Functions
 
@@ -443,7 +528,11 @@ Fonctions pour les titres, etiquettes d'axes, legendes, barres de couleur, texte
 
 ## Images
 
+
+    
 Fonctions pour afficher des images, convertir des frames et lire des frames enregistrees.
+
+  
 
 ### Functions
 
@@ -457,10 +546,15 @@ Fonctions pour afficher des images, convertir des frames et lire des frames enre
 
 ## Impression et sauvegarde
 
+
+    
 Fonctions pour ouvrir et sauvegarder des fichiers figure.
+
+  
 
 ### Functions
 
 - [openfig](5_printing_saving/openfig.md) - Ouvre un fichier FIG Nelson.
 - [print](5_printing_saving/print.md) - Exporte une figure vers un fichier image ou document.
 - [savefig](5_printing_saving/savefig.md) - Enregistre une figure dans un fichier FIG Nelson.
+

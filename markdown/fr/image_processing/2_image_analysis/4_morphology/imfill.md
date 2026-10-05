@@ -20,6 +20,7 @@ Remplit les trous dans les images binaires.
 
 ## 📄 Description
 
+
 Remplit les trous dans une image binaire 2-D. Les connectivites prises en charge sont 4 et 8.
 
 ## 💡 Exemple
@@ -32,17 +33,17 @@ BW2=imfill(BW,'holes');
 figure; subplot(1,2,1); imagesc(BW); title('Input');
 subplot(1,2,2); imagesc(BW2); title('Filled');
 ```
-
 <img src="imfill_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imclose](../../../image_processing/imclose.md), [imreconstruct](../../../image_processing/imreconstruct.md), [imclearborder](../../../image_processing/imclearborder.md).
+[imclose](../../../image_processing/2_image_analysis/4_morphology/imclose.md), [imreconstruct](../../../image_processing/2_image_analysis/7_segmentation/imreconstruct.md), [imclearborder](../../../image_processing/2_image_analysis/4_morphology/imclearborder.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

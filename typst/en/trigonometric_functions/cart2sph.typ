@@ -1,0 +1,48 @@
+#import "nelson_help.typ": *
+
+= cart2sph <trigonometric_functions:cart2sph>
+
+Transforms Cartesian to spherical coordinates.
+
+== Syntax
+
+- #raw("[azimuth, elevation, r] = cart2sph(x, y, z)");
+
+== Input argument
+
+/ x: a numeric value (double or single real): Cartesian coordinates
+/ y: a numeric value (double or single real): Cartesian coordinates
+/ z: a numeric value (double or single real): Cartesian coordinates
+
+== Output argument
+
+/ azimuth: a numeric value: Azimuth angle.
+/ elevation: a numeric value: Elevation angle.
+/ r: a numeric value: Radius.
+
+== Description
+
+#strong[cart2sph]; transforms Cartesian to spherical coordinates.
+== Example
+
+``````matlab
+x = [1 1 1 1; -1 -1 -1 -1];
+y = [1 1 -1 -1; 1 1 -1 -1];
+z = [1 -1 1 -1; 1 -1 1 -1];
+[az, el, r] = cart2sph(x, y, z)
+``````
+
+
+== See also
+
+#nlink(<trigonometric_functions:sph2cart>)[sph2cart];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [initial version],
+)
+
+// Author: Allan CORNET

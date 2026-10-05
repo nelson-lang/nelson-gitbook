@@ -19,7 +19,8 @@ Return equality diagnostics without throwing.
 
 ## 📄 Description
 
-This is a diagnostic helper, not a failing assertion.
+
+This is a diagnostic helper, not a failing assertion. 
 
 It returns the same style of message as asserts.isequal for comparison failures.
 
@@ -30,12 +31,12 @@ Inspect a difference
 ```matlab
 msg = asserts.diff([1 2], [1 3]);
 ```
-
 Check equality status
 
 ```matlab
 [res, msg] = asserts.diff([1 2], [1 2]);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Check equality status
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,7 +21,8 @@ call stack.
 
 ## 📄 Description
 
-<b>dbstack</b> displays the file names and line numbers of the function calls.
+
+<b>dbstack</b> displays the file names and line numbers of the function calls. 
 
 <b>dbstack('-completenames')</b> displays the full file names.
 
@@ -35,13 +36,14 @@ dbstack();
 end
 ```
 
+
 ## 🔗 See also
 
 [which](../functions_manager/which.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

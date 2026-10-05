@@ -28,17 +28,19 @@ Create an event table for a timetable.
 
 ## 📄 Description
 
-<b>eventtable</b> creates an event table that can be attached to a timetable through <b>Properties.Events</b>; <b>syncevents</b> then copies its variables into the timetable.
 
-When the input is a time vector, event labels, lengths, and end times are specified with name-value arguments. Additional event variables are supplied by first creating a timetable and then passing that timetable to <b>eventtable</b>: any positional input after the first one is an error.
+<b>eventtable</b> creates an event table that can be attached to a timetable through <b>Properties.Events</b>; <b>syncevents</b> then copies its variables into the timetable. 
 
-An event table is a timetable: the event times are its row times (<b>E.Properties.RowTimes</b>, or <b>E.Time</b>), not a variable, so <b>size</b>, <b>width</b>, indexing and concatenation behave as for a timetable.
+When the input is a time vector, event labels, lengths, and end times are specified with name-value arguments. Additional event variables are supplied by first creating a timetable and then passing that timetable to <b>eventtable</b>: any positional input after the first one is an error. 
 
-<b>E.Properties</b> starts with <b>EventLabelsVariable</b>, <b>EventLengthsVariable</b> and <b>EventEndsVariable</b>, the names of the variables holding the event labels, lengths and end times ([] when unset). They can be assigned a variable name or index, or []. A variable renamed or removed is unset.
+An event table is a timetable: the event times are its row times (<b>E.Properties.RowTimes</b>, or <b>E.Time</b>), not a variable, so <b>size</b>, <b>width</b>, indexing and concatenation behave as for a timetable. 
+
+<b>E.Properties</b> starts with <b>EventLabelsVariable</b>, <b>EventLengthsVariable</b> and <b>EventEndsVariable</b>, the names of the variables holding the event labels, lengths and end times ([] when unset). They can be assigned a variable name or index, or []. A variable renamed or removed is unset. 
 
 Created from event times without labels, the event table gets the labels "Event 1", "Event 2", ... in an <b>EventLabels</b> variable. Created from a timetable, no variable is used as labels unless specified.
 
 ## 💡 Examples
+
 
 ```matlab
 eventTimes = datetime(2022, 11, [3; 5; 10; 14]);
@@ -69,13 +71,14 @@ stackedplot(TT)
 
 ```
 
+
 ## 🔗 See also
 
-[timetable](../../table/timetable.md), [syncevents](../../table/syncevents.md), [extractevents](../../table/extractevents.md), [stackedplot](../../graphics/stackedplot.md).
+[timetable](../../table/1_create_convert_tables/timetable.md), [syncevents](../../table/8_timetables_events/syncevents.md), [extractevents](../../table/8_timetables_events/extractevents.md), [stackedplot](../../graphics/1_plots/4_data_distribution_plots/stackedplot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

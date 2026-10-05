@@ -19,18 +19,22 @@ Gamma inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>gaminv</b> computes inverse lower-tail gamma probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = gaminv(p, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

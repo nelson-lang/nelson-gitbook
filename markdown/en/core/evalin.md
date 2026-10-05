@@ -18,13 +18,17 @@ Evaluate Nelson code in string in an specified scope.
 
 ## 📄 Description
 
+
 <b>eval</b> executes Nelson instructions given in a string in 'base' or 'caller' scope.
 
 ## 💡 Example
 
+
+
 ```matlab
 evalin('base', 'B=4')
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ evalin('base', 'B=4')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

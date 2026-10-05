@@ -5,46 +5,47 @@ Use the Nelson Engine API for Python.
 ## 📝 Syntax
 
 - import nelson.engine
-- eng = nelson.engine.start_nelson()
+- eng = nelson.engine.start\_nelson()
 - eng.eval(command, nargout=0)
-- eng.feval(function_name, \*args, nargout=1)
+- eng.feval(function\_name, \*args, nargout=1)
 - eng.workspace[name] = value
 - value = eng.workspace[name]
 - eng.quit()
 
 ## 📄 Description
 
-The <b>nelson.engine</b> Python package starts or connects to a Nelson process from Python and exposes Nelson functions as Python methods.
 
-The package can be used from a Nelson installation or from a build tree when the Nelson engine library is available. If automatic discovery fails, set <b>NELSON_ROOT</b> or <b>NELSON_ENGINE_LIBRARY</b> before importing the package.
+The <b>nelson.engine</b> Python package starts or connects to a Nelson process from Python and exposes Nelson functions as Python methods. 
 
-To install the Python package from a Nelson source or build tree, run <b>python -m pip install path/to/nelson/modules/python_engine/resources/python</b>. See the installation help page for complete commands and environment variable setup.
+The package can be used from a Nelson installation or from a build tree when the Nelson engine library is available. If automatic discovery fails, set <b>NELSON\_ROOT</b> or <b>NELSON\_ENGINE\_LIBRARY</b> before importing the package. 
 
-<b>start_nelson</b> starts an owned Nelson session. Calling <b>quit</b> or <b>close</b> closes that session. <b>connect_nelson</b> attaches to an existing session and detaches without closing the target process.
+To install the Python package from a Nelson source or build tree, run <b>python -m pip install path/to/nelson/modules/python\_engine/resources/python</b>. See the installation help page for complete commands and environment variable setup. 
 
-Set <b>background=True</b> to run startup or connection asynchronously. The return value is a <b>FutureResult</b> object with <b>result</b>, <b>done</b>, <b>cancel</b>, and <b>cancelled</b> methods.
+<b>start\_nelson</b> starts an owned Nelson session. Calling <b>quit</b> or <b>close</b> closes that session. <b>connect\_nelson</b> attaches to an existing session and detaches without closing the target process. 
 
-Use <b>nargout</b> to control returned values. With <b>nargout=0</b>, calls return <b>None</b>. With <b>nargout=1</b>, calls return one value. With <b>nargout>1</b>, calls return a tuple.
+Set <b>background=True</b> to run startup or connection asynchronously. The return value is a <b>FutureResult</b> object with <b>result</b>, <b>done</b>, <b>cancel</b>, and <b>cancelled</b> methods. 
 
-Function calls are synchronous by default. Pass <b>background=True</b> to call a Nelson function asynchronously. The call immediately returns a <b>FutureResult</b>; use <b>result(timeout=None)</b>, <b>done</b>, <b>cancel</b>, and <b>cancelled</b> to inspect or control it.
+Use <b>nargout</b> to control returned values. With <b>nargout=0</b>, calls return <b>None</b>. With <b>nargout=1</b>, calls return one value. With <b>nargout>1</b>, calls return a tuple. 
 
-<b>FutureResult.result(timeout)</b> raises <b>nelson.engine.TimeoutError</b>if the result is not ready before the timeout, <b>CancelledError</b> if the call was cancelled, and propagates Nelson execution errors from the asynchronous call.
+Function calls are synchronous by default. Pass <b>background=True</b> to call a Nelson function asynchronously. The call immediately returns a <b>FutureResult</b>; use <b>result(timeout=None)</b>, <b>done</b>, <b>cancel</b>, and <b>cancelled</b> to inspect or control it. 
 
-Supported data exchange includes scalar values, strings, logical values, numeric arrays, Nelson array classes, and NumPy arrays when NumPy is installed. Unsupported types raise explicit errors instead of being silently converted.
+<b>FutureResult.result(timeout)</b> raises <b>nelson.engine.TimeoutError</b>if the result is not ready before the timeout, <b>CancelledError</b> if the call was cancelled, and propagates Nelson execution errors from the asynchronous call. 
 
-Python to Nelson conversions: <b>bool</b> becomes logical, <b>int</b> and <b>float</b> become scalar double, <b>complex</b> becomes complex double, <b>str</b> becomes char, lists and tuples become double arrays unless they contain complex values, valid-key Python <b>dict</b> values become scalar structs, <b>nelson.cell</b> becomes a cell array, <b>nelson.table</b> and pandas DataFrame values become Nelson tables, and <b>nelson.sparse</b> is created with Nelson <b>sparse</b>. pandas DataFrame indexes that are not the default RangeIndex, including DatetimeIndex values, are preserved as Nelson table row names rather than converted to timetables. NumPy arrays preserve common bool, integer, float, and complex dtypes when NumPy is installed.
+Supported data exchange includes scalar values, strings, logical values, numeric arrays, Nelson array classes, and NumPy arrays when NumPy is installed. Unsupported types raise explicit errors instead of being silently converted. 
 
-Nelson to Python conversions: char arrays become <b>nelson.char</b>, dense numeric and logical arrays become Nelson Python array objects, complex arrays preserve their real and imaginary parts, and sparse matrices become <b>nelson.sparse</b>. Scalar structs become <b>nelson.struct</b>, cell arrays become <b>nelson.cell</b>, and tables become pandas DataFrame values when pandas is installed or <b>nelson.table</b> otherwise. Sparse reads use a compatibility path based on <b>full</b> metadata when direct sparse IPC serialization is unavailable. Non-scalar struct arrays, graphics, and other safe object handles return as <b>nelson.engine.NelsonObject</b> values that can be passed back to the same engine call, for example to select or close a figure. Object handles also provide convenience <b>get</b> and <b>set</b>methods for Nelson properties when the underlying Nelson object supports them.
+Python to Nelson conversions: <b>bool</b> becomes logical, <b>int</b> and <b>float</b> become scalar double, <b>complex</b> becomes complex double, <b>str</b> becomes char, lists and tuples become double arrays unless they contain complex values, valid-key Python <b>dict</b> values become scalar structs, <b>nelson.cell</b> becomes a cell array, <b>nelson.table</b> and pandas DataFrame values become Nelson tables, and <b>nelson.sparse</b> is created with Nelson <b>sparse</b>. pandas DataFrame indexes that are not the default RangeIndex, including DatetimeIndex values, are preserved as Nelson table row names rather than converted to timetables. NumPy arrays preserve common bool, integer, float, and complex dtypes when NumPy is installed. 
 
-Not fully supported yet: converting non-scalar struct arrays into native Python mapping objects, deep table nesting, and arbitrary direct object method dispatch from Python. Nelson provides a timetable type, but its conversion to and from Python objects is not yet exposed. Python dictionaries with keys that are not valid struct field names are transferred through Nelson dictionary construction when assigned to the workspace. Unsupported object conversions raise explicit compatibility errors or return Nelson object handles when a safe conversion is not available.
+Nelson to Python conversions: char arrays become <b>nelson.char</b>, dense numeric and logical arrays become Nelson Python array objects, complex arrays preserve their real and imaginary parts, and sparse matrices become <b>nelson.sparse</b>. Scalar structs become <b>nelson.struct</b>, cell arrays become <b>nelson.cell</b>, and tables become pandas DataFrame values when pandas is installed or <b>nelson.table</b> otherwise. Sparse reads use a compatibility path based on <b>full</b> metadata when direct sparse IPC serialization is unavailable. Non-scalar struct arrays, graphics, and other safe object handles return as <b>nelson.engine.NelsonObject</b> values that can be passed back to the same engine call, for example to select or close a figure. Object handles also provide convenience <b>get</b> and <b>set</b>methods for Nelson properties when the underlying Nelson object supports them. 
 
-Table workflows can often be adapted by converting tabular data to supported arrays before crossing the engine boundary. For example, sort or filter values in Python lists, then pass the selected numeric data back as <b>nelson.double</b> arrays for Nelson calculations or plotting.
+Not fully supported yet: converting non-scalar struct arrays into native Python mapping objects, deep table nesting, and arbitrary direct object method dispatch from Python. Nelson provides a timetable type, but its conversion to and from Python objects is not yet exposed. Python dictionaries with keys that are not valid struct field names are transferred through Nelson dictionary construction when assigned to the workspace. Unsupported object conversions raise explicit compatibility errors or return Nelson object handles when a safe conversion is not available. 
 
-Nelson array classes include <b>nelson.double</b>, <b>nelson.single</b>, signed and unsigned integer arrays, <b>nelson.logical</b>, and <b>nelson.char</b>. Arrays use zero-based Python indexing and preserve Nelson column-major storage for engine transfer.
+Table workflows can often be adapted by converting tabular data to supported arrays before crossing the engine boundary. For example, sort or filter values in Python lists, then pass the selected numeric data back as <b>nelson.double</b> arrays for Nelson calculations or plotting. 
 
-Dictionaries can be represented with <b>nelson.dictionary</b>. Table values interoperate with pandas DataFrame objects when pandas is installed; otherwise they are represented as Nelson object handles or raise compatibility errors where conversion is not available.
+Nelson array classes include <b>nelson.double</b>, <b>nelson.single</b>, signed and unsigned integer arrays, <b>nelson.logical</b>, and <b>nelson.char</b>. Arrays use zero-based Python indexing and preserve Nelson column-major storage for engine transfer. 
 
-The <b>nelson.engine</b> package starts or connects to a separate Nelson process. For the in-process case, when Python is run from Nelson with <b>pyrun</b> or <b>pyrunfile</b>, a Nelson function handle can be wrapped into a Python callable with <b>pyfunction</b> and called back synchronously from the Python code (for example as a scikit-learn scorer, kernel, or transformer). That callback is single-threaded and requires <b>n_jobs=1</b>.
+Dictionaries can be represented with <b>nelson.dictionary</b>. Table values interoperate with pandas DataFrame objects when pandas is installed; otherwise they are represented as Nelson object handles or raise compatibility errors where conversion is not available. 
+
+The <b>nelson.engine</b> package starts or connects to a separate Nelson process. For the in-process case, when Python is run from Nelson with <b>pyrun</b> or <b>pyrunfile</b>, a Nelson function handle can be wrapped into a Python callable with <b>pyfunction</b> and called back synchronously from the Python code (for example as a scikit-learn scorer, kernel, or transformer). That callback is single-threaded and requires <b>n\_jobs=1</b>.
 
 ## 💡 Examples
 
@@ -57,7 +58,6 @@ eng = nelson.engine.start_nelson()
 print(eng.sqrt(4.0))
 eng.quit()
 ```
-
 Call a Nelson function asynchronously.
 
 ```matlab
@@ -70,7 +70,6 @@ if not future.done():
 print(ret)
 eng.quit()
 ```
-
 Evaluate commands and exchange workspace variables.
 
 ```matlab
@@ -83,7 +82,6 @@ eng.eval("y = x * 2;", nargout=0)
 y = eng.workspace["y"]
 eng.quit()
 ```
-
 Call a user script that computes the area of a triangle.
 
 ```matlab
@@ -99,7 +97,6 @@ eng.triarea_script(nargout=0)
 area = eng.workspace["a"]
 eng.quit()
 ```
-
 Call a user function from the current folder.
 
 ```matlab
@@ -115,7 +112,6 @@ ret = eng.triarea_fun(1.0, 5.0)
 print(ret)
 eng.quit()
 ```
-
 Call functions by changing folder or adding folders to the Nelson path.
 
 ```matlab
@@ -130,7 +126,6 @@ paths = eng.genpath(r"C:\work\myproject")
 eng.addpath(paths, nargout=0)
 eng.quit()
 ```
-
 Call a user function after adding its folder to Nelson path.
 
 ```matlab
@@ -141,7 +136,6 @@ eng.addpath(r"C:\work\nelson_functions", nargout=0)
 result = eng.myfunction(10.0, nargout=1)
 eng.quit()
 ```
-
 Run a script. Scripts normally use nargout=0.
 
 ```matlab
@@ -152,7 +146,6 @@ eng.cd(r"C:\work\scripts", nargout=0)
 eng.myscript(nargout=0)
 eng.quit()
 ```
-
 Start Nelson asynchronously.
 
 ```matlab
@@ -163,7 +156,6 @@ eng = future.result(timeout=30)
 eng.eval("disp('ready')", nargout=0)
 eng.quit()
 ```
-
 Use complex, logical, sparse, and NumPy values.
 
 ```matlab
@@ -183,7 +175,6 @@ except ImportError:
 
 eng.quit()
 ```
-
 Use a Medium-style direct engine workflow instead of os.system.
 
 ```matlab
@@ -199,7 +190,6 @@ values = nelson.double([1, 2, 3])
 eng.myFunc(values, nargout=0)
 eng.quit()
 ```
-
 Sort data in Python and plot it with Nelson.
 
 ```matlab
@@ -235,7 +225,6 @@ eng.title("Blood Pressure Readings", nargout=0)
 eng.legend("Smokers", "Nonsmokers", nargout=0)
 eng.quit()
 ```
-
 Keep a Nelson graphics handle in Python and pass it back.
 
 ```matlab
@@ -250,7 +239,6 @@ eng.feval("close", h, nargout=0)
 h.release()
 eng.quit()
 ```
-
 Use Nelson arrays and dictionaries from Python.
 
 ```matlab
@@ -261,14 +249,15 @@ flags = nelson.logical([[True, False]])
 config = nelson.dictionary({"method": "fast", "iterations": 10})
 ```
 
+
 ## 🔗 See also
 
 [pyrun](../python_engine/pyrun.md), [pyfunction](../python_engine/pyfunction.md), [pyenv](../python_engine/pyenv.md), [Install Nelson Engine API for Python](../python_engine/6_install_nelson_engine_for_python.md), [ipc](../ipc/ipc.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                      |
-| ------- | ----------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Nelson Engine API for Python added. |
 
 <!--

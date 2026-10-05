@@ -4,9 +4,11 @@ Reference des proprietes des objets graphiques.
 
 ## 📄 Description
 
-Cette section contient les pages de reference des proprietes visibles des objets graphiques.
+
+Cette section contient les pages de reference des proprietes visibles des objets graphiques. 
 
 Utiliser <b>properties</b> avec un objet graphique pour lister les proprietes prises en charge par cet objet.
+
 
 ## 🔗 Voir aussi
 
@@ -14,8 +16,8 @@ Utiliser <b>properties</b> avec un objet graphique pour lister les proprietes pr
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

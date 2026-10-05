@@ -11,7 +11,7 @@ Retourne le nom et la longueur d'une dimension netCDF.
 - ncid - Identifiant numerique d'un fichier ou groupe netCDF ouvert.
 - dimid - Identifiant numerique d'une dimension netCDF.
 - dimname - Dimension name.
-- dimlen - Dimension length or NC_UNLIMITED.
+- dimlen - Dimension length or NC\_UNLIMITED.
 
 ## 📤 Argument de sortie
 
@@ -19,7 +19,8 @@ Retourne le nom et la longueur d'une dimension netCDF.
 
 ## 📄 Description
 
-netcdf.inqDim expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.inqDim expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -35,14 +36,15 @@ dimid = netcdf.defDim(ncid, 'x', 3);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.defVar](../netcdf/netcdf.defVar.md), [netcdf.inq](../netcdf/netcdf.inq.md).
+[netcdf.defVar](../netcdf/netcdf_defVar.md), [netcdf.inq](../netcdf/netcdf_inq.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

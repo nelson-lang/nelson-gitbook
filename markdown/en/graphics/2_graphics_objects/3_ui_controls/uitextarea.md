@@ -19,6 +19,7 @@ Create text area component.
 
 ## 📄 Description
 
+
 <b>ta = uitextarea</b> creates a multi-line text area. <b>Value</b> is a cell array of character vectors (one per line). Properties: <b>Editable</b>, <b>WordWrap</b>, <b>HorizontalAlignment</b>, <b>Placeholder</b>, <b>ValueChangedFcn</b>, <b>ValueChangingFcn</b>.
 
 ## 💡 Examples
@@ -31,7 +32,6 @@ ta = uitextarea(f, 'Position', [95 75 230 115]);
 ta.Value = {'Line one'; 'Line two'; 'Line three'};
 drawnow();
 ```
-
 <img src="uitextarea_example.svg" align="middle"/>
 uitextarea
 
@@ -42,13 +42,14 @@ ta = uitextarea(f, 'Value', {'first line', 'second line'});
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

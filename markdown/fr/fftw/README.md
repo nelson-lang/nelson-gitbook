@@ -1,10 +1,16 @@
 # FFTW
 
+
+    
 Le module FFTW fournit des outils pour calculer les transformées de Fourier rapides dans Nelson.
 
+    
 Il prend en charge les transformées unidimensionnelles, bidimensionnelles et multidimensionnelles, ainsi que les transformées inverses et les manipulations dans le domaine fréquentiel.
 
+    
 Le module permet une analyse spectrale et un traitement du signal efficaces, en s'appuyant sur des algorithmes haute performance pour les données réelles et complexes.
+
+  
 
 ## Functions
 
@@ -19,3 +25,4 @@ Le module permet une analyse spectrale et un traitement du signal efficaces, en 
 - [ifft2](ifft2.md) - Transformee de Fourier inverse rapide 2-D.
 - [ifftn](ifftn.md) - Transformée de Fourier inverse multidimensionnelle.
 - [ifftshift](ifftshift.md) - inverse de fftshift
+

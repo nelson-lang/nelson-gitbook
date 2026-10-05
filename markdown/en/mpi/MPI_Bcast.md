@@ -1,23 +1,24 @@
-# MPI_Bcast
+# MPI\_Bcast
 
 Broadcasts a message from the process with rank "root" to all other processes of the communicator
 
 ## 📝 Syntax
 
-- A = MPI_Bcast(A, Root)
-- A = MPI_Bcast(A, Root, Comm)
+- A = MPI\_Bcast(A, Root)
+- A = MPI\_Bcast(A, Root, Comm)
 
 ## 📥 Input argument
 
 - A - a nelson variable.
 - Root - a integer value: rank of broadcast root.
-- Comm - a MPI_Comm object.
+- Comm - a MPI\_Comm object.
 
 ## 📤 Output argument
 
 - A - broadcasted array.
 
 ## 📄 Description
+
 
 This function is used to broadcast an array to all group members.
 
@@ -47,13 +48,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [MPI_Barrier](../mpi/MPI_Barrier.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,22 +16,26 @@ crée une chaîne de caractères d'espaces.
 
 ## 📄 Description
 
+
 <b>blanks</b> crée une chaîne composée d'espaces.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 blanks(4)
 ```
 
+
 ## 🔗 Voir aussi
 
-[char](../../string/char.md).
+[char](../../string/1_create_convert_text/char.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

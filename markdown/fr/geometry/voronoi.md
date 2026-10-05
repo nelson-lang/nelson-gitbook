@@ -12,7 +12,8 @@ Diagramme de Voronoi de points plans
 
 ## 📄 Description
 
-<b>voronoi</b> calcule les segments du diagramme de Voronoi pour des points plans.
+
+<b>voronoi</b> calcule les segments du diagramme de Voronoi pour des points plans. 
 
 Sans sortie, la fonction trace le diagramme.
 
@@ -25,14 +26,15 @@ P = [0 0; 1 0; 1 1; 0 1; 0.4 0.6];
 voronoi(P)
 ```
 
+
 ## 🔗 Voir aussi
 
 [voronoin](../geometry/voronoin.md), [delaunay](../geometry/delaunay.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

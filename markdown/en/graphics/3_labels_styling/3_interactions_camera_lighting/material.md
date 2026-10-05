@@ -15,9 +15,12 @@ Set surface and patch material properties.
 
 ## 📄 Description
 
+
 <b>material</b> updates ambient, diffuse, specular, exponent, and reflectance properties on surface and patch children.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,8 +31,8 @@ material('metal');
 view(35, 28);
 
 ```
-
 <img src="material_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -37,7 +40,7 @@ view(35, 28);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

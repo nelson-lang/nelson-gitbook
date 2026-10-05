@@ -32,24 +32,27 @@ Regroupement spatial fonde sur la densite.
 
 ## 📄 Description
 
-<b>dbscan</b> regroupe les observations par connectivite de densite. L'algorithme recherche d'abord les observations situees a une distance inferieure ou egale a epsilon d'une observation candidate. Une candidate devient un point coeur lorsque ce voisinage contient au moins minpts observations. Les groupes sont ensuite etendus depuis les points coeur et incluent les points coeur et les points de bord atteignables par densite.
 
-La comparaison des distances est inclusive : distance <= epsilon. Ce detail est important pour les points situes exactement sur la limite du rayon. Les points qui ne sont atteignables depuis aucun point coeur sont renvoyes comme bruit avec l'etiquette -1.
+<b>dbscan</b> regroupe les observations par connectivite de densite. L'algorithme recherche d'abord les observations situees a une distance inferieure ou egale a epsilon d'une observation candidate. Une candidate devient un point coeur lorsque ce voisinage contient au moins minpts observations. Les groupes sont ensuite etendus depuis les points coeur et incluent les points coeur et les points de bord atteignables par densite. 
 
-Les distances integrees prises en charge sont 'euclidean', 'squaredeuclidean', 'seuclidean', 'cityblock', 'chebychev', 'minkowski', 'mahalanobis', 'cosine', 'correlation', 'spearman', 'hamming', 'jaccard' et 'precomputed'. Les distances integrees sont en general plus rapides qu'un handle de fonction.
+La comparaison des distances est inclusive : distance <= epsilon. Ce detail est important pour les points situes exactement sur la limite du rayon. Les points qui ne sont atteignables depuis aucun point coeur sont renvoyes comme bruit avec l'etiquette -1. 
 
-Un handle de fonction de distance doit accepter deux entrees : une observation ligne et la matrice complete des donnees. Il doit renvoyer une distance numerique reelle pour chaque ligne de X. Le resultat peut etre un vecteur ligne ou colonne.
+Les distances integrees prises en charge sont 'euclidean', 'squaredeuclidean', 'seuclidean', 'cityblock', 'chebychev', 'minkowski', 'mahalanobis', 'cosine', 'correlation', 'spearman', 'hamming', 'jaccard' et 'precomputed'. Les distances integrees sont en general plus rapides qu'un handle de fonction. 
 
-Pour 'squaredeuclidean', epsilon est compare a la distance euclidienne au carre. Pour une entree numerique 'precomputed', epsilon est requis et compare aux valeurs stockees dans D. Pour une entree logique 'precomputed', epsilon doit etre [], car B encode deja la relation de voisinage.
+Un handle de fonction de distance doit accepter deux entrees : une observation ligne et la matrice complete des donnees. Il doit renvoyer une distance numerique reelle pour chaque ligne de X. Le resultat peut etre un vecteur ligne ou colonne. 
+
+Pour 'squaredeuclidean', epsilon est compare a la distance euclidienne au carre. Pour une entree numerique 'precomputed', epsilon est requis et compare aux valeurs stockees dans D. Pour une entree logique 'precomputed', epsilon doit etre [], car B encode deja la relation de voisinage. 
 
 L'ordre des etiquettes suit l'ordre de decouverte des groupes a partir des lignes d'entree. Les observations de bord atteignables depuis plusieurs groupes sont affectees au premier groupe decouvert qui les atteint.
 
 ## Fonction(s) utilisée(s)
 
+
     pdist2
     kmeans
     kmedoids
     silhouette
+  
 
 ## 💡 Exemples
 
@@ -59,112 +62,96 @@ Regrouper deux ensembles denses et une observation de bruit.
 X = [0 0; 0 0.1; 5 5; 5 5.1; 10 10];
 [idx, corepts] = dbscan(X, 0.2, 2)
 ```
-
 Renvoyer seulement les etiquettes de groupes.
 
 ```matlab
 X = [0 0; 0 0.1; 5 5; 5 5.1];
 idx = dbscan(X, 0.2, 2)
 ```
-
 Utiliser une valeur minpts plus grande pour marquer toutes les observations comme bruit.
 
 ```matlab
 X = [0; 0.1];
 [idx, corepts] = dbscan(X, 1, 3)
 ```
-
 Les points exactement a epsilon sont inclus dans le voisinage.
 
 ```matlab
 X = [0; 1; 2];
 idx = dbscan(X, 1, 2)
 ```
-
 Regrouper des lignes dupliquees avec un tres petit rayon.
 
 ```matlab
 X = [1 1; 1 1; 1 1; 5 5];
 [idx, corepts] = dbscan(X, 1e-12, 3)
 ```
-
 Utiliser la distance euclidienne au carre.
 
 ```matlab
 X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
 idx = dbscan(X, 1, 2, 'Distance', 'squaredeuclidean')
 ```
-
 Utiliser la distance city block.
 
 ```matlab
 X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
 idx = dbscan(X, 0.2, 2, 'Distance', 'cityblock')
 ```
-
 Utiliser la distance de Chebychev.
 
 ```matlab
 X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
 idx = dbscan(X, 0.1, 2, 'Distance', 'chebychev')
 ```
-
 Utiliser la distance de Minkowski avec l'exposant 1.
 
 ```matlab
 X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
 idx = dbscan(X, 0.2, 2, 'Distance', 'minkowski', 'P', 1)
 ```
-
 Utiliser la distance euclidienne standardisee avec une echelle explicite.
 
 ```matlab
 X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
 idx = dbscan(X, 0.2, 2, 'Distance', 'seuclidean', 'Scale', [1 1])
 ```
-
 Utiliser la distance de Mahalanobis avec une matrice de covariance explicite.
 
 ```matlab
 X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
 idx = dbscan(X, 0.2, 2, 'Distance', 'mahalanobis', 'Cov', eye(2))
 ```
-
 Utiliser la distance cosinus pour regrouper les observations de meme direction.
 
 ```matlab
 X = [1 0; 2 0; 0 1; 0 2];
 idx = dbscan(X, 0.01, 2, 'Distance', 'cosine')
 ```
-
 Utiliser la distance de correlation.
 
 ```matlab
 X = [1 2; 2 3; 10 9; 11 10];
 idx = dbscan(X, 0.01, 2, 'Distance', 'correlation')
 ```
-
 Utiliser la distance de Spearman.
 
 ```matlab
 X = [1 2; 2 3; 10 9; 11 10];
 idx = dbscan(X, 0.01, 2, 'Distance', 'spearman')
 ```
-
 Utiliser la distance de Hamming sur des lignes binaires.
 
 ```matlab
 X = [1 0 0; 1 0 0; 0 1 0; 0 1 0];
 idx = dbscan(X, 0.01, 2, 'Distance', 'hamming')
 ```
-
 Utiliser la distance de Jaccard sur des motifs creux.
 
 ```matlab
 X = [1 0 0; 1 0 0; 0 1 0; 0 1 0];
 idx = dbscan(X, 0.01, 2, 'Distance', 'jaccard')
 ```
-
 Utiliser un handle de fonction de distance personnalise.
 
 ```matlab
@@ -172,7 +159,6 @@ X = [0 0; 0 0.1; 5 5; 5 5.1; 10 10];
 f = @(row, A) sqrt((A(:, 1) - row(1)).^2 + (A(:, 2) - row(2)).^2);
 idx = dbscan(X, 0.2, 2, 'Distance', f)
 ```
-
 Utiliser une matrice carree de distances pre-calculees.
 
 ```matlab
@@ -180,28 +166,24 @@ X = [0; 0.1; 5; 5.1; 10];
 D = abs(X - X');
 idx = dbscan(D, 0.2, 2, 'Distance', 'precomputed')
 ```
-
 Utiliser un vecteur compact de distances pre-calculees.
 
 ```matlab
 Dv = [0.1 5 5.1 10 4.9 5 9.9 0.1 5 4.9];
 idx = dbscan(Dv, 0.2, 2, 'Distance', 'precomputed')
 ```
-
 Utiliser une matrice logique de voisinage pre-calculee.
 
 ```matlab
 B = [true true false; true true true; false true true];
 idx = dbscan(B, [], 2, 'Distance', 'precomputed')
 ```
-
 Utiliser un vecteur logique compact de voisinages pre-calcules.
 
 ```matlab
 Bv = [true false false true false true];
 idx = dbscan(Bv, [], 2, 'Distance', 'precomputed')
 ```
-
 Tracer des groupes allonges avec des points aberrants.
 
 ```matlab
@@ -223,7 +205,6 @@ title('Groupes allonges avec points aberrants');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="dbscan_1.svg" align="middle"/>
 Tracer des groupes de formes et tailles differentes.
 
@@ -248,7 +229,6 @@ title('Groupes de formes et tailles differentes');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="dbscan_2.svg" align="middle"/>
 Tracer deux bandes sinusoidales.
 
@@ -269,7 +249,6 @@ title('Bandes sinusoidales');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="dbscan_3.svg" align="middle"/>
 Tracer des groupes en arcs separes.
 
@@ -293,7 +272,6 @@ title('Groupes en arcs separes');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="dbscan_4.svg" align="middle"/>
 Tracer un ruban ondule et un ilot dense.
 
@@ -315,7 +293,6 @@ title('Ruban ondule et ilot dense');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="dbscan_5.svg" align="middle"/>
 Tracer des groupes en angles droits avec la distance city block.
 
@@ -336,7 +313,6 @@ title('Groupes en angles droits avec la distance city block');
 xlabel('x1');
 ylabel('x2');
 ```
-
 <img src="dbscan_6.svg" align="middle"/>
 Regrouper deux anneaux avec la distance par defaut.
 
@@ -346,17 +322,17 @@ theta = linspace(0, 2 * pi, N)';
 X = [[0.5 * cos(theta), 0.5 * sin(theta)]; [5 * cos(theta), 5 * sin(theta)]];
 idx = dbscan(X, 1, 5)
 ```
-
 Traiter une matrice de donnees vide.
 
 ```matlab
 idx = dbscan(zeros(0, 2), 1, 2)
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

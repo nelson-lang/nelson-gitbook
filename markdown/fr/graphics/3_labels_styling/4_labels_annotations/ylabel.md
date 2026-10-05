@@ -22,9 +22,12 @@
 
 ## 📄 Description
 
+
 <b>ylabel('text')</b> étiquette l'axe des y des axes actuels.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -33,8 +36,8 @@ y = sin(2*pi*x);
 plot(x, y);
 ylabel('Étiquette de l’axe Y - Unicode ドラゴンボールY(ゼット)')
 ```
-
 <img src="ylabel.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +45,8 @@ ylabel('Étiquette de l’axe Y - Unicode ドラゴンボールY(ゼット)')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

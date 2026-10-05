@@ -16,14 +16,18 @@ Determine whether a value is a gpuArray.
 
 ## 📄 Description
 
+
 <b>tf = isgpuarray(A)</b> returns <b>true</b> when <b>A</b> is a <b>gpuArray</b> stored on the device, and <b>false</b> otherwise.
 
 ## 💡 Example
+
+
 
 ```matlab
 isgpuarray(gpuArray(single(1)))
 isgpuarray(single(1))
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ isgpuarray(single(1))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

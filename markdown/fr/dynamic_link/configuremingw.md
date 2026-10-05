@@ -4,11 +4,11 @@ Configurer Nelson pour utiliser MinGW comme compilateur C par défaut
 
 ## 📝 Syntaxe
 
-- [res, message] = configuremingw(mingw_path)
+- [res, message] = configuremingw(mingw\_path)
 
 ## 📥 Argument d'entrée
 
-- mingw_path - une chaîne : chemin racine de MinGW.
+- mingw\_path - une chaîne : chemin racine de MinGW.
 
 ## 📤 Argument de sortie
 
@@ -17,17 +17,21 @@ Configurer Nelson pour utiliser MinGW comme compilateur C par défaut
 
 ## 📄 Description
 
-Par défaut, Nelson n'a pas de compilateur C/C++ défini par défaut sous Windows.
 
-Sur les autres plateformes, on suppose qu'un compilateur C/C++ est disponible et l'appel de cette fonction n'est pas requis.
+Par défaut, Nelson n'a pas de compilateur C/C++ défini par défaut sous Windows. 
+
+Sur les autres plateformes, on suppose qu'un compilateur C/C++ est disponible et l'appel de cette fonction n'est pas requis. 
 
 Sous Windows, appelez une fois <b>configuremingw</b> si vous souhaitez utiliser MinGW comme compilateur C par défaut.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 configuremingw('c:/mingw')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +39,8 @@ configuremingw('c:/mingw')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

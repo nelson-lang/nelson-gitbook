@@ -16,16 +16,20 @@ Convertit en entier non signé 16 bits.
 
 ## 📄 Description
 
-<b>uint16</b> convertit la valeur en type entier non signé 16 bits.
+
+<b>uint16</b> convertit la valeur en type entier non signé 16 bits. 
 
 La valeur est arrondie à la valeur uint16 la plus proche lors de la conversion. Une valeur supérieure ou inférieure à la plage pour la classe uint16 est mappée vers l'une des extrémités de la plage [0, 65535].
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = [1 -32769 -120 127 32767 32768]
 B = uint16(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ B = uint16(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

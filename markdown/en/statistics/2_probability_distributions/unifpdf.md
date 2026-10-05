@@ -19,22 +19,26 @@ Continuous uniform probability density function
 
 ## 📄 Description
 
+
 <b>unifpdf</b> computes continuous uniform density values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:0.25:1;
 y = unifpdf(x);
 ```
 
+
 ## 🔗 See also
 
-[unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md).
+[unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

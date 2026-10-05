@@ -4,7 +4,7 @@ Supprime l'objet dllib
 
 ## 📝 Syntaxe
 
-- dllib_delete(h)
+- dllib\_delete(h)
 - delete(h)
 - dlclose(h)
 
@@ -14,11 +14,14 @@ Supprime l'objet dllib
 
 ## 📄 Description
 
-<b>dlclose(h)</b> ou <b>delete(h)</b> libère l'objet dllib.
+
+<b>dlclose(h)</b> ou <b>delete(h)</b> libère l'objet dllib. 
 
 N'oubliez pas de nettoyer la variable h ensuite.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 path_ref = modulepath('dynamic_link', 'builtin');
@@ -28,14 +31,15 @@ dlclose(lib); // or delete(lib)
 isvalid(lib)
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlopen](../dynamic_link/dlopen.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

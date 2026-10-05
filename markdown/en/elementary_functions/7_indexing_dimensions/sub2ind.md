@@ -20,9 +20,12 @@ Matrix subscript values to linear index
 
 ## 📄 Description
 
+
 <b>sub2ind</b> converts subscripts to linear indices. .
 
 ## 💡 Example
+
+
 
 ```matlab
 row = [2 3 4 2];
@@ -31,13 +34,14 @@ sz = [3 3];
 ind = sub2ind(sz, row, col)
 ```
 
+
 ## 🔗 See also
 
-[ind2sub](../../elementary_functions/sub2ind.md).
+[ind2sub](../../elementary_functions/7_indexing_dimensions/sub2ind.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

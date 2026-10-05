@@ -28,11 +28,14 @@ Display image from array.
 
 ## 📄 Description
 
-<b>image</b> displays C data as an image.
+
+<b>image</b> displays C data as an image. 
 
 See [image properties](../../graphics/2_graphics_objects/4_properties/nelson.graphics.image.properties.md) for the complete property list.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -45,15 +48,15 @@ C(:, :, 2) = G;
 C(:, :, 3) = B;
 im = image(C)
 ```
-
 <img src="image_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
 image();
 ```
-
 <img src="image_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -61,11 +64,11 @@ image();
 
 ## 🕔 History
 
-| Version | 📄 Description                       |
-| ------- | ------------------------------------ |
-| 1.0.0   | initial version                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 1.7.0   | CreateFcn, DeleteFcn callback added. |
-| --      | BeingDeleted property added.         |
+| --   | BeingDeleted property added. |
 
 <!--
 ## 👤 Author

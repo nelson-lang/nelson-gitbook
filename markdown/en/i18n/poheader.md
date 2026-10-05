@@ -9,7 +9,7 @@ Generates po file header.
 ## 📥 Input argument
 
 - domain - a string: domain message.
-- language - a string: language, examples 'en_US' or 'fr_FR'.
+- language - a string: language, examples 'en\_US' or 'fr\_FR'.
 
 ## 📤 Output argument
 
@@ -17,13 +17,17 @@ Generates po file header.
 
 ## 📄 Description
 
+
 <b>ce = poheader(domain, language)</b> generates po file header.
 
 ## 💡 Example
 
+
+
 ```matlab
 poheader('nelson', 'en_US')
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ poheader('nelson', 'en_US')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

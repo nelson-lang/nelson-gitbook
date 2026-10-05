@@ -23,6 +23,7 @@ Create a 3-D spatial reference structure.
 
 ## 📄 Description
 
+
 Create a 3-D spatial reference structure with image size, world limits, intrinsic limits, world extents and voxel extents.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ Create a referenced volume grid
 R = imref3d([32 40 12], [0.5 40.5], [0.5 32.5], [10.5 22.5]);
 R.PixelExtentInWorldZ
 ```
-
 Create a volume reference from voxel extents
 
 ```matlab
@@ -43,13 +43,14 @@ R.YWorldLimits
 R.ZWorldLimits
 ```
 
+
 ## 🔗 See also
 
-[imref2d](../../../image_processing/imref2d.md), [affine3d](../../../image_processing/affine3d.md).
+[imref2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref2d.md), [affine3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine3d.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

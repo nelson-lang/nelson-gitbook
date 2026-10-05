@@ -26,13 +26,18 @@
 
 ## 📄 Description
 
-<b>plot3(X1, Y1, Z1, ...)</b> plots one or more lines in three-dimensional space.
 
-<b>go = plot3(...)</b> returns a column vector of line graphics objects.
+<b>plot3(X1, Y1, Z1, ...)</b> plots one or more lines in three-dimensional space. 
+
+<b>go = plot3(...)</b> returns a column vector of line graphics objects. 
+
+ 
 
 see <b>line</b> or<b>plot</b> for more information about properties
 
 ## 💡 Examples
+
+
 
 ```matlab
 f  = figure();
@@ -40,8 +45,8 @@ t = 0:pi/50:10*pi;
 L = plot3(sin(t), cos(t), t);
 axis square
 ```
-
 <img src="plot3_1.svg" align="middle"/>
+
 
 ```matlab
 f  = figure();
@@ -55,8 +60,8 @@ zlabel ('z');
 title ('plot3 display of 3-D helix');
 axis square
 ```
-
 <img src="plot3_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -64,7 +69,7 @@ axis square
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

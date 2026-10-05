@@ -8,17 +8,21 @@ Returns the default language used in Nelson.
 
 ## 📤 Output argument
 
-- lang - a string: 'en_US' by default.
+- lang - a string: 'en\_US' by default.
 
 ## 📄 Description
+
 
 <b>getdefaultlanguage</b> returns the default language used by Nelson.
 
 ## 💡 Example
 
+
+
 ```matlab
 getdefaultlanguage()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ getdefaultlanguage()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -18,22 +18,26 @@ Apply a function to table variables.
 
 ## 📄 Description
 
+
 <b>varfun</b> applies a function independently to selected variables.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table([1; 2; 4], [10; 20; 30], 'VariableNames', {'X', 'Y'});
 R = varfun(@mean, T)
 ```
 
+
 ## 🔗 See also
 
-[rowfun](../../table/rowfun.md).
+[rowfun](../../table/7_apply_functions/rowfun.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

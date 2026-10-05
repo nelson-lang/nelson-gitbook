@@ -1,10 +1,10 @@
-# libpointer_delete
+# libpointer\_delete
 
 Removes libpointer object.
 
 ## 📝 Syntax
 
-- libpointer_delete(h)
+- libpointer\_delete(h)
 - delete(h)
 
 ## 📥 Input argument
@@ -13,15 +13,19 @@ Removes libpointer object.
 
 ## 📄 Description
 
-<b>delete(h)</b> releases libpointer object.
+
+<b>delete(h)</b> releases libpointer object. 
 
 Do not forget to clear h afterward.
 
 ## 💡 Example
 
+
+
 ```matlab
 used = libpointer_used()
 ```
+
 
 ## 🔗 See also
 
@@ -29,7 +33,7 @@ used = libpointer_used()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

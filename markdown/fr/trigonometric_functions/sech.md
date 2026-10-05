@@ -16,14 +16,18 @@ Sécante hyperbolique.
 
 ## 📄 Description
 
+
 <b>sech</b> calcule la sécante hyperbolique pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = sech(X)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ R = sech(X)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,7 +18,8 @@ Check that a value is real.
 
 ## 📄 Description
 
-The assertion passes when value has no complex part.
+
+The assertion passes when value has no complex part. 
 
 Diagnostics include the computed class and dimensions.
 
@@ -29,12 +30,12 @@ Real value
 ```matlab
 asserts.real([1 2]);
 ```
-
 Capture a complex value
 
 ```matlab
 [res, msg] = asserts.real(1 + i);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a complex value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

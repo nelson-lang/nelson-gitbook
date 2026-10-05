@@ -19,9 +19,10 @@ Decale des valeurs datetime vers des bornes calendaires ou jours de semaine choi
 
 ## 📄 Description
 
-Decale des valeurs datetime vers des bornes calendaires ou jours de semaine choisis.
 
-Les unites de borne incluent year, quarter, month, week, day, hour, minute et second. Le decalage par jour accepte noms, numeros, weekday et weekend.
+Decale des valeurs datetime vers des bornes calendaires ou jours de semaine choisis. 
+
+Les unites de borne incluent year, quarter, month, week, day, hour, minute et second. Le decalage par jour accepte noms, numeros, weekday et weekend. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -36,14 +37,15 @@ dateshift(t, 'dayofweek', 'Monday', 'next')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

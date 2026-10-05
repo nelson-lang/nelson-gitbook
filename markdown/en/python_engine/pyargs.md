@@ -18,17 +18,21 @@ Change default environment of Python interpreter.
 
 ## 📄 Description
 
-<b>pyargs(Name, Value, ...)</b> generates one or multiple keyword arguments for Python functions.
 
-In Python, a keyword argument is a value associated with an identifier.
+<b>pyargs(Name, Value, ...)</b> generates one or multiple keyword arguments for Python functions. 
+
+In Python, a keyword argument is a value associated with an identifier. 
 
 Ensure to position<b>pyargs</b> as the last input argument when calling a Python function.
 
 ## 💡 Example
 
+
+
 ```matlab
 pa = pyargs('A', 1)
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ pa = pyargs('A', 1)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.3.0   | initial version |
 

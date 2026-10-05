@@ -25,14 +25,18 @@ Rend des chaînes uniques en ajoutant des suffixes numériques.
 
 ## 📄 Description
 
+
 <b>nelson.lang.makeUniqueStrings</b> ajoute des suffixes comme <b>\_1</b> et <b>\_2</b> aux éléments sélectionnés jusqu'à ce qu'ils soient uniques.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 nelson.lang.makeUniqueStrings({'a', 'a', 'b', 'a'})
 nelson.lang.makeUniqueStrings({'a', 'b'}, {'a', 'b'})
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +44,8 @@ nelson.lang.makeUniqueStrings({'a', 'b'}, {'a', 'b'})
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

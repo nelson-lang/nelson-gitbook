@@ -16,9 +16,10 @@ Test whether timezone-aware datetime values are in daylight saving time.
 
 ## 📄 Description
 
-Test whether timezone-aware datetime values are in daylight saving time.
 
-isdst uses the embedded timezone rules for named zones. Fixed offsets do not have daylight saving transitions.
+Test whether timezone-aware datetime values are in daylight saving time. 
+
+isdst uses the embedded timezone rules for named zones. Fixed offsets do not have daylight saving transitions. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,13 +33,14 @@ isdst(datetime(2024, 7, 1, 'TimeZone', 'Europe/Paris'))
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

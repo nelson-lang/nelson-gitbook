@@ -4,18 +4,21 @@ Vérifie si une variable est verrouillée.
 
 ## 📝 Syntaxe
 
-- state = varislock(scope, variable_name)
+- state = varislock(scope, variable\_name)
 
 ## 📥 Argument d'entrée
 
 - scope - une chaîne : 'global', 'base', 'caller', 'local'.
-- variable_name - une chaîne : nom de la variable.
+- variable\_name - une chaîne : nom de la variable.
 
 ## 📄 Description
 
-<b>varislock</b> renvoie vrai si<b>variable_name</b> a été déclarée comme variable verrouillée, et faux sinon.
+
+<b>varislock</b> renvoie vrai si<b>variable\_name</b> a été déclarée comme variable verrouillée, et faux sinon.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 y = 3;
@@ -29,14 +32,15 @@ y = 4
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [varlock](../memory_manager/varlock.md), [varunlock](../memory_manager/varunlock.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

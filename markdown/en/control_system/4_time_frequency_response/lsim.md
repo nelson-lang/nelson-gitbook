@@ -23,19 +23,22 @@ Plot simulated time response of dynamic system to arbitrary inputs.
 
 ## 📄 Description
 
-The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>).
 
-The time samples for the simulation are specified by the vector <b>t</b>.
+The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>). 
 
-In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>.
+The time samples for the simulation are specified by the vector <b>t</b>. 
 
-For multi-input systems,<b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>.
+In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>. 
 
-An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values.
+For multi-input systems,<b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>. 
+
+An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values. 
 
 This is particularly relevant when <b>sys</b> is a state-space model.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = [-10 -20 -30;1  0  0; 0  1  0];
@@ -49,8 +52,8 @@ sys = ss(A, B, C, D);
 lsim(sys, U, T, X0);
 
 ```
-
 <img src="lsim1.svg" align="middle"/>
+
 
 ```matlab
 A = [-1.7  -0.3   1.1;
@@ -74,16 +77,16 @@ u = [uSq uP];
 lsim(sys,u,t)
 
 ```
-
 <img src="lsim2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[gensig](../../control_system/gensig.md), [step](../../control_system/step.md).
+[gensig](../../control_system/2_model_conversion_interconnection/gensign.md), [step](../../control_system/4_time_frequency_response/step.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

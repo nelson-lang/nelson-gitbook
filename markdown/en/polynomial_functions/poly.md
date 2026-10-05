@@ -18,11 +18,14 @@ Polynomial with specified roots or characteristic polynomial.
 
 ## 📄 Description
 
-If <b>A</b> is a square matrix,<b>p = poly(A)</b> computes an n+1 element row vector. This result is composed the coefficients of the characteristic polynomial.
+
+If <b>A</b> is a square matrix,<b>p = poly(A)</b> computes an n+1 element row vector. This result is composed the coefficients of the characteristic polynomial. 
 
 If <b>r</b> is a vector,<b>p = poly(r)</b> computes a row vector. This result is composed the coefficients of the polynomial roots of which are the elements of <b>r</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ A = [1    2    3;
 p = poly(A)
 ```
 
+
 ## 🔗 See also
 
 [conv](../data_analysis/conv.md), [roots](../polynomial_functions/roots.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

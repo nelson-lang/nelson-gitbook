@@ -16,13 +16,17 @@ Détermine si l'entrée est une énumération
 
 ## 📄 Description
 
+
 <b>isenum</b> retourne vrai si X est une instance d'une classe d'énumération, et faux sinon.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 tf = isenum(3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ tf = isenum(3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -26,9 +26,12 @@ Estimation spectrale par la methode de Welch.
 
 ## 📄 Description
 
+
 <b>pwelch</b> estime un spectre en moyennant des periodogrammes de segments recouvrants.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,14 +39,15 @@ Estimation spectrale par la methode de Welch.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[periodogram](../../signal_processing/periodogram.md), [cpsd](../../signal_processing/cpsd.md).
+[periodogram](../../signal_processing/5_spectral_analysis/periodogram.md), [cpsd](../../signal_processing/3_transforms_correlation_modeling/cpsd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

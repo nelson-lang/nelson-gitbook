@@ -12,11 +12,14 @@ Vérifie si la version est pour une plateforme GNU/Linux ou Unix.
 
 ## 📄 Description
 
-<b>isunix</b> vérifie si la plateforme est GNU/Linux ou Unix.
+
+<b>isunix</b> vérifie si la plateforme est GNU/Linux ou Unix. 
 
 La plateforme macOS est également détectée comme étant GNU/Linux ou Unix.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 if isunix
@@ -26,14 +29,15 @@ else
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md), [iswasm](../os_functions/iswasm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

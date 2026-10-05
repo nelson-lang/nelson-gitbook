@@ -25,9 +25,12 @@ Estimation de densite spectrale de puissance par periodogramme.
 
 ## 📄 Description
 
+
 <b>periodogram</b> estime la repartition de puissance d'un signal en frequence.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -35,14 +38,15 @@ Estimation de densite spectrale de puissance par periodogramme.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[pwelch](../../signal_processing/pwelch.md), [spectrogram](../../signal_processing/spectrogram.md).
+[pwelch](../../signal_processing/5_spectral_analysis/pwelch.md), [spectrogram](../../signal_processing/6_time_frequency_analysis/spectrogram.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

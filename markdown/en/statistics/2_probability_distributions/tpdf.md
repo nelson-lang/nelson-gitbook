@@ -17,22 +17,26 @@ Student t probability density function
 
 ## 📄 Description
 
+
 <b>tpdf</b> computes Student t probability density values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-3 -1 0 1 3];
 y = tpdf(x, 5);
 ```
 
+
 ## 🔗 See also
 
-[tcdf](../../statistics/tcdf.md), [tinv](../../statistics/tinv.md).
+[tcdf](../../statistics/2_probability_distributions/tcdf.md), [tinv](../../statistics/2_probability_distributions/tinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

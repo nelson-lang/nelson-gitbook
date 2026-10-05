@@ -19,7 +19,8 @@ Check that a structure has all expected fields.
 
 ## 📄 Description
 
-The assertion passes when every expected field exists in s.
+
+The assertion passes when every expected field exists in s. 
 
 Extra fields in s are allowed.
 
@@ -30,12 +31,12 @@ Fields present
 ```matlab
 S = struct('a', 1, 'b', 2); asserts.hasFields(S, {'a', 'b'});
 ```
-
 Capture a missing field
 
 ```matlab
 S = struct('a', 1); [res, msg] = asserts.hasFields(S, {'a', 'b'});
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ S = struct('a', 1); [res, msg] = asserts.hasFields(S, {'a', 'b'});
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,11 +21,13 @@ Create time series data.
 
 ## 📄 Description
 
-<b>timeseries</b> stores sampled data, sample times, optional quality values, metadata, and events.
+
+<b>timeseries</b> stores sampled data, sample times, optional quality values, metadata, and events. 
 
 Methods provide sample selection, event selection, interpolation, synchronization, statistics, arithmetic, plotting, and conversion to timetable.
 
 ## 💡 Example
+
 
 ```matlab
 x = [-0.2 -0.3 13; -0.1 -0.4 15; NaN 2.8 17; 0.5 0.3 NaN; -0.3 -0.1 15];
@@ -34,13 +36,14 @@ getdatasamplesize(tsPosition)
 
 ```
 
+
 ## 🔗 See also
 
-[tscollection](../../time/tscollection.md), [istimeseries](../../time/istimeseries.md), [timeseries2timetable](../../table/timeseries2timetable.md).
+[tscollection](../../time/8_timeseries/tscollection.md), [istimeseries](../../time/5_query_date_time_arrays/istimeseries.md), [timeseries2timetable](../../table/1_create_convert_tables/timeseries2timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

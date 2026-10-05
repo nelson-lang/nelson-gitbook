@@ -16,98 +16,114 @@ Write a matrix to a file.
 
 ## 📄 Description
 
-<b>writematrix</b> writes an numeric matrix to an CSV format file.
 
-<b>writematrix</b> does not support sparse matrices.
+<b>writematrix</b> writes an numeric matrix to an CSV format file. 
 
-<b>writematrix</b> outputs numeric data in the long G format.
+<b>writematrix</b> does not support sparse matrices. 
 
-Available Name-Value Arguments
+<b>writematrix</b> outputs numeric data in the long G format. 
 
-Name-value pairs must follow all other arguments.
+ 
 
-The order of name-value pairs doesn't matter
+Available Name-Value Arguments 
 
-Delimiter and QuoteStrings options only apply to delimited text files.
+ 
 
-<b>FileType</b>: Specifies the type of output file
+Name-value pairs must follow all other arguments. 
 
-Syntax: <b>
-'FileType','text'
-</b>
+The order of name-value pairs doesn't matter 
 
-Supports delimited text files (.txt, .dat, .csv)
+Delimiter and QuoteStrings options only apply to delimited text files. 
 
-<b>WriteMode</b>: Controls how data is written to the file
+ 
 
-Syntax: <b>
-'WriteMode', mode</b>
-
-Options:
-
-'overwrite' (default) - Creates new file or replaces existing content
-
-'append' - Adds data to end of existing file
-
-If the target file doesn't exist, a new file will be created regardless of mode.
-
-<b>Delimiter</b>: Defines the character used to separate fields
+<b>FileType</b>: Specifies the type of output file 
 
 Syntax: <b>
-'Delimiter', delimiter</b>
+        'FileType','text'
+      </b> 
 
-Available Delimiters: Only applicable for delimited text files.
+Supports delimited text files (.txt, .dat, .csv) 
 
-| Specifier | Alternative | Description |
-| --------- | ----------- | ----------- |
+ 
 
-| <code>
-','
-</code> | <code>
-'comma'
-</code> | Comma (default) |
-| <code>
-'
-'
-</code> | <code>
-'space'
-</code> | Space character |
-| <code>
-'\t'
-</code> | <code>
-'tab'
-</code> | Tab character |
-| <code>
-';'
-</code> | <code>
-'semi'
-</code> | Semicolon |
-| <code>
-'|'
-</code> | <code>
-'bar'
-</code> | Vertical bar |
+<b>WriteMode</b>: Controls how data is written to the file 
 
-<b>QuoteStrings</b>: Controls text quoting behavior (Only applicable for delimited text files).
+Syntax: <b>
+        'WriteMode', mode</b> 
+
+Options: 
+
+'overwrite' (default) - Creates new file or replaces existing content 
+
+'append' - Adds data to end of existing file 
+
+If the target file doesn't exist, a new file will be created regardless of mode. 
+
+ 
+
+<b>Delimiter</b>: Defines the character used to separate fields 
+
+Syntax: <b>
+        'Delimiter', delimiter</b> 
+
+Available Delimiters: Only applicable for delimited text files. 
+
+| Specifier | Alternative | Description | 
+| --- | --- | --- | 
+| <code>
+              ','
+            </code> | <code>
+              'comma'
+            </code> | Comma (default) | 
+| <code>
+              '
+              '
+            </code> | <code>
+              'space'
+            </code> | Space character | 
+| <code>
+              '\t'
+            </code> | <code>
+              'tab'
+            </code> | Tab character | 
+| <code>
+              ';'
+            </code> | <code>
+              'semi'
+            </code> | Semicolon | 
+| <code>
+              '|'
+            </code> | <code>
+              'bar'
+            </code> | Vertical bar | 
+
+ 
+
+ 
+
+<b>QuoteStrings</b>: Controls text quoting behavior (Only applicable for delimited text files). 
 
 <b>
-        'QuoteStrings', option</b>
+        'QuoteStrings', option</b> 
 
-with <b>options</b>
+with <b>options</b> 
 
 <b>
         'minimal'
-      </b> (default) Quotes only text containing delimiters, line endings, or quotes.
+      </b> (default) Quotes only text containing delimiters, line endings, or quotes. 
 
 <b>
         'all'
-      </b> Quotes all text variables.
+      </b> Quotes all text variables. 
 
 <b>
         'none'
       </b> Uses no quotes.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -117,15 +133,16 @@ R = fileread(filename)
 
 ```
 
+
 ## 🔗 See also
 
 [readcell](../spreadsheet/readcell.md), [csvwrite](../spreadsheet/csvwrite.md), [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

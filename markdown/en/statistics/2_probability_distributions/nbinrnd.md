@@ -20,18 +20,22 @@ Negative binomial random numbers
 
 ## 📄 Description
 
+
 <b>nbinrnd</b> generates negative binomial distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 rout = nbinrnd(3, 0.4, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

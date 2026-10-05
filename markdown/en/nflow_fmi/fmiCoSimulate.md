@@ -21,23 +21,26 @@ Run a fixed-step Co-Simulation of an FMI 2.0 or 3.0 FMU.
 
 ## 📄 Description
 
-<b>fmiCoSimulate</b> runs a <b>Co-Simulation</b> of a <b>Functional Mock-up Unit</b> (FMU) that follows the <b>FMI 2.0</b> or <b>3.0</b> standard and returns the values of every <b>Float64</b> output at each communication point.
 
-The FMU is instantiated, initialized between time <b>0</b> and <b>tStop</b>, and then advanced with a fixed communication step <b>dt</b>. At the start of each step the current <b>Float64</b> outputs are recorded; the FMU is then advanced by one step. The loop stops at <b>tStop</b>, or earlier if the FMU requests termination. The FMU is always terminated and freed before the function returns, including on error.
+<b>fmiCoSimulate</b> runs a <b>Co-Simulation</b> of a <b>Functional Mock-up Unit</b> (FMU) that follows the <b>FMI 2.0</b> or <b>3.0</b> standard and returns the values of every <b>Float64</b> output at each communication point. 
 
-No external inputs are applied: the parameters and inputs of the FMU keep the start values declared in its model description. The function therefore reproduces the free response of the model as packaged. Applying custom inputs is not yet supported by this entry point.
+The FMU is instantiated, initialized between time <b>0</b> and <b>tStop</b>, and then advanced with a fixed communication step <b>dt</b>. At the start of each step the current <b>Float64</b> outputs are recorded; the FMU is then advanced by one step. The loop stops at <b>tStop</b>, or earlier if the FMU requests termination. The FMU is always terminated and freed before the function returns, including on error. 
 
-The <b>fmu</b> argument accepts either a <b>.fmu</b> archive or an already-extracted directory. A <b>.fmu</b> archive is unpacked with a ZIP-slip-hardened extractor into a fresh temporary directory that is removed automatically when the function returns; entries with absolute paths, drive letters, or <b>..</b> traversal are rejected.
+No external inputs are applied: the parameters and inputs of the FMU keep the start values declared in its model description. The function therefore reproduces the free response of the model as packaged. Applying custom inputs is not yet supported by this entry point. 
 
-The returned structure <b>result</b> has the following fields:
+The <b>fmu</b> argument accepts either a <b>.fmu</b> archive or an already-extracted directory. A <b>.fmu</b> archive is unpacked with a ZIP-slip-hardened extractor into a fresh temporary directory that is removed automatically when the function returns; entries with absolute paths, drive letters, or <b>..</b> traversal are rejected. 
 
-| Field       | Size     | Details                                                                                                                                      |
-| ----------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| time        | N x 1    | the communication points, starting at **0** and strictly increasing by **dt** (the last point may be shorter when the FMU terminates early). |
-| outputNames | 1 x nOut | a cell of the names of the **Float64** output variables, in declaration order.                                                               |
-| outputs     | N x nOut | the recorded output values; column **j** is the trajectory of **outputNames{j}**, row **i** corresponds to **time(i)**.                      |
+The returned structure <b>result</b> has the following fields: 
 
-The number of rows <b>N</b> is <b>floor(tStop / dt) + 1</b> for a run that completes at <b>tStop</b>. When the FMU declares no <b>Float64</b> output, <b>outputNames</b> is empty and <b>outputs</b> has zero columns while <b>time</b> is still returned.
+| Field | Size | Details | 
+| --- | --- | --- | 
+| time | N x 1 | the communication points, starting at **0** and strictly increasing by **dt** (the last point may be shorter when the FMU terminates early). | 
+| outputNames | 1 x nOut | a cell of the names of the **Float64** output variables, in declaration order. | 
+| outputs | N x nOut | the recorded output values; column **j** is the trajectory of **outputNames{j}**, row **i** corresponds to **time(i)**. | 
+
+ 
+
+The number of rows <b>N</b> is <b>floor(tStop / dt) + 1</b> for a run that completes at <b>tStop</b>. When the FMU declares no <b>Float64</b> output, <b>outputNames</b> is empty and <b>outputs</b> has zero columns while <b>time</b> is still returned. 
 
 Use <b>fmiInfo</b> first to inspect the variables and confirm the Co-Simulation interface. An error is raised when <b>tStop</b> is not positive, when the FMU does not support Co-Simulation, or when any FMI call fails.
 
@@ -48,7 +51,6 @@ Run a Co-Simulation with the default step size.
 ```matlab
 result = fmiCoSimulate('VanDerPol.fmu', 20)
 ```
-
 Run with an explicit communication step and plot the outputs.
 
 ```matlab
@@ -58,7 +60,6 @@ legend(r.outputNames);
 xlabel('time');
 title('FMU Co-Simulation outputs');
 ```
-
 Extract a single named output from the result.
 
 ```matlab
@@ -66,7 +67,6 @@ r = fmiCoSimulate('VanDerPol.fmu', 20, 0.01);
 col = find(strcmp(r.outputNames, 'x0'));
 x0 = r.outputs(:, col);
 ```
-
 Drive an FMU input with a constant value (bundled Feedthrough FMU).
 
 ```matlab
@@ -76,13 +76,14 @@ col = find(strcmp(r.outputNames, 'Float64_continuous_output'));
 r.outputs(end, col)
 ```
 
+
 ## 🔗 See also
 
 [fmiInfo](../nflow_fmi/fmiInfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,7 +18,8 @@ Lister les categories d'un tableau categoriel.
 
 ## 📄 Description
 
-<b>categories</b> retourne la liste des categories associee a un tableau categoriel.
+
+<b>categories</b> retourne la liste des categories associee a un tableau categoriel. 
 
 Les elements non definis ne sont pas des categories. La sortie par defaut est un tableau de cellules de chaines de caracteres.
 
@@ -29,12 +30,12 @@ Retourner les noms de categories.
 ```matlab
 A = categorical({'red','blue','red'}); names = categories(A)
 ```
-
 Retourner les noms sous forme de strings.
 
 ```matlab
 A = categorical({'small','large'}); names = categories(A, 'OutputType', 'string')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ A = categorical({'small','large'}); names = categories(A, 'OutputType', 'string'
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,6 +20,7 @@ Ouvre une boite de dialogue de saisie.
 
 ## 📄 Description
 
+
 inputdlg displays one input prompt after another and returns the entered text.
 
 ## 💡 Exemples
@@ -35,7 +36,6 @@ uicontrol(f, 'Style', 'edit', 'String', '10', 'Position', [130 84 190 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'OK', 'Position', [170 30 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [250 30 70 24]);
 ```
-
 <img src="inputdlg_example.svg" align="middle"/>
 Ask for several values with defaults.
 
@@ -46,14 +46,15 @@ answer = inputdlg(prompt, 'User', [1 35], defaults);
 if ~isempty(answer), disp(answer{1}); end
 ```
 
+
 ## 🔗 Voir aussi
 
 [listdlg](../gui/listdlg.md), [questdlg](../gui/questdlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--

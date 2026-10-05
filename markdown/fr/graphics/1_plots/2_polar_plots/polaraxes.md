@@ -19,11 +19,12 @@ Cree des axes configures pour les traces polaires.
 
 ## 📄 Description
 
-<b>polaraxes</b> cree un objet axes et l'initialise pour le rendu en coordonnees polaires.
 
-L'etat polaire est stocke sur l'axes et contient les limites radiales, les limites angulaires, les graduations, les etiquettes, les handles de grille et les handles de donnees tracees.
+<b>polaraxes</b> cree un objet axes et l'initialise pour le rendu en coordonnees polaires. 
 
-L'objet reste un objet graphique axes. Utiliser <b>polarplot</b> pour ajouter des donnees polaires, puis <b>rlim</b>, <b>rticks</b>, <b>rticklabels</b>, <b>thetalim</b>, <b>thetaticks</b> et <b>thetaticklabels</b> pour personnaliser les decorations polaires.
+L'etat polaire est stocke sur l'axes et contient les limites radiales, les limites angulaires, les graduations, les etiquettes, les handles de grille et les handles de donnees tracees. 
+
+L'objet reste un objet graphique axes. Utiliser <b>polarplot</b> pour ajouter des donnees polaires, puis <b>rlim</b>, <b>rticks</b>, <b>rticklabels</b>, <b>thetalim</b>, <b>thetaticks</b> et <b>thetaticklabels</b> pour personnaliser les decorations polaires. 
 
 Voir [proprietes de polaraxes](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.polaraxes.properties.md) pour la liste complete des proprietes.
 
@@ -39,8 +40,8 @@ polarplot(ax, theta, 1 + sin(theta));
 rlim(ax, [0 2]);
 
 ```
-
 <img src="polaraxes_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -48,8 +49,8 @@ rlim(ax, [0 2]);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,11 +20,14 @@ load data from .nh5 file into Nelson's workspace.
 
 ## 📄 Description
 
-<b>loadnh5</b> loads data from .nh5 file to Nelson's workspace.
+
+<b>loadnh5</b> loads data from .nh5 file to Nelson's workspace. 
 
 .nh5 file uses hdf5 file as container.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -43,13 +46,14 @@ A
 B
 ```
 
+
 ## 🔗 See also
 
 [savenh5](../hdf5/savenh5.md), [h5read](../hdf5/h5read.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

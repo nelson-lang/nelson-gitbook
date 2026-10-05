@@ -17,13 +17,17 @@ Ferme une session du moteur Nelson
 
 ## 📄 Description
 
+
 engClose ferme la session du moteur et termine la connexion.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -12,15 +12,19 @@ Séparateur de commande pour le système d'exploitation courant.
 
 ## 📄 Description
 
-<b>cmdsep</b> retourne le séparateur de commande pour le système d'exploitation courant.
+
+<b>cmdsep</b> retourne le séparateur de commande pour le système d'exploitation courant. 
 
 Cette fonction est utilisée par Nelson pour construire des lignes de commande pour les systèmes Unix et DOS.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 unix("cd c:/ " + cmdsep() + " nelson")
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -28,9 +32,9 @@ unix("cd c:/ " + cmdsep() + " nelson")
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.11.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.11.0   | version initiale |
 
 <!--
 ## 👤 Auteur

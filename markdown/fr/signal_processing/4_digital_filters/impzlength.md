@@ -19,9 +19,12 @@ Longueur estimee d'une reponse impulsionnelle.
 
 ## 📄 Description
 
+
 <b>impzlength</b> retourne une longueur pratique pour les calculs de reponse impulsionnelle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -29,14 +32,15 @@ n = impzlength([1 1], 1);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[impz](../../signal_processing/impz.md).
+[impz](../../signal_processing/4_digital_filters/impz.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

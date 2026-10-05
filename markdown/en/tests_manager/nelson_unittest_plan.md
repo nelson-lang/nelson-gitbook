@@ -18,11 +18,14 @@ Create an execution plan for a test suite.
 
 ## 📄 Description
 
-<b>nelson.unittest.plan</b> prepares selected cases for execution.
+
+<b>nelson.unittest.plan</b> prepares selected cases for execution. 
 
 Benchmarks and tests that require sequential execution are separated from tests that can run in parallel.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,6 +33,7 @@ plan = nelson.unittest.plan(suite, 'Workers', 4, 'ShardIndex', 1, 'ShardCount', 
 
 ```
 
+
 ## 🔗 See also
 
-[nelson.unittest.select](../tests_manager/nelson.unittest.select.md), [nelson.unittest.run](../tests_manager/nelson.unittest.run.md).
+[nelson.unittest.select](../tests_manager/nelson_unittest_select.md), [nelson.unittest.run](../tests_manager/nelson_unittest_run.md).

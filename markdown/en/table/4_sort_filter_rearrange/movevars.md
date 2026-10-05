@@ -21,6 +21,7 @@ Move variables in a table.
 
 ## 📄 Description
 
+
 <b>movevars</b> reorders table variables without changing their data. The location can be a variable name or a variable index.
 
 ## 💡 Examples
@@ -31,7 +32,6 @@ Move a variable to the first position
 T = table([1; 2], [3; 4], 'VariableNames', {'A', 'B'});
 T = movevars(T, 'B', 'Before', 1)
 ```
-
 Move a variable after another variable
 
 ```matlab
@@ -39,13 +39,14 @@ T = table([1; 2], [3; 4], [5; 6], 'VariableNames', {'A', 'B', 'C'});
 T = movevars(T, 'A', 'After', 'C')
 ```
 
+
 ## 🔗 See also
 
-[table](../../table/table.md), [addvars](../../table/addvars.md), [renamevars](../../table/renamevars.md).
+[table](../../table/1_create_convert_tables/table.md), [addvars](../../table/4_sort_filter_rearrange/addvars.md), [renamevars](../../table/4_sort_filter_rearrange/renamevars.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

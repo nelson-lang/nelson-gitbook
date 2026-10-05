@@ -20,9 +20,12 @@ Convert transfer function filter parameters to state-space form.
 
 ## 📄 Description
 
+
 <b>[A, B, C, D] = tf2ss(b, a)</b> transforms a single-input transfer function, either continuous-time or discrete-time, into an equivalent state-space representation.
 
 ## 💡 Example
+
+
 
 ```matlab
 Fs = 6;
@@ -33,13 +36,14 @@ a = [1 -3*cos(dt) 1];
 
 ```
 
+
 ## 🔗 See also
 
-[ss2tf](../../control_system/ss2tf.md), [ss](../../control_system/ss.md), [tf](../../control_system/tf.md).
+[ss2tf](../../control_system/2_model_conversion_interconnection/ss2tf.md), [ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

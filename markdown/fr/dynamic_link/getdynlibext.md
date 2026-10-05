@@ -12,13 +12,17 @@ Renvoie l'extension des bibliothèques dynamiques
 
 ## 📄 Description
 
+
 <b>getdynlibext()</b> returns the extension of dynamic libraries.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 getdynlibext()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ getdynlibext()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

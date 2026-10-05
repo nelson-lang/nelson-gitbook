@@ -20,9 +20,11 @@ Ajoute un echantillon a un objet timeseries.
 
 ## 📄 Description
 
+
 <b>addsample</b> Ajoute un echantillon avec des paires nom-valeur. L'ordre des echantillons existants est preserve par l'operation d'ajout.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2], [10; 11], 'Name', 'speed');
@@ -31,14 +33,15 @@ ts.Time
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

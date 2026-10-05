@@ -19,6 +19,7 @@ Calcule une metrique de force de coin.
 
 ## 📄 Description
 
+
 cornermetric calcule une reponse de coins 2-D a partir des gradients d'image lisses par une fenetre gaussienne. Les options prises en charge sont FilterSize et SensitivityFactor.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ C=cornermetric(I);
 figure; subplot(1,2,1); imagesc(I); axis image; title('Image');
 subplot(1,2,2); imagesc(C); axis image; title('Metrique');
 ```
-
 <img src="cornermetric_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[detectHarrisFeatures](../../../image_processing/detectHarrisFeatures.md), [detectFASTFeatures](../../../image_processing/detectFASTFeatures.md).
+[detectHarrisFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectHarrisFeatures.md), [detectFASTFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectFASTFeatures.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

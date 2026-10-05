@@ -16,6 +16,7 @@
 
 ## 📄 Description
 
+
 <b>rotz</b> returns 3x3 transformation matrix for rotations around z-axis.
 
 ## 📚 Bibliography
@@ -24,9 +25,12 @@ Goldstein, H., C. Poole and J. Safko, Classical Mechanics, 3rd Edition, San Fran
 
 ## 💡 Example
 
+
+
 ```matlab
 r = rotz(90)
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ r = rotz(90)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

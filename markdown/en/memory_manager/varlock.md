@@ -4,22 +4,25 @@ Locks a variable.
 
 ## 📝 Syntax
 
-- varlock(scope, variable_name)
+- varlock(scope, variable\_name)
 
 ## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
-- variable_name - a string: variable name.
+- variable\_name - a string: variable name.
 
 ## 📄 Description
 
-<b>varlock</b> locks a variable.
 
-Locked variables cannot be killed.
+<b>varlock</b> locks a variable. 
+
+Locked variables cannot be killed. 
 
 <b>ans</b> variable cannot be locked.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = 3;
@@ -36,13 +39,14 @@ varislock('local', 'ans')
 
 ```
 
+
 ## 🔗 See also
 
 [varislock](../memory_manager/varislock.md), [varunlock](../memory_manager/varunlock.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

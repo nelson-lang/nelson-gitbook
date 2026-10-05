@@ -16,9 +16,11 @@ Determine si l entree est un objet timeseries.
 
 ## 📄 Description
 
+
 <b>istimeseries</b> retourne true lorsque l entree est un objet timeseries.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2], [10; 11]);
@@ -26,14 +28,15 @@ istimeseries(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

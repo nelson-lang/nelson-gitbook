@@ -19,13 +19,17 @@ Put variable into Nelson engine workspace
 
 ## 📄 Description
 
+
 Put variable into Nelson engine workspace.
 
 ## 💡 Example
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

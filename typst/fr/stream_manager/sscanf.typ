@@ -1,0 +1,53 @@
+#import "nelson_help.typ": *
+
+= sscanf <stream_manager:sscanf>
+
+Lire des données formatées depuis des chaînes.
+
+== Syntaxe
+
+- #raw("R = sscanf(str, format)");
+- #raw("R = sscanf(str, format, sizeR)");
+- #raw("[R, count] = sscanf(...)");
+- #raw("[R, count, errmsg] = sscanf(...)");
+- #raw("[R, count, errmsg, nextindex] = sscanf(...)");
+
+== Argument d'entrée
+
+/ str: tableau de caractères ou scalaire de type string.
+/ format: une chaîne décrivant le format utilisé par la fonction ; voir#strong[fscanf]; pour les formats supportés.
+/ sizeR: dimensions souhaitées de R.
+
+== Argument de sortie
+
+/ R: matrice ou vecteur de caractères.
+/ count: nombre d'éléments lus dans le tableau de sortie.
+/ errmsg: Message d'erreur.
+/ nextindex: Position après le dernier caractère analysé.
+
+== Description
+
+Lit des données formatées depuis des chaînes.
+
+
+== Exemple
+
+``````matlab
+str = "2.7183  3.1416  0.0073";
+R = sscanf(str,'%f',[2 2])
+``````
+
+
+== Voir aussi
+
+#nlink(<stream_manager:fscanf>)[fscanf];, #nlink(<string:1_create_convert_text.sprintf>)[sprintf];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

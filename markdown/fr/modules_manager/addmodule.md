@@ -4,14 +4,15 @@ Ajouter un module à Nelson.
 
 ## 📝 Syntaxe
 
-- addmodule(module_path, module_short_name)
+- addmodule(module\_path, module\_short\_name)
 
 ## 📥 Argument d'entrée
 
-- module_path - chaîne : chemin racine d'un module. Le chemin doit exister.
-- module_short_name - chaîne : nom court du module. Ce nom ne doit pas être déjà utilisé.
+- module\_path - chaîne : chemin racine d'un module. Le chemin doit exister.
+- module\_short\_name - chaîne : nom court du module. Ce nom ne doit pas être déjà utilisé.
 
 ## 📄 Description
+
 
 <b>addmodule</b> enregistre un nouveau module identifié par son chemin et son nom court.
 
@@ -26,14 +27,15 @@ ismodule('module_skeleton')
 removemodule('module_skeleton')
 ```
 
+
 ## 🔗 Voir aussi
 
 [ismodule](../modules_manager/ismodule.md), [removemodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

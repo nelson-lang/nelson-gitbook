@@ -17,22 +17,30 @@ Activer le mode rotation.
 
 ## 📄 Description
 
-Utilisez le mode rotation pour faire pivoter de façon interactive la vue 3D des axes lors de l'exploration des données. Activez ou désactivez le mode rotation et configurez des options de base supplémentaires avec la fonction rotate3d.
 
-<b>rotate3d option</b> établit le mode rotation pour tous les axes de la figure courante. Par exemple, rotate3d on active le mode rotation, tandis que rotate3d off le désactive.
+Utilisez le mode rotation pour faire pivoter de façon interactive la vue 3D des axes lors de l'exploration des données. Activez ou désactivez le mode rotation et configurez des options de base supplémentaires avec la fonction rotate3d. 
 
-Lorsque le mode rotation est activé, vous pouvez ajuster la vue des axes avec le curseur ou le clavier :
+<b>rotate3d option</b> établit le mode rotation pour tous les axes de la figure courante. Par exemple, rotate3d on active le mode rotation, tandis que rotate3d off le désactive. 
 
-Curseur : cliquez et faites glisser dans les axes.
+ 
+
+Lorsque le mode rotation est activé, vous pouvez ajuster la vue des axes avec le curseur ou le clavier : 
+
+ 
+
+Curseur : cliquez et faites glisser dans les axes. 
 
 Clavier : utilisez les flèches droite (->) ou gauche (←) pour ajuster l'azimut, et les flèches haut (↑) ou bas (↓) pour modifier l'élévation.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 surf(peaks)
 rotate3d
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +48,8 @@ rotate3d
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.2.0   | version initiale |
 
 <!--

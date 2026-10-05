@@ -17,18 +17,22 @@ Moyenne et variance du khi deux
 
 ## 📄 Description
 
+
 <b>chi2stat</b> retourne la moyenne et la variance de la loi du khi deux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = chi2stat([1 2 3]);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

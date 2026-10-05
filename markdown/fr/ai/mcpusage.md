@@ -4,13 +4,14 @@ Utiliser Nelson via MCP depuis un agent IA.
 
 ## 📄 Description
 
-<b>mcpusage</b> explique comment connecter un agent IA compatible MCP a Nelson.
 
-Nelson lance le serveur MCP avec <b>mcpserver</b>. L'agent IA est le client MCP. Un fournisseur de modele local comme Ollama peut executer le modele de langage, mais Ollama lui-meme n'est pas le client MCP.
+<b>mcpusage</b> explique comment connecter un agent IA compatible MCP a Nelson. 
 
-L'executable recommande est <b>nelson-adv-cli</b>, car il peut executer les commandes graphiques utilisees par <b>create_nelson_plot</b> tout en gardant la sortie standard reservee aux messages JSON-RPC MCP.
+Nelson lance le serveur MCP avec <b>mcpserver</b>. L'agent IA est le client MCP. Un fournisseur de modele local comme Ollama peut executer le modele de langage, mais Ollama lui-meme n'est pas le client MCP. 
 
-Declarer Nelson dans un client MCP est normalement une configuration a faire une seule fois. Refaire cette declaration seulement si le chemin de l'executable Nelson, le nom du serveur, la racine de workspace ou les options serveur changent.
+L'executable recommande est <b>nelson-adv-cli</b>, car il peut executer les commandes graphiques utilisees par <b>create\_nelson\_plot</b> tout en gardant la sortie standard reservee aux messages JSON-RPC MCP. 
+
+Declarer Nelson dans un client MCP est normalement une configuration a faire une seule fois. Refaire cette declaration seulement si le chemin de l'executable Nelson, le nom du serveur, la racine de workspace ou les options serveur changent. 
 
 Utiliser <b>--workspace-root</b> pour limiter les outils bases sur des fichiers a un dossier projet. Utiliser <b>--allow-execution=false</b> pour desactiver les outils d'execution, et <b>--allow-format=false</b> pour desactiver les outils de formatage.
 
@@ -23,7 +24,6 @@ Demarrer le serveur MCP Nelson manuellement.
 nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
 
 ```
-
 Declarer Nelson comme serveur MCP dans Codex.
 
 ```matlab
@@ -32,7 +32,6 @@ Declarer Nelson comme serveur MCP dans Codex.
 codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
 
 ```
-
 Configuration client MCP generique avec un modele Ollama local.
 
 ```matlab
@@ -59,7 +58,6 @@ Configuration client MCP generique avec un modele Ollama local.
 }
 
 ```
-
 Premier prompt conseille pour un agent MCP.
 
 ```matlab
@@ -72,7 +70,6 @@ Avant de modifier des fichiers, inspecte-les avec les outils en lecture seule.
 Pour creer un graphique, utilise create_nelson_plot et retourne le chemin PNG.
 
 ```
-
 Outils MCP utiles exposes par Nelson.
 
 ```matlab
@@ -92,7 +89,6 @@ format_nelson_file        Formate un fichier .m dans la racine de workspace.
 create_nelson_plot        Execute du code graphique et retourne un chemin PNG.
 
 ```
-
 Diagnostiquer les problemes MCP courants.
 
 ```matlab
@@ -119,12 +115,13 @@ Si les reponses sont trop longues:
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [mcpserver](../ai/mcpserver.md), [mcpinfo](../ai/mcpinfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |

@@ -8,22 +8,26 @@ Motif nomme.
 
 ## 📄 Description
 
+
 <b>namedPattern</b> Motif nomme.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = namedPattern(digitsPattern(3), "code"); extract("code 123", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[maskedPattern](../../string/maskedPattern.md), [pattern](../../string/pattern.md).
+[maskedPattern](../../string/4_patterns/maskedPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

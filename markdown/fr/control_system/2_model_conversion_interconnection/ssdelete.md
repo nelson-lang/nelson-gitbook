@@ -20,9 +20,12 @@ Supprime des entrées, sorties et états d'un système en espace d'état.
 
 ## 📄 Description
 
+
 Permet de retirer des entrées, sorties ou états d'un système d'état pour obtenir un sous-système.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [33,2,5; 23,200,2; 9,2,45];
@@ -36,14 +39,15 @@ outputs = 1;
 R = ssdelete(sys1, inputs, outputs)
 ```
 
+
 ## 🔗 Voir aussi
 
-[ssselect](../../control_system/ssselect.md).
+[ssselect](../../control_system/2_model_conversion_interconnection/ssselect.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

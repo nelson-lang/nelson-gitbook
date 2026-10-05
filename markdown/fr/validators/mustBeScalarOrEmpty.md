@@ -15,16 +15,20 @@ Vérifie que la valeur est scalaire ou vide, sinon renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeScalarOrEmpty</b> vérifie que la valeur est scalaire ou vide, sinon renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeScalarOrEmpty(true)
 mustBeScalarOrEmpty([])
 mustBeScalarOrEmpty([true false])
-
+  
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ mustBeScalarOrEmpty([true false])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

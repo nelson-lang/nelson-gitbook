@@ -23,23 +23,27 @@ Inverse de repartition lognormale
 
 ## 📄 Description
 
+
 <b>logninv</b> evalue les inverses lognormales element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.15865525393145707 0.5 0.8413447460685429];
 x = logninv(p);
 ```
 
+
 ## 🔗 Voir aussi
 
-[lognpdf](../../statistics/lognpdf.md), [logncdf](../../statistics/logncdf.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [logncdf](../../statistics/2_probability_distributions/logncdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

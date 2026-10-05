@@ -20,15 +20,16 @@ Crée une timetable depuis un fichier.
 
 ## 📄 Description
 
-<b>readtimetable</b> importe des données texte délimitées en colonnes et retourne une timetable.
 
-Les temps de ligne peuvent être sélectionnés avec <b>RowTimes</b> et un nom de variable, fournis avec <b>RowTimes</b> et un vecteur temporel, générés avec <b>StartTime</b> et <b>SampleRate</b>, ou générés avec <b>StartTime</b> et <b>TimeStep</b>.
+<b>readtimetable</b> importe des données texte délimitées en colonnes et retourne une timetable. 
 
-Si aucune option de temps de ligne n'est fournie, la première variable compatible datetime ou duration est utilisée comme temps de ligne.
+Les temps de ligne peuvent être sélectionnés avec <b>RowTimes</b> et un nom de variable, fournis avec <b>RowTimes</b> et un vecteur temporel, générés avec <b>StartTime</b> et <b>SampleRate</b>, ou générés avec <b>StartTime</b> et <b>TimeStep</b>. 
 
-Lorsqu'une colonne du fichier est utilisée comme temps de ligne, cette colonne est retirée des variables de données de la timetable. Lorsque les temps de ligne sont fournis ou générés, toutes les variables du fichier restent des variables de données.
+Si aucune option de temps de ligne n'est fournie, la première variable compatible datetime ou duration est utilisée comme temps de ligne. 
 
-Les fichiers texte délimités sont pris en charge. Les formats externes non pris en charge émettent une erreur.
+Lorsqu'une colonne du fichier est utilisée comme temps de ligne, cette colonne est retirée des variables de données de la timetable. Lorsque les temps de ligne sont fournis ou générés, toutes les variables du fichier restent des variables de données. 
+
+Les fichiers texte délimités sont pris en charge. Les formats externes non pris en charge émettent une erreur. 
 
 Les <b>fichiers JSON</b> (extension <b>.json</b> ou <b>'FileType', 'json'</b>) sont lus comme avec <b>readtable</b>, avec les mêmes arguments nom-valeur JSON ou un objet <b>nelson.io.json.JSONImportOptions</b>. La première variable datetime ou duration donne les temps de ligne, sauf si une option de temps de ligne est indiquée.
 
@@ -48,7 +49,6 @@ TT = readtimetable(filename)
 TT.Properties.RowTimes
 
 ```
-
 Sélectionner la colonne de temps par son nom.
 
 ```matlab
@@ -63,7 +63,6 @@ TT = readtimetable(filename, 'RowTimes', 'Date')
 TT.Properties.VariableNames
 
 ```
-
 Fournir les temps de ligne explicitement.
 
 ```matlab
@@ -78,7 +77,6 @@ TT = readtimetable(filename, 'RowTimes', rowTimes)
 TT.Properties.RowTimes
 
 ```
-
 Générer des temps de ligne réguliers avec StartTime et SampleRate.
 
 ```matlab
@@ -91,22 +89,22 @@ TT = readtimetable(filename, 'StartTime', seconds(0), 'SampleRate', 0.5)
 TT.Properties.RowTimes
 
 ```
-
 Lire un fichier JSON en timetable :
 
 ```matlab
 TT = timetable(datetime(2024, 1, 1) + days(0:2)', [12.5; 13; 11.75], 'VariableNames', {'Temperature'}); f = [tempdir, 'timetable_json.json']; writetimetable(TT, f, 'PrettyPrint', false); fileread(f) TT2 = readtimetable(f)
 ```
 
+
 ## 🔗 Voir aussi
 
-[readtable](../spreadsheet/readtable.md), [writetimetable](../spreadsheet/writetimetable.md), [timetable](../table/timetable.md), [jsonImportOptions](../spreadsheet/jsonImportOptions.md).
+[readtable](../spreadsheet/readtable.md), [writetimetable](../spreadsheet/writetimetable.md), [timetable](../table/1_create_convert_tables/timetable.md), [jsonImportOptions](../spreadsheet/jsonImportOptions.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                   |
-| ------- | ---------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | Fichiers JSON : lecture de données JSON sous forme de timetable. |
 
 <!--

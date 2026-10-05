@@ -1,4 +1,4 @@
-# audiorecorder_pause
+# audiorecorder\_pause
 
 Met en pause un objet audiorecorder.
 
@@ -12,9 +12,12 @@ Met en pause un objet audiorecorder.
 
 ## 📄 Description
 
+
 <b>pause</b> met en pause un objet audiorecorder.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 recObj = audiorecorder();
@@ -23,15 +26,16 @@ pause(recObj)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [audiorecorder](../audio/audiorecorder.md), [stop](../audio/stop.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

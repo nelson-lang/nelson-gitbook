@@ -18,7 +18,8 @@ Reorder categories in a categorical array.
 
 ## 📄 Description
 
-<b>reordercats</b> changes the order of categories. If <b>newOrder</b> is omitted, categories are sorted by name.
+
+<b>reordercats</b> changes the order of categories. If <b>newOrder</b> is omitted, categories are sorted by name. 
 
 For ordinal arrays, the new category order changes relational comparisons and sorting order.
 
@@ -29,12 +30,12 @@ Specify a new order.
 ```matlab
 A = categorical({'red','blue'}, {'red','blue'}); B = reordercats(A, {'blue','red'}); categories(B)
 ```
-
 Sort categories by name.
 
 ```matlab
 A = categorical({'plane','car','train'}); B = reordercats(A); categories(B)
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ A = categorical({'plane','car','train'}); B = reordercats(A); categories(B)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -20,30 +20,37 @@ Read comma-separated value (CSV) file.
 
 ## 📄 Description
 
-<b>M = csvread(filename, R1, C1, [R1 C1 R2 C2])</b> reads only the data within the range specified by row offsets<b>R1</b> to <b>R2</b> and column offsets <b>C1</b> to <b>C2</b>.
 
-<b>M = csvread(filename, R1, C1)</b> starts reading data at the row and column offsets specified by<b>R1</b> and<b>C1</b>. For example, R1=0, C1=0 indicates the first value in the file.
+<b>M = csvread(filename, R1, C1, [R1 C1 R2 C2])</b> reads only the data within the range specified by row offsets<b>R1</b> to <b>R2</b> and column offsets <b>C1</b> to <b>C2</b>. 
 
-To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like <b>M = csvread(filename, 3, 1)</b>.
+<b>M = csvread(filename, R1, C1)</b> starts reading data at the row and column offsets specified by<b>R1</b> and<b>C1</b>. For example, R1=0, C1=0 indicates the first value in the file. 
 
-<b>M = csvread(filename)</b> read a comma-separated value (CSV) formatted file into matrix<b>M</b>.
+To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like <b>M = csvread(filename, 3, 1)</b>. 
 
-Complex Number Importing:<b>csvread</b> reads each complex number as a single unit, storing it in a complex numeric field.
+<b>M = csvread(filename)</b> read a comma-separated value (CSV) formatted file into matrix<b>M</b>. 
 
-Valid forms for complex numbers are:
+Complex Number Importing:<b>csvread</b> reads each complex number as a single unit, storing it in a complex numeric field. 
 
-| Form:              | Example:    |
-| ------------------ | ----------- |
-| ± real ± imag i\|j | 3.1347-2.1i |
-| ± imag i\|j        | -2.1j       |
+Valid forms for complex numbers are: 
+
+ 
+| Form: | Example: | 
+| --- | --- | 
+| ± real ± imag i\|j | 3.1347-2.1i | 
+| ± imag i\|j | -2.1j | 
+
+ 
 
 <b>Note</b>: Whitespace within a complex number is not allowed;<b>csvread</b> interprets any embedded spaces as field delimiters.
 
 ## 💡 Example
 
+
+
 ```matlab
 A = [Inf, -Inf, NaN, 3]; filename = [tempdir(), 'csvread_example.csv']; csvwrite(filename, A); R = csvread(filename)
 ```
+
 
 ## 🔗 See also
 
@@ -51,9 +58,9 @@ A = [Inf, -Inf, NaN, 3]; filename = [tempdir(), 'csvread_example.csv']; csvwrite
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

@@ -19,9 +19,12 @@ Beta cumulative distribution function
 
 ## 📄 Description
 
+
 <b>betacdf</b> computes lower-tail beta probabilities by default and upper-tail probabilities with <b>'upper'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 0.1 0.5 0.9 1];
@@ -29,13 +32,14 @@ p = betacdf(x, 2, 5);
 q = betacdf(x, 2, 5, 'upper');
 ```
 
+
 ## 🔗 See also
 
-[betapdf](../../statistics/betapdf.md), [betainv](../../statistics/betainv.md).
+[betapdf](../../statistics/2_probability_distributions/betapdf.md), [betainv](../../statistics/2_probability_distributions/betainv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

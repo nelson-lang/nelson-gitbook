@@ -14,9 +14,12 @@ Set surface and patch shading mode.
 
 ## 📄 Description
 
+
 <b>shading</b> changes the <b>FaceColor</b> and <b>EdgeColor</b> of surface and patch children in axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -24,8 +27,8 @@ surf(peaks(20));
 shading interp;
 
 ```
-
 <img src="shading_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -33,7 +36,7 @@ shading interp;
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

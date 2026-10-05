@@ -1,26 +1,26 @@
-# slicot_sb01bd
+# slicot\_sb01bd
 
 Pole assignment for a given matrix pair (A,B).
 
 ## 📝 Syntax
 
-- [A\_OUT, WR\_OUT, WI\_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
+- [A\_OUT, WR\_OUT, WI\_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot\_sb01bd(DICO, ALPHA, A\_IN, B\_IN, WR\_IN, WI\_IN, TOL)
 
 ## 📥 Input argument
 
 - DICO - Specifies the type of the original system.'C': continuous-time system;'D': discrete-time system.
 - ALPHA - Specifies the maximum admissible value.
-- A_IN - the leading N-by-N part of this array must contain the state dynamics matrix A.
-- B_IN - The leading N-by-M part of this array must contain the input/state matrix.
-- WR_IN - contains the real parts of the desired eigenvalues of the closed-loop system state-matrix A+B\*F.
-- WI_IN - contains the imaginary parts of the desired eigenvalues of the closed-loop system state-matrix A+B\*F.
+- A\_IN - the leading N-by-N part of this array must contain the state dynamics matrix A.
+- B\_IN - The leading N-by-M part of this array must contain the input/state matrix.
+- WR\_IN - contains the real parts of the desired eigenvalues of the closed-loop system state-matrix A+B\*F.
+- WI\_IN - contains the imaginary parts of the desired eigenvalues of the closed-loop system state-matrix A+B\*F.
 - TOL - The absolute tolerance level below which the elements of A or B are considered zero (used for controllability tests).
 
 ## 📤 Output argument
 
-- A_OUT - the leading N-by-N part of this array contains the matrix Z'\*(A+B\*F)\*Z in a real Schur form.
-- WR_OUT - if INFO = 0, the leading NAP elements of these arrays contain the real parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
-- WI_OUT - if INFO = 0, the leading NAP elements of these arrays contain the imaginary parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
+- A\_OUT - the leading N-by-N part of this array contains the matrix Z'\*(A+B\*F)\*Z in a real Schur form.
+- WR\_OUT - if INFO = 0, the leading NAP elements of these arrays contain the real parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
+- WI\_OUT - if INFO = 0, the leading NAP elements of these arrays contain the imaginary parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
 - NFP - The number of eigenvalues of A having real parts less than ALPHA, if DICO = 'C', or moduli less than ALPHA, if DICO = 'D'. These eigenvalues are not modified by the eigenvalue assignment algorithm.
 - NAP - The number of assigned eigenvalues. If INFO = 0 on exit, then NAP = N-NFP-NUP.
 - NUP - The number of uncontrollable eigenvalues detected by the eigenvalue assignment algorithm.
@@ -30,6 +30,7 @@ Pole assignment for a given matrix pair (A,B).
 - INFO - = 0: successful exit;
 
 ## 📄 Description
+
 
 To determine the state feedback matrix F for a given system (A,B) such that the closed-loop state matrix A+B\*F has specified eigenvalues.
 
@@ -42,6 +43,8 @@ SB01BD
 http://slicot.org/objects/software/shared/doc/SB01BD.html
 
 ## 💡 Example
+
+
 
 ```matlab
 N = 4;
@@ -64,13 +67,14 @@ WI_IN = [ 0.1500; -0.1500];
 
 ```
 
+
 ## 🔗 See also
 
-[slicot_ab01od](../slicot/slicot_ab01od.md), [acker](../control_system/acker.md).
+[slicot_ab01od](../slicot/slicot_ab01od.md), [acker](../control_system/5_control_design_tuning/acker.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

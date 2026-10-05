@@ -8,7 +8,7 @@ Return the handle of the current block.
 
 ## 📥 Input argument
 
-- -
+-  - 
 
 ## 📤 Output argument
 
@@ -16,13 +16,16 @@ Return the handle of the current block.
 
 ## 📄 Description
 
-<b>gcbh</b> returns a numeric handle for the current block, the block selected in the editor (the same block <b>gcb</b> reports as a path).
 
-The handle is a reference-style value that can be passed to <b>get_param</b> and <b>set_param</b> in place of the block path. It stays valid until the block is deleted or its model is closed.
+<b>gcbh</b> returns a numeric handle for the current block, the block selected in the editor (the same block <b>gcb</b> reports as a path). 
+
+The handle is a reference-style value that can be passed to <b>get\_param</b> and <b>set\_param</b> in place of the block path. It stays valid until the block is deleted or its model is closed. 
 
 <b>gcbh</b> returns the empty matrix <b>[]</b> when no block is selected or no editor is active, mirroring <b>gcb</b>, which returns the empty string in that case.
 
 ## 💡 Example
+
+
 
 ```matlab
 new_system('demo');
@@ -35,13 +38,14 @@ get_param(h, 'Gain')
 bdclose('demo');
 ```
 
+
 ## 🔗 See also
 
-[getSimulinkBlockHandle](../nflow_engine/getSimulinkBlockHandle.md), [getfullname](../nflow_engine/getfullname.md), [get_param](../nflow_engine/get_param.md), [set_param](../nflow_engine/set_param.md), [find_system](../nflow_engine/find_system.md).
+[getNFlowBlockHandle](../nflow_engine/getNFlowBlockHandle.md), [getfullname](../nflow_engine/getfullname.md), [get_param](../nflow_engine/get_param.md), [set_param](../nflow_engine/set_param.md), [find_system](../nflow_engine/find_system.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

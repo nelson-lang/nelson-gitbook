@@ -24,7 +24,8 @@ Set or query y-axis tick labels.
 
 ## 📄 Description
 
-<b>yticklabels</b> sets or queries the <b>YTickLabel</b> property of an axes.
+
+<b>yticklabels</b> sets or queries the <b>YTickLabel</b> property of an axes. 
 
 Assigning labels switches <b>YTickLabelMode</b> to <b>manual</b>. Use <b>yticklabels('auto')</b> to return to automatic labels.
 
@@ -38,7 +39,6 @@ barh([10 20 30 41]);
 yticklabels({'April', 'May', 'June', 'July'});
 
 ```
-
 <img src="yticklabels_1.svg" align="middle"/>
 Set labels on specified axes and query the mode.
 
@@ -52,10 +52,10 @@ mode = yticklabels(ax, 'mode')
 
 ```
 
+
 ## 🔗 See also
 
 [axes](../../../graphics/2_graphics_objects/1_object_management/axes.md), [barh](../../../graphics/1_plots/6_discrete_data_plots/barh.md).
-
 <!--
 ## 👤 Author
 

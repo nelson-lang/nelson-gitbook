@@ -17,11 +17,14 @@ Writes an audio file.
 
 ## 📄 Description
 
-<b>audiowrite</b> writes an audio file.
+
+<b>audiowrite</b> writes an audio file. 
 
 More than 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.
 
 ## 💡 Example
+
+
 
 ```matlab
 wav_audio = [modulepath('audio'), '/examples/haha.wav'];
@@ -37,13 +40,14 @@ audiowrite(dest_caf, y, fs);
 
 ```
 
+
 ## 🔗 See also
 
 [audioplayer](../audio/audioplayer.md), [audiosupportedformats](../audio/audiosupportedformats.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

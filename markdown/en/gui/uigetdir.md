@@ -18,6 +18,7 @@ Opens a directory selection dialog box.
 
 ## 📄 Description
 
+
 uigetdir lets the user choose a directory.
 
 ## 💡 Examples
@@ -31,7 +32,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'src', 'temp', 'exports'}, 'Value', 
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Select', 'Position', [220 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [304 28 70 24]);
 ```
-
 <img src="uigetdir_example.svg" align="middle"/>
 Start directory selection in the temporary folder.
 
@@ -40,14 +40,15 @@ path = uigetdir(tempdir(), 'Select temporary folder');
 if ~isequal(path, 0), disp(path); end
 ```
 
+
 ## 🔗 See also
 
 [uigetfile](../gui/uigetfile.md), [uiputfile](../gui/uiputfile.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

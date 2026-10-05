@@ -1,15 +1,21 @@
 # Liens dynamiques
 
+
+    
 Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution.
 
+    
 Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.
 
+    
 Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois**configuremsvc** ou **configuremingw**.
+
+  
 
 ## Functions
 
 - [Compilation C/C++ à la volée](1_c_cpp_build_on_fly.md) - Compiler du code C/C++ à la volée
-- [Compilateurs C/C++ supportés](2_supported_compilers.md) -
+- [Compilateurs C/C++ supportés](2_supported_compilers.md) - 
 - [Types libpointer](C_datatype.md) - Équivalences entre types C et Nelson
 - [cmake](cmake.md) - Appeler l'outil CMake
 - [configuremingw](configuremingw.md) - Configurer Nelson pour utiliser MinGW comme compilateur C par défaut
@@ -45,3 +51,4 @@ Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Wi
 - [loadcompilerconf](loadcompilerconf.md) - Charger la configuration du compilateur
 - [removecompilerconf](removecompilerconf.md) - Supprime la configuration du compilateur utilisée (sous Windows)
 - [vswhere](vswhere.md) - Localiser les installations de Visual Studio (2017, 2019 et versions ultérieures)
+

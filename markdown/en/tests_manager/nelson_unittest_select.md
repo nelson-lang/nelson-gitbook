@@ -17,11 +17,14 @@ Filter a discovered test suite.
 
 ## 📄 Description
 
-<b>nelson.unittest.select</b> applies selection filters without executing tests.
 
-<b>Kind</b> accepts <b>test</b>, <b>bug</b>, <b>bench</b>, <b>all_tests</b>, and <b>all</b>.
+<b>nelson.unittest.select</b> applies selection filters without executing tests. 
+
+<b>Kind</b> accepts <b>test</b>, <b>bug</b>, <b>bench</b>, <b>all\_tests</b>, and <b>all</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,6 +32,7 @@ suite = nelson.unittest.select(suite, 'Tags', {'fast'}, 'ExcludeTags', {'gui'});
 
 ```
 
+
 ## 🔗 See also
 
-[nelson.unittest.discover](../tests_manager/nelson.unittest.discover.md), [nelson.unittest.plan](../tests_manager/nelson.unittest.plan.md).
+[nelson.unittest.discover](../tests_manager/nelson_unittest_discover.md), [nelson.unittest.plan](../tests_manager/nelson_unittest_plan.md).

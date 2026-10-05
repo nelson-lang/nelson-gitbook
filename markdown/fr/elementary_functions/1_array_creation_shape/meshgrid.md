@@ -23,9 +23,12 @@ grille rectangulaire cartésienne en 2-D ou 3-D.
 
 ## 📄 Description
 
+
 <b>meshgrid</b> crée une grille rectangulaire cartésienne en 2-D ou 3-D.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = -1:0.4:1;
@@ -38,10 +41,11 @@ z = 0:3:6;
 [X,Y,Z] = meshgrid(x, y, z)
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

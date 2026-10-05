@@ -7,30 +7,22 @@ Welcome to the Nelson GitBook repository! This project hosts the official docume
 This repository contains:
 
 - **HTML documentation** — built by Nelson's `buildhelpweb` and published to [nelson-lang.github.io/nelson-gitbook](https://nelson-lang.github.io/nelson-gitbook/).
-- **Markdown sources** — generated under `markdown/` for use with GitBook or offline reading.
-- **PDF builder** — a Rust tool (`nelson-pdf-builder`) that uses [Pandoc](https://pandoc.org/) to produce printable manuals.
+- **Markdown sources** — generated under `markdown/` by `buildhelpmd`, for GitBook or offline reading.
+- **Typst sources** — generated under `typst/` by `buildhelptypst`; they are the single input of the PDF manuals.
+- **PDF builder** — a Rust tool (`nelson-pdf-builder`) that embeds the [Typst](https://typst.app/) compiler and produces the printable manuals without any external program.
 
 Supported languages: **English** (`en`) and **French** (`fr`).
 
 ## Prerequisites 🛠️
 
-| Tool                                                              | Purpose                               |
-| ----------------------------------------------------------------- | ------------------------------------- |
-| [Nelson](https://nelson-lang.github.io/)                          | Generate HTML and Markdown help files |
-| [Node.js](https://nodejs.org/)                                    | Run Prettier for Markdown formatting  |
-| [Rust / Cargo](https://www.rust-lang.org/)                        | Build the PDF builder tool            |
-| [Pandoc](https://pandoc.org/) + a PDF engine (e.g. `wkhtmltopdf`) | Render PDF manuals                    |
-
-Install Node.js dependencies:
-
-```bash
-nvm use .
-npm install
-```
+| Tool                                       | Purpose                                      |
+| ------------------------------------------ | -------------------------------------------- |
+| [Nelson](https://nelson-lang.github.io/)   | Generate HTML, Markdown and Typst help files |
+| [Rust / Cargo](https://www.rust-lang.org/) | Build and run the PDF builder                |
 
 ## Updating the Documentation ⚙️
 
-Run the following script from inside Nelson to regenerate all HTML and Markdown files:
+Run the following script from inside Nelson to regenerate all HTML, Markdown and Typst files:
 
 ```matlab
 % From the nelson-gitbook root directory
@@ -41,7 +33,7 @@ This script:
 
 1. Calls `buildhelpweb` to produce versioned and `latest` HTML output under `docs/releases/`.
 2. Calls `buildhelpmd` to regenerate the Markdown sources under `markdown/`.
-3. Runs Prettier to normalise formatting.
+3. Calls `buildhelptypst` to regenerate the Typst sources under `typst/`. `typst/<lang>/main.typ` follows the order of the markdown manual: home page, getting started, one `main.typ` per module, changelogs, licenses, and the table of contents at the end. The hand-written markdown pages (home, getting started, changelogs, licenses) are converted to Typst by `buildhelptypst` itself.
 
 After running, review and commit the modified files.
 
@@ -50,36 +42,37 @@ After running, review and commit the modified files.
 ### Linux / macOS
 
 ```bash
-./pandoc-build-pdf.sh              # builds both en and fr
-./pandoc-build-pdf.sh en           # English only
-./pandoc-build-pdf.sh fr           # French only
+./build-pdf.sh              # builds both en and fr
+./build-pdf.sh en           # English only
+./build-pdf.sh fr           # French only
 ```
 
 ### Windows
 
 ```bat
-pandoc-build-pdf.bat               :: builds both en and fr
-pandoc-build-pdf.bat en            :: English only
-pandoc-build-pdf.bat fr            :: French only
+build-pdf.bat               :: builds both en and fr
+build-pdf.bat en            :: English only
+build-pdf.bat fr            :: French only
 ```
 
-The scripts compile the Rust PDF builder (`cargo build --release`) and then invoke it. Pandoc and the PDF engine must be available in `PATH`.
+The scripts compile the Rust PDF builder (`cargo build --release`) and run it: `typst/<lang>/main.typ` is compiled in-process into `nelson-<lang>.pdf`. A single document can also be compiled directly:
+
+```bash
+cargo run --release -- --typst-main typst/en/core/main.typ --output-file core.pdf
+```
 
 Notes on the PDF pipeline:
 
-- SVG images are rasterized in-process with [resvg](https://github.com/linebender/resvg); Inkscape or ImageMagick are only used as fallbacks when resvg cannot parse a file.
-- PNG images are referenced as `file://` URIs. Set `NELSON_INLINE_PNG=1` to inline them as base64 data URIs instead (much larger intermediate markdown).
-- Emoji are detected generically (Unicode emoji blocks, including variation selectors, skin tones, ZWJ sequences and flags) and rendered as Twemoji images from `theme/emoji/<codepoints>.png`, using Twemoji's file naming (lowercase hex codepoints joined by `-`, for example `26a0.png` or `1f468-200d-1f469-200d-1f467.png`). An emoji without a local PNG is kept as plain text and listed in a `WARNING` at the end of the build, together with the `curl` command to fetch it. To add a new emoji to the documentation, just download its PNG:
-
-  ```bash
-  curl -sSL -o theme/emoji/1f680.png https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/1f680.png
-  ```
-- The manual is split into chapter chunks: one chunk per top-level directory, further split beyond 40 files or 512 KB of markdown (about 230 chunks per language). Each chunk is converted to a standalone HTML file by Pandoc (up to 8 processes in parallel), then a single wkhtmltopdf call renders all chunks into one PDF, so internal links stay clickable and the `Page X of Y` footer is global. Links between chunks use `file:///.../chunk_NNN.html#anchor` URIs, which wkhtmltopdf turns into PDF destinations.
-- The per-line anchors Pandoc adds to highlighted code blocks (`<a href="#cb12-3">`, about 270,000 in the English manual versus 10,000 real links) are stripped from the chunk HTML. wkhtmltopdf resolves every `<a href="#...">` with up to three DOM queries on the target document, which is what made the single-document build take more than 6 hours.
-- Links to pages that do not exist in the manual are kept as plain text instead of `file://` links.
-- Reference timings on a desktop machine: about 90 s for the English manual (4 505 pages, 1 329 images, 11 000 links) and 115 s for the French one. The Rust pre-processing takes about 20 s, Pandoc 15 s and wkhtmltopdf 50 to 75 s.
-- Known artifact: wkhtmltopdf occasionally emits a blank page at the end of a chunk when the chapter content ends within a few pixels of the page bottom (one occurrence in the English manual). No content is lost; it depends on the layout and moves when the content changes, so it is left as is.
-- The CI workflow builds `en` and `fr` in parallel jobs.
+- No external tool is needed: the Typst compiler, its PDF exporter and the default fonts (Libertinus, New Computer Modern, DejaVu Sans Mono) are linked into the builder. The fonts of the manual (Noto Sans, Noto Sans Math, Noto Sans JP, Noto Emoji, JetBrains Mono, all under the SIL Open Font License) are vendored in `theme/fonts/` (see its README), so the PDF is identical on every platform; system fonts remain available as a last resort.
+- Typst packages are not downloaded by the builder: they are vendored under `theme/typst-packages/<namespace>/<name>/<version>/` (the layout of the Typst package cache). `@preview/mitex` 0.2.7 is vendored there and renders the LaTeX fragments of the help pages; the `typst` CLI fetches it from Typst Universe by itself.
+- The document style (Noto Sans body text, JetBrains Mono code, blue table headers, grey code boxes, `Page X of Y` footer) is the `nelson-style` show rule of `nelson_help.typ`, generated by Nelson and applied by `typst/<lang>/main.typ`.
+- Cross-references between pages are labels (`<module:page>`) resolved by the `nlink` helper of `nelson_help.typ`: a link when the target page is part of the document, plain text otherwise.
+- Block library icons (SVG exports under `libraries/<lib>/exports/`) are emitted as `block-icon(image(...))`: like the HTML help, the helper caps them at 12 × 9 em of the body text (the proportions of the 192 × 144 px cap of the HTML help for a 16 px text), never enlarges them, centers them and draws a thin border. The markdown emitter centers them too and sets the `width` attribute from the SVG's own width (read with `document()`), capped at 192 px, so small icons keep their size. Other images keep their natural size, limited to the text width.
+- Some 3D plots are exported by Nelson as SVG files carrying several full-size PNG layers (about 1700 px wide), and screenshots are PNG files of 1000 to 1700 px. When Typst loads such a figure, the builder downscales the bitmaps to at most 800 px (`MAX_EMBEDDED_BITMAP_WIDTH` in `src/typst_engine.rs`); vector parts are untouched. Without this the English manual was a 157 MB PDF.
+- The PDF is exported without the tagged-PDF structure tree (`tagged: false`): with 8,000 pages it added 500,000 structure objects and 100 MB. Bookmarks and the table of contents only list chapters and pages (`buildhelptypst` marks deeper headings as not outlined).
+- Diagnostics are printed with file and line; warnings do not fail the build, errors do.
+- The PDF metadata carries the creation date and the builder version as creator; `datetime.today()` is available to the Typst sources.
+- The CI workflow builds `en` and `fr` in parallel jobs on Linux and uploads them as artifacts; on a `v*` tag, both PDFs are attached to the GitHub release.
 
 ## Published Documentation 🌐
 

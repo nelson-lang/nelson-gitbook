@@ -27,28 +27,36 @@ Valeurs propres et vecteurs propres.
 
 ## 📄 Description
 
-<b>eig(A)</b> retourne les valeurs propres et vecteurs propres.
 
-Pour une matrice carrée <b>A</b>, les valeurs propres
+<b>eig(A)</b> retourne les valeurs propres et vecteurs propres. 
+
+Pour une matrice carrée <b>A</b>, les valeurs propres 
 $$\lambda$$
+ 
 
-et vecteurs propres
+et vecteurs propres 
 $$\mathbf{v}$$
+ 
 
-satisfont :
+satisfont : 
 $$A\mathbf{v} = \lambda\mathbf{v}$$
+ 
 
-L'équation caractéristique est :
+L'équation caractéristique est : 
 $$\det(A - \lambda I) = 0$$
+ 
 
-<b>eig(A, B)</b> retourne les valeurs propres généralisées et vecteurs propres où :
+<b>eig(A, B)</b> retourne les valeurs propres généralisées et vecteurs propres où : 
 $$A\mathbf{v} = \lambda B\mathbf{v}$$
+
 
 ## 📚 Bibliographie
 
-[1] Anderson, E., Z. Bai, C. Bischof, S. Blackford, J. Demmel, J. Dongarra, J. Du Croz, A. Greenbaum, S. Hammarling, A. McKenney, and D. Sorensen, LAPACK User's Guide (http://www.netlib.org/lapack/lug/ lapack_lug.html), Third Edition, SIAM, Philadelphia, 1999.
+[1]  Anderson, E., Z. Bai, C. Bischof, S. Blackford, J. Demmel, J. Dongarra, J. Du Croz, A. Greenbaum, S. Hammarling, A. McKenney, and D. Sorensen, LAPACK User's Guide (http://www.netlib.org/lapack/lug/ lapack_lug.html), Third Edition, SIAM, Philadelphia, 1999.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [10 -20 40; -50 20 0; 10 0 30]
@@ -57,6 +65,7 @@ e = eig(A)
 
 ```
 
+
 ```matlab
 A = [1/sqrt(2) 0; 0 1];
 B = [0 1; -1/sqrt(2) 0];
@@ -64,14 +73,15 @@ B = [0 1; -1/sqrt(2) 0];
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[svd](../../linear_algebra/svd.md), [schur](../../linear_algebra/schur.md).
+[svd](../../linear_algebra/3_eigen_singular_values/svd.md), [schur](../../linear_algebra/3_eigen_singular_values/schur.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

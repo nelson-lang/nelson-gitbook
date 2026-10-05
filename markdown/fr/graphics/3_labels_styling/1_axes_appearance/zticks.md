@@ -26,7 +26,8 @@ Definir ou obtenir les graduations de l'axe des z.
 
 ## 📄 Description
 
-<b>zticks</b> obtient ou definit les graduations de l'axe des z des axes courants.
+
+<b>zticks</b> obtient ou definit les graduations de l'axe des z des axes courants. 
 
 Specifier des graduations bascule le mode des graduations de l'axe des z sur <b>manual</b>.
 
@@ -43,13 +44,14 @@ ticks = zticks()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [zticklabels](../../../graphics/3_labels_styling/1_axes_appearance/zticklabels.md), [ztickangle](../../../graphics/3_labels_styling/1_axes_appearance/ztickangle.md), [zlim](../../../graphics/3_labels_styling/1_axes_appearance/zlim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

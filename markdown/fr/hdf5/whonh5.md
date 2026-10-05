@@ -20,9 +20,12 @@ Liste les variables d'un fichier .nh5 valide.
 
 ## 📄 Description
 
+
 <b>whonh5</b> liste les variables d'un fichier .nh5 valide.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -34,14 +37,15 @@ whonh5([tempdir(), 'example_whonh5.nh5'])
 ce = whonh5([tempdir(), 'example_whonh5.nh5'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [whomat](../matio/whomat.md), [who](../memory_manager/who.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -22,9 +22,12 @@ Mean frequency of a signal spectrum.
 
 ## 📄 Description
 
+
 <b>meanfreq</b> computes the power-weighted mean frequency. Time-domain inputs use a rectangular-window periodogram with the input length.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Mean frequency of a signal spectrum.
 
 ```
 
+
 ## 🔗 See also
 
-[medfreq](../../signal_processing/medfreq.md), [bandpower](../../signal_processing/bandpower.md).
+[medfreq](../../signal_processing/2_measurements_feature_extraction/medfreq.md), [bandpower](../../signal_processing/2_measurements_feature_extraction/bandpower.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

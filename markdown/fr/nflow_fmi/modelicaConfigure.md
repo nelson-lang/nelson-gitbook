@@ -18,11 +18,12 @@ Définit ou interroge l'OpenModelica du pont Modelica de nflow.
 
 ## 📄 Description
 
-<b>modelicaConfigure</b> sélectionne le compilateur <b>OpenModelica</b> que le pont Modelica de nflow utilise pour transformer un modèle Modelica en FMU. À utiliser lorsque la détection automatique se trompe ou lorsque plusieurs versions d'OpenModelica sont installées.
 
-Le réglage est persisté dans le répertoire des préférences de Nelson et est <b>prioritaire</b> : une fois configuré, seul cet emplacement est essayé, de sorte que pointer nflow vers un OpenModelica précis ne se résout jamais silencieusement vers un autre. Sans réglage, l'emplacement est détecté automatiquement à partir des variables d'environnement <b>NELSON_OPENMODELICA_HOME</b> et <b>OPENMODELICAHOME</b>, des répertoires d'installation standard, puis de <b>PATH</b>.
+<b>modelicaConfigure</b> sélectionne le compilateur <b>OpenModelica</b> que le pont Modelica de nflow utilise pour transformer un modèle Modelica en FMU. À utiliser lorsque la détection automatique se trompe ou lorsque plusieurs versions d'OpenModelica sont installées. 
 
-Appelée sans argument, <b>modelicaConfigure</b> renvoie le chemin <b>omc</b> résolu. Appelée avec une chaîne vide, elle efface le réglage et revient à la détection automatique. Définir un chemin qui ne se résout pas vers un <b>omc</b> exécutable émet un avertissement mais est tout de même enregistré, afin de pré-configurer une machine.
+Le réglage est persisté dans le répertoire des préférences de Nelson et est <b>prioritaire</b> : une fois configuré, seul cet emplacement est essayé, de sorte que pointer nflow vers un OpenModelica précis ne se résout jamais silencieusement vers un autre. Sans réglage, l'emplacement est détecté automatiquement à partir des variables d'environnement <b>NELSON\_OPENMODELICA\_HOME</b> et <b>OPENMODELICAHOME</b>, des répertoires d'installation standard, puis de <b>PATH</b>. 
+
+Appelée sans argument, <b>modelicaConfigure</b> renvoie le chemin <b>omc</b> résolu. Appelée avec une chaîne vide, elle efface le réglage et revient à la détection automatique. Définir un chemin qui ne se résout pas vers un <b>omc</b> exécutable émet un avertissement mais est tout de même enregistré, afin de pré-configurer une machine. 
 
 L'éditeur nflow écrit la même préférence via cette fonction : les réglages graphiques et la ligne de commande partagent une seule source de vérité.
 
@@ -34,12 +35,12 @@ Pointer nflow vers une installation d'OpenModelica précise.
 modelicaConfigure('C:/Program Files/OpenModelica1.27.0-64bit');
 info = modelicaInfo()
 ```
-
 Revenir à la détection automatique.
 
 ```matlab
 modelicaConfigure('')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -47,8 +48,8 @@ modelicaConfigure('')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

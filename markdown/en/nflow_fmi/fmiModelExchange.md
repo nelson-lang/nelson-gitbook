@@ -19,9 +19,10 @@ Import and integrate an FMI 2.0 or 3.0 Model Exchange FMU.
 
 ## 📄 Description
 
-<b>fmiModelExchange</b> imports a <b>Functional Mock-up Unit</b> (FMU) that follows the <b>FMI 2.0</b> or <b>3.0</b> <b>Model Exchange</b> interface and integrates it with Nelson's own solver.
 
-The key difference with <b>fmiCoSimulate</b> is who owns the solver. A Co-Simulation FMU contains its own solver and is advanced with <b>doStep</b>. A Model Exchange FMU exposes only the model equations (state derivatives, outputs and event indicators); the importing tool provides the solver. <b>fmiModelExchange</b> integrates the FMU's continuous states with a fixed-step fourth-order Runge-Kutta method and handles state events detected at step boundaries (entering event mode, running the discrete-update fixed point, and re-reading the continuous states).
+<b>fmiModelExchange</b> imports a <b>Functional Mock-up Unit</b> (FMU) that follows the <b>FMI 2.0</b> or <b>3.0</b> <b>Model Exchange</b> interface and integrates it with Nelson's own solver. 
+
+The key difference with <b>fmiCoSimulate</b> is who owns the solver. A Co-Simulation FMU contains its own solver and is advanced with <b>doStep</b>. A Model Exchange FMU exposes only the model equations (state derivatives, outputs and event indicators); the importing tool provides the solver. <b>fmiModelExchange</b> integrates the FMU's continuous states with a fixed-step fourth-order Runge-Kutta method and handles state events detected at step boundaries (entering event mode, running the discrete-update fixed point, and re-reading the continuous states). 
 
 No external inputs are applied: the parameters and inputs keep their start values. An error is raised when the FMU does not provide the Model Exchange interface.
 
@@ -35,13 +36,14 @@ r = fmiModelExchange(fmu, 20, 0.01);
 plot(r.time, r.outputs); legend(r.outputNames);
 ```
 
+
 ## 🔗 See also
 
 [fmiCoSimulate](../nflow_fmi/fmiCoSimulate.md), [fmiInfo](../nflow_fmi/fmiInfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

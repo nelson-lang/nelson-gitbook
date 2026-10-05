@@ -20,9 +20,12 @@ List folder contents.
 
 ## 📄 Description
 
+
 <b>ls</b> is implemented by calling the native operating system's directory listing command-available options will vary from system to system.
 
 ## 💡 Example
+
+
 
 ```matlab
 res = ls(nelsonroot())
@@ -31,13 +34,14 @@ if ~ispc()
 end
 ```
 
+
 ## 🔗 See also
 
 [dir](../files_folders_functions/dir.md), [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

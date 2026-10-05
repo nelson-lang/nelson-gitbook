@@ -17,37 +17,40 @@ Enable pan mode.
 
 ## 📄 Description
 
-Use pan mode to adjust axis limits during interactive data exploration.
 
-Enable or disable the pan mode and configure additional basic settings using the pan function.
+Use pan mode to adjust axis limits during interactive data exploration. 
 
-Pan mode works with line, bar, histogram, and surface charts. These charts typically provide a pan icon on the toolbar.
+Enable or disable the pan mode and configure additional basic settings using the pan function. 
 
-<b>pan option</b> configures the pan mode for all axes within the current figure.
+Pan mode works with line, bar, histogram, and surface charts. These charts typically provide a pan icon on the toolbar. 
 
-Once pan mode is active, you can adjust the view of axes using the cursor, or keyboard:
+<b>pan option</b> configures the pan mode for all axes within the current figure. 
 
-Cursor: Click and drag the cursor in the axes.
+Once pan mode is active, you can adjust the view of axes using the cursor, or keyboard: 
 
-Keyboard: To pan horizontally, press the left arrow (←) or the right arrow (->) key. To pan vertically, press the up arrow (↑) or the down arrow (↓) key.
+Cursor: Click and drag the cursor in the axes. 
 
-The pan mode option can be specified using one of the following values:
+Keyboard: To pan horizontally, press the left arrow (←) or the right arrow (->) key. To pan vertically, press the up arrow (↑) or the down arrow (↓) key. 
+
+ 
+
+The pan mode option can be specified using one of the following values: 
 
 <b>
         'toggle'
-      </b>: Toggles the pan mode. If pan mode is disabled, 'toggle' reverts to the most recently used pan option of 'on', 'xon', or 'yon'. This option behaves the same as calling pan without any arguments.
+      </b>: Toggles the pan mode. If pan mode is disabled, 'toggle' reverts to the most recently used pan option of 'on', 'xon', or 'yon'. This option behaves the same as calling pan without any arguments. 
 
 <b>
         'xon'
-      </b>: Enables pan mode for the x-dimension exclusively.
+      </b>: Enables pan mode for the x-dimension exclusively. 
 
 <b>
         'yon'
-      </b>: Activates pan mode for the y-dimension exclusively.
+      </b>: Activates pan mode for the y-dimension exclusively. 
 
 <b>
         'on'
-      </b>: Activates pan mode.
+      </b>: Activates pan mode. 
 
 <b>
         'off'
@@ -55,11 +58,14 @@ The pan mode option can be specified using one of the following values:
 
 ## 💡 Example
 
+
+
 ```matlab
 surf(peaks)
 pan on
 
 ```
+
 
 ## 🔗 See also
 
@@ -67,7 +73,7 @@ pan on
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.2.0   | initial version |
 

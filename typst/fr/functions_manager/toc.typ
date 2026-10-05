@@ -1,0 +1,22 @@
+#import "nelson_help.typ": *
+
+- Gestionnaire de fonctions
+  - #nlink(<functions_manager:addpath>)[addpath]
+  - #nlink(<functions_manager:builtin>)[builtin]
+  - #nlink(<functions_manager:clearfun>)[clearfun]
+  - #nlink(<functions_manager:feval>)[feval]
+  - #nlink(<functions_manager:import>)[import]
+  - #nlink(<functions_manager:inmem>)[inmem]
+  - #nlink(<functions_manager:isbuiltin>)[isbuiltin]
+  - #nlink(<functions_manager:ismacro>)[ismacro]
+  - #nlink(<functions_manager:ismex>)[ismex]
+  - #nlink(<functions_manager:localfunctions>)[localfunctions]
+  - #nlink(<functions_manager:macroargs>)[macroargs]
+  - #nlink(<functions_manager:path>)[path]
+  - #nlink(<functions_manager:private_functions>)[private functions]
+  - #nlink(<functions_manager:rehash>)[rehash]
+  - #nlink(<functions_manager:restoredefaultpath>)[restoredefaultpath]
+  - #nlink(<functions_manager:rmpath>)[rmpath]
+  - #nlink(<functions_manager:userpath>)[userpath]
+  - #nlink(<functions_manager:what>)[what]
+  - #nlink(<functions_manager:which>)[which]

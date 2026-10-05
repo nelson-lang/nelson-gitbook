@@ -18,9 +18,10 @@ Turn an FMU into a native nflow block manifest.
 
 ## 📄 Description
 
-<b>fmuToBlock</b> is the nflow FMU import assistant. It reads an FMU's <b>modelDescription.xml</b> and produces a native-looking nflow block: one input port per variable with causality <b>input</b>, one output port per <b>output</b>, the FMU parameters, the FMU's icon (its <b>model.png</b> when present, otherwise a labelled fallback), and a default <b>path</b> parameter pointing at the <b>.fmu</b>.
 
-The generated block targets the engine's <b>fmu</b> handler, so placing it yields a working FMU block that simulates through the existing FMI path -- there is no new runtime. The value is authoring: an FMU becomes a first-class, named, icon'd palette block instead of a generic browse box. This pairs with the Modelica bridge, whose <b>modelicaToFmu</b> produces FMUs that <b>fmuToBlock</b> can then wrap.
+<b>fmuToBlock</b> is the nflow FMU import assistant. It reads an FMU's <b>modelDescription.xml</b> and produces a native-looking nflow block: one input port per variable with causality <b>input</b>, one output port per <b>output</b>, the FMU parameters, the FMU's icon (its <b>model.png</b> when present, otherwise a labelled fallback), and a default <b>path</b> parameter pointing at the <b>.fmu</b>. 
+
+The generated block targets the engine's <b>fmu</b> handler, so placing it yields a working FMU block that simulates through the existing FMI path -- there is no new runtime. The value is authoring: an FMU becomes a first-class, named, icon'd palette block instead of a generic browse box. This pairs with the Modelica bridge, whose <b>modelicaToFmu</b> produces FMUs that <b>fmuToBlock</b> can then wrap. 
 
 With the <b>'LibraryFile'</b> option, a one-block <b>library.json</b> is also written, ready to load in the nflow editor. Many FMUs ship no icon; in that case the render is a clean labelled fallback.
 
@@ -32,7 +33,6 @@ Import a reference FMU as a block and write a library.
 fmu = [modulepath('nflow_fmi'), '/examples/VanDerPol.fmu'];
 block = fmuToBlock(fmu, 'Name', 'VanDerPol', 'LibraryFile', [tempdir(), '/vdp.json'])
 ```
-
 Wrap a Modelica model compiled through the bridge.
 
 ```matlab
@@ -41,13 +41,14 @@ fmu = modelicaToFmu(src);
 block = fmuToBlock(fmu, 'Name', 'FirstOrder')
 ```
 
+
 ## 🔗 See also
 
 [fmiInfo](../nflow_fmi/fmiInfo.md), [modelicaToFmu](../nflow_fmi/modelicaToFmu.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

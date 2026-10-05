@@ -28,17 +28,19 @@ Creer une table d'evenements pour un timetable.
 
 ## 📄 Description
 
-<b>eventtable</b> cree une eventtable qui peut etre attachee a un timetable avec <b>Properties.Events</b> ; <b>syncevents</b> copie ensuite ses variables dans le timetable.
 
-Quand l'entree est un vecteur de temps, les etiquettes, durees et fins d'evenements sont indiquees par des arguments nom-valeur. Les variables supplementaires sont fournies en creant d'abord un timetable puis en le passant a <b>eventtable</b> : toute entree positionnelle apres la premiere est une erreur.
+<b>eventtable</b> cree une eventtable qui peut etre attachee a un timetable avec <b>Properties.Events</b> ; <b>syncevents</b> copie ensuite ses variables dans le timetable. 
 
-Une eventtable est un timetable : les temps d'evenements sont ses temps de lignes (<b>E.Properties.RowTimes</b>, ou <b>E.Time</b>) et non une variable ; <b>size</b>, <b>width</b>, l'indexation et la concatenation se comportent comme pour un timetable.
+Quand l'entree est un vecteur de temps, les etiquettes, durees et fins d'evenements sont indiquees par des arguments nom-valeur. Les variables supplementaires sont fournies en creant d'abord un timetable puis en le passant a <b>eventtable</b> : toute entree positionnelle apres la premiere est une erreur. 
 
-<b>E.Properties</b> commence par <b>EventLabelsVariable</b>, <b>EventLengthsVariable</b> et <b>EventEndsVariable</b>, les noms des variables contenant les etiquettes, durees et fins d'evenements ([] si non definies). On peut leur affecter un nom ou un indice de variable, ou []. Une variable renommee ou supprimee n'est plus utilisee.
+Une eventtable est un timetable : les temps d'evenements sont ses temps de lignes (<b>E.Properties.RowTimes</b>, ou <b>E.Time</b>) et non une variable ; <b>size</b>, <b>width</b>, l'indexation et la concatenation se comportent comme pour un timetable. 
+
+<b>E.Properties</b> commence par <b>EventLabelsVariable</b>, <b>EventLengthsVariable</b> et <b>EventEndsVariable</b>, les noms des variables contenant les etiquettes, durees et fins d'evenements ([] si non definies). On peut leur affecter un nom ou un indice de variable, ou []. Une variable renommee ou supprimee n'est plus utilisee. 
 
 Creee a partir de temps d'evenements sans etiquettes, l'eventtable recoit les etiquettes "Event 1", "Event 2", ... dans une variable <b>EventLabels</b>. Creee a partir d'un timetable, aucune variable ne sert d'etiquettes sauf indication contraire.
 
 ## 💡 Exemples
+
 
 ```matlab
 eventTimes = datetime(2022, 11, [3; 5; 10; 14]);
@@ -69,14 +71,15 @@ stackedplot(TT)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable](../../table/timetable.md), [syncevents](../../table/syncevents.md), [extractevents](../../table/extractevents.md), [stackedplot](../../graphics/stackedplot.md).
+[timetable](../../table/1_create_convert_tables/timetable.md), [syncevents](../../table/8_timetables_events/syncevents.md), [extractevents](../../table/8_timetables_events/extractevents.md), [stackedplot](../../graphics/1_plots/4_data_distribution_plots/stackedplot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

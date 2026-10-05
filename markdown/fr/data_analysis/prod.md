@@ -23,23 +23,27 @@ Produit des éléments d'un tableau.
 
 ## 📄 Description
 
+
 <b>R = prod(M)</b> renvoie le produit des éléments du tableau M.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
 R = prod(M, 'native')
 ```
 
+
 ## 🔗 Voir aussi
 
-[ndims](../elementary_functions/ndims.md), [sum](../data_analysis/sum.md).
+[ndims](../elementary_functions/7_indexing_dimensions/ndims.md), [sum](../data_analysis/sum.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

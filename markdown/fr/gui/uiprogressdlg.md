@@ -18,7 +18,8 @@ Cree une boite de progression UI.
 
 ## 📄 Description
 
-uiprogressdlg affiche la progression d'une operation.
+
+uiprogressdlg affiche la progression d'une operation. 
 
 Dans un bureau web, la boite de dialogue est non bloquante. Utilisez les proprietes windowTitle, labelText, value, minimum, maximum et visible du handle pour la mettre a jour ou la masquer.
 
@@ -39,7 +40,6 @@ patch([0.42 0.58 0.58 0.42], [0.24 0.24 0.35 0.35], [0.95 0.95 0.95], 'EdgeColor
 text(0.50, 0.29, 'Cancel', 'HorizontalAlignment', 'center', 'FontSize', 10);
 drawnow();
 ```
-
 <img src="uiprogressdlg_example.svg" align="middle"/>
 Afficher une progression indeterminee.
 
@@ -48,7 +48,6 @@ f = uifigure('Visible', 'off', 'Name', 'Import');
 d = uiprogressdlg(f, 'Title', 'Import', 'Message', 'Reading data', 'Indeterminate', true);
 close(f)
 ```
-
 Creer, mettre a jour et supprimer une boite de dialogue de progression.
 
 ```matlab
@@ -60,14 +59,15 @@ delete(d);
 close(f)
 ```
 
+
 ## 🔗 Voir aussi
 
 [waitbar](../gui/waitbar.md), [uialert](../gui/uialert.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--

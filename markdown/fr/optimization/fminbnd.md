@@ -23,11 +23,14 @@ Minimisation scalaire bornée.
 
 ## 📄 Description
 
+
 <b>fminbnd</b> applique la méthode bornée de Brent, combinant recherche par section dorée et interpolation parabolique. Une structure problem peut contenir les champs objective, x1, x2 et options.
 
 ## Fonction(s) utilisée(s)
 
+
     optimset
+  
 
 ## 📚 Bibliographie
 
@@ -35,10 +38,13 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [x, fval] = fminbnd(@(x) (x - 1.5)^2, -2, 4)
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -46,8 +52,8 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

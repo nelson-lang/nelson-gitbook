@@ -17,9 +17,10 @@ Create durations from milliseconds or convert durations to milliseconds.
 
 ## 📄 Description
 
-Create durations from milliseconds or convert durations to milliseconds.
 
-Numeric input is divided by 1000 before storage as elapsed seconds. Duration input is multiplied by 1000.
+Create durations from milliseconds or convert durations to milliseconds. 
+
+Numeric input is divided by 1000 before storage as elapsed seconds. Duration input is multiplied by 1000. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,13 +35,14 @@ milliseconds(seconds(2))
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

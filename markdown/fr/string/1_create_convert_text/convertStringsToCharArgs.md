@@ -16,9 +16,10 @@ Convertir des tableaux de chaînes en tableaux de caractères ou en cellules de 
 
 ## 📄 Description
 
-<b>convertStringToCharArgs</b> convertit soit un tableau de cellules de valeurs de chaîne, soit un tableau de chaînes en un tableau de cellules de vecteurs de caractères.
 
-Pour convertir un scalaire de chaîne unique en un vecteur de caractères, utilisez plutôt la fonction char.
+<b>convertStringToCharArgs</b> convertit soit un tableau de cellules de valeurs de chaîne, soit un tableau de chaînes en un tableau de cellules de vecteurs de caractères. 
+
+Pour convertir un scalaire de chaîne unique en un vecteur de caractères, utilisez plutôt la fonction char. 
 
 Cette conversion est nécessaire car certaines fonctions (par exemple set ou get) n'acceptent actuellement pas les entrées de type chaîne.
 
@@ -34,15 +35,16 @@ C = convertStringToCharArgs("Nelson")
 C2 = convertStringToCharArgs({"a",'b'; 1,"d"})
 ```
 
+
 ## 🔗 Voir aussi
 
-[convertCharsToStrings](../../string/convertCharsToStrings.md), [cellstr](../../data_structures/cellstr.md), [string](../../string/string.md), [char](../../string/char.md).
+[convertCharsToStrings](../../string/1_create_convert_text/convertCharsToStrings.md), [cellstr](../../data_structures/cellstr.md), [string](../../string/1_create_convert_text/string.md), [char](../../string/1_create_convert_text/char.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

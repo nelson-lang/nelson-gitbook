@@ -20,13 +20,16 @@ Supprimer des caracteres en debut et fin de texte.
 
 ## 📄 Description
 
-strip supprime par defaut les blancs en debut et fin de texte.
+
+strip supprime par defaut les blancs en debut et fin de texte. 
 
 Des arguments optionnels peuvent selectionner un cote et le caractere a supprimer lorsque le module string le prend en charge.
 
 ## Fonction(s) utilisée(s)
 
+
     strtrim
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ Supprimer les blancs au debut et a la fin d'une chaine.
 txt = strip("  Nel Son  ")
 ```
 
+
 ## 🔗 Voir aussi
 
-[strtrim](../../string/strtrim.md), [deblank](../../string/deblank.md), [lower](../../string/lower.md), [upper](../../string/upper.md).
+[strtrim](../../string/7_edit_text/strtrim.md), [deblank](../../string/7_edit_text/deblank.md), [lower](../../string/7_edit_text/lower.md), [upper](../../string/7_edit_text/upper.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

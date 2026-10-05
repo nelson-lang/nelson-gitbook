@@ -1,10 +1,10 @@
-# dlsym_used
+# dlsym\_used
 
 Returns the current valid dlsym handles.
 
 ## 📝 Syntax
 
-- r = dlsym_used()
+- r = dlsym\_used()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns the current valid dlsym handles.
 
 ## 📄 Description
 
+
 Returns the current valid dlsym handles.
 
 ## 💡 Example
 
+
+
 ```matlab
 used = dlsym_used()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ used = dlsym_used()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

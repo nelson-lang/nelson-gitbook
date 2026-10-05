@@ -23,13 +23,16 @@ Adjust timetable data to new row times.
 
 ## 📄 Description
 
-<b>retime</b> returns a timetable whose row times match <b>newTimes</b> or a regular time grid.
 
-Supported fill and nearest-neighbor methods include fillwithmissing, fillwithconstant, nearest, previous, and next.
+<b>retime</b> returns a timetable whose row times match <b>newTimes</b> or a regular time grid. 
+
+Supported fill and nearest-neighbor methods include fillwithmissing, fillwithconstant, nearest, previous, and next. 
 
 Supported numeric interpolation methods include linear, spline, pchip, and makima. Supported aggregation methods include sum, mean, min, max, median, prod, count, firstvalue, and lastvalue.
 
 ## 💡 Example
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:2)';
@@ -37,13 +40,14 @@ TT = timetable(t, [1; 3; 5]);
 TT2 = retime(TT, t(1):days(1):t(3), 'nearest')
 ```
 
+
 ## 🔗 See also
 
-[synchronize](../../table/synchronize.md), [timetable](../../table/timetable.md).
+[synchronize](../../table/8_timetables_events/synchronize.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

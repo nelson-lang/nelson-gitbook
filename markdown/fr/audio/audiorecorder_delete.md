@@ -1,10 +1,10 @@
-# audiorecorder_delete
+# audiorecorder\_delete
 
 Supprime un objet audiorecorder.
 
 ## 📝 Syntaxe
 
-- audiorecorder_delete(h)
+- audiorecorder\_delete(h)
 - delete(h)
 
 ## 📥 Argument d'entrée
@@ -13,15 +13,19 @@ Supprime un objet audiorecorder.
 
 ## 📄 Description
 
-<b>delete(h)</b> libère l'objet audiorecorder.
+
+<b>delete(h)</b> libère l'objet audiorecorder. 
 
 N'oubliez pas de libérer ensuite h.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = audiorecorder_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -29,9 +33,9 @@ used = audiorecorder_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

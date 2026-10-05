@@ -13,7 +13,8 @@ Unite imaginaire.
 
 ## 📄 Description
 
-j renvoie l'unite imaginaire sqrt(-1), comme i.
+
+j renvoie l'unite imaginaire sqrt(-1), comme i. 
 
 j peut etre redefini comme une variable ordinaire. Utilisez clear pour restaurer le comportement par defaut.
 
@@ -25,14 +26,15 @@ Construire un nombre complexe avec l'unite imaginaire.
 z = 2 + 3*j
 ```
 
+
 ## 🔗 Voir aussi
 
-[i](../constructors_functions/i.md), [complex](../elementary_functions/complex.md).
+[i](../constructors_functions/i.md), [complex](../elementary_functions/3_complex_numbers/complex.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

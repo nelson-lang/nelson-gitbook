@@ -21,14 +21,17 @@ Modele de regression lineaire.
 
 ## 📄 Description
 
-LinearModel stocke un modele de regression lineaire ajuste, notamment les coefficients, les noms des predicteurs et les informations de reponse.
+
+LinearModel stocke un modele de regression lineaire ajuste, notamment les coefficients, les noms des predicteurs et les informations de reponse. 
 
 Creez cet objet avec fitlm. Utilisez predict pour evaluer les reponses ajustees pour de nouveaux predicteurs.
 
 ## Fonction(s) utilisée(s)
 
+
     fitlm
     predict
+  
 
 ## 💡 Exemple
 
@@ -41,14 +44,15 @@ mdl = fitlm(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitlm](../../statistics/fitlm.md).
+[predict](../../statistics/5_regression/predict.md), [fitlm](../../statistics/5_regression/fitlm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

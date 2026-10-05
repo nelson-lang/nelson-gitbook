@@ -16,9 +16,11 @@ Renvoie le nom de la methode d'interpolation.
 
 ## 📄 Description
 
+
 <b>getinterpmethod</b> Lit la methode d'interpolation stockee dans ts.DataInfo.Interpolation.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3]);
@@ -27,14 +29,15 @@ getinterpmethod(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

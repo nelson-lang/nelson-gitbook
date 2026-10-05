@@ -23,12 +23,15 @@ Minimisation sans dérivée et sans contrainte.
 
 ## 📄 Description
 
+
 <b>fminsearch</b> utilise la méthode du simplexe de Nelder-Mead. Les contrôles TolX, TolFun, MaxIter, MaxFunEvals, Display, OutputFcn et PlotFcns sont pris en charge. Une structure problem peut contenir les champs objective, x0 et options.
 
 ## Fonction(s) utilisée(s)
 
+
     optimset
     optimoptions
+  
 
 ## 📚 Bibliographie
 
@@ -37,11 +40,14 @@ J. C. Lagarias, J. A. Reeds, M. H. Wright and P. E. Wright, "Convergence propert
 
 ## 💡 Exemple
 
+
+
 ```matlab
 opts = optimset('TolX', 1e-8, 'TolFun', 1e-8);
 [x, fval] = fminsearch(@(x) (x(1) - 1)^2 + (x(2) + 2)^2, [0 0], opts)
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -49,8 +55,8 @@ opts = optimset('TolX', 1e-8, 'TolFun', 1e-8);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

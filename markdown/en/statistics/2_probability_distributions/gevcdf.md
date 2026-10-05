@@ -20,22 +20,26 @@ Generalized extreme value cumulative distribution function
 
 ## 📄 Description
 
+
 <b>gevcdf</b> computes lower-tail probabilities by default and upper-tail probabilities with <b>'upper'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 2];
 p = gevcdf(x, 0.2, 1, 0);
 ```
 
+
 ## 🔗 See also
 
-[gevpdf](../../statistics/gevpdf.md), [gevinv](../../statistics/gevinv.md), [gevrnd](../../statistics/gevrnd.md), [gevstat](../../statistics/gevstat.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevinv](../../statistics/2_probability_distributions/gevinv.md), [gevrnd](../../statistics/2_probability_distributions/gevrnd.md), [gevstat](../../statistics/2_probability_distributions/gevstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

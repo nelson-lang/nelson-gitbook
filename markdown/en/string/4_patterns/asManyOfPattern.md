@@ -8,21 +8,25 @@ Repeat pattern as many times as possible.
 
 ## 📄 Description
 
+
 <b>asManyOfPattern</b> Repeat pattern as many times as possible.
 
 ## 💡 Example
+
+
 
 ```matlab
 pat = asManyOfPattern("b"); extract("abbbc", "a" + pat + "c")
 ```
 
+
 ## 🔗 See also
 
-[asFewOfPattern](../../string/asFewOfPattern.md), [optionalPattern](../../string/optionalPattern.md), [pattern](../../string/pattern.md).
+[asFewOfPattern](../../string/4_patterns/asFewOfPattern.md), [optionalPattern](../../string/4_patterns/optionalPattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

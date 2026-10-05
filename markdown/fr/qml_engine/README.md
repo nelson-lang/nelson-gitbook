@@ -1,8 +1,13 @@
 # Moteur QML
 
+
+    
 Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.
 
+    
 Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.
+
+  
 
 ## Functions
 
@@ -33,3 +38,4 @@ Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt 
 - [qml_setofflinestoragepath](qml_setofflinestoragepath.md) - Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne.
 - [qt_constant](qt_constant.md) - Renvoie la valeur d'une constante Qt.
 - [qt_version](qt_version.md) - Renvoie la version de Qt utilisée.
+

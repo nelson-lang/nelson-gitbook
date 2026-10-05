@@ -26,21 +26,24 @@ Find graphics objects with specific properties.
 
 ## 📄 Description
 
+
 <b>findobj</b> searches the graphics object hierarchy from the root object or from the supplied graphics objects. Objects whose <b>HandleVisibility</b> property is <b>
-'off'
-</b>, and their descendants, are not returned.
+        'off'
+      </b>, and their descendants, are not returned. 
 
 Property predicates can be combined with <b>
-'-and'
-</b>, <b>
-'-or'
-</b>, <b>
-'-xor'
-</b>, and <b>
-'-not'
-</b>. Use cell arrays to group expressions.
+        '-and'
+      </b>, <b>
+        '-or'
+      </b>, <b>
+        '-xor'
+      </b>, and <b>
+        '-not'
+      </b>. Use cell arrays to group expressions.
 
 ## 💡 Examples
+
+
 
 ```matlab
 close all
@@ -48,11 +51,13 @@ plot(rand(5))
 h = findobj('Type', 'line')
 ```
 
+
 ```matlab
 close all
 plot(1:10, 'Tag', 'linear')
 h = findobj('-regexp', 'Tag', 'lin')
 ```
+
 
 ```matlab
 close all
@@ -62,15 +67,16 @@ plot((1:10).^2, 'Tag', 'quadratic')
 h = findobj('Type', 'line', '-and', '-not', {'Tag', 'linear'})
 ```
 
+
 ## 🔗 See also
 
 [groot](../../../graphics/2_graphics_objects/1_object_management/groot.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [gca](../../../graphics/2_graphics_objects/1_object_management/gca.md), [isgraphics](../../../graphics/2_graphics_objects/1_object_management/isgraphics.md), [get](../../../handle/get.md), [set](../../../handle/set.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

@@ -16,9 +16,10 @@ Darken light colors and lighten dark colors.
 
 ## 📄 Description
 
-<b>fliplightness</b> darkens the light colors and lightens the dark colors specified in <b>colors</b>, which is useful to adapt a set of colors to a dark background.
 
-Each color is converted to the Oklab color space and its lightness <b>L</b> is replaced so that <b>L^(3/2)</b> becomes <b>1 - L^(3/2)</b>: black becomes white, white becomes black. Hue and chroma are kept. When the new color falls outside the sRGB gamut, its chroma is reduced to the largest value inside the gamut, keeping its lightness and hue.
+<b>fliplightness</b> darkens the light colors and lightens the dark colors specified in <b>colors</b>, which is useful to adapt a set of colors to a dark background. 
+
+Each color is converted to the Oklab color space and its lightness <b>L</b> is replaced so that <b>L^(3/2)</b> becomes <b>1 - L^(3/2)</b>: black becomes white, white becomes black. Hue and chroma are kept. When the new color falls outside the sRGB gamut, its chroma is reduced to the largest value inside the gamut, keeping its lightness and hue. 
 
 Calling <b>fliplightness</b> twice may not return the original colors, because of the chroma reduction.
 
@@ -36,7 +37,6 @@ newhex = fliplightness(["#FF8800", "#000000"])
 newrgb = fliplightness(uint8([200 180 160]))
 
 ```
-
 Original and flipped parula colormap.
 
 ```matlab
@@ -47,13 +47,14 @@ axis off
 
 ```
 
+
 ## 🔗 See also
 
 [validatecolor](../../../graphics/3_labels_styling/2_color_styling/validatecolor.md), [colororder](../../../graphics/3_labels_styling/2_color_styling/colororder.md), [theme](../../../graphics/3_labels_styling/2_color_styling/theme.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

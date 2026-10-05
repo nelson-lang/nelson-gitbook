@@ -18,22 +18,26 @@ Moyenne et variance Weibull
 
 ## 📄 Description
 
+
 <b>wblstat</b> retourne la moyenne et la variance de la loi Weibull.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = wblstat(2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md), [wblinv](../../statistics/wblinv.md).
+[wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblinv](../../statistics/2_probability_distributions/wblinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

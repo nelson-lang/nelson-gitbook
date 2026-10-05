@@ -8,22 +8,26 @@ Motif issu d'une expression reguliere.
 
 ## 📄 Description
 
+
 <b>regexpPattern</b> Motif issu d'une expression reguliere.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = regexpPattern('\d+'); extract("abc123", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[regexp](../../string/regexp.md), [regexprep](../../string/regexprep.md), [pattern](../../string/pattern.md).
+[regexp](../../string/5_regular_expressions/regexp.md), [regexprep](../../string/5_regular_expressions/regexprep.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

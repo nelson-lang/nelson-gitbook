@@ -18,7 +18,8 @@ Verifie qu'une valeur est une matrice carree.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value a deux dimensions matricielles egales.
+
+L'assertion reussit lorsque value a deux dimensions matricielles egales. 
 
 Les diagnostics indiquent la classe et les dimensions calculees.
 
@@ -29,12 +30,12 @@ Square matrix
 ```matlab
 asserts.squareMatrix(ones(2, 2));
 ```
-
 Capture a shape failure
 
 ```matlab
 [res, msg] = asserts.squareMatrix(ones(2, 3));
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a shape failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

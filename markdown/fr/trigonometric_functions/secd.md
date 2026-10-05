@@ -15,14 +15,16 @@ Sécante de l'argument en degrés.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>secd</b> calcule la sécante de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = secd([1, 10+3i, 15+2i, 35+i])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +32,8 @@ R = secd([1, 10+3i, 15+2i, 35+i])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

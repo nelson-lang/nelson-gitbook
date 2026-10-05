@@ -22,7 +22,8 @@ Calcule une signature Ed25519.
 
 ## 📄 Description
 
-<b>crypto.ed25519.sign</b> calcule une signature Ed25519 pure (RFC 8032, section 5.1) sur les octets exacts d'un message. Les signatures sont déterministes : la même graine et le même message donnent toujours la même signature.
+
+<b>crypto.ed25519.sign</b> calcule une signature Ed25519 pure (RFC 8032, section 5.1) sur les octets exacts d'un message. Les signatures sont déterministes : la même graine et le même message donnent toujours la même signature. 
 
 La graine est la clé privée de 32 octets. Elle doit rester secrète : quiconque la détient peut signer. Cette fonction est destinée aux tests, au développement local et aux registres de paquets privés ; la clé publique renvoyée en second résultat est la valeur à distribuer aux vérificateurs.
 
@@ -42,7 +43,6 @@ vecteur de test 3 de la RFC 8032
 seed = 'c5aa8df43f9f837bedb7442f31dcb7b166d38535076f094b85ce3a2e0b4458f7';
 [signature, publicKey] = crypto.ed25519.sign(uint8([175, 130]), seed)
 ```
-
 signer un message texte et le vérifier
 
 ```matlab
@@ -51,14 +51,15 @@ seed = 'c5aa8df43f9f837bedb7442f31dcb7b166d38535076f094b85ce3a2e0b4458f7';
 tf = crypto.ed25519.verify('Nelson', signature, publicKey)
 ```
 
+
 ## 🔗 Voir aussi
 
-[crypto.ed25519.verify](../core/crypto.ed25519.verify.md), [sha256](../core/sha256.md).
+[crypto.ed25519.verify](../core/ed25519_verify.md), [sha256](../core/sha256.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

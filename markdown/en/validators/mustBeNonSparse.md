@@ -15,9 +15,12 @@ Checks that value is not sparse.
 
 ## 📄 Description
 
+
 <b>mustBeNonSparse</b> checks that value is not sparse or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeNonSparse(1)
@@ -26,13 +29,14 @@ mustBeNonSparse(sparse(3))
 
 ```
 
+
 ## 🔗 See also
 
 [issparse](../types/issparse.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

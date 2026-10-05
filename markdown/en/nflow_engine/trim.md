@@ -22,7 +22,8 @@ Find a steady-state operating point of an nflow model.
 
 ## 📄 Description
 
-<b>trim</b> finds a steady-state (equilibrium) operating point of <b>model</b>: a continuous state <b>x</b> at which <b>xdot = f(x, u0) = 0</b> for the fixed inputs <b>u0</b>.
+
+<b>trim</b> finds a steady-state (equilibrium) operating point of <b>model</b>: a continuous state <b>x</b> at which <b>xdot = f(x, u0) = 0</b> for the fixed inputs <b>u0</b>. 
 
 It solves the equation by a Newton iteration on the state Jacobian <b>A = d(xdot)/dx</b> computed by <b>linmod</b>, starting from <b>x0</b>. For a linear model the equilibrium is <b>x = -A\\(B\*u0)</b>, reached in one step.
 
@@ -49,13 +50,14 @@ fid = fopen(f,'wt'); fwrite(fid, jsonencode(d)); fclose(fid);
 [x, u, y, dx] = trim(f, 0, 2)  % x = 1 (xdot = 0)
 ```
 
+
 ## 🔗 See also
 
 [linmod](../nflow_engine/linmod.md), [sim](../nflow_engine/sim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

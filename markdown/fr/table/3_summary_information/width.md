@@ -16,11 +16,14 @@ Nombre de variables d'une table
 
 ## 📄 Description
 
-<b>W = width(T)</b> renvoie le nombre de variables dans la table T.
+
+<b>W = width(T)</b> renvoie le nombre de variables dans la table T. 
 
 La fonction <b>width(T)</b> est équivalente à<b>size(T, 2)</b>, qui fournit également le nombre de colonnes dans la table.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table();
@@ -31,14 +34,15 @@ width(T)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[height](../../table/height.md), [size](../../elementary_functions/size.md), [table](../../table/table.md).
+[height](../../table/3_summary_information/height.md), [size](../../elementary_functions/7_indexing_dimensions/size.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.8.0   | version initiale |
 
 <!--

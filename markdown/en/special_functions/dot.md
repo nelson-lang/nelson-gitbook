@@ -18,34 +18,44 @@ Dot product.
 
 ## 📄 Description
 
-<b>R = dot(A, B)</b> returns the scalar dot product of <b>A</b> and <b>B</b>.
 
-For real vectors
+<b>R = dot(A, B)</b> returns the scalar dot product of <b>A</b> and <b>B</b>. 
+
+For real vectors 
 $$\mathbf{a}$$
+ 
 
-and
+and 
 $$\mathbf{b}$$
+ 
 
-of length
+of length 
 $$n$$
+ 
 
-:
+: 
 $$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1 b_1 + a_2 b_2 + \cdots + a_n b_n$$
+ 
 
-For complex vectors, the dot product is:
+For complex vectors, the dot product is: 
 $$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} \overline{a_i} b_i$$
+ 
 
-where
+where 
 $$\overline{a_i}$$
+ 
 
-denotes the complex conjugate of
+denotes the complex conjugate of 
 $$a_i$$
+
 
 ## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/Dot_product
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 3;4 5 6;7 8 9];
@@ -54,13 +64,14 @@ R = dot(A, B)
 R = dot(A, B, 2)
 ```
 
+
 ## 🔗 See also
 
-[conj](../elementary_functions/conj.md).
+[conj](../elementary_functions/3_complex_numbers/conj.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

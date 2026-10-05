@@ -33,15 +33,18 @@ Valeurs maximales d'un tableau.
 
 ## 📄 Description
 
-<b>max</b> trouve les valeurs maximales dans un tableau.
 
-Si <b>A</b> est une matrice alors <b>M = max(A)</b> est un vecteur ligne contenant la valeur maximale de chaque colonne.
+<b>max</b> trouve les valeurs maximales dans un tableau. 
 
-Si <b>A</b> est un vecteur alors <b>M = max(A)</b> renverra le maximum de <b>A</b>.
+Si <b>A</b> est une matrice alors <b>M = max(A)</b> est un vecteur ligne contenant la valeur maximale de chaque colonne. 
+
+Si <b>A</b> est un vecteur alors <b>M = max(A)</b> renverra le maximum de <b>A</b>. 
 
 Si <b>A</b> est un nombre complexe alors <b>M = max(A)</b> renverra le nombre complexe ayant la plus grande magnitude.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6];
@@ -49,14 +52,15 @@ M = max(A)
 M = max(A, [], 'all')
 ```
 
+
 ## 🔗 Voir aussi
 
 [min](../data_analysis/min.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

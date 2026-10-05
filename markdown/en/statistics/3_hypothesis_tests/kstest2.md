@@ -24,11 +24,14 @@ Two-sample Kolmogorov-Smirnov test
 
 ## 📄 Description
 
-<b>kstest2</b> compares the empirical distributions of two sample vectors.
+
+<b>kstest2</b> compares the empirical distributions of two sample vectors. 
 
 NaN sample values are omitted independently before sorting and computing the empirical distributions.
 
 ## 💡 Example
+
+
 
 ```matlab
 x1 = [1 2 3 4 5];
@@ -37,13 +40,14 @@ x2 = [2 3 4 6 8 10];
 [h2, p2] = kstest2(x1, x2, 'Tail', 'larger');
 ```
 
+
 ## 🔗 See also
 
-[kstest](../../statistics/kstest.md), [ttest2](../../statistics/ttest2.md).
+[kstest](../../statistics/3_hypothesis_tests/kstest.md), [ttest2](../../statistics/3_hypothesis_tests/ttest2.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

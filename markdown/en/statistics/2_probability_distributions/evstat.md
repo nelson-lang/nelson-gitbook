@@ -18,21 +18,25 @@ Extreme value mean and variance
 
 ## 📄 Description
 
+
 <b>evstat</b> returns the mean and variance of the extreme value distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = evstat(0, 1);
 ```
 
+
 ## 🔗 See also
 
-[evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md), [evinv](../../statistics/evinv.md).
+[evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md), [evinv](../../statistics/2_probability_distributions/evinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,23 +16,27 @@ Convert a number to its IEEE hexadecimal representation.
 
 ## 📄 Description
 
+
 <b>num2hex</b> Convert a number to its IEEE hexadecimal representation.
 
 ## 💡 Example
+
+
 
 ```matlab
 s = num2hex(1)
 ```
 
+
 ## 🔗 See also
 
-[hex2num](../../elementary_functions/hex2num.md).
+[hex2num](../../elementary_functions/5_base_conversions/hex2num.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.14.0  | initial version |
+| 1.14.0   | initial version |
 
 <!--
 ## 👤 Author

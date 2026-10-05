@@ -8,47 +8,47 @@
     <p>Utiliser ncc pour charger le module a la demande. compiler.build fournit les constructions autonomes avec ou sans console, des options partagees et des resultats en lecture seule avec tables de dependances runtime. Les interfaces nelson.compiler conservent le mode de runtime adjacent. Les tutoriels couvrent plusieurs fonctions, les donnees embarquees et les deux interfaces de construction.</p>
   </chapter_description>
       <keyword name="compiler.build.Results" link="compiler.build.Results.html" description="Inspecter une construction autonome terminee."/>
-      <keyword name="compiler.build.Results" link="compiler.build.Results.html" description="Inspecter une construction autonome terminee."/>
+      <keyword name="compiler.build.Results" link="compiler.build.Results.html" description="Inspecter une construction autonome terminee." alias="true"/>
       <keyword name="compiler.build.StandaloneApplicationOptions" link="compiler.build.StandaloneApplicationOptions.html" description="Configurer une construction d'application autonome."/>
-      <keyword name="compiler.build.StandaloneApplicationOptions" link="compiler.build.StandaloneApplicationOptions.html" description="Configurer une construction d'application autonome."/>
+      <keyword name="compiler.build.StandaloneApplicationOptions" link="compiler.build.StandaloneApplicationOptions.html" description="Configurer une construction d'application autonome." alias="true"/>
       <keyword name="compiler.build.standaloneApplication" link="compiler.build.standaloneApplication.html" description="Construire une application autonome native."/>
-      <keyword name="compiler.build.standaloneApplication" link="compiler.build.standaloneApplication.html" description="Construire une application autonome native."/>
+      <keyword name="compiler.build.standaloneApplication" link="compiler.build.standaloneApplication.html" description="Construire une application autonome native." alias="true"/>
       <keyword name="compiler.build.standaloneWindowsApplication" link="compiler.build.standaloneWindowsApplication.html" description="Construire une application Windows native sans console."/>
-      <keyword name="compiler.build.standaloneWindowsApplication" link="compiler.build.standaloneWindowsApplication.html" description="Construire une application Windows native sans console."/>
+      <keyword name="compiler.build.standaloneWindowsApplication" link="compiler.build.standaloneWindowsApplication.html" description="Construire une application Windows native sans console." alias="true"/>
       <keyword name="compiler.package.InstallerOptions" link="compiler.package.InstallerOptions.html" description="Configurer la generation d'un installateur d'application."/>
-      <keyword name="compiler.package.InstallerOptions" link="compiler.package.InstallerOptions.html" description="Configurer la generation d'un installateur d'application."/>
+      <keyword name="compiler.package.InstallerOptions" link="compiler.package.InstallerOptions.html" description="Configurer la generation d'un installateur d'application." alias="true"/>
       <keyword name="compiler.package.installer" link="compiler.package.installer.html" description="Creer un installateur d'application natif."/>
-      <keyword name="compiler.package.installer" link="compiler.package.installer.html" description="Creer un installateur d'application natif."/>
+      <keyword name="compiler.package.installer" link="compiler.package.installer.html" description="Creer un installateur d'application natif." alias="true"/>
       <keyword name="compiler.runtime.Dependencies" link="compiler.runtime.Dependencies.html" description="Inspecter les fichiers runtime selectionnes."/>
-      <keyword name="compiler.runtime.Dependencies" link="compiler.runtime.Dependencies.html" description="Inspecter les fichiers runtime selectionnes."/>
+      <keyword name="compiler.runtime.Dependencies" link="compiler.runtime.Dependencies.html" description="Inspecter les fichiers runtime selectionnes." alias="true"/>
       <keyword name="compiler.runtime.customInstaller" link="compiler.runtime.customInstaller.html" description="Creer un installateur de runtime minimal partage."/>
-      <keyword name="compiler.runtime.customInstaller" link="compiler.runtime.customInstaller.html" description="Creer un installateur de runtime minimal partage."/>
+      <keyword name="compiler.runtime.customInstaller" link="compiler.runtime.customInstaller.html" description="Creer un installateur de runtime minimal partage." alias="true"/>
       <keyword name="compiler_build_tutorial" link="compiler_build_tutorial.html" description="Tutoriel : construire des applications avec et sans console."/>
-      <keyword name="compiler_build_tutorial" link="compiler_build_tutorial.html" description="Tutoriel : construire des applications avec et sans console."/>
+      <keyword name="compiler_build_tutorial" link="compiler_build_tutorial.html" description="Tutoriel : construire des applications avec et sans console." alias="true"/>
       <keyword name="compiler_embedded_data_tutorial" link="compiler_embedded_data_tutorial.html" description="Tutoriel : embarquer des donnees NH5 et MAT dans un executable."/>
-      <keyword name="compiler_embedded_data_tutorial" link="compiler_embedded_data_tutorial.html" description="Tutoriel : embarquer des donnees NH5 et MAT dans un executable."/>
+      <keyword name="compiler_embedded_data_tutorial" link="compiler_embedded_data_tutorial.html" description="Tutoriel : embarquer des donnees NH5 et MAT dans un executable." alias="true"/>
       <keyword name="compiler_installer_tutorial" link="compiler_installer_tutorial.html" description="Construire, installer et executer une application Windows."/>
-      <keyword name="compiler_installer_tutorial" link="compiler_installer_tutorial.html" description="Construire, installer et executer une application Windows."/>
+      <keyword name="compiler_installer_tutorial" link="compiler_installer_tutorial.html" description="Construire, installer et executer une application Windows." alias="true"/>
       <keyword name="compiler_linux_installer_tutorial" link="compiler_linux_installer_tutorial.html" description="Construire, installer et supprimer une application Linux."/>
-      <keyword name="compiler_linux_installer_tutorial" link="compiler_linux_installer_tutorial.html" description="Construire, installer et supprimer une application Linux."/>
+      <keyword name="compiler_linux_installer_tutorial" link="compiler_linux_installer_tutorial.html" description="Construire, installer et supprimer une application Linux." alias="true"/>
       <keyword name="compiler_linux_runtime_tutorial" link="compiler_linux_runtime_tutorial.html" description="Tutoriel : un runtime minimal partage sous Linux."/>
-      <keyword name="compiler_linux_runtime_tutorial" link="compiler_linux_runtime_tutorial.html" description="Tutoriel : un runtime minimal partage sous Linux."/>
+      <keyword name="compiler_linux_runtime_tutorial" link="compiler_linux_runtime_tutorial.html" description="Tutoriel : un runtime minimal partage sous Linux." alias="true"/>
       <keyword name="compiler_macos_installer_tutorial" link="compiler_macos_installer_tutorial.html" description="Construire et empaqueter une application macOS native."/>
-      <keyword name="compiler_macos_installer_tutorial" link="compiler_macos_installer_tutorial.html" description="Construire et empaqueter une application macOS native."/>
+      <keyword name="compiler_macos_installer_tutorial" link="compiler_macos_installer_tutorial.html" description="Construire et empaqueter une application macOS native." alias="true"/>
       <keyword name="compiler_project_tutorial" link="compiler_project_tutorial.html" description="Tutoriel : configurer, construire et distribuer une application dans l'éditeur de projet."/>
-      <keyword name="compiler_project_tutorial" link="compiler_project_tutorial.html" description="Tutoriel : configurer, construire et distribuer une application dans l'éditeur de projet."/>
+      <keyword name="compiler_project_tutorial" link="compiler_project_tutorial.html" description="Tutoriel : configurer, construire et distribuer une application dans l'éditeur de projet." alias="true"/>
       <keyword name="compiler_runtime_tutorial" link="compiler_runtime_tutorial.html" description="Tutoriel : un runtime pour plusieurs applications."/>
-      <keyword name="compiler_runtime_tutorial" link="compiler_runtime_tutorial.html" description="Tutoriel : un runtime pour plusieurs applications."/>
+      <keyword name="compiler_runtime_tutorial" link="compiler_runtime_tutorial.html" description="Tutoriel : un runtime pour plusieurs applications." alias="true"/>
       <keyword name="compiler_standalone_tutorial" link="compiler_standalone_tutorial.html" description="Tutoriel : distribuer une application avec plusieurs sources et des donnees."/>
-      <keyword name="compiler_standalone_tutorial" link="compiler_standalone_tutorial.html" description="Tutoriel : distribuer une application avec plusieurs sources et des donnees."/>
+      <keyword name="compiler_standalone_tutorial" link="compiler_standalone_tutorial.html" description="Tutoriel : distribuer une application avec plusieurs sources et des donnees." alias="true"/>
       <keyword name="nelson.compiler.BuildOptions" link="nelson.compiler.BuildOptions.html" description="Configurer la construction d'une application native."/>
-      <keyword name="nelson.compiler.BuildOptions" link="nelson.compiler.BuildOptions.html" description="Configurer la construction d'une application native."/>
+      <keyword name="nelson.compiler.BuildOptions" link="nelson.compiler.BuildOptions.html" description="Configurer la construction d'une application native." alias="true"/>
       <keyword name="nelson.compiler.BuildResult" link="nelson.compiler.BuildResult.html" description="Consulter le resultat d'une construction applicative."/>
-      <keyword name="nelson.compiler.BuildResult" link="nelson.compiler.BuildResult.html" description="Consulter le resultat d'une construction applicative."/>
+      <keyword name="nelson.compiler.BuildResult" link="nelson.compiler.BuildResult.html" description="Consulter le resultat d'une construction applicative." alias="true"/>
       <keyword name="nelson.compiler.analyze" link="nelson.compiler.analyze.html" description="Examiner les dependances sans produire d'executable."/>
-      <keyword name="nelson.compiler.analyze" link="nelson.compiler.analyze.html" description="Examiner les dependances sans produire d'executable."/>
+      <keyword name="nelson.compiler.analyze" link="nelson.compiler.analyze.html" description="Examiner les dependances sans produire d'executable." alias="true"/>
       <keyword name="nelson.compiler.build" link="nelson.compiler.build.html" description="Construire un executable natif avec des options structurees."/>
-      <keyword name="nelson.compiler.build" link="nelson.compiler.build.html" description="Construire un executable natif avec des options structurees."/>
+      <keyword name="nelson.compiler.build" link="nelson.compiler.build.html" description="Construire un executable natif avec des options structurees." alias="true"/>
     </section>
   </toc>
 </help_summary>

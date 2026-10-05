@@ -25,11 +25,14 @@ Normal inverse cumulative distribution function
 
 ## 📄 Description
 
-<b>norminv</b> evaluates quantiles of the normal distribution.
+
+<b>norminv</b> evaluates quantiles of the normal distribution. 
 
 Probabilities outside [0,1] return NaN. Probabilities 0 and 1 return infinite endpoints.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
@@ -37,13 +40,14 @@ x = norminv(p);
 [x, xLo, xUp] = norminv(0.5, 0, 1, [0.04 0; 0 0.01]);
 ```
 
+
 ## 🔗 See also
 
-[normcdf](../../statistics/normcdf.md), [normrnd](../../statistics/normrnd.md).
+[normcdf](../../statistics/2_probability_distributions/normcdf.md), [normrnd](../../statistics/2_probability_distributions/normrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

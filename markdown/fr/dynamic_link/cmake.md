@@ -17,9 +17,11 @@ Appeler l'outil CMake
 
 ## 📄 Description
 
-<b>cmake</b> est utilisé en interne pour générer les makefiles permettant de construire du code C/C++.
+
+<b>cmake</b> est utilisé en interne pour générer les makefiles permettant de construire du code C/C++. 
 
 <b>cmake</b> est utilisé par <b>dlgeneratemake</b>.
+
 
 ## 🔗 Voir aussi
 
@@ -27,8 +29,8 @@ Appeler l'outil CMake
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

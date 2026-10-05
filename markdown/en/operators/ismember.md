@@ -19,11 +19,14 @@ Array elements that are members of another array.
 
 ## 📄 Description
 
-<b>T = ismember(A, B)</b> returns an array of logical where the data in<b>A</b> is found in <b>B</b>.
+
+<b>T = ismember(A, B)</b> returns an array of logical where the data in<b>A</b> is found in <b>B</b>. 
 
 <b>[T, loc] = ismember(A, B)</b> also returns <b>loc</b>, the lowest index in <b>B</b> for each element of <b>A</b> that is a member of <b>B</b>, and 0 otherwise.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [50 30 40 20];
@@ -35,13 +38,14 @@ T = ismember(["a","b","f"], ["b", "f", "c"])
 
 ```
 
+
 ## 🔗 See also
 
 [sort](../data_analysis/sort.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

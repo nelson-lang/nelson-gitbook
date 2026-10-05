@@ -1,6 +1,10 @@
 # Gui module
 
+
+    
 The GUI module provides functions to create and interact with graphical user interface components, dialogs, and application windows.
+
+  
 
 ## Functions
 
@@ -32,3 +36,4 @@ The GUI module provides functions to create and interact with graphical user int
 - [waitbar](waitbar.md) - Creates or updates a wait bar figure.
 - [warndlg](warndlg.md) - Creates a warning dialog box.
 - [workspace](workspace.md) - Workspace Browser
+

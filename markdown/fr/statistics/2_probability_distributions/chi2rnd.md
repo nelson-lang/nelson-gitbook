@@ -19,19 +19,23 @@ Nombres aleatoires khi deux
 
 ## 📄 Description
 
+
 <b>chi2rnd</b> genere des valeurs aleatoires de loi du khi deux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = chi2rnd(4, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

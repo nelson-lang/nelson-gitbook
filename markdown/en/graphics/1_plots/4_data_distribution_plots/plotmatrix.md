@@ -11,6 +11,7 @@ Display a matrix of pairwise plots.
 
 ## 📄 Description
 
+
 <b>plotmatrix</b> creates a grid of pairwise plots for the columns of numeric matrices. With one input matrix, the diagonal cells include histograms returned in <b>p</b>, while <b>h</b> contains the scatter line objects.
 
 ## 💡 Examples
@@ -21,7 +22,6 @@ Create a plot matrix for three variables.
 X = [1 2 3; 2 3 5; 3 5 8; 4 7 13; 5 11 21];
 plotmatrix(X);
 ```
-
 <img src="plotmatrix_1.svg" align="middle"/>
 Compare columns from two matrices.
 
@@ -30,8 +30,8 @@ X = rand(30, 2);
 Y = [X(:, 1).^2, sin(X(:, 2)), X(:, 1) + X(:, 2)];
 plotmatrix(X, Y, 'o');
 ```
-
 <img src="plotmatrix_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 

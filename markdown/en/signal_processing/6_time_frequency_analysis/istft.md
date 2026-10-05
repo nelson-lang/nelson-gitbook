@@ -24,9 +24,12 @@ Inverse short-time Fourier transform.
 
 ## 📄 Description
 
+
 <b>istft</b> reconstructs a time-domain vector from short-time spectra using inverse FFT and overlap-add normalization.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -36,13 +39,14 @@ y = istft(s, 10, 'Window', hamming(8), 'OverlapLength', 4, 'FFTLength', 16, 'Fre
 
 ```
 
+
 ## 🔗 See also
 
-[stft](../../signal_processing/stft.md), [spectrogram](../../signal_processing/spectrogram.md).
+[stft](../../signal_processing/6_time_frequency_analysis/stft.md), [spectrogram](../../signal_processing/6_time_frequency_analysis/spectrogram.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

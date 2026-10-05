@@ -1,0 +1,61 @@
+#import "../nelson_help.typ": *
+
+= tail <table:3_summary_information.tail>
+
+Get bottom rows of table or array.
+
+== Syntax
+
+- #raw("tail(A)");
+- #raw("tail(A, k)");
+- #raw("B = tail(...)");
+
+== Input argument
+
+/ A: Input array (table or other).
+
+== Output argument
+
+/ k: a integer value: Number of rows to extract (k \= 8 by default).
+
+== Description
+
+#strong[tail(A)]; displays the last eight rows of an array, or table #strong[A]; in the Command Window without assigning it to a variable.
+
+ #strong[tail(A, k)]; displays the last k rows of A.
+
+ #strong[B \= tail(...)]; returns the specified rows of #strong[A]; for any of the previous syntaxes, with#strong[B]; having the same data type as #strong[A];.
+
+
+== Examples
+
+``````matlab
+LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
+Age = [38;43;38;40;49];
+Smoker = logical([1;0;1;0;1]);
+Height = [71;69;64;67;64];
+Weight = [176;163;131;133;119];
+BloodPressure = [124 93; 109 77; 125 83; 117 75; 122 80];
+T = table(LastName, Age, Smoker, Height, Weight, BloodPressure)
+tail(T, 2)
+``````
+
+``````matlab
+A = repmat((1:50)',1, 3);
+tail(A)
+``````
+
+
+== See also
+
+#nlink(<table:3_summary_information.head>)[head];, #nlink(<table:1_create_convert_tables.table>)[table];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.9.0], [initial version],
+)
+
+// Author: Allan CORNET

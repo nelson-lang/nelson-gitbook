@@ -26,19 +26,20 @@ Control data unit length along each axis.
 
 ## 📄 Description
 
-<b>daspect</b> controls the relative lengths of data units along the x, y, and z axes.
 
-<b>daspect(ratio)</b> sets the data aspect ratio for the current axes. <b>ratio</b> is a three-element vector of positive values. For example, [1 2 3] means the length from 0 to 1 along the x-axis equals the length from 0 to 2 along the y-axis and 0 to 3 along the z-axis.
+<b>daspect</b> controls the relative lengths of data units along the x, y, and z axes. 
 
-<b>d = daspect()</b> returns the current data aspect ratio as a three-element vector.
+<b>daspect(ratio)</b> sets the data aspect ratio for the current axes. <b>ratio</b> is a three-element vector of positive values. For example, [1 2 3] means the length from 0 to 1 along the x-axis equals the length from 0 to 2 along the y-axis and 0 to 3 along the z-axis. 
 
-<b>daspect('auto')</b> sets the data aspect ratio mode to automatic, enabling the axes to choose the ratio.
+<b>d = daspect()</b> returns the current data aspect ratio as a three-element vector. 
 
-<b>daspect('manual')</b> sets the mode to manual and uses the ratio stored in the axes.
+<b>daspect('auto')</b> sets the data aspect ratio mode to automatic, enabling the axes to choose the ratio. 
 
-<b>m = daspect('mode')</b> returns the current mode, either 'auto' or 'manual'.
+<b>daspect('manual')</b> sets the mode to manual and uses the ratio stored in the axes. 
 
-<b>daspect(ax, ...)</b> operates on the axes specified by <b>ax</b> instead of the current axes.
+<b>m = daspect('mode')</b> returns the current mode, either 'auto' or 'manual'. 
+
+<b>daspect(ax, ...)</b> operates on the axes specified by <b>ax</b> instead of the current axes. 
 
 Setting the data aspect ratio disables the stretch-to-fill behavior of the axes.
 
@@ -51,7 +52,6 @@ stretch X relative to Y
 plot(-5:5, (-5:5).^2)
 daspect([2 1 1])
 ```
-
 <img src="daspect_1.svg" align="middle"/>
 Set different data unit lengths for each axis
 
@@ -61,7 +61,6 @@ sphere(40);
 daspect([2 1 0.5])
 
 ```
-
 <img src="daspect_2.svg" align="middle"/>
 Switch between manual and auto aspect ratio modes
 
@@ -75,7 +74,6 @@ daspect('auto')
 disp(daspect('mode'))
 
 ```
-
 <img src="daspect_3.svg" align="middle"/>
 Query the current data aspect ratio
 
@@ -88,8 +86,8 @@ d = daspect()
 disp(d)
 
 ```
-
 <img src="daspect_4.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -97,9 +95,9 @@ disp(d)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

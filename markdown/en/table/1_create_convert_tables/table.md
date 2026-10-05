@@ -25,41 +25,54 @@ A table-like array with named variables, capable of holding different data types
 
 ## 📄 Description
 
-Table arrays are designed to store column-oriented, such as columns from text files or spreadsheets.
 
-Each column of data is stored in a variable within the table, and these variables can have different data types and sizes, provided they all share the same number of rows.
+Table arrays are designed to store column-oriented, such as columns from text files or spreadsheets. 
 
-Table variables have names, similar to structure fields.
+Each column of data is stored in a variable within the table, and these variables can have different data types and sizes, provided they all share the same number of rows. 
 
-To access data in a table, use the following methods:
+Table variables have names, similar to structure fields. 
 
-- Dot notation (T.varname) to extract a single variable.
+ 
 
-- Curly braces (T{rows, vars}) to extract an array from specific rows and variables.
+To access data in a table, use the following methods: 
 
-- Parentheses (T(rows, vars)) to return a subset of the table.
+ 
 
-<b>T = table(var1, ..., varN)</b> creates a table from the specified input variables<b>var1,...,varN</b>.
+- Dot notation (T.varname) to extract a single variable. 
 
-The variables can vary in size and data type, but they must all have the same number of rows.
+- Curly braces (T{rows, vars}) to extract an array from specific rows and variables. 
 
-If the inputs are workspace variables, their names are used as the variable names in the resulting table.
+- Parentheses (T(rows, vars)) to return a subset of the table. 
 
-Otherwise, the table assigns default names in the format 'Var1', 'Var2', and so on, where N is the total number of variables.
+ 
 
-<b>T = table(..., Name, Value)</b> allows you to specify additional options using one or more name-value pair arguments.
+<b>T = table(var1, ..., varN)</b> creates a table from the specified input variables<b>var1,...,varN</b>. 
 
-For instance, you can set custom variable names by using the 'VariableNames' name-value pair.
+The variables can vary in size and data type, but they must all have the same number of rows. 
 
-Supported table metadata is exposed through <b>T.Properties</b>. This structure contains <b>VariableNames</b>, <b>VariableTypes</b>, <b>RowNames</b>, <b>DimensionNames</b>, <b>Description</b>, <b>UserData</b>, variable metadata fields, and <b>CustomProperties</b>.
+If the inputs are workspace variables, their names are used as the variable names in the resulting table. 
 
-A table can be preallocated with <b>Size</b> and <b>VariableTypes</b>. The constructor creates variables with the requested types and default or user-provided variable names.
+Otherwise, the table assigns default names in the format 'Var1', 'Var2', and so on, where N is the total number of variables. 
 
-This syntax can be used in combination with any of the input arguments from the previous forms.
+ 
+
+<b>T = table(..., Name, Value)</b> allows you to specify additional options using one or more name-value pair arguments. 
+
+For instance, you can set custom variable names by using the 'VariableNames' name-value pair. 
+
+Supported table metadata is exposed through <b>T.Properties</b>. This structure contains <b>VariableNames</b>, <b>VariableTypes</b>, <b>RowNames</b>, <b>DimensionNames</b>, <b>Description</b>, <b>UserData</b>, variable metadata fields, and <b>CustomProperties</b>. 
+
+A table can be preallocated with <b>Size</b> and <b>VariableTypes</b>. The constructor creates variables with the requested types and default or user-provided variable names. 
+
+This syntax can be used in combination with any of the input arguments from the previous forms. 
+
+ 
 
 <b>T = table()</b> creates an empty table with 0 rows and 0 columns.
 
 ## 💡 Examples
+
+
 
 ```matlab
 Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
@@ -76,6 +89,7 @@ T(2:3,1:3)
 
 ```
 
+
 ```matlab
 N = {'John'; 'Alice'; 'Bob'; 'Diana'};
 A = [28; 34; 22; 30];
@@ -83,6 +97,7 @@ H = [175; 160; 180; 165];
 W = [70; 55; 80; 60];
 T = table(N, A, H, W, 'VariableNames', {'Name', 'Age', 'Height', 'Weight'})
 ```
+
 
 ```matlab
 N = {'John'; 'Alice'; 'Bob'; 'Diana'};
@@ -98,7 +113,6 @@ T = table(A, H, W, 'RowNames', RowNames, 'VariableNames', {'Age', 'Height_cm', '
 T('Person2', 1:2)
 
 ```
-
 Preallocate a table with specific variable types
 
 ```matlab
@@ -109,7 +123,6 @@ T.Label = ["low"; "medium"; "high"];
 T.Properties.Description = 'Example table';
 T
 ```
-
 Use table properties and custom properties
 
 ```matlab
@@ -121,15 +134,16 @@ T.Properties.CustomProperties.Source
 T.Properties.DimensionNames
 ```
 
+
 ## 🔗 See also
 
-[Accessing and Manipulating Tables in Nelson](../../table/4_sort_filter_rearrange/1_accessing_manipulating_table.md), [Direct computation with Table](../../table/7_apply_functions/2_direct_computation_with_table.md), [cell2table](../../table/cell2table.md), [array2table](../../table/array2table.md), [struct2table](../../table/struct2table.md), [addvars](../../table/addvars.md), [movevars](../../table/movevars.md), [summary](../../data_analysis/summary.md), [addprop](../../table/addprop.md), [rmprop](../../table/rmprop.md).
+[Accessing and Manipulating Tables in Nelson](../../table/4_sort_filter_rearrange/1_accessing_manipulating_table.md), [Direct computation with Table](../../table/7_apply_functions/2_direct_computation_with_table.md), [cell2table](../../table/1_create_convert_tables/cell2table.md), [array2table](../../table/1_create_convert_tables/array2table.md), [struct2table](../../table/1_create_convert_tables/struct2table.md), [addvars](../../table/4_sort_filter_rearrange/addvars.md), [movevars](../../table/4_sort_filter_rearrange/movevars.md), [summary](../../data_analysis/summary.md), [addprop](../../table/4_sort_filter_rearrange/addprop.md), [rmprop](../../table/4_sort_filter_rearrange/rmprop.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                       |
-| ------- | -------------------------------------------------------------------- |
-| 1.8.0   | initial version                                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.8.0   | initial version |
 | 2.0.0   | classdef table, table properties, preallocation and metadata support |
 
 <!--

@@ -16,22 +16,26 @@ Imaginary part of an complex number.
 
 ## 📄 Description
 
+
 <b>R = imag(M)</b> Return the imaginary part of M.
 
 ## 💡 Example
+
+
 
 ```matlab
 cplx = 22+34*i;
 r = imag(cplx)
 ```
 
+
 ## 🔗 See also
 
-[real](../../elementary_functions/real.md).
+[real](../../elementary_functions/3_complex_numbers/real.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

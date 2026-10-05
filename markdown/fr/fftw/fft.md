@@ -20,9 +20,12 @@ Transformée de Fourier rapide.
 
 ## 📄 Description
 
+
 <b>fft(X)</b> calcule la transformée de Fourier discrète de X en utilisant un algorithme FFT basé sur la bibliothèque FFTW.
 
 ## 💡 Exemple
+
+
 
 ```matlab
  % Sampling frequency
@@ -42,14 +45,15 @@ X = X(1:nfft*inv(2))
 f = (0:nfft *inv(2) -1)*Fs * inv(nfft);
 ```
 
+
 ## 🔗 Voir aussi
 
 [ifft](../fftw/ifft.md), [fftw](../fftw/fftw.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

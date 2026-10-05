@@ -16,25 +16,30 @@ Lower case conversion.
 
 ## 📄 Description
 
+
 <b>tolower</b> converts a string to lower case.
 
 ## 💡 Examples
+
+
 
 ```matlab
 tolower('NelSon')
 ```
 
+
 ```matlab
 tolower(["NelSon", "is", "open"])
 ```
 
+
 ## 🔗 See also
 
-[toupper](../../string/toupper.md).
+[toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

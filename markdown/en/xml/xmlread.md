@@ -20,9 +20,10 @@ Read an XML file as a document object
 
 ## 📄 Description
 
-xmlread parses an XML file and returns a Nelson xmlDocument object that can be passed to xmlwrite or xslt.
 
-The object also provides a small DOM-style access layer: getDocumentElement, getElementsByTagName, getTagName, getNodeName, getTextContent, getAttribute, hasAttribute, getLength, and item.
+xmlread parses an XML file and returns a Nelson xmlDocument object that can be passed to xmlwrite or xslt. 
+
+The object also provides a small DOM-style access layer: getDocumentElement, getElementsByTagName, getTagName, getNodeName, getTextContent, getAttribute, hasAttribute, getLength, and item. 
 
 The returned object is not a complete external DOM implementation. The optional second output is currently an empty parser placeholder.
 
@@ -48,13 +49,14 @@ book_text = first_book.getTextContent()
 xmlwrite(doc)
 ```
 
+
 ## 🔗 See also
 
 [xmlwrite](../xml/xmlwrite.md), [readstruct](../xml/readstruct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

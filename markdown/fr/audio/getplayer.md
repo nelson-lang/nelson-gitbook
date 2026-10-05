@@ -16,6 +16,7 @@ Créer un objet audioplayer associé.
 
 ## 📄 Description
 
+
 <b>getplayer(recorder)</b> crée l'objet <b>audioplayer</b> associé à l'objet <b>audiorecorder</b> spécifié.
 
 ## 💡 Exemple
@@ -36,8 +37,9 @@ resume(recObj)
 stop(recObj)
 playerObj = getplayer(recObj);
 play(playerObj)
-
+      
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,9 +47,9 @@ play(playerObj)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

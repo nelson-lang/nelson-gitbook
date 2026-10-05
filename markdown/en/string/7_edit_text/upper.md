@@ -16,7 +16,8 @@ Convert text to uppercase.
 
 ## 📄 Description
 
-upper converts character arrays, strings, and string arrays to uppercase.
+
+upper converts character arrays, strings, and string arrays to uppercase. 
 
 The shape of the input text is preserved in the result.
 
@@ -28,13 +29,14 @@ Convert a string to uppercase.
 txt = upper("NelSon")
 ```
 
+
 ## 🔗 See also
 
-[lower](../../string/lower.md), [toupper](../../string/toupper.md).
+[lower](../../string/7_edit_text/lower.md), [toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

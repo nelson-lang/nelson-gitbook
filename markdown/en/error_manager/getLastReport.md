@@ -12,14 +12,18 @@ Returns last recorded formatted error message.
 
 ## 📄 Description
 
+
 <b>getLastReport</b> returns last formatted error message.
 
 ## 💡 Examples
+
+
 
 ```matlab
 lasterror('reset')
 getLastReport()
 ```
+
 
 ```matlab
 state = execstr('xxxxxx', 'errcatch')
@@ -28,13 +32,14 @@ getLastReport
 
 ```
 
+
 ## 🔗 See also
 
 [lasterror](../error_manager/lasterror.md), [error](../error_manager/error.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

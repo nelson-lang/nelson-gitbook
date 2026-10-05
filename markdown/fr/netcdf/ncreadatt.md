@@ -18,7 +18,8 @@ Lit un attribut depuis une source netCDF.
 
 ## 📄 Description
 
-ncreadatt lit un attribut global ou associe a une variable netCDF.
+
+ncreadatt lit un attribut global ou associe a une variable netCDF. 
 
 Indiquez la source, l'emplacement et le nom de l'attribut a lire.
 
@@ -33,14 +34,15 @@ ncwriteatt(filename, 'temperature', 'units', 'degree');
 units = ncreadatt(filename, 'temperature', 'units')
 ```
 
+
 ## 🔗 Voir aussi
 
 [ncwriteatt](../netcdf/ncwriteatt.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

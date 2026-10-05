@@ -1,10 +1,10 @@
-# dllib_used
+# dllib\_used
 
 Renvoie la liste des handles dllib actuellement utilisés
 
 ## 📝 Syntaxe
 
-- r = dllib_used()
+- r = dllib\_used()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Renvoie la liste des handles dllib actuellement utilisés
 
 ## 📄 Description
 
+
 Renvoie la liste des handles dllib actuellement utilisés.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = dllib_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ used = dllib_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

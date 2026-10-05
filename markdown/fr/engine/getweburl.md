@@ -13,13 +13,17 @@ Retourne l'URL et le port Web GUI courants.
 
 ## 📄 Description
 
+
 <b>getweburl()</b> retourne l'URL HTTP et le port effectifs de la session Web GUI courante. Un lancement webview prive utilise toujours un port localhost interne, mais cette URL n'est pas affichee au demarrage.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [url, port] = getweburl()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -27,8 +31,8 @@ Retourne l'URL et le port Web GUI courants.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -29,17 +29,20 @@ Methode LSQR pour equations sparse et moindres carres.
 
 ## 📄 Description
 
-<b>lsqr</b> resout des equations sparse et des problemes de moindres carres avec une methode de bidiagonalisation de Lanczos.
 
-La methode prend en charge les matrices sparse double, single, double complexes et single complexes, carrees ou rectangulaires.
+<b>lsqr</b> resout des equations sparse et des problemes de moindres carres avec une methode de bidiagonalisation de Lanczos. 
 
-<b>M1</b> et <b>M2</b> sont des preconditionneurs a droite. Ils peuvent etre des vecteurs diagonaux, des matrices carrees sparse ou pleines, ou des handles de fonction acceptant un vecteur et l'indicateur de transposition <b>'notransp'</b> ou <b>'transp'</b>.
+La methode prend en charge les matrices sparse double, single, double complexes et single complexes, carrees ou rectangulaires. 
 
-<b>resvec</b> stocke les normes de residu et <b>lsvec</b> stocke les normes des residus des equations normales a chaque iteration.
+<b>M1</b> et <b>M2</b> sont des preconditionneurs a droite. Ils peuvent etre des vecteurs diagonaux, des matrices carrees sparse ou pleines, ou des handles de fonction acceptant un vecteur et l'indicateur de transposition <b>'notransp'</b> ou <b>'transp'</b>. 
+
+<b>resvec</b> stocke les normes de residu et <b>lsvec</b> stocke les normes des residus des equations normales a chaque iteration. 
 
 Si <b>M1</b>, <b>M2</b> ou <b>x0</b> est complexe, le calcul utilise le chemin complexe adapte.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = sparse([1 0; 0 1; 1 1; 2 -1]);
@@ -47,7 +50,6 @@ b = [1; 2; 4; 1];
 [x, flag, relres, iter] = lsqr(A, b, 1e-12, 20)
 
 ```
-
 Moindres carres sparse single avec preconditionnement diagonal.
 
 ```matlab
@@ -56,7 +58,6 @@ b = single([1; 2; 3]);
 M = single([1; 2]);
 [x, flag] = lsqr(A, b, 1e-6, 20, M)
 ```
-
 Moindres carres avec preconditionneurs a droite separes.
 
 ```matlab
@@ -67,15 +68,16 @@ M2 = [1 0.5; 0 3];
 [x, flag, relres, iter] = lsqr(A, b, 1e-12, 20, M1, M2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lsmr](../../linear_algebra/lsmr.md), [gmres](../../linear_algebra/gmres.md), [bicgstab](../../linear_algebra/bicgstab.md).
+[lsmr](../../linear_algebra/6_iterative_solvers/lsmr.md), [gmres](../../linear_algebra/6_iterative_solvers/gmres.md), [bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                                        |
-| ------- | --------------------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                                                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | ajout de la couverture single, single complexe, preconditionneur a droite, vecteur initial et historique des residus. |
 
 <!--

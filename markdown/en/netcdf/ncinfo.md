@@ -16,7 +16,8 @@ Return information about a netCDF data source.
 
 ## 📄 Description
 
-ncinfo inspects a netCDF data source and returns metadata as a Nelson structure.
+
+ncinfo inspects a netCDF data source and returns metadata as a Nelson structure. 
 
 The returned structure is intended for programmatic inspection and as a schema source for ncwriteschema when applicable.
 
@@ -31,13 +32,14 @@ info = ncinfo(filename);
 info.Variables(1).Name
 ```
 
+
 ## 🔗 See also
 
 [ncdisp](../netcdf/ncdisp.md), [ncwriteschema](../netcdf/ncwriteschema.md), [ncread](../netcdf/ncread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

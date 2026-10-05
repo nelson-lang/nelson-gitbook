@@ -17,13 +17,16 @@ Determine whether an object contains a key.
 
 ## 📄 Description
 
-isKey dispatches key lookup to the object type passed as first argument.
+
+isKey dispatches key lookup to the object type passed as first argument. 
 
 If the first argument does not implement keyed lookup, Nelson reports that the function is not implemented for that type.
 
 ## Used function(s)
 
+
     dictionary
+  
 
 ## 💡 Example
 
@@ -34,13 +37,14 @@ d = dictionary(["one" "two"], [1 2]);
 tf = isKey(d, "two")
 ```
 
+
 ## 🔗 See also
 
 [dictionary](../dictionary/dictionary.md), [lookup](../handle/lookup.md), [insert](../handle/insert.md), [remove](../handle/remove.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

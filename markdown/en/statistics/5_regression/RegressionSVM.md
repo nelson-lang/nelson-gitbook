@@ -20,14 +20,17 @@ Support vector machine regression model.
 
 ## 📄 Description
 
-RegressionSVM stores a support vector machine regression model, including support vectors, kernel information, and response data.
+
+RegressionSVM stores a support vector machine regression model, including support vectors, kernel information, and response data. 
 
 Create this object with fitrsvm. Use predict to estimate responses for new observations.
 
 ## Used function(s)
 
+
     fitrsvm
     predict
+  
 
 ## 💡 Example
 
@@ -40,13 +43,14 @@ mdl = fitrsvm(X, y, 'KernelFunction', 'linear');
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitrsvm](../../statistics/fitrsvm.md).
+[predict](../../statistics/5_regression/predict.md), [fitrsvm](../../statistics/5_regression/fitrsvm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

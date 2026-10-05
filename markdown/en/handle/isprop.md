@@ -22,9 +22,10 @@ Return true if a property belongs to an object or class.
 
 ## 📄 Description
 
-<b>isprop</b> returns logical 1 if the property is defined for the object or class and logical 0 otherwise.
 
-For classdef object arrays, the result has the same size as the object array.
+<b>isprop</b> returns logical 1 if the property is defined for the object or class and logical 0 otherwise. 
+
+For classdef object arrays, the result has the same size as the object array. 
 
 For classdef classes, <b>isprop</b> can report private and protected properties as existing. Use <b>properties</b> to list public properties.
 
@@ -46,16 +47,17 @@ publicNames = properties([a, b])
 delete([a, b])
 ```
 
+
 ## 🔗 See also
 
 [ismethod](../handle/ismethod.md), [properties](../handle/properties.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                      |
-| ------- | ----------------------------------- |
-| 1.0.0   | initial version                     |
-| 2.0.0   | classdef class name support added   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 2.0.0   | classdef class name support added |
 | 2.0.0   | classdef object array support added |
 
 <!--

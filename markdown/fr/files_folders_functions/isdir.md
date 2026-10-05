@@ -16,16 +16,20 @@ Retourne vrai si l'argument est un répertoire.
 
 ## 📄 Description
 
-<b>isdir(dirname)</b> renvoie <b>true</b> si<b>dirname</b> est un répertoire.
+
+<b>isdir(dirname)</b> renvoie <b>true</b> si<b>dirname</b> est un répertoire. 
 
 <b>isdir</b> et <b>isfolder</b> sont équivalentes.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 isdir(nelsonroot())
 isdir([nelsonroot(), '/not_exist_dir'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ isdir([nelsonroot(), '/not_exist_dir'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -19,7 +19,8 @@ Verifie qu'une valeur a l'une des classes attendues.
 
 ## 📄 Description
 
-L'assertion reussit lorsque class(value) est present dans expectedTypes.
+
+L'assertion reussit lorsque class(value) est present dans expectedTypes. 
 
 La liste des types attendus ne doit pas etre vide.
 
@@ -30,12 +31,12 @@ One of several classes
 ```matlab
 asserts.type(single(1), {'double', 'single'});
 ```
-
 Capture a type failure
 
 ```matlab
 [res, msg] = asserts.type(int32(1), {'double', 'single'});
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a type failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

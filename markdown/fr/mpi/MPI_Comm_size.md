@@ -1,20 +1,21 @@
-# MPI_Comm_size
+# MPI\_Comm\_size
 
 Détermine la taille du groupe associé à un communicateur.
 
 ## 📝 Syntaxe
 
-- r = MPI_Comm_size(Comm)
+- r = MPI\_Comm\_size(Comm)
 
 ## 📥 Argument d'entrée
 
-- Comm - un objet MPI_Comm.
+- Comm - un objet MPI\_Comm.
 
 ## 📤 Argument de sortie
 
 - r - un entier : nombre de processus dans le groupe de Comm.
 
 ## 📄 Description
+
 
 Détermine la taille du groupe associé à un communicateur.
 
@@ -48,14 +49,15 @@ if MPI_Initialized()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Comm_rank](../mpi/MPI_Comm_rank.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

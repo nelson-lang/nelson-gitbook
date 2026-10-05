@@ -4,21 +4,25 @@ Insert html in GUI console.
 
 ## 📝 Syntax
 
-- inserthtml(html_txt)
+- inserthtml(html\_txt)
 
 ## 📥 Input argument
 
-- html_txt - a string: html text
+- html\_txt - a string: html text
 
 ## 📄 Description
+
 
 <b>inserthtml</b> inserts html code in GUI console.
 
 ## 💡 Example
 
+
+
 ```matlab
 inserthtml(markdown(fileread([nelsonroot(),'/CHANGELOG.md'])))
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ inserthtml(markdown(fileread([nelsonroot(),'/CHANGELOG.md'])))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

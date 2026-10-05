@@ -18,11 +18,14 @@ enregistre des variables de l'espace de travail dans un fichier .nh5
 
 ## 📄 Description
 
-<b>savenh5</b> enregistre des variables de l'espace de travail dans un fichier .nh5.
+
+<b>savenh5</b> enregistre des variables de l'espace de travail dans un fichier .nh5. 
 
 Le fichier .nh5 utilise un conteneur HDF5.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -40,7 +43,6 @@ who
 A
 B
 ```
-
 append variables
 
 ```matlab
@@ -60,7 +62,6 @@ A
 B
 C
 ```
-
 compression
 
 ```matlab
@@ -71,14 +72,15 @@ with_compression = dir([tempdir(), 'example_h5save_with_compression.nh5'])
 no_compression = dir([tempdir(), 'example_h5save_no_compression.nh5'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [loadnh5](../hdf5/loadnh5.md), [h5write](../hdf5/h5write.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

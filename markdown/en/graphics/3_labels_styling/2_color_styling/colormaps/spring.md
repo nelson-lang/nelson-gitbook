@@ -17,17 +17,20 @@ Spring colormap array.
 
 ## 📄 Description
 
+
 <b>spring</b> returns the colormap with spring colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('spring');
 ```
-
 <img src="spring.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('spring');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

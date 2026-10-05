@@ -22,14 +22,17 @@ Modele de classification naive Bayes.
 
 ## 📄 Description
 
-ClassificationNaiveBayes stocke un classifieur naive Bayes avec les probabilites a priori des classes et les informations de distribution des predicteurs.
+
+ClassificationNaiveBayes stocke un classifieur naive Bayes avec les probabilites a priori des classes et les informations de distribution des predicteurs. 
 
 Creez cet objet avec fitcnb. Utilisez predict pour classer de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitcnb
     predict
+  
 
 ## 💡 Exemple
 
@@ -42,14 +45,15 @@ mdl = fitcnb(X, Y);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitcnb](../../statistics/fitcnb.md).
+[predict](../../statistics/5_regression/predict.md), [fitcnb](../../statistics/6_classification/fitcnb.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

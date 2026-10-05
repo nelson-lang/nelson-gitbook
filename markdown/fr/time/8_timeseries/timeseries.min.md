@@ -16,9 +16,11 @@ Minimum des données d'un timeseries.
 
 ## 📄 Description
 
+
 <b>min</b> calcule le minimum sur la propriété Data.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([2; 1; 3]);
@@ -26,14 +28,15 @@ min(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

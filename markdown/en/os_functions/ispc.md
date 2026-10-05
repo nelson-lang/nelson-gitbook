@@ -12,9 +12,12 @@ Checks if version is for Windows platform.
 
 ## 📄 Description
 
+
 <b>ispc</b> checks if it is a Windows platform.
 
 ## 💡 Example
+
+
 
 ```matlab
 if ispc
@@ -24,13 +27,14 @@ else
 end
 ```
 
+
 ## 🔗 See also
 
 [isunix](../os_functions/isunix.md), [ismac](../os_functions/ismac.md), [iswasm](../os_functions/iswasm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

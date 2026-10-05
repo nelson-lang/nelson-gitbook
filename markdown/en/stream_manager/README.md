@@ -1,10 +1,16 @@
 # Stream manager
 
+
+    
 The Stream Manager module provides tools for managing input and output streams in Nelson.
 
+    
 It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.
 
+    
 The module also supports session logging and workspace load/save operations for controlled file I/O in scripts and applications.
+
+  
 
 ## Functions
 
@@ -31,3 +37,4 @@ The module also supports session logging and workspace load/save operations for 
 - [save](save.md) - save workspace variables to .nh5 or .mat file
 - [sscanf](sscanf.md) - Read formatted data from strings.
 - [textscan](textscan.md) - Read formatted data from a character vector, string or file.
+

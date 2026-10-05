@@ -18,9 +18,11 @@ Determiner si les temps de lignes chevauchent une plage.
 
 ## 📄 Description
 
+
 <b>overlapsrange</b> teste si les temps de lignes chevauchent la plage de temps specifiee.
 
 ## 💡 Exemple
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3]), [10; 20; 30], 'VariableNames', {'A'});
@@ -28,14 +30,15 @@ overlapsrange(TT, seconds([2; 4]))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[withinrange](../../table/withinrange.md), [containsrange](../../table/containsrange.md).
+[withinrange](../../table/8_timetables_events/withinrange.md), [containsrange](../../table/8_timetables_events/containsrange.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

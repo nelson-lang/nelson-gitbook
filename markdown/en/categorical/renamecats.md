@@ -19,7 +19,8 @@ Rename categories in a categorical array.
 
 ## 📄 Description
 
-<b>renamecats</b> changes category labels while preserving which elements belong to each category.
+
+<b>renamecats</b> changes category labels while preserving which elements belong to each category. 
 
 New names must be valid and unique after the rename operation.
 
@@ -30,12 +31,12 @@ Rename one category.
 ```matlab
 A = categorical({'red','blue'}); B = renamecats(A, 'red', 'rouge'); categories(B)
 ```
-
 Rename all categories.
 
 ```matlab
 A = categorical({'red','blue'}); B = renamecats(A, {'bleu','rouge'}); categories(B)
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ A = categorical({'red','blue'}); B = renamecats(A, {'bleu','rouge'}); categories
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

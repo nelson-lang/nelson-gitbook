@@ -1,10 +1,10 @@
-# MPI_Initialized
+# MPI\_Initialized
 
-Indicates whether MPI_Init has been called.
+Indicates whether MPI\_Init has been called.
 
 ## 📝 Syntax
 
-- r = MPI_Initialized()
+- r = MPI\_Initialized()
 
 ## 📤 Output argument
 
@@ -12,9 +12,12 @@ Indicates whether MPI_Init has been called.
 
 ## 📄 Description
 
-Indicates whether MPI_Init has been called.
+
+Indicates whether MPI\_Init has been called.
 
 ## 💡 Example
+
+
 
 ```matlab
 if ~MPI_Initialized()
@@ -26,13 +29,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [MPI_Init](../mpi/MPI_Init.md), [MPI_Finalize](../mpi/MPI_Finalize.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

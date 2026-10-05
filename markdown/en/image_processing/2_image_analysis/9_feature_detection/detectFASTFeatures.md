@@ -17,6 +17,7 @@ Detect FAST corner features.
 
 ## 📄 Description
 
+
 detectFASTFeatures applies a FAST-9 style circle test and returns local feature coordinates sorted by contrast strength. Supported options are MinContrast, MinQuality and ROI.
 
 ## 💡 Example
@@ -29,16 +30,16 @@ points=detectFASTFeatures(I,'MinContrast',0.2);
 figure; imagesc(I); axis image; hold on;
 plot(points.Location(:,1),points.Location(:,2),'g+'); title('FAST points');
 ```
-
 <img src="detectFASTFeatures_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[cornermetric](../../../image_processing/cornermetric.md), [detectHarrisFeatures](../../../image_processing/detectHarrisFeatures.md).
+[cornermetric](../../../image_processing/2_image_analysis/9_feature_detection/cornermetric.md), [detectHarrisFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectHarrisFeatures.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

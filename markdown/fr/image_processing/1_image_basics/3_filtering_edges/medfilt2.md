@@ -20,6 +20,7 @@ Applique un filtrage median 2D.
 
 ## 📄 Description
 
+
 Applique un filtrage median 2D. Le padding par defaut utilise des zeros. Les options de padding incluent zeros, indexed, symmetric et replicate. Les options textuelles sont insensibles a la casse.
 
 ## 💡 Exemple
@@ -33,17 +34,17 @@ J=medfilt2(I,[3 3]);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Median filtered');
 ```
-
 <img src="medfilt2_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imfilter](../../../image_processing/imfilter.md), [imgaussfilt](../../../image_processing/imgaussfilt.md).
+[imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md), [imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

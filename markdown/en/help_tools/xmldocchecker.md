@@ -15,22 +15,26 @@ Checks a xml documentation file.
 ## 📤 Output argument
 
 - state - a logical: true if the document is valid, false otherwise.
-- errors_detected - a cell of strings: errors detected.
-- warnings_detected - a cell of strings: warnings detected.
+- errors\_detected - a cell of strings: errors detected.
+- warnings\_detected - a cell of strings: warnings detected.
 
 ## 📄 Description
 
-<b>xmldocchecker</b> is a tool to check that a xml document is valid.
 
-Principally used to validate the structure and content of XML files against nelson's help documentation.
+<b>xmldocchecker</b> is a tool to check that a xml document is valid. 
+
+Principally used to validate the structure and content of XML files against nelson's help documentation. 
 
 <b>xmldocchecker()</b> check validity of all XML documentation files.
 
 ## 💡 Example
 
+
+
 ```matlab
 xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 ```
+
 
 ## 🔗 See also
 
@@ -38,10 +42,10 @@ xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 
 ## 🕔 History
 
-| Version | 📄 Description                     |
-| ------- | ---------------------------------- |
-| 1.0.0   | initial version                    |
-| 1.15.0  | Use xmlchecker for XML validation. |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.15.0   | Use xmlchecker for XML validation. |
 
 <!--
 ## 👤 Author

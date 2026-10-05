@@ -14,6 +14,7 @@ Scattered data interpolant object
 
 ## 📄 Description
 
+
 <b>scatteredInterpolant</b> stores scattered sample points and values for repeated interpolation queries.
 
 ## 💡 Example
@@ -27,14 +28,15 @@ F = scatteredInterpolant(P, V);
 Vq = evaluate(F, [0.25 0.25])
 ```
 
+
 ## 🔗 See also
 
 [griddata](../geometry/griddata.md), [delaunayTriangulation](../geometry/delaunayTriangulation.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

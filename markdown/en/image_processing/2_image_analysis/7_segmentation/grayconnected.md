@@ -22,7 +22,8 @@ Select a connected grayscale region from a seed pixel.
 
 ## 📄 Description
 
-grayconnected grows a connected region from a seed pixel. Pixels are included when their normalized intensity differs from the seed intensity by no more than the tolerance and they are connected to the seed through included pixels.
+
+grayconnected grows a connected region from a seed pixel. Pixels are included when their normalized intensity differs from the seed intensity by no more than the tolerance and they are connected to the seed through included pixels. 
 
 Integer and logical inputs are converted to normalized double precision values for the tolerance comparison. The output is always logical.
 
@@ -37,16 +38,16 @@ BW=grayconnected(I,32,38,0.12,8);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(BW); title('Connected region');
 ```
-
 <img src="grayconnected_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[bwselect](../../../image_processing/bwselect.md), [imregionalmin](../../../image_processing/imregionalmin.md), [watershed](../../../image_processing/watershed.md).
+[bwselect](../../../image_processing/2_image_analysis/5_regions_boundaries/bwselect.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

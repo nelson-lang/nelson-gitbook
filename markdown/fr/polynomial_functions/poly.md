@@ -18,11 +18,14 @@ Polynôme à partir de racines ou polynôme caractéristique.
 
 ## 📄 Description
 
-Si <b>A</b> est une matrice carrée, <b>p = poly(A)</b> calcule un vecteur ligne de n+1 éléments correspondant aux coefficients du polynôme caractéristique.
+
+Si <b>A</b> est une matrice carrée, <b>p = poly(A)</b> calcule un vecteur ligne de n+1 éléments correspondant aux coefficients du polynôme caractéristique. 
 
 Si <b>r</b> est un vecteur, <b>p = poly(r)</b> calcule un vecteur ligne contenant les coefficients du polynôme dont les racines sont les éléments de <b>r</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ A = [1    2    3;
 p = poly(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [conv](../data_analysis/conv.md), [roots](../polynomial_functions/roots.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

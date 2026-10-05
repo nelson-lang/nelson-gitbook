@@ -16,13 +16,16 @@ Converts a string to double.
 
 ## 📄 Description
 
-<b>str2double</b> converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type.
 
-If <b>str2double</b> cannot convert string to a number, then it returns a Not An Number value.
+<b>str2double</b> converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type. 
+
+If <b>str2double</b> cannot convert string to a number, then it returns a Not An Number value. 
 
 Signed exponents require an e or d marker: '1e+2' and '1d+2' produce 100, while '1+2' and '1-2' are invalid and produce NaN. Input text is not evaluated as an arithmetic expression. Complex values such as '1+2i' remain supported.
 
 ## 💡 Example
+
+
 
 ```matlab
 R = str2double('2.6 + 3j')
@@ -32,13 +35,14 @@ R = str2double(["2.71" "3.1415"])
 
 ```
 
+
 ## 🔗 See also
 
 [double](../../double/double.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

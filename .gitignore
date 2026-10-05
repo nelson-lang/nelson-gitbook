@@ -1,17 +1,5 @@
 *.bak
-node_modules/
-package-lock.json
-book
 docs/index.md
-all_fr_files.txt
-all_en_files.txt
-temp_combined.md
 nelson-en.pdf
 nelson-fr.pdf
 target/
-to*.html
-!docs/releases/**/toc.html
-to*.pdf
-temp_nelson-en.md
-temp_nelson-fr.md
-.tools/

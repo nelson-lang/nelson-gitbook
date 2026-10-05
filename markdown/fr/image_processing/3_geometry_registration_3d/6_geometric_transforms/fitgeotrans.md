@@ -18,6 +18,7 @@ Ajuste une transformation geometrique 2-D depuis des points de controle.
 
 ## 📄 Description
 
+
 Ajuste des transformations 2-D affine ou projective depuis deux tableaux de points de controle N-by-2 correspondants. Les types pris en charge sont affine et projective.
 
 ## 💡 Exemple
@@ -33,17 +34,17 @@ J=imwarp(I,tform,'Interpolation','nearest');
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Fitted');
 ```
-
 <img src="fitgeotrans_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[affine2d](../../../image_processing/affine2d.md), [projective2d](../../../image_processing/projective2d.md), [imwarp](../../../image_processing/imwarp.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [projective2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/projective2d.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

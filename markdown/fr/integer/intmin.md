@@ -17,37 +17,42 @@ Renvoie le plus petit entier pouvant être représenté pour un type entier.
 
 ## 📄 Description
 
-<b>imin = intmin(classname)</b> le plus petit entier pouvant être représenté pour un type entier.
 
-Les valeurs prises en charge pour la chaîne <b>classname</b> sont :
+<b>imin = intmin(classname)</b> le plus petit entier pouvant être représenté pour un type entier. 
 
-'int8'
+Les valeurs prises en charge pour la chaîne <b>classname</b> sont : 
 
-'uint8'
+'int8' 
 
-'int16'
+'uint8' 
 
-'uint16'
+'int16' 
 
-'int32'
+'uint16' 
 
-'uint32'
+'int32' 
 
-'int64'
+'uint32' 
+
+'int64' 
 
 'uint64'
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = intmin('int64')
 res = class(A)
 ```
 
+
 ```matlab
 A = intmin('uint32')
 res = class(C)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -55,8 +60,8 @@ res = class(C)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

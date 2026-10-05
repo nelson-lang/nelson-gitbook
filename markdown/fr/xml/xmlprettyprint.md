@@ -4,18 +4,21 @@ formate un fichier XML.
 
 ## 📝 Syntaxe
 
-- xmlprettyprint(xml_file)
+- xmlprettyprint(xml\_file)
 
 ## 📥 Argument d'entrée
 
-- xml_file - un fichier XML valide.
-- format_space - un booléen indiquant s'il faut formater avec des espaces (true) ou non (false).
+- xml\_file - un fichier XML valide.
+- format\_space - un booléen indiquant s'il faut formater avec des espaces (true) ou non (false).
 
 ## 📄 Description
+
 
 <b>xmlprettyprint</b> formate un fichier XML pour qu'il soit lisible par un humain.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 xml_filename = [modulepath('xml'), '/tests/test_xml.xml'];
@@ -29,15 +32,16 @@ if isfile(xml_filename)
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [jsonprettyprint](../json/jsonprettyprint.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

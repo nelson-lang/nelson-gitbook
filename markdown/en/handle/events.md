@@ -20,11 +20,12 @@ Returns event names for a classdef object or class.
 
 ## 📄 Description
 
-<b>events</b> returns public event names declared by a classdef class.
 
-Hidden events and events with non-public listener access are omitted from the returned list.
+<b>events</b> returns public event names declared by a classdef class. 
 
-For classdef object arrays, <b>events</b> returns events of the array element class.
+Hidden events and events with non-public listener access are omitted from the returned list. 
+
+For classdef object arrays, <b>events</b> returns events of the array element class. 
 
 Handle classes also expose the <b>ObjectBeingDestroyed</b> event.
 
@@ -44,15 +45,16 @@ e = events([a, b]);
 delete([a, b])
 ```
 
+
 ## 🔗 See also
 
 [addlistener](../handle/addlistener.md), [notify](../handle/notify.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
-| 2.0.0   | classdef support added                   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | classdef support added |
 | 2.0.0   | classdef object array support documented |
 
 <!--

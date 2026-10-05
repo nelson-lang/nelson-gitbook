@@ -19,6 +19,7 @@ Créer ou modifier des structures d'options d'optimization.
 
 ## 📄 Description
 
+
 <b>optimset</b> crée une structure acceptée par les solveurs directs du module. Les noms d'options acceptent les abréviations non ambiguës.
 
 ## 📚 Bibliographie
@@ -27,11 +28,14 @@ J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 opts = optimset('TolX', 1e-8, 'Display', 'off')
 tol = optimget(opts, 'TolX')
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -39,8 +43,8 @@ tol = optimget(opts, 'TolX')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

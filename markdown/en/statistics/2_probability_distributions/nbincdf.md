@@ -19,18 +19,22 @@ Negative binomial cumulative distribution function
 
 ## 📄 Description
 
+
 <b>nbincdf</b> computes cumulative probabilities for the negative binomial distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:5;
 pout = nbincdf(x, 3, 0.4);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

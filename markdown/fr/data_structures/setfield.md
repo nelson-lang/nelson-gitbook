@@ -19,18 +19,22 @@ Définir le contenu d'un champ de structure.
 
 ## 📄 Description
 
-Définit le contenu du champ spécifié à la valeur donnée.
 
-Syntaxe alternative : S.(fieldname) = fieldvalue
+Définit le contenu du champ spécifié à la valeur donnée. 
+
+Syntaxe alternative : S.(fieldname) = fieldvalue 
 
 Syntaxe alternative : S(idx1, idx2).(fieldname) = fieldvalue
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = {};
 setfield(A, 'vv', 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -38,8 +42,8 @@ setfield(A, 'vv', 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,18 +18,22 @@ Exponential inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>expinv</b> computes inverse lower-tail exponential probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = expinv(p, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

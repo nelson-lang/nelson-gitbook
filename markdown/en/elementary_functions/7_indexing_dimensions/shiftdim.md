@@ -20,11 +20,14 @@ Shift array dimensions
 
 ## 📄 Description
 
-<b>shiftdim(A, n)</b> reorganizes the dimensions of an array A by n positions.
+
+<b>shiftdim(A, n)</b> reorganizes the dimensions of an array A by n positions. 
 
 Specifically, when n is a positive integer, it shifts the dimensions to the left, and when n is a negative integer, it shifts the dimensions to the right.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = rand(2, 3, 4);
@@ -33,13 +36,14 @@ size(A)
 B = shiftdim(A, 2)
 ```
 
+
 ## 🔗 See also
 
-[permute](../../elementary_functions/permute.md), [reshape](../../elementary_functions/reshape.md), [squeeze](../../elementary_functions/round.md).
+[permute](../../elementary_functions/7_indexing_dimensions/permute.md), [reshape](../../elementary_functions/1_array_creation_shape/reshape.md), [squeeze](../../elementary_functions/2_elementary_math/round.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.3.0   | initial version |
 

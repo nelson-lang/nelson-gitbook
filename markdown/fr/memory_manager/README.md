@@ -1,10 +1,16 @@
 # Fonctions du gestionnaire de memoire
 
+
+    
 Le module Memory Manager fournit des outils pour gerer les variables et la memoire dans Nelson.
 
+    
 Il prend en charge la creation, l'affectation, l'interrogation et la suppression de variables dans differentes portees, ainsi que la gestion des variables globales et persistantes.
 
+    
 Le module permet aussi d'inspecter la memoire, de verrouiller des variables et d'enumerer le contenu de l'espace de travail.
+
+  
 
 ## Functions
 
@@ -22,3 +28,4 @@ Le module permet aussi d'inspecter la memoire, de verrouiller des variables et d
 - [varunlock](varunlock.md) - Déroque une variable.
 - [who](who.md) - Liste les variables en mémoire ou dans un fichier .nh5 ou .mat.
 - [whos](whos.md) - Liste les variables en mémoire ou dans un fichier .nh5 ou .mat avec tailles et types.
+

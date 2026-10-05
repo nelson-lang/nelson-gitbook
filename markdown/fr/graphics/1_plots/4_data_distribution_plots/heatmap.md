@@ -31,11 +31,12 @@ Creer une carte de chaleur depuis une matrice numerique ou une table.
 
 ## 📄 Description
 
-<b>heatmap</b> affiche une matrice numerique sous forme d'image avec couleurs mises a l'echelle et etiquettes de lignes et colonnes. Pour une table, les categories sont triees et les donnees de couleur sont agregees par paire de categories.
 
-Avec <b>heatmap(tbl, xvar, yvar)</b>, les donnees de couleur contiennent les comptages et <b>ColorMethod</b> vaut <b>count</b>. Avec <b>ColorVariable</b>, les donnees de couleur contiennent les moyennes et <b>ColorMethod</b> vaut <b>mean</b>.
+<b>heatmap</b> affiche une matrice numerique sous forme d'image avec couleurs mises a l'echelle et etiquettes de lignes et colonnes. Pour une table, les categories sont triees et les donnees de couleur sont agregees par paire de categories. 
 
-Cette implementation retourne un objet graphique <b>heatmap</b>. Le champ <b>UserData</b> de l'objet contient <b>ChartType</b>, <b>Image</b>, <b>Grid</b>, <b>CellLabels</b>, <b>Colorbar</b>, <b>XData</b>, <b>YData</b>, <b>ColorData</b>, <b>SourceTable</b>, <b>XVariable</b>, <b>YVariable</b>, <b>ColorVariable</b>, <b>ColorMethod</b> et <b>Options</b>.
+Avec <b>heatmap(tbl, xvar, yvar)</b>, les donnees de couleur contiennent les comptages et <b>ColorMethod</b> vaut <b>count</b>. Avec <b>ColorVariable</b>, les donnees de couleur contiennent les moyennes et <b>ColorMethod</b> vaut <b>mean</b>. 
+
+Cette implementation retourne un objet graphique <b>heatmap</b>. Le champ <b>UserData</b> de l'objet contient <b>ChartType</b>, <b>Image</b>, <b>Grid</b>, <b>CellLabels</b>, <b>Colorbar</b>, <b>XData</b>, <b>YData</b>, <b>ColorData</b>, <b>SourceTable</b>, <b>XVariable</b>, <b>YVariable</b>, <b>ColorVariable</b>, <b>ColorMethod</b> et <b>Options</b>. 
 
 Les proprietes name/value prises en charge sont <b>Title</b>, <b>XLabel</b>, <b>YLabel</b>, <b>SourceTable</b>, <b>XVariable</b>, <b>YVariable</b>, <b>ColorVariable</b>, <b>ColorMethod</b>, <b>XData</b>, <b>YData</b>, <b>XDisplayLabels</b>, <b>YDisplayLabels</b>, <b>ColorLimits</b>, <b>Colormap</b>, <b>ColorbarVisible</b>, <b>GridVisible</b>, <b>CellLabelFormat</b>, <b>CellLabelColor</b>, <b>MissingDataLabel</b>, <b>FontColor</b>, <b>FontSize</b> et <b>Visible</b>.
 
@@ -47,7 +48,6 @@ Afficher une carte de chaleur numerique.
 C = [1 2 3; 4 5 6];
 heatmap(C);
 ```
-
 <img src="heatmap_1.svg" align="middle"/>
 Utiliser des etiquettes de lignes et colonnes.
 
@@ -56,7 +56,6 @@ C = [3 7 2; 6 5 8];
 heatmap({'A', 'B', 'C'}, {'Low', 'High'}, C, ...
   'Title', 'Scores', 'XLabel', 'Column', 'YLabel', 'Group');
 ```
-
 <img src="heatmap_2.svg" align="middle"/>
 Creer une carte de chaleur depuis des categories de table.
 
@@ -65,7 +64,6 @@ T = table({'B'; 'A'; 'B'}, {'Y'; 'X'; 'X'}, [2; 5; 8], ...
   'VariableNames', {'x', 'y', 'v'});
 heatmap(T, 'x', 'y', 'ColorVariable', 'v');
 ```
-
 <img src="heatmap_3.svg" align="middle"/>
 Personnaliser les couleurs et les etiquettes.
 
@@ -74,8 +72,8 @@ C = peaks(12);
 heatmap(C, 'ColorLimits', [-6 8], 'Colormap', turbo(64), ...
   'CellLabelFormat', '%0.1f', 'GridVisible', 'off');
 ```
-
 <img src="heatmap_4.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

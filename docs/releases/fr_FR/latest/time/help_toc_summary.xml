@@ -111,35 +111,35 @@
         <keyword name="cputime" link="7_timers/cputime.html" description="Renvoie le temps CPU utilisé par votre session Nelson."/>
         <keyword name="sleep" link="7_timers/sleep.html" description="Met en pause l'exécution du code."/>
         <keyword name="start" link="7_timers/start.html" description="Demarrer un objet timer."/>
-        <keyword name="timer.start" link="7_timers/start.html" description="Demarrer un objet timer."/>
+        <keyword name="timer.start" link="7_timers/start.html" description="Demarrer un objet timer." alias="true"/>
         <keyword name="startat" link="7_timers/startat.html" description="Demarrer un timer a une date et une heure specifiees."/>
-        <keyword name="timer.startat" link="7_timers/startat.html" description="Demarrer un timer a une date et une heure specifiees."/>
+        <keyword name="timer.startat" link="7_timers/startat.html" description="Demarrer un timer a une date et une heure specifiees." alias="true"/>
         <keyword name="stop" link="7_timers/stop.html" description="Arreter un objet timer en cours d'execution."/>
-        <keyword name="timer.stop" link="7_timers/stop.html" description="Arreter un objet timer en cours d'execution."/>
+        <keyword name="timer.stop" link="7_timers/stop.html" description="Arreter un objet timer en cours d'execution." alias="true"/>
         <keyword name="tic" link="7_timers/tic.html" description="Démarre un chronomètre."/>
         <keyword name="time" link="7_timers/time.html" description="Renvoie l'heure actuelle en secondes ou en nanosecondes depuis l'époque (epoch)."/>
         <keyword name="timeit" link="7_timers/timeit.html" description="Mesure le temps nécessaire à l'exécution d'une fonction."/>
         <keyword name="timer.delete" link="7_timers/timer.delete.html" description="Arreter et invalider des objets timer."/>
-        <keyword name="delete timer" link="7_timers/timer.delete.html" description="Arreter et invalider des objets timer."/>
+        <keyword name="delete timer" link="7_timers/timer.delete.html" description="Arreter et invalider des objets timer." alias="true"/>
         <keyword name="timer.get" link="7_timers/timer.get.html" description="Obtenir les valeurs des proprietes de timer."/>
-        <keyword name="get timer" link="7_timers/timer.get.html" description="Obtenir les valeurs des proprietes de timer."/>
+        <keyword name="get timer" link="7_timers/timer.get.html" description="Obtenir les valeurs des proprietes de timer." alias="true"/>
         <keyword name="timer.isvalid" link="7_timers/timer.isvalid.html" description="Determiner quels handles de timer sont valides."/>
-        <keyword name="isvalid timer" link="7_timers/timer.isvalid.html" description="Determiner quels handles de timer sont valides."/>
+        <keyword name="isvalid timer" link="7_timers/timer.isvalid.html" description="Determiner quels handles de timer sont valides." alias="true"/>
         <keyword name="timer.set" link="7_timers/timer.set.html" description="Definir les valeurs des proprietes de timer."/>
-        <keyword name="set timer" link="7_timers/timer.set.html" description="Definir les valeurs des proprietes de timer."/>
+        <keyword name="set timer" link="7_timers/timer.set.html" description="Definir les valeurs des proprietes de timer." alias="true"/>
         <keyword name="timer" link="7_timers/timer.html" description="Creer un objet timer qui execute des commandes apres un delai ou a intervalles repetes."/>
-        <keyword name="objet timer" link="7_timers/timer.html" description="Creer un objet timer qui execute des commandes apres un delai ou a intervalles repetes."/>
+        <keyword name="objet timer" link="7_timers/timer.html" description="Creer un objet timer qui execute des commandes apres un delai ou a intervalles repetes." alias="true"/>
         <keyword name="Fonctions de callback de timer" link="7_timers/timer_callback_functions.html" description="Definir les commandes executees lors des evenements de timer."/>
-        <keyword name="callbacks de timer" link="7_timers/timer_callback_functions.html" description="Definir les commandes executees lors des evenements de timer."/>
-        <keyword name="fonctions de rappel de timer" link="7_timers/timer_callback_functions.html" description="Definir les commandes executees lors des evenements de timer."/>
+        <keyword name="callbacks de timer" link="7_timers/timer_callback_functions.html" description="Definir les commandes executees lors des evenements de timer." alias="true"/>
+        <keyword name="fonctions de rappel de timer" link="7_timers/timer_callback_functions.html" description="Definir les commandes executees lors des evenements de timer." alias="true"/>
         <keyword name="Conflits de file de timers" link="7_timers/timer_queuing_conflicts.html" description="Controler le comportement lorsque des callbacks de timer sont encore en file quand un timer a cadence fixe se declenche a nouveau."/>
-        <keyword name="gestion des conflits de file de timer" link="7_timers/timer_queuing_conflicts.html" description="Controler le comportement lorsque des callbacks de timer sont encore en file quand un timer a cadence fixe se declenche a nouveau."/>
-        <keyword name="busy mode timer" link="7_timers/timer_queuing_conflicts.html" description="Controler le comportement lorsque des callbacks de timer sont encore en file quand un timer a cadence fixe se declenche a nouveau."/>
+        <keyword name="gestion des conflits de file de timer" link="7_timers/timer_queuing_conflicts.html" description="Controler le comportement lorsque des callbacks de timer sont encore en file quand un timer a cadence fixe se declenche a nouveau." alias="true"/>
+        <keyword name="busy mode timer" link="7_timers/timer_queuing_conflicts.html" description="Controler le comportement lorsque des callbacks de timer sont encore en file quand un timer a cadence fixe se declenche a nouveau." alias="true"/>
         <keyword name="timerfind" link="7_timers/timerfind.html" description="Trouver les objets timer visibles qui correspondent a des criteres de proprietes."/>
         <keyword name="timerfindall" link="7_timers/timerfindall.html" description="Trouver tous les objets timer qui correspondent a des criteres de proprietes, y compris les timers caches."/>
         <keyword name="toc" link="7_timers/toc.html" description="Lire le chronomètre (stopwatch)."/>
         <keyword name="wait" link="7_timers/wait.html" description="Attendre l'arret d'objets timer."/>
-        <keyword name="timer.wait" link="7_timers/wait.html" description="Attendre l'arret d'objets timer."/>
+        <keyword name="timer.wait" link="7_timers/wait.html" description="Attendre l'arret d'objets timer." alias="true"/>
       </section>
       <section name="Series temporelles">
         <chapter_description>

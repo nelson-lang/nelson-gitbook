@@ -1,11 +1,11 @@
-# qt_verbose
+# qt\_verbose
 
 show/hide Qt debug message.
 
 ## 📝 Syntax
 
-- r = qt_verbose()
-- p = qt_verbose(logical)
+- r = qt\_verbose()
+- p = qt\_verbose(logical)
 
 ## 📥 Input argument
 
@@ -18,15 +18,19 @@ show/hide Qt debug message.
 
 ## 📄 Description
 
-<b>qt_verbose</b> how/hide Qt debug message.
+
+<b>qt\_verbose</b> how/hide Qt debug message. 
 
 This function is useful to debug Qt and Qml.
 
 ## 💡 Example
 
+
+
 ```matlab
 h = qt_verbose()
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ h = qt_verbose()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

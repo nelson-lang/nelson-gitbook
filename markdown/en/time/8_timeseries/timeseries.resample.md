@@ -19,9 +19,11 @@ Resample a timeseries object at new times.
 
 ## 📄 Description
 
+
 <b>resample</b> Interpolates data onto a new time vector and updates Time while preserving metadata.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12], 'Name', 'speed');
@@ -30,13 +32,14 @@ ts2.Data
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -23,9 +23,12 @@ Parametres de conception FIR par fenetre de Kaiser.
 
 ## 📄 Description
 
+
 <b>kaiserord</b> estime des parametres FIR utilisables avec <b>fir1</b> et <b>kaiser</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -33,14 +36,15 @@ Parametres de conception FIR par fenetre de Kaiser.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[kaiser](../../signal_processing/kaiser.md), [fir1](../../signal_processing/fir1.md).
+[kaiser](../../signal_processing/5_spectral_analysis/kaiser.md), [fir1](../../signal_processing/4_digital_filters/fir1.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

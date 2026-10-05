@@ -9,19 +9,24 @@ for loop.
 
 ## 📄 Description
 
-<b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.
+
+<b>for</b> loop executes a set of statements with an index variable looping through each element in a vector. 
 
 <b>parfor</b> is currently an alias on <b>for</b> keyword.
 
 ## 💡 Examples
 
+
+
 ```matlab
 for i = 1:10, disp(i), end
 ```
 
+
 ```matlab
 for i = [1, 2; 3 4], disp(i), disp('next'), end
 ```
+
 
 ## 🔗 See also
 
@@ -29,7 +34,7 @@ for i = [1, 2; 3 4], disp(i), disp('next'), end
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

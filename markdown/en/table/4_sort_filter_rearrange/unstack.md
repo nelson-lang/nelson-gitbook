@@ -18,22 +18,26 @@ Unstack rows into table variables.
 
 ## 📄 Description
 
+
 <b>unstack</b> creates variables from values in an indicator variable.
 
 ## 💡 Example
+
+
 
 ```matlab
 S = table({'a'; 'a'; 'b'; 'b'}, {'X'; 'Y'; 'X'; 'Y'}, [1; 3; 2; 4], 'VariableNames', {'ID', 'Measure', 'Value'});
 U = unstack(S, 'Value', 'Measure')
 ```
 
+
 ## 🔗 See also
 
-[stack](../../table/stack.md).
+[stack](../../table/4_sort_filter_rearrange/stack.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

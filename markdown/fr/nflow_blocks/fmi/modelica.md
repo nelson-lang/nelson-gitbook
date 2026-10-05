@@ -1,7 +1,8 @@
 # modelica
 
+
 <p align="center">
-<img src="modelica.svg"/>
+<img src="modelica.svg" width="80"/>
 </p>
 Compile un modèle Modelica et l'utilise comme bloc NFlow.
 
@@ -11,9 +12,11 @@ Compile un modèle Modelica et l'utilise comme bloc NFlow.
 
 ## 📄 Description
 
-Le bloc <b>Modelica</b> utilise un <b>source</b> intégré ou un <b>file</b> Modelica, puis sélectionne <b>modelName</b>. Avant la simulation, NFlow compile le modèle sous forme de FMU.
 
-Une installation OpenModelica fonctionnelle est nécessaire. Les erreurs de compilation et de modèle sont publiées dans Diagnostics.
+Le bloc <b>Modelica</b> utilise un <b>source</b> intégré ou un <b>file</b> Modelica, puis sélectionne <b>modelName</b>. Avant la simulation, NFlow compile le modèle sous forme de FMU. 
+
+Une installation OpenModelica fonctionnelle est nécessaire. Les erreurs de compilation et de modèle sont publiées dans Diagnostics. 
+
 
 ## 🔗 Voir aussi
 

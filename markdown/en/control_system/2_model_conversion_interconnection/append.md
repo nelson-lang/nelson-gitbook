@@ -16,9 +16,12 @@ Appends the inputs and outputs of the two models.
 
 ## 📄 Description
 
+
 <b>sys = append(sys1, sys2, ..., sysN)</b> combines the inputs and outputs of models <b>sys1</b> through <b>sysN</b>, creating an augmented model represented by <b>sys</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 sys1 = tf(1,[1 0]);
@@ -27,13 +30,14 @@ sys = append(sys1, 10, sys2)
 
 ```
 
+
 ## 🔗 See also
 
-[feedback](../../control_system/feedback.md), [series](../../control_system/series.md).
+[feedback](../../control_system/2_model_conversion_interconnection/feedback.md), [series](../../control_system/2_model_conversion_interconnection/series.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

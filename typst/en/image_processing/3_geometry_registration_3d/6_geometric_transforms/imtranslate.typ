@@ -1,0 +1,57 @@
+#import "../../nelson_help.typ": *
+
+= imtranslate <image_processing:3_geometry_registration_3d.6_geometric_transforms.imtranslate>
+
+Translate an image in 2-D.
+
+== Syntax
+
+- #raw("J = imtranslate(I, translation)");
+- #raw("J = imtranslate(I, translation, method)");
+- #raw("J = imtranslate(I, translation, Name, Value)");
+
+== Input argument
+
+/ I: Input grayscale or RGB image.
+/ translation: Two-element translation vector \[x y\].
+/ method: Interpolation method: 'nearest', 'linear', 'bilinear', or 'cubic'.
+/ 'FillValues': Fill value used outside the input image.
+/ 'Interpolation': Named interpolation method override.
+/ 'OutputView': Output view: 'same' or 'full'.
+
+== Output argument
+
+/ J: Translated image.
+
+== Description
+
+Translate an image in 2-D. Supported interpolation methods are nearest, linear, bilinear and cubic. Option names are case-insensitive. OutputView can be same or full.
+
+
+== Example
+
+Translate an image
+
+``````matlab
+I=zeros(64,64); I(20:36,24:40)=1;
+J=imtranslate(I,[12 8],'Interpolation','nearest','OutputView','full');
+figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
+subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Translated');
+``````
+
+
+#align(center)[#image("imtranslate_1.png")]
+
+== See also
+
+#nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.imwarp>)[imwarp];, #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.imcrop>)[imcrop];, #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.imresize>)[imresize];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [initial version],
+)
+
+// Author: Allan CORNET

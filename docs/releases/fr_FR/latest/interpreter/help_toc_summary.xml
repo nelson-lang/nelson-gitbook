@@ -11,7 +11,7 @@
       écrire des programmes structurés, dynamiques et fiables.</p>
   </chapter_description>
       <keyword name="abort" link="abort.html" description="arrêter l'évaluation."/>
-      <keyword name="return" link="abort.html" description="arrêter l'évaluation."/>
+      <keyword name="return" link="abort.html" description="arrêter l'évaluation." alias="true"/>
       <keyword name="arguments" link="arguments.html" description="bloc de validation des arguments de fonction."/>
       <keyword name="break" link="break.html" description="sortir d'une boucle."/>
       <keyword name="checkcode" link="checkcode.html" description="Analyse les fichiers source Nelson et signale les problemes de code."/>
@@ -23,7 +23,7 @@
       <keyword name="continue" link="continue.html" description="continuer l'exécution dans une boucle."/>
       <keyword name="ctfroot" link="ctfroot.html" description="Racine de l'archive applicative extraite."/>
       <keyword name="for" link="for.html" description="boucle for."/>
-      <keyword name="parfor" link="for.html" description="boucle for."/>
+      <keyword name="parfor" link="for.html" description="boucle for." alias="true"/>
       <keyword name="function" link="function.html" description="déclaration de fonction."/>
       <keyword name="if" link="if.html" description="instruction conditionnelle."/>
       <keyword name="tilde" link="ignore_outputs_function.html" description="Ignore les sorties d'une fonction."/>
@@ -42,9 +42,9 @@
       <keyword name="smartindent" link="smartindent.html" description="Formatage et indentation d'un fichier Nelson"/>
       <keyword name="switch" link="switch.html" description="instruction switch."/>
       <keyword name="indexation de résultat temporaire" link="temporary_result_indexing.html" description="indexer directement le résultat d'un appel de fonction ou d'une expression."/>
-      <keyword name="indexation de résultat de fonction" link="temporary_result_indexing.html" description="indexer directement le résultat d'un appel de fonction ou d'une expression."/>
+      <keyword name="indexation de résultat de fonction" link="temporary_result_indexing.html" description="indexer directement le résultat d'un appel de fonction ou d'une expression." alias="true"/>
       <keyword name="try" link="try.html" description="instruction try/catch."/>
-      <keyword name="catch" link="try.html" description="instruction try/catch."/>
+      <keyword name="catch" link="try.html" description="instruction try/catch." alias="true"/>
       <keyword name="while" link="while.html" description="boucle while."/>
     </section>
   </toc>

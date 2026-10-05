@@ -8,21 +8,25 @@ Split text at delimiters.
 
 ## 📄 Description
 
+
 <b>split</b> Split text at delimiters.
 
 ## 💡 Example
+
+
 
 ```matlab
 split("a,b,c", ",")
 ```
 
+
 ## 🔗 See also
 
-[splitlines](../../string/splitlines.md), [strsplit](../../string/strsplit.md), [join](../../string/join.md).
+[splitlines](../../string/6_join_split_extract/splitlines.md), [strsplit](../../string/6_join_split_extract/strsplit.md), [join](../../string/6_join_split_extract/join.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

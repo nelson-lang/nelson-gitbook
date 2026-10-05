@@ -16,9 +16,10 @@ Return the elapsed time since midnight for datetime values.
 
 ## 📄 Description
 
-Return the elapsed time since midnight for datetime values.
 
-timeofday discards the calendar date and keeps only the fractional day, expressed as a duration with hh:mm:ss display format.
+Return the elapsed time since midnight for datetime values. 
+
+timeofday discards the calendar date and keeps only the fractional day, expressed as a duration with hh:mm:ss display format. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,13 +33,14 @@ seconds(d)
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

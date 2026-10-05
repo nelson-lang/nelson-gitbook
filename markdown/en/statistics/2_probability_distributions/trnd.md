@@ -19,18 +19,22 @@ Student t random numbers
 
 ## 📄 Description
 
+
 <b>trnd</b> generates Student t distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = trnd(5, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

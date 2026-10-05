@@ -17,17 +17,20 @@ Create or select an axes with two y-axes.
 
 ## 📄 Description
 
-<b>yyaxis</b> creates a chart with two y-axes and selects the active side. If the current axes does not already have two y-axes, one is added; if there is no current axes, one is created.
 
-The two sides share the same x-axis but each has its own limits, colour, scale, direction, ticks, label and children. Properties whose name starts with <b>Y</b> (such as <b>YLim</b>, <b>YColor</b> or <b>YLabel</b>) apply to the active side only. Query <b>YAxisLocation</b> to know which side is active.
+<b>yyaxis</b> creates a chart with two y-axes and selects the active side. If the current axes does not already have two y-axes, one is added; if there is no current axes, one is created. 
 
-By default the left ruler uses the first colour of the axes <b>ColorOrder</b> and the right ruler the second colour.
+The two sides share the same x-axis but each has its own limits, colour, scale, direction, ticks, label and children. Properties whose name starts with <b>Y</b> (such as <b>YLim</b>, <b>YColor</b> or <b>YLabel</b>) apply to the active side only. Query <b>YAxisLocation</b> to know which side is active. 
 
-The two rulers are also available as objects through the axes <b>YAxis</b> property: <b>YAxis(1)</b> is the left ruler and <b>YAxis(2)</b> the right ruler, whatever the active side.
+By default the left ruler uses the first colour of the axes <b>ColorOrder</b> and the right ruler the second colour. 
+
+The two rulers are also available as objects through the axes <b>YAxis</b> property: <b>YAxis(1)</b> is the left ruler and <b>YAxis(2)</b> the right ruler, whatever the active side. 
 
 <b>cla reset</b> removes the second y-axis and returns to a single y-axis.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -40,8 +43,8 @@ plot(x, 100 * cos(x))
 ylabel('right side')
 
 ```
-
 <img src="yyaxis.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -49,7 +52,7 @@ ylabel('right side')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

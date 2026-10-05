@@ -17,22 +17,26 @@ Moyenne et variance Rayleigh
 
 ## 📄 Description
 
+
 <b>raylstat</b> renvoie la moyenne et la variance element par element de lois Rayleigh.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = raylstat(2);
 ```
 
+
 ## 🔗 Voir aussi
 
-[raylpdf](../../statistics/raylpdf.md), [raylrnd](../../statistics/raylrnd.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylrnd](../../statistics/2_probability_distributions/raylrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

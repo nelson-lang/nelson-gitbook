@@ -8,22 +8,26 @@ Limite apres un motif.
 
 ## 📄 Description
 
+
 <b>lookBehindBoundary</b> Limite apres un motif.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pat = lookBehindBoundary("abc") + digitsPattern(3); extract("abc123", pat)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lookAheadBoundary](../../string/lookAheadBoundary.md), [textBoundary](../../string/textBoundary.md), [pattern](../../string/pattern.md).
+[lookAheadBoundary](../../string/4_patterns/lookAheadBoundary.md), [textBoundary](../../string/4_patterns/textBoundary.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

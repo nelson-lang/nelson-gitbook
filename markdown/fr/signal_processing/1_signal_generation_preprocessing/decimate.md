@@ -21,9 +21,12 @@ Filtre passe-bas puis sous-echantillonne un vecteur.
 
 ## 📄 Description
 
+
 <b>decimate</b> applique un filtre passe-bas anti-repliement puis conserve un echantillon sur Q. Le mode par defaut utilise un filtre IIR de Chebyshev type I avec filtrage aller-retour a phase nulle. Le mode <b>'fir'</b> utilise un filtre passe-bas FIR fenetre et compense son delai avant le sous-echantillonnage.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ y = decimate(1:20, 2, 4, 'fir');
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[downsample](../../signal_processing/downsample.md), [resample](../../signal_processing/resample.md), [upfirdn](../../signal_processing/upfirdn.md).
+[downsample](../../signal_processing/1_signal_generation_preprocessing/downsample.md), [resample](../../signal_processing/1_signal_generation_preprocessing/resample.md), [upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

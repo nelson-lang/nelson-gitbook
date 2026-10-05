@@ -7,14 +7,14 @@ Display format and number printing.
 - fmt = format()
 - format()
 - format('default')
-- format(new_style)
+- format(new\_style)
 - format('truncateMatrices', 'on')
 - format('truncateMatrices', 'off')
 - format(fmt)
 
 ## 📥 Input argument
 
-- new_style - a string or character vector
+- new\_style - a string or character vector
 - fmt - a nelson.display.DisplayFormatOptions object
 
 ## 📤 Output argument
@@ -23,49 +23,56 @@ Display format and number printing.
 
 ## 📄 Description
 
-<b>format(new_style)</b> changes the display format and number printing of the current session.
 
-<b>format('default')</b> resets to the default format (short, loose, truncateMatrices on).
+<b>format(new\_style)</b> changes the display format and number printing of the current session. 
 
-<b>fmt = format()</b> returns a <b>nelson.display.DisplayFormatOptions</b> object with the current <b>NumericFormat</b>, <b>LineSpacing</b>, and <b>TruncateMatrices</b> values.
+<b>format('default')</b> resets to the default format (short, loose, truncateMatrices on). 
 
-<b>format(fmt)</b> restores the display format stored in a <b>nelson.display.DisplayFormatOptions</b> object.
+<b>fmt = format()</b> returns a <b>nelson.display.DisplayFormatOptions</b> object with the current <b>NumericFormat</b>, <b>LineSpacing</b>, and <b>TruncateMatrices</b> values. 
 
-Numeric formats supported:
+<b>format(fmt)</b> restores the display format stored in a <b>nelson.display.DisplayFormatOptions</b> object. 
 
-<b>short</b>
+ 
 
-<b>long</b>
+Numeric formats supported: 
 
-<b>shortE</b>
+<b>short</b> 
 
-<b>longE</b>
+<b>long</b> 
 
-<b>shortG</b>
+<b>shortE</b> 
 
-<b>longG</b>
+<b>longE</b> 
 
-<b>shortEng</b>
+<b>shortG</b> 
 
-<b>longEng</b>
+<b>longG</b> 
 
-<b>+</b>
+<b>shortEng</b> 
 
-<b>bank</b>
+<b>longEng</b> 
 
-<b>rational</b>
+<b>+</b> 
 
-<b>hex</b>
+<b>bank</b> 
 
-Line spacing formats supported:
+<b>rational</b> 
 
-<b>loose</b>
+<b>hex</b> 
 
-<b>compact</b>
+ 
 
-Matrix truncation formats supported:
+Line spacing formats supported: 
 
-<b>format('truncateMatrices', 'on')</b>
+<b>loose</b> 
+
+<b>compact</b> 
+
+ 
+
+Matrix truncation formats supported: 
+
+<b>format('truncateMatrices', 'on')</b> 
 
 <b>format('truncateMatrices', 'off')</b>
 
@@ -84,15 +91,16 @@ format(current_style)
 pi
 ```
 
+
 ## 🔗 See also
 
-[nelson.display.DisplayFormatOptions](../display_format/nelson.display.DisplayFormatOptions.md), [disp](../display_format/disp.md), [display](../display_format/display.md).
+[nelson.display.DisplayFormatOptions](../display_format/DisplayFormatOptions.md), [disp](../display_format/disp.md), [display](../display_format/display.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                   |
-| ------- | -------------------------------------------------------------------------------- |
-| 1.0.0   | initial version                                                                  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | format returns and accepts nelson.display.DisplayFormatOptions classdef objects. |
 
 <!--

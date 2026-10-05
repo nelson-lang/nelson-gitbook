@@ -8,13 +8,16 @@ Convertir des facteurs en matrice de plan.
 
 ## 📄 Description
 
+
 <b>x2fx</b> cree une matrice de plan avec une colonne constante et les termes demandes par la specification du modele.
 
 ## Fonction(s) utilisée(s)
 
+
     candgen
     rowexch
     cordexch
+  
 
 ## 💡 Exemples
 
@@ -25,7 +28,6 @@ X = [1 2; 3 4];
 Dlinear = x2fx(X, 'linear')
 Dquadratic = x2fx(X, 'quadratic')
 ```
-
 Utiliser une matrice de specification de modele explicite.
 
 ```matlab

@@ -12,11 +12,14 @@ Renvoie le temps CPU utilisé par votre session Nelson.
 
 ## 📄 Description
 
-<b>cputime()</b> renvoie le temps CPU utilisé par la session Nelson.
+
+<b>cputime()</b> renvoie le temps CPU utilisé par la session Nelson. 
 
 Pour mesurer les performances, il est préférable d'utiliser les fonctions tic et toc.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 t1 = cputime;
@@ -30,14 +33,15 @@ sleep(10);
 toc()
 ```
 
+
 ## 🔗 Voir aussi
 
-[tic](../../time/tic.md), [toc](../../time/toc.md).
+[tic](../../time/7_timers/tic.md), [toc](../../time/7_timers/toc.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

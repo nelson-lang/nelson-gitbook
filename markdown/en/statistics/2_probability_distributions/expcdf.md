@@ -19,9 +19,12 @@ Exponential cumulative distribution function
 
 ## 📄 Description
 
+
 <b>expcdf</b> computes lower-tail exponential probabilities by default and upper-tail probabilities with <b>'upper'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 0.5 1 2];
@@ -29,9 +32,10 @@ p = expcdf(x, 3);
 q = expcdf(x, 3, 'upper');
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

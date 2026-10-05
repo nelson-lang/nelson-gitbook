@@ -20,13 +20,16 @@ Convert image to movie frame.
 
 ## 📄 Description
 
-<b>F = im2frame(RGB)</b> converts the truecolor image <b>RGB</b> into a movie frame <b>F</b>.
 
-<b>F = im2frame(X, map)</b> converts the indexed image <b>X</b> along with its colormap map into a movie frame <b>F</b>.
+<b>F = im2frame(RGB)</b> converts the truecolor image <b>RGB</b> into a movie frame <b>F</b>. 
+
+<b>F = im2frame(X, map)</b> converts the indexed image <b>X</b> along with its colormap map into a movie frame <b>F</b>. 
 
 <b>F = im2frame(X)</b> converts the indexed image <b>X</b> into a movie frame <b>F</b>, using the current colormap.
 
 ## 💡 Example
+
+
 
 ```matlab
 examples_directory = [modulepath('graphics', 'root'), '/', 'examples/'];
@@ -34,15 +37,16 @@ edit([examples_directory, 'movie/demo_movie.m']);
 run([examples_directory, 'movie/demo_movie.m']);
 ```
 
+
 ## 🔗 See also
 
 [movie](../../graphics/4_images/movie.md), [frame2im](../../graphics/4_images/frame2im.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.13.0  | initial version |
+| 1.13.0   | initial version |
 
 <!--
 ## 👤 Author

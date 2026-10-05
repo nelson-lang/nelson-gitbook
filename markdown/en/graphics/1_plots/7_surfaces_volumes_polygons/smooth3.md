@@ -22,6 +22,7 @@ Smooth 3-D data.
 
 ## 📄 Description
 
+
 <b>smooth3</b> smooths volumetric data with a separable 3-D box or gaussian kernel and replicated boundary values.
 
 ## 💡 Example
@@ -32,6 +33,7 @@ Smooth a small volume with a gaussian kernel.
 V = rand(10, 10, 10);
 W = smooth3(V, 'gaussian', 5);
 ```
+
 
 ## 🔗 See also
 

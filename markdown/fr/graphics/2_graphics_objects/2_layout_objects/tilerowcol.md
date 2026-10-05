@@ -20,9 +20,10 @@ Obtenir les indices ligne et colonne à partir d'un numéro de tuile ou d'un obj
 
 ## 📄 Description
 
-<b>tilerowcol(t, tilenum)</b> retourne les indices de ligne et de colonne pour le numéro de tuile donné dans la disposition TiledChartLayout t.
 
-<b>tilerowcol(obj)</b> retourne la ligne et la colonne de la tuile occupée par l'objet axes obj.
+<b>tilerowcol(t, tilenum)</b> retourne les indices de ligne et de colonne pour le numéro de tuile donné dans la disposition TiledChartLayout t. 
+
+<b>tilerowcol(obj)</b> retourne la ligne et la colonne de la tuile occupée par l'objet axes obj. 
 
 Retourne NaN pour les numéros de tuile hors limites ou pour les axes de tuile de bord.
 
@@ -36,15 +37,16 @@ t = tiledlayout(2, 3);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [tiledlayout](../../2_graphics_objects/2_layout_objects/tiledlayout.md), [nexttile](../../2_graphics_objects/2_layout_objects/nexttile.md), [tilenum](../../2_graphics_objects/2_layout_objects/tilenum.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

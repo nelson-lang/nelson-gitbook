@@ -22,6 +22,7 @@ Apply box filtering to an image.
 
 ## 📄 Description
 
+
 Apply box filtering to an image. FilterSize must contain positive integers. By default the filter computes a local mean with replicate padding. Set NormalizationFactor to 1 to compute local sums.
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ J=imboxfilt(I,[5 5]);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Box filtered');
 ```
-
 <img src="imboxfilt_1.png" align="middle"/>
 Compute local sums with zero padding
 
@@ -43,13 +43,14 @@ A = [1 2; 3 4];
 S = imboxfilt(A, [2 2], 'Padding', 0, 'NormalizationFactor', 1)
 ```
 
+
 ## 🔗 See also
 
-[imgaussfilt](../../../image_processing/imgaussfilt.md), [imfilter](../../../image_processing/imfilter.md).
+[imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md), [imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,14 +1,24 @@
 # Signal Processing
 
+
+    
 The Signal Processing module provides tools for analyzing, filtering, transforming, and resampling sampled signals in Nelson.
 
+    
 It includes windowing functions, FIR and IIR filter design, digital filtering, zero-pole and second-order-section conversions, cross-correlation, and conversions between magnitude, power, and decibel representations.
 
+    
 The module also supports multirate processing, spectral estimation, time-frequency analysis, waveform generation, and common signal measurements.
+
+  
 
 ## Signal Generation and Preprocessing
 
+
+    
 Functions for creating, resampling, smoothing, filtering, and preparing signals.
+
+  
 
 ### Functions
 
@@ -32,7 +42,11 @@ Functions for creating, resampling, smoothing, filtering, and preparing signals.
 
 ## Measurements and Feature Extraction
 
+
+    
 Signal measurements, features, and quality metrics.
+
+  
 
 ### Functions
 
@@ -47,7 +61,11 @@ Signal measurements, features, and quality metrics.
 
 ## Transforms, Correlation, and Modeling
 
+
+    
 Transforms, correlation estimates, coherence, and transfer-function estimates.
+
+  
 
 ### Functions
 
@@ -65,7 +83,11 @@ Transforms, correlation estimates, coherence, and transfer-function estimates.
 
 ## Digital Filters
 
+
+    
 Filter design, analysis, conversion, and implementation functions.
+
+  
 
 ### Functions
 
@@ -101,7 +123,11 @@ Filter design, analysis, conversion, and implementation functions.
 
 ## Spectral Analysis
 
+
+    
 Power spectrum, window, and scale-conversion functions.
+
+  
 
 ### Functions
 
@@ -127,10 +153,15 @@ Power spectrum, window, and scale-conversion functions.
 
 ## Time-Frequency Analysis
 
+
+    
 Short-time and time-frequency representation functions.
+
+  
 
 ### Functions
 
 - [istft](6_time_frequency_analysis/istft.md) - Inverse short-time Fourier transform.
 - [spectrogram](6_time_frequency_analysis/spectrogram.md) - Spectrogram using short-time Fourier transforms.
 - [stft](6_time_frequency_analysis/stft.md) - Short-time Fourier transform.
+

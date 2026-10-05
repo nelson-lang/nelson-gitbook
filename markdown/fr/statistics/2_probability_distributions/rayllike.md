@@ -21,9 +21,12 @@ Log-vraisemblance negative Rayleigh
 
 ## 📄 Description
 
+
 <b>rayllike</b> evalue la log-vraisemblance negative de la distribution Rayleigh.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
@@ -31,14 +34,15 @@ b = raylfit(x);
 nlogL = rayllike(b, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[raylfit](../../statistics/raylfit.md), [raylpdf](../../statistics/raylpdf.md), [raylcdf](../../statistics/raylcdf.md).
+[raylfit](../../statistics/2_probability_distributions/raylfit.md), [raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylcdf](../../statistics/2_probability_distributions/raylcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

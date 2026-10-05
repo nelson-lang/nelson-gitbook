@@ -18,18 +18,22 @@ Inequality, ~= operator
 
 ## 📄 Description
 
-<b>C = ne(A, B)</b> performs inequality operation: A ~= B variables.
 
-<b>ne</b> compares both real and imaginary parts of numeric arrays.
+<b>C = ne(A, B)</b> performs inequality operation: A ~= B variables. 
+
+<b>ne</b> compares both real and imaginary parts of numeric arrays. 
 
 When inputs are sparse numeric or logical arrays, the result is a sparse logical array. Sparse <b>single</b> and single-complex operands are supported.
 
 ## 💡 Example
 
+
+
 ```matlab
 ne(3, 4)
 3 ~= 4
 ```
+
 
 ## 🔗 See also
 
@@ -37,9 +41,9 @@ ne(3, 4)
 
 ## 🕔 History
 
-| Version | 📄 Description                                       |
-| ------- | ---------------------------------------------------- |
-| 1.0.0   | initial version                                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | sparse single and single-complex operands supported. |
 
 <!--

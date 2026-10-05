@@ -25,6 +25,7 @@ Binarize image using a threshold.
 
 ## 📄 Description
 
+
 Binarize image using a threshold. The global method uses graythresh when no threshold is supplied. A numeric threshold can be scalar or the same size as the input. The adaptive method uses adaptthresh and supports bright or dark foreground polarity.
 
 ## 💡 Examples
@@ -37,7 +38,6 @@ BW=imbinarize(I,0.5);
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(BW); g=linspace(0,1,64)'; colormap([g g g]); title('Binary');
 ```
-
 <img src="imbinarize_1.png" align="middle"/>
 Binarize using an adaptive threshold
 
@@ -46,13 +46,14 @@ I=[0.1 0.1 0.1; 0.1 0.9 0.1; 0.1 0.1 0.1];
 BW=imbinarize(I,'adaptive','Sensitivity',0.4)
 ```
 
+
 ## 🔗 See also
 
-[graythresh](../../../image_processing/graythresh.md), [adaptthresh](../../../image_processing/adaptthresh.md), [imcomplement](../../../image_processing/imcomplement.md).
+[graythresh](../../../image_processing/1_image_basics/2_contrast_thresholding/graythresh.md), [adaptthresh](../../../image_processing/1_image_basics/2_contrast_thresholding/adaptthresh.md), [imcomplement](../../../image_processing/1_image_basics/2_contrast_thresholding/imcomplement.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

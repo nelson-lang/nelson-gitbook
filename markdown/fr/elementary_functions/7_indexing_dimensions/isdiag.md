@@ -16,9 +16,12 @@ Vérifie si une matrice est diagonale.
 
 ## 📄 Description
 
+
 <b>isdiag</b> renvoie un scalaire booléen si la matrice est diagonale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -26,14 +29,15 @@ R = isdiag(A)
 R = isdiag(A(:,1))
 ```
 
+
 ## 🔗 Voir aussi
 
-[istriu](../../elementary_functions/istriu.md), [istril](../../elementary_functions/istril.md).
+[istriu](../../elementary_functions/7_indexing_dimensions/istriu.md), [istril](../../elementary_functions/7_indexing_dimensions/istril.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

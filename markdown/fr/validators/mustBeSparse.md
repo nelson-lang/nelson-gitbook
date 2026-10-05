@@ -15,9 +15,12 @@ Vérifie que la valeur est une matrice creuse (sparse) ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeSparse</b> vérifie que la valeur est une matrice creuse (sparse) ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeSparse(true)
@@ -25,15 +28,16 @@ mustBeSparse(eye(3, 4))
 mustBeSparse(sparse(eye(3, 4)))
 ```
 
+
 ## 🔗 Voir aussi
 
 [issparse](../types/issparse.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.11.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.11.0   | version initiale |
 
 <!--
 ## 👤 Auteur

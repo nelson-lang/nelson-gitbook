@@ -35,9 +35,10 @@ Plot data with error bars.
 
 ## 📄 Description
 
-<b>errorbar</b> plots x and y data with vertical or combined x/y error bars.
 
-Vector inputs create one errorbar object. Matrix inputs create one errorbar object for each column.
+<b>errorbar</b> plots x and y data with vertical or combined x/y error bars. 
+
+Vector inputs create one errorbar object. Matrix inputs create one errorbar object for each column. 
 
 See [errorbar properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.errorbar.properties.md) for the complete property list.
 
@@ -52,7 +53,6 @@ err = 8 * ones(size(y));
 errorbar(x, y, err);
 
 ```
-
 <img src="errorbar_1.svg" align="middle"/>
 Plot vertical error bars that vary in length.
 
@@ -63,7 +63,6 @@ err = [5 8 2 9 3 3 8 3 9 3];
 errorbar(x, y, err);
 
 ```
-
 <img src="errorbar_2.svg" align="middle"/>
 Plot horizontal error bars.
 
@@ -74,7 +73,6 @@ err = [1 3 5 3 5 3 6 4 3 3];
 errorbar(x, y, err, 'horizontal');
 
 ```
-
 <img src="errorbar_3.svg" align="middle"/>
 Plot vertical and horizontal error bars with markers only.
 
@@ -85,7 +83,6 @@ err = [4 3 5 3 5 3 6 4 3 3];
 errorbar(x, y, err, 'both', 'o');
 
 ```
-
 <img src="errorbar_4.svg" align="middle"/>
 Control error bar lengths in all directions.
 
@@ -99,13 +96,12 @@ xpos = [2 5 3 5 2 5 2 2 5 5];
 errorbar(x, y, yneg, ypos, xneg, xpos, 'o');
 
 ```
-
 <img src="errorbar_5.svg" align="middle"/>
+
 
 ## 🔗 See also
 
 [errorbar properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.errorbar.properties.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md), [line](../../../graphics/1_plots/1_line_plots/line.md).
-
 <!--
 ## 👤 Author
 

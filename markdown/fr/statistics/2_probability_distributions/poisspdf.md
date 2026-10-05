@@ -17,23 +17,27 @@ Fonction de masse de Poisson
 
 ## 📄 Description
 
+
 <b>poisspdf</b> calcule les valeurs de masse de probabilite de Poisson.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:10;
 y = poisspdf(x, 4);
 ```
 
+
 ## 🔗 Voir aussi
 
-[poisscdf](../../statistics/poisscdf.md), [poissinv](../../statistics/poissinv.md).
+[poisscdf](../../statistics/2_probability_distributions/poisscdf.md), [poissinv](../../statistics/2_probability_distributions/poissinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

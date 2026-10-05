@@ -16,22 +16,26 @@ Convertit un gain en décibels (dB) en magnitude.
 
 ## 📄 Description
 
+
 <b>mag = db2mag(db)</b> renvoie la magnitude correspondante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mag = db2mag([0, -20])
 ```
 
+
 ## 🔗 Voir aussi
 
-[mag2db](../../signal_processing/mag2db.md).
+[mag2db](../../signal_processing/5_spectral_analysis/mag2db.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

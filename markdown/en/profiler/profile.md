@@ -20,21 +20,24 @@ Profile execution time for Macro functions.
 
 ## 📄 Description
 
-Profiling is a way to measure where Macro function spend times.
 
-<b>s = profile('status')</b> returns a structure with the current status of the profiler.
+Profiling is a way to measure where Macro function spend times. 
 
-<b>p = profile('info')</b> returns a structure with collected profiling data.
+<b>s = profile('status')</b> returns a structure with the current status of the profiler. 
 
-<b>profile('on')</b> starts profiler.
+<b>p = profile('info')</b> returns a structure with collected profiling data. 
 
-<b>profile('off')</b> stops profiler. Collected profiling data will be retrieved later with<b>p = profile ('info')</b>.
+<b>profile('on')</b> starts profiler. 
 
-<b>profile('clear')</b> clears collected profiling data.
+<b>profile('off')</b> stops profiler. Collected profiling data will be retrieved later with<b>p = profile ('info')</b>. 
+
+<b>profile('clear')</b> clears collected profiling data. 
 
 <b>profile('resume')</b> restarts and continue and extends collected profiling data.
 
 ## 💡 Examples
+
+
 
 ```matlab
 profile on
@@ -46,6 +49,7 @@ profile('show', 'totaltime', 4)
 
 ```
 
+
 ```matlab
 profile on
 sind(5)
@@ -55,13 +59,14 @@ unix([tempdir(), 'profile_results/index.html'])
 
 ```
 
+
 ## 🔗 See also
 
 [profsave](../profiler/profsave.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

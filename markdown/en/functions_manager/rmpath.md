@@ -17,9 +17,12 @@ Remove directory from search path.
 
 ## 📄 Description
 
+
 <b>rmpath</b> removes directory from search path.
 
 ## 💡 Example
+
+
 
 ```matlab
 path
@@ -29,13 +32,14 @@ rmpath(tempdir())
 path
 ```
 
+
 ## 🔗 See also
 
 [path](../functions_manager/path.md), [addpath](../functions_manager/addpath.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

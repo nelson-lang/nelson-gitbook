@@ -21,15 +21,19 @@ Evalue numeriquement une integrale par quadrature Gauss-Kronrod.
 
 ## 📄 Description
 
-<b>quadgk</b> integre une integrande scalaire vectorisee avec une quadrature Gauss-Kronrod adaptive.
+
+<b>quadgk</b> integre une integrande scalaire vectorisee avec une quadrature Gauss-Kronrod adaptive. 
 
 <b>Waypoints</b> decoupe l'integrale en sous-intervalles. Des points complexes definissent un contour polygonal.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [q, errbnd] = quadgk(@(x) exp(-x.^2), 0, Inf)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -37,7 +41,7 @@ Evalue numeriquement une integrale par quadrature Gauss-Kronrod.
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

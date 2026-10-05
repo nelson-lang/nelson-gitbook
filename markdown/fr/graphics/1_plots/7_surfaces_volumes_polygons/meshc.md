@@ -14,7 +14,8 @@ Afficher un maillage avec des contours en dessous.
 
 ## 📄 Description
 
-<b>meshc</b> affiche un maillage et des lignes de contour projetees a la base du maillage.
+
+<b>meshc</b> affiche un maillage et des lignes de contour projetees a la base du maillage. 
 
 La valeur retournee est un vecteur graphique a deux elements contenant l'objet surface puis l'objet contour.
 
@@ -25,7 +26,6 @@ Maillage avec contours.
 ```matlab
 meshc(peaks(30));
 ```
-
 <img src="meshc_1.svg" align="middle"/>
 Utiliser des donnees de couleur separees et des axes parents.
 
@@ -36,8 +36,8 @@ Z = peaks(20);
 C = abs(Z);
 meshc('Parent', ax, Z, C, 'LineWidth', 1.5);
 ```
-
 <img src="meshc_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

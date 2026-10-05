@@ -22,6 +22,7 @@ Applique un filtrage par moyenne locale.
 
 ## 📄 Description
 
+
 Applique un filtrage par moyenne locale. FilterSize doit contenir des entiers positifs. Par defaut, le filtre calcule une moyenne locale avec un padding par replication. Utiliser NormalizationFactor egal a 1 pour calculer des sommes locales.
 
 ## 💡 Exemples
@@ -34,7 +35,6 @@ J=imboxfilt(I,[5 5]);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Box filtered');
 ```
-
 <img src="imboxfilt_1.png" align="middle"/>
 Calculer des sommes locales avec padding nul
 
@@ -43,14 +43,15 @@ A = [1 2; 3 4];
 S = imboxfilt(A, [2 2], 'Padding', 0, 'NormalizationFactor', 1)
 ```
 
+
 ## 🔗 Voir aussi
 
-[imgaussfilt](../../../image_processing/imgaussfilt.md), [imfilter](../../../image_processing/imfilter.md).
+[imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md), [imfilter](../../../image_processing/1_image_basics/3_filtering_edges/imfilter.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

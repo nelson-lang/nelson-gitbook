@@ -13,6 +13,7 @@ Vérifie le nombre d'arguments d'entrée.
 
 ## 📄 Description
 
+
 Lance une erreur si le nombre d'arguments d'entrée n'est pas dans l'intervalle attendu.
 
 ## 💡 Exemple
@@ -23,16 +24,17 @@ Avec une fonction macro :
 narginchk(1, 2)
 ```
 
+
 ## 🔗 Voir aussi
 
 [nargin](../core/nargin.md), [nargoutchk](../core/nargoutchk.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description         |
-| ------- | ---------------------- |
-| 1.0.0   | version initiale       |
-| 1.10.0  | narginchk(3, Inf) géré |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.10.0   | narginchk(3, Inf) géré |
 
 <!--
 ## 👤 Auteur

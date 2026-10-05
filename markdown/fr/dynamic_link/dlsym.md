@@ -4,14 +4,14 @@ Charge un symbole C/Fortran depuis une bibliothèque dynamique
 
 ## 📝 Syntaxe
 
-- f = dlsym(lib, symbol_name, return_type, params_types)
+- f = dlsym(lib, symbol\_name, return\_type, params\_types)
 
 ## 📥 Argument d'entrée
 
 - lib - a dllib handle.
 - symbolname - a string: symbol to load.
-- return_type - a string: return type of the C/Fortran function.
-- params_types - a cell of strings: arguments using a special syntax with differents data types.
+- return\_type - a string: return type of the C/Fortran function.
+- params\_types - a cell of strings: arguments using a special syntax with differents data types.
 
 ## 📤 Argument de sortie
 
@@ -19,33 +19,38 @@ Charge un symbole C/Fortran depuis une bibliothèque dynamique
 
 ## 📄 Description
 
-<b>dlsym</b> récupère l'adresse d'une fonction exportée en tant que handle dlsym.
 
-Si le <b>symbolname</b> n'est pas trouvé, Nelson tente de trouver des variantes du nom selon ces règles (dans cet ordre) :
+<b>dlsym</b> récupère l'adresse d'une fonction exportée en tant que handle dlsym. 
 
-<b>\_symbolname</b>
+Si le <b>symbolname</b> n'est pas trouvé, Nelson tente de trouver des variantes du nom selon ces règles (dans cet ordre) : 
 
-<b>symbolname</b>
+<b>\_symbolname</b> 
 
-<b>symbolname\_</b>
+<b>symbolname</b> 
 
-<b>\_symbolname\_</b>
+<b>symbolname\_</b> 
 
-<b>\_SYMBOLNAME</b>
+<b>\_symbolname\_</b> 
 
-<b>SYMBOLNAME</b>
+<b>\_SYMBOLNAME</b> 
 
-<b>SYMBOLNAME\_</b>
+<b>SYMBOLNAME</b> 
 
-<b>\_SYMBOLNAME\_</b>
+<b>SYMBOLNAME\_</b> 
 
-Le nom de symbole utilisé est disponible dans le champ prototype du handle retourné.
+<b>\_SYMBOLNAME\_</b> 
 
-Si plusieurs noms de symboles sont trouvés, une erreur est levée avec les noms possibles.
+Le nom de symbole utilisé est disponible dans le champ prototype du handle retourné. 
+
+Si plusieurs noms de symboles sont trouvés, une erreur est levée avec les noms possibles. 
+
+ 
 
 Attention : si les types sont mal définis, l'appel d'une fonction étrangère peut provoquer des comportements imprévus (plantage).
 
 ## 💡 Exemples
+
+
 
 ```matlab
 lib = dlopen(modulepath('dynamic_link', 'builtin'));
@@ -58,19 +63,18 @@ delete(f);
 delete(lib);
 
 ```
-
 Call C getpid function
 
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_c.m']);
 
 ```
-
 Call fortran DASUM (blas) function
 
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -78,8 +82,8 @@ run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

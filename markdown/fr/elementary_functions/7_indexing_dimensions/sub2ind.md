@@ -20,9 +20,12 @@ Indices d'une matrice vers un indice linéaire
 
 ## 📄 Description
 
+
 <b>sub2ind</b> convertit des indices en indices linéaires.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 row = [2 3 4 2];
@@ -31,14 +34,15 @@ sz = [3 3];
 ind = sub2ind(sz, row, col)
 ```
 
+
 ## 🔗 Voir aussi
 
-[ind2sub](../../elementary_functions/sub2ind.md).
+[ind2sub](../../elementary_functions/7_indexing_dimensions/sub2ind.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

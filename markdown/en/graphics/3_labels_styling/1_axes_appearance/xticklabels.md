@@ -26,7 +26,8 @@ Set or get x-axis tick labels.
 
 ## 📄 Description
 
-<b>xticklabels</b> gets or sets the tick labels along the x-axis of the current axes.
+
+<b>xticklabels</b> gets or sets the tick labels along the x-axis of the current axes. 
 
 Specifying labels switches the x-tick label mode to <b>manual</b>.
 
@@ -43,13 +44,14 @@ labels = xticklabels()
 
 ```
 
+
 ## 🔗 See also
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md), [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

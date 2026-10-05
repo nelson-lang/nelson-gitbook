@@ -2,8 +2,8 @@
 
 [Overview](./README.md)
 
-- [functions_manager](./functions_manager/README.md)
 
+- [functions_manager](./functions_manager/README.md)
   - [addpath](./functions_manager/addpath.md)
   - [builtin](./functions_manager/builtin.md)
   - [clearfun](./functions_manager/clearfun.md)
@@ -25,7 +25,6 @@
   - [which](./functions_manager/which.md)
 
 - [modules_manager](./modules_manager/README.md)
-
   - [addgateway](./modules_manager/addgateway.md)
   - [addmodule](./modules_manager/addmodule.md)
   - [deploytool](./modules_manager/deploytool.md)
@@ -50,7 +49,6 @@
   - [usermodulesdir](./modules_manager/usermodulesdir.md)
 
 - [core](./core/README.md)
-
   - [banner](./core/banner.md)
   - [crc32](./core/crc32.md)
   - [crypto.aead.decrypt](./core/crypto_aead_decrypt.md)
@@ -97,7 +95,6 @@
   - [version](./core/version.md)
 
 - [engine](./engine/README.md)
-
   - [argv](./engine/argv.md)
   - [executable](./engine/executable.md)
   - [finish](./engine/finish.md)
@@ -110,7 +107,6 @@
   - [startup](./engine/startup.md)
 
 - [interpreter](./interpreter/README.md)
-
   - [abort](./interpreter/abort.md)
   - [return](./interpreter/abort.md)
   - [arguments](./interpreter/arguments.md)
@@ -149,7 +145,6 @@
   - [while](./interpreter/while.md)
 
 - [error_manager](./error_manager/README.md)
-
   - [MException.last](./error_manager/MException.last.md)
   - [MException](./error_manager/MException.md)
   - [addCause](./error_manager/addCause.md)
@@ -169,18 +164,15 @@
   - [warning](./error_manager/warning.md)
 
 - [console](./console/README.md)
-
   - [clc](./console/clc.md)
   - [consolebox](./console/consolebox.md)
   - [input](./console/input.md)
   - [terminal_size](./console/terminal_size.md)
 
 - [text_completion](./text_completion/README.md)
-
   - [completion](./text_completion/completion.md)
 
 - [display_format](./display_format/README.md)
-
   - [nelson.display.DisplayFormatOptions](./display_format/DisplayFormatOptions.md)
   - [disp](./display_format/disp.md)
   - [display](./display_format/display.md)
@@ -189,27 +181,23 @@
   - [formattedDisplayText](./display_format/formattedDisplayText.md)
 
 - [characters_encoding](./characters_encoding/README.md)
-
   - [native2unicode](./characters_encoding/native2unicode.md)
   - [nativecharset](./characters_encoding/nativecharset.md)
   - [unicode2native](./characters_encoding/unicode2native.md)
 
 - [localization](./localization/README.md)
-
   - [getavailablelanguages](./localization/getavailablelanguages.md)
   - [getdefaultlanguage](./localization/getdefaultlanguage.md)
   - [getlanguage](./localization/getlanguage.md)
   - [setlanguage](./localization/setlanguage.md)
 
 - [i18n](./i18n/README.md)
-
   - [gettext](./i18n/gettext.md)
-  - [\_](./i18n/gettext.md)
+  - [_](./i18n/gettext.md)
   - [i18nHelpers](./i18n/i18nHelpers.md)
   - [poheader](./i18n/poheader.md)
 
 - [types](./types/README.md)
-
   - [class](./types/class.md)
   - [cpp_api](./types/cpp_api.md)
   - [isa](./types/isa.md)
@@ -252,25 +240,21 @@
   - [underlyingType](./types/underlyingType.md)
 
 - [logical](./logical/README.md)
-
   - [false](./logical/false.md)
   - [logical](./logical/logical.md)
   - [true](./logical/true.md)
   - [xor](./logical/xor.md)
 
 - [single](./single/README.md)
-
   - [single](./single/single.md)
 
 - [double](./double/README.md)
-
   - [double](./double/double.md)
   - [flintmax](./double/flintmax.md)
   - [realmax](./double/realmax.md)
   - [realmin](./double/realmin.md)
 
 - [integer](./integer/README.md)
-
   - [int16](./integer/int16.md)
   - [int32](./integer/int32.md)
   - [int64](./integer/int64.md)
@@ -283,7 +267,6 @@
   - [uint8](./integer/uint8.md)
 
 - [sparse](./sparse/README.md)
-
   - [IJV](./sparse/IJV.md)
   - [full](./sparse/full.md)
   - [nnz](./sparse/nnz.md)
@@ -303,7 +286,6 @@
   - [symrcm](./sparse/symrcm.md)
 
 - [string](./string/README.md)
-
   - Creation et conversion de texte
     - [append](./string/1_create_convert_text/append.md)
     - [blanks](./string/1_create_convert_text/blanks.md)
@@ -407,14 +389,12 @@
   - [vectorize](./string/vectorize.md)
 
 - [function_handle](./function_handle/README.md)
-
   - [Anonymous Functions](./function_handle/anonymous_function.md)
   - [func2str](./function_handle/func2str.md)
   - [isfunction_handle](./function_handle/isfunction_handle.md)
   - [str2func](./function_handle/str2func.md)
 
 - [handle](./handle/README.md)
-
   - [addlistener](./handle/addlistener.md)
   - [cancel](./handle/cancel.md)
   - [delete](./handle/delete.md)
@@ -450,7 +430,6 @@
   - [superclasses](./handle/superclasses.md)
 
 - [data_structures](./data_structures/README.md)
-
   - [arrayfun](./data_structures/arrayfun.md)
   - [cell](./data_structures/cell.md)
   - [cell2mat](./data_structures/cell2mat.md)
@@ -474,7 +453,6 @@
   - [structfun](./data_structures/structfun.md)
 
 - [dictionary](./dictionary/README.md)
-
   - [configureDictionary](./dictionary/configureDictionary.md)
   - [containers.Map](./dictionary/containers_Map.md)
   - [dictionary](./dictionary/dictionary.md)
@@ -496,7 +474,6 @@
   - [writedictionary](./dictionary/writedictionary.md)
 
 - [table](./table/README.md)
-
   - Creation et conversion de tableaux
     - [array2table](./table/1_create_convert_tables/array2table.md)
     - [array2timetable](./table/1_create_convert_tables/array2timetable.md)
@@ -561,7 +538,6 @@
     - [withtol](./table/8_timetables_events/withtol.md)
 
 - [categorical](./categorical/README.md)
-
   - [addcats](./categorical/addcats.md)
   - [categorical](./categorical/categorical.md)
   - [categories](./categorical/categories.md)
@@ -580,11 +556,9 @@
   - [setcats](./categorical/setcats.md)
 
 - [overload](./overload/README.md)
-
   - [overloading](./overload/overloading.md)
 
 - [operators](./operators/README.md)
-
   - [all](./operators/all.md)
   - [and](./operators/and.md)
   - [any](./operators/any.md)
@@ -626,7 +600,6 @@
   - [vertcat](./operators/vertcat.md)
 
 - [constructors_functions](./constructors_functions/README.md)
-
   - [Inf](./constructors_functions/Inf.md)
   - [NaN](./constructors_functions/NaN.md)
   - [diag](./constructors_functions/diag.md)
@@ -639,7 +612,6 @@
   - [zeros](./constructors_functions/zeros.md)
 
 - [elementary_functions](./elementary_functions/README.md)
-
   - Creation et forme des tableaux
     - [blkdiag](./elementary_functions/1_array_creation_shape/blkdiag.md)
     - [deal](./elementary_functions/1_array_creation_shape/deal.md)
@@ -765,7 +737,6 @@
     - [triu](./elementary_functions/7_indexing_dimensions/triu.md)
 
 - [trigonometric_functions](./trigonometric_functions/README.md)
-
   - [acos](./trigonometric_functions/acos.md)
   - [acosd](./trigonometric_functions/acosd.md)
   - [acosh](./trigonometric_functions/acosh.md)
@@ -821,7 +792,6 @@
   - [wrapToPi](./trigonometric_functions/wrapToPi.md)
 
 - [special_functions](./special_functions/README.md)
-
   - [beta](./special_functions/beta.md)
   - [betainc](./special_functions/betainc.md)
   - [betaln](./special_functions/betaln.md)
@@ -849,13 +819,13 @@
   - [isprime](./special_functions/isprime.md)
   - [lcm](./special_functions/lcm.md)
   - [makima](./special_functions/makima.md)
+  - [pchip](./special_functions/pchip.md)
   - [peaks](./special_functions/peaks.md)
   - [primes](./special_functions/primes.md)
   - [quadgk](./special_functions/quadgk.md)
   - [spline](./special_functions/spline.md)
 
 - [linear_algebra](./linear_algebra/README.md)
-
   - Systemes lineaires
     - [cumtrapz](./linear_algebra/1_linear_systems/cumtrapz.md)
     - [del2](./linear_algebra/1_linear_systems/del2.md)
@@ -1217,9 +1187,10 @@ Resumer les variables de table ou les valeurs categorielles.
 
 ## 📄 Description
 
-<b>summary</b> retourne la taille et le type de chaque variable de table.
 
-Les variables numeriques de table incluent aussi le minimum, le maximum, la moyenne, la mediane, l'ecart type et le nombre de valeurs manquantes.
+<b>summary</b> retourne la taille et le type de chaque variable de table. 
+
+Les variables numeriques de table incluent aussi le minimum, le maximum, la moyenne, la mediane, l'ecart type et le nombre de valeurs manquantes. 
 
 Pour les tableaux categoriels, <b>summary</b> affiche le nombre d'elements pour chaque categorie et pour les valeurs non definies.
 
@@ -1231,7 +1202,6 @@ Resumer une table.
 T = table([1; 2; 3], ["a"; "b"; "c"], 'VariableNames', {'A', 'Label'});
 S = summary(T)
 ```
-
 Afficher les comptes categoriels.
 
 ```matlab
@@ -1239,14 +1209,15 @@ A = categorical({'red','blue','red',''});
 summary(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[table](./data_analysis/../table/table.md), [categorical](./data_analysis/../categorical/categorical.md), [countcats](./data_analysis/../categorical/countcats.md).
+[table](./data_analysis/../table/1_create_convert_tables/table.md), [categorical](./data_analysis/../categorical/categorical.md), [countcats](./data_analysis/../categorical/countcats.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--
@@ -1256,7 +1227,6 @@ Allan CORNET
 -->
 
 - [ode_solvers](./ode_solvers/README.md)
-
   - [workflows EDO](./ode_solvers/1_ode_workflows.md)
   - [choix solveur EDO](./ode_solvers/2_ode_solver_selection.md)
   - [tutoriel evenements edo](./ode_solvers/3_ode_events_tutorial.md)
@@ -1319,7 +1289,6 @@ Allan CORNET
   - [odextend](./ode_solvers/odextend.md)
 
 - [polynomial_functions](./polynomial_functions/README.md)
-
   - [compan](./polynomial_functions/compan.md)
   - [deconv](./polynomial_functions/deconv.md)
   - [mkpp](./polynomial_functions/mkpp.md)
@@ -1334,7 +1303,6 @@ Allan CORNET
   - [roots](./polynomial_functions/roots.md)
 
 - [geometry](./geometry/README.md)
-
   - [alphaShape](./geometry/alphaShape.md)
   - [boundary](./geometry/boundary.md)
   - [convhull](./geometry/convhull.md)
@@ -1356,7 +1324,6 @@ Allan CORNET
   - [voronoin](./geometry/voronoin.md)
 
 - [control_system](./control_system/README.md)
-
   - Modeles de systemes dynamiques
     - [balreal](./control_system/1_dynamic_system_models/balreal.md)
     - [isct](./control_system/1_dynamic_system_models/isct.md)
@@ -1429,7 +1396,6 @@ Allan CORNET
     - [schord](./control_system/6_matrix_computations/schord.md)
 
 - [slicot](./slicot/README.md)
-
   - [Licence SLICOT](./slicot/About_SLICOT_license.md)
   - [slicot_ab01od](./slicot/slicot_ab01od.md)
   - [slicot_ab04md](./slicot/slicot_ab04md.md)
@@ -1456,7 +1422,6 @@ Allan CORNET
   - [slicot_tg01ad](./slicot/slicot_tg01ad.md)
 
 - [signal_processing](./signal_processing/README.md)
-
   - Generation et pretraitement des signaux
     - [chirp](./signal_processing/1_signal_generation_preprocessing/chirp.md)
     - [decimate](./signal_processing/1_signal_generation_preprocessing/decimate.md)
@@ -1552,7 +1517,6 @@ Allan CORNET
     - [stft](./signal_processing/6_time_frequency_analysis/stft.md)
 
 - [fftw](./fftw/README.md)
-
   - [Licence FFTW](./fftw/About_FFTW_license.md)
   - [FFTWwrapper](./fftw/FFTWwrapper.md)
   - [fft](./fftw/fft.md)
@@ -1566,7 +1530,6 @@ Allan CORNET
   - [ifftshift](./fftw/ifftshift.md)
 
 - [random](./random/README.md)
-
   - [RandStream](./random/RandStream.md)
   - [rand](./random/rand.md)
   - [randi](./random/randi.md)
@@ -1575,7 +1538,6 @@ Allan CORNET
   - [rng](./random/rng.md)
 
 - [os_functions](./os_functions/README.md)
-
   - [cmdsep](./os_functions/cmdsep.md)
   - [computer](./os_functions/computer.md)
   - [createGUID](./os_functions/createGUID.md)
@@ -1600,7 +1562,6 @@ Allan CORNET
   - [winqueryreg](./os_functions/winqueryreg.md)
 
 - [files_folders_functions](./files_folders_functions/README.md)
-
   - [cd](./files_folders_functions/cd.md)
   - [copyfile](./files_folders_functions/copyfile.md)
   - [diff_file](./files_folders_functions/diff_file.md)
@@ -1626,12 +1587,10 @@ Allan CORNET
   - [userdir](./files_folders_functions/userdir.md)
 
 - [file_archiver](./file_archiver/README.md)
-
   - [unzip](./file_archiver/unzip.md)
   - [zip](./file_archiver/zip.md)
 
 - [memory_manager](./memory_manager/README.md)
-
   - [acquirevar](./memory_manager/acquirevar.md)
   - [assignin](./memory_manager/assignin.md)
   - [clear](./memory_manager/clear.md)
@@ -1648,7 +1607,6 @@ Allan CORNET
   - [whos](./memory_manager/whos.md)
 
 - [time](./time/README.md)
-
   - Creation de tableaux de date et heure
     - [NaT](./time/1_create_date_time_arrays/NaT.md)
     - [calendar](./time/1_create_date_time_arrays/calendar.md)
@@ -1834,7 +1792,6 @@ Allan CORNET
     - [tsdata.timemetadata](./time/8_timeseries/tsdata.timemetadata.md)
 
 - [stream_manager](./stream_manager/README.md)
-
   - [cprintf](./stream_manager/cprintf.md)
   - [diary](./stream_manager/diary.md)
   - [fclose](./stream_manager/fclose.md)
@@ -1860,7 +1817,6 @@ Allan CORNET
   - [textscan](./stream_manager/textscan.md)
 
 - [hdf5](./hdf5/README.md)
-
   - [h5create](./hdf5/h5create.md)
   - [h5dump](./hdf5/h5dump.md)
   - [h5ls](./hdf5/h5ls.md)
@@ -1875,7 +1831,6 @@ Allan CORNET
   - [whosnh5](./hdf5/whosnh5.md)
 
 - [netcdf](./netcdf/README.md)
-
   - [nccreate](./netcdf/nccreate.md)
   - [ncdisp](./netcdf/ncdisp.md)
   - [ncinfo](./netcdf/ncinfo.md)
@@ -1941,7 +1896,6 @@ Allan CORNET
   - [netcdf.sync](./netcdf/netcdf_sync.md)
 
 - [matio](./matio/README.md)
-
   - [ismatfile](./matio/ismatfile.md)
   - [loadmat](./matio/loadmat.md)
   - [savemat](./matio/savemat.md)
@@ -1949,7 +1903,6 @@ Allan CORNET
   - [whosmat](./matio/whosmat.md)
 
 - [xml](./xml/README.md)
-
   - [readstruct](./xml/readstruct.md)
   - [writestruct](./xml/writestruct.md)
   - [xmlchecker](./xml/xmlchecker.md)
@@ -1960,13 +1913,11 @@ Allan CORNET
   - [xslt](./xml/xslt.md)
 
 - [json](./json/README.md)
-
   - [jsondecode](./json/jsondecode.md)
   - [jsonencode](./json/jsonencode.md)
   - [jsonprettyprint](./json/jsonprettyprint.md)
 
 - [ai](./ai/README.md)
-
   - [aiask](./ai/aiask.md)
   - [aimodels](./ai/aimodels.md)
   - [aioptions](./ai/aioptions.md)
@@ -1975,7 +1926,6 @@ Allan CORNET
   - [mcpusage](./ai/mcpusage.md)
 
 - [parquet](./parquet/README.md)
-
   - [nelson.io.datastore.ParquetDatastore](./parquet/class_ParquetDatastore.md)
   - [nelson.io.parquet.ParquetInfo](./parquet/class_ParquetInfo.md)
   - [nelson.io.RowFilter](./parquet/class_RowFilter.md)
@@ -1986,7 +1936,6 @@ Allan CORNET
   - [rowfilter](./parquet/rowfilter.md)
 
 - [spreadsheet](./spreadsheet/README.md)
-
   - [csvread](./spreadsheet/csvread.md)
   - [csvwrite](./spreadsheet/csvwrite.md)
   - [delimitedTextImportOptions](./spreadsheet/delimitedTextImportOptions.md)
@@ -2008,7 +1957,6 @@ Allan CORNET
   - [xlswrite](./spreadsheet/xlswrite.md)
 
 - [mpi](./mpi/README.md)
-
   - [MPI_Allreduce](./mpi/MPI_Allreduce.md)
   - [MPI_Barrier](./mpi/MPI_Barrier.md)
   - [MPI_Bcast](./mpi/MPI_Bcast.md)
@@ -2033,7 +1981,6 @@ Allan CORNET
   - [mpiexec](./mpi/mpiexec.md)
 
 - [parallel](./parallel/README.md)
-
   - [afterAll](./parallel/afterAll.md)
   - [afterEach](./parallel/afterEach.md)
   - [backgroundPool](./parallel/backgroundPool.md)
@@ -2045,12 +1992,10 @@ Allan CORNET
   - [wait](./parallel/wait.md)
 
 - [ipc](./ipc/README.md)
-
   - [getpid](./ipc/getpid.md)
   - [ipc](./ipc/ipc.md)
 
 - [audio](./audio/README.md)
-
   - [audiodevinfo](./audio/audiodevinfo.md)
   - [audioinfo](./audio/audioinfo.md)
   - [audiometadata](./audio/audiometadata.md)
@@ -2089,11 +2034,9 @@ Allan CORNET
   - [stop](./audio/stop.md)
 
 - [history_manager](./history_manager/README.md)
-
   - [history](./history_manager/history.md)
 
 - [gui](./gui/README.md)
-
   - [commandhistory](./gui/commandhistory.md)
   - [dialog](./gui/dialog.md)
   - [errordlg](./gui/errordlg.md)
@@ -2124,7 +2067,6 @@ Allan CORNET
   - [workspace](./gui/workspace.md)
 
 - [qml_engine](./qml_engine/README.md)
-
   - [QObject_classname](./qml_engine/QObject_classname.md)
   - [QObject_findchildren](./qml_engine/QObject_findchildren.md)
   - [QObject_get](./qml_engine/QObject_get.md)
@@ -2154,13 +2096,11 @@ Allan CORNET
   - [qt_version](./qml_engine/qt_version.md)
 
 - [text_editor](./text_editor/README.md)
-
   - [débogage](./text_editor/debugging_workflow.md)
   - [edit](./text_editor/edit.md)
   - [editor](./text_editor/editor.md)
 
 - [graphics](./graphics/README.md)
-
   - Fonctions de traces 2-D et 3-D
     - Courbes
       - [errorbar](./graphics/1_plots/1_line_plots/errorbar.md)
@@ -2498,7 +2438,6 @@ Allan CORNET
     - [savefig](./graphics/5_printing_saving/savefig.md)
 
 - [graphics_io](./graphics_io/README.md)
-
   - [copygraphics](./graphics_io/copygraphics.md)
   - [imformats](./graphics_io/imformats.md)
   - [imread](./graphics_io/imread.md)
@@ -2506,7 +2445,6 @@ Allan CORNET
   - [saveas](./graphics_io/saveas.md)
 
 - [image_processing](./image_processing/README.md)
-
   - Bases de l'image
     - Types d'image et couleur
       - [hsv2rgb](./image_processing/1_image_basics/1_image_types_color/hsv2rgb.md)
@@ -2607,7 +2545,6 @@ Allan CORNET
       - [image_registration](./image_processing/3_geometry_registration_3d/9a_image_registration/image_registration.md)
 
 - [webtools](./webtools/README.md)
-
   - [checkupdate](./webtools/checkupdate.md)
   - [repo](./webtools/repo.md)
   - [urlencode](./webtools/urlencode.md)
@@ -2617,13 +2554,11 @@ Allan CORNET
   - [webwrite](./webtools/webwrite.md)
 
 - [webview](./webview/README.md)
-
   - [demo](./webview/demo.md)
   - [nelson.htmlviewer.htmlviewer](./webview/nelson_htmlviewer_htmlviewer.md)
   - [web](./webview/web.md)
 
 - [dynamic_link](./dynamic_link/README.md)
-
   - [Compilation C/C++ à la volée](./dynamic_link/1_c_cpp_build_on_fly.md)
   - [Compilateurs C/C++ supportés](./dynamic_link/2_supported_compilers.md)
   - [Types libpointer](./dynamic_link/C_datatype.md)
@@ -2663,7 +2598,6 @@ Allan CORNET
   - [vswhere](./dynamic_link/vswhere.md)
 
 - [mex](./mex/README.md)
-
   - [dlgeneratemexgateway](./mex/dlgeneratemexgateway.md)
   - [engClose](./mex/engClose.md)
   - [engEvalString](./mex/engEvalString.md)
@@ -2681,11 +2615,9 @@ Allan CORNET
   - [mexext](./mex/mexext.md)
 
 - [f2c](./f2c/README.md)
-
   - [f2c](./f2c/f2c.md)
 
 - [validators](./validators/README.md)
-
   - [inputParser](./validators/inputParser.md)
   - [mustBeA](./validators/mustBeA.md)
   - [mustBeBetween](./validators/mustBeBetween.md)
@@ -2732,7 +2664,6 @@ Allan CORNET
   - [validatestring](./validators/validatestring.md)
 
 - [python_engine](./python_engine/README.md)
-
   - [La puissance d'appeler Python depuis Nelson](./python_engine/1_The_power_of_Python.md)
   - [Comment installer un paquet Python](./python_engine/2_How_to_install_python_package.md)
   - [Types Python - Nelson](./python_engine/3_python_types.md)
@@ -2747,14 +2678,12 @@ Allan CORNET
   - [pyrunfile](./python_engine/pyrunfile.md)
 
 - [julia_engine](./julia_engine/README.md)
-
   - [jlenv](./julia_engine/jlenv.md)
   - [jlrun](./julia_engine/jlrun.md)
   - [jlrunfile](./julia_engine/jlrunfile.md)
   - [Julia Nelson types](./julia_engine/julia_types.md)
 
 - [gpu_engine](./gpu_engine/README.md)
-
   - [canUseGPU](./gpu_engine/canUseGPU.md)
   - [gather](./gpu_engine/gather.md)
   - [gpuArray](./gpu_engine/gpuArray.md)
@@ -2764,7 +2693,6 @@ Allan CORNET
   - [isgpuarray](./gpu_engine/isgpuarray.md)
 
 - [debugger](./debugger/README.md)
-
   - [dbclear](./debugger/dbclear.md)
   - [dbcont](./debugger/dbcont.md)
   - [dbdown](./debugger/dbdown.md)
@@ -2776,12 +2704,10 @@ Allan CORNET
   - [dbup](./debugger/dbup.md)
 
 - [profiler](./profiler/README.md)
-
   - [profile](./profiler/profile.md)
   - [profsave](./profiler/profsave.md)
 
 - [tests_manager](./tests_manager/README.md)
-
   - [bench_run](./tests_manager/bench_run.md)
   - [nelson.unittest](./tests_manager/nelson_unittest.md)
   - [nelson.unittest.assume](./tests_manager/nelson_unittest_assume.md)
@@ -2799,7 +2725,6 @@ Allan CORNET
   - [skip_testsuite](./tests_manager/test_skip_testsuite.md)
 
 - [assert_functions](./assert_functions/README.md)
-
   - [assert](./assert_functions/assert.md)
   - [assert_checkerror](./assert_functions/assert_checkerror.md)
   - [assert_isapprox](./assert_functions/assert_isapprox.md)
@@ -2860,11 +2785,11 @@ Allan CORNET
   - [asserts.warningFree](./assert_functions/asserts.warningFree.md)
 
 - [help_tools](./help_tools/README.md)
-
   - [Aide Nelson](./help_tools/1_nelson_help_reference.md)
   - [buildhelp](./help_tools/buildhelp.md)
   - [buildhelpjson](./help_tools/buildhelpjson.md)
   - [buildhelpmd](./help_tools/buildhelpmd.md)
+  - [buildhelptypst](./help_tools/buildhelptypst.md)
   - [buildhelpweb](./help_tools/buildhelpweb.md)
   - [deployhelp](./help_tools/deployhelp.md)
   - [doc](./help_tools/doc.md)
@@ -2878,12 +2803,11 @@ Allan CORNET
   - [xmldocchecker](./help_tools/xmldocchecker.md)
   - [xmldoclinkchecker](./help_tools/xmldoclinkchecker.md)
   - [xmldocrenderimages](./help_tools/xmldocrenderimages.md)
-  - [xmldoctohelp](./help_tools/xmldoctohelp.md)
   - [xmldoctohtml](./help_tools/xmldoctohtml.md)
   - [xmldoctomd](./help_tools/xmldoctomd.md)
+  - [xmldoctotypst](./help_tools/xmldoctotypst.md)
 
 - [optimization](./optimization/README.md)
-
   - [optimization tutorial](./optimization/1_optimization_tutorial.md)
   - [evaluate](./optimization/evaluate.md)
   - [fcn2optimexpr](./optimization/fcn2optimexpr.md)
@@ -2916,7 +2840,6 @@ Allan CORNET
   - [solve](./optimization/solve.md)
 
 - [nflow_blocks](./nflow_blocks/README.md)
-
   - Electrical (acausal)
     - [CCC](./nflow_blocks/acausal_electrical/CCC.md)
     - [CCV](./nflow_blocks/acausal_electrical/CCV.md)
@@ -3228,7 +3151,6 @@ Allan CORNET
     - [width](./nflow_blocks/utility/width.md)
 
 - [nflow_engine](./nflow_engine/README.md)
-
   - [NFlow.exportfmu](./nflow_engine/NFlow.exportfmu.md)
   - [NFlow.plotScopes](./nflow_engine/NFlow.plotScopes.md)
   - [add_block](./nflow_engine/add_block.md)
@@ -3242,7 +3164,7 @@ Allan CORNET
   - [delete_line](./nflow_engine/delete_line.md)
   - [find_system](./nflow_engine/find_system.md)
   - [gcbh](./nflow_engine/gcbh.md)
-  - [getSimulinkBlockHandle](./nflow_engine/getSimulinkBlockHandle.md)
+  - [getNFlowBlockHandle](./nflow_engine/getNFlowBlockHandle.md)
   - [get_param](./nflow_engine/get_param.md)
   - [getfullname](./nflow_engine/getfullname.md)
   - [linmod](./nflow_engine/linmod.md)
@@ -3256,7 +3178,6 @@ Allan CORNET
   - [trim](./nflow_engine/trim.md)
 
 - [nflow_fmi](./nflow_fmi/README.md)
-
   - [fmiCoSimulate](./nflow_fmi/fmiCoSimulate.md)
   - [fmiInfo](./nflow_fmi/fmiInfo.md)
   - [fmiModelExchange](./nflow_fmi/fmiModelExchange.md)
@@ -3266,7 +3187,6 @@ Allan CORNET
   - [modelicaToFmu](./nflow_fmi/modelicaToFmu.md)
 
 - [nflow_gui](./nflow_gui/README.md)
-
   - [nflow](./nflow_gui/nflow.md)
   - [nflow_dashboard](./nflow_gui/nflow_dashboard.md)
   - [nflow_multirate](./nflow_gui/nflow_multirate.md)
@@ -3276,7 +3196,6 @@ Allan CORNET
   - [open_system](./nflow_gui/open_system.md)
 
 - [nmm_gui](./nmm_gui/README.md)
-
   - [nmm_gui](./nmm_gui/nmm_gui.md)
 
 - [compiler](./compiler/README.md)
@@ -3325,18 +3244,19 @@ Allan CORNET
 
 * [Changelogs](./changelogs/CHANGELOG.md)
 
-  - [Changelog v2.x.x](changelogs/CHANGELOG.md)
-  - [Changelog v1.x.x](changelogs/CHANGELOG-1.x.x.md)
-  - [Changelog v0.7.x](changelogs/CHANGELOG-0.7.x.md)
-  - [Changelog v0.6.x](changelogs/CHANGELOG-0.6.x.md)
-  - [Changelog v0.5.x](changelogs/CHANGELOG-0.5.x.md)
-  - [Changelog v0.4.x](changelogs/CHANGELOG-0.4.x.md)
-  - [Changelog v0.3.x](changelogs/CHANGELOG-0.3.x.md)
-  - [Changelog v0.2.x](changelogs/CHANGELOG-0.2.x.md)
-  - [Changelog v0.1.x](changelogs/CHANGELOG-0.1.x.md)
+    * [Changelog v2.x.x](changelogs/CHANGELOG.md)
+    * [Changelog v1.x.x](changelogs/CHANGELOG-1.x.x.md)
+    * [Changelog v0.7.x](changelogs/CHANGELOG-0.7.x.md)
+    * [Changelog v0.6.x](changelogs/CHANGELOG-0.6.x.md)
+    * [Changelog v0.5.x](changelogs/CHANGELOG-0.5.x.md)
+    * [Changelog v0.4.x](changelogs/CHANGELOG-0.4.x.md)
+    * [Changelog v0.3.x](changelogs/CHANGELOG-0.3.x.md)
+    * [Changelog v0.2.x](changelogs/CHANGELOG-0.2.x.md)
+    * [Changelog v0.1.x](changelogs/CHANGELOG-0.1.x.md)
+
 
 * [License](./license/license.md)
 
-  - [License](license/license.md)
-  - [LGPL v3.0](license/lgpl-3.0.md)
-  - [GPL v3.0](license/gpl-3.0.md)
+    * [License](license/license.md)
+    * [LGPL v3.0](license/lgpl-3.0.md)
+    * [GPL v3.0](license/gpl-3.0.md)

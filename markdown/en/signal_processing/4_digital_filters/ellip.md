@@ -22,9 +22,12 @@ Elliptic digital filter design.
 
 ## 📄 Description
 
+
 <b>ellip</b> designs lowpass, highpass, bandpass, and bandstop elliptic digital filters.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Elliptic digital filter design.
 
 ```
 
+
 ## 🔗 See also
 
-[ellipord](../../signal_processing/ellipord.md), [cheby2](../../signal_processing/cheby2.md).
+[ellipord](../../signal_processing/4_digital_filters/ellipord.md), [cheby2](../../signal_processing/4_digital_filters/cheby2.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

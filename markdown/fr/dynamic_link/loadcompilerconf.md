@@ -14,11 +14,13 @@ Charger la configuration du compilateur
 
 ## 📄 Description
 
-<b>loadcompilerconf</b> renvoie true si un compilateur a été configuré auparavant avec<b>configuremsvc</b> ou <b>configuremingw</b>.
 
-<b>loadcompilerconf</b> renvoie toujours false sur les autres plateformes et 'unix' comme compilateur.
+<b>loadcompilerconf</b> renvoie true si un compilateur a été configuré auparavant avec<b>configuremsvc</b> ou <b>configuremingw</b>. 
+
+<b>loadcompilerconf</b> renvoie toujours false sur les autres plateformes et 'unix' comme compilateur. 
 
 <b>loadcompilerconf</b> est appelé au démarrage de Nelson.
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +28,8 @@ Charger la configuration du compilateur
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

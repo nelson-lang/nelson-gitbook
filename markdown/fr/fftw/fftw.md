@@ -23,9 +23,12 @@ fonction pour déterminer l'algorithme FFT.
 
 ## 📄 Description
 
+
 La méthode par défaut est 'estimate'.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 w = fftw('dwisdom')
@@ -35,14 +38,15 @@ fftw('dwisdom', w)
 tic; fft(M); toc
 ```
 
+
 ## 🔗 Voir aussi
 
 [fft](../fftw/fft.md), [ifft](../fftw/ifft.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

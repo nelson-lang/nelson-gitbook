@@ -21,7 +21,8 @@ Check that a logical condition is true.
 
 ## 📄 Description
 
-This is the method-style form of assert_istrue.
+
+This is the method-style form of assert\_istrue. 
 
 With no output, a failed assertion raises an error. With outputs, the function returns false and the failure message.
 
@@ -32,12 +33,12 @@ Passing condition
 ```matlab
 asserts.istrue(3 > 2);
 ```
-
 Capture a failure
 
 ```matlab
 [res, msg] = asserts.istrue(false, 'condition failed');
 ```
+
 
 ## 🔗 See also
 
@@ -45,7 +46,7 @@ Capture a failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

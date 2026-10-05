@@ -1,6 +1,10 @@
 # Module GUI
 
+
+    
 Le module GUI fournit des fonctions pour crÃ©er et interagir avec les composants d'interface graphique, les boÃ®tes de dialogue et les fenÃªtres d'application.
+
+  
 
 ## Functions
 
@@ -32,3 +36,4 @@ Le module GUI fournit des fonctions pour crÃ©er et interagir avec les composan
 - [waitbar](waitbar.md) - Cree ou met a jour une figure de progression.
 - [warndlg](warndlg.md) - Cree une boite de dialogue d'avertissement.
 - [workspace](workspace.md) - Explorateur d'espace de travail
+

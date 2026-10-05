@@ -12,13 +12,17 @@ Returns a newline character.
 
 ## 📄 Description
 
+
 <b>newline</b> returns a newline character.
 
 ## 💡 Example
 
+
+
 ```matlab
 double(newline)
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ double(newline)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

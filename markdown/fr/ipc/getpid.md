@@ -18,13 +18,16 @@ Obtenir l'identifiant de processus Nelson.
 
 ## 📄 Description
 
-<b>p = getpid()</b> renvoie l'identifiant du processus Nelson courant en cours d'exécution sur l'ordinateur.
 
-<b>v = getpid('available')</b> renvoie la liste des identifiants des processus Nelson (même architecture) en cours d'exécution pour l'utilisateur courant.
+<b>p = getpid()</b> renvoie l'identifiant du processus Nelson courant en cours d'exécution sur l'ordinateur. 
+
+<b>v = getpid('available')</b> renvoie la liste des identifiants des processus Nelson (même architecture) en cours d'exécution pour l'utilisateur courant. 
 
 win64 et win32 sont deux architectures différentes mais elles peuvent s'exécuter en même temps.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = getpid()
@@ -40,14 +43,15 @@ sleep(5) % detached process need to wait to see available
 getpid('available')
 ```
 
+
 ## 🔗 Voir aussi
 
 [unix](../os_functions/unix.md), [ipc](../ipc/ipc.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

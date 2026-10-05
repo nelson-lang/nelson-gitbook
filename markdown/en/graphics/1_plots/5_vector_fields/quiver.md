@@ -28,9 +28,10 @@
 
 ## 📄 Description
 
-<b>quiver(U,V)</b> plots arrows with vector components <b>U</b> and <b>V</b> on a regular grid.
 
-<b>quiver(X,Y,U,V)</b> plots arrows at the coordinates specified by <b>X</b> and <b>Y</b>.
+<b>quiver(U,V)</b> plots arrows with vector components <b>U</b> and <b>V</b> on a regular grid. 
+
+<b>quiver(X,Y,U,V)</b> plots arrows at the coordinates specified by <b>X</b> and <b>Y</b>. 
 
 See [quiver properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.quiver.properties.md) for the complete property list.
 
@@ -45,7 +46,6 @@ V = X;
 h = quiver(X, Y, U, V);
 axis equal
 ```
-
 <img src="quiver_1.svg" align="middle"/>
 Style the arrows and disable automatic scaling.
 
@@ -57,18 +57,18 @@ v = [0 1 0 -1 0];
 h = quiver(x, y, u, v, 0, 'r--o', 'LineWidth', 1.5);
 h.ShowArrowHead = 'on';
 ```
-
 <img src="quiver_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[quiver properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.quiver.properties.md), [meshgrid](../../../elementary_functions/meshgrid.md), [quiver3](../../../graphics/1_plots/5_vector_fields/quiver3.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
+[quiver properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.quiver.properties.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md), [quiver3](../../../graphics/1_plots/5_vector_fields/quiver3.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
-| 1.0.0   | initial version               |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | native quiver graphics object |
 
 <!--

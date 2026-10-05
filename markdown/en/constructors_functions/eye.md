@@ -18,26 +18,33 @@ Creates an identity matrix.
 
 ## 📄 Description
 
+
 <b>eye</b> returns an identity matrix.
 
 ## 💡 Examples
+
+
 
 ```matlab
 eye(3)
 ```
 
+
 ```matlab
 eye(3,1,3,'single')
 ```
+
 
 ```matlab
 A = single([3 3])
 B = eye(2,4,'like', A)
 ```
 
+
 ```matlab
 A = eye(0, 4)
 ```
+
 
 ## 🔗 See also
 
@@ -45,7 +52,7 @@ A = eye(0, 4)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

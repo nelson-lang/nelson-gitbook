@@ -20,15 +20,18 @@ Trier les lignes d'un tableau.
 
 ## 📄 Description
 
-Les lignes dont les clés sélectionnées sont égales conservent leur ordre initial, y compris pour les clés textuelles en cellule triées par ordre décroissant.
 
-sortrows trie les lignes d'un tableau en utilisant une ou plusieurs colonnes comme cles.
+Les lignes dont les clés sélectionnées sont égales conservent leur ordre initial, y compris pour les clés textuelles en cellule triées par ordre décroissant. 
+
+sortrows trie les lignes d'un tableau en utilisant une ou plusieurs colonnes comme cles. 
 
 Les indices de colonnes negatifs demandent un ordre decroissant pour la cle correspondante.
 
 ## Fonction(s) utilisée(s)
 
+
     sort
+  
 
 ## 💡 Exemple
 
@@ -39,14 +42,15 @@ A = [2 3; 1 4; 2 1];
 [B, index] = sortrows(A, [1 -2])
 ```
 
+
 ## 🔗 Voir aussi
 
 [sort](../../data_analysis/sort.md), [issorted](../../data_analysis/issorted.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

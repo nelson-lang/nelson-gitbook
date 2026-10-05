@@ -19,7 +19,8 @@ Convert RGB color values to HSV color values.
 
 ## 📄 Description
 
-Convert RGB color values to HSV color values. RGB images must be real double, single, uint8, or uint16 arrays. Floating-point RGB image values are converted without clipping. Empty RGB images preserve their size.
+
+Convert RGB color values to HSV color values. RGB images must be real double, single, uint8, or uint16 arrays. Floating-point RGB image values are converted without clipping. Empty RGB images preserve their size. 
 
 A double RGB colormap with values in [0, 1] is converted row by row.
 
@@ -35,16 +36,16 @@ HSV=rgb2hsv(RGB);
 figure; subplot(1,2,1); image(RGB); title('RGB');
 subplot(1,2,2); imagesc(HSV(:,:,1)); t=linspace(0,1,64)'; colormap([t zeros(64,1) 1-t]); title('Hue');
 ```
-
 <img src="rgb2hsv_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[hsv2rgb](../../../image_processing/hsv2rgb.md), [rgb2ycbcr](../../../image_processing/rgb2ycbcr.md).
+[hsv2rgb](../../../image_processing/1_image_basics/1_image_types_color/hsv2rgb.md), [rgb2ycbcr](../../../image_processing/1_image_basics/1_image_types_color/rgb2ycbcr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

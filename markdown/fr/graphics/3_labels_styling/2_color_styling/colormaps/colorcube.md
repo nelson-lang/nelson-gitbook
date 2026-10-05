@@ -17,17 +17,20 @@ Tableau de colormap RGB en cube ameliore.
 
 ## 📄 Description
 
+
 <b>colorcube</b> retourne une colormap construite avec un cube RGB, des rampes de couleurs pures, le noir et des niveaux de gris.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('colorcube');
 ```
-
 <img src="colorcube.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,9 +38,9 @@ colormap('colorcube');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -20,21 +20,25 @@ Singular value response of an LTI model.
 
 ## 📄 Description
 
+
 <b>sigma</b> computes singular values of the frequency response.
 
 ## 💡 Example
+
+
 
 ```matlab
 sys = tf(2, [1 1]); [sv, w] = sigma(sys, [1 2 4])
 ```
 
+
 ## 🔗 See also
 
-[freqresp](../../control_system/freqresp.md), [bode](../../control_system/bode.md).
+[freqresp](../../control_system/3_linear_analysis/freqresp.md), [bode](../../control_system/3_linear_analysis/bode.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

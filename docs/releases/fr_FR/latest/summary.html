@@ -666,7 +666,7 @@
     <p>Le module Types fournit des outils pour gérer et inspecter les types de données dans Nelson.</p>
     <p>Il permet aux utilisateurs d'interroger la nature des variables, de distinguer les types numériques, logiques, de chaîne et d'objet, et de travailler avec des types spécialisés tels que les tableaux creux (sparse) ou entiers.</p>
     <p>Le module prend également en charge la création d'objets et la validation des noms de variables, contribuant à garantir la sécurité des types et la cohérence des scripts et fonctions.</p>
-    <p>Pour le code C++ d'extension et d'intégration, voir <a href="../types/cpp_api.html">API C++ des valeurs</a>.</p>
+    <p>Pour le code C++ d'extension et d'intégration, voir <a href="./types/cpp_api.html">API C++ des valeurs</a>.</p>
   </div>
 <ul class="toc-list">
 <li class="toc-entry">
@@ -2712,6 +2712,9 @@
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./special_functions/makima.html" target="contentFrame">makima</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interpolation cubique d'Akima modifiee.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./special_functions/pchip.html" target="contentFrame">pchip</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interpolation polynomiale cubique de Hermite par morceaux (PCHIP).</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./special_functions/peaks.html" target="contentFrame">peaks</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction peaks</div>
@@ -9149,6 +9152,9 @@
 <a class="toc-link" href="./help_tools/buildhelpmd.html" target="contentFrame">buildhelpmd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère l'aide des modules de Nelson pour GitBook.</div>
 </li>
 <li class="toc-entry">
+<a class="toc-link" href="./help_tools/buildhelptypst.html" target="contentFrame">buildhelptypst</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère l'aide des modules de Nelson en sources Typst.</div>
+</li>
+<li class="toc-entry">
 <a class="toc-link" href="./help_tools/buildhelpweb.html" target="contentFrame">buildhelpweb</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère l'aide des modules de Nelson pour un site web.</div>
 </li>
 <li class="toc-entry">
@@ -9188,13 +9194,13 @@
 <a class="toc-link" href="./help_tools/xmldocrenderimages.html" target="contentFrame">xmldocrenderimages</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère les images d'exemple des fichiers d'aide de Nelson.</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="./help_tools/xmldoctohelp.html" target="contentFrame">xmldoctohelp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit des fichiers d'aide XML Nelson au format Nelson.</div>
-</li>
-<li class="toc-entry">
 <a class="toc-link" href="./help_tools/xmldoctohtml.html" target="contentFrame">xmldoctohtml</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit des fichiers d'aide XML Nelson en HTML.</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/xmldoctomd.html" target="contentFrame">xmldoctomd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit des fichiers d'aide XML Nelson au format Markdown.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./help_tools/xmldoctotypst.html" target="contentFrame">xmldoctotypst</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit des fichiers d'aide XML Nelson en sources Typst.</div>
 </li>
 </ul>
 </div>
@@ -10366,7 +10372,7 @@
 <a class="toc-link" href="./nflow_engine/gcbh.html" target="contentFrame">gcbh</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le handle du bloc courant.</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="./nflow_engine/getSimulinkBlockHandle.html" target="contentFrame">getSimulinkBlockHandle</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le handle d'un bloc par chemin, ou -1 si introuvable.</div>
+<a class="toc-link" href="./nflow_engine/getNFlowBlockHandle.html" target="contentFrame">getNFlowBlockHandle</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le handle d'un bloc par chemin, ou -1 si introuvable.</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./nflow_engine/get_param.html" target="contentFrame">get_param</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interroge un paramètre de modèle ou de bloc.</div>

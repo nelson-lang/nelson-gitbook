@@ -16,6 +16,7 @@ Convert number to binary representation.
 
 ## 📄 Description
 
+
 <b>num2bin</b> returns a char array giving the literal bit representation of a number.
 
 ## Used function(s)
@@ -28,18 +29,21 @@ http://www.oxfordmathcenter.com/drupal7/node/43
 
 ## 💡 Example
 
+
+
 ```matlab
 X = [65535 128; 1 0]
 Y = num2bin(X)
 ```
 
+
 ## 🔗 See also
 
-[bin2num](../../elementary_functions/bin2num.md).
+[bin2num](../../elementary_functions/5_base_conversions/bin2num.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

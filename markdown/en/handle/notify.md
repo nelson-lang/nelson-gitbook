@@ -15,7 +15,8 @@ Notifies listeners of a classdef event.
 
 ## 📄 Description
 
-<b>notify</b> runs listener callbacks registered for a classdef handle object event.
+
+<b>notify</b> runs listener callbacks registered for a classdef handle object event. 
 
 Callbacks receive the source object and the supplied event data.
 
@@ -35,14 +36,15 @@ delete(lh);
 delete(counter)
 ```
 
+
 ## 🔗 See also
 
 [addlistener](../handle/addlistener.md), [events](../handle/events.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                            |
-| ------- | ----------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | classdef event notification support added |
 
 <!--

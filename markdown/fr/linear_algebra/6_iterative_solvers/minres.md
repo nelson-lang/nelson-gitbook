@@ -28,17 +28,20 @@ Methode du residu minimal pour systemes sparse symetriques ou hermitiens.
 
 ## 📄 Description
 
-<b>minres</b> resout <b>A \* x = b</b> avec une methode Krylov du residu minimal pour matrices sparse symetriques ou hermitiennes.
 
-La methode est utile pour les systemes symetriques ou hermitiens indefinis.
+<b>minres</b> resout <b>A \* x = b</b> avec une methode Krylov du residu minimal pour matrices sparse symetriques ou hermitiennes. 
 
-Les matrices sparse single et sparse single complexes sont prises en charge.
+La methode est utile pour les systemes symetriques ou hermitiens indefinis. 
 
-Les preconditionneurs peuvent etre des vecteurs diagonaux, des facteurs triangulaires sparse, des matrices carrees sparse ou pleines, ou des handles de fonction retournant des vecteurs. Ils doivent conserver un probleme effectif symetrique ou hermitien.
+Les matrices sparse single et sparse single complexes sont prises en charge. 
+
+Les preconditionneurs peuvent etre des vecteurs diagonaux, des facteurs triangulaires sparse, des matrices carrees sparse ou pleines, ou des handles de fonction retournant des vecteurs. Ils doivent conserver un probleme effectif symetrique ou hermitien. 
 
 Si <b>M1</b>, <b>M2</b> ou <b>x0</b> est complexe, le calcul utilise le chemin complexe adapte.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = sparse([0 1; 1 0]);
@@ -46,7 +49,6 @@ b = [1; 2];
 [x, flag, relres, iter] = minres(A, b, 1e-12, 20)
 
 ```
-
 Resolution avec preconditionneur diagonal dense.
 
 ```matlab
@@ -55,7 +57,6 @@ b = [15; 10; 10];
 M = diag(diag(full(A)));
 [x, flag] = minres(A, b, 1e-12, 20, M)
 ```
-
 Resolution avec preconditionneurs matriciels separes.
 
 ```matlab
@@ -65,7 +66,6 @@ M1 = diag([2 2 1]);
 M2 = diag([2 2 3]);
 [x, flag, relres, iter] = minres(A, b, 1e-12, 20, M1, M2)
 ```
-
 Resolution sparse single complexe.
 
 ```matlab
@@ -74,15 +74,16 @@ b = single([1; 2]);
 [x, flag] = minres(A, b, 1e-6, 20)
 ```
 
+
 ## 🔗 Voir aussi
 
-[pcg](../../linear_algebra/pcg.md), [gmres](../../linear_algebra/gmres.md).
+[pcg](../../linear_algebra/6_iterative_solvers/pcg.md), [gmres](../../linear_algebra/6_iterative_solvers/gmres.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                          |
-| ------- | ------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | version initiale                                                                                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | ajout de la couverture single, single complexe, preconditionneur, vecteur initial et rupture numerique. |
 
 <!--

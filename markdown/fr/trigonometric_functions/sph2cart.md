@@ -19,10 +19,11 @@ Transforme des coordonnées sphériques en coordonnées cartésiennes.
 - z - une valeur numérique (double ou simple réel) : Coordonnées cartésiennes
 
 ## 📄 Description
-
 <b>sph2cart</b> transforms Cartesian to spherical coordinates.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 azimut = [0.7854, 0.7854, -0.7854, -0.7854; 2.3562, 2.3562, -2.3562, -2.3562];
@@ -31,14 +32,15 @@ radius = 1.7321 * ones(2, 4);
 [x, y, z] = sph2cart(azimut, elevation, radius)
 ```
 
+
 ## 🔗 Voir aussi
 
 [cart2sph](../trigonometric_functions/cart2sph.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

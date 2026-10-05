@@ -23,14 +23,17 @@ K-nearest neighbor classification model.
 
 ## 📄 Description
 
-ClassificationKNN stores a nearest-neighbor classifier with its training predictors, class labels, distance metric, and neighbor count.
+
+ClassificationKNN stores a nearest-neighbor classifier with its training predictors, class labels, distance metric, and neighbor count. 
 
 Create this object with fitcknn. Use predict to classify observations from their nearest neighbors.
 
 ## Used function(s)
 
+
     fitcknn
     predict
+  
 
 ## 💡 Example
 
@@ -43,13 +46,14 @@ mdl = fitcknn(X, Y, 'NumNeighbors', 3);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitcknn](../../statistics/fitcknn.md).
+[predict](../../statistics/5_regression/predict.md), [fitcknn](../../statistics/6_classification/fitcknn.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

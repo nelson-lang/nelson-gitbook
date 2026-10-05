@@ -13,25 +13,29 @@ Trace de probabilite.
 
 ## 📄 Description
 
-<b>probplot</b> cree un trace de probabilite pour des donnees d'echantillon.
+
+<b>probplot</b> cree un trace de probabilite pour des donnees d'echantillon. 
 
 La distribution par defaut est normale. Les noms de distribution pris en charge incluent normal, exponential, extreme value, half normal, lognormal, logistic, loglogistic, rayleigh et weibull. La valeur retournee contient les handles des lignes des points et, sauf avec noref, les lignes de reference.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = randn(100, 1);
 probplot(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[qqplot](../../statistics/qqplot.md), [ecdf](../../statistics/ecdf.md).
+[qqplot](../../statistics/1_descriptive_statistics_visualization/qqplot.md), [ecdf](../../statistics/1_descriptive_statistics_visualization/ecdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

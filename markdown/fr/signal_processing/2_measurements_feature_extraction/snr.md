@@ -22,9 +22,12 @@ Rapport signal sur bruit.
 
 ## 📄 Description
 
+
 <b>snr</b> calcule un rapport signal sur bruit direct lorsqu'un vecteur de bruit est fourni. Avec une frequence d'echantillonnage scalaire, il estime le SNR sinusoidal depuis le spectre.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ Rapport signal sur bruit.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[thd](../../signal_processing/thd.md).
+[thd](../../signal_processing/2_measurements_feature_extraction/thd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

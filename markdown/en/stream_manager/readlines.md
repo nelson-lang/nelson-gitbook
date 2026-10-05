@@ -22,11 +22,12 @@ Read lines of a text file as a string array.
 
 ## 📄 Description
 
-<b>S = readlines(filename)</b> reads the text file <b>filename</b> and returns its lines as a column string array. The line terminators are not part of the lines.
 
-By default, a line ends with a line feed, a carriage return or a carriage return followed by a line feed. When the file ends with a line terminator, the last element of <b>S</b> is an empty string. An empty file returns a 1-by-1 empty string.
+<b>S = readlines(filename)</b> reads the text file <b>filename</b> and returns its lines as a column string array. The line terminators are not part of the lines. 
 
-With <b>EmptyLineRule</b> set to 'skip', empty lines are removed. With 'error', an error is raised on the first empty line, giving its row. In both cases, the empty text after a final line terminator is ignored.
+By default, a line ends with a line feed, a carriage return or a carriage return followed by a line feed. When the file ends with a line terminator, the last element of <b>S</b> is an empty string. An empty file returns a 1-by-1 empty string. 
+
+With <b>EmptyLineRule</b> set to 'skip', empty lines are removed. With 'error', an error is raised on the first empty line, giving its row. In both cases, the empty text after a final line terminator is ignored. 
 
 A UTF-8 byte order mark at the beginning of the file is not returned.
 
@@ -42,13 +43,14 @@ S = readlines(filename, 'EmptyLineRule', 'skip')
 S = readlines(filename, 'WhitespaceRule', 'trim')
 ```
 
+
 ## 🔗 See also
 
 [fileread](../stream_manager/fileread.md), [fgetl](../stream_manager/fgetl.md), [filewrite](../stream_manager/filewrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

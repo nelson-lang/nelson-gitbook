@@ -36,27 +36,29 @@ Fill missing values.
 
 ## 📄 Description
 
-<b>fillmissing</b> replaces missing values using the specified method, along the operating dimension dim.
 
-'previous' and 'next' copy the previous or next nonmissing value, 'nearest' the nearest one (the next one on a tie). 'linear', 'spline', 'pchip' and 'makima' interpolate the nonmissing values of the slice and extrapolate at its ends; they need at least two nonmissing values. 'movmean' and 'movmedian' use the mean or median of the nonmissing values in the window.
+<b>fillmissing</b> replaces missing values using the specified method, along the operating dimension dim. 
 
-'knn' compares whole observations: the rows of a matrix (dim = 1), its columns (dim = 2) or the rows of the data variables of a table. Each missing entry takes the mean of the values of the k nearest observations holding one, the distance being measured on the nonmissing coordinates of the observation; an observation missing one of them is not a neighbor, and ties keep the observation order. 'knn' supports double and single matrices ('Distance' as a function handle also accepts other numeric data) and does not support 'EndValues', 'MaxGap' and 'SamplePoints'.
+'previous' and 'next' copy the previous or next nonmissing value, 'nearest' the nearest one (the next one on a tie). 'linear', 'spline', 'pchip' and 'makima' interpolate the nonmissing values of the slice and extrapolate at its ends; they need at least two nonmissing values. 'movmean' and 'movmedian' use the mean or median of the nonmissing values in the window. 
 
-A fill constant or numeric 'EndValues' is a scalar or a vector with one value per slice (per data variable for a table).
+'knn' compares whole observations: the rows of a matrix (dim = 1), its columns (dim = 2) or the rows of the data variables of a table. Each missing entry takes the mean of the values of the k nearest observations holding one, the distance being measured on the nonmissing coordinates of the observation; an observation missing one of them is not a neighbor, and ties keep the observation order. 'knn' supports double and single matrices ('Distance' as a function handle also accepts other numeric data) and does not support 'EndValues', 'MaxGap' and 'SamplePoints'. 
 
-For a table or a timetable, dim is not supported: each data variable is filled along its rows, the row times of a timetable being the sample points. TF has one column per variable of B, true for the rows where the variable was filled.
+A fill constant or numeric 'EndValues' is a scalar or a vector with one value per slice (per data variable for a table). 
 
-'EndValues' and 'MaxGap' apply to every other method. TF is false for an entry filled with a missing value.
+For a table or a timetable, dim is not supported: each data variable is filled along its rows, the row times of a timetable being the sample points. TF has one column per variable of B, true for the rows where the variable was filled. 
+
+'EndValues' and 'MaxGap' apply to every other method. TF is false for an entry filled with a missing value. 
 
 The 'mean', 'median' and 'mode' methods fill each missing entry with the mean, median or mode of the nonmissing values of its slice along the operating dimension. They support numeric and logical data. A slice without any nonmissing value stays missing (except when 'EndValues' is a constant).
 
 ## 💡 Examples
 
+
+
 ```matlab
 T = table([1; NaN; 3], 'VariableNames', {'A'});
 R = fillmissing(T, 'constant', 0)
 ```
-
 Fill with the mean, median or mode of the nonmissing values
 
 ```matlab
@@ -65,7 +67,6 @@ B1 = fillmissing(A, 'mean')
 B2 = fillmissing(A, 'median')
 B3 = fillmissing(A, 'mode', 'EndValues', 'none')
 ```
-
 Fill along the rows of a matrix
 
 ```matlab
@@ -74,7 +75,6 @@ B1 = fillmissing(A, 'linear', 2)
 B2 = fillmissing(A, 'previous', 2)
 B3 = fillmissing(A, 'movmean', 3, 2)
 ```
-
 Fill from the nearest rows
 
 ```matlab
@@ -83,7 +83,6 @@ F1 = fillmissing(A, 'knn')
 F2 = fillmissing(A, 'knn', 2)
 F3 = fillmissing(A, 'knn', 'Distance', @(x, m) sum(abs(x(1, :) - x(2, :)), 'omitnan'))
 ```
-
 Timetable and duration sample points
 
 ```matlab
@@ -92,19 +91,20 @@ R = fillmissing(TT, 'linear')
 F = fillmissing([1 NaN 3 NaN NaN 9], 'linear', 'SamplePoints', hours(0:5), 'MaxGap', hours(2))
 ```
 
+
 ## 🔗 See also
 
 [rmmissing](../data_analysis/rmmissing.md), [standardizeMissing](../data_analysis/standardizeMissing.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                   |
-| ------- | -------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                  |
-| 2.0.0   | 'mean', 'median' and 'mode' fill methods.                                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
+| 2.0.0   | 'mean', 'median' and 'mode' fill methods. |
 | 2.0.0   | all fill methods operate along dim; 'spline', 'pchip' and 'makima' fill methods. |
-| 2.0.0   | 'knn' fill method and 'Distance' option.                                         |
-| 2.0.0   | timetables, datetime and duration sample points; argument validation.            |
+| 2.0.0   | 'knn' fill method and 'Distance' option. |
+| 2.0.0   | timetables, datetime and duration sample points; argument validation. |
 
 <!--
 ## 👤 Author

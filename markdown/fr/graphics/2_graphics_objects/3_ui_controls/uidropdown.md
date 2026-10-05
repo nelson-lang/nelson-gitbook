@@ -19,6 +19,7 @@ Crée une liste déroulante.
 
 ## 📄 Description
 
+
 <b>dd = uidropdown</b> crée une liste déroulante. <b>Items</b> contient les entrées affichées ; <b>ItemsData</b> associe optionnellement une valeur de données retournée par <b>Value</b>. <b>ValueIndex</b> est l'indice (base 1) de la sélection. <b>Editable</b> 'on' permet la saisie libre. Callback <b>ValueChangedFcn</b> (event : <b>Value</b>, <b>PreviousValue</b>, <b>Edited</b>, <b>ValueIndex</b>, <b>PreviousValueIndex</b>).
 
 ## 💡 Exemples
@@ -31,7 +32,6 @@ dd = uidropdown(f, 'Items', {'Small', 'Medium', 'Large'}, 'Position', [125 115 1
 dd.Value = 'Medium';
 drawnow();
 ```
-
 <img src="uidropdown_example.svg" align="middle"/>
 uidropdown
 
@@ -43,14 +43,15 @@ dd.Value = 2;
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

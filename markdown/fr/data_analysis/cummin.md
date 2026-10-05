@@ -18,14 +18,18 @@ Minimum cumulatif des elements d'un tableau.
 
 ## 📄 Description
 
+
 <b>cummin</b> renvoie les minimums cumulatifs selon la dimension choisie.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [3 1 4 2];
 R = cummin(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ R = cummin(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

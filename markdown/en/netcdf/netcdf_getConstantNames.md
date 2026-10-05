@@ -16,7 +16,8 @@ Return names of constants known by the netCDF module.
 
 ## 📄 Description
 
-netcdf.getConstantNames lists symbolic constants accepted by netcdf.getConstant.
+
+netcdf.getConstantNames lists symbolic constants accepted by netcdf.getConstant. 
 
 The list includes file modes, formats, datatypes, fill modes, storage modes, and common identifiers.
 
@@ -29,13 +30,14 @@ names = netcdf.getConstantNames();
 names(1)
 ```
 
+
 ## 🔗 See also
 
-[netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

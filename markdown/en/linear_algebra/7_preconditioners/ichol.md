@@ -18,27 +18,30 @@ Incomplete Cholesky factorization.
 
 ## 📄 Description
 
-<b>ichol</b> computes a sparse lower triangular factor <b>L</b> suitable for use as a preconditioner.
 
-The input matrix should be symmetric positive definite for real data or Hermitian positive definite for complex data.
+<b>ichol</b> computes a sparse lower triangular factor <b>L</b> suitable for use as a preconditioner. 
 
-<b>opts.type</b> can be 'nofill' or 'ict'. The default is 'nofill'.
+The input matrix should be symmetric positive definite for real data or Hermitian positive definite for complex data. 
 
-<b>opts.droptol</b> is a non-negative scalar used by the 'ict' mode. The default is <b>0</b>. Entries whose magnitude is below the drop tolerance relative to the column scale are removed from the incomplete factor.
+<b>opts.type</b> can be 'nofill' or 'ict'. The default is 'nofill'. 
 
-<b>opts.diagcomp</b> applies a relative diagonal compensation before factorization. This can make borderline positive definite or difficult Hermitian matrices usable as preconditioners without changing the sparse input matrix.
+<b>opts.droptol</b> is a non-negative scalar used by the 'ict' mode. The default is <b>0</b>. Entries whose magnitude is below the drop tolerance relative to the column scale are removed from the incomplete factor. 
 
-<b>opts.michol</b> can be 'on' or 'off'. In 'ict' mode, the modified variant moves dropped structural entries onto the diagonal so row sums are better preserved.
+<b>opts.diagcomp</b> applies a relative diagonal compensation before factorization. This can make borderline positive definite or difficult Hermitian matrices usable as preconditioners without changing the sparse input matrix. 
 
-<b>opts.shape</b> can be 'lower' or 'upper'. The default is 'lower'.
+<b>opts.michol</b> can be 'on' or 'off'. In 'ict' mode, the modified variant moves dropped structural entries onto the diagonal so row sums are better preserved. 
 
-Text option values such as <b>opts.type</b>, <b>opts.michol</b>, and <b>opts.shape</b> can be character row vectors or string scalars.
+<b>opts.shape</b> can be 'lower' or 'upper'. The default is 'lower'. 
 
-Double, single, complex double, and complex single sparse matrices are supported. The output factor keeps the input numeric class.
+Text option values such as <b>opts.type</b>, <b>opts.michol</b>, and <b>opts.shape</b> can be character row vectors or string scalars. 
+
+Double, single, complex double, and complex single sparse matrices are supported. The output factor keeps the input numeric class. 
 
 The factor can be used directly as a preconditioner for <b>pcg</b>, for example <b>pcg(A, b, tol, maxit, L, L')</b>.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = sparse([4 -1 0; -1 4 -1; 0 -1 3]);
@@ -46,7 +49,6 @@ L = ichol(A)
 full(L * L')
 
 ```
-
 ICT with dropping.
 
 ```matlab
@@ -57,12 +59,14 @@ L = ichol(A, opts)
 
 ```
 
+
 ```matlab
 A = sparse([4 -1 0; -1 4 -1; 0 -1 3]);
 opts.shape = 'upper';
 R = ichol(A, opts)
 
 ```
+
 
 ```matlab
 A = sparse(single([4 1 + 1i; 1 - 1i 3]));
@@ -73,7 +77,6 @@ b = single([1 + 2i; 3 - 1i]);
 [x, flag] = pcg(A, b, 1e-6, 20, L, L')
 
 ```
-
 Diagonal compensation for a difficult sparse Hermitian matrix.
 
 ```matlab
@@ -84,15 +87,16 @@ full(L * L')
 
 ```
 
+
 ## 🔗 See also
 
-[pcg](../../linear_algebra/pcg.md), [chol](../../linear_algebra/chol.md).
+[pcg](../../linear_algebra/6_iterative_solvers/pcg.md), [chol](../../linear_algebra/2_decompositions/chol.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                           |
-| ------- | -------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | added single and complex single ict, diagcomp, shape, string scalar options, and preconditioner coverage |
 
 <!--

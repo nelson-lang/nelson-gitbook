@@ -16,7 +16,8 @@ Renvoie true si une variable est un objet.
 
 ## 📄 Description
 
-<b>isobject</b> renvoie un logique 1 si <b>var</b> est un objet Nelson, et 0 sinon.
+
+<b>isobject</b> renvoie un logique 1 si <b>var</b> est un objet Nelson, et 0 sinon. 
 
 Les objets valeur classdef et les objets handle classdef sont indiques comme objets.
 
@@ -38,15 +39,16 @@ isHandleObject = isobject(h)
 delete(h)
 ```
 
+
 ## 🔗 Voir aussi
 
 [isa](../types/isa.md), [ishandle](../types/ishandle.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                         |
-| ------- | ------------------------------------------------------ |
-| 1.0.0   | version initiale                                       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | support des objets classdef valeur et handle documente |
 
 <!--

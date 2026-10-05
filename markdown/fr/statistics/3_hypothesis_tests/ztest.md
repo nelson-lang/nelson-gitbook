@@ -28,11 +28,14 @@ Test z pour une moyenne avec ecart type connu
 
 ## 📄 Description
 
-<b>ztest</b> effectue un test z le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie.
+
+<b>ztest</b> effectue un test z le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie. 
 
 Les valeurs NaN sont ignorees dans chaque tranche testee.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [72 75 77 70 74 76];
@@ -40,14 +43,15 @@ x = [72 75 77 70 74 76];
 [h2, p2] = ztest(x, 72, 10, 'Tail', 'right');
 ```
 
+
 ## 🔗 Voir aussi
 
-[ttest](../../statistics/ttest.md), [normcdf](../../statistics/normcdf.md), [norminv](../../statistics/norminv.md).
+[ttest](../../statistics/3_hypothesis_tests/ttest.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md), [norminv](../../statistics/2_probability_distributions/norminv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,7 +20,8 @@ Ajoute une legende de taille de bulles.
 
 ## 📄 Description
 
-<b>bubblelegend</b> cree un objet graphique <b>bubblelegend</b>.
+
+<b>bubblelegend</b> cree un objet graphique <b>bubblelegend</b>. 
 
 Voir [proprietes de bubblelegend](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.bubblelegend.properties.md) pour la liste complete des proprietes.
 
@@ -34,13 +35,12 @@ bubblechart(1:3, [2 4 6], [10 100 1000]);
 bubblesize([5 30]);
 bubblelegend('Population', 'Location', 'eastoutside');
 ```
-
 <img src="bubblelegend_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
 [proprietes de bubblelegend](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.bubblelegend.properties.md), [bubblechart](../../../graphics/1_plots/4_data_distribution_plots/bubblechart.md), [bubblesize](../../../graphics/1_plots/4_data_distribution_plots/bubblesize.md).
-
 <!--
 ## 👤 Auteur
 

@@ -17,28 +17,32 @@ Convert data type without changing underlying data.
 
 ## 📄 Description
 
-<b>typecast</b> reinterprets the bytes of <b>X</b> as the numeric class <b>type</b> without changing the underlying byte pattern.
 
-Unlike <b>cast</b>, the numeric values are not converted: only the class interpretation of the same memory changes. The number of bytes of the input must be a whole multiple of the destination class size.
+<b>typecast</b> reinterprets the bytes of <b>X</b> as the numeric class <b>type</b> without changing the underlying byte pattern. 
+
+Unlike <b>cast</b>, the numeric values are not converted: only the class interpretation of the same memory changes. The number of bytes of the input must be a whole multiple of the destination class size. 
 
 A column vector yields a column vector, otherwise the result is a row vector.
 
 ## 💡 Example
+
+
 
 ```matlab
 Y = typecast(single(1), 'uint32')
 Z = typecast(uint32(1065353216), 'single')
 ```
 
+
 ## 🔗 See also
 
-[cast](../../elementary_functions/cast.md), [swapbytes](../../elementary_functions/swapbytes.md).
+[cast](../../elementary_functions/5_base_conversions/cast.md), [swapbytes](../../elementary_functions/5_base_conversions/swapbytes.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.14.0  | initial version |
+| 1.14.0   | initial version |
 
 <!--
 ## 👤 Author

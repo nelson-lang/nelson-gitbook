@@ -21,7 +21,8 @@ Calcul de matrice de contours
 
 ## 📄 Description
 
-<b>contourc</b> calcule la matrice de contours utilisee par les fonctions de trace, sans creer de figure, d'axes ou d'objet graphique.
+
+<b>contourc</b> calcule la matrice de contours utilisee par les fonctions de trace, sans creer de figure, d'axes ou d'objet graphique. 
 
 Chaque segment commence par une colonne d'en-tete. La premiere ligne contient le niveau et la deuxieme le nombre de points. Les colonnes suivantes contiennent les coordonnees x et y.
 
@@ -34,15 +35,16 @@ Z = peaks(20);
 M = contourc(Z, 5)
 ```
 
+
 ## 🔗 Voir aussi
 
 [contour](../../../graphics/1_plots/3_contour_plots/contour.md), [contourf](../../../graphics/1_plots/3_contour_plots/contourf.md), [contour3](../../../graphics/1_plots/3_contour_plots/contour3.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

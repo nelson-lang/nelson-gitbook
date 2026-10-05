@@ -24,22 +24,26 @@ Gamma parameter estimates
 
 ## 📄 Description
 
+
 <b>gamfit</b> estimates the parameters of the gamma distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [phat, pci] = gamfit(x);
 ```
 
+
 ## 🔗 See also
 
-[gamlike](../../statistics/gamlike.md), [gampdf](../../statistics/gampdf.md), [gamcdf](../../statistics/gamcdf.md).
+[gamlike](../../statistics/2_probability_distributions/gamlike.md), [gampdf](../../statistics/2_probability_distributions/gampdf.md), [gamcdf](../../statistics/2_probability_distributions/gamcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

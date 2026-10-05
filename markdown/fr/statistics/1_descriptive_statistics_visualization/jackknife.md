@@ -10,13 +10,16 @@ Statistiques jackknife.
 
 ## 📄 Description
 
+
 <b>jackknife</b> evalue une fonction sur des echantillons obtenus en supprimant une observation.
 
 ## Fonction(s) utilisée(s)
 
+
     bootstrp
     bootci
     statset
+  
 
 ## 💡 Exemples
 
@@ -26,7 +29,6 @@ Calculer les estimations leave-one-out de la moyenne.
 x = (1:5)';
 jackstat = jackknife(@mean, x)
 ```
-
 Retourner plusieurs statistiques pour chaque echantillon jackknife.
 
 ```matlab

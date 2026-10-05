@@ -25,11 +25,14 @@ Inverse de la fonction de repartition normale
 
 ## 📄 Description
 
-<b>norminv</b> evalue les quantiles de la loi normale.
+
+<b>norminv</b> evalue les quantiles de la loi normale. 
 
 Les probabilites hors de [0,1] retournent NaN. Les probabilites 0 et 1 retournent les bornes infinies.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
@@ -37,14 +40,15 @@ x = norminv(p);
 [x, xLo, xUp] = norminv(0.5, 0, 1, [0.04 0; 0 0.01]);
 ```
 
+
 ## 🔗 Voir aussi
 
-[normcdf](../../statistics/normcdf.md), [normrnd](../../statistics/normrnd.md).
+[normcdf](../../statistics/2_probability_distributions/normcdf.md), [normrnd](../../statistics/2_probability_distributions/normrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

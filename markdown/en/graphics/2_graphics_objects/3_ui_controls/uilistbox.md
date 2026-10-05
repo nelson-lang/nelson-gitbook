@@ -19,6 +19,7 @@ Create list box component.
 
 ## 📄 Description
 
+
 <b>lb = uilistbox</b> creates a list box. <b>Items</b>/<b>ItemsData</b> follow the drop-down mapping rules; <b>Multiselect</b> 'on' allows multiple selection (cell <b>Value</b>). Callback <b>ValueChangedFcn</b> (event data: <b>Value</b>, <b>PreviousValue</b>, <b>ValueIndex</b>, <b>PreviousValueIndex</b>).
 
 ## 💡 Examples
@@ -31,7 +32,6 @@ lb = uilistbox(f, 'Items', {'Option 1', 'Option 2', 'Option 3'}, 'Position', [13
 lb.Value = 'Option 2';
 drawnow();
 ```
-
 <img src="uilistbox_example.svg" align="middle"/>
 uilistbox
 
@@ -43,13 +43,14 @@ lb.Value = {'Item 1', 'Item 3'};
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

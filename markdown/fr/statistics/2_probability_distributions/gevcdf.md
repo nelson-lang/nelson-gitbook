@@ -20,23 +20,27 @@ Fonction de repartition de loi extreme generalisee
 
 ## 📄 Description
 
+
 <b>gevcdf</b> calcule les probabilites de queue inferieure par defaut et de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-2 -1 0 1 2];
 p = gevcdf(x, 0.2, 1, 0);
 ```
 
+
 ## 🔗 Voir aussi
 
-[gevpdf](../../statistics/gevpdf.md), [gevinv](../../statistics/gevinv.md), [gevrnd](../../statistics/gevrnd.md), [gevstat](../../statistics/gevstat.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevinv](../../statistics/2_probability_distributions/gevinv.md), [gevrnd](../../statistics/2_probability_distributions/gevrnd.md), [gevstat](../../statistics/2_probability_distributions/gevstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

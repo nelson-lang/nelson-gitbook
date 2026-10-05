@@ -28,33 +28,34 @@ Redimensionne une image par échelle ou taille de sortie
 
 ## 📄 Description
 
-La fonction <b>imresize</b> redimensionne une image selon un facteur d'échelle ou une taille de sortie spécifiée. Elle prend en charge les images en niveaux de gris, RGB, binaires, ainsi que les images indexées avec colormap.
 
-Pour les images numériques et logiques, la méthode d'interpolation par défaut est 'bicubic'.
+La fonction <b>imresize</b> redimensionne une image selon un facteur d'échelle ou une taille de sortie spécifiée. Elle prend en charge les images en niveaux de gris, RGB, binaires, ainsi que les images indexées avec colormap. 
 
-Lors du redimensionnement, imresize applique le facteur d'échelle aux dimensions ligne et colonne sauf si un vecteur à deux éléments est spécifié. Si la taille de sortie n'est pas entière, imresize arrondit vers le haut en utilisant la fonction ceil.
+Pour les images numériques et logiques, la méthode d'interpolation par défaut est 'bicubic'. 
 
-Pour les images indexées, imresize retourne par défaut l'image redimensionnée et une colormap optimisée. La colormap originale peut être retournée en utilisant l'argument nom-valeur 'Colormap'.
+Lors du redimensionnement, imresize applique le facteur d'échelle aux dimensions ligne et colonne sauf si un vecteur à deux éléments est spécifié. Si la taille de sortie n'est pas entière, imresize arrondit vers le haut en utilisant la fonction ceil. 
 
-Les méthodes d'interpolation prises en charge incluent :
+Pour les images indexées, imresize retourne par défaut l'image redimensionnée et une colormap optimisée. La colormap originale peut être retournée en utilisant l'argument nom-valeur 'Colormap'. 
 
-- 'nearest' : interpolation au plus proche voisin
-- 'bilinear' : interpolation bilinéaire
-- 'bicubic' : interpolation bicubique
-- 'box' : noyau en forme de boîte
-- 'lanczos2' : noyau Lanczos-2
-- 'lanczos3' : noyau Lanczos-3
+Les méthodes d'interpolation prises en charge incluent : 
 
-Paires nom-valeur prises en charge :
+- 'nearest' : interpolation au plus proche voisin 
+- 'bilinear' : interpolation bilinéaire 
+- 'bicubic' : interpolation bicubique 
+- 'box' : noyau en forme de boîte 
+- 'lanczos2' : noyau Lanczos-2 
+- 'lanczos3' : noyau Lanczos-3 
 
-- 'Antialiasing' : true/false (par défaut : true)
-- 'Colormap' : 'optimized' (par défaut) ou 'original' (image indexée uniquement)
-- 'Dither' : true (par défaut) ou false (image indexée uniquement)
+Paires nom-valeur prises en charge : 
 
-Limitations :
+- 'Antialiasing' : true/false (par défaut : true) 
+- 'Colormap' : 'optimized' (par défaut) ou 'original' (image indexée uniquement) 
+- 'Dither' : true (par défaut) ou false (image indexée uniquement) 
 
-- L'entrée doit être non-creuse (nonsparse) et réelle pour les images numériques.
-- Pour de grands facteurs d'échelle, la taille de l'image de sortie peut être significativement plus grande que l'entrée.
+Limitations : 
+
+- L'entrée doit être non-creuse (nonsparse) et réelle pour les images numériques. 
+- Pour de grands facteurs d'échelle, la taille de l'image de sortie peut être significativement plus grande que l'entrée. 
 - L'interpolation bicubique peut produire des valeurs de pixels en dehors de la plage d'origine.
 
 ## 💡 Exemple
@@ -81,8 +82,8 @@ subplot(1,2,2);          % second subplot
 image(im1);
 title('Resized Image');
 ```
-
 <img src="imresize_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -90,9 +91,9 @@ title('Resized Image');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

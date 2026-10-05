@@ -1,0 +1,61 @@
+#import "../nelson_help.typ": *
+
+= merge <nflow_blocks:utility.merge>
+
+Recombine les sorties de sous-systèmes conditionnels mutuellement exclusifs.
+
+== Syntaxe
+
+- #raw("Type de bloc : merge");
+
+== Argument d'entrée
+
+/ ports d'entrée: Chaque entrée est pilotée par un sous-système conditionnel (action).
+
+== Argument de sortie
+
+/ ports de sortie: 1 sortie : la valeur de la branche qui s'est exécutée à ce pas.
+
+== Description
+
+Recombine les sorties de sous-systèmes conditionnels mutuellement exclusifs.
+
+ Les entrées sont pilotées directement par des sous-systèmes conditionnels, dont un seul s'exécute à un pas donné. La sortie prend la valeur de l'entrée dont le sous-système source s'est exécuté à ce pas ; si aucune source ne s'est exécutée, elle conserve sa valeur précédente (à partir de #raw("InitialOutput");). Si deux sources s'exécutent au même pas, le dernier port d'entrée l'emporte.
+
+ #strong[Paramètres];
+
+ 
+
+#table(
+  columns: 2,
+  table.header([Paramètre], [Valeur par défaut], ),
+  [#raw("InitialOutput");], [0], 
+)
+ #strong[Caractéristiques du bloc];
+
+ 
+
+#table(
+  columns: 2,
+  [Type de bloc], [merge], 
+  [Famille], [Blocs utilitaires], 
+  [Phases], [INIT, ALGEBRAIC], 
+)
+ #strong[Capacites etendues];
+
+ Generation de code : prise en charge pour C et Rust.
+
+
+== Voir aussi
+
+#nlink(<nflow_blocks:logic.if>)[if];, #nlink(<nflow_blocks:logic.switchCase>)[switchCase];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

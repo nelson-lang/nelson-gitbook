@@ -20,6 +20,7 @@ Fill holes in binary images.
 
 ## 📄 Description
 
+
 Fill holes in a 2-D binary image. Supported connectivities are 4 and 8.
 
 ## 💡 Example
@@ -32,16 +33,16 @@ BW2=imfill(BW,'holes');
 figure; subplot(1,2,1); imagesc(BW); title('Input');
 subplot(1,2,2); imagesc(BW2); title('Filled');
 ```
-
 <img src="imfill_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imclose](../../../image_processing/imclose.md), [imreconstruct](../../../image_processing/imreconstruct.md), [imclearborder](../../../image_processing/imclearborder.md).
+[imclose](../../../image_processing/2_image_analysis/4_morphology/imclose.md), [imreconstruct](../../../image_processing/2_image_analysis/7_segmentation/imreconstruct.md), [imclearborder](../../../image_processing/2_image_analysis/4_morphology/imclearborder.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

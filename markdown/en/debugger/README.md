@@ -1,10 +1,16 @@
 # Debugger functions
 
+
+    
 The Debugger module in Nelson provides functions to inspect and analyze program execution.
 
+    
 It is designed to help users identify errors, trace the flow of execution, and better understand the state of variables during runtime.
 
+    
 Text editor debugging features integrate with these functions for interactive debugging.
+
+  
 
 ## Functions
 
@@ -17,3 +23,4 @@ Text editor debugging features integrate with these functions for interactive de
 - [dbstep](dbstep.md) - Execute next executable line during debugging.
 - [dbstop](dbstop.md) - Set breakpoints for debugging.
 - [dbup](dbup.md) - Move up the call stack in debug mode.
+

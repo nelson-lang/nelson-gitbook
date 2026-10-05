@@ -14,6 +14,7 @@ Saves workspace variables to a file selected from a dialog box.
 
 ## 📄 Description
 
+
 uisave asks for a destination file and saves variables from the caller workspace using the existing save behavior.
 
 ## 💡 Examples
@@ -27,7 +28,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'x', 'y', 'results'}, 'Value', 1, 'P
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Save', 'Position', [210 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [292 28 70 24]);
 ```
-
 <img src="uisave_example.svg" align="middle"/>
 Save several named variables.
 
@@ -37,14 +37,15 @@ y = x .^ 2;
 uisave({'x', 'y'}, 'series.nh5')
 ```
 
+
 ## 🔗 See also
 
 [uiopen](../gui/uiopen.md), [uiputfile](../gui/uiputfile.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

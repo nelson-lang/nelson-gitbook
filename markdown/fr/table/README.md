@@ -1,16 +1,27 @@
 # Tables
 
+
+    
 Le module Tables fournit des outils pour creer, acceder et manipuler des donnees tabulaires dans Nelson.
 
+    
 Les tables sont des structures de type tableau avec des variables nommees (colonnes), chacune pouvant contenir differents types de donnees.
 
+    
 Les metadonnees de table sont disponibles avec T.Properties, et des fonctions permettent d'ajouter, de deplacer, de renommer, de supprimer et de resumer les variables.
 
+    
 Les timetables stockent des variables tabulaires avec des temps de lignes et fournissent le tri temporel, le retiming, la synchronisation et les requetes de plage.
+
+  
 
 ## Creation et conversion de tableaux
 
+
+    
 Fonctions pour creer des tables et timetables et convertir entre donnees tabulaires et autres formes.
+
+  
 
 ### Functions
 
@@ -31,15 +42,23 @@ Fonctions pour creer des tables et timetables et convertir entre donnees tabulai
 
 ## Lecture et ecriture de tableaux
 
+
+    
 Pages pour lire et ecrire des donnees de table.
+
+  
 
 ### Functions
 
-- [Lecture/Écriture de tables vers des fichiers](2_read_write_tables/3_read_write_table.md) -
+- [Lecture/Écriture de tables vers des fichiers](2_read_write_tables/3_read_write_table.md) - 
 
 ## Informations de synthese
 
+
+    
 Fonctions pour taille de table, controles de type et apercus rapides.
+
+  
 
 ### Functions
 
@@ -53,11 +72,15 @@ Fonctions pour taille de table, controles de type et apercus rapides.
 
 ## Tri, filtrage et reorganisation
 
+
+    
 Fonctions et rubriques pour acceder, trier, reorganiser et personnaliser le contenu de tables.
+
+  
 
 ### Functions
 
-- [AccÃ¨s et manipulation des tables dans Nelson](4_sort_filter_rearrange/1_accessing_manipulating_table.md) -
+- [AccÃ¨s et manipulation des tables dans Nelson](4_sort_filter_rearrange/1_accessing_manipulating_table.md) - 
 - [addprop](4_sort_filter_rearrange/addprop.md) - Ajoute une propriete personnalisee a une table.
 - [addvars](4_sort_filter_rearrange/addvars.md) - Ajoute des variables a une table ou a une timetable.
 - [mergevars](4_sort_filter_rearrange/mergevars.md) - Fusionne des variables de table.
@@ -74,7 +97,11 @@ Fonctions et rubriques pour acceder, trier, reorganiser et personnaliser le cont
 
 ## Jointures et operations ensemblistes
 
+
+    
 Fonctions pour combiner des tables avec des jointures et operations associees.
+
+  
 
 ### Functions
 
@@ -84,17 +111,25 @@ Fonctions pour combiner des tables avec des jointures et operations associees.
 
 ## Application de fonctions au contenu des tables
 
+
+    
 Fonctions et rubriques pour calculs directs et application de fonctions aux lignes ou variables de table.
+
+  
 
 ### Functions
 
-- [Calcul direct avec Table](7_apply_functions/2_direct_computation_with_table.md) -
+- [Calcul direct avec Table](7_apply_functions/2_direct_computation_with_table.md) - 
 - [rowfun](7_apply_functions/rowfun.md) - Applique une fonction aux lignes d'une table.
 - [varfun](7_apply_functions/varfun.md) - Applique une fonction aux variables d'une table.
 
 ## Timetables et evenements
 
+
+    
 Fonctions pour intervalles de timetable, evenements, synchronisation et retiming.
+
+  
 
 ### Functions
 
@@ -111,3 +146,4 @@ Fonctions pour intervalles de timetable, evenements, synchronisation et retiming
 - [timerange](8_timetables_events/timerange.md) - Intervalle temporel pour indexer les lignes d'un timetable.
 - [withinrange](8_timetables_events/withinrange.md) - Trouver les lignes d'une timetable dans une plage de temps.
 - [withtol](8_timetables_events/withtol.md) - Tolerance temporelle pour l'indexation des lignes d'une timetable.
+

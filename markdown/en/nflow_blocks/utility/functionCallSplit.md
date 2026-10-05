@@ -16,23 +16,27 @@ Fans one function-call out to several callees in order.
 
 ## 📄 Description
 
-Fans one function-call out to several callees in order.
 
-A single incoming function-call is routed to every wired callee, in output-port order: output 0 runs first, then output 1, and so on. The block is a compile-time router; it holds no state and never executes on its own; the engine resolves it into the ordered callee list of the driving [functionCallGenerator](../../nflow_blocks/utility/functionCallGenerator.md). Outputs may fan out to function-call subsystems or to further splits.
+Fans one function-call out to several callees in order. 
 
-This block has no parameters.
+A single incoming function-call is routed to every wired callee, in output-port order: output 0 runs first, then output 1, and so on. The block is a compile-time router; it holds no state and never executes on its own; the engine resolves it into the ordered callee list of the driving [functionCallGenerator](../../nflow_blocks/utility/functionCallGenerator.md). Outputs may fan out to function-call subsystems or to further splits. 
 
-<b>Block Characteristics</b>
+This block has no parameters. 
 
-| Field      | Value                            |
-| ---------- | -------------------------------- |
-| Block type | functionCallSplit                |
-| Family     | Utility blocks                   |
-| Phases     | (none, resolved at compile time) |
+<b>Block Characteristics</b> 
 
-<b>Extended Capabilities</b>
+| Field | Value |
+| --- | --- |
+| Block type | functionCallSplit | 
+| Family | Utility blocks | 
+| Phases | (none, resolved at compile time) | 
+
+ 
+
+<b>Extended Capabilities</b> 
 
 Code generation: supported for C and Rust.
+
 
 ## 🔗 See also
 
@@ -40,7 +44,7 @@ Code generation: supported for C and Rust.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

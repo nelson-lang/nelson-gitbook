@@ -27,11 +27,14 @@ Test t a un echantillon ou apparie
 
 ## 📄 Description
 
-<b>ttest</b> effectue un test t le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie.
+
+<b>ttest</b> effectue un test t le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie. 
 
 Les valeurs NaN sont ignorees dans chaque tranche testee.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [2 4 5 6 9];
@@ -39,14 +42,15 @@ x = [2 4 5 6 9];
 [h2, p2] = ttest([4 6 7], [3 5 7], 'Tail', 'right');
 ```
 
+
 ## 🔗 Voir aussi
 
-[mean](../../statistics/mean.md), [std](../../statistics/std.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [std](../../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

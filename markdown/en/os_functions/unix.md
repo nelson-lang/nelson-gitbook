@@ -22,13 +22,16 @@ Execute commands with the operating system shell.
 
 ## 📄 Description
 
-unix executes one command or a collection of commands through the operating system shell and returns exit status values.
+
+unix executes one command or a collection of commands through the operating system shell and returns exit status values. 
 
 With output arguments, Nelson can also return command output text and execution durations. unix follows the same command execution model as system.
 
 ## Used function(s)
 
+
     system
+  
 
 ## 💡 Example
 
@@ -38,13 +41,14 @@ Run a shell command and capture its output.
 [status, output] = unix('echo Nelson')
 ```
 
+
 ## 🔗 See also
 
 [system](../os_functions/system.md), [dos](../os_functions/dos.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,11 +16,14 @@ Renvoie le modèle de plus haut niveau d'un chemin de bloc.
 
 ## 📄 Description
 
-<b>bdroot</b> renvoie le modèle de plus haut niveau d'un chemin de bloc.
+
+<b>bdroot</b> renvoie le modèle de plus haut niveau d'un chemin de bloc. 
 
 <b>bdroot('modele')</b> vaut <b>'modele'</b> ; <b>bdroot('modele/Sub/Blk')</b> vaut <b>'modele'</b>. Le modèle racine doit être chargé.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 new_system('demo');
@@ -29,14 +32,15 @@ root = bdroot('demo/Gain')
 bdclose('demo');
 ```
 
+
 ## 🔗 Voir aussi
 
 [find_system](../nflow_engine/find_system.md), [new_system](../nflow_engine/new_system.md), [get_param](../nflow_engine/get_param.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

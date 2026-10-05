@@ -22,9 +22,10 @@ Renvoie true si une propriete appartient a un objet ou une classe.
 
 ## 📄 Description
 
-<b>isprop</b> renvoie un logique 1 si la propriete est definie pour l'objet ou la classe, et 0 sinon.
 
-Pour les tableaux d'objets classdef, le resultat a la meme taille que le tableau d'objets.
+<b>isprop</b> renvoie un logique 1 si la propriete est definie pour l'objet ou la classe, et 0 sinon. 
+
+Pour les tableaux d'objets classdef, le resultat a la meme taille que le tableau d'objets. 
 
 Pour les classes classdef, <b>isprop</b> peut indiquer que des proprietes privees ou protegees existent. Utilisez <b>properties</b> pour lister les proprietes publiques.
 
@@ -46,16 +47,17 @@ publicNames = properties([a, b])
 delete([a, b])
 ```
 
+
 ## 🔗 Voir aussi
 
 [ismethod](../handle/ismethod.md), [properties](../handle/properties.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                |
-| ------- | --------------------------------------------- |
-| 1.0.0   | version initiale                              |
-| 2.0.0   | support des noms de classe classdef ajoute    |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 2.0.0   | support des noms de classe classdef ajoute |
 | 2.0.0   | support des tableaux d'objets classdef ajoute |
 
 <!--

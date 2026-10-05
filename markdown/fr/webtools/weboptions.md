@@ -18,46 +18,50 @@ Spécifier les paramètres pour les services web RESTful
 
 ## 📄 Description
 
-<b>options = weboptions()</b> renvoie l'objet weboptions par défaut.
 
-Un objet weboptions peut être un argument optionnel pour les fonctions builtin webread, websave et webwrite.
+<b>options = weboptions()</b> renvoie l'objet weboptions par défaut. 
 
-Arguments Nom-Valeur :
+Un objet weboptions peut être un argument optionnel pour les fonctions builtin webread, websave et webwrite. 
 
-<b>UserAgent</b> Identification de l'agent utilisateur : chaîne ou vecteur de caractères.
+Arguments Nom-Valeur : 
 
-<b>Timeout</b> Durée du timeout de connexion : scalaire numérique positif ou valeur Inf.
+<b>UserAgent</b> Identification de l'agent utilisateur : chaîne ou vecteur de caractères. 
 
-<b>Username</b> Identifiant utilisateur : chaîne ou vecteur de caractères.
+<b>Timeout</b> Durée du timeout de connexion : scalaire numérique positif ou valeur Inf. 
 
-<b>Password</b> Mot de passe d'authentification : chaîne ou vecteur de caractères.
+<b>Username</b> Identifiant utilisateur : chaîne ou vecteur de caractères. 
 
-<b>KeyName</b> Nom de la clé : chaîne ou vecteur de caractères.
+<b>Password</b> Mot de passe d'authentification : chaîne ou vecteur de caractères. 
 
-<b>KeyValue</b> Valeur de la clé : chaîne, vecteur de caractères, numérique ou logique.
+<b>KeyName</b> Nom de la clé : chaîne ou vecteur de caractères. 
 
-<b>HeaderFields</b> Noms et valeurs des en-têtes : tableau m-by-2 de chaînes ou cellule de vecteurs de caractères.
+<b>KeyValue</b> Valeur de la clé : chaîne, vecteur de caractères, numérique ou logique. 
 
-<b>ContentType</b> Type de contenu : chaîne. Valeurs supportées : 'auto', 'text', 'image', 'binary', 'table', 'audio', 'json', 'xmldom', 'raw'.
+<b>HeaderFields</b> Noms et valeurs des en-têtes : tableau m-by-2 de chaînes ou cellule de vecteurs de caractères. 
 
-<b>ContentReader</b> Lecteur de contenu : handle de fonction.
+<b>ContentType</b> Type de contenu : chaîne. Valeurs supportées : 'auto', 'text', 'image', 'binary', 'table', 'audio', 'json', 'xmldom', 'raw'. 
 
-<b>MediaType</b> Type média : chaîne. Valeurs supportées : 'auto', 'application/x-www-form-urlencoded'.
+<b>ContentReader</b> Lecteur de contenu : handle de fonction. 
 
-<b>RequestMethod</b> Méthode HTTP : chaîne. Valeurs supportées : 'auto', 'get', 'post', 'put', 'delete', 'patch'.
+<b>MediaType</b> Type média : chaîne. Valeurs supportées : 'auto', 'application/x-www-form-urlencoded'. 
 
-<b>ArrayFormat</b> : 'csv' (par défaut), 'json', 'repeating' ou 'php'.
+<b>RequestMethod</b> Méthode HTTP : chaîne. Valeurs supportées : 'auto', 'get', 'post', 'put', 'delete', 'patch'. 
 
-<b>CertificateFilename</b> Nom de fichier des certificats racine : 'default', vide ou fichier existant.
+<b>ArrayFormat</b> : 'csv' (par défaut), 'json', 'repeating' ou 'php'. 
+
+<b>CertificateFilename</b> Nom de fichier des certificats racine : 'default', vide ou fichier existant. 
 
 <b>FollowLocation</b> indique à la bibliothèque de suivre les redirections Location: envoyées par un serveur HTTP dans une réponse 30x : logique, false par défaut.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 weboptions()
 options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-agent/')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -65,10 +69,10 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 
 ## 🕔 Historique
 
-| Version | 📄 Description                            |
-| ------- | ----------------------------------------- |
-| 1.0.0   | version initiale                          |
-| 1.6.0   | option 'FollowLocation' ajoutée           |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.6.0   | option 'FollowLocation' ajoutée |
 | 2.0.0   | weboptions est une classe valeur classdef |
 
 <!--

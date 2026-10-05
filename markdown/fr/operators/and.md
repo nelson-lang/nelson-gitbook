@@ -1,6 +1,7 @@
 # and
 
 opérateur logique 'AND', &
+  
 
 ## 📝 Syntaxe
 
@@ -18,9 +19,12 @@ opérateur logique 'AND', &
 
 ## 📄 Description
 
+
 <b>C = and(A, B)</b> effectue une opération logique <b>AND</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
@@ -30,14 +34,15 @@ D = and(B, A)
 C == D
 ```
 
+
 ## 🔗 Voir aussi
 
 [or](../operators/or.md), [xor](../logical/xor.md), [all](../operators/all.md), [any](../operators/any.md), [not](../operators/not.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

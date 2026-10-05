@@ -19,9 +19,12 @@ Fonction de repartition exponentielle
 
 ## 📄 Description
 
+
 <b>expcdf</b> calcule par defaut les probabilites de queue inferieure exponentielle et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 0.5 1 2];
@@ -29,10 +32,11 @@ p = expcdf(x, 3);
 q = expcdf(x, 3, 'upper');
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

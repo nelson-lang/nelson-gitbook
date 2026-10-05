@@ -1,10 +1,10 @@
-# qt_version
+# qt\_version
 
 Renvoie la version de Qt utilisée.
 
 ## 📝 Syntaxe
 
-- v = qt_version()
+- v = qt\_version()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Renvoie la version de Qt utilisée.
 
 ## 📄 Description
 
-<b>v = qt_version()</b> renvoie le numéro de version de Qt à l'exécution sous forme de chaîne (par exemple, "6.2.4").
+
+<b>v = qt\_version()</b> renvoie le numéro de version de Qt à l'exécution sous forme de chaîne (par exemple, "6.2.4").
 
 ## 💡 Exemple
+
+
 
 ```matlab
 semver(qt_version(), '>=6.2')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ semver(qt_version(), '>=6.2')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

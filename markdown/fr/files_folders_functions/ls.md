@@ -20,9 +20,12 @@ Liste le contenu d'un répertoire.
 
 ## 📄 Description
 
+
 <b>ls</b> appelle la commande de liste de répertoire native du système d'exploitation - les options disponibles varient selon le système.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 res = ls(nelsonroot())
@@ -31,14 +34,15 @@ if ~ispc()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [dir](../files_folders_functions/dir.md), [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

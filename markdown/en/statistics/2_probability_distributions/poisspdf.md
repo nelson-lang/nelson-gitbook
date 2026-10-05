@@ -17,22 +17,26 @@ Poisson probability density function
 
 ## 📄 Description
 
+
 <b>poisspdf</b> computes Poisson probability mass values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:10;
 y = poisspdf(x, 4);
 ```
 
+
 ## 🔗 See also
 
-[poisscdf](../../statistics/poisscdf.md), [poissinv](../../statistics/poissinv.md).
+[poisscdf](../../statistics/2_probability_distributions/poisscdf.md), [poissinv](../../statistics/2_probability_distributions/poissinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

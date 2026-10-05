@@ -27,7 +27,8 @@ Afficher un diagramme en barres horizontales 3-D.
 
 ## 📄 Description
 
-<b>bar3h</b> affiche des barres 3-D horizontales qui partent de x = 0.
+
+<b>bar3h</b> affiche des barres 3-D horizontales qui partent de x = 0. 
 
 Utiliser <b>'grouped'</b> pour grouper les colonnes de matrice a chaque position de ligne et <b>'stacked'</b> pour les empiler.
 
@@ -41,7 +42,6 @@ Y = [1 3; 2 4; 5 2];
 bar3h(Y);
 
 ```
-
 <img src="bar3h_1.svg" align="middle"/>
 Barres horizontales 3-D depuis un vecteur.
 
@@ -51,7 +51,6 @@ y = [50 40 30 20 10];
 bar3h(y);
 
 ```
-
 <img src="bar3h_2.svg" align="middle"/>
 Barres horizontales 3-D avec positions explicites.
 
@@ -62,7 +61,6 @@ y = [16 8 4 2 1];
 bar3h(z, y);
 
 ```
-
 <img src="bar3h_3.svg" align="middle"/>
 Barres horizontales 3-D depuis une matrice.
 
@@ -72,7 +70,6 @@ y = [1 4 7; 2 5 8; 3 6 9; 4 7 10];
 bar3h(y);
 
 ```
-
 <img src="bar3h_4.svg" align="middle"/>
 Barres horizontales 3-D depuis une matrice avec positions explicites.
 
@@ -83,7 +80,6 @@ y = [1 5 9; 2 6 10; 3 7 11; 4 8 12];
 bar3h(z, y);
 
 ```
-
 <img src="bar3h_5.svg" align="middle"/>
 Barres horizontales 3-D avec largeur et couleur.
 
@@ -94,7 +90,6 @@ y = [sin(z') / 4, sin(z') / 2, sin(z')];
 bar3h(z, y, 1, "r");
 
 ```
-
 <img src="bar3h_6.svg" align="middle"/>
 Barres horizontales 3-D groupees.
 
@@ -104,7 +99,6 @@ y = [1 2; 3 4; 5 6];
 bar3h(y, 'grouped');
 
 ```
-
 <img src="bar3h_7.svg" align="middle"/>
 Barres horizontales 3-D empilees avec valeurs positives et negatives.
 
@@ -114,8 +108,8 @@ y = [1 -2; -3 4];
 bar3h(y, 'stacked');
 
 ```
-
 <img src="bar3h_8.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

@@ -19,7 +19,8 @@ Check a value with a custom predicate.
 
 ## 📄 Description
 
-The assertion passes when predicate(value) returns scalar logical true.
+
+The assertion passes when predicate(value) returns scalar logical true. 
 
 Invalid predicates or non-logical predicate results raise an argument error immediately.
 
@@ -30,18 +31,17 @@ Named predicate
 ```matlab
 asserts.satisfies(1, 'isnumeric');
 ```
-
 Function handle predicate
 
 ```matlab
 asserts.satisfies(1, @(x) isscalar(x));
 ```
-
 Capture predicate failure
 
 ```matlab
 [res, msg] = asserts.satisfies([1 2], @(x) isscalar(x));
 ```
+
 
 ## 🔗 See also
 
@@ -49,7 +49,7 @@ Capture predicate failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

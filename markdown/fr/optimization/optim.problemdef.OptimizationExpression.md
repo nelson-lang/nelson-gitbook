@@ -18,14 +18,17 @@ Expression d'optimisation.
 
 ## 📄 Description
 
-optim.problemdef.OptimizationExpression represente des expressions arithmetiques construites a partir de variables d'optimisation.
+
+optim.problemdef.OptimizationExpression represente des expressions arithmetiques construites a partir de variables d'optimisation. 
 
 Les expressions peuvent servir d'objectifs ou de parties de contraintes dans un modele problem-based.
 
 ## Fonction(s) utilisée(s)
 
+
     optimexpr
     optimvar
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ x = optimvar('x', 2, 1);
 expr = (x(1) - 1)^2 + (x(2) - 2)^2
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimexpr](../optimization/optimexpr.md), [fcn2optimexpr](../optimization/fcn2optimexpr.md), [optimvar](../optimization/optimvar.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

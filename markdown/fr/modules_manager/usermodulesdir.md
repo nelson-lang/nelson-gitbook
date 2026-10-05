@@ -12,15 +12,19 @@ Renvoie le chemin où les modules externes sont enregistrés.
 
 ## 📄 Description
 
-<b>usermodulesdir</b> est une fonction d'aide qui renvoie le chemin où les modules externes des utilisateurs sont enregistrés.
 
-Ce chemin peut être remplacé en définissant la variable d'environnement NELSON_EXTERNAL_MODULES_PATH sur votre système.
+<b>usermodulesdir</b> est une fonction d'aide qui renvoie le chemin où les modules externes des utilisateurs sont enregistrés. 
+
+Ce chemin peut être remplacé en définissant la variable d'environnement NELSON\_EXTERNAL\_MODULES\_PATH sur votre système.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 usermodulesdir()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -28,8 +32,8 @@ usermodulesdir()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

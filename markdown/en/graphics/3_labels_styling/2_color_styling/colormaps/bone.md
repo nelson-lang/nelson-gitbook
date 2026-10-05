@@ -17,17 +17,20 @@ Bone colormap array.
 
 ## 📄 Description
 
+
 <b>bone</b> returns the colormap with bone colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('bone');
 ```
-
 <img src="bone.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('bone');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

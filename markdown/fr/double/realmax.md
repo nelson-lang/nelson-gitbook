@@ -14,9 +14,12 @@ Plus grand nombre flottant positif.
 
 ## 📄 Description
 
+
 <b>realmax</b> renvoie le plus grand nombre flottant positif.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 realmax
@@ -24,14 +27,15 @@ realmax('double')
 realmax('single')
 ```
 
+
 ## 🔗 Voir aussi
 
 [intmax](../integer/intmax.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

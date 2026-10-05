@@ -15,9 +15,12 @@ Get license information for Nelson.
 
 ## 📄 Description
 
+
 <b>license</b> get license information for Nelson.
 
 ## 💡 Example
+
+
 
 ```matlab
 license()
@@ -25,13 +28,14 @@ r = license()
 [r,txt] = license()
 ```
 
+
 ## 🔗 See also
 
 [banner](../core/banner.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -24,35 +24,42 @@ Build MEX function
 
 ## 📄 Description
 
-To use mex, C/C++ compiler must be available and configured. See Supported C/C++ compilers section for more information.
 
-Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.
+To use mex, C/C++ compiler must be available and configured. See Supported C/C++ compilers section for more information. 
 
-A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.
+Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson. 
 
-Nelson also provides its own C++ API to manage internal Nelson objects.
+A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++. 
 
-PREDEFINED C MACRO:
+Nelson also provides its own C++ API to manage internal Nelson objects. 
 
-The <b>MX_IS_NELSON</b> macro detects whether Nelson is used in C code.
+ 
 
-<b>MX_HAS_INTERLEAVED_COMPLEX</b> macro is defined if C MEX API used is '-R2018a'.
+PREDEFINED C MACRO: 
 
-Supported options: compilation or link.
+The <b>MX\_IS\_NELSON</b> macro detects whether Nelson is used in C code. 
 
-<b>CFLAGS=</b>
+<b>MX\_HAS\_INTERLEAVED\_COMPLEX</b> macro is defined if C MEX API used is '-R2018a'. 
 
-<b>-D</b> The -D option defines C preprocessor macro.
+ 
 
-<b>-U</b> The -U option undefines C preprocessor macro
+Supported options: compilation or link. 
 
-<b>-I</b> Adds pathname to the list of folders to search for #include files.
+<b>CFLAGS=</b> 
 
-<b>-l</b> Links with dynamic object library .lib, .so or .dylib.
+<b>-D</b> The -D option defines C preprocessor macro. 
+
+<b>-U</b> The -U option undefines C preprocessor macro 
+
+<b>-I</b> Adds pathname to the list of folders to search for #include files. 
+
+<b>-l</b> Links with dynamic object library .lib, .so or .dylib. 
 
 <b>-g</b> Used for debugging (Debug configuration).
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -60,13 +67,14 @@ Supported options: compilation or link.
 
 ```
 
+
 ## 🔗 See also
 
 [Supported C/C++ compilers](../dynamic_link/2_supported_compilers.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

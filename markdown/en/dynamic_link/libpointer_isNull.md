@@ -1,4 +1,4 @@
-# libpointer_isNull
+# libpointer\_isNull
 
 Checks if libpointer handle points on NULL pointer.
 
@@ -17,9 +17,12 @@ Checks if libpointer handle points on NULL pointer.
 
 ## 📄 Description
 
+
 Checks if libpointer handle points on NULL pointer.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = libpointer('int8Ptr', int8([3 4]));
@@ -29,13 +32,14 @@ p2.isNull()
 isNull(p2)
 ```
 
+
 ## 🔗 See also
 
 [libpointer](../dynamic_link/libpointer.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

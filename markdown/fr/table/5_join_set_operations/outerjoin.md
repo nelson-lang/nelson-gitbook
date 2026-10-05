@@ -21,9 +21,12 @@ Jointure externe de deux tables.
 
 ## 📄 Description
 
+
 <b>outerjoin</b> combine les lignes des deux tables et conserve les lignes non appariees selon le type de jointure.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 L = table([1; 2], [10; 20], 'VariableNames', {'Key', 'LeftValue'});
@@ -31,14 +34,15 @@ R = table([2; 3], [200; 300], 'VariableNames', {'Key', 'RightValue'});
 J = outerjoin(L, R, 'Keys', 'Key')
 ```
 
+
 ## 🔗 Voir aussi
 
-[join](../../table/join.md), [innerjoin](../../table/innerjoin.md).
+[join](../../table/5_join_set_operations/join.md), [innerjoin](../../table/5_join_set_operations/innerjoin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -23,11 +23,12 @@ Linéarisation numérique d'un modèle nflow.
 
 ## 📄 Description
 
-<b>linmod</b> renvoie la linéarisation d'état continue de <b>model</b> autour de son point de fonctionnement après INIT.
 
-Les jacobiennes sont obtenues par différences finies centrées du même second membre global que le solveur <b>ode4</b> / à pas variable assemble : l'état continu <b>x</b> rassemble l'état de chaque bloc continu, les entrées <b>u</b> sont les blocs Label Source de port externe (<b>isExternalPort</b>), <b>xdot = f(x, u)</b> est la dérivée du graphe et <b>y</b> les sorties Label Sink du modèle. Un modèle linéaire se linéarise en lui-même.
+<b>linmod</b> renvoie la linéarisation d'état continue de <b>model</b> autour de son point de fonctionnement après INIT. 
 
-Une entrée qui doit participer à <b>B</b> / <b>D</b> doit être un Label Source de port externe ; un simple Label Source de routage goto/from interne n'est pas une entrée du modèle.
+Les jacobiennes sont obtenues par différences finies centrées du même second membre global que le solveur <b>ode4</b> / à pas variable assemble : l'état continu <b>x</b> rassemble l'état de chaque bloc continu, les entrées <b>u</b> sont les blocs Label Source de port externe (<b>isExternalPort</b>), <b>xdot = f(x, u)</b> est la dérivée du graphe et <b>y</b> les sorties Label Sink du modèle. Un modèle linéaire se linéarise en lui-même. 
+
+Une entrée qui doit participer à <b>B</b> / <b>D</b> doit être un Label Source de port externe ; un simple Label Source de routage goto/from interne n'est pas une entrée du modèle. 
 
 Les modèles plats (niveau supérieur) comme les états continus imbriqués dans des sous-systèmes sont supportés : le couplage d'un état imbriqué aux entrées externes (<b>B</b>) et aux sorties à travers la frontière du sous-système (<b>C</b>) est capturé.
 
@@ -50,13 +51,14 @@ fid = fopen(f,'wt'); fwrite(fid, jsonencode(d)); fclose(fid);
 [A, B, C, D] = linmod(f)  % A = -2, B = 1, C = 1, D = 0
 ```
 
+
 ## 🔗 Voir aussi
 
 [trim](../nflow_engine/trim.md), [sim](../nflow_engine/sim.md), [load_system](../nflow_engine/load_system.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

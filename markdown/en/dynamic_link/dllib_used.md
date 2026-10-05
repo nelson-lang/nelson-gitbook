@@ -1,10 +1,10 @@
-# dllib_used
+# dllib\_used
 
 Returns the current valid dllib handles.
 
 ## 📝 Syntax
 
-- r = dllib_used()
+- r = dllib\_used()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns the current valid dllib handles.
 
 ## 📄 Description
 
+
 Returns the current valid dllib handles.
 
 ## 💡 Example
 
+
+
 ```matlab
 used = dllib_used()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ used = dllib_used()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

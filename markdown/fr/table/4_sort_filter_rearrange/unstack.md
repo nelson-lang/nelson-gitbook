@@ -18,23 +18,27 @@ Deplie des lignes en variables de table.
 
 ## 📄 Description
 
+
 <b>unstack</b> cree des variables a partir des valeurs d'une variable indicatrice.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 S = table({'a'; 'a'; 'b'; 'b'}, {'X'; 'Y'; 'X'; 'Y'}, [1; 3; 2; 4], 'VariableNames', {'ID', 'Measure', 'Value'});
 U = unstack(S, 'Value', 'Measure')
 ```
 
+
 ## 🔗 Voir aussi
 
-[stack](../../table/stack.md).
+[stack](../../table/4_sort_filter_rearrange/stack.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

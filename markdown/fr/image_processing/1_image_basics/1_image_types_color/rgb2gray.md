@@ -19,9 +19,10 @@ Convertit une image RGB en niveaux de gris.
 
 ## 📄 Description
 
-Convertit une image RGB en niveaux de gris.
 
-Les images RGB peuvent etre des tableaux double, single ou entiers. Les images RGB logiques ne sont pas prises en charge.
+Convertit une image RGB en niveaux de gris. 
+
+Les images RGB peuvent etre des tableaux double, single ou entiers. Les images RGB logiques ne sont pas prises en charge. 
 
 Une colormap double non vide a trois colonnes est convertie en colormap grise de meme taille. Les valeurs de la colormap sont combinees directement et ne sont pas bornees.
 
@@ -37,17 +38,17 @@ G=rgb2gray(RGB);
 figure; subplot(1,2,1); image(RGB); title('RGB');
 subplot(1,2,2); imagesc(G); g=linspace(0,1,64)'; colormap([g g g]); title('Gray');
 ```
-
 <img src="rgb2gray_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[im2gray](../../../image_processing/im2gray.md), [ind2gray](../../../image_processing/ind2gray.md).
+[im2gray](../../../image_processing/1_image_basics/1_image_types_color/im2gray.md), [ind2gray](../../../image_processing/1_image_basics/1_image_types_color/ind2gray.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

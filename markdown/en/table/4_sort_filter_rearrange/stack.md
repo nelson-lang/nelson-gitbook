@@ -18,22 +18,26 @@ Stack table variables into rows.
 
 ## 📄 Description
 
+
 <b>stack</b> converts selected variables into a single data variable and an indicator variable.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table({'a'; 'b'}, [1; 2], [3; 4], 'VariableNames', {'ID', 'X', 'Y'});
 S = stack(T, {'X', 'Y'}, 'NewDataVariableName', 'Value')
 ```
 
+
 ## 🔗 See also
 
-[unstack](../../table/unstack.md).
+[unstack](../../table/4_sort_filter_rearrange/unstack.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

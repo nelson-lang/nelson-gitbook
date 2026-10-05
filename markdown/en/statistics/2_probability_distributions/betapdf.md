@@ -18,22 +18,26 @@ Beta probability density function
 
 ## 📄 Description
 
+
 <b>betapdf</b> computes beta distribution density values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 0.1 0.5 0.9 1];
 y = betapdf(x, 2, 5);
 ```
 
+
 ## 🔗 See also
 
-[betacdf](../../statistics/betacdf.md), [betainv](../../statistics/betainv.md).
+[betacdf](../../statistics/2_probability_distributions/betacdf.md), [betainv](../../statistics/2_probability_distributions/betainv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

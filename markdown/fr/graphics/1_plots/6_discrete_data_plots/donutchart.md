@@ -24,9 +24,10 @@ Objet graphique en anneau.
 
 ## 📄 Description
 
-<b>donutchart(data)</b> cree un objet graphique en anneau dans la figure courante.
 
-<b>InnerRadius</b> controle le rayon du trou comme fraction du rayon externe. <b>CenterLabel</b> affiche un texte au centre de l'anneau.
+<b>donutchart(data)</b> cree un objet graphique en anneau dans la figure courante. 
+
+<b>InnerRadius</b> controle le rayon du trou comme fraction du rayon externe. <b>CenterLabel</b> affiche un texte au centre de l'anneau. 
 
 Voir [proprietes de donutchart](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.donutchart.properties.md) pour la liste complete des proprietes.
 
@@ -38,7 +39,6 @@ Graphique en anneau avec texte central.
 figure('Color', [1 1 1]);
 d = donutchart([4 3 2], ["A", "B", "C"], 'CenterLabel', '9');
 ```
-
 <img src="donutchart_1.svg" align="middle"/>
 Rayon interne et couleurs personnalises.
 
@@ -47,8 +47,8 @@ figure('Color', [1 1 1]);
 d = donutchart([5 4 3 2], 'InnerRadius', 0.35, 'FaceAlpha', 0.75, ...
   'ColorOrder', [0.8 0.2 0.2; 0.2 0.7 0.3; 0.2 0.4 0.8]);
 ```
-
 <img src="donutchart_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -56,8 +56,8 @@ d = donutchart([5 4 3 2], 'InnerRadius', 0.35, 'FaceAlpha', 0.75, ...
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

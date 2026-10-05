@@ -16,9 +16,12 @@ Gain en basse fréquence (DC) du système LTI.
 
 ## 📄 Description
 
+
 <b>k = dcgain(sys)</b> calcule le gain DC <b>k</b> du modèle LTI sys.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2; 3 4];
@@ -29,14 +32,15 @@ sys = ss(A, B, C, D);
 K = dcgain(sys)
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf](../../control_system/tf.md), [ss](../../control_system/ss.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md), [ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -17,7 +17,9 @@ Get current hold state.
 
 ## 📄 Description
 
+
 <b>tf = ishold(ax)</b> returns the hold state of the specified axes object.
+
 
 ## 🔗 See also
 
@@ -25,7 +27,7 @@ Get current hold state.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,9 +16,10 @@ Renvoie le n-ieme jour de semaine selectionne dans un mois.
 
 ## 📄 Description
 
-Renvoie le n-ieme jour de semaine selectionne dans un mois.
 
-Les numeros de jours suivent weekday: dimanche vaut 1 et samedi vaut 7.
+Renvoie le n-ieme jour de semaine selectionne dans un mois. 
+
+Les numeros de jours suivent weekday: dimanche vaut 1 et samedi vaut 7. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,14 +33,15 @@ nweekdate(5, 2, 2024, 2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

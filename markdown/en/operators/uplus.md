@@ -17,14 +17,18 @@ Unary plus, + operator
 
 ## 📄 Description
 
+
 <b>C = uplus(A)</b> performs unary plus ie +A.
 
 ## 💡 Example
+
+
 
 ```matlab
 M =-3;
 +M
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ M =-3;
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

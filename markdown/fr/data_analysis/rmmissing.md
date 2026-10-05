@@ -18,19 +18,24 @@ Supprime les donnees manquantes.
 
 ## 📄 Description
 
+
 <b>rmmissing</b> supprime les donnees manquantes des tableaux et supprime les lignes ou variables contenant des valeurs manquantes dans les tables.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [1 NaN; 2 3; NaN 4];
 B = rmmissing(A)
 ```
 
+
 ```matlab
 T = table([1; NaN; 3], {'a'; ''; 'c'}, 'VariableNames', {'A', 'B'});
 R = rmmissing(T)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -38,8 +43,8 @@ R = rmmissing(T)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

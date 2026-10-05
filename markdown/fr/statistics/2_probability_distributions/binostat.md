@@ -18,18 +18,22 @@ Moyenne et variance binomiales
 
 ## 📄 Description
 
+
 <b>binostat</b> retourne la moyenne et la variance de la loi binomiale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = binostat([10 20], [0.25 0.5]);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

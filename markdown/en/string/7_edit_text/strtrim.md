@@ -16,31 +16,37 @@ Remove leading and trailing whitespace.
 
 ## 📄 Description
 
-<b>strtrim</b> removes leading and trailing whitespace.
+
+<b>strtrim</b> removes leading and trailing whitespace. 
 
 <b>strtrim</b> does not remove all significant whitespace (only characters ' \\t\\n\\r\\f\\v' removed).
 
 ## 💡 Examples
 
+
+
 ```matlab
 strtrim(' Nel Son')
 ```
+
 
 ```matlab
 strtrim(" Nel Son")
 ```
 
+
 ```matlab
 strtrim([' Nel Son', char(160)])
 ```
 
+
 ## 🔗 See also
 
-[deblank](../../string/deblank.md), [toupper](../../string/toupper.md).
+[deblank](../../string/7_edit_text/deblank.md), [toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

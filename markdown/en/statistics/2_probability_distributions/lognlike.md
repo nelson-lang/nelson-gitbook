@@ -21,9 +21,12 @@ Lognormal negative log-likelihood
 
 ## 📄 Description
 
+
 <b>lognlike</b> evaluates the negative log-likelihood of the lognormal distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
@@ -31,13 +34,14 @@ phat = lognfit(x);
 nlogL = lognlike(phat, x);
 ```
 
+
 ## 🔗 See also
 
-[lognfit](../../statistics/lognfit.md), [lognpdf](../../statistics/lognpdf.md), [logncdf](../../statistics/logncdf.md).
+[lognfit](../../statistics/2_probability_distributions/lognfit.md), [lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [logncdf](../../statistics/2_probability_distributions/logncdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

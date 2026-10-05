@@ -17,9 +17,10 @@ Return calendar durations between two datetime values.
 
 ## 📄 Description
 
-Return calendar durations between two datetime values.
 
-between expresses the interval using whole calendar components plus remaining day and time components. It supports scalar expansion between the two endpoints.
+Return calendar durations between two datetime values. 
+
+between expresses the interval using whole calendar components plus remaining day and time components. It supports scalar expansion between the two endpoints. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,13 +35,14 @@ split(c, 'days')
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

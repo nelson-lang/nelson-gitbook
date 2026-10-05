@@ -22,9 +22,12 @@ Estimate signal power in a frequency band.
 
 ## 📄 Description
 
+
 <b>bandpower</b> computes average time-domain power, or integrates a PSD estimate with a rectangle approximation. For time-domain band measurements, a Hamming-window periodogram with the input length is used.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ p = bandpower(sin((0:127)' * 0.1), 10, [0 5]);
 
 ```
 
+
 ## 🔗 See also
 
-[periodogram](../../signal_processing/periodogram.md), [meanfreq](../../signal_processing/meanfreq.md), [medfreq](../../signal_processing/medfreq.md).
+[periodogram](../../signal_processing/5_spectral_analysis/periodogram.md), [meanfreq](../../signal_processing/2_measurements_feature_extraction/meanfreq.md), [medfreq](../../signal_processing/2_measurements_feature_extraction/medfreq.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

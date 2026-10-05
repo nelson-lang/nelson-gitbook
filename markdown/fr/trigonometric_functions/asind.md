@@ -15,15 +15,17 @@ Sinus inverse en degrés.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>asind</b> calcule le sinus inverse en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-50 -20 0 20 50];
 y = asind(x)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ y = asind(x)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

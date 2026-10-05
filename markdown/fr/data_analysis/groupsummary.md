@@ -20,14 +20,18 @@ Calcule des resumes groupes de table.
 
 ## 📄 Description
 
+
 <b>groupsummary</b> groupe les lignes de table et calcule des resumes sur les variables selectionnees.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table({'a'; 'a'; 'b'}, [1; 2; 4], 'VariableNames', {'G', 'X'});
 G = groupsummary(T, 'G', 'sum', 'X')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +39,8 @@ G = groupsummary(T, 'G', 'sum', 'X')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

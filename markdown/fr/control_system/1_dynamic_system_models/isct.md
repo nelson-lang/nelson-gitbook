@@ -16,9 +16,12 @@ Vérifie si le modèle dynamique est en temps continu.
 
 ## 📄 Description
 
+
 Vérifie si le modèle dynamique est en temps continu.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -31,14 +34,15 @@ sys2 = ss(A, B, C, D, 0.2);
 isct(sys2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[isdt](../../control_system/isdt.md).
+[isdt](../../control_system/1_dynamic_system_models/isdt.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

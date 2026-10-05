@@ -21,13 +21,17 @@ Members of a set within a tolerance.
 
 ## 📄 Description
 
+
 <b>ismembertol</b> returns a logical array the same size as A, containing true where the elements of A are within tolerance of the elements of B. Two values u and v are within tolerance if abs(u-v) <= tol\*max(abs([A(:);B(:)])).
 
 ## 💡 Example
 
+
+
 ```matlab
 [lia, locb] = ismembertol([1 2 3], [1.0000001 5 3], 1e-6)
 ```
+
 
 ## 🔗 See also
 
@@ -35,7 +39,7 @@ Members of a set within a tolerance.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

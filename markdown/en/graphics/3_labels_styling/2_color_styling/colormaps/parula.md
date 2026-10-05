@@ -17,19 +17,22 @@ Parula colormap array.
 
 ## 📄 Description
 
-<b>parula</b> returns the colormap with parula colors.
+
+<b>parula</b> returns the colormap with parula colors. 
 
 <b>parula</b> is the default colormap.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('parula');
 ```
-
 <img src="parula.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -37,7 +40,7 @@ colormap('parula');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

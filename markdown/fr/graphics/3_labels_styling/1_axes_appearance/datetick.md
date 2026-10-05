@@ -21,7 +21,8 @@ Etiquettes de graduation au format date.
 
 ## 📄 Description
 
-<b>datetick</b> etiquette les graduations d'un axe avec des dates, en traitant les valeurs des graduations comme des numeros de date serie (voir <b>datenum</b>).
+
+<b>datetick</b> etiquette les graduations d'un axe avec des dates, en traitant les valeurs des graduations comme des numeros de date serie (voir <b>datenum</b>). 
 
 Si aucun format n'est donne, un format est choisi selon l'etendue couverte par les graduations. Utilisez <b>keepticks</b> pour conserver les positions des graduations et <b>keeplimits</b> pour conserver les limites.
 
@@ -37,13 +38,14 @@ datetick('x', 'yyyy');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [xtickformat](../../../graphics/3_labels_styling/1_axes_appearance/xtickformat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

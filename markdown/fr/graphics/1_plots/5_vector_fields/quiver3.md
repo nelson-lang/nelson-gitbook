@@ -28,9 +28,10 @@ Trace de champ vectoriel 3-D.
 
 ## 📄 Description
 
-<b>quiver3(Z,U,V,W)</b> trace des fleches 3-D sur une grille x-y reguliere en utilisant <b>Z</b> comme donnees de coordonnee z.
 
-<b>quiver3(X,Y,Z,U,V,W)</b> trace les fleches aux coordonnees donnees par <b>X</b>, <b>Y</b> et <b>Z</b>.
+<b>quiver3(Z,U,V,W)</b> trace des fleches 3-D sur une grille x-y reguliere en utilisant <b>Z</b> comme donnees de coordonnee z. 
+
+<b>quiver3(X,Y,Z,U,V,W)</b> trace les fleches aux coordonnees donnees par <b>X</b>, <b>Y</b> et <b>Z</b>. 
 
 L'objet retourne a le type <b>quiver</b>. Ses proprietes publiques incluent <b>XData</b>, <b>YData</b>, <b>ZData</b>, <b>UData</b>, <b>VData</b>, <b>WData</b>, <b>AutoScale</b>, <b>AutoScaleFactor</b>, <b>ScaleFactor</b>, <b>Color</b>, <b>LineStyle</b>, <b>LineWidth</b>, <b>Marker</b>, <b>MarkerSize</b>, <b>MaxHeadSize</b>, <b>ShowArrowHead</b>, <b>Alignment</b>, <b>DisplayName</b> et les proprietes graphiques communes.
 
@@ -46,7 +47,6 @@ Tracer un champ vectoriel 3-D.
  quiver3(x, y, z, u, v, w);
  axis equal
 ```
-
 <img src="quiver3_1.svg" align="middle"/>
 Desactiver l'echelle automatique et styliser les fleches.
 
@@ -60,7 +60,6 @@ x = [0 1 2];
  h = quiver3(x, y, z, u, v, w, 0, 'r--o');
  h.LineWidth = 1.5;
 ```
-
 Tracer les normales de surface sous forme de fleches 3-D.
 
 ```matlab
@@ -73,14 +72,15 @@ Tracer les normales de surface sous forme de fleches 3-D.
  axis equal
 ```
 
+
 ## 🔗 Voir aussi
 
-[quiver](../../../graphics/1_plots/5_vector_fields/quiver.md), [plot3](../../../graphics/1_plots/1_line_plots/plot3.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[quiver](../../../graphics/1_plots/5_vector_fields/quiver.md), [plot3](../../../graphics/1_plots/1_line_plots/plot3.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description               |
-| ------- | ---------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | objet graphique quiver natif |
 
 <!--

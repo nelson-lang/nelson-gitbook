@@ -1,10 +1,10 @@
-# slicot_mb02md
+# slicot\_mb02md
 
 Résolution du problème des moindres carrés totaux par une approche SVD.
 
 ## 📝 Syntaxe
 
-- [RANK\_OUT, C\_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
+- [RANK\_OUT, C\_OUT, S, X, IWARN, INFO] = slicot\_mb02md(JOB, M, N, L, RANK\_IN, C\_IN, TOL)
 
 ## 📥 Argument d'entrée
 
@@ -12,20 +12,21 @@ Résolution du problème des moindres carrés totaux par une approche SVD.
 - M - Le nombre de lignes de la matrice de données A et de la matrice d'observation B.
 - N - Le nombre de colonnes de la matrice de données A.
 - L - Le nombre de colonnes de la matrice d'observation B.
-- RANK_IN - Si JOB = 'T' ou JOB = 'N', RANK doit préciser r, le rang de l'approximation TLS [A + DA \| B + DB].
-- C_IN - La partie principale M-by-(N+L) de ce tableau doit contenir les matrices A et B.
+- RANK\_IN - Si JOB = 'T' ou JOB = 'N', RANK doit préciser r, le rang de l'approximation TLS [A + DA \| B + DB].
+- C\_IN - La partie principale M-by-(N+L) de ce tableau doit contenir les matrices A et B.
 - TOL - Une tolérance utilisée pour déterminer le rang de l'approximation TLS [A+DA\|B+DB] et vérifier la multiplicité des valeurs singulières de la matrice C.
 
 ## 📤 Argument de sortie
 
-- RANK_OUT - Si JOB = 'R' ou JOB = 'B', et INFO = 0, RANK contient le rang (effectif) calculé de l'approximation TLS [A + DA \| B + DB].
-- C_OUT - La partie principale (N+L)-by-(N+L) de ce tableau contient les vecteurs singuliers droits (transformés), y compris les vecteurs d'espace nul, le cas échéant, de C = [A \| B].
+- RANK\_OUT - Si JOB = 'R' ou JOB = 'B', et INFO = 0, RANK contient le rang (effectif) calculé de l'approximation TLS [A + DA \| B + DB].
+- C\_OUT - La partie principale (N+L)-by-(N+L) de ce tableau contient les vecteurs singuliers droits (transformés), y compris les vecteurs d'espace nul, le cas échéant, de C = [A \| B].
 - S - Si INFO = 0, les valeurs singulières de la matrice C.
 - X - Si INFO = 0, la partie principale N-by-L de ce tableau contient la solution X du problème TLS spécifié par A et B.
 - IWARN - = 0 : pas d'avertissement ; = 1 : le rang de la matrice C a été réduit car une valeur singulière de multiplicité >1 a été trouvée ; = 2 : le rang de C a été réduit car la matrice triangulaire supérieure F est (numériquement) singulière.
 - INFO - = 0 : sortie réussie ;
 
 ## 📄 Description
+
 
 Résoudre le problème des moindres carrés totaux (TLS) en utilisant une décomposition en valeurs singulières (SVD). Le problème TLS suppose un système surdéterminé d'équations linéaires AX = B, où la matrice de données A et la matrice d'observation B sont inexactes. La routine résout également des systèmes déterminés et sous-déterminés en calculant la solution de norme minimale. On suppose que toutes les opérations de prétraitement (mise à l'échelle, transformations de coordonnées, blanchiment, ...) ont été réalisées au préalable.
 
@@ -38,6 +39,8 @@ MB02MD
 http://slicot.org/objects/software/shared/doc/MB02MD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = 6;
@@ -55,14 +58,15 @@ C_IN = [0.80010  0.39985  0.60005  0.89999;
 [RANK_OUT, C_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
 ```
 
+
 ## 🔗 Voir aussi
 
 [slicot_mb04gd](../slicot/slicot_mb04gd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

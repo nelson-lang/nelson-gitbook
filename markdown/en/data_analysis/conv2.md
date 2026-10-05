@@ -23,9 +23,12 @@
 
 ## 📄 Description
 
+
 <b>conv2</b> returns the two-dimensional convolution.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = magic(3);
@@ -33,13 +36,14 @@ B = magic(4);
 R = conv2(A, B, 'same')
 ```
 
+
 ## 🔗 See also
 
 [conv](../data_analysis/conv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

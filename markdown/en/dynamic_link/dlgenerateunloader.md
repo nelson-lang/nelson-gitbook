@@ -13,6 +13,7 @@ Generates unloader.m file for C++ gateway.
 
 ## 📄 Description
 
+
 <b>dlgenerateunloader</b> generates a 'unloader.m' unload external dynamic libraries.
 
 ## 💡 Example
@@ -25,13 +26,14 @@ dlgenerateunloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
 text = fileread([tempdir(), 'unloader.m'])
 ```
 
+
 ## 🔗 See also
 
 [dlgenerateloader](../dynamic_link/dlgenerateloader.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,9 +16,12 @@ vérifie si l'entrée est un tableau de chaînes avec un seul élément.
 
 ## 📄 Description
 
+
 <b>isStringScalar</b> vérifie si l'entrée est un tableau de chaînes avec un seul élément.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 r = isStringScalar('hello')
@@ -26,14 +29,15 @@ r = isStringScalar("hello")
 r = isStringScalar(["hello", "world"])
 ```
 
+
 ## 🔗 Voir aussi
 
 [ischar](../../types/ischar.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

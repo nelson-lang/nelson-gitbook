@@ -22,9 +22,10 @@ Exécute un fichier Julia depuis Nelson.
 
 ## 📄 Description
 
-<b>jlrunfile(filename)</b> exécute un fichier Julia.
 
-Comme la fonction <b>jlrun</b>, les variables générées dans l'espace Julia via<b>jlrunfile</b> sont persistantes.
+<b>jlrunfile(filename)</b> exécute un fichier Julia. 
+
+Comme la fonction <b>jlrun</b>, les variables générées dans l'espace Julia via<b>jlrunfile</b> sont persistantes. 
 
 Le code <b>outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN)</b> exécute le fichier avec un ou plusieurs arguments nom-valeur.
 
@@ -36,12 +37,12 @@ jlrunfile_example_1.jl
 content = "hello Nelson"
 display(content)
 ```
-
 jlrunfile from Nelson
 
 ```matlab
 jlrunfile('jlrunfile_example_1.jl')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -49,9 +50,9 @@ jlrunfile('jlrunfile_example_1.jl')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.12.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.12.0   | version initiale |
 
 <!--
 ## 👤 Auteur

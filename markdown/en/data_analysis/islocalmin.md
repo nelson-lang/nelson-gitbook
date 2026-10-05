@@ -29,13 +29,14 @@ Detect local minima in data.
 
 ## 📄 Description
 
-<b>islocalmin</b> marks the elements of A that are smaller than their neighbors along the operating dimension. A run of equal values smaller than the values around it is one local minimum (see 'FlatSelection').
 
-The first and last elements are never local minima. NaN values are ignored. -Inf values are always local minima, with an infinite prominence.
+<b>islocalmin</b> marks the elements of A that are smaller than their neighbors along the operating dimension. A run of equal values smaller than the values around it is one local minimum (see 'FlatSelection'). 
 
-The prominence of a minimum measures how much it stands out: from the minimum, a horizontal line is drawn on each side up to the first strictly lower value or the end of the data; the basis is the lower of the two highest values found above these lines, and the prominence is the depth of the minimum below the basis. Every element of a flat minimum region carries its prominence.
+The first and last elements are never local minima. NaN values are ignored. -Inf values are always local minima, with an infinite prominence. 
 
-islocalmin(A) gives the same result as islocalmax applied to the reversed data: the options behave the same way. The filters are applied in this order: 'MinProminence', 'MinSeparation' (a flat region counts as one minimum spanning its samples) and 'MaxNumExtrema' (on ties, the first minimum wins).
+The prominence of a minimum measures how much it stands out: from the minimum, a horizontal line is drawn on each side up to the first strictly lower value or the end of the data; the basis is the lower of the two highest values found above these lines, and the prominence is the depth of the minimum below the basis. Every element of a flat minimum region carries its prominence. 
+
+islocalmin(A) gives the same result as islocalmax applied to the reversed data: the options behave the same way. The filters are applied in this order: 'MinProminence', 'MinSeparation' (a flat region counts as one minimum spanning its samples) and 'MaxNumExtrema' (on ties, the first minimum wins). 
 
 Without 'ProminenceWindow', the search runs in linear time: it is suitable for large signals.
 
@@ -48,7 +49,6 @@ A = [5 0 4 2 4 1 5];
 [TF, P] = islocalmin(A)
 islocalmin(A, 'MinProminence', 3)
 ```
-
 Flat minima regions
 
 ```matlab
@@ -57,7 +57,6 @@ A = max(-0.75, -sin(pi * x));
 find(islocalmin(A, 'FlatSelection', 'first'))
 find(islocalmin(A, 'FlatSelection', 'all'))
 ```
-
 Most prominent minimum of each column
 
 ```matlab
@@ -65,13 +64,14 @@ A = [3 4; 1 2; 2 4; 0 1; 3 4];
 TF = islocalmin(A, 'MaxNumExtrema', 1)
 ```
 
+
 ## 🔗 See also
 
 [islocalmax](../data_analysis/islocalmax.md), [min](../data_analysis/min.md), [movmin](../data_analysis/movmin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

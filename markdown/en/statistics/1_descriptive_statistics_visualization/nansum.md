@@ -11,25 +11,29 @@ Sum, ignoring NaN values.
 
 ## 📄 Description
 
-<b>nansum</b> computes the sum after removing <b>NaN</b> values from each operated slice; a slice made only of <b>NaN</b> sums to <b>0</b>.
 
-The default operating dimension is the first nonsingleton dimension.
+<b>nansum</b> computes the sum after removing <b>NaN</b> values from each operated slice; a slice made only of <b>NaN</b> sums to <b>0</b>. 
+
+The default operating dimension is the first nonsingleton dimension. 
 
 It is equivalent to <b>sum(X, ..., 'omitnan')</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 y = nansum([1 NaN 3 NaN 5])
 ```
 
+
 ## 🔗 See also
 
-[sum](../../data_analysis/sum.md), [nanmean](../../statistics/nanmean.md), [nanmax](../../statistics/nanmax.md), [nanmin](../../statistics/nanmin.md).
+[sum](../../data_analysis/sum.md), [nanmean](../../statistics/1_descriptive_statistics_visualization/nanmean.md), [nanmax](../../statistics/1_descriptive_statistics_visualization/nanmax.md), [nanmin](../../statistics/1_descriptive_statistics_visualization/nanmin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

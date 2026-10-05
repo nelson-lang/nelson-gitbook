@@ -19,11 +19,14 @@ Ferme un fichier ouvert.
 
 ## 📄 Description
 
-<b>fclose</b> doit être utilisé pour fermer un fichier ouvert par<b>fopen</b>.
+
+<b>fclose</b> doit être utilisé pour fermer un fichier ouvert par<b>fopen</b>. 
 
 <b>fclose('all')</b> ferme tous les fichiers ouverts par<b>fopen</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -35,14 +38,15 @@ status = fclose(fd)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [fopen](../stream_manager/fopen.md), [fread](../stream_manager/fread.md), [feof](../stream_manager/feof.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

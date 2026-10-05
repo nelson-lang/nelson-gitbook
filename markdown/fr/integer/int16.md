@@ -16,16 +16,20 @@ Convertit en entier signé 16 bits.
 
 ## 📄 Description
 
-<b>int16</b> convertit la valeur en type entier 16 bits.
+
+<b>int16</b> convertit la valeur en type entier 16 bits. 
 
 La valeur est arrondie à la valeur int16 la plus proche lors de la conversion. Une valeur supérieure ou inférieure à la plage pour la classe int16 est mappée vers l'une des extrémités de la plage [-32768, 32767].
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = [1 -32769 -120 127 32767 32768]
 B = int16(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ B = int16(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

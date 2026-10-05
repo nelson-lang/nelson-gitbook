@@ -18,7 +18,8 @@ Find connected components in a binary image or volume.
 
 ## 📄 Description
 
-Find connected foreground components in a 2-D binary image or 3-D binary volume.
+
+Find connected foreground components in a 2-D binary image or 3-D binary volume. 
 
 The returned structure contains Connectivity, ImageSize, NumObjects, and PixelIdxList fields.
 
@@ -32,8 +33,8 @@ CC=bwconncomp(BW);
 L=labelmatrix(CC);
 figure; imagesc(L); title('Connected components');
 ```
-
 <img src="bwconncomp_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -41,7 +42,7 @@ figure; imagesc(L); title('Connected components');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

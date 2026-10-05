@@ -19,9 +19,11 @@ Obtient la valeur d'une propriété d'un timeseries.
 
 ## 📄 Description
 
+
 <b>get</b> retourne la valeur d'une propriété nommée d'un timeseries. Appeler get avec uniquement l'objet retourne l'ensemble des propriétés publiques.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12], 'Name', 'speed');
@@ -30,14 +32,15 @@ time = get(ts, 'Time')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

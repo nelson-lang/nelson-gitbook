@@ -18,23 +18,27 @@ Fonction de repartition inverse binomiale
 
 ## 📄 Description
 
+
 <b>binoinv</b> calcule les probabilites inverses de queue inferieure binomiale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 y = [0.025 0.5 0.975];
 x = binoinv(y, 10, 0.4);
 ```
 
+
 ## 🔗 Voir aussi
 
-[binocdf](../../statistics/binocdf.md), [binopdf](../../statistics/binopdf.md).
+[binocdf](../../statistics/2_probability_distributions/binocdf.md), [binopdf](../../statistics/2_probability_distributions/binopdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

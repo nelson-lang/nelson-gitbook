@@ -16,14 +16,18 @@ Retourne vrai si l'argument est un fichier.
 
 ## 📄 Description
 
+
 <b>isfile(name)</b> renvoie <b>true</b> si<b>name</b> est un fichier.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 isfile(nelsonroot())
 isfile([nelsonroot(), '/etc/finish.m'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,9 +35,9 @@ isfile([nelsonroot(), '/etc/finish.m'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                   |
-| ------- | ------------------------------------------------ |
-| 1.0.0   | version initiale                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 1.4.0   | input arguments support scalar string array type |
 
 <!--

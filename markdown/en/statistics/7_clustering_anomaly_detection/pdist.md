@@ -20,7 +20,8 @@ Pairwise distances between observations.
 
 ## 📄 Description
 
-<b>pdist</b> computes distances between pairs of rows of <b>X</b>.
+
+<b>pdist</b> computes distances between pairs of rows of <b>X</b>. 
 
 The output order is compatible with <b>squareform</b>: pairs are stored as (2,1), (3,1), (3,2), and so on.
 
@@ -34,13 +35,14 @@ D = pdist(X)
 Z = squareform(D)
 ```
 
+
 ## 🔗 See also
 
-[squareform](../../statistics/squareform.md), [pdist2](../../statistics/pdist2.md).
+[squareform](../../statistics/7_clustering_anomaly_detection/squareform.md), [pdist2](../../statistics/7_clustering_anomaly_detection/pdist2.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -4,11 +4,11 @@ Checks if a variable is global.
 
 ## 📝 Syntax
 
-- state = isglobal(variable_name)
+- state = isglobal(variable\_name)
 
 ## 📥 Input argument
 
-- variable_name - a string: variable name.
+- variable\_name - a string: variable name.
 
 ## 📤 Output argument
 
@@ -16,9 +16,12 @@ Checks if a variable is global.
 
 ## 📄 Description
 
-<b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.
+
+<b>isglobal</b> returns true if <b>variable\_name</b> has been declared as global variable and false otherwise.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = 3;
@@ -30,13 +33,14 @@ clear global b
 isglobal b
 ```
 
+
 ## 🔗 See also
 
 [clear](../memory_manager/clear.md), [who](../memory_manager/who.md), [global](../memory_manager/global.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

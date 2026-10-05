@@ -23,21 +23,24 @@ Trace la rÃ©ponse temporelle simulÃ©e d'un systÃ¨me dynamique Ã  des ent
 
 ## 📄 Description
 
-La fonction <b>lsim(sys, u, t)</b> gÃ©nÃ¨re un tracÃ© illustrant la rÃ©ponse temporelle simulÃ©e du modÃ¨le de systÃ¨me dynamique <b>sys</b> Ã  l'historique d'entrÃ©e (<b>t</b>, <b>u</b>).
 
-Les Ã©chantillons temporels pour la simulation sont spÃ©cifiÃ©s par le vecteur <b>t</b>.
+La fonction <b>lsim(sys, u, t)</b> gÃ©nÃ¨re un tracÃ© illustrant la rÃ©ponse temporelle simulÃ©e du modÃ¨le de systÃ¨me dynamique <b>sys</b> Ã  l'historique d'entrÃ©e (<b>t</b>, <b>u</b>). 
 
-Dans le cas des systÃ¨mes Ã  entrÃ©e unique, le signal d'entrÃ©e <b>u</b> est un vecteur de la mÃªme longueur que <b>t</b>.
+Les Ã©chantillons temporels pour la simulation sont spÃ©cifiÃ©s par le vecteur <b>t</b>. 
 
-Pour les systÃ¨mes Ã  entrÃ©es multiples, <b>u</b> est un tableau avec des lignes correspondant aux Ã©chantillons temporels (length(t)) et des colonnes correspondant aux entrÃ©es de <b>sys</b>.
+Dans le cas des systÃ¨mes Ã  entrÃ©e unique, le signal d'entrÃ©e <b>u</b> est un vecteur de la mÃªme longueur que <b>t</b>. 
 
-Une utilisation supplÃ©mentaire de la fonction est dÃ©montrÃ©e par l'exemple <b>lsim(sys, u, t, x0)</b>, oÃ¹ un vecteur <b>x0</b> est fourni pour spÃ©cifier les valeurs d'Ã©tat initiales.
+Pour les systÃ¨mes Ã  entrÃ©es multiples, <b>u</b> est un tableau avec des lignes correspondant aux Ã©chantillons temporels (length(t)) et des colonnes correspondant aux entrÃ©es de <b>sys</b>. 
 
-Cela est particuliÃ¨rement pertinent lorsque <b>sys</b> est un modÃ¨le d'Ã©tat-espace.
+Une utilisation supplÃ©mentaire de la fonction est dÃ©montrÃ©e par l'exemple <b>lsim(sys, u, t, x0)</b>, oÃ¹ un vecteur <b>x0</b> est fourni pour spÃ©cifier les valeurs d'Ã©tat initiales. 
+
+Cela est particuliÃ¨rement pertinent lorsque <b>sys</b> est un modÃ¨le d'Ã©tat-espace. 
 
 La fonction simule la rÃ©ponse temporelle du systÃ¨me dynamique pour un signal d'entrÃ©e arbitraire et trace les sorties correspondantes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [-10 -20 -30;1  0  0; 0  1  0];
@@ -51,8 +54,8 @@ sys = ss(A, B, C, D);
 lsim(sys, U, T, X0);
 
 ```
-
 <img src="lsim1.svg" align="middle"/>
+
 
 ```matlab
 A = [-1.7  -0.3   1.1;
@@ -76,17 +79,17 @@ u = [uSq uP];
 lsim(sys,u,t)
 
 ```
-
 <img src="lsim2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[gensig](../../control_system/gensig.md), [step](../../control_system/step.md).
+[gensig](../../control_system/2_model_conversion_interconnection/gensign.md), [step](../../control_system/4_time_frequency_response/step.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

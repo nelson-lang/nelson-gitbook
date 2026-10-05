@@ -15,9 +15,12 @@ Vérifie que la valeur n'est pas creuse (sparse).
 
 ## 📄 Description
 
+
 <b>mustBeNonSparse</b> vérifie que la valeur n'est pas creuse (sparse) ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeNonSparse(1)
@@ -26,14 +29,15 @@ mustBeNonSparse(sparse(3))
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [issparse](../types/issparse.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

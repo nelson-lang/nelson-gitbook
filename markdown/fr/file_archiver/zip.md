@@ -19,18 +19,22 @@ Compresser des fichiers dans une archive zip.
 
 ## 📄 Description
 
-<b>zip</b> compresse des fichiers et des répertoires dans une archive zip.
 
-Chaque fichier individuel doit être inférieur à 4 Go.
+<b>zip</b> compresse des fichiers et des répertoires dans une archive zip. 
+
+Chaque fichier individuel doit être inférieur à 4 Go. 
 
 Le nombre de fichiers spécifiés doit être inférieur à 65535.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton'])
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -38,8 +42,8 @@ zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

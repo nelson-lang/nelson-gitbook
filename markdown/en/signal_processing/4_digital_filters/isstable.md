@@ -18,9 +18,12 @@ Determine whether a digital filter is stable.
 
 ## 📄 Description
 
+
 <b>isstable</b> checks the pole radii of a digital filter.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ tf = isstable([1], [1 -0.5]);
 
 ```
 
+
 ## 🔗 See also
 
-[tf2zp](../../signal_processing/tf2zp.md).
+[tf2zp](../../signal_processing/4_digital_filters/tf2zp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

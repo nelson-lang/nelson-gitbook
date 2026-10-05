@@ -17,6 +17,7 @@ Detect Harris corner features.
 
 ## 📄 Description
 
+
 detectHarrisFeatures computes a Harris corner metric, keeps local maxima, sorts them by metric strength, and returns their image coordinates. Supported options are MinQuality, FilterSize, SensitivityFactor and ROI.
 
 ## 💡 Example
@@ -29,16 +30,16 @@ points=detectHarrisFeatures(I,'MinQuality',0.05);
 figure; imagesc(I); axis image; hold on;
 plot(points.Location(:,1),points.Location(:,2),'r+'); title('Harris points');
 ```
-
 <img src="detectHarrisFeatures_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[cornermetric](../../../image_processing/cornermetric.md), [detectFASTFeatures](../../../image_processing/detectFASTFeatures.md).
+[cornermetric](../../../image_processing/2_image_analysis/9_feature_detection/cornermetric.md), [detectFASTFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectFASTFeatures.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -12,7 +12,8 @@ Stop and invalidate timer objects.
 
 ## 📄 Description
 
-<b>delete</b> stops timer objects and invalidates their handles. After deletion, <b>isvalid</b> returns false for those handles.
+
+<b>delete</b> stops timer objects and invalidates their handles. After deletion, <b>isvalid</b> returns false for those handles. 
 
 Delete timers when they are no longer needed. A deleted timer cannot be restarted.
 
@@ -28,7 +29,6 @@ wait(t);
 delete(t);
 isvalid(t)
 ```
-
 Delete a running timer. The timer is stopped before the handle is invalidated.
 
 ```matlab
@@ -40,13 +40,14 @@ delete(t);
 isvalid(t)
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [isvalid](../../time/timer.isvalid.md), [stop](../../time/stop.md).
+[timer](../../time/7_timers/timer.md), [isvalid](../../time/7_timers/timer.isvalid.md), [stop](../../time/7_timers/stop.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,11 +18,14 @@ Moyenne et variance uniformes continues
 
 ## 📄 Description
 
-<b>unifstat</b> renvoie la moyenne et la variance element par element de lois uniformes continues.
+
+<b>unifstat</b> renvoie la moyenne et la variance element par element de lois uniformes continues. 
 
 Les bornes scalaires sont etendues pour correspondre aux bornes tableau. Les intervalles invalides produisent des valeurs NaN.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = unifstat(0, 1);
@@ -31,14 +34,15 @@ b = 2 * a;
 [m2, v2] = unifstat(a, b);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md), [unifrnd](../../statistics/unifrnd.md).
+[unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md), [unifrnd](../../statistics/2_probability_distributions/unifrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

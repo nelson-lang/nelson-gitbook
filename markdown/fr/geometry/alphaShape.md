@@ -15,6 +15,7 @@ Objet alpha shape
 
 ## 📄 Description
 
+
 <b>alphaShape</b> stocke des points et parametres alpha pour les requetes de frontiere et de forme.
 
 ## 💡 Exemple
@@ -28,14 +29,15 @@ A = area(SHP);
 plot(SHP)
 ```
 
+
 ## 🔗 Voir aussi
 
 [boundary](../geometry/boundary.md), [convhull](../geometry/convhull.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

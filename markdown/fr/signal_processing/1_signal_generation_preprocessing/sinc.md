@@ -16,13 +16,17 @@ Fonction sinc.
 
 ## 📄 Description
 
+
 <b>c = sinc(m)</b> renvoie un tableau<b>c</b> dont les éléments sont le sinc des éléments de l'entrée : <b>m</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 c = sinc(pi)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ c = sinc(pi)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

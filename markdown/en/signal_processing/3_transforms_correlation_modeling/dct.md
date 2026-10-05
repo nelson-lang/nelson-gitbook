@@ -20,9 +20,12 @@ Discrete cosine transform.
 
 ## 📄 Description
 
+
 <b>dct</b> computes the orthonormal type-II discrete cosine transform along the first non-singleton dimension by default. For matrices, each column is transformed independently.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ x = idct(y);
 
 ```
 
+
 ## 🔗 See also
 
-[idct](../../signal_processing/idct.md), [fft](../../fftw/fft.md).
+[idct](../../signal_processing/3_transforms_correlation_modeling/idct.md), [fft](../../fftw/fft.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

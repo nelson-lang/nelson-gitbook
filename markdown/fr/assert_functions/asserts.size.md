@@ -19,7 +19,8 @@ Verifie qu'une valeur a les dimensions attendues.
 
 ## 📄 Description
 
-L'assertion reussit lorsque size(value) correspond exactement a expectedSize.
+
+L'assertion reussit lorsque size(value) correspond exactement a expectedSize. 
 
 Le vecteur de taille attendu doit avoir le meme nombre de dimensions que value.
 
@@ -30,12 +31,12 @@ Expected size
 ```matlab
 asserts.size(ones(2, 3), [2 3]);
 ```
-
 Capture a size failure
 
 ```matlab
 [res, msg] = asserts.size(ones(2, 3), [3 2]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a size failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

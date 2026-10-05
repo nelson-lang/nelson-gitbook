@@ -20,9 +20,10 @@ Returns public method names for an object or class.
 
 ## 📄 Description
 
-<b>methods</b> returns a cell of strings with public method names.
 
-For classdef classes, methods declared with private or protected access are hidden from this list. Static methods are listed and can be called with <b>ClassName.method</b>.
+<b>methods</b> returns a cell of strings with public method names. 
+
+For classdef classes, methods declared with private or protected access are hidden from this list. Static methods are listed and can be called with <b>ClassName.method</b>. 
 
 For classdef object arrays, <b>methods</b> returns the public methods of the array element class.
 
@@ -41,16 +42,17 @@ b = NelsonHelpMethodsPoint();
 m = methods([a, b])
 ```
 
+
 ## 🔗 See also
 
 [isprop](../handle/isprop.md), [ismethod](../handle/ismethod.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                      |
-| ------- | ----------------------------------- |
-| 1.0.0   | initial version                     |
-| 2.0.0   | classdef class name support added   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 2.0.0   | classdef class name support added |
 | 2.0.0   | classdef object array support added |
 
 <!--

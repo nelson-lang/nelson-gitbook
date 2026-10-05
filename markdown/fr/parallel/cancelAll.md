@@ -12,9 +12,12 @@ Arrêter toutes les fonctions s'exécutant en arrière-plan.
 
 ## 📄 Description
 
+
 <b>cancelAll(fevalQueue)</b> arrête tous les éléments en cours d'exécution ou en file d'attente du pool d'arrière-plan.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 fptr = str2func('pause');
@@ -28,14 +31,15 @@ pool.FevalQueue
 f
 ```
 
+
 ## 🔗 Voir aussi
 
 [pause](../core/pause.md), [cancel](../parallel/cancel.md), [parfeval](../parallel/parfeval.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

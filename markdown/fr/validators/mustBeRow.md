@@ -15,9 +15,12 @@ Vérifie que la valeur est un vecteur ligne ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeRow</b> vérifie que la valeur est un vecteur ligne ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeRow([1, 1])
@@ -25,15 +28,16 @@ mustBeRow([])
 mustBeRow([1; 1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[isrow](../elementary_functions/isrow.md).
+[isrow](../elementary_functions/7_indexing_dimensions/isrow.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.10.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.10.0   | version initiale |
 
 <!--
 ## 👤 Auteur

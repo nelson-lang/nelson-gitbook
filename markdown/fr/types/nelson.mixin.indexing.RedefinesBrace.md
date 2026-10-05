@@ -16,7 +16,8 @@ Personnaliser l'indexation par accolades d'une classe.
 
 ## 📄 Description
 
-Dérivez de <b>nelson.mixin.indexing.RedefinesBrace</b> pour donner à une classe son propre comportement d'indexation par accolades. Une sous-classe implémente les méthodes protégées <b>braceReference(obj, indexOp)</b> (valeur de <b>obj{...}</b>), <b>braceAssign(obj, indexOp, value)</b> (<b>obj{...} = value</b>) et <b>braceListLength(obj, indexOp, indexContext)</b>.
+
+Dérivez de <b>nelson.mixin.indexing.RedefinesBrace</b> pour donner à une classe son propre comportement d'indexation par accolades. Une sous-classe implémente les méthodes protégées <b>braceReference(obj, indexOp)</b> (valeur de <b>obj{...}</b>), <b>braceAssign(obj, indexOp, value)</b> (<b>obj{...} = value</b>) et <b>braceListLength(obj, indexOp, indexContext)</b>. 
 
 <b>indexOp</b> est un <b>nelson.indexing.IndexingOperation</b> dont la propriété <b>Indices</b> est un tableau de cellules des indices.
 
@@ -48,14 +49,15 @@ classdef Bag < nelson.mixin.indexing.RedefinesBrace
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.mixin.indexing.RedefinesParen](../types/nelson.mixin.indexing.RedefinesParen.md), [nelson.indexing.IndexingOperation](../types/nelson.indexing.IndexingOperation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

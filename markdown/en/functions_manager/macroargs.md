@@ -4,11 +4,11 @@ Returns variables names of a function.
 
 ## 📝 Syntax
 
-- [argOut, argIn] = macroarg(function_name)
+- [argOut, argIn] = macroarg(function\_name)
 
 ## 📥 Input argument
 
-- function_name - a string: function name.
+- function\_name - a string: function name.
 
 ## 📤 Output argument
 
@@ -17,14 +17,18 @@ Returns variables names of a function.
 
 ## 📄 Description
 
+
 <b>macroargs</b> returns input and output variables used by the function.
 
 ## 💡 Example
+
+
 
 ```matlab
 [out_args, in_args] = macroarg('getfield')
 [out_args, in_args] = macroarg('deal')
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ Returns variables names of a function.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

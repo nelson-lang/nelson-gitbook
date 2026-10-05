@@ -10,11 +10,14 @@ Regression lineaire robuste.
 
 ## 📄 Description
 
-<b>robustfit</b> ajuste un modele de regression lineaire par moindres carres iterativement reponderes.
+
+<b>robustfit</b> ajuste un modele de regression lineaire par moindres carres iterativement reponderes. 
 
 Par defaut, une colonne constante est ajoutee avant l'ajustement. Les fonctions de poids prises en charge incluent <b>bisquare</b>, <b>huber</b>, <b>fair</b>, <b>cauchy</b>, <b>welsch</b>, <b>talwar</b>, <b>andrews</b>, <b>logistic</b>, <b>ols</b> et les handles de fonction.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = (1:10)';
@@ -22,14 +25,15 @@ y = 10 - 2*x + randn(10,1);
 [b, stats] = robustfit(x, y)
 ```
 
+
 ## 🔗 Voir aussi
 
-[regress](../../statistics/regress.md), [corr](../../statistics/corr.md).
+[regress](../../statistics/5_regression/regress.md), [corr](../../statistics/1_descriptive_statistics_visualization/corr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

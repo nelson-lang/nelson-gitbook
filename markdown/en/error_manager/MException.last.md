@@ -13,16 +13,20 @@ Return or reset last uncaught MException.
 
 ## 📄 Description
 
-<b>MException.last</b> returns the last uncaught exception recorded by the evaluator. Exceptions handled by a catch block do not update it.
+
+<b>MException.last</b> returns the last uncaught exception recorded by the evaluator. Exceptions handled by a catch block do not update it. 
 
 <b>MException.last('reset')</b> clears the recorded exception.
 
 ## 💡 Example
 
+
+
 ```matlab
 MException.last('reset');
 exception = MException.last
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ exception = MException.last
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

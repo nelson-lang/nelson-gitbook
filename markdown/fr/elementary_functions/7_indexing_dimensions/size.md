@@ -26,7 +26,12 @@ Taille d'un objet.
 
 ## 📄 Description
 
+
+
+
 ## 💡 Exemples
+
+
 
 ```matlab
 X = rand(3, 4, 5, 6);
@@ -37,18 +42,20 @@ size(X, [2 4])
 [s1, s2, s3, s4] = size(X)
 ```
 
+
 ```matlab
 size(cell(4,3))
 ```
 
+
 ## 🔗 Voir aussi
 
-[length](../../elementary_functions/length.md), [ndims](../../elementary_functions/ndims.md).
+[length](../../elementary_functions/7_indexing_dimensions/length.md), [ndims](../../elementary_functions/7_indexing_dimensions/ndims.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

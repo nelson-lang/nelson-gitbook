@@ -15,44 +15,48 @@ Creates a data set.
 
 ## 📄 Description
 
-<b>h5create</b> creates a data set and specify its extent dimensions, datatype and chunk size.
 
-Name-Values pair supported:
+<b>h5create</b> creates a data set and specify its extent dimensions, datatype and chunk size. 
 
-Name: Datatype (Nelson® datatypes).
+Name-Values pair supported: 
 
-Value: 'double' (default), 'uint64', 'uint32', 'uint16', 'uint8', 'single', 'int64', 'int32', 'int16', or 'int8'.
+Name: Datatype (Nelson® datatypes). 
 
-Name: ChunkSize, chunking layout
+Value: 'double' (default), 'uint64', 'uint32', 'uint16', 'uint8', 'single', 'int64', 'int32', 'int16', or 'int8'. 
 
-Value: []
+Name: ChunkSize, chunking layout 
 
-Name: Deflate, gzip compression level (0-9)
+Value: [] 
 
-Value: 0 (default)
+Name: Deflate, gzip compression level (0-9) 
 
-Name: FillValue, fill value for numeric data sets.
+Value: 0 (default) 
 
-Value: 0 (default)
+Name: FillValue, fill value for numeric data sets. 
 
-Name: Fletcher32, enable fletcher32 checksum filter.
+Value: 0 (default) 
 
-Value: logical: false by default
+Name: Fletcher32, enable fletcher32 checksum filter. 
 
-Name: Shuffle, enable shuffle filter.
+Value: logical: false by default 
 
-Value: logical: false by default
+Name: Shuffle, enable shuffle filter. 
 
-Name: TextEncoding, Character encoding.
+Value: logical: false by default 
+
+Name: TextEncoding, Character encoding. 
 
 Value: 'system' or 'UTF-8' (default).
 
 ## 💡 Example
 
+
+
 ```matlab
 h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
 h5dump([tempdir(), 'myfile.h5'])
 ```
+
 
 ## 🔗 See also
 
@@ -60,7 +64,7 @@ h5dump([tempdir(), 'myfile.h5'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

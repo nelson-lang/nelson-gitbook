@@ -20,7 +20,8 @@ Contrôle l'écho lors de l'exécution des scripts.
 
 ## 📄 Description
 
-<b>echo('off')</b> désactive le mode echo.
+
+<b>echo('off')</b> désactive le mode echo. 
 
 Sans arguments d'entrée ou de sortie, la commande <b>echo</b> bascule l'état d'echo courant.
 
@@ -38,14 +39,15 @@ echo(R)
 A
 ```
 
+
 ## 🔗 Voir aussi
 
 [disp](../display_format/disp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

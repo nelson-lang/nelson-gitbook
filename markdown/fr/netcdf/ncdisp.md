@@ -20,7 +20,8 @@ Affiche le contenu d'une source de donnees netCDF.
 
 ## 📄 Description
 
-ncdisp affiche une vue lisible du contenu d'une source netCDF.
+
+ncdisp affiche une vue lisible du contenu d'une source netCDF. 
 
 Utilisez cette fonction pour explorer rapidement groupes, dimensions, variables et attributs.
 
@@ -35,14 +36,15 @@ ncwrite(filename, 'temperature', [1 2 3]);
 ncdisp(filename)
 ```
 
+
 ## 🔗 Voir aussi
 
 [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -11,13 +11,16 @@ Positionnement multidimensionnel non classique.
 
 ## 📄 Description
 
-<b>mdscale</b> calcule une configuration de positionnement multidimensionnel a partir d'une matrice de dissimilarites ou d'un vecteur de distances.
 
-Les options nom-valeur incluent Criterion, Weights, Start, Replicates et Options. Les criteres supportes sont stress, sstress, metricstress, metricsstress, sammon et strain.
+<b>mdscale</b> calcule une configuration de positionnement multidimensionnel a partir d'une matrice de dissimilarites ou d'un vecteur de distances. 
+
+Les options nom-valeur incluent Criterion, Weights, Start, Replicates et Options. Les criteres supportes sont stress, sstress, metricstress, metricsstress, sammon et strain. 
 
 Les dissimilarites NaN sont traitees comme des valeurs manquantes. La structure Options peut etre creee avec statset et supporte Display, MaxIter, TolFun et TolX.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [0 0; 1 0; 0 2; 2 2];
@@ -25,14 +28,15 @@ D = pdist(X);
 [Y, stress, disparities] = mdscale(D, 2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[cmdscale](../../statistics/cmdscale.md), [pdist](../../statistics/pdist.md), [squareform](../../statistics/squareform.md).
+[cmdscale](../../statistics/8_dimension_reduction_feature_selection/cmdscale.md), [pdist](../../statistics/7_clustering_anomaly_detection/pdist.md), [squareform](../../statistics/7_clustering_anomaly_detection/squareform.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

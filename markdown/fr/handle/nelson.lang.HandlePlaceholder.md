@@ -12,19 +12,20 @@ Classe handle de remplacement pour les cibles absentes.
 
 ## 📄 Description
 
-<b>nelson.lang.HandlePlaceholder</b> est une classe handle concrete utilisee quand une API doit retourner un handle mais qu'aucune cible vivante n'est disponible.
 
-Un objet placeholder cree par le constructeur est un handle valide normal jusqu'a sa suppression.
+<b>nelson.lang.HandlePlaceholder</b> est une classe handle concrete utilisee quand une API doit retourner un handle mais qu'aucune cible vivante n'est disponible. 
 
-Une reference faible sans cible affectee retourne un handle invalide dont la classe est <b>nelson.lang.HandlePlaceholder</b>.
+Un objet placeholder cree par le constructeur est un handle valide normal jusqu'a sa suppression. 
 
-La classe ne definit pas de proprietes ni de methodes utilisateur au-dela des operations communes aux handles.
+Une reference faible sans cible affectee retourne un handle invalide dont la classe est <b>nelson.lang.HandlePlaceholder</b>. 
 
-Utiliser cette classe comme classe handle neutre quand la classe de la cible originale est inconnue ou sans importance.
+La classe ne definit pas de proprietes ni de methodes utilisateur au-dela des operations communes aux handles. 
 
-Un objet placeholder construit et un handle placeholder invalide sont deux valeurs differentes. L'objet construit est valide jusqu'a sa suppression; un handle placeholder invalide n'est jamais valide.
+Utiliser cette classe comme classe handle neutre quand la classe de la cible originale est inconnue ou sans importance. 
 
-Les handles placeholder peuvent etre verifies avec <b>isvalid</b>, compares par nom de classe avec <b>class</b>, et utilises partout ou un placeholder handle generique est approprie.
+Un objet placeholder construit et un handle placeholder invalide sont deux valeurs differentes. L'objet construit est valide jusqu'a sa suppression; un handle placeholder invalide n'est jamais valide. 
+
+Les handles placeholder peuvent etre verifies avec <b>isvalid</b>, compares par nom de classe avec <b>class</b>, et utilises partout ou un placeholder handle generique est approprie. 
 
 La classe est volontairement vide. Ce n'est pas un conteneur de donnees utilisateur.
 
@@ -39,7 +40,6 @@ isvalid(p)
 delete(p)
 isvalid(p)
 ```
-
 Examiner le handle retourne par defaut par une reference faible vide.
 
 ```matlab
@@ -48,7 +48,6 @@ h = w.Handle;
 class(h)
 isvalid(h)
 ```
-
 Comparer un objet placeholder valide avec un handle placeholder invalide.
 
 ```matlab
@@ -60,14 +59,15 @@ isvalid(p)
 isvalid(q)
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.lang.WeakReference](../handle/nelson.lang.WeakReference.md), [nelson.lang.invalidHandle](../handle/nelson.lang.invalidHandle.md), [isvalid](../handle/isvalid.md), [class](../types/class.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

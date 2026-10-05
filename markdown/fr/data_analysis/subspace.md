@@ -17,6 +17,7 @@ Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes d
 
 ## 📄 Description
 
+
 <b>subspace</b> calcule une mesure scalaire de la distance entre les sous-espaces engendrés par les colonnes des matrices <b>A</b> et <b>B</b>. La valeur est dérivée des angles principaux entre les deux sous-espaces (calculés à partir de bases orthonormales des espaces colonnes). Cette mesure est utile pour quantifier la proximité de deux espaces colonnes ; elle est nulle lorsque les sous-espaces coïncident.
 
 ## Fonction(s) utilisée(s)
@@ -24,6 +25,8 @@ Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes d
 orth
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -35,11 +38,12 @@ d = subspace(A, B)
 
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

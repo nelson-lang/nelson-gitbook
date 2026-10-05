@@ -1,6 +1,10 @@
 # Tableaux categoriels
 
+
+    
 Le module Categorical fournit des tableaux dont les elements appartiennent a un ensemble fixe de categories textuelles.
+
+  
 
 ## Functions
 
@@ -20,3 +24,4 @@ Le module Categorical fournit des tableaux dont les elements appartiennent a un 
 - [renamecats](renamecats.md) - Renommer les categories d'un tableau categoriel.
 - [reordercats](reordercats.md) - Reordonner les categories d'un tableau categoriel.
 - [setcats](setcats.md) - Definir la liste des categories d'un tableau categoriel.
+

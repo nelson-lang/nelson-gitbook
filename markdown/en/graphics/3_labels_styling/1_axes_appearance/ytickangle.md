@@ -19,7 +19,8 @@ Rotate y-axis tick labels.
 
 ## 📄 Description
 
-<b>ytickangle</b> rotates the y-axis tick labels of the current axes by the given angle.
+
+<b>ytickangle</b> rotates the y-axis tick labels of the current axes by the given angle. 
 
 A positive angle rotates the labels counterclockwise; a negative angle rotates them clockwise.
 
@@ -35,13 +36,14 @@ ytickangle(45);
 
 ```
 
+
 ## 🔗 See also
 
 [yticks](../../../graphics/3_labels_styling/1_axes_appearance/yticks.md), [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

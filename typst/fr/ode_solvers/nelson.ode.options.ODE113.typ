@@ -1,0 +1,54 @@
+#import "nelson_help.typ": *
+
+= nelson.ode.options.ODE113 <ode_solvers:nelson.ode.options.ODE113>
+
+Objet d'options pour le solveur ode113.
+
+== Syntaxe
+
+- #raw("options = nelson.ode.options.ODE113()");
+- #raw("options = nelson.ode.options.ODE113(nom, valeur)");
+
+== Description
+
+#strong[nelson.ode.options.ODE113]; cree une classe d'options compatible pour la valeur de solveur #strong['ode113']; utilisee par le workflow objet #strong[ode];.
+
+ 
+
+#table(
+  columns: 3,
+  [Groupe d'options], [Noms], [Role], 
+  [Pas], [#strong[InitialStep];, #strong[MaxStep];, #strong[MinStep];], [Borne la selection adaptative du pas.], 
+  [Controle d'erreur], [#strong[NormControl];], [Bascule entre un controle d'erreur par composante et par norme.], 
+  [Sortie], [#strong[OutputFcn];, #strong[OutputSelection];], [Choisit les callbacks de sortie et les composantes retournees.], 
+)
+ La valeur de solveur #strong['ode113']; utilise une methode predicteur-correcteur Adams-Bashforth-Moulton d'ordre variable, efficace pour les problemes non raides quand les evaluations de fonction sont couteuses ou quand des tolerances serrees sont demandees.
+
+ Les proprietes prises en charge sont #strong[InitialStep];, #strong[MaxStep];, #strong[MinStep];, #strong[NormControl];, #strong[OutputFcn]; et #strong[OutputSelection];. #strong[InitialStep];, #strong[MaxStep]; et #strong[MinStep]; sont des scalaires positifs bornant le pas adaptatif ; leur valeur par defaut est vide, ce qui laisse le solveur les choisir automatiquement. #strong[NormControl]; accepte #strong['on']; ou #strong['off']; (par defaut #strong['off'];) et active un controle d'erreur base sur la norme de la solution au lieu d'un controle par composante. #strong[OutputFcn]; est un handle de fonction appele sur chaque point de sortie (par defaut vide). #strong[OutputSelection]; est un vecteur d'indices selectionnant les composantes de la solution transmises a la fonction de sortie (par defaut vide, toutes les composantes). La valeur #strong[Refine]; par defaut pour ce solveur est 1.
+
+
+== Exemple
+
+Creer un probleme non raide resolu avec les options ode113.
+
+``````matlab
+options = nelson.ode.options.ODE113('MaxStep', 0.2);
+problem = ode('ODEFcn', @(t,y) -y, 'InitialValue', 1, ...
+  'SolverOptions', options);
+result = solve(problem, 0, 1)
+``````
+
+
+== Voir aussi
+
+#nlink(<ode_solvers:ode>)[ode];, #nlink(<ode_solvers:ode113>)[ode113];, #nlink(<ode_solvers:nelson.ode.options.ODE45>)[nelson.ode.options.ODE45];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

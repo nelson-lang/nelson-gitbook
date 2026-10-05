@@ -1,6 +1,10 @@
 # MEX functions
 
+
+    
 The MEX module allows C/C++ code to interface with Nelson and access Nelson's engine, variables, and functions.
+
+  
 
 ## Functions
 
@@ -19,3 +23,4 @@ The MEX module allows C/C++ code to interface with Nelson and access Nelson's en
 - [mexCallMATLAB](mexCallMATLAB.md) - Call a NELSON function
 - [mexCallMATLABWithTrap](mexCallMATLABWithTrap.md) - Call a NELSON function and capture error.
 - [mexext](mexext.md) - Binary MEX file-name extension
+

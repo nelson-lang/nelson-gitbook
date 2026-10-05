@@ -6,7 +6,7 @@ appelle l'éditeur de texte intégré.
 
 - editor()
 - editor(filename)
-- editor('editor_command', cmd)
+- editor('editor\_command', cmd)
 
 ## 📥 Argument d'entrée
 
@@ -15,22 +15,25 @@ appelle l'éditeur de texte intégré.
 
 ## 📄 Description
 
-<b>editor</b> ouvre un fichier existant dans l'éditeur intégré de Nelson.
 
-<b>editor</b> doit être considéré comme interne et il est préférable d'utiliser <b>edit</b>.
+<b>editor</b> ouvre un fichier existant dans l'éditeur intégré de Nelson. 
 
-Définir un autre éditeur de texte par défaut : (exemple avec VS Code)
+<b>editor</b> doit être considéré comme interne et il est préférable d'utiliser <b>edit</b>. 
 
-<code>editor('editor_command', 'code')</code>
+Définir un autre éditeur de texte par défaut : (exemple avec VS Code) 
 
-Pour restaurer l'éditeur par défaut, utilisez :
+<code>editor('editor_command', 'code')</code> 
+
+Pour restaurer l'éditeur par défaut, utilisez : 
 
 <code>editor('editor_command', '
-')</code>
+        ')</code> 
 
 Le changement d'éditeur est persistant et sera enregistré dans un fichier de configuration.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 edit('edit')
@@ -45,16 +48,17 @@ editor('editor_command ', '')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [edit](../text_editor/edit.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                    |
-| ------- | ------------------------------------------------- |
-| 1.0.0   | version initiale                                  |
-| 1.10.0  | Option pour changer l'éditeur de texte par défaut |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.10.0   | Option pour changer l'éditeur de texte par défaut |
 
 <!--
 ## 👤 Auteur

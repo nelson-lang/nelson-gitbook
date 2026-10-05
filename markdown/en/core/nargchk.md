@@ -22,11 +22,12 @@ Validate number of input arguments.
 
 ## 📄 Description
 
-<b>nargchk</b> checks whether the number of input arguments <b>n</b> falls within the range <b>[minArgs, maxArgs]</b>.
 
-It returns the message <b>'Not enough input arguments.'</b> when <b>n</b> is less than <b>minArgs</b>, <b>'Too many input arguments.'</b> when <b>n</b> is greater than <b>maxArgs</b>, and an empty result otherwise.
+<b>nargchk</b> checks whether the number of input arguments <b>n</b> falls within the range <b>[minArgs, maxArgs]</b>. 
 
-It is typically used as <b>error(nargchk(minArgs, maxArgs, nargin))</b> at the start of a function.
+It returns the message <b>'Not enough input arguments.'</b> when <b>n</b> is less than <b>minArgs</b>, <b>'Too many input arguments.'</b> when <b>n</b> is greater than <b>maxArgs</b>, and an empty result otherwise. 
+
+It is typically used as <b>error(nargchk(minArgs, maxArgs, nargin))</b> at the start of a function. 
 
 <b>nargchk</b> is deprecated and kept for compatibility with legacy code. Use <b>narginchk</b> instead in new code.
 
@@ -37,18 +38,17 @@ Not enough input arguments:
 ```matlab
 msg = nargchk(2, 3, 1)
 ```
-
 Too many input arguments:
 
 ```matlab
 msg = nargchk(1, 2, 3)
 ```
-
 In range returns an empty message:
 
 ```matlab
 msg = nargchk(1, 3, 2)
 ```
+
 
 ## 🔗 See also
 
@@ -56,7 +56,7 @@ msg = nargchk(1, 3, 2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

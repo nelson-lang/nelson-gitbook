@@ -22,13 +22,16 @@ Retire une tendance polynomiale.
 
 ## 📄 Description
 
-<b>detrend</b> retire une tendance polynomiale de faible degre par un ajustement aux moindres carres et retourne le residu.
 
-Par defaut la fonction retire une tendance lineaire. Avec <b>n</b> egal a 0 (ou la methode <b>'constant'</b>) elle retire seulement la moyenne. Les points de rupture produisent une tendance lineaire par morceaux continue aux indices de lignes donnes.
+<b>detrend</b> retire une tendance polynomiale de faible degre par un ajustement aux moindres carres et retourne le residu. 
+
+Par defaut la fonction retire une tendance lineaire. Avec <b>n</b> egal a 0 (ou la methode <b>'constant'</b>) elle retire seulement la moyenne. Les points de rupture produisent une tendance lineaire par morceaux continue aux indices de lignes donnes. 
 
 Une entree vecteur ligne retourne un vecteur ligne ; une entree vecteur colonne retourne un vecteur colonne.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 t = 0:0.1:2;
@@ -37,18 +40,20 @@ y = detrend(x)
 
 ```
 
+
 ```matlab
 y = detrend([1 3 2 4 6], 'constant')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[cumsum](../data_analysis/cumsum.md), [mean](../statistics/mean.md), [polyfit](../polynomial_functions/polyfit.md).
+[cumsum](../data_analysis/cumsum.md), [mean](../statistics/1_descriptive_statistics_visualization/mean.md), [polyfit](../polynomial_functions/polyfit.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

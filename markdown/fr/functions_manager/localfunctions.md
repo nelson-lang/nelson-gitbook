@@ -12,7 +12,8 @@ Retourne les handles des fonctions locales du fichier courant.
 
 ## 📄 Description
 
-<b>localfunctions</b> retourne un tableau de cellules de handles vers les fonctions locales definies dans le fichier courant.
+
+<b>localfunctions</b> retourne un tableau de cellules de handles vers les fonctions locales definies dans le fichier courant. 
 
 Si le contexte courant n'est pas un fichier avec des fonctions locales, le resultat est un tableau de cellules vide.
 
@@ -24,7 +25,6 @@ Appeler localfunctions depuis le contexte de commande.
 fh = localfunctions()
 isequal(fh, {})
 ```
-
 Retourner et appeler les handles des fonctions locales d'un fichier.
 
 ```matlab
@@ -50,14 +50,15 @@ names = localfunctions_demo()
 % {'add_one'; 'double_value'}
 ```
 
+
 ## 🔗 Voir aussi
 
 [which](../functions_manager/which.md), [func2str](../function_handle/func2str.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

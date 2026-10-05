@@ -18,6 +18,7 @@ Creates a help dialog box.
 
 ## 📄 Description
 
+
 helpdlg creates a help message dialog and returns a graphics figure handle.
 
 ## 💡 Examples
@@ -27,7 +28,6 @@ Create a help dialog.
 ```matlab
 h = helpdlg('Use the OK button to close this dialog.', 'Help');
 ```
-
 <img src="helpdlg_example.svg" align="middle"/>
 Display several help lines.
 
@@ -36,14 +36,15 @@ h = helpdlg({'Select a file.', 'Then press Open.'}, 'Help');
 close(h)
 ```
 
+
 ## 🔗 See also
 
 [msgbox](../gui/msgbox.md), [warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

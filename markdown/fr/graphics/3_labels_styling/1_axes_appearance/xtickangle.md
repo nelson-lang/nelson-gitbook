@@ -19,7 +19,8 @@ Faire pivoter les etiquettes de l'axe des x.
 
 ## 📄 Description
 
-<b>xtickangle</b> fait pivoter les etiquettes de l'axe des x des axes courants de l'angle indique.
+
+<b>xtickangle</b> fait pivoter les etiquettes de l'axe des x des axes courants de l'angle indique. 
 
 Un angle positif fait pivoter les etiquettes dans le sens anti-horaire ; un angle negatif dans le sens horaire.
 
@@ -35,13 +36,14 @@ xtickangle(45);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [ytickangle](../../../graphics/3_labels_styling/1_axes_appearance/ytickangle.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

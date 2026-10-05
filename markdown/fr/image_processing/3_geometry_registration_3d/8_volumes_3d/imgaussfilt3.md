@@ -24,6 +24,7 @@ Filtre un volume 3-D avec un noyau gaussien.
 
 ## 📄 Description
 
+
 Filtre un volume 3-D numerique ou logique avec un noyau gaussien separable. Les volumes numeriques complexes sont pris en charge en filtrant de facon coherente les parties reelle et imaginaire. Sigma peut etre scalaire ou un vecteur a trois elements. Padding peut valoir replicate, symmetric, circular, ou une valeur scalaire finie.
 
 ## 💡 Exemple
@@ -37,14 +38,15 @@ B = imgaussfilt3(V, 1.0, 'FilterSize', [5 5 5], 'Padding', 0);
 B(:, :, 5)
 ```
 
+
 ## 🔗 Voir aussi
 
-[imgaussfilt](../../../image_processing/imgaussfilt.md), [imref3d](../../../image_processing/imref3d.md).
+[imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md), [imref3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref3d.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

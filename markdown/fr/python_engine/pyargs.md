@@ -18,17 +18,21 @@ Générer des arguments nommés pour les fonctions Python.
 
 ## 📄 Description
 
-<b>pyargs(Name, Value, ...)</b> génère un ou plusieurs arguments nommés pour les fonctions Python.
 
-En Python, un argument nommé (keyword argument) est une valeur associée à un identifiant.
+<b>pyargs(Name, Value, ...)</b> génère un ou plusieurs arguments nommés pour les fonctions Python. 
+
+En Python, un argument nommé (keyword argument) est une valeur associée à un identifiant. 
 
 Veillez à positionner<b>pyargs</b> comme dernier argument lors de l'appel d'une fonction Python.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 pa = pyargs('A', 1)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +40,8 @@ pa = pyargs('A', 1)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.3.0   | version initiale |
 
 <!--

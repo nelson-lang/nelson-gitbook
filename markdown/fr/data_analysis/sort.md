@@ -25,13 +25,14 @@ Trier les éléments d'un tableau (algorithme de tri rapide).
 
 ## 📄 Description
 
-Avec deux sorties, les éléments dont les clés de tri sont équivalentes conservent leur ordre initial. Les indices renvoyés pour des valeurs équivalentes sont croissants dans chaque groupe, quel que soit le sens du tri.
 
-<b>sort</b> implémente l'algorithme de tri rapide.
+Avec deux sorties, les éléments dont les clés de tri sont équivalentes conservent leur ordre initial. Les indices renvoyés pour des valeurs équivalentes sont croissants dans chaque groupe, quel que soit le sens du tri. 
 
-Les paires nom-valeur peuvent être utilisées après la dimension et le sens du tri.
+<b>sort</b> implémente l'algorithme de tri rapide. 
 
-Arguments paires nom-valeur :
+Les paires nom-valeur peuvent être utilisées après la dimension et le sens du tri. 
+
+Arguments paires nom-valeur : 
 
 <b>
         'MissingPlacement'
@@ -41,7 +42,7 @@ Arguments paires nom-valeur :
         'first'
       </b>, <b>
         'last'
-      </b>.
+      </b>. 
 
 <b>
         'ComparisonMethod'
@@ -51,9 +52,9 @@ Arguments paires nom-valeur :
         'real'
       </b>, <b>
         'abs'
-      </b>.
+      </b>. 
 
-Avec 'MissingPlacement' défini à 'last', les valeurs présentes sont triées dans le sens demandé et les valeurs manquantes sont placées après elles. Cette règle s'applique avec une ou deux sorties. Une chaîne manquante est distincte d'une chaîne vide.
+Avec 'MissingPlacement' défini à 'last', les valeurs présentes sont triées dans le sens demandé et les valeurs manquantes sont placées après elles. Cette règle s'applique avec une ou deux sorties. Une chaîne manquante est distincte d'une chaîne vide. 
 
 Une valeur complexe est manquante si au moins une composante est NaN. Ces valeurs conservent leur ordre initial avec une ou deux sorties, y compris leur composante présente, pour chaque placement des valeurs manquantes et sens du tri.
 
@@ -76,7 +77,6 @@ B = sort(A, 'ComparisonMethod', 'real')
 B = sort(A, 'ComparisonMethod', 'abs')
 
 ```
-
 MissingPlacement
 
 ```matlab
@@ -87,14 +87,15 @@ A = [NaN 3 6 0 NaN];
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [issorted](../data_analysis/issorted.md), [unique](../data_analysis/unique.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

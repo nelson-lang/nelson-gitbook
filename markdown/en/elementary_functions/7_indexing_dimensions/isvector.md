@@ -16,9 +16,12 @@ Checks input is vector.
 
 ## 📄 Description
 
+
 <b>isvector</b> returns an scalar logical if entry is an vector.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -26,13 +29,14 @@ R = isvector(A)
 R = isvector(A(:,1))
 ```
 
+
 ## 🔗 See also
 
 [isempty](../../types/isempty.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

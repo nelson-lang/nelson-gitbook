@@ -16,13 +16,14 @@ Set breakpoints for debugging.
 
 ## 📄 Description
 
-<b>dbstop</b> sets breakpoints in programs for interactive debugging. When execution reaches a breakpoint, execution pauses and the interpreter enters debug mode.
 
-Breakpoints can be set at specific files or at specific locations.
+<b>dbstop</b> sets breakpoints in programs for interactive debugging. When execution reaches a breakpoint, execution pauses and the interpreter enters debug mode. 
 
-This function can only be called from the command line.
+Breakpoints can be set at specific files or at specific locations. 
 
-Text editor debugging features integrate with these functions for interactive debugging.
+This function can only be called from the command line. 
+
+Text editor debugging features integrate with these functions for interactive debugging. 
 
 See also the [Debugging Workflow](../text_editor/debugging_workflow.md) for an overview of debugging in Nelson.
 
@@ -41,7 +42,6 @@ dbstop in buggy
 buggy(1:5)
 
 ```
-
         Set a breakpoint at a local function.
 
 ```matlab
@@ -49,7 +49,6 @@ buggy(1:5)
 dbstop in myfile>myfunc
 
 ```
-
         Restore previously saved breakpoints.
 
 ```matlab
@@ -60,15 +59,16 @@ dbstop(b)
 
 ```
 
+
 ## 🔗 See also
 
 [dbclear](../debugger/dbclear.md), [dbcont](../debugger/dbcont.md), [dbquit](../debugger/dbquit.md), [dbstatus](../debugger/dbstatus.md), [dbstack](../debugger/dbstack.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

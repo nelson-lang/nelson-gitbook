@@ -17,9 +17,12 @@ Supprime un répertoire du chemin de recherche.
 
 ## 📄 Description
 
+
 <b>rmpath</b> supprime un répertoire du chemin de recherche.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 path
@@ -29,14 +32,15 @@ rmpath(tempdir())
 path
 ```
 
+
 ## 🔗 Voir aussi
 
 [path](../functions_manager/path.md), [addpath](../functions_manager/addpath.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

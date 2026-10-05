@@ -25,30 +25,36 @@ Interpolation de donnees grillees 2-D au format meshgrid
 
 ## 📄 Description
 
-<b>interp2</b> interpole des donnees grillees 2-D avec les conventions meshgrid. La grille par defaut est X=1:size(V,2), Y=1:size(V,1).
 
-<b>interp2(V)</b> raffine la grille une fois. <b>interp2(V,k)</b> insere 2^k-1 points interpoles entre les echantillons; k=0 retourne V.
+<b>interp2</b> interpole des donnees grillees 2-D avec les conventions meshgrid. La grille par defaut est X=1:size(V,2), Y=1:size(V,1). 
 
-Les vecteurs de grille doivent etre strictement monotones. Les valeurs complexes sont interpolees en separant parties reelle et imaginaire. Sans extrapval, les requetes hors domaine retournent NaN pour linear, nearest et cubic; makima et spline extrapolent par defaut.
+<b>interp2(V)</b> raffine la grille une fois. <b>interp2(V,k)</b> insere 2^k-1 points interpoles entre les echantillons; k=0 retourne V. 
+
+Les vecteurs de grille doivent etre strictement monotones. Les valeurs complexes sont interpolees en separant parties reelle et imaginaire. Sans extrapval, les requetes hors domaine retournent NaN pour linear, nearest et cubic; makima et spline extrapolent par defaut. 
 
 Les methodes cubiques N-D utilisent un stencil natif tensoriel a quatre points, avec repli lineaire sur les dimensions qui ont moins de quatre echantillons.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 V = [1 2; 3 4];
 Vq = interp2(V, 1.5, 1.5)
 ```
 
+
 ```matlab
 V = [1 2; 3 4];
 Vq = interp2(V, 1)
 ```
 
+
 ```matlab
 V = [1 2; 3 4];
 Vq = interp2(V, 0, 1.5, 'linear', -1)
 ```
+
 
 ```matlab
 [X,Y] = meshgrid(-3:3);
@@ -57,10 +63,10 @@ V = peaks(X,Y);
 Vq = interp2(X,Y,V,Xq,Yq,'linear');
 ```
 
+
 ## 🔗 Voir aussi
 
-[interp1](../special_functions/interp1.md), [interp3](../special_functions/interp3.md), [interpn](../special_functions/interpn.md), [meshgrid](../elementary_functions/meshgrid.md).
-
+[interp1](../special_functions/interp1.md), [interp3](../special_functions/interp3.md), [interpn](../special_functions/interpn.md), [meshgrid](../elementary_functions/1_array_creation_shape/meshgrid.md).
 <!--
 ## 👤 Auteur
 

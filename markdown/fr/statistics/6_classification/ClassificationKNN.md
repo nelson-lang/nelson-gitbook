@@ -23,14 +23,17 @@ Modele de classification par k plus proches voisins.
 
 ## 📄 Description
 
-ClassificationKNN stocke un classifieur par plus proches voisins avec ses predicteurs d'apprentissage, ses etiquettes, sa distance et son nombre de voisins.
+
+ClassificationKNN stocke un classifieur par plus proches voisins avec ses predicteurs d'apprentissage, ses etiquettes, sa distance et son nombre de voisins. 
 
 Creez cet objet avec fitcknn. Utilisez predict pour classer des observations a partir de leurs voisins les plus proches.
 
 ## Fonction(s) utilisée(s)
 
+
     fitcknn
     predict
+  
 
 ## 💡 Exemple
 
@@ -43,14 +46,15 @@ mdl = fitcknn(X, Y, 'NumNeighbors', 3);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitcknn](../../statistics/fitcknn.md).
+[predict](../../statistics/5_regression/predict.md), [fitcknn](../../statistics/6_classification/fitcknn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

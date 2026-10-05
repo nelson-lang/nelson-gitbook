@@ -12,29 +12,34 @@ Display a variable.
 
 ## 📄 Description
 
-<b>disp(V)</b> displays the value of the variable <b>V</b>.
+
+<b>disp(V)</b> displays the value of the variable <b>V</b>. 
 
 <b>disp</b> uses current<b>format</b> setting to display numeric values.
 
 ## 💡 Examples
 
+
+
 ```matlab
 disp('Hello Nelson')
 ```
+
 
 ```matlab
 disp(pi)
 ```
 
+
 ```matlab
 disp(eye(3, 3))
 ```
-
 disp always ends with a newline.
 
 ```matlab
 disp('')
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +47,7 @@ disp('')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

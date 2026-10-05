@@ -19,21 +19,26 @@ Renommer les noms de champs d'un struct ou d'un tableau de structs.
 
 ## 📄 Description
 
-<b>renameStructField</b> renomme les noms de champs d'un struct ou d'un tableau de structs.
+
+<b>renameStructField</b> renomme les noms de champs d'un struct ou d'un tableau de structs. 
 
 Il prend en charge le renommage de tous les noms de champs simultanément ou le renommage de champs sélectionnés individuellement.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 date_st = struct('day', 15, 'month' ,'August','year', 1974)
 date_st = renameStructField(date_st, {'Day', 'Month', 'Year'})
 ```
 
+
 ```matlab
 date_st = struct('day', 15, 'month' ,'August','year', 1974)
 date_st = renameStructField(date_st, 'day', 'jour')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -41,9 +46,9 @@ date_st = renameStructField(date_st, 'day', 'jour')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -16,16 +16,20 @@ Conversion de matrice sparse vers pleine.
 
 ## 📄 Description
 
-<b>full</b> convertit une matrice sparse en sa représentation pleine.
+
+<b>full</b> convertit une matrice sparse en sa représentation pleine. 
 
 Si l'argument d'entrée est déjà plein, alors l'argument de sortie sera égal à l'argument d'entrée.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 sp = sparse(eye(3,3))
 F = full(sp)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ F = full(sp)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -15,14 +15,18 @@ Vérifie que la valeur n'est pas vide ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeNonempty</b> vérifie que la valeur n'est pas vide ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeNonempty(1)
 mustBeNonempty([])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ mustBeNonempty([])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

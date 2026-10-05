@@ -18,11 +18,14 @@ Rectangular grid in N-D space
 
 ## 📄 Description
 
-<b>[X1, X2, â€¦ , Xn] = ndgrid(x1, x2, â€¦ , xn)</b> generates an n-dimensional full grid by replicating each grid vector.
+
+<b>[X1, X2, â€¦ , Xn] = ndgrid(x1, x2, â€¦ , xn)</b> generates an n-dimensional full grid by replicating each grid vector. 
 
 <b>[X1, X2, â€¦ , Xn] = ndgrid(xg)</b> In this scenario, the single grid vector<b>xg</b> is used for all dimensions. The number of output arguments determines the dimensionality n of the resulting grid.
 
 ## 💡 Examples
+
+
 
 ```matlab
 M = {'apple', 'banana', 'cherry'};
@@ -31,17 +34,19 @@ ndgrid(M , N)
 
 ```
 
+
 ```matlab
 [X, Y] = ndgrid(1:2:19, 2:2:12)
 ```
 
+
 ## 🔗 See also
 
-[meshgrid](../../elementary_functions/meshgrid.md), [mesh](../../graphics/mesh.md).
+[meshgrid](../../elementary_functions/1_array_creation_shape/meshgrid.md), [mesh](../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.6.0   | initial version |
 

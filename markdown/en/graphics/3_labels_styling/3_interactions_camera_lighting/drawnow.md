@@ -14,11 +14,14 @@ Update figures and process callbacks
 
 ## 📄 Description
 
-<b>drawnow</b> flushes the event queue and updates the figure window.
+
+<b>drawnow</b> flushes the event queue and updates the figure window. 
 
 <b>drawnow('limitrate')</b> and <b>drawnow limitrate</b> process pending callbacks but skip figure updates when the previous update was recent. This mode is useful in animation loops.
 
 ## 💡 Examples
+
+
 
 ```matlab
 x = -pi:pi/20:pi;
@@ -27,6 +30,7 @@ drawnow
 title('Title Here ...')
 grid on
 ```
+
 
 ```matlab
 x = linspace(0, 2*pi, 200);
@@ -37,13 +41,14 @@ for k = 1:20
 end
 ```
 
+
 ## 🔗 See also
 
 [refresh](../../../graphics/3_labels_styling/3_interactions_camera_lighting/refresh.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

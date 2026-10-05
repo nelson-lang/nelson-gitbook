@@ -18,7 +18,8 @@ Check that a value is empty.
 
 ## 📄 Description
 
-The assertion passes when value has no elements.
+
+The assertion passes when value has no elements. 
 
 Diagnostics include the computed dimensions.
 
@@ -29,12 +30,12 @@ Empty value
 ```matlab
 asserts.empty([]);
 ```
-
 Capture a non-empty value
 
 ```matlab
 [res, msg] = asserts.empty(1);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a non-empty value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,9 +21,12 @@ Pascal's triangle
 
 ## 📄 Description
 
+
 <b>pascal</b> generates a Pascal's triangle matrix of size N x N.
 
 ## 💡 Example
+
+
 
 ```matlab
 pascal(3)
@@ -31,15 +34,16 @@ pascal(3)
       pascal(5, 2)
 ```
 
+
 ## 🔗 See also
 
-[gallery](../../elementary_functions/gallery.md), [vander](../../elementary_functions/vander.md).
+[gallery](../../elementary_functions/6_matrix_generation/gallery.md), [vander](../../elementary_functions/6_matrix_generation/vander.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

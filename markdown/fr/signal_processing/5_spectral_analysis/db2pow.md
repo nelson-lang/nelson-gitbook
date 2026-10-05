@@ -16,22 +16,26 @@ Convertit un gain en décibels (dB) en puissance.
 
 ## 📄 Description
 
+
 <b>pow = db2pow(db)</b> renvoie la puissance correspondante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pow = db2pow([0, -20])
 ```
 
+
 ## 🔗 Voir aussi
 
-[pow2db](../../signal_processing/pow2db.md).
+[pow2db](../../signal_processing/5_spectral_analysis/pow2db.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

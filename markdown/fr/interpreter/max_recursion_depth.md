@@ -1,29 +1,31 @@
-# max_recursion_depth
+# max\_recursion\_depth
 
 Limite interne du nombre de fois qu'une fonction peut être appelée récursivement.
 
 ## 📝 Syntaxe
 
-- current_val = max_recursion_depth()
-- previous_val = max_recursion_depth(new_val)
+- current\_val = max\_recursion\_depth()
+- previous\_val = max\_recursion\_depth(new\_val)
 
 ## 📥 Argument d'entrée
 
-- new_val - une valeur entière : nouvelle valeur
+- new\_val - une valeur entière : nouvelle valeur
 
 ## 📤 Argument de sortie
 
-- current_val - une valeur entière.
-- previous_val - une valeur entière.
+- current\_val - une valeur entière.
+- previous\_val - une valeur entière.
 
 ## 📄 Description
 
-<b>max_recursion_depth</b> spécifie la profondeur maximale de récursion pour empêcher Nelson de récursiver indéfiniment.
+
+<b>max\_recursion\_depth</b> spécifie la profondeur maximale de récursion pour empêcher Nelson de récursiver indéfiniment.
+
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

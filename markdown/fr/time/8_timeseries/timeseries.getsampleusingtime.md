@@ -20,9 +20,11 @@ Renvoie les echantillons selectionnes par temps.
 
 ## 📄 Description
 
+
 <b>getsampleusingtime</b> Selectionne des echantillons a des temps exacts ou dans un intervalle temporel ferme.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([10; 20; 30], [1; 2; 3]);
@@ -31,14 +33,15 @@ ts2.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

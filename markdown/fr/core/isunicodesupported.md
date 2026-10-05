@@ -12,13 +12,17 @@ Indique si Unicode est supporté.
 
 ## 📄 Description
 
+
 Retourne vrai si l'environnement et la plateforme prennent en charge Unicode pour les chaînes de caractères.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 isunicodesupported()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ isunicodesupported()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

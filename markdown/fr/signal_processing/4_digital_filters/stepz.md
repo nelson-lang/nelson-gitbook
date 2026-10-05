@@ -20,9 +20,12 @@ Réponse indicielle d'un filtre numérique.
 
 ## 📄 Description
 
+
 <b>stepz</b> calcule la somme cumulée de la réponse impulsionnelle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ Réponse indicielle d'un filtre numérique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[impz](../../signal_processing/impz.md).
+[impz](../../signal_processing/4_digital_filters/impz.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

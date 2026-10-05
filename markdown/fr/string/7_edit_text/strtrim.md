@@ -16,32 +16,38 @@ Supprime les espaces en début et fin de chaîne.
 
 ## 📄 Description
 
-<b>strtrim</b> supprime les espaces en début et en fin de chaîne.
+
+<b>strtrim</b> supprime les espaces en début et en fin de chaîne. 
 
 <b>strtrim</b> ne supprime pas tous les espaces significatifs (seuls les caractères ' \\t\\n\\r\\f\\v' sont supprimés).
 
 ## 💡 Exemples
 
+
+
 ```matlab
 strtrim(' Nel Son')
 ```
+
 
 ```matlab
 strtrim(" Nel Son")
 ```
 
+
 ```matlab
 strtrim([' Nel Son', char(160)])
 ```
 
+
 ## 🔗 Voir aussi
 
-[deblank](../../string/deblank.md), [toupper](../../string/toupper.md).
+[deblank](../../string/7_edit_text/deblank.md), [toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

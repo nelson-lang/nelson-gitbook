@@ -25,11 +25,14 @@ Plot a function surface.
 
 ## 📄 Description
 
-<b>fsurf</b> samples a function on a rectangular grid and displays the result as a function surface object. The grid is resampled when <b>Function</b>, <b>XRange</b>, <b>YRange</b>, or <b>MeshDensity</b> changes.
+
+<b>fsurf</b> samples a function on a rectangular grid and displays the result as a function surface object. The grid is resampled when <b>Function</b>, <b>XRange</b>, <b>YRange</b>, or <b>MeshDensity</b> changes. 
 
 See [functionsurface properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.functionsurface.properties.md) for the complete property list.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -38,8 +41,8 @@ light();
 lighting gouraud;
 
 ```
-
 <img src="fsurf_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -47,7 +50,7 @@ lighting gouraud;
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

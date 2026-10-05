@@ -16,21 +16,27 @@ Converts to cell of character array.
 
 ## 📄 Description
 
+
 <b>cellstr(A)</b> converts to cell of character array.
 
 ## 💡 Examples
+
+
 
 ```matlab
 cellstr('Nelson')
 ```
 
+
 ```matlab
 cellstr({'Nelson'})
 ```
 
+
 ```matlab
 cellstr({})
 ```
+
 
 ## 🔗 See also
 
@@ -38,7 +44,7 @@ cellstr({})
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -19,9 +19,12 @@ Bit-wise OR
 
 ## 📄 Description
 
+
 <b>C = bitor(A, B)</b> returns the bit-wise OR of <b>A</b> and<b>B</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = uint16([0 1; 0 1]);
@@ -30,13 +33,14 @@ R = bitor(A, B)
 
 ```
 
+
 ## 🔗 See also
 
 [bitand](../operators/bitand.md), [bitxor](../operators/bitxor.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

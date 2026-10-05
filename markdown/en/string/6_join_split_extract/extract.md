@@ -8,21 +8,25 @@ Extract matching text.
 
 ## 📄 Description
 
+
 <b>extract</b> Extract matching text.
 
 ## 💡 Example
+
+
 
 ```matlab
 extract("Hello World", regexpPattern('. *'))
 ```
 
+
 ## 🔗 See also
 
-[extractAfter](../../string/extractAfter.md), [extractBefore](../../string/extractBefore.md), [extractBetween](../../string/extractBetween.md).
+[extractAfter](../../string/6_join_split_extract/extractAfter.md), [extractBefore](../../string/6_join_split_extract/extractBefore.md), [extractBetween](../../string/6_join_split_extract/extractBetween.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

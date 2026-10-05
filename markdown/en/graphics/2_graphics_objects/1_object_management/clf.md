@@ -18,9 +18,12 @@ Clear figure.
 
 ## 📄 Description
 
+
 <b>clf</b> clears the current figure.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -31,13 +34,14 @@ sleep(5)
 clf
 ```
 
+
 ## 🔗 See also
 
 [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [cla](../../../graphics/2_graphics_objects/1_object_management/cla.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

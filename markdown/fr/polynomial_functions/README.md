@@ -1,10 +1,16 @@
 # Polynomials
 
+
+    
 Le module Polynomials fournit des outils pour créer, manipuler et analyser des polynômes dans Nelson.
 
+    
 Il prend en charge l'évaluation, la différentiation, l'intégration, l'ajustement (fitting), la recherche de racines et les opérations sur polynômes matriciels.
 
+    
 Ce module permet une gestion efficace des expressions polynomiales pour la modélisation mathématique, l'ajustement de courbes et l'analyse numérique.
+
+  
 
 ## Functions
 
@@ -20,3 +26,4 @@ Ce module permet une gestion efficace des expressions polynomiales pour la modé
 - [ppval](ppval.md) - Evalue une forme polynomiale par morceaux
 - [residue](residue.md) - Decomposition en fractions simples (residus)
 - [roots](roots.md) - Trouver les racines d'un polynôme.
+

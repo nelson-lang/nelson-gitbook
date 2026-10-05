@@ -24,9 +24,12 @@ Reponse en phase d'un filtre numerique.
 
 ## 📄 Description
 
+
 <b>phasez</b> calcule la phase deroulee de la reponse frequentielle retournee par freqz.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Reponse en phase d'un filtre numerique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[freqz](../../signal_processing/freqz.md), [grpdelay](../../signal_processing/grpdelay.md).
+[freqz](../../signal_processing/4_digital_filters/freqz.md), [grpdelay](../../signal_processing/4_digital_filters/grpdelay.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

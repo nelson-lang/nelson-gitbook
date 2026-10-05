@@ -18,9 +18,12 @@ Checks if shared library is loaded.
 
 ## 📄 Description
 
+
 <b>dllibisloaded</b> returns if share library is already loaded.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,8 +32,9 @@ r = dllibisloaded(path_1)
 lib1 = dlopen(path_1);
 [r, lib2] = dllibisloaded(path_1)
 isequal(lib1, lib2)
-
+		
 ```
+
 
 ## 🔗 See also
 
@@ -38,7 +42,7 @@ isequal(lib1, lib2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

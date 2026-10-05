@@ -18,7 +18,8 @@ Check that a value is two-dimensional.
 
 ## 📄 Description
 
-The assertion passes when value is a two-dimensional array.
+
+The assertion passes when value is a two-dimensional array. 
 
 Use asserts.squareMatrix for square matrix checks.
 
@@ -29,12 +30,12 @@ Matrix value
 ```matlab
 asserts.matrix(ones(2, 2));
 ```
-
 Capture a non-matrix value
 
 ```matlab
 [res, msg] = asserts.matrix(ones(2, 2, 2));
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a non-matrix value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,11 +18,14 @@ Add cause to MException.
 
 ## 📄 Description
 
-<b>addCause</b> returns a new MException object with <b>causeException</b> appended to the <b>cause</b> property.
+
+<b>addCause</b> returns a new MException object with <b>causeException</b> appended to the <b>cause</b> property. 
 
 The original MException object is not modified.
 
 ## 💡 Examples
+
+
 
 ```matlab
 errID = 'MYFUN:BadIndex';
@@ -32,6 +35,7 @@ causeException = MException('MYFUN:BadSubscript', 'Index must be positive.');
 newException = baseException.addCause(causeException)
 ```
 
+
 ```matlab
 errID = 'MYFUN:BadIndex';
 msg = 'Unable to index into array.';
@@ -40,13 +44,14 @@ newException = addCause(baseException, baseException)
 newException.cause{1}
 ```
 
+
 ## 🔗 See also
 
 [MException](../error_manager/MException.md), [addCorrection](../error_manager/addCorrection.md), [getReport](../error_manager/getReport.md), [throw](../error_manager/throw.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

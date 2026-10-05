@@ -1,4 +1,4 @@
-# compiler_linux_runtime_tutorial
+# compiler\_linux\_runtime\_tutorial
 
 Tutoriel : un runtime minimal partage sous Linux.
 
@@ -8,11 +8,12 @@ Tutoriel : un runtime minimal partage sous Linux.
 
 ## 📄 Description
 
-Executer ces blocs dans l'ordre sous Linux avec le module optionnel compiler installe. Le .install contient uniquement le runtime commun, pas les applications. Ce parcours utilise une configuration privee et une destination temporaire accessible en ecriture ; aucun privilege administrateur ni changement global de PATH n'est necessaire.
 
-Les deux executables trouvent le runtime installe grace a l'enregistrement de l'empreinte de leur interpreteur. L'exemple retire ensuite ce runtime avec son desinstalleur independant, en conservant les executables des applications. Les verrous, un recu de fin et les eventuelles donnees utilisateur restent dans la destination.
+Executer ces blocs dans l'ordre sous Linux avec le module optionnel compiler installe. Le .install contient uniquement le runtime commun, pas les applications. Ce parcours utilise une configuration privee et une destination temporaire accessible en ecriture ; aucun privilege administrateur ni changement global de PATH n'est necessaire. 
 
-Apres interruption, relancer la meme commande d'installation avec la meme destination et la meme configuration XDG. Ne pas supprimer .nelson-runtime/update.json pour contourner la reprise. Voir compiler.runtime.customInstaller pour les limites de verification et les fichiers temporaires conserves.
+Les deux executables trouvent le runtime installe grace a l'enregistrement de l'empreinte de leur interpreteur. L'exemple retire ensuite ce runtime avec son desinstalleur independant, en conservant les executables des applications. Les verrous, un recu de fin et les eventuelles donnees utilisateur restent dans la destination. 
+
+Apres interruption, relancer la meme commande d'installation avec la meme destination et la meme configuration XDG. Ne pas supprimer .nelson-runtime/update.json pour contourner la reprise. Voir compiler.runtime.customInstaller pour les limites de verification et les fichiers temporaires conserves. 
 
 Apres une desinstallation interrompue, relancer .nelson-runtime/uninstall. Son journal distinct remove.json permet les reprises successives. Un recu complete indique que la suppression est terminee ; le desinstalleur se supprime apres enregistrement de cet etat. Ne pas modifier ni supprimer le journal. Un nouvel installateur peut reutiliser le dossier uniquement s'il ne contient aucun fichier utilisateur conserve ni residu inconnu.
 
@@ -31,7 +32,6 @@ filewrite(entryB, 'function shared_two(); disp(sin(0)); disp(''SHARED_TWO_OK'');
 first = compiler.build.standaloneApplication(entryA, 'OutputDir', fullfile(work, 'one'));
 second = compiler.build.standaloneApplication(entryB, 'OutputDir', fullfile(work, 'two'));
 ```
-
 2. Creer le runtime partage et conserver les applications
 
 ```matlab
@@ -46,7 +46,6 @@ copyfile(second.Files{1}, applications);
 applicationA = fullfile(applications, 'shared_one');
 applicationB = fullfile(applications, 'shared_two');
 ```
-
 3. Installer, rechercher, executer et desinstaller
 
 ```matlab
@@ -82,10 +81,10 @@ clear restoreConfig restoreRoot restorePath restoreLibraries;
 disp('LINUX_SHARED_RUNTIME_TUTORIAL_OK');
 ```
 
+
 ## 🔗 Voir aussi
 
 [compiler.runtime.customInstaller](../compiler/compiler.runtime.customInstaller.md), [compiler_linux_installer_tutorial](../compiler/compiler_linux_installer_tutorial.md).
-
 <!--
 ## 👤 Auteur
 

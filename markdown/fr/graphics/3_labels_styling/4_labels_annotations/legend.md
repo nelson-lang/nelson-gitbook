@@ -46,35 +46,38 @@ Ajoute une legende aux axes.
 
 ## 📄 Description
 
-<b>legend</b> cree ou met a jour une legende attachee aux axes cibles.
 
-Si les etiquettes sont omises, elles sont prises depuis la propriete <b>DisplayName</b> des objets traces. Quand <b>AutoUpdate</b> vaut <b>on</b>, les nouveaux objets traces sont ajoutes automatiquement.
+<b>legend</b> cree ou met a jour une legende attachee aux axes cibles. 
 
-L'objet renvoye a le type <b>legend</b> et prend en charge les proprietes <b>AutoUpdate</b>, <b>Box</b>, <b>BackgroundAlpha</b>, <b>Color</b>, <b>EdgeColor</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontAngle</b>, <b>FontWeight</b>, <b>Interpreter</b>, <b>ItemHitFcn</b>, <b>LineWidth</b>, <b>Location</b>, <b>NumColumns</b>, <b>Orientation</b>, <b>IconColumnWidth</b>, <b>Direction</b>, <b>Position</b>, <b>String</b>, <b>TextColor</b>, <b>Units</b>, <b>Title</b>, ainsi que les proprietes communes des objets graphiques.
+Si les etiquettes sont omises, elles sont prises depuis la propriete <b>DisplayName</b> des objets traces. Quand <b>AutoUpdate</b> vaut <b>on</b>, les nouveaux objets traces sont ajoutes automatiquement. 
 
-<b>Emplacement de la legende sur le graphique :</b>
+L'objet renvoye a le type <b>legend</b> et prend en charge les proprietes <b>AutoUpdate</b>, <b>Box</b>, <b>BackgroundAlpha</b>, <b>Color</b>, <b>EdgeColor</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontAngle</b>, <b>FontWeight</b>, <b>Interpreter</b>, <b>ItemHitFcn</b>, <b>LineWidth</b>, <b>Location</b>, <b>NumColumns</b>, <b>Orientation</b>, <b>IconColumnWidth</b>, <b>Direction</b>, <b>Position</b>, <b>String</b>, <b>TextColor</b>, <b>Units</b>, <b>Title</b>, ainsi que les proprietes communes des objets graphiques. 
 
-'northeast' ou 'NE' : en haut a droite (par defaut).
+<b>Emplacement de la legende sur le graphique :</b> 
 
-'north' ou 'N' : en haut au centre.
+'northeast' ou 'NE' : en haut a droite (par defaut). 
 
-'south' ou 'S' : en bas au centre.
+'north' ou 'N' : en haut au centre. 
 
-'east' ou 'E' : au milieu a droite.
+'south' ou 'S' : en bas au centre. 
 
-'west' ou 'W' : au milieu a gauche.
+'east' ou 'E' : au milieu a droite. 
 
-'northwest' ou 'NW' : en haut a gauche.
+'west' ou 'W' : au milieu a gauche. 
 
-'southeast' ou 'SE' : en bas a droite.
+'northwest' ou 'NW' : en haut a gauche. 
 
-'southwest' ou 'SW' : en bas a gauche.
+'southeast' ou 'SE' : en bas a droite. 
 
-Les emplacements exterieurs sont aussi pris en charge : 'northoutside', 'southoutside', 'eastoutside' et 'westoutside'.
+'southwest' ou 'SW' : en bas a gauche. 
+
+Les emplacements exterieurs sont aussi pris en charge : 'northoutside', 'southoutside', 'eastoutside' et 'westoutside'. 
 
 Voir [proprietes de legend](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.legend.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -87,8 +90,8 @@ hold(ax, 'on');
 plot(ax, x, y2, 'DisplayName', 'cos(x)');
 legend(ax, 'Location', 'N')
 ```
-
 <img src="legend.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -100,14 +103,15 @@ lgd = legend({'linear'; 'quadratic'}, 'NumColumns', 2);
 title(lgd, 'Curves')
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de legend](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.legend.properties.md), [title](../../../graphics/3_labels_styling/4_labels_annotations/title.md), [text](../../../graphics/3_labels_styling/4_labels_annotations/text.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -8,24 +8,28 @@ Create dummy variables from grouping variables.
 
 ## 📄 Description
 
-<b>dummyvar</b> creates a numeric matrix of indicator columns for the grouping variables in <b>group</b>.
+
+<b>dummyvar</b> creates a numeric matrix of indicator columns for the grouping variables in <b>group</b>. 
 
 Each numeric matrix column, categorical vector, text vector, or cell element in <b>group</b> contributes one block of dummy variables. Missing group values produce <b>NaN</b> rows in their block.
 
 ## 💡 Example
+
+
 
 ```matlab
 Colors = categorical({'Red'; 'Blue'; 'Green'; 'Red'; 'Green'; 'Blue'});
 D = dummyvar(Colors)
 ```
 
+
 ## 🔗 See also
 
-[grp2idx](../../statistics/grp2idx.md), [anova1](../../statistics/anova1.md), [x2fx](../../statistics/x2fx.md).
+[grp2idx](../../statistics/6_classification/grp2idx.md), [anova1](../../statistics/4_anova/anova1.md), [x2fx](../../statistics/9_design_of_experiments/x2fx.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

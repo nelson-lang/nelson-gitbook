@@ -21,14 +21,17 @@ Modele de regression lineaire generalisee.
 
 ## 📄 Description
 
-GeneralizedLinearModel stocke un modele lineaire generalise ajuste a partir de predicteurs et d'une reponse.
+
+GeneralizedLinearModel stocke un modele lineaire generalise ajuste a partir de predicteurs et d'une reponse. 
 
 Creez cet objet avec fitglm. Utilisez predict pour evaluer les reponses ajustees pour de nouveaux predicteurs.
 
 ## Fonction(s) utilisée(s)
 
+
     fitglm
     predict
+  
 
 ## 💡 Exemple
 
@@ -41,14 +44,15 @@ mdl = fitglm(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitglm](../../statistics/fitglm.md).
+[predict](../../statistics/5_regression/predict.md), [fitglm](../../statistics/5_regression/fitglm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

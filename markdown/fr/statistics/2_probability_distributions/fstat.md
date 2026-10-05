@@ -18,18 +18,22 @@ Moyenne et variance F
 
 ## 📄 Description
 
+
 <b>fstat</b> retourne la moyenne et la variance de la loi F.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = fstat(5, 6);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

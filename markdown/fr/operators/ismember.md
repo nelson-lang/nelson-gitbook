@@ -19,11 +19,14 @@
 
 ## 📄 Description
 
-<b>T = ismember(A, B)</b> renvoie un tableau logique indiquant où les éléments de <b>A</b> se trouvent dans <b>B</b>.
+
+<b>T = ismember(A, B)</b> renvoie un tableau logique indiquant où les éléments de <b>A</b> se trouvent dans <b>B</b>. 
 
 <b>[T, loc] = ismember(A, B)</b> renvoie aussi <b>loc</b>, le plus petit indice dans <b>B</b> pour chaque élément de <b>A</b> présent dans <b>B</b>, et 0 sinon.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [50 30 40 20];
@@ -35,14 +38,15 @@ T = ismember(["a","b","f"], ["b", "f", "c"])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [sort](../data_analysis/sort.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

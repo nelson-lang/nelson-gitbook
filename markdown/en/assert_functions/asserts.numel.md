@@ -19,6 +19,7 @@ Check the number of elements of a value.
 
 ## 📄 Description
 
+
 <b>asserts.numel</b> checks the number of elements.
 
 ## Used function(s)
@@ -33,13 +34,14 @@ Check element count:
 asserts.numel(ones(2, 3), 6);
 ```
 
+
 ## 🔗 See also
 
 [asserts.size](../assert_functions/asserts.size.md), [asserts.sameSize](../assert_functions/asserts.sameSize.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

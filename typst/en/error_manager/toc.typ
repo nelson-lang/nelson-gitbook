@@ -1,0 +1,20 @@
+#import "nelson_help.typ": *
+
+- Error manager
+  - #nlink(<error_manager:MException.last>)[MException.last]
+  - #nlink(<error_manager:MException>)[MException]
+  - #nlink(<error_manager:addCause>)[addCause]
+  - #nlink(<error_manager:addCorrection>)[addCorrection]
+  - #nlink(<error_manager:error>)[error]
+  - #nlink(<error_manager:getLastReport>)[getLastReport]
+  - #nlink(<error_manager:getReport>)[getReport]
+  - #nlink(<error_manager:lasterr>)[lasterr]
+  - #nlink(<error_manager:lasterror>)[lasterror]
+  - #nlink(<error_manager:lastwarn>)[lastwarn]
+  - #nlink(<error_manager:nelson.lang.correction.AppendArgumentsCorrection>)[nelson.lang.correction.AppendArgumentsCorrection]
+  - #nlink(<error_manager:nelson.lang.correction.ConvertToFunctionNotationCorrection>)[nelson.lang.correction.ConvertToFunctionNotationCorrection]
+  - #nlink(<error_manager:nelson.lang.correction.ReplaceIdentifierCorrection>)[nelson.lang.correction.ReplaceIdentifierCorrection]
+  - #nlink(<error_manager:rethrow>)[rethrow]
+  - #nlink(<error_manager:throw>)[throw]
+  - #nlink(<error_manager:throwAsCaller>)[throwAsCaller]
+  - #nlink(<error_manager:warning>)[warning]

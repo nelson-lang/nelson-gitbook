@@ -19,13 +19,17 @@ Fonction gamma incomplète
 
 ## 📄 Description
 
+
 <b>gammainc</b> retourne la fonction gamma incomplète régularisée inférieure évaluée aux éléments de X et A. gammainc(X, A, 'upper') retourne la version supérieure (complémentaire). X et A doivent être de même taille, ou l'un des deux peut être un scalaire.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 Y = gammainc(0.5, 2)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ Y = gammainc(0.5, 2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -15,15 +15,17 @@ Computes the inverse tangent in radians for each element of x.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>atan</b> computes the inverse tangent in radians for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
 res = atan(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ res = atan(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

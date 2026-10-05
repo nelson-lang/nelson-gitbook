@@ -11,11 +11,14 @@ Fit a linear regression model.
 
 ## 📄 Description
 
-<b>fitlm</b> creates a <b>LinearModel</b> object from numeric predictors <b>X</b> and response <b>y</b>.
+
+<b>fitlm</b> creates a <b>LinearModel</b> object from numeric predictors <b>X</b> and response <b>y</b>. 
 
 Supported model specifications include <b>constant</b>, <b>linear</b>, <b>interactions</b>, <b>quadratic</b>, <b>purequadratic</b>, and numeric term matrices. Name-value arguments include <b>Intercept</b>, <b>PredictorNames</b>, and <b>ResponseName</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [1 2; 2 1; 3 4; 4 3; 5 6; 6 5];
@@ -24,13 +27,14 @@ mdl = fitlm(X, y);
 yfit = predict(mdl, [7 8; 8 7])
 ```
 
+
 ## 🔗 See also
 
-[regress](../../statistics/regress.md), [regstats](../../statistics/regstats.md), [robustfit](../../statistics/robustfit.md).
+[regress](../../statistics/5_regression/regress.md), [regstats](../../statistics/5_regression/regstats.md), [robustfit](../../statistics/5_regression/robustfit.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

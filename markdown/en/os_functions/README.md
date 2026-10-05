@@ -1,10 +1,16 @@
 # OS functions
 
+
+    
 The OS Functions module provides tools for interacting with the operating system in Nelson.
 
+    
 It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.
 
+    
 This module lets Nelson scripts interact with the operating system on Windows, macOS, and Linux/Unix platforms.
+
+  
 
 ## Functions
 
@@ -30,3 +36,4 @@ This module lets Nelson scripts interact with the operating system on Windows, m
 - [username](username.md) - get user name currently used.
 - [winopen](winopen.md) - Open file in appropriate application (Windows only).
 - [winqueryreg](winqueryreg.md) - Read the Windows registry (Windows only).
+

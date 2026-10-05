@@ -16,22 +16,26 @@ Natural logarithm with real-only result.
 
 ## 📄 Description
 
+
 <b>reallog</b> computes log(X) and returns an error if an input or the result is complex.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1 2 4];
 R = reallog(x)
 ```
 
+
 ## 🔗 See also
 
-[log](../../elementary_functions/log.md), [realsqrt](../../elementary_functions/realsqrt.md).
+[log](../../elementary_functions/2_elementary_math/log.md), [realsqrt](../../elementary_functions/3_complex_numbers/realsqrt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

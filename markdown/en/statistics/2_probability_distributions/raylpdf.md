@@ -17,22 +17,26 @@ Rayleigh probability density function
 
 ## 📄 Description
 
+
 <b>raylpdf</b> evaluates Rayleigh probability density values element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 2 4];
 y = raylpdf(x, 2);
 ```
 
+
 ## 🔗 See also
 
-[raylcdf](../../statistics/raylcdf.md), [raylinv](../../statistics/raylinv.md), [raylrnd](../../statistics/raylrnd.md).
+[raylcdf](../../statistics/2_probability_distributions/raylcdf.md), [raylinv](../../statistics/2_probability_distributions/raylinv.md), [raylrnd](../../statistics/2_probability_distributions/raylrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

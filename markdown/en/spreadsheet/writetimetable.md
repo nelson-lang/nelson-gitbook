@@ -16,13 +16,14 @@ Write timetable to file.
 
 ## 📄 Description
 
-<b>writetimetable</b> writes a timetable to a delimited text file.
 
-Row times are written as the first output column. Data variables are written after the row-time column and retain their variable names.
+<b>writetimetable</b> writes a timetable to a delimited text file. 
 
-The supported text-file options match the practical surface of <b>writetable</b>, including <b>Delimiter</b>, <b>WriteVariableNames</b>, <b>WriteMode</b>, and <b>QuoteStrings</b>.
+Row times are written as the first output column. Data variables are written after the row-time column and retain their variable names. 
 
-Datetime and duration row times are converted to stable text before writing. The resulting delimited text file can be read back with <b>readtimetable</b>.
+The supported text-file options match the practical surface of <b>writetable</b>, including <b>Delimiter</b>, <b>WriteVariableNames</b>, <b>WriteMode</b>, and <b>QuoteStrings</b>. 
+
+Datetime and duration row times are converted to stable text before writing. The resulting delimited text file can be read back with <b>readtimetable</b>. 
 
 <b>JSON files</b> (<b>.json</b> extension or <b>'FileType', 'json'</b>): the timetable is written as a JSON array with one object per row. The row times are the first value of each object, keyed by the first dimension name. <b>PrettyPrint</b> and <b>PreserveInfAndNaN</b> behave as in <b>writetable</b>.
 
@@ -42,7 +43,6 @@ writetimetable(TT1, filename);
 TT2 = readtimetable(filename)
 
 ```
-
 Use a semicolon delimiter.
 
 ```matlab
@@ -55,7 +55,6 @@ writetimetable(TT, filename, 'Delimiter', ';');
 fileread(filename)
 
 ```
-
 Write duration row times.
 
 ```matlab
@@ -68,7 +67,6 @@ writetimetable(TT, filename);
 fileread(filename)
 
 ```
-
 Append rows to an existing text file.
 
 ```matlab
@@ -85,22 +83,22 @@ writetimetable(TT2, filename, 'WriteMode', 'append', 'WriteVariableNames', false
 readtimetable(filename)
 
 ```
-
 Write a timetable to a JSON file:
 
 ```matlab
 TT = timetable(datetime(2024, 1, 1) + days(0:2)', [12.5; 13; 11.75], 'VariableNames', {'Temperature'}); f = [tempdir, 'timetable_json.json']; writetimetable(TT, f, 'PrettyPrint', false); fileread(f) TT2 = readtimetable(f)
 ```
 
+
 ## 🔗 See also
 
-[readtimetable](../spreadsheet/readtimetable.md), [writetable](../spreadsheet/writetable.md), [timetable](../table/timetable.md).
+[readtimetable](../spreadsheet/readtimetable.md), [writetable](../spreadsheet/writetable.md), [timetable](../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                |
-| ------- | ------------------------------------------------------------- |
-| 2.0.0   | initial version                                               |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | JSON files: FileType json, PrettyPrint and PreserveInfAndNaN. |
 
 <!--

@@ -17,17 +17,20 @@ Hot colormap array.
 
 ## 📄 Description
 
+
 <b>hot</b> returns the colormap with hot colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('hot');
 ```
-
 <img src="hot.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('hot');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -1,10 +1,10 @@
-# audiorecorder_fieldnames
+# audiorecorder\_fieldnames
 
 Returns the properties name of an audiorecorder object.
 
 ## 📝 Syntax
 
-- l = audiorecorder_fieldnames(h)
+- l = audiorecorder\_fieldnames(h)
 - l = fieldnames(h)
 
 ## 📥 Input argument
@@ -16,10 +16,11 @@ Returns the properties name of an audiorecorder object.
 - l - a cell of strings.
 
 ## 📄 Description
-
 <b>fieldnames</b> returns a cell of strings with properties name.
 
 ## 💡 Example
+
+
 
 ```matlab
 recObj = audiorecorder()
@@ -28,15 +29,16 @@ delete(recObj)
 clear recObj
 ```
 
+
 ## 🔗 See also
 
 [audiorecorder_set](../audio/audiorecorder_set.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

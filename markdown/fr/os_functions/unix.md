@@ -22,13 +22,16 @@ Executer des commandes avec l'interpreteur du systeme d'exploitation.
 
 ## 📄 Description
 
-unix execute une commande ou une collection de commandes via l'interpreteur du systeme d'exploitation et renvoie les codes de sortie.
+
+unix execute une commande ou une collection de commandes via l'interpreteur du systeme d'exploitation et renvoie les codes de sortie. 
 
 Avec des sorties, Nelson peut aussi renvoyer les textes produits et les durees d'execution. unix suit le meme modele d'execution que system.
 
 ## Fonction(s) utilisée(s)
 
+
     system
+  
 
 ## 💡 Exemple
 
@@ -38,14 +41,15 @@ Executer une commande shell et capturer sa sortie.
 [status, output] = unix('echo Nelson')
 ```
 
+
 ## 🔗 Voir aussi
 
 [system](../os_functions/system.md), [dos](../os_functions/dos.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

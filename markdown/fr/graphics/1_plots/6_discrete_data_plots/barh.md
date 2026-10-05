@@ -35,7 +35,8 @@ Diagramme en barres horizontales.
 
 ## 📄 Description
 
-<b>barh</b> cree un diagramme en barres horizontales. Une matrice cree des barres groupees par defaut. Utiliser <b>'stacked'</b> pour empiler les colonnes dans chaque groupe.
+
+<b>barh</b> cree un diagramme en barres horizontales. Une matrice cree des barres groupees par defaut. Utiliser <b>'stacked'</b> pour empiler les colonnes dans chaque groupe. 
 
 Avec une table, selectionner une variable pour les etiquettes ou positions et une ou plusieurs variables numeriques pour les valeurs.
 
@@ -49,7 +50,6 @@ y = [3 5 2 7 4];
 barh(y);
 
 ```
-
 <img src="barh_1.svg" align="middle"/>
 Barres horizontales groupees.
 
@@ -59,7 +59,6 @@ y = [1 2; 3 4; 5 6];
 barh(y, 'grouped');
 
 ```
-
 <img src="barh_2.svg" align="middle"/>
 Barres horizontales empilees avec valeurs positives et negatives.
 
@@ -69,13 +68,12 @@ y = [3 -2 5; -4 1 -3];
 barh(y, 'stacked');
 
 ```
-
 <img src="barh_3.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
 [bar](../../../graphics/1_plots/6_discrete_data_plots/bar.md), [bar3h](../../../graphics/1_plots/6_discrete_data_plots/bar3h.md).
-
 <!--
 ## 👤 Auteur
 

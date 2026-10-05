@@ -17,17 +17,20 @@ Palette de couleurs gray.
 
 ## 📄 Description
 
+
 <b>gray</b> retourne la palette de couleurs gray.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('gray');
 ```
-
 <img src="gray.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('gray');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

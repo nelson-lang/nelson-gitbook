@@ -23,27 +23,31 @@ Construit un tableau par accumulation.
 
 ## 📄 Description
 
-<b>accumarray(subs, val)</b> regroupe les elements de <b>val</b> selon les indices de <b>subs</b> et applique <b>@sum</b> a chaque groupe.
 
-Chaque ligne de <b>subs</b> designe la position de sortie ou la valeur correspondante de <b>val</b> est accumulee.
+<b>accumarray(subs, val)</b> regroupe les elements de <b>val</b> selon les indices de <b>subs</b> et applique <b>@sum</b> a chaque groupe. 
+
+Chaque ligne de <b>subs</b> designe la position de sortie ou la valeur correspondante de <b>val</b> est accumulee. 
 
 <b>fun</b> remplace la somme par defaut, et <b>fillval</b> fixe la valeur des positions ne recevant aucune contribution.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 accumarray([1;2;1;3], [10;20;30;40])
 accumarray([1;1;2], [3;5;7], [], @max)
 ```
 
+
 ## 🔗 Voir aussi
 
-[sum](../data_analysis/sum.md), [unique](../elementary_functions/unique.md).
+[sum](../data_analysis/sum.md), [unique](../data_analysis/unique.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

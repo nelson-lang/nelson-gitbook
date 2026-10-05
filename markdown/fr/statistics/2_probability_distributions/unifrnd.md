@@ -20,11 +20,14 @@ Nombres aleatoires uniformes continus
 
 ## 📄 Description
 
-<b>unifrnd</b> genere des nombres aleatoires selon des lois uniformes continues avec le generateur global de Nelson.
+
+<b>unifrnd</b> genere des nombres aleatoires selon des lois uniformes continues avec le generateur global de Nelson. 
 
 Les bornes scalaires sont etendues a la taille demandee. Les intervalles invalides produisent des valeurs NaN.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
@@ -33,14 +36,15 @@ r2 = unifrnd(0, 1, [2 3]);
 r3 = unifrnd(0:5, 1:6, 1, 6);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md).
+[unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

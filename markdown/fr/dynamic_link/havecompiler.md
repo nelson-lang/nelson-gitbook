@@ -13,15 +13,19 @@ Détecter si un compilateur C/C++ est configuré
 
 ## 📄 Description
 
-<b>havecompiler</b> détecte si un compilateur C/C++ est configuré pour Nelson.
+
+<b>havecompiler</b> détecte si un compilateur C/C++ est configuré pour Nelson. 
 
 Sur les plateformes Unix (Linux, MacOS),<b>havecompiler</b> renvoie toujours <b>true</b> et<b>unix</b> comme compilateur.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [status, message] = havecompiler()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -29,8 +33,8 @@ Sur les plateformes Unix (Linux, MacOS),<b>havecompiler</b> renvoie toujours <b>
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

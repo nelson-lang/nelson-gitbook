@@ -18,9 +18,12 @@ Fenêtre de Dolph-Chebyshev.
 
 ## 📄 Description
 
+
 <b>chebwin</b> retourne une fenêtre de Dolph-Chebyshev normalisée à une amplitude maximale unitaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ w = chebwin(5, 40);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[kaiser](../../signal_processing/kaiser.md).
+[kaiser](../../signal_processing/5_spectral_analysis/kaiser.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

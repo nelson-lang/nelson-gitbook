@@ -12,7 +12,8 @@ Start a timer object.
 
 ## 📄 Description
 
-<b>start</b> starts the timer using its <b>StartDelay</b>, <b>ExecutionMode</b>, <b>Period</b>, and <b>TasksToExecute</b> properties. The timer must have a nonempty <b>TimerFcn</b>.
+
+<b>start</b> starts the timer using its <b>StartDelay</b>, <b>ExecutionMode</b>, <b>Period</b>, and <b>TasksToExecute</b> properties. The timer must have a nonempty <b>TimerFcn</b>. 
 
 <b>start</b> returns immediately after the timer is scheduled. Use <b>wait</b> when the current command sequence must block until the timer finishes.
 
@@ -27,7 +28,6 @@ start(t);
 wait(t);
 delete(t);
 ```
-
 Start a repeated timer.
 
 ```matlab
@@ -40,13 +40,14 @@ wait(t);
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [startat](../../time/startat.md), [stop](../../time/stop.md), [wait](../../time/wait.md).
+[timer](../../time/7_timers/timer.md), [startat](../../time/7_timers/startat.md), [stop](../../time/7_timers/stop.md), [wait](../../time/7_timers/wait.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

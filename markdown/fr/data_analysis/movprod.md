@@ -19,14 +19,18 @@ Produit mobile.
 
 ## 📄 Description
 
+
 <b>movprod</b> calcule les produits sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movprod(A, 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ R = movprod(A, 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

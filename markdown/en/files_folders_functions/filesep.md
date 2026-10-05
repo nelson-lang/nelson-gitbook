@@ -11,14 +11,16 @@ Return the file separator character for the current platform.
 - res - a string: '/' or '\\'
 
 ## 📄 Description
-
 <b>pathsep</b> returns '\\' on Windows and '/' on others platforms.
 
 ## 💡 Example
 
+
+
 ```matlab
 runnable="cli"A = filesep
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +28,7 @@ runnable="cli"A = filesep
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -17,9 +17,10 @@ Cree des durees depuis des annees ou convertit des durees en annees.
 
 ## 📄 Description
 
-Cree des durees depuis des annees ou convertit des durees en annees.
 
-Une annee vaut 365.2425 jours pour la conversion en temps ecoule. Pour l arithmetique calendaire par annees, utilisez calyears.
+Cree des durees depuis des annees ou convertit des durees en annees. 
+
+Une annee vaut 365.2425 jours pour la conversion en temps ecoule. Pour l arithmetique calendaire par annees, utilisez calyears. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,14 +35,15 @@ years(d)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

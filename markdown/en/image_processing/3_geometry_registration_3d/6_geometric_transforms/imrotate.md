@@ -21,40 +21,45 @@ Rotate image by specified angle
 
 ## 📄 Description
 
-The <b>imrotate</b> function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method.
 
-The function supports grayscale, RGB, and RGBA images. The output image maintains the same data type as the input image.
+The <b>imrotate</b> function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method. 
 
-For angles that are multiples of 90 degrees, the rotation is performed exactly without interpolation to preserve image quality. For other angles, interpolation is used to estimate pixel values at non-integer coordinates.
+The function supports grayscale, RGB, and RGBA images. The output image maintains the same data type as the input image. 
 
-The bounding box option controls the size of the output image:
+For angles that are multiples of 90 degrees, the rotation is performed exactly without interpolation to preserve image quality. For other angles, interpolation is used to estimate pixel values at non-integer coordinates. 
+
+The bounding box option controls the size of the output image: 
 
 - <b>
           'loose'
-        </b>: The output image is sized to contain the entire rotated image. This may result in a larger image than the input.
+        </b>: The output image is sized to contain the entire rotated image. This may result in a larger image than the input. 
 - <b>
           'crop'
-        </b>: The output image is cropped to the same size as the input image. Parts of the rotated image may be cut off.
+        </b>: The output image is cropped to the same size as the input image. Parts of the rotated image may be cut off. 
 
-Background pixels (areas not covered by the rotated image) are filled with zeros.
+Background pixels (areas not covered by the rotated image) are filled with zeros. 
 
-Note:
+ 
 
-<b>Performance Note:</b> For exact 90-degree rotations (0°, 90°, 180°, 270°), the function uses optimized algorithms that preserve exact pixel values without interpolation.
+Note: 
 
-<b>Memory Usage:</b> When using 'loose' bounding box with large rotation angles, the output image may be significantly larger than the input. Consider using 'crop' for memory-constrained applications.
+<b>Performance Note:</b> For exact 90-degree rotations (0°, 90°, 180°, 270°), the function uses optimized algorithms that preserve exact pixel values without interpolation. 
 
-<b>Data Type Preservation:</b> The output image maintains the same data type as the input. For floating-point inputs, pixel values may extend beyond the typical [0,1] range after interpolation.
+<b>Memory Usage:</b> When using 'loose' bounding box with large rotation angles, the output image may be significantly larger than the input. Consider using 'crop' for memory-constrained applications. 
 
-<b>Angle Convention:</b> Positive angles rotate counterclockwise, following standard mathematical convention. This is opposite to some image_processing applications that use clockwise positive rotation.
+<b>Data Type Preservation:</b> The output image maintains the same data type as the input. For floating-point inputs, pixel values may extend beyond the typical [0,1] range after interpolation. 
 
-Limitations:
+<b>Angle Convention:</b> Positive angles rotate counterclockwise, following standard mathematical convention. This is opposite to some image\_processing applications that use clockwise positive rotation. 
 
-Input image must be 2-D grayscale, RGB, or RGBA. Other color spaces are not directly supported.
+ 
 
-Rotation is always performed around the center of the image. Off-center rotations require additional preprocessing.
+Limitations: 
 
-For very large angles (>360°), consider using modulo arithmetic to normalize the angle for better performance.
+Input image must be 2-D grayscale, RGB, or RGBA. Other color spaces are not directly supported. 
+
+Rotation is always performed around the center of the image. Off-center rotations require additional preprocessing. 
+
+For very large angles (>360°), consider using modulo arithmetic to normalize the angle for better performance. 
 
 Bicubic interpolation may produce overshoot artifacts near sharp edges in the image.
 
@@ -91,9 +96,8 @@ for i = 1:length(angles)
     fprintf('Angle %3d°: size %dx%d, non-zero pixels: %d\n', ...
             angles(i), size(J, 1), size(J, 2), sum(J(:) > 0));
 end
-
+        
 ```
-
 <img src="imrotate_1.svg" align="middle"/>
 Interactive rotation visualization (Part 2)
 
@@ -118,10 +122,10 @@ for i = 1:length(methods)
     axis equal; axis tight;
     title(sprintf('%s interpolation', methods{i}));
 end
-
+        
 ```
-
 <img src="imrotate_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -129,9 +133,9 @@ end
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.14.0  | initial version |
+| 1.14.0   | initial version |
 
 <!--
 ## 👤 Author

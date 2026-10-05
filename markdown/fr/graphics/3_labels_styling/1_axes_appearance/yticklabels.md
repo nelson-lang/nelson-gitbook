@@ -24,7 +24,8 @@ Definir ou interroger les etiquettes des graduations de l'axe y.
 
 ## 📄 Description
 
-<b>yticklabels</b> definit ou interroge la propriete <b>YTickLabel</b> des axes.
+
+<b>yticklabels</b> definit ou interroge la propriete <b>YTickLabel</b> des axes. 
 
 Affecter des etiquettes passe <b>YTickLabelMode</b> a <b>manual</b>. Utiliser <b>yticklabels('auto')</b> pour revenir aux etiquettes automatiques.
 
@@ -38,7 +39,6 @@ barh([10 20 30 41]);
 yticklabels({'April', 'May', 'June', 'July'});
 
 ```
-
 <img src="yticklabels_1.svg" align="middle"/>
 Definir des etiquettes sur des axes specifies et interroger le mode.
 
@@ -52,10 +52,10 @@ mode = yticklabels(ax, 'mode')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [axes](../../../graphics/2_graphics_objects/1_object_management/axes.md), [barh](../../../graphics/1_plots/6_discrete_data_plots/barh.md).
-
 <!--
 ## 👤 Auteur
 

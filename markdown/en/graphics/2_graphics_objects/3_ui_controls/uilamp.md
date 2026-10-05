@@ -19,6 +19,7 @@ Create lamp component.
 
 ## 📄 Description
 
+
 <b>lmp = uilamp</b> creates a lamp, a display-only circular indicator whose <b>Color</b> reflects a state.
 
 ## 💡 Examples
@@ -32,7 +33,6 @@ lmp = uilamp(f, 'Position', [235 122 20 20]);
 lmp.Color = 'green';
 drawnow();
 ```
-
 <img src="uilamp_example.svg" align="middle"/>
 uilamp
 
@@ -43,13 +43,14 @@ lmp = uilamp(f, 'Color', 'red');
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,9 +18,10 @@ Transforme une FMU en bloc natif nflow (manifeste).
 
 ## 📄 Description
 
-<b>fmuToBlock</b> est l'assistant d'import de FMU de nflow. Il lit la <b>modelDescription.xml</b> d'une FMU et produit un bloc nflow d'aspect natif : un port d'entrée par variable de causalité <b>input</b>, un port de sortie par <b>output</b>, les paramètres de la FMU, son icône (le <b>model.png</b> s'il est présent, sinon un rendu de repli avec libellé), et un paramètre <b>path</b> par défaut pointant vers la <b>.fmu</b>.
 
-Le bloc généré vise le gestionnaire <b>fmu</b> du moteur : le poser donne un bloc FMU fonctionnel qui se simule via le chemin FMI existant, sans nouveau runtime. L'intérêt est côté édition : une FMU devient un bloc de palette de première classe, nommé et doté d'une icône, au lieu d'une boîte générique. Cela se marie avec le pont Modelica, dont <b>modelicaToFmu</b> produit des FMU que <b>fmuToBlock</b> peut ensuite envelopper.
+<b>fmuToBlock</b> est l'assistant d'import de FMU de nflow. Il lit la <b>modelDescription.xml</b> d'une FMU et produit un bloc nflow d'aspect natif : un port d'entrée par variable de causalité <b>input</b>, un port de sortie par <b>output</b>, les paramètres de la FMU, son icône (le <b>model.png</b> s'il est présent, sinon un rendu de repli avec libellé), et un paramètre <b>path</b> par défaut pointant vers la <b>.fmu</b>. 
+
+Le bloc généré vise le gestionnaire <b>fmu</b> du moteur : le poser donne un bloc FMU fonctionnel qui se simule via le chemin FMI existant, sans nouveau runtime. L'intérêt est côté édition : une FMU devient un bloc de palette de première classe, nommé et doté d'une icône, au lieu d'une boîte générique. Cela se marie avec le pont Modelica, dont <b>modelicaToFmu</b> produit des FMU que <b>fmuToBlock</b> peut ensuite envelopper. 
 
 Avec l'option <b>'LibraryFile'</b>, un <b>library.json</b> à un bloc est également écrit, prêt à charger dans l'éditeur nflow. Beaucoup de FMU ne fournissent pas d'icône ; le rendu est alors un repli propre avec libellé.
 
@@ -32,7 +33,6 @@ Importer une FMU de référence en bloc et écrire une bibliothèque.
 fmu = [modulepath('nflow_fmi'), '/examples/VanDerPol.fmu'];
 block = fmuToBlock(fmu, 'Name', 'VanDerPol', 'LibraryFile', [tempdir(), '/vdp.json'])
 ```
-
 Envelopper un modèle Modelica compilé via le pont.
 
 ```matlab
@@ -41,14 +41,15 @@ fmu = modelicaToFmu(src);
 block = fmuToBlock(fmu, 'Name', 'FirstOrder')
 ```
 
+
 ## 🔗 Voir aussi
 
 [fmiInfo](../nflow_fmi/fmiInfo.md), [modelicaToFmu](../nflow_fmi/modelicaToFmu.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

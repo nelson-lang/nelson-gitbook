@@ -28,11 +28,14 @@ Mesh surface plot with curtain.
 
 ## 📄 Description
 
-<b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.
+
+<b>meshz</b> creates a 3-D surface plot with a wireframe plot on top. 
 
 The function takes the same input arguments as the <b>mesh</b> function.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -40,16 +43,16 @@ f = figure();
 Z = Y.*sin(X) - X.*cos(Y);
 s = meshz(X,Y,Z)
 ```
-
 <img src="meshz_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

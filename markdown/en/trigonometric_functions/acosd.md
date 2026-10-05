@@ -15,15 +15,17 @@ Inverse cosine in degrees.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>atand</b> computes the inverse cosine in degrees for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1 -20 0 2 5];
 y = acosd(x)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ y = acosd(x)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,28 +16,34 @@ Routes an integer control to one of several action outputs.
 
 ## 📄 Description
 
-Routes an integer control to one of several action outputs.
 
-The scalar input is truncated toward zero to an integer and matched against <code>CaseConditions</code>, a cell literal such as <code>{1, [7 9 4]}</code>. The first matching case drives its output to <code>1.0</code> and every other output to <code>0.0</code>. With <code>ShowDefaultCase</code> set to <code>on</code>, an unmatched value drives the last (default) output. There is no fall-through. These outputs are meant to gate action subsystems.
+Routes an integer control to one of several action outputs. 
 
-<b>Parameters</b>
+The scalar input is truncated toward zero to an integer and matched against <code>CaseConditions</code>, a cell literal such as <code>{1, [7 9 4]}</code>. The first matching case drives its output to <code>1.0</code> and every other output to <code>0.0</code>. With <code>ShowDefaultCase</code> set to <code>on</code>, an unmatched value drives the last (default) output. There is no fall-through. These outputs are meant to gate action subsystems. 
 
-| Parameter                    | Default value |
-| ---------------------------- | ------------- |
-| <code>CaseConditions</code>  | {1}           |
-| <code>ShowDefaultCase</code> | on            |
+<b>Parameters</b> 
 
-<b>Block Characteristics</b>
+| Parameter | Default value | 
+| --- | --- | 
+| <code>CaseConditions</code> | {1} | 
+| <code>ShowDefaultCase</code> | on | 
 
-| Field      | Value        |
-| ---------- | ------------ |
-| Block type | switchCase   |
-| Family     | Logic blocks |
-| Phases     | ALGEBRAIC    |
+ 
 
-<b>Extended Capabilities</b>
+<b>Block Characteristics</b> 
+
+| Field | Value |
+| --- | --- |
+| Block type | switchCase | 
+| Family | Logic blocks | 
+| Phases | ALGEBRAIC | 
+
+ 
+
+<b>Extended Capabilities</b> 
 
 Code generation: supported for C and Rust.
+
 
 ## 🔗 See also
 
@@ -45,7 +51,7 @@ Code generation: supported for C and Rust.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

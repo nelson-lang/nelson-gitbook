@@ -4,12 +4,12 @@ gestionnaire de versions sémantiques.
 
 ## 📝 Syntaxe
 
-- r = semver(version_str, version_range)
+- r = semver(version\_str, version\_range)
 
 ## 📥 Argument d'entrée
 
-- version_str - chaîne : version actuelle.
-- version_range - chaîne : version à comparer ou plage de versions.
+- version\_str - chaîne : version actuelle.
+- version\_range - chaîne : version à comparer ou plage de versions.
 
 ## 📤 Argument de sortie
 
@@ -17,31 +17,32 @@ gestionnaire de versions sémantiques.
 
 ## 📄 Description
 
-<b>semver</b> compare une chaîne de version à une version simple ou à une plage de versions.
 
-Si une plage de versions est utilisée,<b>r</b> retourne 0 (non satisfaite) ou 1 (satisfaite).
+<b>semver</b> compare une chaîne de version à une version simple ou à une plage de versions. 
 
-Si une version simple est utilisée, une valeur de comparaison<b>r</b> est renvoyée : -1 (inférieur), 0 (égal) ou 1 (supérieur).
+Si une plage de versions est utilisée,<b>r</b> retourne 0 (non satisfaite) ou 1 (satisfaite). 
 
-Opérateurs de plage supportés :
+Si une version simple est utilisée, une valeur de comparaison<b>r</b> est renvoyée : -1 (inférieur), 0 (égal) ou 1 (supérieur). 
 
-<b>=</b> - Égalité
+Opérateurs de plage supportés : 
 
-<b>
-        >=</b> - Supérieur ou égal à
+<b>=</b> - Égalité 
 
 <b>
-        <=</b> - Inférieur ou égal à
+        >=</b> - Supérieur ou égal à 
+
+<b>
+        <=</b> - Inférieur ou égal à 
 
 <b>
         <
-      </b> - Inférieur à
+      </b> - Inférieur à 
 
 <b>
         >
-      </b> - Supérieur à
+      </b> - Supérieur à 
 
-<b>^</b> - Opérateur caret (caret)
+<b>^</b> - Opérateur caret (caret) 
 
 <b>~</b> - Opérateur tilde (tilde)
 
@@ -54,6 +55,8 @@ semver.c
 https://semver.org/
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -72,14 +75,15 @@ semver('1.9.9', '^1.2.3')
 semver('2.0.1', '^1.2.3')
 ```
 
+
 ## 🔗 Voir aussi
 
 [version](../core/version.md), [getmodules](../modules_manager/getmodules.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

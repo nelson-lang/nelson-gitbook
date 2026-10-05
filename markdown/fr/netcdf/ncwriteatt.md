@@ -19,7 +19,8 @@ Ecrit un attribut dans une source netCDF.
 
 ## 📄 Description
 
-ncwriteatt ecrit ou remplace un attribut dans une source netCDF.
+
+ncwriteatt ecrit ou remplace un attribut dans une source netCDF. 
 
 L'attribut peut etre global ou associe a une variable selon l'emplacement indique.
 
@@ -34,14 +35,15 @@ ncwriteatt(filename, '/', 'title', 'sample file');
 title = ncreadatt(filename, '/', 'title')
 ```
 
+
 ## 🔗 Voir aussi
 
 [ncreadatt](../netcdf/ncreadatt.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

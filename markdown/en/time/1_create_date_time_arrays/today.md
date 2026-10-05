@@ -16,9 +16,10 @@ Return the serial date number for the current day.
 
 ## 📄 Description
 
-Return the serial date number for the current day.
 
-today is equivalent to floor(now()) at the time of the call.
+Return the serial date number for the current day. 
+
+today is equivalent to floor(now()) at the time of the call. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,13 +33,14 @@ t == floor(t)
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

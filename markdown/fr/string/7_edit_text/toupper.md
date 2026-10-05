@@ -15,27 +15,30 @@ Conversion en majuscules.
 - res - une chaîne en majuscules
 
 ## 📄 Description
-
 <b>toupper</b> convertit une chaîne en majuscules.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 toupper('NelSon')
 ```
 
+
 ```matlab
 upper(["NelSon", "is", "open"])
 ```
 
+
 ## 🔗 Voir aussi
 
-[tolower](../../string/tolower.md).
+[tolower](../../string/7_edit_text/tolower.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

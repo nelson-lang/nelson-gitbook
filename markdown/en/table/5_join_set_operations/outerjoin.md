@@ -21,9 +21,12 @@ Outer join of two tables.
 
 ## 📄 Description
 
+
 <b>outerjoin</b> combines rows from both tables and preserves unmatched rows according to the selected join type. The 'MergeKeys' option merges key columns in the output.
 
 ## 💡 Example
+
+
 
 ```matlab
 L = table([1; 2], [10; 20], 'VariableNames', {'Key', 'LeftValue'});
@@ -31,13 +34,14 @@ R = table([2; 3], [200; 300], 'VariableNames', {'Key', 'RightValue'});
 J = outerjoin(L, R, 'Keys', 'Key')
 ```
 
+
 ## 🔗 See also
 
-[join](../../table/join.md), [innerjoin](../../table/innerjoin.md).
+[join](../../table/5_join_set_operations/join.md), [innerjoin](../../table/5_join_set_operations/innerjoin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

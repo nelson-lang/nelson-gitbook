@@ -18,9 +18,12 @@ Gaussian window.
 
 ## 📄 Description
 
+
 <b>gausswin</b> returns an M-point Gaussian window.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ w = gausswin(5, 2.5);
 
 ```
 
+
 ## 🔗 See also
 
-[kaiser](../../signal_processing/kaiser.md).
+[kaiser](../../signal_processing/5_spectral_analysis/kaiser.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

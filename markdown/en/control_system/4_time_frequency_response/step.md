@@ -24,17 +24,20 @@ Step response plot of dynamic system.
 
 ## 📄 Description
 
-The function defaults to applying a step at t0 = 0 with initial conditions U = 0, dU = 1, and td = 0.
 
-The step function, used as <b>[y, tOut] = step(sys)</b>, calculates the step response (y) of the dynamic system <b>sys</b>.
+The function defaults to applying a step at t0 = 0 with initial conditions U = 0, dU = 1, and td = 0. 
 
-The time vector tOut is in the time units of <b>sys</b>, and the function automatically determines the time steps and simulation duration based on the system dynamics.
+The step function, used as <b>[y, tOut] = step(sys)</b>, calculates the step response (y) of the dynamic system <b>sys</b>. 
 
-If you use <b>[y, tOut] = step(sys, tFinal)</b>, the step response is computed from t = 0 to the specified end time t = tFinal.
+The time vector tOut is in the time units of <b>sys</b>, and the function automatically determines the time steps and simulation duration based on the system dynamics. 
+
+If you use <b>[y, tOut] = step(sys, tFinal)</b>, the step response is computed from t = 0 to the specified end time t = tFinal. 
 
 Similarly,<b>[y, tOut] = step(sys, [t0, tFinal])</b> computes the step response from <b>t0</b> to <b>tFinal</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [-10 -20 -30;1  0  0; 0  1  0];
@@ -48,16 +51,16 @@ sys = ss(A, B, C, D);
 step(sys);
 
 ```
-
 <img src="step.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[gensig](../../control_system/gensig.md), [lsim](../../control_system/lsim.md).
+[gensig](../../control_system/2_model_conversion_interconnection/gensign.md), [lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

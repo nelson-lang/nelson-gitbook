@@ -17,23 +17,27 @@ Permute les dimensions d'un tableau.
 
 ## 📄 Description
 
+
 <b>permute</b> permute les dimensions d'un tableau.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 2 3; 4 5 6]
 y = permute(x,[3 1 2])
 ```
 
+
 ## 🔗 Voir aussi
 
-[ipermute](../../elementary_functions/ipermute.md), [reshape](../../elementary_functions/reshape.md), [transpose](../../operators/transpose.md).
+[ipermute](../../elementary_functions/7_indexing_dimensions/ipermute.md), [reshape](../../elementary_functions/1_array_creation_shape/reshape.md), [transpose](../../operators/transpose.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

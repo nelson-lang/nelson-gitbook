@@ -1,16 +1,27 @@
 # Fonctions de système de contrôle
 
+
+    
 Le module Système de Contrôle fournit des algorithmes et des outils pour concevoir, analyser et ajuster des systèmes de contrôle linéaires dans Nelson.
 
+    
 Il prend en charge les modèles d'espace d'état et de fonction de transfert, les transformations de système entre temps continu et discret, et le calcul des pôles, zéros et réponses en fréquence.
 
+    
 Le module comprend également des fonctionnalités pour l'équilibrage des systèmes, l'analyse de contrôlabilité et d'observabilité, la conception de régulateurs et d'estimateurs, et la simulation des réponses des systèmes dynamiques.
 
+    
 Ces outils permettent une modélisation, une analyse et un contrôle robustes des systèmes dynamiques linéaires pour les applications d'ingénierie et de recherche.
+
+  
 
 ## Modeles de systemes dynamiques
 
+
+    
 Fonctions pour creer, inspecter et reduire des modeles de systemes dynamiques.
+
+  
 
 ### Functions
 
@@ -31,7 +42,11 @@ Fonctions pour creer, inspecter et reduire des modeles de systemes dynamiques.
 
 ## Conversion et interconnexion de modeles
 
+
+    
 Fonctions pour conversion, composition, selection et interconnexion de modeles.
+
+  
 
 ### Functions
 
@@ -52,7 +67,11 @@ Fonctions pour conversion, composition, selection et interconnexion de modeles.
 
 ## Analyse lineaire
 
+
+    
 Fonctions pour analyse temporelle, frequentielle et reponse de modeles.
+
+  
 
 ### Functions
 
@@ -67,7 +86,11 @@ Fonctions pour analyse temporelle, frequentielle et reponse de modeles.
 
 ## Reponses temporelles et frequentielles
 
+
+    
 Fonctions de simulation et de reponse pour systemes dynamiques.
+
+  
 
 ### Functions
 
@@ -78,7 +101,11 @@ Fonctions de simulation et de reponse pour systemes dynamiques.
 
 ## Conception et reglage de commande
 
+
+    
 Fonctions pour conception de controleurs, estimateurs et calculs de regulateurs.
+
+  
 
 ### Functions
 
@@ -96,7 +123,11 @@ Fonctions pour conception de controleurs, estimateurs et calculs de regulateurs.
 
 ## Calculs matriciels
 
+
+    
 Calculs matriciels orientes commande pour analyse en espace d etat.
+
+  
 
 ### Functions
 
@@ -113,3 +144,4 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 - [obsv](6_matrix_computations/obsv.md) - Observabilité d'un modèle d'état.
 - [obsvf](6_matrix_computations/obsvf.md) - Calcul de la forme en escalier d'observabilité.
 - [schord](6_matrix_computations/schord.md) - Ordonne une decomposition de Schur.
+

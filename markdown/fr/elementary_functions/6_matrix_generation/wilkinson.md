@@ -18,6 +18,7 @@ Matrice de test de valeurs propres de Wilkinson
 
 ## 📄 Description
 
+
 <b>W = wilkinson(n)</b> renvoie la matrice de Wilkinson d'ordre<b>n</b>.
 
 ## 📚 Bibliographie
@@ -26,9 +27,12 @@ https://en.wikipedia.org/wiki/Wilkinson_matrix
 
 ## 💡 Exemple
 
+
+
 ```matlab
 W = wilkinson(4)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +40,8 @@ W = wilkinson(4)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

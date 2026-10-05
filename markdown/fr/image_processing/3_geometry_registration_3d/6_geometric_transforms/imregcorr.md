@@ -21,6 +21,7 @@ Estime une transformation de recalage 2-D par correlation de phase.
 
 ## 📄 Description
 
+
 imregcorr estime la translation en pixels entiers entre deux images de meme taille avec une correlation de phase normalisee. Les entrees RGB sont converties en niveaux de gris avant le recalage. Le resultat est retourne sous forme de transformation affine2d.
 
 ## 💡 Exemple
@@ -36,17 +37,17 @@ figure; subplot(1,3,1); imagesc(I); axis image; title('Mobile');
 subplot(1,3,2); imagesc(J); axis image; title('Fixe');
 subplot(1,3,3); imagesc(K); axis image; title('Recalee');
 ```
-
 <img src="imregcorr_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[affine2d](../../../image_processing/affine2d.md), [imregconfig](../../../image_processing/imregconfig.md), [imregister](../../../image_processing/imregister.md), [imregtform](../../../image_processing/imregtform.md), [imtranslate](../../../image_processing/imtranslate.md), [imwarp](../../../image_processing/imwarp.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [imregconfig](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregconfig.md), [imregister](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregister.md), [imregtform](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregtform.md), [imtranslate](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imtranslate.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

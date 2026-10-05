@@ -28,17 +28,18 @@ Plot variables in stacked axes.
 
 ## 📄 Description
 
-<b>stackedplot</b> creates one axes for each selected variable and returns a <b>StackedLineChart</b> object.
 
-For timetables, row times are used as x values. For tables, row numbers are used unless <b>XVariable</b> is specified.
+<b>stackedplot</b> creates one axes for each selected variable and returns a <b>StackedLineChart</b> object. 
 
-Multiple table or timetable inputs are accepted. Variables with matching names are combined in the same y-axis by default. Use <b>CombineMatchingNames</b> set to <b>false</b> to place matching variables in separate y-axes.
+For timetables, row times are used as x values. For tables, row numbers are used unless <b>XVariable</b> is specified. 
 
-<b>LineSpec</b> sets line style, marker, and color for all plotted lines. A parent figure can be supplied as the first input.
+Multiple table or timetable inputs are accepted. Variables with matching names are combined in the same y-axis by default. Use <b>CombineMatchingNames</b> set to <b>false</b> to place matching variables in separate y-axes. 
 
-Use grouped variables such as <b>{{'A','B'}, 'C'}</b> to plot several variables in one stacked axes.
+<b>LineSpec</b> sets line style, marker, and color for all plotted lines. A parent figure can be supplied as the first input. 
 
-Unsupported table variables are skipped. An error is raised if no plottable variable remains. Up to 25 variables can be displayed.
+Use grouped variables such as <b>{{'A','B'}, 'C'}</b> to plot several variables in one stacked axes. 
+
+Unsupported table variables are skipped. An error is raised if no plottable variable remains. Up to 25 variables can be displayed. 
 
 See [stackedplot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stackedplot.properties.md) for the complete property list.
 
@@ -63,7 +64,6 @@ s.LineProperties(1).Marker = 'o';
 s.AxesProperties(2).YLimits = [0 1.2];
 
 ```
-
 <img src="stackedplot_1.svg" align="middle"/>
 Use a table variable as the x-axis.
 
@@ -79,7 +79,6 @@ s = stackedplot(T, {'Temperature', 'Pressure', 'Rain'}, 'XVariable', 'Time');
 s.Title = 'Weather over time';
 
 ```
-
 Plot grouped variables in one axes.
 
 ```matlab
@@ -95,7 +94,6 @@ s = stackedplot(T, {{'Temperature', 'Rain'}, 'Pressure'}, ...
   'LegendVisible', 'on');
 
 ```
-
 Plot timetable variables against row times.
 
 ```matlab
@@ -111,7 +109,6 @@ s = stackedplot(TT);
 s.GridVisible = 'on';
 
 ```
-
 Plot numeric arrays.
 
 ```matlab
@@ -123,7 +120,6 @@ s = stackedplot(X, Y, 'DisplayLabels', {'sin', 'cos', 'product'});
 s.AxesProperties(1).YScale = 'linear';
 
 ```
-
 Set top-level chart properties.
 
 ```matlab
@@ -142,7 +138,6 @@ s = stackedplot(T, {'Temperature', 'Rain'}, ...
 s.Color = [0 0 1];
 
 ```
-
 Plot matching variables from two tables in the same axes.
 
 ```matlab
@@ -160,7 +155,6 @@ s = stackedplot(T1, T2, {'Temperature', 'Rain'}, '--o', ...
   'Title', 'Two stations');
 
 ```
-
 Place matching variables in separate axes.
 
 ```matlab
@@ -174,7 +168,6 @@ s = stackedplot({T1, T2}, {'Value'}, ...
   'CombineMatchingNames', false);
 
 ```
-
 Create a stacked plot in a specified figure.
 
 ```matlab
@@ -188,13 +181,14 @@ s = stackedplot(f, T, 'LineWidth', 2);
 
 ```
 
+
 ## 🔗 See also
 
-[stackedplot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stackedplot.properties.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md), [table](../../../table/table.md), [timetable](../../../table/timetable.md).
+[stackedplot properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stackedplot.properties.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md), [table](../../../table/1_create_convert_tables/table.md), [timetable](../../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

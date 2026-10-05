@@ -19,6 +19,7 @@ Creates a question dialog box.
 
 ## 📄 Description
 
+
 questdlg displays a question dialog and returns the selected button label.
 
 ## 💡 Examples
@@ -32,7 +33,6 @@ uicontrol(f, 'Style', 'pushbutton', 'String', 'Yes', 'Position', [80 30 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'No', 'Position', [160 30 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [240 30 70 24]);
 ```
-
 <img src="questdlg_example.svg" align="middle"/>
 Use custom button labels.
 
@@ -41,14 +41,15 @@ answer = questdlg('Save changes?', 'Confirm', 'Save', 'Discard', 'Cancel', 'Save
 disp(answer)
 ```
 
+
 ## 🔗 See also
 
 [msgbox](../gui/msgbox.md), [uiconfirm](../gui/uiconfirm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

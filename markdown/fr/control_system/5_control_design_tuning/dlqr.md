@@ -23,9 +23,12 @@ Régulateur de retour d'état linéaire-quadratique (LQ) pour système d'espace 
 
 ## 📄 Description
 
+
 La fonction <b>dlqr</b> est conçue pour minimiser une fonction de coût quadratique associée à un modèle de système d'espace d'état linéaire invariant dans le temps discret.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [0.9, 0.2; 0, 0.8];
@@ -36,14 +39,15 @@ R = 3;
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[lqr](../../control_system/lqr.md).
+[lqr](../../control_system/5_control_design_tuning/lqr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

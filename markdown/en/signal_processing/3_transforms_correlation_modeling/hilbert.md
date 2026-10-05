@@ -18,9 +18,12 @@ Analytic signal using the Hilbert transform.
 
 ## 📄 Description
 
+
 <b>hilbert</b> constructs the analytic signal along the first non-singleton dimension. For matrices, each column is transformed independently.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ y = hilbert([1 0 0 0]);
 
 ```
 
+
 ## 🔗 See also
 
 [fft](../../fftw/fft.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

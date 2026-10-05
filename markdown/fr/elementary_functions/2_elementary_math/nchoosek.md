@@ -20,13 +20,16 @@ Coefficient binomial ou combinaisons.
 
 ## 📄 Description
 
-nchoosek(n, k) renvoie le coefficient binomial pour un scalaire entier positif ou nul n.
+
+nchoosek(n, k) renvoie le coefficient binomial pour un scalaire entier positif ou nul n. 
 
 nchoosek(v, k) renvoie une matrice contenant toutes les combinaisons de k elements du vecteur v.
 
 ## Fonction(s) utilisée(s)
 
+
     factorial
+  
 
 ## 💡 Exemple
 
@@ -37,14 +40,15 @@ b = nchoosek(5, 2)
 C = nchoosek([10 20 30 40], 2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[factorial](../../elementary_functions/factorial.md), [prod](../../data_analysis/prod.md).
+[factorial](../../elementary_functions/2_elementary_math/factorial.md), [prod](../../data_analysis/prod.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

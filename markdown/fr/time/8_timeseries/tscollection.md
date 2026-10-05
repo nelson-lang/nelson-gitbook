@@ -21,11 +21,13 @@ Cree une collection de series temporelles alignees.
 
 ## 📄 Description
 
-<b>tscollection</b> groupe des objets timeseries nommes sur un vecteur de temps commun.
+
+<b>tscollection</b> groupe des objets timeseries nommes sur un vecteur de temps commun. 
 
 Les membres peuvent etre ajoutes, supprimes, reechantillonnes, selectionnes par temps et consultes par nom.
 
 ## 💡 Exemples
+
 
 ```matlab
 count1 = timeseries([11; 7; 14; 11], (1:4)', 'Name', 'Intersection1');
@@ -44,14 +46,15 @@ gettimeseriesnames(tsc)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

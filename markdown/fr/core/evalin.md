@@ -18,13 +18,17 @@
 
 ## 📄 Description
 
+
 Évalue une expression dans un espace de travail donné (par exemple, l'espace de travail 'base' ou 'caller').
 
 ## 💡 Exemple
 
+
+
 ```matlab
 evalin('base', 'B=4')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ evalin('base', 'B=4')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

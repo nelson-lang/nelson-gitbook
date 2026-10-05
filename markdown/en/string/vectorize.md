@@ -16,13 +16,17 @@ Insert element-wise operators in an expression string.
 
 ## 📄 Description
 
+
 <b>vectorize</b> prefixes power, multiplication and division operators with dots when needed.
 
 ## 💡 Example
 
+
+
 ```matlab
 s = vectorize('x^2 + y*z')
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ s = vectorize('x^2 + y*z')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

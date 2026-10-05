@@ -17,9 +17,12 @@ Convertit une matrice de données de signal en son et le joue.
 
 ## 📄 Description
 
+
 <b>sound</b> joue le signal audio <b>y</b> sur le haut-parleur à une fréquence d'échantillonnage de <b>Fs</b> hertz et utilise <b>nBits</b> bits par échantillon.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -27,14 +30,15 @@ sound(signal, 44110, 16)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md), [soundsc](../audio/soundsc.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

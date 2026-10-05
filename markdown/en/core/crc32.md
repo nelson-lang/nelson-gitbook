@@ -4,11 +4,11 @@ Get crc32 checksum.
 
 ## 📝 Syntax
 
-- hexa_hash = crc32(str)
-- hexa_hash = crc32(filename)
-- hexa_hash = crc32(str, '-file')
-- hexa_hash = crc32(str, '-string')
-- hexa_hash = crypto.crc32(...)
+- hexa\_hash = crc32(str)
+- hexa\_hash = crc32(filename)
+- hexa\_hash = crc32(str, '-file')
+- hexa\_hash = crc32(str, '-string')
+- hexa\_hash = crypto.crc32(...)
 
 ## 📥 Input argument
 
@@ -18,39 +18,48 @@ Get crc32 checksum.
 
 ## 📤 Output argument
 
-- hexa_hash - a character vector, cell of string or array of strings: hashed result (checksum).
+- hexa\_hash - a character vector, cell of string or array of strings: hashed result (checksum).
 
 ## 📄 Description
 
-<b>crc32</b> get crc32 checksum.
+
+<b>crc32</b> get crc32 checksum. 
 
 <b>crypto.crc32</b> is an alias of <b>crc32</b>, in the <b>crypto</b> namespace shared with <b>crypto.ed25519.verify</b> and <b>crypto.ed25519.sign</b>.
 
 ## 💡 Examples
 
+
+
 ```matlab
 R = crc32('Nelson')
 ```
+
 
 ```matlab
 R = crc32({'Hello', 'World'})
 ```
 
+
 ```matlab
 R = crc32(["Hello"; "World"])
 ```
+
 
 ```matlab
 R = crc32([modulepath('matio', 'tests'), '/mat/test_char_array_unicode_7.4_GLNX86.mat'])
 ```
 
+
 ```matlab
 R = crc32([modulepath('matio', 'tests'), '/mat/test_char_array_unicode_7.4_GLNX86.mat'], '-file')
 ```
 
+
 ```matlab
 R = crc32([modulepath('matio', 'tests'), '/mat/test_char_array_unicode_7.4_GLNX86.mat'], '-string')
 ```
+
 
 ## 🔗 See also
 
@@ -58,9 +67,9 @@ R = crc32([modulepath('matio', 'tests'), '/mat/test_char_array_unicode_7.4_GLNX8
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

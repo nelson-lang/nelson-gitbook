@@ -16,22 +16,26 @@ Inverse condition number.
 
 ## 📄 Description
 
+
 <b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = rand(10, 10);
 r = rcond(X);
 ```
 
+
 ## 🔗 See also
 
-[inv](../../linear_algebra/inv.md), [cond](../../linear_algebra/cond.md).
+[inv](../../linear_algebra/1_linear_systems/inv.md), [cond](../../linear_algebra/5_matrix_properties/cond.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

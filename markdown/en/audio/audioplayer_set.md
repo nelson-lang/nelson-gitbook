@@ -1,11 +1,11 @@
-# audioplayer_set
+# audioplayer\_set
 
 Set object or interface property to specified value.
 
 ## 📝 Syntax
 
 - set(h, propertyname, value)
-- audioplayer_set(h, propertyname, value)
+- audioplayer\_set(h, propertyname, value)
 - h.propertyname = value
 
 ## 📥 Input argument
@@ -16,9 +16,12 @@ Set object or interface property to specified value.
 
 ## 📄 Description
 
+
 The function sets the property specified in the string propertyname to the given value.
 
 ## 💡 Example
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,13 +29,14 @@ playObj = audioplayer(signal, 44100, 16)
 playObj.Tag = 'my audio object'
 ```
 
+
 ## 🔗 See also
 
 [audioplayer_get](../audio/audioplayer_get.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

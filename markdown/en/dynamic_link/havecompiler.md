@@ -13,15 +13,19 @@ Detect if a C/C++ compiler is configured.
 
 ## 📄 Description
 
-<b>havecompiler</b> detects if C/C++ compiler is configured for Nelson.
+
+<b>havecompiler</b> detects if C/C++ compiler is configured for Nelson. 
 
 On Unix platforms (linux, MacOs),<b>havecompiler</b> returns always <b>true</b> as status and<b>unix</b> as compiler.
 
 ## 💡 Example
 
+
+
 ```matlab
 [status, message] = havecompiler()
 ```
+
 
 ## 🔗 See also
 
@@ -29,7 +33,7 @@ On Unix platforms (linux, MacOs),<b>havecompiler</b> returns always <b>true</b> 
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

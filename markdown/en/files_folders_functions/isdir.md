@@ -16,16 +16,20 @@ Returns true is the input argument is an directory.
 
 ## 📄 Description
 
-<b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.
+
+<b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory. 
 
 <b>isdir</b> and <b>isfolder</b> are same.
 
 ## 💡 Example
 
+
+
 ```matlab
 isdir(nelsonroot())
 isdir([nelsonroot(), '/not_exist_dir'])
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ isdir([nelsonroot(), '/not_exist_dir'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

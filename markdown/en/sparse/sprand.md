@@ -19,7 +19,8 @@ Sparse uniformly distributed random matrix.
 
 ## 📄 Description
 
-<b>R = sprand(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with uniformly distributed random entries.
+
+<b>R = sprand(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with uniformly distributed random entries. 
 
 <b>R = sprand(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density\*m\*n uniformly distributed nonzero entries for density in the interval [0,1].
 
@@ -30,12 +31,12 @@ sprand with matrix pattern
 ```matlab
 S = [1 0 0; 0 1 0; 0 0 1]; R = sprand(S)
 ```
-
 sprand with size and density
 
 ```matlab
 R = sprand(5, 5, 0.2)
 ```
+
 
 ## 🔗 See also
 
@@ -43,9 +44,9 @@ R = sprand(5, 5, 0.2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

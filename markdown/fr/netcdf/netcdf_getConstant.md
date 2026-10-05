@@ -16,7 +16,8 @@ Retourne la valeur numerique d'une constante netCDF.
 
 ## 📄 Description
 
-netcdf.getConstant expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.getConstant expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -28,14 +29,15 @@ Exemple copiable pour netcdf.getConstant.
 mode = netcdf.getConstant('NC_CLOBBER')
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.getConstantNames](../netcdf/netcdf.getConstantNames.md).
+[netcdf.getConstantNames](../netcdf/netcdf_getConstantNames.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

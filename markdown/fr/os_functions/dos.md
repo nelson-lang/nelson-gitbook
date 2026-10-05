@@ -20,13 +20,16 @@ Executer une commande avec l'interpreteur du systeme d'exploitation.
 
 ## 📄 Description
 
-dos execute une commande via l'interpreteur du systeme d'exploitation et renvoie le code de sortie.
+
+dos execute une commande via l'interpreteur du systeme d'exploitation et renvoie le code de sortie. 
 
 Avec des sorties, Nelson peut aussi renvoyer le texte produit par la commande et la duree d'execution. dos suit le meme modele d'execution que system.
 
 ## Fonction(s) utilisée(s)
 
+
     system
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ Executer une commande shell et capturer sa sortie.
 [status, output] = dos('echo Nelson')
 ```
 
+
 ## 🔗 Voir aussi
 
 [system](../os_functions/system.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -33,9 +33,12 @@ définir ou obtenir les limites de l'axe des y.
 
 ## 📄 Description
 
+
 <b>ylim</b> obtient ou définit les limites de l'axe des y pour le tracé actuel.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = linspace(-1, 1);
@@ -46,14 +49,15 @@ m = ylim('mode')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [axes](../../../graphics/2_graphics_objects/1_object_management/axes.md), [axis](../../../graphics/3_labels_styling/1_axes_appearance/axis.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

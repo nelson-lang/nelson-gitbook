@@ -19,19 +19,23 @@ Fonction de repartition inverse gamma
 
 ## 📄 Description
 
+
 <b>gaminv</b> calcule les probabilites inverses de queue inferieure gamma.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = gaminv(p, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

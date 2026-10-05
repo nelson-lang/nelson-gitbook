@@ -20,9 +20,11 @@ Trace les donnees timeseries en fonction du temps.
 
 ## 📄 Description
 
+
 <b>plot</b> Trace le temps des echantillons sur l'axe x et les donnees timeseries sur l'axe y. L'interpolation par maintien d'ordre zero utilise un trace en escalier.
 
 ## 💡 Exemple
+
 
 ```matlab
 f = figure();
@@ -31,14 +33,15 @@ h = plot(ts);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

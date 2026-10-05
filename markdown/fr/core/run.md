@@ -4,13 +4,13 @@ Exécute un script ou un fichier.
 
 ## 📝 Syntaxe
 
-- run(script_file)
-- run(script_file, 'nocatch')
-- bsuccess = run(script_file, 'errcatch')
+- run(script\_file)
+- run(script\_file, 'nocatch')
+- bsuccess = run(script\_file, 'errcatch')
 
 ## 📥 Argument d'entrée
 
-- script_file - chaîne : chemin vers le script
+- script\_file - chaîne : chemin vers le script
 - 'nocatch' - chaîne : option par défaut (pas de capture d'erreurs)
 - 'errcatch' - chaîne : option pour capturer les erreurs
 
@@ -19,6 +19,7 @@ Exécute un script ou un fichier.
 - bsuccess - un logique : vrai si aucune erreur détectée pendant l'exécution du script
 
 ## 📄 Description
+
 
 Exécute un script ou un fichier spécifié dans l'environnement Nelson.
 
@@ -39,30 +40,27 @@ fprintf(fd, ['CC = AA + BB', char(10)]);
 fclose(fd);
 
 ```
-
 run a script without error.
 
 ```matlab
 run([tempdir(), 'example_run_ok.m']);
 ```
-
 run a script and catch error (no error).
 
 ```matlab
 bsuccess = run([tempdir(), 'example_run_ok.m'], 'errcatch')
 ```
-
 run a script and catch error (with error).
 
 ```matlab
 bsuccess = run([tempdir(), 'example_run_not_ok.m'], 'errcatch')
 ```
-
 run a script and no catch error.
 
 ```matlab
 run([tempdir(), 'example_run_not_ok.m'], 'nocatch');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -70,8 +68,8 @@ run([tempdir(), 'example_run_not_ok.m'], 'nocatch');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -31,19 +31,22 @@ Create patches of colored polygons
 
 ## 📄 Description
 
-<b>patch(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by<b>X</b> and <b>Y</b> coordinates, and fills the shape with color<b>C</b>.
 
-<b>patch(X, Y, Z, C)</b> creates a 3D polygonal shape with vertices defined by<b>X</b>, <b>Y</b>, and<b>Z</b> coordinates, and fills the shape with color <b>C</b>.
+<b>patch(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by<b>X</b> and <b>Y</b> coordinates, and fills the shape with color<b>C</b>. 
 
-<b>patch(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the patch object using name-value pairs.
+<b>patch(X, Y, Z, C)</b> creates a 3D polygonal shape with vertices defined by<b>X</b>, <b>Y</b>, and<b>Z</b> coordinates, and fills the shape with color <b>C</b>. 
 
-<b>patch('Faces', F, 'Vertices', V)</b> creates one or more polygons .
+<b>patch(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the patch object using name-value pairs. 
 
-<b>go = patch(...)</b> returns the handle <b>go</b> to the created patch object.
+<b>patch('Faces', F, 'Vertices', V)</b> creates one or more polygons . 
+
+<b>go = patch(...)</b> returns the handle <b>go</b> to the created patch object. 
 
 See [patch properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.patch.properties.md) for the complete property list.
 
 ## 💡 Examples
+
+
 
 ```matlab
 fig = figure('Color', 'k');
@@ -62,8 +65,8 @@ end
 axis equal
 axis off
 ```
-
 <img src="patch_1.svg" align="middle"/>
+
 
 ```matlab
 f =figure('Color', 'w');
@@ -80,7 +83,6 @@ patch(x,-y,'w','EdgeColor','w');
 axis('equal')
 axis('off')
 ```
-
 <img src="patch_2.svg" align="middle"/>
 Nerfertiti 3D mask
 
@@ -95,7 +97,6 @@ axis equal
 axis off
 view([0, 0, 1]);
 ```
-
 <img src="patch_3.svg" align="middle"/>
 Alpha channel
 
@@ -109,8 +110,8 @@ patch(x,y,z,'cyan','FaceAlpha',0.3)
 patch(x+2,y,z,'magenta','FaceAlpha',0.3)
 patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 ```
-
 <img src="patch_4.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -118,11 +119,11 @@ patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 
 ## 🕔 History
 
-| Version | 📄 Description                       |
-| ------- | ------------------------------------ |
-| 1.0.0   | initial version                      |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 1.7.0   | CreateFcn, DeleteFcn callback added. |
-| --      | BeingDeleted property added.         |
+| --   | BeingDeleted property added. |
 
 <!--
 ## 👤 Author

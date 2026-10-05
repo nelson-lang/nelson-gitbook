@@ -15,25 +15,29 @@ Vérifie que la valeur est finie ou renvoie une erreur.
 
 ## 📄 Description
 
-<b>mustBeFinite</b> vérifie que la valeur est finie ou renvoie une erreur.
+
+<b>mustBeFinite</b> vérifie que la valeur est finie ou renvoie une erreur. 
 
 Les valeurs vides sont ignorées.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeFinite(1)
 mustBeFinite(Inf)
 ```
 
+
 ## 🔗 Voir aussi
 
-[isfinite](../elementary_functions/isfinite.md), [isempty](../types/isempty.md).
+[isfinite](../elementary_functions/7_indexing_dimensions/isfinite.md), [isempty](../types/isempty.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

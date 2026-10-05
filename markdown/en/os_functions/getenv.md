@@ -4,11 +4,11 @@ Get the value of an environment variable.
 
 ## 📝 Syntax
 
-- s = getenv(env_name)
+- s = getenv(env\_name)
 
 ## 📥 Input argument
 
-- env_name - string scalar, character vector, string array, cell array of character vectors: environment variable name.
+- env\_name - string scalar, character vector, string array, cell array of character vectors: environment variable name.
 
 ## 📤 Output argument
 
@@ -16,15 +16,18 @@ Get the value of an environment variable.
 
 ## 📄 Description
 
-<b>getenv</b> returns the value of an environment variable if it exists.
 
-If the environment variable does not exist, it will return ' '.
+<b>getenv</b> returns the value of an environment variable if it exists. 
 
-If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as<b>env_name</b>.
+If the environment variable does not exist, it will return ' '. 
 
-If <b>env_name</b> is a string scalar, then<b>s</b> is a character vector.
+If <b>env\_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as<b>env\_name</b>. 
+
+If <b>env\_name</b> is a string scalar, then<b>s</b> is a character vector.
 
 ## 💡 Example
+
+
 
 ```matlab
 getenv('OS')
@@ -34,15 +37,16 @@ getenv({'PATH'; 'OS'})
 
 ```
 
+
 ## 🔗 See also
 
 [setenv](../os_functions/setenv.md), [searchenv](../os_functions/searchenv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                        |
-| ------- | ----------------------------------------------------- |
-| 1.0.0   | initial version                                       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 1.4.0   | Retrieve the values of several environment variables. |
 
 <!--

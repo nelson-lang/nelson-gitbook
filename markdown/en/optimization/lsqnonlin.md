@@ -30,17 +30,20 @@ Nonlinear least-squares solution.
 
 ## 📄 Description
 
-<b>lsqnonlin</b> solves nonlinear least-squares problems min sum(fun(x).^2), optionally subject to bounds and constraints.
 
-The <b>Algorithm</b> option selects the engine: <b>'trust-region-reflective'</b> (default), <b>'levenberg-marquardt'</b> (also accepts bounds) or <b>'interior-point'</b>. Linear or nonlinear constraints automatically use the <b>interior-point</b> algorithm.
+<b>lsqnonlin</b> solves nonlinear least-squares problems min sum(fun(x).^2), optionally subject to bounds and constraints. 
 
-The default <b>MaxFunctionEvaluations</b> is <b>100\*numberOfVariables</b>, <b>MaxIterations</b> is 400 and <b>FunctionTolerance</b> and <b>StepTolerance</b> are 1e-6. The <b>Display</b> option supports 'off', 'none', 'final', 'final-detailed', 'notify', 'notify-detailed', 'iter' and 'iter-detailed'.
+The <b>Algorithm</b> option selects the engine: <b>'trust-region-reflective'</b> (default), <b>'levenberg-marquardt'</b> (also accepts bounds) or <b>'interior-point'</b>. Linear or nonlinear constraints automatically use the <b>interior-point</b> algorithm. 
+
+The default <b>MaxFunctionEvaluations</b> is <b>100\*numberOfVariables</b>, <b>MaxIterations</b> is 400 and <b>FunctionTolerance</b> and <b>StepTolerance</b> are 1e-6. The <b>Display</b> option supports 'off', 'none', 'final', 'final-detailed', 'notify', 'notify-detailed', 'iter' and 'iter-detailed'. 
 
 If <b>Jacobian</b> is 'on' or <b>SpecifyObjectiveGradient</b> is true, fun must also return the Jacobian of the residuals.
 
 ## Used function(s)
 
+
     optimoptions
+  
 
 ## 📚 Bibliography
 
@@ -49,11 +52,14 @@ D. W. Marquardt, "An algorithm for least-squares estimation of nonlinear paramet
 
 ## 💡 Example
 
+
+
 ```matlab
 fun = @(x) [x(1) - 2; x(2) + 1];
 [x, resnorm] = lsqnonlin(fun, [0; 0])
 
 ```
+
 
 ## 🔗 See also
 
@@ -61,7 +67,7 @@ fun = @(x) [x(1) - 2; x(2) + 1];
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

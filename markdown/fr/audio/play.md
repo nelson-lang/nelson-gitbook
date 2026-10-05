@@ -16,9 +16,12 @@ Lit un objet audioplayer.
 
 ## 📄 Description
 
+
 <b>play</b> lit un objet audioplayer.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -29,14 +32,15 @@ delete(playObj)
 playObj
 ```
 
+
 ## 🔗 Voir aussi
 
 [audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,9 +16,10 @@ Détermine si l'entrée est un tableau de caractères (obsolète).
 
 ## 📄 Description
 
-<b>isstr</b> est le nom MATLAB obsolète de <b>ischar</b>. Il renvoie <b>true</b> lorsque <b>x</b> est un tableau de caractères et <b>false</b> sinon.
 
-Un tableau de chaînes (créé avec des guillemets doubles) n'est pas un tableau de caractères, donc <b>isstr</b> renvoie <b>false</b> dans ce cas.
+<b>isstr</b> est un alias obsolète de <b>ischar</b>. Il renvoie <b>true</b> lorsque <b>x</b> est un tableau de caractères et <b>false</b> sinon. 
+
+Un tableau de chaînes (créé avec des guillemets doubles) n'est pas un tableau de caractères, donc <b>isstr</b> renvoie <b>false</b> dans ce cas. 
 
 <b>isstr</b> est conservé pour la compatibilité avec le code existant. Utilisez plutôt <b>ischar</b> dans le nouveau code.
 
@@ -29,18 +30,17 @@ Un tableau de caractères :
 ```matlab
 tf = isstr('hello')
 ```
-
 Une valeur numérique n'est pas un tableau de caractères :
 
 ```matlab
 tf = isstr(42)
 ```
-
 Une chaîne n'est pas un tableau de caractères :
 
 ```matlab
 tf = isstr("hello")
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -48,8 +48,8 @@ tf = isstr("hello")
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

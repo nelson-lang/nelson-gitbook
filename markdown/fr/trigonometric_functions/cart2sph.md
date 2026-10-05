@@ -19,10 +19,11 @@ Transforme des coordonnées cartésiennes en coordonnées sphériques.
 - r - a numeric value: Radius.
 
 ## 📄 Description
-
 <b>cart2sph</b> transforms Cartesian to spherical coordinates.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 1 1 1; -1 -1 -1 -1];
@@ -31,14 +32,15 @@ z = [1 -1 1 -1; 1 -1 1 -1];
 [az, el, r] = cart2sph(x, y, z)
 ```
 
+
 ## 🔗 Voir aussi
 
 [sph2cart](../trigonometric_functions/sph2cart.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

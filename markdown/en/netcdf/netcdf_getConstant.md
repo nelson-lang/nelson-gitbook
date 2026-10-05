@@ -16,7 +16,8 @@ Return the numeric value of a named netCDF constant.
 
 ## 📄 Description
 
-netcdf.getConstant converts a netCDF C library constant name to its numeric value.
+
+netcdf.getConstant converts a netCDF C library constant name to its numeric value. 
 
 Use constants instead of hard-coded numeric values for readable low-level code.
 
@@ -28,13 +29,14 @@ Copy-paste example for netcdf.getConstant.
 mode = netcdf.getConstant('NC_CLOBBER')
 ```
 
+
 ## 🔗 See also
 
-[netcdf.getConstantNames](../netcdf/netcdf.getConstantNames.md).
+[netcdf.getConstantNames](../netcdf/netcdf_getConstantNames.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

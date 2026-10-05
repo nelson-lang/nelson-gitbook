@@ -18,15 +18,18 @@ Render recorded movie frames.
 
 ## 📄 Description
 
-<b>movie(M)</b> plays the frames stored in the array M once. To capture a movie frame from the current figure or axes, use getframe.
 
-<b>movie(M, n)</b> replays the movie n times. If n is a numeric array, the first element determines the number of repetitions, while the remaining elements define the sequence of frames to display.
+<b>movie(M)</b> plays the frames stored in the array M once. To capture a movie frame from the current figure or axes, use getframe. 
 
-<b>movie(M, n, fps)</b> sets the playback speed to fps frames per second.
+<b>movie(M, n)</b> replays the movie n times. If n is a numeric array, the first element determines the number of repetitions, while the remaining elements define the sequence of frames to display. 
+
+<b>movie(M, n, fps)</b> sets the playback speed to fps frames per second. 
 
 <b>movie(h, ...)</b> displays the movie centered within the figure or axes specified by h, adjusting the movie size to fit the available space.
 
 ## 💡 Examples
+
+
 
 ```matlab
 % Create a figure
@@ -58,11 +61,13 @@ figure();
 movie(M, 3, 10);
 ```
 
+
 ```matlab
 examples_directory = [modulepath('graphics', 'root'), '/', 'examples/'];
 edit([examples_directory, 'movie/demo_movie.m']);
 run([examples_directory, 'movie/demo_movie.m']);
 ```
+
 
 ## 🔗 See also
 
@@ -70,9 +75,9 @@ run([examples_directory, 'movie/demo_movie.m']);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.13.0  | initial version |
+| 1.13.0   | initial version |
 
 <!--
 ## 👤 Author

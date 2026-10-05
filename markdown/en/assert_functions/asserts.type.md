@@ -19,7 +19,8 @@ Check that a value has one of the expected classes.
 
 ## 📄 Description
 
-The assertion passes when class(value) is present in expectedTypes.
+
+The assertion passes when class(value) is present in expectedTypes. 
 
 The expected type list must not be empty.
 
@@ -30,12 +31,12 @@ One of several classes
 ```matlab
 asserts.type(single(1), {'double', 'single'});
 ```
-
 Capture a type failure
 
 ```matlab
 [res, msg] = asserts.type(int32(1), {'double', 'single'});
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a type failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

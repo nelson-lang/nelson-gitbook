@@ -5,23 +5,26 @@ Enregistrer les résultats du profilage au format HTML.
 ## 📝 Syntaxe
 
 - profsave
-- profsave(profile_info)
-- profsave(profile_info, dirname)
+- profsave(profile\_info)
+- profsave(profile\_info, dirname)
 
 ## 📥 Argument d'entrée
 
-- profile_info - structure : résultat de profile('info')
+- profile\_info - structure : résultat de profile('info')
 - dirname - chaîne : répertoire de destination.
 
 ## 📄 Description
 
-<b>profsave</b> exporte les données de profiling en une série de fichiers HTML.
 
-L'argument <b>profile_info</b> est la structure renvoyée par profile('info').
+<b>profsave</b> exporte les données de profiling en une série de fichiers HTML. 
+
+L'argument <b>profile\_info</b> est la structure renvoyée par profile('info'). 
 
 Si non précisé, <b>profsave</b> utilisera le profil courant.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 profile on
@@ -32,14 +35,15 @@ unix([tempdir(), 'profile_results/index.html'])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [profile](../profiler/profile.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

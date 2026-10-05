@@ -16,9 +16,12 @@ formate une chaîne JSON.
 
 ## 📄 Description
 
+
 <b>jsonprettyprint</b> formate une chaîne de texte JSON pour la rendre lisible par un humain.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 field1 = 'f1';  value1 = zeros(1,10);
@@ -31,14 +34,15 @@ jsonprettyprint(r)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [jsondecode](../json/jsondecode.md), [jsonencode](../json/jsonencode.md), [filewrite](../stream_manager/filewrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

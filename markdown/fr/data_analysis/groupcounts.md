@@ -22,9 +22,12 @@ Compte les groupes.
 
 ## 📄 Description
 
+
 <b>groupcounts</b> compte le nombre d'elements ou de lignes de table dans chaque groupe.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [counts, groups] = groupcounts([1; 1; 2; 3; 3; 3])
@@ -32,14 +35,15 @@ T = table({'a'; 'a'; 'b'}, [1; 2; 4], 'VariableNames', {'G', 'X'});
 C = groupcounts(T, 'G')
 ```
 
+
 ## 🔗 Voir aussi
 
 [groupsummary](../data_analysis/groupsummary.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

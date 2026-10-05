@@ -26,17 +26,20 @@ Conditions initiales et configurations de simulation.
 
 ## 📄 Description
 
-<b>[y, tOut] = initial(sys, x0)</b> calcule la rÃ©ponse initiale non forcÃ©e (y) du systÃ¨me dynamique <b>sys</b> Ã  partir de l'Ã©tat initial spÃ©cifiÃ© <b>x0</b>.
 
-Le vecteur temps <b>tOut</b> est fourni dans les unitÃ©s de temps de <b>sys</b>, et la fonction initial s'adapte automatiquement les pas de temps et la durÃ©e de la simulation en fonction de la dynamique du systÃ¨me.
+<b>[y, tOut] = initial(sys, x0)</b> calcule la rÃ©ponse initiale non forcÃ©e (y) du systÃ¨me dynamique <b>sys</b> Ã  partir de l'Ã©tat initial spÃ©cifiÃ© <b>x0</b>. 
 
-Lorsque vous utilisez <b>[y, tOut] = initial(sys, x0, tFinal)</b>, la fonction simule la rÃ©ponse de t = 0 Ã  l'heure finale t = tFinal.
+Le vecteur temps <b>tOut</b> est fourni dans les unitÃ©s de temps de <b>sys</b>, et la fonction initial s'adapte automatiquement les pas de temps et la durÃ©e de la simulation en fonction de la dynamique du systÃ¨me. 
 
-De mÃªme, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simule la rÃ©ponse de t0 Ã  tFinal.
+Lorsque vous utilisez <b>[y, tOut] = initial(sys, x0, tFinal)</b>, la fonction simule la rÃ©ponse de t = 0 Ã  l'heure finale t = tFinal. 
+
+De mÃªme, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simule la rÃ©ponse de t0 Ã  tFinal. 
 
 De plus, <b>[y, tOut] = initial(sys, x0, t)</b> renvoie la rÃ©ponse initiale de <b>sys</b> aux moments spÃ©cifiÃ©s dans le vecteur <b>t</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-10 -20 -30;1  0  0; 0  1  0];
@@ -50,17 +53,17 @@ sys = ss(A, B, C, D);
 initial(sys, X0);
 
 ```
-
 <img src="initial.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[step](../../control_system/step.md), [lsim](../../control_system/lsim.md).
+[step](../../control_system/4_time_frequency_response/step.md), [lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

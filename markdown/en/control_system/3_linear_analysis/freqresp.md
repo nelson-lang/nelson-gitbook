@@ -19,16 +19,20 @@ Evaluate system response over a grid of frequencies.
 
 ## 📄 Description
 
-<b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>.
+
+<b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>. 
 
 Use the <b>bode</b> function to obtain magnitude and phase data and to plot the frequency response.
 
 ## 💡 Examples
 
+
+
 ```matlab
 G = tf(1,[1 1]);
 h1 = freqresp(G, 3)
 ```
+
 
 ```matlab
 num = [1 2];
@@ -47,16 +51,16 @@ ylabel(_('Phase (degrees)'));
 xlabel(_('Frequency (Hz)'));
 
 ```
-
 <img src="freqresp.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[bode](../../control_system/bode.md), [evalfr](../../control_system/evalfr.md).
+[bode](../../control_system/3_linear_analysis/bode.md), [evalfr](../../control_system/3_linear_analysis/evalfr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

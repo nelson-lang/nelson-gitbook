@@ -16,7 +16,8 @@ Change the default file format used by netCDF create calls.
 
 ## 📄 Description
 
-netcdf.setDefaultFormat sets the process default netCDF format.
+
+netcdf.setDefaultFormat sets the process default netCDF format. 
 
 Prefer explicit creation modes when a file format matters for reproducibility.
 
@@ -29,13 +30,14 @@ oldFormat = netcdf.setDefaultFormat(netcdf.getConstant('NC_FORMAT_NETCDF4'));
 netcdf.setDefaultFormat(oldFormat);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.create](../netcdf/netcdf.create.md), [netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.create](../netcdf/netcdf_create.md), [netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

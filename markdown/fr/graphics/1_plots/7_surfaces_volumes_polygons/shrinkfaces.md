@@ -22,7 +22,9 @@ Reduire la taille des faces d'un patch.
 
 ## 📄 Description
 
+
 <b>shrinkfaces</b> deplace chaque sommet de face vers le centre de sa face et cree des sommets non partages.
+
 
 ## 🔗 Voir aussi
 

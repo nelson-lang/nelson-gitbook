@@ -19,22 +19,26 @@ Geometric negative log-likelihood
 
 ## 📄 Description
 
+
 <b>geolike</b> returns the negative log-likelihood for geometric distribution data and the asymptotic variance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [nlogL, avar] = geolike(0.25, x);
 ```
 
+
 ## 🔗 See also
 
-[geofit](../../statistics/geofit.md), [geopdf](../../statistics/geopdf.md).
+[geofit](../../statistics/2_probability_distributions/geofit.md), [geopdf](../../statistics/2_probability_distributions/geopdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,23 +16,27 @@ Nombre de condition inverse.
 
 ## 📄 Description
 
+
 <b>rcond(x)</b> calcule le réciproque du nombre de condition de x en norme 1.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = rand(10, 10);
 r = rcond(X);
 ```
 
+
 ## 🔗 Voir aussi
 
-[inv](../../linear_algebra/inv.md), [cond](../../linear_algebra/cond.md).
+[inv](../../linear_algebra/1_linear_systems/inv.md), [cond](../../linear_algebra/5_matrix_properties/cond.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

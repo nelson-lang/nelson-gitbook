@@ -28,17 +28,18 @@ Trace des variables dans des axes empiles.
 
 ## 📄 Description
 
-<b>stackedplot</b> cree un axe par variable selectionnee et retourne un objet <b>StackedLineChart</b>.
 
-Pour les timetables, les temps de ligne sont utilises comme valeurs x. Pour les tables, les numeros de ligne sont utilises sauf si <b>XVariable</b> est fourni.
+<b>stackedplot</b> cree un axe par variable selectionnee et retourne un objet <b>StackedLineChart</b>. 
 
-Plusieurs tables ou timetables peuvent etre fournies. Les variables de meme nom sont combinees dans le meme axe y par defaut. Utiliser <b>CombineMatchingNames</b> avec la valeur <b>false</b> pour placer les variables de meme nom dans des axes separes.
+Pour les timetables, les temps de ligne sont utilises comme valeurs x. Pour les tables, les numeros de ligne sont utilises sauf si <b>XVariable</b> est fourni. 
 
-<b>LineSpec</b> definit le style de ligne, le marqueur et la couleur pour toutes les lignes tracees. Une figure parent peut etre fournie comme premier argument.
+Plusieurs tables ou timetables peuvent etre fournies. Les variables de meme nom sont combinees dans le meme axe y par defaut. Utiliser <b>CombineMatchingNames</b> avec la valeur <b>false</b> pour placer les variables de meme nom dans des axes separes. 
 
-Utiliser des groupes de variables comme <b>{{'A','B'}, 'C'}</b> pour tracer plusieurs variables dans un meme axe empile.
+<b>LineSpec</b> definit le style de ligne, le marqueur et la couleur pour toutes les lignes tracees. Une figure parent peut etre fournie comme premier argument. 
 
-Les variables de table non prises en charge sont ignorees. Une erreur est emise s'il ne reste aucune variable tracable. Jusqu'a 25 variables peuvent etre affichees.
+Utiliser des groupes de variables comme <b>{{'A','B'}, 'C'}</b> pour tracer plusieurs variables dans un meme axe empile. 
+
+Les variables de table non prises en charge sont ignorees. Une erreur est emise s'il ne reste aucune variable tracable. Jusqu'a 25 variables peuvent etre affichees. 
 
 Voir [proprietes de stackedplot](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stackedplot.properties.md) pour la liste complete des proprietes.
 
@@ -63,7 +64,6 @@ s.LineProperties(1).Marker = 'o';
 s.AxesProperties(2).YLimits = [0 1.2];
 
 ```
-
 <img src="stackedplot_1.svg" align="middle"/>
 Utiliser une variable de table comme axe x.
 
@@ -79,7 +79,6 @@ s = stackedplot(T, {'Temperature', 'Pressure', 'Rain'}, 'XVariable', 'Time');
 s.Title = 'Weather over time';
 
 ```
-
 Tracer des variables groupees dans un meme axe.
 
 ```matlab
@@ -95,7 +94,6 @@ s = stackedplot(T, {{'Temperature', 'Rain'}, 'Pressure'}, ...
   'LegendVisible', 'on');
 
 ```
-
 Tracer les variables d'une timetable avec les temps de ligne.
 
 ```matlab
@@ -111,7 +109,6 @@ s = stackedplot(TT);
 s.GridVisible = 'on';
 
 ```
-
 Tracer des tableaux numeriques.
 
 ```matlab
@@ -123,7 +120,6 @@ s = stackedplot(X, Y, 'DisplayLabels', {'sin', 'cos', 'product'});
 s.AxesProperties(1).YScale = 'linear';
 
 ```
-
 Definir des proprietes de haut niveau du graphique.
 
 ```matlab
@@ -142,7 +138,6 @@ s = stackedplot(T, {'Temperature', 'Rain'}, ...
 s.Color = [0 0 1];
 
 ```
-
 Tracer des variables correspondantes depuis deux tables dans les memes axes.
 
 ```matlab
@@ -160,7 +155,6 @@ s = stackedplot(T1, T2, {'Temperature', 'Rain'}, '--o', ...
   'Title', 'Two stations');
 
 ```
-
 Placer les variables correspondantes dans des axes separes.
 
 ```matlab
@@ -174,7 +168,6 @@ s = stackedplot({T1, T2}, {'Value'}, ...
   'CombineMatchingNames', false);
 
 ```
-
 Creer un graphique empile dans une figure indiquee.
 
 ```matlab
@@ -188,14 +181,15 @@ s = stackedplot(f, T, 'LineWidth', 2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[proprietes de stackedplot](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stackedplot.properties.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md), [table](../../../table/table.md), [timetable](../../../table/timetable.md).
+[proprietes de stackedplot](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stackedplot.properties.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md), [table](../../../table/1_create_convert_tables/table.md), [timetable](../../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

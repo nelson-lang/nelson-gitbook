@@ -20,22 +20,26 @@ Moyenne et variance de loi extreme generalisee
 
 ## 📄 Description
 
+
 <b>gevstat</b> calcule la moyenne et la variance des lois extremes generalisees lorsqu'elles sont finies.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = gevstat([0 0.2], [1 1], [0 0]);
 ```
 
+
 ## 🔗 Voir aussi
 
-[gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md), [gevinv](../../statistics/gevinv.md), [gevrnd](../../statistics/gevrnd.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md), [gevinv](../../statistics/2_probability_distributions/gevinv.md), [gevrnd](../../statistics/2_probability_distributions/gevrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

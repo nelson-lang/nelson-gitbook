@@ -22,14 +22,17 @@ Support vector machine classification model.
 
 ## 📄 Description
 
-ClassificationSVM stores a support vector machine classifier, including support vectors, kernel information, and class data.
+
+ClassificationSVM stores a support vector machine classifier, including support vectors, kernel information, and class data. 
 
 Create this object with fitcsvm. Use predict to classify new observations.
 
 ## Used function(s)
 
+
     fitcsvm
     predict
+  
 
 ## 💡 Example
 
@@ -42,13 +45,14 @@ mdl = fitcsvm(X, Y, 'KernelFunction', 'linear');
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitcsvm](../../statistics/fitcsvm.md).
+[predict](../../statistics/5_regression/predict.md), [fitcsvm](../../statistics/6_classification/fitcsvm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

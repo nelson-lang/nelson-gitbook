@@ -22,6 +22,7 @@ Ajuste les intensites d une image.
 
 ## 📄 Description
 
+
 Ajuste les intensites d une image. Les images en niveaux de gris utilisent des limites 2-by-1; les images RGB peuvent utiliser des limites 2-by-3 et des valeurs gamma par canal.
 
 ## 💡 Exemple
@@ -34,17 +35,17 @@ J=imadjust(I,[0.2;0.8],[]);
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Adjusted');
 ```
-
 <img src="imadjust_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[stretchlim](../../../image_processing/stretchlim.md), [imhist](../../../image_processing/imhist.md), [imcomplement](../../../image_processing/imcomplement.md).
+[stretchlim](../../../image_processing/1_image_basics/2_contrast_thresholding/stretchlim.md), [imhist](../../../image_processing/1_image_basics/2_contrast_thresholding/imhist.md), [imcomplement](../../../image_processing/1_image_basics/2_contrast_thresholding/imcomplement.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

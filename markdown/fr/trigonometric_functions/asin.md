@@ -15,15 +15,17 @@ Calcule le sinus inverse en radians pour chaque élément de x.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>asin</b> calcule le sinus inverse en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
 res = asin(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ res = asin(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

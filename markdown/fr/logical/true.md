@@ -25,9 +25,12 @@ Valeur logique true.
 
 ## 📄 Description
 
+
 <b>true</b> construit un tableau de valeurs logiques true.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 true
@@ -39,14 +42,15 @@ L = logical(sparse(1, 2))
 L2 = true(3,'like', L);
 ```
 
+
 ## 🔗 Voir aussi
 
 [false](../logical/false.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

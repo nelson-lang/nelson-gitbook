@@ -16,25 +16,30 @@ Determine which characters are letters.
 
 ## 📄 Description
 
+
 <b>isletter</b> determines which characters are letters.
 
 ## 💡 Examples
+
+
 
 ```matlab
 isletter('Nel Son')
 ```
 
+
 ```matlab
 isletter("六書 six writings")
 ```
 
+
 ## 🔗 See also
 
-[toupper](../../string/toupper.md).
+[toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

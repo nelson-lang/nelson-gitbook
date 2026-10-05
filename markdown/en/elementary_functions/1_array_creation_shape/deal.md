@@ -17,15 +17,19 @@ Distribute inputs to outputs.
 
 ## 📄 Description
 
-<b>deal</b> replicates the input parameters to the corresponding output parameters.
+
+<b>deal</b> replicates the input parameters to the corresponding output parameters. 
 
 If a singular input parameter is provided, its value will be duplicated across all outputs.
 
 ## 💡 Examples
 
+
+
 ```matlab
 [A1, A2, A3] = deal(pi)
 ```
+
 
 ```matlab
 S = [];
@@ -35,8 +39,9 @@ S(3).A = [];
 A1 = 200;
 A2 = 'fifo';
 A3 = 1:11;
-[S.A] = deal(A1, A2, A3)
+[S.A] = deal(A1, A2, A3) 
 ```
+
 
 ```matlab
 C = cell(1,3)
@@ -46,13 +51,14 @@ A3 = 1:11;
 [C{:}] = deal(A1, A2, A3)
 ```
 
+
 ## 🔗 See also
 
 [cell](../../data_structures/cell.md), [struct](../../data_structures/struct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

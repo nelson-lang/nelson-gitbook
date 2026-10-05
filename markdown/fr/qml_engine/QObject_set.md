@@ -1,15 +1,15 @@
-# QObject_set
+# QObject\_set
 
 Définit la valeur d'une propriété d'une poignée (handle) QObject (set).
 
 ## 📝 Syntaxe
 
-- R = set(h, property_name, value)
+- R = set(h, property\_name, value)
 
 ## 📥 Argument d'entrée
 
 - h - une poignée (handle) QObject.
-- property_name - une chaîne : nom de propriété.
+- property\_name - une chaîne : nom de propriété.
 - value - une variable.
 
 ## 📤 Argument de sortie
@@ -18,9 +18,12 @@ Définit la valeur d'une propriété d'une poignée (handle) QObject (set).
 
 ## 📄 Description
 
+
 Cette routine peut être utilisée pour modifier la valeur d'une propriété spécifiée d'un objet QObject.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h = errordlg()
@@ -29,14 +32,15 @@ h.windowTitle = 'new title' % or set(h, 'windowTitle', 'new title')
 h.visible = true;
 ```
 
+
 ## 🔗 Voir aussi
 
 [set](../handle/set.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

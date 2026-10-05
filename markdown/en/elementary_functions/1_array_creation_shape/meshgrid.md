@@ -23,9 +23,12 @@ Cartesian rectangular grid in 2-D or 3-D.
 
 ## 📄 Description
 
+
 <b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = -1:0.4:1;
@@ -38,9 +41,10 @@ z = 0:3:6;
 [X,Y,Z] = meshgrid(x, y, z)
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

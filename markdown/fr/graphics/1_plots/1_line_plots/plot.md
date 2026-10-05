@@ -26,50 +26,67 @@ Tracé linéaire 2D.
 
 ## 📄 Description
 
-<b>plot(Y)</b> trace les colonnes de <b>Y</b> en fonction de leur indice.
 
-<b>plot(X, Y)</b> trace la courbe définie par la paire <b>X</b> et <b>Y</b>.
+<b>plot(Y)</b> trace les colonnes de <b>Y</b> en fonction de leur indice. 
 
-<b>go = plot(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne.
+<b>plot(X, Y)</b> trace la courbe définie par la paire <b>X</b> et <b>Y</b>. 
 
-<b>LineSpec</b> est une chaîne utilisée pour modifier les caractéristiques de la ligne et se compose de trois parties optionnelles dans n'importe quel ordre :
+<b>go = plot(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne. 
 
-Le SymbolSpec spécifie le symbole à dessiner à chaque point de données :
+ 
 
-| Symbole   | Description                    |
-| --------- | ------------------------------ |
-| **'o'**   | Symbole cercle                 |
-| **'x'**   | Symbole croix                  |
-| **'+'**   | Symbole plus                   |
-| **'\*'**  | Symbole astérisque             |
-| **'.'**   | Symbole point                  |
-| **'s'**   | Symbole carré                  |
-| **'d'**   | Symbole losange                |
-| **'v'**   | Triangle pointe vers le bas    |
-| **'^'**   | Triangle pointe vers le haut   |
-| **' < '** | Triangle pointe vers la droite |
-| **' > '** | Triangle pointe vers la gauche |
+<b>LineSpec</b> est une chaîne utilisée pour modifier les caractéristiques de la ligne et se compose de trois parties optionnelles dans n'importe quel ordre : 
 
-Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données :
+ 
 
-| Style    | Description         |
-| -------- | ------------------- |
-| **'-'**  | Ligne continue      |
-| **'--'** | Ligne pointillée    |
-| **'-.'** | Ligne tiret-point   |
-| **':'**  | Ligne en pointillés |
+Le SymbolSpec spécifie le symbole à dessiner à chaque point de données : 
 
-Le ColorSpec spécifie la couleur de ligne à utiliser pour chaque série de données :
+| Symbole | Description | 
+| --- | --- | 
+| **'o'** | Symbole cercle | 
+| **'x'** | Symbole croix | 
+| **'+'** | Symbole plus | 
+| **'\*'** | Symbole astérisque | 
+| **'.'** | Symbole point | 
+| **'s'** | Symbole carré | 
+| **'d'** | Symbole losange | 
+| **'v'** | Triangle pointe vers le bas | 
+| **'^'** | Triangle pointe vers le haut | 
+| **' < '** | Triangle pointe vers la droite | 
+| **' > '** | Triangle pointe vers la gauche | 
 
-| Couleur | Description |
-| ------- | ----------- |
-| **'k'** | Noir        |
-| **'y'** | Jaune       |
-| **'m'** | Magenta     |
-| **'c'** | Cyan        |
-| **'r'** | Rouge       |
-| **'b'** | Bleu        |
-| **'g'** | Vert        |
+ 
+
+ 
+
+Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données : 
+
+| Style | Description | 
+| --- | --- | 
+| **'-'** | Ligne continue | 
+| **'--'** | Ligne pointillée | 
+| **'-.'** | Ligne tiret-point | 
+| **':'** | Ligne en pointillés | 
+
+ 
+
+ 
+
+Le ColorSpec spécifie la couleur de ligne à utiliser pour chaque série de données : 
+
+| Couleur | Description | 
+| --- | --- | 
+| **'k'** | Noir | 
+| **'y'** | Jaune | 
+| **'m'** | Magenta | 
+| **'c'** | Cyan | 
+| **'r'** | Rouge | 
+| **'b'** | Bleu | 
+| **'g'** | Vert | 
+
+ 
+
+ 
 
 Voir <b>line</b> pour plus d'informations sur les propriétés.
 
@@ -81,7 +98,6 @@ Abscisses par defaut avec les indices :
 f = figure()
 plot(sin(0:0.1:2*pi))
 ```
-
 <img src="plot_y.svg" align="middle"/>
 Utilisation d'abscisses explicites :
 
@@ -90,7 +106,6 @@ f = figure()
 x = [0:0.1:2*pi]';
 plot(x, sin(x))
 ```
-
 <img src="plot_xy.svg" align="middle"/>
 Plusieurs courbes avec abscisses partagees :
 
@@ -99,7 +114,6 @@ f = figure()
 x = [0:0.1:2*pi]';
 plot(x, [cos(x), cos(2*x), cos(3*x)])
 ```
-
 <img src="plot_multiple.svg" align="middle"/>
 Couleur et taille des marqueurs :
 
@@ -109,7 +123,6 @@ x = -pi:pi/10:pi;
 y = tan(sin(x)) - sin(tan(x));
 plot(x ,y, '--rs', LineWidth=2, MarkerEdgeColor='k', MarkerFaceColor='g', MarkerSize=11)
 ```
-
 <img src="plot_markers.svg" align="middle"/>
 Ajout d'un titre et d'etiquettes d'axes :
 
@@ -122,8 +135,8 @@ title('2-D Line Plot')
 xlabel('x')
 ylabel('sin(5x)')
 ```
-
 <img src="plot_title.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -131,8 +144,8 @@ ylabel('sin(5x)')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

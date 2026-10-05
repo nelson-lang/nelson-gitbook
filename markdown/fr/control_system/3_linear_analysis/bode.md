@@ -25,29 +25,32 @@ Diagramme de Bode de la rÃƒÂ©ponse en frÃƒÂ©quence, donnÃƒÂ©es de ma
 
 ## 📄 Description
 
-<b>bode(sys)</b> generates a Bode plot illustrating the frequency response of a dynamic system model, denoted as <b>sys.</b>
 
-This plot visually represents the system's response in terms of both magnitude (measured in decibels, dB) and phase (measured in degrees) across varying frequencies.
+<b>bode(sys)</b> generates a Bode plot illustrating the frequency response of a dynamic system model, denoted as <b>sys.</b> 
+
+This plot visually represents the system's response in terms of both magnitude (measured in decibels, dB) and phase (measured in degrees) across varying frequencies. 
 
 The specific frequency points on the plot are automatically determined by <b>bode</b> based on the system's inherent dynamics.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 H = tf([1 0.1 7.5],[1 0.12 9 0 0]);
 bode(H,{1 10}, '-.')
 ```
-
 <img src="bode1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[plot](../../graphics/plot.md).
+[plot](../../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

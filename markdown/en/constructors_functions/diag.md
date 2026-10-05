@@ -21,14 +21,18 @@ Get diagonal elements of matrix or create diagonal matrix.
 
 ## 📄 Description
 
+
 <b>diag</b> returns diagonal elements of matrix or create diagonal matrix.
 
 ## 💡 Example
+
+
 
 ```matlab
 diag(eye(3))
 diag(diag(eye(3)))
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ diag(diag(eye(3)))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -15,15 +15,17 @@ Cosécante inverse en degrés.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>acscd</b> calcule la cosécante inverse de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 20 10 Inf];
 y = acscd(x)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ y = acscd(x)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

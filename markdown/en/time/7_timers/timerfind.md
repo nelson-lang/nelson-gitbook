@@ -21,7 +21,8 @@ Find visible timer objects that match property criteria.
 
 ## 📄 Description
 
-<b>timerfind</b> returns visible timer objects that match all specified property criteria. Without criteria, it returns all visible timers.
+
+<b>timerfind</b> returns visible timer objects that match all specified property criteria. Without criteria, it returns all visible timers. 
 
 Use <b>timerfindall</b> to include timers whose <b>ObjectVisibility</b> property is <b>off</b>.
 
@@ -36,7 +37,6 @@ t = timer('Name', 'visibleTimer', ...
 found = timerfind('Tag', 'demo-visible')
 delete(t);
 ```
-
 Search within a supplied timer array.
 
 ```matlab
@@ -46,13 +46,14 @@ found = timerfind([t1 t2], 'Tag', 'groupB')
 delete([t1 t2]);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [timerfindall](../../time/timerfindall.md), [get](../../time/timer.get.md).
+[timer](../../time/7_timers/timer.md), [timerfindall](../../time/7_timers/timerfindall.md), [get](../../time/7_timers/timer.get.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

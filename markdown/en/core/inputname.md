@@ -16,11 +16,14 @@ Get variable name of function input.
 
 ## 📄 Description
 
-<b>inputname</b> get variable name of function input.
+
+<b>inputname</b> get variable name of function input. 
 
 <b>inputname</b> is only useable within a function
 
 ## 💡 Example
+
+
 
 ```matlab
 function R = getinputname(varargin)
@@ -31,13 +34,14 @@ function R = getinputname(varargin)
 end
 ```
 
+
 ## 🔗 See also
 
 [nargin](../core/nargin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

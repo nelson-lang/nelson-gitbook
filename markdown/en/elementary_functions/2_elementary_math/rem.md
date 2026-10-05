@@ -17,30 +17,34 @@ Remainder after division.
 
 ## 📄 Description
 
-<b>C = rem(A, B)</b> computes the remainder of A and B, i.e : A - fix(A ./ B) .\* B.
 
-This function manages also negative values.
+<b>C = rem(A, B)</b> computes the remainder of A and B, i.e : A - fix(A ./ B) .\* B. 
 
-mod(A, 0) = A , whereas rem(A, 0) = NaN.
+This function manages also negative values. 
 
-mod(A, B) has the sign of B, while rem(A, B) has the sign of A.
+mod(A, 0) = A , whereas rem(A, 0) = NaN. 
+
+mod(A, B) has the sign of B, while rem(A, B) has the sign of A. 
 
 mod and rem are equals if A and B have the same sign.
 
 ## 💡 Example
+
+
 
 ```matlab
  rem (-1, 3)
 mod(-1, 3)
 ```
 
+
 ## 🔗 See also
 
-[mod](../../elementary_functions/rem.md), [floor](../../elementary_functions/floor.md).
+[mod](../../elementary_functions/2_elementary_math/rem.md), [floor](../../elementary_functions/2_elementary_math/floor.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -21,9 +21,10 @@ Creer un objet graphique de menu contextuel.
 
 ## 📄 Description
 
-<b>uicontextmenu</b> cree un menu contextuel qui peut etre assigne a la propriete <b>ContextMenu</b> des figures, axes, controles et autres objets graphiques.
 
-Les entrees de menu sont creees avec <b>uimenu</b> en utilisant le menu contextuel comme parent.
+<b>uicontextmenu</b> cree un menu contextuel qui peut etre assigne a la propriete <b>ContextMenu</b> des figures, axes, controles et autres objets graphiques. 
+
+Les entrees de menu sont creees avec <b>uimenu</b> en utilisant le menu contextuel comme parent. 
 
 Voir [proprietes de uicontextmenu](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.uicontextmenu.properties.md) pour la liste complete des proprietes.
 
@@ -40,6 +41,7 @@ uimenu(cm, 'Text', 'Reset view', 'MenuSelectedFcn', 'disp(''reset'')');
 ax.ContextMenu = cm;
 
 ```
+
 
 ## 🔗 Voir aussi
 

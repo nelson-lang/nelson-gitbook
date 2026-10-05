@@ -18,27 +18,34 @@ Creates an matrix made of ones.
 
 ## 📄 Description
 
+
 <b>ones</b> returns a matrix made of ones.
 
 ## 💡 Examples
+
+
 
 ```matlab
 ones(3,2)
 ```
 
+
 ```matlab
 ones(3,1,3,'single')
 ```
+
 
 ```matlab
 A = single([3 3])
 B = ones(2,4,'like', A)
 ```
 
+
 ```matlab
 tic(); single(1) * ones(1000); toc()
 tic();ones(1000,'single'); toc()
 ```
+
 
 ## 🔗 See also
 
@@ -46,7 +53,7 @@ tic();ones(1000,'single'); toc()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

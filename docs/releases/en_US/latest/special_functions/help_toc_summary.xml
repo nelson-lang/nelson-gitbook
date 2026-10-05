@@ -35,6 +35,7 @@
       <keyword name="isprime" link="isprime.html" description="Determine which array elements are prime."/>
       <keyword name="lcm" link="lcm.html" description="Least common multiple."/>
       <keyword name="makima" link="makima.html" description="Modified Akima piecewise cubic interpolation."/>
+      <keyword name="pchip" link="pchip.html" description="Piecewise Cubic Hermite Interpolating Polynomial (PCHIP)."/>
       <keyword name="peaks" link="peaks.html" description="Peaks function"/>
       <keyword name="primes" link="primes.html" description="Prime numbers less than or equal to input value"/>
       <keyword name="quadgk" link="quadgk.html" description="Numerically evaluate an integral with Gauss-Kronrod quadrature."/>

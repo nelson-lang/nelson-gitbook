@@ -16,9 +16,12 @@ Calcule le sinus matriciel d'une matrice carrée.
 
 ## 📄 Description
 
+
 <b>sinm(x)</b> calcule le sinus matriciel de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -27,14 +30,15 @@ A = [1, 2; 3, 4];
 res = sinm(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [sin](../trigonometric_functions/sin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -15,26 +15,29 @@ Determine which characters are space.
 - res - logical array
 
 ## 📄 Description
-
 <b>isletter</b> determines which characters are space characters.
 
 ## 💡 Examples
+
+
 
 ```matlab
 isspace('Nel Son')
 ```
 
+
 ```matlab
 isspace("六書 six writings")
 ```
 
+
 ## 🔗 See also
 
-[isletter](../../string/isletter.md).
+[isletter](../../string/2_text_properties/isletter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.3.0   | initial version |
 

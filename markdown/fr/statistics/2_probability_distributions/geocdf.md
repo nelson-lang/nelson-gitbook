@@ -19,23 +19,27 @@ Fonction de repartition geometrique
 
 ## 📄 Description
 
+
 <b>geocdf</b> evalue les probabilites cumulees geometriques element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 5];
 y = geocdf(x, 0.25);
 ```
 
+
 ## 🔗 Voir aussi
 
-[geopdf](../../statistics/geopdf.md), [geoinv](../../statistics/geoinv.md), [geornd](../../statistics/geornd.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md), [geornd](../../statistics/2_probability_distributions/geornd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

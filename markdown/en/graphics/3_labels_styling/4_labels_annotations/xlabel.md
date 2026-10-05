@@ -22,9 +22,12 @@ Label x-axis.
 
 ## 📄 Description
 
+
 <b>xlabel('text')</b> labels the x-axis of the current axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -33,8 +36,8 @@ y = sin(2*pi*x);
 plot(x, y);
 xlabel('X axis Label - Unicode ドラゴンボールX(ゼット)')
 ```
-
 <img src="xlabel.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -42,7 +45,7 @@ xlabel('X axis Label - Unicode ドラゴンボールX(ゼット)')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -23,9 +23,12 @@ Cross-covariance of discrete-time signals.
 
 ## 📄 Description
 
+
 <b>xcov</b> subtracts the mean from each signal and computes the corresponding correlation sequence.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -33,13 +36,14 @@ Cross-covariance of discrete-time signals.
 
 ```
 
+
 ## 🔗 See also
 
-[xcorr](../../signal_processing/xcorr.md).
+[xcorr](../../signal_processing/3_transforms_correlation_modeling/xcorr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

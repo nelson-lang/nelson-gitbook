@@ -16,7 +16,8 @@ Count categorical values for histogram-style summaries.
 
 ## 📄 Description
 
-<b>histcounts</b> returns category counts for a categorical array.
+
+<b>histcounts</b> returns category counts for a categorical array. 
 
 The result is equivalent to <b>countcats(A)</b>; undefined elements are ignored.
 
@@ -28,13 +29,14 @@ Count values for each category.
 A = categorical({'red','blue','red'}); counts = histcounts(A)
 ```
 
+
 ## 🔗 See also
 
 [countcats](../categorical/countcats.md), [categories](../categorical/categories.md), [isundefined](../categorical/isundefined.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

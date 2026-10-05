@@ -15,9 +15,12 @@ Vérifie que la valeur est en virgule flottante ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeFloat</b> vérifie que la valeur est en virgule flottante (single ou double) ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeFloat(true)
@@ -25,14 +28,15 @@ mustBeFloat([])
 mustBeFloat(single([true false]))
 ```
 
+
 ## 🔗 Voir aussi
 
 [isfloat](../types/isfloat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

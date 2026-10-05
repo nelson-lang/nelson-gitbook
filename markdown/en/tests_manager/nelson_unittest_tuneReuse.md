@@ -24,19 +24,20 @@ Calibrate explicit child-process reuse for tests and benches.
 
 ## 📄 Description
 
-<b>nelson.unittest.tuneReuse</b> validates explicit process reuse through real executions. It does not infer safety by scanning source text and does not create or read a cache.
 
-Calibration always uses one native worker and disables retries. The isolated reference and every reused trial execute the same workload twice. Reused trials use deterministic normal, reverse, and rotated orders so that state contamination between files and between repeated executions can be observed.
+<b>nelson.unittest.tuneReuse</b> validates explicit process reuse through real executions. It does not infer safety by scanning source text and does not create or read a cache. 
 
-The reused campaigns use the production worker protocol and reset path. A file is certified only when its isolated executions pass and every reused execution returns a successful worker payload without fallback or missing result.
+Calibration always uses one native worker and disables retries. The isolated reference and every reused trial execute the same workload twice. Reused trials use deterministic normal, reverse, and rotated orders so that state contamination between files and between repeated executions can be observed. 
 
-If an existing tagged file passes in isolation but fails reuse calibration, tag removal is proposed. An untagged file receives an add proposal only with <b>AllowAdd</b> set to true, successful calibration, and a measured module gain at least equal to <b>MinGain</b>. An isolated failure never changes the file.
+The reused campaigns use the production worker protocol and reset path. A file is certified only when its isolated executions pass and every reused execution returns a successful worker payload without fallback or missing result. 
 
-GUI, ADV-CLI, MPI, sequential, IPC, file-watcher, audio, language-imposed, and external-environment cases are excluded because they are not eligible for the reusable CLI worker.
+If an existing tagged file passes in isolation but fails reuse calibration, tag removal is proposed. An untagged file receives an add proposal only with <b>AllowAdd</b> set to true, successful calibration, and a measured module gain at least equal to <b>MinGain</b>. An isolated failure never changes the file. 
 
-The default is a dry run. <b>Apply</b> must be true to edit source files. Header insertion and removal preserve UTF-8 BOM and line-ending style.
+GUI, ADV-CLI, MPI, sequential, IPC, file-watcher, audio, language-imposed, and external-environment cases are excluded because they are not eligible for the reusable CLI worker. 
 
-This is an explicit maintenance command rather than a required prepass. It runs more work than a normal suite execution and is intended for periodic tag calibration before regular CI runs.
+The default is a dry run. <b>Apply</b> must be true to edit source files. Header insertion and removal preserve UTF-8 BOM and line-ending style. 
+
+This is an explicit maintenance command rather than a required prepass. It runs more work than a normal suite execution and is intended for periodic tag calibration before regular CI runs. 
 
 When maintaining both reuse and weight tags, calibrate and apply reuse tags first. Then collect fresh durations with <b>nelson.unittest.tuneWeights</b> so weights describe the resulting execution setup.
 
@@ -49,7 +50,6 @@ Audit existing reuse tags without editing files.
 proposal = nelson.unittest.tuneReuse({'interpreter', 'statistics'});
 
 ```
-
 Calibrate module tests, review the proposal, then rerun and apply accepted changes.
 
 ```matlab
@@ -65,6 +65,7 @@ applied = nelson.unittest.tuneReuse('interpreter', ...
 
 ```
 
+
 ## 🔗 See also
 
-[nelson.unittest.run](../tests_manager/nelson.unittest.run.md), [nelson.unittest.tuneWeights](../tests_manager/nelson.unittest.tuneWeights.md), [nelson.unittest.discover](../tests_manager/nelson.unittest.discover.md).
+[nelson.unittest.run](../tests_manager/nelson_unittest_run.md), [nelson.unittest.tuneWeights](../tests_manager/nelson_unittest_tuneWeights.md), [nelson.unittest.discover](../tests_manager/nelson_unittest_discover.md).

@@ -19,7 +19,8 @@ Greatest common divisor
 
 ## 📄 Description
 
-<b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.
+
+<b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm. 
 
 <b>[G, C, D] = gcd(A, B)</b> also returns the Bezout coefficients <b>C</b>and <b>D</b> such that <b>C .\* A + D .\* B == G</b>. Unsigned integer inputs are not supported by this syntax.
 
@@ -29,11 +30,14 @@ Knuth, D. “Algorithms A and X.” The Art of Computer Programming, Vol. 2, Sec
 
 ## 💡 Example
 
+
+
 ```matlab
 A = [-5 7; 10 0];
 B = [-15 3; 50 0];
 G = gcd(A, B)
 ```
+
 
 ## 🔗 See also
 
@@ -41,7 +45,7 @@ G = gcd(A, B)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

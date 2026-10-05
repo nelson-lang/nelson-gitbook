@@ -16,29 +16,35 @@ Exponentielle
 
 ## 📄 Description
 
-<b>exp</b> calcule la fonction exponentielle.
 
-Pour les nombres réels :
+<b>exp</b> calcule la fonction exponentielle. 
+
+Pour les nombres réels : 
 $$e^x$$
+ 
 
-Pour les nombres complexes <b>z = x + iy</b> :
+Pour les nombres complexes <b>z = x + iy</b> : 
 $$e^z = e^x(\cos y + i\sin y)$$
 
+
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = exp(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[conj](../../elementary_functions/conj.md).
+[conj](../../elementary_functions/3_complex_numbers/conj.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

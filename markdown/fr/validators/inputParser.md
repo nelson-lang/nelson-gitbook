@@ -28,35 +28,36 @@ Analyse et verifie les entrees de fonction.
 
 ## 📄 Description
 
-<b>inputParser</b> definit des entrees requises, optionnelles et nom-valeur, puis stocke les valeurs analysees dans <b>Results</b>.
 
-Le schema est defini avec <b>addRequired</b>, <b>addOptional</b>, <b>addParameter</b> et <b>addParamValue</b>. <b>addParamValue</b> est accepte comme alias de compatibilite pour <b>addParameter</b>.
+<b>inputParser</b> definit des entrees requises, optionnelles et nom-valeur, puis stocke les valeurs analysees dans <b>Results</b>. 
 
-Le schema peut etre construit dans n'importe quel ordre, mais <b>parse</b> consomme d'abord les entrees positionnelles requises, ensuite les entrees positionnelles optionnelles, puis les entrees nom-valeur.
+Le schema est defini avec <b>addRequired</b>, <b>addOptional</b>, <b>addParameter</b> et <b>addParamValue</b>. <b>addParamValue</b> est accepte comme alias de compatibilite pour <b>addParameter</b>. 
 
-Une entree requise doit etre presente. Une entree optionnelle est consommee lorsque la prochaine valeur positionnelle satisfait son validateur et n'est pas reconnue comme nom de parametre. Les parametres sont fournis sous forme de paires nom-valeur.
+Le schema peut etre construit dans n'importe quel ordre, mais <b>parse</b> consomme d'abord les entrees positionnelles requises, ensuite les entrees positionnelles optionnelles, puis les entrees nom-valeur. 
 
-Si un parametre nom-valeur est fourni plusieurs fois, la derniere valeur fournie est conservee dans <b>Results</b>.
+Une entree requise doit etre presente. Une entree optionnelle est consommee lorsque la prochaine valeur positionnelle satisfait son validateur et n'est pas reconnue comme nom de parametre. Les parametres sont fournis sous forme de paires nom-valeur. 
 
-Les proprietes modifiables sont :
+Si un parametre nom-valeur est fourni plusieurs fois, la derniere valeur fournie est conservee dans <b>Results</b>. 
 
-<b>FunctionName</b> : texte ajoute au debut des messages d'erreur de l'analyseur.
+Les proprietes modifiables sont : 
 
-<b>CaseSensitive</b> : si cette propriete vaut false, les noms de parametres sont compares sans tenir compte de la casse. La valeur par defaut est false.
+<b>FunctionName</b> : texte ajoute au debut des messages d'erreur de l'analyseur. 
 
-<b>KeepUnmatched</b> : si cette propriete vaut true, les paires nom-valeur non reconnues sont stockees dans <b>Unmatched</b>. La valeur par defaut est false.
+<b>CaseSensitive</b> : si cette propriete vaut false, les noms de parametres sont compares sans tenir compte de la casse. La valeur par defaut est false. 
 
-<b>PartialMatching</b> : si cette propriete vaut true, un prefixe unique de nom de parametre est accepte. La valeur par defaut est true.
+<b>KeepUnmatched</b> : si cette propriete vaut true, les paires nom-valeur non reconnues sont stockees dans <b>Unmatched</b>. La valeur par defaut est false. 
 
-<b>StructExpand</b> : si cette propriete vaut true et que <b>parse</b> recoit une seule structure scalaire, les champs de la structure sont traites comme des paires nom-valeur. La valeur par defaut est true.
+<b>PartialMatching</b> : si cette propriete vaut true, un prefixe unique de nom de parametre est accepte. La valeur par defaut est true. 
 
-Les proprietes en lecture seule sont :
+<b>StructExpand</b> : si cette propriete vaut true et que <b>parse</b> recoit une seule structure scalaire, les champs de la structure sont traites comme des paires nom-valeur. La valeur par defaut est true. 
 
-<b>Parameters</b> : noms ajoutes a l'analyseur dans l'ordre de declaration.
+Les proprietes en lecture seule sont : 
 
-<b>Results</b> : structure scalaire contenant les valeurs analysees et les valeurs par defaut.
+<b>Parameters</b> : noms ajoutes a l'analyseur dans l'ordre de declaration. 
 
-<b>Unmatched</b> : structure scalaire contenant les paires nom-valeur non reconnues lorsque <b>KeepUnmatched</b> vaut true.
+<b>Results</b> : structure scalaire contenant les valeurs analysees et les valeurs par defaut. 
+
+<b>Unmatched</b> : structure scalaire contenant les paires nom-valeur non reconnues lorsque <b>KeepUnmatched</b> vaut true. 
 
 <b>UsingDefaults</b> : cellule de noms d'entrees optionnelles et de parametres pour lesquels la valeur par defaut a ete utilisee.
 
@@ -71,7 +72,6 @@ addParameter(p, 'units', 'm', @(x) ischar(x) || isstring(x));
 parse(p, 10, 'units', 'cm');
 p.Results
 ```
-
 Entree optionnelle, valeurs par defaut et derniere valeur nom-valeur prioritaire.
 
 ```matlab
@@ -83,7 +83,6 @@ parse(p, 'job', 'mode', 'slow', 'mode', 'fast');
 p.Results
 p.UsingDefaults
 ```
-
 Expansion de structure avec champs non reconnus conserves.
 
 ```matlab
@@ -99,14 +98,15 @@ p.Results
 p.Unmatched
 ```
 
+
 ## 🔗 Voir aussi
 
 [validateattributes](../validators/validateattributes.md), [validatestring](../validators/validatestring.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

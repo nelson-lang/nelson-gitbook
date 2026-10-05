@@ -12,9 +12,11 @@ Supprime la configuration du compilateur utilisée (sous Windows)
 
 ## 📄 Description
 
-<b>removecompilerconf</b> renvoie true si un compilateur avait été configuré avec<b>configuremsvc</b> ou <b>configuremingw</b>.
+
+<b>removecompilerconf</b> renvoie true si un compilateur avait été configuré avec<b>configuremsvc</b> ou <b>configuremingw</b>. 
 
 <b>removecompilerconf</b> renvoie toujours true sur les autres plateformes.
+
 
 ## 🔗 Voir aussi
 
@@ -22,8 +24,8 @@ Supprime la configuration du compilateur utilisée (sous Windows)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

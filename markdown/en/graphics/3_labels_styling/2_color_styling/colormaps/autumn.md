@@ -17,17 +17,20 @@ Autumn colormap array.
 
 ## 📄 Description
 
+
 <b>autumn</b> returns the colormap with autumn colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('autumn');
 ```
-
 <img src="autumn.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('autumn');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

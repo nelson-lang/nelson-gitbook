@@ -22,7 +22,8 @@ Selectionne une region en niveaux de gris connectee depuis un pixel germe.
 
 ## 📄 Description
 
-grayconnected fait croitre une region connectee depuis un pixel germe. Un pixel est inclus lorsque son intensite normalisee differe de celle du germe d'au plus la tolerance et qu'il est connecte au germe par des pixels inclus.
+
+grayconnected fait croitre une region connectee depuis un pixel germe. Un pixel est inclus lorsque son intensite normalisee differe de celle du germe d'au plus la tolerance et qu'il est connecte au germe par des pixels inclus. 
 
 Les entrees entieres et logiques sont converties en valeurs double precision normalisees pour la comparaison de tolerance. La sortie est toujours logique.
 
@@ -37,17 +38,17 @@ BW=grayconnected(I,32,38,0.12,8);
 figure; subplot(1,2,1); imagesc(I); title('Entree');
 subplot(1,2,2); imagesc(BW); title('Region connectee');
 ```
-
 <img src="grayconnected_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bwselect](../../../image_processing/bwselect.md), [imregionalmin](../../../image_processing/imregionalmin.md), [watershed](../../../image_processing/watershed.md).
+[bwselect](../../../image_processing/2_image_analysis/5_regions_boundaries/bwselect.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

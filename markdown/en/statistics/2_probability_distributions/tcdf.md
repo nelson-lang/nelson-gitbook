@@ -18,9 +18,12 @@ Student t cumulative distribution function
 
 ## 📄 Description
 
+
 <b>tcdf</b> computes lower-tail Student t probabilities by default and upper-tail probabilities when <b>'upper'</b> is specified.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-3 -1 0 1 3];
@@ -28,13 +31,14 @@ p = tcdf(x, 5);
 q = tcdf(x, 5, 'upper');
 ```
 
+
 ## 🔗 See also
 
-[tpdf](../../statistics/tpdf.md), [tinv](../../statistics/tinv.md).
+[tpdf](../../statistics/2_probability_distributions/tpdf.md), [tinv](../../statistics/2_probability_distributions/tinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

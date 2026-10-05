@@ -22,14 +22,17 @@ Modele d'arbre de classification.
 
 ## 📄 Description
 
-ClassificationTree stocke un arbre de classification construit a partir de predicteurs et d'etiquettes de classes.
+
+ClassificationTree stocke un arbre de classification construit a partir de predicteurs et d'etiquettes de classes. 
 
 Creez cet objet avec fitctree. Utilisez predict pour classer de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitctree
     predict
+  
 
 ## 💡 Exemple
 
@@ -42,14 +45,15 @@ mdl = fitctree(X, Y);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitctree](../../statistics/fitctree.md).
+[predict](../../statistics/5_regression/predict.md), [fitctree](../../statistics/6_classification/fitctree.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,9 +18,12 @@ Lit un attribut HDF5.
 
 ## 📄 Description
 
+
 <b>h5readatt</b> reads attribute named <b>attname</b> from the HDF5 file.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
@@ -28,14 +31,15 @@ h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 h5readatt([tempdir(), 'myfile.h5'],'/','creation_date')
 ```
 
+
 ## 🔗 Voir aussi
 
 [h5writeatt](../hdf5/h5writeatt.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -29,17 +29,22 @@ Scatter plot.
 
 ## 📄 Description
 
-<b>scatter(x, y)</b> generates a scatter plot by placing circular markers at the coordinates defined by the vectors <b>x</b> and<b>y</b>.
 
-If you intend to display a single dataset, ensure that both <b>x</b> and<b>y</b> are vectors of the same length.
+<b>scatter(x, y)</b> generates a scatter plot by placing circular markers at the coordinates defined by the vectors <b>x</b> and<b>y</b>. 
 
-To visualize multiple datasets on a shared set of axes, you can achieve this by using a matrix for either <b>x</b> or<b>y</b>, while keeping the other as a vector.
+If you intend to display a single dataset, ensure that both <b>x</b> and<b>y</b> are vectors of the same length. 
 
-This allows you to overlay or compare multiple datasets within the same plot.
+To visualize multiple datasets on a shared set of axes, you can achieve this by using a matrix for either <b>x</b> or<b>y</b>, while keeping the other as a vector. 
+
+This allows you to overlay or compare multiple datasets within the same plot. 
+
+ 
 
 See [scatter properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.scatter.properties.md) for the complete property list.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -49,8 +54,8 @@ x = exp(theta).*sin(110*theta);
 y = exp(theta).*cos(110*theta);
 s = scatter(x,y ,'filled');
 ```
-
 <img src="scatter_1.svg" align="middle"/>
+
 
 ```matlab
 
@@ -62,8 +67,8 @@ c = 1:length(x);
 scatter(x, y, sz, c, 'd', 'filled')
 
 ```
-
 <img src="scatter_2.svg" align="middle"/>
+
 
 ```matlab
 
@@ -74,8 +79,8 @@ c = linspace(1,10,length(x));
 scatter(x, y, [], c, 'filled')
 
 ```
-
 <img src="scatter_3.svg" align="middle"/>
+
 
 ```matlab
 
@@ -87,8 +92,8 @@ sz = 45;
 scatter(x,y,sz,'MarkerEdgeColor',[0 .6 .5], 'MarkerFaceColor',[0 .6 .7],  'LineWidth',3.5)
 
 ```
-
 <img src="scatter_4.svg" align="middle"/>
+
 
 ```matlab
 
@@ -103,8 +108,8 @@ ax2 = subplot(2,1, 2);
 scatter(ax2,x,y,'filled','d')
 
 ```
-
 <img src="scatter_5.svg" align="middle"/>
+
 
 ```matlab
 
@@ -114,8 +119,8 @@ y = randn(500,5) + (5:5:25);
 s = scatter(x,y, 'filled');
 
 ```
-
 <img src="scatter_6.svg" align="middle"/>
+
 
 ```matlab
 
@@ -149,8 +154,8 @@ ylim([0 numel(markers)+1]);
 hold off;
 
 ```
-
 <img src="scatter_7.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -158,11 +163,11 @@ hold off;
 
 ## 🕔 History
 
-| Version | 📄 Description                                |
-| ------- | --------------------------------------------- |
-| 1.0.0   | initial version                               |
-| 1.12.0  | color name and short color name managed.      |
-| 1.14.0  | Scatter is a graphics object with Properties. |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.12.0   | color name and short color name managed. |
+| 1.14.0   | Scatter is a graphics object with Properties. |
 
 <!--
 ## 👤 Author

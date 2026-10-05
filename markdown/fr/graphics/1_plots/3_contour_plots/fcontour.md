@@ -14,7 +14,8 @@ Tracer des contours depuis une fonction de deux variables.
 
 ## 📄 Description
 
-<b>fcontour</b> echantillonne <b>fun(x,y)</b> sur une grille reguliere et affiche des lignes de contour comme objet graphique <b>functioncontour</b>.
+
+<b>fcontour</b> echantillonne <b>fun(x,y)</b> sur une grille reguliere et affiche des lignes de contour comme objet graphique <b>functioncontour</b>. 
 
 Voir [proprietes de functioncontour](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.functioncontour.properties.md) pour la liste complete des proprietes.
 
@@ -25,7 +26,6 @@ Afficher des contours de fonction.
 ```matlab
 fcontour(@(x, y) x.^2 - y.^2, [-2 2 -2 2]);
 ```
-
 <img src="fcontour_1.svg" align="middle"/>
 Utiliser une couleur de ligne et des niveaux explicites.
 
@@ -33,8 +33,8 @@ Utiliser une couleur de ligne et des niveaux explicites.
 h = fcontour(@(x, y) x + y, '-r', 'LevelList', [-2 0 2]);
 h.LineWidth = 1.5;
 ```
-
 <img src="fcontour_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

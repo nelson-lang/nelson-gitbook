@@ -22,6 +22,7 @@ Add a shared title to a graphics layout.
 
 ## 📄 Description
 
+
 <b>sgtitle</b> adds a shared title to the current tiled layout when one exists. Otherwise, it adds a shared title above the subplot axes in the current figure.
 
 ## 💡 Examples
@@ -40,7 +41,6 @@ subplot(2, 2, 4)
 title('Fourth Subplot')
 sgtitle('Subplot Grid Title')
 ```
-
 <img src="sgtitle_1.svg" align="middle"/>
 Set shared title properties.
 
@@ -53,7 +53,6 @@ title('Second Subplot')
 sgt = sgtitle('Subplot Grid Title', 'Color', 'red');
 sgt.FontSize = 20;
 ```
-
 <img src="sgtitle_2.svg" align="middle"/>
 Shared title for a tiled layout.
 
@@ -66,13 +65,14 @@ plot((1:10).^2);
 sgtitle(t, 'Shared title');
 ```
 
+
 ## 🔗 See also
 
 [title](../../../graphics/3_labels_styling/4_labels_annotations/title.md), [tiledlayout](../../../graphics/2_graphics_objects/2_layout_objects/tiledlayout.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -20,25 +20,26 @@ Create an invalid handle with a specified handle class.
 
 ## 📄 Description
 
-<b>nelson.lang.invalidHandle</b> creates a handle value that has the requested handle class but is not valid.
 
-<b>isvalid(h)</b> returns false for every element of the result.
+<b>nelson.lang.invalidHandle</b> creates a handle value that has the requested handle class but is not valid. 
 
-The class name must identify a classdef handle class. Value classes and unknown class names raise an error.
+<b>isvalid(h)</b> returns false for every element of the result. 
 
-With no dimension arguments, the result is a scalar. With one numeric scalar dimension <b>n</b>, the result is <b>n</b>-by-<b>n</b>. With multiple scalar dimensions or a numeric vector <b>sz</b>, the result has those dimensions.
+The class name must identify a classdef handle class. Value classes and unknown class names raise an error. 
 
-This function is useful for APIs that need to preserve the class of a missing handle target.
+With no dimension arguments, the result is a scalar. With one numeric scalar dimension <b>n</b>, the result is <b>n</b>-by-<b>n</b>. With multiple scalar dimensions or a numeric vector <b>sz</b>, the result has those dimensions. 
 
-The returned value behaves like a handle array for class, size, concatenation with compatible handle arrays, and <b>isvalid</b>. It has no live object behind it.
+This function is useful for APIs that need to preserve the class of a missing handle target. 
 
-Invalid handles are not made valid later. To obtain a live handle, construct a new object of the same class.
+The returned value behaves like a handle array for class, size, concatenation with compatible handle arrays, and <b>isvalid</b>. It has no live object behind it. 
 
-All dimensions must be nonnegative integer values. Empty dimension vectors create an empty handle array.
+Invalid handles are not made valid later. To obtain a live handle, construct a new object of the same class. 
 
-A single scalar dimension follows the same convention as common array constructors: <b>nelson.lang.invalidHandle(classname, 3)</b> returns a 3-by-3 array.
+All dimensions must be nonnegative integer values. Empty dimension vectors create an empty handle array. 
 
-The class is loaded before the handle array is created. This allows user-defined handle classes on the path to be used by name.
+A single scalar dimension follows the same convention as common array constructors: <b>nelson.lang.invalidHandle(classname, 3)</b> returns a 3-by-3 array. 
+
+The class is loaded before the handle array is created. This allows user-defined handle classes on the path to be used by name. 
 
 Use <b>nelson.lang.HandlePlaceholder</b> when no more specific handle class is available.
 
@@ -51,7 +52,6 @@ h = nelson.lang.invalidHandle('nelson.lang.HandlePlaceholder');
 class(h)
 isvalid(h)
 ```
-
 Create an invalid handle array.
 
 ```matlab
@@ -59,7 +59,6 @@ h = nelson.lang.invalidHandle('nelson.lang.HandlePlaceholder', 2, 3);
 size(h)
 isvalid(h)
 ```
-
 Create an invalid handle array from a size vector.
 
 ```matlab
@@ -68,7 +67,6 @@ size(h)
 class(h)
 isvalid(h)
 ```
-
 Use a user-defined handle class.
 
 ```matlab
@@ -80,7 +78,6 @@ h = nelson.lang.invalidHandle('NelsonHelpInvalidHandleTarget');
 class(h)
 isvalid(h)
 ```
-
 Reject a value class name.
 
 ```matlab
@@ -91,13 +88,14 @@ catch exception
 end
 ```
 
+
 ## 🔗 See also
 
 [nelson.lang.WeakReference](../handle/nelson.lang.WeakReference.md), [nelson.lang.HandlePlaceholder](../handle/nelson.lang.HandlePlaceholder.md), [isvalid](../handle/isvalid.md), [class](../types/class.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -20,13 +20,16 @@ Execute a command with the operating system shell.
 
 ## 📄 Description
 
-dos executes a command through the operating system shell and returns the exit status.
+
+dos executes a command through the operating system shell and returns the exit status. 
 
 With output arguments, Nelson can also return the command text output and execution duration. dos follows the same command execution model as system.
 
 ## Used function(s)
 
+
     system
+  
 
 ## 💡 Example
 
@@ -36,13 +39,14 @@ Run a shell command and capture its output.
 [status, output] = dos('echo Nelson')
 ```
 
+
 ## 🔗 See also
 
 [system](../os_functions/system.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

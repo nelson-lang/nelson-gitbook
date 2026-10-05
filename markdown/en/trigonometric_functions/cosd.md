@@ -16,14 +16,18 @@ Computes the cosine in degree for each element of x.
 
 ## 📄 Description
 
+
 <b>cosd</b> computes the cosine in degree for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [0 30 45 60 90 360];;
 res = cosd(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ res = cosd(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

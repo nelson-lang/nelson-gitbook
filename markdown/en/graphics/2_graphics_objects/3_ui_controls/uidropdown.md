@@ -19,6 +19,7 @@ Create drop-down component.
 
 ## 📄 Description
 
+
 <b>dd = uidropdown</b> creates a drop-down list. <b>Items</b> holds the displayed entries; <b>ItemsData</b> optionally maps each entry to a data value returned through <b>Value</b>. <b>ValueIndex</b> is the 1-based selection index. <b>Editable</b> 'on' lets the user type free text. Callback <b>ValueChangedFcn</b> (event data: <b>Value</b>, <b>PreviousValue</b>, <b>Edited</b>, <b>ValueIndex</b>, <b>PreviousValueIndex</b>).
 
 ## 💡 Examples
@@ -31,7 +32,6 @@ dd = uidropdown(f, 'Items', {'Small', 'Medium', 'Large'}, 'Position', [125 115 1
 dd.Value = 'Medium';
 drawnow();
 ```
-
 <img src="uidropdown_example.svg" align="middle"/>
 uidropdown
 
@@ -43,13 +43,14 @@ dd.Value = 2;
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

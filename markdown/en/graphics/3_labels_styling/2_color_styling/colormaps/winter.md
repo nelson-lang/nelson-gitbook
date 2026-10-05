@@ -17,17 +17,20 @@ Winter colormap array.
 
 ## 📄 Description
 
+
 <b>winter</b> returns the colormap with winter colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('winter');
 ```
-
 <img src="winter.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('winter');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

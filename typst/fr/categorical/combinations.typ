@@ -1,0 +1,47 @@
+#import "nelson_help.typ": *
+
+= combinations <categorical:combinations>
+
+Generer toutes les combinaisons de valeurs.
+
+== Syntaxe
+
+- #raw("T = combinations(A1, A2, ...)");
+
+== Argument d'entrée
+
+/ A1, A2, ...: Tableaux d'entree. Chaque entree est convertie en colonne avant la creation des combinaisons.
+
+== Argument de sortie
+
+/ T: Table contenant une ligne pour chaque combinaison des elements d'entree.
+
+== Description
+
+#strong[combinations]; construit une table contenant le produit cartesien des tableaux fournis.
+
+ Quand une variable d'entree a un nom, ce nom est reutilise comme nom de variable de table.
+
+
+== Exemple
+
+Combiner deux tableaux categoriels.
+
+``````matlab
+A = categorical({'small','large'}); B = categorical({'red','blue'}); T = combinations(A, B)
+``````
+
+
+== Voir aussi
+
+#nlink(<categorical:categorical>)[categorical];, #nlink(<table:1_create_convert_tables.table>)[table];, #nlink(<table:3_summary_information.height>)[height];, #nlink(<table:3_summary_information.width>)[width];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

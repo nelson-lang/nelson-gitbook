@@ -17,16 +17,20 @@ Check property name is valid.
 
 ## 📄 Description
 
-<b>isValidGraphicsProperty</b> checks is property name is existing for graphical object class.
+
+<b>isValidGraphicsProperty</b> checks is property name is existing for graphical object class. 
 
 This function is an helper to check input parameters graphical functions.
 
 ## 💡 Example
 
+
+
 ```matlab
 tf = isValidGraphicsProperty('figure', 'Type')
 tf = isValidGraphicsProperty('figure', 'TypeType')
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ tf = isValidGraphicsProperty('figure', 'TypeType')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -25,13 +25,14 @@ Create a rectangle with sharp, rounded or curved corners
 
 ## 📄 Description
 
-<b>rectangle('Position', pos)</b> draws a rectangle at the location and size given by <b>pos</b> = [x y w h].
 
-<b>rectangle('Position', pos, 'Curvature', cur)</b> draws a rectangle with rounded corners. The horizontal curvature is the fraction of the width that is curved along the top and bottom edges; the vertical curvature is the fraction of the height that is curved along the left and right edges. A scalar value applies the same curvature length to both directions, using the shorter side, so the corners are circular. Use <b>[1 1]</b> to draw an ellipse.
+<b>rectangle('Position', pos)</b> draws a rectangle at the location and size given by <b>pos</b> = [x y w h]. 
 
-<b>rectangle(..., propertyName, propertyValue, ...)</b> sets optional properties using name-value pairs, such as <b>FaceColor</b>, <b>EdgeColor</b>, <b>LineStyle</b> and <b>LineWidth</b>.
+<b>rectangle('Position', pos, 'Curvature', cur)</b> draws a rectangle with rounded corners. The horizontal curvature is the fraction of the width that is curved along the top and bottom edges; the vertical curvature is the fraction of the height that is curved along the left and right edges. A scalar value applies the same curvature length to both directions, using the shorter side, so the corners are circular. Use <b>[1 1]</b> to draw an ellipse. 
 
-By default a rectangle has no fill (<b>FaceColor</b> is <b>'none'</b>), a dark grey outline (<b>EdgeColor</b>), a solid line style and a line width of 0.5 point.
+<b>rectangle(..., propertyName, propertyValue, ...)</b> sets optional properties using name-value pairs, such as <b>FaceColor</b>, <b>EdgeColor</b>, <b>LineStyle</b> and <b>LineWidth</b>. 
+
+By default a rectangle has no fill (<b>FaceColor</b> is <b>'none'</b>), a dark grey outline (<b>EdgeColor</b>), a solid line style and a line width of 0.5 point. 
 
 <b>go = rectangle(...)</b> returns the handle <b>go</b> to the created rectangle object.
 
@@ -51,13 +52,14 @@ axis equal
 axis off
 ```
 
+
 ## 🔗 See also
 
 [patch](../../../graphics/1_plots/7_surfaces_volumes_polygons/patch.md), [fill](../../../graphics/1_plots/7_surfaces_volumes_polygons/fill.md), [annotation](../../../graphics/3_labels_styling/4_labels_annotations/annotation.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

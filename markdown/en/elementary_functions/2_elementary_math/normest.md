@@ -21,11 +21,14 @@
 
 ## 📄 Description
 
-<b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix<b>A</b>.
+
+<b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix<b>A</b>. 
 
 Sparse double, sparse single, sparse double complex, and sparse single complex matrices are supported. Empty tolerance uses the initial column-sum estimate, and non-empty tolerance controls the power iteration stopping criterion.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = [    0    2.4495         0         0         0         0         0
@@ -41,15 +44,16 @@ norm(M)
 
 ```
 
+
 ## 🔗 See also
 
-[norm](../../elementary_functions/norm.md), [svd](../../linear_algebra/svd.md).
+[norm](../../elementary_functions/2_elementary_math/norm.md), [svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                                                 |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| 1.0.0   | initial version                                                                                                                |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | sparse single and sparse single complex inputs supported, including stored zero sparse values; tolerance validation tightened. |
 
 <!--

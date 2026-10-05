@@ -22,7 +22,8 @@ Ecrit des donnees dans une variable netCDF.
 
 ## 📄 Description
 
-ncwrite ecrit un tableau Nelson dans une variable netCDF existante.
+
+ncwrite ecrit un tableau Nelson dans une variable netCDF existante. 
 
 Les arguments optionnels permettent d'ecrire a partir d'une position precise dans la variable.
 
@@ -37,14 +38,15 @@ ncwrite(filename, 'temperature', [10 20 30]);
 data = ncread(filename, 'temperature')
 ```
 
+
 ## 🔗 Voir aussi
 
 [nccreate](../netcdf/nccreate.md), [ncread](../netcdf/ncread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

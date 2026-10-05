@@ -24,6 +24,7 @@ Filter a 3-D volume with a Gaussian kernel.
 
 ## 📄 Description
 
+
 Filter a numeric or logical 3-D volume with a separable Gaussian kernel. Complex numeric volumes are supported by filtering real and imaginary parts consistently. Sigma can be scalar or a three-element vector. Padding can be replicate, symmetric, circular, or a finite scalar value.
 
 ## 💡 Example
@@ -37,13 +38,14 @@ B = imgaussfilt3(V, 1.0, 'FilterSize', [5 5 5], 'Padding', 0);
 B(:, :, 5)
 ```
 
+
 ## 🔗 See also
 
-[imgaussfilt](../../../image_processing/imgaussfilt.md), [imref3d](../../../image_processing/imref3d.md).
+[imgaussfilt](../../../image_processing/1_image_basics/3_filtering_edges/imgaussfilt.md), [imref3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref3d.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

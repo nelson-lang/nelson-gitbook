@@ -8,21 +8,25 @@ Extract text before a boundary.
 
 ## 📄 Description
 
+
 <b>extractBefore</b> Extract text before a boundary.
 
 ## 💡 Example
+
+
 
 ```matlab
 extractBefore("abc.def", ".")
 ```
 
+
 ## 🔗 See also
 
-[extractAfter](../../string/extractAfter.md), [extractBetween](../../string/extractBetween.md), [extract](../../string/extract.md).
+[extractAfter](../../string/6_join_split_extract/extractAfter.md), [extractBetween](../../string/6_join_split_extract/extractBetween.md), [extract](../../string/6_join_split_extract/extract.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

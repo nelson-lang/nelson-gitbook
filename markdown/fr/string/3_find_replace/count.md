@@ -19,9 +19,12 @@ Calcule le nombre d'occurrences d'un motif.
 
 ## 📄 Description
 
+
 <b>count</b> calcule le nombre d'occurrences d'un motif.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -39,14 +42,15 @@ k = count(A, 'son')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[startsWith](../../string/startsWith.md), [endsWith](../../string/endsWith.md), [contains](../../string/contains.md).
+[startsWith](../../string/3_find_replace/startsWith.md), [endsWith](../../string/3_find_replace/endsWith.md), [contains](../../string/3_find_replace/contains.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

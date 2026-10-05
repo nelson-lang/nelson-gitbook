@@ -10,21 +10,21 @@ Outil de gestion de dépôt Git pour Nelson
 - repo('clone', url, destination, username, password)
 - repo('clone', url, destination, Name, Value)
 - repo('clone', url, branch, destination, Name, Value)
-- repo('export', url, branch_tag_sha1, destination)
+- repo('export', url, branch\_tag\_sha1, destination)
 - repo('export', url, destination)
-- repo('export', url, branch_tag_sha1, destination, username, password)
+- repo('export', url, branch\_tag\_sha1, destination, username, password)
 - repo('export', url, destination, username, password)
 - repo('export', url, destination, Name, Value)
-- repo('export', url, branch_tag_sha1, destination, Name, Value)
-- repo('checkout', destination, branch_tag_sha1)
+- repo('export', url, branch\_tag\_sha1, destination, Name, Value)
+- repo('checkout', destination, branch\_tag\_sha1)
 - ce = repo('branch', destination)
 - ce = repo('tag', destination)
 - st = repo('log', destination)
 - repo('fetch', destination)
 - repo('fetch', destination, username, password)
 - repo('fetch', destination, Name, Value)
-- repo('remove_branch', destination, branch)
-- current_branch = repo('current_branch', destination)
+- repo('remove\_branch', destination, branch)
+- current\_branch = repo('current\_branch', destination)
 - version = repo('version')
 - capabilities = repo('capabilities')
 
@@ -33,7 +33,7 @@ Outil de gestion de dépôt Git pour Nelson
 - url - a string: URL to a git repository.
 - branch - a string: branch name.
 - destination - a string: local pathname.
-- branch_tag_sha1 - a string: a branch name, tag or sha1.
+- branch\_tag\_sha1 - a string: a branch name, tag or sha1.
 - username - a string: username used if an authentification is required.
 - password - a string: password used if an authentification is required.
 - Name, Value - options d'identifiants: 'Username', 'Password', 'UseAgent', 'PrivateKey', 'PublicKey', 'Passphrase'.
@@ -42,35 +42,40 @@ Outil de gestion de dépôt Git pour Nelson
 
 - ce - a cell: list of tags or branchs.
 - st - a structure: contains log information.
-- current_branch - a string: name of current branch.
+- current\_branch - a string: name of current branch.
 - version - a string: version de libgit2 utilisee par repo.
 - capabilities - a structure: fonctionnalites libgit2 disponibles dans cette construction de Nelson.
 
 ## 📄 Description
 
-<b>repo()</b> allows to clone, checkout, fetch a git repository.
 
-checkout command will be forced and remove untracked filed.
+<b>repo()</b> allows to clone, checkout, fetch a git repository. 
 
-git HTTPS protocol works on all platforms. git SSH depend du build libgit2 utilise par Nelson.
+checkout command will be forced and remove untracked filed. 
 
-Utilisez repo('capabilities') pour verifier si HTTPS et SSH sont disponibles dans la construction libgit2 courante.
+git HTTPS protocol works on all platforms. git SSH depend du build libgit2 utilise par Nelson. 
 
-Quand SSH n'est pas disponible, clone et fetch echouent immediatement avec un message clair pour les URLs SSH.
+Utilisez repo('capabilities') pour verifier si HTTPS et SSH sont disponibles dans la construction libgit2 courante. 
 
-Les identifiants SSH peuvent utiliser un agent avec 'UseAgent', true, ou des fichiers de cle avec 'PrivateKey', 'PublicKey' et 'Passphrase'.
+Quand SSH n'est pas disponible, clone et fetch echouent immediatement avec un message clair pour les URLs SSH. 
 
-repo('export', ...) clone and remove .git directory.
+Les identifiants SSH peuvent utiliser un agent avec 'UseAgent', true, ou des fichiers de cle avec 'PrivateKey', 'PublicKey' et 'Passphrase'. 
 
-Tips:
+repo('export', ...) clone and remove .git directory. 
 
-If you have this error:<b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.
+ 
 
-You don't have some ssh or https redirection.
+Tips: 
 
-Remove entries:
+ 
 
-[url "git@github.com:"]
+If you have this error:<b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file. 
+
+You don't have some ssh or https redirection. 
+
+Remove entries: 
+
+[url "git@github.com:"] 
 
 insteadOf = https://github.com/
 
@@ -79,6 +84,8 @@ insteadOf = https://github.com/
 libgit2 (https://libgit2.org/)
 
 ## 💡 Exemple
+
+
 
 ```matlab
 url = 'https://github.com/nelson-lang/module_skeleton.git';
@@ -94,14 +101,15 @@ repo('current_branch', destination)
 repo('log', destination)
 ```
 
+
 ## 🔗 Voir aussi
 
 [webread](../webtools/webread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

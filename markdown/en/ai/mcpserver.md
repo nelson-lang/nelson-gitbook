@@ -9,27 +9,28 @@ Start Nelson MCP server on standard input and output.
 
 ## 📄 Description
 
-<b>mcpserver</b> starts a stdio MCP server exposing Nelson-aware tools.
 
-The transport uses standard input and standard output. MCP JSON-RPC messages are the only data written to standard output; diagnostic messages are written to standard error.
+<b>mcpserver</b> starts a stdio MCP server exposing Nelson-aware tools. 
 
-The default display mode is <b>adv-cli</b>. It supports graphical commands used by <b>create_nelson_plot</b> while keeping the MCP transport on standard output. Use <b>cli</b> for text-only sessions. Use <b>gui</b> when a visible graphical Nelson session is desired while the server still runs from <b>nelson-adv-cli</b>.
+The transport uses standard input and standard output. MCP JSON-RPC messages are the only data written to standard output; diagnostic messages are written to standard error. 
 
-Available tools are <b>detect_nelson_modules</b>, <b>check_nelson_code</b>, <b>lint_nelson_code</b>, <b>check_nelson_format</b>, <b>evaluate_nelson_code</b>, <b>run_nelson_file</b>, <b>run_nelson_test_file</b>, <b>format_nelson_file</b>, <b>get_nelson_help</b>, <b>find_nelson_symbol</b>, <b>get_nelson_function_info</b>, <b>get_nelson_workspace</b>, <b>get_nelson_version</b>, and <b>create_nelson_plot</b>.
+The default display mode is <b>adv-cli</b>. It supports graphical commands used by <b>create\_nelson\_plot</b> while keeping the MCP transport on standard output. Use <b>cli</b> for text-only sessions. Use <b>gui</b> when a visible graphical Nelson session is desired while the server still runs from <b>nelson-adv-cli</b>. 
 
-File-based tools resolve relative paths from the configured workspace root and refuse paths outside that root. The default workspace root is <b>nelsonroot</b>.
+Available tools are <b>detect\_nelson\_modules</b>, <b>check\_nelson\_code</b>, <b>lint\_nelson\_code</b>, <b>check\_nelson\_format</b>, <b>evaluate\_nelson\_code</b>, <b>run\_nelson\_file</b>, <b>run\_nelson\_test\_file</b>, <b>format\_nelson\_file</b>, <b>get\_nelson\_help</b>, <b>find\_nelson\_symbol</b>, <b>get\_nelson\_function\_info</b>, <b>get\_nelson\_workspace</b>, <b>get\_nelson\_version</b>, and <b>create\_nelson\_plot</b>. 
 
-Tool calls return both text content and structured content with <b>success</b>, <b>output</b>, <b>error</b>, <b>image</b>, and <b>duration</b> fields.
+File-based tools resolve relative paths from the configured workspace root and refuse paths outside that root. The default workspace root is <b>nelsonroot</b>. 
 
-Long <b>output</b> and <b>error</b> fields are bounded by <b>--max-output-characters</b>. Structured content includes <b>output_truncated</b> and <b>error_truncated</b> flags.
+Tool calls return both text content and structured content with <b>success</b>, <b>output</b>, <b>error</b>, <b>image</b>, and <b>duration</b> fields. 
 
-Some tools also return typed metadata in the structured <b>data</b> field, for example module lists, test summary counts, version information, and PNG image metadata.
+Long <b>output</b> and <b>error</b> fields are bounded by <b>--max-output-characters</b>. Structured content includes <b>output\_truncated</b> and <b>error\_truncated</b> flags. 
 
-The server also exposes local read-only resources under <b>guidelines://</b> and reusable prompts such as <b>nelson-code-review</b>, <b>nelson-test-author</b>, and <b>nelson-plot-agent</b>.
+Some tools also return typed metadata in the structured <b>data</b> field, for example module lists, test summary counts, version information, and PNG image metadata. 
 
-Ollama can provide the local language model for an MCP-capable agent. In that setup, Ollama runs the model, the agent speaks MCP, and <b>mcpserver</b> exposes Nelson tools to the agent.
+The server also exposes local read-only resources under <b>guidelines://</b> and reusable prompts such as <b>nelson-code-review</b>, <b>nelson-test-author</b>, and <b>nelson-plot-agent</b>. 
 
-The JSON-RPC transport validates protocol version <b>2.0</b>, rejects invalid requests, and supports batch requests.
+Ollama can provide the local language model for an MCP-capable agent. In that setup, Ollama runs the model, the agent speaks MCP, and <b>mcpserver</b> exposes Nelson tools to the agent. 
+
+The JSON-RPC transport validates protocol version <b>2.0</b>, rejects invalid requests, and supports batch requests. 
 
 Server options can be passed as string arguments: <b>--initial-working-folder=PATH</b>, <b>--workspace-root=PATH</b>, <b>--max-output-characters=N</b>, <b>--initialize-nelson-on-startup=true\|false</b>, <b>--nelson-display-mode=cli\|adv-cli\|gui</b>, <b>--allow-execution=true\|false</b>, <b>--allow-format=true\|false</b>, <b>--log-folder=PATH</b>, and <b>--log-level=error\|warn\|info\|debug</b>.
 
@@ -42,7 +43,6 @@ Start the server from an MCP client.
 nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"
 
 ```
-
 Register Nelson in Codex.
 
 ```matlab
@@ -50,7 +50,6 @@ Register Nelson in Codex.
 codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"
 
 ```
-
 Register Nelson with visible graphical mode.
 
 ```matlab
@@ -58,7 +57,6 @@ Register Nelson with visible graphical mode.
 codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--nelson-display-mode=gui')"
 
 ```
-
 Use Nelson MCP with an Ollama-backed agent.
 
 ```matlab
@@ -76,7 +74,6 @@ ollama pull llama3.2
 nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"
 
 ```
-
 Generic JSON-style MCP client configuration for an Ollama-backed agent.
 
 ```matlab
@@ -103,7 +100,6 @@ Generic JSON-style MCP client configuration for an Ollama-backed agent.
 }
 
 ```
-
 Prompt an Ollama-backed agent to use Nelson tools.
 
 ```matlab
@@ -116,12 +112,13 @@ Return the PNG path from create_nelson_plot and summarize any Nelson output.
 
 ```
 
+
 ## 🔗 See also
 
 [aiask](../ai/aiask.md), [mcpinfo](../ai/mcpinfo.md), [mcpusage](../ai/mcpusage.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |

@@ -22,21 +22,25 @@ Constructs a transfer function model.
 
 ## 📄 Description
 
-<b>sys = tf(numerator, denominator)</b> is used to create a continuous-time transfer function model.
 
-It is defined by specifying <b>numerator</b> and <b>denominator</b> of the transfer function.
+<b>sys = tf(numerator, denominator)</b> is used to create a continuous-time transfer function model. 
 
-When you include the <b>Ts</b> parameter, it allows you to create a discrete-time transfer function.
+It is defined by specifying <b>numerator</b> and <b>denominator</b> of the transfer function. 
+
+When you include the <b>Ts</b> parameter, it allows you to create a discrete-time transfer function. 
 
 Setting <b>Ts</b> to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.
 
 ## 💡 Examples
+
+
 
 ```matlab
 numerator = 10;
 denominator = [20, 33, 44];
 sys = tf(numerator, denominator)
 ```
+
 
 ```matlab
 numerator = 10;
@@ -45,13 +49,14 @@ Ts = 1.5;
 sys = tf(numerator, denominator, Ts)
 ```
 
+
 ## 🔗 See also
 
-[ss](../../control_system/ss.md).
+[ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

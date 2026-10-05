@@ -17,9 +17,12 @@ Inverse de permute
 
 ## 📄 Description
 
+
 <b>ipermute</b> permute les dimensions d'un tableau (dans l'ordre inverse de <b>permute</b>).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 2 3; 4 5 6]
@@ -27,14 +30,15 @@ y = permute(x,[3 1 2])
 x2 = ipermute(y,[3 1 2])
 ```
 
+
 ## 🔗 Voir aussi
 
-[permute](../../elementary_functions/permute.md), [reshape](../../elementary_functions/reshape.md), [transpose](../../operators/transpose.md).
+[permute](../../elementary_functions/7_indexing_dimensions/permute.md), [reshape](../../elementary_functions/1_array_creation_shape/reshape.md), [transpose](../../operators/transpose.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -23,7 +23,8 @@ Redimensionner un volume 3-D
 
 ## 📄 Description
 
-<b>imresize3</b> redimensionne des donnees d'image volumetriques par facteur scalaire ou vers une taille de sortie explicite a trois elements.
+
+<b>imresize3</b> redimensionne des donnees d'image volumetriques par facteur scalaire ou vers une taille de sortie explicite a trois elements. 
 
 La methode linear utilise une interpolation trilineaire separable. La methode nearest utilise l'echantillon le plus proche et preserve exactement les volumes logiques.
 
@@ -39,8 +40,8 @@ figure;
 imshow(B(:, :, 16), []);
 title('Resized central slice');
 ```
-
 <img src="imresize3_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -48,8 +49,8 @@ title('Resized central slice');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -16,19 +16,24 @@ Renvoie vrai si la variable var est de type logique (logical).
 
 ## 📄 Description
 
+
 <b>islogical</b> renvoie 1 logique (vrai) si l'argument est un tableau logique et 0 logique (faux) sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 1;
 res = islogical(A)
 ```
 
+
 ```matlab
 B = logical(1);
 res = islogical(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +41,8 @@ res = islogical(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

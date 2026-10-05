@@ -27,13 +27,16 @@ Distances deux a deux entre deux ensembles d'observations.
 
 ## 📄 Description
 
+
 <b>pdist2</b> calcule les distances deux a deux entre les lignes de <b>X</b> et les lignes de <b>Y</b>. Les distances integrees retournent NaN si l'une des lignes contient NaN. Un handle de fonction de distance doit accepter une ligne de X et toutes les lignes de Y, puis retourner une distance par ligne de Y.
 
 ## Fonction(s) utilisée(s)
 
+
     kmeans
     kmedoids
     silhouette
+  
 
 ## 💡 Exemples
 
@@ -44,7 +47,6 @@ X = [0 0; 1 0];
 Y = [0 0; 0 2];
 D = pdist2(X, Y)
 ```
-
 Comparer plusieurs metriques de distance.
 
 ```matlab
@@ -53,7 +55,6 @@ Y = [1 0; 1 1];
 Dcos = pdist2(X, Y, 'cosine')
 Dhamming = pdist2(X, Y, 'hamming')
 ```
-
 Trouver des distances selectionnees et les indices des lignes.
 
 ```matlab

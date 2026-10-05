@@ -20,7 +20,8 @@ Controls the echoing during their execution.
 
 ## 📄 Description
 
-<b>echo('off')</b> disable echo mode.
+
+<b>echo('off')</b> disable echo mode. 
 
 Without input and output arguments,<b>echo</b> toggles the current echo state.
 
@@ -38,13 +39,14 @@ echo(R)
 A
 ```
 
+
 ## 🔗 See also
 
 [disp](../display_format/disp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

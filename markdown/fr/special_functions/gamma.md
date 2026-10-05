@@ -16,40 +16,51 @@ Fonction spéciale gamma
 
 ## 📄 Description
 
-<b>gamma</b> calcule la fonction gamma.
 
-La fonction gamma est définie par l'intégrale :
+<b>gamma</b> calcule la fonction gamma. 
+
+La fonction gamma est définie par l'intégrale : 
 $$\Gamma(z) = \int_0^{\infty} t^{z-1} e^{-t} \, dt$$
+ 
 
-pour
+pour 
 $$\text{Re}(z) > 0$$
+ 
 
-La fonction gamma étend la fonction factorielle aux nombres réels et complexes :
+La fonction gamma étend la fonction factorielle aux nombres réels et complexes : 
 $$\Gamma(n) = (n-1)!$$
+ 
 
-pour les entiers positifs
+pour les entiers positifs 
 $$n$$
+ 
 
-Propriétés importantes :
+Propriétés importantes : 
 
-- $$\Gamma(z+1) = z\Gamma(z)$$
-  (relation de récurrence)
-- $$\Gamma(1/2) = \sqrt{\pi}$$
+- 
+$$\Gamma(z+1) = z\Gamma(z)$$
+ (relation de récurrence) 
+- 
+$$\Gamma(1/2) = \sqrt{\pi}$$
+
 
 ## 💡 Exemple
+
+
 
 ```matlab
 R = gamma([-pi:0.1:pi])
 ```
 
+
 ## 🔗 Voir aussi
 
-[gammaln](../special_functions/gammaln.md), [factorial](../elementary_functions/factorial.md).
+[gammaln](../special_functions/gammaln.md), [factorial](../elementary_functions/2_elementary_math/factorial.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -1,10 +1,16 @@
 # Gestion des flux
 
+
+    
 Le module Stream Manager fournit des outils pour gerer les flux d'entree et de sortie dans Nelson.
 
+    
 Il prend en charge la lecture et l'ecriture de donnees texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la detection de la fin de fichier et la gestion des erreurs de fichier.
 
+    
 Le module gere aussi la journalisation de session ainsi que le chargement et la sauvegarde des donnees de l'espace de travail.
+
+  
 
 ## Functions
 
@@ -31,3 +37,4 @@ Le module gere aussi la journalisation de session ainsi que le chargement et la 
 - [save](save.md) - enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat
 - [sscanf](sscanf.md) - Lire des données formatées depuis des chaînes.
 - [textscan](textscan.md) - Lit des données formatées depuis une chaîne ou un fichier.
+

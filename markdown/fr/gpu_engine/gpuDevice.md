@@ -12,23 +12,26 @@ Interroge le périphérique GPU sélectionné.
 
 ## 📄 Description
 
-<b>d = gpuDevice()</b> renvoie une structure décrivant le périphérique GPU sélectionné, avec les champs suivants :
 
-<b>Index</b> : l'indice du périphérique.
+<b>d = gpuDevice()</b> renvoie une structure décrivant le périphérique GPU sélectionné, avec les champs suivants : 
 
-<b>Name</b> : le nom de l'adaptateur.
+<b>Index</b> : l'indice du périphérique. 
 
-<b>Vendor</b> : le fabricant du matériel.
+<b>Name</b> : le nom de l'adaptateur. 
 
-<b>Architecture</b> : l'architecture du périphérique.
+<b>Vendor</b> : le fabricant du matériel. 
 
-<b>Backend</b> : le backend graphique utilisé (Vulkan, Metal ou D3D12).
+<b>Architecture</b> : l'architecture du périphérique. 
 
-<b>MaxBufferSize</b> : la taille maximale en octets d'un tampon unique du périphérique.
+<b>Backend</b> : le backend graphique utilisé (Vulkan, Metal ou D3D12). 
+
+<b>MaxBufferSize</b> : la taille maximale en octets d'un tampon unique du périphérique. 
 
 Une erreur est déclenchée lorsqu'aucun périphérique GPU compatible n'est disponible.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 if canUseGPU()
@@ -36,14 +39,15 @@ if canUseGPU()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [gpuDeviceCount](../gpu_engine/gpuDeviceCount.md), [canUseGPU](../gpu_engine/canUseGPU.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

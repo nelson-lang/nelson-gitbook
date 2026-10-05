@@ -18,16 +18,19 @@ D-optimal row selection from a candidate set.
 
 ## 📄 Description
 
-<b>candexch</b> selects rows from a candidate matrix using a row-exchange search that improves the determinant of X' \* X.
+
+<b>candexch</b> selects rows from a candidate matrix using a row-exchange search that improves the determinant of X' \* X. 
 
 Supported name-value options are 'AvoidDuplicates', 'Display', 'InitialDesign', 'MaxIterations', 'Options', 'FixedRows', and 'NumTries'. Parallel option fields are accepted and execution remains serial.
 
 ## Used function(s)
 
+
     candgen
     rowexch
     cordexch
     daugment
+  
 
 ## 💡 Example
 

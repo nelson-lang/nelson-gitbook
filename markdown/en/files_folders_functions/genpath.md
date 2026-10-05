@@ -8,13 +8,17 @@ Generate a recursive path string.
 
 ## 📄 Description
 
+
 <b>genpath</b> returns a path string containing <b>folder</b> and its included subfolders separated by <b>pathsep</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 p = genpath(tempdir())
 ```
+
 
 ## 🔗 See also
 

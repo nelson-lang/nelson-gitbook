@@ -16,13 +16,16 @@ Determine whether a library pointer is null.
 
 ## 📄 Description
 
-isNull returns a logical value indicating whether a dynamic-link pointer object represents a null address.
+
+isNull returns a logical value indicating whether a dynamic-link pointer object represents a null address. 
 
 The function is intended for pointer objects returned by the dynamic link module.
 
 ## Used function(s)
 
+
     libpointer
+  
 
 ## 💡 Example
 
@@ -33,13 +36,14 @@ p = libpointer();
 tf = isNull(p)
 ```
 
+
 ## 🔗 See also
 
 [libpointer](../dynamic_link/libpointer.md), [dlopen](../dynamic_link/dlopen.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

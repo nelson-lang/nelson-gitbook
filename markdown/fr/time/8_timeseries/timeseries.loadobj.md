@@ -16,9 +16,11 @@ Restaure un objet timeseries depuis des donnees sauvegardees.
 
 ## 📄 Description
 
+
 <b>timeseries.loadobj</b> reconstruit un objet timeseries depuis un objet ou une structure sauvegardee.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12], 'Name', 'speed');
@@ -28,14 +30,15 @@ copy.Name
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

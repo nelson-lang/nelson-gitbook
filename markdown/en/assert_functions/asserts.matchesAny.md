@@ -19,7 +19,8 @@ Check that text matches at least one regular expression.
 
 ## 📄 Description
 
-The assertion passes when at least one regular expression matches text.
+
+The assertion passes when at least one regular expression matches text. 
 
 Invalid regular expressions raise an argument error immediately.
 
@@ -30,12 +31,12 @@ One expression matches
 ```matlab
 asserts.matchesAny('abc123', {'^xyz', '[0-9]+$'});
 ```
-
 Capture missing matches
 
 ```matlab
 [res, msg] = asserts.matchesAny('abc123', {'^xyz', 'zzz'});
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture missing matches
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

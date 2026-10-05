@@ -13,11 +13,12 @@ Afficher un nuage de points regroupe par bins.
 
 ## 📄 Description
 
-<b>binscatter</b> compte les points dans des bins bidimensionnels et affiche les comptes avec un objet graphique natif binscatter.
 
-<b>Values</b>, <b>XBinEdges</b> et <b>YBinEdges</b> sont des proprietes calculees en lecture seule.
+<b>binscatter</b> compte les points dans des bins bidimensionnels et affiche les comptes avec un objet graphique natif binscatter. 
 
-Lorsque les axes sont zoomes, le chart recalcule des bins plus petits afin que la region visible conserve approximativement la densite de bins demandee.
+<b>Values</b>, <b>XBinEdges</b> et <b>YBinEdges</b> sont des proprietes calculees en lecture seule. 
+
+Lorsque les axes sont zoomes, le chart recalcule des bins plus petits afin que la region visible conserve approximativement la densite de bins demandee. 
 
 Voir [proprietes de binscatter](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.binscatter.properties.md) pour la liste complete des proprietes.
 
@@ -31,7 +32,6 @@ y = x + 0.5 * randn(1000, 1);
 h = binscatter(x, y, [30 30]);
 h.FaceAlpha = 0.9;
 ```
-
 <img src="binscatter_1.svg" align="middle"/>
 Inspecter les valeurs et les bords de bins calcules.
 
@@ -43,6 +43,7 @@ h.Values
 h.XBinEdges
 h.YBinEdges
 ```
+
 
 ## 🔗 Voir aussi
 

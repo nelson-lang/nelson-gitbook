@@ -18,7 +18,8 @@ Un groupe titré de propriétés pour l'affichage personnalisé d'objets.
 
 ## 📄 Description
 
-<b>nelson.mixin.util.PropertyGroup</b> regroupe des propriétés d'objet pour l'affichage. Une méthode <b>getPropertyGroups</b> d'une sous-classe <b>nelson.mixin.CustomDisplay</b> renvoie un tableau de groupes de propriétés, chacun affiché avec son titre suivi de ses propriétés.
+
+<b>nelson.mixin.util.PropertyGroup</b> regroupe des propriétés d'objet pour l'affichage. Une méthode <b>getPropertyGroups</b> d'une sous-classe <b>nelson.mixin.CustomDisplay</b> renvoie un tableau de groupes de propriétés, chacun affiché avec son titre suivi de ses propriétés. 
 
 Propriétés : <b>Title</b>, <b>PropertyList</b> et <b>NumProperties</b> (en lecture seule).
 
@@ -32,14 +33,15 @@ g.Title
 g.NumProperties
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.mixin.CustomDisplay](../handle/nelson.mixin.CustomDisplay.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

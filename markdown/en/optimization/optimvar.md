@@ -19,12 +19,15 @@ Create optimization variables.
 
 ## 📄 Description
 
+
 <b>optimvar</b> creates scalar or array variables used in problem-based expressions. Vector variables can be indexed with parentheses in expressions.
 
 ## Used function(s)
 
+
     optimproblem
     optimexpr
+  
 
 ## 📚 Bibliography
 
@@ -32,11 +35,14 @@ J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Example
 
+
+
 ```matlab
 x = optimvar('x', 2, 1, 'LowerBound', 0);
 expr = (x(1) - 1)^2 + (x(2) - 2)^2
 
 ```
+
 
 ## 🔗 See also
 
@@ -44,7 +50,7 @@ expr = (x(1) - 1)^2 + (x(2) - 2)^2
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

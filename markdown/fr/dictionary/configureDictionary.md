@@ -17,14 +17,18 @@ Génère un dictionnaire avec des types définis pour les clés et les valeurs.
 
 ## 📄 Description
 
+
 <b>d = configureDictionary(keyType, valueType)</b> initialise un dictionnaire vide qui impose des clés du type <b>keyType</b> et des valeurs du type <b>valueType</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 d1 = configureDictionary("string", "single")
 d2 = configureDictionary("cell", "struct")
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ d2 = configureDictionary("cell", "struct")
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

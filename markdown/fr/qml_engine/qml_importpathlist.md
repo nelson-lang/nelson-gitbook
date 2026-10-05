@@ -1,10 +1,10 @@
-# qml_importpathlist
+# qml\_importpathlist
 
 Renvoie la liste des répertoires où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL.
 
 ## 📝 Syntaxe
 
-- p = qml_importpathlist()
+- p = qml\_importpathlist()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Renvoie la liste des répertoires où le moteur recherche les modules installés
 
 ## 📄 Description
 
+
 Renvoie la liste des répertoires où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 qml_importpathlist()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ qml_importpathlist()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

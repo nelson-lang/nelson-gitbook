@@ -18,9 +18,12 @@ Recherche par expression reguliere sans tenir compte de la casse.
 
 ## 📄 Description
 
+
 <b>regexpi</b> est equivalent a <b>regexp</b> avec la recherche insensible a la casse par defaut.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,15 +31,16 @@ regexpi('ABC abc', 'abc', 'match')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[regexp](../../string/regexp.md).
+[regexp](../../string/5_regular_expressions/regexp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

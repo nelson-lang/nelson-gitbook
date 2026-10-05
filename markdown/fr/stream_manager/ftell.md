@@ -16,9 +16,12 @@ Retourne le décalage de l'octet courant par rapport au début d'un fichier.
 
 ## 📄 Description
 
+
 <b>ftell</b> retourne le décalage de l'octet courant par rapport au début du fichier associé au flux nommé fid.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 TXT = 'example about ftell.';
@@ -30,14 +33,15 @@ p2 = ftell(fileID)
 status = fclose(fileID);
 ```
 
+
 ## 🔗 Voir aussi
 
 [fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md), [fseek](../stream_manager/fseek.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

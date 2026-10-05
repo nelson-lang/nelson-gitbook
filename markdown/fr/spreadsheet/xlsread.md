@@ -23,6 +23,7 @@ Lire les donnees d'un fichier tableur Open XML.
 
 ## 📄 Description
 
+
 <b>xlsread</b> importe les donnees de fichiers .xlsx avec le backend Open XML.
 
 ## 💡 Exemple
@@ -33,14 +34,15 @@ Lire une plage numerique.
 filename = [tempdir(), 'xlsread_example.xlsx']; xlswrite(filename, [1 2; 3 4], 'Data', 'B2'); [num, txt, raw] = xlsread(filename, 'Data', 'B2:C3')
 ```
 
+
 ## 🔗 Voir aussi
 
 [xlswrite](../spreadsheet/xlswrite.md), [xlsfinfo](../spreadsheet/xlsfinfo.md), [readmatrix](../spreadsheet/readmatrix.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                 |
-| ------- | ------------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | support .xlsx Open XML ajoute. |
 
 <!--

@@ -17,23 +17,27 @@ Densite de probabilite chi-square
 
 ## 📄 Description
 
+
 <b>chi2pdf</b> calcule la densite de probabilite chi-square. Les entrees scalaires sont etendues aux tableaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 5];
 y = chi2pdf(x, 4);
 ```
 
+
 ## 🔗 Voir aussi
 
-[chi2cdf](../../statistics/chi2cdf.md), [chi2inv](../../statistics/chi2inv.md).
+[chi2cdf](../../statistics/2_probability_distributions/chi2cdf.md), [chi2inv](../../statistics/2_probability_distributions/chi2inv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

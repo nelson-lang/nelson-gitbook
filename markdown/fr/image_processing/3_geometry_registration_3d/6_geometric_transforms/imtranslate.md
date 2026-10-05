@@ -23,6 +23,7 @@ Translate une image en 2D.
 
 ## 📄 Description
 
+
 Translate une image en 2D. Les methodes d interpolation prises en charge sont nearest, linear, bilinear et cubic. Les noms d options sont insensibles a la casse. OutputView peut valoir same ou full.
 
 ## 💡 Exemple
@@ -35,17 +36,17 @@ J=imtranslate(I,[12 8],'Interpolation','nearest','OutputView','full');
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Translated');
 ```
-
 <img src="imtranslate_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imwarp](../../../image_processing/imwarp.md), [imcrop](../../../image_processing/imcrop.md), [imresize](../../../image_processing/imresize.md).
+[imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md), [imcrop](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imcrop.md), [imresize](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imresize.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

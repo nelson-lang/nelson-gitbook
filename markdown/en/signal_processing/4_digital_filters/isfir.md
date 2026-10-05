@@ -17,9 +17,12 @@ Determine whether a digital filter is FIR.
 
 ## 📄 Description
 
+
 <b>isfir</b> tests whether the denominator has no recursive part.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -27,13 +30,14 @@ tf = isfir([1 2 3], 1);
 
 ```
 
+
 ## 🔗 See also
 
-[filtord](../../signal_processing/filtord.md).
+[filtord](../../signal_processing/4_digital_filters/filtord.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

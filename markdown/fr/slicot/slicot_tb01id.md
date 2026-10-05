@@ -1,29 +1,30 @@
-# slicot_tb01id
+# slicot\_tb01id
 
 Équilibrage d'une matrice système correspondant au triplet (A, B, C).
 
 ## 📝 Syntaxe
 
-- [MAXRED\_OUT, A\_OUT, B\_OUT, C\_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
+- [MAXRED\_OUT, A\_OUT, B\_OUT, C\_OUT, SCALE, INFO] = slicot\_tb01id(JOB, MAXRED\_IN, A\_IN, B\_IN, C\_IN)
 
 ## 📥 Argument d'entrée
 
 - JOB - = 'A': Toutes les matrices sont impliquées dans l'équilibrage ; = 'B': Les matrices B et A sont impliquées ; = 'C': Les matrices C et A sont impliquées ; = 'N': Les matrices B et C ne sont pas impliquées dans l'équilibrage.
-- MAXRED_IN - la réduction maximale autorisée de la norme 1 de S (dans une itération) si des lignes ou colonnes nulles sont rencontrées.
-- A_IN - La partie principale N-by-N de ce tableau doit contenir la matrice d'état du système A.
-- B_IN - La partie principale N-by-M de ce tableau doit contenir la matrice d'entrée du système B.
-- C_IN - La partie principale P-by-N de ce tableau doit contenir la matrice de sortie du système C.
+- MAXRED\_IN - la réduction maximale autorisée de la norme 1 de S (dans une itération) si des lignes ou colonnes nulles sont rencontrées.
+- A\_IN - La partie principale N-by-N de ce tableau doit contenir la matrice d'état du système A.
+- B\_IN - La partie principale N-by-M de ce tableau doit contenir la matrice d'entrée du système B.
+- C\_IN - La partie principale P-by-N de ce tableau doit contenir la matrice de sortie du système C.
 
 ## 📤 Argument de sortie
 
-- MAXRED_OUT - si la norme 1 de la matrice donnée S est non nulle, le ratio entre la norme 1 de la matrice donnée et la norme 1 de la matrice équilibrée.
-- A_OUT - La partie principale N-by-N de ce tableau contient la matrice équilibrée inv(D)\*A\*D.
-- B_OUT - La partie principale N-by-M de ce tableau contient la matrice équilibrée inv(D)\*B.
-- C_OUT - La partie principale P-by-N de ce tableau contient la matrice équilibrée C\*D.
+- MAXRED\_OUT - si la norme 1 de la matrice donnée S est non nulle, le ratio entre la norme 1 de la matrice donnée et la norme 1 de la matrice équilibrée.
+- A\_OUT - La partie principale N-by-N de ce tableau contient la matrice équilibrée inv(D)\*A\*D.
+- B\_OUT - La partie principale N-by-M de ce tableau contient la matrice équilibrée inv(D)\*B.
+- C\_OUT - La partie principale P-by-N de ce tableau contient la matrice équilibrée C\*D.
 - SCALE - Les facteurs d'échelle appliqués à S.
 - INFO - = 0 : sortie réussie.
 
 ## 📄 Description
+
 
 Réduire la norme 1 d'une matrice système correspondant au triplet (A, B, C), par équilibrage.
 
@@ -36,6 +37,8 @@ TB01ID
 http://slicot.org/objects/software/shared/doc/TB01ID.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 N = 5;
@@ -64,14 +67,15 @@ C_IN = [1.0000e+000          0.0          0.0          0.0          0.0;
 [MAXRED_OUT, A_OUT, B_OUT, C_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
 ```
 
+
 ## 🔗 Voir aussi
 
-[slicot_mb04md](../slicot/slicot_mb04md.md), [slicot_tg01ad](../slicot/slicot_tg01ad.md), [slicot_ab01od](../slicot/slicot_ab01od.md), [balreal](../control_system/balreal.md), [ss](../control_system/ss.md).
+[slicot_mb04md](../slicot/slicot_mb04md.md), [slicot_tg01ad](../slicot/slicot_tg01ad.md), [slicot_ab01od](../slicot/slicot_ab01od.md), [balreal](../control_system/1_dynamic_system_models/balreal.md), [ss](../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

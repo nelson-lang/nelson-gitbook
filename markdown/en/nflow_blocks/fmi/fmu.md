@@ -1,7 +1,8 @@
 # fmu
 
+
 <p align="center">
-<img src="fmu.svg"/>
+<img src="fmu.svg" width="80"/>
 </p>
 Runs a co-simulation FMU inside an NFlow diagram.
 
@@ -11,9 +12,11 @@ Runs a co-simulation FMU inside an NFlow diagram.
 
 ## 📄 Description
 
-The <b>FMU</b> block loads the archive selected by <b>path</b> and advances its co-simulation instance with the NFlow simulation.
 
-After import, the block ports and parameters follow the variables exposed by the FMU model description.
+The <b>FMU</b> block loads the archive selected by <b>path</b> and advances its co-simulation instance with the NFlow simulation. 
+
+After import, the block ports and parameters follow the variables exposed by the FMU model description. 
+
 
 ## 🔗 See also
 

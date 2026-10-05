@@ -1,0 +1,35 @@
+<svg width="859.52" height="517.12" viewBox="0 0 1343 808" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1343" height="808" fill="#ffffff"/>
+<rect x="0" y="0" width="1342.19" height="807.812" fill="rgba(255,255,255,1.000000)"/>
+<polygon points="174.219,717.969 1213.28,717.969 1213.28,60.1562 174.219,60.1562 " fill="rgba(255,255,255,1.000000)"/>
+<polygon points="173.438,718.75 692.969,718.75 692.969,389.844 173.438,389.844 " fill="rgba(51,122,252,1.000000)"/>
+<polygon points="692.969,718.75 1212.5,718.75 1212.5,389.844 692.969,389.844 " fill="rgba(61,38,168,1.000000)"/>
+<polygon points="173.438,389.844 692.969,389.844 692.969,60.9375 173.438,60.9375 " fill="rgba(51,122,252,1.000000)"/>
+<polygon points="692.969,389.844 1212.5,389.844 1212.5,60.9375 692.969,60.9375 " fill="rgba(249,250,20,1.000000)"/>
+<polyline points="173.438,718.75 692.969,718.75 692.969,389.844 173.438,389.844 173.438,718.75 " fill="none" stroke="rgba(32,32,32,1.000000)" stroke-width="1.04167"/>
+<polyline points="692.969,718.75 1212.5,718.75 1212.5,389.844 692.969,389.844 692.969,718.75 " fill="none" stroke="rgba(32,32,32,1.000000)" stroke-width="1.04167"/>
+<polyline points="173.438,389.844 692.969,389.844 692.969,60.9375 173.438,60.9375 173.438,389.844 " fill="none" stroke="rgba(32,32,32,1.000000)" stroke-width="1.04167"/>
+<polyline points="692.969,389.844 1212.5,389.844 1212.5,60.9375 692.969,60.9375 692.969,389.844 " fill="none" stroke="rgba(32,32,32,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="717.969" x2="1213.28" y2="717.969" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="717.969" x2="174.219" y2="60.1562" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="717.969" x2="174.219" y2="707.031" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="433.594" y1="717.969" x2="433.594" y2="707.031" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="694.531" y1="717.969" x2="694.531" y2="707.031" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="953.906" y1="717.969" x2="953.906" y2="707.031" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="1213.28" y1="717.969" x2="1213.28" y2="707.031" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<text x="168.425" y="742.171" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">0</text>
+<text x="427.8" y="742.171" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1</text>
+<text x="687.175" y="742.171" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2</text>
+<text x="946.55" y="742.171" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">3</text>
+<text x="1207.49" y="742.171" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4</text>
+<line x1="174.219" y1="717.969" x2="185.156" y2="717.969" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="553.906" x2="185.156" y2="553.906" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="388.281" x2="185.156" y2="388.281" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="224.219" x2="185.156" y2="224.219" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<line x1="174.219" y1="60.1562" x2="185.156" y2="60.1562" stroke="rgba(33,33,33,1.000000)" stroke-width="1.04167"/>
+<text x="147.046" y="722.929" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">0</text>
+<text x="147.046" y="558.866" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1</text>
+<text x="147.046" y="394.804" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2</text>
+<text x="147.046" y="230.741" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">3</text>
+<text x="147.046" y="65.1164" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4</text>
+</svg>

@@ -18,6 +18,7 @@ Hadamard matrix
 
 ## 📄 Description
 
+
 <b>H = hadamard(n)</b> returns the Hadamard Matrix of order<b>n</b>.
 
 ## 📚 Bibliography
@@ -26,17 +27,20 @@ https://en.wikipedia.org/wiki/Hadamard_matrix , https://mathworld.wolfram.com/Ha
 
 ## 💡 Example
 
+
+
 ```matlab
 H = hadamard(4)
 ```
 
+
 ## 🔗 See also
 
-[hankel](../../elementary_functions/hankel.md), [toeplitz](../../elementary_functions/toeplitz.md).
+[hankel](../../elementary_functions/6_matrix_generation/hankel.md), [toeplitz](../../elementary_functions/6_matrix_generation/toeplitz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

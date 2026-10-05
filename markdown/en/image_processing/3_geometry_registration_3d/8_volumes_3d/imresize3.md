@@ -23,7 +23,8 @@ Resize 3-D volume
 
 ## 📄 Description
 
-<b>imresize3</b> resizes volumetric image data by a scalar scale factor or to an explicit three-element output size.
+
+<b>imresize3</b> resizes volumetric image data by a scalar scale factor or to an explicit three-element output size. 
 
 The linear method uses separable trilinear interpolation. The nearest method uses nearest-neighbor sampling and preserves logical volumes exactly.
 
@@ -39,8 +40,8 @@ figure;
 imshow(B(:, :, 16), []);
 title('Resized central slice');
 ```
-
 <img src="imresize3_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -48,7 +49,7 @@ title('Resized central slice');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

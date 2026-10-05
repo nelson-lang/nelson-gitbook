@@ -26,13 +26,16 @@ Ligne constante horizontale.
 
 ## 📄 Description
 
-<b>yline(yvalue)</b> trace une ligne horizontale à la valeur <b>yvalue</b>sur les axes courants. La ligne occupe toute la largeur des axes.
 
-Utilisez un <b>LineSpec</b> pour définir le style et la couleur de la ligne, et un <b>label</b> pour l'annoter.
+<b>yline(yvalue)</b> trace une ligne horizontale à la valeur <b>yvalue</b>sur les axes courants. La ligne occupe toute la largeur des axes. 
+
+Utilisez un <b>LineSpec</b> pour définir le style et la couleur de la ligne, et un <b>label</b> pour l'annoter. 
 
 Lorsque <b>yvalue</b> est un vecteur, une ligne horizontale est créée pour chaque valeur.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -41,6 +44,7 @@ yline(50, '-.b', 'mean');
 
 ```
 
+
 ```matlab
 f = figure();
 plot(1:10, sin(1:10));
@@ -48,14 +52,15 @@ yline([-1 0 1], 'Color', [0 0 1]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [xline](../../../graphics/1_plots/1_line_plots/xline.md), [line](../../../graphics/1_plots/1_line_plots/line.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

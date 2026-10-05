@@ -18,11 +18,14 @@ Détermine si un motif correspond aux chaînes.
 
 ## 📄 Description
 
-<b>matches</b> détermine si le motif correspond aux chaînes.
+
+<b>matches</b> détermine si le motif correspond aux chaînes. 
 
 Si <b>str</b> est un tableau catégoriel, <b>matches</b> teste le nom de catégorie de chaque élément et renvoie un tableau logique de même taille. Les éléments non définis renvoient <b>false</b>. <b>pattern</b> ne peut pas être catégoriel.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 matches("Nelson", 'nelSon')
@@ -31,7 +34,6 @@ str = ["yellow", "green", "blue", "brown"];
 R = matches(str, ["yellow", "Brown"], 'IgnoreCase', true);
 
 ```
-
 Recherche de motif sur les noms de catégorie d'un tableau catégoriel.
 
 ```matlab
@@ -39,15 +41,16 @@ C = categorical({'winter storm', 'fire', 'Thunder Storm', ''});
 tf = matches(C, "FIRE", 'IgnoreCase', true)
 ```
 
+
 ## 🔗 Voir aussi
 
-[strcmp](../../string/strcmp.md), [categorical](../../categorical/categorical.md).
+[strcmp](../../string/8_compare_text/strcmp.md), [categorical](../../categorical/categorical.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                               |
-| ------- | -------------------------------------------- |
-| 1.0.0   | version initiale                             |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | tableau catégoriel accepté comme entrée str. |
 
 <!--

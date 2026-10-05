@@ -22,6 +22,7 @@ Set or query bubble size data limits.
 
 ## 📄 Description
 
+
 <b>bubblelim</b> controls the data limits used to map <b>SizeData</b> values to rendered bubble diameters.
 
 ## 💡 Example
@@ -33,13 +34,12 @@ figure();
 bubblechart(1:3, [2 4 6], [10 100 1000]);
 bubblelim([10 1000]);
 ```
-
 <img src="bubblelim_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
 [bubblechart](../../../graphics/1_plots/4_data_distribution_plots/bubblechart.md), [bubblesize](../../../graphics/1_plots/4_data_distribution_plots/bubblesize.md).
-
 <!--
 ## 👤 Author
 

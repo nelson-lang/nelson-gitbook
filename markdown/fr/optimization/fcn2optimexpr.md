@@ -19,15 +19,18 @@ Convertir une fonction en expression d'optimization.
 
 ## 📄 Description
 
-<b>fcn2optimexpr</b> convertit une fonction en expression d'optimization, afin que les fonctions qui ne peuvent pas être composées à partir des opérateurs élémentaires pris en charge puissent quand même servir d'objectif ou de contrainte dans un modèle problem-based.
+
+<b>fcn2optimexpr</b> convertit une fonction en expression d'optimization, afin que les fonctions qui ne peuvent pas être composées à partir des opérateurs élémentaires pris en charge puissent quand même servir d'objectif ou de contrainte dans un modèle problem-based. 
 
 Lors de l'évaluation de l'expression, chaque argument d'entrée est évalué pour les valeurs courantes des variables, puis <b>fcn</b> est appelée sur les valeurs numériques obtenues.
 
 ## Fonction(s) utilisée(s)
 
+
     optimvar
     optimexpr
     evaluate
+  
 
 ## 📚 Bibliographie
 
@@ -43,7 +46,6 @@ expr = fcn2optimexpr(@(v) sin(v), x);
 value = evaluate(expr, struct('x', pi / 2))
 
 ```
-
 Utiliser une fonction convertie comme objectif.
 
 ```matlab
@@ -53,14 +55,15 @@ prob = optimproblem('Objective', fcn2optimexpr(@(v) (v - 3) .^ 2 + 1, x));
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimexpr](../optimization/optimexpr.md), [optimvar](../optimization/optimvar.md), [evaluate](../optimization/evaluate.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -15,27 +15,30 @@ Détermine quels caractères sont des espaces.
 - res - le tableau logique
 
 ## 📄 Description
-
 <b>isletter</b> détermine quels caractères sont des espaces.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 isspace('Nel Son')
 ```
 
+
 ```matlab
 isspace("六書 six writings")
 ```
 
+
 ## 🔗 Voir aussi
 
-[isletter](../../string/isletter.md).
+[isletter](../../string/2_text_properties/isletter.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.3.0   | version initiale |
 
 <!--

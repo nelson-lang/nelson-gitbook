@@ -16,16 +16,20 @@ Convertit en entier non signé 8 bits.
 
 ## 📄 Description
 
-<b>uint8</b> convertit la valeur en type entier non signé 8 bits.
+
+<b>uint8</b> convertit la valeur en type entier non signé 8 bits. 
 
 La valeur est arrondie à la valeur uint8 la plus proche lors de la conversion. Une valeur supérieure ou inférieure à la plage pour la classe uint8 est mappée vers l'une des extrémités de la plage [0, 255].
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = [1 256 -120 127 -1 215]
 B = uint8(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ B = uint8(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,13 +16,17 @@ Returns canonical full path.
 
 ## 📄 Description
 
+
 <b>fullpath(path)</b> returns full path from a relative path.
 
 ## 💡 Example
 
+
+
 ```matlab
 fullpath([nelsonroot(), '/../toto'])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ fullpath([nelsonroot(), '/../toto'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

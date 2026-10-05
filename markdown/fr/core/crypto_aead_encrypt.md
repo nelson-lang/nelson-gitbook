@@ -20,7 +20,8 @@ Chiffrement authentifié (XChaCha20-Poly1305).
 
 ## 📄 Description
 
-<b>crypto.aead.encrypt</b> chiffre et authentifie un message avec XChaCha20-Poly1305, un schéma de chiffrement authentifié à clé de 256 bits et nonce de 192 bits.
+
+<b>crypto.aead.encrypt</b> chiffre et authentifie un message avec XChaCha20-Poly1305, un schéma de chiffrement authentifié à clé de 256 bits et nonce de 192 bits. 
 
 Le nonce doit être unique pour chaque message chiffré avec la même clé ; un nonce répété casse la sécurité. Générez-le avec <b>crypto.random(24)</b> et stockez-le à côté du message chiffré (il n'est pas secret).
 
@@ -43,14 +44,15 @@ boxed = crypto.aead.encrypt(key, nonce, 'a secret message');
 char(crypto.aead.decrypt(key, nonce, boxed))
 ```
 
+
 ## 🔗 Voir aussi
 
-[crypto.aead.decrypt](../core/crypto.aead.decrypt.md), [crypto.random](../core/crypto.random.md), [crypto.x25519.shared](../core/crypto.x25519.shared.md).
+[crypto.aead.decrypt](../core/crypto_aead_decrypt.md), [crypto.random](../core/crypto_random.md), [crypto.x25519.shared](../core/crypto_x25519_shared.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -15,9 +15,12 @@ Vérifie que la valeur est un vecteur colonne ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeColumn</b> vérifie que la valeur est un vecteur colonne ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeColumn(true)
@@ -25,15 +28,16 @@ mustBeColumn([])
 mustBeColumn(ones(3, 2, 4))
 ```
 
+
 ## 🔗 Voir aussi
 
-[iscolumn](../elementary_functions/iscolumn.md).
+[iscolumn](../elementary_functions/7_indexing_dimensions/iscolumn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.10.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.10.0   | version initiale |
 
 <!--
 ## 👤 Auteur

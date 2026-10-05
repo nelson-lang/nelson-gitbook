@@ -1,15 +1,15 @@
-# QObject_undefine
+# QObject\_undefine
 
 Undefine a dynamic property of a QObject handle.
 
 ## 📝 Syntax
 
-- QObject_undefine(h, property_name)
+- QObject\_undefine(h, property\_name)
 
 ## 📥 Input argument
 
 - h - an QObject handle.
-- property_name - a string : dynamic property name.
+- property\_name - a string : dynamic property name.
 
 ## 📤 Output argument
 
@@ -17,9 +17,12 @@ Undefine a dynamic property of a QObject handle.
 
 ## 📄 Description
 
+
 Undefine a dynamic property of a QObject handle.
 
 ## 💡 Example
+
+
 
 ```matlab
 h = errordlg()
@@ -30,13 +33,14 @@ QObject_undefine(h, 'myProp')
 get(h, 'myProp')
 ```
 
+
 ## 🔗 See also
 
 [QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

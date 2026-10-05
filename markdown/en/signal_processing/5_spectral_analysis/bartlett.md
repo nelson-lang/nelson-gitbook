@@ -16,6 +16,7 @@ Bartlett window.
 
 ## 📄 Description
 
+
 <b>c = bartlett(m)</b> an L-point symmetric Bartlett window.
 
 ## 📚 Bibliography
@@ -24,17 +25,20 @@ Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Pr
 
 ## 💡 Example
 
+
+
 ```matlab
 c = bartlett(8)
 ```
 
+
 ## 🔗 See also
 
-[hamming](../../signal_processing/hamming.md), [hann](../../signal_processing/hann.md).
+[hamming](../../signal_processing/5_spectral_analysis/hamming.md), [hann](../../signal_processing/5_spectral_analysis/hann.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

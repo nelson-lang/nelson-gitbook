@@ -26,7 +26,8 @@ Set or get angular limits for polar axes.
 
 ## 📄 Description
 
-<b>thetalim</b> gets or sets angular limits for the current polar axes. Unlike <b>polarplot</b> data angles, angular limits are expressed in degrees.
+
+<b>thetalim</b> gets or sets angular limits for the current polar axes. Unlike <b>polarplot</b> data angles, angular limits are expressed in degrees. 
 
 Setting numeric angular limits switches angular limit mode to <b>manual</b>.
 
@@ -43,13 +44,14 @@ lims = thetalim()
 
 ```
 
+
 ## 🔗 See also
 
 [thetaticks](../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.md), [thetaticklabels](../../../graphics/3_labels_styling/1_axes_appearance/thetaticklabels.md), [rlim](../../../graphics/3_labels_styling/1_axes_appearance/rlim.md), [polarplot](../../../graphics/1_plots/2_polar_plots/polarplot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

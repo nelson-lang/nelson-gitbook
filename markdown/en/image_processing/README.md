@@ -1,16 +1,29 @@
 # Image Processing functions
 
+
+    
 The Image Processing module provides operations for manipulating images and volumes, including type conversion, color conversion, contrast adjustment, filtering, morphology, connected components, region measurements, geometric transforms, resizing, rotation, feature detection, foundational 3-D processing, and image registration.
 
+    
 Help pages are grouped into topic chapters: image basics, image analysis and segmentation, and geometry, registration, and 3-D processing.
+
+  
 
 ## Image Basics
 
+
+    
 Functions for image classes, color spaces, contrast adjustment, thresholding, filtering, padding, and edge detection.
+
+  
 
 ### Image Types and Color
 
+
+    
 Functions for image type conversion, color space conversion, and indexed image conversion.
+
+  
 
 #### Functions
 
@@ -30,7 +43,11 @@ Functions for image type conversion, color space conversion, and indexed image c
 
 ### Contrast and Thresholding
 
+
+    
 Functions for contrast adjustment, threshold selection, histogram analysis, and binary image creation.
+
+  
 
 #### Functions
 
@@ -44,7 +61,11 @@ Functions for contrast adjustment, threshold selection, histogram analysis, and 
 
 ### Filtering and Edges
 
+
+    
 Functions for spatial filtering, Gaussian and median filtering, padding, filter kernels, and edge detection.
+
+  
 
 #### Functions
 
@@ -58,11 +79,19 @@ Functions for spatial filtering, Gaussian and median filtering, padding, filter 
 
 ## Image Analysis and Segmentation
 
+
+    
 Functions for morphology, connected components, boundary tracing, region measurements, reconstruction, and segmentation.
+
+  
 
 ### Morphology
 
+
+    
 Functions for binary and grayscale morphological operations, object cleanup, border cleanup, and structuring elements.
+
+  
 
 #### Functions
 
@@ -81,7 +110,11 @@ Functions for binary and grayscale morphological operations, object cleanup, bor
 
 ### Regions and Boundaries
 
+
+    
 Functions for connected components, labels, region measurements, selection, and boundary tracing.
+
+  
 
 #### Functions
 
@@ -95,7 +128,11 @@ Functions for connected components, labels, region measurements, selection, and 
 
 ### Segmentation
 
+
+    
 Functions for segmenting images using region growing, active contours, morphological reconstruction, h-minima/maxima, regional extrema, imposed minima, and watershed transforms.
+
+  
 
 #### Functions
 
@@ -113,7 +150,11 @@ Functions for segmenting images using region growing, active contours, morpholog
 
 ### Feature Detection
 
+
+    
 Functions for corner metrics and local feature point detection.
+
+  
 
 #### Functions
 
@@ -123,11 +164,19 @@ Functions for corner metrics and local feature point detection.
 
 ## Geometry, Registration, and 3-D
 
+
+    
 Functions for geometric transforms, spatial referencing, image registration, volumetric filtering, resizing, and 3-D measurements.
+
+  
 
 ### Geometric Transforms
 
+
+    
 Functions and objects for cropping, resizing, rotation, translation, spatial referencing, and geometric transforms in 2-D and foundational 3-D workflows.
+
+  
 
 #### Functions
 
@@ -155,7 +204,11 @@ Functions and objects for cropping, resizing, rotation, translation, spatial ref
 
 ### 3-D Volumes
 
+
+    
 Functions for filtering and processing volumetric image data.
+
+  
 
 #### Functions
 
@@ -165,8 +218,13 @@ Functions for filtering and processing volumetric image data.
 
 ### Image Registration
 
+
+    
 Guides and entry points for aligning images, estimating registration transforms, and applying registered outputs.
+
+  
 
 #### Functions
 
 - [image_registration](3_geometry_registration_3d/9a_image_registration/image_registration.md) - Image registration task overview.
+

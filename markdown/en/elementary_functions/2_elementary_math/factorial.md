@@ -16,14 +16,18 @@ Factorial function
 
 ## 📄 Description
 
+
 <b>factorial</b> computes the factorial function: the product of all integers values: 1 \* 2 \* ... \* M
 
 ## 💡 Example
+
+
 
 ```matlab
 R = factorial([1:10])
 R = factorial(int8(4))
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ R = factorial(int8(4))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

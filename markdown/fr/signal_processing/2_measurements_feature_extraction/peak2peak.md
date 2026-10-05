@@ -21,9 +21,12 @@ Ecart entre maximum et minimum.
 
 ## 📄 Description
 
+
 <b>peak2peak</b> calcule max(X) - min(X).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ y = peak2peak([1 4 -2]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[rms](../../signal_processing/rms.md).
+[rms](../../signal_processing/2_measurements_feature_extraction/rms.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,24 +20,28 @@ Shift phase angles to remove jumps.
 
 ## 📄 Description
 
-<b>unwrap</b> corrects the radian phase angles in <b>p</b> by adding multiples of 2\*pi whenever the jump between consecutive elements is larger than <b>tol</b> (pi by default).
+
+<b>unwrap</b> corrects the radian phase angles in <b>p</b> by adding multiples of 2\*pi whenever the jump between consecutive elements is larger than <b>tol</b> (pi by default). 
 
 For a matrix, each column is unwrapped independently unless a dimension is given.
 
 ## 💡 Example
+
+
 
 ```matlab
 q = unwrap([0 3*pi/2 3*pi])
 
 ```
 
+
 ## 🔗 See also
 
-[angle](../../elementary_functions/angle.md), [mod](../../elementary_functions/mod.md).
+[angle](../../elementary_functions/3_complex_numbers/angle.md), [mod](../../elementary_functions/2_elementary_math/mod.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

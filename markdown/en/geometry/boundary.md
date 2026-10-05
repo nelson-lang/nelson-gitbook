@@ -13,7 +13,8 @@ Boundary facets of a set of points
 
 ## 📄 Description
 
-<b>boundary</b> returns boundary facets for planar or spatial points.
+
+<b>boundary</b> returns boundary facets for planar or spatial points. 
 
 When called without output, it plots the boundary.
 
@@ -27,14 +28,15 @@ K = boundary(P);
 boundary(P)
 ```
 
+
 ## 🔗 See also
 
 [alphaShape](../geometry/alphaShape.md), [convhull](../geometry/convhull.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Initial version. |
 
 <!--

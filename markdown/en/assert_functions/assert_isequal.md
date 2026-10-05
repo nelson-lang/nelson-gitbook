@@ -1,13 +1,13 @@
-# assert_isequal
+# assert\_isequal
 
 Historical name for asserts.isequal.
 
 ## 📝 Syntax
 
-- assert_isequal(computed, expected)
-- assert_isequal(computed, expected, message)
-- res = assert_isequal(computed, expected)
-- [res, msg] = assert_isequal(computed, expected)
+- assert\_isequal(computed, expected)
+- assert\_isequal(computed, expected, message)
+- res = assert\_isequal(computed, expected)
+- [res, msg] = assert\_isequal(computed, expected)
 
 ## 📥 Input argument
 
@@ -22,7 +22,8 @@ Historical name for asserts.isequal.
 
 ## 📄 Description
 
-<b>assert_isequal</b> is kept for compatibility.
+
+<b>assert\_isequal</b> is kept for compatibility. 
 
 For complete documentation, use [asserts.isequal](../assert_functions/asserts.isequal.md).
 
@@ -37,22 +38,22 @@ Historical call
 ```matlab
 assert_isequal([1 2], [1 2]);
 ```
-
 Canonical call
 
 ```matlab
 asserts.isequal([1 2], [1 2]);
 ```
 
+
 ## 🔗 See also
 
-[asserts.isequal](../assert_functions/asserts.isequal.md), [isequaln](../elementary_functions/isequaln.md).
+[asserts.isequal](../assert_functions/asserts.isequal.md), [isequaln](../elementary_functions/7_indexing_dimensions/isequaln.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                    |
-| ------- | ------------------------------------------------- |
-| 1.0.0   | initial version                                   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | documented as historical name for asserts.isequal |
 
 <!--

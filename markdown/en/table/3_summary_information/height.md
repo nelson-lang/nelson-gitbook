@@ -16,11 +16,14 @@ Number of table rows
 
 ## 📄 Description
 
-<b>H = height(T)</b> returns the number of rows in the table <b>T</b>.
+
+<b>H = height(T)</b> returns the number of rows in the table <b>T</b>. 
 
 The function <b>height(T)</b> is equivalent to <b>size(T, 1)</b>, which also provides the number of rows in the table.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table();
@@ -31,13 +34,14 @@ height(T)
 
 ```
 
+
 ## 🔗 See also
 
-[width](../../table/width.md), [size](../../elementary_functions/size.md), [table](../../table/table.md).
+[width](../../table/3_summary_information/width.md), [size](../../elementary_functions/7_indexing_dimensions/size.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.8.0   | initial version |
 

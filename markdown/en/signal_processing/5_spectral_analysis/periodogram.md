@@ -25,9 +25,12 @@ Power spectral density estimate using a periodogram.
 
 ## 📄 Description
 
+
 <b>periodogram</b> estimates signal power distribution over frequency.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -35,13 +38,14 @@ Power spectral density estimate using a periodogram.
 
 ```
 
+
 ## 🔗 See also
 
-[pwelch](../../signal_processing/pwelch.md), [spectrogram](../../signal_processing/spectrogram.md).
+[pwelch](../../signal_processing/5_spectral_analysis/pwelch.md), [spectrogram](../../signal_processing/6_time_frequency_analysis/spectrogram.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

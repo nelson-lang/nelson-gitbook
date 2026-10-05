@@ -19,6 +19,7 @@ Crée un bouton rotatif (knob), continu ou discret.
 
 ## 📄 Description
 
+
 <b>kb = uiknob</b> crée un bouton rotatif continu (<b>Value</b>/<b>Limits</b>/graduations/<b>ValueChangingFcn</b>) ; <b>uiknob(parent, 'discrete')</b> crée un bouton rotatif discret basé sur <b>Items</b>/<b>ItemsData</b>/<b>ValueIndex</b>.
 
 ## 💡 Exemples
@@ -35,7 +36,6 @@ dk.Position = [310 70 260 220];
 dk.Value = 'Medium';
 drawnow();
 ```
-
 <img src="uiknob_example.svg" align="middle"/>
 uiknob
 
@@ -47,13 +47,14 @@ dk = uiknob(f, 'discrete', 'Items', {'Bas', 'Haut'});
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,0 +1,44 @@
+#import "nelson_help.typ": *
+
+= dlgenerategateway <dynamic_link:dlgenerategateway>
+
+Génère une gateway C++
+
+== Syntaxe
+
+- #raw("dlgenerategateway(destinationdir, module_name, builtin_table)");
+
+== Argument d'entrée
+
+/ destinationdir: a string: destination directory where is generated the gateway file.
+/ module\_name: a string: module name exposed in Nelson.
+/ builtin\_table: a cell composed of cell with {name exposed in Nelson, nb output arguments, nb input arguments}
+
+== Description
+
+#strong[dlgenerategateway]; génère une gateway C++ utilisée par#strong[addmodule];.
+
+
+== Exemple
+
+See module skeleton for example
+
+``````matlab
+dlgenerategateway(tempdir(), 'module_skeleton', {{'cpp_sum', 1, 2}; {'cpp_sub', 2, 3}});
+text = fileread([tempdir(), 'Gateway.cpp'])
+``````
+
+
+== Voir aussi
+
+#nlink(<modules_manager:addmodule>)[addmodule];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

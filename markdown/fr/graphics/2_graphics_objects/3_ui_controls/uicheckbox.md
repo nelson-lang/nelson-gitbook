@@ -19,6 +19,7 @@ Crée une case à cocher.
 
 ## 📄 Description
 
+
 <b>cbx = uicheckbox</b> crée une case à cocher avec une <b>Value</b> logique, un libellé <b>Text</b>, <b>WordWrap</b>, les polices et un callback <b>ValueChangedFcn</b> (event : <b>Value</b>, <b>PreviousValue</b>).
 
 ## 💡 Exemples
@@ -30,7 +31,6 @@ f = uifigure('Visible', 'off', 'Name', 'Check box', 'Position', [100 100 420 260
 cb = uicheckbox(f, 'Text', 'Enable alerts', 'Value', true, 'Position', [130 120 170 24]);
 drawnow();
 ```
-
 <img src="uicheckbox_example.svg" align="middle"/>
 uicheckbox
 
@@ -41,14 +41,15 @@ cbx = uicheckbox(f, 'Text', 'Accepter', 'Value', true, 'ValueChangedFcn', @(s, e
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

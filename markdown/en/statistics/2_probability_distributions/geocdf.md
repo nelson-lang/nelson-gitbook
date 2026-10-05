@@ -19,22 +19,26 @@ Geometric cumulative distribution function
 
 ## 📄 Description
 
+
 <b>geocdf</b> evaluates geometric cumulative probabilities element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 2 5];
 y = geocdf(x, 0.25);
 ```
 
+
 ## 🔗 See also
 
-[geopdf](../../statistics/geopdf.md), [geoinv](../../statistics/geoinv.md), [geornd](../../statistics/geornd.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md), [geornd](../../statistics/2_probability_distributions/geornd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

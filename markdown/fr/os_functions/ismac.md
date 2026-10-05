@@ -12,9 +12,12 @@ Vérifie si la version est pour la plateforme macOS.
 
 ## 📄 Description
 
+
 <b>ismac</b> vérifie si la plateforme est macOS.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 if ismac
@@ -24,14 +27,15 @@ else
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [isunix](../os_functions/isunix.md), [ispc](../os_functions/ispc.md), [iswasm](../os_functions/iswasm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

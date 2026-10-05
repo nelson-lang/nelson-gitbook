@@ -14,9 +14,10 @@ Record audio to audiorecorder object.
 
 ## 📄 Description
 
-<b>record(recorderObj)</b> starts recording audio from an input device using the specified <b>audiorecorder</b> object.
 
-<b>record(recorderObj, length)</b> records audio for the specified number of seconds.
+<b>record(recorderObj)</b> starts recording audio from an input device using the specified <b>audiorecorder</b> object. 
+
+<b>record(recorderObj, length)</b> records audio for the specified number of seconds. 
 
 The <b>audiorecorder</b> object defines the sample rate, bit depth, and other properties of the recording.
 
@@ -31,8 +32,9 @@ myVoice.StartFcn = 'disp(''Start speaking.'')';
 myVoice.StopFcn = 'disp(''End of recording.'')';
 record(myVoice, 5);
 play(myVoice);
-
+      
 ```
+
 
 ## 🔗 See also
 
@@ -40,9 +42,9 @@ play(myVoice);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

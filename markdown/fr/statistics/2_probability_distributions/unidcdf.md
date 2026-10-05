@@ -17,19 +17,23 @@ Fonction de repartition uniforme discrete
 
 ## 📄 Description
 
+
 <b>unidcdf</b> calcule les probabilites cumulees de la loi uniforme discrete sur les entiers de 1 a <b>n</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:6;
 p = unidcdf(x, 5);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

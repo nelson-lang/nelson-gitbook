@@ -30,29 +30,30 @@ Lisse des donnees bruitees.
 
 ## 📄 Description
 
-<b>smoothdata</b> lisse des donnees bruitees dans un vecteur ou dans les colonnes d'une matrice.
 
-Par defaut, <b>smoothdata</b> opere le long de la premiere dimension non singleton avec la methode <b>'movmean'</b> et une longueur de fenetre heuristique choisie a partir des donnees.
+<b>smoothdata</b> lisse des donnees bruitees dans un vecteur ou dans les colonnes d'une matrice. 
 
-Les valeurs supportees de <b>method</b> sont :
+Par defaut, <b>smoothdata</b> opere le long de la premiere dimension non singleton avec la methode <b>'movmean'</b> et une longueur de fenetre heuristique choisie a partir des donnees. 
 
-<b>'movmean'</b> : moyenne glissante sur chaque fenetre (par defaut).
+Les valeurs supportees de <b>method</b> sont : 
 
-<b>'movmedian'</b> : mediane glissante sur chaque fenetre.
+<b>'movmean'</b> : moyenne glissante sur chaque fenetre (par defaut). 
 
-<b>'gaussian'</b> : moyenne ponderee glissante avec des poids gaussiens.
+<b>'movmedian'</b> : mediane glissante sur chaque fenetre. 
 
-<b>'lowess'</b> : regression locale avec un polynome de degre un.
+<b>'gaussian'</b> : moyenne ponderee glissante avec des poids gaussiens. 
 
-<b>'loess'</b> : regression locale avec un polynome de degre deux.
+<b>'lowess'</b> : regression locale avec un polynome de degre un. 
 
-<b>'sgolay'</b> : filtre polynomial de Savitzky-Golay (utiliser <b>'Degree'</b> pour fixer le degre du polynome, 2 par defaut).
+<b>'loess'</b> : regression locale avec un polynome de degre deux. 
 
-Le drapeau <b>'omitnan'</b> (par defaut) ignore les valeurs <b>NaN</b> dans chaque fenetre, tandis que <b>'includenan'</b> les propage.
+<b>'sgolay'</b> : filtre polynomial de Savitzky-Golay (utiliser <b>'Degree'</b> pour fixer le degre du polynome, 2 par defaut). 
 
-<b>'SmoothingFactor'</b> est un scalaire entre 0 et 1 qui regle la longueur de fenetre choisie automatiquement ; des valeurs plus grandes lissent davantage.
+Le drapeau <b>'omitnan'</b> (par defaut) ignore les valeurs <b>NaN</b> dans chaque fenetre, tandis que <b>'includenan'</b> les propage. 
 
-<b>'SamplePoints'</b> est un vecteur de coordonnees d'echantillonnage uniformement espacees ; la fenetre est alors exprimee dans les unites de ces coordonnees.
+<b>'SmoothingFactor'</b> est un scalaire entre 0 et 1 qui regle la longueur de fenetre choisie automatiquement ; des valeurs plus grandes lissent davantage. 
+
+<b>'SamplePoints'</b> est un vecteur de coordonnees d'echantillonnage uniformement espacees ; la fenetre est alors exprimee dans les unites de ces coordonnees. 
 
 Les methodes robustes <b>'rlowess'</b> et <b>'rloess'</b> ne sont pas encore supportees.
 
@@ -64,14 +65,12 @@ moyenne glissante
 A = [1 2 10 4 5];
 B = smoothdata(A, 'movmean', 3)
 ```
-
 lissage gaussien
 
 ```matlab
 A = [1 2 10 4 5];
 B = smoothdata(A, 'gaussian', 3)
 ```
-
 fenetre choisie automatiquement
 
 ```matlab
@@ -79,13 +78,14 @@ A = [1 2 10 4 5];
 [B, window] = smoothdata(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [movmean](../data_analysis/movmean.md), [movmedian](../data_analysis/movmedian.md), [fillmissing](../data_analysis/fillmissing.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

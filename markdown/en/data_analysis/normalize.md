@@ -25,21 +25,25 @@ Normalize data.
 
 ## 📄 Description
 
+
 <b>normalize</b> returns the vectorwise z-score of the data in A (centering by the mean and scaling by the standard deviation). A method and method type can select other normalizations. By default normalize operates along the first array dimension whose size does not equal 1.
 
 ## 💡 Example
+
+
 
 ```matlab
 normalize([1 2 3 4 5])
 ```
 
+
 ## 🔗 See also
 
-[zscore](../statistics/zscore.md), [std](../statistics/std.md).
+[zscore](../statistics/1_descriptive_statistics_visualization/zscore.md), [std](../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

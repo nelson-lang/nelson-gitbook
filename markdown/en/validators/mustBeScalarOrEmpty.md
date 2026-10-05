@@ -15,16 +15,20 @@ Checks that value is scalar or empty or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeScalarOrEmpty(true)
 mustBeScalarOrEmpty([])
 mustBeScalarOrEmpty([true false])
-
+  
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ mustBeScalarOrEmpty([true false])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

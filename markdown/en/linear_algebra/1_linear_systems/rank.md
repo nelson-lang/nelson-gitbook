@@ -18,22 +18,26 @@ Rank of matrix.
 
 ## 📄 Description
 
+
 <b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).
 
 ## 💡 Example
+
+
 
 ```matlab
 X = rand(10, 10);
 r = rank(X)
 ```
 
+
 ## 🔗 See also
 
-[svd](../../linear_algebra/svd.md).
+[svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

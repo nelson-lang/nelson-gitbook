@@ -21,7 +21,8 @@ Verifie qu'une condition logique est fausse.
 
 ## 📄 Description
 
-Forme methode de assert_isfalse.
+
+Forme methode de assert\_isfalse. 
 
 Sans sortie, un echec leve une erreur. Avec sorties, la fonction retourne false et le message d'echec.
 
@@ -32,12 +33,12 @@ Passing condition
 ```matlab
 asserts.isfalse(3 < 2);
 ```
-
 Capture a failure
 
 ```matlab
 [res, msg] = asserts.isfalse(true, 'condition failed');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +46,8 @@ Capture a failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

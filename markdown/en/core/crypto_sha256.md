@@ -4,7 +4,7 @@ SHA-256 checksum (crypto namespace alias).
 
 ## 📝 Syntax
 
-- hexa_hash = crypto.sha256(...)
+- hexa\_hash = crypto.sha256(...)
 
 ## 📥 Input argument
 
@@ -12,11 +12,13 @@ SHA-256 checksum (crypto namespace alias).
 
 ## 📤 Output argument
 
-- hexa_hash - hexadecimal string, same as <b>sha256</b>.
+- hexa\_hash - hexadecimal string, same as <b>sha256</b>.
 
 ## 📄 Description
 
+
 <b>crypto.sha256</b> is an alias of <b>sha256</b> in the <b>crypto</b> namespace (same arguments and same result).
+
 
 ## 🔗 See also
 
@@ -24,7 +26,7 @@ SHA-256 checksum (crypto namespace alias).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -9,14 +9,17 @@ D-optimal design using row exchange.
 
 ## 📄 Description
 
+
 <b>rowexch</b> generates candidates with candgen and selects a D-optimal subset with candexch.
 
 ## Used function(s)
+
 
     candgen
     candexch
     cordexch
     rng
+  
 
 ## 💡 Examples
 
@@ -28,7 +31,6 @@ rng(5);
 dRE
 X
 ```
-
 Use bounded factor levels.
 
 ```matlab

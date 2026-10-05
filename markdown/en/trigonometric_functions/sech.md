@@ -16,14 +16,18 @@ Hyperbolic secant.
 
 ## 📄 Description
 
+
 <b>sech</b> computes the Hyperbolic secant for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = sech(X)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ R = sech(X)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

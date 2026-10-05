@@ -18,9 +18,11 @@ Element-wise left division of timeseries data.
 
 ## 📄 Description
 
+
 <b>ldivide</b> Applies element-wise left division and preserves the time axis from a timeseries input.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([10; 20], [1; 2]);
@@ -29,13 +31,14 @@ out.Data
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

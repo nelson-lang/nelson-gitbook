@@ -19,6 +19,7 @@ Obtenir les valeurs des proprietes de timer.
 
 ## 📄 Description
 
+
 <b>get</b> retourne la valeur d'une propriete de timer nommee. L'appel de <b>get</b> avec seulement un timer scalaire retourne une structure contenant toutes les proprietes du timer, y compris les proprietes en lecture seule comme <b>Running</b>, <b>TasksExecuted</b>, <b>AveragePeriod</b> et <b>InstantPeriod</b>.
 
 ## 💡 Exemples
@@ -33,7 +34,6 @@ delay = get(t, 'StartDelay')
 props = get(t)
 delete(t);
 ```
-
 Lire le nombre de taches terminees apres la fin d'un timer repete.
 
 ```matlab
@@ -47,14 +47,15 @@ executed = get(t, 'TasksExecuted')
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [set](../../time/timer.set.md).
+[timer](../../time/7_timers/timer.md), [set](../../time/7_timers/timer.set.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

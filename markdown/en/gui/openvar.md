@@ -12,29 +12,35 @@ Open variable in the Variable Editor
 
 ## 📄 Description
 
-<b>openvar(varname)</b> opens the variable named<b>varname</b> in Nelson's Variable Editor for graphical inspection and editing.
 
-Any changes made to the variable within the editor are immediately applied to the workspace context.
+<b>openvar(varname)</b> opens the variable named<b>varname</b> in Nelson's Variable Editor for graphical inspection and editing. 
 
-The Variable Editor supports scalars, vectors, matrices, strings, cell arrays, tables and structures. Multidimensional arrays can be viewed but may have limited edit capabilities.
+Any changes made to the variable within the editor are immediately applied to the workspace context. 
 
-You can also open a variable by double-clicking it in the Variables panel.
+The Variable Editor supports scalars, vectors, matrices, strings, cell arrays, tables and structures. Multidimensional arrays can be viewed but may have limited edit capabilities. 
 
-The editor synchronizes automatically with the current workspace.
+You can also open a variable by double-clicking it in the Variables panel. 
 
-Editable Content: In structures (struct), cells (cell), and tables (table), only scalar elements can be edited.
+The editor synchronizes automatically with the current workspace. 
 
-Nelson provides full clipboard integration with spreadsheet applications like <b>Microsoft Excel</b>, <b>LibreOffice Calc</b>, and <b>OpenOffice Calc</b>.
+Editable Content: In structures (struct), cells (cell), and tables (table), only scalar elements can be edited. 
 
-You can copy variables from the Variable Editor and paste them directly into these applications, and vice versa.
+Nelson provides full clipboard integration with spreadsheet applications like <b>Microsoft Excel</b>, <b>LibreOffice Calc</b>, and <b>OpenOffice Calc</b>. 
+
+You can copy variables from the Variable Editor and paste them directly into these applications, and vice versa. 
+
 
 <img src="openvar.png" align="middle"/>
 
+
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6]; openvar("A");
 ```
+
 
 ## 🔗 See also
 
@@ -42,9 +48,9 @@ A = [1 2 3; 4 5 6]; openvar("A");
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

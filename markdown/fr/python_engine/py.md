@@ -14,13 +14,16 @@ Proxy d'espace de noms Python.
 
 ## 📄 Description
 
-py renvoie un objet proxy utilise pour acceder aux fonctions integrees et aux modules Python depuis Nelson.
+
+py renvoie un objet proxy utilise pour acceder aux fonctions integrees et aux modules Python depuis Nelson. 
 
 Utilisez l'acces par attribut sur l'objet renvoye pour importer des modules ou appeler des fonctions Python.
 
 ## Fonction(s) utilisée(s)
 
+
     pyenv
+  
 
 ## 💡 Exemple
 
@@ -31,14 +34,15 @@ p = py();
 pyValue = p.int(42)
 ```
 
+
 ## 🔗 Voir aussi
 
 [pyenv](../python_engine/pyenv.md), [pyrun](../python_engine/pyrun.md), [pyrunfile](../python_engine/pyrunfile.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

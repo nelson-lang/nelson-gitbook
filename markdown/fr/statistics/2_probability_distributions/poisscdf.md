@@ -18,9 +18,12 @@ Fonction de repartition de Poisson
 
 ## 📄 Description
 
+
 <b>poisscdf</b> calcule par defaut les probabilites de queue inferieure de Poisson et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:10;
@@ -28,14 +31,15 @@ p = poisscdf(x, 4);
 q = poisscdf(x, 4, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[poisspdf](../../statistics/poisspdf.md), [poissinv](../../statistics/poissinv.md).
+[poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poissinv](../../statistics/2_probability_distributions/poissinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -10,23 +10,24 @@ Command-line Nelson code analyzer.
 
 ## 📄 Description
 
-<b>nelson-lint</b> analyzes Nelson source files and folders from the command line.
 
-<b>--format</b> selects text, JSON, or SARIF output.
+<b>nelson-lint</b> analyzes Nelson source files and folders from the command line. 
 
-<b>--config</b> loads a version 2 JSON configuration file.
+<b>--format</b> selects text, JSON, or SARIF output. 
 
-<b>--include-subfolders</b> enables recursive folder analysis.
+<b>--config</b> loads a version 2 JSON configuration file. 
 
-<b>--fail-on</b> selects the minimum severity that produces exit code <b>1</b>. <b>--deny warnings</b> is kept as an alias for <b>--fail-on warning</b>.
+<b>--include-subfolders</b> enables recursive folder analysis. 
 
-<b>--stdin</b> analyzes source text from standard input. Use <b>--stdin-filename</b> to choose the diagnostic filename.
+<b>--fail-on</b> selects the minimum severity that produces exit code <b>1</b>. <b>--deny warnings</b> is kept as an alias for <b>--fail-on warning</b>. 
 
-<b>--quiet</b> suppresses standard output, and <b>--output</b> writes diagnostics to a file.
+<b>--stdin</b> analyzes source text from standard input. Use <b>--stdin-filename</b> to choose the diagnostic filename. 
 
-<b>--fix</b> applies non-overlapping safe text edits carried by diagnostics, then analyzes the files again before reporting the final diagnostics. Safe fixes include whitespace cleanup and other analyzer fixes whose ranges are exact.
+<b>--quiet</b> suppresses standard output, and <b>--output</b> writes diagnostics to a file. 
 
-<b>--fix-dry-run</b> and <b>--diff</b> show the safe edits without changing files.
+<b>--fix</b> applies non-overlapping safe text edits carried by diagnostics, then analyzes the files again before reporting the final diagnostics. Safe fixes include whitespace cleanup and other analyzer fixes whose ranges are exact. 
+
+<b>--fix-dry-run</b> and <b>--diff</b> show the safe edits without changing files. 
 
 Exit code <b>0</b> means no remaining diagnostics, <b>1</b> means diagnostics remain, and <b>2</b> means usage, input, or internal error.
 
@@ -42,9 +43,10 @@ Run the analyzer recursively with fixes enabled.
 nelson-lint --include-subfolders true --fix --config nelson-lint.json modules/interpreter/functions
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

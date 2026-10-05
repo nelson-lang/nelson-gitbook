@@ -17,6 +17,7 @@ Convert indexed image to RGB using a colormap.
 
 ## 📄 Description
 
+
 Convert indexed image to RGB using the first three columns of a colormap. Integer and logical indexed images use zero-based indices. Double and single indexed images use one-based indices. Integer-valued indices outside the colormap range are clamped to the nearest valid row. Empty indexed images return an empty RGB array.
 
 ## 💡 Examples
@@ -29,7 +30,6 @@ v=linspace(0,1,64)'; map=[v 1-v 0.5*ones(64,1)];
 RGB=ind2rgb(X,map);
 figure; image(RGB); title('Indexed to RGB');
 ```
-
 <img src="ind2rgb_1.png" align="middle"/>
 Clamp indices outside the colormap range
 
@@ -38,13 +38,14 @@ map=[1 0 0; 0 1 0; 0 0 1];
 RGB=ind2rgb([0 1 2 5],map)
 ```
 
+
 ## 🔗 See also
 
-[ind2gray](../../../image_processing/ind2gray.md), [rgb2gray](../../../image_processing/rgb2gray.md).
+[ind2gray](../../../image_processing/1_image_basics/1_image_types_color/ind2gray.md), [rgb2gray](../../../image_processing/1_image_basics/1_image_types_color/rgb2gray.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

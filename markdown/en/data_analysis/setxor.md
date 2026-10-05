@@ -18,9 +18,12 @@ Set exclusive OR of two arrays.
 
 ## 📄 Description
 
+
 <b>setxor(A, B)</b> returns values that occur in <b>A</b> or <b>B</b>, but not both.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [5 7 1];
@@ -28,13 +31,14 @@ B = [3 1 1];
 C = setxor(A, B)
 ```
 
+
 ## 🔗 See also
 
 [union](../data_analysis/union.md), [intersect](../data_analysis/intersect.md), [setdiff](../data_analysis/setdiff.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

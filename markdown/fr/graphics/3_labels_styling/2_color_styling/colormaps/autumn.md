@@ -17,17 +17,20 @@ Palette de couleurs autumn.
 
 ## 📄 Description
 
+
 <b>autumn</b> retourne la palette de couleurs autumn.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('autumn');
 ```
-
 <img src="autumn.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('autumn');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -26,6 +26,7 @@
   - [isprime](isprime.md)
   - [lcm](lcm.md)
   - [makima](makima.md)
+  - [pchip](pchip.md)
   - [peaks](peaks.md)
   - [primes](primes.md)
   - [quadgk](quadgk.md)

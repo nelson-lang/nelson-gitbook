@@ -18,22 +18,26 @@ F probability density function
 
 ## 📄 Description
 
+
 <b>fpdf</b> computes F distribution probability density values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 5];
 y = fpdf(x, 5, 20);
 ```
 
+
 ## 🔗 See also
 
-[fcdf](../../statistics/fcdf.md), [finv](../../statistics/finv.md).
+[fcdf](../../statistics/2_probability_distributions/fcdf.md), [finv](../../statistics/2_probability_distributions/finv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

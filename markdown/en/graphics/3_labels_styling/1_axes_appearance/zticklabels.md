@@ -26,7 +26,8 @@ Set or get z-axis tick labels.
 
 ## 📄 Description
 
-<b>zticklabels</b> gets or sets the tick labels along the z-axis of the current axes.
+
+<b>zticklabels</b> gets or sets the tick labels along the z-axis of the current axes. 
 
 Specifying labels switches the z-tick label mode to <b>manual</b>.
 
@@ -44,13 +45,14 @@ labels = zticklabels()
 
 ```
 
+
 ## 🔗 See also
 
 [zticks](../../../graphics/3_labels_styling/1_axes_appearance/zticks.md), [ztickangle](../../../graphics/3_labels_styling/1_axes_appearance/ztickangle.md), [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

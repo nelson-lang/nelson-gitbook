@@ -17,9 +17,11 @@ Return samples at an event time.
 
 ## 📄 Description
 
+
 <b>gettsatevent</b> Finds the named event and keeps samples whose time equals the event time.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12]);
@@ -28,13 +30,14 @@ gettsatevent(ts, 'middle').Data
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -23,11 +23,14 @@ load data from .nh5 or .mat file into Nelson's workspace.
 
 ## 📄 Description
 
-<b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.
+
+<b>load</b> loads data from .nh5 or .mat file to Nelson's workspace. 
 
 Classdef objects saved by Nelson are restored as classdef objects when their class definition is available on the path.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -46,7 +49,6 @@ A
 B
 
 ```
-
 Load a saved classdef object.
 
 ```matlab
@@ -67,15 +69,16 @@ className = class(loaded.point)
 coordinates = [loaded.point.X, loaded.point.Y]
 ```
 
+
 ## 🔗 See also
 
 [save](../stream_manager/save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
-| 1.0.0   | initial version                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | classdef object load behavior documented |
 
 <!--

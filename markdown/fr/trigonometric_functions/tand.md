@@ -16,14 +16,18 @@ Calcule la tangente en degrés pour chaque élément de x.
 
 ## 📄 Description
 
+
 <b>tand</b> calcule la tangente en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [0 30 45 60 90 360];
 res = tand(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ res = tand(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

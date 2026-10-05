@@ -18,6 +18,7 @@ Remove binary image components connected to the image border.
 
 ## 📄 Description
 
+
 imclearborder removes foreground components that touch the first or last row or column. It is useful after thresholding or segmentation when partial border objects should be discarded.
 
 ## 💡 Example
@@ -31,16 +32,16 @@ BW2=imclearborder(BW);
 figure; subplot(1,2,1); imagesc(BW); title('Input');
 subplot(1,2,2); imagesc(BW2); title('Cleared');
 ```
-
 <img src="imclearborder_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[bwconncomp](../../../image_processing/bwconncomp.md), [bwareaopen](../../../image_processing/bwareaopen.md), [imfill](../../../image_processing/imfill.md).
+[bwconncomp](../../../image_processing/2_image_analysis/5_regions_boundaries/bwconncomp.md), [bwareaopen](../../../image_processing/2_image_analysis/4_morphology/bwareaopen.md), [imfill](../../../image_processing/2_image_analysis/4_morphology/imfill.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -24,6 +24,7 @@
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block"><code class="language-matlab">status = xmldocbuild(source_dirs, destination_dir, main_title, export_format, overwrite)
+[status, msg, warnings] = xmldocbuild(source_dirs, destination_dir, main_title, export_format, overwrite, index_dirs)
 </code></pre>
 </div>
 <div class="section">
@@ -48,11 +49,15 @@
 </tr>
 <tr>
 <td class="param-name">export_format</td>
-<td>une chaîne : 'html' ou 'md'.</td>
+<td>une chaîne : 'html', 'md' ou 'typ'.</td>
 </tr>
 <tr>
 <td class="param-name">overwrite</td>
 <td>un booléen : forcer l'écrasement si le fichier de destination existe déjà.</td>
+</tr>
+<tr>
+<td class="param-name">index_dirs</td>
+<td>une cellule de chaînes (optionnel) : racines XML d'aide des autres modules dont les pages peuvent être liées, utilisées pour résoudre &lt;link linkend="${module}nom"&gt;.</td>
 </tr>
 </table>
 </div>
@@ -68,6 +73,14 @@
 <td class="param-name">status</td>
 <td>un booléen : fichiers générés ou non.</td>
 </tr>
+<tr>
+<td class="param-name">msg</td>
+<td>une chaîne : message d'erreur, vide en cas de succès.</td>
+</tr>
+<tr>
+<td class="param-name">warnings</td>
+<td>une cellule de chaînes : liens non résolus. Sans cette sortie, chacun est émis comme avertissement.</td>
+</tr>
 </table>
 </div>
 <div class="section">
@@ -77,6 +90,7 @@
     <p>
       <b>xmldocbuild</b> convertit des fichiers de documentation XML en HTML.</p>
     <p>fonction interne</p>
+    <p>Les liens (&lt;link linkend="..."&gt;) sont résolus à partir de l'index des mots-clés de source_dirs et index_dirs : la cible peut être un mot-clé, un alias ou le chemin d'une page relatif à la racine du module, éventuellement préfixé par ${module} ou {module}. Un lien résolu pointe vers la page réelle, même si elle se trouve dans un sous-répertoire de chapitre ou si son nom de fichier diffère de son mot-clé. Un lien non résolu conserve l'ancien chemin "&lt;module&gt;/&lt;nom&gt;" et est signalé.</p>
   </div>
 </div>
 <div class="section">
@@ -102,6 +116,10 @@
 <td class="version">1.15.0</td>
 <td>
         'qt' input parameter removed.</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>entrée index_dirs et sortie warnings : liens résolus à partir de l'index des mots-clés.</td>
 </tr>
 </table>
 </div>

@@ -17,19 +17,23 @@ Inverse de repartition uniforme discrete
 
 ## 📄 Description
 
+
 <b>unidinv</b> calcule l'inverse de repartition de la loi uniforme discrete sur les entiers de 1 a <b>n</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0 0.1 0.5 1];
 x = unidinv(p, 5);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

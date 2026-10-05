@@ -17,11 +17,14 @@ Evaluate a piecewise polynomial form
 
 ## 📄 Description
 
-<b>ppval</b> evaluates a piecewise polynomial structure. The structure contains breaks, coefficients, number of pieces, order, and output dimension.
+
+<b>ppval</b> evaluates a piecewise polynomial structure. The structure contains breaks, coefficients, number of pieces, order, and output dimension. 
 
 For the interpolation workflow, create pp with <b>interp1(x, v, method, 'pp')</b>, then evaluate it repeatedly with <b>ppval</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 1:4;
@@ -30,10 +33,10 @@ pp = interp1(x, v, 'linear', 'pp');
 ppval(pp, [1.5 2.5])
 ```
 
+
 ## 🔗 See also
 
 [interp1](../special_functions/interp1.md), [polyval](../polynomial_functions/polyval.md).
-
 <!--
 ## 👤 Author
 

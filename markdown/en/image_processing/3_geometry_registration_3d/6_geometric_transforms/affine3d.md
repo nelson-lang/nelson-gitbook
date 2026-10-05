@@ -17,6 +17,7 @@ Create a 3-D affine transformation structure.
 
 ## 📄 Description
 
+
 Create a 3-D affine transformation structure containing a row-vector convention matrix T. Translation values are stored in the last row.
 
 ## 💡 Example
@@ -28,13 +29,14 @@ tform = affine3d([1 0 0 0; 0 1 0 0; 0 0 1 0; 4 5 6 1]);
 tform.T
 ```
 
+
 ## 🔗 See also
 
-[affine2d](../../../image_processing/affine2d.md), [imref3d](../../../image_processing/imref3d.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [imref3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref3d.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

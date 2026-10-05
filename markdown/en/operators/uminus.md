@@ -17,14 +17,18 @@ Unary minus, - operator
 
 ## 📄 Description
 
+
 <b>C = uminus(A)</b> performs unary minus ie -A.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = 3;
 -M
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ M = 3;
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

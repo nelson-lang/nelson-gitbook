@@ -17,17 +17,20 @@ Line color order colormap array.
 
 ## 📄 Description
 
+
 <b>lines</b> returns a colormap based on the default axes color order.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('lines');
 ```
-
 <img src="lines.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,9 +38,9 @@ colormap('lines');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

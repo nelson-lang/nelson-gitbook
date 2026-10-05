@@ -16,9 +16,12 @@ Checks if ax is a 2-D Polar or Cartesian axes.
 
 ## 📄 Description
 
+
 <b>is2D</b> returns Checks if ax is a 2-D Polar or Cartesian axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -31,13 +34,14 @@ ax = gca();
 assert_isfalse(is2D(ax));
 ```
 
+
 ## 🔗 See also
 
 [isgraphics](../../../graphics/2_graphics_objects/1_object_management/isgraphics.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

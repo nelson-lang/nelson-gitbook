@@ -22,9 +22,12 @@ Label z-axis.
 
 ## 📄 Description
 
+
 <b>zlabel('text')</b> labels the z-axis of the current axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 f  = figure();
@@ -33,8 +36,8 @@ L = plot3(sin(t), cos(t), t);
 axis square
 zlabel('Z axis Label - Unicode ドラゴンボールZ(ゼット)')
 ```
-
 <img src="zlabel.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -42,7 +45,7 @@ zlabel('Z axis Label - Unicode ドラゴンボールZ(ゼット)')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

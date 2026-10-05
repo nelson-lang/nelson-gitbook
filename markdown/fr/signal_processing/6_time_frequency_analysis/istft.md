@@ -24,9 +24,12 @@ Transformee de Fourier court terme inverse.
 
 ## 📄 Description
 
+
 <b>istft</b> reconstruit un vecteur temporel depuis des spectres court terme par FFT inverse et normalisation par recouvrement-addition.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,14 +39,15 @@ y = istft(s, 10, 'Window', hamming(8), 'OverlapLength', 4, 'FFTLength', 16, 'Fre
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[stft](../../signal_processing/stft.md), [spectrogram](../../signal_processing/spectrogram.md).
+[stft](../../signal_processing/6_time_frequency_analysis/stft.md), [spectrogram](../../signal_processing/6_time_frequency_analysis/spectrogram.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

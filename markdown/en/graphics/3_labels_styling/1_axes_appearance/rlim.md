@@ -26,7 +26,8 @@ Set or get radial limits for polar axes.
 
 ## 📄 Description
 
-<b>rlim</b> gets or sets the radial limits of the current polar axes.
+
+<b>rlim</b> gets or sets the radial limits of the current polar axes. 
 
 Setting numeric limits switches radial limit mode to <b>manual</b>. Setting mode to <b>auto</b> recomputes limits when the polar axes is refreshed.
 
@@ -44,13 +45,14 @@ currentMode = rlim('mode')
 
 ```
 
+
 ## 🔗 See also
 
 [polarplot](../../../graphics/1_plots/2_polar_plots/polarplot.md), [polaraxes](../../../graphics/1_plots/2_polar_plots/polaraxes.md), [rticks](../../../graphics/3_labels_styling/1_axes_appearance/rticks.md), [thetalim](../../../graphics/3_labels_styling/1_axes_appearance/thetalim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

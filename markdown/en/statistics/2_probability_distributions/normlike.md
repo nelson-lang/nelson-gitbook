@@ -22,22 +22,26 @@ Normal negative log-likelihood
 
 ## 📄 Description
 
+
 <b>normlike</b> returns the negative log-likelihood for normal distribution data and the asymptotic covariance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 3 5];
 [nlogL, avar] = normlike([1 2], x);
 ```
 
+
 ## 🔗 See also
 
-[normfit](../../statistics/normfit.md), [normpdf](../../statistics/normpdf.md), [normcdf](../../statistics/normcdf.md).
+[normfit](../../statistics/2_probability_distributions/normfit.md), [normpdf](../../statistics/2_probability_distributions/normpdf.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

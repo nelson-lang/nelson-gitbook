@@ -19,7 +19,8 @@ Check the column count.
 
 ## 📄 Description
 
-The assertion passes when size(value, 2) equals n.
+
+The assertion passes when size(value, 2) equals n. 
 
 Invalid n raises an argument error immediately.
 
@@ -30,12 +31,12 @@ Three columns
 ```matlab
 asserts.columns(ones(2, 3), 3);
 ```
-
 Capture a column-count failure
 
 ```matlab
 [res, msg] = asserts.columns(ones(2, 3), 2);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a column-count failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

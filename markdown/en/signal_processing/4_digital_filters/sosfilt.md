@@ -19,9 +19,12 @@ Filter data with second-order sections.
 
 ## 📄 Description
 
+
 <b>sosfilt</b> applies each row of SOS as one filter section.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,13 +32,14 @@ y = sosfilt([1 2 1 1 -0.5 0], [1 0 0 0]);
 
 ```
 
+
 ## 🔗 See also
 
-[sos2tf](../../signal_processing/sos2tf.md), [filter](../../elementary_functions/filter.md).
+[sos2tf](../../signal_processing/4_digital_filters/sos2tf.md), [filter](../../elementary_functions/7_indexing_dimensions/filter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

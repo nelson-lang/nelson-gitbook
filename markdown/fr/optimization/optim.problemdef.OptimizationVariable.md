@@ -19,13 +19,16 @@ Variable pour expressions d'optimisation.
 
 ## 📄 Description
 
-optim.problemdef.OptimizationVariable represente des variables scalaires ou tableaux utilisees pour construire des expressions d'optimisation.
+
+optim.problemdef.OptimizationVariable represente des variables scalaires ou tableaux utilisees pour construire des expressions d'optimisation. 
 
 Creez des variables avec optimvar, puis combinez-les dans des objectifs et des contraintes.
 
 ## Fonction(s) utilisée(s)
 
+
     optimvar
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ x = optimvar('x', 2, 1, 'LowerBound', 0);
 expr = (x(1) - 1)^2 + (x(2) - 2)^2
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimvar](../optimization/optimvar.md), [optimexpr](../optimization/optimexpr.md), [optimproblem](../optimization/optimproblem.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

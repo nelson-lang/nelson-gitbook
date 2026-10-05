@@ -36,42 +36,48 @@ Shell command execution.
 
 ## 📄 Description
 
-<b>system</b> sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell.
 
-<b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable.
+<b>system</b> sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell. 
 
-Callback functions cannot be called until<b>system</b> command is not finished.
+<b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable. 
 
-Nelson will convert characters to the encoding that your operating system shell accepts (ANSI on Windows by default, UTF-8 on others systems).
+Callback functions cannot be called until<b>system</b> command is not finished. 
 
-command can be interrupted with<b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b>output </b> contains 'ABORTED'.
+Nelson will convert characters to the encoding that your operating system shell accepts (ANSI on Windows by default, UTF-8 on others systems). 
+
+command can be interrupted with<b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT\_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b>output </b> contains 'ABORTED'. 
 
 if timeout value is 0. timeout disabled.
 
 ## 💡 Examples
+
+
 
 ```matlab
 [s,w] = system('dir');
 [s,w] = system('dir','-echo');
 ```
 
+
 ```matlab
 [s,w] = system(["echo hello", "dir", "echo world"])
 ```
+
 
 ```matlab
 tic();[s, w, d] = system(["PING -n 5 127.0.0.1>nul", "PING -n 7 127.0.0.1>nul", "PING -n 10 127.0.0.1>nul"]), toc()
 ```
 
+
 ```matlab
 tic();[s, w, d] = system(["PING -n 5 127.0.0.1>nul", "PING -n 7 127.0.0.1>nul", "PING -n 10 127.0.0.1>nul"], [1, 5, 3]), toc()
 ```
-
 To detach an system command, include the trailing character, &, in the command argument.
 
 ```matlab
 [s,w] = system('notepad &');
 ```
+
 
 ## 🔗 See also
 
@@ -79,7 +85,7 @@ To detach an system command, include the trailing character, &, in the command a
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

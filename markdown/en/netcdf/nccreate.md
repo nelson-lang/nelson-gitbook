@@ -20,7 +20,8 @@ Create a variable in a netCDF file.
 
 ## 📄 Description
 
-nccreate defines a variable and its dimensions in a local netCDF file. If the file does not exist, it is created.
+
+nccreate defines a variable and its dimensions in a local netCDF file. If the file does not exist, it is created. 
 
 Use name-value pairs to describe the variable schema before writing data with ncwrite.
 
@@ -35,13 +36,14 @@ info = ncinfo(filename);
 info.Variables(1).Name
 ```
 
+
 ## 🔗 See also
 
 [ncwrite](../netcdf/ncwrite.md), [ncread](../netcdf/ncread.md), [ncinfo](../netcdf/ncinfo.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

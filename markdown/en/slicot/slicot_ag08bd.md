@@ -1,18 +1,18 @@
-# slicot_ag08bd
+# slicot\_ag08bd
 
 Zeros and Kronecker structure of a descriptor system pencil.
 
 ## 📝 Syntax
 
-- [A\_OUT, E\_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
+- [A\_OUT, E\_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot\_ag08bd(EQUIL, M, P, A\_IN, E\_IN, B, C, D, TOL)
 
 ## 📥 Input argument
 
 - EQUIL - = 'S': Perform balancing (scaling); = 'N': Do not perform balancing.
 - M - The number of columns of matrix B.
 - P - The number of rows of matrix C.
-- A_IN - The leading L-by-N part of this array must contain the state dynamics matrix A of the system.
-- E_IN - The leading L-by-N part of this array must contain the descriptor matrix E of the system.
+- A\_IN - The leading L-by-N part of this array must contain the state dynamics matrix A of the system.
+- E\_IN - The leading L-by-N part of this array must contain the descriptor matrix E of the system.
 - B - The leading L-by-M part of this array must contain the input/state matrix B of the system.
 - C - The leading P-by-N part of this array must contain the state/output matrix C of the system.
 - D - The leading P-by-M part of this array must contain the direct transmission matrix D of the system.
@@ -20,8 +20,8 @@ Zeros and Kronecker structure of a descriptor system pencil.
 
 ## 📤 Output argument
 
-- A_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Af of the reduced pencil.
-- E_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Ef of the reduced pencil.
+- A\_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Af of the reduced pencil.
+- E\_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Ef of the reduced pencil.
 - NFZ - The number of finite zeros.
 - NRANK - The normal rank of the system pencil.
 - NIZ - The number of infinite zeros.
@@ -36,6 +36,7 @@ Zeros and Kronecker structure of a descriptor system pencil.
 
 ## 📄 Description
 
+
 To extract from the system pencil a regular pencil Af-lambda\*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.
 
 ## Used function(s)
@@ -47,6 +48,8 @@ AG08BD
 http://slicot.org/objects/software/shared/doc/AG08BD.html
 
 ## 💡 Example
+
+
 
 ```matlab
 L = 9;
@@ -112,13 +115,14 @@ M = 3; P = 0;
 
 ```
 
+
 ## 🔗 See also
 
-[slicot_ab08nd](../slicot/slicot_ab08nd.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [tzero](../control_system/tzero.md).
+[slicot_ab08nd](../slicot/slicot_ab08nd.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [tzero](../control_system/1_dynamic_system_models/tzero.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -22,17 +22,22 @@ Moindres carrés linéaires non négatifs.
 
 ## 📄 Description
 
+
 <b>lsqnonneg</b> résout min norm(C\*x-d)^2 sous la contrainte x >= 0 avec une méthode active-set.
 
 ## Fonction(s) utilisée(s)
 
+
     optimset
+  
 
 ## 📚 Bibliographie
 
 C. L. Lawson and R. J. Hanson, Solving Least Squares Problems, SIAM, 1995.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 C = [1 0; 0 1; 1 1];
@@ -41,14 +46,15 @@ d = [1; 2; 3];
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [lsqnonlin](../optimization/lsqnonlin.md), [quadprog](../optimization/quadprog.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

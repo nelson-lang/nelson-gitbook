@@ -16,7 +16,8 @@ Customize dot indexing of a class.
 
 ## 📄 Description
 
-Derive from <b>nelson.mixin.indexing.RedefinesDot</b> to give a class its own dot indexing behavior for names that are not declared properties or methods. A subclass implements the protected methods <b>dotReference(obj, indexOp)</b> (value of <b>obj.name</b>), <b>dotAssign(obj, indexOp, value)</b> (<b>obj.name = value</b>) and <b>dotListLength(obj, indexOp, indexContext)</b>.
+
+Derive from <b>nelson.mixin.indexing.RedefinesDot</b> to give a class its own dot indexing behavior for names that are not declared properties or methods. A subclass implements the protected methods <b>dotReference(obj, indexOp)</b> (value of <b>obj.name</b>), <b>dotAssign(obj, indexOp, value)</b> (<b>obj.name = value</b>) and <b>dotListLength(obj, indexOp, indexContext)</b>. 
 
 <b>indexOp</b> is a <b>nelson.indexing.IndexingOperation</b> whose <b>Name</b>property holds the accessed name. Declared properties and methods keep their normal behavior; only unknown names call <b>dotReference</b>/<b>dotAssign</b>.
 
@@ -48,13 +49,14 @@ classdef Bag < nelson.mixin.indexing.RedefinesDot
 end
 ```
 
+
 ## 🔗 See also
 
 [nelson.mixin.indexing.RedefinesParen](../types/nelson.mixin.indexing.RedefinesParen.md), [nelson.indexing.IndexingOperation](../types/nelson.indexing.IndexingOperation.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -19,7 +19,8 @@ Check that two values are not equal.
 
 ## 📄 Description
 
-The assertion passes when asserts.isequal would fail.
+
+The assertion passes when asserts.isequal would fail. 
 
 It is useful for negative equality checks in tests.
 
@@ -30,12 +31,12 @@ Different values
 ```matlab
 asserts.notEqual(1, 2);
 ```
-
 Capture an equality failure
 
 ```matlab
 [res, msg] = asserts.notEqual(1, 1);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture an equality failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

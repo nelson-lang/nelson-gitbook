@@ -18,9 +18,11 @@ Soustrait des donnees timeseries.
 
 ## 📄 Description
 
+
 <b>minus</b> Soustrait les valeurs de donnees et preserve l'axe temporel d'une entree timeseries.
 
 ## 💡 Exemple
+
 
 ```matlab
 a = timeseries([10; 20], [1; 2]);
@@ -30,14 +32,15 @@ out.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

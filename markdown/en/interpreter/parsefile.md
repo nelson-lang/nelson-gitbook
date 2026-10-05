@@ -16,18 +16,22 @@ Parse a Nelson file.
 
 ## 📄 Description
 
+
 <b>parsefile</b> parse a file and returns if it is a valid script, a valid function or an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 parsefile([nelsonroot(), '/etc/startup.m'])
 parsefile([nelsonroot(), '/modules/data_structures/functions/cellstr.m'])
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

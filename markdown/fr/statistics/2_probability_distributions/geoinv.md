@@ -17,23 +17,27 @@ Inverse de la fonction de repartition geometrique
 
 ## 📄 Description
 
+
 <b>geoinv</b> evalue les probabilites cumulees inverses geometriques element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 y = [0 0.25 0.9];
 x = geoinv(y, 0.25);
 ```
 
+
 ## 🔗 Voir aussi
 
-[geopdf](../../statistics/geopdf.md), [geocdf](../../statistics/geocdf.md), [geornd](../../statistics/geornd.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geocdf](../../statistics/2_probability_distributions/geocdf.md), [geornd](../../statistics/2_probability_distributions/geornd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

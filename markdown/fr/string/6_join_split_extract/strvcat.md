@@ -8,22 +8,26 @@ Concatene verticalement le texte.
 
 ## 📄 Description
 
+
 <b>strvcat</b> Concatene verticalement le texte.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 strvcat("abc", "de")
 ```
 
+
 ## 🔗 Voir aussi
 
-[char](../../string/char.md), [strcat](../../string/strcat.md), [blanks](../../string/blanks.md).
+[char](../../string/1_create_convert_text/char.md), [strcat](../../string/1_create_convert_text/strcat.md), [blanks](../../string/1_create_convert_text/blanks.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

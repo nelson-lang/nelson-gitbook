@@ -1,15 +1,15 @@
-# QObject_set
+# QObject\_set
 
 Set a property value of an QObject handle (set).
 
 ## 📝 Syntax
 
-- R = set(h, property_name, value)
+- R = set(h, property\_name, value)
 
 ## 📥 Input argument
 
 - h - an QObject handle.
-- property_name - a string: property name.
+- property\_name - a string: property name.
 - value - a variable.
 
 ## 📤 Output argument
@@ -18,9 +18,12 @@ Set a property value of an QObject handle (set).
 
 ## 📄 Description
 
+
 This routine can be used to modify the value of a specified property from an QObject object.
 
 ## 💡 Example
+
+
 
 ```matlab
 h = errordlg()
@@ -29,13 +32,14 @@ h.windowTitle = 'new title' % or set(h, 'windowTitle', 'new title')
 h.visible = true;
 ```
 
+
 ## 🔗 See also
 
 [set](../handle/set.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

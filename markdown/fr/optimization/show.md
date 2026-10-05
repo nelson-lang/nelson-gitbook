@@ -12,14 +12,19 @@ Afficher un objet d'optimization.
 
 ## 📄 Description
 
+
 <b>show</b> affiche une représentation textuelle compacte d'un objet problem-based. Les variables d'optimization sont affichées par dimensions et indices seulement ; les types et bornes ne sont pas affichés dans l'affichage de la variable. Les expressions, contraintes et problèmes sont affichés sous forme de formules problem-based.
 
 ## Fonction(s) utilisée(s)
 
+
     optimproblem
     optimvar
+  
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = optimvar('x', 2);
@@ -33,14 +38,15 @@ show(prob)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [evaluate](../optimization/evaluate.md), [optimproblem](../optimization/optimproblem.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,4 +1,4 @@
-# compiler_build_tutorial
+# compiler\_build\_tutorial
 
 Tutoriel : construire des applications avec et sans console.
 
@@ -9,17 +9,18 @@ Tutoriel : construire des applications avec et sans console.
 
 ## 📄 Description
 
-Executer les trois blocs dans l'ordre, dans la meme session. Cet exemple construit une application a plusieurs fonctions et embarque son fichier factor.txt. Chaque executable affiche TUTORIAL_RESULT=30 pour l'entree 5.
 
-L'application avec console est native a la plateforme courante. Sous Windows, la seconde construction cree un executable distinct du sous-systeme Windows, sans demander de services graphiques pour cet exemple numerique.
+Executer les trois blocs dans l'ordre, dans la meme session. Cet exemple construit une application a plusieurs fonctions et embarque son fichier factor.txt. Chaque executable affiche TUTORIAL\_RESULT=30 pour l'entree 5. 
 
-Chaque dossier de sortie contient un executable, readme.txt et le rapport de construction buildresult.json, pas de runtime ni d'installateur. Results.Files contient l'executable et readme.txt, ainsi que le .nca pour la variante externe. Distribuer ce dernier a cote de son executable, avec le meme nom de base. Le dernier bloc choisit l'installation Nelson courante comme runtime compatible. Sur une autre machine, installer un runtime compatible et definir NELSONC_RUNTIME_ROOT vers sa racine.
+L'application avec console est native a la plateforme courante. Sous Windows, la seconde construction cree un executable distinct du sous-systeme Windows, sans demander de services graphiques pour cet exemple numerique. 
 
-RuntimeDependencies.Required est l'inventaire capture des fichiers runtime ; le consulter ne les copie pas. Le code applicatif retenu et factor.txt sont deja dans l'executable ou son archive externe : le dossier source copie n'est pas requis a l'execution.
+Chaque dossier de sortie contient un executable, readme.txt et le rapport de construction buildresult.json, pas de runtime ni d'installateur. Results.Files contient l'executable et readme.txt, ainsi que le .nca pour la variante externe. Distribuer ce dernier a cote de son executable, avec le meme nom de base. Le dernier bloc choisit l'installation Nelson courante comme runtime compatible. Sur une autre machine, installer un runtime compatible et definir NELSONC\_RUNTIME\_ROOT vers sa racine. 
 
-Les effets des options restantes restent a implementer. Les installateurs Windows d'applications et de runtime minimal partage sont decrits dans compiler_installer_tutorial et compiler_runtime_tutorial. Le mode ncc avec runtime adjacent est decrit dans compiler_standalone_tutorial.
+RuntimeDependencies.Required est l'inventaire capture des fichiers runtime ; le consulter ne les copie pas. Le code applicatif retenu et factor.txt sont deja dans l'executable ou son archive externe : le dossier source copie n'est pas requis a l'execution. 
 
-TreatInputsAsNumeric transmet l'entree 5 comme un double a app_entry. L'exemple fourni accepte aussi le texte lorsque l'option est false. Une entree numerique invalide donne NaN ; les applications doivent valider leurs entrees avant le calcul.
+Les effets des options restantes restent a implementer. Les installateurs Windows d'applications et de runtime minimal partage sont decrits dans compiler\_installer\_tutorial et compiler\_runtime\_tutorial. Le mode ncc avec runtime adjacent est decrit dans compiler\_standalone\_tutorial. 
+
+TreatInputsAsNumeric transmet l'entree 5 comme un double a app\_entry. L'exemple fourni accepte aussi le texte lorsque l'option est false. Une entree numerique invalide donne NaN ; les applications doivent valider leurs entrees avant le calcul. 
 
 SupportPackages filtre les dependances nmm installees ; cet exemple utilise none car ses sources ne requierent aucun paquet externe.
 
@@ -38,7 +39,6 @@ for name = {'app_entry.m', 'helper_value.m', 'factor.txt', 'app_icon.png'}
   copyfile(fullfile(example, name{1}), source);
 end
 ```
-
 2. Construire et inspecter les resultats
 
 ```matlab
@@ -68,7 +68,6 @@ if ispc()
   windowed = compiler.build.standaloneWindowsApplication(options);
 end
 ```
-
 3. Executer avec un runtime installe
 
 ```matlab
@@ -93,10 +92,10 @@ end
 clear restoreRuntime;
 ```
 
+
 ## 🔗 Voir aussi
 
 [compiler.build.StandaloneApplicationOptions](../compiler/compiler.build.StandaloneApplicationOptions.md), [compiler.build.Results](../compiler/compiler.build.Results.md), [compiler.runtime.Dependencies](../compiler/compiler.runtime.Dependencies.md), [compiler_standalone_tutorial](../compiler/compiler_standalone_tutorial.md).
-
 <!--
 ## 👤 Auteur
 

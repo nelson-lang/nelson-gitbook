@@ -1,24 +1,27 @@
 # Read/Write table to files
 
+
+
 ## 📄 Description
 
-Nelson reads and writes tables in text-based and binary file formats for common data exchange tasks.
 
-Text files (.csv, .txt, etc.):
+Nelson reads and writes tables in text-based and binary file formats for common data exchange tasks. 
 
-- writetable() exports tables to delimited text files with customizable separators
-- readtable() imports tables from delimited text files with automatic format detection
-- Text files preserve variable names and data in human-readable format
+Text files (.csv, .txt, etc.): 
 
-Binary file:
+- writetable() exports tables to delimited text files with customizable separators 
+- readtable() imports tables from delimited text files with automatic format detection 
+- Text files preserve variable names and data in human-readable format 
+
+Binary file: 
 
 - Nelson HDF5 format (.nh5):
 
-- Efficient binary storage using HDF5 format
-- Preserves all table metadata and data types
-- Use save -nh5 and load commands
+- Efficient binary storage using HDF5 format 
+- Preserves all table metadata and data types 
+- Use save -nh5 and load commands 
 
-Binary format is recommended for preserving exact numeric precision and working with large datasets.
+Binary format is recommended for preserving exact numeric precision and working with large datasets. 
 
 Saved tables preserve the public <b>T.Properties</b> metadata. The internal table representation is not part of the file format contract.
 
@@ -38,7 +41,6 @@ assert(isequal(T, R));
 T
 
 ```
-
 Read/Write table to text file
 
 ```matlab
@@ -50,15 +52,16 @@ T2 = readtable(filename);
 
 ```
 
+
 ## 🔗 See also
 
 [writetable](../../spreadsheet/writetable.md), [readtable](../../spreadsheet/readtable.md), [load](../../stream_manager/load.md), [save](../../stream_manager/save.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

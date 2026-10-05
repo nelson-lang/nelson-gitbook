@@ -18,6 +18,7 @@ Inverse of Hilbert matrix
 
 ## 📄 Description
 
+
 <b>hilb</b> computes the Hilbert matrix.
 
 ## 📚 Bibliography
@@ -26,17 +27,20 @@ https://en.wikipedia.org/wiki/David_Hilbert, and Thanks to https://nhigham.com/2
 
 ## 💡 Example
 
+
+
 ```matlab
 h = hilb(5)
 ```
 
+
 ## 🔗 See also
 
-[invhilb](../../elementary_functions/invhilb.md).
+[invhilb](../../elementary_functions/6_matrix_generation/invhilb.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

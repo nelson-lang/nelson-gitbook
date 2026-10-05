@@ -23,30 +23,34 @@ Vérifie la compatibilité dimensionnelle des matrices A, B, C et D.
 
 ## 📄 Description
 
-<b>abcdchk</b> vérifie la cohérence dimensionnelle des matrices A, B, C, D, E.
 
-Elle ajuste également les dimensions de toute matrice vide 0-par-0 pour assurer leur alignement avec le reste.
+<b>abcdchk</b> vérifie la cohérence dimensionnelle des matrices A, B, C, D, E. 
+
+Elle ajuste également les dimensions de toute matrice vide 0-par-0 pour assurer leur alignement avec le reste. 
 
 Il s'agit d'une fonction utilitaire de bas niveau utilisée en interne par les fonctions de construction et de conversion de modèles d'état, afin de vérifier que A, B, C et D sont dimensionnellement cohérentes avant tout traitement ultérieur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [0 1; -2 -3];
 B = [0;  1];
 C = [1 0];
 D = 0;
-[msg, AA, BB, CC, DD] = abcdchk(A, B, C, D)
+[msg, AA, BB, CC, DD] = abcdchk(A, B, C, D) 
 ```
+
 
 ## 🔗 Voir aussi
 
-[ss2tf](../../control_system/ss2tf.md), [tf2ss](../../control_system/tf2ss.md).
+[ss2tf](../../control_system/2_model_conversion_interconnection/ss2tf.md), [tf2ss](../../control_system/2_model_conversion_interconnection/tf2ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

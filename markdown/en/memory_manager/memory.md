@@ -15,29 +15,33 @@ Get memory information.
 
 ## 📄 Description
 
-<b>memory</b> get memory information.
 
-<b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).
+<b>memory</b> get memory information. 
 
-<b>System Memory</b>:
+<b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson). 
 
-VirtualAddressSpace.Available: available swap file space
+<b>System Memory</b>: 
 
-VirtualAddressSpace.Total: total swap file space
+VirtualAddressSpace.Available: available swap file space 
 
-SystemMemory.Available: available system memory
+VirtualAddressSpace.Total: total swap file space 
 
-PhysicalMemory.Available: available physical memory
+SystemMemory.Available: available system memory 
+
+PhysicalMemory.Available: available physical memory 
 
 PhysicalMemory.Total: total physical memory
 
 ## 💡 Examples
+
+
 
 ```matlab
 memory()
 A = ones(1000);
 memory()
 ```
+
 
 ```matlab
 clear('A');
@@ -50,9 +54,11 @@ clear('A');
 disp(u3.MemUsedNelson - u2.MemUsedNelson);
 ```
 
+
 ```matlab
 [u1, s1] = memory()
 ```
+
 
 ## 🔗 See also
 
@@ -60,7 +66,7 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

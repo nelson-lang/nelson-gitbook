@@ -18,9 +18,11 @@ Ajoute des echantillons timeseries.
 
 ## 📄 Description
 
+
 <b>append</b> Concatene les echantillons de deux objets timeseries ou plus le long de la dimension des echantillons.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts1 = timeseries([1; 2], [10; 11], 'Name', 'speed');
@@ -30,14 +32,15 @@ ts.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,12 +1,19 @@
 # Types module
 
+
+    
 Le module Types fournit des outils pour gérer et inspecter les types de données dans Nelson.
 
+    
 Il permet aux utilisateurs d'interroger la nature des variables, de distinguer les types numériques, logiques, de chaîne et d'objet, et de travailler avec des types spécialisés tels que les tableaux creux (sparse) ou entiers.
 
+    
 Le module prend également en charge la création d'objets et la validation des noms de variables, contribuant à garantir la sécurité des types et la cohérence des scripts et fonctions.
 
+    
 Pour le code C++ d'extension et d'intégration, voir [API C++ des valeurs](../types/cpp_api.md).
+
+  
 
 ## Functions
 
@@ -50,3 +57,4 @@ Pour le code C++ d'extension et d'intégration, voir [API C++ des valeurs](../ty
 - [nelson.mixin.indexing.RedefinesParen](nelson.mixin.indexing.RedefinesParen.md) - Personnaliser l'indexation par parenthèses d'une classe.
 - [nelson.mixin.util.PropertyGroup](nelson.mixin.util.PropertyGroup.md) - Un groupe titré de propriétés pour l'affichage personnalisé d'objets.
 - [underlyingType](underlyingType.md) - Type sous-jacent d'un tableau
+

@@ -16,13 +16,17 @@ Ramene un angle en radians dans [0, 2\*pi].
 
 ## 📄 Description
 
+
 <b>wrapTo2Pi(alpha)</b> ramene les angles en radians dans l'intervalle <b>[0, 2\*pi]</b>. Les multiples positifs de 2\*pi donnent 2\*pi, et zero donne 0.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 wrapTo2Pi([-1 2*pi])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ wrapTo2Pi([-1 2*pi])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

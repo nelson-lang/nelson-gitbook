@@ -4,18 +4,21 @@ Unlocks a variable.
 
 ## 📝 Syntax
 
-- varunlock(scope, variable_name)
+- varunlock(scope, variable\_name)
 
 ## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
-- variable_name - a string: variable name.
+- variable\_name - a string: variable name.
 
 ## 📄 Description
+
 
 <b>varunlock</b> unlocks a variable.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = 3;
@@ -32,13 +35,14 @@ varislock('local', 'ans')
 
 ```
 
+
 ## 🔗 See also
 
 [varislock](../memory_manager/varislock.md), [varlock](../memory_manager/varlock.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

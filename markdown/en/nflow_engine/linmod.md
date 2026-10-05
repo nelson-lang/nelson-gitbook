@@ -23,11 +23,12 @@ Numerical linearization of an nflow model.
 
 ## 📄 Description
 
-<b>linmod</b> returns the continuous-time state-space linearization of <b>model</b> about its post-INIT operating point.
 
-The Jacobians are obtained by central finite differences of the same global right-hand side the <b>ode4</b> / variable-step solver assembles: the continuous state <b>x</b> gathers every continuous block's state, the inputs <b>u</b> are the external-port Label Source blocks (<b>isExternalPort</b>), <b>xdot = f(x, u)</b> is the graph's derivative, and <b>y</b> the model's Label Sink outputs. A linear model linearizes to itself.
+<b>linmod</b> returns the continuous-time state-space linearization of <b>model</b> about its post-INIT operating point. 
 
-An input that should participate in <b>B</b> / <b>D</b> must be an external-port Label Source; a plain Label Source used for internal goto/from routing is not a model input.
+The Jacobians are obtained by central finite differences of the same global right-hand side the <b>ode4</b> / variable-step solver assembles: the continuous state <b>x</b> gathers every continuous block's state, the inputs <b>u</b> are the external-port Label Source blocks (<b>isExternalPort</b>), <b>xdot = f(x, u)</b> is the graph's derivative, and <b>y</b> the model's Label Sink outputs. A linear model linearizes to itself. 
+
+An input that should participate in <b>B</b> / <b>D</b> must be an external-port Label Source; a plain Label Source used for internal goto/from routing is not a model input. 
 
 Both top-level (flat) models and continuous states nested inside subsystems are supported: a nested state's coupling to the external inputs (<b>B</b>) and to the outputs across the subsystem boundary (<b>C</b>) is captured.
 
@@ -50,13 +51,14 @@ fid = fopen(f,'wt'); fwrite(fid, jsonencode(d)); fclose(fid);
 [A, B, C, D] = linmod(f)  % A = -2, B = 1, C = 1, D = 0
 ```
 
+
 ## 🔗 See also
 
 [trim](../nflow_engine/trim.md), [sim](../nflow_engine/sim.md), [load_system](../nflow_engine/load_system.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

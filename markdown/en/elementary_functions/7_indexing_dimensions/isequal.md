@@ -19,16 +19,20 @@ Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same v
 
 ## 📄 Description
 
-<b>isequal</b> returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false.
+
+<b>isequal</b> returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false. 
 
 <b>isequal</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be NOT<b>equal</b> to other elements.
 
 ## 💡 Examples
 
+
+
 ```matlab
 A = eye(3, 3);
 res = isequal(A, A)
 ```
+
 
 ```matlab
 A = eye(3, 3);
@@ -37,21 +41,24 @@ res = isequal(A, B)
 res = isequalto(A, B)
 ```
 
+
 ```matlab
 res = isequal('nel', 'son')
 ```
+
 
 ```matlab
 res = isequalnNaN, NaN)
 ```
 
+
 ## 🔗 See also
 
-[isequaln](../../elementary_functions/isequaln.md), [isequalto](../../elementary_functions/isequalto.md).
+[isequaln](../../elementary_functions/7_indexing_dimensions/isequaln.md), [isequalto](../../elementary_functions/7_indexing_dimensions/isequalto.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

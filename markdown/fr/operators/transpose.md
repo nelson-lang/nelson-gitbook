@@ -1,6 +1,7 @@
 # transpose
 
 Retourne la transposée d'un vecteur ou d'une matrice : opérateur .'
+  
 
 ## 📝 Syntaxe
 
@@ -17,24 +18,30 @@ Retourne la transposée d'un vecteur ou d'une matrice : opérateur .'
 
 ## 📄 Description
 
+
 <b>C = transpose(A)</b> retourne la transposée de A.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3
     B = A.'
 ```
 
+
 ```matlab
 A = -i
     B = A.'
 ```
 
+
 ```matlab
  A = sparse(eye(3, 4) * i)
     B = A.'
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +49,8 @@ A = -i
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

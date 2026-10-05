@@ -15,20 +15,23 @@ Return true if variable var is a structure.
 - res - a logical: true or false
 
 ## 📄 Description
-
 <b>isstruct</b> returns a logical 1 if the argument is a struct (structure) and a logical 0 otherwise.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = 1;
 res = isstruct(A)
 ```
 
+
 ```matlab
 B = struct();
 res = isstruct(B)
 ```
+
 
 ```matlab
 C.a = 1;
@@ -36,13 +39,14 @@ C.B = 'hello';
 res = isstruct(C)
 ```
 
+
 ## 🔗 See also
 
 [isa](../types/isa.md), [struct](../data_structures/struct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

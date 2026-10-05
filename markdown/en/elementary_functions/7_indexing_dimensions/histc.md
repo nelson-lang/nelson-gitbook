@@ -21,21 +21,25 @@ Histogram count with explicit edges.
 
 ## 📄 Description
 
+
 <b>histc</b> counts values in bins defined by <b>edges</b>. Values equal to the last edge are counted in the last bin.
 
 ## 💡 Example
+
+
 
 ```matlab
 [N, bin] = histc([0 1 1.5 2], [0 1 2])
 ```
 
+
 ## 🔗 See also
 
-[histcounts](../../elementary_functions/histcounts.md).
+[histcounts](../../elementary_functions/7_indexing_dimensions/histcounts.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

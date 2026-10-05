@@ -13,11 +13,12 @@ Display binned scatter plot.
 
 ## 📄 Description
 
-<b>binscatter</b> counts points in two-dimensional bins and displays the counts as a native binscatter chart object.
 
-<b>Values</b>, <b>XBinEdges</b>, and <b>YBinEdges</b> are computed read-only properties.
+<b>binscatter</b> counts points in two-dimensional bins and displays the counts as a native binscatter chart object. 
 
-When the axes are zoomed, the chart recomputes smaller bins so the visible region keeps approximately the requested bin density.
+<b>Values</b>, <b>XBinEdges</b>, and <b>YBinEdges</b> are computed read-only properties. 
+
+When the axes are zoomed, the chart recomputes smaller bins so the visible region keeps approximately the requested bin density. 
 
 See [binscatter properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.binscatter.properties.md) for the complete property list.
 
@@ -31,7 +32,6 @@ y = x + 0.5 * randn(1000, 1);
 h = binscatter(x, y, [30 30]);
 h.FaceAlpha = 0.9;
 ```
-
 <img src="binscatter_1.svg" align="middle"/>
 Inspect computed bin values and edges.
 
@@ -43,6 +43,7 @@ h.Values
 h.XBinEdges
 h.YBinEdges
 ```
+
 
 ## 🔗 See also
 

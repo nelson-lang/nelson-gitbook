@@ -16,11 +16,14 @@ Nombre de lignes d'une table
 
 ## 📄 Description
 
-<b>H = height(T)</b> renvoie le nombre de lignes dans la table <b>T</b>.
+
+<b>H = height(T)</b> renvoie le nombre de lignes dans la table <b>T</b>. 
 
 La fonction <b>height(T)</b> est équivalente à<b>size(T, 1)</b>, qui fournit également le nombre de lignes de la table.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table();
@@ -31,14 +34,15 @@ height(T)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[width](../../table/width.md), [size](../../elementary_functions/size.md), [table](../../table/table.md).
+[width](../../table/3_summary_information/width.md), [size](../../elementary_functions/7_indexing_dimensions/size.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.8.0   | version initiale |
 
 <!--

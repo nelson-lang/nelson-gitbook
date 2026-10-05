@@ -12,6 +12,7 @@ Objet de triangulation
 
 ## 📄 Description
 
+
 <b>triangulation</b> stocke des points et une liste de connectivite et fournit des requetes topologiques.
 
 ## 💡 Exemple
@@ -25,14 +26,15 @@ TR = triangulation(T, P);
 [idx, bary] = pointLocation(TR, [0.25 0.25])
 ```
 
+
 ## 🔗 Voir aussi
 
 [delaunayTriangulation](../geometry/delaunayTriangulation.md), [delaunayn](../geometry/delaunayn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

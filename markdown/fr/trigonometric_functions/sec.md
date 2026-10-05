@@ -15,15 +15,17 @@ Sécante d'un angle en radians.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>sec</b> calcule la sécante de l'argument en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = -pi:0.75:pi;
 R = sec(x)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ R = sec(x)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

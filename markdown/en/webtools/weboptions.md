@@ -18,52 +18,56 @@ Specify parameters for RESTful web service
 
 ## 📄 Description
 
-<b>options = weboptions()</b> returns default weboptions object.
 
-weboptions object can be an optional input argument to the webread, websave, and webwrite builtin.
+<b>options = weboptions()</b> returns default weboptions object. 
 
-Name-Value Pair Arguments:
+weboptions object can be an optional input argument to the webread, websave, and webwrite builtin. 
 
-<b>UserAgent</b> User agent identification: a string or character vector.
+Name-Value Pair Arguments: 
 
-<b>Timeout</b> Time out connection duration: positive numeric scalar or Inf value.
+<b>UserAgent</b> User agent identification: a string or character vector. 
 
-<b>Username</b> User identifier: a string or character vector.
+<b>Timeout</b> Time out connection duration: positive numeric scalar or Inf value. 
 
-<b>Password</b> User authentication password: a string or character vector.
+<b>Username</b> User identifier: a string or character vector. 
 
-<b>KeyName</b> Name of key: a string or character vector.
+<b>Password</b> User authentication password: a string or character vector. 
 
-<b>KeyValue</b> Value of key: a string scalar, character vector, numeric or logical.
+<b>KeyName</b> Name of key: a string or character vector. 
 
-<b>HeaderFields</b> Names and values of header fields: m-by-2 array of strings or cell array of character vectors
+<b>KeyValue</b> Value of key: a string scalar, character vector, numeric or logical. 
 
-<b>ContentType</b> Content type: a string scalar or character vector.
+<b>HeaderFields</b> Names and values of header fields: m-by-2 array of strings or cell array of character vectors 
 
-supported value: 'auto', 'text', 'image', 'binary', 'table', 'audio', 'json', 'xmldom', 'raw'
+<b>ContentType</b> Content type: a string scalar or character vector. 
 
-<b>ContentReader</b> Content reader: an function handle.
+supported value: 'auto', 'text', 'image', 'binary', 'table', 'audio', 'json', 'xmldom', 'raw' 
 
-<b>MediaType</b> Media type: a string or character vector.
+<b>ContentReader</b> Content reader: an function handle. 
 
-supported value: 'auto', 'application/x-www-form-urlencoded'
+<b>MediaType</b> Media type: a string or character vector. 
 
-<b>RequestMethod</b> HTTP request method: a string or character vector.
+supported value: 'auto', 'application/x-www-form-urlencoded' 
 
-supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch'
+<b>RequestMethod</b> HTTP request method: a string or character vector. 
 
-<b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php'
+supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch' 
 
-<b>CertificateFilename</b> Filename of root certificates: 'default', empty, or an existing file.
+<b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php' 
+
+<b>CertificateFilename</b> Filename of root certificates: 'default', empty, or an existing file. 
 
 <b>FollowLocation</b> tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, false by default.
 
 ## 💡 Example
 
+
+
 ```matlab
 weboptions()
 options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-agent/')
 ```
+
 
 ## 🔗 See also
 
@@ -71,13 +75,13 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 
 ## 🕔 History
 
-| Version                              | 📄 Description  |
-| ------------------------------------ | --------------- |
-| 1.0.0                                | initial version |
-| 1.6.0                                |
-| 'FollowLocation' option added        |
-| 2.0.0                                |
-| weboptions is a classdef value class |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.6.0   | 
+        'FollowLocation' option added |
+| 2.0.0   | 
+        weboptions is a classdef value class |
 
 <!--
 ## 👤 Author

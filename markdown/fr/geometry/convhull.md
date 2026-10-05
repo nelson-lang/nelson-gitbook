@@ -13,7 +13,8 @@ Enveloppe convexe de points 2-D ou 3-D
 
 ## 📄 Description
 
-<b>convhull</b> calcule l'enveloppe convexe de points plans ou spatiaux.
+
+<b>convhull</b> calcule l'enveloppe convexe de points plans ou spatiaux. 
 
 Sans sortie, pour des points plans, la fonction trace l'enveloppe.
 
@@ -27,14 +28,15 @@ P = [0 0; 1 0; 1 1; 0 1; 0.4 0.6];
 convhull(P)
 ```
 
+
 ## 🔗 Voir aussi
 
 [convhulln](../geometry/convhulln.md), [boundary](../geometry/boundary.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

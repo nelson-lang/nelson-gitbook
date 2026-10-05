@@ -19,13 +19,16 @@ Capture figure or axes as movie frame.
 
 ## 📄 Description
 
-<b>F = getframe</b> captures the current axes as displayed on the screen as a movie frame. F is a structure containing the image data. The capture preserves the on-screen size of the axes but does not include tick labels or any content outside the axes boundaries.
 
-<b>F = getframe(ax)</b> captures the specified axes ax instead of the current axes.
+<b>F = getframe</b> captures the current axes as displayed on the screen as a movie frame. F is a structure containing the image data. The capture preserves the on-screen size of the axes but does not include tick labels or any content outside the axes boundaries. 
+
+<b>F = getframe(ax)</b> captures the specified axes ax instead of the current axes. 
 
 <b>F = getframe(fig)</b> captures the entire figure window specified by fig, including the axes title, labels, and tick marks. However, the captured frame does not include the figure’s menu or toolbars.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -35,6 +38,7 @@ figure('Color',[0.5 0.5 0.5]);
 imshow(F.cdata)
 
 ```
+
 
 ```matlab
 f = figure();
@@ -51,15 +55,16 @@ imshow(F2.cdata)
 
 ```
 
+
 ## 🔗 See also
 
 [image](../../graphics/4_images/image.md), [imshow](../../graphics/4_images/imshow.md), [imwrite](../../graphics_io/imwrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.13.0  | initial version |
+| 1.13.0   | initial version |
 
 <!--
 ## 👤 Author

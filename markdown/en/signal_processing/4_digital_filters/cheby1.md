@@ -22,9 +22,12 @@ Chebyshev type I digital filter design.
 
 ## 📄 Description
 
+
 <b>cheby1</b> designs lowpass, highpass, bandpass, and bandstop Chebyshev type I digital filters.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Chebyshev type I digital filter design.
 
 ```
 
+
 ## 🔗 See also
 
-[butter](../../signal_processing/butter.md), [cheb1ord](../../signal_processing/cheb1ord.md).
+[butter](../../signal_processing/4_digital_filters/butter.md), [cheb1ord](../../signal_processing/4_digital_filters/cheb1ord.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

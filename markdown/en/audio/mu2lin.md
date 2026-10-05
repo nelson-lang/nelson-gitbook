@@ -16,17 +16,22 @@ Convert audio data from mu-law to linear signal.
 
 ## 📄 Description
 
+
 <b>y = mu2lin(mu)</b> converts audio data from mu-law to linear.
 
 ## 📚 Bibliography
+
 
     "A New Digital Technique for Implementation of Any Continuous PCM Companding Law," Villeret, Michel, et al. 1973 IEEE Int. Conf. on Communications, Vol 1, 1973, pg. 11.12-11.17.
 
 ## 💡 Example
 
+
+
 ```matlab
 l = mu2lin([0:20:255])
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +39,7 @@ l = mu2lin([0:20:255])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

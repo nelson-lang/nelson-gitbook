@@ -17,7 +17,8 @@ Cree une figure pour des interfaces utilisateur.
 
 ## 📄 Description
 
-uifigure cree une figure graphique configuree pour les boites de dialogue et controles d'interface. Le handle retourne peut etre utilise avec get, set, close, delete et comme parent des fonctions de dialogue UI.
+
+uifigure cree une figure graphique configuree pour les boites de dialogue et controles d'interface. Le handle retourne peut etre utilise avec get, set, close, delete et comme parent des fonctions de dialogue UI. 
 
 Les proprietes prises en charge sont les proprietes de figure disponibles dans Nelson, dont 'Name', 'Position', 'Visible', 'WindowStyle', 'Resize', 'Color', 'Tag' et les proprietes de callback.
 
@@ -32,7 +33,6 @@ uibutton(f, 'Text', 'Run', 'Position', [80 95 100 30]);
 uislider(f, 'Position', [210 110 150 3], 'Value', 55);
 drawnow();
 ```
-
 <img src="uifigure_example.svg" align="middle"/>
 Creer une figure UI modale nommee.
 
@@ -42,14 +42,15 @@ f.Name
 close(f)
 ```
 
+
 ## 🔗 Voir aussi
 
 [dialog](../gui/dialog.md), [uialert](../gui/uialert.md), [uiconfirm](../gui/uiconfirm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Introduction de la figure UI. |
 
 <!--

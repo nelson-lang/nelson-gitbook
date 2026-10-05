@@ -18,7 +18,8 @@ Check that a command completes without error.
 
 ## 📄 Description
 
-The assertion passes when evaluating command does not raise an error.
+
+The assertion passes when evaluating command does not raise an error. 
 
 With outputs, unexpected errors are returned as assertion failures instead of being raised directly.
 
@@ -29,12 +30,12 @@ Command without error
 ```matlab
 asserts.noError('1 + 1');
 ```
-
 Capture an unexpected error
 
 ```matlab
 [res, msg] = asserts.noError('cos');
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture an unexpected error
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

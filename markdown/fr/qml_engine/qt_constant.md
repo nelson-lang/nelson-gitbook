@@ -1,15 +1,15 @@
-# qt_constant
+# qt\_constant
 
 Renvoie la valeur d'une constante Qt.
 
 ## 📝 Syntaxe
 
-- v = qt_constant(constant_name)
-- ce = qt_constant()
+- v = qt\_constant(constant\_name)
+- ce = qt\_constant()
 
 ## 📥 Argument d'entrée
 
-- constant_name - une chaîne : constante Qt souhaitée.
+- constant\_name - une chaîne : constante Qt souhaitée.
 
 ## 📤 Argument de sortie
 
@@ -18,14 +18,18 @@ Renvoie la valeur d'une constante Qt.
 
 ## 📄 Description
 
-<b>v = qt_constant(constant_name)</b> renvoie la valeur d'une constante Qt.
+
+<b>v = qt\_constant(constant\_name)</b> renvoie la valeur d'une constante Qt.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 qt_constant('Qt.WindowModal')
 c = qt_constant()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ c = qt_constant()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -23,11 +23,12 @@ Definite integral with variable upper limit (integral interpolant object)
 
 ## 📄 Description
 
-<b>integralInterpolant</b> evaluates a definite integral with a variable upper limit: the returned object <b>F</b> gives <b>F(x)</b>, the integral of <b>integrand</b> from <b>lower</b> to <b>x</b>, for any <b>x</b> between <b>lower</b> and <b>upper</b>.
 
-The integral from <b>lower</b> to <b>upper</b> is computed once with the adaptive Gauss-Kronrod quadrature of <b>integral</b>. Querying <b>F(xq)</b> adds the partial sums of the mesh intervals located before each query point to the Gauss-Kronrod rule applied on the part of the interval that contains it, so the queried values have the accuracy of the integral. Query points outside the integration interval return <b>NaN</b>.
+<b>integralInterpolant</b> evaluates a definite integral with a variable upper limit: the returned object <b>F</b> gives <b>F(x)</b>, the integral of <b>integrand</b> from <b>lower</b> to <b>x</b>, for any <b>x</b> between <b>lower</b> and <b>upper</b>. 
 
-The object has the read-only properties <b>Integrand</b>, <b>LowerLimit</b>, <b>UpperLimit</b>, <b>Integral</b> (value of the integral from <b>lower</b> to <b>upper</b>), <b>ErrorBound</b> (approximate upper bound on the absolute error), <b>AbsoluteTolerance</b>, <b>RelativeTolerance</b> and <b>Subintervals</b> (row vector of the mesh points, from <b>lower</b> to <b>upper</b>, including the waypoints). <b>F(F.Subintervals)</b> returns the partial sums of the integral.
+The integral from <b>lower</b> to <b>upper</b> is computed once with the adaptive Gauss-Kronrod quadrature of <b>integral</b>. Querying <b>F(xq)</b> adds the partial sums of the mesh intervals located before each query point to the Gauss-Kronrod rule applied on the part of the interval that contains it, so the queried values have the accuracy of the integral. Query points outside the integration interval return <b>NaN</b>. 
+
+The object has the read-only properties <b>Integrand</b>, <b>LowerLimit</b>, <b>UpperLimit</b>, <b>Integral</b> (value of the integral from <b>lower</b> to <b>upper</b>), <b>ErrorBound</b> (approximate upper bound on the absolute error), <b>AbsoluteTolerance</b>, <b>RelativeTolerance</b> and <b>Subintervals</b> (row vector of the mesh points, from <b>lower</b> to <b>upper</b>, including the waypoints). <b>F(F.Subintervals)</b> returns the partial sums of the integral. 
 
 Specify discontinuities of the integrand as <b>Waypoints</b>. Do not use waypoints to specify singularities at the integration limits. For faster but less accurate evaluations, sample <b>F</b> and build a <b>griddedInterpolant</b>.
 
@@ -41,7 +42,6 @@ F = integralInterpolant(f, 0, 5)
 xq = linspace(1, 3, 5);
 Fq = F(xq)
 ```
-
 Improper integral.
 
 ```matlab
@@ -49,7 +49,6 @@ f = @(x) x.^5 .* exp(-x) .* sin(x);
 F = integralInterpolant(f, 0, Inf, 'RelativeTolerance', 1e-8, 'AbsoluteTolerance', 1e-13);
 Fq = F([0 Inf])
 ```
-
 Partial sums of an array-valued integrand.
 
 ```matlab
@@ -58,7 +57,6 @@ f = @(x) sin(k * x);
 F = integralInterpolant(f, 0, 1, 'ArrayValued', true);
 partialSums = F(F.Subintervals(end-5:end))
 ```
-
 Conversion to a gridded interpolant.
 
 ```matlab
@@ -70,13 +68,14 @@ Fq = F(1.88)
 Gq = G(1.88)
 ```
 
+
 ## 🔗 See also
 
-[integral](../special_functions/integral.md), [cumtrapz](../linear_algebra/cumtrapz.md), [griddedInterpolant](../special_functions/griddedInterpolant.md).
+[integral](../special_functions/integral.md), [cumtrapz](../linear_algebra/1_linear_systems/cumtrapz.md), [griddedInterpolant](../special_functions/griddedInterpolant.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -20,21 +20,25 @@ Lit ou definit les limites de couleur des axes.
 
 ## 📄 Description
 
+
 <b>caxis</b> fournit une interface de compatibilite pour les limites de couleur des axes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 imagesc([1 2; 3 4]); caxis([0 5]); limits = caxis()
 ```
 
+
 ## 🔗 Voir aussi
 
-[clim](../../graphics/clim.md).
+[clim](../../graphics/3_labels_styling/2_color_styling/clim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

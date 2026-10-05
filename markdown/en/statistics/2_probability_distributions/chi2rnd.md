@@ -19,18 +19,22 @@ Chi-square random numbers
 
 ## 📄 Description
 
+
 <b>chi2rnd</b> generates chi-square distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = chi2rnd(4, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

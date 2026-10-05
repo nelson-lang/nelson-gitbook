@@ -15,9 +15,12 @@
 
 ## 📄 Description
 
+
 <b>csvwrite</b> écrit une matrice numérique dans un fichier au format CSV (valeurs séparées par des virgules).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -30,14 +33,15 @@ R = fileread(filename)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [csvread](../spreadsheet/csvread.md), [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

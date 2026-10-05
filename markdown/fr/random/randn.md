@@ -24,13 +24,16 @@ Nombre aléatoire normalement distribué.
 
 ## 📄 Description
 
-<b>randn</b> renvoie une matrice dont les éléments sont distribués normalement avec une moyenne nulle et une variance unitaire.
 
-Par défaut, <b>randn</b> utilise l'algorithme ziggurat.
+<b>randn</b> renvoie une matrice dont les éléments sont distribués normalement avec une moyenne nulle et une variance unitaire. 
+
+Par défaut, <b>randn</b> utilise l'algorithme ziggurat. 
 
 La graine (seed) peut être modifiée en utilisant <b>rng</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 rng('default');
@@ -39,6 +42,7 @@ rng('default');
 randn
 
 ```
+
 
 ```matlab
 rng('default');
@@ -46,17 +50,20 @@ randn(6)
 
 ```
 
+
 ```matlab
 rng('default');
 randn(3, 2, 3)
 
 ```
 
+
 ```matlab
 rng('default');
 randn(3, 2, 'single')
 
 ```
+
 
 ```matlab
 rng('default');
@@ -65,16 +72,17 @@ randn(3, 2, 'like', v)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [rng](../random/rng.md), [randn](../random/randn.md), [eye](../constructors_functions/eye.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description         |
-| ------- | ---------------------- |
-| 1.0.0   | version initiale       |
-| 1.15.0  | Algorithme retravaillé |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.15.0   | Algorithme retravaillé |
 
 <!--
 ## 👤 Auteur

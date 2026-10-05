@@ -19,14 +19,18 @@ Somme mobile.
 
 ## 📄 Description
 
+
 <b>movsum</b> calcule les sommes sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movsum(A, 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ R = movsum(A, 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

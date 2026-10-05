@@ -1,10 +1,10 @@
-# dlsym_delete
+# dlsym\_delete
 
 Supprime l'objet dlsym
 
 ## 📝 Syntaxe
 
-- dlsym_delete(h)
+- dlsym\_delete(h)
 - delete(h)
 
 ## 📥 Argument d'entrée
@@ -13,15 +13,19 @@ Supprime l'objet dlsym
 
 ## 📄 Description
 
-<b>delete(h)</b> libère l'objet dlsym.
+
+<b>delete(h)</b> libère l'objet dlsym. 
 
 N'oubliez pas de nettoyer la variable h ensuite.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = dlsym_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -29,8 +33,8 @@ used = dlsym_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

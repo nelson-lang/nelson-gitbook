@@ -28,7 +28,8 @@ Filled contour plot of matrix
 
 ## 📄 Description
 
-<b>contourf</b> draws filled contour bands for the values in <b>Z</b>. The returned contour matrix matches the object's <b>ContourMatrix</b> property.
+
+<b>contourf</b> draws filled contour bands for the values in <b>Z</b>. The returned contour matrix matches the object's <b>ContourMatrix</b> property. 
 
 The contour object supports line, fill, transparency, label, and contour-level properties including <b>FaceColor</b>, <b>FaceAlpha</b>, <b>ShowText</b>, <b>LabelColor</b>, <b>LabelSpacing</b>, <b>LabelFormat</b>, <b>TextList</b>, <b>TextStep</b>, and <b>ZLocation</b>.
 
@@ -42,7 +43,6 @@ figure();
 [M,h] = contourf(X,Y,Z,10);
 h.FaceAlpha = 0.75;
 ```
-
 Draw filled contours.
 
 ```matlab
@@ -58,8 +58,8 @@ xlabel('X');
 ylabel('Y');
 colormap parula;
 ```
-
 <img src="contourf.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -67,9 +67,9 @@ colormap parula;
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

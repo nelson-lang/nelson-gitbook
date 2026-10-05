@@ -19,9 +19,12 @@ Remplace du texte avec une expression reguliere.
 
 ## 📄 Description
 
+
 <b>regexprep</b> remplace les occurrences trouvees par une expression reguliere.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -29,15 +32,16 @@ regexprep('a1 b2', '(\w)(\d)', '$2-$1')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[regexp](../../string/regexp.md).
+[regexp](../../string/5_regular_expressions/regexp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

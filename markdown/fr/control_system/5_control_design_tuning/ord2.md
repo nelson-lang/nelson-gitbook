@@ -23,9 +23,12 @@ Génère des systèmes du second ordre continus.
 
 ## 📄 Description
 
+
 Génère des matrices d'état (A, B, C, D) ou numérateur/dénominateur pour un système continu du second ordre à partir de la pulsation naturelle et de l'amortissement.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 wn = 5;
@@ -38,14 +41,15 @@ sys2 = tf(num, den)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[ss](../../control_system/ss.md), [tf](../../control_system/tf.md).
+[ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

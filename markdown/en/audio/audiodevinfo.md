@@ -30,11 +30,14 @@ Get audio devices information.
 
 ## 📄 Description
 
-<b>audiodevinfo</b> returns a structure with available audio input and output devices.
+
+<b>audiodevinfo</b> returns a structure with available audio input and output devices. 
 
 <b>devices = audiodevinfo('default')</b> returns a structure with default used audio input and output devices.
 
 ## 💡 Example
+
+
 
 ```matlab
 info = audiodevinfo()
@@ -48,9 +51,10 @@ for k = [1:audiodevinfo(INPUT_DEVICE)]
 end
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

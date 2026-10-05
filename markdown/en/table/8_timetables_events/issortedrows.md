@@ -16,9 +16,11 @@ Determine if timetable rows are sorted.
 
 ## 📄 Description
 
+
 <b>issortedrows</b> returns true when timetable rows are sorted by row times.
 
 ## 💡 Example
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3]), [10; 20; 30], 'VariableNames', {'A'});
@@ -26,13 +28,14 @@ issortedrows(TT)
 
 ```
 
+
 ## 🔗 See also
 
-[sortrows](../../table/sortrows.md), [issorted](../../data_analysis/issorted.md).
+[sortrows](../../table/4_sort_filter_rearrange/sortrows.md), [issorted](../../data_analysis/issorted.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

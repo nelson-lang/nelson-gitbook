@@ -21,17 +21,18 @@ Object that maps unique keys to values.
 
 ## 📄 Description
 
-<b>m = containers.Map()</b> creates an empty map with character-vector keys and values of any type.
 
-<b>m = containers.Map(keys, values)</b> creates a scalar map from key-value pairs. Keys must be unique in the resulting map. If the same key appears more than once during construction, only the last value is kept.
+<b>m = containers.Map()</b> creates an empty map with character-vector keys and values of any type. 
 
-If <b>values</b> is scalar and several keys are provided, the scalar value is assigned to each key. Otherwise the number of keys and values must match.
+<b>m = containers.Map(keys, values)</b> creates a scalar map from key-value pairs. Keys must be unique in the resulting map. If the same key appears more than once during construction, only the last value is kept. 
 
-<b>m = containers.Map('KeyType', keyType, 'ValueType', valueType)</b> creates an empty typed map. The properties <b>Count</b>, <b>KeyType</b>, and <b>ValueType</b> are read-only.
+If <b>values</b> is scalar and several keys are provided, the scalar value is assigned to each key. Otherwise the number of keys and values must match. 
 
-When keys are provided as logical, int8, uint8, int16, or uint16 arrays, the inferred key type is <b>double</b>.
+<b>m = containers.Map('KeyType', keyType, 'ValueType', valueType)</b> creates an empty typed map. The properties <b>Count</b>, <b>KeyType</b>, and <b>ValueType</b> are read-only. 
 
-Values are accessed with parenthesis indexing, for example <b>m('name')</b>. Assigning <b>m(key) = value</b> inserts a new entry or replaces an existing value. The <b>remove</b> method deletes entries.
+When keys are provided as logical, int8, uint8, int16, or uint16 arrays, the inferred key type is <b>double</b>. 
+
+Values are accessed with parenthesis indexing, for example <b>m('name')</b>. Assigning <b>m(key) = value</b> inserts a new entry or replaces an existing value. The <b>remove</b> method deletes entries. 
 
 The <b>keys</b> and <b>values</b> methods return cell arrays. The <b>isKey</b> method checks whether keys are present and accepts a scalar key or a cell array of keys.
 
@@ -47,7 +48,6 @@ isKey(m, {'apple', 'kiwi'})
 keys(m)
 values(m)
 ```
-
 Create a typed map.
 
 ```matlab
@@ -56,7 +56,6 @@ m('payload') = struct('name', 'Nelson', 'value', [1 2 3])
 m.Count
 m.ValueType
 ```
-
 Use numeric keys.
 
 ```matlab
@@ -66,14 +65,15 @@ remove(m, 1)
 m.Count
 ```
 
+
 ## 🔗 See also
 
 [dictionary](../dictionary/dictionary.md), [keys](../dictionary/keys.md), [values](../dictionary/values.md), [isKey](../dictionary/isKey.md), [remove](../dictionary/remove.md).
 
 ## 🕔 History
 
-| Version | 📄 Description       |
-| ------- | -------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | containers.Map class |
 
 <!--

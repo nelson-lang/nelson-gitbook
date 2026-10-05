@@ -16,11 +16,12 @@ Convertit une chaîne binaire en complément à deux en nombre.
 
 ## 📄 Description
 
-<b>bin2num</b> convertit un tableau de caractères binaires en tableau numérique.
 
-Remarques :
+<b>bin2num</b> convertit un tableau de caractères binaires en tableau numérique. 
 
--<b>num2bin</b> renvoie toujours les représentations binaires en colonne.
+Remarques : 
+
+-<b>num2bin</b> renvoie toujours les représentations binaires en colonne. 
 
 - <b>bin2num</b> et<b>num2bin</b> sont mutuellement inverses.
 
@@ -34,20 +35,23 @@ http://www.oxfordmathcenter.com/drupal7/node/43
 
 ## 💡 Exemple
 
+
+
 ```matlab
 X = [65535 128; 1 0]
 Y = num2bin(X)
 bin2num(Y)
 ```
 
+
 ## 🔗 Voir aussi
 
-[num2bin](../../elementary_functions/num2bin.md).
+[num2bin](../../elementary_functions/5_base_conversions/num2bin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -24,9 +24,10 @@ Random Number.
 
 ## 📄 Description
 
-<b>rand</b> returns a matrix with random elements uniformly distributed on the interval [0, 1].
 
-seed can be modified using <b>rng</b>.
+<b>rand</b> returns a matrix with random elements uniformly distributed on the interval [0, 1]. 
+
+seed can be modified using <b>rng</b>. 
 
 The Mersenne Twister designers consider 5489 as default seed. Nelson uses it as default seed (0).
 
@@ -36,6 +37,8 @@ M. Matsumoto and T. Nishimura, Mersenne Twister: A 623-dimensionally equidistrib
 
 ## 💡 Examples
 
+
+
 ```matlab
 rng('default');
 rand
@@ -43,6 +46,7 @@ rng('default');
 rand
 
 ```
+
 
 ```matlab
 rng('default');
@@ -50,17 +54,20 @@ rand(6)
 
 ```
 
+
 ```matlab
 rng('default');
 rand(3, 2, 3)
 
 ```
 
+
 ```matlab
 rng('default');
 rand(3, 2, 'single')
 
 ```
+
 
 ```matlab
 rng('default');
@@ -69,13 +76,14 @@ rand(3, 2, 'like', v)
 
 ```
 
+
 ## 🔗 See also
 
 [rng](../random/rng.md), [randn](../random/randn.md), [eye](../constructors_functions/eye.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

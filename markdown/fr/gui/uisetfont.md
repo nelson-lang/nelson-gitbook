@@ -18,6 +18,7 @@ Ouvre une boite de dialogue de selection de police.
 
 ## 📄 Description
 
+
 uisetfont returns font properties selected by the user.
 
 ## 💡 Exemples
@@ -31,7 +32,6 @@ uicontrol(f, 'Style', 'text', 'String', 'Sample Text', 'FontName', 'Consolas', '
 uicontrol(f, 'Style', 'pushbutton', 'String', 'OK', 'Position', [220 30 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [304 30 70 24]);
 ```
-
 <img src="uisetfont_example.svg" align="middle"/>
 Choose a font with a custom title.
 
@@ -42,14 +42,15 @@ s = uisetfont(initial, 'Choose editor font');
 if ~isequal(s, 0), disp(s.FontSize); end
 ```
 
+
 ## 🔗 Voir aussi
 
 [uisetcolor](../gui/uisetcolor.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--

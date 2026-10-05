@@ -21,7 +21,8 @@ Pile d'appels (call stack).
 
 ## 📄 Description
 
-<b>dbstack</b> affiche les noms de fichiers et les numéros de ligne des appels de fonctions.
+
+<b>dbstack</b> affiche les noms de fichiers et les numéros de ligne des appels de fonctions. 
 
 <b>dbstack('-completenames')</b> affiche les chemins de fichiers complets.
 
@@ -35,14 +36,15 @@ dbstack();
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [which](../functions_manager/which.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -12,6 +12,7 @@ Trace de triangles 2-D
 
 ## 📄 Description
 
+
 <b>triplot</b> trace un maillage triangulaire 2-D depuis une matrice de connectivite ou un objet de triangulation.
 
 ## 💡 Exemple
@@ -27,8 +28,8 @@ triplot(DT)
 hold on
 plot(IC(:, 1), IC(:, 2), '*r')
 ```
-
 <img src="triplot_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +37,8 @@ plot(IC(:, 1), IC(:, 2), '*r')
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

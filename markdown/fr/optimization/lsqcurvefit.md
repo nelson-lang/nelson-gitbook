@@ -20,13 +20,17 @@ Ajustement de courbe par moindres carres.
 
 ## 📄 Description
 
+
 <b>lsqcurvefit</b> minimise <b>fun(x, xdata) - ydata</b> avec <b>lsqnonlin</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 x = lsqcurvefit(@(p,t) p(1) * exp(p(2) * t), [1; 0], (0:3).', exp((0:3).'))
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,7 +38,7 @@ x = lsqcurvefit(@(p,t) p(1) * exp(p(2) * t), [1; 0], (0:3).', exp((0:3).'))
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

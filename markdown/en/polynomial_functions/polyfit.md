@@ -18,9 +18,12 @@ Polynomial curve fitting.
 
 ## 📄 Description
 
+
 <b>p = polyfit(x, y, n)</b> returns the coefficients for a polynomial<b>p(x)</b> of degree <b>n</b> that is a best fit for the data in<b>y</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,13 +32,14 @@ y = sin(x);
 p = polyfit(x, y, 7)
 ```
 
+
 ## 🔗 See also
 
 [roots](../polynomial_functions/roots.md), [poly](../polynomial_functions/poly.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

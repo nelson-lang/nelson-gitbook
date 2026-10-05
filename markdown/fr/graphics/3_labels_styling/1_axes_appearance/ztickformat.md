@@ -19,9 +19,10 @@ Definir ou obtenir le format des etiquettes de l'axe des z.
 
 ## 📄 Description
 
-<b>ztickformat</b> definit ou obtient le format des etiquettes de l'axe des z des axes courants.
 
-Le format s'applique aux etiquettes generees automatiquement.
+<b>ztickformat</b> definit ou obtient le format des etiquettes de l'axe des z des axes courants. 
+
+Le format s'applique aux etiquettes generees automatiquement. 
 
 Le format est une conversion de type sprintf (par exemple <b>%.2f</b> ou <b>%g</b>) appliquee a chaque valeur numerique de graduation. Les mots-cles predefinis <b>usd</b>, <b>eur</b>, <b>gbp</b>, <b>jpy</b>, <b>degrees</b> et <b>percentage</b> sont egalement acceptes. Les etiquettes personnalisees definies avec zticklabels ont priorite sur le format.
 
@@ -37,13 +38,14 @@ ztickformat('%.1f');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [zticks](../../../graphics/3_labels_styling/1_axes_appearance/zticks.md), [zticklabels](../../../graphics/3_labels_styling/1_axes_appearance/zticklabels.md), [xtickformat](../../../graphics/3_labels_styling/1_axes_appearance/xtickformat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

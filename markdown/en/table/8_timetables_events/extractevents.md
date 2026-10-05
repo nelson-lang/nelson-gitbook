@@ -23,13 +23,15 @@ Extract an event table from rows of a timetable.
 
 ## 📄 Description
 
-<b>extractevents</b> creates an event table from rows of a timetable. Only the variables named by the options are copied: the event lengths or ends variable first, then the event labels variable, then the data variables, then the variables made from the <b>EventLabels</b>, <b>EventLengths</b> and <b>EventEnds</b> values.
 
-An event variable cannot also be listed in <b>EventDataVariables</b>. <b>PreserveEventVariables</b> requires at least one variable option and the second output.
+<b>extractevents</b> creates an event table from rows of a timetable. Only the variables named by the options are copied: the event lengths or ends variable first, then the event labels variable, then the data variables, then the variables made from the <b>EventLabels</b>, <b>EventLengths</b> and <b>EventEnds</b> values. 
+
+An event variable cannot also be listed in <b>EventDataVariables</b>. <b>PreserveEventVariables</b> requires at least one variable option and the second output. 
 
 To read the event table attached to a timetable, use <b>TT.Properties.Events</b>.
 
 ## 💡 Examples
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], ["a"; "b"; "c"; "d"], 'VariableNames', {'A', 'L'});
@@ -44,13 +46,14 @@ ET = extractevents(TT, categorical(["start"; ""; ""; "stop"]))
 
 ```
 
+
 ## 🔗 See also
 
-[syncevents](../../table/syncevents.md), [eventtable](../../table/eventtable.md), [timetable](../../table/timetable.md).
+[syncevents](../../table/8_timetables_events/syncevents.md), [eventtable](../../table/8_timetables_events/eventtable.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

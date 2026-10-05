@@ -46,33 +46,36 @@ Add a legend to axes.
 
 ## 📄 Description
 
-<b>legend</b> creates or updates a legend attached to the target axes.
 
-When labels are omitted, labels are taken from the <b>DisplayName</b> property of the plotted objects. If <b>AutoUpdate</b> is <b>on</b>, newly added plotted objects are included automatically.
+<b>legend</b> creates or updates a legend attached to the target axes. 
 
-<b>Location for legend on the plot:</b>
+When labels are omitted, labels are taken from the <b>DisplayName</b> property of the plotted objects. If <b>AutoUpdate</b> is <b>on</b>, newly added plotted objects are included automatically. 
 
-'northeast' or 'NE': top right (default).
+<b>Location for legend on the plot:</b> 
 
-'north' or 'N': top center.
+'northeast' or 'NE': top right (default). 
 
-'south' or 'S': bottom center.
+'north' or 'N': top center. 
 
-'east' or 'E': middle right.
+'south' or 'S': bottom center. 
 
-'west' or 'W': middle left.
+'east' or 'E': middle right. 
 
-'northwest' or 'NW': top left.
+'west' or 'W': middle left. 
 
-'southeast' or 'SE': bottom right.
+'northwest' or 'NW': top left. 
 
-'southwest' or 'SW': bottom left.
+'southeast' or 'SE': bottom right. 
 
-Outside locations are also supported: 'northoutside', 'southoutside', 'eastoutside', and 'westoutside'.
+'southwest' or 'SW': bottom left. 
+
+Outside locations are also supported: 'northoutside', 'southoutside', 'eastoutside', and 'westoutside'. 
 
 See [legend properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.legend.properties.md) for the complete property list.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -85,8 +88,8 @@ hold(ax, 'on');
 plot(ax, x, y2, 'DisplayName', 'cos(x)');
 legend(ax, 'Location', 'N')
 ```
-
 <img src="legend.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -98,13 +101,14 @@ lgd = legend({'linear'; 'quadratic'}, 'NumColumns', 2);
 title(lgd, 'Curves')
 ```
 
+
 ## 🔗 See also
 
 [legend properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.legend.properties.md), [title](../../../graphics/3_labels_styling/4_labels_annotations/title.md), [text](../../../graphics/3_labels_styling/4_labels_annotations/text.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

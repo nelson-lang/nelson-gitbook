@@ -12,669 +12,669 @@
     <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
   </chapter_description>
         <keyword name="CCC" link="acausal_electrical/CCC.html" description="Current-controlled current source: i_pn = gain i_cp (the sense branch cp-cn is a short)."/>
-        <keyword name="block:CCC" link="acausal_electrical/CCC.html" description="Current-controlled current source: i_pn = gain i_cp (the sense branch cp-cn is a short)."/>
+        <keyword name="block:CCC" link="acausal_electrical/CCC.html" description="Current-controlled current source: i_pn = gain i_cp (the sense branch cp-cn is a short)." alias="true"/>
         <keyword name="CCV" link="acausal_electrical/CCV.html" description="Current-controlled voltage source: v_pn = gain i_cp (the sense branch cp-cn is a short)."/>
-        <keyword name="block:CCV" link="acausal_electrical/CCV.html" description="Current-controlled voltage source: v_pn = gain i_cp (the sense branch cp-cn is a short)."/>
+        <keyword name="block:CCV" link="acausal_electrical/CCV.html" description="Current-controlled voltage source: v_pn = gain i_cp (the sense branch cp-cn is a short)." alias="true"/>
         <keyword name="Capacitor" link="acausal_electrical/Capacitor.html" description="Ideal linear capacitor: i = C dv/dt."/>
-        <keyword name="block:Capacitor" link="acausal_electrical/Capacitor.html" description="Ideal linear capacitor: i = C dv/dt."/>
+        <keyword name="block:Capacitor" link="acausal_electrical/Capacitor.html" description="Ideal linear capacitor: i = C dv/dt." alias="true"/>
         <keyword name="Conductor" link="acausal_electrical/Conductor.html" description="Ideal linear conductor: i = G (v_p - v_n)."/>
-        <keyword name="block:Conductor" link="acausal_electrical/Conductor.html" description="Ideal linear conductor: i = G (v_p - v_n)."/>
+        <keyword name="block:Conductor" link="acausal_electrical/Conductor.html" description="Ideal linear conductor: i = G (v_p - v_n)." alias="true"/>
         <keyword name="ConstantCurrent" link="acausal_electrical/ConstantCurrent.html" description="Constant current source: current I flows p -&gt; n."/>
-        <keyword name="block:ConstantCurrent" link="acausal_electrical/ConstantCurrent.html" description="Constant current source: current I flows p -&gt; n."/>
+        <keyword name="block:ConstantCurrent" link="acausal_electrical/ConstantCurrent.html" description="Constant current source: current I flows p -&gt; n." alias="true"/>
         <keyword name="ConstantVoltage" link="acausal_electrical/ConstantVoltage.html" description="Constant voltage source: v_p - v_n = V."/>
-        <keyword name="block:ConstantVoltage" link="acausal_electrical/ConstantVoltage.html" description="Constant voltage source: v_p - v_n = V."/>
+        <keyword name="block:ConstantVoltage" link="acausal_electrical/ConstantVoltage.html" description="Constant voltage source: v_p - v_n = V." alias="true"/>
         <keyword name="CurrentSensor" link="acausal_electrical/CurrentSensor.html" description="Measures the branch current p -&gt; n (ideal ammeter)."/>
-        <keyword name="block:CurrentSensor" link="acausal_electrical/CurrentSensor.html" description="Measures the branch current p -&gt; n (ideal ammeter)."/>
+        <keyword name="block:CurrentSensor" link="acausal_electrical/CurrentSensor.html" description="Measures the branch current p -&gt; n (ideal ammeter)." alias="true"/>
         <keyword name="Diode" link="acausal_electrical/Diode.html" description="Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1)."/>
-        <keyword name="block:Diode" link="acausal_electrical/Diode.html" description="Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1)."/>
+        <keyword name="block:Diode" link="acausal_electrical/Diode.html" description="Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1)." alias="true"/>
         <keyword name="ExpSineCurrent" link="acausal_electrical/ExpSineCurrent.html" description="Exponentially damped sine current source."/>
-        <keyword name="block:ExpSineCurrent" link="acausal_electrical/ExpSineCurrent.html" description="Exponentially damped sine current source."/>
+        <keyword name="block:ExpSineCurrent" link="acausal_electrical/ExpSineCurrent.html" description="Exponentially damped sine current source." alias="true"/>
         <keyword name="ExpSineVoltage" link="acausal_electrical/ExpSineVoltage.html" description="Exponentially damped sine voltage source."/>
-        <keyword name="block:ExpSineVoltage" link="acausal_electrical/ExpSineVoltage.html" description="Exponentially damped sine voltage source."/>
+        <keyword name="block:ExpSineVoltage" link="acausal_electrical/ExpSineVoltage.html" description="Exponentially damped sine voltage source." alias="true"/>
         <keyword name="Ground" link="acausal_electrical/Ground.html" description="Reference node (0 V) for an electrical island."/>
-        <keyword name="block:Ground" link="acausal_electrical/Ground.html" description="Reference node (0 V) for an electrical island."/>
+        <keyword name="block:Ground" link="acausal_electrical/Ground.html" description="Reference node (0 V) for an electrical island." alias="true"/>
         <keyword name="Gyrator" link="acausal_electrical/Gyrator.html" description="Gyrator: i1 = G2 v2, i2 = -G1 v1 (across&lt;-&gt;through transducer)."/>
-        <keyword name="block:Gyrator" link="acausal_electrical/Gyrator.html" description="Gyrator: i1 = G2 v2, i2 = -G1 v1 (across&lt;-&gt;through transducer)."/>
+        <keyword name="block:Gyrator" link="acausal_electrical/Gyrator.html" description="Gyrator: i1 = G2 v2, i2 = -G1 v1 (across&lt;-&gt;through transducer)." alias="true"/>
         <keyword name="HeatingResistor" link="acausal_electrical/HeatingResistor.html" description="Resistor that dissipates its power P = v^2 / R as heat into a thermal port."/>
-        <keyword name="block:HeatingResistor" link="acausal_electrical/HeatingResistor.html" description="Resistor that dissipates its power P = v^2 / R as heat into a thermal port."/>
+        <keyword name="block:HeatingResistor" link="acausal_electrical/HeatingResistor.html" description="Resistor that dissipates its power P = v^2 / R as heat into a thermal port." alias="true"/>
         <keyword name="IdealDiode" link="acausal_electrical/IdealDiode.html" description="Ideal diode switching at the knee voltage Vknee: off below it (leak conductance Goff), on above it (on-resistance Ron in series with Vknee); the mode flip is an event."/>
-        <keyword name="block:IdealDiode" link="acausal_electrical/IdealDiode.html" description="Ideal diode switching at the knee voltage Vknee: off below it (leak conductance Goff), on above it (on-resistance Ron in series with Vknee); the mode flip is an event."/>
+        <keyword name="block:IdealDiode" link="acausal_electrical/IdealDiode.html" description="Ideal diode switching at the knee voltage Vknee: off below it (leak conductance Goff), on above it (on-resistance Ron in series with Vknee); the mode flip is an event." alias="true"/>
         <keyword name="IdealOpAmp" link="acausal_electrical/IdealOpAmp.html" description="Ideal op-amp (nullor): virtual short e_+ = e_-, output current free."/>
-        <keyword name="block:IdealOpAmp" link="acausal_electrical/IdealOpAmp.html" description="Ideal op-amp (nullor): virtual short e_+ = e_-, output current free."/>
+        <keyword name="block:IdealOpAmp" link="acausal_electrical/IdealOpAmp.html" description="Ideal op-amp (nullor): virtual short e_+ = e_-, output current free." alias="true"/>
         <keyword name="IdealSwitch" link="acausal_electrical/IdealSwitch.html" description="Ideal switch: control &gt; 0.5 -&gt; closed short, else open (i = 0)."/>
-        <keyword name="block:IdealSwitch" link="acausal_electrical/IdealSwitch.html" description="Ideal switch: control &gt; 0.5 -&gt; closed short, else open (i = 0)."/>
+        <keyword name="block:IdealSwitch" link="acausal_electrical/IdealSwitch.html" description="Ideal switch: control &gt; 0.5 -&gt; closed short, else open (i = 0)." alias="true"/>
         <keyword name="IdealTransformer" link="acausal_electrical/IdealTransformer.html" description="Ideal transformer: v1 = n v2, i2 = -n i1 (structural, no state storage)."/>
-        <keyword name="block:IdealTransformer" link="acausal_electrical/IdealTransformer.html" description="Ideal transformer: v1 = n v2, i2 = -n i1 (structural, no state storage)."/>
+        <keyword name="block:IdealTransformer" link="acausal_electrical/IdealTransformer.html" description="Ideal transformer: v1 = n v2, i2 = -n i1 (structural, no state storage)." alias="true"/>
         <keyword name="Idle" link="acausal_electrical/Idle.html" description="Ideal open branch: i = 0 (branch voltage free)."/>
-        <keyword name="block:Idle" link="acausal_electrical/Idle.html" description="Ideal open branch: i = 0 (branch voltage free)."/>
+        <keyword name="block:Idle" link="acausal_electrical/Idle.html" description="Ideal open branch: i = 0 (branch voltage free)." alias="true"/>
         <keyword name="Inductor" link="acausal_electrical/Inductor.html" description="Ideal linear inductor: v = L di/dt."/>
-        <keyword name="block:Inductor" link="acausal_electrical/Inductor.html" description="Ideal linear inductor: v = L di/dt."/>
+        <keyword name="block:Inductor" link="acausal_electrical/Inductor.html" description="Ideal linear inductor: v = L di/dt." alias="true"/>
         <keyword name="NMOS" link="acausal_electrical/NMOS.html" description="N-channel MOSFET (square law): drain, gate and source pins."/>
-        <keyword name="block:NMOS" link="acausal_electrical/NMOS.html" description="N-channel MOSFET (square law): drain, gate and source pins."/>
+        <keyword name="block:NMOS" link="acausal_electrical/NMOS.html" description="N-channel MOSFET (square law): drain, gate and source pins." alias="true"/>
         <keyword name="NPN" link="acausal_electrical/NPN.html" description="NPN bipolar transistor (Ebers-Moll): collector, base and emitter pins."/>
-        <keyword name="block:NPN" link="acausal_electrical/NPN.html" description="NPN bipolar transistor (Ebers-Moll): collector, base and emitter pins."/>
+        <keyword name="block:NPN" link="acausal_electrical/NPN.html" description="NPN bipolar transistor (Ebers-Moll): collector, base and emitter pins." alias="true"/>
         <keyword name="PMOS" link="acausal_electrical/PMOS.html" description="P-channel MOSFET (square law): drain, gate and source pins."/>
-        <keyword name="block:PMOS" link="acausal_electrical/PMOS.html" description="P-channel MOSFET (square law): drain, gate and source pins."/>
+        <keyword name="block:PMOS" link="acausal_electrical/PMOS.html" description="P-channel MOSFET (square law): drain, gate and source pins." alias="true"/>
         <keyword name="PNP" link="acausal_electrical/PNP.html" description="PNP bipolar transistor (Ebers-Moll): collector, base and emitter pins."/>
-        <keyword name="block:PNP" link="acausal_electrical/PNP.html" description="PNP bipolar transistor (Ebers-Moll): collector, base and emitter pins."/>
+        <keyword name="block:PNP" link="acausal_electrical/PNP.html" description="PNP bipolar transistor (Ebers-Moll): collector, base and emitter pins." alias="true"/>
         <keyword name="PotentialSensor" link="acausal_electrical/PotentialSensor.html" description="Measures the absolute node potential."/>
-        <keyword name="block:PotentialSensor" link="acausal_electrical/PotentialSensor.html" description="Measures the absolute node potential."/>
+        <keyword name="block:PotentialSensor" link="acausal_electrical/PotentialSensor.html" description="Measures the absolute node potential." alias="true"/>
         <keyword name="RampCurrent" link="acausal_electrical/RampCurrent.html" description="Ramp current source: i = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
-        <keyword name="block:RampCurrent" link="acausal_electrical/RampCurrent.html" description="Ramp current source: i = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
+        <keyword name="block:RampCurrent" link="acausal_electrical/RampCurrent.html" description="Ramp current source: i = Slope (t - StartTime) for t &gt;= StartTime, else 0." alias="true"/>
         <keyword name="RampVoltage" link="acausal_electrical/RampVoltage.html" description="Ramp voltage source: v = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
-        <keyword name="block:RampVoltage" link="acausal_electrical/RampVoltage.html" description="Ramp voltage source: v = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
+        <keyword name="block:RampVoltage" link="acausal_electrical/RampVoltage.html" description="Ramp voltage source: v = Slope (t - StartTime) for t &gt;= StartTime, else 0." alias="true"/>
         <keyword name="Resistor" link="acausal_electrical/Resistor.html" description="Ideal linear resistor: i = (v_p - v_n) / R."/>
-        <keyword name="block:Resistor" link="acausal_electrical/Resistor.html" description="Ideal linear resistor: i = (v_p - v_n) / R."/>
+        <keyword name="block:Resistor" link="acausal_electrical/Resistor.html" description="Ideal linear resistor: i = (v_p - v_n) / R." alias="true"/>
         <keyword name="Short" link="acausal_electrical/Short.html" description="Ideal short circuit: e_p = e_n (branch current free)."/>
-        <keyword name="block:Short" link="acausal_electrical/Short.html" description="Ideal short circuit: e_p = e_n (branch current free)."/>
+        <keyword name="block:Short" link="acausal_electrical/Short.html" description="Ideal short circuit: e_p = e_n (branch current free)." alias="true"/>
         <keyword name="SignalCurrent" link="acausal_electrical/SignalCurrent.html" description="Current source driven by the input signal."/>
-        <keyword name="block:SignalCurrent" link="acausal_electrical/SignalCurrent.html" description="Current source driven by the input signal."/>
+        <keyword name="block:SignalCurrent" link="acausal_electrical/SignalCurrent.html" description="Current source driven by the input signal." alias="true"/>
         <keyword name="SignalVoltage" link="acausal_electrical/SignalVoltage.html" description="Voltage source driven by the input signal."/>
-        <keyword name="block:SignalVoltage" link="acausal_electrical/SignalVoltage.html" description="Voltage source driven by the input signal."/>
+        <keyword name="block:SignalVoltage" link="acausal_electrical/SignalVoltage.html" description="Voltage source driven by the input signal." alias="true"/>
         <keyword name="SineCurrent" link="acausal_electrical/SineCurrent.html" description="Sine current source: i = Amplitude sin(2 pi Frequency t + Phase)."/>
-        <keyword name="block:SineCurrent" link="acausal_electrical/SineCurrent.html" description="Sine current source: i = Amplitude sin(2 pi Frequency t + Phase)."/>
+        <keyword name="block:SineCurrent" link="acausal_electrical/SineCurrent.html" description="Sine current source: i = Amplitude sin(2 pi Frequency t + Phase)." alias="true"/>
         <keyword name="SineVoltage" link="acausal_electrical/SineVoltage.html" description="Sine voltage source: v = Amplitude sin(2 pi Frequency t + Phase)."/>
-        <keyword name="block:SineVoltage" link="acausal_electrical/SineVoltage.html" description="Sine voltage source: v = Amplitude sin(2 pi Frequency t + Phase)."/>
+        <keyword name="block:SineVoltage" link="acausal_electrical/SineVoltage.html" description="Sine voltage source: v = Amplitude sin(2 pi Frequency t + Phase)." alias="true"/>
         <keyword name="TrapezoidCurrent" link="acausal_electrical/TrapezoidCurrent.html" description="Trapezoidal current source (continuous ramp-up / hold / ramp-down)."/>
-        <keyword name="block:TrapezoidCurrent" link="acausal_electrical/TrapezoidCurrent.html" description="Trapezoidal current source (continuous ramp-up / hold / ramp-down)."/>
+        <keyword name="block:TrapezoidCurrent" link="acausal_electrical/TrapezoidCurrent.html" description="Trapezoidal current source (continuous ramp-up / hold / ramp-down)." alias="true"/>
         <keyword name="TrapezoidVoltage" link="acausal_electrical/TrapezoidVoltage.html" description="Trapezoidal voltage source (continuous ramp-up / hold / ramp-down)."/>
-        <keyword name="block:TrapezoidVoltage" link="acausal_electrical/TrapezoidVoltage.html" description="Trapezoidal voltage source (continuous ramp-up / hold / ramp-down)."/>
+        <keyword name="block:TrapezoidVoltage" link="acausal_electrical/TrapezoidVoltage.html" description="Trapezoidal voltage source (continuous ramp-up / hold / ramp-down)." alias="true"/>
         <keyword name="VCC" link="acausal_electrical/VCC.html" description="Voltage-controlled current source: i = gain (v_cp - v_cn)."/>
-        <keyword name="block:VCC" link="acausal_electrical/VCC.html" description="Voltage-controlled current source: i = gain (v_cp - v_cn)."/>
+        <keyword name="block:VCC" link="acausal_electrical/VCC.html" description="Voltage-controlled current source: i = gain (v_cp - v_cn)." alias="true"/>
         <keyword name="VCV" link="acausal_electrical/VCV.html" description="Voltage-controlled voltage source: v_pn = gain (v_cp - v_cn)."/>
-        <keyword name="block:VCV" link="acausal_electrical/VCV.html" description="Voltage-controlled voltage source: v_pn = gain (v_cp - v_cn)."/>
+        <keyword name="block:VCV" link="acausal_electrical/VCV.html" description="Voltage-controlled voltage source: v_pn = gain (v_cp - v_cn)." alias="true"/>
         <keyword name="VariableCapacitor" link="acausal_electrical/VariableCapacitor.html" description="Capacitor whose capacitance C is set by a signal (exact charge Q formulation)."/>
-        <keyword name="block:VariableCapacitor" link="acausal_electrical/VariableCapacitor.html" description="Capacitor whose capacitance C is set by a signal (exact charge Q formulation)."/>
+        <keyword name="block:VariableCapacitor" link="acausal_electrical/VariableCapacitor.html" description="Capacitor whose capacitance C is set by a signal (exact charge Q formulation)." alias="true"/>
         <keyword name="VariableConductor" link="acausal_electrical/VariableConductor.html" description="Conductor whose conductance G is set by the input signal."/>
-        <keyword name="block:VariableConductor" link="acausal_electrical/VariableConductor.html" description="Conductor whose conductance G is set by the input signal."/>
+        <keyword name="block:VariableConductor" link="acausal_electrical/VariableConductor.html" description="Conductor whose conductance G is set by the input signal." alias="true"/>
         <keyword name="VariableInductor" link="acausal_electrical/VariableInductor.html" description="Inductor whose inductance L is set by a signal (exact flux phi formulation)."/>
-        <keyword name="block:VariableInductor" link="acausal_electrical/VariableInductor.html" description="Inductor whose inductance L is set by a signal (exact flux phi formulation)."/>
+        <keyword name="block:VariableInductor" link="acausal_electrical/VariableInductor.html" description="Inductor whose inductance L is set by a signal (exact flux phi formulation)." alias="true"/>
         <keyword name="VariableResistor" link="acausal_electrical/VariableResistor.html" description="Resistor whose resistance R is set by the input signal."/>
-        <keyword name="block:VariableResistor" link="acausal_electrical/VariableResistor.html" description="Resistor whose resistance R is set by the input signal."/>
+        <keyword name="block:VariableResistor" link="acausal_electrical/VariableResistor.html" description="Resistor whose resistance R is set by the input signal." alias="true"/>
         <keyword name="VoltageSensor" link="acausal_electrical/VoltageSensor.html" description="Measures the voltage v_p - v_n (ideal, no loading)."/>
-        <keyword name="block:VoltageSensor" link="acausal_electrical/VoltageSensor.html" description="Measures the voltage v_p - v_n (ideal, no loading)."/>
+        <keyword name="block:VoltageSensor" link="acausal_electrical/VoltageSensor.html" description="Measures the voltage v_p - v_n (ideal, no loading)." alias="true"/>
         <keyword name="ZDiode" link="acausal_electrical/ZDiode.html" description="Zener diode: forward Shockley conduction plus reverse breakdown at -Vz."/>
-        <keyword name="block:ZDiode" link="acausal_electrical/ZDiode.html" description="Zener diode: forward Shockley conduction plus reverse breakdown at -Vz."/>
+        <keyword name="block:ZDiode" link="acausal_electrical/ZDiode.html" description="Zener diode: forward Shockley conduction plus reverse breakdown at -Vz." alias="true"/>
       </section>
       <section name="Planar (acausal)">
         <chapter_description>
     <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
   </chapter_description>
         <keyword name="PlanarAccelerationSensor" link="acausal_planar/PlanarAccelerationSensor.html" description="Absolute acceleration of the body at frame a along the chosen axis (x, y) or the angular acceleration (alpha)."/>
-        <keyword name="block:PlanarAccelerationSensor" link="acausal_planar/PlanarAccelerationSensor.html" description="Absolute acceleration of the body at frame a along the chosen axis (x, y) or the angular acceleration (alpha)."/>
+        <keyword name="block:PlanarAccelerationSensor" link="acausal_planar/PlanarAccelerationSensor.html" description="Absolute acceleration of the body at frame a along the chosen axis (x, y) or the angular acceleration (alpha)." alias="true"/>
         <keyword name="PlanarBody" link="acausal_planar/PlanarBody.html" description="Rigid body: mass m, central inertia I; six states (xc, yc, phi, vx, vy, w). Named frames are body-fixed offsets from the COM."/>
-        <keyword name="block:PlanarBody" link="acausal_planar/PlanarBody.html" description="Rigid body: mass m, central inertia I; six states (xc, yc, phi, vx, vy, w). Named frames are body-fixed offsets from the COM."/>
+        <keyword name="block:PlanarBody" link="acausal_planar/PlanarBody.html" description="Rigid body: mass m, central inertia I; six states (xc, yc, phi, vx, vy, w). Named frames are body-fixed offsets from the COM." alias="true"/>
         <keyword name="PlanarDamper" link="acausal_planar/PlanarDamper.html" description="Linear 2D damper between the points at frames a and b: F = -d dv."/>
-        <keyword name="block:PlanarDamper" link="acausal_planar/PlanarDamper.html" description="Linear 2D damper between the points at frames a and b: F = -d dv."/>
+        <keyword name="block:PlanarDamper" link="acausal_planar/PlanarDamper.html" description="Linear 2D damper between the points at frames a and b: F = -d dv." alias="true"/>
         <keyword name="PlanarDistance" link="acausal_planar/PlanarDistance.html" description="Rigid rod: holds a fixed distance L between the points at frames a and b."/>
-        <keyword name="block:PlanarDistance" link="acausal_planar/PlanarDistance.html" description="Rigid rod: holds a fixed distance L between the points at frames a and b."/>
+        <keyword name="block:PlanarDistance" link="acausal_planar/PlanarDistance.html" description="Rigid rod: holds a fixed distance L between the points at frames a and b." alias="true"/>
         <keyword name="PlanarDistanceSensor" link="acausal_planar/PlanarDistanceSensor.html" description="Distance between the points at frames a and b."/>
-        <keyword name="block:PlanarDistanceSensor" link="acausal_planar/PlanarDistanceSensor.html" description="Distance between the points at frames a and b."/>
+        <keyword name="block:PlanarDistanceSensor" link="acausal_planar/PlanarDistanceSensor.html" description="Distance between the points at frames a and b." alias="true"/>
         <keyword name="PlanarFixed" link="acausal_planar/PlanarFixed.html" description="Frame rigidly fixed at the world point (x, y)."/>
-        <keyword name="block:PlanarFixed" link="acausal_planar/PlanarFixed.html" description="Frame rigidly fixed at the world point (x, y)."/>
+        <keyword name="block:PlanarFixed" link="acausal_planar/PlanarFixed.html" description="Frame rigidly fixed at the world point (x, y)." alias="true"/>
         <keyword name="PlanarForce" link="acausal_planar/PlanarForce.html" description="External world force (fx, fy) applied at the frame-a point (adds a torque when offset from the COM)."/>
-        <keyword name="block:PlanarForce" link="acausal_planar/PlanarForce.html" description="External world force (fx, fy) applied at the frame-a point (adds a torque when offset from the COM)."/>
+        <keyword name="block:PlanarForce" link="acausal_planar/PlanarForce.html" description="External world force (fx, fy) applied at the frame-a point (adds a torque when offset from the COM)." alias="true"/>
         <keyword name="PlanarPointMass" link="acausal_planar/PlanarPointMass.html" description="Point mass (no orientation): four states (xc, yc, vx, vy); attach joints at its point."/>
-        <keyword name="block:PlanarPointMass" link="acausal_planar/PlanarPointMass.html" description="Point mass (no orientation): four states (xc, yc, vx, vy); attach joints at its point."/>
+        <keyword name="block:PlanarPointMass" link="acausal_planar/PlanarPointMass.html" description="Point mass (no orientation): four states (xc, yc, vx, vy); attach joints at its point." alias="true"/>
         <keyword name="PlanarPositionSensor" link="acausal_planar/PlanarPositionSensor.html" description="Absolute position of the frame-a point along the chosen axis (x, y) or the body angle (phi)."/>
-        <keyword name="block:PlanarPositionSensor" link="acausal_planar/PlanarPositionSensor.html" description="Absolute position of the frame-a point along the chosen axis (x, y) or the body angle (phi)."/>
+        <keyword name="block:PlanarPositionSensor" link="acausal_planar/PlanarPositionSensor.html" description="Absolute position of the frame-a point along the chosen axis (x, y) or the body angle (phi)." alias="true"/>
         <keyword name="PlanarPrismatic" link="acausal_planar/PlanarPrismatic.html" description="Prismatic joint: frame b slides along the world axis (dx, dy) through frame a, relative rotation locked."/>
-        <keyword name="block:PlanarPrismatic" link="acausal_planar/PlanarPrismatic.html" description="Prismatic joint: frame b slides along the world axis (dx, dy) through frame a, relative rotation locked."/>
+        <keyword name="block:PlanarPrismatic" link="acausal_planar/PlanarPrismatic.html" description="Prismatic joint: frame b slides along the world axis (dx, dy) through frame a, relative rotation locked." alias="true"/>
         <keyword name="PlanarRelPositionSensor" link="acausal_planar/PlanarRelPositionSensor.html" description="Relative position of the frame-a point minus the frame-b point along the chosen axis (x, y)."/>
-        <keyword name="block:PlanarRelPositionSensor" link="acausal_planar/PlanarRelPositionSensor.html" description="Relative position of the frame-a point minus the frame-b point along the chosen axis (x, y)."/>
+        <keyword name="block:PlanarRelPositionSensor" link="acausal_planar/PlanarRelPositionSensor.html" description="Relative position of the frame-a point minus the frame-b point along the chosen axis (x, y)." alias="true"/>
         <keyword name="PlanarRelativeTorque" link="acausal_planar/PlanarRelativeTorque.html" description="Actuator torque: +tau on the body at frame a, -tau on the body at frame b (drives a joint)."/>
-        <keyword name="block:PlanarRelativeTorque" link="acausal_planar/PlanarRelativeTorque.html" description="Actuator torque: +tau on the body at frame a, -tau on the body at frame b (drives a joint)."/>
+        <keyword name="block:PlanarRelativeTorque" link="acausal_planar/PlanarRelativeTorque.html" description="Actuator torque: +tau on the body at frame a, -tau on the body at frame b (drives a joint)." alias="true"/>
         <keyword name="PlanarRevolute" link="acausal_planar/PlanarRevolute.html" description="Revolute (pin) joint: frames a and b share position, free relative rotation."/>
-        <keyword name="block:PlanarRevolute" link="acausal_planar/PlanarRevolute.html" description="Revolute (pin) joint: frames a and b share position, free relative rotation."/>
+        <keyword name="block:PlanarRevolute" link="acausal_planar/PlanarRevolute.html" description="Revolute (pin) joint: frames a and b share position, free relative rotation." alias="true"/>
         <keyword name="PlanarRollingWheel" link="acausal_planar/PlanarRollingWheel.html" description="Wheel at frame a rolls without slipping on the fixed surface line (px,py)+(dx,dy), staying at height radius."/>
-        <keyword name="block:PlanarRollingWheel" link="acausal_planar/PlanarRollingWheel.html" description="Wheel at frame a rolls without slipping on the fixed surface line (px,py)+(dx,dy), staying at height radius."/>
+        <keyword name="block:PlanarRollingWheel" link="acausal_planar/PlanarRollingWheel.html" description="Wheel at frame a rolls without slipping on the fixed surface line (px,py)+(dx,dy), staying at height radius." alias="true"/>
         <keyword name="PlanarSpring" link="acausal_planar/PlanarSpring.html" description="Linear 2D spring between the points at frames a and b: F = -c dr."/>
-        <keyword name="block:PlanarSpring" link="acausal_planar/PlanarSpring.html" description="Linear 2D spring between the points at frames a and b: F = -c dr."/>
+        <keyword name="block:PlanarSpring" link="acausal_planar/PlanarSpring.html" description="Linear 2D spring between the points at frames a and b: F = -c dr." alias="true"/>
         <keyword name="PlanarSpringDamper" link="acausal_planar/PlanarSpringDamper.html" description="Linear 2D spring-damper between the points at frames a and b: F = -(c dr + d dv)."/>
-        <keyword name="block:PlanarSpringDamper" link="acausal_planar/PlanarSpringDamper.html" description="Linear 2D spring-damper between the points at frames a and b: F = -(c dr + d dv)."/>
+        <keyword name="block:PlanarSpringDamper" link="acausal_planar/PlanarSpringDamper.html" description="Linear 2D spring-damper between the points at frames a and b: F = -(c dr + d dv)." alias="true"/>
         <keyword name="PlanarTorque" link="acausal_planar/PlanarTorque.html" description="External torque tau applied to the body at frame a."/>
-        <keyword name="block:PlanarTorque" link="acausal_planar/PlanarTorque.html" description="External torque tau applied to the body at frame a."/>
+        <keyword name="block:PlanarTorque" link="acausal_planar/PlanarTorque.html" description="External torque tau applied to the body at frame a." alias="true"/>
         <keyword name="PlanarVelocitySensor" link="acausal_planar/PlanarVelocitySensor.html" description="Absolute velocity of the frame-a point along the chosen axis (x, y) or the angular velocity (omega)."/>
-        <keyword name="block:PlanarVelocitySensor" link="acausal_planar/PlanarVelocitySensor.html" description="Absolute velocity of the frame-a point along the chosen axis (x, y) or the angular velocity (omega)."/>
+        <keyword name="block:PlanarVelocitySensor" link="acausal_planar/PlanarVelocitySensor.html" description="Absolute velocity of the frame-a point along the chosen axis (x, y) or the angular velocity (omega)." alias="true"/>
         <keyword name="PlanarWorld" link="acausal_planar/PlanarWorld.html" description="Inertial world with uniform gravity (down = -y); provides a fixed frame at the origin."/>
-        <keyword name="block:PlanarWorld" link="acausal_planar/PlanarWorld.html" description="Inertial world with uniform gravity (down = -y); provides a fixed frame at the origin."/>
+        <keyword name="block:PlanarWorld" link="acausal_planar/PlanarWorld.html" description="Inertial world with uniform gravity (down = -y); provides a fixed frame at the origin." alias="true"/>
       </section>
       <section name="Rotational (acausal)">
         <chapter_description>
     <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
   </chapter_description>
         <keyword name="AngleSensor" link="acausal_rotational/AngleSensor.html" description="Measures the absolute angle of a flange."/>
-        <keyword name="block:AngleSensor" link="acausal_rotational/AngleSensor.html" description="Measures the absolute angle of a flange."/>
+        <keyword name="block:AngleSensor" link="acausal_rotational/AngleSensor.html" description="Measures the absolute angle of a flange." alias="true"/>
         <keyword name="BearingFriction" link="acausal_rotational/BearingFriction.html" description="Regularised bearing friction (event-free): tau = -tau_c tanh(w / w_eps)."/>
-        <keyword name="block:BearingFriction" link="acausal_rotational/BearingFriction.html" description="Regularised bearing friction (event-free): tau = -tau_c tanh(w / w_eps)."/>
+        <keyword name="block:BearingFriction" link="acausal_rotational/BearingFriction.html" description="Regularised bearing friction (event-free): tau = -tau_c tanh(w / w_eps)." alias="true"/>
         <keyword name="Clutch" link="acausal_rotational/Clutch.html" description="Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) / w_eps) reduces the slip toward a common speed."/>
-        <keyword name="block:Clutch" link="acausal_rotational/Clutch.html" description="Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) / w_eps) reduces the slip toward a common speed."/>
+        <keyword name="block:Clutch" link="acausal_rotational/Clutch.html" description="Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) / w_eps) reduces the slip toward a common speed." alias="true"/>
         <keyword name="ConstantRotSpeed" link="acausal_rotational/ConstantRotSpeed.html" description="Prescribed motion: the flange rotates at a constant angular velocity w."/>
-        <keyword name="block:ConstantRotSpeed" link="acausal_rotational/ConstantRotSpeed.html" description="Prescribed motion: the flange rotates at a constant angular velocity w."/>
+        <keyword name="block:ConstantRotSpeed" link="acausal_rotational/ConstantRotSpeed.html" description="Prescribed motion: the flange rotates at a constant angular velocity w." alias="true"/>
         <keyword name="ConstantTorque" link="acausal_rotational/ConstantTorque.html" description="Constant torque on a flange."/>
-        <keyword name="block:ConstantTorque" link="acausal_rotational/ConstantTorque.html" description="Constant torque on a flange."/>
+        <keyword name="block:ConstantTorque" link="acausal_rotational/ConstantTorque.html" description="Constant torque on a flange." alias="true"/>
         <keyword name="EMF" link="acausal_rotational/EMF.html" description="Electro-mechanical converter (motor/generator): back-emf v = k w, torque tau = k i."/>
-        <keyword name="block:EMF" link="acausal_rotational/EMF.html" description="Electro-mechanical converter (motor/generator): back-emf v = k w, torque tau = k i."/>
+        <keyword name="block:EMF" link="acausal_rotational/EMF.html" description="Electro-mechanical converter (motor/generator): back-emf v = k w, torque tau = k i." alias="true"/>
         <keyword name="ElastoBacklash" link="acausal_rotational/ElastoBacklash.html" description="Rotational backlash: elastic torque with a dead zone of total play b."/>
-        <keyword name="block:ElastoBacklash" link="acausal_rotational/ElastoBacklash.html" description="Rotational backlash: elastic torque with a dead zone of total play b."/>
+        <keyword name="block:ElastoBacklash" link="acausal_rotational/ElastoBacklash.html" description="Rotational backlash: elastic torque with a dead zone of total play b." alias="true"/>
         <keyword name="ExpSineTorque" link="acausal_rotational/ExpSineTorque.html" description="Exponentially damped sine torque on a flange."/>
-        <keyword name="block:ExpSineTorque" link="acausal_rotational/ExpSineTorque.html" description="Exponentially damped sine torque on a flange."/>
+        <keyword name="block:ExpSineTorque" link="acausal_rotational/ExpSineTorque.html" description="Exponentially damped sine torque on a flange." alias="true"/>
         <keyword name="Freewheel" link="acausal_rotational/Freewheel.html" description="One-way clutch: couples flange a to b only while a overruns b (freewheels otherwise)."/>
-        <keyword name="block:Freewheel" link="acausal_rotational/Freewheel.html" description="One-way clutch: couples flange a to b only while a overruns b (freewheels otherwise)."/>
+        <keyword name="block:Freewheel" link="acausal_rotational/Freewheel.html" description="One-way clutch: couples flange a to b only while a overruns b (freewheels otherwise)." alias="true"/>
         <keyword name="IdealGear" link="acausal_rotational/IdealGear.html" description="Ideal gear phi_a = ratio phi_b (structural node merge, inertia folded)."/>
-        <keyword name="block:IdealGear" link="acausal_rotational/IdealGear.html" description="Ideal gear phi_a = ratio phi_b (structural node merge, inertia folded)."/>
+        <keyword name="block:IdealGear" link="acausal_rotational/IdealGear.html" description="Ideal gear phi_a = ratio phi_b (structural node merge, inertia folded)." alias="true"/>
         <keyword name="Inertia" link="acausal_rotational/Inertia.html" description="Rotational inertia: J dw/dt = tau_net."/>
-        <keyword name="block:Inertia" link="acausal_rotational/Inertia.html" description="Rotational inertia: J dw/dt = tau_net."/>
+        <keyword name="block:Inertia" link="acausal_rotational/Inertia.html" description="Rotational inertia: J dw/dt = tau_net." alias="true"/>
         <keyword name="LinearSpeedDependentTorque" link="acausal_rotational/LinearSpeedDependentTorque.html" description="Speed-proportional resistance to ground: tau = -d w."/>
-        <keyword name="block:LinearSpeedDependentTorque" link="acausal_rotational/LinearSpeedDependentTorque.html" description="Speed-proportional resistance to ground: tau = -d w."/>
+        <keyword name="block:LinearSpeedDependentTorque" link="acausal_rotational/LinearSpeedDependentTorque.html" description="Speed-proportional resistance to ground: tau = -d w." alias="true"/>
         <keyword name="QuadraticSpeedDependentTorque" link="acausal_rotational/QuadraticSpeedDependentTorque.html" description="Quadratic (drag) resistance to ground: tau = -d w |w|."/>
-        <keyword name="block:QuadraticSpeedDependentTorque" link="acausal_rotational/QuadraticSpeedDependentTorque.html" description="Quadratic (drag) resistance to ground: tau = -d w |w|."/>
+        <keyword name="block:QuadraticSpeedDependentTorque" link="acausal_rotational/QuadraticSpeedDependentTorque.html" description="Quadratic (drag) resistance to ground: tau = -d w |w|." alias="true"/>
         <keyword name="RampTorque" link="acausal_rotational/RampTorque.html" description="Ramp torque on a flange: tau = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
-        <keyword name="block:RampTorque" link="acausal_rotational/RampTorque.html" description="Ramp torque on a flange: tau = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
+        <keyword name="block:RampTorque" link="acausal_rotational/RampTorque.html" description="Ramp torque on a flange: tau = Slope (t - StartTime) for t &gt;= StartTime, else 0." alias="true"/>
         <keyword name="RelAngleSensor" link="acausal_rotational/RelAngleSensor.html" description="Measures the relative angle phi_a - phi_b between two flanges."/>
-        <keyword name="block:RelAngleSensor" link="acausal_rotational/RelAngleSensor.html" description="Measures the relative angle phi_a - phi_b between two flanges."/>
+        <keyword name="block:RelAngleSensor" link="acausal_rotational/RelAngleSensor.html" description="Measures the relative angle phi_a - phi_b between two flanges." alias="true"/>
         <keyword name="RelRotSpeedSensor" link="acausal_rotational/RelRotSpeedSensor.html" description="Measures the relative angular velocity w_a - w_b between two flanges."/>
-        <keyword name="block:RelRotSpeedSensor" link="acausal_rotational/RelRotSpeedSensor.html" description="Measures the relative angular velocity w_a - w_b between two flanges."/>
+        <keyword name="block:RelRotSpeedSensor" link="acausal_rotational/RelRotSpeedSensor.html" description="Measures the relative angular velocity w_a - w_b between two flanges." alias="true"/>
         <keyword name="RotAccelerate" link="acausal_rotational/RotAccelerate.html" description="Prescribed motion: the flange angular acceleration follows the input signal."/>
-        <keyword name="block:RotAccelerate" link="acausal_rotational/RotAccelerate.html" description="Prescribed motion: the flange angular acceleration follows the input signal."/>
+        <keyword name="block:RotAccelerate" link="acausal_rotational/RotAccelerate.html" description="Prescribed motion: the flange angular acceleration follows the input signal." alias="true"/>
         <keyword name="RotBrake" link="acausal_rotational/RotBrake.html" description="Signal-actuated rotational brake to ground: the input sets the peak braking torque."/>
-        <keyword name="block:RotBrake" link="acausal_rotational/RotBrake.html" description="Signal-actuated rotational brake to ground: the input sets the peak braking torque."/>
+        <keyword name="block:RotBrake" link="acausal_rotational/RotBrake.html" description="Signal-actuated rotational brake to ground: the input sets the peak braking torque." alias="true"/>
         <keyword name="RotDamper" link="acausal_rotational/RotDamper.html" description="Rotational damper: tau = d (w_a - w_b)."/>
-        <keyword name="block:RotDamper" link="acausal_rotational/RotDamper.html" description="Rotational damper: tau = d (w_a - w_b)."/>
+        <keyword name="block:RotDamper" link="acausal_rotational/RotDamper.html" description="Rotational damper: tau = d (w_a - w_b)." alias="true"/>
         <keyword name="RotFixed" link="acausal_rotational/RotFixed.html" description="Flange fixed at a prescribed angle phi0."/>
-        <keyword name="block:RotFixed" link="acausal_rotational/RotFixed.html" description="Flange fixed at a prescribed angle phi0."/>
+        <keyword name="block:RotFixed" link="acausal_rotational/RotFixed.html" description="Flange fixed at a prescribed angle phi0." alias="true"/>
         <keyword name="RotSpeed" link="acausal_rotational/RotSpeed.html" description="Prescribed motion: the flange angular velocity follows the input signal."/>
-        <keyword name="block:RotSpeed" link="acausal_rotational/RotSpeed.html" description="Prescribed motion: the flange angular velocity follows the input signal."/>
+        <keyword name="block:RotSpeed" link="acausal_rotational/RotSpeed.html" description="Prescribed motion: the flange angular velocity follows the input signal." alias="true"/>
         <keyword name="RotSpeedSensor" link="acausal_rotational/RotSpeedSensor.html" description="Measures the absolute angular velocity of a flange."/>
-        <keyword name="block:RotSpeedSensor" link="acausal_rotational/RotSpeedSensor.html" description="Measures the absolute angular velocity of a flange."/>
+        <keyword name="block:RotSpeedSensor" link="acausal_rotational/RotSpeedSensor.html" description="Measures the absolute angular velocity of a flange." alias="true"/>
         <keyword name="RotSpring" link="acausal_rotational/RotSpring.html" description="Rotational spring: tau = c (phi_a - phi_b)."/>
-        <keyword name="block:RotSpring" link="acausal_rotational/RotSpring.html" description="Rotational spring: tau = c (phi_a - phi_b)."/>
+        <keyword name="block:RotSpring" link="acausal_rotational/RotSpring.html" description="Rotational spring: tau = c (phi_a - phi_b)." alias="true"/>
         <keyword name="RotSpringDamper" link="acausal_rotational/RotSpringDamper.html" description="Parallel rotational spring and damper: tau = c (phi_a - phi_b) + d (w_a - w_b)."/>
-        <keyword name="block:RotSpringDamper" link="acausal_rotational/RotSpringDamper.html" description="Parallel rotational spring and damper: tau = c (phi_a - phi_b) + d (w_a - w_b)."/>
+        <keyword name="block:RotSpringDamper" link="acausal_rotational/RotSpringDamper.html" description="Parallel rotational spring and damper: tau = c (phi_a - phi_b) + d (w_a - w_b)." alias="true"/>
         <keyword name="SineTorque" link="acausal_rotational/SineTorque.html" description="Sine torque on a flange: tau = Amplitude sin(2 pi Frequency t + Phase)."/>
-        <keyword name="block:SineTorque" link="acausal_rotational/SineTorque.html" description="Sine torque on a flange: tau = Amplitude sin(2 pi Frequency t + Phase)."/>
+        <keyword name="block:SineTorque" link="acausal_rotational/SineTorque.html" description="Sine torque on a flange: tau = Amplitude sin(2 pi Frequency t + Phase)." alias="true"/>
         <keyword name="Torque" link="acausal_rotational/Torque.html" description="External torque on a flange, driven by the input signal."/>
-        <keyword name="block:Torque" link="acausal_rotational/Torque.html" description="External torque on a flange, driven by the input signal."/>
+        <keyword name="block:Torque" link="acausal_rotational/Torque.html" description="External torque on a flange, driven by the input signal." alias="true"/>
         <keyword name="Torque2" link="acausal_rotational/Torque2.html" description="Equal and opposite torque between two flanges: +tau on a, -tau on b (signal-driven)."/>
-        <keyword name="block:Torque2" link="acausal_rotational/Torque2.html" description="Equal and opposite torque between two flanges: +tau on a, -tau on b (signal-driven)."/>
+        <keyword name="block:Torque2" link="acausal_rotational/Torque2.html" description="Equal and opposite torque between two flanges: +tau on a, -tau on b (signal-driven)." alias="true"/>
         <keyword name="TrapezoidTorque" link="acausal_rotational/TrapezoidTorque.html" description="Trapezoidal torque on a flange (continuous ramp-up / hold / ramp-down)."/>
-        <keyword name="block:TrapezoidTorque" link="acausal_rotational/TrapezoidTorque.html" description="Trapezoidal torque on a flange (continuous ramp-up / hold / ramp-down)."/>
+        <keyword name="block:TrapezoidTorque" link="acausal_rotational/TrapezoidTorque.html" description="Trapezoidal torque on a flange (continuous ramp-up / hold / ramp-down)." alias="true"/>
       </section>
       <section name="Thermal (acausal)">
         <chapter_description>
     <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
   </chapter_description>
         <keyword name="BodyRadiation" link="acausal_thermal/BodyRadiation.html" description="Radiation (Stefan-Boltzmann): Q_flow = Gr (T_a^4 - T_b^4)."/>
-        <keyword name="block:BodyRadiation" link="acausal_thermal/BodyRadiation.html" description="Radiation (Stefan-Boltzmann): Q_flow = Gr (T_a^4 - T_b^4)."/>
+        <keyword name="block:BodyRadiation" link="acausal_thermal/BodyRadiation.html" description="Radiation (Stefan-Boltzmann): Q_flow = Gr (T_a^4 - T_b^4)." alias="true"/>
         <keyword name="Convection" link="acausal_thermal/Convection.html" description="Convection: Q_flow = Gc (T_a - T_b) with a signal-driven coefficient Gc."/>
-        <keyword name="block:Convection" link="acausal_thermal/Convection.html" description="Convection: Q_flow = Gc (T_a - T_b) with a signal-driven coefficient Gc."/>
+        <keyword name="block:Convection" link="acausal_thermal/Convection.html" description="Convection: Q_flow = Gc (T_a - T_b) with a signal-driven coefficient Gc." alias="true"/>
         <keyword name="ConvectiveResistor" link="acausal_thermal/ConvectiveResistor.html" description="Convective resistor: Q_flow = (T_a - T_b) / Rc with a signal-driven Rc."/>
-        <keyword name="block:ConvectiveResistor" link="acausal_thermal/ConvectiveResistor.html" description="Convective resistor: Q_flow = (T_a - T_b) / Rc with a signal-driven Rc."/>
+        <keyword name="block:ConvectiveResistor" link="acausal_thermal/ConvectiveResistor.html" description="Convective resistor: Q_flow = (T_a - T_b) / Rc with a signal-driven Rc." alias="true"/>
         <keyword name="FixedHeatFlow" link="acausal_thermal/FixedHeatFlow.html" description="Constant heat flow Q into the connected port."/>
-        <keyword name="block:FixedHeatFlow" link="acausal_thermal/FixedHeatFlow.html" description="Constant heat flow Q into the connected port."/>
+        <keyword name="block:FixedHeatFlow" link="acausal_thermal/FixedHeatFlow.html" description="Constant heat flow Q into the connected port." alias="true"/>
         <keyword name="FixedTemperature" link="acausal_thermal/FixedTemperature.html" description="Boundary at a fixed temperature T."/>
-        <keyword name="block:FixedTemperature" link="acausal_thermal/FixedTemperature.html" description="Boundary at a fixed temperature T."/>
+        <keyword name="block:FixedTemperature" link="acausal_thermal/FixedTemperature.html" description="Boundary at a fixed temperature T." alias="true"/>
         <keyword name="HeatCapacitor" link="acausal_thermal/HeatCapacitor.html" description="Lumped heat capacity: C dT/dt = Q_flow (port referenced to 0)."/>
-        <keyword name="block:HeatCapacitor" link="acausal_thermal/HeatCapacitor.html" description="Lumped heat capacity: C dT/dt = Q_flow (port referenced to 0)."/>
+        <keyword name="block:HeatCapacitor" link="acausal_thermal/HeatCapacitor.html" description="Lumped heat capacity: C dT/dt = Q_flow (port referenced to 0)." alias="true"/>
         <keyword name="HeatFlowSensor" link="acausal_thermal/HeatFlowSensor.html" description="Measures the heat flow through the connection."/>
-        <keyword name="block:HeatFlowSensor" link="acausal_thermal/HeatFlowSensor.html" description="Measures the heat flow through the connection."/>
+        <keyword name="block:HeatFlowSensor" link="acausal_thermal/HeatFlowSensor.html" description="Measures the heat flow through the connection." alias="true"/>
         <keyword name="PrescribedHeatFlow" link="acausal_thermal/PrescribedHeatFlow.html" description="Heat flow into the port driven by the input signal."/>
-        <keyword name="block:PrescribedHeatFlow" link="acausal_thermal/PrescribedHeatFlow.html" description="Heat flow into the port driven by the input signal."/>
+        <keyword name="block:PrescribedHeatFlow" link="acausal_thermal/PrescribedHeatFlow.html" description="Heat flow into the port driven by the input signal." alias="true"/>
         <keyword name="PrescribedTemperature" link="acausal_thermal/PrescribedTemperature.html" description="Temperature boundary driven by the input signal."/>
-        <keyword name="block:PrescribedTemperature" link="acausal_thermal/PrescribedTemperature.html" description="Temperature boundary driven by the input signal."/>
+        <keyword name="block:PrescribedTemperature" link="acausal_thermal/PrescribedTemperature.html" description="Temperature boundary driven by the input signal." alias="true"/>
         <keyword name="RelTemperatureSensor" link="acausal_thermal/RelTemperatureSensor.html" description="Measures the temperature difference T_a - T_b."/>
-        <keyword name="block:RelTemperatureSensor" link="acausal_thermal/RelTemperatureSensor.html" description="Measures the temperature difference T_a - T_b."/>
+        <keyword name="block:RelTemperatureSensor" link="acausal_thermal/RelTemperatureSensor.html" description="Measures the temperature difference T_a - T_b." alias="true"/>
         <keyword name="TemperatureSensor" link="acausal_thermal/TemperatureSensor.html" description="Measures the absolute temperature of a port."/>
-        <keyword name="block:TemperatureSensor" link="acausal_thermal/TemperatureSensor.html" description="Measures the absolute temperature of a port."/>
+        <keyword name="block:TemperatureSensor" link="acausal_thermal/TemperatureSensor.html" description="Measures the absolute temperature of a port." alias="true"/>
         <keyword name="ThermalConductor" link="acausal_thermal/ThermalConductor.html" description="Thermal conductor: Q_flow = G (T_a - T_b)."/>
-        <keyword name="block:ThermalConductor" link="acausal_thermal/ThermalConductor.html" description="Thermal conductor: Q_flow = G (T_a - T_b)."/>
+        <keyword name="block:ThermalConductor" link="acausal_thermal/ThermalConductor.html" description="Thermal conductor: Q_flow = G (T_a - T_b)." alias="true"/>
         <keyword name="ThermalResistor" link="acausal_thermal/ThermalResistor.html" description="Thermal resistor: Q_flow = (T_a - T_b) / R."/>
-        <keyword name="block:ThermalResistor" link="acausal_thermal/ThermalResistor.html" description="Thermal resistor: Q_flow = (T_a - T_b) / R."/>
+        <keyword name="block:ThermalResistor" link="acausal_thermal/ThermalResistor.html" description="Thermal resistor: Q_flow = (T_a - T_b) / R." alias="true"/>
       </section>
       <section name="Translational (acausal)">
         <chapter_description>
     <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
   </chapter_description>
         <keyword name="Accelerate" link="acausal_translational/Accelerate.html" description="Prescribed motion: the flange acceleration follows the input signal."/>
-        <keyword name="block:Accelerate" link="acausal_translational/Accelerate.html" description="Prescribed motion: the flange acceleration follows the input signal."/>
+        <keyword name="block:Accelerate" link="acausal_translational/Accelerate.html" description="Prescribed motion: the flange acceleration follows the input signal." alias="true"/>
         <keyword name="Brake" link="acausal_translational/Brake.html" description="Signal-actuated friction brake to ground: the input sets the peak braking force."/>
-        <keyword name="block:Brake" link="acausal_translational/Brake.html" description="Signal-actuated friction brake to ground: the input sets the peak braking force."/>
+        <keyword name="block:Brake" link="acausal_translational/Brake.html" description="Signal-actuated friction brake to ground: the input sets the peak braking force." alias="true"/>
         <keyword name="ConstantForce" link="acausal_translational/ConstantForce.html" description="Constant force on a flange."/>
-        <keyword name="block:ConstantForce" link="acausal_translational/ConstantForce.html" description="Constant force on a flange."/>
+        <keyword name="block:ConstantForce" link="acausal_translational/ConstantForce.html" description="Constant force on a flange." alias="true"/>
         <keyword name="ConstantSpeed" link="acausal_translational/ConstantSpeed.html" description="Prescribed motion: the flange moves at a constant velocity v."/>
-        <keyword name="block:ConstantSpeed" link="acausal_translational/ConstantSpeed.html" description="Prescribed motion: the flange moves at a constant velocity v."/>
+        <keyword name="block:ConstantSpeed" link="acausal_translational/ConstantSpeed.html" description="Prescribed motion: the flange moves at a constant velocity v." alias="true"/>
         <keyword name="Damper" link="acausal_translational/Damper.html" description="Linear translational damper: F = d (v_a - v_b)."/>
-        <keyword name="block:Damper" link="acausal_translational/Damper.html" description="Linear translational damper: F = d (v_a - v_b)."/>
+        <keyword name="block:Damper" link="acausal_translational/Damper.html" description="Linear translational damper: F = d (v_a - v_b)." alias="true"/>
         <keyword name="ElastoGap" link="acausal_translational/ElastoGap.html" description="One-sided contact spring-damper: acts only while the gap is closed (s_rel &lt; s_rel0)."/>
-        <keyword name="block:ElastoGap" link="acausal_translational/ElastoGap.html" description="One-sided contact spring-damper: acts only while the gap is closed (s_rel &lt; s_rel0)."/>
+        <keyword name="block:ElastoGap" link="acausal_translational/ElastoGap.html" description="One-sided contact spring-damper: acts only while the gap is closed (s_rel &lt; s_rel0)." alias="true"/>
         <keyword name="ExpSineForce" link="acausal_translational/ExpSineForce.html" description="Exponentially damped sine force on a flange."/>
-        <keyword name="block:ExpSineForce" link="acausal_translational/ExpSineForce.html" description="Exponentially damped sine force on a flange."/>
+        <keyword name="block:ExpSineForce" link="acausal_translational/ExpSineForce.html" description="Exponentially damped sine force on a flange." alias="true"/>
         <keyword name="Fixed" link="acausal_translational/Fixed.html" description="Flange fixed at a prescribed position s0."/>
-        <keyword name="block:Fixed" link="acausal_translational/Fixed.html" description="Flange fixed at a prescribed position s0."/>
+        <keyword name="block:Fixed" link="acausal_translational/Fixed.html" description="Flange fixed at a prescribed position s0." alias="true"/>
         <keyword name="Force" link="acausal_translational/Force.html" description="External force on a flange, driven by the input signal."/>
-        <keyword name="block:Force" link="acausal_translational/Force.html" description="External force on a flange, driven by the input signal."/>
+        <keyword name="block:Force" link="acausal_translational/Force.html" description="External force on a flange, driven by the input signal." alias="true"/>
         <keyword name="Force2" link="acausal_translational/Force2.html" description="Equal and opposite force between two flanges: +F on a, -F on b (signal-driven)."/>
-        <keyword name="block:Force2" link="acausal_translational/Force2.html" description="Equal and opposite force between two flanges: +F on a, -F on b (signal-driven)."/>
+        <keyword name="block:Force2" link="acausal_translational/Force2.html" description="Equal and opposite force between two flanges: +F on a, -F on b (signal-driven)." alias="true"/>
         <keyword name="Friction" link="acausal_translational/Friction.html" description="Regularised Coulomb friction (event-free): F = -Fc tanh(v / vEps)."/>
-        <keyword name="block:Friction" link="acausal_translational/Friction.html" description="Regularised Coulomb friction (event-free): F = -Fc tanh(v / vEps)."/>
+        <keyword name="block:Friction" link="acausal_translational/Friction.html" description="Regularised Coulomb friction (event-free): F = -Fc tanh(v / vEps)." alias="true"/>
         <keyword name="Lever" link="acausal_translational/Lever.html" description="Lever (small-angle): s_a = ratio s_b, the arm ratio (structural merge)."/>
-        <keyword name="block:Lever" link="acausal_translational/Lever.html" description="Lever (small-angle): s_a = ratio s_b, the arm ratio (structural merge)."/>
+        <keyword name="block:Lever" link="acausal_translational/Lever.html" description="Lever (small-angle): s_a = ratio s_b, the arm ratio (structural merge)." alias="true"/>
         <keyword name="LinearSpeedDependentForce" link="acausal_translational/LinearSpeedDependentForce.html" description="Speed-proportional resistance to ground: F = -d v."/>
-        <keyword name="block:LinearSpeedDependentForce" link="acausal_translational/LinearSpeedDependentForce.html" description="Speed-proportional resistance to ground: F = -d v."/>
+        <keyword name="block:LinearSpeedDependentForce" link="acausal_translational/LinearSpeedDependentForce.html" description="Speed-proportional resistance to ground: F = -d v." alias="true"/>
         <keyword name="Mass" link="acausal_translational/Mass.html" description="Sliding mass with inertia: m dv/dt = F_net."/>
-        <keyword name="block:Mass" link="acausal_translational/Mass.html" description="Sliding mass with inertia: m dv/dt = F_net."/>
+        <keyword name="block:Mass" link="acausal_translational/Mass.html" description="Sliding mass with inertia: m dv/dt = F_net." alias="true"/>
         <keyword name="MassWithWeight" link="acausal_translational/MassWithWeight.html" description="Sliding mass under gravity: m dv/dt = F_net - m g (expands to Mass + ConstantForce)."/>
-        <keyword name="block:MassWithWeight" link="acausal_translational/MassWithWeight.html" description="Sliding mass under gravity: m dv/dt = F_net - m g (expands to Mass + ConstantForce)."/>
+        <keyword name="block:MassWithWeight" link="acausal_translational/MassWithWeight.html" description="Sliding mass under gravity: m dv/dt = F_net - m g (expands to Mass + ConstantForce)." alias="true"/>
         <keyword name="PositionSensor" link="acausal_translational/PositionSensor.html" description="Measures the absolute position of a flange."/>
-        <keyword name="block:PositionSensor" link="acausal_translational/PositionSensor.html" description="Measures the absolute position of a flange."/>
+        <keyword name="block:PositionSensor" link="acausal_translational/PositionSensor.html" description="Measures the absolute position of a flange." alias="true"/>
         <keyword name="Pulley" link="acausal_translational/Pulley.html" description="Ideal pulley: s_a = ratio s_b (structural merge; ratio = radius ratio)."/>
-        <keyword name="block:Pulley" link="acausal_translational/Pulley.html" description="Ideal pulley: s_a = ratio s_b (structural merge; ratio = radius ratio)."/>
+        <keyword name="block:Pulley" link="acausal_translational/Pulley.html" description="Ideal pulley: s_a = ratio s_b (structural merge; ratio = radius ratio)." alias="true"/>
         <keyword name="QuadraticSpeedDependentForce" link="acausal_translational/QuadraticSpeedDependentForce.html" description="Quadratic (drag) resistance to ground: F = -d v |v|."/>
-        <keyword name="block:QuadraticSpeedDependentForce" link="acausal_translational/QuadraticSpeedDependentForce.html" description="Quadratic (drag) resistance to ground: F = -d v |v|."/>
+        <keyword name="block:QuadraticSpeedDependentForce" link="acausal_translational/QuadraticSpeedDependentForce.html" description="Quadratic (drag) resistance to ground: F = -d v |v|." alias="true"/>
         <keyword name="RampForce" link="acausal_translational/RampForce.html" description="Ramp force on a flange: F = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
-        <keyword name="block:RampForce" link="acausal_translational/RampForce.html" description="Ramp force on a flange: F = Slope (t - StartTime) for t &gt;= StartTime, else 0."/>
+        <keyword name="block:RampForce" link="acausal_translational/RampForce.html" description="Ramp force on a flange: F = Slope (t - StartTime) for t &gt;= StartTime, else 0." alias="true"/>
         <keyword name="RelPositionSensor" link="acausal_translational/RelPositionSensor.html" description="Measures the relative position s_a - s_b between two flanges."/>
-        <keyword name="block:RelPositionSensor" link="acausal_translational/RelPositionSensor.html" description="Measures the relative position s_a - s_b between two flanges."/>
+        <keyword name="block:RelPositionSensor" link="acausal_translational/RelPositionSensor.html" description="Measures the relative position s_a - s_b between two flanges." alias="true"/>
         <keyword name="RelSpeedSensor" link="acausal_translational/RelSpeedSensor.html" description="Measures the relative velocity v_a - v_b between two flanges."/>
-        <keyword name="block:RelSpeedSensor" link="acausal_translational/RelSpeedSensor.html" description="Measures the relative velocity v_a - v_b between two flanges."/>
+        <keyword name="block:RelSpeedSensor" link="acausal_translational/RelSpeedSensor.html" description="Measures the relative velocity v_a - v_b between two flanges." alias="true"/>
         <keyword name="Rod" link="acausal_translational/Rod.html" description="Rigid massless rod: s_a = s_b (structural merge; ratio defaults to 1)."/>
-        <keyword name="block:Rod" link="acausal_translational/Rod.html" description="Rigid massless rod: s_a = s_b (structural merge; ratio defaults to 1)."/>
+        <keyword name="block:Rod" link="acausal_translational/Rod.html" description="Rigid massless rod: s_a = s_b (structural merge; ratio defaults to 1)." alias="true"/>
         <keyword name="SineForce" link="acausal_translational/SineForce.html" description="Sine force on a flange: F = Amplitude sin(2 pi Frequency t + Phase)."/>
-        <keyword name="block:SineForce" link="acausal_translational/SineForce.html" description="Sine force on a flange: F = Amplitude sin(2 pi Frequency t + Phase)."/>
+        <keyword name="block:SineForce" link="acausal_translational/SineForce.html" description="Sine force on a flange: F = Amplitude sin(2 pi Frequency t + Phase)." alias="true"/>
         <keyword name="SlidingMass" link="acausal_translational/SlidingMass.html" description="Sliding mass of length L: m dv/dt = F_net (L is geometric, does not affect the dynamics)."/>
-        <keyword name="block:SlidingMass" link="acausal_translational/SlidingMass.html" description="Sliding mass of length L: m dv/dt = F_net (L is geometric, does not affect the dynamics)."/>
+        <keyword name="block:SlidingMass" link="acausal_translational/SlidingMass.html" description="Sliding mass of length L: m dv/dt = F_net (L is geometric, does not affect the dynamics)." alias="true"/>
         <keyword name="Speed" link="acausal_translational/Speed.html" description="Prescribed motion: the flange velocity follows the input signal."/>
-        <keyword name="block:Speed" link="acausal_translational/Speed.html" description="Prescribed motion: the flange velocity follows the input signal."/>
+        <keyword name="block:Speed" link="acausal_translational/Speed.html" description="Prescribed motion: the flange velocity follows the input signal." alias="true"/>
         <keyword name="SpeedSensor" link="acausal_translational/SpeedSensor.html" description="Measures the absolute velocity of a flange."/>
-        <keyword name="block:SpeedSensor" link="acausal_translational/SpeedSensor.html" description="Measures the absolute velocity of a flange."/>
+        <keyword name="block:SpeedSensor" link="acausal_translational/SpeedSensor.html" description="Measures the absolute velocity of a flange." alias="true"/>
         <keyword name="Spring" link="acausal_translational/Spring.html" description="Linear translational spring: F = k (s_a - s_b)."/>
-        <keyword name="block:Spring" link="acausal_translational/Spring.html" description="Linear translational spring: F = k (s_a - s_b)."/>
+        <keyword name="block:Spring" link="acausal_translational/Spring.html" description="Linear translational spring: F = k (s_a - s_b)." alias="true"/>
         <keyword name="SpringDamper" link="acausal_translational/SpringDamper.html" description="Parallel spring and damper: F = k (s_a - s_b) + d (v_a - v_b)."/>
-        <keyword name="block:SpringDamper" link="acausal_translational/SpringDamper.html" description="Parallel spring and damper: F = k (s_a - s_b) + d (v_a - v_b)."/>
+        <keyword name="block:SpringDamper" link="acausal_translational/SpringDamper.html" description="Parallel spring and damper: F = k (s_a - s_b) + d (v_a - v_b)." alias="true"/>
         <keyword name="TranslationalEMF" link="acausal_translational/TranslationalEMF.html" description="Linear electro-mechanical converter: back-emf v = k v_flange, force F = k i."/>
-        <keyword name="block:TranslationalEMF" link="acausal_translational/TranslationalEMF.html" description="Linear electro-mechanical converter: back-emf v = k v_flange, force F = k i."/>
+        <keyword name="block:TranslationalEMF" link="acausal_translational/TranslationalEMF.html" description="Linear electro-mechanical converter: back-emf v = k v_flange, force F = k i." alias="true"/>
         <keyword name="TrapezoidForce" link="acausal_translational/TrapezoidForce.html" description="Trapezoidal force on a flange (continuous ramp-up / hold / ramp-down)."/>
-        <keyword name="block:TrapezoidForce" link="acausal_translational/TrapezoidForce.html" description="Trapezoidal force on a flange (continuous ramp-up / hold / ramp-down)."/>
+        <keyword name="block:TrapezoidForce" link="acausal_translational/TrapezoidForce.html" description="Trapezoidal force on a flange (continuous ramp-up / hold / ramp-down)." alias="true"/>
       </section>
       <section name="Continuous blocks">
         <chapter_description>
     <p>Stateful continuous-time blocks updated with the simulation step.</p>
   </chapter_description>
         <keyword name="constraint" link="continuous/constraint.html" description="Algebraic (differential-algebraic) constraint state solved by the DAE solver."/>
-        <keyword name="block:constraint" link="continuous/constraint.html" description="Algebraic (differential-algebraic) constraint state solved by the DAE solver."/>
+        <keyword name="block:constraint" link="continuous/constraint.html" description="Algebraic (differential-algebraic) constraint state solved by the DAE solver." alias="true"/>
         <keyword name="delay" link="continuous/delay.html" description="Delays a signal with a circular buffer."/>
-        <keyword name="block:delay" link="continuous/delay.html" description="Delays a signal with a circular buffer."/>
+        <keyword name="block:delay" link="continuous/delay.html" description="Delays a signal with a circular buffer." alias="true"/>
         <keyword name="derivative" link="continuous/derivative.html" description="Estimates the time derivative of an input."/>
-        <keyword name="block:derivative" link="continuous/derivative.html" description="Estimates the time derivative of an input."/>
+        <keyword name="block:derivative" link="continuous/derivative.html" description="Estimates the time derivative of an input." alias="true"/>
         <keyword name="hpf" link="continuous/hpf.html" description="Applies a first-order high-pass filter."/>
-        <keyword name="block:hpf" link="continuous/hpf.html" description="Applies a first-order high-pass filter."/>
+        <keyword name="block:hpf" link="continuous/hpf.html" description="Applies a first-order high-pass filter." alias="true"/>
         <keyword name="integrator" link="continuous/integrator.html" description="Integrates the input over time with optional clamps."/>
-        <keyword name="block:integrator" link="continuous/integrator.html" description="Integrates the input over time with optional clamps."/>
+        <keyword name="block:integrator" link="continuous/integrator.html" description="Integrates the input over time with optional clamps." alias="true"/>
         <keyword name="lpf" link="continuous/lpf.html" description="Applies a first-order low-pass filter."/>
-        <keyword name="block:lpf" link="continuous/lpf.html" description="Applies a first-order low-pass filter."/>
+        <keyword name="block:lpf" link="continuous/lpf.html" description="Applies a first-order low-pass filter." alias="true"/>
         <keyword name="pid" link="continuous/pid.html" description="Implements a scalar PID controller with output limits."/>
-        <keyword name="block:pid" link="continuous/pid.html" description="Implements a scalar PID controller with output limits."/>
+        <keyword name="block:pid" link="continuous/pid.html" description="Implements a scalar PID controller with output limits." alias="true"/>
         <keyword name="stateSpace" link="continuous/stateSpace.html" description="Implements a scalar continuous state-space model."/>
-        <keyword name="block:stateSpace" link="continuous/stateSpace.html" description="Implements a scalar continuous state-space model."/>
+        <keyword name="block:stateSpace" link="continuous/stateSpace.html" description="Implements a scalar continuous state-space model." alias="true"/>
         <keyword name="tf" link="continuous/tf.html" description="Implements a continuous transfer function approximation."/>
-        <keyword name="block:tf" link="continuous/tf.html" description="Implements a continuous transfer function approximation."/>
+        <keyword name="block:tf" link="continuous/tf.html" description="Implements a continuous transfer function approximation." alias="true"/>
       </section>
       <section name="Dashboard blocks">
         <chapter_description>
     <p>Interactive dashboard widgets that bind to signals and parameters to observe or drive a running model.</p>
   </chapter_description>
         <keyword name="dashboardCallbackButton" link="dashboard/dashboardCallbackButton.html" description="Runs a callback and writes a value when clicked."/>
-        <keyword name="block:dashboardCallbackButton" link="dashboard/dashboardCallbackButton.html" description="Runs a callback and writes a value when clicked."/>
+        <keyword name="block:dashboardCallbackButton" link="dashboard/dashboardCallbackButton.html" description="Runs a callback and writes a value when clicked." alias="true"/>
         <keyword name="dashboardCheckBox" link="dashboard/dashboardCheckBox.html" description="Toggles a bound parameter between two values with a check box."/>
-        <keyword name="block:dashboardCheckBox" link="dashboard/dashboardCheckBox.html" description="Toggles a bound parameter between two values with a check box."/>
+        <keyword name="block:dashboardCheckBox" link="dashboard/dashboardCheckBox.html" description="Toggles a bound parameter between two values with a check box." alias="true"/>
         <keyword name="dashboardComboBox" link="dashboard/dashboardComboBox.html" description="Selects one of several values from a drop-down list."/>
-        <keyword name="block:dashboardComboBox" link="dashboard/dashboardComboBox.html" description="Selects one of several values from a drop-down list."/>
+        <keyword name="block:dashboardComboBox" link="dashboard/dashboardComboBox.html" description="Selects one of several values from a drop-down list." alias="true"/>
         <keyword name="dashboardDisplay" link="dashboard/dashboardDisplay.html" description="Shows the current value of a bound signal as formatted text."/>
-        <keyword name="block:dashboardDisplay" link="dashboard/dashboardDisplay.html" description="Shows the current value of a bound signal as formatted text."/>
+        <keyword name="block:dashboardDisplay" link="dashboard/dashboardDisplay.html" description="Shows the current value of a bound signal as formatted text." alias="true"/>
         <keyword name="dashboardEdit" link="dashboard/dashboardEdit.html" description="Lets you type a value that is written to a bound parameter."/>
-        <keyword name="block:dashboardEdit" link="dashboard/dashboardEdit.html" description="Lets you type a value that is written to a bound parameter."/>
+        <keyword name="block:dashboardEdit" link="dashboard/dashboardEdit.html" description="Lets you type a value that is written to a bound parameter." alias="true"/>
         <keyword name="dashboardGauge" link="dashboard/dashboardGauge.html" description="Displays a bound signal as a needle on a circular scale."/>
-        <keyword name="block:dashboardGauge" link="dashboard/dashboardGauge.html" description="Displays a bound signal as a needle on a circular scale."/>
+        <keyword name="block:dashboardGauge" link="dashboard/dashboardGauge.html" description="Displays a bound signal as a needle on a circular scale." alias="true"/>
         <keyword name="dashboardHalfGauge" link="dashboard/dashboardHalfGauge.html" description="Displays a bound signal on a 180-degree semicircular scale."/>
-        <keyword name="block:dashboardHalfGauge" link="dashboard/dashboardHalfGauge.html" description="Displays a bound signal on a 180-degree semicircular scale."/>
+        <keyword name="block:dashboardHalfGauge" link="dashboard/dashboardHalfGauge.html" description="Displays a bound signal on a 180-degree semicircular scale." alias="true"/>
         <keyword name="dashboardKnob" link="dashboard/dashboardKnob.html" description="Sets a bound parameter by turning a rotary knob."/>
-        <keyword name="block:dashboardKnob" link="dashboard/dashboardKnob.html" description="Sets a bound parameter by turning a rotary knob."/>
+        <keyword name="block:dashboardKnob" link="dashboard/dashboardKnob.html" description="Sets a bound parameter by turning a rotary knob." alias="true"/>
         <keyword name="dashboardLamp" link="dashboard/dashboardLamp.html" description="Shows a colored indicator that changes with a bound signal."/>
-        <keyword name="block:dashboardLamp" link="dashboard/dashboardLamp.html" description="Shows a colored indicator that changes with a bound signal."/>
+        <keyword name="block:dashboardLamp" link="dashboard/dashboardLamp.html" description="Shows a colored indicator that changes with a bound signal." alias="true"/>
         <keyword name="dashboardLinearGauge" link="dashboard/dashboardLinearGauge.html" description="Displays a bound signal on a straight linear scale."/>
-        <keyword name="block:dashboardLinearGauge" link="dashboard/dashboardLinearGauge.html" description="Displays a bound signal on a straight linear scale."/>
+        <keyword name="block:dashboardLinearGauge" link="dashboard/dashboardLinearGauge.html" description="Displays a bound signal on a straight linear scale." alias="true"/>
         <keyword name="dashboardMultiStateImage" link="dashboard/dashboardMultiStateImage.html" description="Shows one of several images selected by a bound signal."/>
-        <keyword name="block:dashboardMultiStateImage" link="dashboard/dashboardMultiStateImage.html" description="Shows one of several images selected by a bound signal."/>
+        <keyword name="block:dashboardMultiStateImage" link="dashboard/dashboardMultiStateImage.html" description="Shows one of several images selected by a bound signal." alias="true"/>
         <keyword name="dashboardPushButton" link="dashboard/dashboardPushButton.html" description="Writes a value to a bound parameter while pressed or toggled."/>
-        <keyword name="block:dashboardPushButton" link="dashboard/dashboardPushButton.html" description="Writes a value to a bound parameter while pressed or toggled."/>
+        <keyword name="block:dashboardPushButton" link="dashboard/dashboardPushButton.html" description="Writes a value to a bound parameter while pressed or toggled." alias="true"/>
         <keyword name="dashboardQuarterGauge" link="dashboard/dashboardQuarterGauge.html" description="Displays a bound signal on a 90-degree quarter scale."/>
-        <keyword name="block:dashboardQuarterGauge" link="dashboard/dashboardQuarterGauge.html" description="Displays a bound signal on a 90-degree quarter scale."/>
+        <keyword name="block:dashboardQuarterGauge" link="dashboard/dashboardQuarterGauge.html" description="Displays a bound signal on a 90-degree quarter scale." alias="true"/>
         <keyword name="dashboardRadioButton" link="dashboard/dashboardRadioButton.html" description="Selects one of several values with a group of radio buttons."/>
-        <keyword name="block:dashboardRadioButton" link="dashboard/dashboardRadioButton.html" description="Selects one of several values with a group of radio buttons."/>
+        <keyword name="block:dashboardRadioButton" link="dashboard/dashboardRadioButton.html" description="Selects one of several values with a group of radio buttons." alias="true"/>
         <keyword name="dashboardRockerSwitch" link="dashboard/dashboardRockerSwitch.html" description="Toggles a bound parameter between two states with a rocker."/>
-        <keyword name="block:dashboardRockerSwitch" link="dashboard/dashboardRockerSwitch.html" description="Toggles a bound parameter between two states with a rocker."/>
+        <keyword name="block:dashboardRockerSwitch" link="dashboard/dashboardRockerSwitch.html" description="Toggles a bound parameter between two states with a rocker." alias="true"/>
         <keyword name="dashboardRotarySwitch" link="dashboard/dashboardRotarySwitch.html" description="Selects one of several states with a rotary selector."/>
-        <keyword name="block:dashboardRotarySwitch" link="dashboard/dashboardRotarySwitch.html" description="Selects one of several states with a rotary selector."/>
+        <keyword name="block:dashboardRotarySwitch" link="dashboard/dashboardRotarySwitch.html" description="Selects one of several states with a rotary selector." alias="true"/>
         <keyword name="dashboardScope" link="dashboard/dashboardScope.html" description="Plots bound signals against simulation time on a multi-channel scope."/>
-        <keyword name="block:dashboardScope" link="dashboard/dashboardScope.html" description="Plots bound signals against simulation time on a multi-channel scope."/>
+        <keyword name="block:dashboardScope" link="dashboard/dashboardScope.html" description="Plots bound signals against simulation time on a multi-channel scope." alias="true"/>
         <keyword name="dashboardSlider" link="dashboard/dashboardSlider.html" description="Sets a bound parameter by dragging a linear slider."/>
-        <keyword name="block:dashboardSlider" link="dashboard/dashboardSlider.html" description="Sets a bound parameter by dragging a linear slider."/>
+        <keyword name="block:dashboardSlider" link="dashboard/dashboardSlider.html" description="Sets a bound parameter by dragging a linear slider." alias="true"/>
         <keyword name="dashboardSliderSwitch" link="dashboard/dashboardSliderSwitch.html" description="Toggles a bound parameter between two states with a sliding switch."/>
-        <keyword name="block:dashboardSliderSwitch" link="dashboard/dashboardSliderSwitch.html" description="Toggles a bound parameter between two states with a sliding switch."/>
+        <keyword name="block:dashboardSliderSwitch" link="dashboard/dashboardSliderSwitch.html" description="Toggles a bound parameter between two states with a sliding switch." alias="true"/>
         <keyword name="dashboardToggleSwitch" link="dashboard/dashboardToggleSwitch.html" description="Toggles a bound parameter between two states with a toggle switch."/>
-        <keyword name="block:dashboardToggleSwitch" link="dashboard/dashboardToggleSwitch.html" description="Toggles a bound parameter between two states with a toggle switch."/>
+        <keyword name="block:dashboardToggleSwitch" link="dashboard/dashboardToggleSwitch.html" description="Toggles a bound parameter between two states with a toggle switch." alias="true"/>
       </section>
       <section name="Discrete blocks">
         <chapter_description>
     <p>Sampled blocks that store values, histories, or discrete states.</p>
   </chapter_description>
         <keyword name="ddelay" link="discrete/ddelay.html" description="Delays a sampled signal by an integer number of steps."/>
-        <keyword name="block:ddelay" link="discrete/ddelay.html" description="Delays a sampled signal by an integer number of steps."/>
+        <keyword name="block:ddelay" link="discrete/ddelay.html" description="Delays a sampled signal by an integer number of steps." alias="true"/>
         <keyword name="detectChange" link="discrete/detectChange.html" description="Outputs 1 on any step where the input differs from the previous step."/>
-        <keyword name="block:detectChange" link="discrete/detectChange.html" description="Outputs 1 on any step where the input differs from the previous step."/>
+        <keyword name="block:detectChange" link="discrete/detectChange.html" description="Outputs 1 on any step where the input differs from the previous step." alias="true"/>
         <keyword name="detectDecrease" link="discrete/detectDecrease.html" description="Outputs 1 when the input strictly decreases from the previous step."/>
-        <keyword name="block:detectDecrease" link="discrete/detectDecrease.html" description="Outputs 1 when the input strictly decreases from the previous step."/>
+        <keyword name="block:detectDecrease" link="discrete/detectDecrease.html" description="Outputs 1 when the input strictly decreases from the previous step." alias="true"/>
         <keyword name="detectIncrease" link="discrete/detectIncrease.html" description="Outputs 1 when the input strictly increases from the previous step."/>
-        <keyword name="block:detectIncrease" link="discrete/detectIncrease.html" description="Outputs 1 when the input strictly increases from the previous step."/>
+        <keyword name="block:detectIncrease" link="discrete/detectIncrease.html" description="Outputs 1 when the input strictly increases from the previous step." alias="true"/>
         <keyword name="difference" link="discrete/difference.html" description="Outputs the difference from the previous input."/>
-        <keyword name="block:difference" link="discrete/difference.html" description="Outputs the difference from the previous input."/>
+        <keyword name="block:difference" link="discrete/difference.html" description="Outputs the difference from the previous input." alias="true"/>
         <keyword name="dstateSpace" link="discrete/dstateSpace.html" description="Implements a scalar discrete state-space model."/>
-        <keyword name="block:dstateSpace" link="discrete/dstateSpace.html" description="Implements a scalar discrete state-space model."/>
+        <keyword name="block:dstateSpace" link="discrete/dstateSpace.html" description="Implements a scalar discrete state-space model." alias="true"/>
         <keyword name="dtf" link="discrete/dtf.html" description="Implements a discrete transfer function."/>
-        <keyword name="block:dtf" link="discrete/dtf.html" description="Implements a discrete transfer function."/>
+        <keyword name="block:dtf" link="discrete/dtf.html" description="Implements a discrete transfer function." alias="true"/>
         <keyword name="fallingEdge" link="discrete/fallingEdge.html" description="Outputs 1 on the step where the input crosses from &gt;= 0 to &lt; 0."/>
-        <keyword name="block:fallingEdge" link="discrete/fallingEdge.html" description="Outputs 1 on the step where the input crosses from &gt;= 0 to &lt; 0."/>
+        <keyword name="block:fallingEdge" link="discrete/fallingEdge.html" description="Outputs 1 on the step where the input crosses from &gt;= 0 to &lt; 0." alias="true"/>
         <keyword name="foh" link="discrete/foh.html" description="First-order hold for sampled input values."/>
-        <keyword name="block:foh" link="discrete/foh.html" description="First-order hold for sampled input values."/>
+        <keyword name="block:foh" link="discrete/foh.html" description="First-order hold for sampled input values." alias="true"/>
         <keyword name="rateTransition" link="discrete/rateTransition.html" description="Resamples a signal at its own sample time (zero-order hold)."/>
-        <keyword name="block:rateTransition" link="discrete/rateTransition.html" description="Resamples a signal at its own sample time (zero-order hold)."/>
+        <keyword name="block:rateTransition" link="discrete/rateTransition.html" description="Resamples a signal at its own sample time (zero-order hold)." alias="true"/>
         <keyword name="risingEdge" link="discrete/risingEdge.html" description="Outputs 1 on the step where the input crosses from &lt;= 0 to &gt; 0."/>
-        <keyword name="block:risingEdge" link="discrete/risingEdge.html" description="Outputs 1 on the step where the input crosses from &lt;= 0 to &gt; 0."/>
+        <keyword name="block:risingEdge" link="discrete/risingEdge.html" description="Outputs 1 on the step where the input crosses from &lt;= 0 to &gt; 0." alias="true"/>
         <keyword name="unitDelay" link="discrete/unitDelay.html" description="Delays the input by one update."/>
-        <keyword name="block:unitDelay" link="discrete/unitDelay.html" description="Delays the input by one update."/>
+        <keyword name="block:unitDelay" link="discrete/unitDelay.html" description="Delays the input by one update." alias="true"/>
         <keyword name="zoh" link="discrete/zoh.html" description="Samples an input and holds the last sampled value."/>
-        <keyword name="block:zoh" link="discrete/zoh.html" description="Samples an input and holds the last sampled value."/>
+        <keyword name="block:zoh" link="discrete/zoh.html" description="Samples an input and holds the last sampled value." alias="true"/>
       </section>
       <section name="FMI and Modelica blocks">
         <chapter_description>
     <p>Blocks that import, execute, or compile Functional Mock-up Units and models.</p>
   </chapter_description>
         <keyword name="fmu" link="fmi/fmu.html" description="Runs a co-simulation FMU inside an NFlow diagram."/>
-        <keyword name="block:fmu" link="fmi/fmu.html" description="Runs a co-simulation FMU inside an NFlow diagram."/>
+        <keyword name="block:fmu" link="fmi/fmu.html" description="Runs a co-simulation FMU inside an NFlow diagram." alias="true"/>
         <keyword name="fmuMe" link="fmi/fmuMe.html" description="Integrates a model-exchange FMU with the NFlow solver."/>
-        <keyword name="block:fmuMe" link="fmi/fmuMe.html" description="Integrates a model-exchange FMU with the NFlow solver."/>
+        <keyword name="block:fmuMe" link="fmi/fmuMe.html" description="Integrates a model-exchange FMU with the NFlow solver." alias="true"/>
         <keyword name="modelica" link="fmi/modelica.html" description="Compiles a Modelica model and uses it as an NFlow block."/>
-        <keyword name="block:modelica" link="fmi/modelica.html" description="Compiles a Modelica model and uses it as an NFlow block."/>
+        <keyword name="block:modelica" link="fmi/modelica.html" description="Compiles a Modelica model and uses it as an NFlow block." alias="true"/>
       </section>
       <section name="Logic blocks">
         <chapter_description>
     <p>Boolean and comparison blocks for numeric signals.</p>
   </chapter_description>
         <keyword name="and" link="logic/and.html" description="Outputs the logical AND of two inputs."/>
-        <keyword name="block:and" link="logic/and.html" description="Outputs the logical AND of two inputs."/>
+        <keyword name="block:and" link="logic/and.html" description="Outputs the logical AND of two inputs." alias="true"/>
         <keyword name="bitClear" link="logic/bitClear.html" description="Clears the bit at position BitIndex of the integer input to 0."/>
-        <keyword name="block:bitClear" link="logic/bitClear.html" description="Clears the bit at position BitIndex of the integer input to 0."/>
+        <keyword name="block:bitClear" link="logic/bitClear.html" description="Clears the bit at position BitIndex of the integer input to 0." alias="true"/>
         <keyword name="bitSet" link="logic/bitSet.html" description="Sets the bit at position BitIndex of the integer input to 1."/>
-        <keyword name="block:bitSet" link="logic/bitSet.html" description="Sets the bit at position BitIndex of the integer input to 1."/>
+        <keyword name="block:bitSet" link="logic/bitSet.html" description="Sets the bit at position BitIndex of the integer input to 1." alias="true"/>
         <keyword name="bitwiseOperator" link="logic/bitwiseOperator.html" description="Bit-wise AND/OR/XOR/NAND/NOR/NOT of the input against a constant BitMask."/>
-        <keyword name="block:bitwiseOperator" link="logic/bitwiseOperator.html" description="Bit-wise AND/OR/XOR/NAND/NOR/NOT of the input against a constant BitMask."/>
+        <keyword name="block:bitwiseOperator" link="logic/bitwiseOperator.html" description="Bit-wise AND/OR/XOR/NAND/NOR/NOT of the input against a constant BitMask." alias="true"/>
         <keyword name="combinatorialLogic" link="logic/combinatorialLogic.html" description="Truth-table lookup: an N-bit input vector indexes a 2^N-entry TruthTable."/>
-        <keyword name="block:combinatorialLogic" link="logic/combinatorialLogic.html" description="Truth-table lookup: an N-bit input vector indexes a 2^N-entry TruthTable."/>
+        <keyword name="block:combinatorialLogic" link="logic/combinatorialLogic.html" description="Truth-table lookup: an N-bit input vector indexes a 2^N-entry TruthTable." alias="true"/>
         <keyword name="compareToConstant" link="logic/compareToConstant.html" description="Compares one input to a constant threshold."/>
-        <keyword name="block:compareToConstant" link="logic/compareToConstant.html" description="Compares one input to a constant threshold."/>
+        <keyword name="block:compareToConstant" link="logic/compareToConstant.html" description="Compares one input to a constant threshold." alias="true"/>
         <keyword name="compareToZero" link="logic/compareToZero.html" description="Compares one input to zero."/>
-        <keyword name="block:compareToZero" link="logic/compareToZero.html" description="Compares one input to zero."/>
+        <keyword name="block:compareToZero" link="logic/compareToZero.html" description="Compares one input to zero." alias="true"/>
         <keyword name="extractBits" link="logic/extractBits.html" description="Extracts NumBitsToExtract bits starting at StartBit, right-aligned."/>
-        <keyword name="block:extractBits" link="logic/extractBits.html" description="Extracts NumBitsToExtract bits starting at StartBit, right-aligned."/>
+        <keyword name="block:extractBits" link="logic/extractBits.html" description="Extracts NumBitsToExtract bits starting at StartBit, right-aligned." alias="true"/>
         <keyword name="if" link="logic/if.html" description="Selects an action output from a boolean expression over the inputs."/>
-        <keyword name="block:if" link="logic/if.html" description="Selects an action output from a boolean expression over the inputs."/>
+        <keyword name="block:if" link="logic/if.html" description="Selects an action output from a boolean expression over the inputs." alias="true"/>
         <keyword name="intervalTest" link="logic/intervalTest.html" description="Outputs 1 when the input lies within [LowerLimit, UpperLimit], else 0."/>
-        <keyword name="block:intervalTest" link="logic/intervalTest.html" description="Outputs 1 when the input lies within [LowerLimit, UpperLimit], else 0."/>
+        <keyword name="block:intervalTest" link="logic/intervalTest.html" description="Outputs 1 when the input lies within [LowerLimit, UpperLimit], else 0." alias="true"/>
         <keyword name="intervalTestDynamic" link="logic/intervalTestDynamic.html" description="Like intervalTest but the bounds come from input ports (lo, u, up)."/>
-        <keyword name="block:intervalTestDynamic" link="logic/intervalTestDynamic.html" description="Like intervalTest but the bounds come from input ports (lo, u, up)."/>
+        <keyword name="block:intervalTestDynamic" link="logic/intervalTestDynamic.html" description="Like intervalTest but the bounds come from input ports (lo, u, up)." alias="true"/>
         <keyword name="logicalOperator" link="logic/logicalOperator.html" description="Configurable logical AND/OR/NAND/NOR/XOR/XNOR/NOT of the inputs."/>
-        <keyword name="block:logicalOperator" link="logic/logicalOperator.html" description="Configurable logical AND/OR/NAND/NOR/XOR/XNOR/NOT of the inputs."/>
+        <keyword name="block:logicalOperator" link="logic/logicalOperator.html" description="Configurable logical AND/OR/NAND/NOR/XOR/XNOR/NOT of the inputs." alias="true"/>
         <keyword name="not" link="logic/not.html" description="Outputs the logical negation of one input."/>
-        <keyword name="block:not" link="logic/not.html" description="Outputs the logical negation of one input."/>
+        <keyword name="block:not" link="logic/not.html" description="Outputs the logical negation of one input." alias="true"/>
         <keyword name="or" link="logic/or.html" description="Outputs the logical OR of two inputs."/>
-        <keyword name="block:or" link="logic/or.html" description="Outputs the logical OR of two inputs."/>
+        <keyword name="block:or" link="logic/or.html" description="Outputs the logical OR of two inputs." alias="true"/>
         <keyword name="relationalOperator" link="logic/relationalOperator.html" description="Compares two input signals."/>
-        <keyword name="block:relationalOperator" link="logic/relationalOperator.html" description="Compares two input signals."/>
+        <keyword name="block:relationalOperator" link="logic/relationalOperator.html" description="Compares two input signals." alias="true"/>
         <keyword name="shiftArithmetic" link="logic/shiftArithmetic.html" description="Arithmetic bit shift left/right by ShiftNumber (signed 64-bit)."/>
-        <keyword name="block:shiftArithmetic" link="logic/shiftArithmetic.html" description="Arithmetic bit shift left/right by ShiftNumber (signed 64-bit)."/>
+        <keyword name="block:shiftArithmetic" link="logic/shiftArithmetic.html" description="Arithmetic bit shift left/right by ShiftNumber (signed 64-bit)." alias="true"/>
         <keyword name="switchCase" link="logic/switchCase.html" description="Routes an integer control to one of several action outputs."/>
-        <keyword name="block:switchCase" link="logic/switchCase.html" description="Routes an integer control to one of several action outputs."/>
+        <keyword name="block:switchCase" link="logic/switchCase.html" description="Routes an integer control to one of several action outputs." alias="true"/>
         <keyword name="xor" link="logic/xor.html" description="Outputs the logical exclusive OR of two inputs."/>
-        <keyword name="block:xor" link="logic/xor.html" description="Outputs the logical exclusive OR of two inputs."/>
+        <keyword name="block:xor" link="logic/xor.html" description="Outputs the logical exclusive OR of two inputs." alias="true"/>
       </section>
       <section name="Lookup Tables">
         <chapter_description>
     <p>Interpolated and direct lookup-table blocks (1-D, 2-D, n-D and direct).</p>
   </chapter_description>
         <keyword name="directLookup" link="lookup/directLookup.html" description="Direct (n-D) lookup table without interpolation."/>
-        <keyword name="block:directLookup" link="lookup/directLookup.html" description="Direct (n-D) lookup table without interpolation."/>
+        <keyword name="block:directLookup" link="lookup/directLookup.html" description="Direct (n-D) lookup table without interpolation." alias="true"/>
         <keyword name="interpolationPrelookup" link="lookup/interpolationPrelookup.html" description="Interpolates a static Table from a prelookup [k, f] pair."/>
-        <keyword name="block:interpolationPrelookup" link="lookup/interpolationPrelookup.html" description="Interpolates a static Table from a prelookup [k, f] pair."/>
+        <keyword name="block:interpolationPrelookup" link="lookup/interpolationPrelookup.html" description="Interpolates a static Table from a prelookup [k, f] pair." alias="true"/>
         <keyword name="lookup1D" link="lookup/lookup1D.html" description="1-D interpolated lookup table."/>
-        <keyword name="block:lookup1D" link="lookup/lookup1D.html" description="1-D interpolated lookup table."/>
+        <keyword name="block:lookup1D" link="lookup/lookup1D.html" description="1-D interpolated lookup table." alias="true"/>
         <keyword name="lookup2D" link="lookup/lookup2D.html" description="2-D interpolated lookup table."/>
-        <keyword name="block:lookup2D" link="lookup/lookup2D.html" description="2-D interpolated lookup table."/>
+        <keyword name="block:lookup2D" link="lookup/lookup2D.html" description="2-D interpolated lookup table." alias="true"/>
         <keyword name="lookupDynamic" link="lookup/lookupDynamic.html" description="1-D interpolated lookup with breakpoints and table taken from input ports."/>
-        <keyword name="block:lookupDynamic" link="lookup/lookupDynamic.html" description="1-D interpolated lookup with breakpoints and table taken from input ports."/>
+        <keyword name="block:lookupDynamic" link="lookup/lookupDynamic.html" description="1-D interpolated lookup with breakpoints and table taken from input ports." alias="true"/>
         <keyword name="lookupND" link="lookup/lookupND.html" description="n-D interpolated lookup table."/>
-        <keyword name="block:lookupND" link="lookup/lookupND.html" description="n-D interpolated lookup table."/>
+        <keyword name="block:lookupND" link="lookup/lookupND.html" description="n-D interpolated lookup table." alias="true"/>
         <keyword name="prelookup" link="lookup/prelookup.html" description="Computes the interval index k and fraction f for a shared breakpoint search."/>
-        <keyword name="block:prelookup" link="lookup/prelookup.html" description="Computes the interval index k and fraction f for a shared breakpoint search."/>
+        <keyword name="block:prelookup" link="lookup/prelookup.html" description="Computes the interval index k and fraction f for a shared breakpoint search." alias="true"/>
       </section>
       <section name="Math blocks">
         <chapter_description>
     <p>Algebraic scalar math operations.</p>
   </chapter_description>
         <keyword name="abs" link="math/abs.html" description="Outputs the absolute value of its input."/>
-        <keyword name="block:abs" link="math/abs.html" description="Outputs the absolute value of its input."/>
+        <keyword name="block:abs" link="math/abs.html" description="Outputs the absolute value of its input." alias="true"/>
         <keyword name="atan2" link="math/atan2.html" description="Four-quadrant arctangent of the two inputs."/>
-        <keyword name="block:atan2" link="math/atan2.html" description="Four-quadrant arctangent of the two inputs."/>
+        <keyword name="block:atan2" link="math/atan2.html" description="Four-quadrant arctangent of the two inputs." alias="true"/>
         <keyword name="bias" link="math/bias.html" description="Adds a constant bias to the input."/>
-        <keyword name="block:bias" link="math/bias.html" description="Adds a constant bias to the input."/>
+        <keyword name="block:bias" link="math/bias.html" description="Adds a constant bias to the input." alias="true"/>
         <keyword name="complexToMagnitudeAngle" link="math/complexToMagnitudeAngle.html" description="Outputs the magnitude and angle of a complex signal."/>
-        <keyword name="block:complexToMagnitudeAngle" link="math/complexToMagnitudeAngle.html" description="Outputs the magnitude and angle of a complex signal."/>
+        <keyword name="block:complexToMagnitudeAngle" link="math/complexToMagnitudeAngle.html" description="Outputs the magnitude and angle of a complex signal." alias="true"/>
         <keyword name="complexToRealImag" link="math/complexToRealImag.html" description="Splits a complex signal into real and imaginary outputs."/>
-        <keyword name="block:complexToRealImag" link="math/complexToRealImag.html" description="Splits a complex signal into real and imaginary outputs."/>
+        <keyword name="block:complexToRealImag" link="math/complexToRealImag.html" description="Splits a complex signal into real and imaginary outputs." alias="true"/>
         <keyword name="conjugate" link="math/conjugate.html" description="Complex conjugate of the input signal."/>
-        <keyword name="block:conjugate" link="math/conjugate.html" description="Complex conjugate of the input signal."/>
+        <keyword name="block:conjugate" link="math/conjugate.html" description="Complex conjugate of the input signal." alias="true"/>
         <keyword name="crossProduct" link="math/crossProduct.html" description="Cross product of two 3-element vectors."/>
-        <keyword name="block:crossProduct" link="math/crossProduct.html" description="Cross product of two 3-element vectors."/>
+        <keyword name="block:crossProduct" link="math/crossProduct.html" description="Cross product of two 3-element vectors." alias="true"/>
         <keyword name="divide" link="math/divide.html" description="Divides input 1 by input 2."/>
-        <keyword name="block:divide" link="math/divide.html" description="Divides input 1 by input 2."/>
+        <keyword name="block:divide" link="math/divide.html" description="Divides input 1 by input 2." alias="true"/>
         <keyword name="dotProduct" link="math/dotProduct.html" description="Dot product of two vector inputs."/>
-        <keyword name="block:dotProduct" link="math/dotProduct.html" description="Dot product of two vector inputs."/>
+        <keyword name="block:dotProduct" link="math/dotProduct.html" description="Dot product of two vector inputs." alias="true"/>
         <keyword name="gain" link="math/gain.html" description="Multiplies the input by a scalar gain."/>
-        <keyword name="block:gain" link="math/gain.html" description="Multiplies the input by a scalar gain."/>
+        <keyword name="block:gain" link="math/gain.html" description="Multiplies the input by a scalar gain." alias="true"/>
         <keyword name="magnitudeAngleToComplex" link="math/magnitudeAngleToComplex.html" description="Builds a complex signal from magnitude and angle inputs."/>
-        <keyword name="block:magnitudeAngleToComplex" link="math/magnitudeAngleToComplex.html" description="Builds a complex signal from magnitude and angle inputs."/>
+        <keyword name="block:magnitudeAngleToComplex" link="math/magnitudeAngleToComplex.html" description="Builds a complex signal from magnitude and angle inputs." alias="true"/>
         <keyword name="mathFunction" link="math/mathFunction.html" description="Mathematical function of the input."/>
-        <keyword name="block:mathFunction" link="math/mathFunction.html" description="Mathematical function of the input."/>
+        <keyword name="block:mathFunction" link="math/mathFunction.html" description="Mathematical function of the input." alias="true"/>
         <keyword name="matmul" link="math/matmul.html" description="Multiplies two matrix signals or applies element-wise multiplication."/>
-        <keyword name="block:matmul" link="math/matmul.html" description="Multiplies two matrix signals or applies element-wise multiplication."/>
+        <keyword name="block:matmul" link="math/matmul.html" description="Multiplies two matrix signals or applies element-wise multiplication." alias="true"/>
         <keyword name="max" link="math/max.html" description="Outputs the maximum of two inputs."/>
-        <keyword name="block:max" link="math/max.html" description="Outputs the maximum of two inputs."/>
+        <keyword name="block:max" link="math/max.html" description="Outputs the maximum of two inputs." alias="true"/>
         <keyword name="min" link="math/min.html" description="Outputs the minimum of two inputs."/>
-        <keyword name="block:min" link="math/min.html" description="Outputs the minimum of two inputs."/>
+        <keyword name="block:min" link="math/min.html" description="Outputs the minimum of two inputs." alias="true"/>
         <keyword name="mult" link="math/mult.html" description="Multiplies connected inputs."/>
-        <keyword name="block:mult" link="math/mult.html" description="Multiplies connected inputs."/>
+        <keyword name="block:mult" link="math/mult.html" description="Multiplies connected inputs." alias="true"/>
         <keyword name="negate" link="math/negate.html" description="Negates the input signal."/>
-        <keyword name="block:negate" link="math/negate.html" description="Negates the input signal."/>
+        <keyword name="block:negate" link="math/negate.html" description="Negates the input signal." alias="true"/>
         <keyword name="polynomial" link="math/polynomial.html" description="Evaluates a polynomial with constant Coefficients (highest power first)."/>
-        <keyword name="block:polynomial" link="math/polynomial.html" description="Evaluates a polynomial with constant Coefficients (highest power first)."/>
+        <keyword name="block:polynomial" link="math/polynomial.html" description="Evaluates a polynomial with constant Coefficients (highest power first)." alias="true"/>
         <keyword name="productOfElements" link="math/productOfElements.html" description="Product of the elements of a vector input."/>
-        <keyword name="block:productOfElements" link="math/productOfElements.html" description="Product of the elements of a vector input."/>
+        <keyword name="block:productOfElements" link="math/productOfElements.html" description="Product of the elements of a vector input." alias="true"/>
         <keyword name="realImagToComplex" link="math/realImagToComplex.html" description="Builds a complex signal from real and imaginary inputs."/>
-        <keyword name="block:realImagToComplex" link="math/realImagToComplex.html" description="Builds a complex signal from real and imaginary inputs."/>
+        <keyword name="block:realImagToComplex" link="math/realImagToComplex.html" description="Builds a complex signal from real and imaginary inputs." alias="true"/>
         <keyword name="roundingFunction" link="math/roundingFunction.html" description="Rounds the input to an integer value."/>
-        <keyword name="block:roundingFunction" link="math/roundingFunction.html" description="Rounds the input to an integer value."/>
+        <keyword name="block:roundingFunction" link="math/roundingFunction.html" description="Rounds the input to an integer value." alias="true"/>
         <keyword name="sign" link="math/sign.html" description="Signum of the input (-1, 0 or +1)."/>
-        <keyword name="block:sign" link="math/sign.html" description="Signum of the input (-1, 0 or +1)."/>
+        <keyword name="block:sign" link="math/sign.html" description="Signum of the input (-1, 0 or +1)." alias="true"/>
         <keyword name="sqrt" link="math/sqrt.html" description="Square-root family of the input."/>
-        <keyword name="block:sqrt" link="math/sqrt.html" description="Square-root family of the input."/>
+        <keyword name="block:sqrt" link="math/sqrt.html" description="Square-root family of the input." alias="true"/>
         <keyword name="sum" link="math/sum.html" description="Adds connected inputs with configurable signs."/>
-        <keyword name="block:sum" link="math/sum.html" description="Adds connected inputs with configurable signs."/>
+        <keyword name="block:sum" link="math/sum.html" description="Adds connected inputs with configurable signs." alias="true"/>
         <keyword name="sumElements" link="math/sumElements.html" description="Sum of the elements of a vector input."/>
-        <keyword name="block:sumElements" link="math/sumElements.html" description="Sum of the elements of a vector input."/>
+        <keyword name="block:sumElements" link="math/sumElements.html" description="Sum of the elements of a vector input." alias="true"/>
         <keyword name="trigFunction" link="math/trigFunction.html" description="Trigonometric function of the input."/>
-        <keyword name="block:trigFunction" link="math/trigFunction.html" description="Trigonometric function of the input."/>
+        <keyword name="block:trigFunction" link="math/trigFunction.html" description="Trigonometric function of the input." alias="true"/>
         <keyword name="wrapToZero" link="math/wrapToZero.html" description="Outputs 0 when the input reaches Threshold, else passes it through."/>
-        <keyword name="block:wrapToZero" link="math/wrapToZero.html" description="Outputs 0 when the input reaches Threshold, else passes it through."/>
+        <keyword name="block:wrapToZero" link="math/wrapToZero.html" description="Outputs 0 when the input reaches Threshold, else passes it through." alias="true"/>
       </section>
       <section name="Nonlinear blocks">
         <chapter_description>
     <p>Blocks with saturation, thresholds, hysteresis, or rate limits.</p>
   </chapter_description>
         <keyword name="backlash" link="nonlinear/backlash.html" description="Models backlash with a dead band around the previous output."/>
-        <keyword name="block:backlash" link="nonlinear/backlash.html" description="Models backlash with a dead band around the previous output."/>
+        <keyword name="block:backlash" link="nonlinear/backlash.html" description="Models backlash with a dead band around the previous output." alias="true"/>
         <keyword name="coulombViscousFriction" link="nonlinear/coulombViscousFriction.html" description="Static friction: viscous term Gain*u plus signed Coulomb term Offset*sign(u)."/>
-        <keyword name="block:coulombViscousFriction" link="nonlinear/coulombViscousFriction.html" description="Static friction: viscous term Gain*u plus signed Coulomb term Offset*sign(u)."/>
+        <keyword name="block:coulombViscousFriction" link="nonlinear/coulombViscousFriction.html" description="Static friction: viscous term Gain*u plus signed Coulomb term Offset*sign(u)." alias="true"/>
         <keyword name="deadZone" link="nonlinear/deadZone.html" description="Suppresses values inside a dead zone."/>
-        <keyword name="block:deadZone" link="nonlinear/deadZone.html" description="Suppresses values inside a dead zone."/>
+        <keyword name="block:deadZone" link="nonlinear/deadZone.html" description="Suppresses values inside a dead zone." alias="true"/>
         <keyword name="hitCrossing" link="nonlinear/hitCrossing.html" description="Outputs 1 on the step where the input crosses HitCrossingOffset."/>
-        <keyword name="block:hitCrossing" link="nonlinear/hitCrossing.html" description="Outputs 1 on the step where the input crosses HitCrossingOffset."/>
+        <keyword name="block:hitCrossing" link="nonlinear/hitCrossing.html" description="Outputs 1 on the step where the input crosses HitCrossingOffset." alias="true"/>
         <keyword name="hysteresis" link="nonlinear/hysteresis.html" description="Relay: latching two-threshold switch (uHigh, uLow, yHigh, yLow)."/>
-        <keyword name="block:hysteresis" link="nonlinear/hysteresis.html" description="Relay: latching two-threshold switch (uHigh, uLow, yHigh, yLow)."/>
+        <keyword name="block:hysteresis" link="nonlinear/hysteresis.html" description="Relay: latching two-threshold switch (uHigh, uLow, yHigh, yLow)." alias="true"/>
         <keyword name="quantizer" link="nonlinear/quantizer.html" description="Rounds the input to the nearest interval."/>
-        <keyword name="block:quantizer" link="nonlinear/quantizer.html" description="Rounds the input to the nearest interval."/>
+        <keyword name="block:quantizer" link="nonlinear/quantizer.html" description="Rounds the input to the nearest interval." alias="true"/>
         <keyword name="rate" link="nonlinear/rate.html" description="Limits rising and falling signal rates."/>
-        <keyword name="block:rate" link="nonlinear/rate.html" description="Limits rising and falling signal rates."/>
+        <keyword name="block:rate" link="nonlinear/rate.html" description="Limits rising and falling signal rates." alias="true"/>
         <keyword name="saturation" link="nonlinear/saturation.html" description="Clamps the input between min and max."/>
-        <keyword name="block:saturation" link="nonlinear/saturation.html" description="Clamps the input between min and max."/>
+        <keyword name="block:saturation" link="nonlinear/saturation.html" description="Clamps the input between min and max." alias="true"/>
       </section>
       <section name="Sink blocks">
         <chapter_description>
     <p>Blocks that consume, display, or name signals.</p>
   </chapter_description>
         <keyword name="display" link="sink/display.html" description="Stores the latest input value for display."/>
-        <keyword name="block:display" link="sink/display.html" description="Stores the latest input value for display."/>
+        <keyword name="block:display" link="sink/display.html" description="Stores the latest input value for display." alias="true"/>
         <keyword name="fileSink" link="sink/fileSink.html" description="Represents a file output sink."/>
-        <keyword name="block:fileSink" link="sink/fileSink.html" description="Represents a file output sink."/>
+        <keyword name="block:fileSink" link="sink/fileSink.html" description="Represents a file output sink." alias="true"/>
         <keyword name="labelSink" link="sink/labelSink.html" description="Names an input signal for label routing."/>
-        <keyword name="block:labelSink" link="sink/labelSink.html" description="Names an input signal for label routing."/>
+        <keyword name="block:labelSink" link="sink/labelSink.html" description="Names an input signal for label routing." alias="true"/>
         <keyword name="scope" link="sink/scope.html" description="Stores time-series samples for display."/>
-        <keyword name="block:scope" link="sink/scope.html" description="Stores time-series samples for display."/>
+        <keyword name="block:scope" link="sink/scope.html" description="Stores time-series samples for display." alias="true"/>
         <keyword name="stopSimulation" link="sink/stopSimulation.html" description="Ends the run at the end of the step where its input first becomes nonzero."/>
-        <keyword name="block:stopSimulation" link="sink/stopSimulation.html" description="Ends the run at the end of the step where its input first becomes nonzero."/>
+        <keyword name="block:stopSimulation" link="sink/stopSimulation.html" description="Ends the run at the end of the step where its input first becomes nonzero." alias="true"/>
         <keyword name="terminator" link="sink/terminator.html" description="Consumes an intentionally unused signal."/>
-        <keyword name="block:terminator" link="sink/terminator.html" description="Consumes an intentionally unused signal."/>
+        <keyword name="block:terminator" link="sink/terminator.html" description="Consumes an intentionally unused signal." alias="true"/>
         <keyword name="toWorkspace" link="sink/toWorkspace.html" description="Writes the input signal to a Nelson workspace variable."/>
-        <keyword name="block:toWorkspace" link="sink/toWorkspace.html" description="Writes the input signal to a Nelson workspace variable."/>
+        <keyword name="block:toWorkspace" link="sink/toWorkspace.html" description="Writes the input signal to a Nelson workspace variable." alias="true"/>
         <keyword name="xyScope" link="sink/xyScope.html" description="Stores paired X/Y samples for display."/>
-        <keyword name="block:xyScope" link="sink/xyScope.html" description="Stores paired X/Y samples for display."/>
+        <keyword name="block:xyScope" link="sink/xyScope.html" description="Stores paired X/Y samples for display." alias="true"/>
         <keyword name="xyzScope" link="sink/xyzScope.html" description="Stores X/Y/Z samples for 3D display."/>
-        <keyword name="block:xyzScope" link="sink/xyzScope.html" description="Stores X/Y/Z samples for 3D display."/>
+        <keyword name="block:xyzScope" link="sink/xyzScope.html" description="Stores X/Y/Z samples for 3D display." alias="true"/>
       </section>
       <section name="Source blocks">
         <chapter_description>
     <p>Blocks that generate signals from parameters, time, labels, or files.</p>
   </chapter_description>
         <keyword name="chirp" link="source/chirp.html" description="Generates a sine chirp from f0 to f1."/>
-        <keyword name="block:chirp" link="source/chirp.html" description="Generates a sine chirp from f0 to f1."/>
+        <keyword name="block:chirp" link="source/chirp.html" description="Generates a sine chirp from f0 to f1." alias="true"/>
         <keyword name="clock" link="source/clock.html" description="Outputs the current simulation time."/>
-        <keyword name="block:clock" link="source/clock.html" description="Outputs the current simulation time."/>
+        <keyword name="block:clock" link="source/clock.html" description="Outputs the current simulation time." alias="true"/>
         <keyword name="constant" link="source/constant.html" description="Outputs a constant numeric value."/>
-        <keyword name="block:constant" link="source/constant.html" description="Outputs a constant numeric value."/>
+        <keyword name="block:constant" link="source/constant.html" description="Outputs a constant numeric value." alias="true"/>
         <keyword name="counterFreeRunning" link="source/counterFreeRunning.html" description="Free-running up-counter, wraps modulo 2^NumBits."/>
-        <keyword name="block:counterFreeRunning" link="source/counterFreeRunning.html" description="Free-running up-counter, wraps modulo 2^NumBits."/>
+        <keyword name="block:counterFreeRunning" link="source/counterFreeRunning.html" description="Free-running up-counter, wraps modulo 2^NumBits." alias="true"/>
         <keyword name="counterLimited" link="source/counterLimited.html" description="Up-counter that wraps back to 0 once it reaches UpperLimit."/>
-        <keyword name="block:counterLimited" link="source/counterLimited.html" description="Up-counter that wraps back to 0 once it reaches UpperLimit."/>
+        <keyword name="block:counterLimited" link="source/counterLimited.html" description="Up-counter that wraps back to 0 once it reaches UpperLimit." alias="true"/>
         <keyword name="enumeratedConstant" link="source/enumeratedConstant.html" description="Outputs a fixed enumeration value (EnumClass documents it, Value is the number)."/>
-        <keyword name="block:enumeratedConstant" link="source/enumeratedConstant.html" description="Outputs a fixed enumeration value (EnumClass documents it, Value is the number)."/>
+        <keyword name="block:enumeratedConstant" link="source/enumeratedConstant.html" description="Outputs a fixed enumeration value (EnumClass documents it, Value is the number)." alias="true"/>
         <keyword name="fileSource" link="source/fileSource.html" description="Outputs values from preloaded times and values arrays."/>
-        <keyword name="block:fileSource" link="source/fileSource.html" description="Outputs values from preloaded times and values arrays."/>
+        <keyword name="block:fileSource" link="source/fileSource.html" description="Outputs values from preloaded times and values arrays." alias="true"/>
         <keyword name="fromWorkspace" link="source/fromWorkspace.html" description="Reads a signal from a Nelson workspace variable."/>
-        <keyword name="block:fromWorkspace" link="source/fromWorkspace.html" description="Reads a signal from a Nelson workspace variable."/>
+        <keyword name="block:fromWorkspace" link="source/fromWorkspace.html" description="Reads a signal from a Nelson workspace variable." alias="true"/>
         <keyword name="impulse" link="source/impulse.html" description="Outputs an impulse at a configured time."/>
-        <keyword name="block:impulse" link="source/impulse.html" description="Outputs an impulse at a configured time."/>
+        <keyword name="block:impulse" link="source/impulse.html" description="Outputs an impulse at a configured time." alias="true"/>
         <keyword name="labelSource" link="source/labelSource.html" description="Reads a signal from a matching labelSink."/>
-        <keyword name="block:labelSource" link="source/labelSource.html" description="Reads a signal from a matching labelSink."/>
+        <keyword name="block:labelSource" link="source/labelSource.html" description="Reads a signal from a matching labelSink." alias="true"/>
         <keyword name="noise" link="source/noise.html" description="Generates deterministic pseudo-random noise."/>
-        <keyword name="block:noise" link="source/noise.html" description="Generates deterministic pseudo-random noise."/>
+        <keyword name="block:noise" link="source/noise.html" description="Generates deterministic pseudo-random noise." alias="true"/>
         <keyword name="pulse" link="source/pulse.html" description="Pulse Generator: a periodic pulse train (Amplitude, Period, Width, StartTime, Offset)."/>
-        <keyword name="block:pulse" link="source/pulse.html" description="Pulse Generator: a periodic pulse train (Amplitude, Period, Width, StartTime, Offset)."/>
+        <keyword name="block:pulse" link="source/pulse.html" description="Pulse Generator: a periodic pulse train (Amplitude, Period, Width, StartTime, Offset)." alias="true"/>
         <keyword name="ramp" link="source/ramp.html" description="Generates a ramp beginning at start."/>
-        <keyword name="block:ramp" link="source/ramp.html" description="Generates a ramp beginning at start."/>
+        <keyword name="block:ramp" link="source/ramp.html" description="Generates a ramp beginning at start." alias="true"/>
         <keyword name="repeatingSequenceInterpolated" link="source/repeatingSequenceInterpolated.html" description="Periodic piecewise-linear source interpolating a (TimeValues, OutValues) table."/>
-        <keyword name="block:repeatingSequenceInterpolated" link="source/repeatingSequenceInterpolated.html" description="Periodic piecewise-linear source interpolating a (TimeValues, OutValues) table."/>
+        <keyword name="block:repeatingSequenceInterpolated" link="source/repeatingSequenceInterpolated.html" description="Periodic piecewise-linear source interpolating a (TimeValues, OutValues) table." alias="true"/>
         <keyword name="repeatingSequenceStair" link="source/repeatingSequenceStair.html" description="Periodic staircase: one OutValues entry per sample, repeating."/>
-        <keyword name="block:repeatingSequenceStair" link="source/repeatingSequenceStair.html" description="Periodic staircase: one OutValues entry per sample, repeating."/>
+        <keyword name="block:repeatingSequenceStair" link="source/repeatingSequenceStair.html" description="Periodic staircase: one OutValues entry per sample, repeating." alias="true"/>
         <keyword name="signalGenerator" link="source/signalGenerator.html" description="Configurable periodic source: sine, square or sawtooth (Amplitude, Frequency)."/>
-        <keyword name="block:signalGenerator" link="source/signalGenerator.html" description="Configurable periodic source: sine, square or sawtooth (Amplitude, Frequency)."/>
+        <keyword name="block:signalGenerator" link="source/signalGenerator.html" description="Configurable periodic source: sine, square or sawtooth (Amplitude, Frequency)." alias="true"/>
         <keyword name="sine" link="source/sine.html" description="Generates a sinusoidal signal."/>
-        <keyword name="block:sine" link="source/sine.html" description="Generates a sinusoidal signal."/>
+        <keyword name="block:sine" link="source/sine.html" description="Generates a sinusoidal signal." alias="true"/>
         <keyword name="step" link="source/step.html" description="Generates a unit step at stepTime."/>
-        <keyword name="block:step" link="source/step.html" description="Generates a unit step at stepTime."/>
+        <keyword name="block:step" link="source/step.html" description="Generates a unit step at stepTime." alias="true"/>
       </section>
       <section name="User-Defined Function blocks">
         <chapter_description>
     <p>Blocks that evaluate user-provided expressions or Nelson functions.</p>
   </chapter_description>
         <keyword name="expression" link="userdefined/expression.html" description="Evaluates a restricted math expression of u during simulation and in generated code."/>
-        <keyword name="block:expression" link="userdefined/expression.html" description="Evaluates a restricted math expression of u during simulation and in generated code."/>
+        <keyword name="block:expression" link="userdefined/expression.html" description="Evaluates a restricted math expression of u during simulation and in generated code." alias="true"/>
         <keyword name="nelsonFunction" link="userdefined/nelsonFunction.html" description="Evaluates a Nelson function at every simulation step."/>
-        <keyword name="block:nelsonFunction" link="userdefined/nelsonFunction.html" description="Evaluates a Nelson function at every simulation step."/>
+        <keyword name="block:nelsonFunction" link="userdefined/nelsonFunction.html" description="Evaluates a Nelson function at every simulation step." alias="true"/>
       </section>
       <section name="Utility blocks">
         <chapter_description>
     <p>Blocks for routing, grouping, annotation, and interactive switching.</p>
   </chapter_description>
         <keyword name="assignment" link="utility/assignment.html" description="Writes elements into a signal: out = base with out[Indices] = values."/>
-        <keyword name="block:assignment" link="utility/assignment.html" description="Writes elements into a signal: out = base with out[Indices] = values."/>
+        <keyword name="block:assignment" link="utility/assignment.html" description="Writes elements into a signal: out = base with out[Indices] = values." alias="true"/>
         <keyword name="busAssignment" link="utility/busAssignment.html" description="Replaces selected members of a bus, passing the rest through unchanged."/>
-        <keyword name="block:busAssignment" link="utility/busAssignment.html" description="Replaces selected members of a bus, passing the rest through unchanged."/>
+        <keyword name="block:busAssignment" link="utility/busAssignment.html" description="Replaces selected members of a bus, passing the rest through unchanged." alias="true"/>
         <keyword name="busCreator" link="utility/busCreator.html" description="Groups heterogeneous signals (or nested buses) into one bus."/>
-        <keyword name="block:busCreator" link="utility/busCreator.html" description="Groups heterogeneous signals (or nested buses) into one bus."/>
+        <keyword name="block:busCreator" link="utility/busCreator.html" description="Groups heterogeneous signals (or nested buses) into one bus." alias="true"/>
         <keyword name="busSelector" link="utility/busSelector.html" description="Extracts members from a bus by path."/>
-        <keyword name="block:busSelector" link="utility/busSelector.html" description="Extracts members from a bus by path."/>
+        <keyword name="block:busSelector" link="utility/busSelector.html" description="Extracts members from a bus by path." alias="true"/>
         <keyword name="comment" link="utility/comment.html" description="Adds non-executed annotation text to a diagram."/>
-        <keyword name="block:comment" link="utility/comment.html" description="Adds non-executed annotation text to a diagram."/>
+        <keyword name="block:comment" link="utility/comment.html" description="Adds non-executed annotation text to a diagram." alias="true"/>
         <keyword name="concatenate" link="utility/concatenate.html" description="Concatenates input signals along a selected dimension."/>
-        <keyword name="block:concatenate" link="utility/concatenate.html" description="Concatenates input signals along a selected dimension."/>
+        <keyword name="block:concatenate" link="utility/concatenate.html" description="Concatenates input signals along a selected dimension." alias="true"/>
         <keyword name="convert" link="utility/convert.html" description="Converts a signal to a selected data type."/>
-        <keyword name="block:convert" link="utility/convert.html" description="Converts a signal to a selected data type."/>
+        <keyword name="block:convert" link="utility/convert.html" description="Converts a signal to a selected data type." alias="true"/>
         <keyword name="dataStoreMemory" link="utility/dataStoreMemory.html" description="Declares a named scalar memory shared across the model (initial value)."/>
-        <keyword name="block:dataStoreMemory" link="utility/dataStoreMemory.html" description="Declares a named scalar memory shared across the model (initial value)."/>
+        <keyword name="block:dataStoreMemory" link="utility/dataStoreMemory.html" description="Declares a named scalar memory shared across the model (initial value)." alias="true"/>
         <keyword name="dataStoreRead" link="utility/dataStoreRead.html" description="Outputs the value of the named data store."/>
-        <keyword name="block:dataStoreRead" link="utility/dataStoreRead.html" description="Outputs the value of the named data store."/>
+        <keyword name="block:dataStoreRead" link="utility/dataStoreRead.html" description="Outputs the value of the named data store." alias="true"/>
         <keyword name="dataStoreWrite" link="utility/dataStoreWrite.html" description="Writes its input to the named data store."/>
-        <keyword name="block:dataStoreWrite" link="utility/dataStoreWrite.html" description="Writes its input to the named data store."/>
+        <keyword name="block:dataStoreWrite" link="utility/dataStoreWrite.html" description="Writes its input to the named data store." alias="true"/>
         <keyword name="demux" link="utility/demux.html" description="Routes one input to multiple output ports."/>
-        <keyword name="block:demux" link="utility/demux.html" description="Routes one input to multiple output ports."/>
+        <keyword name="block:demux" link="utility/demux.html" description="Routes one input to multiple output ports." alias="true"/>
         <keyword name="functionCallGenerator" link="utility/functionCallGenerator.html" description="Drives a function-call subsystem a fixed number of times per step."/>
-        <keyword name="block:functionCallGenerator" link="utility/functionCallGenerator.html" description="Drives a function-call subsystem a fixed number of times per step."/>
+        <keyword name="block:functionCallGenerator" link="utility/functionCallGenerator.html" description="Drives a function-call subsystem a fixed number of times per step." alias="true"/>
         <keyword name="functionCallSplit" link="utility/functionCallSplit.html" description="Fans one function-call out to several callees in order."/>
-        <keyword name="block:functionCallSplit" link="utility/functionCallSplit.html" description="Fans one function-call out to several callees in order."/>
+        <keyword name="block:functionCallSplit" link="utility/functionCallSplit.html" description="Fans one function-call out to several callees in order." alias="true"/>
         <keyword name="initialCondition" link="utility/initialCondition.html" description="Forces the output to InitialValue at the first step, then passes the input."/>
-        <keyword name="block:initialCondition" link="utility/initialCondition.html" description="Forces the output to InitialValue at the first step, then passes the input."/>
+        <keyword name="block:initialCondition" link="utility/initialCondition.html" description="Forces the output to InitialValue at the first step, then passes the input." alias="true"/>
         <keyword name="iteratorCondition" link="utility/iteratorCondition.html" description="carries the continue predicate of a While Iterator subsystem"/>
-        <keyword name="block:iteratorCondition" link="utility/iteratorCondition.html" description="carries the continue predicate of a While Iterator subsystem"/>
+        <keyword name="block:iteratorCondition" link="utility/iteratorCondition.html" description="carries the continue predicate of a While Iterator subsystem" alias="true"/>
         <keyword name="iteratorNumber" link="utility/iteratorNumber.html" description="outputs the current iteration index inside a For/While iterator subsystem"/>
-        <keyword name="block:iteratorNumber" link="utility/iteratorNumber.html" description="outputs the current iteration index inside a For/While iterator subsystem"/>
+        <keyword name="block:iteratorNumber" link="utility/iteratorNumber.html" description="outputs the current iteration index inside a For/While iterator subsystem" alias="true"/>
         <keyword name="merge" link="utility/merge.html" description="Recombines the outputs of mutually-exclusive conditional subsystems."/>
-        <keyword name="block:merge" link="utility/merge.html" description="Recombines the outputs of mutually-exclusive conditional subsystems."/>
+        <keyword name="block:merge" link="utility/merge.html" description="Recombines the outputs of mutually-exclusive conditional subsystems." alias="true"/>
         <keyword name="multiportSwitch" link="utility/multiportSwitch.html" description="Routes one of several data inputs to the output, selected by a control input."/>
-        <keyword name="block:multiportSwitch" link="utility/multiportSwitch.html" description="Routes one of several data inputs to the output, selected by a control input."/>
+        <keyword name="block:multiportSwitch" link="utility/multiportSwitch.html" description="Routes one of several data inputs to the output, selected by a control input." alias="true"/>
         <keyword name="mux" link="utility/mux.html" description="Groups multiple input routes into one output route."/>
-        <keyword name="block:mux" link="utility/mux.html" description="Groups multiple input routes into one output route."/>
+        <keyword name="block:mux" link="utility/mux.html" description="Groups multiple input routes into one output route." alias="true"/>
         <keyword name="reshape" link="utility/reshape.html" description="Changes signal dimensions without changing element values."/>
-        <keyword name="block:reshape" link="utility/reshape.html" description="Changes signal dimensions without changing element values."/>
+        <keyword name="block:reshape" link="utility/reshape.html" description="Changes signal dimensions without changing element values." alias="true"/>
         <keyword name="selector" link="utility/selector.html" description="Selects elements from an input signal by one-based indices."/>
-        <keyword name="block:selector" link="utility/selector.html" description="Selects elements from an input signal by one-based indices."/>
+        <keyword name="block:selector" link="utility/selector.html" description="Selects elements from an input signal by one-based indices." alias="true"/>
         <keyword name="signalConversion" link="utility/signalConversion.html" description="Pass-through that copies its input to its output unchanged (conversion point)."/>
-        <keyword name="block:signalConversion" link="utility/signalConversion.html" description="Pass-through that copies its input to its output unchanged (conversion point)."/>
+        <keyword name="block:signalConversion" link="utility/signalConversion.html" description="Pass-through that copies its input to its output unchanged (conversion point)." alias="true"/>
         <keyword name="subsystem" link="utility/subsystem.html" description="Runs a nested block diagram as a single block."/>
-        <keyword name="block:subsystem" link="utility/subsystem.html" description="Runs a nested block diagram as a single block."/>
+        <keyword name="block:subsystem" link="utility/subsystem.html" description="Runs a nested block diagram as a single block." alias="true"/>
         <keyword name="switch" link="utility/switch.html" description="Selects between top and bottom inputs using a condition input."/>
-        <keyword name="block:switch" link="utility/switch.html" description="Selects between top and bottom inputs using a condition input."/>
+        <keyword name="block:switch" link="utility/switch.html" description="Selects between top and bottom inputs using a condition input." alias="true"/>
         <keyword name="toggleSwitch" link="utility/toggleSwitch.html" description="Outputs one of two configured values from state."/>
-        <keyword name="block:toggleSwitch" link="utility/toggleSwitch.html" description="Outputs one of two configured values from state."/>
+        <keyword name="block:toggleSwitch" link="utility/toggleSwitch.html" description="Outputs one of two configured values from state." alias="true"/>
         <keyword name="width" link="utility/width.html" description="Outputs the number of elements (width) of its input signal, as a scalar."/>
-        <keyword name="block:width" link="utility/width.html" description="Outputs the number of elements (width) of its input signal, as a scalar."/>
+        <keyword name="block:width" link="utility/width.html" description="Outputs the number of elements (width) of its input signal, as a scalar." alias="true"/>
       </section>
     </section>
   </toc>

@@ -26,21 +26,24 @@ Trouve des objets graphiques avec des proprietes donnees.
 
 ## 📄 Description
 
+
 <b>findobj</b> parcourt la hierarchie graphique depuis l'objet racine ou depuis les objets graphiques fournis. Les objets dont <b>HandleVisibility</b> vaut <b>
-'off'
-</b>, ainsi que leurs descendants, ne sont pas retournes.
+        'off'
+      </b>, ainsi que leurs descendants, ne sont pas retournes. 
 
 Les predicats de proprietes peuvent etre combines avec <b>
-'-and'
-</b>, <b>
-'-or'
-</b>, <b>
-'-xor'
-</b> et <b>
-'-not'
-</b>. Les tableaux de cellules permettent de grouper les expressions.
+        '-and'
+      </b>, <b>
+        '-or'
+      </b>, <b>
+        '-xor'
+      </b> et <b>
+        '-not'
+      </b>. Les tableaux de cellules permettent de grouper les expressions.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 close all
@@ -48,11 +51,13 @@ plot(rand(5))
 h = findobj('Type', 'line')
 ```
 
+
 ```matlab
 close all
 plot(1:10, 'Tag', 'linear')
 h = findobj('-regexp', 'Tag', 'lin')
 ```
+
 
 ```matlab
 close all
@@ -62,15 +67,16 @@ plot((1:10).^2, 'Tag', 'quadratic')
 h = findobj('Type', 'line', '-and', '-not', {'Tag', 'linear'})
 ```
 
+
 ## 🔗 Voir aussi
 
 [groot](../../../graphics/2_graphics_objects/1_object_management/groot.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [gca](../../../graphics/2_graphics_objects/1_object_management/gca.md), [isgraphics](../../../graphics/2_graphics_objects/1_object_management/isgraphics.md), [get](../../../handle/get.md), [set](../../../handle/set.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

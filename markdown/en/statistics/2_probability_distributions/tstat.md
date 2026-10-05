@@ -17,17 +17,21 @@ Student t mean and variance
 
 ## 📄 Description
 
+
 <b>tstat</b> returns the mean and variance of the Student t distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = tstat([1.5 3 Inf]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

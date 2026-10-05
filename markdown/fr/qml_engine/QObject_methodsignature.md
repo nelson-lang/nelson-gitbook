@@ -1,15 +1,15 @@
-# QObject_methodsignature
+# QObject\_methodsignature
 
 Renvoie la signature d'une méthode d'une poignée (handle) QObject.
 
 ## 📝 Syntaxe
 
-- res = QObject_methodsignature(h, method_name)
+- res = QObject\_methodsignature(h, method\_name)
 
 ## 📥 Argument d'entrée
 
 - h - une poignée (handle) QObject.
-- method_name - une chaîne : nom de la méthode.
+- method\_name - une chaîne : nom de la méthode.
 
 ## 📤 Argument de sortie
 
@@ -17,14 +17,18 @@ Renvoie la signature d'une méthode d'une poignée (handle) QObject.
 
 ## 📄 Description
 
+
 Renvoie la signature d'une méthode d'une poignée (handle) QObject.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h = errordlg()
 QObject_methodsignature(h, 'setVisible')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ QObject_methodsignature(h, 'setVisible')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

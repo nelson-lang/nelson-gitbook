@@ -15,7 +15,8 @@ Notifie les ecouteurs d'un evenement classdef.
 
 ## 📄 Description
 
-<b>notify</b> execute les callbacks enregistres pour un evenement d'objet handle classdef.
+
+<b>notify</b> execute les callbacks enregistres pour un evenement d'objet handle classdef. 
 
 Les callbacks recoivent l'objet source et les donnees d'evenement fournies.
 
@@ -35,14 +36,15 @@ delete(lh);
 delete(counter)
 ```
 
+
 ## 🔗 Voir aussi
 
 [addlistener](../handle/addlistener.md), [events](../handle/events.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                       |
-| ------- | ---------------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | support de notification d'evenements classdef ajoute |
 
 <!--

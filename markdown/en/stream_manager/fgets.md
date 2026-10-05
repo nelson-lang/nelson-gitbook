@@ -18,15 +18,18 @@ Read string from a file, stopping after a newline, or EOF, or n characters have 
 
 ## 📄 Description
 
-Read string from a file, stopping after a newline, or EOF, or n characters have been read.
 
-If there is no more character to read, fgets will return -1.
+Read string from a file, stopping after a newline, or EOF, or n characters have been read. 
 
-If n is omitted, fgets reads until the next newline.
+If there is no more character to read, fgets will return -1. 
+
+If n is omitted, fgets reads until the next newline. 
 
 characters encoding uses <b>fopen</b> parameter.
 
 ## 💡 Examples
+
+
 
 ```matlab
   fid = fopen([nelsonroot(), '/etc/startup.m']);
@@ -38,6 +41,7 @@ characters encoding uses <b>fopen</b> parameter.
 
   fclose(fid);
 ```
+
 
 ```matlab
 fid = fopen([nelsonroot(), '/etc/startup.m']);
@@ -51,13 +55,14 @@ fid = fopen([nelsonroot(), '/etc/startup.m']);
   fclose(fid);
 ```
 
+
 ## 🔗 See also
 
 [fclose](../stream_manager/fclose.md), [fopen](../stream_manager/fopen.md), [fgetl](../stream_manager/fgetl.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

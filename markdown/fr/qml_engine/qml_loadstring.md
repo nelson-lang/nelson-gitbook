@@ -1,14 +1,14 @@
-# qml_loadstring
+# qml\_loadstring
 
 Charge une chaîne QML.
 
 ## 📝 Syntaxe
 
-- h = qml_loadstring(str_to_eval)
+- h = qml\_loadstring(str\_to\_eval)
 
 ## 📥 Argument d'entrée
 
-- str_to_eval - une chaîne.
+- str\_to\_eval - une chaîne.
 
 ## 📤 Argument de sortie
 
@@ -16,15 +16,19 @@ Charge une chaîne QML.
 
 ## 📄 Description
 
-Charge une chaîne QML.
+
+Charge une chaîne QML. 
 
 Elle crée un composant QML et charge le fichier .qml.
 
 ## 💡 Exemple
 
+
+
 ```matlab
  % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ Elle crée un composant QML et charge le fichier .qml.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

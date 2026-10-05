@@ -23,14 +23,17 @@ Intervalle de confiance bootstrap.
 
 ## 📄 Description
 
+
 <b>bootci</b> tire des echantillons bootstrap avec le generateur aleatoire de Nelson et calcule des intervalles de confiance pour les statistiques renvoyees par une fonction.
 
 ## Fonction(s) utilisée(s)
+
 
     bootstrp
     jackknife
     statset
     rng
+  
 
 ## 💡 Exemple
 

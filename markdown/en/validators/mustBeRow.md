@@ -15,9 +15,12 @@ Checks that value is a row vector or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeRow</b> checks that value is a row vector or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeRow([1, 1])
@@ -25,15 +28,16 @@ mustBeRow([])
 mustBeRow([1; 1])
 ```
 
+
 ## 🔗 See also
 
-[isrow](../elementary_functions/isrow.md).
+[isrow](../elementary_functions/7_indexing_dimensions/isrow.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

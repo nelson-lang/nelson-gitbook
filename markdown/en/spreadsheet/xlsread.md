@@ -23,7 +23,8 @@ Read data from an Open XML spreadsheet file.
 
 ## 📄 Description
 
-<b>xlsread</b> imports data from .xlsx files using the Open XML backend.
+
+<b>xlsread</b> imports data from .xlsx files using the Open XML backend. 
 
 Other workbook formats, remote URLs, and interactive application automation are not supported by this backend.
 
@@ -35,14 +36,15 @@ Read numeric data from a named sheet and range.
 filename = [tempdir(), 'xlsread_example.xlsx']; xlswrite(filename, [1 2; 3 4], 'Data', 'B2'); [num, txt, raw] = xlsread(filename, 'Data', 'B2:C3')
 ```
 
+
 ## 🔗 See also
 
 [xlswrite](../spreadsheet/xlswrite.md), [xlsfinfo](../spreadsheet/xlsfinfo.md), [readmatrix](../spreadsheet/readmatrix.md), [readcell](../spreadsheet/readcell.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Open XML .xlsx support added. |
 
 <!--

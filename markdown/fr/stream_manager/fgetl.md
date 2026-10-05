@@ -16,15 +16,18 @@ Lire une chaîne depuis un fichier sans le caractère de nouvelle ligne.
 
 ## 📄 Description
 
-Lit une chaîne depuis un fichier, s'arrêtant après la lecture d'un saut de ligne ou de la fin du fichier (EOF).
 
-S'il n'y a plus de caractère à lire, <b>fgetl</b> renverra -1.
+Lit une chaîne depuis un fichier, s'arrêtant après la lecture d'un saut de ligne ou de la fin du fichier (EOF). 
 
-Le caractère de nouvelle ligne est retiré de la chaîne renvoyée.
+S'il n'y a plus de caractère à lire, <b>fgetl</b> renverra -1. 
+
+Le caractère de nouvelle ligne est retiré de la chaîne renvoyée. 
 
 L'encodage des caractères utilise le paramètre <b>fopen</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 fid = fopen([nelsonroot(), '/etc/startup.m']);
@@ -38,14 +41,15 @@ end
 fclose(fid);
 ```
 
+
 ## 🔗 Voir aussi
 
 [fclose](../stream_manager/fclose.md), [fopen](../stream_manager/fopen.md), [fgets](../stream_manager/fgets.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -11,17 +11,18 @@ Step-by-step classdef tutorial.
 
 ## 📄 Description
 
-A <b>classdef</b> file defines a class template. The file contains one class definition and the file name must match the class name.
 
-A class definition can contain <b>properties</b>, <b>methods</b>, <b>events</b>, and <b>enumeration</b> blocks. Properties hold object state. Methods implement behavior. Events and listeners are used by handle classes that notify other code when something changes.
+A <b>classdef</b> file defines a class template. The file contains one class definition and the file name must match the class name. 
 
-Value classes copy their data when assigned. Handle classes inherit from <b>handle</b> and use reference semantics, so two variables can refer to the same object.
+A class definition can contain <b>properties</b>, <b>methods</b>, <b>events</b>, and <b>enumeration</b> blocks. Properties hold object state. Methods implement behavior. Events and listeners are used by handle classes that notify other code when something changes. 
 
-Nelson also provides lightweight mixin classes under <b>nelson.mixin</b>. <b>nelson.mixin.Copyable</b> adds a shallow <b>copy</b> method for handle classes. <b>nelson.mixin.CustomDisplay</b> routes scalar display through a protected <b>displayScalarObject</b> method when the class defines one.
+Value classes copy their data when assigned. Handle classes inherit from <b>handle</b> and use reference semantics, so two variables can refer to the same object. 
 
-Property declarations can include a default value, fixed-size and type validation, and validator functions. Accessor methods named <b>get.PropertyName</b> and <b>set.PropertyName</b> implement computed or validated property access. <b>Dependent</b> properties are not stored; <b>Transient</b> properties are not persisted; <b>NonCopyable</b> handle properties are reset by the copy mixin.
+Nelson also provides lightweight mixin classes under <b>nelson.mixin</b>. <b>nelson.mixin.Copyable</b> adds a shallow <b>copy</b> method for handle classes. <b>nelson.mixin.CustomDisplay</b> routes scalar display through a protected <b>displayScalarObject</b> method when the class defines one. 
 
-The generated static method <b>ClassName.empty(...)</b> creates typed empty arrays. Indexed expansion initializes missing value-class elements with default property values and missing handle-class elements with distinct default handles.
+Property declarations can include a default value, fixed-size and type validation, and validator functions. Accessor methods named <b>get.PropertyName</b> and <b>set.PropertyName</b> implement computed or validated property access. <b>Dependent</b> properties are not stored; <b>Transient</b> properties are not persisted; <b>NonCopyable</b> handle properties are reset by the copy mixin. 
+
+The generated static method <b>ClassName.empty(...)</b> creates typed empty arrays. Indexed expansion initializes missing value-class elements with default property values and missing handle-class elements with distinct default handles. 
 
 <b>saveObjectImpl</b> and static <b>loadObjectImpl</b> customize persistence. For non-empty arrays they run element by element. Empty arrays keep their type and size without invoking scalar hooks, and handle arrays are checked for invalid elements before save hooks run.
 
@@ -49,7 +50,6 @@ a = MyClass(42);
 disp(a.Value)
 
 ```
-
 Use private storage and a dependent property.
 
 ```matlab
@@ -85,7 +85,6 @@ p = Person("Ada", 31);
 p.Age
 
 ```
-
 Inherit from a superclass and call its constructor and method.
 
 ```matlab
@@ -132,7 +131,6 @@ c = Car("MyCar", "Toyota");
 c.start();
 
 ```
-
 Use handle reference semantics.
 
 ```matlab
@@ -155,7 +153,6 @@ a.increment();
 disp(b.Value)
 
 ```
-
 Add shallow copy support to a handle class.
 
 ```matlab
@@ -173,7 +170,6 @@ c2 = copy(c1);
 c2.Mode = "safe";
 
 ```
-
 Customize scalar object display.
 
 ```matlab
@@ -205,14 +201,15 @@ p
 
 ```
 
+
 ## 🔗 See also
 
 [classdef](../interpreter/classdef.md), [methods](../handle/methods.md), [properties](../handle/properties.md), [metaclass](../handle/metaclass.md), [events](../handle/events.md).
 
 ## 🕔 History
 
-| Version | 📄 Description          |
-| ------- | ----------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | classdef tutorial added |
 
 <!--

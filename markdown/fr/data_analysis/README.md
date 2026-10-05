@@ -1,10 +1,16 @@
 # Analyse de donnees
 
+
+    
 Le module Analyse de donnees fournit des outils pour effectuer des operations numeriques et des analyses basees sur des tableaux dans Nelson.
 
+    
 Il prend en charge les operations cumulatives, le tri, l'agregation, la convolution et l'identification des valeurs uniques ou manquantes.
 
+    
 Ce module couvre le traitement, le resume et l'exploration de jeux de donnees sous forme de tableaux.
+
+  
 
 ## Functions
 
@@ -54,3 +60,4 @@ Ce module couvre le traitement, le resume et l'exploration de jeux de donnees so
 - [union](union.md) - Union ensembliste de deux tableaux.
 - [unique](unique.md) - Valeurs uniques.
 - [uniquetol](uniquetol.md) - Valeurs uniques à une tolérance près.
+

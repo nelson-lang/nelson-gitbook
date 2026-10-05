@@ -1,10 +1,16 @@
 # Trigonometric functions
 
+
+    
 The Trigonometric Functions module provides functions for trigonometric calculations in Nelson.
 
+    
 It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.
 
+    
 The module also provides utilities for converting between degrees and radians in mathematical and engineering calculations.
+
+  
 
 ## Functions
 
@@ -34,7 +40,7 @@ The module also provides utilities for converting between degrees and radians in
 - [cosd](cosd.md) - Computes the cosine in degree for each element of x.
 - [cosh](cosh.md) - Computes the hyperbolic cosine in radians for each element of x.
 - [cosm](cosm.md) - Computes the matrix cosine of a square matrix.
-- [cospi](cospi.md) - Computes cos(X \* pi) accurately.
+- [cospi](cospi.md) - Computes cos(X * pi) accurately.
 - [cot](cot.md) - Cotangent of angle in radians
 - [cotd](cotd.md) - Cotangent of argument in degrees
 - [coth](coth.md) - Hyperbolic cotangent.
@@ -51,7 +57,7 @@ The module also provides utilities for converting between degrees and radians in
 - [sind](sind.md) - Computes the sine in degree for each element of x.
 - [sinh](sinh.md) - Computes the hyperbolic sine in radians for each element of x.
 - [sinm](sinm.md) - Computes the matrix sinus of a square matrix.
-- [sinpi](sinpi.md) - Computes sin(X \* pi) accurately.
+- [sinpi](sinpi.md) - Computes sin(X * pi) accurately.
 - [sph2cart](sph2cart.md) - Transform spherical coordinates to Cartesian.
 - [tan](tan.md) - Computes the tangent in radians for each element of x.
 - [tand](tand.md) - Computes the tangent in degree for each element of x.
@@ -61,3 +67,4 @@ The module also provides utilities for converting between degrees and radians in
 - [wrapTo2Pi](wrapTo2Pi.md) - Wrap angle in radians to [0, 2*pi].
 - [wrapTo360](wrapTo360.md) - Wrap angle in degrees to [0, 360].
 - [wrapToPi](wrapToPi.md) - Wrap angle in radians to [-pi, pi].
+

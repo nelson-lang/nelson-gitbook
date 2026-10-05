@@ -18,13 +18,17 @@ Split an array into a cell array.
 
 ## 📄 Description
 
+
 <b>mat2cell</b> splits <b>A</b> into cells whose sizes are given for each dimension.
 
 ## 💡 Example
 
+
+
 ```matlab
 C = mat2cell(reshape(1:12, [3 4]), [1 2], [3 1])
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ C = mat2cell(reshape(1:12, [3 4]), [1 2], [3 1])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

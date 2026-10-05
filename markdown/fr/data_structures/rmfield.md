@@ -17,9 +17,12 @@ Supprimer des champs d'une structure.
 
 ## 📄 Description
 
+
 <b>s = rmfield(st, field)</b> supprime le(s) champ(s) spécifié(s) du tableau de structures.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 example.a = 1
@@ -28,14 +31,15 @@ example.c = []
 rmfield(example, 'b')
 ```
 
+
 ## 🔗 Voir aussi
 
 [struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

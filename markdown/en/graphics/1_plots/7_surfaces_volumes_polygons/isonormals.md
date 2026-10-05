@@ -23,7 +23,9 @@ Compute normals of isosurface vertices.
 
 ## 📄 Description
 
+
 <b>isonormals</b> computes normals at isosurface vertices. With a patch handle and no output, the VertexNormals property is set.
+
 
 ## 🔗 See also
 

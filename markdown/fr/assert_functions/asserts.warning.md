@@ -22,7 +22,8 @@ Verifie qu'une commande emet l'avertissement attendu.
 
 ## 📄 Description
 
-L'assertion reussit lorsque la commande emet un avertissement correspondant.
+
+L'assertion reussit lorsque la commande emet un avertissement correspondant. 
 
 La forme a deux arguments accepte le texte du message ou l'identifiant de l'avertissement.
 
@@ -33,12 +34,12 @@ Expected warning text
 ```matlab
 asserts.warning('warning(''Nelson:asserts:example'', ''expected warning'');', 'expected warning');
 ```
-
 Capture a missing warning
 
 ```matlab
 [res, msg] = asserts.warning('1 + 1', 'expected warning');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -46,8 +47,8 @@ Capture a missing warning
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,9 +19,12 @@ Ancêtre d'un objet graphique.
 
 ## 📄 Description
 
+
 <b>ancestor</b> retourne le handle de l'ancêtre d'un objet spécifié d'un type donné.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -32,14 +35,15 @@ F = ancestor(s, 'figure')
 R = ancestor(s, 'root')
 ```
 
+
 ## 🔗 Voir aussi
 
 [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

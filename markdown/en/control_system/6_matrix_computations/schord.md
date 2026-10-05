@@ -19,9 +19,12 @@ Order a Schur decomposition.
 
 ## 📄 Description
 
+
 <b>schord</b> applies adjacent unitary rotations to reorder a Schur decomposition by increasing values in <b>index</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ A = [1 2; 3 4];
 
 ```
 
+
 ## 🔗 See also
 
-[schur](../../linear_algebra/schur.md), [bdschur](../../control_system/bdschur.md).
+[schur](../../linear_algebra/3_eigen_singular_values/schur.md), [bdschur](../../control_system/6_matrix_computations/bdschur.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

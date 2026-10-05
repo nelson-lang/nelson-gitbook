@@ -20,13 +20,16 @@ Attendre la complétion des futures.
 
 ## 📄 Description
 
-<b>wait(f)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> soit terminé.
 
-<b>wait(f, state)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> ait sa propriété 'State' définie sur <i>state</i>.
+<b>wait(f)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> soit terminé. 
+
+<b>wait(f, state)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> ait sa propriété 'State' définie sur <i>state</i>. 
 
 <b>tf = wait(f, state, timeout)</b> suspend l'exécution pour un maximum de<i>timeout</i>secondes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 fptr = str2func('pause');
@@ -38,14 +41,15 @@ R = wait(f, 'finished');
 toc()
 ```
 
+
 ## 🔗 Voir aussi
 
 [pause](../core/pause.md), [fetchOutputs](../parallel/fetchOutputs.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

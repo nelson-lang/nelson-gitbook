@@ -20,13 +20,16 @@ Teste si une matrice est symétrique.
 
 ## 📄 Description
 
-<b>issymmetric(x)</b> teste si la matrice est symétrique.
 
-Avec l'argument 'nonskew', pour une matrice carrée x, x est symétrique si elle est égale à sa transposée non conjuguée, x = x.'
+<b>issymmetric(x)</b> teste si la matrice est symétrique. 
+
+Avec l'argument 'nonskew', pour une matrice carrée x, x est symétrique si elle est égale à sa transposée non conjuguée, x = x.' 
 
 Avec l'argument 'skew', pour une matrice carrée x, x est symétrique si elle est égale à l'opposé de sa transposée non conjuguée, x = -x.'
 
 ## 💡 Exemple
+
+
 
 ```matlab
 issymmetric([1, 2; 2, 1])
@@ -36,14 +39,15 @@ issymmetric(A, 'skew')
 issymmetric(A, 'nonskew')
 ```
 
+
 ## 🔗 Voir aussi
 
-[ishermitian](../../linear_algebra/ishermitian.md).
+[ishermitian](../../linear_algebra/5_matrix_properties/ishermitian.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

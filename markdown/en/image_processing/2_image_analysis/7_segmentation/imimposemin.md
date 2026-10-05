@@ -19,6 +19,7 @@ Impose regional minima at marker pixels.
 
 ## 📄 Description
 
+
 imimposemin modifies an image so that marker pixels become the lowest minima. This is useful before watershed segmentation when known markers should seed catchment basins.
 
 ## 💡 Example
@@ -34,16 +35,16 @@ figure; subplot(1,3,1); imagesc(I); title('Input');
 subplot(1,3,2); imagesc(J); title('Imposed');
 subplot(1,3,3); imagesc(L); title('Watershed');
 ```
-
 <img src="imimposemin_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imhmin](../../../image_processing/imhmin.md), [imextendedmin](../../../image_processing/imextendedmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [watershed](../../../image_processing/watershed.md), [activecontour](../../../image_processing/activecontour.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imextendedmin](../../../image_processing/2_image_analysis/7_segmentation/imextendedmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md), [activecontour](../../../image_processing/2_image_analysis/7_segmentation/activecontour.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

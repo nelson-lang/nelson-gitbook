@@ -20,9 +20,12 @@ Transformée de Fourier inverse rapide.
 
 ## 📄 Description
 
+
 <b>ifft(X)</b> calcule la transformée de Fourier discrète inverse de X en utilisant un algorithme FFT basé sur la bibliothèque FFTW.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1:10]
@@ -30,14 +33,15 @@ Y = fft(A)
 R = ifft(Y)
 ```
 
+
 ## 🔗 Voir aussi
 
 [fft](../fftw/fft.md), [fftw](../fftw/fftw.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

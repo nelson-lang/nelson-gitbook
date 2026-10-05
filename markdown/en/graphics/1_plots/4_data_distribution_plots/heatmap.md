@@ -31,11 +31,12 @@ Create a heatmap chart from a numeric matrix or table.
 
 ## 📄 Description
 
-<b>heatmap</b> displays a numeric matrix as a scaled color image with row and column labels. For table input, categories are sorted and the color data is aggregated by category pair.
 
-With <b>heatmap(tbl, xvar, yvar)</b>, color data contains counts and <b>ColorMethod</b> is <b>count</b>. With <b>ColorVariable</b>, color data contains means and <b>ColorMethod</b> is <b>mean</b>.
+<b>heatmap</b> displays a numeric matrix as a scaled color image with row and column labels. For table input, categories are sorted and the color data is aggregated by category pair. 
 
-This implementation returns a <b>heatmap</b> chart object. The chart <b>UserData</b> contains the fields <b>ChartType</b>, <b>Image</b>, <b>Grid</b>, <b>CellLabels</b>, <b>Colorbar</b>, <b>XData</b>, <b>YData</b>, <b>ColorData</b>, <b>SourceTable</b>, <b>XVariable</b>, <b>YVariable</b>, <b>ColorVariable</b>, <b>ColorMethod</b>, and <b>Options</b>.
+With <b>heatmap(tbl, xvar, yvar)</b>, color data contains counts and <b>ColorMethod</b> is <b>count</b>. With <b>ColorVariable</b>, color data contains means and <b>ColorMethod</b> is <b>mean</b>. 
+
+This implementation returns a <b>heatmap</b> chart object. The chart <b>UserData</b> contains the fields <b>ChartType</b>, <b>Image</b>, <b>Grid</b>, <b>CellLabels</b>, <b>Colorbar</b>, <b>XData</b>, <b>YData</b>, <b>ColorData</b>, <b>SourceTable</b>, <b>XVariable</b>, <b>YVariable</b>, <b>ColorVariable</b>, <b>ColorMethod</b>, and <b>Options</b>. 
 
 Supported name/value properties are <b>Title</b>, <b>XLabel</b>, <b>YLabel</b>, <b>SourceTable</b>, <b>XVariable</b>, <b>YVariable</b>, <b>ColorVariable</b>, <b>ColorMethod</b>, <b>XData</b>, <b>YData</b>, <b>XDisplayLabels</b>, <b>YDisplayLabels</b>, <b>ColorLimits</b>, <b>Colormap</b>, <b>ColorbarVisible</b>, <b>GridVisible</b>, <b>CellLabelFormat</b>, <b>CellLabelColor</b>, <b>MissingDataLabel</b>, <b>FontColor</b>, <b>FontSize</b>, and <b>Visible</b>.
 
@@ -47,7 +48,6 @@ Display a numeric heatmap.
 C = [1 2 3; 4 5 6];
 heatmap(C);
 ```
-
 <img src="heatmap_1.svg" align="middle"/>
 Use row and column labels.
 
@@ -56,7 +56,6 @@ C = [3 7 2; 6 5 8];
 heatmap({'A', 'B', 'C'}, {'Low', 'High'}, C, ...
   'Title', 'Scores', 'XLabel', 'Column', 'YLabel', 'Group');
 ```
-
 <img src="heatmap_2.svg" align="middle"/>
 Create a heatmap from table categories.
 
@@ -65,7 +64,6 @@ T = table({'B'; 'A'; 'B'}, {'Y'; 'X'; 'X'}, [2; 5; 8], ...
   'VariableNames', {'x', 'y', 'v'});
 heatmap(T, 'x', 'y', 'ColorVariable', 'v');
 ```
-
 <img src="heatmap_3.svg" align="middle"/>
 Customize colors and labels.
 
@@ -74,8 +72,8 @@ C = peaks(12);
 heatmap(C, 'ColorLimits', [-6 8], 'Colormap', turbo(64), ...
   'CellLabelFormat', '%0.1f', 'GridVisible', 'off');
 ```
-
 <img src="heatmap_4.svg" align="middle"/>
+
 
 ## 🔗 See also
 

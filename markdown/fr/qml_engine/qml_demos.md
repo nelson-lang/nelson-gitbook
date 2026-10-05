@@ -1,20 +1,24 @@
-# qml_demos
+# qml\_demos
 
 Démos QML.
 
 ## 📝 Syntaxe
 
-- qml_demos()
+- qml\_demos()
 
 ## 📄 Description
 
-<b>qml_demos</b> affiche des démonstrations QML pour Nelson.
+
+<b>qml\_demos</b> affiche des démonstrations QML pour Nelson.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 qml_demos()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -22,8 +26,8 @@ qml_demos()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

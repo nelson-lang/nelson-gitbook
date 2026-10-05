@@ -24,9 +24,12 @@ Signal cosinus a frequence balayee.
 
 ## 📄 Description
 
+
 <b>chirp</b> genere un cosinus dont la frequence varie dans le temps.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ y = chirp(0:0.01:1, 0, 1, 10);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[sawtooth](../../signal_processing/sawtooth.md), [square](../../signal_processing/square.md).
+[sawtooth](../../signal_processing/1_signal_generation_preprocessing/sawtooth.md), [square](../../signal_processing/1_signal_generation_preprocessing/square.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,7 +19,8 @@ Check that a structure has a field.
 
 ## 📄 Description
 
-The assertion passes when s contains fieldName.
+
+The assertion passes when s contains fieldName. 
 
 Invalid non-structure inputs raise an argument error immediately.
 
@@ -30,12 +31,12 @@ Existing field
 ```matlab
 S = struct('a', 1); asserts.hasField(S, 'a');
 ```
-
 Capture a missing field
 
 ```matlab
 S = struct('a', 1); [res, msg] = asserts.hasField(S, 'b');
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ S = struct('a', 1); [res, msg] = asserts.hasField(S, 'b');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

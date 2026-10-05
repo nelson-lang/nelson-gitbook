@@ -21,7 +21,8 @@ Date formatted tick labels.
 
 ## 📄 Description
 
-<b>datetick</b> labels the ticks of an axis using dates, treating the tick values as serial date numbers (see <b>datenum</b>).
+
+<b>datetick</b> labels the ticks of an axis using dates, treating the tick values as serial date numbers (see <b>datenum</b>). 
 
 When no format is given, a format is chosen from the range spanned by the ticks. Use <b>keepticks</b> to preserve the current tick locations and <b>keeplimits</b> to preserve the current limits.
 
@@ -37,13 +38,14 @@ datetick('x', 'yyyy');
 
 ```
 
+
 ## 🔗 See also
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [xtickformat](../../../graphics/3_labels_styling/1_axes_appearance/xtickformat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

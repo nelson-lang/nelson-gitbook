@@ -8,21 +8,25 @@ Erase matching text.
 
 ## 📄 Description
 
+
 <b>erase</b> Erase matching text.
 
 ## 💡 Example
+
+
 
 ```matlab
 erase("Hello World", " World")
 ```
 
+
 ## 🔗 See also
 
-[eraseBetween](../../string/eraseBetween.md), [replace](../../string/replace.md), [strrep](../../string/strrep.md).
+[eraseBetween](../../string/3_find_replace/eraseBetween.md), [replace](../../string/3_find_replace/replace.md), [strrep](../../string/3_find_replace/strrep.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

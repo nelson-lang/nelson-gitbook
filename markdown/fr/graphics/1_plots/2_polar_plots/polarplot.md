@@ -26,15 +26,16 @@ Trace des donnees en coordonnees polaires.
 
 ## 📄 Description
 
-<b>polarplot(theta, rho)</b> trace les valeurs de rayon <b>rho</b> aux angles <b>theta</b>. Les angles de donnees sont exprimes en radians.
 
-<b>polarplot(rho)</b> trace <b>rho</b> avec des angles regulierement espaces de 0 a 2\*pi. Si <b>rho</b> est complexe, <b>angle(rho)</b> est utilise pour les angles et <b>abs(rho)</b> pour les rayons.
+<b>polarplot(theta, rho)</b> trace les valeurs de rayon <b>rho</b> aux angles <b>theta</b>. Les angles de donnees sont exprimes en radians. 
 
-Si <b>rho</b> est une matrice, chaque colonne est tracee comme une ligne separee. Un vecteur <b>theta</b> peut etre combine avec une matrice <b>rho</b> quand sa longueur correspond a une dimension de <b>rho</b>.
+<b>polarplot(rho)</b> trace <b>rho</b> avec des angles regulierement espaces de 0 a 2\*pi. Si <b>rho</b> est complexe, <b>angle(rho)</b> est utilise pour les angles et <b>abs(rho)</b> pour les rayons. 
 
-Les objets ligne retournes conservent les echantillons polaires dans leurs proprietes <b>ThetaData</b> et <b>RData</b>. Les donnees cartesiennes <b>XData</b> et <b>YData</b> sont gerees par le rendu polaire.
+Si <b>rho</b> est une matrice, chaque colonne est tracee comme une ligne separee. Un vecteur <b>theta</b> peut etre combine avec une matrice <b>rho</b> quand sa longueur correspond a une dimension de <b>rho</b>. 
 
-Les fonctions de limites et de graduations angulaires utilisent les degres : <b>thetalim</b>, <b>thetaticks</b> et <b>thetaticklabels</b>.
+Les objets ligne retournes conservent les echantillons polaires dans leurs proprietes <b>ThetaData</b> et <b>RData</b>. Les donnees cartesiennes <b>XData</b> et <b>YData</b> sont gerees par le rendu polaire. 
+
+Les fonctions de limites et de graduations angulaires utilisent les degres : <b>thetalim</b>, <b>thetaticks</b> et <b>thetaticklabels</b>. 
 
 Quand aucun axes polaire n'est courant, <b>polarplot</b> en cree un. Si un axes classique est fourni, il est initialise comme axes polaire.
 
@@ -49,7 +50,6 @@ rho = 1 + 0.5*cos(4*theta);
 polarplot(theta, rho, 'r-', 'LineWidth', 2);
 
 ```
-
 <img src="polarplot_1.svg" align="middle"/>
 Tracer plusieurs colonnes de rayons sur le meme axes polaire.
 
@@ -62,7 +62,6 @@ rticks([0 0.5 1]);
 thetaticks(0:45:360);
 
 ```
-
 Utiliser un axes polaire explicite.
 
 ```matlab
@@ -75,14 +74,15 @@ thetalim(ax, [0 180]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [polaraxes](../../../graphics/1_plots/2_polar_plots/polaraxes.md), [rlim](../../../graphics/3_labels_styling/1_axes_appearance/rlim.md), [rticks](../../../graphics/3_labels_styling/1_axes_appearance/rticks.md), [thetalim](../../../graphics/3_labels_styling/1_axes_appearance/thetalim.md), [thetaticks](../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md), [line](../../../graphics/1_plots/1_line_plots/line.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

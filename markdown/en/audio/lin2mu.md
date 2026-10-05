@@ -16,6 +16,7 @@ Convert audio data from linear signal to mu-law.
 
 ## 📄 Description
 
+
 <b>mu = lin2mu(y)</b> converts audio data from linear to mu-law.
 
 ## 📚 Bibliography
@@ -24,9 +25,12 @@ https://en.wikipedia.org/wiki/%CE%9C-law_algorithm
 
 ## 💡 Example
 
+
+
 ```matlab
 mu = lin2mu([-1:0.5:1])
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ mu = lin2mu([-1:0.5:1])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

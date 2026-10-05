@@ -21,9 +21,12 @@ Oppose de la log-vraisemblance de la loi Weibull
 
 ## 📄 Description
 
+
 <b>wbllike</b> evalue l'oppose de la log-vraisemblance de la loi Weibull.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
@@ -31,14 +34,15 @@ phat = wblfit(x);
 nlogL = wbllike(phat, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[wblfit](../../statistics/wblfit.md), [wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md).
+[wblfit](../../statistics/2_probability_distributions/wblfit.md), [wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -61,7 +61,7 @@
     <p><b>getfullname</b> renvoie le chemin complet qui identifie le bloc ou le
     modèle désigné par un handle. Un handle de bloc donne
     <b>'modèle/NomDeBloc'</b> ; un handle de modèle donne <b>'modèle'</b>.</p>
-    <p>C'est l'inverse de <b>getSimulinkBlockHandle</b>. Un chemin (char) est
+    <p>C'est l'inverse de <b>getNFlowBlockHandle</b>. Un chemin (char) est
     déjà un nom complet et est renvoyé tel quel. Un tableau de cellules de
     handles renvoie un tableau de cellules de chemins de même forme.</p>
     <p>Un handle inconnu lève une erreur.</p>
@@ -73,7 +73,7 @@
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">new_system('demo');
 add_block('nflow/math/gain', 'demo/Gain');
-h = getSimulinkBlockHandle('demo/Gain');
+h = getNFlowBlockHandle('demo/Gain');
 path = getfullname(h)
 bdclose('demo');</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -83,7 +83,7 @@ bdclose('demo');</code></pre>
 <div class="section-title">
 <span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
-<a class="see-also-link" href="../nflow_engine/getSimulinkBlockHandle.html">getSimulinkBlockHandle</a><a class="see-also-link" href="../nflow_engine/get_param.html">get_param</a><a class="see-also-link" href="../nflow_engine/find_system.html">find_system</a><a class="see-also-link" href="../nflow_engine/bdroot.html">bdroot</a>
+<a class="see-also-link" href="../nflow_engine/getNFlowBlockHandle.html">getNFlowBlockHandle</a><a class="see-also-link" href="../nflow_engine/get_param.html">get_param</a><a class="see-also-link" href="../nflow_engine/find_system.html">find_system</a><a class="see-also-link" href="../nflow_engine/bdroot.html">bdroot</a>
 </div>
 </div>
 <div class="section">

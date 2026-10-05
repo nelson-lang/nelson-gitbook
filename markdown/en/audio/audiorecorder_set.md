@@ -1,11 +1,11 @@
-# audiorecorder_set
+# audiorecorder\_set
 
 Set object or interface property to specified value.
 
 ## 📝 Syntax
 
 - set(h, propertyname, value)
-- audiorecorder_set(h, propertyname, value)
+- audiorecorder\_set(h, propertyname, value)
 - h.propertyname = value
 
 ## 📥 Input argument
@@ -16,14 +16,18 @@ Set object or interface property to specified value.
 
 ## 📄 Description
 
+
 The function sets the property specified in the string propertyname to the given value.
 
 ## 💡 Example
+
+
 
 ```matlab
 recObj = audiorecorder()
 recObj.Tag = 'my audio object'
 ```
+
 
 ## 🔗 See also
 
@@ -31,9 +35,9 @@ recObj.Tag = 'my audio object'
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

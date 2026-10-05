@@ -12,24 +12,28 @@ Harmonic mean of a data set.
 
 ## 📄 Description
 
-<b>harmmean</b> computes the harmonic mean of numeric data.
+
+<b>harmmean</b> computes the harmonic mean of numeric data. 
 
 By default, <b>NaN</b> values are included. Use <b>omitnan</b> to ignore them.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = reshape(1:30, [3 5 2]);
 m = harmmean(X, [1 2])
 ```
 
+
 ## 🔗 See also
 
-[geomean](../../statistics/geomean.md), [mean](../../statistics/mean.md), [median](../../statistics/median.md).
+[geomean](../../statistics/1_descriptive_statistics_visualization/geomean.md), [mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [median](../../statistics/1_descriptive_statistics_visualization/median.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

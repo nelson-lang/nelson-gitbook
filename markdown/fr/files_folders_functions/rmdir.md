@@ -23,11 +23,14 @@ Supprime un répertoire.
 
 ## 📄 Description
 
-<b>res = rmdir(dirname)</b> supprime le répertoire <b>dirname</b>.
+
+<b>res = rmdir(dirname)</b> supprime le répertoire <b>dirname</b>. 
 
 Si le répertoire n'est pas vide, il faut utiliser l'argument 's'.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,14 +39,15 @@ rmdir([tempdir(), 'test'])
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [isdir](../files_folders_functions/isdir.md), [mkdir](../files_folders_functions/mkdir.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

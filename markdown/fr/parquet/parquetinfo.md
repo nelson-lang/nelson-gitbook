@@ -16,11 +16,14 @@ Retourner les metadonnees d'un fichier Parquet.
 
 ## 📄 Description
 
-<b>info = parquetinfo(filename)</b> lit les metadonnees Parquet sans importer toute la table.
+
+<b>info = parquetinfo(filename)</b> lit les metadonnees Parquet sans importer toute la table. 
 
 L'objet retourne expose les metadonnees du fichier : nom du fichier, taille, nombre de lignes, nombre de variables, nombre de groupes de lignes, tailles des groupes, noms de variables, types de variables, compression et description du writer si disponible.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 filename = [tempdir(), 'doc_parquetinfo.parquet'];
@@ -32,14 +35,15 @@ info.VariableNames
 info.RowGroups
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.io.parquet.ParquetInfo](../parquet/class_ParquetInfo.md), [parquetread](../parquet/parquetread.md), [parquetwrite](../parquet/parquetwrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

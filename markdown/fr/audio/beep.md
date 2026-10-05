@@ -18,9 +18,12 @@ Produit un son de bip.
 
 ## 📄 Description
 
+
 <b>beep</b> produit un son de bip système.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 beep('off')
@@ -30,10 +33,11 @@ beep
 s = beep
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

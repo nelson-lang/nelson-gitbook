@@ -19,23 +19,27 @@ Convertit des tableaux de caractères en tableaux de chaînes.
 
 ## 📄 Description
 
+
 <b>convertCharsToStrings</b> convertit des tableaux de caractères en tableaux de chaînes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [A, B, C, D] = convertCharsToStrings("one", 2, 'three', {'four' ; 'NaN' ;'five'})
 R = convertCharsToStrings(['Nelson' ; '  is  '; '  good'])
 ```
 
+
 ## 🔗 Voir aussi
 
-[convertStringsToChars](../../string/convertStringsToChars.md), [cellstr](../../data_structures/cellstr.md), [string](../../string/string.md), [char](../../string/char.md).
+[convertStringsToChars](../../string/1_create_convert_text/convertStringsToChars.md), [cellstr](../../data_structures/cellstr.md), [string](../../string/1_create_convert_text/string.md), [char](../../string/1_create_convert_text/char.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

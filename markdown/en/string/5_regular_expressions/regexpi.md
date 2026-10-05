@@ -20,9 +20,12 @@ Match regular expression, ignoring case.
 
 ## 📄 Description
 
+
 <b>regexpi</b> is equivalent to <b>regexp</b> with case-insensitive matching enabled by default.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,15 +33,16 @@ regexpi('ABC abc', 'abc', 'match')
 
 ```
 
+
 ## 🔗 See also
 
-[regexp](../../string/regexp.md).
+[regexp](../../string/5_regular_expressions/regexp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

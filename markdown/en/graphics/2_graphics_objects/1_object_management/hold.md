@@ -23,9 +23,12 @@ Retain current plot when adding new plots.
 
 ## 📄 Description
 
+
 <b>hold</b> allows to construct a plot sequence incrementally.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -38,8 +41,8 @@ plot(x, y2)
 hold off
 
 ```
-
 <img src="hold.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -47,7 +50,7 @@ hold off
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

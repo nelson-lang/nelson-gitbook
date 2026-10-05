@@ -25,9 +25,12 @@ Apparence et comportement (look and feel) de l'application
 
 ## 📄 Description
 
+
 <b>lookandfeel</b> gère l'apparence et le comportement de l'application Nelson.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 
@@ -41,6 +44,7 @@ lookandfeel(currentlf)
 
 ```
 
+
 ```matlab
 
 currentstylesheet = lookandfeel('stylesheet')
@@ -53,10 +57,11 @@ lookandfeel('stylesheet', previousstylesheet)
 
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -20,22 +20,26 @@ Weibull random numbers
 
 ## 📄 Description
 
+
 <b>wblrnd</b> generates Weibull distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = wblrnd(2, 3, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md), [wblinv](../../statistics/wblinv.md).
+[wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblinv](../../statistics/2_probability_distributions/wblinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

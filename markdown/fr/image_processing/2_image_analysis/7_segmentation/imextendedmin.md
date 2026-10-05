@@ -19,6 +19,7 @@ Trouve les minima etendus dans une image 2-D.
 
 ## 📄 Description
 
+
 imextendedmin applique imhmin puis trouve les minima regionaux. Cette fonction aide a construire des masques de marqueurs qui ignorent les minima moins profonds que h.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ BW=imextendedmin(I,2);
 figure; subplot(1,2,1); imagesc(I); title('Image');
 subplot(1,2,2); imagesc(BW); title('Minima etendus');
 ```
-
 <img src="imextendedmin_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imhmin](../../../image_processing/imhmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [imimposemin](../../../image_processing/imimposemin.md), [watershed](../../../image_processing/watershed.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [imimposemin](../../../image_processing/2_image_analysis/7_segmentation/imimposemin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

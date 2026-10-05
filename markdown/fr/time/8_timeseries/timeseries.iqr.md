@@ -16,9 +16,11 @@
 
 ## 📄 Description
 
+
 <b>iqr</b> calcule l'écart interquartile de la propriété Data.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3; 4]);
@@ -26,14 +28,15 @@ iqr(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

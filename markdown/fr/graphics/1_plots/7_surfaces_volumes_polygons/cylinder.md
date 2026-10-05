@@ -24,17 +24,20 @@ Créer un cylindre.
 
 ## 📄 Description
 
+
 <b>cylinder</b> crée un cylindre et l'affiche.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f1 = figure();
 colormap(spring)
 cylinder()
 ```
-
 <img src="cylinder_1.svg" align="middle"/>
+
 
 ```matlab
 f2 = figure();
@@ -42,8 +45,8 @@ colormap(summer)
 r = 4;
 cylinder(r);
 ```
-
 <img src="cylinder_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -51,8 +54,8 @@ cylinder(r);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

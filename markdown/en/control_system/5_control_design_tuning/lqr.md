@@ -24,15 +24,18 @@ Linear-Quadratic Regulator (LQR) design.
 
 ## 📄 Description
 
-In the context of continuous-time state-space matrices <b>A</b> and <b>B</b>, the command <b>[K, S, P] = lqr(A, B, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.
 
-This syntax is applicable exclusively to continuous-time models.
+In the context of continuous-time state-space matrices <b>A</b> and <b>B</b>, the command <b>[K, S, P] = lqr(A, B, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>. 
 
-When applied to a continuous-time or discrete-time state-space model represented by <b>sys</b>, the command <b>[K, S, P] = lqr(sys, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.
+This syntax is applicable exclusively to continuous-time models. 
+
+When applied to a continuous-time or discrete-time state-space model represented by <b>sys</b>, the command <b>[K, S, P] = lqr(sys, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>. 
 
 The weight matrices <b>Q</b> and <b>R</b> govern the importance of states and inputs, and the cross term matrix <b>N</b> is zero by default when not specified.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [-0.313 56.7 0; -0.0139 -0.426 0; 0 56.7 0];
@@ -51,13 +54,14 @@ R = 2;
 
 ```
 
+
 ## 🔗 See also
 
-[care](../../control_system/care.md), [dare](../../control_system/dare.md), [lqe](../../control_system/lqe.md).
+[care](../../control_system/5_control_design_tuning/care.md), [dare](../../control_system/5_control_design_tuning/dare.md), [lqe](../../control_system/5_control_design_tuning/lqe.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

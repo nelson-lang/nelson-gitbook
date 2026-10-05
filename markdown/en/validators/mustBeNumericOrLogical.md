@@ -15,9 +15,12 @@ Checks that input is numeric or logical.
 
 ## 📄 Description
 
+
 <b>mustBeNumericOrLogical</b> checks that value is numeric or logical otherwise raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeNumericOrLogical(1)
@@ -25,13 +28,14 @@ mustBeNumericOrLogical([])
 mustBeNumericOrLogical({1})
 ```
 
+
 ## 🔗 See also
 
 [isnumeric](../types/isnumeric.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

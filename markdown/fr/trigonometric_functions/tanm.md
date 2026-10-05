@@ -16,9 +16,12 @@ Calcule la tangente matricielle d'une matrice carrée.
 
 ## 📄 Description
 
+
 <b>tanm(x)</b> calcule la tangente matricielle de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -27,14 +30,15 @@ A = [1, 2; 3, 4];
 res = tanm(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [tan](../trigonometric_functions/tan.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

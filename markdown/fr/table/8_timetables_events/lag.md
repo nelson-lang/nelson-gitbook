@@ -17,9 +17,11 @@ Decaler les donnees d'une timetable par lignes.
 
 ## 📄 Description
 
+
 <b>lag</b> decale les variables d'une timetable de <b>n</b> lignes en conservant les temps de lignes.
 
 ## 💡 Exemple
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3]), [10; 20; 30], 'VariableNames', {'A'});
@@ -27,14 +29,15 @@ lag(TT)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable](../../table/timetable.md).
+[timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

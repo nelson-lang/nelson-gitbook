@@ -1,12 +1,19 @@
 # Types module
 
+
+    
 The Types module provides tools for managing and inspecting data types in Nelson.
 
+    
 It provides functions to query variable types, distinguish numeric, logical, string, and object values, and work with specialized types such as sparse or integer arrays.
 
+    
 The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.
 
+    
 For C++ extension and embedding code, see [C++ value API](../types/cpp_api.md).
+
+  
 
 ## Functions
 
@@ -50,3 +57,4 @@ For C++ extension and embedding code, see [C++ value API](../types/cpp_api.md).
 - [nelson.mixin.indexing.RedefinesParen](nelson.mixin.indexing.RedefinesParen.md) - Customize parentheses indexing of a class.
 - [nelson.mixin.util.PropertyGroup](nelson.mixin.util.PropertyGroup.md) - A titled group of properties for custom object display.
 - [underlyingType](underlyingType.md) - Underlying type of an array.
+

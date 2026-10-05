@@ -18,9 +18,10 @@ Extrait les numeros ou noms de mois de valeurs de date et heure.
 
 ## 📄 Description
 
-Extrait les numeros ou noms de mois de valeurs de date et heure.
 
-Utilisez name pour les noms anglais complets et shortname pour les noms abreges.
+Extrait les numeros ou noms de mois de valeurs de date et heure. 
+
+Utilisez name pour les noms anglais complets et shortname pour les noms abreges. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,14 +35,15 @@ month(datetime(2024, 5, 17), 'name')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

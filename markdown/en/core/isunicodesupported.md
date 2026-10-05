@@ -12,15 +12,19 @@ Detect whether the current terminal supports Unicode.
 
 ## 📄 Description
 
-<b>isunicodesupported</b>: returns if current terminal supports Unicode.
 
-value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'
+<b>isunicodesupported</b>: returns if current terminal supports Unicode. 
+
+value returned can be overloaded if environment variable 'NELSON\_TERM\_IS\_UNICODE\_SUPPORTED' is 'TRUE'
 
 ## 💡 Example
+
+
 
 ```matlab
 isunicodesupported()
 ```
+
 
 ## 🔗 See also
 
@@ -28,7 +32,7 @@ isunicodesupported()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

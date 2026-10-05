@@ -21,9 +21,12 @@ Create string array without characters.
 
 ## 📄 Description
 
+
 <b>strings</b> returns a cell array of empty matrices.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(2, 4);
@@ -31,13 +34,14 @@ sz = size(A)
 C = strings(sz)
 ```
 
+
 ## 🔗 See also
 
 [cell](../../data_structures/cell.md), [isstring](../../types/isstring.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

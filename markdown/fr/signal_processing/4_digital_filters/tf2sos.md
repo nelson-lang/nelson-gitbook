@@ -17,9 +17,12 @@ Convertit des coefficients de fonction de transfert en sections du second ordre.
 
 ## 📄 Description
 
+
 <b>tf2sos</b> convertit des coefficients de fonction de transfert en une matrice dont les lignes contiennent les coefficients de chaque section.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -27,14 +30,15 @@ sos = tf2sos([1 2 1], [1 -0.5]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[sos2tf](../../signal_processing/sos2tf.md), [zp2sos](../../signal_processing/zp2sos.md).
+[sos2tf](../../signal_processing/4_digital_filters/sos2tf.md), [zp2sos](../../signal_processing/4_digital_filters/zp2sos.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

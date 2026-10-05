@@ -25,31 +25,35 @@ Réalisation minimale ou annulation pôle‑zéro.
 
 ## 📄 Description
 
-<b>minreal</b> réduit les modèles d'état en éliminant les états non contrôlables ou non observables.
 
-Dans les fonctions de transfert ou modèles zéro‑pôle‑gain, il annule les paires pôles‑zéros. Le modèle résultant maintient les mêmes caractéristiques de réponse que le modèle original mais avec un ordre minimal.
+<b>minreal</b> réduit les modèles d'état en éliminant les états non contrôlables ou non observables. 
 
-Lorsque vous utilisez <b>sysOut = minreal(sysIn, tol)</b>, vous pouvez personnaliser la tolérance pour l'élimination des états ou l'annulation des pôles-zéros.
+Dans les fonctions de transfert ou modèles zéro‑pôle‑gain, il annule les paires pôles‑zéros. Le modèle résultant maintient les mêmes caractéristiques de réponse que le modèle original mais avec un ordre minimal. 
 
-La tolérance par défaut est fixée à sqrt(eps), et l'augmentation de cette valeur entraîne des annulations plus agressives, simplifiant potentiellement davantage le modèle.
+Lorsque vous utilisez <b>sysOut = minreal(sysIn, tol)</b>, vous pouvez personnaliser la tolérance pour l'élimination des états ou l'annulation des pôles-zéros. 
+
+La tolérance par défaut est fixée à sqrt(eps), et l'augmentation de cette valeur entraîne des annulations plus agressives, simplifiant potentiellement davantage le modèle. 
 
 Annule les paires pôles‑zéros dans les fonctions de transfert ou modèles zéro‑pôle‑gain pour obtenir une réalisation minimale équivalente.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sysIn = ss([1 0;0 -2], [-1;0], [2 1], 0, 3.2);
 sysOut = minreal(sysIn)
 ```
 
+
 ## 🔗 Voir aussi
 
-[ss](../../control_system/ss.md), [tf](../../control_system/tf.md), [balreal](../../control_system/balreal.md).
+[ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md), [balreal](../../control_system/1_dynamic_system_models/balreal.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

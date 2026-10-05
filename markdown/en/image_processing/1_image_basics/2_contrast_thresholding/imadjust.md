@@ -22,6 +22,7 @@ Adjust image intensity values.
 
 ## 📄 Description
 
+
 Adjust image intensity values. Grayscale images use 2-by-1 limits; RGB images can use 2-by-3 limits and per-channel gamma values.
 
 ## 💡 Example
@@ -34,16 +35,16 @@ J=imadjust(I,[0.2;0.8],[]);
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Adjusted');
 ```
-
 <img src="imadjust_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[stretchlim](../../../image_processing/stretchlim.md), [imhist](../../../image_processing/imhist.md), [imcomplement](../../../image_processing/imcomplement.md).
+[stretchlim](../../../image_processing/1_image_basics/2_contrast_thresholding/stretchlim.md), [imhist](../../../image_processing/1_image_basics/2_contrast_thresholding/imhist.md), [imcomplement](../../../image_processing/1_image_basics/2_contrast_thresholding/imcomplement.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

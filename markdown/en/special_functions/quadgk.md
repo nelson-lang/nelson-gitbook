@@ -21,19 +21,24 @@ Numerically evaluate an integral with Gauss-Kronrod quadrature.
 
 ## 📄 Description
 
-<b>quadgk</b> integrates a vectorized scalar integrand using adaptive Gauss-Kronrod quadrature.
+
+<b>quadgk</b> integrates a vectorized scalar integrand using adaptive Gauss-Kronrod quadrature. 
 
 <b>Waypoints</b> split the integral into subintervals. Complex waypoints define a piecewise straight contour.
 
 ## 💡 Examples
 
+
+
 ```matlab
 [q, errbnd] = quadgk(@(x) exp(-x.^2), 0, Inf)
 ```
 
+
 ```matlab
 q = quadgk(@(z) 1 ./ (2 .* z - 1), 1, 1, 'Waypoints', [1 + 1i, 0 + 1i, 0 - 1i, 1 - 1i])
 ```
+
 
 ## 🔗 See also
 
@@ -41,7 +46,7 @@ q = quadgk(@(z) 1 ./ (2 .* z - 1), 1, 1, 'Waypoints', [1 + 1i, 0 + 1i, 0 - 1i, 1
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

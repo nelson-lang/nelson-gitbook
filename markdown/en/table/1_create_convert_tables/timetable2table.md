@@ -17,11 +17,14 @@ Convert timetable to table.
 
 ## 📄 Description
 
-<b>timetable2table</b> converts a timetable to a table.
+
+<b>timetable2table</b> converts a timetable to a table. 
 
 When <b>'ConvertRowTimes'</b> is true, row times are inserted as the first table variable.
 
 ## 💡 Example
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:1)';
@@ -29,13 +32,14 @@ TT = timetable(t, [1; 2], 'VariableNames', {'A'});
 T = timetable2table(TT, 'ConvertRowTimes', true)
 ```
 
+
 ## 🔗 See also
 
-[table2timetable](../../table/table2timetable.md), [table](../../table/table.md).
+[table2timetable](../../table/1_create_convert_tables/table2timetable.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

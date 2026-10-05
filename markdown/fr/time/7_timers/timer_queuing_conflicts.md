@@ -4,13 +4,16 @@ Controler le comportement lorsque des callbacks de timer sont encore en file qua
 
 ## 📄 Description
 
-L'execution des callbacks de timer est serialisee par l'evaluateur. Un timer a cadence fixe peut se declencher a nouveau alors qu'un callback <b>TimerFcn</b> precedent est encore en file ou en cours. La propriete <b>BusyMode</b> controle la resolution de ce conflit par Nelson.
 
-| BusyMode | Comportement                                                                                                                             |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| drop     | Conserve au plus un callback en attente pour le timer. Les declenchements supplementaires sont ignores.                                  |
-| queue    | Met chaque declenchement en file. Le timer peut continuer a executer des callbacks apres le passage des heures de declenchement prevues. |
-| error    | Arrete le timer et execute **ErrorFcn**, puis **StopFcn** si ces callbacks sont definis.                                                 |
+L'execution des callbacks de timer est serialisee par l'evaluateur. Un timer a cadence fixe peut se declencher a nouveau alors qu'un callback <b>TimerFcn</b> precedent est encore en file ou en cours. La propriete <b>BusyMode</b> controle la resolution de ce conflit par Nelson. 
+
+| BusyMode | Comportement | 
+| --- | --- | 
+| drop | Conserve au plus un callback en attente pour le timer. Les declenchements supplementaires sont ignores. | 
+| queue | Met chaque declenchement en file. Le timer peut continuer a executer des callbacks apres le passage des heures de declenchement prevues. | 
+| error | Arrete le timer et execute **ErrorFcn**, puis **StopFcn** si ces callbacks sont definis. | 
+
+ 
 
 <b>BusyMode</b> s'applique a l'execution <b>fixedRate</b>. Pour <b>fixedDelay</b> et <b>fixedSpacing</b>, le declenchement suivant est planifie apres la fin du callback, donc les callbacks ne s'accumulent pas de la meme maniere.
 
@@ -29,7 +32,6 @@ wait(t);
 get(t, 'TasksExecuted')
 delete(t);
 ```
-
 Utiliser le mode error pour arreter le timer lorsque la file de callbacks ne suit pas.
 
 ```matlab
@@ -45,14 +47,15 @@ get(t, 'Running')
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [Fonctions de callback de timer](../../time/callbacks de timer.md), [set](../../time/timer.set.md).
+[timer](../../time/7_timers/timer.md), [Fonctions de callback de timer](../../time/7_timers/timer_callback_functions.md), [set](../../time/7_timers/timer.set.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

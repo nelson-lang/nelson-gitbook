@@ -4,18 +4,21 @@ Déroque une variable.
 
 ## 📝 Syntaxe
 
-- varunlock(scope, variable_name)
+- varunlock(scope, variable\_name)
 
 ## 📥 Argument d'entrée
 
 - scope - une chaîne : 'global', 'base', 'caller', 'local'.
-- variable_name - une chaîne : nom de la variable.
+- variable\_name - une chaîne : nom de la variable.
 
 ## 📄 Description
+
 
 <b>varunlock</b> déverrouille une variable.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 y = 3;
@@ -32,14 +35,15 @@ varislock('local', 'ans')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [varislock](../memory_manager/varislock.md), [varlock](../memory_manager/varlock.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

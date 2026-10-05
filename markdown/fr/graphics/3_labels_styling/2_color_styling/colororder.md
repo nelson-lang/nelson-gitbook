@@ -22,7 +22,8 @@ Definir ou interroger l'ordre des couleurs des axes.
 
 ## 📄 Description
 
-<b>colororder</b> definit ou interroge la propriete <b>ColorOrder</b> des axes.
+
+<b>colororder</b> definit ou interroge la propriete <b>ColorOrder</b> des axes. 
 
 Definir un ordre de couleurs remet <b>ColorOrderIndex</b> a 1. Les objets bar dont la couleur de face est automatique sont mis a jour avec le nouvel ordre.
 
@@ -36,7 +37,6 @@ colororder('reef');
 bar([1 3 5; 2 4 6; 3 5 7]);
 
 ```
-
 <img src="colororder_1.svg" align="middle"/>
 Definir un ordre de couleurs RGB personnalise.
 
@@ -48,13 +48,12 @@ y = [1:5; 2:6; 3:7]';
 plot(ax, 1:5, y);
 
 ```
-
 <img src="colororder_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
 [axes](../../../graphics/2_graphics_objects/1_object_management/axes.md), [bar](../../../graphics/1_plots/6_discrete_data_plots/bar.md), [plot](../../../graphics/1_plots/1_line_plots/plot.md).
-
 <!--
 ## 👤 Auteur
 

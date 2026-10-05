@@ -17,6 +17,7 @@ Cree une structure de transformation affine 3-D.
 
 ## 📄 Description
 
+
 Cree une structure de transformation affine 3-D contenant une matrice T en convention vecteur ligne. Les translations sont stockees dans la derniere ligne.
 
 ## 💡 Exemple
@@ -28,14 +29,15 @@ tform = affine3d([1 0 0 0; 0 1 0 0; 0 0 1 0; 4 5 6 1]);
 tform.T
 ```
 
+
 ## 🔗 Voir aussi
 
-[affine2d](../../../image_processing/affine2d.md), [imref3d](../../../image_processing/imref3d.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [imref3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref3d.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

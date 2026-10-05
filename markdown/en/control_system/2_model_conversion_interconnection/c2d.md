@@ -26,11 +26,14 @@ Convert model from continuous to discrete time.
 
 ## 📄 Description
 
-The function <b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model <b>sysc</b> using a zero-order hold on the inputs with a sample time of <b>Ts</b>.
+
+The function <b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model <b>sysc</b> using a zero-order hold on the inputs with a sample time of <b>Ts</b>. 
 
 For instance, you can use <b>sysd = c2d(sysc, Ts, method)</b> to explicitly specify the discretization method.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1  0.5; 0.5  1 ];
@@ -43,13 +46,14 @@ sysd = c2d(sys, Ts, 'zoh')
 
 ```
 
+
 ## 🔗 See also
 
-[d2c](../../control_system/d2c.md), [ss](../../control_system/ss.md).
+[d2c](../../control_system/2_model_conversion_interconnection/d2c.md), [ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

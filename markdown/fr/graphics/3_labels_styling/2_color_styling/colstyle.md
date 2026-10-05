@@ -21,9 +21,12 @@ Analyse la couleur et le style à partir d'une chaîne.
 
 ## 📄 Description
 
+
 <b>colstyle</b> analyse la couleur et le style à partir d'une chaîne.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [l, c, m, msg] = colstyle('r:x')
@@ -31,14 +34,15 @@ Analyse la couleur et le style à partir d'une chaîne.
 [l, c, m, msg] = colstyle('*', 'plot')
 ```
 
+
 ## 🔗 Voir aussi
 
 [colormap](../../../graphics/3_labels_styling/2_color_styling/colormaps/colormap.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

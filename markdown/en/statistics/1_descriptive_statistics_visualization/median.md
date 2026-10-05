@@ -11,21 +11,24 @@ Median value of array elements.
 
 ## 📄 Description
 
+
 <b>median</b> returns the middle value of sorted data along the selected dimension.
 
 ## 💡 Example
+
 
 ```matlab
 R = median([4 1 2 3])
 ```
 
+
 ## 🔗 See also
 
-[mean](../../statistics/mean.md), [sort](../../data_analysis/sort.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [sort](../../data_analysis/sort.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

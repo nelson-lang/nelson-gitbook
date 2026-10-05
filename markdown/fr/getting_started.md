@@ -371,18 +371,18 @@ nmm('help')
 
 ## 11. Aide-mémoire
 
-| Tâche             | Commandes                                                               |
-| ----------------- | ----------------------------------------------------------------------- |
-| Aide              | `help f`, `doc f`, `which f`                                            |
-| Espace de travail | `who`, `whos`, `clear`, `clc`                                           |
-| Tableaux          | `[ ]`, `:`, `linspace`, `zeros`, `ones`, `eye`, `rand`, `size`, `numel` |
-| Algèbre linéaire  | `A \ b`, `inv`, `det`, `eig`, `rank`                                    |
-| Statistiques      | `sum`, `mean`, `max`, `min`, `sort`                                     |
-| Texte             | `"..."`, `'...'`, `split`, `num2str`, `sprintf`, `fprintf`              |
-| Graphiques        | `plot`, `figure`, `hold on`, `subplot`, `xlabel`, `legend`, `saveas`    |
-| Fichiers          | `save`, `load`, `readtable`, `writetable`, `diary`                      |
-| Exécuter du code  | `run`, `edit`, `nelson -f`, `nelson -e`                                 |
-| Modules           | `nmm('install', ...)`, `nmm('list')`                                    |
+| Tâche | Commandes |
+| --- | --- |
+| Aide | `help f`, `doc f`, `which f` |
+| Espace de travail | `who`, `whos`, `clear`, `clc` |
+| Tableaux | `[ ]`, `:`, `linspace`, `zeros`, `ones`, `eye`, `rand`, `size`, `numel` |
+| Algèbre linéaire | `A \ b`, `inv`, `det`, `eig`, `rank` |
+| Statistiques | `sum`, `mean`, `max`, `min`, `sort` |
+| Texte | `"..."`, `'...'`, `split`, `num2str`, `sprintf`, `fprintf` |
+| Graphiques | `plot`, `figure`, `hold on`, `subplot`, `xlabel`, `legend`, `saveas` |
+| Fichiers | `save`, `load`, `readtable`, `writetable`, `diary` |
+| Exécuter du code | `run`, `edit`, `nelson -f`, `nelson -e` |
+| Modules | `nmm('install', ...)`, `nmm('list')` |
 
 ## Pour aller plus loin
 

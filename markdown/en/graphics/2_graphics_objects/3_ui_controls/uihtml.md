@@ -19,23 +19,24 @@ Create an HTML UI component.
 
 ## 📄 Description
 
-<b>h = uihtml()</b> creates a component that displays an HTML page inside a UI figure and exchanges data with it.
 
-<b>uihtml requires the WebView desktop.</b> Anywhere else it raises <b>Nelson:uihtml:webviewDesktopRequired</b>, because no page can be displayed there. Start the WebView desktop to use it.
+<b>h = uihtml()</b> creates a component that displays an HTML page inside a UI figure and exchanges data with it. 
 
-<b>HTMLSource</b> accepts two forms: HTML markup, or the name of an HTML file (relative or absolute). It is stored exactly as given. A URL is not accepted.
+<b>uihtml requires the WebView desktop.</b> Anywhere else it raises <b>Nelson:uihtml:webviewDesktopRequired</b>, because no page can be displayed there. Start the WebView desktop to use it. 
 
-The page must define a global <b>setup</b> function taking one argument. It runs once the content has loaded, and again whenever <b>HTMLSource</b> changes to a different value. Setting the same value again changes nothing.
+<b>HTMLSource</b> accepts two forms: HTML markup, or the name of an HTML file (relative or absolute). It is stored exactly as given. A URL is not accepted. 
 
-The object passed to <b>setup</b> carries the property <b>Data</b>, the methods <b>addEventListener</b> and <b>removeEventListener</b>, and the method <b>sendEventToNelson(name, data)</b>. Note that pages written for other environments name that last method differently and must be edited.
+The page must define a global <b>setup</b> function taking one argument. It runs once the content has loaded, and again whenever <b>HTMLSource</b> changes to a different value. Setting the same value again changes nothing. 
 
-Notification is asymmetric. Writing <b>Data</b> from Nelson raises the <b>DataChanged</b> event in the page and does <b>not</b> run <b>DataChangedFcn</b>. Writing it from the page runs <b>DataChangedFcn</b>, whose event carries <b>Data</b> and <b>PreviousData</b>, and is not sent back down. Writing a value equal to the current one notifies nobody.
+The object passed to <b>setup</b> carries the property <b>Data</b>, the methods <b>addEventListener</b> and <b>removeEventListener</b>, and the method <b>sendEventToNelson(name, data)</b>. Note that pages written for other environments name that last method differently and must be edited. 
 
-<b>Data</b> travels as JSON in both directions, so a value comes back as <b>jsonencode</b> followed by <b>jsondecode</b> leaves it: integers arrive as double, row vectors come back as columns, <b>datetime</b> and <b>categorical</b> arrive as text, and complex values cannot be sent at all.
+Notification is asymmetric. Writing <b>Data</b> from Nelson raises the <b>DataChanged</b> event in the page and does <b>not</b> run <b>DataChangedFcn</b>. Writing it from the page runs <b>DataChangedFcn</b>, whose event carries <b>Data</b> and <b>PreviousData</b>, and is not sent back down. Writing a value equal to the current one notifies nobody. 
 
-Use <b>sendEventToHTMLSource</b> to send a named event to the page; the page receives it through <b>addEventListener</b>. A page event reaches Nelson through <b>HTMLEventReceivedFcn</b>, whose event carries <b>HTMLEventName</b> and <b>HTMLEventData</b>. Page events are delivered in the order the page sent them.
+<b>Data</b> travels as JSON in both directions, so a value comes back as <b>jsonencode</b> followed by <b>jsondecode</b> leaves it: integers arrive as double, row vectors come back as columns, <b>datetime</b> and <b>categorical</b> arrive as text, and complex values cannot be sent at all. 
 
-The page keeps its state while it is hidden, while its tab is not selected, and across a change of parent inside the desktop. Moving a figure between its own window and the docked desktop is not one of those: the page moves to another document and is rebuilt, and <b>setup</b> runs again.
+Use <b>sendEventToHTMLSource</b> to send a named event to the page; the page receives it through <b>addEventListener</b>. A page event reaches Nelson through <b>HTMLEventReceivedFcn</b>, whose event carries <b>HTMLEventName</b> and <b>HTMLEventData</b>. Page events are delivered in the order the page sent them. 
+
+The page keeps its state while it is hidden, while its tab is not selected, and across a change of parent inside the desktop. Moving a figure between its own window and the docked desktop is not one of those: the page moves to another document and is rebuilt, and <b>setup</b> runs again. 
 
 Write a page that can rebuild itself. <b>Data</b> keeps its value across such a rebuild, so read it in <b>setup</b> and render from it there, rather than waiting for <b>DataChanged</b> - a notification a fresh page has already missed. A page that only renders on <b>DataChanged</b> comes back empty, and re-running the handshake does not save it: writing the value already published notifies nobody.
 
@@ -59,13 +60,14 @@ h.Data = struct('temperature', 21.5);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md), [jsonencode](../../../json/jsonencode.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

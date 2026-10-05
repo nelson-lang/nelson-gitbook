@@ -11,6 +11,7 @@ Afficher une surface avec des contours en dessous.
 
 ## 📄 Description
 
+
 <b>surfc</b> affiche une surface et des lignes de contour projetees a la base de la surface.
 
 ## 💡 Exemple
@@ -20,8 +21,8 @@ Surface avec contours.
 ```matlab
 surfc(peaks(30));
 ```
-
 <img src="surfc_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

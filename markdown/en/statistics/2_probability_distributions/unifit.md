@@ -22,11 +22,14 @@ Continuous uniform parameter estimates
 
 ## 📄 Description
 
-<b>unifit</b> returns maximum likelihood estimates for continuous uniform endpoint parameters.
+
+<b>unifit</b> returns maximum likelihood estimates for continuous uniform endpoint parameters. 
 
 Vector inputs are treated as one sample. Matrix inputs are processed column by column.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [2 5 3 4];
@@ -34,13 +37,14 @@ x = [2 5 3 4];
 [aHat2, bHat2] = unifit([1 2; 3 4; 4 9]);
 ```
 
+
 ## 🔗 See also
 
-[uniflike](../../statistics/uniflike.md), [unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md), [unifstat](../../statistics/unifstat.md), [unifrnd](../../statistics/unifrnd.md).
+[uniflike](../../statistics/2_probability_distributions/uniflike.md), [unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md), [unifstat](../../statistics/2_probability_distributions/unifstat.md), [unifrnd](../../statistics/2_probability_distributions/unifrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

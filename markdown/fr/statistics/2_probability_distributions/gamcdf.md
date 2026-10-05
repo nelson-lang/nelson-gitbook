@@ -20,9 +20,12 @@ Fonction de repartition gamma
 
 ## 📄 Description
 
+
 <b>gamcdf</b> calcule par defaut les probabilites de queue inferieure gamma et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 0.5 1 2 5];
@@ -30,10 +33,11 @@ p = gamcdf(x, 2, 3);
 q = gamcdf(x, 2, 3, 'upper');
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,9 +18,11 @@ Determiner si les temps de lignes contiennent une plage.
 
 ## 📄 Description
 
+
 <b>containsrange</b> teste si les temps de lignes couvrent la plage de temps specifiee.
 
 ## 💡 Exemple
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3]), [10; 20; 30], 'VariableNames', {'A'});
@@ -28,14 +30,15 @@ containsrange(TT, seconds([1.5; 2.5]))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[withinrange](../../table/withinrange.md), [overlapsrange](../../table/overlapsrange.md).
+[withinrange](../../table/8_timetables_events/withinrange.md), [overlapsrange](../../table/8_timetables_events/overlapsrange.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

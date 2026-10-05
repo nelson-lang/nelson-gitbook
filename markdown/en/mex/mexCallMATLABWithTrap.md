@@ -13,7 +13,7 @@ Call a NELSON function and capture error.
 - plhs - pointer to an array of mxArray (output).
 - nrhs - number of desired input arguments.
 - prhs - pointer to an array of mxArray (input).
-- command_name - character string containing the name of the Nelson function called.
+- command\_name - character string containing the name of the Nelson function called.
 
 ## 📤 Output argument
 
@@ -21,15 +21,19 @@ Call a NELSON function and capture error.
 
 ## 📄 Description
 
-<b>mexCallMATLABWithTrap</b> calls an NELSON function and capture error.
+
+<b>mexCallMATLABWithTrap</b> calls an NELSON function and capture error. 
 
 If name detects an error,<b>mexCallMATLABWithTrap</b> returns an mxArray (MException object).
 
 ## 💡 Example
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_mexCallMATLABWithTrap.m'])
 ```
+
 
 ## 🔗 See also
 
@@ -37,7 +41,7 @@ edit([modulepath('mex', 'tests'), '/test_mexCallMATLABWithTrap.m'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -17,17 +17,20 @@ Prism colormap array.
 
 ## 📄 Description
 
+
 <b>prism</b> returns the colormap with prism colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('prism');
 ```
-
 <img src="prism.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('prism');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -14,6 +14,7 @@ Loads a file selected from a dialog box.
 
 ## 📄 Description
 
+
 uiopen asks for a file and loads it into the caller workspace using the existing load behavior.
 
 ## 💡 Examples
@@ -27,7 +28,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'data.nh5', 'session.mat', 'figure.f
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Open', 'Position', [220 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [304 28 70 24]);
 ```
-
 <img src="uiopen_example.svg" align="middle"/>
 Open a data file using the default picker.
 
@@ -35,14 +35,15 @@ Open a data file using the default picker.
 uiopen()
 ```
 
+
 ## 🔗 See also
 
 [uisave](../gui/uisave.md), [uigetfile](../gui/uigetfile.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

@@ -13,7 +13,8 @@ Enregistrer de l'audio dans un objet audiorecorder ; bloquer le contrôle jusqu'
 
 ## 📄 Description
 
-<b>recordblocking(recorderObj, length)</b> enregistre l'audio à partir d'un périphérique d'entrée pendant le nombre de secondes spécifié. Cette méthode ne rend pas le contrôle tant que l'enregistrement n'est pas terminé.
+
+<b>recordblocking(recorderObj, length)</b> enregistre l'audio à partir d'un périphérique d'entrée pendant le nombre de secondes spécifié. Cette méthode ne rend pas le contrôle tant que l'enregistrement n'est pas terminé. 
 
 L'objet <b>audiorecorder</b> définit la fréquence d'échantillonnage, la profondeur en bits et d'autres propriétés de l'enregistrement.
 
@@ -28,8 +29,9 @@ disp('Start speaking.');
 recordblocking(myVoice, 5);
 disp('End of recording. Playing back ...');
 play(myVoice);
-
+      
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -37,9 +39,9 @@ play(myVoice);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -31,19 +31,22 @@ Créer des patchs de polygones colorés
 
 ## 📄 Description
 
-<b>patch(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées <b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>.
 
-<b>patch(X, Y, Z, C)</b> crée une forme polygonale 3D avec des sommets définis par les coordonnées <b>X</b>, <b>Y</b> et <b>Z</b>, et remplit la forme avec la couleur <b>C</b>.
+<b>patch(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées <b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>. 
 
-<b>patch(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet patch à l'aide de paires nom-valeur.
+<b>patch(X, Y, Z, C)</b> crée une forme polygonale 3D avec des sommets définis par les coordonnées <b>X</b>, <b>Y</b> et <b>Z</b>, et remplit la forme avec la couleur <b>C</b>. 
 
-<b>patch('Faces', F, 'Vertices', V)</b> crée un ou plusieurs polygones.
+<b>patch(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet patch à l'aide de paires nom-valeur. 
 
-<b>go = patch(...)</b> retourne le handle <b>go</b> de l'objet patch créé.
+<b>patch('Faces', F, 'Vertices', V)</b> crée un ou plusieurs polygones. 
+
+<b>go = patch(...)</b> retourne le handle <b>go</b> de l'objet patch créé. 
 
 Voir [proprietes de patch](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.patch.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 fig = figure('Color', 'k');
@@ -62,8 +65,8 @@ end
 axis equal
 axis off
 ```
-
 <img src="patch_1.svg" align="middle"/>
+
 
 ```matlab
 f =figure('Color', 'w');
@@ -80,7 +83,6 @@ patch(x,-y,'w','EdgeColor','w');
 axis('equal')
 axis('off')
 ```
-
 <img src="patch_2.svg" align="middle"/>
 Masque 3D de Nefertiti
 
@@ -95,7 +97,6 @@ axis equal
 axis off
 view([0, 0, 1]);
 ```
-
 <img src="patch_3.svg" align="middle"/>
 Canal alpha
 
@@ -109,8 +110,8 @@ patch(x,y,z,'cyan','FaceAlpha',0.3)
 patch(x+2,y,z,'magenta','FaceAlpha',0.3)
 patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 ```
-
 <img src="patch_4.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -118,11 +119,11 @@ patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description                            |
-| ------- | ----------------------------------------- |
-| 1.0.0   | version initiale                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn. |
-| --      | Ajout de la propriété BeingDeleted.       |
+| --   | Ajout de la propriété BeingDeleted. |
 
 <!--
 ## 👤 Auteur

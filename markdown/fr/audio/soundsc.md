@@ -18,9 +18,12 @@ Met à l'échelle les données et joue comme son.
 
 ## 📄 Description
 
+
 <b>soundsc</b> met à l'échelle les valeurs du signal audio <b>y </b> pour s'adapter à la plage de <b>–1.0</b> à<b>1.0</b> et joue comme son.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -28,14 +31,15 @@ soundsc(signal, 44110, 16)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md), [sound](../audio/sound.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

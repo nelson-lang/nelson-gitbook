@@ -16,13 +16,16 @@ Determiner si un pointeur de bibliotheque est nul.
 
 ## 📄 Description
 
-isNull renvoie une valeur logique indiquant si un objet pointeur de lien dynamique represente une adresse nulle.
+
+isNull renvoie une valeur logique indiquant si un objet pointeur de lien dynamique represente une adresse nulle. 
 
 La fonction est destinee aux objets pointeurs renvoyes par le module dynamic link.
 
 ## Fonction(s) utilisée(s)
 
+
     libpointer
+  
 
 ## 💡 Exemple
 
@@ -33,14 +36,15 @@ p = libpointer();
 tf = isNull(p)
 ```
 
+
 ## 🔗 Voir aussi
 
 [libpointer](../dynamic_link/libpointer.md), [dlopen](../dynamic_link/dlopen.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,9 +19,12 @@ Fonction de repartition F
 
 ## 📄 Description
 
+
 <b>fcdf</b> calcule par defaut les probabilites de queue inferieure de la distribution F et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 5];
@@ -29,14 +32,15 @@ p = fcdf(x, 5, 20);
 q = fcdf(x, 5, 20, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[fpdf](../../statistics/fpdf.md), [finv](../../statistics/finv.md).
+[fpdf](../../statistics/2_probability_distributions/fpdf.md), [finv](../../statistics/2_probability_distributions/finv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

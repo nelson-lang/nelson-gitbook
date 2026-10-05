@@ -19,6 +19,7 @@ Opens a file save dialog box.
 
 ## 📄 Description
 
+
 uiputfile lets the user choose a destination file.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'data.nh5', 'report.txt', 'summary.c
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Save', 'Position', [220 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [304 28 70 24]);
 ```
-
 <img src="uiputfile_example.svg" align="middle"/>
 Suggest a default output file name.
 
@@ -42,14 +42,15 @@ Suggest a default output file name.
 if ~isequal(file, 0), disp([path file]); end
 ```
 
+
 ## 🔗 See also
 
 [uigetfile](../gui/uigetfile.md), [uisave](../gui/uisave.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

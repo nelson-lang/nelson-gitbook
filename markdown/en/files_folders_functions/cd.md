@@ -6,7 +6,7 @@ Changes Nelson current directory.
 
 - cd(dirname)
 - cd dirname
-- previous_path = cd(dirname)
+- previous\_path = cd(dirname)
 - cd ..
 - cd
 
@@ -16,17 +16,22 @@ Changes Nelson current directory.
 
 ## 📤 Output argument
 
-- previous_path - a string: previous directory.
+- previous\_path - a string: previous directory.
 
 ## 📄 Description
 
-Changes the current working directory to dirname.
 
-<b>a = cd()</b> without input argument returns the current working directory.
+Changes the current working directory to dirname. 
 
-<b>cd()</b> without input argument displays the current working directory.
+<b>a = cd()</b> without input argument returns the current working directory. 
+
+<b>cd()</b> without input argument displays the current working directory. 
+
+
 
 ## 💡 Example
+
+
 
 ```matlab
 previous = cd(tempdir())
@@ -35,13 +40,14 @@ cd ..
 
 ```
 
+
 ## 🔗 See also
 
 [mkdir](../files_folders_functions/mkdir.md), [pwd](../files_folders_functions/pwd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

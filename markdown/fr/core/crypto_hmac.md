@@ -4,8 +4,8 @@ Calcule un code d'authentification de message à clé (HMAC).
 
 ## 📝 Syntaxe
 
-- hexa_mac = crypto.hmac(algorithm, key, message)
-- hexa_mac = crypto.hmac(algorithm, key, filename, '-file')
+- hexa\_mac = crypto.hmac(algorithm, key, message)
+- hexa\_mac = crypto.hmac(algorithm, key, filename, '-file')
 
 ## 📥 Argument d'entrée
 
@@ -17,13 +17,14 @@ Calcule un code d'authentification de message à clé (HMAC).
 
 ## 📤 Argument de sortie
 
-- hexa_mac - vecteur de caractères : 64 (sha256) ou 128 (sha512) caractères hexadécimaux minuscules.
+- hexa\_mac - vecteur de caractères : 64 (sha256) ou 128 (sha512) caractères hexadécimaux minuscules.
 
 ## 📄 Description
 
-<b>crypto.hmac</b> calcule un HMAC (RFC 2104) avec SHA-256 ou SHA-512 sur les octets exacts d'un message, par exemple pour authentifier une requête d'API ou la charge utile d'un webhook.
 
-Une clé texte est utilisée via ses octets UTF-8 ; passez un vecteur uint8 pour une clé binaire (une clé hexadécimale doit d'abord être convertie). Les clés plus longues que le bloc du hachage sont d'abord hachées, comme l'exige la RFC.
+<b>crypto.hmac</b> calcule un HMAC (RFC 2104) avec SHA-256 ou SHA-512 sur les octets exacts d'un message, par exemple pour authentifier une requête d'API ou la charge utile d'un webhook. 
+
+Une clé texte est utilisée via ses octets UTF-8 ; passez un vecteur uint8 pour une clé binaire (une clé hexadécimale doit d'abord être convertie). Les clés plus longues que le bloc du hachage sont d'abord hachées, comme l'exige la RFC. 
 
 Comparez le résultat à la valeur attendue avec une comparaison en temps constant lorsque la vérification protège une décision de sécurité.
 
@@ -43,7 +44,6 @@ cas de test 2 de la RFC 4231
 R = crypto.hmac('sha256', 'Jefe', 'what do ya want for nothing?')
 R = crypto.hmac('sha512', 'Jefe', 'what do ya want for nothing?')
 ```
-
 clé binaire et message dans un fichier
 
 ```matlab
@@ -53,14 +53,15 @@ filewrite(filename, 'Hi There');
 R = crypto.hmac('sha256', key, filename, '-file')
 ```
 
+
 ## 🔗 Voir aussi
 
-[sha256](../core/sha256.md), [crypto.sha512](../core/crypto.sha512.md), [crypto.ed25519.sign](../core/crypto.ed25519.sign.md).
+[sha256](../core/sha256.md), [crypto.sha512](../core/crypto_sha512.md), [crypto.ed25519.sign](../core/ed25519_sign.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

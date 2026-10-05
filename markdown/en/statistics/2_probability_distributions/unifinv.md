@@ -19,22 +19,26 @@ Continuous uniform inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>unifinv</b> computes inverse lower-tail continuous uniform probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.25 0.5 0.75];
 x = unifinv(p, -1, 1);
 ```
 
+
 ## 🔗 See also
 
-[unifcdf](../../statistics/unifcdf.md), [unifpdf](../../statistics/unifpdf.md).
+[unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifpdf](../../statistics/2_probability_distributions/unifpdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -11,26 +11,26 @@
   </chapter_description>
       <keyword name="nflow" link="nflow.html" description="Launch the nflow editor, optionally on a model file."/>
       <keyword name="nflow_dashboard" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardScope" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardDisplay" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardEdit" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardHalfGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardKnob" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardLamp" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardLinearGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardMultiStateImage" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardPushButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardQuarterGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardRadioButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardRockerSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardRotarySwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardSlider" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardSliderSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardToggleSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardCallbackButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardCheckBox" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
-      <keyword name="block:dashboardComboBox" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardScope" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardDisplay" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardEdit" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardHalfGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardKnob" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardLamp" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardLinearGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardMultiStateImage" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardPushButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardQuarterGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardRadioButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardRockerSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardRotarySwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardSlider" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardSliderSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardToggleSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardCallbackButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardCheckBox" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
+      <keyword name="block:dashboardComboBox" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>
       <keyword name="nflow_multirate" link="nflow_multirate.html" description="Running blocks at different sample rates (multi-rate)."/>
       <keyword name="nflow_solvers" link="nflow_solvers.html" description="Choosing how a diagram is integrated (solver selection)."/>
       <keyword name="nflow_wire_editing" link="nflow_wire_editing.html" description="Wire routing and editing in the nflow editor."/>

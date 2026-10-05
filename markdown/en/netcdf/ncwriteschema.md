@@ -17,7 +17,8 @@ Add schema definitions to a netCDF file.
 
 ## 📄 Description
 
-ncwriteschema creates definitions from a schema structure.
+
+ncwriteschema creates definitions from a schema structure. 
 
 Use it to reproduce metadata layout before writing variable data.
 
@@ -35,13 +36,14 @@ copyInfo = ncinfo(target);
 copyInfo.Variables(1).Name
 ```
 
+
 ## 🔗 See also
 
 [ncinfo](../netcdf/ncinfo.md), [nccreate](../netcdf/nccreate.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -23,14 +23,17 @@ Bootstrap confidence interval.
 
 ## 📄 Description
 
+
 <b>bootci</b> draws bootstrap samples using Nelson's random generator and computes confidence intervals for statistics returned by a function handle.
 
 ## Used function(s)
+
 
     bootstrp
     jackknife
     statset
     rng
+  
 
 ## 💡 Example
 

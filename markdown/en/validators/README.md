@@ -1,10 +1,16 @@
 # Validators
 
+
+    
 The Validators module provides tools for enforcing constraints and verifying input values in Nelson.
 
+    
 It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.
 
+    
 This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.
+
+  
 
 ## Functions
 
@@ -52,3 +58,4 @@ This module ensures robust input validation, helping to prevent errors, enforce 
 - [mustBeVectorOrEmpty](mustBeVectorOrEmpty.md) - Checks that value is a vector or empty, or raise an error.
 - [validateattributes](validateattributes.md) - Checks that an array has requested classes and attributes.
 - [validatestring](validatestring.md) - Checks that text matches one allowed value.
+

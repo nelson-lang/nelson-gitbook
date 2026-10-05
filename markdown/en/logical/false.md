@@ -25,9 +25,12 @@ Logical false.
 
 ## 📄 Description
 
+
 <b>false</b> builds an array of logical false values.
 
 ## 💡 Example
+
+
 
 ```matlab
 false
@@ -39,13 +42,14 @@ L = logical(sparse(1, 2))
 L2 = false(3,'like', L);
 ```
 
+
 ## 🔗 See also
 
 [true](../logical/true.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

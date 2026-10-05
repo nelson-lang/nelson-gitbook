@@ -16,7 +16,8 @@ Start a timer at a specified date and time.
 
 ## 📄 Description
 
-<b>startat</b> starts the timer at a future date and time. The start time must be in the future and no more than 25 days from the current time.
+
+<b>startat</b> starts the timer at a future date and time. The start time must be in the future and no more than 25 days from the current time. 
 
 For a timer array, the start time can be scalar or can contain one start time for each timer in the array.
 
@@ -30,7 +31,6 @@ startat(t, now() + 2 / 86400);
 wait(t);
 delete(t);
 ```
-
 Use date and time components to schedule a timer.
 
 ```matlab
@@ -41,13 +41,14 @@ wait(t);
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [start](../../time/start.md), [wait](../../time/wait.md).
+[timer](../../time/7_timers/timer.md), [start](../../time/7_timers/start.md), [wait](../../time/7_timers/wait.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

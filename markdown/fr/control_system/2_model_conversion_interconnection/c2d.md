@@ -26,11 +26,14 @@ Convertit le modèle du temps continu au temps discret.
 
 ## 📄 Description
 
-La fonction <b>sysd = c2d(sysc, Ts)</b> discrétise le modèle dynamique en temps continu <b>sysc</b> en utilisant un maintien d'ordre zéro sur les entrées avec un temps d'échantillonnage de <b>Ts</b>.
+
+La fonction <b>sysd = c2d(sysc, Ts)</b> discrétise le modèle dynamique en temps continu <b>sysc</b> en utilisant un maintien d'ordre zéro sur les entrées avec un temps d'échantillonnage de <b>Ts</b>. 
 
 Par exemple, vous pouvez utiliser <b>sysd = c2d(sysc, Ts, method)</b> pour spécifier explicitement la méthode de discrétisation.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1  0.5; 0.5  1 ];
@@ -43,14 +46,15 @@ sysd = c2d(sys, Ts, 'zoh')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[d2c](../../control_system/d2c.md), [ss](../../control_system/ss.md).
+[d2c](../../control_system/2_model_conversion_interconnection/d2c.md), [ss](../../control_system/1_dynamic_system_models/ss.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

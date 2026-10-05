@@ -17,9 +17,12 @@ Temps écoulé entre des vecteurs de date.
 
 ## 📄 Description
 
+
 <b>e = etime(t2, t1)</b> retourne le nombre de secondes entre deux vecteurs de date ou matrices de vecteurs de date,<b>t1</b> et <b>t2</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 t1 = clock()
@@ -28,14 +31,15 @@ t2 = clock()
 etime(t2, t1)
 ```
 
+
 ## 🔗 Voir aussi
 
-[tic](../../time/tic.md), [toc](../../time/toc.md).
+[tic](../../time/7_timers/tic.md), [toc](../../time/7_timers/toc.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

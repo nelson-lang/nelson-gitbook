@@ -18,9 +18,12 @@ Sérialiser un objet document XML
 
 ## 📄 Description
 
+
 xmlwrite convertit un objet document XML en texte ou l'écrit dans un fichier.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 xml_filename = [modulepath('xml'), '/tests/test_xml.xml'];
@@ -30,14 +33,15 @@ xmlwrite(out_filename, doc);
 isfile(out_filename)
 ```
 
+
 ## 🔗 Voir aussi
 
 [xmlread](../xml/xmlread.md), [writestruct](../xml/writestruct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

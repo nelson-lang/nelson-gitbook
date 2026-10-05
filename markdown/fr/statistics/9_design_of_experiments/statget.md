@@ -19,12 +19,15 @@ Acceder aux valeurs de champs dans les structures d'options statistiques.
 
 ## 📄 Description
 
+
 <b>statget</b> retourne une valeur depuis une structure d'options. Les noms de champs sont compares sans tenir compte de la casse et peuvent etre abreges lorsque l'abreviation est unique.
 
 ## Fonction(s) utilisée(s)
 
+
     statset
     kmeans
+  
 
 ## 💡 Exemples
 
@@ -34,7 +37,6 @@ Lire une valeur dans une structure d'options.
 opts = statset('kmeans');
 statget(opts, 'MaxI')
 ```
-
 Retourner une valeur par defaut lorsque le champ est vide.
 
 ```matlab

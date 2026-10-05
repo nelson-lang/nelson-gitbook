@@ -22,9 +22,12 @@ Produit cumulatif des éléments d'un tableau.
 
 ## 📄 Description
 
+
 <b>R = cumprod(M)</b> renvoie le produit cumulatif des éléments du tableau M.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
@@ -32,14 +35,15 @@ R = cumprod(M)
 R = cumprod(M, 'reverse')
 ```
 
+
 ## 🔗 Voir aussi
 
-[ndims](../elementary_functions/ndims.md), [prod](../data_analysis/prod.md), [cumsum](../data_analysis/cumsum.md).
+[ndims](../elementary_functions/7_indexing_dimensions/ndims.md), [prod](../data_analysis/prod.md), [cumsum](../data_analysis/cumsum.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

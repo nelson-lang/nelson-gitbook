@@ -20,23 +20,27 @@ Densite de probabilite lognormale
 
 ## 📄 Description
 
+
 <b>lognpdf</b> evalue les densites lognormales element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 exp(1)];
 y = lognpdf(x, 0, 1);
 ```
 
+
 ## 🔗 Voir aussi
 
-[logncdf](../../statistics/logncdf.md), [logninv](../../statistics/logninv.md), [lognrnd](../../statistics/lognrnd.md).
+[logncdf](../../statistics/2_probability_distributions/logncdf.md), [logninv](../../statistics/2_probability_distributions/logninv.md), [lognrnd](../../statistics/2_probability_distributions/lognrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

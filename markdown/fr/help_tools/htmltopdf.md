@@ -4,18 +4,21 @@ Convertit une page HTML en PDF.
 
 ## 📝 Syntaxe
 
-- htmltopdf(html_filename, pdf_filename)
+- htmltopdf(html\_filename, pdf\_filename)
 
 ## 📥 Argument d'entrée
 
-- html_filename - une chaîne : nom du fichier html.
-- pdf_filename - une chaîne : nom du fichier pdf (destination).
+- html\_filename - une chaîne : nom du fichier html.
+- pdf\_filename - une chaîne : nom du fichier pdf (destination).
 
 ## 📄 Description
+
 
 <b>htmltopdf</b> convertit une page HTML en PDF.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 txt = {'## Example of Markdown text';
@@ -32,14 +35,15 @@ if ispc()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [markdown](../help_tools/markdown.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

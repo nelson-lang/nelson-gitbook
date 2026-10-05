@@ -18,14 +18,16 @@ Invoque une méthode sur un objet handle.
 
 ## 📄 Description
 
-<b>invoke(h)</b> renvoie une structure contenant la liste de toutes les méthodes appelables.
+
+<b>invoke(h)</b> renvoie une structure contenant la liste de toutes les méthodes appelables. 
 
 <b>R = invoke(h, 'methodname')</b> appelle la méthode spécifiée par methodname et renvoie une valeur de sortie.
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

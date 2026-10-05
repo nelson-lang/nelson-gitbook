@@ -1,10 +1,16 @@
 # Data structures
 
+
+    
 The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.
 
+    
 It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.
 
+    
 This module handles complex data through programmatic operations and dynamic data management.
+
+  
 
 ## Functions
 
@@ -29,3 +35,4 @@ This module handles complex data through programmatic operations and dynamic dat
 - [struct](struct.md) - Create a structure or convert an object to a structure.
 - [struct2cell](struct2cell.md) - Creates a cell from a structure.
 - [structfun](structfun.md) - Apply a function to each field of a scalar structure.
+

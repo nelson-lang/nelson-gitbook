@@ -1,10 +1,10 @@
-# qml_addimportpath
+# qml\_addimportpath
 
 Ajoute un chemin comme répertoire où le moteur QML recherche les modules installés.
 
 ## 📝 Syntaxe
 
-- qml_addimportpath(path)
+- qml\_addimportpath(path)
 
 ## 📥 Argument d'entrée
 
@@ -12,11 +12,14 @@ Ajoute un chemin comme répertoire où le moteur QML recherche les modules insta
 
 ## 📄 Description
 
-<b>qml_addimportpath</b> ajoute <b>path</b> comme répertoire où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL.
 
-Le chemin nouvellement ajouté sera placé en tête de <b>qml_importpathlist</b>.
+<b>qml\_addimportpath</b> ajoute <b>path</b> comme répertoire où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL. 
+
+Le chemin nouvellement ajouté sera placé en tête de <b>qml\_importpathlist</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 qml_importpathlist()
@@ -25,14 +28,15 @@ qml_importpathlist()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [qml_importpathlist](../qml_engine/qml_importpathlist.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

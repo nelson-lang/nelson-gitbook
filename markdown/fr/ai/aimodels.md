@@ -10,11 +10,12 @@ Liste les modeles disponibles chez un fournisseur IA.
 
 ## 📄 Description
 
-<b>aimodels</b> retourne les noms des modeles disponibles pour un fournisseur IA configure.
 
-Pour Ollama, <b>aimodels</b> appelle l'endpoint local <b>/api/tags</b> deduit de l'endpoint stocke dans <b>options</b>. L'endpoint par defaut est <b>http://127.0.0.1:11434/api/tags</b>.
+<b>aimodels</b> retourne les noms des modeles disponibles pour un fournisseur IA configure. 
 
-Pour les fournisseurs compatibles OpenAI, <b>aimodels</b> appelle <b>/v1/models</b> deduit de l'endpoint configure et utilise <b>TokenEnvVar</b> comme bearer token lorsqu'il est fourni.
+Pour Ollama, <b>aimodels</b> appelle l'endpoint local <b>/api/tags</b> deduit de l'endpoint stocke dans <b>options</b>. L'endpoint par defaut est <b>http://127.0.0.1:11434/api/tags</b>. 
+
+Pour les fournisseurs compatibles OpenAI, <b>aimodels</b> appelle <b>/v1/models</b> deduit de l'endpoint configure et utilise <b>TokenEnvVar</b> comme bearer token lorsqu'il est fourni. 
 
 La premiere sortie est un tableau de cellules contenant les noms de modeles. La seconde sortie optionnelle contient la reponse brute du fournisseur.
 
@@ -27,7 +28,6 @@ Lister les modeles Ollama locaux.
 models = aimodels()
 
 ```
-
 Utiliser le premier modele Ollama disponible avec aiask.
 
 ```matlab
@@ -42,7 +42,6 @@ opts = aioptions('Provider', 'ollama', ...
 answer = aiask('Ecris une fonction y = vector_mean(x). Utilise y = mean(x).', opts)
 
 ```
-
 Utiliser un modele Ollama local connu.
 
 ```matlab
@@ -56,7 +55,6 @@ opts = aioptions('Provider', 'ollama', ...
 answer = aiask('Ecris une fonction y = vector_mean(x). Utilise y = mean(x).', opts)
 
 ```
-
 Lister les modeles d'un endpoint local compatible OpenAI.
 
 ```matlab
@@ -67,7 +65,6 @@ opts = aioptions('Provider', 'openai-compatible', ...
 models = aimodels(opts)
 
 ```
-
 Lister les modeles d'un endpoint compatible OpenAI avec token.
 
 ```matlab
@@ -81,12 +78,13 @@ models = aimodels(opts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [aiask](../ai/aiask.md), [aioptions](../ai/aioptions.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |

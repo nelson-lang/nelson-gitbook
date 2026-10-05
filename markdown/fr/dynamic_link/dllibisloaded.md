@@ -18,9 +18,12 @@ Vérifie si une bibliothèque partagée est chargée
 
 ## 📄 Description
 
+
 <b>dllibisloaded</b> indique si une bibliothèque partagée est déjà chargée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -29,8 +32,9 @@ r = dllibisloaded(path_1)
 lib1 = dlopen(path_1);
 [r, lib2] = dllibisloaded(path_1)
 isequal(lib1, lib2)
-
+		
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -38,8 +42,8 @@ isequal(lib1, lib2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -17,22 +17,26 @@ Condition number with respect to eigenvalues.
 
 ## 📄 Description
 
+
 <b>C = condeig(A)</b> returns a vector of condition numbers for the eigenvalues of <b>A</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [10, 20; 30, 40];
 S = condeig(A)
 ```
 
+
 ## 🔗 See also
 
-[eig](../../linear_algebra/eig.md), [cond](../../linear_algebra/cond.md).
+[eig](../../linear_algebra/3_eigen_singular_values/eig.md), [cond](../../linear_algebra/5_matrix_properties/cond.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

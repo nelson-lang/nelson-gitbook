@@ -13,7 +13,8 @@ Display vectors from a baseline.
 
 ## 📄 Description
 
-<b>feather</b> displays 2-D vectors from y = 0. Complex input uses real parts as horizontal components and imaginary parts as vertical components.
+
+<b>feather</b> displays 2-D vectors from y = 0. Complex input uses real parts as horizontal components and imaginary parts as vertical components. 
 
 The output is a column vector of <b>line</b> graphics objects: one line for each arrow and one line for the baseline.
 
@@ -25,7 +26,6 @@ Display vectors from complex values.
 z = [1 + 2i, 2 - 1i, -1 + 1i];
 feather(z);
 ```
-
 <img src="feather_1.svg" align="middle"/>
 Use line style and line properties.
 
@@ -34,8 +34,8 @@ u = [1 3 2];
 v = [2 1 -1];
 h = feather(u, v, '-or', 'LineWidth', 1.5);
 ```
-
 <img src="feather_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 

@@ -16,9 +16,12 @@ Analyser une chaîne.
 
 ## 📄 Description
 
+
 <b>parsestring</b> analyse une chaîne et renvoie si c'est un script valide, une fonction valide ou une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 parsestring('1 + 1')
@@ -26,10 +29,11 @@ parsestring('1 +++ 1')
 parsestring('1 +*+ 1')
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

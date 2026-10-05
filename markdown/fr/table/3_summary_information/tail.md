@@ -18,13 +18,16 @@ Obtenir les dernières lignes d'une table ou d'un tableau.
 
 ## 📄 Description
 
-<b>tail(A)</b> affiche les huit dernières lignes d'un tableau, ou de la table <b>A</b> dans la fenêtre de commande sans l'assigner à une variable.
 
-<b>tail(A, k)</b> affiche les k dernières lignes de A.
+<b>tail(A)</b> affiche les huit dernières lignes d'un tableau, ou de la table <b>A</b> dans la fenêtre de commande sans l'assigner à une variable. 
+
+<b>tail(A, k)</b> affiche les k dernières lignes de A. 
 
 <b>B = tail(...)</b> renvoie les lignes spécifiées de <b>A</b> pour n'importe laquelle des syntaxes précédentes, avec<b>B</b> ayant le même type de données que <b>A</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
@@ -37,19 +40,21 @@ T = table(LastName, Age, Smoker, Height, Weight, BloodPressure)
 tail(T, 2)
 ```
 
+
 ```matlab
 A = repmat((1:50)',1, 3);
 tail(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[head](../../table/head.md), [table](../../table/table.md).
+[head](../../table/3_summary_information/head.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.9.0   | version initiale |
 
 <!--

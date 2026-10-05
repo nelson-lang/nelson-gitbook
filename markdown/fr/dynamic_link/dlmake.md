@@ -5,7 +5,7 @@ Appeler l'outil make ou nmake
 ## 📝 Syntaxe
 
 - [res, message] = dlmake(destinationdir)
-- [res, message] = dlgeneratemake(destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)
+- [res, message] = dlgeneratemake(destinationdir, libname, c\_cpp\_files, includes, defines, external\_libraries, build\_configuration, c\_flags, cxx\_flags)
 
 ## 📥 Argument d'entrée
 
@@ -18,7 +18,8 @@ Appeler l'outil make ou nmake
 
 ## 📄 Description
 
-<b>dlmake</b> fournit un moyen multiplateforme pour construire du code C/C++.
+
+<b>dlmake</b> fournit un moyen multiplateforme pour construire du code C/C++. 
 
 Appelée avec au moins un argument de sortie, <b>dlmake</b> retourne <b>res</b> (un logique) et <b>message</b>. Appelée sans argument de sortie, elle lève l'erreur <b>Nelson:dlmake:failed</b> en cas d'échec au lieu de retourner un statut faux.
 
@@ -36,14 +37,15 @@ filewrite([dest, '/CMakeLists.txt'], txt);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlgeneratemake](../dynamic_link/dlgeneratemake.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

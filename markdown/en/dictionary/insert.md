@@ -20,15 +20,18 @@ Add entries to a dictionary.
 
 ## 📄 Description
 
-<b>db = insert(da, key, value)</b> adds the key-value pair to the dictionary<b>da</b>.
 
-If the key already exists, its value is updated.
+<b>db = insert(da, key, value)</b> adds the key-value pair to the dictionary<b>da</b>. 
 
-<b>d = insert(d, key, value)</b> is equivalent to <b>d[key] = value</b>.
+If the key already exists, its value is updated. 
+
+<b>d = insert(d, key, value)</b> is equivalent to <b>d[key] = value</b>. 
 
 <b>db = insert(da, key, value, 'overwrite', tf)</b> specifies whether to overwrite an existing value for the key based on the boolean parameter Overwrite.
 
 ## 💡 Example
+
+
 
 ```matlab
 names = ["Apple" "Banana" "Kiwi"];
@@ -37,13 +40,14 @@ d = dictionary(wheels, names)
 d = insert(d, [2 4] ,["Orange" "Citra"], 'Overwrite', false)
 ```
 
+
 ## 🔗 See also
 
 [dictionary](../dictionary/dictionary.md), [remove](../dictionary/remove.md), [lookup](../dictionary/lookup.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.5.0   | initial version |
 

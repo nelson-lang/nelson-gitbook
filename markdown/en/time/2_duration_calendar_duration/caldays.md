@@ -16,9 +16,10 @@ Create calendar durations containing whole days.
 
 ## 📄 Description
 
-Create calendar durations containing whole days.
 
-caldays stores values in the day component of calendarDuration. For fixed elapsed 24-hour durations, use days instead.
+Create calendar durations containing whole days. 
+
+caldays stores values in the day component of calendarDuration. For fixed elapsed 24-hour durations, use days instead. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -31,13 +32,14 @@ datetime(2024, 1, 1) + caldays(3)
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

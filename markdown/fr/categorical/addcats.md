@@ -20,7 +20,8 @@ Ajouter des categories a un tableau categoriel.
 
 ## 📄 Description
 
-<b>addcats</b> ajoute des categories sans modifier les elements stockes.
+
+<b>addcats</b> ajoute des categories sans modifier les elements stockes. 
 
 Pour un tableau categoriel ordinal, la position doit etre precisee car l'ordre des categories definit les comparaisons.
 
@@ -31,12 +32,12 @@ Ajouter une categorie a la fin.
 ```matlab
 A = categorical({'red','blue'}); B = addcats(A, 'green'); categories(B)
 ```
-
 Inserer une categorie avant une categorie existante.
 
 ```matlab
 A = categorical({'low','high'}, {'low','high'}, 'Ordinal', true); B = addcats(A, 'mid', 'Before', 'high'); categories(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -44,8 +45,8 @@ A = categorical({'low','high'}, {'low','high'}, 'Ordinal', true); B = addcats(A,
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

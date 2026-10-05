@@ -17,6 +17,7 @@ Create default image registration optimizer and metric structures.
 
 ## 📄 Description
 
+
 imregconfig returns lightweight optimizer and metric structures for image registration. The structures are plain Nelson values and can be edited before calling imregtform or imregister.
 
 ## 💡 Example
@@ -29,13 +30,14 @@ optimizer.AngleSearch = 10;
 optimizer.ShearSearch = 0.1;
 ```
 
+
 ## 🔗 See also
 
-[imregtform](../../../image_processing/imregtform.md), [imregister](../../../image_processing/imregister.md).
+[imregtform](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregtform.md), [imregister](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregister.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

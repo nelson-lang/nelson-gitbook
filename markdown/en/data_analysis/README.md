@@ -1,10 +1,16 @@
 # Data analysis
 
+
+    
 The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.
 
+    
 It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.
 
+    
 This module supports processing, summarization, and exploration of datasets for computational and analytical tasks.
+
+  
 
 ## Functions
 
@@ -54,3 +60,4 @@ This module supports processing, summarization, and exploration of datasets for 
 - [union](union.md) - Set union of two arrays.
 - [unique](unique.md) - Unique values.
 - [uniquetol](uniquetol.md) - Unique values within a tolerance.
+

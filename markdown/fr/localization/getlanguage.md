@@ -12,13 +12,17 @@ Renvoie la langue courante dans Nelson.
 
 ## 📄 Description
 
+
 <b>getlanguage</b> renvoie la langue courante utilisée dans Nelson.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 l = getlanguage()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ l = getlanguage()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

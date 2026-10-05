@@ -1,10 +1,16 @@
 # Fonctions constructeurs
 
+
+    
 Le module Constructeurs fournit des outils pour créer des valeurs numériques fondamentales, des scalaires, des vecteurs et des matrices dans Nelson.
 
+    
 Il comprend des constantes, des matrices identité et diagonales, et des valeurs spéciales telles que l'infini, NaN et la précision machine.
 
+    
 Ce module constitue la base pour initialiser les structures de données et effectuer des calculs mathématiques et numériques.
+
+  
 
 ## Functions
 
@@ -18,3 +24,4 @@ Ce module constitue la base pour initialiser les structures de données et effec
 - [ones](ones.md) - Crée une matrice composée de uns.
 - [pi](pi.md) - Rapport de la circonférence d'un cercle à son diamètre.
 - [zeros](zeros.md) - Crée une matrice composée de zéros.
+

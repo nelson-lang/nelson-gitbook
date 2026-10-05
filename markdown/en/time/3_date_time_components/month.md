@@ -18,9 +18,10 @@ Extract month numbers or names from date and time values.
 
 ## 📄 Description
 
-Extract month numbers or names from date and time values.
 
-Use name for full English month names and shortname for abbreviated names.
+Extract month numbers or names from date and time values. 
+
+Use name for full English month names and shortname for abbreviated names. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,13 +35,14 @@ month(datetime(2024, 5, 17), 'name')
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

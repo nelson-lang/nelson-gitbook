@@ -19,6 +19,7 @@ Crée un groupe d'onglets.
 
 ## 📄 Description
 
+
 <b>tg = uitabgroup</b> crée un groupe d'onglets. Les enfants sont des objets uitab. Propriétés principales : <b>TabLocation</b> ('top', 'bottom', 'left', 'right'), <b>SelectedTab</b>, <b>SelectionChangedFcn</b> (event avec <b>OldValue</b> et <b>NewValue</b>).
 
 ## 💡 Exemples
@@ -34,7 +35,6 @@ tg.SelectedTab = t2;
 uilabel(t2, 'Text', 'Second tab', 'Position', [35 70 120 24]);
 drawnow();
 ```
-
 <img src="uitabgroup_example.svg" align="middle"/>
 uitabgroup
 
@@ -48,14 +48,15 @@ tg.SelectedTab = t2;
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

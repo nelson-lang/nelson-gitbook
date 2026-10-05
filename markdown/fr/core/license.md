@@ -15,9 +15,12 @@ Affiche les informations de licence.
 
 ## 📄 Description
 
+
 Affiche ou retourne les informations de licence associées à l'installation de Nelson.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 license()
@@ -25,14 +28,15 @@ r = license()
 [r,txt] = license()
 ```
 
+
 ## 🔗 Voir aussi
 
 [banner](../core/banner.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

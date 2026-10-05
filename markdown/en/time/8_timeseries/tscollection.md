@@ -21,11 +21,13 @@ Create a collection of aligned time series.
 
 ## 📄 Description
 
-<b>tscollection</b> groups named timeseries objects on a shared time vector.
+
+<b>tscollection</b> groups named timeseries objects on a shared time vector. 
 
 Members can be added, removed, resampled, selected by time, and accessed by name.
 
 ## 💡 Examples
+
 
 ```matlab
 count1 = timeseries([11; 7; 14; 11], (1:4)', 'Name', 'Intersection1');
@@ -44,13 +46,14 @@ gettimeseriesnames(tsc)
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

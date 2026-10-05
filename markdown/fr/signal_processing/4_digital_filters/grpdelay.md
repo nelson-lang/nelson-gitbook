@@ -24,9 +24,12 @@ Retard de groupe d'un filtre numerique.
 
 ## 📄 Description
 
+
 <b>grpdelay</b> calcule le retard de groupe a partir de la derivee frequentielle de la fonction de transfert.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Retard de groupe d'un filtre numerique.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[phasez](../../signal_processing/phasez.md), [freqz](../../signal_processing/freqz.md).
+[phasez](../../signal_processing/4_digital_filters/phasez.md), [freqz](../../signal_processing/4_digital_filters/freqz.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

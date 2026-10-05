@@ -16,9 +16,10 @@ Separe les valeurs datetime ou duration en heures, minutes et secondes.
 
 ## 📄 Description
 
-Separe les valeurs datetime ou duration en heures, minutes et secondes.
 
-Pour une entree duration, la partie heures peut depasser 23 car elle represente des heures ecoulees. Pour datetime, elle represente l heure du jour.
+Separe les valeurs datetime ou duration en heures, minutes et secondes. 
+
+Pour une entree duration, la partie heures peut depasser 23 car elle represente des heures ecoulees. Pour datetime, elle represente l heure du jour. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,14 +33,15 @@ Utilisation de base.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

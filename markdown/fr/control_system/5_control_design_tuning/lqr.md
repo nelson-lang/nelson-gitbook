@@ -24,9 +24,12 @@ Conception d'un régulateur linéaire-quadratique (LQR).
 
 ## 📄 Description
 
+
 La fonction calcule le gain K du régulateur LQ, la matrice S associée au coût et les valeurs propres du système en boucle fermée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-0.313 56.7 0; -0.0139 -0.426 0; 0 56.7 0];
@@ -45,14 +48,15 @@ R = 2;
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[care](../../control_system/care.md), [dare](../../control_system/dare.md), [lqe](../../control_system/lqe.md).
+[care](../../control_system/5_control_design_tuning/care.md), [dare](../../control_system/5_control_design_tuning/dare.md), [lqe](../../control_system/5_control_design_tuning/lqe.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

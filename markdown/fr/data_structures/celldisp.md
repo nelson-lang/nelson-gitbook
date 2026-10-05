@@ -14,9 +14,12 @@ Afficher le contenu d'un tableau cellulaire.
 
 ## 📄 Description
 
+
 <b>celldisp</b> affiche récursivement le contenu d'un tableau cellulaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 C = {2, 22, 'ff', {331, 332}};
@@ -24,14 +27,15 @@ celldisp(C)
 celldisp(C, 'var_name')
 ```
 
+
 ## 🔗 Voir aussi
 
 [disp](../display_format/disp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

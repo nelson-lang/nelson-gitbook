@@ -12,11 +12,14 @@ Vérifie si la version est pour la plateforme WebAssembly.
 
 ## 📄 Description
 
-<b>iswasm</b> vérifie si la plateforme est WebAssembly.
+
+<b>iswasm</b> vérifie si la plateforme est WebAssembly. 
 
 Renvoie <b>true</b> lorsque Nelson est exécuté depuis une compilation WebAssembly (dans un navigateur ou un environnement WebAssembly), et <b>false</b> sinon.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 if iswasm
@@ -26,14 +29,15 @@ else
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [ispc](../os_functions/ispc.md), [isunix](../os_functions/isunix.md), [ismac](../os_functions/ismac.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

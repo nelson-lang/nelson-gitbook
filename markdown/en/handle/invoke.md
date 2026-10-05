@@ -18,13 +18,15 @@ Invoke method on an handle object.
 
 ## 📄 Description
 
-<b>invoke(h)</b> returns a struct with a list of all callable methods.
+
+<b>invoke(h)</b> returns a struct with a list of all callable methods. 
 
 <b>R = invoke(h, 'methodname')</b> calls the method specified by methodname, and returns an output value.
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

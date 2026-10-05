@@ -1,4 +1,4 @@
-# compiler_runtime_tutorial
+# compiler\_runtime\_tutorial
 
 Tutorial: one runtime for multiple applications.
 
@@ -8,11 +8,12 @@ Tutorial: one runtime for multiple applications.
 
 ## 📄 Description
 
-Run these three blocks in order on Windows with Inno Setup 6 installed on the build machine. The generated installer contains the runtime required by both applications, not the applications themselves. Distribute their Results.Files separately.
 
-This example installs into a private temporary directory using /PORTABLE=1 and selects it explicitly through NELSONC_RUNTIME_ROOT. A normal registered installation is found automatically by current launchers. The local uninstaller in target removes the shared runtime; it leaves the application executables in place.
+Run these three blocks in order on Windows with Inno Setup 6 installed on the build machine. The generated installer contains the runtime required by both applications, not the applications themselves. Distribute their Results.Files separately. 
 
-Block 3 uses the noninteractive runtime arguments. To use a response file instead, write agreeToLicense=yes, destinationFolder=the absolute target and outputFile=a new log path on separate lines, then invoke the installer with -inputfile followed by that file's path. Retain /CURRENTUSER /PORTABLE=1 for this isolated example; omit /PORTABLE=1 for a registered shared installation.
+This example installs into a private temporary directory using /PORTABLE=1 and selects it explicitly through NELSONC\_RUNTIME\_ROOT. A normal registered installation is found automatically by current launchers. The local uninstaller in target removes the shared runtime; it leaves the application executables in place. 
+
+Block 3 uses the noninteractive runtime arguments. To use a response file instead, write agreeToLicense=yes, destinationFolder=the absolute target and outputFile=a new log path on separate lines, then invoke the installer with -inputfile followed by that file's path. Retain /CURRENTUSER /PORTABLE=1 for this isolated example; omit /PORTABLE=1 for a registered shared installation. 
 
 If the installer process is interrupted, run the installation command from block 3 again with the same installer and target. Do not delete .nelson-runtime-update. The installer checks its recovery journal and completes the installation before the applications are run. A different package is refused while an incomplete update remains. Modified files or damaged recovery data require inspection rather than forced replacement; see compiler.runtime.customInstaller for limits and retained recovery directories.
 
@@ -31,7 +32,6 @@ filewrite(entryB, 'function shared_two(); disp(sin(0)); disp(''SHARED_TWO_OK'');
 first = compiler.build.standaloneApplication(entryA, 'OutputDir', fullfile(work, 'one'));
 second = compiler.build.standaloneApplication(entryB, 'OutputDir', fullfile(work, 'two'));
 ```
-
 2. Package their shared runtime
 
 ```matlab
@@ -40,7 +40,6 @@ compiler.runtime.customInstaller('SharedRuntime', [first, second], ...
   'OutputDir', fullfile(work, 'installer'));
 installer = fullfile(work, 'installer', 'SharedRuntime.exe');
 ```
-
 3. Install and run both applications
 
 ```matlab
@@ -60,10 +59,10 @@ disp(output);
 clear restore;
 ```
 
+
 ## 🔗 See also
 
 [compiler.runtime.customInstaller](../compiler/compiler.runtime.customInstaller.md), [compiler_installer_tutorial](../compiler/compiler_installer_tutorial.md).
-
 <!--
 ## 👤 Author
 

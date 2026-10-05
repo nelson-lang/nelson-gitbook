@@ -15,15 +15,17 @@ Computes the hyperbolic tangent in radians for each element of x.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>tanh</b> computes the hyperbolic tangent in radians for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
 res = tanh(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ res = tanh(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

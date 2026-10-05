@@ -20,9 +20,12 @@ Afficher et définir la palette de couleurs courante.
 
 ## 📄 Description
 
+
 <b>colormap</b> permet d'afficher et de définir la palette de couleurs utilisée dans un graphique.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure()
@@ -33,8 +36,8 @@ imagesc(Z);
 colormap('summer')
 
 ```
-
 <img src="colormap_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure()
@@ -44,8 +47,8 @@ Z = exp(-(x .^ 2 + y .^ 2) / 0.4);
 imagesc(Z);
 colormap('gray')
 ```
-
 <img src="colormap_2.svg" align="middle"/>
+
 
 ```matlab
 f = figure()
@@ -62,8 +65,8 @@ map = [0 0 0.3;
     0 0 1.0];
 colormap(map)
 ```
-
 <img src="colormap_3.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -71,8 +74,8 @@ colormap(map)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

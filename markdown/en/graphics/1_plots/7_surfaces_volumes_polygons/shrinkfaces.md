@@ -22,7 +22,9 @@ Reduce patch face size.
 
 ## 📄 Description
 
+
 <b>shrinkfaces</b> moves each face vertex toward the center of its face and creates nonshared vertices.
+
 
 ## 🔗 See also
 

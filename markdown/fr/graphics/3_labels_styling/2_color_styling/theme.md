@@ -21,9 +21,10 @@ Definit le theme de couleur d'une figure.
 
 ## 📄 Description
 
-<b>theme</b> definit le theme de couleur d'une figure a <b>'light'</b> ou <b>'dark'</b>.
 
-L'application d'un theme met a jour la propriete <b>Theme</b> de la figure ainsi que les couleurs de la figure et de ses enfants qui utilisent des couleurs gerees par le theme.
+<b>theme</b> definit le theme de couleur d'une figure a <b>'light'</b> ou <b>'dark'</b>. 
+
+L'application d'un theme met a jour la propriete <b>Theme</b> de la figure ainsi que les couleurs de la figure et de ses enfants qui utilisent des couleurs gerees par le theme. 
 
 Sans argument figure, le theme est applique a la figure courante renvoyee par <b>gcf</b>.
 
@@ -37,7 +38,6 @@ surf(peaks);
 theme(f, 'dark');
 
 ```
-
 Interroger le theme applique a la figure courante.
 
 ```matlab
@@ -46,14 +46,15 @@ t = theme('light')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [figure](../../../graphics/2_graphics_objects/1_object_management/figure.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [colororder](../../../graphics/3_labels_styling/2_color_styling/colororder.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,9 +20,12 @@ Transformation en cosinus discrete.
 
 ## 📄 Description
 
+
 <b>dct</b> calcule la transformation en cosinus discrete de type II orthonormale le long de la premiere dimension non singleton par defaut. Pour les matrices, chaque colonne est transformee independamment.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ x = idct(y);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[idct](../../signal_processing/idct.md), [fft](../../fftw/fft.md).
+[idct](../../signal_processing/3_transforms_correlation_modeling/idct.md), [fft](../../fftw/fft.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

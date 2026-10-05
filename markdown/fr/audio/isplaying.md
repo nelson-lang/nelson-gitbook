@@ -15,10 +15,11 @@ obtenir des informations sur la lecture audio en cours.
 - play - un booléen.
 
 ## 📄 Description
-
 <b>isplaying</b> obtient des informations sur la lecture audio en cours.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -31,14 +32,15 @@ delete(playObj)
 playObj
 ```
 
+
 ## 🔗 Voir aussi
 
 [audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

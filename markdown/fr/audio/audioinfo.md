@@ -16,11 +16,14 @@ Obtient les informations du fichier audio.
 
 ## 📄 Description
 
-<b>audioinfo</b> retourne une structure avec les informations sur le fichier audio.
+
+<b>audioinfo</b> retourne une structure avec les informations sur le fichier audio. 
 
 De nombreux formats audio sont supportés comme OGG, FLAC, WAV, RAW.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -29,10 +32,11 @@ info = audioinfo(wav_file)
 
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

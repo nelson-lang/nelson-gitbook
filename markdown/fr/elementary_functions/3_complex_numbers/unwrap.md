@@ -20,24 +20,28 @@ Corrige les angles de phase pour supprimer les sauts.
 
 ## 📄 Description
 
-<b>unwrap</b> corrige les angles de phase en radians de <b>p</b> en ajoutant des multiples de 2\*pi lorsque le saut entre elements consecutifs est superieur a <b>tol</b> (pi par defaut).
+
+<b>unwrap</b> corrige les angles de phase en radians de <b>p</b> en ajoutant des multiples de 2\*pi lorsque le saut entre elements consecutifs est superieur a <b>tol</b> (pi par defaut). 
 
 Pour une matrice, chaque colonne est traitee independamment sauf si une dimension est donnee.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 q = unwrap([0 3*pi/2 3*pi])
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[angle](../../elementary_functions/angle.md), [mod](../../elementary_functions/mod.md).
+[angle](../../elementary_functions/3_complex_numbers/angle.md), [mod](../../elementary_functions/2_elementary_math/mod.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

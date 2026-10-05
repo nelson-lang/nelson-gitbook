@@ -1,13 +1,13 @@
-# assert_isfalse
+# assert\_isfalse
 
 Nom historique de asserts.isfalse.
 
 ## 📝 Syntaxe
 
-- assert_isfalse(condition)
-- assert_isfalse(condition, message)
-- [res, msg] = assert_isfalse(condition)
-- [res, msg] = assert_isfalse(condition, message)
+- assert\_isfalse(condition)
+- assert\_isfalse(condition, message)
+- [res, msg] = assert\_isfalse(condition)
+- [res, msg] = assert\_isfalse(condition, message)
 
 ## 📥 Argument d'entrée
 
@@ -21,7 +21,8 @@ Nom historique de asserts.isfalse.
 
 ## 📄 Description
 
-<b>assert_isfalse</b> est conservee pour compatibilite.
+
+<b>assert\_isfalse</b> est conservee pour compatibilite. 
 
 Pour la documentation complete, utiliser [asserts.isfalse](../assert_functions/asserts.isfalse.md).
 
@@ -32,12 +33,12 @@ Appel historique
 ```matlab
 assert_isfalse(3 == 4);
 ```
-
 Appel canonique
 
 ```matlab
 asserts.isfalse(false);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,9 +46,9 @@ asserts.isfalse(false);
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                     |
-| ------- | -------------------------------------------------- |
-| 1.0.0   | version initiale                                   |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | documentee comme nom historique de asserts.isfalse |
 
 <!--

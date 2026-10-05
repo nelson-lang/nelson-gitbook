@@ -1,0 +1,47 @@
+#import "nelson_help.typ": *
+
+= fftshift <fftw:fftshift>
+
+Décaler la composante fréquence nulle au centre du spectre.
+
+== Syntaxe
+
+- #raw("Y = fftshift(X)");
+- #raw("Y = fftshift(X, DIM)");
+
+== Argument d'entrée
+
+/ X: un vecteur, une matrice ou un tableau N-D (double, single, integer).
+/ DIM: axes sur lesquelles effectuer le décalage.
+
+== Argument de sortie
+
+/ Y: tableau décalé.
+
+== Description
+
+#strong[fftshift(X)]; décale la composante fréquence nulle au centre du spectre.
+
+
+== Exemple
+
+``````matlab
+M = [ 0.,  10.,  20.; 30.,  40., -40.; -30., -20., -10.]
+fftshift(M)
+fftshift(M, 1)
+``````
+
+
+== Voir aussi
+
+#nlink(<fftw:ifft>)[fft];, #nlink(<fftw:ifftshift>)[ifftshift];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

@@ -20,19 +20,23 @@ Measure time required to run function.
 
 ## 📄 Description
 
-<b>t = timeit(f)</b> measures the time elapsed required to run the function specified by the function handle <b>f</b>.
 
-To perform a robust measurement,<b>timeit</b> calls function multiple times and returns the median of the measurements.
+<b>t = timeit(f)</b> measures the time elapsed required to run the function specified by the function handle <b>f</b>. 
+
+To perform a robust measurement,<b>timeit</b> calls function multiple times and returns the median of the measurements. 
 
 If the function runs fast,<b>timeit</b> might call the function many times.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
 f = str2func('@()sleep(6)');
 tic();t = timeit(f), toc()
 ```
+
 
 ```matlab
 X = rand(100);
@@ -41,13 +45,14 @@ tic(), t1 = timeit(f, 1, X), toc()
 tic(), t2 = timeit(f, 3, X), toc()
 ```
 
+
 ## 🔗 See also
 
-[tic](../../time/tic.md).
+[tic](../../time/7_timers/tic.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

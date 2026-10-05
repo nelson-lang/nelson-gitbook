@@ -1,15 +1,15 @@
-# QObject_get
+# QObject\_get
 
 Récupère la valeur d'une propriété d'une poignée (handle) QObject.
 
 ## 📝 Syntaxe
 
-- R = get(h, property_name)
+- R = get(h, property\_name)
 
 ## 📥 Argument d'entrée
 
 - h - une poignée (handle) QObject.
-- property_name - une chaîne : nom de propriété.
+- property\_name - une chaîne : nom de propriété.
 
 ## 📤 Argument de sortie
 
@@ -17,9 +17,12 @@ Récupère la valeur d'une propriété d'une poignée (handle) QObject.
 
 ## 📄 Description
 
-<b>R = get(h, property_name)</b> renvoie la valeur de la propriété demandée.
+
+<b>R = get(h, property\_name)</b> renvoie la valeur de la propriété demandée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h = errordlg();
@@ -27,14 +30,15 @@ h.visible % or get(h, 'visible')
 h.windowTitle % or get(h, 'windowTitle')
 ```
 
+
 ## 🔗 Voir aussi
 
 [QObject_set (set)](../qml_engine/QObject_set.md), [get](../handle/get.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

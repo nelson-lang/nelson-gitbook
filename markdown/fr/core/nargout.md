@@ -5,19 +5,20 @@ Nombre d'arguments de sortie d'une fonction.
 ## 📝 Syntaxe
 
 - R = nargout()
-- R = nargout(function_name)
-- R = nargout(function_handle)
+- R = nargout(function\_name)
+- R = nargout(function\_handle)
 
 ## 📥 Argument d'entrée
 
-- function_name - une chaîne : nom de la fonction
-- function_handle - un handle de fonction
+- function\_name - une chaîne : nom de la fonction
+- function\_handle - un handle de fonction
 
 ## 📤 Argument de sortie
 
 - R - une valeur entière : nombre d'arguments de sortie
 
 ## 📄 Description
+
 
 Retourne le nombre d'arguments de sortie demandés par l'appelant d'une fonction.
 
@@ -28,12 +29,12 @@ With an macro function:
 ```matlab
 nargout('cellstr')
 ```
-
 With an builtin function:
 
 ```matlab
 nargout('cos')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -41,8 +42,8 @@ nargout('cos')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

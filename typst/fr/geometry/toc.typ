@@ -1,0 +1,22 @@
+#import "nelson_help.typ": *
+
+- Geometrie
+  - #nlink(<geometry:alphaShape>)[alphaShape]
+  - #nlink(<geometry:boundary>)[boundary]
+  - #nlink(<geometry:convhull>)[convhull]
+  - #nlink(<geometry:convhulln>)[convhulln]
+  - #nlink(<geometry:delaunay>)[delaunay]
+  - #nlink(<geometry:delaunayTriangulation>)[delaunayTriangulation]
+  - #nlink(<geometry:delaunayn>)[delaunayn]
+  - #nlink(<geometry:dsearchn>)[dsearchn]
+  - #nlink(<geometry:griddata>)[griddata]
+  - #nlink(<geometry:rotx>)[rotx]
+  - #nlink(<geometry:roty>)[roty]
+  - #nlink(<geometry:rotz>)[rotz]
+  - #nlink(<geometry:scatteredInterpolant>)[scatteredInterpolant]
+  - #nlink(<geometry:stlread>)[stlread]
+  - #nlink(<geometry:stlwrite>)[stlwrite]
+  - #nlink(<geometry:triangulation>)[triangulation]
+  - #nlink(<geometry:tsearchn>)[tsearchn]
+  - #nlink(<geometry:voronoi>)[voronoi]
+  - #nlink(<geometry:voronoin>)[voronoin]

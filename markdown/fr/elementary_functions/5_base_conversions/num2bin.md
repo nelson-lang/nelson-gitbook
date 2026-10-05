@@ -16,6 +16,7 @@ Convertit un nombre en sa représentation binaire.
 
 ## 📄 Description
 
+
 <b>num2bin</b> renvoie un tableau de caractères donnant la représentation binaire littérale d'un nombre.
 
 ## Fonction(s) utilisée(s)
@@ -28,19 +29,22 @@ http://www.oxfordmathcenter.com/drupal7/node/43
 
 ## 💡 Exemple
 
+
+
 ```matlab
 X = [65535 128; 1 0]
 Y = num2bin(X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[bin2num](../../elementary_functions/bin2num.md).
+[bin2num](../../elementary_functions/5_base_conversions/bin2num.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

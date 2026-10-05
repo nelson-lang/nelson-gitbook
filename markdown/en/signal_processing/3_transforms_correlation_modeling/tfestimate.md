@@ -24,9 +24,12 @@ Transfer function estimate.
 
 ## 📄 Description
 
+
 <b>tfestimate</b> estimates a frequency response from input and output signals.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Transfer function estimate.
 
 ```
 
+
 ## 🔗 See also
 
-[cpsd](../../signal_processing/cpsd.md), [mscohere](../../signal_processing/mscohere.md).
+[cpsd](../../signal_processing/3_transforms_correlation_modeling/cpsd.md), [mscohere](../../signal_processing/3_transforms_correlation_modeling/mscohere.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

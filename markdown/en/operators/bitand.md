@@ -19,9 +19,12 @@ Bit-wise AND
 
 ## 📄 Description
 
+
 <b>C = bitand(A, B)</b> returns the bit-wise AND of <b>A</b> and<b>B</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = uint16([0 1; 0 1]);
@@ -30,13 +33,14 @@ R = bitand(A, B)
 
 ```
 
+
 ## 🔗 See also
 
 [bitor](../operators/bitor.md), [bitxor](../operators/bitxor.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

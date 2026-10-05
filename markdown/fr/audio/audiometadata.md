@@ -5,32 +5,36 @@ Obtient/Définit les métadonnées du fichier audio.
 ## 📝 Syntaxe
 
 - info = audiometadata(filename)
-- info_previous = audiometadata(filename, info_new)
+- info\_previous = audiometadata(filename, info\_new)
 
 ## 📥 Argument d'entrée
 
 - filename - une chaîne : un nom de fichier audio valide.
-- info_new - une structure : nouvelles informations sur le fichier audio à définir.
+- info\_new - une structure : nouvelles informations sur le fichier audio à définir.
 
 ## 📤 Argument de sortie
 
 - info - une structure : informations sur le fichier audio.
-- info_previous - une structure : informations précédentes sur le fichier audio.
+- info\_previous - une structure : informations précédentes sur le fichier audio.
 
 ## 📄 Description
 
-<b>audiometadata</b> retourne une structure avec les métadonnées d'un fichier audio.
 
-<b>audiometadata</b> gère toutes les balises disponibles dans le fichier audio.
+<b>audiometadata</b> retourne une structure avec les métadonnées d'un fichier audio. 
+
+<b>audiometadata</b> gère toutes les balises disponibles dans le fichier audio. 
 
 De nombreux formats audio sont supportés comme OGG, FLAC, WAV, RAW.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 info = audiometadata(wav_file)
 ```
+
 
 ```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
@@ -48,10 +52,11 @@ if isfile(modified_wav_file)
 end
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

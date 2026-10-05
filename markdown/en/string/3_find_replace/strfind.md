@@ -19,9 +19,12 @@ Find a string in another.
 
 ## 📄 Description
 
+
 <b>strfind</b> finds a string in another.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -39,13 +42,14 @@ k = strfind(str,'in','ForceCellOutput',false)
 
 ```
 
+
 ## 🔗 See also
 
-[strcmp](../../string/strcmp.md).
+[strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -1,11 +1,11 @@
-# new_system
+# new\_system
 
 Crée et charge un modèle nflow vide.
 
 ## 📝 Syntaxe
 
-- h = new_system()
-- h = new_system(name)
+- h = new\_system()
+- h = new\_system(name)
 
 ## 📥 Argument d'entrée
 
@@ -17,11 +17,14 @@ Crée et charge un modèle nflow vide.
 
 ## 📄 Description
 
-<b>new_system</b> crée un modèle nflow vide et l'enregistre comme chargé. Le modèle est désigné ensuite par son handle ou par son nom.
 
-Les blocs s'ajoutent avec <b>add_block</b>, se connectent avec <b>add_line</b> ou <b>NFlow.connectBlocks</b>, se configurent avec <b>set_param</b>, se sauvegardent avec <b>save_system</b> et s'ouvrent dans l'éditeur avec <b>open_system</b>.
+<b>new\_system</b> crée un modèle nflow vide et l'enregistre comme chargé. Le modèle est désigné ensuite par son handle ou par son nom. 
+
+Les blocs s'ajoutent avec <b>add\_block</b>, se connectent avec <b>add\_line</b> ou <b>NFlow.connectBlocks</b>, se configurent avec <b>set\_param</b>, se sauvegardent avec <b>save\_system</b> et s'ouvrent dans l'éditeur avec <b>open\_system</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 new_system('demo');
@@ -35,14 +38,15 @@ save_system('demo', [tempdir(), 'demo.nflow']);
 bdclose('demo');
 ```
 
+
 ## 🔗 Voir aussi
 
 [add_block](../nflow_engine/add_block.md), [add_line](../nflow_engine/add_line.md), [set_param](../nflow_engine/set_param.md), [save_system](../nflow_engine/save_system.md), [close_system](../nflow_engine/close_system.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

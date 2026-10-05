@@ -19,13 +19,17 @@
 
 ## 📄 Description
 
+
 <b>ifft2</b> returns the two-dimensional inverse Fourier transform of <b>X</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 X = magic(3); Y = ifft2(fft2(X))
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ X = magic(3); Y = ifft2(fft2(X))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

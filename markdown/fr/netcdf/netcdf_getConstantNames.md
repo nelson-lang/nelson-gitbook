@@ -16,7 +16,8 @@ Retourne la liste des constantes netCDF connues.
 
 ## 📄 Description
 
-netcdf.getConstantNames expose une operation bas niveau de la bibliotheque netCDF.
+
+netcdf.getConstantNames expose une operation bas niveau de la bibliotheque netCDF. 
 
 Ces fonctions utilisent des identifiants numeriques et suivent les conventions netCDF, notamment pour les indices, les modes et les constantes.
 
@@ -29,14 +30,15 @@ names = netcdf.getConstantNames();
 names(1)
 ```
 
+
 ## 🔗 Voir aussi
 
-[netcdf.getConstant](../netcdf/netcdf.getConstant.md).
+[netcdf.getConstant](../netcdf/netcdf_getConstant.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

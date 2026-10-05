@@ -19,9 +19,12 @@ Length estimate for an impulse response.
 
 ## 📄 Description
 
+
 <b>impzlength</b> returns a practical length for impulse response calculations.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,13 +32,14 @@ n = impzlength([1 1], 1);
 
 ```
 
+
 ## 🔗 See also
 
-[impz](../../signal_processing/impz.md).
+[impz](../../signal_processing/4_digital_filters/impz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

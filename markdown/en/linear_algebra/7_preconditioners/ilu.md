@@ -24,17 +24,18 @@ Incomplete LU factorization.
 
 ## 📄 Description
 
-<b>ilu</b> computes sparse incomplete LU factors suitable for use as preconditioners.
 
-<b>opts.type</b> can be 'nofill' or 'ilutp'. The default is 'nofill', which preserves the input sparsity pattern and performs no threshold dropping.
+<b>ilu</b> computes sparse incomplete LU factors suitable for use as preconditioners. 
 
-In 'ilutp' mode, <b>opts.droptol</b> drops small entries, <b>opts.fillfactor</b> limits retained row fill, <b>opts.udiag</b> allows zero pivots, and <b>opts.thresh</b> is a pivot threshold between 0 and 1. The default values are <b>droptol = 1e-4</b>, <b>fillfactor = 10</b>, <b>udiag = false</b>, and <b>thresh = 1</b>.
+<b>opts.type</b> can be 'nofill' or 'ilutp'. The default is 'nofill', which preserves the input sparsity pattern and performs no threshold dropping. 
 
-The 'ilutp' mode uses sparse row pivoting. With three outputs, <b>P</b> contains the row permutation and <b>P \* A</b> is approximated by <b>L \* U</b>. With one output, the packed sparse factor stores the strict lower part of <b>L</b> and the upper part of <b>U</b>.
+In 'ilutp' mode, <b>opts.droptol</b> drops small entries, <b>opts.fillfactor</b> limits retained row fill, <b>opts.udiag</b> allows zero pivots, and <b>opts.thresh</b> is a pivot threshold between 0 and 1. The default values are <b>droptol = 1e-4</b>, <b>fillfactor = 10</b>, <b>udiag = false</b>, and <b>thresh = 1</b>. 
 
-Text option values such as <b>opts.type</b> can be character row vectors or string scalars.
+The 'ilutp' mode uses sparse row pivoting. With three outputs, <b>P</b> contains the row permutation and <b>P \* A</b> is approximated by <b>L \* U</b>. With one output, the packed sparse factor stores the strict lower part of <b>L</b> and the upper part of <b>U</b>. 
 
-Double, single, complex double, and complex single sparse matrices are supported. <b>L</b> and <b>U</b> keep the input numeric class; <b>P</b> is a sparse permutation matrix.
+Text option values such as <b>opts.type</b> can be character row vectors or string scalars. 
+
+Double, single, complex double, and complex single sparse matrices are supported. <b>L</b> and <b>U</b> keep the input numeric class; <b>P</b> is a sparse permutation matrix. 
 
 The factors can be used directly as preconditioners for Krylov solvers such as <b>gmres</b>, <b>bicgstab</b>, <b>bicg</b>, <b>cgs</b>, and <b>qmr</b>.
 
@@ -44,12 +45,15 @@ Nelson sparse routines
 
 ## 💡 Examples
 
+
+
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
 LU = ilu(A)
 full(LU)
 
 ```
+
 
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
@@ -58,6 +62,7 @@ full(L * U)
 
 ```
 
+
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
 b = [1; 2; 3];
@@ -65,7 +70,6 @@ b = [1; 2; 3];
 x = bicgstab(A, b, 1e-12, 20, L, U)
 
 ```
-
 ILUTP with row pivoting.
 
 ```matlab
@@ -76,7 +80,6 @@ opts.droptol = 0;
 full(P * A - L * U)
 
 ```
-
 Control pivoting and retained fill in the thresholded mode.
 
 ```matlab
@@ -90,15 +93,16 @@ full(P * A - L * U)
 
 ```
 
+
 ## 🔗 See also
 
-[bicgstab](../../linear_algebra/bicgstab.md), [lu](../../linear_algebra/lu.md).
+[bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md), [lu](../../linear_algebra/2_decompositions/lu.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                              |
-| ------- | ----------------------------------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                                             |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | added single and complex single nofill, ilutp, pivoting, string scalar options, and preconditioner coverage |
 
 <!--

@@ -12,42 +12,46 @@ Return the current local date and time as a date vector.
 
 ## 📄 Description
 
-<b>calendar()</b> returns the currently monthly calendar.
 
-The date vector contains the following fields:
+<b>calendar()</b> returns the currently monthly calendar. 
 
-year
+The date vector contains the following fields: 
 
-months [1, 12]
+year 
 
-days [1, 31]
+months [1, 12] 
 
-hours [0, 23]
+days [1, 31] 
 
-minutes [0, 59]
+hours [0, 23] 
 
-seconds [0, 61]
+minutes [0, 59] 
 
-seconds: field has a fractional part after the decimal point for extended accuracy.
+seconds [0, 61] 
 
-To time the duration of an event, use tic and toc functions instead of clock.
+seconds: field has a fractional part after the decimal point for extended accuracy. 
+
+To time the duration of an event, use tic and toc functions instead of clock. 
 
 The clock function is based on the system time and thus might not be reliable for time comparison operations.
 
 ## 💡 Example
+
+
 
 ```matlab
 c = clock()
 fix(c)
 ```
 
+
 ## 🔗 See also
 
-[tic](../../time/tic.md), [toc](../../time/toc.md).
+[tic](../../time/7_timers/tic.md), [toc](../../time/7_timers/toc.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

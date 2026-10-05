@@ -15,9 +15,12 @@ Vérifie que la valeur n'est pas zéro.
 
 ## 📄 Description
 
+
 <b>mustBeNonZero</b> vérifie que la valeur n'est pas zéro ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeNonZero(1)
@@ -27,14 +30,15 @@ mustBeNonZero(0)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [isempty](../types/isempty.md), [eq](../operators/eq.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

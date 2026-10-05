@@ -27,7 +27,8 @@ Interpolation de donnees 1-D
 
 ## 📄 Description
 
-<b>interp1</b> retourne les valeurs interpolees d'une fonction 1-D. La methode par defaut est 'linear'.
+
+<b>interp1</b> retourne les valeurs interpolees d'une fonction 1-D. La methode par defaut est 'linear'. 
 
 <b>pp = interp1(x, v, method, 'pp')</b> retourne une structure polynomiale par morceaux evaluable avec <b>ppval</b>.
 
@@ -37,11 +38,14 @@ de Boor, C., A Practical Guide to Splines, Springer-Verlag, 1978.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 v = [0 1.41 2 1.41 0 -1.41 -2 -1.41 0];
 xq = 1.5:8.5;
 vq = interp1(v, xq);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -49,8 +53,8 @@ vq = interp1(v, xq);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -19,6 +19,7 @@ Create slider or range slider component.
 
 ## 📄 Description
 
+
 <b>sld = uislider</b> creates a slider; <b>uislider(parent, 'range')</b> creates a range slider whose <b>Value</b> is a two-element vector. Properties: <b>Value</b>, <b>Limits</b>, <b>Orientation</b>, <b>MajorTicks</b>/<b>MinorTicks</b>/<b>MajorTickLabels</b> with auto/manual modes, <b>Step</b>/<b>StepMode</b>, <b>ValueChangedFcn</b>, <b>ValueChangingFcn</b>.
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ rs.Position = [90 95 300 30];
 rs.Value = [20 70];
 drawnow();
 ```
-
 <img src="uislider_example.svg" align="middle"/>
 uislider
 
@@ -46,13 +46,14 @@ rs = uislider(f, 'range', 'Value', [20 60]);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

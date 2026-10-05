@@ -16,9 +16,12 @@ Check for finite entries.
 
 ## 📄 Description
 
+
 <b>isfinite</b> returns a logical array which is true where elements of M are finite values.
 
 ## 💡 Example
+
+
 
 ```matlab
 isfinite(pi)
@@ -29,13 +32,14 @@ X = sparse([1 2 NaN 3 0 Inf 0 4]);
 R = isfinite(X)
 ```
 
+
 ## 🔗 See also
 
-[isnan](../../elementary_functions/isnan.md), [isinf](../../elementary_functions/isinf.md), [allfinite](../../elementary_functions/allfinite.md).
+[isnan](../../elementary_functions/7_indexing_dimensions/isnan.md), [isinf](../../elementary_functions/7_indexing_dimensions/isinf.md), [allfinite](../../elementary_functions/7_indexing_dimensions/allfinite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

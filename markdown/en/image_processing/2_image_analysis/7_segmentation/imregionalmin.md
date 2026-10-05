@@ -18,6 +18,7 @@ Find regional minima in a 2-D image.
 
 ## 📄 Description
 
+
 imregionalmin marks connected flat zones that have no lower-valued neighbor under the selected connectivity. It is useful for inspecting natural markers before watershed segmentation.
 
 ## 💡 Example
@@ -30,16 +31,16 @@ BW=imregionalmin(I);
 figure; subplot(1,2,1); imagesc(I); title('Image');
 subplot(1,2,2); imagesc(BW); title('Regional minima');
 ```
-
 <img src="imregionalmin_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imhmin](../../../image_processing/imhmin.md), [imextendedmin](../../../image_processing/imextendedmin.md), [imimposemin](../../../image_processing/imimposemin.md), [watershed](../../../image_processing/watershed.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imextendedmin](../../../image_processing/2_image_analysis/7_segmentation/imextendedmin.md), [imimposemin](../../../image_processing/2_image_analysis/7_segmentation/imimposemin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,26 +21,30 @@ Repeat copies of array elements.
 
 ## 📄 Description
 
-<b>repelem(V, n)</b> repeats each element of vector <b>V</b> <b>n</b> times.
 
-<b>repelem(V, r)</b> uses a vector <b>r</b> to repeat element <b>V(i)</b> exactly <b>r(i)</b> times.
+<b>repelem(V, n)</b> repeats each element of vector <b>V</b> <b>n</b> times. 
+
+<b>repelem(V, r)</b> uses a vector <b>r</b> to repeat element <b>V(i)</b> exactly <b>r(i)</b> times. 
 
 <b>repelem(A, r, c)</b> repeats matrix rows <b>r</b> times and columns <b>c</b> times.
 
 ## 💡 Example
+
+
 
 ```matlab
 repelem([1 2 3], 2)
 repelem([1 2 3], [1 2 3])
 ```
 
+
 ## 🔗 See also
 
-[repmat](../repmat.md).
+[repmat](../1_array_creation_shape/repmat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -8,21 +8,25 @@ Match pattern ignoring case.
 
 ## 📄 Description
 
+
 <b>caseInsensitivePattern</b> Match pattern ignoring case.
 
 ## 💡 Example
+
+
 
 ```matlab
 pat = caseInsensitivePattern("nelson"); extract("Nelson", pat)
 ```
 
+
 ## 🔗 See also
 
-[caseSensitivePattern](../../string/caseSensitivePattern.md), [pattern](../../string/pattern.md).
+[caseSensitivePattern](../../string/4_patterns/caseSensitivePattern.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

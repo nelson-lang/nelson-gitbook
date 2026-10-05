@@ -16,14 +16,18 @@ Computes the sine in degree for each element of x.
 
 ## 📄 Description
 
+
 <b>sind</b> computes the sine in degree for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [0 30 45 60 90 360];
 sind(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ sind(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

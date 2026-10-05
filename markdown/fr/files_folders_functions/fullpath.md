@@ -16,13 +16,17 @@ Renvoie le chemin absolu canonique.
 
 ## 📄 Description
 
+
 <b>fullpath(path)</b> renvoie le chemin absolu à partir d'un chemin relatif.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 fullpath([nelsonroot(), '/../toto'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ fullpath([nelsonroot(), '/../toto'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

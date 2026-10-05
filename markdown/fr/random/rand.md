@@ -24,9 +24,10 @@ Nombre aléatoire.
 
 ## 📄 Description
 
-<b>rand</b> renvoie une matrice dont les éléments sont distribués uniformément sur l'intervalle [0, 1].
 
-La graine (seed) peut être modifiée en utilisant <b>rng</b>.
+<b>rand</b> renvoie une matrice dont les éléments sont distribués uniformément sur l'intervalle [0, 1]. 
+
+La graine (seed) peut être modifiée en utilisant <b>rng</b>. 
 
 Les concepteurs du Mersenne Twister considèrent 5489 comme graine par défaut. Nelson utilise 5489 comme graine par défaut.
 
@@ -36,6 +37,8 @@ M. Matsumoto et T. Nishimura, Mersenne Twister: A 623-dimensionally equidistribu
 
 ## 💡 Exemples
 
+
+
 ```matlab
 rng('default');
 rand
@@ -43,6 +46,7 @@ rng('default');
 rand
 
 ```
+
 
 ```matlab
 rng('default');
@@ -50,17 +54,20 @@ rand(6)
 
 ```
 
+
 ```matlab
 rng('default');
 rand(3, 2, 3)
 
 ```
 
+
 ```matlab
 rng('default');
 rand(3, 2, 'single')
 
 ```
+
 
 ```matlab
 rng('default');
@@ -69,14 +76,15 @@ rand(3, 2, 'like', v)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [rng](../random/rng.md), [randn](../random/randn.md), [eye](../constructors_functions/eye.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

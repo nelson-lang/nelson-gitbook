@@ -29,13 +29,14 @@ Détecte les maxima locaux des données.
 
 ## 📄 Description
 
-<b>islocalmax</b> marque les éléments de A plus grands que leurs voisins selon la dimension de travail. Une suite de valeurs égales plus grandes que les valeurs qui l'entourent forme un seul maximum local (voir 'FlatSelection').
 
-Le premier et le dernier éléments ne sont jamais des maxima locaux. Les valeurs NaN sont ignorées. Les valeurs +Inf sont toujours des maxima locaux, de proéminence infinie.
+<b>islocalmax</b> marque les éléments de A plus grands que leurs voisins selon la dimension de travail. Une suite de valeurs égales plus grandes que les valeurs qui l'entourent forme un seul maximum local (voir 'FlatSelection'). 
 
-La proéminence d'un maximum mesure à quel point il se détache : depuis le maximum, une ligne horizontale est tracée de chaque côté jusqu'à la première valeur strictement plus grande ou jusqu'au bord des données ; la base est la plus grande des deux valeurs minimales trouvées sous ces lignes, et la proéminence est la hauteur du maximum au-dessus de la base. Chaque élément d'un plateau maximal porte sa proéminence.
+Le premier et le dernier éléments ne sont jamais des maxima locaux. Les valeurs NaN sont ignorées. Les valeurs +Inf sont toujours des maxima locaux, de proéminence infinie. 
 
-Les filtres sont appliqués dans cet ordre : 'MinProminence', 'MinSeparation' (un plateau compte comme un seul maximum couvrant ses échantillons) puis 'MaxNumExtrema' (en cas d'égalité, le premier maximum l'emporte).
+La proéminence d'un maximum mesure à quel point il se détache : depuis le maximum, une ligne horizontale est tracée de chaque côté jusqu'à la première valeur strictement plus grande ou jusqu'au bord des données ; la base est la plus grande des deux valeurs minimales trouvées sous ces lignes, et la proéminence est la hauteur du maximum au-dessus de la base. Chaque élément d'un plateau maximal porte sa proéminence. 
+
+Les filtres sont appliqués dans cet ordre : 'MinProminence', 'MinSeparation' (un plateau compte comme un seul maximum couvrant ses échantillons) puis 'MaxNumExtrema' (en cas d'égalité, le premier maximum l'emporte). 
 
 Sans 'ProminenceWindow', la recherche est de complexité linéaire : elle convient aux grands signaux.
 
@@ -48,7 +49,6 @@ A = [0 5 1 3 1 4 0];
 [TF, P] = islocalmax(A)
 islocalmax(A, 'MinProminence', 3)
 ```
-
 Plateaux maximaux
 
 ```matlab
@@ -57,7 +57,6 @@ A = min(0.75, sin(pi * x));
 find(islocalmax(A, 'FlatSelection', 'first'))
 find(islocalmax(A, 'FlatSelection', 'all'))
 ```
-
 Maxima séparés avec des abscisses temporelles
 
 ```matlab
@@ -66,7 +65,6 @@ A = [2 4 6 4 3 7 5 6 5 10 4 -1 -3 -2 0];
 TF = islocalmax(A, 'MinSeparation', minutes(45), 'SamplePoints', t);
 find(TF)
 ```
-
 Maxima le long des lignes d'une matrice
 
 ```matlab
@@ -74,14 +72,15 @@ A = [1 3 1 2 0; 0 1 4 1 0; 2 0 2 0 2];
 TF = islocalmax(A, 2)
 ```
 
+
 ## 🔗 Voir aussi
 
 [islocalmin](../data_analysis/islocalmin.md), [max](../data_analysis/max.md), [movmax](../data_analysis/movmax.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

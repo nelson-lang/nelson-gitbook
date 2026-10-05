@@ -15,9 +15,12 @@ Write a structure as XML
 
 ## 📄 Description
 
+
 writestruct creates an XML document from a structure and writes it to a file.
 
 ## 💡 Example
+
+
 
 ```matlab
 s = struct();
@@ -28,13 +31,14 @@ writestruct(s, filename, 'StructNodeName', 'root');
 fileread(filename)
 ```
 
+
 ## 🔗 See also
 
 [readstruct](../xml/readstruct.md), [xmlwrite](../xml/xmlwrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

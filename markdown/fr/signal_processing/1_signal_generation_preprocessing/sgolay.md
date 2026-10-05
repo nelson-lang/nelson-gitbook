@@ -20,9 +20,12 @@ Coefficients de filtre Savitzky-Golay.
 
 ## 📄 Description
 
+
 <b>sgolay</b> calcule des coefficients locaux de moindres carres polynomiaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -30,14 +33,15 @@ Coefficients de filtre Savitzky-Golay.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[sgolayfilt](../../signal_processing/sgolayfilt.md).
+[sgolayfilt](../../signal_processing/1_signal_generation_preprocessing/sgolayfilt.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

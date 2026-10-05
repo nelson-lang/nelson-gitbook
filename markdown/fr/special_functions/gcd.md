@@ -19,7 +19,8 @@ Plus grand commun diviseur
 
 ## 📄 Description
 
-<b>G = gcd(A, B)</b> calcule le plus grand commun diviseur en utilisant l'algorithme euclidien.
+
+<b>G = gcd(A, B)</b> calcule le plus grand commun diviseur en utilisant l'algorithme euclidien. 
 
 <b>[G, C, D] = gcd(A, B)</b> renvoie aussi les coefficients de Bezout <b>C</b> et <b>D</b> tels que <b>C .\* A + D .\* B == G</b>. Les entiers non signés ne sont pas pris en charge par cette syntaxe.
 
@@ -29,11 +30,14 @@ Knuth, D. “Algorithms A and X.” The Art of Computer Programming, Vol. 2, Sec
 
 ## 💡 Exemple
 
+
+
 ```matlab
 A = [-5 7; 10 0];
 B = [-15 3; 50 0];
 G = gcd(A, B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -41,8 +45,8 @@ G = gcd(A, B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

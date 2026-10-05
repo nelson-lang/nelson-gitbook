@@ -16,23 +16,27 @@ log(1 + x) avec précision pour de petites valeurs de x.
 
 ## 📄 Description
 
+
 <b>log1p</b> calcule log(1 + x) avec précision pour de petites valeurs de x.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = log1p(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[log](../../elementary_functions/log.md).
+[log](../../elementary_functions/2_elementary_math/log.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

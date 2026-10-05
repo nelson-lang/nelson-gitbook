@@ -21,7 +21,8 @@ enregistre les variables de l'espace de travail dans un fichier .mat
 
 ## 📄 Description
 
-<b>savemat</b> enregistre les variables de l'espace de travail dans un fichier .mat.
+
+<b>savemat</b> enregistre les variables de l'espace de travail dans un fichier .mat. 
 
 Les types de données de Nelson sont convertis en équivalents compatibles avec les fichiers Mat.
 
@@ -30,6 +31,8 @@ Les types de données de Nelson sont convertis en équivalents compatibles avec 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -48,7 +51,6 @@ A
 B
 
 ```
-
 append variables
 
 ```matlab
@@ -69,7 +71,6 @@ B
 C
 
 ```
-
 compression
 
 ```matlab
@@ -80,14 +81,15 @@ with_compression = dir([tempdir(), 'example_savemat_with_compression.mat'])
 no_compression = dir([tempdir(), 'example_savemat_no_compression.mat'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [loadmat](../matio/loadmat.md), [save](../stream_manager/save.md), [savenh5](../hdf5/savenh5.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

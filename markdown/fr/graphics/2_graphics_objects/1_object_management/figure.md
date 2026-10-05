@@ -24,13 +24,18 @@ Crée une fenêtre figure.
 
 ## 📄 Description
 
-<b>figure</b> crée une figure.
 
-Un clic sur une figure la définit automatiquement comme figure courante.
+<b>figure</b> crée une figure. 
+
+Un clic sur une figure la définit automatiquement comme figure courante. 
+
+ 
 
 Voir [proprietes de figure](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.figure.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure(1)
@@ -42,22 +47,23 @@ figure('Name', 'Hello')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de figure](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.figure.properties.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md), [close](../../../graphics/2_graphics_objects/1_object_management/close.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                        |
-| ------- | ----------------------------------------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                                                      |
-| 1.2.0   | Un clic sur une figure la définit automatiquement comme figure courante.                              |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.2.0   | Un clic sur une figure la définit automatiquement comme figure courante. |
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn. |
-| --      | Ajout de la propriété BeingDeleted.                                                                   |
-| 1.8.0   | Ajout de la propriété Resize.                                                                         |
-| 1.13.0  | Ajout de la propriété DevicePixelRatio.                                                               |
-| 1.14.0  | Ajout de la propriété WindowState.                                                                    |
-| --      | Mise a jour de la documentation des proprietes de figure.                                             |
+| --   | Ajout de la propriété BeingDeleted. |
+| 1.8.0   | Ajout de la propriété Resize. |
+| 1.13.0   | Ajout de la propriété DevicePixelRatio. |
+| 1.14.0   | Ajout de la propriété WindowState. |
+| --   | Mise a jour de la documentation des proprietes de figure. |
 
 <!--
 ## 👤 Auteur

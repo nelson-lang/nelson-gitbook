@@ -16,9 +16,12 @@ Checks end of file.
 
 ## 📄 Description
 
+
 <b>feof</b> checks if end of file has been reached.
 
 ## 💡 Example
+
+
 
 ```matlab
 fid = fopen([nelsonroot(), '/etc/startup.m'], 'rt');
@@ -31,13 +34,14 @@ feof(fid)
 fclose(fid);
 ```
 
+
 ## 🔗 See also
 
 [fopen](../stream_manager/fopen.md), [fgetl](../stream_manager/fgetl.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

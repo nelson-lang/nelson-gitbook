@@ -23,15 +23,19 @@ Valeurs uniques à une tolérance près.
 
 ## 📄 Description
 
-<b>uniquetol</b> retourne les valeurs uniques de <b>A</b> en utilisant la tolérance <b>tol</b>. Deux éléments sont considérés égaux lorsque leur différence absolue est inférieure ou égale à <b>tol</b> mise à l'échelle par les données. Par défaut la mise à l'échelle est la plus grande valeur absolue de <b>A</b>, ou la plus grande valeur absolue de chaque colonne lorsque <b>'ByRows'</b> est vrai.
+
+<b>uniquetol</b> retourne les valeurs uniques de <b>A</b> en utilisant la tolérance <b>tol</b>. Deux éléments sont considérés égaux lorsque leur différence absolue est inférieure ou égale à <b>tol</b> mise à l'échelle par les données. Par défaut la mise à l'échelle est la plus grande valeur absolue de <b>A</b>, ou la plus grande valeur absolue de chaque colonne lorsque <b>'ByRows'</b> est vrai. 
 
 La sortie <b>C</b> est triée par ordre croissant et, pour chaque groupe de valeurs proches, conserve la plus petite.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [C, ia, ic] = uniquetol([2 1 2 1.0000001], 1e-6)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -39,8 +43,8 @@ La sortie <b>C</b> est triée par ordre croissant et, pour chaque groupe de vale
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

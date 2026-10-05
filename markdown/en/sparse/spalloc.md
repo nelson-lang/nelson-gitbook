@@ -18,14 +18,18 @@ Create a sparse matrix with allocated storage.
 
 ## 📄 Description
 
+
 <b>spalloc</b> creates an m-by-n sparse double matrix and reserves storage for up to <b>nz</b> nonzero elements.
 
 ## 💡 Example
+
+
 
 ```matlab
 S = spalloc(3, 4, 5)
 nzmax(S)
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ nzmax(S)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

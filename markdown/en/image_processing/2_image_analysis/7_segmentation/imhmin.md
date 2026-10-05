@@ -19,6 +19,7 @@ Suppress shallow minima using the h-minima transform.
 
 ## 📄 Description
 
+
 imhmin computes the h-minima transform by grayscale reconstruction by erosion of I+h under I. It is useful for suppressing shallow minima before marker extraction or watershed segmentation.
 
 ## 💡 Example
@@ -31,16 +32,16 @@ J=imhmin(I,2);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('h-minima');
 ```
-
 <img src="imhmin_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imextendedmin](../../../image_processing/imextendedmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [watershed](../../../image_processing/watershed.md).
+[imextendedmin](../../../image_processing/2_image_analysis/7_segmentation/imextendedmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

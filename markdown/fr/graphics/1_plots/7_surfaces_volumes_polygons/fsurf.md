@@ -25,11 +25,14 @@ Trace une surface definie par une fonction.
 
 ## 📄 Description
 
-<b>fsurf</b> echantillonne une fonction sur une grille rectangulaire et affiche une surface de type functionsurface. La grille est reevaluee quand <b>Function</b>, <b>XRange</b>, <b>YRange</b> ou <b>MeshDensity</b> change.
+
+<b>fsurf</b> echantillonne une fonction sur une grille rectangulaire et affiche une surface de type functionsurface. La grille est reevaluee quand <b>Function</b>, <b>XRange</b>, <b>YRange</b> ou <b>MeshDensity</b> change. 
 
 Voir [proprietes de functionsurface](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.functionsurface.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -38,8 +41,8 @@ light();
 lighting gouraud;
 
 ```
-
 <img src="fsurf_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -47,8 +50,8 @@ lighting gouraud;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,9 +19,10 @@ dissect floating-point numbers into base 2 exponent and mantissa.
 
 ## 📄 Description
 
-<b>log2</b> dissects several numbers into the exponent and mantissa.
 
-[F, E] = log2(M), any zeros in M produce F = 0 and E = 0.
+<b>log2</b> dissects several numbers into the exponent and mantissa. 
+
+[F, E] = log2(M), any zeros in M produce F = 0 and E = 0. 
 
 Input values of Inf, -Inf, or NaN are returned unchanged in F with a corresponding exponent of E = 0.
 
@@ -31,19 +32,22 @@ std::frexp and std::logb C++ functions
 
 ## 💡 Example
 
+
+
 ```matlab
 x = [1+i,-i;i,2i];
 R = log2(x)
 [F, E] = log2(x)
 ```
 
+
 ## 🔗 See also
 
-[log](../../elementary_functions/log.md), [log10](../../elementary_functions/log10.md).
+[log](../../elementary_functions/2_elementary_math/log.md), [log10](../../elementary_functions/2_elementary_math/log10.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

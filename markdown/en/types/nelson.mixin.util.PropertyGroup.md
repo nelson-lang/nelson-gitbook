@@ -18,7 +18,8 @@ A titled group of properties for custom object display.
 
 ## 📄 Description
 
-<b>nelson.mixin.util.PropertyGroup</b> groups object properties for display. A <b>getPropertyGroups</b> method of a <b>nelson.mixin.CustomDisplay</b> subclass returns an array of property groups, each rendered with its title followed by its properties.
+
+<b>nelson.mixin.util.PropertyGroup</b> groups object properties for display. A <b>getPropertyGroups</b> method of a <b>nelson.mixin.CustomDisplay</b> subclass returns an array of property groups, each rendered with its title followed by its properties. 
 
 Properties: <b>Title</b>, <b>PropertyList</b> and the read-only <b>NumProperties</b>.
 
@@ -32,13 +33,14 @@ g.Title
 g.NumProperties
 ```
 
+
 ## 🔗 See also
 
 [nelson.mixin.CustomDisplay](../handle/nelson.mixin.CustomDisplay.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

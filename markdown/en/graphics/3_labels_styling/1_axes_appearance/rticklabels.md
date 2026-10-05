@@ -26,7 +26,8 @@ Set or get radial tick labels for polar axes.
 
 ## 📄 Description
 
-<b>rticklabels</b> gets or sets labels displayed next to radial ticks.
+
+<b>rticklabels</b> gets or sets labels displayed next to radial ticks. 
 
 Setting labels switches radial tick label mode to <b>manual</b>. The number of displayed labels is matched with the number of visible radial ticks.
 
@@ -43,13 +44,14 @@ labels = rticklabels()
 
 ```
 
+
 ## 🔗 See also
 
 [rticks](../../../graphics/3_labels_styling/1_axes_appearance/rticks.md), [thetaticklabels](../../../graphics/3_labels_styling/1_axes_appearance/thetaticklabels.md), [polarplot](../../../graphics/1_plots/2_polar_plots/polarplot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

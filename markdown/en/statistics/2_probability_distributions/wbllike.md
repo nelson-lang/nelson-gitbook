@@ -21,9 +21,12 @@ Weibull negative log-likelihood
 
 ## 📄 Description
 
+
 <b>wbllike</b> evaluates the negative log-likelihood of the Weibull distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
@@ -31,13 +34,14 @@ phat = wblfit(x);
 nlogL = wbllike(phat, x);
 ```
 
+
 ## 🔗 See also
 
-[wblfit](../../statistics/wblfit.md), [wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md).
+[wblfit](../../statistics/2_probability_distributions/wblfit.md), [wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

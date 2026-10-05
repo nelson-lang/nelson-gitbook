@@ -12,13 +12,17 @@ Returns the current language in Nelson.
 
 ## 📄 Description
 
+
 <b>getlanguage</b> returns the current language used in Nelson.
 
 ## 💡 Example
 
+
+
 ```matlab
 l = getlanguage()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ l = getlanguage()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

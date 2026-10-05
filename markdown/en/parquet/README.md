@@ -1,10 +1,16 @@
 # Parquet
 
+
+    
 The Parquet module provides local file support for Apache Parquet data sets.
 
+    
 It reads and writes column-oriented tables, exposes file metadata, and provides datastore and row-filter helpers for workflows that process one or more Parquet files.
 
+    
 Supported table variables include logical values, integer types, single and double precision floating point values, text, datetime values, duration values, nested tables stored as struct columns, and homogeneous primitive cell vectors stored as list columns.
+
+  
 
 ## Functions
 
@@ -16,3 +22,4 @@ Supported table variables include logical values, integer types, single and doub
 - [parquetread](parquetread.md) - Read table data from a Parquet file.
 - [parquetwrite](parquetwrite.md) - Write a table to a Parquet file.
 - [rowfilter](rowfilter.md) - Create a row filter expression.
+

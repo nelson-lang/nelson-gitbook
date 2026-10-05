@@ -16,13 +16,16 @@ Retourne le nombre d'éléments non nuls.
 
 ## 📄 Description
 
-<b>nnz</b> retourne le nombre d'éléments non nuls dans une matrice.
 
-Les entrees pleines peuvent etre multidimensionnelles. Les entrees sparse sont 2-D et peuvent stocker des valeurs double, single, logiques, double complexes ou single complexes.
+<b>nnz</b> retourne le nombre d'éléments non nuls dans une matrice. 
+
+Les entrees pleines peuvent etre multidimensionnelles. Les entrees sparse sont 2-D et peuvent stocker des valeurs double, single, logiques, double complexes ou single complexes. 
 
 Pour les matrices sparse, <b>nnz</b> compte seulement les valeurs reellement non nulles. Les valeurs nulles stockees sont ignorees.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 I = [1 2 3];
@@ -34,10 +37,12 @@ nnz(sp)
 nzmax(sp)
 ```
 
+
 ```matlab
 S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
 n = nnz(S)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,10 +50,10 @@ n = nnz(S)
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                   |
-| ------- | ---------------------------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | comportement sparse single et valeurs nulles stockees documentes |
-| 1.0.0   | version initiale                                                 |
+| 1.0.0   | version initiale |
 
 <!--
 ## 👤 Auteur

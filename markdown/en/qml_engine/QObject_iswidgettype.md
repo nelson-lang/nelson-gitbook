@@ -1,10 +1,10 @@
-# QObject_iswidgettype
+# QObject\_iswidgettype
 
 Returns true if the QObject is a widget.
 
 ## 📝 Syntax
 
-- R = QObject_iswidgettype(h)
+- R = QObject\_iswidgettype(h)
 
 ## 📥 Input argument
 
@@ -16,14 +16,18 @@ Returns true if the QObject is a widget.
 
 ## 📄 Description
 
+
 Returns true if the QObject is a widget; otherwise returns false.
 
 ## 💡 Example
+
+
 
 ```matlab
 h = errordlg()
 r = QObject_iswidgettype(h)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ r = QObject_iswidgettype(h)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

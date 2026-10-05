@@ -23,15 +23,18 @@ Create user interface component.
 
 ## 📄 Description
 
-<b>c = uicontrol</b> creates a push button, which is the default user interface control, within the current figure and returns the associated uicontrol object. If no figure is currently open, Nelson generates one using the figure function.
 
-<b>c = uicontrol(propertyName, propertyValue)</b> creates a user interface control with properties defined by one or more name-value pair arguments. For instance, specifying 'Style', 'button' will create a button.
+<b>c = uicontrol</b> creates a push button, which is the default user interface control, within the current figure and returns the associated uicontrol object. If no figure is currently open, Nelson generates one using the figure function. 
 
-<b>c = uicontrol(parent)</b> creates the default user interface control (push button) within the specified parent container, rather than defaulting to the current figure.
+<b>c = uicontrol(propertyName, propertyValue)</b> creates a user interface control with properties defined by one or more name-value pair arguments. For instance, specifying 'Style', 'button' will create a button. 
 
-<b>c = uicontrol(parent, propertyName, propertyValue)</b> creates a user interface control within the specified parent container, allowing you to define its properties using one or more name-value pair arguments.
+<b>c = uicontrol(parent)</b> creates the default user interface control (push button) within the specified parent container, rather than defaulting to the current figure. 
 
-<b>uicontrol(c)</b> sets the focus to a previously defined user interface control, bringing it to the forefront for user interaction.
+<b>c = uicontrol(parent, propertyName, propertyValue)</b> creates a user interface control within the specified parent container, allowing you to define its properties using one or more name-value pair arguments. 
+
+<b>uicontrol(c)</b> sets the focus to a previously defined user interface control, bringing it to the forefront for user interaction. 
+
+ 
 
 See [uicontrol properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.uicontrol.properties.md) for the complete property list.
 
@@ -45,7 +48,6 @@ f = figure;
 b = uicontrol(f,Style='pushbutton', String='Click Me', Position=[100 100 60 30], Callback='disp(''Hello World!'')')
 
 ```
-
 <img src="uicontrol_1.png" align="middle"/>
 Checkbox
 
@@ -55,7 +57,6 @@ f = figure();
 h = uicontrol(Style='checkbox', String='Click Me!', Position=[100, 100, 100, 50]);
 
 ```
-
 <img src="uicontrol_2.png" align="middle"/>
 Edit
 
@@ -65,7 +66,6 @@ f = figure();
 h = uicontrol(Style='edit', String='Click Me!', Position=[100, 100, 100, 50]);
 
 ```
-
 <img src="uicontrol_3.png" align="middle"/>
 Image
 
@@ -79,7 +79,6 @@ CData = im2double(CData);  % Ensure the image is of type double
 hButton = uicontrol(Style='pushbutton',  Position=[100, 100, 100, 100], CData=CData, String='Click Me!');
 
 ```
-
 <img src="uicontrol_4.png" align="middle"/>
 uicontrol demo
 
@@ -90,7 +89,6 @@ edit uicontrol_demo
 uicontrol_demo
 
 ```
-
 <img src="uicontrol_5.png" align="middle"/>
 uicontrol demo Interruptible
 
@@ -101,8 +99,8 @@ edit uicontrol_demo_interruptible
 uicontrol_demo_interruptible
 
 ```
-
 <img src="uicontrol_6.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -110,10 +108,10 @@ uicontrol_demo_interruptible
 
 ## 🕔 History
 
-| Version | 📄 Description       |
-| ------- | -------------------- |
-| 1.7.0   | initial version      |
-| 1.14.0  | Units property added |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.7.0   | initial version |
+| 1.14.0   | Units property added |
 
 <!--
 ## 👤 Author

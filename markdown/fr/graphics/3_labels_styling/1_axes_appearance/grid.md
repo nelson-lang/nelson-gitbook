@@ -19,9 +19,12 @@ Afficher ou masquer les lignes de grille des axes.
 
 ## 📄 Description
 
+
 <b>grid()</b> active ou désactive la visibilité des lignes de grille principales.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -30,8 +33,8 @@ y = cos(x);
 plot(x, y)
 grid on
 ```
-
 <img src="grid.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -39,8 +42,8 @@ grid on
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

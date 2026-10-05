@@ -18,22 +18,26 @@ Convertit un nombre décimal en base 2.
 
 ## 📄 Description
 
+
 <b>dec2bin</b> converts decimal number to base 2.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 Y = dec2bin(2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[dec2base](../../elementary_functions/base2dec.md), [bin2dec](../../elementary_functions/bin2dec.md).
+[dec2base](../../elementary_functions/5_base_conversions/base2dec.md), [bin2dec](../../elementary_functions/5_base_conversions/bin2dec.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,17 +18,21 @@ Normal mean and variance
 
 ## 📄 Description
 
+
 <b>normstat</b> returns the mean and variance of the normal distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = normstat([0 1 2], [1 2 3]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

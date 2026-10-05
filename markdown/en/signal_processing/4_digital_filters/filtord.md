@@ -17,9 +17,12 @@ Digital filter order.
 
 ## 📄 Description
 
+
 <b>filtord</b> returns the order implied by nonzero numerator and denominator coefficients.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -27,13 +30,14 @@ n = filtord([1 0 0], [1 -0.5]);
 
 ```
 
+
 ## 🔗 See also
 
-[isfir](../../signal_processing/isfir.md).
+[isfir](../../signal_processing/4_digital_filters/isfir.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

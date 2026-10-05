@@ -23,13 +23,15 @@ Extraire une table d'evenements de lignes d'une timetable.
 
 ## 📄 Description
 
-<b>extractevents</b> cree une table d'evenements a partir de lignes d'une timetable. Seules les variables nommees par les options sont copiees : d'abord la variable des durees ou des fins d'evenements, puis la variable des libelles, puis les variables de donnees, puis les variables creees a partir des valeurs <b>EventLabels</b>, <b>EventLengths</b> et <b>EventEnds</b>.
 
-Une variable d'evenement ne peut pas aussi figurer dans <b>EventDataVariables</b>. <b>PreserveEventVariables</b> necessite au moins une option de variable et la deuxieme sortie.
+<b>extractevents</b> cree une table d'evenements a partir de lignes d'une timetable. Seules les variables nommees par les options sont copiees : d'abord la variable des durees ou des fins d'evenements, puis la variable des libelles, puis les variables de donnees, puis les variables creees a partir des valeurs <b>EventLabels</b>, <b>EventLengths</b> et <b>EventEnds</b>. 
+
+Une variable d'evenement ne peut pas aussi figurer dans <b>EventDataVariables</b>. <b>PreserveEventVariables</b> necessite au moins une option de variable et la deuxieme sortie. 
 
 Pour lire la table d'evenements attachee a une timetable, utiliser <b>TT.Properties.Events</b>.
 
 ## 💡 Exemples
+
 
 ```matlab
 TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], ["a"; "b"; "c"; "d"], 'VariableNames', {'A', 'L'});
@@ -44,14 +46,15 @@ ET = extractevents(TT, categorical(["start"; ""; ""; "stop"]))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[syncevents](../../table/syncevents.md), [eventtable](../../table/eventtable.md), [timetable](../../table/timetable.md).
+[syncevents](../../table/8_timetables_events/syncevents.md), [eventtable](../../table/8_timetables_events/eventtable.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,21 +20,22 @@ Inspect a completed application build.
 
 ## 📄 Description
 
-Normally obtain a result from <b>ncc(options)</b> or <b>nelson.compiler.build(options)</b>. The constructor wraps an existing report: it does not build, check the files or authenticate their contents.
 
-<b>BuildType</b>: standaloneApplication, or standaloneWindowsApplication when options.NoConsole is true.
+Normally obtain a result from <b>ncc(options)</b> or <b>nelson.compiler.build(options)</b>. The constructor wraps an existing report: it does not build, check the files or authenticate their contents. 
 
-<b>Files</b>: cell of paths to distribute, containing Executable and, for bundled builds, RuntimeDirectory. It is not a recursive file inventory or an installer.
+<b>BuildType</b>: standaloneApplication, or standaloneWindowsApplication when options.NoConsole is true. 
 
-<b>Executable</b>: absolute path to the native executable. <b>RuntimeDirectory</b>: adjacent runtime directory, or empty for installed mode. Move a bundled executable and its runtime directory together without renaming them.
+<b>Files</b>: cell of paths to distribute, containing Executable and, for bundled builds, RuntimeDirectory. It is not a recursive file inventory or an installer. 
 
-<b>Options</b>: value copy of the build configuration. Later changes to the caller's options do not change the result.
+<b>Executable</b>: absolute path to the native executable. <b>RuntimeDirectory</b>: adjacent runtime directory, or empty for installed mode. Move a bundled executable and its runtime directory together without renaming them. 
 
-<b>DependencyPlan</b>: resolved application dependency analysis. <b>RuntimePlan</b>: runtime requirements and the selected runtime file inventory for bundled mode. Use these to inspect why modules and files were included.
+<b>Options</b>: value copy of the build configuration. Later changes to the caller's options do not change the result. 
 
-<b>Manifest</b>: embedded application manifest, describing archive entries and runtime requirements. <b>SHA256</b>: digest of the generated executable, not a publisher signature.
+<b>DependencyPlan</b>: resolved application dependency analysis. <b>RuntimePlan</b>: runtime requirements and the selected runtime file inventory for bundled mode. Use these to inspect why modules and files were included. 
 
-<b>struct(result)</b> converts the result to a scalar structure, including Options as a structure. Reports can contain absolute build-machine paths; review them before publishing. These results describe the current packager, not an application installer.
+<b>Manifest</b>: embedded application manifest, describing archive entries and runtime requirements. <b>SHA256</b>: digest of the generated executable, not a publisher signature. 
+
+<b>struct(result)</b> converts the result to a scalar structure, including Options as a structure. Reports can contain absolute build-machine paths; review them before publishing. These results describe the current packager, not an application installer. 
 
 When Options.EmbedArchive is false, Files also contains the .nca archive between the executable and any runtime directory. SHA256 remains the executable digest; archive integrity is checked at startup.
 
@@ -50,10 +51,10 @@ disp(result.RuntimePlan);
 text = jsonencode(struct(result));
 ```
 
+
 ## 🔗 See also
 
 [nelson.compiler.BuildOptions](../compiler/nelson.compiler.BuildOptions.md), [nelson.compiler.build](../compiler/nelson.compiler.build.md), [compiler_standalone_tutorial](../compiler/compiler_standalone_tutorial.md).
-
 <!--
 ## 👤 Author
 

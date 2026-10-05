@@ -20,18 +20,23 @@ Résoudre un objet problème d'optimization.
 
 ## 📄 Description
 
+
 <b>solve</b> compile un modèle problem-based pris en charge et appelle un solveur direct.
 
 ## Fonction(s) utilisée(s)
 
+
     prob2struct
     fminsearch
+  
 
 ## 📚 Bibliographie
 
 J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = optimvar('x');
@@ -40,14 +45,15 @@ prob = optimproblem('Objective', (x - 2)^2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimproblem](../optimization/optimproblem.md), [prob2struct](../optimization/prob2struct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

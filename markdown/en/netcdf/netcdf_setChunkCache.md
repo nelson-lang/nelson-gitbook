@@ -18,7 +18,8 @@ Set default chunk cache settings for the netCDF library.
 
 ## 📄 Description
 
-netcdf.setChunkCache changes the default chunk cache settings for later operations.
+
+netcdf.setChunkCache changes the default chunk cache settings for later operations. 
 
 Existing open variables may keep their current cache settings.
 
@@ -32,13 +33,14 @@ netcdf.setChunkCache(cacheSize, nelems, preemption);
 [cacheSize2, nelems2, preemption2] = netcdf.getChunkCache()
 ```
 
+
 ## 🔗 See also
 
-[netcdf.getChunkCache](../netcdf/netcdf.getChunkCache.md).
+[netcdf.getChunkCache](../netcdf/netcdf_getChunkCache.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

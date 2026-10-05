@@ -12,22 +12,26 @@ Renvoie la date et l'heure courantes sous forme de numéro de date série.
 
 ## 📄 Description
 
+
 <b>now()</b> renvoie la date et l'heure courantes sous forme d'un numéro de date série.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 datevec(now())
 ```
 
+
 ## 🔗 Voir aussi
 
-[datenum](../../time/datenum.md), [datevec](../../time/datevec.md).
+[datenum](../../time/1_create_date_time_arrays/datenum.md), [datevec](../../time/1_create_date_time_arrays/datevec.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -19,7 +19,8 @@ Verifie qu'une structure possede un champ.
 
 ## 📄 Description
 
-L'assertion reussit lorsque s contient fieldName.
+
+L'assertion reussit lorsque s contient fieldName. 
 
 Les entrees non structure invalides levent immediatement une erreur d'argument.
 
@@ -30,12 +31,12 @@ Existing field
 ```matlab
 S = struct('a', 1); asserts.hasField(S, 'a');
 ```
-
 Capture a missing field
 
 ```matlab
 S = struct('a', 1); [res, msg] = asserts.hasField(S, 'b');
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ S = struct('a', 1); [res, msg] = asserts.hasField(S, 'b');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,16 +19,20 @@ Apply a function to each field of a scalar structure.
 
 ## 📄 Description
 
-<b>structfun(fun, S)</b> applies <b>fun</b> to each field of the scalar structure <b>S</b> and returns the results as a column vector.
+
+<b>structfun(fun, S)</b> applies <b>fun</b> to each field of the scalar structure <b>S</b> and returns the results as a column vector. 
 
 With <b>'UniformOutput'</b> set to <b>false</b>, the results are returned in a structure with the same fields as <b>S</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 s.a = 1; s.b = 2; s.c = 3;
 structfun(@(x) x * 2, s)
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ structfun(@(x) x * 2, s)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

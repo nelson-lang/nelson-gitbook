@@ -4,12 +4,12 @@ Récupère la valeur d'une variable depuis une portée de variables spécifiée.
 
 ## 📝 Syntaxe
 
-- value = acquirevar(scope, variable_name)
+- value = acquirevar(scope, variable\_name)
 
 ## 📥 Argument d'entrée
 
 - scope - une chaîne : 'global', 'base', 'caller', 'local'.
-- variable_name - une chaîne : nom du symbole à chercher.
+- variable\_name - une chaîne : nom du symbole à chercher.
 
 ## 📤 Argument de sortie
 
@@ -17,9 +17,12 @@ Récupère la valeur d'une variable depuis une portée de variables spécifiée.
 
 ## 📄 Description
 
+
 <b>acquirevar</b> cherche un symbole dans une portée spécifique et copie sa valeur dans la portée courante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
  Y = 'variable in base scope';
@@ -29,14 +32,15 @@ end
 myfun()
 ```
 
+
 ## 🔗 Voir aussi
 
 [assignin](../memory_manager/assignin.md), [who](../memory_manager/who.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

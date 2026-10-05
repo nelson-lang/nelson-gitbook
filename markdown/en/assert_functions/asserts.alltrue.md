@@ -18,7 +18,8 @@ Check that every logical entry is true.
 
 ## 📄 Description
 
-The assertion passes when every logical entry is true.
+
+The assertion passes when every logical entry is true. 
 
 Non-logical inputs raise an argument error immediately.
 
@@ -29,12 +30,12 @@ All true
 ```matlab
 asserts.alltrue([true true]);
 ```
-
 Capture a false entry
 
 ```matlab
 [res, msg] = asserts.alltrue([true false]);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a false entry
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

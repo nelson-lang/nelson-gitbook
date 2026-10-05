@@ -26,18 +26,21 @@ Mixed-integer linear programming.
 
 ## 📄 Description
 
-<b>intlinprog</b> solves linear optimization problems where selected variables are integer-valued. Nelson uses HiGHS when available.
 
-The accepted problem structure can contain solver, f, intcon, Aineq or A, bineq or b, Aeq, beq, lb, ub, x0 and options fields.
+<b>intlinprog</b> solves linear optimization problems where selected variables are integer-valued. Nelson uses HiGHS when available. 
 
-The <b>output</b> structure reports relative and absolute gap, number of feasible points, node count, constraint violation, iterations, elapsed time, algorithm, normalized backend status, primal solution status and backend message. The <b>exitflag</b> distinguishes optimal, infeasible, unbounded, limit-reached and early-stop statuses when the backend provides that status.
+The accepted problem structure can contain solver, f, intcon, Aineq or A, bineq or b, Aeq, beq, lb, ub, x0 and options fields. 
+
+The <b>output</b> structure reports relative and absolute gap, number of feasible points, node count, constraint violation, iterations, elapsed time, algorithm, normalized backend status, primal solution status and backend message. The <b>exitflag</b> distinguishes optimal, infeasible, unbounded, limit-reached and early-stop statuses when the backend provides that status. 
 
 Options such as <b>MaxTime</b>, <b>MaxNodes</b>, <b>MaxIterations</b>, <b>MaxFeasiblePoints</b>, <b>AbsoluteGapTolerance</b>, <b>RelativeGapTolerance</b>, <b>IntegerTolerance</b>, <b>LPPreprocess</b>, <b>RootLPAlgorithm</b>, <b>Heuristics</b> and <b>CutGeneration</b> are mapped to HiGHS where possible. Recognized options without a direct backend equivalent are accepted and ignored.
 
 ## Used function(s)
 
+
     optimoptions
     prob2struct
+  
 
 ## 📚 Bibliography
 
@@ -46,6 +49,8 @@ Achterberg, T., Constraint Integer Programming, PhD thesis, Technische Universit
 Nemhauser, G. L. and Wolsey, L. A., Integer and Combinatorial Optimization, Wiley, 1988.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = [8; 1];
@@ -57,13 +62,14 @@ opts = optimoptions('intlinprog', 'Display', 'off');
 
 ```
 
+
 ## 🔗 See also
 
 [linprog](../optimization/linprog.md), [optimoptions](../optimization/optimoptions.md), [prob2struct](../optimization/prob2struct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

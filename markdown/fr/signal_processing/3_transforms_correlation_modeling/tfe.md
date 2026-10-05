@@ -24,9 +24,12 @@ Wrapper de compatibilite pour estimation de fonction de transfert.
 
 ## 📄 Description
 
+
 <b>tfe</b> estime une fonction de transfert depuis des donnees d'entree et de sortie. Preferer <b>tfestimate</b> pour le nouveau code.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,14 +39,15 @@ y = filter([1 0.5], 1, u);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tfestimate](../../signal_processing/tfestimate.md), [pwelch](../../signal_processing/pwelch.md), [mscohere](../../signal_processing/mscohere.md).
+[tfestimate](../../signal_processing/3_transforms_correlation_modeling/tfestimate.md), [pwelch](../../signal_processing/5_spectral_analysis/pwelch.md), [mscohere](../../signal_processing/3_transforms_correlation_modeling/mscohere.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

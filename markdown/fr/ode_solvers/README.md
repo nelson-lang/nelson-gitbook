@@ -1,20 +1,30 @@
 # Resolution d'EDO
 
+
+    
 Le module ODE Solvers fournit des fonctions d'integration en temps pour les problemes differentiels explicites, raides et implicites dans Nelson.
 
+    
 Il inclut les points d'entree des solveurs, les wrappers pour equations a retard et problemes aux limites, la gestion des options, l'interpolation, l'extension des solutions, la detection d'evenements et les definitions de problemes orientees objet.
 
+    
 Quand le backend optionnel SUNDIALS est construit, le workflow objet peut aussi selectionner des valeurs de solveur CVODES et IDAS.
 
+    
 Le module vise les experiences numeriques, les simulations et les exemples pedagogiques qui demandent une configuration compacte et des objets de resultats reproductibles.
 
+    
 Les tutoriels couvrent le choix du solveur, les evenements, les tolerances, les matrices de masse, les equations implicites, les equations a retard, les problemes aux limites, l'interpolation, l'extension, les workflows objet et les etats complexes.
 
-| Domaine                                     | Entrees principales                                                            |
-| ------------------------------------------- | ------------------------------------------------------------------------------ |
-| Problemes a valeur initiale                 | **ode23**, **ode45**, **ode78**, **ode89**, **ode113**, **ode15s**, **ode15i** |
-| Equations a retard et problemes aux limites | **dde23**, **ddesd**, **ddensd**, **bvp4c**, **bvp5c**                         |
-| Utilitaires                                 | **odeset**, **deval**, **odextend**, **ode**, **odeEvent**, **odeSensitivity** |
+    
+| Domaine | Entrees principales |
+| --- | --- |
+| Problemes a valeur initiale | **ode23**, **ode45**, **ode78**, **ode89**, **ode113**, **ode15s**, **ode15i** |
+| Equations a retard et problemes aux limites | **dde23**, **ddesd**, **ddensd**, **bvp4c**, **bvp5c** |
+| Utilitaires | **odeset**, **deval**, **odextend**, **ode**, **odeEvent**, **odeSensitivity** |
+
+
+  
 
 ## Functions
 
@@ -78,3 +88,4 @@ Les tutoriels couvrent le choix du solveur, les evenements, les tolerances, les 
 - [odeprint](odeprint.md) - Fonction de sortie EDO pour la console.
 - [odeset](odeset.md) - Creer ou modifier des options EDO.
 - [odextend](odextend.md) - Prolonger une solution EDO.
+

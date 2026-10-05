@@ -17,17 +17,20 @@ Palette de couleurs copper.
 
 ## 📄 Description
 
+
 <b>copper</b> retourne la palette de couleurs copper.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('copper');
 ```
-
 <img src="copper.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('copper');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

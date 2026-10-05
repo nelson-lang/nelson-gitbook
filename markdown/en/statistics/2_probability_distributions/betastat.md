@@ -18,17 +18,21 @@ Beta mean and variance
 
 ## 📄 Description
 
+
 <b>betastat</b> returns the mean and variance of the beta distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = betastat([1 2], [3 4]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

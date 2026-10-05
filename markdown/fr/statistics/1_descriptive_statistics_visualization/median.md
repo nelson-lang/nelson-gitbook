@@ -11,22 +11,25 @@ Valeur mediane des elements d'un tableau.
 
 ## 📄 Description
 
+
 <b>median</b> renvoie la valeur centrale des donnees triees selon la dimension choisie.
 
 ## 💡 Exemple
+
 
 ```matlab
 R = median([4 1 2 3])
 ```
 
+
 ## 🔗 Voir aussi
 
-[mean](../../statistics/mean.md), [sort](../../data_analysis/sort.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [sort](../../data_analysis/sort.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

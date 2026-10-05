@@ -12,7 +12,8 @@ Afficher des chemins de courant avec un style ruban.
 
 ## 📄 Description
 
-<b>streamribbon</b> affiche des chemins de courant 3-D sous forme de surfaces ruban.
+
+<b>streamribbon</b> affiche des chemins de courant 3-D sous forme de surfaces ruban. 
 
 <b>streamribbon(vertices, twistangle)</b> utilise des sommets de lignes de courant pre-calcules et un tableau de cellules d'angles de torsion. Les handles retournes sont des objets surface.
 
@@ -26,8 +27,8 @@ vertices = {[cos(t)' sin(t)' t']};
 twistangle = {cos(t)'};
 streamribbon(vertices, twistangle);
 ```
-
 <img src="streamribbon_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

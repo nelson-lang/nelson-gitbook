@@ -25,7 +25,8 @@ Afficher un trace en tiges 3-D.
 
 ## 📄 Description
 
-<b>stem3</b> affiche des tiges verticales de z = 0 aux valeurs de <b>Z</b>, avec des marqueurs aux sommets.
+
+<b>stem3</b> affiche des tiges verticales de z = 0 aux valeurs de <b>Z</b>, avec des marqueurs aux sommets. 
 
 L'objet retourne est un objet graphique <b>stem</b>. Voir [nelson.graphics.stem.properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.stem.properties.md) pour les proprietes prises en charge.
 
@@ -37,7 +38,6 @@ Afficher un trace en tiges 3-D depuis une matrice.
 Z = peaks(8);
 stem3(Z);
 ```
-
 <img src="stem3_1.svg" align="middle"/>
 Specifier les coordonnees et remplir les marqueurs.
 
@@ -45,8 +45,8 @@ Specifier les coordonnees et remplir les marqueurs.
 t = 0:0.2:2*pi;
 stem3(cos(t), sin(t), t, 'r--', 'filled');
 ```
-
 <img src="stem3_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

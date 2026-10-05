@@ -1,24 +1,25 @@
-# MPI_Send
+# MPI\_Send
 
 Effectue un envoi bloquant.
 
 ## 📝 Syntaxe
 
-- MPI_Send(A, destination, tag)
-- MPI_Send(A, destination, tag, comm)
+- MPI\_Send(A, destination, tag)
+- MPI\_Send(A, destination, tag, comm)
 
 ## 📥 Argument d'entrée
 
 - A - un tableau Nelson à envoyer.
 - destination - entier : rang de la destination.
 - tag - entier : tag du message.
-- comm - a MPI_Comm object.
+- comm - a MPI\_Comm object.
 
 ## 📄 Description
 
-Cette fonction envoie un tableau à un nœud destination sur un communicateur donné avec un tag spécifique.
 
-Notez qu'un receive correspondant doit être effectué par le nœud de destination.
+Cette fonction envoie un tableau à un nœud destination sur un communicateur donné avec un tag spécifique. 
+
+Notez qu'un receive correspondant doit être effectué par le nœud de destination. 
 
 Lance une exception en cas d'erreur.
 
@@ -52,14 +53,15 @@ if MPI_Initialized()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Recv](../mpi/MPI_Recv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

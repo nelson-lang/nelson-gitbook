@@ -1,15 +1,15 @@
-# QObject_undefine
+# QObject\_undefine
 
 Supprime une propriété dynamique d'une poignée (handle) QObject.
 
 ## 📝 Syntaxe
 
-- QObject_undefine(h, property_name)
+- QObject\_undefine(h, property\_name)
 
 ## 📥 Argument d'entrée
 
 - h - an QObject handle.
-- property_name - a string : dynamic property name.
+- property\_name - a string : dynamic property name.
 
 ## 📤 Argument de sortie
 
@@ -17,9 +17,12 @@ Supprime une propriété dynamique d'une poignée (handle) QObject.
 
 ## 📄 Description
 
+
 Supprime une propriété dynamique d'une poignée (handle) QObject.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h = errordlg()
@@ -30,14 +33,15 @@ QObject_undefine(h, 'myProp')
 get(h, 'myProp')
 ```
 
+
 ## 🔗 Voir aussi
 
 [QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

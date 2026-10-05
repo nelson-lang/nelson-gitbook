@@ -19,11 +19,14 @@ Convertit un nombre décimal vers une autre base.
 
 ## 📄 Description
 
-<b>dec2base</b> convertit un nombre décimal vers une autre base.
+
+<b>dec2base</b> convertit un nombre décimal vers une autre base. 
 
 Des valeurs sont mises en cache pour accélérer les calculs ultérieurs ; utiliser<b>dec2base([], 2)</b> pour vider le cache.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [65535 128; 1 0]
@@ -32,14 +35,15 @@ Y = dec2base(X, 2, 26)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[base2dec](../../elementary_functions/base2dec.md).
+[base2dec](../../elementary_functions/5_base_conversions/base2dec.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -21,9 +21,12 @@ Create sphere.
 
 ## 📄 Description
 
+
 <b>sphere</b> creates sphere and plots it.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -44,8 +47,8 @@ sphere(ax3,100);
 axis equal
 title('100-by-100 faces');
 ```
-
 <img src="sphere.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -53,7 +56,7 @@ title('100-by-100 faces');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

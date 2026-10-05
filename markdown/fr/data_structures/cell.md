@@ -23,13 +23,16 @@ Créer un tableau cellulaire de matrices vides.
 
 ## 📄 Description
 
-<b>cell</b> renvoie un tableau cellulaire de matrices vides.
 
-<b>cell()</b> est équivalent à <b>cell(0)</b>
+<b>cell</b> renvoie un tableau cellulaire de matrices vides. 
+
+<b>cell()</b> est équivalent à <b>cell(0)</b> 
 
 <b>cell(A)</b> avec A un tableau de chaînes convertit en cell.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = eye(2, 4);
@@ -37,10 +40,12 @@ sz = size(A)
 C = cell(sz)
 ```
 
+
 ```matlab
 A = ["Nel", "son"; "open", "source"];
 C = cell(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -48,8 +53,8 @@ C = cell(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

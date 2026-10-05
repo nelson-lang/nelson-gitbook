@@ -16,13 +16,16 @@ Vérifie si le dictionnaire contient la clé
 
 ## 📄 Description
 
-<b>tf = isKey(d, key)</b> renvoie true logique si la clé spécifiée existe dans le dictionnaire configuré, et false logique si elle n'existe pas.
 
-Si <b>d</b> est un dictionnaire non configuré, <b>isKey</b> lève une erreur.
+<b>tf = isKey(d, key)</b> renvoie true logique si la clé spécifiée existe dans le dictionnaire configuré, et false logique si elle n'existe pas. 
+
+Si <b>d</b> est un dictionnaire non configuré, <b>isKey</b> lève une erreur. 
 
 Si <b>key</b> est un tableau de plusieurs clés, alors tf est un tableau logique de la même taille.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -32,14 +35,15 @@ tf = isKey(d, "John")
 tf = isKey(d, ["biil" , "Yannis")
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [configureDictionary](../dictionary/configureDictionary.md), [keys](../dictionary/keys.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

@@ -14,9 +14,12 @@ Set surface and patch lighting mode.
 
 ## 📄 Description
 
+
 <b>lighting</b> sets <b>FaceLighting</b> and <b>EdgeLighting</b> on surface and patch children in axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -25,8 +28,8 @@ light();
 lighting gouraud;
 
 ```
-
 <img src="lighting_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -34,7 +37,7 @@ lighting gouraud;
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

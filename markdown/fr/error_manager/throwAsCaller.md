@@ -12,9 +12,12 @@ Lancer une exception comme si elle se produisait dans la fonction appelante.
 
 ## 📄 Description
 
+
 Elle lance une exception comme si elle se produisait dans la fonction appelante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -23,14 +26,15 @@ function test_throwAsCaller()
   throwAsCaller(ME)
 ```
 
+
 ## 🔗 Voir aussi
 
 [MException](../error_manager/MException.md), [rethrow](../error_manager/rethrow.md), [throw](../error_manager/throw.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

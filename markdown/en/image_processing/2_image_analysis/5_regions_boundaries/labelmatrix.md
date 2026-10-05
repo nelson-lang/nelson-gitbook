@@ -16,6 +16,7 @@ Create label matrix from connected components.
 
 ## 📄 Description
 
+
 Create label matrix from connected components.
 
 ## 💡 Example
@@ -28,16 +29,16 @@ CC=bwconncomp(BW);
 L=labelmatrix(CC);
 figure; imagesc(L); title('Label matrix');
 ```
-
 <img src="labelmatrix_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[bwconncomp](../../../image_processing/bwconncomp.md), [bwlabel](../../../image_processing/bwlabel.md), [regionprops](../../../image_processing/regionprops.md).
+[bwconncomp](../../../image_processing/2_image_analysis/5_regions_boundaries/bwconncomp.md), [bwlabel](../../../image_processing/2_image_analysis/5_regions_boundaries/bwlabel.md), [regionprops](../../../image_processing/2_image_analysis/5_regions_boundaries/regionprops.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -21,6 +21,7 @@ Register a moving image to a fixed image.
 
 ## 📄 Description
 
+
 imregister estimates a 2-D transform with imregtform and resamples the moving image on the fixed image grid with imwarp. Supported interpolation methods are nearest, linear, bilinear and cubic.
 
 ## 💡 Example
@@ -36,16 +37,16 @@ figure; subplot(1,3,1); imagesc(I); axis image; title('Moving');
 subplot(1,3,2); imagesc(J); axis image; title('Fixed');
 subplot(1,3,3); imagesc(K); axis image; title('Registered');
 ```
-
 <img src="imregister_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imregconfig](../../../image_processing/imregconfig.md), [imregcorr](../../../image_processing/imregcorr.md), [imregtform](../../../image_processing/imregtform.md), [imwarp](../../../image_processing/imwarp.md).
+[imregconfig](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregconfig.md), [imregcorr](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregcorr.md), [imregtform](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregtform.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

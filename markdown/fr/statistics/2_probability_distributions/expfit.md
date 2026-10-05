@@ -24,23 +24,27 @@ Estimation de la moyenne exponentielle
 
 ## 📄 Description
 
+
 <b>expfit</b> estime le parametre de moyenne de la loi exponentielle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [phat, pci] = expfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[explike](../../statistics/explike.md), [exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md).
+[explike](../../statistics/2_probability_distributions/explike.md), [exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

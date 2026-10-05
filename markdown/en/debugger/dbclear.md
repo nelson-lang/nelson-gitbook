@@ -15,11 +15,12 @@ Remove breakpoints during debugging.
 
 ## 📄 Description
 
-<b>dbclear</b> removes breakpoints set for debugging. You can clear all breakpoints, breakpoints in a specific file, breakpoints at a specific location.
 
-<b>dbclear all</b> removes all breakpoints in all files and for all conditions.
+<b>dbclear</b> removes breakpoints set for debugging. You can clear all breakpoints, breakpoints in a specific file, breakpoints at a specific location. 
 
-<b>dbclear in file</b> removes all breakpoints in the specified file.
+<b>dbclear all</b> removes all breakpoints in all files and for all conditions. 
+
+<b>dbclear in file</b> removes all breakpoints in the specified file. 
 
 <b>dbclear in file at location</b> removes the breakpoint at the specified location in the file.
 
@@ -36,7 +37,6 @@ dbclear in buggy
 dbstatus
 
 ```
-
         Clear a breakpoint at a specific location.
 
 ```matlab
@@ -48,15 +48,16 @@ dbstatus
 
 ```
 
+
 ## 🔗 See also
 
 [dbstop](../debugger/dbstop.md), [dbstatus](../debugger/dbstatus.md), [dbquit](../debugger/dbquit.md), [dbstack](../debugger/dbstack.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

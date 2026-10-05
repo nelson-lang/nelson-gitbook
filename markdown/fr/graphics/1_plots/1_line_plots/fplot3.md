@@ -23,6 +23,7 @@ Tracer une courbe parametrique 3-D depuis des handles de fonctions.
 
 ## 📄 Description
 
+
 <b>fplot3</b> echantillonne trois handles de fonctions sur un intervalle de parametre et affiche la courbe 3-D obtenue.
 
 ## 💡 Exemples
@@ -32,15 +33,14 @@ Tracer une helice.
 ```matlab
 fplot3(@(t) cos(t), @(t) sin(t), @(t) t, [0 6*pi]);
 ```
-
 <img src="fplot3_1.svg" align="middle"/>
 Personnaliser le style de ligne.
 
 ```matlab
 fplot3(@(t) t, @(t) t.^2, @(t) t.^3, [-2 2], 'r--', 'LineWidth', 2);
 ```
-
 <img src="fplot3_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

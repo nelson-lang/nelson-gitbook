@@ -16,14 +16,18 @@ Hyperbolic cotangent.
 
 ## 📄 Description
 
+
 <b>csch</b> computes the hyperbolic cotangent for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = coth(X)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ R = coth(X)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

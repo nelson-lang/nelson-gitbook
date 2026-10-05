@@ -16,7 +16,8 @@ Convertir du texte en minuscules.
 
 ## 📄 Description
 
-lower convertit les tableaux de caracteres, les chaines et les tableaux de chaines en minuscules.
+
+lower convertit les tableaux de caracteres, les chaines et les tableaux de chaines en minuscules. 
 
 La forme du texte d'entree est conservee dans le resultat.
 
@@ -28,14 +29,15 @@ Convertir une chaine en minuscules.
 txt = lower("NelSon")
 ```
 
+
 ## 🔗 Voir aussi
 
-[upper](../../string/upper.md), [tolower](../../string/tolower.md).
+[upper](../../string/7_edit_text/upper.md), [tolower](../../string/7_edit_text/tolower.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

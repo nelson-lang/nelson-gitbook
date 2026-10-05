@@ -12,13 +12,17 @@ get user name currently used.
 
 ## 📄 Description
 
+
 <b>username</b> get user name currently used.
 
 ## 💡 Example
 
+
+
 ```matlab
 username()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ username()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

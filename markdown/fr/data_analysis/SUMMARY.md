@@ -18,9 +18,10 @@ Resumer les variables de table ou les valeurs categorielles.
 
 ## 📄 Description
 
-<b>summary</b> retourne la taille et le type de chaque variable de table.
 
-Les variables numeriques de table incluent aussi le minimum, le maximum, la moyenne, la mediane, l'ecart type et le nombre de valeurs manquantes.
+<b>summary</b> retourne la taille et le type de chaque variable de table. 
+
+Les variables numeriques de table incluent aussi le minimum, le maximum, la moyenne, la mediane, l'ecart type et le nombre de valeurs manquantes. 
 
 Pour les tableaux categoriels, <b>summary</b> affiche le nombre d'elements pour chaque categorie et pour les valeurs non definies.
 
@@ -32,7 +33,6 @@ Resumer une table.
 T = table([1; 2; 3], ["a"; "b"; "c"], 'VariableNames', {'A', 'Label'});
 S = summary(T)
 ```
-
 Afficher les comptes categoriels.
 
 ```matlab
@@ -40,14 +40,15 @@ A = categorical({'red','blue','red',''});
 summary(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[table](../table/table.md), [categorical](../categorical/categorical.md), [countcats](../categorical/countcats.md).
+[table](../table/1_create_convert_tables/table.md), [categorical](../categorical/categorical.md), [countcats](../categorical/countcats.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

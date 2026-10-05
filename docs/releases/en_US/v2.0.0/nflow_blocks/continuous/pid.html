@@ -19,7 +19,7 @@
 </head>
 <body>
 <a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pid</span></div></div>
-<div class="section" style="text-align:center;"><img src="./pid.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section" style="text-align:center;"><img src="./pid.svg" align="middle" style="max-width:192px;max-height:144px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
 <div class="section syntax-section"><div class="subtitle">Implements a scalar PID controller with output limits.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
@@ -863,7 +863,7 @@ Nelson::NFlow::getCodeGenCPid()
             + a.fmt(ki) + ", " + a.fmt(kd) + ", " + nflow::formatNumber(minV) + ", "
             + nflow::formatNumber(maxV) + ", " + a.fmt(nV) + " };");
     };
-    // Unified variable-step codegen (roadmap 5.3): the integral is one scalar
+    // Unified variable-step codegen: the integral is one scalar
     // continuous state (integral' = u, hold-at-limit + post-step clamp if
     // bounded, exactly like the integrator). The output is P + I from the
     // continuous integral; the derivative term (kd) is a discrete backward
@@ -975,7 +975,7 @@ Nelson::NFlow::getCodeGenRustPid()
         }
         a.addConst("const PID_N_" + cu + ": f64 = " + a.fmt(nV) + ";");
     };
-    // Unified variable-step codegen (roadmap 5.3), Rust backend: one scalar
+    // Unified variable-step codegen, Rust backend: one scalar
     // continuous integral state (integral' = u, hold-at-limit + clamp if bounded).
     // Output = P + I from the continuous integral; the discrete kd term is dropped
     // under variable-step (matches the interpreter's OUTPUT phase).

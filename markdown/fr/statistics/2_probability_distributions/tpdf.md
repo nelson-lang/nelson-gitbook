@@ -17,23 +17,27 @@ Densite de probabilite de Student t
 
 ## 📄 Description
 
+
 <b>tpdf</b> calcule les valeurs de densite de probabilite de Student t. Les entrees scalaires sont etendues a la taille des tableaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-3 -1 0 1 3];
 y = tpdf(x, 5);
 ```
 
+
 ## 🔗 Voir aussi
 
-[tcdf](../../statistics/tcdf.md), [tinv](../../statistics/tinv.md).
+[tcdf](../../statistics/2_probability_distributions/tcdf.md), [tinv](../../statistics/2_probability_distributions/tinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -16,25 +16,29 @@ Logarithme décimal (base 10).
 
 ## 📄 Description
 
-<b>log10</b> calcule le logarithme décimal (base 10).
+
+<b>log10</b> calcule le logarithme décimal (base 10). 
 
 Pour les valeurs réelles négatives et les valeurs complexes de M, la fonction<b>log10</b> renvoie des valeurs complexes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = log10(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[log](../../elementary_functions/log.md).
+[log](../../elementary_functions/2_elementary_math/log.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

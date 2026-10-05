@@ -26,9 +26,12 @@ Change la frequence d'echantillonnage par un facteur rationnel.
 
 ## 📄 Description
 
+
 <b>resample</b> change la frequence d'un signal en filtrant entre surechantillonnage et sous-echantillonnage.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -36,14 +39,15 @@ y = resample(1:10, 3, 2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[upfirdn](../../signal_processing/upfirdn.md), [decimate](../../signal_processing/decimate.md).
+[upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md), [decimate](../../signal_processing/1_signal_generation_preprocessing/decimate.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

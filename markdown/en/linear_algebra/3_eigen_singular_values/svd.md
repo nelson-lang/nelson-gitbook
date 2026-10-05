@@ -22,41 +22,52 @@ Singular Value Decomposition.
 
 ## 📄 Description
 
-<b>svd</b> computes the Singular Value Decomposition of a matrix.
 
-For an
+<b>svd</b> computes the Singular Value Decomposition of a matrix. 
+
+For an 
 $$m \times n$$
+ 
 
-matrix <b>M</b>, the SVD is:
+matrix <b>M</b>, the SVD is: 
 $$M = U\Sigma V^T$$
+ 
 
-where:
+where: 
 
-- $$U$$
-  is an
-  $$m \times m$$
+- 
+$$U$$
+is an 
+$$m \times m$$
+ 
 
-unitary matrix (left singular vectors)
+unitary matrix (left singular vectors) 
+- 
+$$\Sigma$$
+is an 
+$$m \times n$$
+ 
 
-- $$\Sigma$$
-  is an
-  $$m \times n$$
+diagonal matrix with non-negative real numbers (singular values) 
+- 
+$$V^T$$
+is an 
+$$n \times n$$
+ 
 
-diagonal matrix with non-negative real numbers (singular values)
+unitary matrix (right singular vectors) 
 
-- $$V^T$$
-  is an
-  $$n \times n$$
-
-unitary matrix (right singular vectors)
-
-The singular values
+The singular values 
 $$\sigma_i$$
+ 
 
-are arranged in decreasing order:
+are arranged in decreasing order: 
 $$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$
 
+
 ## 💡 Example
+
+
 
 ```matlab
 X = eye(3, 3);
@@ -64,13 +75,14 @@ s = svd(X)
 [U, S, V] = svd(X)
 ```
 
+
 ## 🔗 See also
 
-[eig](../../linear_algebra/eig.md).
+[eig](../../linear_algebra/3_eigen_singular_values/eig.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -21,7 +21,8 @@ Verifie qu'une commande leve une erreur attendue.
 
 ## 📄 Description
 
-L'assertion reussit seulement lorsque la commande leve l'erreur attendue.
+
+L'assertion reussit seulement lorsque la commande leve l'erreur attendue. 
 
 Utiliser asserts.throws quand seule une sous-chaine du message doit correspondre.
 
@@ -32,12 +33,12 @@ Check an expected error
 ```matlab
 asserts.checkerror('cos', _('Wrong number of input arguments.'));
 ```
-
 Capture missing error
 
 ```matlab
 [res, msg] = asserts.checkerror('1 + 1', _('unused'));
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,8 +46,8 @@ Capture missing error
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -4,13 +4,16 @@ conditional statement.
 
 ## 📝 Syntax
 
-- if conditional_expression_1, statements_1, elseif conditional_expression_2, statements_2, else statements_N end
+- if conditional\_expression\_1, statements\_1, elseif conditional\_expression\_2, statements\_2, else statements\_N end
 
 ## 📄 Description
+
 
 <b>if</b> and<b>else</b> statements form a control structure for conditional execution.
 
 ## 💡 Example
+
+
 
 ```matlab
 i = 0;
@@ -23,13 +26,14 @@ else
 end
 ```
 
+
 ## 🔗 See also
 
 [for](../interpreter/for.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

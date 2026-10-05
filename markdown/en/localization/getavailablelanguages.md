@@ -12,13 +12,17 @@ Returns available languages in Nelson.
 
 ## 📄 Description
 
+
 <b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.
 
 ## 💡 Example
 
+
+
 ```matlab
 getavailablelanguages()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ getavailablelanguages()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

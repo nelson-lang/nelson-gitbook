@@ -19,7 +19,8 @@ Force an assertion failure.
 
 ## 📄 Description
 
-Use this assertion to mark an execution path that must not be reached.
+
+Use this assertion to mark an execution path that must not be reached. 
 
 With outputs, no error is raised and res is false.
 
@@ -30,12 +31,12 @@ Capture a forced failure
 ```matlab
 [res, msg] = asserts.fail('unreachable branch');
 ```
-
 Raise a forced failure
 
 ```matlab
 try; asserts.fail('unreachable branch'); catch ME; disp(ME.message); end
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ try; asserts.fail('unreachable branch'); catch ME; disp(ME.message); end
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

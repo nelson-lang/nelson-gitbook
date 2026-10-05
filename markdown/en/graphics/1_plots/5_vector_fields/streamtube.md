@@ -12,7 +12,8 @@ Display stream paths with tube-like line styling.
 
 ## 📄 Description
 
-<b>streamtube</b> displays 3-D stream paths as tube surfaces.
+
+<b>streamtube</b> displays 3-D stream paths as tube surfaces. 
 
 <b>streamtube(vertices)</b> uses precomputed streamline vertices. The returned handles are surface objects.
 
@@ -25,8 +26,8 @@ t = 0:.15:2;
 vertices = {[cos(t)' sin(t)' t']};
 streamtube(vertices);
 ```
-
 <img src="streamtube_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

@@ -15,11 +15,14 @@
 
 ## 📄 Description
 
-writestruct crée un document XML depuis une structure et l'écrit dans un fichier.
+
+writestruct crée un document XML depuis une structure et l'écrit dans un fichier. 
 
 Les champs dont le nom se termine par le suffixe d'attribut sont écrits comme attributs. Les tableaux de structures produisent des éléments XML répétés.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 s = struct();
@@ -30,14 +33,15 @@ writestruct(s, filename, 'StructNodeName', 'root');
 fileread(filename)
 ```
 
+
 ## 🔗 Voir aussi
 
 [readstruct](../xml/readstruct.md), [xmlwrite](../xml/xmlwrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -20,9 +20,12 @@ Minimum order for a Chebyshev type I filter.
 
 ## 📄 Description
 
+
 <b>cheb1ord</b> estimates an order and cutoff for Chebyshev type I filter design.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,13 +33,14 @@ Minimum order for a Chebyshev type I filter.
 
 ```
 
+
 ## 🔗 See also
 
-[cheby1](../../signal_processing/cheby1.md), [buttord](../../signal_processing/buttord.md).
+[cheby1](../../signal_processing/4_digital_filters/cheby1.md), [buttord](../../signal_processing/4_digital_filters/buttord.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

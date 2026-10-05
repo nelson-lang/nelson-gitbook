@@ -25,9 +25,12 @@ RÃ©ponse impulsionnelle d'un systÃ¨me dynamique.
 
 ## 📄 Description
 
+
 Calcule et trace la rÃ©ponse impulsionnelle du systÃ¨me dynamique pour un signal impulsionnel appliquÃ© en entrÃ©e.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sys = tf(4,[1 2 10]);
@@ -35,17 +38,17 @@ t = 0:0.05:5;
 f = figure();
 impulse(sys,t);
 ```
-
 <img src="impulse.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[step](../../control_system/step.md), [lsim](../../control_system/lsim.md).
+[step](../../control_system/4_time_frequency_response/step.md), [lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

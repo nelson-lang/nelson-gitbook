@@ -20,11 +20,14 @@ charge des données depuis un fichier .nh5 dans l'espace de travail de Nelson.
 
 ## 📄 Description
 
-<b>loadnh5</b> charge des données d'un fichier .nh5 dans l'espace de travail de Nelson.
+
+<b>loadnh5</b> charge des données d'un fichier .nh5 dans l'espace de travail de Nelson. 
 
 Le fichier .nh5 utilise un conteneur HDF5.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -43,14 +46,15 @@ A
 B
 ```
 
+
 ## 🔗 Voir aussi
 
 [savenh5](../hdf5/savenh5.md), [h5read](../hdf5/h5read.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

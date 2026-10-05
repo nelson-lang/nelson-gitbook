@@ -16,13 +16,16 @@ Corrige une erreur en ajoutant des arguments manquants.
 
 ## 📄 Description
 
-Utilisez les objets <b>nelson.lang.correction.AppendArgumentsCorrection</b> dans les fonctions qui levent un objet MException.
 
-<b>correction = nelson.lang.correction.AppendArgumentsCorrection(arguments)</b> cree une correction qui suggere d'ajouter les arguments d'entree <b>arguments</b> a l'appel de fonction qui a leve l'objet MException.
+Utilisez les objets <b>nelson.lang.correction.AppendArgumentsCorrection</b> dans les fonctions qui levent un objet MException. 
+
+<b>correction = nelson.lang.correction.AppendArgumentsCorrection(arguments)</b> cree une correction qui suggere d'ajouter les arguments d'entree <b>arguments</b> a l'appel de fonction qui a leve l'objet MException. 
 
 La propriete en lecture seule <b>Arguments</b> contient les arguments suggeres.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 ME = MException('nelson:notEnoughInputs', 'Not enough input arguments.');
@@ -31,14 +34,15 @@ ME = addCorrection(ME, correction)
 ME.Correction.Arguments
 ```
 
+
 ## 🔗 Voir aussi
 
 [addCorrection](../error_manager/addCorrection.md), [nelson.lang.correction.ConvertToFunctionNotationCorrection](../error_manager/nelson.lang.correction.ConvertToFunctionNotationCorrection.md), [nelson.lang.correction.ReplaceIdentifierCorrection](../error_manager/nelson.lang.correction.ReplaceIdentifierCorrection.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

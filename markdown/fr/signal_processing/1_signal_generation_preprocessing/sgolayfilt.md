@@ -22,9 +22,12 @@ Filtre de lissage Savitzky-Golay.
 
 ## 📄 Description
 
+
 <b>sgolayfilt</b> lisse les donnees avec des coefficients FIR Savitzky-Golay.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ y = sgolayfilt([1 2 3 2 1], 2, 5);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[sgolay](../../signal_processing/sgolay.md), [medfilt1](../../signal_processing/medfilt1.md).
+[sgolay](../../signal_processing/1_signal_generation_preprocessing/sgolay.md), [medfilt1](../../signal_processing/1_signal_generation_preprocessing/medfilt1.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

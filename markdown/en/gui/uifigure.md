@@ -17,7 +17,8 @@ Create a figure for app-style user interfaces.
 
 ## 📄 Description
 
-uifigure creates a graphics figure configured for interface-oriented dialogs and controls. The returned handle can be used with get, set, close, delete, and as the parent for UI dialog functions.
+
+uifigure creates a graphics figure configured for interface-oriented dialogs and controls. The returned handle can be used with get, set, close, delete, and as the parent for UI dialog functions. 
 
 Supported properties are the figure properties available in Nelson, including 'Name', 'Position', 'Visible', 'WindowStyle', 'Resize', 'Color', 'Tag', and callback properties.
 
@@ -32,7 +33,6 @@ uibutton(f, 'Text', 'Run', 'Position', [80 95 100 30]);
 uislider(f, 'Position', [210 110 150 3], 'Value', 55);
 drawnow();
 ```
-
 <img src="uifigure_example.svg" align="middle"/>
 Create a named modal UI figure.
 
@@ -42,14 +42,15 @@ f.Name
 close(f)
 ```
 
+
 ## 🔗 See also
 
 [dialog](../gui/dialog.md), [uialert](../gui/uialert.md), [uiconfirm](../gui/uiconfirm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                  |
-| ------- | ------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Introduced app-style UI figure. |
 
 <!--

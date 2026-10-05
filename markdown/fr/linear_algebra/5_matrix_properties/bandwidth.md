@@ -19,9 +19,12 @@ Largeur de bande inférieure et supérieure d'une matrice.
 
 ## 📄 Description
 
+
 <b>[lower, upper] = bandwidth(A)</b> retourne les largeurs de bande inférieure <b>lower</b> et supérieure <b>upper</b> de la matrice <b>A</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = [10 -20 40; -50 20 0; 10 0 30]
@@ -29,14 +32,15 @@ M = [10 -20 40; -50 20 0; 10 0 30]
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[isbanded](../../linear_algebra/isbanded.md).
+[isbanded](../../linear_algebra/5_matrix_properties/isbanded.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,24 +16,28 @@ Convertit un nombre en base 2 en décimal.
 
 ## 📄 Description
 
-<b>bin2dec</b> convertit un nombre en base 2 en décimal.
+
+<b>bin2dec</b> convertit un nombre en base 2 en décimal. 
 
 Remarque : <b>bin2dec</b> et<b>dec2bin</b> sont des opérations réciproques.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 bin2dec('11')
 ```
 
+
 ## 🔗 Voir aussi
 
-[dec2bin](../../elementary_functions/dec2bin.md).
+[dec2bin](../../elementary_functions/5_base_conversions/dec2bin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

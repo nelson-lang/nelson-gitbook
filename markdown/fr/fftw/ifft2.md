@@ -19,13 +19,17 @@ Transformee de Fourier inverse rapide 2-D.
 
 ## 📄 Description
 
+
 <b>ifft2</b> retourne la transformee de Fourier inverse bidimensionnelle de <b>X</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 X = magic(3); Y = ifft2(fft2(X))
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,7 +37,7 @@ X = magic(3); Y = ifft2(fft2(X))
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

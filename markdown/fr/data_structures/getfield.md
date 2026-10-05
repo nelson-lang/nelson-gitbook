@@ -17,9 +17,12 @@ Renvoie la valeur d'un champ dans un struct.
 
 ## 📄 Description
 
+
 <b>value = getfield(st, field)</b> renvoie la valeur du champ nommé <b>field</b> d'une structure.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 example.a = 1
@@ -28,14 +31,15 @@ example.c = []
 getfield(example, 'b')
 ```
 
+
 ## 🔗 Voir aussi
 
 [struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

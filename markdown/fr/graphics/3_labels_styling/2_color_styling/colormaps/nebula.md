@@ -17,9 +17,12 @@ Palette de couleurs Nebula.
 
 ## 📄 Description
 
+
 <b>nebula</b> retourne la palette de couleurs Nebula.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -30,8 +33,8 @@ imagesc(peaks(100));
 colorbar;
 title(['Nebula Colormap with ', num2str(n), ' Colors']);
 ```
-
 <img src="nebula.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -39,9 +42,9 @@ title(['Nebula Colormap with ', num2str(n), ' Colors']);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.14.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.14.0   | version initiale |
 
 <!--
 ## 👤 Auteur

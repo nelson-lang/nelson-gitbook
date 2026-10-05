@@ -19,6 +19,7 @@ Crée un témoin lumineux (lamp).
 
 ## 📄 Description
 
+
 <b>lmp = uilamp</b> crée un témoin circulaire d'affichage dont la <b>Color</b> reflète un état.
 
 ## 💡 Exemples
@@ -32,7 +33,6 @@ lmp = uilamp(f, 'Position', [235 122 20 20]);
 lmp.Color = 'green';
 drawnow();
 ```
-
 <img src="uilamp_example.svg" align="middle"/>
 uilamp
 
@@ -43,13 +43,14 @@ lmp = uilamp(f, 'Color', 'red');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

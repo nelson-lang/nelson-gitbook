@@ -19,22 +19,26 @@ Discrete uniform maximum estimate
 
 ## 📄 Description
 
+
 <b>unidfit</b> estimates the maximum value of a discrete uniform distribution on integers from 1 to n.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1 2 4 5 5];
 [nHat, nCI] = unidfit(x);
 ```
 
+
 ## 🔗 See also
 
-[unidlike](../../statistics/unidlike.md), [unidpdf](../../statistics/unidpdf.md), [unidcdf](../../statistics/unidcdf.md), [unidrnd](../../statistics/unidrnd.md).
+[unidlike](../../statistics/2_probability_distributions/unidlike.md), [unidpdf](../../statistics/2_probability_distributions/unidpdf.md), [unidcdf](../../statistics/2_probability_distributions/unidcdf.md), [unidrnd](../../statistics/2_probability_distributions/unidrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

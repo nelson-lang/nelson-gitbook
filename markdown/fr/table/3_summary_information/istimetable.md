@@ -16,9 +16,12 @@ Determiner si l'entree est une timetable.
 
 ## 📄 Description
 
+
 <b>istimetable(A)</b> renvoie vrai quand <b>A</b> est une timetable.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:1)';
@@ -26,14 +29,15 @@ TT = timetable(t, [1; 2]);
 istimetable(TT)
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable](../../table/timetable.md), [istabular](../../table/istabular.md).
+[timetable](../../table/1_create_convert_tables/timetable.md), [istabular](../../table/3_summary_information/istabular.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

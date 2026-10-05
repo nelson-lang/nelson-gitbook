@@ -25,17 +25,18 @@ Warp an image or volume using a numeric transform matrix.
 
 ## 📄 Description
 
-Warp an image using a numeric 3-by-3 projective matrix, 2-by-3 affine matrix, or a transform structure.
 
-An imref2d structure can be supplied after the image to define source world coordinates.
+Warp an image using a numeric 3-by-3 projective matrix, 2-by-3 affine matrix, or a transform structure. 
 
-Supported 2-D interpolation methods are nearest, linear, bilinear and cubic.
+An imref2d structure can be supplied after the image to define source world coordinates. 
 
-OutputView can be a size vector, same, full, or an imref2d structure.
+Supported 2-D interpolation methods are nearest, linear, bilinear and cubic. 
 
-FillValues can be scalar or one value per image channel, with numeric or logical values.
+OutputView can be a size vector, same, full, or an imref2d structure. 
 
-For 3-D volumes, imwarp accepts affine3d or a 4-by-4 affine matrix.
+FillValues can be scalar or one value per image channel, with numeric or logical values. 
+
+For 3-D volumes, imwarp accepts affine3d or a 4-by-4 affine matrix. 
 
 3-D calls support optional imref3d references, nearest or linear interpolation, and scalar FillValues.
 
@@ -50,8 +51,8 @@ J=imwarp(I,T,'Interpolation','nearest');
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Warped');
 ```
-
 <img src="imwarp_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -59,7 +60,7 @@ subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Warpe
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

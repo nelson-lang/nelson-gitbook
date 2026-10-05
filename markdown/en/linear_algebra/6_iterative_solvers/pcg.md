@@ -28,17 +28,20 @@ Preconditioned conjugate gradients method.
 
 ## 📄 Description
 
-<b>pcg</b> solves <b>A \* x = b</b> with the preconditioned conjugate gradients method.
 
-The method is intended for sparse symmetric or Hermitian positive definite systems.
+<b>pcg</b> solves <b>A \* x = b</b> with the preconditioned conjugate gradients method. 
 
-The method supports sparse double, single, complex double, and complex single matrices.
+The method is intended for sparse symmetric or Hermitian positive definite systems. 
 
-Preconditioners can be diagonal vectors, sparse triangular factors, sparse or dense square matrices, or function handles returning vectors. <b>ichol</b> factors can be supplied as <b>M1</b> and <b>M2</b>.
+The method supports sparse double, single, complex double, and complex single matrices. 
+
+Preconditioners can be diagonal vectors, sparse triangular factors, sparse or dense square matrices, or function handles returning vectors. <b>ichol</b> factors can be supplied as <b>M1</b> and <b>M2</b>. 
 
 Zero diagonal preconditioners and inconsistent dimensions are rejected before iteration.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = sparse([4 -1 0; -1 4 -1; 0 -1 3]);
@@ -46,6 +49,7 @@ b = [15; 10; 10];
 [x, flag, relres, iter] = pcg(A, b, 1e-12, 20)
 
 ```
+
 
 ```matlab
 A = sparse([4 -1 0; -1 4 -1; 0 -1 3]);
@@ -55,15 +59,16 @@ L = ichol(A);
 
 ```
 
+
 ## 🔗 See also
 
-[bicgstab](../../linear_algebra/bicgstab.md), [ichol](../../linear_algebra/ichol.md).
+[bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md), [ichol](../../linear_algebra/7_preconditioners/ichol.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                      |
-| ------- | ----------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                     |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | added single, complex single, preconditioner, initial guess, and breakdown coverage |
 
 <!--

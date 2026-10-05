@@ -5,22 +5,22 @@ Efface une variable de l'espace de travail.
 ## 📝 Syntaxe
 
 - clear
-- clear variable_name
-- clear('-regexp', expression_1, ..., expression_N)
+- clear variable\_name
+- clear('-regexp', expression\_1, ..., expression\_N)
 - clear global
 - clear all
 - clear mex
 - clear variables
 - clear functions
 - clear classes
-- clear function_name
-- clear mexfunction_name
-- clear variable_name_1 ... variable_name_N
-- clear global variable_name_1 ... variable_name_N
+- clear function\_name
+- clear mexfunction\_name
+- clear variable\_name\_1 ... variable\_name\_N
+- clear global variable\_name\_1 ... variable\_name\_N
 
 ## 📥 Argument d'entrée
 
-- variable_name - un vecteur de caracteres ou un scalaire string : nom de variable.
+- variable\_name - un vecteur de caracteres ou un scalaire string : nom de variable.
 - -regexp - efface les variables de l'espace de travail courant dont le nom correspond a l'une des expressions regulieres.
 - global - clears all global variables.
 - all - clears all variables in all scopes
@@ -28,20 +28,23 @@ Efface une variable de l'espace de travail.
 - variables - clears all variables in current scope.
 - functions - clears cache of macros functions and associated persistent variables.
 - classes - efface les variables classdef vivantes, les metadonnees classdef et le cache des methodes de classe generees.
-- function_name - clears persistent variables of a function.
-- mexfunction_name - clears mex function (see mexAtExit).
+- function\_name - clears persistent variables of a function.
+- mexfunction\_name - clears mex function (see mexAtExit).
 
 ## 📄 Description
 
-Supprime des variables de l'espace de travail courant ou d'une portée spécifiée. Sans argument, supprime toutes les variables de l'espace de travail courant.
 
-À utiliser avec prudence : cette opération ne peut pas être annulée.
+Supprime des variables de l'espace de travail courant ou d'une portée spécifiée. Sans argument, supprime toutes les variables de l'espace de travail courant. 
 
-<b>clear('-regexp', ...)</b> efface les variables de l'espace de travail courant dont le nom correspond a l'une des expressions regulieres donnees.
+À utiliser avec prudence : cette opération ne peut pas être annulée. 
+
+<b>clear('-regexp', ...)</b> efface les variables de l'espace de travail courant dont le nom correspond a l'une des expressions regulieres donnees. 
 
 <b>clear classes</b> efface les variables classdef vivantes et recharge les definitions classdef depuis le disque lors de la prochaine utilisation.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
@@ -50,7 +53,6 @@ clear A
 who
 exist('A', 'var')
 ```
-
 Effacer des variables avec une expression reguliere.
 
 ```matlab
@@ -60,7 +62,6 @@ KeepValue = 3;
 clear('-regexp', '^Mon', '^Tue')
 who
 ```
-
 Recharger une definition classdef depuis le disque.
 
 ```matlab
@@ -76,14 +77,15 @@ clear classes
 NelsonHelpClearReloadFr.Version
 ```
 
+
 ## 🔗 Voir aussi
 
 [clearvars](../memory_manager/clearvars.md), [who](../memory_manager/who.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

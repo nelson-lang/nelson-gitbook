@@ -16,6 +16,7 @@ Determiner quels handles de timer sont valides.
 
 ## 📄 Description
 
+
 <b>isvalid</b> verifie si des handles de timer referencent encore des objets timer vivants. L'appel de <b>delete</b> sur un timer invalide le handle.
 
 ## 💡 Exemple
@@ -29,14 +30,15 @@ delete(t);
 afterDelete = isvalid(t)
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [delete](../../time/timer.delete.md).
+[timer](../../time/7_timers/timer.md), [delete](../../time/7_timers/timer.delete.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

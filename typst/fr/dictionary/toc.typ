@@ -1,0 +1,22 @@
+#import "nelson_help.typ": *
+
+- Dictionnaires
+  - #nlink(<dictionary:configureDictionary>)[configureDictionary]
+  - #nlink(<dictionary:containers_Map>)[containers.Map]
+  - #nlink(<dictionary:dictionary>)[dictionary]
+  - #nlink(<dictionary:disp>)[disp]
+  - #nlink(<dictionary:entries>)[entries]
+  - #nlink(<dictionary:insert>)[insert]
+  - #nlink(<dictionary:isConfigured>)[isConfigured]
+  - #nlink(<dictionary:isKey>)[isKey]
+  - #nlink(<dictionary:isequal>)[isequal]
+  - #nlink(<dictionary:keyHash>)[keyHash]
+  - #nlink(<dictionary:keyMatch>)[keyMatch]
+  - #nlink(<dictionary:keys>)[keys]
+  - #nlink(<dictionary:lookup>)[lookup]
+  - #nlink(<dictionary:numEntries>)[numEntries]
+  - #nlink(<dictionary:readdictionary>)[readdictionary]
+  - #nlink(<dictionary:remove>)[remove]
+  - #nlink(<dictionary:types>)[types]
+  - #nlink(<dictionary:values>)[values]
+  - #nlink(<dictionary:writedictionary>)[writedictionary]

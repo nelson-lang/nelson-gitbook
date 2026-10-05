@@ -19,6 +19,7 @@ Create tab group container.
 
 ## 📄 Description
 
+
 <b>tg = uitabgroup</b> creates a tab group container. Children are uitab objects. Main properties: <b>TabLocation</b> ('top', 'bottom', 'left', 'right'), <b>SelectedTab</b>, <b>SelectionChangedFcn</b> (event data with <b>OldValue</b> and <b>NewValue</b>).
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ tg.SelectedTab = t2;
 uilabel(t2, 'Text', 'Second tab', 'Position', [35 70 120 24]);
 drawnow();
 ```
-
 <img src="uitabgroup_example.svg" align="middle"/>
 uitabgroup
 
@@ -48,13 +48,14 @@ tg.SelectedTab = t2;
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

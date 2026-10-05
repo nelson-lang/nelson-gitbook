@@ -18,7 +18,8 @@ Check that no numeric entry is NaN.
 
 ## 📄 Description
 
-The assertion passes when no entry is NaN.
+
+The assertion passes when no entry is NaN. 
 
 Infinite values are allowed by this assertion.
 
@@ -29,12 +30,12 @@ No NaN values
 ```matlab
 asserts.nonNan([1 Inf]);
 ```
-
 Capture a NaN value
 
 ```matlab
 [res, msg] = asserts.nonNan([1 NaN]);
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture a NaN value
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

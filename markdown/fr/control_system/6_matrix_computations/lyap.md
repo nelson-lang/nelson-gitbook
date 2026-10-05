@@ -17,9 +17,12 @@ Solution de l'équation de Lyapunov continue.
 
 ## 📄 Description
 
+
 Résout l'équation de Lyapunov continue A'X + XA = -Q pour X donné A et Q.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [10, 20; -30, -40];
@@ -27,14 +30,15 @@ Q = [30, 10; 10, 10];
 X = lyap (A, Q)
 ```
 
+
 ## 🔗 Voir aussi
 
-[dlyap](../../control_system/dlyap.md).
+[dlyap](../../control_system/6_matrix_computations/dlyap.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

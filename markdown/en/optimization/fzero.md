@@ -23,11 +23,14 @@ Zero of a scalar function.
 
 ## 📄 Description
 
+
 <b>fzero</b> uses a Brent-Dekker bracketing method. If x0 is scalar, Nelson searches a sign-changing interval around it. A problem structure can contain objective, x0 and options fields.
 
 ## Used function(s)
 
+
     optimset
+  
 
 ## 📚 Bibliography
 
@@ -36,10 +39,13 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 💡 Example
 
+
+
 ```matlab
 [x, fval] = fzero(@(x) x^2 - 4, [0 5])
 
 ```
+
 
 ## 🔗 See also
 
@@ -47,7 +53,7 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

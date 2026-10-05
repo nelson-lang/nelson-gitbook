@@ -18,13 +18,16 @@ Objet d'options de solveur.
 
 ## 📄 Description
 
-optim.options.SolverOptions stocke les valeurs d'options de solveur creees par optimoptions.
+
+optim.options.SolverOptions stocke les valeurs d'options de solveur creees par optimoptions. 
 
 L'objet est passe aux solveurs d'optimisation ou a solve via le flux problem-based.
 
 ## Fonction(s) utilisée(s)
 
+
     optimoptions
+  
 
 ## 💡 Exemple
 
@@ -34,14 +37,15 @@ Creer des options pour fminsearch.
 opts = optimoptions('fminsearch', 'Display', 'off')
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimoptions](../optimization/optimoptions.md), [solve](../optimization/solve.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -29,13 +29,14 @@ Detect local maxima in data.
 
 ## 📄 Description
 
-<b>islocalmax</b> marks the elements of A that are greater than their neighbors along the operating dimension. A run of equal values greater than the values around it is one local maximum (see 'FlatSelection').
 
-The first and last elements are never local maxima. NaN values are ignored. +Inf values are always local maxima, with an infinite prominence.
+<b>islocalmax</b> marks the elements of A that are greater than their neighbors along the operating dimension. A run of equal values greater than the values around it is one local maximum (see 'FlatSelection'). 
 
-The prominence of a maximum measures how much it stands out: from the maximum, a horizontal line is drawn on each side up to the first strictly higher value or the end of the data; the basis is the higher of the two lowest values found under these lines, and the prominence is the height of the maximum above the basis. Every element of a flat maximum region carries its prominence.
+The first and last elements are never local maxima. NaN values are ignored. +Inf values are always local maxima, with an infinite prominence. 
 
-The filters are applied in this order: 'MinProminence', 'MinSeparation' (a flat region counts as one maximum spanning its samples) and 'MaxNumExtrema' (on ties, the first maximum wins).
+The prominence of a maximum measures how much it stands out: from the maximum, a horizontal line is drawn on each side up to the first strictly higher value or the end of the data; the basis is the higher of the two lowest values found under these lines, and the prominence is the height of the maximum above the basis. Every element of a flat maximum region carries its prominence. 
+
+The filters are applied in this order: 'MinProminence', 'MinSeparation' (a flat region counts as one maximum spanning its samples) and 'MaxNumExtrema' (on ties, the first maximum wins). 
 
 Without 'ProminenceWindow', the search runs in linear time: it is suitable for large signals.
 
@@ -48,7 +49,6 @@ A = [0 5 1 3 1 4 0];
 [TF, P] = islocalmax(A)
 islocalmax(A, 'MinProminence', 3)
 ```
-
 Flat maxima regions
 
 ```matlab
@@ -57,7 +57,6 @@ A = min(0.75, sin(pi * x));
 find(islocalmax(A, 'FlatSelection', 'first'))
 find(islocalmax(A, 'FlatSelection', 'all'))
 ```
-
 Separated maxima with time sample points
 
 ```matlab
@@ -66,7 +65,6 @@ A = [2 4 6 4 3 7 5 6 5 10 4 -1 -3 -2 0];
 TF = islocalmax(A, 'MinSeparation', minutes(45), 'SamplePoints', t);
 find(TF)
 ```
-
 Maxima along the rows of a matrix
 
 ```matlab
@@ -74,13 +72,14 @@ A = [1 3 1 2 0; 0 1 4 1 0; 2 0 2 0 2];
 TF = islocalmax(A, 2)
 ```
 
+
 ## 🔗 See also
 
 [islocalmin](../data_analysis/islocalmin.md), [max](../data_analysis/max.md), [movmax](../data_analysis/movmax.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

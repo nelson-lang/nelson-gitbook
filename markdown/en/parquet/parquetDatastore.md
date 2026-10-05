@@ -18,15 +18,18 @@ Create a datastore for one or more Parquet files.
 
 ## 📄 Description
 
-<b>pds = parquetDatastore(location)</b> creates a datastore that reads local Parquet files from the specified location.
 
-When <b>location</b> is a folder, files ending with <b>.parquet</b> in that folder are selected. Wildcard patterns can be used to select multiple files.
+<b>pds = parquetDatastore(location)</b> creates a datastore that reads local Parquet files from the specified location. 
 
-Supported name-value pairs are <b>ReadSize</b>, <b>SelectedVariableNames</b>, <b>OutputType</b>, <b>RowTimes</b>, <b>RowFilter</b>, and <b>VariableNamingRule</b>.
+When <b>location</b> is a folder, files ending with <b>.parquet</b> in that folder are selected. Wildcard patterns can be used to select multiple files. 
+
+Supported name-value pairs are <b>ReadSize</b>, <b>SelectedVariableNames</b>, <b>OutputType</b>, <b>RowTimes</b>, <b>RowFilter</b>, and <b>VariableNamingRule</b>. 
 
 The datastore reads one file at a time. Use <b>hasdata</b>, <b>read</b>, <b>readall</b>, <b>preview</b>, and <b>reset</b> to navigate the data.
 
 ## 💡 Examples
+
+
 
 ```matlab
 folder = tempdir();
@@ -38,6 +41,7 @@ pds = parquetDatastore([folder, 'doc_parquet_ds_*.parquet']);
 pds.VariableNames
 T = readall(pds)
 ```
+
 
 ```matlab
 folder = tempdir();
@@ -51,13 +55,14 @@ pds = parquetDatastore([folder, 'doc_parquet_ds_filter_*.parquet'], ...
 T = readall(pds)
 ```
 
+
 ## 🔗 See also
 
 [nelson.io.datastore.ParquetDatastore](../parquet/class_ParquetDatastore.md), [parquetread](../parquet/parquetread.md), [rowfilter](../parquet/rowfilter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

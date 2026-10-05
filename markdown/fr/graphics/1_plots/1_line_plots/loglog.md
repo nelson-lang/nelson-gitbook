@@ -27,11 +27,14 @@ Tracé en échelle log-log.
 
 ## 📄 Description
 
-<b>loglog(X, Y)</b> trace les données en utilisant une échelle logarithmique en base 10 pour l'axe des x et l'axe des y.
+
+<b>loglog(X, Y)</b> trace les données en utilisant une échelle logarithmique en base 10 pour l'axe des x et l'axe des y. 
 
 <b>loglog</b> utilise exactement la même syntaxe que la commande <b>plot</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -40,8 +43,8 @@ y = 2 .^ x;
 loglog(x,y)
 grid on
 ```
-
 <img src="loglog_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -50,8 +53,8 @@ y = 10 .^ x;
 loglog(x,y,'s','MarkerFaceColor',[0 0.447 0.741])
 grid on
 ```
-
 <img src="loglog_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -59,8 +62,8 @@ grid on
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

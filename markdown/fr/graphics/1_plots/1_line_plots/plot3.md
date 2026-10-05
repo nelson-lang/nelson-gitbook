@@ -26,13 +26,18 @@ Tracé de courbe 3D.
 
 ## 📄 Description
 
-<b>plot3(X1, Y1, Z1, ...)</b> trace une ou plusieurs courbes dans l'espace tridimensionnel.
 
-<b>go = plot3(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne.
+<b>plot3(X1, Y1, Z1, ...)</b> trace une ou plusieurs courbes dans l'espace tridimensionnel. 
+
+<b>go = plot3(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne. 
+
+ 
 
 Voir <b>line</b> ou<b>plot</b> pour plus d'informations sur les propriétés.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f  = figure();
@@ -40,8 +45,8 @@ t = 0:pi/50:10*pi;
 L = plot3(sin(t), cos(t), t);
 axis square
 ```
-
 <img src="plot3_1.svg" align="middle"/>
+
 
 ```matlab
 f  = figure();
@@ -55,8 +60,8 @@ zlabel ('z');
 title ('plot3 display of 3-D helix');
 axis square
 ```
-
 <img src="plot3_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -64,8 +69,8 @@ axis square
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -25,7 +25,10 @@ Impulse response plot of dynamic system.
 
 ## 📄 Description
 
+
 ## 💡 Example
+
+
 
 ```matlab
 sys = tf(4,[1 2 10]);
@@ -33,16 +36,16 @@ t = 0:0.05:5;
 f = figure();
 impulse(sys,t);
 ```
-
 <img src="impulse.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[step](../../control_system/gensig.md), [lsim](../../control_system/step.md).
+[step](../../control_system/2_model_conversion_interconnection/gensign.md), [lsim](../../control_system/4_time_frequency_response/step.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

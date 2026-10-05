@@ -27,13 +27,16 @@ Pairwise distances between two sets of observations.
 
 ## 📄 Description
 
+
 <b>pdist2</b> computes pairwise distances between rows of <b>X</b> and rows of <b>Y</b>. Built-in distances return NaN when either row contains NaN. A function handle distance must accept one row of X and all rows of Y, and return one distance per row of Y.
 
 ## Used function(s)
 
+
     kmeans
     kmedoids
     silhouette
+  
 
 ## 💡 Examples
 
@@ -44,7 +47,6 @@ X = [0 0; 1 0];
 Y = [0 0; 0 2];
 D = pdist2(X, Y)
 ```
-
 Compare several distance metrics.
 
 ```matlab
@@ -53,7 +55,6 @@ Y = [1 0; 1 1];
 Dcos = pdist2(X, Y, 'cosine')
 Dhamming = pdist2(X, Y, 'hamming')
 ```
-
 Find selected distances and row indices.
 
 ```matlab

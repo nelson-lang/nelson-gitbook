@@ -25,13 +25,14 @@ Cree un rectangle a coins droits, arrondis ou courbes
 
 ## 📄 Description
 
-<b>rectangle('Position', pos)</b> trace un rectangle a la position et a la taille donnees par <b>pos</b> = [x y w h].
 
-<b>rectangle('Position', pos, 'Curvature', cur)</b> trace un rectangle a coins arrondis. La courbure horizontale est la fraction de la largeur courbee le long des bords superieur et inferieur ; la courbure verticale est la fraction de la hauteur courbee le long des bords gauche et droit. Une valeur scalaire applique la meme longueur de courbure dans les deux directions, en utilisant le cote le plus court, de sorte que les coins sont circulaires. Utilisez <b>[1 1]</b> pour tracer une ellipse.
+<b>rectangle('Position', pos)</b> trace un rectangle a la position et a la taille donnees par <b>pos</b> = [x y w h]. 
 
-<b>rectangle(..., propertyName, propertyValue, ...)</b> definit des proprietes optionnelles sous forme de paires nom-valeur, telles que <b>FaceColor</b>, <b>EdgeColor</b>, <b>LineStyle</b> et <b>LineWidth</b>.
+<b>rectangle('Position', pos, 'Curvature', cur)</b> trace un rectangle a coins arrondis. La courbure horizontale est la fraction de la largeur courbee le long des bords superieur et inferieur ; la courbure verticale est la fraction de la hauteur courbee le long des bords gauche et droit. Une valeur scalaire applique la meme longueur de courbure dans les deux directions, en utilisant le cote le plus court, de sorte que les coins sont circulaires. Utilisez <b>[1 1]</b> pour tracer une ellipse. 
 
-Par defaut un rectangle n'a pas de remplissage (<b>FaceColor</b> vaut <b>'none'</b>), un contour gris fonce (<b>EdgeColor</b>), un style de ligne continu et une epaisseur de ligne de 0.5 point.
+<b>rectangle(..., propertyName, propertyValue, ...)</b> definit des proprietes optionnelles sous forme de paires nom-valeur, telles que <b>FaceColor</b>, <b>EdgeColor</b>, <b>LineStyle</b> et <b>LineWidth</b>. 
+
+Par defaut un rectangle n'a pas de remplissage (<b>FaceColor</b> vaut <b>'none'</b>), un contour gris fonce (<b>EdgeColor</b>), un style de ligne continu et une epaisseur de ligne de 0.5 point. 
 
 <b>go = rectangle(...)</b> retourne le handle <b>go</b> de l'objet rectangle cree.
 
@@ -51,13 +52,14 @@ axis equal
 axis off
 ```
 
+
 ## 🔗 Voir aussi
 
 [patch](../../../graphics/1_plots/7_surfaces_volumes_polygons/patch.md), [fill](../../../graphics/1_plots/7_surfaces_volumes_polygons/fill.md), [annotation](../../../graphics/3_labels_styling/4_labels_annotations/annotation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,14 +1,22 @@
 # Gestionnaire de modules
 
+
+    
 Le gestionnaire de modules (Modules Manager) de Nelson fournit l'infrastructure pour étendre et gérer l'environnement à l'exécution.
 
+    
 Il permet d'ajouter, de supprimer et d'interroger dynamiquement des modules, rendant le système flexible et adapté à différents flux de travail.
 
+    
 Avec la prise en charge des modules internes et externes, le gestionnaire traite les métadonnées, les chemins et la gestion des versions des modules.
 
+    
 Il fournit également des utilitaires pour organiser les boîtes à outils définies par l'utilisateur, gérer les gateways et garantir que les dépendances sont correctement chargées.
 
+    
 Ce cadre simplifie la distribution, l'intégration et la maintenance des modules, formant l'épine dorsale de l'architecture modulaire de Nelson.
+
+  
 
 ## Functions
 
@@ -34,3 +42,4 @@ Ce cadre simplifie la distribution, l'intégration et la maintenance des modules
 - [standaloneApplicationCompiler](standaloneApplicationCompiler.md) - Ouvrir l'éditeur de projet d'application autonome.
 - [toolboxdir](toolboxdir.md) - Renvoie le chemin d'un module.
 - [usermodulesdir](usermodulesdir.md) - Renvoie le chemin où les modules externes sont enregistrés.
+

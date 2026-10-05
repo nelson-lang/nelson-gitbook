@@ -21,7 +21,8 @@ Contour matrix computation
 
 ## 📄 Description
 
-<b>contourc</b> computes the contour matrix used by contour plotting functions without creating axes, figures, or graphics objects.
+
+<b>contourc</b> computes the contour matrix used by contour plotting functions without creating axes, figures, or graphics objects. 
 
 Each contour segment starts with a header column. The first row contains the contour level and the second row contains the number of points in that segment. The following columns contain x and y point coordinates.
 
@@ -34,15 +35,16 @@ Z = peaks(20);
 M = contourc(Z, 5)
 ```
 
+
 ## 🔗 See also
 
 [contour](../../../graphics/1_plots/3_contour_plots/contour.md), [contourf](../../../graphics/1_plots/3_contour_plots/contourf.md), [contour3](../../../graphics/1_plots/3_contour_plots/contour3.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

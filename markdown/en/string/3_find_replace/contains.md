@@ -19,11 +19,14 @@ checks if string contains with pattern.
 
 ## 📄 Description
 
-<b>contains</b> returns <b>true</b> if <b>str</b> contains<b>pattern</b>.
+
+<b>contains</b> returns <b>true</b> if <b>str</b> contains<b>pattern</b>. 
 
 If <b>str</b> is a categorical array, <b>contains</b> tests the category name of each element and returns a logical array of the same size. Undefined elements return <b>false</b>. <b>pattern</b> cannot be categorical.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -40,7 +43,6 @@ k = contains(A, 'son')
 
 
 ```
-
 Pattern matching on the category names of a categorical array.
 
 ```matlab
@@ -48,15 +50,16 @@ C = categorical({'winter storm', 'fire', 'Thunder Storm', ''});
 tf = contains(C, "storm", 'IgnoreCase', true)
 ```
 
+
 ## 🔗 See also
 
-[startsWith](../../string/startsWith.md), [endsWith](../../string/endsWith.md), [categorical](../../categorical/categorical.md).
+[startsWith](../../string/3_find_replace/startsWith.md), [endsWith](../../string/3_find_replace/endsWith.md), [categorical](../../categorical/categorical.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
-| 1.0.0   | initial version                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | categorical array accepted as str input. |
 
 <!--

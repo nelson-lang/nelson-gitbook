@@ -429,7 +429,7 @@
     "title": "maxNumCompThreads",
     "url": "./core/maxNumCompThreads.html",
     "path": "./core/maxNumCompThreads.html",
-    "content": "Set/Get maximum number of computational threads."
+    "content": "Set\/Get maximum number of computational threads."
   },
   {
     "title": "mfilename",
@@ -807,13 +807,13 @@
     "title": "try",
     "url": "./interpreter/try.html",
     "path": "./interpreter/try.html",
-    "content": "try/catch statement."
+    "content": "try\/catch statement."
   },
   {
     "title": "catch",
     "url": "./interpreter/try.html",
     "path": "./interpreter/try.html",
-    "content": "try/catch statement."
+    "content": "try\/catch statement."
   },
   {
     "title": "while",
@@ -2790,7 +2790,7 @@
     "content": "Pages for reading and writing table data."
   },
   {
-    "title": "Read/Write table to files",
+    "title": "Read\/Write table to files",
     "url": "./table/2_read_write_tables/3_read_write_table.html",
     "path": "./table/2_read_write_tables/3_read_write_table.html",
     "content": ""
@@ -3315,7 +3315,7 @@
     "title": "mrdivide",
     "url": "./operators/mrdivide.html",
     "path": "./operators/mrdivide.html",
-    "content": "Matrix right division, / operator."
+    "content": "Matrix right division, \/ operator."
   },
   {
     "title": "mtimes",
@@ -3357,7 +3357,7 @@
     "title": "rdivide",
     "url": "./operators/rdivide.html",
     "path": "./operators/rdivide.html",
-    "content": "Right division, ./ operator"
+    "content": "Right division, .\/ operator"
   },
   {
     "title": "shortcutand",
@@ -4720,6 +4720,12 @@
     "url": "./special_functions/makima.html",
     "path": "./special_functions/makima.html",
     "content": "Modified Akima piecewise cubic interpolation."
+  },
+  {
+    "title": "pchip",
+    "url": "./special_functions/pchip.html",
+    "path": "./special_functions/pchip.html",
+    "content": "Piecewise Cubic Hermite Interpolating Polynomial (PCHIP)."
   },
   {
     "title": "peaks",
@@ -8079,7 +8085,7 @@
     "title": "slicot_ab04md",
     "url": "./slicot/slicot_ab04md.html",
     "path": "./slicot/slicot_ab04md.html",
-    "content": "Discrete-time / continuous-time systems conversion by a bilinear transformation."
+    "content": "Discrete-time \/ continuous-time systems conversion by a bilinear transformation."
   },
   {
     "title": "slicot_ab07nd",
@@ -8787,7 +8793,7 @@
     "title": "FFTWwrapper",
     "url": "./fftw/FFTWwrapper.html",
     "path": "./fftw/FFTWwrapper.html",
-    "content": "load/free FFTW library dynamically."
+    "content": "load\/free FFTW library dynamically."
   },
   {
     "title": "fft",
@@ -8889,7 +8895,7 @@
     "title": "OS functions",
     "url": "./os_functions/index.html",
     "path": "sections/os_functions",
-    "content": "The OS Functions module provides tools for interacting with the operating system in Nelson. It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations. This module lets Nelson scripts interact with the operating system on Windows, macOS, and Linux/Unix platforms."
+    "content": "The OS Functions module provides tools for interacting with the operating system in Nelson. It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations. This module lets Nelson scripts interact with the operating system on Windows, macOS, and Linux\/Unix platforms."
   },
   {
     "title": "cmdsep",
@@ -9315,7 +9321,7 @@
     "title": "datenum",
     "url": "./time/1_create_date_time_arrays/datenum.html",
     "path": "./time/1_create_date_time_arrays/datenum.html",
-    "content": "Return the date/time input as a serial day number."
+    "content": "Return the date\/time input as a serial day number."
   },
   {
     "title": "datetime",
@@ -10383,7 +10389,7 @@
     "title": "Stream manager",
     "url": "./stream_manager/index.html",
     "path": "sections/stream_manager",
-    "content": "The Stream Manager module provides tools for managing input and output streams in Nelson. It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors. The module also supports session logging and workspace load/save operations for controlled file I/O in scripts and applications."
+    "content": "The Stream Manager module provides tools for managing input and output streams in Nelson. It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors. The module also supports session logging and workspace load\/save operations for controlled file I\/O in scripts and applications."
   },
   {
     "title": "cprintf",
@@ -10413,7 +10419,7 @@
     "title": "ferror",
     "url": "./stream_manager/ferror.html",
     "path": "./stream_manager/ferror.html",
-    "content": "Test for i/o read/write errors."
+    "content": "Test for i\/o read\/write errors."
   },
   {
     "title": "fgetl",
@@ -11553,7 +11559,7 @@
     "title": "audiometadata",
     "url": "./audio/audiometadata.html",
     "path": "./audio/audiometadata.html",
-    "content": "Get/Set metadata of audio file ."
+    "content": "Get\/Set metadata of audio file ."
   },
   {
     "title": "audioplayer",
@@ -11841,7 +11847,7 @@
     "title": "qt_verbose",
     "url": "./gui/qt_verbose.html",
     "path": "./gui/qt_verbose.html",
-    "content": "show/hide Qt debug message."
+    "content": "show\/hide Qt debug message."
   },
   {
     "title": "questdlg",
@@ -14148,10 +14154,10 @@
     "content": "Save figure to a Nelson FIG file."
   },
   {
-    "title": "Graphics I/O functions",
+    "title": "Graphics I\/O functions",
     "url": "./graphics_io/index.html",
     "path": "sections/graphics_io",
-    "content": "The Graphics I/O module provides functions for importing, exporting, and managing graphical content and image formats. It supports reading and writing image files, copying figures, and saving plots in various file formats for interoperability with other applications."
+    "content": "The Graphics I\/O module provides functions for importing, exporting, and managing graphical content and image formats. It supports reading and writing image files, copying figures, and saving plots in various file formats for interoperability with other applications."
   },
   {
     "title": "copygraphics",
@@ -14511,7 +14517,7 @@
     "title": "Segmentation",
     "url": "./image_processing/index.html",
     "path": "sections/image_processing",
-    "content": "Functions for segmenting images using region growing, active contours, morphological reconstruction, h-minima/maxima, regional extrema, imposed minima, and watershed transforms."
+    "content": "Functions for segmenting images using region growing, active contours, morphological reconstruction, h-minima\/maxima, regional extrema, imposed minima, and watershed transforms."
   },
   {
     "title": "activecontour",
@@ -14853,16 +14859,16 @@
     "title": "Dynamic link",
     "url": "./dynamic_link/index.html",
     "path": "sections/dynamic_link",
-    "content": "The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime. It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code. By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once."
+    "content": "The Dynamic Link module enables Nelson to build, load, and call C\/C++ and Fortran code at runtime. It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code. By default, Nelson does not try to detect a C\/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once."
   },
   {
-    "title": "Build C/C++ code on the fly",
+    "title": "Build C\/C++ code on the fly",
     "url": "./dynamic_link/1_c_cpp_build_on_fly.html",
     "path": "./dynamic_link/1_c_cpp_build_on_fly.html",
-    "content": "Build C/C++ code on the fly"
+    "content": "Build C\/C++ code on the fly"
   },
   {
-    "title": "Supported C/C++ compilers",
+    "title": "Supported C\/C++ compilers",
     "url": "./dynamic_link/2_supported_compilers.html",
     "path": "./dynamic_link/2_supported_compilers.html",
     "content": ""
@@ -14871,7 +14877,7 @@
     "title": "libpointer datatype",
     "url": "./dynamic_link/C_datatype.html",
     "path": "./dynamic_link/C_datatype.html",
-    "content": "C/Nelson equivalent data types"
+    "content": "C\/Nelson equivalent data types"
   },
   {
     "title": "cmake",
@@ -14979,7 +14985,7 @@
     "title": "dlsym",
     "url": "./dynamic_link/dlsym.html",
     "path": "./dynamic_link/dlsym.html",
-    "content": "Loads a C/Fortran symbol for an dynamic library."
+    "content": "Loads a C\/Fortran symbol for an dynamic library."
   },
   {
     "title": "dlsym_delete",
@@ -15009,7 +15015,7 @@
     "title": "havecompiler",
     "url": "./dynamic_link/havecompiler.html",
     "path": "./dynamic_link/havecompiler.html",
-    "content": "Detect if a C/C++ compiler is configured."
+    "content": "Detect if a C\/C++ compiler is configured."
   },
   {
     "title": "isNull",
@@ -15081,7 +15087,7 @@
     "title": "MEX functions",
     "url": "./mex/index.html",
     "path": "sections/mex",
-    "content": "The MEX module allows C/C++ code to interface with Nelson and access Nelson's engine, variables, and functions."
+    "content": "The MEX module allows C\/C++ code to interface with Nelson and access Nelson's engine, variables, and functions."
   },
   {
     "title": "dlgeneratemexgateway",
@@ -15567,7 +15573,7 @@
     "title": "GPU computing",
     "url": "./gpu_engine/index.html",
     "path": "sections/gpu_engine",
-    "content": "The GPU engine module runs array computations on the GPU through WebGPU (Dawn), portably on Windows, Linux and macOS without a proprietary CUDA dependency. Arrays are moved to the device with gpuArray and back to the host with gather. Operators and many functions are overloaded so that expressions on a gpuArray run on the device and keep their result device-resident. Device arrays are stored in single precision (WebGPU has no double compute type yet); real, logical and complex data are supported. Use canUseGPU to check availability and gpuDevice to inspect the selected device. Many functions are supported on a gpuArray: the operators, the element-wise math functions (including the rounding and hyperbolic/inverse-trigonometric ones), the reductions and scans (sum, prod, mean, var, std, cumsum, cumprod, sort, find), the complex-extraction functions, the shape and predicate functions, and the constructors zeros/ones/rand/randn through the 'gpuArray' / 'like' forms. Call gpuArrayFunctions for the exact, always-current list."
+    "content": "The GPU engine module runs array computations on the GPU through WebGPU (Dawn), portably on Windows, Linux and macOS without a proprietary CUDA dependency. Arrays are moved to the device with gpuArray and back to the host with gather. Operators and many functions are overloaded so that expressions on a gpuArray run on the device and keep their result device-resident. Device arrays are stored in single precision (WebGPU has no double compute type yet); real, logical and complex data are supported. Use canUseGPU to check availability and gpuDevice to inspect the selected device. Many functions are supported on a gpuArray: the operators, the element-wise math functions (including the rounding and hyperbolic\/inverse-trigonometric ones), the reductions and scans (sum, prod, mean, var, std, cumsum, cumprod, sort, find), the complex-extraction functions, the shape and predicate functions, and the constructors zeros\/ones\/rand\/randn through the 'gpuArray' \/ 'like' forms. Call gpuArrayFunctions for the exact, always-current list."
   },
   {
     "title": "canUseGPU",
@@ -16170,6 +16176,12 @@
     "content": "Build help of Nelson's modules for GitBook."
   },
   {
+    "title": "buildhelptypst",
+    "url": "./help_tools/buildhelptypst.html",
+    "path": "./help_tools/buildhelptypst.html",
+    "content": "Build help of Nelson's modules as Typst sources."
+  },
+  {
     "title": "buildhelpweb",
     "url": "./help_tools/buildhelpweb.html",
     "path": "./help_tools/buildhelpweb.html",
@@ -16248,12 +16260,6 @@
     "content": "Render the example images of Nelson help files."
   },
   {
-    "title": "xmldoctohelp",
-    "url": "./help_tools/xmldoctohelp.html",
-    "path": "./help_tools/xmldoctohelp.html",
-    "content": "Converts xml Nelson help files to Nelson format."
-  },
-  {
     "title": "xmldoctohtml",
     "url": "./help_tools/xmldoctohtml.html",
     "path": "./help_tools/xmldoctohtml.html",
@@ -16264,6 +16270,12 @@
     "url": "./help_tools/xmldoctomd.html",
     "path": "./help_tools/xmldoctomd.html",
     "content": "Converts xml Nelson help files to markdown format."
+  },
+  {
+    "title": "xmldoctotypst",
+    "url": "./help_tools/xmldoctotypst.html",
+    "path": "./help_tools/xmldoctotypst.html",
+    "content": "Converts xml Nelson help files to Typst sources."
   },
   {
     "title": "Optimization",
@@ -16491,13 +16503,13 @@
     "title": "Capacitor",
     "url": "./nflow_blocks/acausal_electrical/Capacitor.html",
     "path": "./nflow_blocks/acausal_electrical/Capacitor.html",
-    "content": "Ideal linear capacitor: i = C dv/dt."
+    "content": "Ideal linear capacitor: i = C dv\/dt."
   },
   {
     "title": "block:Capacitor",
     "url": "./nflow_blocks/acausal_electrical/Capacitor.html",
     "path": "./nflow_blocks/acausal_electrical/Capacitor.html",
-    "content": "Ideal linear capacitor: i = C dv/dt."
+    "content": "Ideal linear capacitor: i = C dv\/dt."
   },
   {
     "title": "Conductor",
@@ -16551,13 +16563,13 @@
     "title": "Diode",
     "url": "./nflow_blocks/acausal_electrical/Diode.html",
     "path": "./nflow_blocks/acausal_electrical/Diode.html",
-    "content": "Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1)."
+    "content": "Exponential (Shockley) diode: i = Is (exp(vd\/Vt) - 1)."
   },
   {
     "title": "block:Diode",
     "url": "./nflow_blocks/acausal_electrical/Diode.html",
     "path": "./nflow_blocks/acausal_electrical/Diode.html",
-    "content": "Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1)."
+    "content": "Exponential (Shockley) diode: i = Is (exp(vd\/Vt) - 1)."
   },
   {
     "title": "ExpSineCurrent",
@@ -16611,13 +16623,13 @@
     "title": "HeatingResistor",
     "url": "./nflow_blocks/acausal_electrical/HeatingResistor.html",
     "path": "./nflow_blocks/acausal_electrical/HeatingResistor.html",
-    "content": "Resistor that dissipates its power P = v^2 / R as heat into a thermal port."
+    "content": "Resistor that dissipates its power P = v^2 \/ R as heat into a thermal port."
   },
   {
     "title": "block:HeatingResistor",
     "url": "./nflow_blocks/acausal_electrical/HeatingResistor.html",
     "path": "./nflow_blocks/acausal_electrical/HeatingResistor.html",
-    "content": "Resistor that dissipates its power P = v^2 / R as heat into a thermal port."
+    "content": "Resistor that dissipates its power P = v^2 \/ R as heat into a thermal port."
   },
   {
     "title": "IdealDiode",
@@ -16683,13 +16695,13 @@
     "title": "Inductor",
     "url": "./nflow_blocks/acausal_electrical/Inductor.html",
     "path": "./nflow_blocks/acausal_electrical/Inductor.html",
-    "content": "Ideal linear inductor: v = L di/dt."
+    "content": "Ideal linear inductor: v = L di\/dt."
   },
   {
     "title": "block:Inductor",
     "url": "./nflow_blocks/acausal_electrical/Inductor.html",
     "path": "./nflow_blocks/acausal_electrical/Inductor.html",
-    "content": "Ideal linear inductor: v = L di/dt."
+    "content": "Ideal linear inductor: v = L di\/dt."
   },
   {
     "title": "NMOS",
@@ -16779,13 +16791,13 @@
     "title": "Resistor",
     "url": "./nflow_blocks/acausal_electrical/Resistor.html",
     "path": "./nflow_blocks/acausal_electrical/Resistor.html",
-    "content": "Ideal linear resistor: i = (v_p - v_n) / R."
+    "content": "Ideal linear resistor: i = (v_p - v_n) \/ R."
   },
   {
     "title": "block:Resistor",
     "url": "./nflow_blocks/acausal_electrical/Resistor.html",
     "path": "./nflow_blocks/acausal_electrical/Resistor.html",
-    "content": "Ideal linear resistor: i = (v_p - v_n) / R."
+    "content": "Ideal linear resistor: i = (v_p - v_n) \/ R."
   },
   {
     "title": "Short",
@@ -16851,25 +16863,25 @@
     "title": "TrapezoidCurrent",
     "url": "./nflow_blocks/acausal_electrical/TrapezoidCurrent.html",
     "path": "./nflow_blocks/acausal_electrical/TrapezoidCurrent.html",
-    "content": "Trapezoidal current source (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal current source (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "block:TrapezoidCurrent",
     "url": "./nflow_blocks/acausal_electrical/TrapezoidCurrent.html",
     "path": "./nflow_blocks/acausal_electrical/TrapezoidCurrent.html",
-    "content": "Trapezoidal current source (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal current source (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "TrapezoidVoltage",
     "url": "./nflow_blocks/acausal_electrical/TrapezoidVoltage.html",
     "path": "./nflow_blocks/acausal_electrical/TrapezoidVoltage.html",
-    "content": "Trapezoidal voltage source (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal voltage source (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "block:TrapezoidVoltage",
     "url": "./nflow_blocks/acausal_electrical/TrapezoidVoltage.html",
     "path": "./nflow_blocks/acausal_electrical/TrapezoidVoltage.html",
-    "content": "Trapezoidal voltage source (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal voltage source (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "VCC",
@@ -17223,25 +17235,25 @@
     "title": "BearingFriction",
     "url": "./nflow_blocks/acausal_rotational/BearingFriction.html",
     "path": "./nflow_blocks/acausal_rotational/BearingFriction.html",
-    "content": "Regularised bearing friction (event-free): tau = -tau_c tanh(w / w_eps)."
+    "content": "Regularised bearing friction (event-free): tau = -tau_c tanh(w \/ w_eps)."
   },
   {
     "title": "block:BearingFriction",
     "url": "./nflow_blocks/acausal_rotational/BearingFriction.html",
     "path": "./nflow_blocks/acausal_rotational/BearingFriction.html",
-    "content": "Regularised bearing friction (event-free): tau = -tau_c tanh(w / w_eps)."
+    "content": "Regularised bearing friction (event-free): tau = -tau_c tanh(w \/ w_eps)."
   },
   {
     "title": "Clutch",
     "url": "./nflow_blocks/acausal_rotational/Clutch.html",
     "path": "./nflow_blocks/acausal_rotational/Clutch.html",
-    "content": "Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) / w_eps) reduces the slip toward a common speed."
+    "content": "Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) \/ w_eps) reduces the slip toward a common speed."
   },
   {
     "title": "block:Clutch",
     "url": "./nflow_blocks/acausal_rotational/Clutch.html",
     "path": "./nflow_blocks/acausal_rotational/Clutch.html",
-    "content": "Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) / w_eps) reduces the slip toward a common speed."
+    "content": "Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) \/ w_eps) reduces the slip toward a common speed."
   },
   {
     "title": "ConstantRotSpeed",
@@ -17271,13 +17283,13 @@
     "title": "EMF",
     "url": "./nflow_blocks/acausal_rotational/EMF.html",
     "path": "./nflow_blocks/acausal_rotational/EMF.html",
-    "content": "Electro-mechanical converter (motor/generator): back-emf v = k w, torque tau = k i."
+    "content": "Electro-mechanical converter (motor\/generator): back-emf v = k w, torque tau = k i."
   },
   {
     "title": "block:EMF",
     "url": "./nflow_blocks/acausal_rotational/EMF.html",
     "path": "./nflow_blocks/acausal_rotational/EMF.html",
-    "content": "Electro-mechanical converter (motor/generator): back-emf v = k w, torque tau = k i."
+    "content": "Electro-mechanical converter (motor\/generator): back-emf v = k w, torque tau = k i."
   },
   {
     "title": "ElastoBacklash",
@@ -17331,13 +17343,13 @@
     "title": "Inertia",
     "url": "./nflow_blocks/acausal_rotational/Inertia.html",
     "path": "./nflow_blocks/acausal_rotational/Inertia.html",
-    "content": "Rotational inertia: J dw/dt = tau_net."
+    "content": "Rotational inertia: J dw\/dt = tau_net."
   },
   {
     "title": "block:Inertia",
     "url": "./nflow_blocks/acausal_rotational/Inertia.html",
     "path": "./nflow_blocks/acausal_rotational/Inertia.html",
-    "content": "Rotational inertia: J dw/dt = tau_net."
+    "content": "Rotational inertia: J dw\/dt = tau_net."
   },
   {
     "title": "LinearSpeedDependentTorque",
@@ -17535,13 +17547,13 @@
     "title": "TrapezoidTorque",
     "url": "./nflow_blocks/acausal_rotational/TrapezoidTorque.html",
     "path": "./nflow_blocks/acausal_rotational/TrapezoidTorque.html",
-    "content": "Trapezoidal torque on a flange (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal torque on a flange (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "block:TrapezoidTorque",
     "url": "./nflow_blocks/acausal_rotational/TrapezoidTorque.html",
     "path": "./nflow_blocks/acausal_rotational/TrapezoidTorque.html",
-    "content": "Trapezoidal torque on a flange (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal torque on a flange (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "Thermal (acausal)",
@@ -17577,13 +17589,13 @@
     "title": "ConvectiveResistor",
     "url": "./nflow_blocks/acausal_thermal/ConvectiveResistor.html",
     "path": "./nflow_blocks/acausal_thermal/ConvectiveResistor.html",
-    "content": "Convective resistor: Q_flow = (T_a - T_b) / Rc with a signal-driven Rc."
+    "content": "Convective resistor: Q_flow = (T_a - T_b) \/ Rc with a signal-driven Rc."
   },
   {
     "title": "block:ConvectiveResistor",
     "url": "./nflow_blocks/acausal_thermal/ConvectiveResistor.html",
     "path": "./nflow_blocks/acausal_thermal/ConvectiveResistor.html",
-    "content": "Convective resistor: Q_flow = (T_a - T_b) / Rc with a signal-driven Rc."
+    "content": "Convective resistor: Q_flow = (T_a - T_b) \/ Rc with a signal-driven Rc."
   },
   {
     "title": "FixedHeatFlow",
@@ -17613,13 +17625,13 @@
     "title": "HeatCapacitor",
     "url": "./nflow_blocks/acausal_thermal/HeatCapacitor.html",
     "path": "./nflow_blocks/acausal_thermal/HeatCapacitor.html",
-    "content": "Lumped heat capacity: C dT/dt = Q_flow (port referenced to 0)."
+    "content": "Lumped heat capacity: C dT\/dt = Q_flow (port referenced to 0)."
   },
   {
     "title": "block:HeatCapacitor",
     "url": "./nflow_blocks/acausal_thermal/HeatCapacitor.html",
     "path": "./nflow_blocks/acausal_thermal/HeatCapacitor.html",
-    "content": "Lumped heat capacity: C dT/dt = Q_flow (port referenced to 0)."
+    "content": "Lumped heat capacity: C dT\/dt = Q_flow (port referenced to 0)."
   },
   {
     "title": "HeatFlowSensor",
@@ -17697,13 +17709,13 @@
     "title": "ThermalResistor",
     "url": "./nflow_blocks/acausal_thermal/ThermalResistor.html",
     "path": "./nflow_blocks/acausal_thermal/ThermalResistor.html",
-    "content": "Thermal resistor: Q_flow = (T_a - T_b) / R."
+    "content": "Thermal resistor: Q_flow = (T_a - T_b) \/ R."
   },
   {
     "title": "block:ThermalResistor",
     "url": "./nflow_blocks/acausal_thermal/ThermalResistor.html",
     "path": "./nflow_blocks/acausal_thermal/ThermalResistor.html",
-    "content": "Thermal resistor: Q_flow = (T_a - T_b) / R."
+    "content": "Thermal resistor: Q_flow = (T_a - T_b) \/ R."
   },
   {
     "title": "Translational (acausal)",
@@ -17835,13 +17847,13 @@
     "title": "Friction",
     "url": "./nflow_blocks/acausal_translational/Friction.html",
     "path": "./nflow_blocks/acausal_translational/Friction.html",
-    "content": "Regularised Coulomb friction (event-free): F = -Fc tanh(v / vEps)."
+    "content": "Regularised Coulomb friction (event-free): F = -Fc tanh(v \/ vEps)."
   },
   {
     "title": "block:Friction",
     "url": "./nflow_blocks/acausal_translational/Friction.html",
     "path": "./nflow_blocks/acausal_translational/Friction.html",
-    "content": "Regularised Coulomb friction (event-free): F = -Fc tanh(v / vEps)."
+    "content": "Regularised Coulomb friction (event-free): F = -Fc tanh(v \/ vEps)."
   },
   {
     "title": "Lever",
@@ -17871,25 +17883,25 @@
     "title": "Mass",
     "url": "./nflow_blocks/acausal_translational/Mass.html",
     "path": "./nflow_blocks/acausal_translational/Mass.html",
-    "content": "Sliding mass with inertia: m dv/dt = F_net."
+    "content": "Sliding mass with inertia: m dv\/dt = F_net."
   },
   {
     "title": "block:Mass",
     "url": "./nflow_blocks/acausal_translational/Mass.html",
     "path": "./nflow_blocks/acausal_translational/Mass.html",
-    "content": "Sliding mass with inertia: m dv/dt = F_net."
+    "content": "Sliding mass with inertia: m dv\/dt = F_net."
   },
   {
     "title": "MassWithWeight",
     "url": "./nflow_blocks/acausal_translational/MassWithWeight.html",
     "path": "./nflow_blocks/acausal_translational/MassWithWeight.html",
-    "content": "Sliding mass under gravity: m dv/dt = F_net - m g (expands to Mass + ConstantForce)."
+    "content": "Sliding mass under gravity: m dv\/dt = F_net - m g (expands to Mass + ConstantForce)."
   },
   {
     "title": "block:MassWithWeight",
     "url": "./nflow_blocks/acausal_translational/MassWithWeight.html",
     "path": "./nflow_blocks/acausal_translational/MassWithWeight.html",
-    "content": "Sliding mass under gravity: m dv/dt = F_net - m g (expands to Mass + ConstantForce)."
+    "content": "Sliding mass under gravity: m dv\/dt = F_net - m g (expands to Mass + ConstantForce)."
   },
   {
     "title": "PositionSensor",
@@ -17991,13 +18003,13 @@
     "title": "SlidingMass",
     "url": "./nflow_blocks/acausal_translational/SlidingMass.html",
     "path": "./nflow_blocks/acausal_translational/SlidingMass.html",
-    "content": "Sliding mass of length L: m dv/dt = F_net (L is geometric, does not affect the dynamics)."
+    "content": "Sliding mass of length L: m dv\/dt = F_net (L is geometric, does not affect the dynamics)."
   },
   {
     "title": "block:SlidingMass",
     "url": "./nflow_blocks/acausal_translational/SlidingMass.html",
     "path": "./nflow_blocks/acausal_translational/SlidingMass.html",
-    "content": "Sliding mass of length L: m dv/dt = F_net (L is geometric, does not affect the dynamics)."
+    "content": "Sliding mass of length L: m dv\/dt = F_net (L is geometric, does not affect the dynamics)."
   },
   {
     "title": "Speed",
@@ -18063,13 +18075,13 @@
     "title": "TrapezoidForce",
     "url": "./nflow_blocks/acausal_translational/TrapezoidForce.html",
     "path": "./nflow_blocks/acausal_translational/TrapezoidForce.html",
-    "content": "Trapezoidal force on a flange (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal force on a flange (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "block:TrapezoidForce",
     "url": "./nflow_blocks/acausal_translational/TrapezoidForce.html",
     "path": "./nflow_blocks/acausal_translational/TrapezoidForce.html",
-    "content": "Trapezoidal force on a flange (continuous ramp-up / hold / ramp-down)."
+    "content": "Trapezoidal force on a flange (continuous ramp-up \/ hold \/ ramp-down)."
   },
   {
     "title": "Continuous blocks",
@@ -18681,13 +18693,13 @@
     "title": "bitwiseOperator",
     "url": "./nflow_blocks/logic/bitwiseOperator.html",
     "path": "./nflow_blocks/logic/bitwiseOperator.html",
-    "content": "Bit-wise AND/OR/XOR/NAND/NOR/NOT of the input against a constant BitMask."
+    "content": "Bit-wise AND\/OR\/XOR\/NAND\/NOR\/NOT of the input against a constant BitMask."
   },
   {
     "title": "block:bitwiseOperator",
     "url": "./nflow_blocks/logic/bitwiseOperator.html",
     "path": "./nflow_blocks/logic/bitwiseOperator.html",
-    "content": "Bit-wise AND/OR/XOR/NAND/NOR/NOT of the input against a constant BitMask."
+    "content": "Bit-wise AND\/OR\/XOR\/NAND\/NOR\/NOT of the input against a constant BitMask."
   },
   {
     "title": "combinatorialLogic",
@@ -18777,13 +18789,13 @@
     "title": "logicalOperator",
     "url": "./nflow_blocks/logic/logicalOperator.html",
     "path": "./nflow_blocks/logic/logicalOperator.html",
-    "content": "Configurable logical AND/OR/NAND/NOR/XOR/XNOR/NOT of the inputs."
+    "content": "Configurable logical AND\/OR\/NAND\/NOR\/XOR\/XNOR\/NOT of the inputs."
   },
   {
     "title": "block:logicalOperator",
     "url": "./nflow_blocks/logic/logicalOperator.html",
     "path": "./nflow_blocks/logic/logicalOperator.html",
-    "content": "Configurable logical AND/OR/NAND/NOR/XOR/XNOR/NOT of the inputs."
+    "content": "Configurable logical AND\/OR\/NAND\/NOR\/XOR\/XNOR\/NOT of the inputs."
   },
   {
     "title": "not",
@@ -18825,13 +18837,13 @@
     "title": "shiftArithmetic",
     "url": "./nflow_blocks/logic/shiftArithmetic.html",
     "path": "./nflow_blocks/logic/shiftArithmetic.html",
-    "content": "Arithmetic bit shift left/right by ShiftNumber (signed 64-bit)."
+    "content": "Arithmetic bit shift left\/right by ShiftNumber (signed 64-bit)."
   },
   {
     "title": "block:shiftArithmetic",
     "url": "./nflow_blocks/logic/shiftArithmetic.html",
     "path": "./nflow_blocks/logic/shiftArithmetic.html",
-    "content": "Arithmetic bit shift left/right by ShiftNumber (signed 64-bit)."
+    "content": "Arithmetic bit shift left\/right by ShiftNumber (signed 64-bit)."
   },
   {
     "title": "switchCase",
@@ -19473,25 +19485,25 @@
     "title": "xyScope",
     "url": "./nflow_blocks/sink/xyScope.html",
     "path": "./nflow_blocks/sink/xyScope.html",
-    "content": "Stores paired X/Y samples for display."
+    "content": "Stores paired X\/Y samples for display."
   },
   {
     "title": "block:xyScope",
     "url": "./nflow_blocks/sink/xyScope.html",
     "path": "./nflow_blocks/sink/xyScope.html",
-    "content": "Stores paired X/Y samples for display."
+    "content": "Stores paired X\/Y samples for display."
   },
   {
     "title": "xyzScope",
     "url": "./nflow_blocks/sink/xyzScope.html",
     "path": "./nflow_blocks/sink/xyzScope.html",
-    "content": "Stores X/Y/Z samples for 3D display."
+    "content": "Stores X\/Y\/Z samples for 3D display."
   },
   {
     "title": "block:xyzScope",
     "url": "./nflow_blocks/sink/xyzScope.html",
     "path": "./nflow_blocks/sink/xyzScope.html",
-    "content": "Stores X/Y/Z samples for 3D display."
+    "content": "Stores X\/Y\/Z samples for 3D display."
   },
   {
     "title": "Source blocks",
@@ -19935,13 +19947,13 @@
     "title": "iteratorNumber",
     "url": "./nflow_blocks/utility/iteratorNumber.html",
     "path": "./nflow_blocks/utility/iteratorNumber.html",
-    "content": "outputs the current iteration index inside a For/While iterator subsystem"
+    "content": "outputs the current iteration index inside a For\/While iterator subsystem"
   },
   {
     "title": "block:iteratorNumber",
     "url": "./nflow_blocks/utility/iteratorNumber.html",
     "path": "./nflow_blocks/utility/iteratorNumber.html",
-    "content": "outputs the current iteration index inside a For/While iterator subsystem"
+    "content": "outputs the current iteration index inside a For\/While iterator subsystem"
   },
   {
     "title": "merge",
@@ -20148,9 +20160,9 @@
     "content": "Return the handle of the current block."
   },
   {
-    "title": "getSimulinkBlockHandle",
-    "url": "./nflow_engine/getSimulinkBlockHandle.html",
-    "path": "./nflow_engine/getSimulinkBlockHandle.html",
+    "title": "getNFlowBlockHandle",
+    "url": "./nflow_engine/getNFlowBlockHandle.html",
+    "path": "./nflow_engine/getNFlowBlockHandle.html",
     "content": "Return the handle of a block by path, or -1 if not found."
   },
   {
@@ -20223,7 +20235,7 @@
     "title": "NFlow FMI import",
     "url": "./nflow_fmi/index.html",
     "path": "sections/nflow_fmi",
-    "content": "The NFlow FMI module imports Functional Mock-up Units (FMUs) that follow the FMI 3.0 standard and runs them as Co-Simulation or Model Exchange components. NFlow is currently released as 1.0.0-beta.1: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback. It reads the model description of an FMU, exposes its variables and interfaces, and either drives a fixed-step Co-Simulation (the FMU owns its solver) or integrates a Model Exchange FMU with NFlow's own solver, recording the FMU outputs over time. Functions accept either a .fmu archive or an already-extracted FMU directory. Archives are unpacked with a ZIP-slip-hardened extractor into a temporary directory that is removed automatically. The same import also backs two blocks in the NFlow editor (category FMI): an FMU block (Co-Simulation) and an FMU (ME) block (Model Exchange, whose continuous states join the diagram's global solver). Drop a block, click Browse FMU... to pick a .fmu, and its input and output ports are configured automatically from the model description. Ready-to-open demo diagrams for several reference FMUs (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) ship in the module examples directory. Area Main entries Model description fmiInfo Co-Simulation fmiCoSimulate Model Exchange fmiModelExchange Modelica bridge modelicaInfo, modelicaConfigure, modelicaToFmu FMU import assistant fmuToBlock The FMU import assistant (fmuToBlock) turns any FMU into a native-looking nflow block -- input and output ports from the model description, parameters, and the FMU icon -- ready to drop into a library. It pairs with the Modelica bridge: modelicaToFmu produces an FMU, fmuToBlock wraps it as a block. The Modelica bridge lets an nflow model include a modelica block that references a Modelica model. At simulation time the model is compiled to an FMU with a user-installed OpenModelica and imported through the FMI path above, so physical (acausal) Modelica models simulate alongside ordinary blocks. modelicaInfo and modelicaConfigure report and select the OpenModelica used; modelicaToFmu performs the compilation. Worked examples (RC, RLC, mass-spring-damper) ship in the module examples/modelica directory."
+    "content": "The NFlow FMI module imports Functional Mock-up Units (FMUs) that follow the FMI 3.0 standard and runs them as Co-Simulation or Model Exchange components. NFlow is currently released as 1.0.0-beta.1: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback. It reads the model description of an FMU, exposes its variables and interfaces, and either drives a fixed-step Co-Simulation (the FMU owns its solver) or integrates a Model Exchange FMU with NFlow's own solver, recording the FMU outputs over time. Functions accept either a .fmu archive or an already-extracted FMU directory. Archives are unpacked with a ZIP-slip-hardened extractor into a temporary directory that is removed automatically. The same import also backs two blocks in the NFlow editor (category FMI): an FMU block (Co-Simulation) and an FMU (ME) block (Model Exchange, whose continuous states join the diagram's global solver). Drop a block, click Browse FMU... to pick a .fmu, and its input and output ports are configured automatically from the model description. Ready-to-open demo diagrams for several reference FMUs (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) ship in the module examples directory. Area Main entries Model description fmiInfo Co-Simulation fmiCoSimulate Model Exchange fmiModelExchange Modelica bridge modelicaInfo, modelicaConfigure, modelicaToFmu FMU import assistant fmuToBlock The FMU import assistant (fmuToBlock) turns any FMU into a native-looking nflow block -- input and output ports from the model description, parameters, and the FMU icon -- ready to drop into a library. It pairs with the Modelica bridge: modelicaToFmu produces an FMU, fmuToBlock wraps it as a block. The Modelica bridge lets an nflow model include a modelica block that references a Modelica model. At simulation time the model is compiled to an FMU with a user-installed OpenModelica and imported through the FMI path above, so physical (acausal) Modelica models simulate alongside ordinary blocks. modelicaInfo and modelicaConfigure report and select the OpenModelica used; modelicaToFmu performs the compilation. Worked examples (RC, RLC, mass-spring-damper) ship in the module examples\/modelica directory."
   },
   {
     "title": "fmiCoSimulate",

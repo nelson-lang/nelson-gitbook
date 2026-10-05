@@ -22,17 +22,18 @@ Add subtitle.
 
 ## 📄 Description
 
-<b>subtitle</b> adds the subtitle to the current axes or to the specified target.
 
-When the target already has a subtitle text object, <b>subtitle</b> updates and returns that object.
+<b>subtitle</b> adds the subtitle to the current axes or to the specified target. 
 
-For axes targets, the subtitle text uses data units and follows the axes title horizontal alignment.
+When the target already has a subtitle text object, <b>subtitle</b> updates and returns that object. 
 
-For tiled layout targets, the returned object exposes the tiled layout text properties.
+For axes targets, the subtitle text uses data units and follows the axes title horizontal alignment. 
 
-String arrays and cell arrays of character vectors are stored as multiple subtitle lines.
+For tiled layout targets, the returned object exposes the tiled layout text properties. 
 
-Property name and value pairs are applied to the subtitle object.
+String arrays and cell arrays of character vectors are stored as multiple subtitle lines. 
+
+Property name and value pairs are applied to the subtitle object. 
 
 The <b>Visible</b> property is inherited from the parent axes when a new subtitle text object is created.
 
@@ -46,7 +47,6 @@ plot([0 2], [1 5]);
 title('Straight Line');
 subtitle('Slope = 2, y-Intercept = 1');
 ```
-
 <img src="subtitle.svg" align="middle"/>
 Set subtitle properties.
 
@@ -57,13 +57,14 @@ title('Straight Line');
 subtitle('Slope = 2, y-Intercept = 1', 'Color', 'red');
 ```
 
+
 ## 🔗 See also
 
 [title](../../../graphics/3_labels_styling/4_labels_annotations/title.md), [text](../../../graphics/3_labels_styling/4_labels_annotations/text.md), [tiledlayout](../../../graphics/2_graphics_objects/2_layout_objects/tiledlayout.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

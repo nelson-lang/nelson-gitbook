@@ -17,9 +17,12 @@ Determine if matrix is within specific bandwidth.
 
 ## 📄 Description
 
+
 <b>tf = isbanded(A, lower, upper)</b> returns<b>true</b> if matrix <b>A</b> is within the specified lower bandwidth,<b>lower</b>, and upper bandwidth, <b>upper</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = [1 0 0 0 0; 2 1 0 0 0; 3 2 1 0 0]
@@ -28,13 +31,14 @@ TF = isbanded(M, 2, 1)
 
 ```
 
+
 ## 🔗 See also
 
-[bandwidth](../../linear_algebra/bandwidth.md).
+[bandwidth](../../linear_algebra/5_matrix_properties/bandwidth.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

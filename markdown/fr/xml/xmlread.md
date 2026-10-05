@@ -20,9 +20,10 @@ Lire un fichier XML comme objet document
 
 ## 📄 Description
 
-xmlread analyse un fichier XML et retourne un objet xmlDocument Nelson utilisable avec xmlwrite ou xslt.
 
-L'objet fournit aussi une petite couche d'accès de style DOM : getDocumentElement, getElementsByTagName, getTagName, getNodeName, getTextContent, getAttribute, hasAttribute, getLength et item.
+xmlread analyse un fichier XML et retourne un objet xmlDocument Nelson utilisable avec xmlwrite ou xslt. 
+
+L'objet fournit aussi une petite couche d'accès de style DOM : getDocumentElement, getElementsByTagName, getTagName, getNodeName, getTextContent, getAttribute, hasAttribute, getLength et item. 
 
 L'objet retourné n'est pas une implémentation DOM externe complète. La deuxième sortie optionnelle est actuellement un emplacement de parseur vide.
 
@@ -48,14 +49,15 @@ book_text = first_book.getTextContent()
 xmlwrite(doc)
 ```
 
+
 ## 🔗 Voir aussi
 
 [xmlwrite](../xml/xmlwrite.md), [readstruct](../xml/readstruct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

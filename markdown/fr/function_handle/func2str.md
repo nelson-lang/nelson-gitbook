@@ -4,7 +4,7 @@ Renvoie une représentation chaîne d'un function handle.
 
 ## 📝 Syntaxe
 
-- func_handle = str2func(str)
+- func\_handle = str2func(str)
 
 ## 📥 Argument d'entrée
 
@@ -12,18 +12,22 @@ Renvoie une représentation chaîne d'un function handle.
 
 ## 📤 Argument de sortie
 
-- func_handle - un function handle
+- func\_handle - un function handle
 
 ## 📄 Description
 
-<b>func_handle = str2func(str)</b> renvoie un function handle construit à partir de la chaîne <b>str</b>.
+
+<b>func\_handle = str2func(str)</b> renvoie un function handle construit à partir de la chaîne <b>str</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 fh = str2func('cos')
 class(fh)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ class(fh)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

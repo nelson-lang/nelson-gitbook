@@ -11,6 +11,7 @@
       <keyword name="buildhelp" link="buildhelp.html" description="Build help of Nelson's modules."/>
       <keyword name="buildhelpjson" link="buildhelpjson.html" description="Build help of Nelson JSON format."/>
       <keyword name="buildhelpmd" link="buildhelpmd.html" description="Build help of Nelson's modules for GitBook."/>
+      <keyword name="buildhelptypst" link="buildhelptypst.html" description="Build help of Nelson's modules as Typst sources."/>
       <keyword name="buildhelpweb" link="buildhelpweb.html" description="Build help of Nelson's modules for website."/>
       <keyword name="deployhelp" link="deployhelp.html" description="Install, uninstall and manage the local Nelson help system and module help files."/>
       <keyword name="doc" link="doc.html" description="Displays documentation."/>
@@ -24,9 +25,9 @@
       <keyword name="xmldocchecker" link="xmldocchecker.html" description="Checks a xml documentation file."/>
       <keyword name="xmldoclinkchecker" link="xmldoclinkchecker.html" description="Checks unresolved cross-references in Nelson help XML files."/>
       <keyword name="xmldocrenderimages" link="xmldocrenderimages.html" description="Render the example images of Nelson help files."/>
-      <keyword name="xmldoctohelp" link="xmldoctohelp.html" description="Converts xml Nelson help files to Nelson format."/>
       <keyword name="xmldoctohtml" link="xmldoctohtml.html" description="Converts xml Nelson help files to html."/>
       <keyword name="xmldoctomd" link="xmldoctomd.html" description="Converts xml Nelson help files to markdown format."/>
+      <keyword name="xmldoctotypst" link="xmldoctotypst.html" description="Converts xml Nelson help files to Typst sources."/>
     </section>
   </toc>
 </help_summary>

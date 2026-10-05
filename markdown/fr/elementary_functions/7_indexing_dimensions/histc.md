@@ -21,21 +21,25 @@ Comptage d'histogramme avec bornes explicites.
 
 ## 📄 Description
 
+
 <b>histc</b> compte les valeurs dans les classes definies par <b>edges</b>. Les valeurs egales a la derniere borne sont comptees dans la derniere classe.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [N, bin] = histc([0 1 1.5 2], [0 1 2])
 ```
 
+
 ## 🔗 Voir aussi
 
-[histcounts](../../elementary_functions/histcounts.md).
+[histcounts](../../elementary_functions/7_indexing_dimensions/histcounts.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

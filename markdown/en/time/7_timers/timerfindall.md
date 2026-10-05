@@ -21,7 +21,8 @@ Find all timer objects that match property criteria, including hidden timers.
 
 ## 📄 Description
 
-<b>timerfindall</b> returns timer objects that match all specified property criteria. Unlike <b>timerfind</b>, it includes hidden timers.
+
+<b>timerfindall</b> returns timer objects that match all specified property criteria. Unlike <b>timerfind</b>, it includes hidden timers. 
 
 It can also return timer objects whose original variable has gone out of scope, until those timers are deleted.
 
@@ -37,7 +38,6 @@ visibleOnly = timerfind('Tag', 'demo-hidden')
 includingHidden = timerfindall('Tag', 'demo-hidden')
 delete(t);
 ```
-
 Use a criteria structure.
 
 ```matlab
@@ -49,13 +49,14 @@ found = timerfindall(criteria)
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [timerfind](../../time/timerfind.md), [get](../../time/timer.get.md).
+[timer](../../time/7_timers/timer.md), [timerfind](../../time/7_timers/timerfind.md), [get](../../time/7_timers/timer.get.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,18 +17,23 @@ Create an optimization expression.
 
 ## 📄 Description
 
+
 <b>optimexpr</b> creates an expression object that can be combined with optimization variables by arithmetic operators.
 
 ## Used function(s)
 
+
     optimvar
     evaluate
+  
 
 ## 📚 Bibliography
 
 J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = optimvar('x');
@@ -37,13 +42,14 @@ value = evaluate(expr, struct('x', 2))
 
 ```
 
+
 ## 🔗 See also
 
 [evaluate](../optimization/evaluate.md), [optimconstr](../optimization/optimconstr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -20,13 +20,16 @@ Remove leading and trailing characters from text.
 
 ## 📄 Description
 
-strip removes leading and trailing whitespace from text by default.
+
+strip removes leading and trailing whitespace from text by default. 
 
 Optional arguments can select a side and the character to remove when supported by the string module.
 
 ## Used function(s)
 
+
     strtrim
+  
 
 ## 💡 Example
 
@@ -36,13 +39,14 @@ Remove leading and trailing whitespace from a string.
 txt = strip("  Nel Son  ")
 ```
 
+
 ## 🔗 See also
 
-[strtrim](../../string/strtrim.md), [deblank](../../string/deblank.md), [lower](../../string/lower.md), [upper](../../string/upper.md).
+[strtrim](../../string/7_edit_text/strtrim.md), [deblank](../../string/7_edit_text/deblank.md), [lower](../../string/7_edit_text/lower.md), [upper](../../string/7_edit_text/upper.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

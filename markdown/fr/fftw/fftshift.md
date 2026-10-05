@@ -18,9 +18,12 @@ Décaler la composante fréquence nulle au centre du spectre.
 
 ## 📄 Description
 
+
 <b>fftshift(X)</b> décale la composante fréquence nulle au centre du spectre.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = [ 0.,  10.,  20.; 30.,  40., -40.; -30., -20., -10.]
@@ -28,14 +31,15 @@ fftshift(M)
 fftshift(M, 1)
 ```
 
+
 ## 🔗 Voir aussi
 
 [fft](../fftw/ifft.md), [ifftshift](../fftw/ifftshift.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

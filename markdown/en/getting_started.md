@@ -371,18 +371,18 @@ nmm('help')
 
 ## 11. Quick reference
 
-| Task           | Commands                                                                |
-| -------------- | ----------------------------------------------------------------------- |
-| Help           | `help f`, `doc f`, `which f`                                            |
-| Workspace      | `who`, `whos`, `clear`, `clc`                                           |
-| Arrays         | `[ ]`, `:`, `linspace`, `zeros`, `ones`, `eye`, `rand`, `size`, `numel` |
-| Linear algebra | `A \ b`, `inv`, `det`, `eig`, `rank`                                    |
-| Statistics     | `sum`, `mean`, `max`, `min`, `sort`                                     |
-| Text           | `"..."`, `'...'`, `split`, `num2str`, `sprintf`, `fprintf`              |
-| Plots          | `plot`, `figure`, `hold on`, `subplot`, `xlabel`, `legend`, `saveas`    |
-| Files          | `save`, `load`, `readtable`, `writetable`, `diary`                      |
-| Run code       | `run`, `edit`, `nelson -f`, `nelson -e`                                 |
-| Modules        | `nmm('install', ...)`, `nmm('list')`                                    |
+| Task | Commands |
+| --- | --- |
+| Help | `help f`, `doc f`, `which f` |
+| Workspace | `who`, `whos`, `clear`, `clc` |
+| Arrays | `[ ]`, `:`, `linspace`, `zeros`, `ones`, `eye`, `rand`, `size`, `numel` |
+| Linear algebra | `A \ b`, `inv`, `det`, `eig`, `rank` |
+| Statistics | `sum`, `mean`, `max`, `min`, `sort` |
+| Text | `"..."`, `'...'`, `split`, `num2str`, `sprintf`, `fprintf` |
+| Plots | `plot`, `figure`, `hold on`, `subplot`, `xlabel`, `legend`, `saveas` |
+| Files | `save`, `load`, `readtable`, `writetable`, `diary` |
+| Run code | `run`, `edit`, `nelson -f`, `nelson -e` |
+| Modules | `nmm('install', ...)`, `nmm('list')` |
 
 ## Next steps
 

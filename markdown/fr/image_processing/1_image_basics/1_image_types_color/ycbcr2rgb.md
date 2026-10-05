@@ -16,6 +16,7 @@ Convertit des valeurs couleur YCbCr en valeurs RGB.
 
 ## 📄 Description
 
+
 Convertit des valeurs couleur YCbCr en valeurs RGB. Les entrees peuvent etre des images m-by-n-by-3 ou des colormaps double c-by-3 avec des valeurs dans l intervalle [0, 1].
 
 ## 💡 Exemple
@@ -29,17 +30,17 @@ RGB(:,:,1)=X; RGB(:,:,2)=Y; RGB(:,:,3)=0.5;
 RGB2=ycbcr2rgb(rgb2ycbcr(RGB));
 figure; image(RGB2); title('YCbCr to RGB');
 ```
-
 <img src="ycbcr2rgb_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[rgb2ycbcr](../../../image_processing/rgb2ycbcr.md), [hsv2rgb](../../../image_processing/hsv2rgb.md).
+[rgb2ycbcr](../../../image_processing/1_image_basics/1_image_types_color/rgb2ycbcr.md), [hsv2rgb](../../../image_processing/1_image_basics/1_image_types_color/hsv2rgb.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

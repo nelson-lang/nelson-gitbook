@@ -18,13 +18,16 @@ Exécuter une fonction après que toutes les fonctions en arrière-plan soient t
 
 ## 📄 Description
 
-<b>B = afterAll(F, fcn, n)</b> renvoie un objet AfterAllFuture <b>B</b>.
 
-La fonction <b>fcn</b> est automatiquement exécutée une fois que tous les éléments du tableau Future <b>F</b> sont terminés.
+<b>B = afterAll(F, fcn, n)</b> renvoie un objet AfterAllFuture <b>B</b>. 
+
+La fonction <b>fcn</b> est automatiquement exécutée une fois que tous les éléments du tableau Future <b>F</b> sont terminés. 
 
 Si l'un des éléments de <b>F</b> rencontre une erreur, la propriété <b>Error</b> de <b>B</b> contient l'erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pool = backgroundPool()
@@ -40,14 +43,15 @@ fetchOutputs(minFuture)
 fetchOutputs(maxFuture)
 ```
 
+
 ## 🔗 Voir aussi
 
 [backgroundPool](../parallel/backgroundPool.md), [fetchOutputs](../parallel/fetchOutputs.md), [afterEach](../parallel/afterEach.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

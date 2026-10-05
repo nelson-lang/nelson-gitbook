@@ -19,22 +19,26 @@ Exponential random numbers
 
 ## 📄 Description
 
+
 <b>exprnd</b> generates exponential distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = exprnd(2, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md), [expinv](../../statistics/expinv.md), [expstat](../../statistics/expstat.md).
+[exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md), [expinv](../../statistics/2_probability_distributions/expinv.md), [expstat](../../statistics/2_probability_distributions/expstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

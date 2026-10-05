@@ -18,6 +18,7 @@ Supprime les composants binaires connectes au bord de l'image.
 
 ## 📄 Description
 
+
 imclearborder supprime les composants de premier plan qui touchent la premiere ou la derniere ligne ou colonne. Cette fonction est utile apres seuillage ou segmentation lorsque les objets partiels au bord doivent etre retires.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ BW2=imclearborder(BW);
 figure; subplot(1,2,1); imagesc(BW); title('Entree');
 subplot(1,2,2); imagesc(BW2); title('Nettoyee');
 ```
-
 <img src="imclearborder_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bwconncomp](../../../image_processing/bwconncomp.md), [bwareaopen](../../../image_processing/bwareaopen.md), [imfill](../../../image_processing/imfill.md).
+[bwconncomp](../../../image_processing/2_image_analysis/5_regions_boundaries/bwconncomp.md), [bwareaopen](../../../image_processing/2_image_analysis/4_morphology/bwareaopen.md), [imfill](../../../image_processing/2_image_analysis/4_morphology/imfill.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

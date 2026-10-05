@@ -14,11 +14,14 @@
 
 ## 📄 Description
 
-<b>h5write</b> écrit des données dans l'ensemble du jeu de données <b>location</b> dans le fichier HDF5.
+
+<b>h5write</b> écrit des données dans l'ensemble du jeu de données <b>location</b> dans le fichier HDF5. 
 
 Les objets de classe Nelson, y compris les objets de classe historiques et les objets classdef valeur ou handle, sont écrits avec les métadonnées objet Nelson.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 h5filename = [tempdir(), 'doc_h5write.h5'];
@@ -27,6 +30,7 @@ h5write(h5filename,'/rand', R);
 h5write(h5filename,'/str', 'Hello');
 R2 = h5read(h5filename, '/rand')
 ```
+
 
 ```matlab
 h5filename = [tempdir(), 'doc_h5write_class.h5'];
@@ -40,15 +44,16 @@ R.r
 R.i
 ```
 
+
 ## 🔗 Voir aussi
 
 [h5read](../hdf5/h5read.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                              |
-| ------- | --------------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                            |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | Les objets de classe Nelson peuvent être écrits avec les métadonnées objet. |
 
 <!--

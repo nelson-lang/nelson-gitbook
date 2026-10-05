@@ -20,11 +20,14 @@ Continuous uniform random numbers
 
 ## 📄 Description
 
-<b>unifrnd</b> generates random numbers from continuous uniform distributions using Nelson's global random generator.
+
+<b>unifrnd</b> generates random numbers from continuous uniform distributions using Nelson's global random generator. 
 
 Scalar endpoints are expanded to the requested output size. Invalid intervals produce NaN values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
@@ -33,13 +36,14 @@ r2 = unifrnd(0, 1, [2 3]);
 r3 = unifrnd(0:5, 1:6, 1, 6);
 ```
 
+
 ## 🔗 See also
 
-[unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md).
+[unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

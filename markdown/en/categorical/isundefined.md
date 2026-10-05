@@ -16,7 +16,8 @@ Find undefined categorical elements.
 
 ## 📄 Description
 
-<b>isundefined</b> returns <b>true</b> for categorical elements that do not belong to any category.
+
+<b>isundefined</b> returns <b>true</b> for categorical elements that do not belong to any category. 
 
 For noncategorical input, the result is a logical array of <b>false</b> values with the same size as the input.
 
@@ -28,13 +29,14 @@ Locate undefined categorical values.
 A = categorical({'red','','blue'}); tf = isundefined(A)
 ```
 
+
 ## 🔗 See also
 
 [categorical](../categorical/categorical.md), [categories](../categorical/categories.md), [setcats](../categorical/setcats.md), [countcats](../categorical/countcats.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

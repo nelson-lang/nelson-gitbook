@@ -19,23 +19,27 @@ Oppose de la log-vraisemblance de Poisson
 
 ## 📄 Description
 
+
 <b>poisslike</b> retourne l'oppose de la log-vraisemblance pour des donnees de loi de Poisson et l'estimation de variance asymptotique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 3 5 8];
 [nlogL, avar] = poisslike(3, x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[poissfit](../../statistics/poissfit.md), [poisspdf](../../statistics/poisspdf.md), [poisscdf](../../statistics/poisscdf.md).
+[poissfit](../../statistics/2_probability_distributions/poissfit.md), [poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poisscdf](../../statistics/2_probability_distributions/poisscdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

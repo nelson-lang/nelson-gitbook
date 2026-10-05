@@ -22,9 +22,12 @@ Savitzky-Golay smoothing filter.
 
 ## 📄 Description
 
+
 <b>sgolayfilt</b> smooths data using Savitzky-Golay FIR coefficients.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ y = sgolayfilt([1 2 3 2 1], 2, 5);
 
 ```
 
+
 ## 🔗 See also
 
-[sgolay](../../signal_processing/sgolay.md), [medfilt1](../../signal_processing/medfilt1.md).
+[sgolay](../../signal_processing/1_signal_generation_preprocessing/sgolay.md), [medfilt1](../../signal_processing/1_signal_generation_preprocessing/medfilt1.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

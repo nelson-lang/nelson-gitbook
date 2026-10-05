@@ -18,18 +18,22 @@ Create 3-D comet plot.
 
 ## 📄 Description
 
-<b>comet3</b> animates a marker head, a trailing body, and a complete trace for a three-dimensional comet plot.
 
-<b>comet3(z)</b> plots <b>z</b> against index values on both x and y axes.
+<b>comet3</b> animates a marker head, a trailing body, and a complete trace for a three-dimensional comet plot. 
+
+<b>comet3(z)</b> plots <b>z</b> against index values on both x and y axes. 
 
 The final axes state contains two animated line objects and one line object for the head marker.
 
 ## 💡 Example
 
+
+
 ```matlab
 t = -pi:pi/120:pi;
 comet3(sin(5 * t), cos(3 * t), t, 0.2)
 ```
+
 
 ## 🔗 See also
 
@@ -37,7 +41,7 @@ comet3(sin(5 * t), cos(3 * t), t, 0.2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

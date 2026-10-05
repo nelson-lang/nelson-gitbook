@@ -18,7 +18,8 @@ Verifie qu'aucune entree numerique ne vaut NaN.
 
 ## 📄 Description
 
-L'assertion reussit lorsqu'aucune entree ne vaut NaN.
+
+L'assertion reussit lorsqu'aucune entree ne vaut NaN. 
 
 Les valeurs infinies sont autorisees par cette assertion.
 
@@ -29,12 +30,12 @@ No NaN values
 ```matlab
 asserts.nonNan([1 Inf]);
 ```
-
 Capture a NaN value
 
 ```matlab
 [res, msg] = asserts.nonNan([1 NaN]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a NaN value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,6 +19,7 @@ Create tree node.
 
 ## 📄 Description
 
+
 <b>n = uitreenode(parent)</b> creates a tree node in a uitree or under another TreeNode. Properties: <b>Text</b>, <b>NodeData</b>, <b>Icon</b>, <b>ContextMenu</b>.
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ uitreenode(n1, 'Text', 'Results');
 expand(tr);
 drawnow();
 ```
-
 <img src="uitreenode_example.svg" align="middle"/>
 uitreenode
 
@@ -46,13 +46,14 @@ n = uitreenode(t, 'Text', 'Node 1', 'NodeData', [1 2 3]);
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

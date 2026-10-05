@@ -9,14 +9,17 @@ Generate a candidate set for designs.
 
 ## 📄 Description
 
+
 <b>candgen</b> generates a full factorial candidate set from factor bounds and its model matrix.
 
 ## Used function(s)
+
 
     x2fx
     candexch
     rowexch
     cordexch
+  
 
 ## 💡 Examples
 
@@ -26,7 +29,6 @@ Generate a full factorial candidate set and its linear model matrix.
 F = candgen(2)
 [F, C] = candgen(2, 'linear')
 ```
-
 Use explicit factor bounds.
 
 ```matlab

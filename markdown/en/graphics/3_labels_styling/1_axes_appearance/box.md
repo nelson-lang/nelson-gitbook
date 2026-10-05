@@ -17,23 +17,26 @@ Display or hide graphics object outline.
 
 ## 📄 Description
 
-<b>box()</b> toggles the outline of the current axes.
 
-<b>box('on')</b> displays the current axes outline.
+<b>box()</b> toggles the outline of the current axes. 
 
-<b>box('off')</b> hides the current axes outline.
+<b>box('on')</b> displays the current axes outline. 
+
+<b>box('off')</b> hides the current axes outline. 
 
 <b>box(target, ...)</b> modifies the outline of the specified target instead of the current axes.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 plot(1:10)
 box on
 ```
-
 <img src="box.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -41,7 +44,7 @@ box on
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

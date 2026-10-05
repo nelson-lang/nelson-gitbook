@@ -17,15 +17,19 @@ Distribue les entrées vers les sorties.
 
 ## 📄 Description
 
-<b>deal</b> réplique les paramètres d'entrée vers les paramètres de sortie correspondants.
+
+<b>deal</b> réplique les paramètres d'entrée vers les paramètres de sortie correspondants. 
 
 Si un seul paramètre d'entrée est fourni, sa valeur sera dupliquée pour tous les sorties.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 [A1, A2, A3] = deal(pi)
 ```
+
 
 ```matlab
 S = [];
@@ -35,8 +39,9 @@ S(3).A = [];
 A1 = 200;
 A2 = 'fifo';
 A3 = 1:11;
-[S.A] = deal(A1, A2, A3)
+[S.A] = deal(A1, A2, A3) 
 ```
+
 
 ```matlab
 C = cell(1,3)
@@ -46,14 +51,15 @@ A3 = 1:11;
 [C{:}] = deal(A1, A2, A3)
 ```
 
+
 ## 🔗 Voir aussi
 
 [cell](../../data_structures/cell.md), [struct](../../data_structures/struct.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

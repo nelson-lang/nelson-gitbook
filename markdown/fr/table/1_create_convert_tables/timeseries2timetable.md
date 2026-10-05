@@ -20,13 +20,15 @@ Convertir des donnees de serie temporelle en timetable.
 
 ## 📄 Description
 
-<b>timeseries2timetable</b> convertit un objet timeseries en timetable.
 
-Les temps numeriques relatifs deviennent des durees. Les metadonnees de temps absolu deviennent des temps datetime.
+<b>timeseries2timetable</b> convertit un objet timeseries en timetable. 
+
+Les temps numeriques relatifs deviennent des durees. Les metadonnees de temps absolu deviennent des temps datetime. 
 
 Chaque serie temporelle devient une variable, nommee d'apres la propriete <b>Name</b> de la serie, ou <b>Data</b> si elle est vide. Les noms en double sont rendus uniques. Pour combiner des series ayant des vecteurs de temps differents, convertissez-les separement puis utilisez <b>synchronize</b>.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [0; 1; 2], 'Name', 'speed');
@@ -34,14 +36,15 @@ TT = timeseries2timetable(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable](../../table/timetable.md).
+[timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

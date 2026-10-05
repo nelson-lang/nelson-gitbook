@@ -11,7 +11,7 @@ Work with netCDF dimensions.
 - ncid - Open netCDF file or group identifier.
 - dimid - Dimension identifier.
 - dimname - Dimension name.
-- dimlen - Dimension length or NC_UNLIMITED.
+- dimlen - Dimension length or NC\_UNLIMITED.
 
 ## 📤 Output argument
 
@@ -19,7 +19,8 @@ Work with netCDF dimensions.
 
 ## 📄 Description
 
-netcdf.inqDimIDs exposes low-level dimension metadata.
+
+netcdf.inqDimIDs exposes low-level dimension metadata. 
 
 Dimensions define the shape of variables and can be shared by several variables in the same group.
 
@@ -35,13 +36,14 @@ dimids = netcdf.inqDimIDs(ncid);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.defVar](../netcdf/netcdf.defVar.md), [netcdf.inq](../netcdf/netcdf.inq.md).
+[netcdf.defVar](../netcdf/netcdf_defVar.md), [netcdf.inq](../netcdf/netcdf_inq.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

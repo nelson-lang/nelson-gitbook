@@ -1,14 +1,24 @@
 # Statistiques
 
+
+    
 Le module Statistiques fournit des outils pour analyser et resumer des donnees dans Nelson.
 
+    
 Il comprend des fonctions pour calculer des mesures de tendance centrale, de variabilite, de correlation et des distributions de probabilites.
 
+    
 Le module prend egalement en charge des structures avancees de synthese de donnees pour une estimation precise des quantiles, permettant une analyse statistique robuste et l'interpretation des jeux de donnees.
+
+  
 
 ## Statistiques descriptives et visualisation
 
+
+    
 Fonctions pour resumer, explorer, classer et visualiser des donnees statistiques.
+
+  
 
 ### Functions
 
@@ -55,7 +65,11 @@ Fonctions pour resumer, explorer, classer et visualiser des donnees statistiques
 
 ## Distributions de probabilites
 
+
+    
 Fonctions de distribution pour densite, probabilite cumulee, probabilite inverse, ajustement, vraisemblance, tirage aleatoire et statistiques de synthese.
+
+  
 
 ### Functions
 
@@ -183,7 +197,11 @@ Fonctions de distribution pour densite, probabilite cumulee, probabilite inverse
 
 ## Tests d hypotheses
 
+
+    
 Tests statistiques pour ajustement de distribution, position, variance, rangs, independance et comparaisons.
+
+  
 
 ### Functions
 
@@ -210,7 +228,11 @@ Tests statistiques pour ajustement de distribution, position, variance, rangs, i
 
 ## ANOVA
 
+
+    
 Fonctions d analyse de variance.
+
+  
 
 ### Functions
 
@@ -219,7 +241,11 @@ Fonctions d analyse de variance.
 
 ## Regression
 
+
+    
 Fonctions de regression, correlation et prediction supervisee.
+
+  
 
 ### Functions
 
@@ -248,7 +274,11 @@ Fonctions de regression, correlation et prediction supervisee.
 
 ## Classification
 
+
+    
 Fonctions de modeles de classification et aides pour donnees groupees.
+
+  
 
 ### Functions
 
@@ -271,7 +301,11 @@ Fonctions de modeles de classification et aides pour donnees groupees.
 
 ## Regroupement et detection d anomalies
 
+
+    
 Fonctions d apprentissage non supervise, recherche de plus proches voisins, gestion des valeurs aberrantes et modeles de sequences.
+
+  
 
 ### Functions
 
@@ -305,7 +339,11 @@ Fonctions d apprentissage non supervise, recherche de plus proches voisins, gest
 
 ## Reduction de dimension et selection de variables
 
+
+    
 Fonctions de reduction de dimension, analyse factorielle, classement de variables et representations de faible rang.
+
+  
 
 ### Functions
 
@@ -323,7 +361,11 @@ Fonctions de reduction de dimension, analyse factorielle, classement de variable
 
 ## Plans d experiences
 
+
+    
 Fonctions pour plans d experiences et configuration de modeles.
+
+  
 
 ### Functions
 
@@ -335,3 +377,4 @@ Fonctions pour plans d experiences et configuration de modeles.
 - [statget](9_design_of_experiments/statget.md) - Acceder aux valeurs de champs dans les structures d'options statistiques.
 - [statset](9_design_of_experiments/statset.md) - Creer ou modifier des structures d'options statistiques.
 - [x2fx](9_design_of_experiments/x2fx.md) - Convertir des facteurs en matrice de plan.
+

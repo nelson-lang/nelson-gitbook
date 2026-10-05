@@ -17,22 +17,26 @@ Geometric inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>geoinv</b> evaluates geometric inverse cumulative probabilities element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = [0 0.25 0.9];
 x = geoinv(y, 0.25);
 ```
 
+
 ## 🔗 See also
 
-[geopdf](../../statistics/geopdf.md), [geocdf](../../statistics/geocdf.md), [geornd](../../statistics/geornd.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geocdf](../../statistics/2_probability_distributions/geocdf.md), [geornd](../../statistics/2_probability_distributions/geornd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

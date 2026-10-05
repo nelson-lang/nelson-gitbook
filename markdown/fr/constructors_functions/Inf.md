@@ -20,27 +20,33 @@ Infini
 
 ## 📄 Description
 
-<b>Inf</b> retourne le symbole IEEE Inf (Infini).
 
-<b>Inf(n)</b> retourne une matrice n-par-n remplie de <b>Inf</b>.
+<b>Inf</b> retourne le symbole IEEE Inf (Infini). 
 
-<b>Inf(n, m)</b> retourne une matrice n-par-m remplie de <b>Inf</b>.
+<b>Inf(n)</b> retourne une matrice n-par-n remplie de <b>Inf</b>. 
+
+<b>Inf(n, m)</b> retourne une matrice n-par-m remplie de <b>Inf</b>. 
 
 L'argument optionnel <b>classname</b> sélectionne la classe du résultat et doit valoir <b>'double'</b> (par défaut) ou <b>'single'</b>.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 Inf
 ```
+
 
 ```matlab
 -Inf + Inf
 ```
 
+
 ```matlab
 1.e1000
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -48,8 +54,8 @@ Inf
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -21,11 +21,14 @@ Access transfer function model data.
 
 ## 📄 Description
 
-The function <b>tfdata(sys)</b> retrieves the matrix data <b>numerator</b>,<b>denominator</b> from the transfer function model (LTI array) represented by <b>sys</b>.
+
+The function <b>tfdata(sys)</b> retrieves the matrix data <b>numerator</b>,<b>denominator</b> from the transfer function model (LTI array) represented by <b>sys</b>. 
 
 If <b>sys</b> is initially in the form of a state-space model (LTI array), it is automatically converted to the transfer function representation before extracting the matrix data.
 
 ## 💡 Example
+
+
 
 ```matlab
 numerator = 10;
@@ -34,13 +37,14 @@ sys = tf(numerator, denominator)
 [num, den] = tfdata(sys)
 ```
 
+
 ## 🔗 See also
 
-[tf](../../control_system/tf.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

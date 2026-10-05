@@ -1,4 +1,4 @@
-# libpointer_reshape
+# libpointer\_reshape
 
 Redimensionne les dimensions du libpointer
 
@@ -14,9 +14,12 @@ Redimensionne les dimensions du libpointer
 
 ## 📄 Description
 
+
 Définit les dimensions d'un objet libpointer.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 a = libpointer('doublePtr', eye(2, 2));
@@ -24,14 +27,15 @@ a.reshape(3, 3);
 a.Value
 ```
 
+
 ## 🔗 Voir aussi
 
 [libpointer](../dynamic_link/libpointer.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

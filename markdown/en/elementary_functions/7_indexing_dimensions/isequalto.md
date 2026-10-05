@@ -18,10 +18,11 @@ Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensi
 - res - a logical value
 
 ## 📄 Description
-
 <b>isequalto</b> returns true if x1 and x2 are the same type, same size and same values; otherwise, it returns false.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -30,13 +31,14 @@ res = isequalto(A, single(A))
 
 ```
 
+
 ## 🔗 See also
 
-[isequal](../../elementary_functions/isequal.md), [isequaln](../../elementary_functions/isequaln.md).
+[isequal](../../elementary_functions/7_indexing_dimensions/isequal.md), [isequaln](../../elementary_functions/7_indexing_dimensions/isequaln.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

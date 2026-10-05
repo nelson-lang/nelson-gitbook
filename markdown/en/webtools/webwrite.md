@@ -22,6 +22,7 @@ Write data to RESTful web service
 
 ## 📄 Description
 
+
 <b>webwrite</b> write data to RESTful web service.
 
 ## 💡 Examples
@@ -37,7 +38,6 @@ data = struct('text', ['hello from Nelson ', datetime], 'channel', '#test_webwri
 R = webwrite(url, data);
 
 ```
-
 Connect to your NetAtmo Weather station (oAuth2 connection)
 
 ```matlab
@@ -61,13 +61,14 @@ disp(r.body.devices.dashboard_data)
 
 ```
 
+
 ## 🔗 See also
 
 [weboptions](../webtools/weboptions.md), [webread](../webtools/webread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

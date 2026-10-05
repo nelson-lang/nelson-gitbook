@@ -21,9 +21,12 @@ Gamma negative log-likelihood
 
 ## 📄 Description
 
+
 <b>gamlike</b> evaluates the negative log-likelihood of the gamma distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
@@ -31,13 +34,14 @@ phat = gamfit(x);
 nlogL = gamlike(phat, x);
 ```
 
+
 ## 🔗 See also
 
-[gamfit](../../statistics/gamfit.md), [gampdf](../../statistics/gampdf.md), [gamcdf](../../statistics/gamcdf.md).
+[gamfit](../../statistics/2_probability_distributions/gamfit.md), [gampdf](../../statistics/2_probability_distributions/gampdf.md), [gamcdf](../../statistics/2_probability_distributions/gamcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

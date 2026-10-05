@@ -1,18 +1,19 @@
-# MPI_Comm_get_name
+# MPI\_Comm\_get\_name
 
 Return the print name from the communicator.
 
 ## 📝 Syntax
 
-- MPI_Comm_get_name(comm)
+- MPI\_Comm\_get\_name(comm)
 
 ## 📥 Input argument
 
-- comm - a handle: a MPI_Comm object.
+- comm - a handle: a MPI\_Comm object.
 
 ## 📄 Description
 
-<b>MPI_Comm_get_name(comm)</b> returns the print name from the communicator.
+
+<b>MPI\_Comm\_get\_name(comm)</b> returns the print name from the communicator.
 
 ## 💡 Example
 
@@ -32,13 +33,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [MPI_Comm_object](../mpi/MPI_Comm_object.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

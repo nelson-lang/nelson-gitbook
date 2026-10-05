@@ -27,11 +27,14 @@ One-sample and paired t-test
 
 ## 📄 Description
 
-<b>ttest</b> performs a t-test along the first non-singleton dimension unless <b>Dim</b> is specified.
+
+<b>ttest</b> performs a t-test along the first non-singleton dimension unless <b>Dim</b> is specified. 
 
 NaN values are omitted from each tested slice.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [2 4 5 6 9];
@@ -39,13 +42,14 @@ x = [2 4 5 6 9];
 [h2, p2] = ttest([4 6 7], [3 5 7], 'Tail', 'right');
 ```
 
+
 ## 🔗 See also
 
-[mean](../../statistics/mean.md), [std](../../statistics/std.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md), [std](../../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

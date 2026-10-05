@@ -10,11 +10,14 @@ Robust linear regression.
 
 ## 📄 Description
 
-<b>robustfit</b> fits a linear regression model using iteratively reweighted least squares.
+
+<b>robustfit</b> fits a linear regression model using iteratively reweighted least squares. 
 
 By default, a constant column is added before fitting. Supported weight functions include <b>bisquare</b>, <b>huber</b>, <b>fair</b>, <b>cauchy</b>, <b>welsch</b>, <b>talwar</b>, <b>andrews</b>, <b>logistic</b>, <b>ols</b>, and function handles.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = (1:10)';
@@ -22,13 +25,14 @@ y = 10 - 2*x + randn(10,1);
 [b, stats] = robustfit(x, y)
 ```
 
+
 ## 🔗 See also
 
-[regress](../../statistics/regress.md), [corr](../../statistics/corr.md).
+[regress](../../statistics/5_regression/regress.md), [corr](../../statistics/1_descriptive_statistics_visualization/corr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

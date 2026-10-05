@@ -16,23 +16,27 @@ Determiner si l'entree est un objet tabulaire.
 
 ## 📄 Description
 
+
 <b>istabular(A)</b> renvoie vrai quand <b>A</b> est une table ou une timetable.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table([1; 2]);
 istabular(T)
 ```
 
+
 ## 🔗 Voir aussi
 
-[istable](../../table/istable.md), [istimetable](../../table/istimetable.md).
+[istable](../../table/3_summary_information/istable.md), [istimetable](../../table/3_summary_information/istimetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

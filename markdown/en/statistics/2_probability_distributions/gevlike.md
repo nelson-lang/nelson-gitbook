@@ -21,9 +21,12 @@ Generalized extreme value negative log-likelihood
 
 ## 📄 Description
 
+
 <b>gevlike</b> evaluates the negative log-likelihood of the generalized extreme value distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-1.2 -0.4 0.1 0.8 1.5 2.8 4.0];
@@ -31,13 +34,14 @@ phat = gevfit(x);
 nlogL = gevlike(phat, x);
 ```
 
+
 ## 🔗 See also
 
-[gevfit](../../statistics/gevfit.md), [gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md).
+[gevfit](../../statistics/2_probability_distributions/gevfit.md), [gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

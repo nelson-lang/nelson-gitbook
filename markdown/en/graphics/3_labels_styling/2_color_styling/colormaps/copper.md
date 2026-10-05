@@ -17,17 +17,20 @@ Copper colormap array.
 
 ## 📄 Description
 
+
 <b>copper</b> returns the colormap with copper colors.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('copper');
 ```
-
 <img src="copper.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,7 +38,7 @@ colormap('copper');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

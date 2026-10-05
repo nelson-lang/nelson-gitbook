@@ -15,9 +15,12 @@ Vérifie que la valeur est un seul texte (scalaire) ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeTextScalar</b> vérifie que la valeur est un seul texte (scalaire) ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeTextScalar('true')
@@ -25,14 +28,15 @@ mustBeTextScalar(["f", "ff"])
 mustBeTextScalar("hello")
 ```
 
+
 ## 🔗 Voir aussi
 
-[isscalar](../elementary_functions/isscalar.md), [ischar](../types/ischar.md), [isstring](../types/isstring.md).
+[isscalar](../elementary_functions/7_indexing_dimensions/isscalar.md), [ischar](../types/ischar.md), [isstring](../types/isstring.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

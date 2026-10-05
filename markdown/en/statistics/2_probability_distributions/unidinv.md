@@ -17,18 +17,22 @@ Discrete uniform inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>unidinv</b> computes inverse cumulative probabilities for the discrete uniform distribution on integers from 1 to <b>n</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0 0.1 0.5 1];
 x = unidinv(p, 5);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

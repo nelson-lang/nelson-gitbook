@@ -24,23 +24,27 @@ Fonction de repartition lognormale
 
 ## 📄 Description
 
+
 <b>logncdf</b> evalue les probabilites cumulees lognormales element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = logncdf([0 1 exp(1)]);
 q = logncdf(exp(10), 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[lognpdf](../../statistics/lognpdf.md), [logninv](../../statistics/logninv.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [logninv](../../statistics/2_probability_distributions/logninv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

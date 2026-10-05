@@ -18,17 +18,21 @@ Binomial mean and variance
 
 ## 📄 Description
 
+
 <b>binostat</b> returns the mean and variance of the binomial distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = binostat([10 20], [0.25 0.5]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

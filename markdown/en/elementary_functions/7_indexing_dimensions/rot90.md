@@ -18,13 +18,16 @@ Rotate array 90 degrees.
 
 ## 📄 Description
 
-<b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k \* 90</b> degrees, where <b>k</b> is an integer scalar value. Negative values rotate clockwise.
 
-The result preserves the input class and sparse storage when applicable.
+<b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k \* 90</b> degrees, where <b>k</b> is an integer scalar value. Negative values rotate clockwise. 
+
+The result preserves the input class and sparse storage when applicable. 
 
 Consider<b>flip</b> function to flip arrays in any dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = eye(3, 2);
@@ -34,13 +37,14 @@ y = rot90(x, 2)
 y = rot90(x, 3)
 ```
 
+
 ## 🔗 See also
 
-[flipud](../../elementary_functions/flipud.md), [fliplr](../../elementary_functions/fliplr.md).
+[flipud](../../elementary_functions/7_indexing_dimensions/flipud.md), [fliplr](../../elementary_functions/7_indexing_dimensions/fliplr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

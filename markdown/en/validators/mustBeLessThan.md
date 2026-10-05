@@ -16,15 +16,17 @@ Checks that value is less than another value or issue error.
 
 ## 📄 Description
 
+
 <b>mustBeLessThan</b> checks that value is less than another value or issue error.
 
 ## 💡 Examples
+
+
 
 ```matlab
 mustBeLessThan(1, 0)
 mustBeLessThan(1, 2)
 ```
-
 Compare with an array of compatible size
 
 ```matlab
@@ -33,15 +35,16 @@ mustBeLessThan([4 9 14], upper)
 mustBeLessThan([4 9 15], upper)
 ```
 
+
 ## 🔗 See also
 
 [mustBeNumeric](../validators/mustBeNumeric.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                                                        |
-| ------- | --------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | initial version                                                                                                       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | c can be an array with a size compatible with var; inputs are no longer restricted to real numeric or logical values. |
 
 <!--

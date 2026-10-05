@@ -20,22 +20,26 @@ Extreme value inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>evinv</b> evaluates inverse extreme value cumulative probabilities element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.1 0.5 0.9];
 x = evinv(p, 0, 1);
 ```
 
+
 ## 🔗 See also
 
-[evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md), [evrnd](../../statistics/evrnd.md).
+[evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md), [evrnd](../../statistics/2_probability_distributions/evrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

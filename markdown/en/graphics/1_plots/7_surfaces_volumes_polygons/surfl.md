@@ -12,7 +12,8 @@ Display a lighted surface.
 
 ## 📄 Description
 
-<b>surfl</b> displays a surface with lighting-based reflectance stored in the surface color data.
+
+<b>surfl</b> displays a surface with lighting-based reflectance stored in the surface color data. 
 
 <b>surfl(..., 'light')</b> creates an infinite light and returns the surface and light handles.
 
@@ -24,8 +25,8 @@ Lighted surface.
 surfl(peaks(30));
 shading interp;
 ```
-
 <img src="surfl_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

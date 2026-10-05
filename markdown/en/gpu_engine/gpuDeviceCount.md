@@ -12,13 +12,17 @@ Number of compatible GPU devices.
 
 ## 📄 Description
 
+
 <b>n = gpuDeviceCount()</b> returns the number of compatible GPU devices available on the system. A value of <b>0</b> means no supported device was found.
 
 ## 💡 Example
 
+
+
 ```matlab
 gpuDeviceCount()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ gpuDeviceCount()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -19,7 +19,7 @@
 </head>
 <body>
 <a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">tf</span></div></div>
-<div class="section" style="text-align:center;"><img src="./tf.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section" style="text-align:center;"><img src="./tf.svg" align="middle" style="max-width:192px;max-height:144px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
 <div class="section syntax-section"><div class="subtitle">Implemente une approximation de fonction de transfert continue.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
@@ -694,7 +694,7 @@ Nelson::NFlow::handleTf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
 //=============================================================================
 // Continuous state order n of a transfer function: (trimmed denominator degree).
 // n == 0 is a pure algebraic gain (y = D*u, no state). Shared by the RK4 codegen
-// layout (roadmap 5.3) so it agrees with the companion form built in emitShared.
+// layout so it agrees with the companion form built in emitShared.
 static int
 tfStateOrder(const std::vector&lt;double&gt;&amp; denIn)
 {
@@ -720,7 +720,7 @@ Nelson::NFlow::getCodeGenCTf()
         a.line("out_" + a.id + " = tf_step(&amp;tf_params_" + a.id + ", s-&gt;tf_" + a.id + ", " + a.in[0]
             + ", dt);");
     };
-    // Unified variable-step codegen (roadmap 5.3): a tf contributes n continuous
+    // Unified variable-step codegen: a tf contributes n continuous
     // states (companion form). n == 0 is a pure gain (algebraic, no state): safe
     // to keep its emitStep in the rhs() body, so report 0, not a fallback.
     t.continuousWidth = [](const BlockCodegenArgs&amp; a) -&gt; int {
@@ -891,7 +891,7 @@ Nelson::NFlow::getCodeGenRustTf()
         a.line("out_" + a.id + " = tf_step(TF_N_" + cu + ", TF_D_" + cu + ", &amp;TF_C_" + cu
             + ", &amp;TF_A_" + cu + ", &amp;mut s.tf_x_" + a.id + ", " + a.in[0] + ", dt);");
     };
-    // Unified variable-step codegen (roadmap 5.3), Rust backend: n companion
+    // Unified variable-step codegen, Rust backend: n companion
     // states integrated through the shared rhs (tf_out / tf_deriv). n == 0 is a
     // pure algebraic gain (no state).
     t.continuousWidth = [](const BlockCodegenArgs&amp; a) -&gt; int {

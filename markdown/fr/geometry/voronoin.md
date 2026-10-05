@@ -9,7 +9,8 @@ Diagramme de Voronoi en N dimensions
 
 ## 📄 Description
 
-<b>voronoin</b> calcule les sommets et cellules de Voronoi pour les points d'entree.
+
+<b>voronoin</b> calcule les sommets et cellules de Voronoi pour les points d'entree. 
 
 <b>V</b> contient les sommets et <b>C</b> est un tableau de cellules d'indices a partir de un.
 
@@ -22,14 +23,15 @@ P = [0 0; 1 0; 1 1; 0 1];
 [V, C] = voronoin(P)
 ```
 
+
 ## 🔗 Voir aussi
 
 [voronoi](../geometry/voronoi.md), [delaunayn](../geometry/delaunayn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

@@ -19,23 +19,27 @@ Estimation du maximum uniforme discret
 
 ## 📄 Description
 
+
 <b>unidfit</b> estime la valeur maximale d'une loi uniforme discrete sur les entiers de 1 a n.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1 2 4 5 5];
 [nHat, nCI] = unidfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unidlike](../../statistics/unidlike.md), [unidpdf](../../statistics/unidpdf.md), [unidcdf](../../statistics/unidcdf.md), [unidrnd](../../statistics/unidrnd.md).
+[unidlike](../../statistics/2_probability_distributions/unidlike.md), [unidpdf](../../statistics/2_probability_distributions/unidpdf.md), [unidcdf](../../statistics/2_probability_distributions/unidcdf.md), [unidrnd](../../statistics/2_probability_distributions/unidrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

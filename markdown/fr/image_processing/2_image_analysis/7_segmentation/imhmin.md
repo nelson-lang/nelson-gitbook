@@ -19,6 +19,7 @@ Supprime les minima peu profonds avec la transformation h-minima.
 
 ## 📄 Description
 
+
 imhmin calcule la transformation h-minima par reconstruction en niveaux de gris par erosion de I+h sous I. Cette fonction aide a supprimer les minima peu profonds avant l'extraction de marqueurs ou une segmentation watershed.
 
 ## 💡 Exemple
@@ -31,17 +32,17 @@ J=imhmin(I,2);
 figure; subplot(1,2,1); imagesc(I); title('Entree');
 subplot(1,2,2); imagesc(J); title('h-minima');
 ```
-
 <img src="imhmin_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imextendedmin](../../../image_processing/imextendedmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [watershed](../../../image_processing/watershed.md).
+[imextendedmin](../../../image_processing/2_image_analysis/7_segmentation/imextendedmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

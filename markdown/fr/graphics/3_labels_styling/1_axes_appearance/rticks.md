@@ -26,7 +26,8 @@ Definit ou retourne les graduations radiales des axes polaires.
 
 ## 📄 Description
 
-<b>rticks</b> retourne ou definit les valeurs des graduations radiales de l'axes polaire courant.
+
+<b>rticks</b> retourne ou definit les valeurs des graduations radiales de l'axes polaire courant. 
 
 La definition de valeurs numeriques passe le mode a <b>manual</b>. Si les etiquettes radiales sont en mode automatique, elles sont regenerees depuis les nouvelles valeurs.
 
@@ -42,14 +43,15 @@ ticks = rticks()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [rticklabels](../../../graphics/3_labels_styling/1_axes_appearance/rticklabels.md), [rlim](../../../graphics/3_labels_styling/1_axes_appearance/rlim.md), [thetaticks](../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,6 +19,7 @@ Crée une jauge (circular, linear, ninetydegree, semicircular).
 
 ## 📄 Description
 
+
 <b>g = uigauge(parent, style)</b> crée une jauge d'affichage : styles <b>'circular'</b> (défaut), <b>'linear'</b>, <b>'ninetydegree'</b>, <b>'semicircular'</b>. Propriétés : <b>Value</b>, <b>Limits</b>, <b>ScaleColors</b>/<b>ScaleColorLimits</b>, graduations, <b>Orientation</b> ou <b>ScaleDirection</b> selon le style.
 
 ## 💡 Exemples
@@ -35,7 +36,6 @@ lg.Position = [310 145 150 40];
 lg.Value = 45;
 drawnow();
 ```
-
 <img src="uigauge_example.svg" align="middle"/>
 uigauge
 
@@ -47,13 +47,14 @@ lg = uigauge(f, 'linear', 'Orientation', 'vertical');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

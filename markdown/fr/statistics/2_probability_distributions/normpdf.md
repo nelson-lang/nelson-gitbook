@@ -20,35 +20,45 @@ Densité de probabilité normale
 
 ## 📄 Description
 
-<b>normpdf</b> calcule la fonction de densité de probabilité de la loi normale (gaussienne).
 
-La formule générale pour la densité de la loi normale est :
+<b>normpdf</b> calcule la fonction de densité de probabilité de la loi normale (gaussienne). 
+
+La formule générale pour la densité de la loi normale est : 
 $$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+ 
 
-où
+où 
 $$\mu$$
+ 
 
-est la moyenne et
+est la moyenne et 
 $$\sigma^2$$
+ 
 
-est la variance.
+est la variance. 
 
-Pour la loi normale centrée-réduite (
+Pour la loi normale centrée-réduite ( 
 $$\mu = 0, \sigma = 1$$
+ 
 
-) :
+) : 
 $$\phi(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$$
+
 
 ## Fonction(s) utilisée(s)
 
+
     exp
     sqrt
+  
 
 ## 📚 Bibliographie
 
 Evans, M., N. Hastings, and B. Peacock. Statistical Distributions. 2nd ed. Hoboken, NJ: John Wiley and Sons, Inc., 1993.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-0.2, -0.1, 0, 0.1, 0.2];
@@ -60,14 +70,15 @@ x = [-0.2, -0.1, 0, 0.1, 0.2];
     R = normpdf(0, [-0.2, -0.1, 0, 0.1, 0.2], 1);
 ```
 
+
 ## 🔗 Voir aussi
 
-[mean](../../statistics/mean.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -24,6 +24,7 @@ Calcule un seuil adaptatif d image.
 
 ## 📄 Description
 
+
 Calcule une image de seuil local pour binarisation adaptative. Les polarites de premier plan prises en charge sont bright et dark. Les statistiques prises en charge sont mean, gaussian et median.
 
 ## 💡 Exemple
@@ -39,17 +40,17 @@ figure; subplot(1,3,1); imagesc(I); title('Input');
 subplot(1,3,2); imagesc(T); title('Threshold');
 subplot(1,3,3); imagesc(BW); title('Binary');
 ```
-
 <img src="adaptthresh_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imbinarize](../../../image_processing/imbinarize.md), [graythresh](../../../image_processing/graythresh.md).
+[imbinarize](../../../image_processing/1_image_basics/2_contrast_thresholding/imbinarize.md), [graythresh](../../../image_processing/1_image_basics/2_contrast_thresholding/graythresh.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

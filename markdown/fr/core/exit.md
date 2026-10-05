@@ -12,7 +12,9 @@ Quitte l'environnement Nelson.
 
 ## 📄 Description
 
+
 Ferme l'environnement Nelson ou termine la session en cours.
+
 
 ## 🔗 Voir aussi
 
@@ -20,8 +22,8 @@ Ferme l'environnement Nelson ou termine la session en cours.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

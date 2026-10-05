@@ -19,6 +19,7 @@ Factorisation de Schur en blocs diagonaux.
 
 ## 📄 Description
 
+
 <b>[T, B] = bdschur(A, CONDMAX)</b> calcule une matrice de transformation <b>T</b>, où<b>B = T \\ A \* T</b> donne une matrice diagonale par blocs, chaque bloc étant une matrice de Schur quasi triangulaire supérieure, assurant la diagonalisation de la matrice A tout en préservant certaines propriétés structurelles.
 
 ## Fonction(s) utilisée(s)
@@ -30,6 +31,8 @@ MB03RD
 http://slicot.org/objects/software/shared/doc/MB03RD.html
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -45,14 +48,15 @@ A = [1.   -1.    1.    2.    3.    1.    2.    3.;
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [slicot_mb03rd](../../slicot/slicot_mb03rd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

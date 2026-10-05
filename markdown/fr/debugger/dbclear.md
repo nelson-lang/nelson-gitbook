@@ -15,11 +15,12 @@ Supprimer les points d'arrêt lors du débogage.
 
 ## 📄 Description
 
-<b>dbclear</b> supprime les points d'arrêt définis pour le débogage. Vous pouvez supprimer tous les points d'arrêt, les points d'arrêt dans un fichier spécifique, les points d'arrêt à un emplacement spécifique.
 
-<b>dbclear all</b> supprime tous les points d'arrêt dans tous les fichiers et pour toutes les conditions.
+<b>dbclear</b> supprime les points d'arrêt définis pour le débogage. Vous pouvez supprimer tous les points d'arrêt, les points d'arrêt dans un fichier spécifique, les points d'arrêt à un emplacement spécifique. 
 
-<b>dbclear in file</b> supprime tous les points d'arrêt dans le fichier spécifié.
+<b>dbclear all</b> supprime tous les points d'arrêt dans tous les fichiers et pour toutes les conditions. 
+
+<b>dbclear in file</b> supprime tous les points d'arrêt dans le fichier spécifié. 
 
 <b>dbclear in file at location</b> supprime le point d'arrêt à l'emplacement spécifié dans le fichier.
 
@@ -36,7 +37,6 @@ dbclear in buggy
 dbstatus
 
 ```
-
         Supprimer un point d'arrêt à un emplacement spécifique.
 
 ```matlab
@@ -48,15 +48,16 @@ dbstatus
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dbstop](../debugger/dbstop.md), [dbstatus](../debugger/dbstatus.md), [dbquit](../debugger/dbquit.md), [dbstack](../debugger/dbstack.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -22,6 +22,7 @@ Lisser des donnees 3-D.
 
 ## 📄 Description
 
+
 <b>smooth3</b> lisse des donnees volumiques avec un noyau 3-D separable box ou gaussian et des valeurs de bord repliquees.
 
 ## 💡 Exemple
@@ -32,6 +33,7 @@ Lisser un petit volume avec un noyau gaussian.
 V = rand(10, 10, 10);
 W = smooth3(V, 'gaussian', 5);
 ```
+
 
 ## 🔗 Voir aussi
 

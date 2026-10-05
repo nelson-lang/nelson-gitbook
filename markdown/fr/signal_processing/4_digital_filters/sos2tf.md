@@ -17,9 +17,12 @@ Convertit des sections du second ordre en coefficients de fonction de transfert.
 
 ## 📄 Description
 
+
 <b>sos2tf</b> multiplie les sections du second ordre en une fonction de transfert unique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -27,14 +30,15 @@ Convertit des sections du second ordre en coefficients de fonction de transfert.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf2sos](../../signal_processing/tf2sos.md).
+[tf2sos](../../signal_processing/4_digital_filters/tf2sos.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

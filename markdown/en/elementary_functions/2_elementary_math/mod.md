@@ -17,23 +17,27 @@ Modulus after division.
 
 ## 📄 Description
 
-<b>C = mod(A, B)</b> computes the modulo of A and B, i.e : A - B .\* floor (A ./ B).
+
+<b>C = mod(A, B)</b> computes the modulo of A and B, i.e : A - B .\* floor (A ./ B). 
 
 This function manages also negative values.
 
 ## 💡 Example
 
+
+
 ```matlab
  mod (-1, 3)
 ```
 
+
 ## 🔗 See also
 
-[rem](../../elementary_functions/rem.md), [floor](../../elementary_functions/floor.md).
+[rem](../../elementary_functions/2_elementary_math/rem.md), [floor](../../elementary_functions/2_elementary_math/floor.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

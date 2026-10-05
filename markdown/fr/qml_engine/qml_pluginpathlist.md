@@ -1,10 +1,10 @@
-# qml_pluginpathlist
+# qml\_pluginpathlist
 
 Renvoie la liste des répertoires où le moteur recherche les plugins natifs pour les modules importés.
 
 ## 📝 Syntaxe
 
-- p = qml_pluginpathlist()
+- p = qml\_pluginpathlist()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Renvoie la liste des répertoires où le moteur recherche les plugins natifs pou
 
 ## 📄 Description
 
+
 Renvoie la liste des répertoires où le moteur recherche les plugins natifs pour les modules importés.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 qml_pluginpathlist()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +30,8 @@ qml_pluginpathlist()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

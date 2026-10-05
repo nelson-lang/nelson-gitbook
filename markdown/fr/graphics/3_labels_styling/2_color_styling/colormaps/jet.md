@@ -17,17 +17,20 @@ Tableau de palette de couleurs jet.
 
 ## 📄 Description
 
+
 <b>jet</b> retourne la palette de couleurs jet.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('jet');
 ```
-
 <img src="jet.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('jet');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

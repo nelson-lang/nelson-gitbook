@@ -18,9 +18,12 @@ Set intersection of two arrays.
 
 ## 📄 Description
 
+
 <b>intersect(A, B)</b> returns the sorted values that occur in both input arrays.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [5 7 1];
@@ -28,13 +31,14 @@ B = [3 1 1];
 C = intersect(A, B)
 ```
 
+
 ## 🔗 See also
 
 [union](../data_analysis/union.md), [setdiff](../data_analysis/setdiff.md), [setxor](../data_analysis/setxor.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

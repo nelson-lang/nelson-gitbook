@@ -18,23 +18,27 @@ Empile des variables de table en lignes.
 
 ## 📄 Description
 
+
 <b>stack</b> transforme des variables selectionnees en une variable de donnees et une variable indicatrice.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table({'a'; 'b'}, [1; 2], [3; 4], 'VariableNames', {'ID', 'X', 'Y'});
 S = stack(T, {'X', 'Y'}, 'NewDataVariableName', 'Value')
 ```
 
+
 ## 🔗 Voir aussi
 
-[unstack](../../table/unstack.md).
+[unstack](../../table/4_sort_filter_rearrange/unstack.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

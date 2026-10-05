@@ -20,22 +20,26 @@ Matrice identité sparse.
 
 ## 📄 Description
 
-<b>S = speye()</b> retourne un scalaire sparse 1.
 
-<b>S = speye(n)</b> retourne une matrice identité sparse n-par-n, avec des uns sur la diagonale principale.
+<b>S = speye()</b> retourne un scalaire sparse 1. 
 
-<b>S = speye(n, m)</b> retourne une matrice sparse n-par-m, avec des uns sur la diagonale principale.
+<b>S = speye(n)</b> retourne une matrice identité sparse n-par-n, avec des uns sur la diagonale principale. 
+
+<b>S = speye(n, m)</b> retourne une matrice sparse n-par-m, avec des uns sur la diagonale principale. 
 
 <b>S = speye(sz)</b> retourne une matrice avec des uns sur la diagonale principale.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 
 tic();S = speye(5000, 5000);toc()
 tic();S = sparse(eye(5000, 5000));toc()
-
+    
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +47,8 @@ tic();S = sparse(eye(5000, 5000));toc()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

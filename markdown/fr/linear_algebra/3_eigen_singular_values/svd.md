@@ -22,44 +22,56 @@ Décomposition en valeurs singulières (SVD).
 
 ## 📄 Description
 
-<b>svd</b> calcule la décomposition en valeurs singulières d'une matrice.
 
-Pour une matrice
+<b>svd</b> calcule la décomposition en valeurs singulières d'une matrice. 
+
+Pour une matrice 
 $$M$$
+ 
 
-de taille
+de taille 
 $$m \times n$$
+ 
 
-, la SVD est :
+, la SVD est : 
 $$M = U\Sigma V^T$$
+ 
 
-où :
+où : 
 
-- $$U$$
-  est une matrice unitaire
-  $$m \times m$$
+- 
+$$U$$
+ est une matrice unitaire 
+$$m \times m$$
+ 
 
-(vecteurs singuliers gauches)
+(vecteurs singuliers gauches) 
+- 
+$$\Sigma$$
+ est une matrice diagonale 
+$$m \times n$$
+ 
 
-- $$\Sigma$$
-  est une matrice diagonale
-  $$m \times n$$
+avec des nombres réels non négatifs (valeurs singulières) 
+- 
+$$V^T$$
+ est une matrice unitaire 
+$$n \times n$$
+ 
 
-avec des nombres réels non négatifs (valeurs singulières)
+(vecteurs singuliers droits) 
 
-- $$V^T$$
-  est une matrice unitaire
-  $$n \times n$$
-
-(vecteurs singuliers droits)
-
-Les valeurs singulières
+Les valeurs singulières 
 $$\sigma_i$$
+ 
 
-sont arrangées en ordre décroissant :
+sont arrangées en ordre décroissant : 
 $$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$
 
+
 ## 💡 Exemple
+
+
 
 ```matlab
 X = eye(3, 3);
@@ -67,14 +79,15 @@ s = svd(X)
 [U, S, V] = svd(X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[eig](../../linear_algebra/eig.md).
+[eig](../../linear_algebra/3_eigen_singular_values/eig.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -12,29 +12,35 @@ Ouvre une variable dans l'Ã©diteur de variables
 
 ## 📄 Description
 
-<b>openvar(varname)</b> ouvre la variable nommÃ©e <b>varname</b> dans l'Ã©diteur de variables de Nelson pour inspection et Ã©dition graphique.
 
-Toutes les modifications effectuÃ©es dans l'Ã©diteur sont appliquÃ©es immÃ©diatement dans le workspace.
+<b>openvar(varname)</b> ouvre la variable nommÃ©e <b>varname</b> dans l'Ã©diteur de variables de Nelson pour inspection et Ã©dition graphique. 
 
-L'Ã©diteur de variables supporte les scalaires, vecteurs, matrices, chaÃ®nes, cellules, tables et structures. Les tableaux multidimensionnels peuvent Ãªtre visualisÃ©s mais leur Ã©dition peut Ãªtre limitÃ©e.
+Toutes les modifications effectuÃ©es dans l'Ã©diteur sont appliquÃ©es immÃ©diatement dans le workspace. 
 
-Vous pouvez Ã©galement ouvrir une variable en double-cliquant dessus dans le panneau Variables.
+L'Ã©diteur de variables supporte les scalaires, vecteurs, matrices, chaÃ®nes, cellules, tables et structures. Les tableaux multidimensionnels peuvent Ãªtre visualisÃ©s mais leur Ã©dition peut Ãªtre limitÃ©e. 
 
-L'Ã©diteur se synchronise automatiquement avec le workspace courant.
+Vous pouvez Ã©galement ouvrir une variable en double-cliquant dessus dans le panneau Variables. 
 
-Contenu Ã©ditable : dans les structures (struct), cellules (cell) et tables (table), seuls les Ã©lÃ©ments scalaires sont Ã©ditables.
+L'Ã©diteur se synchronise automatiquement avec le workspace courant. 
 
-Nelson offre une intÃ©gration complÃ¨te du presse-papiers avec des tableurs tels que <b>Microsoft Excel</b>, <b>LibreOffice Calc</b> et <b>OpenOffice Calc</b>.
+Contenu Ã©ditable : dans les structures (struct), cellules (cell) et tables (table), seuls les Ã©lÃ©ments scalaires sont Ã©ditables. 
 
-Vous pouvez copier des variables depuis l'Ã©diteur de variables et les coller directement dans ces applications, et inversement.
+Nelson offre une intÃ©gration complÃ¨te du presse-papiers avec des tableurs tels que <b>Microsoft Excel</b>, <b>LibreOffice Calc</b> et <b>OpenOffice Calc</b>. 
+
+Vous pouvez copier des variables depuis l'Ã©diteur de variables et les coller directement dans ces applications, et inversement. 
+
 
 <img src="openvar.png" align="middle"/>
 
+
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6]; openvar("A");
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,9 +48,9 @@ A = [1 2 3; 4 5 6]; openvar("A");
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

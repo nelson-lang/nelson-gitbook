@@ -20,23 +20,27 @@ Nombres aleatoires binomiaux
 
 ## 📄 Description
 
+
 <b>binornd</b> genere des valeurs aleatoires de loi binomiale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = binornd(10, 0.3, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[binopdf](../../statistics/binopdf.md), [binocdf](../../statistics/binocdf.md), [binoinv](../../statistics/binoinv.md), [binostat](../../statistics/binostat.md).
+[binopdf](../../statistics/2_probability_distributions/binopdf.md), [binocdf](../../statistics/2_probability_distributions/binocdf.md), [binoinv](../../statistics/2_probability_distributions/binoinv.md), [binostat](../../statistics/2_probability_distributions/binostat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

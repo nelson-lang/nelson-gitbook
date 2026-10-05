@@ -21,11 +21,14 @@ Create a light object in axes.
 
 ## 📄 Description
 
-<b>light</b> creates a light object in axes. Visible light objects affect surface and patch objects in the same axes when their lighting properties are enabled.
+
+<b>light</b> creates a light object in axes. Visible light objects affect surface and patch objects in the same axes when their lighting properties are enabled. 
 
 See [light properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.light.properties.md) for the complete property list.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -36,8 +39,8 @@ material('shiny');
 view(35, 28);
 
 ```
-
 <img src="light_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -45,7 +48,7 @@ view(35, 28);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

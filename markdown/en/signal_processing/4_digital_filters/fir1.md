@@ -21,9 +21,12 @@ Window-based FIR filter design.
 
 ## 📄 Description
 
+
 <b>fir1</b> designs a linear-phase FIR filter by windowing an ideal impulse response.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ b = fir1(16, 0.25);
 
 ```
 
+
 ## 🔗 See also
 
-[freqz](../../signal_processing/freqz.md), [kaiser](../../signal_processing/kaiser.md).
+[freqz](../../signal_processing/4_digital_filters/freqz.md), [kaiser](../../signal_processing/5_spectral_analysis/kaiser.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

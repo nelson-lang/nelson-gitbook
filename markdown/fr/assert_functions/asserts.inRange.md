@@ -20,7 +20,8 @@ Verifie que chaque valeur est dans un intervalle inclusif.
 
 ## 📄 Description
 
-L'assertion reussit lorsque minValue <= value <= maxValue pour chaque element compare.
+
+L'assertion reussit lorsque minValue <= value <= maxValue pour chaque element compare. 
 
 Les bornes peuvent etre scalaires ou des tableaux de dimensions compatibles avec value.
 
@@ -31,12 +32,12 @@ Inclusive range
 ```matlab
 asserts.inRange([1 2], 0, 3);
 ```
-
 Capture an out-of-range value
 
 ```matlab
 [res, msg] = asserts.inRange([1 4], 0, 3);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -44,8 +45,8 @@ Capture an out-of-range value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

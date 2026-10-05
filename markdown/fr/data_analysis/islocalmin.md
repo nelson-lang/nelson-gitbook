@@ -29,13 +29,14 @@ Détecte les minima locaux des données.
 
 ## 📄 Description
 
-<b>islocalmin</b> marque les éléments de A plus petits que leurs voisins selon la dimension de travail. Une suite de valeurs égales plus petites que les valeurs qui l'entourent forme un seul minimum local (voir 'FlatSelection').
 
-Le premier et le dernier éléments ne sont jamais des minima locaux. Les valeurs NaN sont ignorées. Les valeurs -Inf sont toujours des minima locaux, de proéminence infinie.
+<b>islocalmin</b> marque les éléments de A plus petits que leurs voisins selon la dimension de travail. Une suite de valeurs égales plus petites que les valeurs qui l'entourent forme un seul minimum local (voir 'FlatSelection'). 
 
-La proéminence d'un minimum mesure à quel point il se détache : depuis le minimum, une ligne horizontale est tracée de chaque côté jusqu'à la première valeur strictement plus petite ou jusqu'au bord des données ; la base est la plus petite des deux valeurs maximales trouvées au-dessus de ces lignes, et la proéminence est la profondeur du minimum sous la base. Chaque élément d'un plateau minimal porte sa proéminence.
+Le premier et le dernier éléments ne sont jamais des minima locaux. Les valeurs NaN sont ignorées. Les valeurs -Inf sont toujours des minima locaux, de proéminence infinie. 
 
-islocalmin(A) donne le même résultat que islocalmax appliqué aux données inversées : les options se comportent de la même façon. Les filtres sont appliqués dans cet ordre : 'MinProminence', 'MinSeparation' (un plateau compte comme un seul minimum couvrant ses échantillons) puis 'MaxNumExtrema' (en cas d'égalité, le premier minimum l'emporte).
+La proéminence d'un minimum mesure à quel point il se détache : depuis le minimum, une ligne horizontale est tracée de chaque côté jusqu'à la première valeur strictement plus petite ou jusqu'au bord des données ; la base est la plus petite des deux valeurs maximales trouvées au-dessus de ces lignes, et la proéminence est la profondeur du minimum sous la base. Chaque élément d'un plateau minimal porte sa proéminence. 
+
+islocalmin(A) donne le même résultat que islocalmax appliqué aux données inversées : les options se comportent de la même façon. Les filtres sont appliqués dans cet ordre : 'MinProminence', 'MinSeparation' (un plateau compte comme un seul minimum couvrant ses échantillons) puis 'MaxNumExtrema' (en cas d'égalité, le premier minimum l'emporte). 
 
 Sans 'ProminenceWindow', la recherche est de complexité linéaire : elle convient aux grands signaux.
 
@@ -48,7 +49,6 @@ A = [5 0 4 2 4 1 5];
 [TF, P] = islocalmin(A)
 islocalmin(A, 'MinProminence', 3)
 ```
-
 Plateaux minimaux
 
 ```matlab
@@ -57,7 +57,6 @@ A = max(-0.75, -sin(pi * x));
 find(islocalmin(A, 'FlatSelection', 'first'))
 find(islocalmin(A, 'FlatSelection', 'all'))
 ```
-
 Minimum le plus proéminent de chaque colonne
 
 ```matlab
@@ -65,14 +64,15 @@ A = [3 4; 1 2; 2 4; 0 1; 3 4];
 TF = islocalmin(A, 'MaxNumExtrema', 1)
 ```
 
+
 ## 🔗 Voir aussi
 
 [islocalmax](../data_analysis/islocalmax.md), [min](../data_analysis/min.md), [movmin](../data_analysis/movmin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

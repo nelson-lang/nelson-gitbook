@@ -16,13 +16,14 @@ Classe de base des objets à sémantique de référence.
 
 ## 📄 Description
 
-<b>handle</b> est la classe de base abstraite dont dérive toute classe handle. Une classe déclarée par <b>classdef MaClasse < handle</b> possède une sémantique de référence : les variables qui contiennent l'objet sont des références vers une unique instance sous-jacente, et non des copies indépendantes.
 
-Affecter un objet handle à une autre variable, ou le passer à une fonction, copie la référence et non les données. Toutes les références observent alors les mêmes valeurs de propriétés, et une modification effectuée via une référence est visible via toutes les autres références au même objet.
+<b>handle</b> est la classe de base abstraite dont dérive toute classe handle. Une classe déclarée par <b>classdef MaClasse < handle</b> possède une sémantique de référence : les variables qui contiennent l'objet sont des références vers une unique instance sous-jacente, et non des copies indépendantes. 
 
-Ce comportement diffère de celui d'une classe valeur (le cas par défaut lorsqu'aucune super-classe n'est indiquée), où chaque affectation produit une copie indépendante.
+Affecter un objet handle à une autre variable, ou le passer à une fonction, copie la référence et non les données. Toutes les références observent alors les mêmes valeurs de propriétés, et une modification effectuée via une référence est visible via toutes les autres références au même objet. 
 
-Dériver de <b>handle</b> fournit également les services communs aux handles : gestion du cycle de vie avec <b>delete</b> et <b>isvalid</b>, comparaison d'égalité et relationnelle des références, ainsi que les mécanismes de réflexion, d'événements, d'écouteurs et de propriétés dynamiques exposés par les classes handle associées.
+Ce comportement diffère de celui d'une classe valeur (le cas par défaut lorsqu'aucune super-classe n'est indiquée), où chaque affectation produit une copie indépendante. 
+
+Dériver de <b>handle</b> fournit également les services communs aux handles : gestion du cycle de vie avec <b>delete</b> et <b>isvalid</b>, comparaison d'égalité et relationnelle des références, ainsi que les mécanismes de réflexion, d'événements, d'écouteurs et de propriétés dynamiques exposés par les classes handle associées. 
 
 Pour obtenir une copie indépendante d'un objet handle, dérivez la classe de <b>nelson.mixin.Copyable</b> et utilisez sa méthode <b>copy</b>.
 
@@ -44,14 +45,15 @@ delete(a);
 isvalid(b)     % false : l'objet partage a ete detruit
 ```
 
+
 ## 🔗 Voir aussi
 
 [classdef](../interpreter/classdef.md), [nelson.mixin.Copyable](../handle/nelson.mixin.Copyable.md), [isvalid](../handle/isvalid.md), [delete](../handle/delete.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

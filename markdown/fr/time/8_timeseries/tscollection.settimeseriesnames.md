@@ -8,9 +8,11 @@ Fonction pour objets de serie temporelle.
 
 ## 📄 Description
 
+
 <b>settimeseriesnames</b> opere sur les objets timeseries ou tscollection.
 
 ## 💡 Exemple
+
 
 ```matlab
 count1 = timeseries([11; 7; 14; 11], (1:4)', 'Name', 'Intersection1');
@@ -22,14 +24,15 @@ gettimeseriesnames(tsc)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md), [tscollection](../../time/tscollection.md).
+[timeseries](../../time/8_timeseries/timeseries.md), [tscollection](../../time/8_timeseries/tscollection.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

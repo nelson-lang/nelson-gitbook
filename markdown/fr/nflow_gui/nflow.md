@@ -18,9 +18,10 @@ Lance l'editeur nflow, eventuellement sur un fichier modele.
 
 ## 📄 Description
 
-<b>nflow</b> ouvre l'editeur nflow, un editeur de diagrammes base navigateur pour construire et simuler des modeles. Appele sans argument, il s'ouvre sur un modele vide ; appele avec un fichier <b>.nflow</b>, il ouvre ce modele.
 
-<b>nflow</b> est le lanceur bas niveau. Pour ouvrir un modele deja charge en memoire (par nom ou par handle), ou une archive <b>.ssp</b>, utilisez <b>open_system</b>, qui resout ces entrees puis ouvre l'editeur.
+<b>nflow</b> ouvre l'editeur nflow, un editeur de diagrammes base navigateur pour construire et simuler des modeles. Appele sans argument, il s'ouvre sur un modele vide ; appele avec un fichier <b>.nflow</b>, il ouvre ce modele. 
+
+<b>nflow</b> est le lanceur bas niveau. Pour ouvrir un modele deja charge en memoire (par nom ou par handle), ou une archive <b>.ssp</b>, utilisez <b>open\_system</b>, qui resout ces entrees puis ouvre l'editeur. 
 
 L'editeur travaille sur le modele avec lequel il a ete ouvert ; les modifications faites cote script pendant que la fenetre est ouverte ne lui sont pas transmises en direct.
 
@@ -34,14 +35,15 @@ model = [modulepath('nflow_blocks', 'root'), '/examples/acausal/Acausal_EMF_DC_M
 nflow(model);
 ```
 
+
 ## 🔗 Voir aussi
 
 [open_system](../nflow_gui/open_system.md), [new_system](../nflow_engine/new_system.md), [sim](../nflow_engine/sim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

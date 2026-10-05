@@ -11,17 +11,18 @@ Tutoriel classdef pas a pas.
 
 ## 📄 Description
 
-Un fichier <b>classdef</b> definit un modele de classe. Le fichier contient une seule definition de classe et son nom doit correspondre au nom de la classe.
 
-Une definition de classe peut contenir des blocs <b>properties</b>, <b>methods</b>, <b>events</b> et <b>enumeration</b>. Les proprietes stockent l'etat de l'objet. Les methodes implementent le comportement. Les evenements et les ecouteurs sont utiles pour les classes handle qui notifient d'autres parties du code.
+Un fichier <b>classdef</b> definit un modele de classe. Le fichier contient une seule definition de classe et son nom doit correspondre au nom de la classe. 
 
-Les classes valeur copient leurs donnees lors d'une affectation. Les classes handle heritent de <b>handle</b> et utilisent une semantique de reference: deux variables peuvent designer le meme objet.
+Une definition de classe peut contenir des blocs <b>properties</b>, <b>methods</b>, <b>events</b> et <b>enumeration</b>. Les proprietes stockent l'etat de l'objet. Les methodes implementent le comportement. Les evenements et les ecouteurs sont utiles pour les classes handle qui notifient d'autres parties du code. 
 
-Nelson fournit aussi des classes mixin legeres sous <b>nelson.mixin</b>. <b>nelson.mixin.Copyable</b> ajoute une methode <b>copy</b> superficielle pour les classes handle. <b>nelson.mixin.CustomDisplay</b> redirige l'affichage scalaire vers une methode protegee <b>displayScalarObject</b> quand la classe la definit.
+Les classes valeur copient leurs donnees lors d'une affectation. Les classes handle heritent de <b>handle</b> et utilisent une semantique de reference: deux variables peuvent designer le meme objet. 
 
-Les declarations de proprietes peuvent inclure une valeur par defaut, une validation de taille et de type, et des fonctions de validation. Les methodes d'acces nommees <b>get.PropertyName</b> et <b>set.PropertyName</b> implementent l'acces calcule ou valide aux proprietes. Les proprietes <b>Dependent</b> ne sont pas stockees; les proprietes <b>Transient</b> ne sont pas persistees; les proprietes handle <b>NonCopyable</b> sont reinitialisees par le mixin de copie.
+Nelson fournit aussi des classes mixin legeres sous <b>nelson.mixin</b>. <b>nelson.mixin.Copyable</b> ajoute une methode <b>copy</b> superficielle pour les classes handle. <b>nelson.mixin.CustomDisplay</b> redirige l'affichage scalaire vers une methode protegee <b>displayScalarObject</b> quand la classe la definit. 
 
-La methode statique generee <b>ClassName.empty(...)</b> cree des tableaux vides types. L'expansion indexee initialise les elements manquants de classes valeur avec les valeurs par defaut et les elements manquants de classes handle avec des handles par defaut distincts.
+Les declarations de proprietes peuvent inclure une valeur par defaut, une validation de taille et de type, et des fonctions de validation. Les methodes d'acces nommees <b>get.PropertyName</b> et <b>set.PropertyName</b> implementent l'acces calcule ou valide aux proprietes. Les proprietes <b>Dependent</b> ne sont pas stockees; les proprietes <b>Transient</b> ne sont pas persistees; les proprietes handle <b>NonCopyable</b> sont reinitialisees par le mixin de copie. 
+
+La methode statique generee <b>ClassName.empty(...)</b> cree des tableaux vides types. L'expansion indexee initialise les elements manquants de classes valeur avec les valeurs par defaut et les elements manquants de classes handle avec des handles par defaut distincts. 
 
 <b>saveObjectImpl</b> et <b>loadObjectImpl</b> statique personnalisent la persistance. Pour les tableaux non vides, ces methodes s'executent element par element. Les tableaux vides conservent leur type et leur taille sans appeler les hooks scalaires, et les tableaux de handles sont verifies avant l'execution des hooks de sauvegarde afin de detecter les elements invalides.
 
@@ -49,7 +50,6 @@ a = MyClass(42);
 disp(a.Value)
 
 ```
-
 Utiliser un stockage prive et une propriete dependante.
 
 ```matlab
@@ -85,7 +85,6 @@ p = Person("Ada", 31);
 p.Age
 
 ```
-
 Heriter d'une superclasse et appeler son constructeur et sa methode.
 
 ```matlab
@@ -132,7 +131,6 @@ c = Car("MyCar", "Toyota");
 c.start();
 
 ```
-
 Utiliser la semantique de reference des handles.
 
 ```matlab
@@ -155,7 +153,6 @@ a.increment();
 disp(b.Value)
 
 ```
-
 Ajouter une copie superficielle a une classe handle.
 
 ```matlab
@@ -173,7 +170,6 @@ c2 = copy(c1);
 c2.Mode = "safe";
 
 ```
-
 Personnaliser l'affichage scalaire d'un objet.
 
 ```matlab
@@ -205,14 +201,15 @@ p
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [classdef](../interpreter/classdef.md), [methods](../handle/methods.md), [properties](../handle/properties.md), [metaclass](../handle/metaclass.md), [events](../handle/events.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | tutoriel classdef ajoute |
 
 <!--

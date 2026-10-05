@@ -16,13 +16,16 @@ Taille réservée pour les éléments non nuls.
 
 ## 📄 Description
 
-<b>nzmax</b> retourne la quantité de stockage allouée pour les éléments non nuls.
 
-Pour les tableaux pleins, <b>nzmax</b> retourne <b>numel(M)</b>. Pour les matrices sparse, il retourne la capacite de stockage sparse reservee, qui peut etre superieure a <b>nnz(M)</b>.
+<b>nzmax</b> retourne la quantité de stockage allouée pour les éléments non nuls. 
+
+Pour les tableaux pleins, <b>nzmax</b> retourne <b>numel(M)</b>. Pour les matrices sparse, il retourne la capacite de stockage sparse reservee, qui peut etre superieure a <b>nnz(M)</b>. 
 
 Les matrices sparse double, single, logiques, double complexes et single complexes sont prises en charge. Les valeurs nulles stockees peuvent contribuer a la capacite reservee meme si <b>nnz</b> les ignore.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 I = [1 2 3];
@@ -34,10 +37,12 @@ nnz(sp)
 nzmax(sp)
 ```
 
+
 ```matlab
 S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
 [nnz(S), nzmax(S)]
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -45,10 +50,10 @@ S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                            |
-| ------- | --------------------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | comportement sparse single et stockage reserve documentes |
-| 1.0.0   | version initiale                                          |
+| 1.0.0   | version initiale |
 
 <!--
 ## 👤 Auteur

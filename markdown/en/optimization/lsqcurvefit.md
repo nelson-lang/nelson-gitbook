@@ -20,13 +20,17 @@ Least-squares curve fitting.
 
 ## 📄 Description
 
+
 <b>lsqcurvefit</b> minimizes <b>fun(x, xdata) - ydata</b> using <b>lsqnonlin</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 x = lsqcurvefit(@(p,t) p(1) * exp(p(2) * t), [1; 0], (0:3).', exp((0:3).'))
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ x = lsqcurvefit(@(p,t) p(1) * exp(p(2) * t), [1; 0], (0:3).', exp((0:3).'))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

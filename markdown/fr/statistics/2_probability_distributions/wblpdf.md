@@ -20,23 +20,27 @@ Densite de probabilite Weibull
 
 ## 📄 Description
 
+
 <b>wblpdf</b> evalue les densites Weibull element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 2 4];
 y = wblpdf(x, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[wblcdf](../../statistics/wblcdf.md), [wblinv](../../statistics/wblinv.md), [wblrnd](../../statistics/wblrnd.md), [wblstat](../../statistics/wblstat.md).
+[wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblinv](../../statistics/2_probability_distributions/wblinv.md), [wblrnd](../../statistics/2_probability_distributions/wblrnd.md), [wblstat](../../statistics/2_probability_distributions/wblstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

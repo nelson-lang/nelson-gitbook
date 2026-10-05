@@ -1,10 +1,16 @@
 # Feuille de calcul
 
+
+    
 Le module Feuille de calcul fournit des fonctions pour lire et écrire des données tabulaires depuis et vers des formats de feuille de calcul basés sur du texte, tels que CSV et les fichiers séparés par délimiteurs.
 
+    
 Il prend en charge l'importation vers différents types de données comme les tableaux numériques, les cellules de chaînes et les tables, ainsi que leur exportation vers des fichiers.
 
+    
 Ce module permet d'échanger des données avec des logiciels de tableur (Excel, LibreOffice Calc, etc.) et avec d'autres applications.
+
+  
 
 ## Functions
 
@@ -27,3 +33,4 @@ Ce module permet d'échanger des données avec des logiciels de tableur (Excel, 
 - [xlsfinfo](xlsfinfo.md) - Retourner les informations d'un fichier tableur Open XML.
 - [xlsread](xlsread.md) - Lire les donnees d'un fichier tableur Open XML.
 - [xlswrite](xlswrite.md) - Ecrire des donnees dans un fichier tableur Open XML.
+

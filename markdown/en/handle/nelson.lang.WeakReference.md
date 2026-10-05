@@ -21,27 +21,28 @@ Weak reference to a handle object.
 
 ## 📄 Description
 
-<b>nelson.lang.WeakReference</b> stores a weak reference to one scalar handle object.
 
-The weak reference does not keep the target object alive. If all strong references to the target are cleared, <b>w.Handle</b> returns an invalid handle with the target class name.
+<b>nelson.lang.WeakReference</b> stores a weak reference to one scalar handle object. 
 
-If the target has been deleted, <b>w.Handle</b> also returns an invalid handle with the target class name.
+The weak reference does not keep the target object alive. If all strong references to the target are cleared, <b>w.Handle</b> returns an invalid handle with the target class name. 
 
-The <b>Handle</b> dependent property can be read and assigned. Assigning it replaces the weak target.
+If the target has been deleted, <b>w.Handle</b> also returns an invalid handle with the target class name. 
 
-The <b>ValidHandle</b> dependent property returns the live target. If the target is missing, expired, or deleted, reading <b>ValidHandle</b> raises an error.
+The <b>Handle</b> dependent property can be read and assigned. Assigning it replaces the weak target. 
 
-A weak reference created with no input returns an invalid <b>nelson.lang.HandlePlaceholder</b> handle through <b>Handle</b>.
+The <b>ValidHandle</b> dependent property returns the live target. If the target is missing, expired, or deleted, reading <b>ValidHandle</b> raises an error. 
 
-Reading <b>Handle</b> from a live weak reference returns a normal strong handle value. Keeping that returned value in a variable keeps the target alive until that variable is cleared or overwritten.
+A weak reference created with no input returns an invalid <b>nelson.lang.HandlePlaceholder</b> handle through <b>Handle</b>. 
 
-Assigning an invalid handle is allowed. The weak reference then remembers the handle class and returns an invalid handle of that class.
+Reading <b>Handle</b> from a live weak reference returns a normal strong handle value. Keeping that returned value in a variable keeps the target alive until that variable is cleared or overwritten. 
 
-The assigned target must be a scalar handle. Numeric values, strings, structs, cells, and handle arrays with more than one element are rejected.
+Assigning an invalid handle is allowed. The weak reference then remembers the handle class and returns an invalid handle of that class. 
 
-Use <b>isvalid(w.Handle)</b> when a missing target is an ordinary condition. Use <b>w.ValidHandle</b> when a missing target is an error condition.
+The assigned target must be a scalar handle. Numeric values, strings, structs, cells, and handle arrays with more than one element are rejected. 
 
-<b>nelson.lang.WeakReference</b> is itself a handle object. Deleting or clearing the weak-reference object does not delete the target object.
+Use <b>isvalid(w.Handle)</b> when a missing target is an ordinary condition. Use <b>w.ValidHandle</b> when a missing target is an error condition. 
+
+<b>nelson.lang.WeakReference</b> is itself a handle object. Deleting or clearing the weak-reference object does not delete the target object. 
 
 The weak-reference object stores only the target handle identity and fallback class name. It does not copy target properties or target data.
 
@@ -55,7 +56,6 @@ h = w.Handle;
 class(h)
 isvalid(h)
 ```
-
 Observe that the weak reference does not keep the target alive.
 
 ```matlab
@@ -72,7 +72,6 @@ h = w.Handle;
 isvalid(h)
 class(h)
 ```
-
 Keep the target alive with a strong handle returned from Handle.
 
 ```matlab
@@ -89,7 +88,6 @@ strongTarget.Value
 clear strongTarget;
 isvalid(w.Handle)
 ```
-
 Use ValidHandle when an invalid target must be treated as an error.
 
 ```matlab
@@ -107,7 +105,6 @@ catch exception
   disp(exception.message)
 end
 ```
-
 Replace the weak target.
 
 ```matlab
@@ -126,13 +123,14 @@ delete(b);
 isvalid(w.Handle)
 ```
 
+
 ## 🔗 See also
 
 [nelson.lang.HandlePlaceholder](../handle/nelson.lang.HandlePlaceholder.md), [nelson.lang.invalidHandle](../handle/nelson.lang.invalidHandle.md), [isvalid](../handle/isvalid.md), [delete](../handle/delete.md), [isa](../types/isa.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

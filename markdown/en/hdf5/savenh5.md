@@ -18,11 +18,14 @@ save workspace variables to .nh5 file
 
 ## 📄 Description
 
-<b>savenh5</b> save workspace variables to .nh5 file.
+
+<b>savenh5</b> save workspace variables to .nh5 file. 
 
 .nh5 file uses hdf5 file as container.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -40,7 +43,6 @@ who
 A
 B
 ```
-
 append variables
 
 ```matlab
@@ -60,7 +62,6 @@ A
 B
 C
 ```
-
 compression
 
 ```matlab
@@ -71,13 +72,14 @@ with_compression = dir([tempdir(), 'example_h5save_with_compression.nh5'])
 no_compression = dir([tempdir(), 'example_h5save_no_compression.nh5'])
 ```
 
+
 ## 🔗 See also
 
 [loadnh5](../hdf5/loadnh5.md), [h5write](../hdf5/h5write.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

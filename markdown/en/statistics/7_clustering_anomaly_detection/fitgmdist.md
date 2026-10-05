@@ -9,7 +9,8 @@ Fit a Gaussian mixture distribution.
 
 ## 📄 Description
 
-<b>fitgmdist</b> fits a Gaussian mixture model with <b>k</b> components to the rows of <b>X</b> using expectation maximization.
+
+<b>fitgmdist</b> fits a Gaussian mixture model with <b>k</b> components to the rows of <b>X</b> using expectation maximization. 
 
 Name-value arguments include Start, Replicates, RegularizationValue, CovarianceType, SharedCovariance, MaxIter, TolFun, and Options.
 
@@ -23,13 +24,14 @@ gm = fitgmdist(X, 2, 'Start', [1; 1; 2; 2]);
 idx = cluster(gm, X)
 ```
 
+
 ## 🔗 See also
 
-[gmdistribution](../../statistics/gmdistribution.md), [kmeans](../../statistics/kmeans.md), [clusterdata](../../statistics/clusterdata.md).
+[gmdistribution](../../statistics/7_clustering_anomaly_detection/gmdistribution.md), [kmeans](../../statistics/7_clustering_anomaly_detection/kmeans.md), [clusterdata](../../statistics/7_clustering_anomaly_detection/clusterdata.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

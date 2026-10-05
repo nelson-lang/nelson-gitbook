@@ -26,6 +26,7 @@ Display orthogonal slices through volume data.
 
 ## 📄 Description
 
+
 <b>slice</b> samples volume data on requested planes or on a requested surface and displays each result as a surface colored by interpolated values.
 
 ## 💡 Example
@@ -37,8 +38,8 @@ Display two slices through a volume.
 v = x.^2 + y.^2 + z.^2;
 slice(x, y, z, v, 0, [], 0);
 ```
-
 <img src="slice_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

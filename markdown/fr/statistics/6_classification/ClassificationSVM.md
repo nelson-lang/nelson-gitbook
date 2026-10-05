@@ -22,14 +22,17 @@ Modele de classification par machine a vecteurs de support.
 
 ## 📄 Description
 
-ClassificationSVM stocke un classifieur a vecteurs de support, notamment les vecteurs support, les informations de noyau et les donnees de classes.
+
+ClassificationSVM stocke un classifieur a vecteurs de support, notamment les vecteurs support, les informations de noyau et les donnees de classes. 
 
 Creez cet objet avec fitcsvm. Utilisez predict pour classer de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitcsvm
     predict
+  
 
 ## 💡 Exemple
 
@@ -42,14 +45,15 @@ mdl = fitcsvm(X, Y, 'KernelFunction', 'linear');
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitcsvm](../../statistics/fitcsvm.md).
+[predict](../../statistics/5_regression/predict.md), [fitcsvm](../../statistics/6_classification/fitcsvm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

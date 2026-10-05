@@ -12,9 +12,12 @@ Provide list of colormaps.
 
 ## 📄 Description
 
+
 <b>colormaplist</b> returns the available colormaps as an<b>m</b>-by-<b>1</b> string array.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure('Position', [100, 100, 600, 400], 'Resize', 'off');
@@ -25,8 +28,8 @@ listbox = uicontrol('Style', 'listbox', 'Position', [450, 100, 100, 200], 'Strin
 listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
 
 ```
-
 <img src="colormaplist.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -34,9 +37,9 @@ listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.14.0  | initial version |
+| 1.14.0   | initial version |
 
 <!--
 ## 👤 Author

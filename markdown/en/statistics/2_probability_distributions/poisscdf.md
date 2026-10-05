@@ -18,9 +18,12 @@ Poisson cumulative distribution function
 
 ## 📄 Description
 
+
 <b>poisscdf</b> computes lower-tail Poisson probabilities by default and upper-tail probabilities with <b>'upper'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:10;
@@ -28,13 +31,14 @@ p = poisscdf(x, 4);
 q = poisscdf(x, 4, 'upper');
 ```
 
+
 ## 🔗 See also
 
-[poisspdf](../../statistics/poisspdf.md), [poissinv](../../statistics/poissinv.md).
+[poisspdf](../../statistics/2_probability_distributions/poisspdf.md), [poissinv](../../statistics/2_probability_distributions/poissinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,25 +17,29 @@ Nombre de condition pour l'inversion.
 
 ## 📄 Description
 
-<b>c = cond(A)</b> retourne le nombre de condition en norme 2 pour l'inversion.
+
+<b>c = cond(A)</b> retourne le nombre de condition en norme 2 pour l'inversion. 
 
 <b>c = cond(A, p)</b> retourne le nombre de condition en norme p, où p peut être 1, 2, Inf ou 'fro'.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = rand(10, 10);
 r = cond(X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[rcond](../../linear_algebra/rcond.md).
+[rcond](../../linear_algebra/5_matrix_properties/rcond.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

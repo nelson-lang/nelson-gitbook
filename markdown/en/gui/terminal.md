@@ -25,25 +25,30 @@ Shell terminal in GUI mode
 
 ## 📄 Description
 
-<code>terminal</code> opens a shell process in the Nelson GUI and returns a handle object.
 
-The terminal object supports <code>Name</code>, <code>Shell</code>, <code>Place</code>, <code>WindowStyle</code>, <code>Running</code>, <code>ExitCode</code>, <code>ProcessId</code>, and <code>Theme</code> properties.
+<code>terminal</code> opens a shell process in the Nelson GUI and returns a handle object. 
 
-Constructor options:
+The terminal object supports <code>Name</code>, <code>Shell</code>, <code>Place</code>, <code>WindowStyle</code>, <code>Running</code>, <code>ExitCode</code>, <code>ProcessId</code>, and <code>Theme</code> properties. 
 
-| Option         | Values                            | Default          | Description                                                                                                            |
-| -------------- | --------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Name           | string scalar or character vector | Terminal         | Terminal title. This property can be changed after creation.                                                           |
-| WindowStyle    | docked, normal                    | docked           | docked creates a terminal docked in the main Nelson window. normal creates a floating terminal window.                 |
-| Shell          | shell executable                  | platform default | If empty, Nelson uses %COMSPEC% with cmd.exe fallback on Windows, and $SHELL with /bin/sh fallback on Linux and macOS. |
-| Theme          | auto, light, dark                 | auto             | Terminal color theme. This property can be changed after creation.                                                     |
-| StartupCommand | string scalar or character vector | empty string     | Command sent to the shell after it starts.                                                                             |
+Constructor options: 
 
-The <code>Name</code> and <code>Theme</code> properties can be changed after creation. The other terminal state properties are read-only.
+| Option | Values | Default | Description | 
+| --- | --- | --- | --- | 
+| Name | string scalar or character vector | Terminal | Terminal title. This property can be changed after creation. | 
+| WindowStyle | docked, normal | docked | docked creates a terminal docked in the main Nelson window. normal creates a floating terminal window. | 
+| Shell | shell executable | platform default | If empty, Nelson uses %COMSPEC% with cmd.exe fallback on Windows, and $SHELL with /bin/sh fallback on Linux and macOS. | 
+| Theme | auto, light, dark | auto | Terminal color theme. This property can be changed after creation. | 
+| StartupCommand | string scalar or character vector | empty string | Command sent to the shell after it starts. | 
+
+ 
+
+The <code>Name</code> and <code>Theme</code> properties can be changed after creation. The other terminal state properties are read-only. 
 
 The <code>Place</code> property returns <code>nelson</code> in this release.
 
 ## 💡 Examples
+
+
 
 ```matlab
 
@@ -61,6 +66,7 @@ delete(t);
 
 ```
 
+
 ```matlab
 
 terminal.closeAll();
@@ -74,6 +80,7 @@ delete(dockedTerminal);
 delete(floatingTerminal);
 
 ```
+
 
 ```matlab
 
@@ -94,6 +101,7 @@ delete(t);
 
 ```
 
+
 ```matlab
 
 terminal.closeAll();
@@ -106,13 +114,14 @@ terminal.closeAll();
 
 ```
 
+
 ## 🔗 See also
 
 [commandhistory](../gui/commandhistory.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

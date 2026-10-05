@@ -17,6 +17,7 @@ Detecte les coins de Harris.
 
 ## 📄 Description
 
+
 detectHarrisFeatures calcule une metrique de coins Harris, conserve les maxima locaux, les trie par force de metrique et retourne leurs coordonnees image. Les options prises en charge sont MinQuality, FilterSize, SensitivityFactor et ROI.
 
 ## 💡 Exemple
@@ -29,17 +30,17 @@ points=detectHarrisFeatures(I,'MinQuality',0.05);
 figure; imagesc(I); axis image; hold on;
 plot(points.Location(:,1),points.Location(:,2),'r+'); title('Points Harris');
 ```
-
 <img src="detectHarrisFeatures_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[cornermetric](../../../image_processing/cornermetric.md), [detectFASTFeatures](../../../image_processing/detectFASTFeatures.md).
+[cornermetric](../../../image_processing/2_image_analysis/9_feature_detection/cornermetric.md), [detectFASTFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectFASTFeatures.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

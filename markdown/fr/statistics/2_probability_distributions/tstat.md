@@ -17,18 +17,22 @@ Moyenne et variance Student t
 
 ## 📄 Description
 
+
 <b>tstat</b> retourne la moyenne et la variance de la loi Student t.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = tstat([1.5 3 Inf]);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

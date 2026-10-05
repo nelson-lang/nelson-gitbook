@@ -19,6 +19,7 @@ Opens a file selection dialog box.
 
 ## 📄 Description
 
+
 uigetfile lets the user choose an existing file.
 
 ## 💡 Examples
@@ -32,7 +33,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'analysis.m', 'startup.m', 'results.
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Open', 'Position', [220 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [304 28 70 24]);
 ```
-
 <img src="uigetfile_example.svg" align="middle"/>
 Open a file picker with several filters.
 
@@ -42,14 +42,15 @@ filters = {'*.m', 'Nelson files'; '*.*', 'All files'};
 if ~isequal(file, 0), disp({file, path, index}); end
 ```
 
+
 ## 🔗 See also
 
 [uiputfile](../gui/uiputfile.md), [uigetdir](../gui/uigetdir.md), [uiopen](../gui/uiopen.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

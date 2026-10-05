@@ -6,12 +6,12 @@ Lire le chronomètre (stopwatch).
 
 - toc()
 - t = toc()
-- toc(timer_value)
-- t = toc(timer_value)
+- toc(timer\_value)
+- t = toc(timer\_value)
 
 ## 📥 Argument d'entrée
 
-- timer_value - un entier non signé 64 bits : valeur du compteur interne utilisée par la fonction tic.
+- timer\_value - un entier non signé 64 bits : valeur du compteur interne utilisée par la fonction tic.
 
 ## 📤 Argument de sortie
 
@@ -19,13 +19,16 @@ Lire le chronomètre (stopwatch).
 
 ## 📄 Description
 
-La séquence de commandes <b>tic(); commands ; t = toc() </b> renvoie le nombre de secondes nécessaires à l'exécution des commandes.
 
-Les appels consécutifs à la fonction toc sans argument renvoient le temps écoulé depuis le tic le plus récent.
+La séquence de commandes <b>tic(); commands ; t = toc() </b> renvoie le nombre de secondes nécessaires à l'exécution des commandes. 
 
-Les appels consécutifs à toc avec la même valeur timer_value renvoient le temps écoulé depuis l'appel à tic correspondant à cette valeur.
+Les appels consécutifs à la fonction toc sans argument renvoient le temps écoulé depuis le tic le plus récent. 
+
+Les appels consécutifs à toc avec la même valeur timer\_value renvoient le temps écoulé depuis l'appel à tic correspondant à cette valeur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 tic()
@@ -37,14 +40,15 @@ toc()
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tic](../../time/datenum.md), [clock](../../time/datevec.md).
+[tic](../../time/1_create_date_time_arrays/datenum.md), [clock](../../time/1_create_date_time_arrays/datevec.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

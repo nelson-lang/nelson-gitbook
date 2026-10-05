@@ -18,22 +18,26 @@ Moyenne et variance de la loi extreme value
 
 ## 📄 Description
 
+
 <b>evstat</b> retourne la moyenne et la variance de la loi extreme value.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = evstat(0, 1);
 ```
 
+
 ## 🔗 Voir aussi
 
-[evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md), [evinv](../../statistics/evinv.md).
+[evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md), [evinv](../../statistics/2_probability_distributions/evinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

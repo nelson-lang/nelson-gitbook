@@ -1,11 +1,11 @@
-# find_system
+# find\_system
 
 Liste les blocs d'un modèle, éventuellement filtrés par type.
 
 ## 📝 Syntaxe
 
-- paths = find_system(sys)
-- paths = find_system(sys, 'BlockType', type)
+- paths = find\_system(sys)
+- paths = find\_system(sys, 'BlockType', type)
 
 ## 📥 Argument d'entrée
 
@@ -17,13 +17,16 @@ Liste les blocs d'un modèle, éventuellement filtrés par type.
 
 ## 📄 Description
 
-<b>find_system</b> liste les blocs d'un modèle, éventuellement filtrés par type.
 
-<b>find_system(sys)</b> renvoie le modèle lui-même et chaque bloc sous lui, sous forme d'un tableau de cellules de chemins ('sys' et 'sys/NomDeBloc').
+<b>find\_system</b> liste les blocs d'un modèle, éventuellement filtrés par type. 
 
-<b>find_system(sys, 'BlockType', type)</b> renvoie uniquement les chemins des blocs dont le type est <b>type</b> (le modèle lui-même est omis). Une propriété inconnue est une erreur.
+<b>find\_system(sys)</b> renvoie le modèle lui-même et chaque bloc sous lui, sous forme d'un tableau de cellules de chemins ('sys' et 'sys/NomDeBloc'). 
+
+<b>find\_system(sys, 'BlockType', type)</b> renvoie uniquement les chemins des blocs dont le type est <b>type</b> (le modèle lui-même est omis). Une propriété inconnue est une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 new_system('demo');
@@ -34,14 +37,15 @@ gains = find_system('demo', 'BlockType', 'gain')
 bdclose('demo');
 ```
 
+
 ## 🔗 Voir aussi
 
 [new_system](../nflow_engine/new_system.md), [add_block](../nflow_engine/add_block.md), [get_param](../nflow_engine/get_param.md), [set_param](../nflow_engine/set_param.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

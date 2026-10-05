@@ -18,13 +18,16 @@ Rename variables in table.
 
 ## 📄 Description
 
-<b>TB = renamevars(TA, varsNames, newNames)</b> renames the variables in the table <b>TA</b> as specified by<b>varsNames</b> and assigns them the new names provided in<b>newNames</b>.
 
-You can also rename all the variables in a table by assigning new names to its<b>VariableNames</b> property using<b>T.Properties.VariableNames = newNames</b>.
+<b>TB = renamevars(TA, varsNames, newNames)</b> renames the variables in the table <b>TA</b> as specified by<b>varsNames</b> and assigns them the new names provided in<b>newNames</b>. 
+
+You can also rename all the variables in a table by assigning new names to its<b>VariableNames</b> property using<b>T.Properties.VariableNames = newNames</b>. 
 
 In this case,<b>newNames</b> must be a string array or a cell array of character vectors.
 
 ## 💡 Example
+
+
 
 ```matlab
 C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
@@ -36,13 +39,14 @@ T3.Properties.VariableNames = {'Name', 'Age', 'Married'};
 T3
 ```
 
+
 ## 🔗 See also
 
-[table](../../table/table.md), [removevars](../../table/removevars.md).
+[table](../../table/1_create_convert_tables/table.md), [removevars](../../table/4_sort_filter_rearrange/removevars.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.9.0   | initial version |
 

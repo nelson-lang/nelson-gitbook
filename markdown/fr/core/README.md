@@ -1,16 +1,25 @@
 # Core
 
+
+    
 Le module core fournit les éléments fondamentaux de l'environnement Nelson.
 
+    
 Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.
 
+    
 Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.
 
+    
 Il offre également des utilitaires de base pour l'identification des fichiers, les sommes de contrôle et les capacités du terminal.
 
+    
 Ensemble, ces fonctionnalités forment la base sur laquelle tous les autres modules et fonctionnalités au niveau utilisateur dans Nelson sont construits.
 
+    
 Il fournit aussi l'espace de noms **crypto** : hachages, HMAC, Ed25519 et X25519, Argon2, chiffrement authentifié et aléa sécurisé.
+
+  
 
 ## Functions
 
@@ -58,3 +67,4 @@ Il fournit aussi l'espace de noms **crypto** : hachages, HMAC, Ed25519 et X25519
 - [run](run.md) - Exécute un script ou un fichier.
 - [sha256](sha256.md) - Calcule le hash SHA-256.
 - [version](version.md) - Version de l'environnement Nelson.
+

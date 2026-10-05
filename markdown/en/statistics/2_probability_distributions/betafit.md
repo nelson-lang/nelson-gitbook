@@ -19,22 +19,26 @@ Beta parameter estimates
 
 ## 📄 Description
 
+
 <b>betafit</b> estimates the two shape parameters of the beta distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.12 0.2 0.35 0.5 0.7 0.85];
 [phat, pci] = betafit(x);
 ```
 
+
 ## 🔗 See also
 
-[betalike](../../statistics/betalike.md), [betapdf](../../statistics/betapdf.md), [betacdf](../../statistics/betacdf.md).
+[betalike](../../statistics/2_probability_distributions/betalike.md), [betapdf](../../statistics/2_probability_distributions/betapdf.md), [betacdf](../../statistics/2_probability_distributions/betacdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

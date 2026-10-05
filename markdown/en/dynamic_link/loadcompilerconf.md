@@ -14,11 +14,13 @@ load compiler configuration.
 
 ## 📄 Description
 
-<b>loadcompilerconf</b> returns true if compiler was previously configured with<b>configuremsvc</b> or <b>configuremingw</b>.
 
-<b>loadcompilerconf</b> returns always false on others platforms and 'unix' as compiler.
+<b>loadcompilerconf</b> returns true if compiler was previously configured with<b>configuremsvc</b> or <b>configuremingw</b>. 
+
+<b>loadcompilerconf</b> returns always false on others platforms and 'unix' as compiler. 
 
 <b>loadcompilerconf</b> is called at Nelson's startup.
+
 
 ## 🔗 See also
 
@@ -26,7 +28,7 @@ load compiler configuration.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

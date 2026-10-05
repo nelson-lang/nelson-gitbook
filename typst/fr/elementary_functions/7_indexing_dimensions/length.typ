@@ -1,0 +1,46 @@
+#import "../nelson_help.typ": *
+
+= length <elementary_functions:7_indexing_dimensions.length>
+
+Longueur d'un objet.
+
+== Syntaxe
+
+- #raw("l = length(M)");
+
+== Argument d'entrée
+
+/ M: une variable
+
+== Argument de sortie
+
+/ l: la longueur de la plus grande dimension du tableau M.
+
+== Description
+
+Pour une matrice ou un tableau à N dimensions,#strong[length]; renvoie le nombre d'éléments le long de la plus grande dimension. Pour un objet vide, #strong[length]; renvoie 0. Pour un scalaire,#strong[length]; renvoie 1. Pour un vecteur,#strong[length]; renvoie le nombre d'éléments.
+
+
+== Exemple
+
+``````matlab
+length(ones(3, 0))
+length(3)
+length([1 2 3 4 5])
+length(ones(3, 4, 5))
+``````
+
+
+== Voir aussi
+
+#nlink(<elementary_functions:7_indexing_dimensions.size>)[size];, #nlink(<elementary_functions:7_indexing_dimensions.numel>)[numel];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

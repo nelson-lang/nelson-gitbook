@@ -12,11 +12,13 @@ Ouvrir un fichier dans l'application appropriée (Windows seulement).
 
 ## 📄 Description
 
-<b>winopen(filename)</b> ouvre le fichier dans l'application Microsoft Windows appropriée.
 
-La fonction winopen utilise la commande shell Windows appropriée et effectue la même action que si vous double-cliquiez sur le fichier dans l'Explorateur Windows.
+<b>winopen(filename)</b> ouvre le fichier dans l'application Microsoft Windows appropriée. 
+
+La fonction winopen utilise la commande shell Windows appropriée et effectue la même action que si vous double-cliquiez sur le fichier dans l'Explorateur Windows. 
 
 Si filename n'est pas dans le répertoire courant, spécifiez le chemin absolu.
+
 
 ## 🔗 Voir aussi
 
@@ -24,8 +26,8 @@ Si filename n'est pas dans le répertoire courant, spécifiez le chemin absolu.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

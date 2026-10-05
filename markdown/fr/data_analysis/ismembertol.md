@@ -21,13 +21,17 @@ Appartenance à un ensemble à une tolérance près
 
 ## 📄 Description
 
+
 <b>ismembertol</b> retourne un tableau logique de même taille que A, contenant vrai là où les éléments de A sont, à la tolérance près, égaux aux éléments de B. Deux valeurs u et v sont dans la tolérance si abs(u-v) <= tol\*max(abs([A(:);B(:)])).
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [lia, locb] = ismembertol([1 2 3], [1.0000001 5 3], 1e-6)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +39,8 @@ Appartenance à un ensemble à une tolérance près
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

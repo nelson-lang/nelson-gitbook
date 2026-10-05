@@ -12,9 +12,12 @@ Wait for click or key press.
 
 ## 📄 Description
 
+
 <b>w = waitforbuttonpress()</b> pauses the execution of code until the user interacts with the current figure by either clicking a mouse button or pressing a key.
 
 ## 💡 Example
+
+
 
 ```matlab
 cf = gcf();
@@ -22,13 +25,14 @@ w = waitforbuttonpress;
 axes;
 ```
 
+
 ## 🔗 See also
 
 [figure](../../../graphics/2_graphics_objects/1_object_management/figure.md), [gcf](../../../graphics/2_graphics_objects/1_object_management/gcf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.7.0   | initial version |
 

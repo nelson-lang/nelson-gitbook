@@ -1,14 +1,24 @@
 # Fonctions elementaires
 
+
+    
 Le module Fonctions elementaires fournit les operations mathematiques de base et les manipulations de matrices dans Nelson.
 
+    
 Il inclut les calculs numeriques, les operations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise a l'echelle, ainsi que les fonctions qui interrogent les proprietes des tableaux et matrices.
 
+    
 Le module construit aussi des matrices speciales, des grilles et des sequences pour les algorithmes mathematiques et l'analyse numerique.
+
+  
 
 ## Creation et forme des tableaux
 
+
+    
 Fonctions pour creer, remodeler et organiser des tableaux.
+
+  
 
 ### Functions
 
@@ -25,7 +35,11 @@ Fonctions pour creer, remodeler et organiser des tableaux.
 
 ## Mathematiques elementaires
 
+
+    
 Fonctions numeriques elementaires, normes, arrondis, puissances, racines, logarithmes et restes.
+
+  
 
 ### Functions
 
@@ -64,7 +78,11 @@ Fonctions numeriques elementaires, normes, arrondis, puissances, racines, logari
 
 ## Nombres complexes
 
+
+    
 Fonctions pour valeurs complexes et variantes reelles de fonctions elementaires.
+
+  
 
 ### Functions
 
@@ -80,7 +98,11 @@ Fonctions pour valeurs complexes et variantes reelles de fonctions elementaires.
 
 ## Conversions de base
 
+
+    
 Fonctions pour conversion de base numerique, conversion de type et ordre des octets.
+
+  
 
 ### Functions
 
@@ -100,7 +122,11 @@ Fonctions pour conversion de base numerique, conversion de type et ordre des oct
 
 ## Generation de matrices
 
+
+    
 Fonctions pour generer des matrices speciales.
+
+  
 
 ### Functions
 
@@ -119,7 +145,11 @@ Fonctions pour generer des matrices speciales.
 
 ## Indexation et dimensions
 
+
+    
 Fonctions pour indexation, dimensions, controles de forme, reorganisation et predicats structurels.
+
+  
 
 ### Functions
 
@@ -164,3 +194,4 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - [substruct](7_indexing_dimensions/substruct.md) - Crée un argument structure pour subsasgn ou subsref
 - [tril](7_indexing_dimensions/tril.md) - Partie triangulaire inférieure d'une matrice
 - [triu](7_indexing_dimensions/triu.md) - Partie triangulaire supérieure d'une matrice
+

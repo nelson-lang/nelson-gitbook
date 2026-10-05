@@ -5,12 +5,12 @@ Change default environment of Julia interpreter.
 ## 📝 Syntax
 
 - jlenv
-- je = jlenv('Version', julia_path)
+- je = jlenv('Version', julia\_path)
 - je = jlenv(...)
 
 ## 📥 Input argument
 
-- julia_path - a string, or row characters array: executable file name of Julia.
+- julia\_path - a string, or row characters array: executable file name of Julia.
 
 ## 📤 Output argument
 
@@ -18,47 +18,58 @@ Change default environment of Julia interpreter.
 
 ## 📄 Description
 
-Use <b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.
 
-The value set by<b>jlenv</b> is persistent across Nelson sessions.
+Use <b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions. 
 
-Properties:
+The value set by<b>jlenv</b> is persistent across Nelson sessions. 
 
-<b>Version</b>: string: Julia version
+ 
 
-<b>Executable</b>: string: Name of Julia executable file
+Properties: 
 
-<b>Library</b>: string: Shared library file
+<b>Version</b>: string: Julia version 
 
-<b>Home</b>: string: Home folder
+<b>Executable</b>: string: Name of Julia executable file 
 
-<b>Status</b>: Process status: "NotLoaded" (default), "Loaded", "Terminated"
+<b>Library</b>: string: Shared library file 
 
-<b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess"
+<b>Home</b>: string: Home folder 
 
-Use environment variables to force julia environment at each startup (useful for snapcraft or docker distribution):
+<b>Status</b>: Process status: "NotLoaded" (default), "Loaded", "Terminated" 
 
-<b>\_\_NELSON_JULIA_VERSION\_\_</b>: example "1.11"
+<b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess" 
 
-<b>\_\_NELSON_JULIA_EXECUTABLE\_\_</b>: example "/usr/bin/julia"
+ 
 
-<b>\_\_NELSON_JULIA_LIBRARY\_\_</b>: example "libjulia.so"
+Use environment variables to force julia environment at each startup (useful for snapcraft or docker distribution): 
 
-<b>\_\_NELSON_JULIA_HOME\_\_</b>: example "/usr"
+ 
 
-All environment variables must exist and valid to be considered.
+<b>\_\_NELSON\_JULIA\_VERSION\_\_</b>: example "1.11" 
+
+<b>\_\_NELSON\_JULIA\_EXECUTABLE\_\_</b>: example "/usr/bin/julia" 
+
+<b>\_\_NELSON\_JULIA\_LIBRARY\_\_</b>: example "libjulia.so" 
+
+<b>\_\_NELSON\_JULIA\_HOME\_\_</b>: example "/usr" 
+
+All environment variables must exist and valid to be considered. 
+
+
 
 ## 💡 Examples
+
+
 
 ```matlab
 je = jlenv
 ```
-
 Set the Julia executable path
 
 ```matlab
 jlenv('Version', ''C:\WindowsTools\Julia-1.11.6\bin\julia.exe'')
 ```
+
 
 ## 🔗 See also
 
@@ -66,9 +77,9 @@ jlenv('Version', ''C:\WindowsTools\Julia-1.11.6\bin\julia.exe'')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.12.0  | initial version |
+| 1.12.0   | initial version |
 
 <!--
 ## 👤 Author

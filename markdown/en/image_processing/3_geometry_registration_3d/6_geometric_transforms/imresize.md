@@ -28,33 +28,34 @@ Resize image by scale or output size
 
 ## 📄 Description
 
-The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.
 
-For numeric and logical images, the default interpolation method is 'bicubic'.
+The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps. 
 
-When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function.
+For numeric and logical images, the default interpolation method is 'bicubic'. 
 
-For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument.
+When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function. 
 
-Supported interpolation methods include
+For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument. 
 
-- 'nearest': Nearest neighbor interpolation
-- 'bilinear': Bilinear interpolation
-- 'bicubic': Bicubic interpolation
-- 'box': Box-shaped kernel
-- 'lanczos2': Lanczos-2 kernel
-- 'lanczos3': Lanczos-3 kernel
+Supported interpolation methods include 
 
-Supported Pairs Name, Value:
+- 'nearest': Nearest neighbor interpolation 
+- 'bilinear': Bilinear interpolation 
+- 'bicubic': Bicubic interpolation 
+- 'box': Box-shaped kernel 
+- 'lanczos2': Lanczos-2 kernel 
+- 'lanczos3': Lanczos-3 kernel 
 
-- 'Antialiasing': true/false (default: true)
-- 'Colormap': 'optimized' (default) or 'original' (indexed image only)
-- 'Dither': true (default) or false (indexed image only)
+Supported Pairs Name, Value: 
 
-Limitations:
+- 'Antialiasing': true/false (default: true) 
+- 'Colormap': 'optimized' (default) or 'original' (indexed image only) 
+- 'Dither': true (default) or false (indexed image only) 
 
-- Input must be nonsparse and real for numeric images.
-- For large scale factors, output image size may be significantly larger than input.
+Limitations: 
+
+- Input must be nonsparse and real for numeric images. 
+- For large scale factors, output image size may be significantly larger than input. 
 - Bicubic interpolation can produce pixel values outside the original range.
 
 ## 💡 Example
@@ -81,8 +82,8 @@ subplot(1,2,2);          % second subplot
 image(im1);
 title('Resized Image');
 ```
-
 <img src="imresize_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -90,9 +91,9 @@ title('Resized Image');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

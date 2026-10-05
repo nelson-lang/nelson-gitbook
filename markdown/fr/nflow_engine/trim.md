@@ -22,7 +22,8 @@ Trouver un point de fonctionnement d'équilibre d'un modèle nflow.
 
 ## 📄 Description
 
-<b>trim</b> trouve un point de fonctionnement d'équilibre de <b>model</b> : un état continu <b>x</b> tel que <b>xdot = f(x, u0) = 0</b> pour les entrées fixées <b>u0</b>.
+
+<b>trim</b> trouve un point de fonctionnement d'équilibre de <b>model</b> : un état continu <b>x</b> tel que <b>xdot = f(x, u0) = 0</b> pour les entrées fixées <b>u0</b>. 
 
 L'équation est résolue par une itération de Newton sur la jacobienne d'état <b>A = d(xdot)/dx</b> calculée par <b>linmod</b>, à partir de <b>x0</b>. Pour un modèle linéaire l'équilibre est <b>x = -A\\(B\*u0)</b>, atteint en une étape.
 
@@ -49,13 +50,14 @@ fid = fopen(f,'wt'); fwrite(fid, jsonencode(d)); fclose(fid);
 [x, u, y, dx] = trim(f, 0, 2)  % x = 1 (xdot = 0)
 ```
 
+
 ## 🔗 Voir aussi
 
 [linmod](../nflow_engine/linmod.md), [sim](../nflow_engine/sim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

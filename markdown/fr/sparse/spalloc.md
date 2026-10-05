@@ -18,14 +18,18 @@ Cree une matrice sparse avec stockage reserve.
 
 ## 📄 Description
 
+
 <b>spalloc</b> cree une matrice sparse double m-par-n et reserve du stockage pour au plus <b>nz</b> elements non nuls.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 S = spalloc(3, 4, 5)
 nzmax(S)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ nzmax(S)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,23 +19,27 @@ Inverse de repartition de loi extreme generalisee
 
 ## 📄 Description
 
+
 <b>gevinv</b> calcule les quantiles de loi extreme generalisee element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.1 0.5 0.9];
 x = gevinv(p, 0.2, 1, 0);
 ```
 
+
 ## 🔗 Voir aussi
 
-[gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md), [gevrnd](../../statistics/gevrnd.md), [gevstat](../../statistics/gevstat.md).
+[gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md), [gevrnd](../../statistics/2_probability_distributions/gevrnd.md), [gevstat](../../statistics/2_probability_distributions/gevstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

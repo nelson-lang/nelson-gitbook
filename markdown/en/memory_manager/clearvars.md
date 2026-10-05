@@ -5,28 +5,29 @@ Remove variables from the current workspace.
 ## 📝 Syntax
 
 - clearvars
-- clearvars variable_name_1 ... variable_name_N
-- clearvars('-except', keep_variable_1, ..., keep_variable_N)
-- clearvars(variable_name_1, ..., variable_name_N, '-except', keep_variable_1, ..., keep_variable_N)
-- clearvars('-regexp', expression_1, ..., expression_N)
-- clearvars(..., '-except', '-regexp', keep_expression_1, ..., keep_expression_N)
+- clearvars variable\_name\_1 ... variable\_name\_N
+- clearvars('-except', keep\_variable\_1, ..., keep\_variable\_N)
+- clearvars(variable\_name\_1, ..., variable\_name\_N, '-except', keep\_variable\_1, ..., keep\_variable\_N)
+- clearvars('-regexp', expression\_1, ..., expression\_N)
+- clearvars(..., '-except', '-regexp', keep\_expression\_1, ..., keep\_expression\_N)
 - clearvars('-global', ...)
 
 ## 📥 Input argument
 
-- variable_name - a character vector or string scalar: variable name or wildcard pattern using \*.
-- keep_variable - a character vector or string scalar: variable name or wildcard pattern to preserve.
+- variable\_name - a character vector or string scalar: variable name or wildcard pattern using \*.
+- keep\_variable - a character vector or string scalar: variable name or wildcard pattern to preserve.
 - -regexp - selects variables whose names match one of the regular expressions.
 - -except - keeps matching variables and removes the other selected variables.
 - -global - removes matching global variables. This option must be the first argument.
 
 ## 📄 Description
 
-<b>clearvars</b> removes variables from the current workspace. Without input arguments, it removes all variables in the current workspace.
 
-Named variables can be passed in command form or function form. Option arguments are passed in function form.
+<b>clearvars</b> removes variables from the current workspace. Without input arguments, it removes all variables in the current workspace. 
 
-Wildcard patterns use <b>\*</b> to match any sequence of characters. Regular expressions are enabled with <b>-regexp</b>.
+Named variables can be passed in command form or function form. Option arguments are passed in function form. 
+
+Wildcard patterns use <b>\*</b> to match any sequence of characters. Regular expressions are enabled with <b>-regexp</b>. 
 
 When a variable is global, <b>clearvars</b> without <b>-global</b> removes it from the current workspace only. With <b>-global</b>, matching global variables are removed from the global workspace.
 
@@ -41,7 +42,6 @@ c = 3;
 clearvars a c
 who
 ```
-
 Clear all variables except selected variables.
 
 ```matlab
@@ -51,7 +51,6 @@ C = 3;
 clearvars('-except', 'A', 'C')
 who
 ```
-
 Clear variables using a wildcard and preserve one variable.
 
 ```matlab
@@ -61,7 +60,6 @@ beta = 3;
 clearvars('a*', '-except', 'angle')
 who
 ```
-
 Clear variables using regular expressions.
 
 ```matlab
@@ -71,7 +69,6 @@ KeepValue = 3;
 clearvars('-regexp', '^(Mon|Tue)')
 who
 ```
-
 Clear global variables except selected variables.
 
 ```matlab
@@ -84,13 +81,14 @@ isglobal('gy')
 clear global gx gy
 ```
 
+
 ## 🔗 See also
 
 [clear](../memory_manager/clear.md), [who](../memory_manager/who.md), [isglobal](../memory_manager/isglobal.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

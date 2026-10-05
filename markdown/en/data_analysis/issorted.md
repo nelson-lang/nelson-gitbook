@@ -22,9 +22,12 @@ Determine if array is sorted.
 
 ## 📄 Description
 
+
 <b>tf = issorted(A)</b> returns true if the elements of <b>A</b> are sorted in ascending order, and false otherwise.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1 2 3 4];
@@ -39,13 +42,14 @@ A = [1 2 3; 7 8 9; 4 5 6];
 issorted(A, 'rows') % returns false
 ```
 
+
 ## 🔗 See also
 
 [sort](../data_analysis/sort.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

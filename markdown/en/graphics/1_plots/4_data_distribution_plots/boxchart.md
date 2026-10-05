@@ -15,9 +15,10 @@ Display box chart for grouped numeric data.
 
 ## 📄 Description
 
-<b>boxchart</b> displays box charts for numeric data. The returned value is one or more graphics objects with <b>Type</b> set to <b>boxchart</b>.
 
-The chart computes quartiles, median, whiskers, caps, outliers, and optional notches for each numeric group. NaN values are ignored when statistics are computed.
+<b>boxchart</b> displays box charts for numeric data. The returned value is one or more graphics objects with <b>Type</b> set to <b>boxchart</b>. 
+
+The chart computes quartiles, median, whiskers, caps, outliers, and optional notches for each numeric group. NaN values are ignored when statistics are computed. 
 
 See [boxchart properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.boxchart.properties.md) for the complete property list.
 
@@ -30,7 +31,6 @@ f = figure();
 boxchart([1 2 3 4 12], 'BoxFaceColor', [0.2 0.5 0.8]);
 
 ```
-
 <img src="boxchart_1.svg" align="middle"/>
 Grouped box chart.
 
@@ -41,7 +41,6 @@ y = [1 2 8 4 5 15];
 boxchart(g, y, 'MarkerStyle', 'x');
 
 ```
-
 <img src="boxchart_2.svg" align="middle"/>
 Color groups.
 
@@ -53,7 +52,6 @@ c = categorical({'red', 'blue', 'red', 'blue', 'red', 'blue'});
 boxchart(x, y, 'GroupByColor', c);
 
 ```
-
 <img src="boxchart_3.svg" align="middle"/>
 Box charts for the columns of a matrix.
 
@@ -65,7 +63,6 @@ xlabel('Column');
 ylabel('Value');
 
 ```
-
 <img src="boxchart_4.svg" align="middle"/>
 Notches and jittered outliers.
 
@@ -78,7 +75,6 @@ xlabel('Group');
 ylabel('Value');
 
 ```
-
 <img src="boxchart_5.svg" align="middle"/>
 Outlier marker and box hinges.
 
@@ -89,8 +85,8 @@ xlabel('Sample');
 ylabel('Value');
 
 ```
-
 <img src="boxchart_6.svg" align="middle"/>
+
 
 ## 🔗 See also
 

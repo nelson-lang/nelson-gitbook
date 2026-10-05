@@ -16,9 +16,10 @@ Assombrir les couleurs claires et éclaircir les couleurs sombres.
 
 ## 📄 Description
 
-<b>fliplightness</b> assombrit les couleurs claires et éclaircit les couleurs sombres spécifiées dans <b>colors</b>, ce qui permet d'adapter un ensemble de couleurs à un fond sombre.
 
-Chaque couleur est convertie dans l'espace colorimétrique Oklab et sa luminosité <b>L</b> est remplacée de sorte que <b>L^(3/2)</b> devienne <b>1 - L^(3/2)</b> : le noir devient blanc, le blanc devient noir. La teinte et la chroma sont conservées. Lorsque la nouvelle couleur sort de la gamme sRGB, sa chroma est réduite à la plus grande valeur dans la gamme, en conservant sa luminosité et sa teinte.
+<b>fliplightness</b> assombrit les couleurs claires et éclaircit les couleurs sombres spécifiées dans <b>colors</b>, ce qui permet d'adapter un ensemble de couleurs à un fond sombre. 
+
+Chaque couleur est convertie dans l'espace colorimétrique Oklab et sa luminosité <b>L</b> est remplacée de sorte que <b>L^(3/2)</b> devienne <b>1 - L^(3/2)</b> : le noir devient blanc, le blanc devient noir. La teinte et la chroma sont conservées. Lorsque la nouvelle couleur sort de la gamme sRGB, sa chroma est réduite à la plus grande valeur dans la gamme, en conservant sa luminosité et sa teinte. 
 
 Appeler <b>fliplightness</b> deux fois peut ne pas redonner les couleurs d'origine, à cause de la réduction de chroma.
 
@@ -36,7 +37,6 @@ newhex = fliplightness(["#FF8800", "#000000"])
 newrgb = fliplightness(uint8([200 180 160]))
 
 ```
-
 Carte de couleurs parula d'origine et inversée.
 
 ```matlab
@@ -47,14 +47,15 @@ axis off
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [validatecolor](../../../graphics/3_labels_styling/2_color_styling/validatecolor.md), [colororder](../../../graphics/3_labels_styling/2_color_styling/colororder.md), [theme](../../../graphics/3_labels_styling/2_color_styling/theme.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale |
 
 <!--

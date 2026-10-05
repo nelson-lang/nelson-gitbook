@@ -4,7 +4,7 @@ Returns if a variable is a cell of strings.
 
 ## 📝 Syntax
 
-- true_or_false = iscellstr(A)
+- true\_or\_false = iscellstr(A)
 
 ## 📥 Input argument
 
@@ -12,25 +12,31 @@ Returns if a variable is a cell of strings.
 
 ## 📤 Output argument
 
-- true_or_false - a logical
+- true\_or\_false - a logical
 
 ## 📄 Description
+
 
 <b>iscellstr(A)</b> returns true if <b>A</b> is a cell of strings or an empty cell).
 
 ## 💡 Examples
 
+
+
 ```matlab
 iscellstr('Nelson')
 ```
+
 
 ```matlab
 iscellstr({'Nelson'})
 ```
 
+
 ```matlab
 iscellstr({})
 ```
+
 
 ## 🔗 See also
 
@@ -38,7 +44,7 @@ iscellstr({})
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

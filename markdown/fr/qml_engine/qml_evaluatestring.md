@@ -1,14 +1,14 @@
-# qml_evaluatestring
+# qml\_evaluatestring
 
 Évalue une chaîne JS.
 
 ## 📝 Syntaxe
 
-- r = qml_evaluatestring(string_to_eval)
+- r = qml\_evaluatestring(string\_to\_eval)
 
 ## 📥 Argument d'entrée
 
-- string_to_eval - une chaîne : code JS.
+- string\_to\_eval - une chaîne : code JS.
 
 ## 📤 Argument de sortie
 
@@ -16,15 +16,19 @@
 
 ## 📄 Description
 
-Évalue une chaîne JS.
+
+Évalue une chaîne JS. 
 
 Si la valeur retournée ne peut pas être convertie en type de base, elle sera convertie en chaîne.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 qml_evaluatestring('a = 2 + 4')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ qml_evaluatestring('a = 2 + 4')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

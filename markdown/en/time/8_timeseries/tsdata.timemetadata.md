@@ -8,9 +8,11 @@ Time series object function.
 
 ## 📄 Description
 
+
 <b>timemetadata</b> operates on timeseries, tscollection, or tsdata metadata objects.
 
 ## 💡 Example
+
 
 ```matlab
 count1 = timeseries([11; 7; 14; 11], (1:4)', 'Name', 'Intersection1');
@@ -19,13 +21,14 @@ count1.TimeInfo.Units
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md), [tscollection](../../time/tscollection.md).
+[timeseries](../../time/8_timeseries/timeseries.md), [tscollection](../../time/8_timeseries/tscollection.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

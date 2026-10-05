@@ -20,22 +20,26 @@ Gamma random numbers
 
 ## 📄 Description
 
+
 <b>gamrnd</b> generates gamma distributed random values. Scalar parameters are expanded to match array inputs or the requested output size.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = gamrnd(2, 3, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[gampdf](../../statistics/gampdf.md), [gamcdf](../../statistics/gamcdf.md), [gaminv](../../statistics/gaminv.md), [gamstat](../../statistics/gamstat.md).
+[gampdf](../../statistics/2_probability_distributions/gampdf.md), [gamcdf](../../statistics/2_probability_distributions/gamcdf.md), [gaminv](../../statistics/2_probability_distributions/gaminv.md), [gamstat](../../statistics/2_probability_distributions/gamstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,16 +17,20 @@ Return points from animated line.
 
 ## 📄 Description
 
-<b>getpoints</b> returns only the coordinates stored on the animated line.
+
+<b>getpoints</b> returns only the coordinates stored on the animated line. 
 
 Two-dimensional lines store and return zero z-coordinates when a third output is requested.
 
 ## 💡 Example
 
+
+
 ```matlab
 an = animatedline(1:4, [1 4 2 3]);
 [x, y, z] = getpoints(an)
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ an = animatedline(1:4, [1 4 2 3]);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

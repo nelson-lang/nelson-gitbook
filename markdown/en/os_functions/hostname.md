@@ -12,13 +12,17 @@ get host name of this computer.
 
 ## 📄 Description
 
+
 <b>hostname</b> get host name of this computer.
 
 ## 💡 Example
 
+
+
 ```matlab
 hostname()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ hostname()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

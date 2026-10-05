@@ -16,9 +16,11 @@ Maximum des données d'un timeseries.
 
 ## 📄 Description
 
+
 <b>max</b> calcule le maximum sur la propriété Data.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 3; 2]);
@@ -26,14 +28,15 @@ max(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

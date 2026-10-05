@@ -19,56 +19,59 @@ Gère les formats d'image pris en charge.
 
 ## 📄 Description
 
-<b>imformats</b> renvoie la liste des formats d'image pris en charge.
 
-<b>formats = imformats()</b> renvoie la liste des formats d'image pris en charge sous la forme d'un tableau de structures.
+<b>imformats</b> renvoie la liste des formats d'image pris en charge. 
 
-<b>format = imformats(ext)</b> renvoie la structure du format d'image correspondant à l'extension<b>ext</b>.
+<b>formats = imformats()</b> renvoie la liste des formats d'image pris en charge sous la forme d'un tableau de structures. 
 
-Chaque élément du tableau de structures contient les champs :
+<b>format = imformats(ext)</b> renvoie la structure du format d'image correspondant à l'extension<b>ext</b>. 
 
-- <b>ext</b> : extension du format de fichier
-- <b>isa</b> : champ réservé, vide car la détection de signature est centralisée
-- <b>info</b> : champ réservé, vide car les capacités sont dans cette structure
-- <b>description</b> : description du format
-- <b>read</b> : capacité <b>imread</b>, ou vide si le format n'est pas lisible
-- <b>write</b> : capacité <b>imwrite</b>, ou vide pour un format en lecture seule
-- <b>alpha</b> : scalaire booléen indiquant si le format supporte la transparence
-- <b>multipage</b> : écriture multi-image exposée ; seul GIF vaut vrai
+Chaque élément du tableau de structures contient les champs : 
 
-Le registre est déterministe et ne dépend pas des greffons d'image du bureau. Un champ <b>read</b> ou <b>write</b> vide indique que l'opération n'est pas prise en charge. Dans le tableau renvoyé sans argument, ces champs contiennent le nom de la fonction ; une requête sur un format unique renvoie le function handle équivalent.
+- <b>ext</b> : extension du format de fichier 
+- <b>isa</b> : champ réservé, vide car la détection de signature est centralisée 
+- <b>info</b> : champ réservé, vide car les capacités sont dans cette structure 
+- <b>description</b> : description du format 
+- <b>read</b> : capacité <b>imread</b>, ou vide si le format n'est pas lisible 
+- <b>write</b> : capacité <b>imwrite</b>, ou vide pour un format en lecture seule 
+- <b>alpha</b> : scalaire booléen indiquant si le format supporte la transparence 
+- <b>multipage</b> : écriture multi-image exposée ; seul GIF vaut vrai 
 
-| Extension canonique | Alias      | Lecture | Écriture | Alpha | Multipage |
-| ------------------- | ---------- | ------- | -------- | ----- | --------- |
-| png                 | -          | oui     | oui      | oui   | non       |
-| jpg                 | jpeg, jfif | oui     | oui      | non   | non       |
-| gif                 | -          | oui     | oui      | oui   | oui       |
-| webp                | -          | oui     | oui      | oui   | non       |
-| tiff                | tif        | oui     | oui      | oui   | non       |
-| bmp                 | dib        | oui     | oui      | oui   | non       |
-| tga                 | -          | oui     | oui      | oui   | non       |
-| pbm                 | -          | oui     | oui      | non   | non       |
-| pgm                 | -          | oui     | oui      | non   | non       |
-| ppm                 | -          | oui     | oui      | non   | non       |
-| pnm                 | -          | oui     | oui      | non   | non       |
-| pcx                 | -          | oui     | oui      | non   | non       |
-| psd                 | -          | oui     | non      | oui   | non       |
-| hdr                 | rgbe       | oui     | non      | non   | non       |
-| pic                 | -          | oui     | non      | oui   | non       |
+Le registre est déterministe et ne dépend pas des greffons d'image du bureau. Un champ <b>read</b> ou <b>write</b> vide indique que l'opération n'est pas prise en charge. Dans le tableau renvoyé sans argument, ces champs contiennent le nom de la fonction ; une requête sur un format unique renvoie le function handle équivalent. 
+
+| Extension canonique | Alias | Lecture | Écriture | Alpha | Multipage | 
+| --- | --- | --- | --- | --- | --- | 
+| png | - | oui | oui | oui | non | 
+| jpg | jpeg, jfif | oui | oui | non | non | 
+| gif | - | oui | oui | oui | oui | 
+| webp | - | oui | oui | oui | non | 
+| tiff | tif | oui | oui | oui | non | 
+| bmp | dib | oui | oui | oui | non | 
+| tga | - | oui | oui | oui | non | 
+| pbm | - | oui | oui | non | non | 
+| pgm | - | oui | oui | non | non | 
+| ppm | - | oui | oui | non | non | 
+| pnm | - | oui | oui | non | non | 
+| pcx | - | oui | oui | non | non | 
+| psd | - | oui | non | oui | non | 
+| hdr | rgbe | oui | non | non | non | 
+| pic | - | oui | non | oui | non | 
+
+
 
 ## 💡 Exemples
+
+
 
 ```matlab
 imformats()
 ```
-
 Interroger un format avec un alias.
 
 ```matlab
 imformats('jpeg')
 imformats('webp')
 ```
-
 Filtrer les formats lisibles et inscriptibles.
 
 ```matlab
@@ -83,15 +86,16 @@ readable
 writable
 ```
 
+
 ## 🔗 Voir aussi
 
 [imwrite](../graphics_io/imwrite.md), [imread](../graphics_io/imread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                   |
-| ------- | ------------------------------------------------ |
-| 1.13.0  | version initiale                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.13.0   | version initiale |
 | 2.0.0   | registre de formats multiplateforme déterministe |
 
 <!--

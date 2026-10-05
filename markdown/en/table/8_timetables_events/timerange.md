@@ -20,24 +20,28 @@ Time range for timetable row subscripting.
 
 ## 📄 Description
 
-<b>timerange</b> creates a row subscript for timetables. The default interval is half-open: it includes the start time and excludes the end time.
+
+<b>timerange</b> creates a row subscript for timetables. The default interval is half-open: it includes the start time and excludes the end time. 
 
 Text limits <b>'-inf'</b> and <b>'inf'</b> create one-sided ranges.
 
 ## 💡 Example
+
+
 
 ```matlab
 TT = timetable(seconds((1:5)'), (10:10:50)', 'VariableNames', {'A'});
 TT(timerange(seconds(2), seconds(4), 'closed'), :)
 ```
 
+
 ## 🔗 See also
 
-[timetable](../../table/timetable.md), [withtol](../../table/withtol.md), [retime](../../table/retime.md), [synchronize](../../table/synchronize.md).
+[timetable](../../table/1_create_convert_tables/timetable.md), [withtol](../../table/8_timetables_events/withtol.md), [retime](../../table/8_timetables_events/retime.md), [synchronize](../../table/8_timetables_events/synchronize.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -18,9 +18,11 @@ Division gauche element par element des donnees timeseries.
 
 ## 📄 Description
 
+
 <b>ldivide</b> Applique la division gauche element par element et preserve l'axe temporel d'une entree timeseries.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([10; 20], [1; 2]);
@@ -29,14 +31,15 @@ out.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

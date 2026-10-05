@@ -21,14 +21,18 @@ Smallest and largest array elements.
 
 ## 📄 Description
 
+
 <b>bounds</b> returns the smallest and largest elements of A along the selected dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [3 7 2; 9 1 5];
 [s, l] = bounds(A)
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ A = [3 7 2; 9 1 5];
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

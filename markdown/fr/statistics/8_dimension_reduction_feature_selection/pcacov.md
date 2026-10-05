@@ -10,25 +10,29 @@ Analyse en composantes principales sur une matrice de covariance.
 
 ## 📄 Description
 
-<b>pcacov</b> effectue une analyse en composantes principales sur une matrice de covariance carree.
+
+<b>pcacov</b> effectue une analyse en composantes principales sur une matrice de covariance carree. 
 
 Les coefficients sont retournes en colonnes, ordonnees par variance decroissante. Le vecteur latent contient les valeurs propres de V, et explained contient le pourcentage de variance totale represente par chaque composante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 V = [4 2; 2 3];
 [coeff, latent, explained] = pcacov(V)
 ```
 
+
 ## 🔗 Voir aussi
 
-[pca](../../statistics/pca.md), [cov](../../statistics/cov.md).
+[pca](../../statistics/8_dimension_reduction_feature_selection/pca.md), [cov](../../statistics/1_descriptive_statistics_visualization/cov.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

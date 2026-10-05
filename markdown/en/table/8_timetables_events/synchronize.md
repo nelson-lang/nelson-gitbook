@@ -21,13 +21,16 @@ Synchronize timetables to common row times.
 
 ## 📄 Description
 
-<b>synchronize</b> combines timetables and aligns their variables to common row times.
 
-Supported time bases include union, intersection, first, last, regular time grids, named time steps, and explicit time vectors.
+<b>synchronize</b> combines timetables and aligns their variables to common row times. 
+
+Supported time bases include union, intersection, first, last, regular time grids, named time steps, and explicit time vectors. 
 
 The retiming method is passed to <b>retime</b>, including fill, nearest-neighbor, interpolation, and aggregation methods.
 
 ## 💡 Example
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:1)';
@@ -36,13 +39,14 @@ TT2 = timetable(t, [10; 20], 'VariableNames', {'B'});
 TT = synchronize(TT1, TT2)
 ```
 
+
 ## 🔗 See also
 
-[retime](../../table/retime.md), [timetable](../../table/timetable.md).
+[retime](../../table/8_timetables_events/retime.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,11 +1,11 @@
-# new_system
+# new\_system
 
 Create and load an empty nflow model.
 
 ## 📝 Syntax
 
-- h = new_system()
-- h = new_system(name)
+- h = new\_system()
+- h = new\_system(name)
 
 ## 📥 Input argument
 
@@ -17,11 +17,14 @@ Create and load an empty nflow model.
 
 ## 📄 Description
 
-<b>new_system</b> creates an empty nflow model and registers it as loaded. The model is addressed later either by its returned handle or by its name.
 
-Blocks are added with <b>add_block</b>, connected with <b>add_line</b> or <b>NFlow.connectBlocks</b>, configured with <b>set_param</b>, saved with <b>save_system</b> and opened in the editor with <b>open_system</b>.
+<b>new\_system</b> creates an empty nflow model and registers it as loaded. The model is addressed later either by its returned handle or by its name. 
+
+Blocks are added with <b>add\_block</b>, connected with <b>add\_line</b> or <b>NFlow.connectBlocks</b>, configured with <b>set\_param</b>, saved with <b>save\_system</b> and opened in the editor with <b>open\_system</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 new_system('demo');
@@ -35,13 +38,14 @@ save_system('demo', [tempdir(), 'demo.nflow']);
 bdclose('demo');
 ```
 
+
 ## 🔗 See also
 
 [add_block](../nflow_engine/add_block.md), [add_line](../nflow_engine/add_line.md), [set_param](../nflow_engine/set_param.md), [save_system](../nflow_engine/save_system.md), [close_system](../nflow_engine/close_system.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

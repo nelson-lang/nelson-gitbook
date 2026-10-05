@@ -16,11 +16,14 @@ Calcule le logarithme matriciel d'une matrice carrée.
 
 ## 📄 Description
 
-<b>logm(x)</b> calcule le logarithme matriciel de x.
+
+<b>logm(x)</b> calcule le logarithme matriciel de x. 
 
 Le calcul est effectué en bloc-diagonalant d'abord x puis en appliquant une approximation de Pade sur chaque bloc.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -28,10 +31,11 @@ res = logm(A)
 res = logm(A+i)
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

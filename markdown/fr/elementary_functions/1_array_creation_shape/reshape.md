@@ -20,9 +20,12 @@ Redimensionne un vecteur ou une matrice en une matrice de taille différente.
 
 ## 📄 Description
 
+
 <b>reshape</b> redimensionne en une matrice de taille différente. Si une seule dimension est spécifiée,<b>reshape</b> détermine automatiquement la taille complémentaire. [ ] permet de laisser une dimension non spécifiée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M1 = ones(3, 4, 5);
@@ -31,14 +34,15 @@ M2 = reshape(M1, 5, [], 4)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [colon](../../operators/colon.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -16,14 +16,18 @@ Constructeur de tableau de chaînes.
 
 ## 📄 Description
 
+
 <b>string</b> convertit l'entrée en tableau de chaînes.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 R = string({'these', 'are'; 'test', 'strings'})
 R2 = ["these", "are"; "test", "strings"];
 ```
+
 
 ```matlab
 M = [ 104   101   108   108   111;
@@ -32,14 +36,15 @@ R = string(M)
 D = double(R)
 ```
 
+
 ## 🔗 Voir aussi
 
-[strings](../../string/strings.md), [double](../../double/double.md).
+[strings](../../string/1_create_convert_text/strings.md), [double](../../double/double.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

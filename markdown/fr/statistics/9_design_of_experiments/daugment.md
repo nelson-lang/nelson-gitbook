@@ -9,14 +9,17 @@ Augmenter un plan D-optimal.
 
 ## 📄 Description
 
+
 <b>daugment</b> augmente un plan existant en selectionnant des lignes supplementaires depuis les candidats generes.
 
 ## Fonction(s) utilisée(s)
+
 
     candgen
     candexch
     rowexch
     rng
+  
 
 ## 💡 Exemples
 
@@ -29,7 +32,6 @@ dCE = [-1 -1];
 dCE2
 X
 ```
-
 Augmenter un plan avec des niveaux candidats bornes.
 
 ```matlab

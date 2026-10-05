@@ -1,11 +1,11 @@
-# add_line
+# add\_line
 
 Connect two block ports in an nflow model.
 
 ## 📝 Syntax
 
-- h = add_line(system, outPort, inPort)
-- h = add_line(system, outPort, inPort, 'autorouting', 'on')
+- h = add\_line(system, outPort, inPort)
+- h = add\_line(system, outPort, inPort, 'autorouting', 'on')
 
 ## 📥 Input argument
 
@@ -17,9 +17,12 @@ Connect two block ports in an nflow model.
 
 ## 📄 Description
 
-<b>add_line</b> connects two block ports in an nflow model.
+
+<b>add\_line</b> connects two block ports in an nflow model.
 
 ## 💡 Example
+
+
 
 ```matlab
 new_system('demo');
@@ -29,13 +32,14 @@ add_line('demo', 'Sine/1', 'Gain/1');
 bdclose('demo');
 ```
 
+
 ## 🔗 See also
 
 [new_system](../nflow_engine/new_system.md), [add_block](../nflow_engine/add_block.md), [set_param](../nflow_engine/set_param.md), [get_param](../nflow_engine/get_param.md), [save_system](../nflow_engine/save_system.md), [close_system](../nflow_engine/close_system.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

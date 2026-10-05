@@ -24,13 +24,16 @@ Objet datastore pour fichiers Parquet.
 
 ## 📄 Description
 
-<b>nelson.io.datastore.ParquetDatastore</b> est cree par <b>parquetDatastore</b>.
 
-Les proprietes sont <b>Files</b>, <b>ReadSize</b>, <b>SelectedVariableNames</b>, <b>OutputType</b>, <b>RowTimes</b>, <b>RowFilter</b>, <b>VariableNamingRule</b> et la propriete dependante <b>VariableNames</b>.
+<b>nelson.io.datastore.ParquetDatastore</b> est cree par <b>parquetDatastore</b>. 
+
+Les proprietes sont <b>Files</b>, <b>ReadSize</b>, <b>SelectedVariableNames</b>, <b>OutputType</b>, <b>RowTimes</b>, <b>RowFilter</b>, <b>VariableNamingRule</b> et la propriete dependante <b>VariableNames</b>. 
 
 <b>read</b> retourne le fichier suivant comme table et avance le datastore. <b>readall</b> concatene les fichiers restants apres reinitialisation du datastore. <b>preview</b> lit les premieres lignes du premier fichier. <b>hasdata</b> indique si des fichiers restent a lire. <b>reset</b> replace le datastore sur le premier fichier.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 folder = tempdir();
@@ -45,14 +48,15 @@ reset(pds);
 T = readall(pds)
 ```
 
+
 ## 🔗 Voir aussi
 
 [parquetDatastore](../parquet/parquetDatastore.md), [parquetread](../parquet/parquetread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

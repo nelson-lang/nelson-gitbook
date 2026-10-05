@@ -12,7 +12,8 @@ Renvoie les chemins des répertoires d'includes de Nelson
 
 ## 📄 Description
 
-<b>C = dlgetnelsonincludes()</b> renvoie un tableau de cellules contenant les chemins des répertoires d'includes utilisés par les modules Nelson.
+
+<b>C = dlgetnelsonincludes()</b> renvoie un tableau de cellules contenant les chemins des répertoires d'includes utilisés par les modules Nelson. 
 
 Ces chemins sont utilisés en interne pour le développement des modules et les processus de compilation.
 
@@ -24,15 +25,16 @@ See module skeleton for example
 dlgetnelsonincludes()
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlgetnelsonlibraries](../dynamic_link/dlgetnelsonlibraries.md), [dlgeneratemake](../dynamic_link/dlgeneratemake.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.10.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.10.0   | version initiale |
 
 <!--
 ## 👤 Auteur

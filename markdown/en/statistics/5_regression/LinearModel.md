@@ -21,14 +21,17 @@ Linear regression model.
 
 ## 📄 Description
 
-LinearModel stores a fitted linear regression model, including coefficients, predictor names, and response information.
+
+LinearModel stores a fitted linear regression model, including coefficients, predictor names, and response information. 
 
 Create this object with fitlm. Use predict to evaluate fitted responses for new predictor values.
 
 ## Used function(s)
 
+
     fitlm
     predict
+  
 
 ## 💡 Example
 
@@ -41,13 +44,14 @@ mdl = fitlm(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitlm](../../statistics/fitlm.md).
+[predict](../../statistics/5_regression/predict.md), [fitlm](../../statistics/5_regression/fitlm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

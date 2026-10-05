@@ -19,19 +19,23 @@ Fonction de repartition binomiale negative
 
 ## 📄 Description
 
+
 <b>nbincdf</b> calcule les probabilites cumulees de la loi binomiale negative.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:5;
 pout = nbincdf(x, 3, 0.4);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

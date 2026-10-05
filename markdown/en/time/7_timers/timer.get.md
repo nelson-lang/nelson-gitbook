@@ -19,6 +19,7 @@ Get timer property values.
 
 ## 📄 Description
 
+
 <b>get</b> returns the value of a named timer property. Calling <b>get</b> with only a scalar timer returns a structure containing all timer properties, including read-only properties such as <b>Running</b>, <b>TasksExecuted</b>, <b>AveragePeriod</b>, and <b>InstantPeriod</b>.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ delay = get(t, 'StartDelay')
 props = get(t)
 delete(t);
 ```
-
 Read the number of completed tasks after a repeated timer finishes.
 
 ```matlab
@@ -47,13 +47,14 @@ executed = get(t, 'TasksExecuted')
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [set](../../time/timer.set.md).
+[timer](../../time/7_timers/timer.md), [set](../../time/7_timers/timer.set.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,37 +17,40 @@ Activer le mode déplacement (pan).
 
 ## 📄 Description
 
-Utilisez le mode déplacement (pan) pour ajuster dynamiquement les limites des axes lors de l'exploration interactive des données.
 
-Activez ou désactivez le mode déplacement et configurez des options de base supplémentaires avec la fonction pan.
+Utilisez le mode déplacement (pan) pour ajuster dynamiquement les limites des axes lors de l'exploration interactive des données. 
 
-Le mode déplacement fonctionne avec les courbes, les barres, les histogrammes et les surfaces. Ces graphiques disposent généralement d'une icône de déplacement dans la barre d'outils.
+Activez ou désactivez le mode déplacement et configurez des options de base supplémentaires avec la fonction pan. 
 
-<b>pan option</b> configure le mode déplacement pour tous les axes de la figure courante.
+Le mode déplacement fonctionne avec les courbes, les barres, les histogrammes et les surfaces. Ces graphiques disposent généralement d'une icône de déplacement dans la barre d'outils. 
 
-Une fois le mode déplacement activé, vous pouvez ajuster la vue des axes avec le curseur ou le clavier :
+<b>pan option</b> configure le mode déplacement pour tous les axes de la figure courante. 
 
-Curseur : cliquez et faites glisser le curseur dans les axes.
+Une fois le mode déplacement activé, vous pouvez ajuster la vue des axes avec le curseur ou le clavier : 
 
-Clavier : pour déplacer horizontalement, utilisez les flèches gauche (←) ou droite (->). Pour déplacer verticalement, utilisez les flèches haut (↑) ou bas (↓).
+Curseur : cliquez et faites glisser le curseur dans les axes. 
 
-L'option du mode déplacement peut être spécifiée avec l'une des valeurs suivantes :
+Clavier : pour déplacer horizontalement, utilisez les flèches gauche (←) ou droite (->). Pour déplacer verticalement, utilisez les flèches haut (↑) ou bas (↓). 
+
+ 
+
+L'option du mode déplacement peut être spécifiée avec l'une des valeurs suivantes : 
 
 <b>
         'toggle'
-      </b> : Bascule le mode déplacement. Si le mode est désactivé, 'toggle' revient à la dernière option utilisée parmi 'on', 'xon' ou 'yon'. Ce comportement est identique à l'appel de pan sans argument.
+      </b> : Bascule le mode déplacement. Si le mode est désactivé, 'toggle' revient à la dernière option utilisée parmi 'on', 'xon' ou 'yon'. Ce comportement est identique à l'appel de pan sans argument. 
 
 <b>
         'xon'
-      </b> : Active le mode déplacement uniquement sur l'axe x.
+      </b> : Active le mode déplacement uniquement sur l'axe x. 
 
 <b>
         'yon'
-      </b> : Active le mode déplacement uniquement sur l'axe y.
+      </b> : Active le mode déplacement uniquement sur l'axe y. 
 
 <b>
         'on'
-      </b> : Active le mode déplacement.
+      </b> : Active le mode déplacement. 
 
 <b>
         'off'
@@ -55,11 +58,14 @@ L'option du mode déplacement peut être spécifiée avec l'une des valeurs suiv
 
 ## 💡 Exemple
 
+
+
 ```matlab
 surf(peaks)
 pan on
 
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -67,8 +73,8 @@ pan on
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.2.0   | version initiale |
 
 <!--

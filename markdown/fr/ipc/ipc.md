@@ -33,17 +33,20 @@ Communicateur inter-processus.
 
 ## 📄 Description
 
-<b>ipc</b> permet d'exécuter, récupérer et envoyer des variables entre plusieurs processus Nelson.
 
-Tous les types Nelson sérialisables sont pris en charge. Les types non pris en charge seront remplacés par une matrice vide et un avertissement.
+<b>ipc</b> permet d'exécuter, récupérer et envoyer des variables entre plusieurs processus Nelson. 
 
-LIMITATION :
+Tous les types Nelson sérialisables sont pris en charge. Les types non pris en charge seront remplacés par une matrice vide et un avertissement. 
 
-La limite pour la taille des données transférées est de 5000x5000 double. Sur une architecture 32 bits, 1024x1024 double.
+LIMITATION : 
+
+La limite pour la taille des données transférées est de 5000x5000 double. Sur une architecture 32 bits, 1024x1024 double. 
 
 Limitation actuelle afin de limiter l'utilisation mémoire.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 master_pid = getpid()
@@ -93,14 +96,17 @@ for p = current_pids
 end
 ```
 
+
 ```matlab
 ipc(getpid(), 'eval', 'dir')
 ```
+
 
 ```matlab
 ipc(getpid(), 'minimize', true)
 ipc(getpid(), 'minimize')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -108,8 +114,8 @@ ipc(getpid(), 'minimize')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

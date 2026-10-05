@@ -17,19 +17,24 @@ Créer un objet problème d'optimization.
 
 ## 📄 Description
 
+
 <b>optimproblem</b> crée un modèle problem-based. Il peut être converti avec prob2struct ou résolu directement pour les modèles sans contrainte pris en charge.
 
 ## Fonction(s) utilisée(s)
 
+
     optimvar
     solve
     prob2struct
+  
 
 ## 📚 Bibliographie
 
 J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = optimvar('x');
@@ -38,14 +43,15 @@ prob = optimproblem('Objective', (x - 2)^2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [optimvar](../optimization/optimvar.md), [solve](../optimization/solve.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

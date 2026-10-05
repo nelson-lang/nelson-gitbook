@@ -440,20 +440,13 @@
   function isFrench() {
     try {
       if (/^fr/i.test(document.documentElement.lang || "")) return true;
-      if (/(\/|\\)fr([_-]|\/|\\|$)/i.test(window.location.pathname))
-        return true;
+      if (/(\/|\\)fr([_-]|\/|\\|$)/i.test(window.location.pathname)) return true;
     } catch (_) {}
     return false;
   }
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
-      return {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;",
-      }[c];
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
   function escapeRegExp(s) {
@@ -554,8 +547,7 @@
   function renderNeighbors(prev, next) {
     try {
       var existing = document.getElementById("nelson-prevnext");
-      if (existing && existing.parentNode)
-        existing.parentNode.removeChild(existing);
+      if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
       if (!prev && !next) return;
 
       var bar = document.createElement("nav");
@@ -567,10 +559,7 @@
         var arrowR = side === "next" ? " →" : "";
         if (!n) {
           var span = document.createElement("span");
-          span.className =
-            "nelson-prevnext__link nelson-prevnext__" +
-            side +
-            " nelson-prevnext__disabled";
+          span.className = "nelson-prevnext__link nelson-prevnext__" + side + " nelson-prevnext__disabled";
           return span;
         }
         var a = document.createElement("a");
@@ -578,9 +567,7 @@
         a.className = "nelson-prevnext__link nelson-prevnext__" + side;
         a.innerHTML =
           arrowL +
-          '<span class="nelson-prevnext__label">' +
-          escapeHtml(n.label || "") +
-          "</span>" +
+          '<span class="nelson-prevnext__label">' + escapeHtml(n.label || "") + "</span>" +
           arrowR;
         a.addEventListener("click", function (e) {
           e.preventDefault();
@@ -593,8 +580,7 @@
       bar.appendChild(makeSide("next", next));
 
       var editLink = document.getElementById("github-edit-link");
-      var editSection =
-        editLink && editLink.closest ? editLink.closest(".section") : null;
+      var editSection = editLink && editLink.closest ? editLink.closest(".section") : null;
       if (editSection && editSection.parentNode) {
         editSection.parentNode.insertBefore(bar, editSection);
       } else {
@@ -616,29 +602,19 @@
       } catch (_) {
         return;
       }
-      var walker = document.createTreeWalker(
-        document.body,
-        NodeFilter.SHOW_TEXT,
-        {
-          acceptNode: function (node) {
-            if (!node.nodeValue || !node.nodeValue.trim())
-              return NodeFilter.FILTER_REJECT;
-            var p = node.parentNode;
-            if (!p) return NodeFilter.FILTER_REJECT;
-            var tag = p.nodeName;
-            if (
-              tag === "SCRIPT" ||
-              tag === "STYLE" ||
-              tag === "NOSCRIPT" ||
-              tag === "MARK"
-            )
-              return NodeFilter.FILTER_REJECT;
-            if (p.closest && p.closest(".nelson-onthispage, #nelson-prevnext"))
-              return NodeFilter.FILTER_REJECT;
-            return NodeFilter.FILTER_ACCEPT;
-          },
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (node) {
+          if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+          var p = node.parentNode;
+          if (!p) return NodeFilter.FILTER_REJECT;
+          var tag = p.nodeName;
+          if (tag === "SCRIPT" || tag === "STYLE" || tag === "NOSCRIPT" || tag === "MARK")
+            return NodeFilter.FILTER_REJECT;
+          if (p.closest && p.closest(".nelson-onthispage, #nelson-prevnext"))
+            return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
         },
-      );
+      });
       var nodes = [];
       while (walker.nextNode()) nodes.push(walker.currentNode);
 
@@ -652,10 +628,7 @@
         var last = 0;
         var m;
         while ((m = re.exec(text)) !== null) {
-          if (m.index > last)
-            frag.appendChild(
-              document.createTextNode(text.slice(last, m.index)),
-            );
+          if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
           var mark = document.createElement("mark");
           mark.className = "nelson-search-hit";
           mark.textContent = m[0];
@@ -664,8 +637,7 @@
           last = m.index + m[0].length;
           if (m[0].length === 0) re.lastIndex++; // guard against zero-length matches
         }
-        if (last < text.length)
-          frag.appendChild(document.createTextNode(text.slice(last)));
+        if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
         if (node.parentNode) node.parentNode.replaceChild(frag, node);
       });
 

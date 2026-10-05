@@ -19,9 +19,12 @@ Checks if filename a valid .nh5 file
 
 ## 📄 Description
 
+
 <b>isnh5file</b> checks if filename a valid .nh5 file.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -31,13 +34,14 @@ h5save([tempdir(), 'example_isnh5.nh5'], 'A')
 [R, VER, HE] = isnh5file([tempdir(), 'example_isnh5.nh5'])
 ```
 
+
 ## 🔗 See also
 
 [ismatfile](../matio/ismatfile.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

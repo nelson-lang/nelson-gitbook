@@ -17,7 +17,8 @@ Calcule un secret partagé X25519.
 
 ## 📄 Description
 
-<b>crypto.x25519.shared</b> calcule le secret partagé Diffie-Hellman (RFC 7748) à partir de votre clé secrète et d'une clé publique de pair. Les deux parties obtiennent la même valeur.
+
+<b>crypto.x25519.shared</b> calcule le secret partagé Diffie-Hellman (RFC 7748) à partir de votre clé secrète et d'une clé publique de pair. Les deux parties obtiennent la même valeur. 
 
 N'utilisez pas le secret partagé brut comme clé de chiffrement : hachez-le d'abord, par exemple avec <b>crypto.blake2b(shared, [], 32)</b>.
 
@@ -39,14 +40,15 @@ les deux pairs obtiennent le même secret
 isequal(crypto.x25519.shared(aSec, bPub), crypto.x25519.shared(bSec, aPub))
 ```
 
+
 ## 🔗 Voir aussi
 
-[crypto.x25519.public](../core/crypto.x25519.public.md), [crypto.x25519.keypair](../core/crypto.x25519.keypair.md), [crypto.aead.encrypt](../core/crypto.aead.encrypt.md).
+[crypto.x25519.public](../core/crypto_x25519_public.md), [crypto.x25519.keypair](../core/crypto_x25519_keypair.md), [crypto.aead.encrypt](../core/crypto_aead_encrypt.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,17 +18,21 @@ Discrete uniform mean and variance
 
 ## 📄 Description
 
+
 <b>unidstat</b> computes mean and variance for the discrete uniform distribution on integers from 1 to <b>n</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = unidstat([1 5 10]);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,22 +17,26 @@ Geometric probability density function
 
 ## 📄 Description
 
+
 <b>geopdf</b> evaluates geometric probability values element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 2 5];
 y = geopdf(x, 0.25);
 ```
 
+
 ## 🔗 See also
 
-[geocdf](../../statistics/geocdf.md), [geoinv](../../statistics/geoinv.md), [geornd](../../statistics/geornd.md), [geostat](../../statistics/geostat.md).
+[geocdf](../../statistics/2_probability_distributions/geocdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md), [geornd](../../statistics/2_probability_distributions/geornd.md), [geostat](../../statistics/2_probability_distributions/geostat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -2,66 +2,64 @@ name: CI
 
 on: [push]
 
+permissions:
+  contents: read
+
 jobs:
   build-pdf:
-    runs-on: windows-2025-vs2026
-    timeout-minutes: 120
+    # The manual renders with the fonts vendored in theme/fonts, so no
+    # platform-specific font is needed and the fastest runner is used.
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
         lang: [en, fr]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
 
       - name: Verify Rust toolchain
         run: |
           rustc --version
           cargo --version
-        shell: powershell
 
       - name: Cache cargo registry and build
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo-
+        uses: Swatinem/rust-cache@v2.9.2
 
-      - name: Install tools via Chocolatey
-        run: |
-          Write-Host "Installing tools via Chocolatey..."
+      - name: Build PDF builder
+        run: cargo build --release --locked
 
-          # Install Pandoc
-          choco install pandoc -y
-
-          # Install wkhtmltopdf
-          choco install wkhtmltopdf -y
-
-          # Inkscape is no longer required: SVG rasterization is done in-process by resvg.
-
-          Write-Host "All tools installed successfully via Chocolatey"
-        shell: powershell
-
-      - name: Verify installations
-        run: |
-          Write-Host "Verifying Pandoc..."
-          pandoc --version
-
-          Write-Host "`nVerifying wkhtmltopdf..."
-          wkhtmltopdf --version
-        shell: powershell
+      - name: Run unit tests
+        run: cargo test --release --locked
 
       - name: Build PDF (${{ matrix.lang }})
-        run: |
-          .\pandoc-build-pdf.bat ${{ matrix.lang }}
-        shell: cmd
+        run: sh ./build-pdf.sh ${{ matrix.lang }}
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: nelson-pdf-${{ matrix.lang }}
           path: nelson-${{ matrix.lang }}.pdf
+          # PDF streams are already deflated.
+          compression-level: 0
+
+  release:
+    # Attaches both manuals to the GitHub release of a v* tag.
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build-pdf
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download PDF artifacts
+        uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: nelson-pdf-*
+          merge-multiple: true
+
+      - name: Attach PDFs to the release
+        uses: softprops/action-gh-release@v3.0.3
+        with:
+          files: nelson-*.pdf

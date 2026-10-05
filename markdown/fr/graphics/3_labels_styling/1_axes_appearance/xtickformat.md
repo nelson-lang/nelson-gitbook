@@ -19,9 +19,10 @@ Definir ou obtenir le format des etiquettes de l'axe des x.
 
 ## 📄 Description
 
-<b>xtickformat</b> definit ou obtient le format des etiquettes de l'axe des x des axes courants.
 
-Le format s'applique aux etiquettes generees automatiquement.
+<b>xtickformat</b> definit ou obtient le format des etiquettes de l'axe des x des axes courants. 
+
+Le format s'applique aux etiquettes generees automatiquement. 
 
 Le format est une conversion de type sprintf (par exemple <b>%.2f</b> ou <b>%g</b>) appliquee a chaque valeur numerique de graduation. Les mots-cles predefinis <b>usd</b>, <b>eur</b>, <b>gbp</b>, <b>jpy</b>, <b>degrees</b> et <b>percentage</b> sont egalement acceptes. Les etiquettes personnalisees definies avec xticklabels ont priorite sur le format.
 
@@ -36,13 +37,14 @@ xtickformat('%.2f');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [xticks](../../../graphics/3_labels_styling/1_axes_appearance/xticks.md), [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [ytickformat](../../../graphics/3_labels_styling/1_axes_appearance/ytickformat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

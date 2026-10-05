@@ -23,11 +23,14 @@ Bounded scalar minimization.
 
 ## 📄 Description
 
+
 <b>fminbnd</b> applies Brent's bounded minimization method, combining golden-section steps with parabolic interpolation. A problem structure can contain objective, x1, x2 and options fields.
 
 ## Used function(s)
 
+
     optimset
+  
 
 ## 📚 Bibliography
 
@@ -35,10 +38,13 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 💡 Example
 
+
+
 ```matlab
 [x, fval] = fminbnd(@(x) (x - 1.5)^2, -2, 4)
 
 ```
+
 
 ## 🔗 See also
 
@@ -46,7 +52,7 @@ R. P. Brent, Algorithms for Minimization Without Derivatives, Prentice-Hall, 197
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,13 +16,17 @@ Block diagonal matrix
 
 ## 📄 Description
 
+
 <b>R = blkdiag(M1, ... , MN)</b> build the block diagonal matrix created by aligning the input matrices<b>M1, ... , MN</b> along the diagonal of <b>R</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 blkdiag(magic(2), magic(3), magic(4))
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ blkdiag(magic(2), magic(3), magic(4))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

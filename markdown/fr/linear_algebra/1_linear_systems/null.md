@@ -17,23 +17,27 @@ Noyau d'une matrice
 
 ## 📄 Description
 
+
 <b>null</b> retourne une base orthonormale du noyau de A, obtenue à partir de la décomposition en valeurs singulières. null(A, 'r') retourne une base rationnelle du noyau obtenue à partir de la forme échelonnée réduite.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6; 7 8 9];
 Z = null(A)
 ```
 
+
 ## 🔗 Voir aussi
 
-[orth](../../linear_algebra/orth.md), [rank](../../linear_algebra/rank.md), [svd](../../linear_algebra/svd.md).
+[orth](../../linear_algebra/1_linear_systems/orth.md), [rank](../../linear_algebra/1_linear_systems/rank.md), [svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

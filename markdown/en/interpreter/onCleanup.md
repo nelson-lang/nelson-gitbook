@@ -4,12 +4,12 @@ Cleanup tasks upon function completion
 
 ## 📝 Syntax
 
-- onCleanup(function_handle)
-- obj = onCleanup(function_handle)
+- onCleanup(function\_handle)
+- obj = onCleanup(function\_handle)
 
 ## 📥 Input argument
 
-- function_handle - a function handle to execute upon cleanup.
+- function\_handle - a function handle to execute upon cleanup.
 
 ## 📤 Output argument
 
@@ -17,16 +17,20 @@ Cleanup tasks upon function completion
 
 ## 📄 Description
 
-<b>onCleanup</b> creates an object that executes a specified function handle when the object is cleared or goes out of scope, allowing for cleanup tasks to be performed automatically upon function completion.
+
+<b>onCleanup</b> creates an object that executes a specified function handle when the object is cleared or goes out of scope, allowing for cleanup tasks to be performed automatically upon function completion. 
 
 <b>cancel(obj)</b> or <b>obj.cancel()</b> prevents the cleanup function from being executed.
 
 ## 💡 Examples
 
+
+
 ```matlab
 a = onCleanup(@() disp('Cleanup executed'))
 clear a
 ```
+
 
 ```matlab
 function cleanupExample(doCancel)
@@ -50,11 +54,12 @@ cleanupExample(true);
 
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

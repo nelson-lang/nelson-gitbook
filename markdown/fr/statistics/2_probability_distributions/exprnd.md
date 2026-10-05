@@ -19,23 +19,27 @@ Nombres aleatoires exponentiels
 
 ## 📄 Description
 
+
 <b>exprnd</b> genere des valeurs aleatoires de loi exponentielle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = exprnd(2, 2, 3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md), [expinv](../../statistics/expinv.md), [expstat](../../statistics/expstat.md).
+[exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md), [expinv](../../statistics/2_probability_distributions/expinv.md), [expstat](../../statistics/2_probability_distributions/expstat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

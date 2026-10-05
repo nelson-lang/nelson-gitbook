@@ -16,31 +16,37 @@ Remove trailing whitespace.
 
 ## 📄 Description
 
-<b>deblank</b> removes trailing whitespace.
+
+<b>deblank</b> removes trailing whitespace. 
 
 <b>deblank</b> does not remove all significant whitespace (only characters ' \\t\\n\\r\\f\\v' removed).
 
 ## 💡 Examples
 
+
+
 ```matlab
 deblank(' Nel Son ')
 ```
+
 
 ```matlab
 deblank(" Nel Son ")
 ```
 
+
 ```matlab
 deblank([' Nel Son ', char(160)])
 ```
 
+
 ## 🔗 See also
 
-[strtrim](../../string/strtrim.md), [toupper](../../string/toupper.md).
+[strtrim](../../string/7_edit_text/strtrim.md), [toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

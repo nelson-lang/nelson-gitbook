@@ -13,11 +13,14 @@ Démarre un chronomètre.
 
 ## 📄 Description
 
-La séquence de commandes<b>tic(); commands ; t = toc()</b> renvoie le nombre de secondes nécessaires à l'exécution des commandes.
+
+La séquence de commandes<b>tic(); commands ; t = toc()</b> renvoie le nombre de secondes nécessaires à l'exécution des commandes. 
 
 Les appels consécutifs à <b>tic</b> écrasent le minuteur interne de tic.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 tic()
@@ -30,14 +33,15 @@ t = toc()
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[toc](../../time/toc.md), [sleep](../../time/sleep.md), [time](../../time/time.md).
+[toc](../../time/7_timers/toc.md), [sleep](../../time/7_timers/sleep.md), [time](../../time/7_timers/time.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

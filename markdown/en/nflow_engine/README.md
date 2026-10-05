@@ -1,8 +1,11 @@
 # nflow engine
 
+
 Programmatic creation and editing of nflow block-diagram models.
 
+    
 NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.
+
 
 ## Functions
 
@@ -19,7 +22,7 @@ NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, bu
 - [delete_line](delete_line.md) - Delete a connection between two block ports.
 - [find_system](find_system.md) - List the blocks of a model, optionally filtered by type.
 - [gcbh](gcbh.md) - Return the handle of the current block.
-- [getSimulinkBlockHandle](getSimulinkBlockHandle.md) - Return the handle of a block by path, or -1 if not found.
+- [getNFlowBlockHandle](getNFlowBlockHandle.md) - Return the handle of a block by path, or -1 if not found.
 - [get_param](get_param.md) - Query a model or block parameter.
 - [getfullname](getfullname.md) - Return the full path of a block or model from its handle.
 - [linmod](linmod.md) - Numerical linearization of an nflow model.
@@ -31,3 +34,4 @@ NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, bu
 - [sim](sim.md) - Run an nflow simulation of a model and return its results.
 - [NFlow.sspInfo](ssp.md) - Inspect, import and export SSP (System Structure and Parameterization) archives.
 - [trim](trim.md) - Find a steady-state operating point of an nflow model.
+

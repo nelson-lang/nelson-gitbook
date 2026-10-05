@@ -22,16 +22,20 @@ Renvoie la liste des fichiers.
 
 ## 📄 Description
 
-<b>dir</b> affiche la liste des fichiers et dossiers dans le répertoire courant.
+
+<b>dir</b> affiche la liste des fichiers et dossiers dans le répertoire courant. 
 
 Le caractère \* (joker) est supporté dans les noms de fichiers et chemins.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 res = dir(nelsonroot())
 res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -39,8 +43,8 @@ res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

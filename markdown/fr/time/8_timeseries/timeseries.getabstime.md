@@ -16,9 +16,11 @@ Renvoie les temps d'echantillon absolus.
 
 ## 📄 Description
 
+
 <b>getabstime</b> Convertit les temps d'echantillon numeriques en chaines de date absolue avec TimeInfo.StartDate et TimeInfo.Units.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2], [0; 1]);
@@ -27,14 +29,15 @@ getabstime(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

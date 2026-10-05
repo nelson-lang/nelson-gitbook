@@ -18,9 +18,12 @@ Sawtooth or triangle waveform.
 
 ## 📄 Description
 
+
 <b>sawtooth</b> generates a periodic ramp between -1 and 1.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -28,13 +31,14 @@ y = sawtooth(0:0.1:2*pi);
 
 ```
 
+
 ## 🔗 See also
 
-[square](../../signal_processing/square.md).
+[square](../../signal_processing/1_signal_generation_preprocessing/square.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

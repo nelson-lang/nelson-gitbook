@@ -22,11 +22,14 @@ Surechantillonne, filtre en FIR, puis sous-echantillonne.
 
 ## 📄 Description
 
+
 <b>upfirdn</b> fournit l'operation multirate de base utilisee par les fonctions de reechantillonnage.
 
 Lorsque <b>H</b> est une matrice, chaque colonne de <b>H</b> filtre la colonne de signal correspondante.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 
@@ -34,20 +37,22 @@ Y = upfirdn([1 2 3], [1 1], 2, 2);
 
 ```
 
+
 ```matlab
 
 Y = upfirdn([1; 2], [1 2; 3 4]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[upsample](../../signal_processing/upsample.md), [downsample](../../signal_processing/downsample.md).
+[upsample](../../signal_processing/1_signal_generation_preprocessing/upsample.md), [downsample](../../signal_processing/1_signal_generation_preprocessing/downsample.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

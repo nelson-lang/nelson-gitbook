@@ -13,9 +13,12 @@ Create or position a light relative to the camera.
 
 ## 📄 Description
 
+
 <b>camlight</b> creates or repositions an infinite light using the current axes camera or a relative angular position.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -25,8 +28,8 @@ material('shiny');
 view(35, 28);
 
 ```
-
 <img src="camlight_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -34,7 +37,7 @@ view(35, 28);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -4,12 +4,12 @@ Définit la valeur d'une propriété d'un objet handle.
 
 ## 📝 Syntaxe
 
-- R = set(h, property_name, value)
+- R = set(h, property\_name, value)
 
 ## 📥 Argument d'entrée
 
 - h - un objet handle.
-- property_name - une chaîne : nom de la propriété.
+- property\_name - une chaîne : nom de la propriété.
 - value - une variable.
 
 ## 📤 Argument de sortie
@@ -18,7 +18,9 @@ Définit la valeur d'une propriété d'un objet handle.
 
 ## 📄 Description
 
+
 Cette routine peut être utilisée pour modifier la valeur d'une propriété spécifiée d'un objet handle.
+
 
 ## 🔗 Voir aussi
 
@@ -26,8 +28,8 @@ Cette routine peut être utilisée pour modifier la valeur d'une propriété sp�
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

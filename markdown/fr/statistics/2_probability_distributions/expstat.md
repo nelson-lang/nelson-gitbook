@@ -17,22 +17,26 @@ Moyenne et variance exponentielles
 
 ## 📄 Description
 
+
 <b>expstat</b> retourne la moyenne et la variance de la loi exponentielle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = expstat(3);
 ```
 
+
 ## 🔗 Voir aussi
 
-[exppdf](../../statistics/exppdf.md), [expcdf](../../statistics/expcdf.md), [expinv](../../statistics/expinv.md), [exprnd](../../statistics/exprnd.md).
+[exppdf](../../statistics/2_probability_distributions/exppdf.md), [expcdf](../../statistics/2_probability_distributions/expcdf.md), [expinv](../../statistics/2_probability_distributions/expinv.md), [exprnd](../../statistics/2_probability_distributions/exprnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

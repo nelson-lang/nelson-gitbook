@@ -23,22 +23,26 @@ Product of array elements.
 
 ## 📄 Description
 
+
 <b>R = prod(M)</b> returns the product of the array elements of M.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
 R = prod(M, 'native')
 ```
 
+
 ## 🔗 See also
 
-[ndims](../elementary_functions/ndims.md), [sum](../data_analysis/sum.md).
+[ndims](../elementary_functions/7_indexing_dimensions/ndims.md), [sum](../data_analysis/sum.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

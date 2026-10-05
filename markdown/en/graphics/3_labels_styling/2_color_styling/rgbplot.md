@@ -12,9 +12,12 @@ Plot colormap.
 
 ## 📄 Description
 
+
 <b>rgbplot(cmap)</b> plots the R (red), G (green), and B (blue) intensities of the specified<b>cmap</b> colormap.
 
 ## 💡 Example
+
+
 
 ```matlab
 f  = figure();
@@ -25,8 +28,8 @@ colormap = [0.2 0.1 0.5;
     0.9 1 0];
 rgbplot(colormap);
 ```
-
 <img src="rgbplot.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -34,7 +37,7 @@ rgbplot(colormap);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

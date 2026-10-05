@@ -1,10 +1,10 @@
-# qml_loadfile
+# qml\_loadfile
 
 Load a QML file.
 
 ## 📝 Syntax
 
-- h = qml_loadfile(filename)
+- h = qml\_loadfile(filename)
 
 ## 📥 Input argument
 
@@ -16,15 +16,19 @@ Load a QML file.
 
 ## 📄 Description
 
-Load a QML file
+
+Load a QML file 
 
 It creates a QML component and load .qml file.
 
 ## 💡 Example
 
+
+
 ```matlab
  % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ It creates a QML component and load .qml file.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

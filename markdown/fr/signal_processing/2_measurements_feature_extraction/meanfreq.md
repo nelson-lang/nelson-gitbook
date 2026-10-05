@@ -22,9 +22,12 @@ Frequence moyenne du spectre d'un signal.
 
 ## 📄 Description
 
+
 <b>meanfreq</b> calcule la frequence moyenne ponderee par la puissance. Les entrees temporelles utilisent un periodogramme a fenetre rectangulaire de longueur egale a l'entree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -32,14 +35,15 @@ Frequence moyenne du spectre d'un signal.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[medfreq](../../signal_processing/medfreq.md), [bandpower](../../signal_processing/bandpower.md).
+[medfreq](../../signal_processing/2_measurements_feature_extraction/medfreq.md), [bandpower](../../signal_processing/2_measurements_feature_extraction/bandpower.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

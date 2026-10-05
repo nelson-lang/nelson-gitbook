@@ -18,7 +18,8 @@ List categories of a categorical array.
 
 ## 📄 Description
 
-<b>categories</b> returns the category list attached to a categorical array. Undefined elements are not categories.
+
+<b>categories</b> returns the category list attached to a categorical array. Undefined elements are not categories. 
 
 The default output is a cell array of character vectors.
 
@@ -29,12 +30,12 @@ Return the category names.
 ```matlab
 A = categorical({'red','blue','red'}); names = categories(A)
 ```
-
 Return the category names as strings.
 
 ```matlab
 A = categorical({'small','large'}); names = categories(A, 'OutputType', 'string')
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ A = categorical({'small','large'}); names = categories(A, 'OutputType', 'string'
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

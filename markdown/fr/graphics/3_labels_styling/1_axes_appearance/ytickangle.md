@@ -19,7 +19,8 @@ Faire pivoter les etiquettes de l'axe des y.
 
 ## 📄 Description
 
-<b>ytickangle</b> fait pivoter les etiquettes de l'axe des y des axes courants de l'angle indique.
+
+<b>ytickangle</b> fait pivoter les etiquettes de l'axe des y des axes courants de l'angle indique. 
 
 Un angle positif fait pivoter les etiquettes dans le sens anti-horaire ; un angle negatif dans le sens horaire.
 
@@ -35,13 +36,14 @@ ytickangle(45);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [yticks](../../../graphics/3_labels_styling/1_axes_appearance/yticks.md), [yticklabels](../../../graphics/3_labels_styling/1_axes_appearance/yticklabels.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

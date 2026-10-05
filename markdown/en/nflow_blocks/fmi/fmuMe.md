@@ -1,7 +1,8 @@
 # fmuMe
 
+
 <p align="center">
-<img src="fmu.svg"/>
+<img src="fmu.svg" width="80"/>
 </p>
 Integrates a model-exchange FMU with the NFlow solver.
 
@@ -11,9 +12,11 @@ Integrates a model-exchange FMU with the NFlow solver.
 
 ## 📄 Description
 
-The <b>FMU (ME)</b> block loads the model-exchange archive selected by <b>path</b>. NFlow evaluates its derivatives, zero crossings, and events while the selected NFlow solver integrates the continuous states.
 
-After import, ports and parameters follow the variables exposed by the FMU model description.
+The <b>FMU (ME)</b> block loads the model-exchange archive selected by <b>path</b>. NFlow evaluates its derivatives, zero crossings, and events while the selected NFlow solver integrates the continuous states. 
+
+After import, ports and parameters follow the variables exposed by the FMU model description. 
+
 
 ## 🔗 See also
 

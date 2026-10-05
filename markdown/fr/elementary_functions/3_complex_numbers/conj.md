@@ -16,23 +16,27 @@ Conjugué complexe
 
 ## 📄 Description
 
+
 <b>conj</b> renvoie le conjugué complexe.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = conj(x)
 ```
 
+
 ## 🔗 Voir aussi
 
-[real](../../elementary_functions/real.md).
+[real](../../elementary_functions/3_complex_numbers/real.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

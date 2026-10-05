@@ -17,6 +17,7 @@ Generate an X25519 key pair.
 
 ## 📄 Description
 
+
 <b>crypto.x25519.keypair</b> generates a random Curve25519 key pair (RFC 7748) using <b>crypto.random</b>. Share the public key and keep the secret key private.
 
 ## Used function(s)
@@ -35,13 +36,14 @@ generate a key pair
 [pub, sec] = crypto.x25519.keypair()
 ```
 
+
 ## 🔗 See also
 
-[crypto.x25519.public](../core/crypto.x25519.public.md), [crypto.x25519.shared](../core/crypto.x25519.shared.md), [crypto.random](../core/crypto.random.md).
+[crypto.x25519.public](../core/crypto_x25519_public.md), [crypto.x25519.shared](../core/crypto_x25519_shared.md), [crypto.random](../core/crypto_random.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

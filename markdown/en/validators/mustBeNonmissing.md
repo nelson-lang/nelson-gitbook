@@ -15,9 +15,12 @@ Checks that value is not missing.
 
 ## 📄 Description
 
+
 <b>mustBeNonmissing</b> checks that value is not missing or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeNonmissing(1)
@@ -26,13 +29,14 @@ mustBeNonmissing(["hello" string(NaN)])
 
 ```
 
+
 ## 🔗 See also
 
 [ismissing](../data_analysis/ismissing.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

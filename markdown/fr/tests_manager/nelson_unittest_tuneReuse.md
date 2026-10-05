@@ -24,19 +24,20 @@ Calibrer la reutilisation explicite des processus pour les tests et les benches.
 
 ## 📄 Description
 
-<b>nelson.unittest.tuneReuse</b> valide la reutilisation explicite avec de vraies executions. La fonction ne deduit pas la surete en analysant le texte source et ne cree ni ne consulte de cache.
 
-La calibration utilise toujours un worker natif et desactive les retries. La reference isolee et chaque essai reutilise executent deux fois la meme charge. Les essais reutilises suivent des ordres deterministes normal, inverse et rotatif afin de detecter les contaminations entre fichiers et entre repetitions.
+<b>nelson.unittest.tuneReuse</b> valide la reutilisation explicite avec de vraies executions. La fonction ne deduit pas la surete en analysant le texte source et ne cree ni ne consulte de cache. 
 
-Les campagnes reutilisees emploient le protocole worker et le reset de production. Un fichier est certifie uniquement si les executions isolees reussissent et si chaque execution reutilisee retourne un payload worker reussi, sans fallback ni resultat manquant.
+La calibration utilise toujours un worker natif et desactive les retries. La reference isolee et chaque essai reutilise executent deux fois la meme charge. Les essais reutilises suivent des ordres deterministes normal, inverse et rotatif afin de detecter les contaminations entre fichiers et entre repetitions. 
 
-Si un fichier deja tague reussit en isolation mais echoue en reutilisation, la suppression du tag est proposee. Un fichier non tague recoit une proposition d'ajout uniquement avec <b>AllowAdd</b> a true, une calibration reussie et un gain de module au moins egal a <b>MinGain</b>. Un echec isole ne modifie rien.
+Les campagnes reutilisees emploient le protocole worker et le reset de production. Un fichier est certifie uniquement si les executions isolees reussissent et si chaque execution reutilisee retourne un payload worker reussi, sans fallback ni resultat manquant. 
 
-Les cas GUI, ADV-CLI, MPI, sequentiels, IPC, file-watcher, audio, langue imposee et environnements externes sont exclus car ils ne sont pas eligibles au worker CLI reutilisable.
+Si un fichier deja tague reussit en isolation mais echoue en reutilisation, la suppression du tag est proposee. Un fichier non tague recoit une proposition d'ajout uniquement avec <b>AllowAdd</b> a true, une calibration reussie et un gain de module au moins egal a <b>MinGain</b>. Un echec isole ne modifie rien. 
 
-Le comportement par defaut est une simulation. <b>Apply</b> doit etre true pour modifier les sources. L'ajout et la suppression dans l'entete conservent le BOM UTF-8 et le style des fins de ligne.
+Les cas GUI, ADV-CLI, MPI, sequentiels, IPC, file-watcher, audio, langue imposee et environnements externes sont exclus car ils ne sont pas eligibles au worker CLI reutilisable. 
 
-Cette commande de maintenance explicite n'est pas un prepass obligatoire. Elle execute davantage de travail qu'un run normal et sert a calibrer periodiquement les tags avant les runs CI habituels.
+Le comportement par defaut est une simulation. <b>Apply</b> doit etre true pour modifier les sources. L'ajout et la suppression dans l'entete conservent le BOM UTF-8 et le style des fins de ligne. 
+
+Cette commande de maintenance explicite n'est pas un prepass obligatoire. Elle execute davantage de travail qu'un run normal et sert a calibrer periodiquement les tags avant les runs CI habituels. 
 
 Pour maintenir les tags de reutilisation et de poids, calibrer et appliquer d'abord les tags de reutilisation. Mesurer ensuite de nouvelles durees avec <b>nelson.unittest.tuneWeights</b> afin que les poids decrivent la configuration d'execution obtenue.
 
@@ -49,7 +50,6 @@ Auditer les tags existants sans modifier les fichiers.
 proposal = nelson.unittest.tuneReuse({'interpreter', 'statistics'});
 
 ```
-
 Calibrer les tests d'un module, verifier la proposition, puis recalibrer et appliquer les changements acceptes.
 
 ```matlab
@@ -65,6 +65,7 @@ applied = nelson.unittest.tuneReuse('interpreter', ...
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[nelson.unittest.run](../tests_manager/nelson.unittest.run.md), [nelson.unittest.tuneWeights](../tests_manager/nelson.unittest.tuneWeights.md), [nelson.unittest.discover](../tests_manager/nelson.unittest.discover.md).
+[nelson.unittest.run](../tests_manager/nelson_unittest_run.md), [nelson.unittest.tuneWeights](../tests_manager/nelson_unittest_tuneWeights.md), [nelson.unittest.discover](../tests_manager/nelson_unittest_discover.md).

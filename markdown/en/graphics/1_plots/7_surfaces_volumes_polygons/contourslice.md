@@ -15,11 +15,12 @@ Display contour lines on slices through volume data.
 
 ## 📄 Description
 
-<b>contourslice</b> computes contour lines on selected volume slices and returns a column vector of patch objects.
 
-The <b>levels</b> input can be a scalar number of contour levels or a vector of contour values. A slice value equal to <b>NaN</b> selects all slices along that direction.
+<b>contourslice</b> computes contour lines on selected volume slices and returns a column vector of patch objects. 
 
-When <b>XI</b>, <b>YI</b>, and <b>ZI</b> are matrices, contours are drawn along the surface defined by those matrices.
+The <b>levels</b> input can be a scalar number of contour levels or a vector of contour values. A slice value equal to <b>NaN</b> selects all slices along that direction. 
+
+When <b>XI</b>, <b>YI</b>, and <b>ZI</b> are matrices, contours are drawn along the surface defined by those matrices. 
 
 The optional <b>method</b> input can be <b>'nearest'</b>, <b>'linear'</b>, or <b>'cubic'</b>. The default method for axis-aligned slices is <b>'nearest'</b>; the default for surface slices is <b>'linear'</b>.
 
@@ -37,7 +38,6 @@ contourslice(X, Y, Z, V, xslice, yslice, zslice);
 view(3);
 grid on;
 ```
-
 <img src="contourslice_1.svg" align="middle"/>
 Specify contour levels and add a colorbar.
 
@@ -51,7 +51,6 @@ colorbar;
 view(3);
 grid on;
 ```
-
 <img src="contourslice_2.svg" align="middle"/>
 Display contours on a surface slice.
 
@@ -64,8 +63,8 @@ contourslice(X, Y, Z, V, xsurf, ysurf, zsurf, 20);
 view(3);
 grid on;
 ```
-
 <img src="contourslice_3.svg" align="middle"/>
+
 
 ## 🔗 See also
 

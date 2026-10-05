@@ -4,10 +4,10 @@ Get BLAKE2b hash, optionally keyed.
 
 ## 📝 Syntax
 
-- hexa_hash = crypto.blake2b(message)
-- hexa_hash = crypto.blake2b(message, key)
-- hexa_hash = crypto.blake2b(message, key, digestSize)
-- hexa_hash = crypto.blake2b(filename, key, digestSize, '-file')
+- hexa\_hash = crypto.blake2b(message)
+- hexa\_hash = crypto.blake2b(message, key)
+- hexa\_hash = crypto.blake2b(message, key, digestSize)
+- hexa\_hash = crypto.blake2b(filename, key, digestSize, '-file')
 
 ## 📥 Input argument
 
@@ -19,9 +19,10 @@ Get BLAKE2b hash, optionally keyed.
 
 ## 📤 Output argument
 
-- hexa_hash - a character vector: 2 \* digestSize lowercase hexadecimal characters.
+- hexa\_hash - a character vector: 2 \* digestSize lowercase hexadecimal characters.
 
 ## 📄 Description
+
 
 <b>crypto.blake2b</b> computes a BLAKE2b digest (RFC 7693): a fast cryptographic hash with a configurable output size. With a key it acts as a message authentication code without the HMAC construction.
 
@@ -35,12 +36,13 @@ https://www.rfc-editor.org/rfc/rfc7693, https://monocypher.org/
 
 ## 💡 Examples
 
+
+
 ```matlab
 R = crypto.blake2b('abc')
 R = crypto.blake2b('abc', [], 20)
 R = crypto.blake2b('abc', 'my secret key', 32)
 ```
-
 hash a file
 
 ```matlab
@@ -49,13 +51,14 @@ filewrite(filename, 'abc');
 R = crypto.blake2b(filename, [], 64, '-file')
 ```
 
+
 ## 🔗 See also
 
-[crypto.sha512](../core/crypto.sha512.md), [crypto.hmac](../core/crypto.hmac.md), [crypto.argon2](../core/crypto.argon2.md).
+[crypto.sha512](../core/crypto_sha512.md), [crypto.hmac](../core/crypto_hmac.md), [crypto.argon2](../core/crypto_argon2.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

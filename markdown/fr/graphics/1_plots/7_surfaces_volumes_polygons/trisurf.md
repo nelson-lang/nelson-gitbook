@@ -12,6 +12,7 @@ Trace de surface triangulaire
 
 ## 📄 Description
 
+
 <b>trisurf</b> trace une surface triangulaire 3-D depuis une matrice de connectivite ou un objet de triangulation.
 
 ## 💡 Exemples
@@ -23,7 +24,6 @@ P = randn(30, 3);
 T = convhulln(P);
 trisurf(T, P(:, 1), P(:, 2), P(:, 3), 'FaceAlpha', 0.4)
 ```
-
 <img src="trisurf_1.svg" align="middle"/>
 
 ```matlab
@@ -46,14 +46,15 @@ axis equal
 axis off
 ```
 
+
 ## 🔗 Voir aussi
 
 [patch](../../../graphics/1_plots/7_surfaces_volumes_polygons/patch.md), [surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [triplot](../../../graphics/1_plots/7_surfaces_volumes_polygons/triplot.md), [triangulation](../../../geometry/triangulation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

@@ -22,6 +22,7 @@ Envoyer des données à un service web RESTful
 
 ## 📄 Description
 
+
 <b>webwrite</b> envoie des données à un service web RESTful.
 
 ## 💡 Exemples
@@ -37,7 +38,6 @@ data = struct('text', ['hello from Nelson ', datetime], 'channel', '#test_webwri
 R = webwrite(url, data);
 
 ```
-
 Connect to your NetAtmo Weather station (oAuth2 connection)
 
 ```matlab
@@ -61,14 +61,15 @@ disp(r.body.devices.dashboard_data)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [weboptions](../webtools/weboptions.md), [webread](../webtools/webread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

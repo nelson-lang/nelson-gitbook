@@ -16,13 +16,17 @@ Détermine quels éléments d'un tableau sont premiers
 
 ## 📄 Description
 
+
 <b>isprime</b> retourne un tableau logique de même taille que X, contenant vrai là où les éléments de X sont des nombres premiers et faux sinon.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 isprime([2 3 4 5 6 7 8 9 10 11])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ isprime([2 3 4 5 6 7 8 9 10 11])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

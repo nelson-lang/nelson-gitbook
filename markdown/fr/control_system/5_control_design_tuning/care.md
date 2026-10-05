@@ -24,9 +24,12 @@ Solution de l'équation algébrique de Riccati en temps continu.
 
 ## 📄 Description
 
+
 La fonction <b>care(A, B, Q)</b> calcule la solution exclusive, notée <b>X</b>, pour l'équation algébrique de Riccati en temps continu avec les matrices <b>A</b>, <b>B</b> et <b>Q</b>, et fournit également les matrices supplémentaires <b>L</b> et <b>G</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 a = [-3 2;1 1];
@@ -37,14 +40,15 @@ r = 3;
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [slicot_sb02od](../../slicot/slicot_sb02od.md), [slicot_sg02ad](../../slicot/slicot_sg02ad.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

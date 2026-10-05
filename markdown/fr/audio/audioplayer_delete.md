@@ -1,10 +1,10 @@
-# audioplayer_delete
+# audioplayer\_delete
 
 Supprime l'objet audioplayer.
 
 ## 📝 Syntaxe
 
-- audioplayer_delete(h)
+- audioplayer\_delete(h)
 - delete(h)
 
 ## 📥 Argument d'entrée
@@ -13,15 +13,19 @@ Supprime l'objet audioplayer.
 
 ## 📄 Description
 
-<b>delete(h)</b> libère l'objet audioplayer.
+
+<b>delete(h)</b> libère l'objet audioplayer. 
 
 N'oubliez pas de vider h ensuite.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = audioplayer_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -29,8 +33,8 @@ used = audioplayer_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

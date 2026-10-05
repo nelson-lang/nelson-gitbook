@@ -17,9 +17,12 @@ Evaluate frequency response at given frequency.
 
 ## 📄 Description
 
+
 The function <b>evalfr(sys, f)</b> computes the value of the transfer function for a given system model represented by <b>sys</b> at the complex number <b>f</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 numerator = {[2, 0], [1, 3]};
@@ -29,13 +32,14 @@ z = 1 + j;
 frsp = evalfr(sys, z)
 ```
 
+
 ## 🔗 See also
 
-[bode](../../control_system/bode.md), [freqresp](../../control_system/freqresp.md).
+[bode](../../control_system/3_linear_analysis/bode.md), [freqresp](../../control_system/3_linear_analysis/freqresp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

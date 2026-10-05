@@ -23,23 +23,25 @@ Creer des graphes d'aires.
 
 ## 📄 Description
 
-<b>area</b> cree un objet graphique area natif par colonne de donnees. Les objets area utilisent un rendu par polygones remplis et acceptent les proprietes de face, bord, ligne, alpha, valeur de base et interaction.
+
+<b>area</b> cree un objet graphique area natif par colonne de donnees. Les objets area utilisent un rendu par polygones remplis et acceptent les proprietes de face, bord, ligne, alpha, valeur de base et interaction. 
 
 Voir [proprietes de area](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.area.properties.md) pour la liste complete des proprietes.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 y = [1 2; 3 1; 2 4];
 area(y);
 ```
-
 <img src="area_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
 [proprietes de area](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.area.properties.md), [fill](../../../graphics/1_plots/7_surfaces_volumes_polygons/fill.md), [patch](../../../graphics/1_plots/7_surfaces_volumes_polygons/patch.md).
-
 <!--
 ## 👤 Auteur
 

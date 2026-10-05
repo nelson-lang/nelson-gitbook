@@ -18,6 +18,7 @@ Wilkinson's eigenvalue test matrix
 
 ## 📄 Description
 
+
 <b>W = wilkinson(n)</b> returns the wilkinson Matrix of order<b>n</b>.
 
 ## 📚 Bibliography
@@ -26,9 +27,12 @@ https://en.wikipedia.org/wiki/Wilkinson_matrix
 
 ## 💡 Example
 
+
+
 ```matlab
 W = wilkinson(4)
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ W = wilkinson(4)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,6 +16,7 @@ Fenêtre de Bartlett.
 
 ## 📄 Description
 
+
 <b>c = bartlett(m)</b> renvoie une fenêtre de Bartlett symétrique de longueur L.
 
 ## 📚 Bibliographie
@@ -24,18 +25,21 @@ Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Pr
 
 ## 💡 Exemple
 
+
+
 ```matlab
 c = bartlett(8)
 ```
 
+
 ## 🔗 Voir aussi
 
-[hamming](../../signal_processing/hamming.md), [hann](../../signal_processing/hann.md).
+[hamming](../../signal_processing/5_spectral_analysis/hamming.md), [hann](../../signal_processing/5_spectral_analysis/hann.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

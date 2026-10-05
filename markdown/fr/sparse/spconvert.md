@@ -16,14 +16,18 @@ Convertit des donnees indexees en matrice sparse.
 
 ## 📄 Description
 
+
 <b>spconvert</b> construit une matrice sparse a partir de lignes <b>[i j v]</b>. Avec quatre colonnes, les lignes sont interpretees comme <b>[i j real imag]</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 D = [1 1 10; 2 3 20; 3 2 30];
 S = spconvert(D)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ S = spconvert(D)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -29,9 +29,12 @@ Display image.
 
 ## 📄 Description
 
+
 <b>imshow(img)</b> displays the image <b>im</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -41,13 +44,14 @@ h = imshow(filename);
 
 ```
 
+
 ## 🔗 See also
 
 [imread](../../graphics_io/imread.md), [image](../../graphics/4_images/image.md), [imagesc](../../graphics/4_images/imagesc.md), [colormap](../../graphics/3_labels_styling/2_color_styling/colormaps/colormap.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

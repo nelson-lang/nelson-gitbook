@@ -15,11 +15,12 @@ Afficher des lignes de contour sur des coupes de volume.
 
 ## 📄 Description
 
-<b>contourslice</b> calcule des lignes de contour sur les coupes demandees et retourne un vecteur colonne d'objets patch.
 
-L'entree <b>levels</b> peut etre un nombre scalaire de niveaux de contour ou un vecteur de valeurs de contour. Une valeur de coupe egale a <b>NaN</b> selectionne toutes les coupes dans cette direction.
+<b>contourslice</b> calcule des lignes de contour sur les coupes demandees et retourne un vecteur colonne d'objets patch. 
 
-Lorsque <b>XI</b>, <b>YI</b> et <b>ZI</b> sont des matrices, les contours sont traces sur la surface definie par ces matrices.
+L'entree <b>levels</b> peut etre un nombre scalaire de niveaux de contour ou un vecteur de valeurs de contour. Une valeur de coupe egale a <b>NaN</b> selectionne toutes les coupes dans cette direction. 
+
+Lorsque <b>XI</b>, <b>YI</b> et <b>ZI</b> sont des matrices, les contours sont traces sur la surface definie par ces matrices. 
 
 L'entree optionnelle <b>method</b> peut valoir <b>'nearest'</b>, <b>'linear'</b> ou <b>'cubic'</b>. La methode par defaut pour les coupes alignees sur les axes est <b>'nearest'</b>; la methode par defaut pour les coupes de surface est <b>'linear'</b>.
 
@@ -37,7 +38,6 @@ contourslice(X, Y, Z, V, xslice, yslice, zslice);
 view(3);
 grid on;
 ```
-
 <img src="contourslice_1.svg" align="middle"/>
 Specifier les niveaux de contour et ajouter une barre de couleurs.
 
@@ -51,7 +51,6 @@ colorbar;
 view(3);
 grid on;
 ```
-
 <img src="contourslice_2.svg" align="middle"/>
 Afficher des contours sur une coupe de surface.
 
@@ -64,8 +63,8 @@ contourslice(X, Y, Z, V, xsurf, ysurf, zsurf, 20);
 view(3);
 grid on;
 ```
-
 <img src="contourslice_3.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

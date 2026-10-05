@@ -19,22 +19,26 @@ Geometric random numbers
 
 ## 📄 Description
 
+
 <b>geornd</b> generates geometric distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = geornd(0.25, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[geopdf](../../statistics/geopdf.md), [geocdf](../../statistics/geocdf.md), [geoinv](../../statistics/geoinv.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geocdf](../../statistics/2_probability_distributions/geocdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,25 +16,30 @@ Upper case conversion.
 
 ## 📄 Description
 
+
 <b>toupper</b> converts a string to upper case.
 
 ## 💡 Examples
+
+
 
 ```matlab
 toupper('NelSon')
 ```
 
+
 ```matlab
 upper(["NelSon", "is", "open"])
 ```
 
+
 ## 🔗 See also
 
-[tolower](../../string/tolower.md).
+[tolower](../../string/7_edit_text/tolower.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

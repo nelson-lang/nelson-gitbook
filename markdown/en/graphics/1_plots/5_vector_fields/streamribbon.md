@@ -12,7 +12,8 @@ Display stream paths with ribbon-like line styling.
 
 ## 📄 Description
 
-<b>streamribbon</b> displays 3-D stream paths as ribbon surfaces.
+
+<b>streamribbon</b> displays 3-D stream paths as ribbon surfaces. 
 
 <b>streamribbon(vertices, twistangle)</b> uses precomputed streamline vertices and a cell array of twist angles. The returned handles are surface objects.
 
@@ -26,8 +27,8 @@ vertices = {[cos(t)' sin(t)' t']};
 twistangle = {cos(t)'};
 streamribbon(vertices, twistangle);
 ```
-
 <img src="streamribbon_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

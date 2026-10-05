@@ -1,0 +1,56 @@
+#import "nelson_help.typ": *
+
+= completion <text_completion:completion>
+
+Compute text completion candidates.
+
+== Syntax
+
+- #raw("r = completion(line)");
+
+== Input argument
+
+/ line: a string: command line prefix to complete.
+
+== Output argument
+
+/ r: a structure with completion prefix and candidate lists.
+
+== Description
+
+#strong[completion]; exposes the same completion engine used by the console, GUI terminal, and text editor.
+
+ The returned structure contains #strong[prefix];, #strong[showpopup];, #strong[files];, #strong[builtin];, #strong[macros];, #strong[variables];, #strong[fields];, #strong[properties];, and #strong[methods];.
+
+ Classdef objects and class names are completed through their public properties and methods, including class constants and static methods.
+
+
+== Example
+
+Complete a classdef object.
+
+``````matlab
+clear classes
+d = [tempdir(), 'nelson_help_completion_classdef/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpCompletionPoint.m'], ["classdef NelsonHelpCompletionPoint"; "  properties"; "    X = 0"; "  end"; "  properties (Constant)"; "    Dimension = 2"; "  end"; "  methods"; "    function r = value(obj)"; "      r = obj.X;"; "    end"; "  end"; "  methods (Static)"; "    function obj = origin()"; "      obj = NelsonHelpCompletionPoint();"; "    end"; "  end"; "end"]);
+addpath(d);
+p = NelsonHelpCompletionPoint();
+objectCompletion = completion('p.')
+classCompletion = completion('NelsonHelpCompletionPoint.')
+``````
+
+
+== See also
+
+#nlink(<handle:methods>)[methods];, #nlink(<handle:properties>)[properties];, #nlink(<interpreter:classdef>)[classdef];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [completion engine exposed for tests and scripts],
+)
+
+// Author: Allan CORNET

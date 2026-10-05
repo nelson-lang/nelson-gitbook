@@ -23,7 +23,8 @@ Write data to an Open XML spreadsheet file.
 
 ## 📄 Description
 
-<b>xlswrite</b> writes supported Nelson values to .xlsx files using the Open XML backend.
+
+<b>xlswrite</b> writes supported Nelson values to .xlsx files using the Open XML backend. 
 
 Complex arrays and object values are rejected because they do not map directly to workbook cells.
 
@@ -35,14 +36,15 @@ Write a matrix and read it back.
 filename = [tempdir(), 'xlswrite_example.xlsx']; [status, message] = xlswrite(filename, magic(3), 'Data', 'A1'); values = xlsread(filename, 'Data', 'A1:C3')
 ```
 
+
 ## 🔗 See also
 
 [xlsread](../spreadsheet/xlsread.md), [xlsfinfo](../spreadsheet/xlsfinfo.md), [writematrix](../spreadsheet/writematrix.md), [writecell](../spreadsheet/writecell.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Open XML .xlsx support added. |
 
 <!--

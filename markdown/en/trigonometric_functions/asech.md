@@ -15,15 +15,17 @@ Inverse hyperbolic secant of angle in radians.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>asech</b> computes the inverse hyperbolic secant of argument in radians for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = -pi:0.75:pi;
 R = asech(x)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ R = asech(x)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

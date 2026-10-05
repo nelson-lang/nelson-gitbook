@@ -23,9 +23,12 @@ Corrélation croisée de signaux discrets.
 
 ## 📄 Description
 
+
 <b>xcorr</b> calcule l'auto-corrélation ou la corrélation croisée de signaux unidimensionnels.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -33,14 +36,15 @@ Corrélation croisée de signaux discrets.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[xcov](../../signal_processing/xcov.md), [xcorr2](../../signal_processing/xcorr2.md).
+[xcov](../../signal_processing/3_transforms_correlation_modeling/xcov.md), [xcorr2](../../signal_processing/3_transforms_correlation_modeling/xcorr2.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

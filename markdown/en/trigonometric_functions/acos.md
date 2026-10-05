@@ -15,15 +15,17 @@ Computes the inverse cosine in radians for each element of x.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>acos</b> computes the inverse cosine in radians for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = eye(3, 3);
 res = acos(A)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ res = acos(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

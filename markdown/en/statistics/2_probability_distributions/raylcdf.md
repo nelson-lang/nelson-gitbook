@@ -18,22 +18,26 @@ Rayleigh cumulative distribution function
 
 ## 📄 Description
 
+
 <b>raylcdf</b> evaluates Rayleigh cumulative probabilities element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = raylcdf([0 2 4], 2);
 q = raylcdf([0 2 4], 2, 'upper');
 ```
 
+
 ## 🔗 See also
 
-[raylpdf](../../statistics/raylpdf.md), [raylinv](../../statistics/raylinv.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylinv](../../statistics/2_probability_distributions/raylinv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

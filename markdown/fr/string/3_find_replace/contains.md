@@ -19,11 +19,14 @@ Vérifie si une chaîne contient un motif.
 
 ## 📄 Description
 
-<b>contains</b> renvoie <b>true</b> si <b>str</b> contient<b>pattern</b>.
+
+<b>contains</b> renvoie <b>true</b> si <b>str</b> contient<b>pattern</b>. 
 
 Si <b>str</b> est un tableau catégoriel, <b>contains</b> teste le nom de catégorie de chaque élément et renvoie un tableau logique de même taille. Les éléments non définis renvoient <b>false</b>. <b>pattern</b> ne peut pas être catégoriel.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 
@@ -40,7 +43,6 @@ k = contains(A, 'son')
 
 
 ```
-
 Recherche de motif sur les noms de catégorie d'un tableau catégoriel.
 
 ```matlab
@@ -48,15 +50,16 @@ C = categorical({'winter storm', 'fire', 'Thunder Storm', ''});
 tf = contains(C, "storm", 'IgnoreCase', true)
 ```
 
+
 ## 🔗 Voir aussi
 
-[startsWith](../../string/startsWith.md), [endsWith](../../string/endsWith.md), [categorical](../../categorical/categorical.md).
+[startsWith](../../string/3_find_replace/startsWith.md), [endsWith](../../string/3_find_replace/endsWith.md), [categorical](../../categorical/categorical.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                               |
-| ------- | -------------------------------------------- |
-| 1.0.0   | version initiale                             |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | tableau catégoriel accepté comme entrée str. |
 
 <!--

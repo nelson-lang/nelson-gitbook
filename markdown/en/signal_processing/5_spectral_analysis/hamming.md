@@ -18,6 +18,7 @@ Hamming window.
 
 ## 📄 Description
 
+
 <b>c = hamming(m)</b> computes coefficients of a Hamming window of length<b>m</b>.
 
 ## 📚 Bibliography
@@ -26,18 +27,21 @@ Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Pr
 
 ## 💡 Example
 
+
+
 ```matlab
 c = hamming(8)
 c = hamming(8, 'periodic')
 ```
 
+
 ## 🔗 See also
 
-[hann](../../signal_processing/hann.md), [blackman](../../signal_processing/blackman.md).
+[hann](../../signal_processing/5_spectral_analysis/hann.md), [blackman](../../signal_processing/5_spectral_analysis/blackman.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

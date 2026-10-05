@@ -13,13 +13,17 @@ Renvoie le chemin du répertoire temporaire.
 
 ## 📄 Description
 
+
 Renvoie le nom du répertoire de fichiers temporaires du système hôte.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 r = tempdir()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -27,8 +31,8 @@ r = tempdir()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

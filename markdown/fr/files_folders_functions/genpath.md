@@ -8,13 +8,17 @@ Genere une chaine de chemin recursive.
 
 ## 📄 Description
 
+
 <b>genpath</b> retourne une chaine contenant <b>folder</b> et ses sous-dossiers inclus, separes par <b>pathsep</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 p = genpath(tempdir())
 ```
+
 
 ## 🔗 Voir aussi
 

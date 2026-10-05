@@ -24,9 +24,10 @@ Pie chart object.
 
 ## 📄 Description
 
-<b>piechart(data)</b> creates one pie chart object in the current figure.
 
-<b>FaceColor</b> can be <b>flat</b>, <b>none</b>, or an RGB color. <b>FaceAlpha</b>, <b>EdgeColor</b>, and <b>LineWidth</b> affect the rendered wedges. <b>Proportions</b>, <b>CategoryCounts</b>, <b>WedgeDisplayData</b>, and <b>WedgeDisplayNames</b> are read-only derived properties.
+<b>piechart(data)</b> creates one pie chart object in the current figure. 
+
+<b>FaceColor</b> can be <b>flat</b>, <b>none</b>, or an RGB color. <b>FaceAlpha</b>, <b>EdgeColor</b>, and <b>LineWidth</b> affect the rendered wedges. <b>Proportions</b>, <b>CategoryCounts</b>, <b>WedgeDisplayData</b>, and <b>WedgeDisplayNames</b> are read-only derived properties. 
 
 See [piechart properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.piechart.properties.md) for the complete property list.
 
@@ -38,7 +39,6 @@ Pie chart with default percent labels.
 figure('Color', [1 1 1]);
 p = piechart([1 2 3 4]);
 ```
-
 <img src="piechart_1.svg" align="middle"/>
 Named wedges with a legend.
 
@@ -47,7 +47,6 @@ figure('Color', [1 1 1]);
 p = piechart([4 3 2], ["A", "B", "C"], 'LegendVisible', 'on', ...
   'LegendTitle', 'Names', 'FaceAlpha', 0.7);
 ```
-
 <img src="piechart_2.svg" align="middle"/>
 Wireframe wedges.
 
@@ -56,8 +55,8 @@ figure('Color', [1 1 1]);
 p = piechart([3 2 1], 'FaceColor', 'none', 'EdgeColor', [0 0 0], ...
   'LineWidth', 2);
 ```
-
 <img src="piechart_3.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -65,7 +64,7 @@ p = piechart([3 2 1], 'FaceColor', 'none', 'EdgeColor', [0 0 0], ...
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

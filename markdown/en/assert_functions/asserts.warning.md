@@ -22,7 +22,8 @@ Check that a command emits the expected warning.
 
 ## 📄 Description
 
-The assertion passes when the command emits a matching warning.
+
+The assertion passes when the command emits a matching warning. 
 
 The two-argument form accepts either the warning message text or the warning identifier.
 
@@ -33,12 +34,12 @@ Expected warning text
 ```matlab
 asserts.warning('warning(''Nelson:asserts:example'', ''expected warning'');', 'expected warning');
 ```
-
 Capture a missing warning
 
 ```matlab
 [res, msg] = asserts.warning('1 + 1', 'expected warning');
 ```
+
 
 ## 🔗 See also
 
@@ -46,7 +47,7 @@ Capture a missing warning
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

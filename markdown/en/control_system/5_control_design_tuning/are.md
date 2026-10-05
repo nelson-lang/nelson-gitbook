@@ -18,9 +18,12 @@ Algebraic Riccati equation solution.
 
 ## 📄 Description
 
+
 <b>are</b> solves <b>A' \* X + X \* A - X \* B \* X + C = 0</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ X = are(A, B, C)
 
 ```
 
+
 ## 🔗 See also
 
-[care](../../control_system/care.md).
+[care](../../control_system/5_control_design_tuning/care.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

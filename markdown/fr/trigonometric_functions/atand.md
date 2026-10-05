@@ -15,15 +15,17 @@ Tangente inverse en degrés.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>atand</b> calcule la tangente inverse en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-50 -20 0 20 50];
 y = atand(x)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +33,8 @@ y = atand(x)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

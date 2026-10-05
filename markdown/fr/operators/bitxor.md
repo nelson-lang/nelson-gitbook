@@ -19,9 +19,12 @@ Opération XOR bit à bit
 
 ## 📄 Description
 
+
 <b>C = bitxor(A, B)</b> returns the bit-wise XOR of <b>A</b> and <b>B</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = uint16([0 1; 0 1]);
@@ -30,14 +33,15 @@ R = bitxor(A, B)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [bitand](../operators/bitand.md), [bitor](../operators/bitor.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

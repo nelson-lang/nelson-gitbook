@@ -12,15 +12,19 @@ Affiche du texte Markdown rendu.
 
 ## 📄 Description
 
-<b>markdowndisp</b> rend du texte Markdown et des équations LaTeX dans la fenêtre de commande GUI.
+
+<b>markdowndisp</b> rend du texte Markdown et des équations LaTeX dans la fenêtre de commande GUI. 
 
 Lorsque Nelson ne s'exécute pas avec la fenêtre de commande GUI, <b>markdowndisp</b> affiche le texte d'entrée avec <b>disp</b>.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 markdowndisp('**texte gras** et $E=mc^2$')
 ```
+
 
 ```matlab
 mdText = sprintf([ ...
@@ -41,14 +45,15 @@ mdText = sprintf([ ...
 markdowndisp(mdText)
 ```
 
+
 ## 🔗 Voir aussi
 
 [markdown](../help_tools/markdown.md), [disp](../display_format/disp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,11 +18,14 @@ Determine if pattern matches with strings.
 
 ## 📄 Description
 
-<b>matches</b> determines if pattern matches with strings.
+
+<b>matches</b> determines if pattern matches with strings. 
 
 If <b>str</b> is a categorical array, <b>matches</b> tests the category name of each element and returns a logical array of the same size. Undefined elements return <b>false</b>. <b>pattern</b> cannot be categorical.
 
 ## 💡 Examples
+
+
 
 ```matlab
 matches("Nelson", 'nelSon')
@@ -31,7 +34,6 @@ str = ["yellow", "green", "blue", "brown"];
 R = matches(str, ["yellow", "Brown"], 'IgnoreCase', true);
 
 ```
-
 Pattern matching on the category names of a categorical array.
 
 ```matlab
@@ -39,15 +41,16 @@ C = categorical({'winter storm', 'fire', 'Thunder Storm', ''});
 tf = matches(C, "FIRE", 'IgnoreCase', true)
 ```
 
+
 ## 🔗 See also
 
-[strcmp](../../string/strcmp.md), [categorical](../../categorical/categorical.md).
+[strcmp](../../string/8_compare_text/strcmp.md), [categorical](../../categorical/categorical.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
-| 1.0.0   | initial version                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | categorical array accepted as str input. |
 
 <!--

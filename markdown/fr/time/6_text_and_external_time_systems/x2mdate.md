@@ -17,9 +17,10 @@ Convertit des numeros de date serie tableur en dates serie Nelson ou datetime.
 
 ## 📄 Description
 
-Convertit des numeros de date serie tableur en dates serie Nelson ou datetime.
 
-x2mdate ajoute l origine tableur 1899-12-30. Passez datetime en second argument pour construire directement une sortie datetime.
+Convertit des numeros de date serie tableur en dates serie Nelson ou datetime. 
+
+x2mdate ajoute l origine tableur 1899-12-30. Passez datetime en second argument pour construire directement une sortie datetime. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -33,14 +34,15 @@ x2mdate(2, 'datetime')
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

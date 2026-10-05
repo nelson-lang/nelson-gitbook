@@ -16,9 +16,11 @@ Médiane des données d'un timeseries.
 
 ## 📄 Description
 
+
 <b>median</b> calcule la médiane de la propriété Data.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 5; 3]);
@@ -26,14 +28,15 @@ median(ts)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

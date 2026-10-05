@@ -16,7 +16,8 @@ Retourne les informations d'une source de donnees netCDF.
 
 ## 📄 Description
 
-ncinfo retourne une structure Nelson decrivant une source netCDF.
+
+ncinfo retourne une structure Nelson decrivant une source netCDF. 
 
 La structure contient les groupes, dimensions, variables, attributs et options de stockage disponibles.
 
@@ -31,14 +32,15 @@ info = ncinfo(filename);
 info.Variables(1).Name
 ```
 
+
 ## 🔗 Voir aussi
 
 [ncdisp](../netcdf/ncdisp.md), [ncwriteschema](../netcdf/ncwriteschema.md), [ncread](../netcdf/ncread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

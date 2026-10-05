@@ -19,6 +19,7 @@ Create switch component (slider, rocker, toggle).
 
 ## 📄 Description
 
+
 <b>sw = uiswitch(parent, style)</b> creates a two-state switch: styles <b>'slider'</b> (default), <b>'rocker'</b>, <b>'toggle'</b>. <b>Items</b> holds the two state labels; <b>Value</b>/<b>ValueIndex</b>/<b>ItemsData</b> follow the usual mapping; <b>ValueChangedFcn</b> reports changes.
 
 ## 💡 Examples
@@ -34,7 +35,6 @@ rsw.Position = [300 90 48 100];
 rsw.Value = 'On';
 drawnow();
 ```
-
 <img src="uiswitch_example.svg" align="middle"/>
 uiswitch
 
@@ -46,13 +46,14 @@ sw.Value = 'Go';
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

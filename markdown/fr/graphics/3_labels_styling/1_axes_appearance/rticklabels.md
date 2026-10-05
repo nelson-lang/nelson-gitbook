@@ -26,7 +26,8 @@ Definit ou retourne les etiquettes radiales des axes polaires.
 
 ## 📄 Description
 
-<b>rticklabels</b> retourne ou definit les etiquettes affichees a cote des graduations radiales.
+
+<b>rticklabels</b> retourne ou definit les etiquettes affichees a cote des graduations radiales. 
 
 La definition d'etiquettes passe le mode a <b>manual</b>. Le nombre d'etiquettes affichees est aligne sur le nombre de graduations radiales visibles.
 
@@ -43,14 +44,15 @@ labels = rticklabels()
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [rticks](../../../graphics/3_labels_styling/1_axes_appearance/rticks.md), [thetaticklabels](../../../graphics/3_labels_styling/1_axes_appearance/thetaticklabels.md), [polarplot](../../../graphics/1_plots/2_polar_plots/polarplot.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

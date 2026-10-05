@@ -18,23 +18,27 @@ Separe des variables multicolonnes.
 
 ## 📄 Description
 
+
 <b>splitvars</b> remplace une variable multicolonne par plusieurs variables de table.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table([1 3; 2 4], 'VariableNames', {'AB'});
 R = splitvars(T, 'AB', 'NewVariableNames', {'A', 'B'})
 ```
 
+
 ## 🔗 Voir aussi
 
-[mergevars](../../table/mergevars.md).
+[mergevars](../../table/4_sort_filter_rearrange/mergevars.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

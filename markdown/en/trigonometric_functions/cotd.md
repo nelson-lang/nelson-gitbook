@@ -15,14 +15,16 @@ Cotangent of argument in degrees
 - res - a numeric value
 
 ## 📄 Description
-
 <b>cotd</b> computes the cotangent of argument in degrees for each element of <b>x</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 R = cotd(35 + 5i)
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +32,7 @@ R = cotd(35 + 5i)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

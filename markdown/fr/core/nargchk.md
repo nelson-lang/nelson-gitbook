@@ -22,11 +22,12 @@ Valide le nombre d'arguments d'entrée.
 
 ## 📄 Description
 
-<b>nargchk</b> vérifie si le nombre d'arguments d'entrée <b>n</b> est dans l'intervalle <b>[minArgs, maxArgs]</b>.
 
-Il renvoie le message <b>'Not enough input arguments.'</b> lorsque <b>n</b> est inférieur à <b>minArgs</b>, <b>'Too many input arguments.'</b> lorsque <b>n</b> est supérieur à <b>maxArgs</b>, et un résultat vide sinon.
+<b>nargchk</b> vérifie si le nombre d'arguments d'entrée <b>n</b> est dans l'intervalle <b>[minArgs, maxArgs]</b>. 
 
-Il est généralement utilisé sous la forme <b>error(nargchk(minArgs, maxArgs, nargin))</b> au début d'une fonction.
+Il renvoie le message <b>'Not enough input arguments.'</b> lorsque <b>n</b> est inférieur à <b>minArgs</b>, <b>'Too many input arguments.'</b> lorsque <b>n</b> est supérieur à <b>maxArgs</b>, et un résultat vide sinon. 
+
+Il est généralement utilisé sous la forme <b>error(nargchk(minArgs, maxArgs, nargin))</b> au début d'une fonction. 
 
 <b>nargchk</b> est obsolète et conservé pour la compatibilité avec le code existant. Utilisez plutôt <b>narginchk</b> dans le nouveau code.
 
@@ -37,18 +38,17 @@ Pas assez d'arguments d'entrée :
 ```matlab
 msg = nargchk(2, 3, 1)
 ```
-
 Trop d'arguments d'entrée :
 
 ```matlab
 msg = nargchk(1, 2, 3)
 ```
-
 Dans l'intervalle, renvoie un message vide :
 
 ```matlab
 msg = nargchk(1, 3, 2)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -56,8 +56,8 @@ msg = nargchk(1, 3, 2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,9 +19,11 @@ Definit un vecteur de temps a pas uniforme.
 
 ## 📄 Description
 
+
 <b>setuniformtime</b> Genere un vecteur de temps uniforme a partir des parametres nom-valeur et l'assigne a l'objet.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3; 4]);
@@ -30,14 +32,15 @@ ts.Time
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

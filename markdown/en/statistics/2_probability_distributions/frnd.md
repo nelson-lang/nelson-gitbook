@@ -20,18 +20,22 @@ F random numbers
 
 ## 📄 Description
 
+
 <b>frnd</b> generates F distributed random values.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = frnd(5, 7, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

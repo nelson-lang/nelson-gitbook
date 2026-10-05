@@ -28,35 +28,36 @@ Parses and validates function inputs.
 
 ## 📄 Description
 
-<b>inputParser</b> defines required, optional, and name-value inputs and stores parsed values in <b>Results</b>.
 
-Required inputs are consumed first and must be present. Optional inputs are consumed after required inputs when the next positional value satisfies their validator and is not recognized as a parameter name. Parameters are specified as name-value pairs and can appear after positional inputs.
+<b>inputParser</b> defines required, optional, and name-value inputs and stores parsed values in <b>Results</b>. 
 
-<b>addParameter</b> and <b>addParamValue</b> add name-value parameters. <b>addParamValue</b> is accepted as a compatibility alias.
+Required inputs are consumed first and must be present. Optional inputs are consumed after required inputs when the next positional value satisfies their validator and is not recognized as a parameter name. Parameters are specified as name-value pairs and can appear after positional inputs. 
 
-The parser scheme is defined with <b>addRequired</b>, <b>addOptional</b>, <b>addParameter</b>, and <b>addParamValue</b>. The scheme can be built in any order, but <b>parse</b> consumes required positional inputs first, optional positional inputs next, and name-value inputs last.
+<b>addParameter</b> and <b>addParamValue</b> add name-value parameters. <b>addParamValue</b> is accepted as a compatibility alias. 
 
-When a name-value parameter is repeated, the last supplied value is kept in <b>Results</b>.
+The parser scheme is defined with <b>addRequired</b>, <b>addOptional</b>, <b>addParameter</b>, and <b>addParamValue</b>. The scheme can be built in any order, but <b>parse</b> consumes required positional inputs first, optional positional inputs next, and name-value inputs last. 
 
-The writable properties are:
+When a name-value parameter is repeated, the last supplied value is kept in <b>Results</b>. 
 
-<b>FunctionName</b>: text prepended to parser error messages.
+The writable properties are: 
 
-<b>CaseSensitive</b>: when false, parameter names are matched without case sensitivity. The default is false.
+<b>FunctionName</b>: text prepended to parser error messages. 
 
-<b>KeepUnmatched</b>: when true, unrecognized name-value pairs are stored in <b>Unmatched</b>. The default is false.
+<b>CaseSensitive</b>: when false, parameter names are matched without case sensitivity. The default is false. 
 
-<b>PartialMatching</b>: when true, a unique leading partial parameter name is accepted. The default is true.
+<b>KeepUnmatched</b>: when true, unrecognized name-value pairs are stored in <b>Unmatched</b>. The default is false. 
 
-<b>StructExpand</b>: when true and <b>parse</b> receives one scalar struct, the struct fields are treated as name-value pairs. The default is true.
+<b>PartialMatching</b>: when true, a unique leading partial parameter name is accepted. The default is true. 
 
-The read-only properties are:
+<b>StructExpand</b>: when true and <b>parse</b> receives one scalar struct, the struct fields are treated as name-value pairs. The default is true. 
 
-<b>Parameters</b>: names added to the parser in declaration order.
+The read-only properties are: 
 
-<b>Results</b>: scalar struct containing parsed values and defaults.
+<b>Parameters</b>: names added to the parser in declaration order. 
 
-<b>Unmatched</b>: scalar struct containing unrecognized name-value pairs when <b>KeepUnmatched</b> is true.
+<b>Results</b>: scalar struct containing parsed values and defaults. 
+
+<b>Unmatched</b>: scalar struct containing unrecognized name-value pairs when <b>KeepUnmatched</b> is true. 
 
 <b>UsingDefaults</b>: cell array of optional and parameter names whose default values were used.
 
@@ -71,7 +72,6 @@ addParameter(p, 'units', 'm', @(x) ischar(x) || isstring(x));
 parse(p, 10, 'units', 'cm');
 p.Results
 ```
-
 Optional input, defaults, and last name-value wins.
 
 ```matlab
@@ -83,7 +83,6 @@ parse(p, 'job', 'mode', 'slow', 'mode', 'fast');
 p.Results
 p.UsingDefaults
 ```
-
 Struct expansion with unmatched fields.
 
 ```matlab
@@ -99,13 +98,14 @@ p.Results
 p.Unmatched
 ```
 
+
 ## 🔗 See also
 
 [validateattributes](../validators/validateattributes.md), [validatestring](../validators/validatestring.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

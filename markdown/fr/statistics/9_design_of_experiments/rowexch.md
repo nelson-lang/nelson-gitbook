@@ -9,14 +9,17 @@ Plan D-optimal par echange de lignes.
 
 ## 📄 Description
 
+
 <b>rowexch</b> genere des candidats avec candgen et selectionne un sous-ensemble D-optimal avec candexch.
 
 ## Fonction(s) utilisée(s)
+
 
     candgen
     candexch
     cordexch
     rng
+  
 
 ## 💡 Exemples
 
@@ -28,7 +31,6 @@ rng(5);
 dRE
 X
 ```
-
 Utiliser des niveaux de facteurs bornes.
 
 ```matlab

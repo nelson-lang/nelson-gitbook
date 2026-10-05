@@ -18,9 +18,10 @@ Calcule les regions watershed d une image 2-D ou d un volume 3-D.
 
 ## 📄 Description
 
-Calcule les regions watershed d une image 2-D ou d un volume 3-D reel fini.
 
-La connectivite peut etre 4, 8, ou une matrice 3-by-3 equivalente pour les images, et 6, 18, 26, ou un tableau 3-by-3-by-3 equivalent pour les volumes.
+Calcule les regions watershed d une image 2-D ou d un volume 3-D reel fini. 
+
+La connectivite peut etre 4, 8, ou une matrice 3-by-3 equivalente pour les images, et 6, 18, 26, ou un tableau 3-by-3-by-3 equivalent pour les volumes. 
 
 Les labels identifient les bassins versants, et les elements de ligne de partage valent 0.
 
@@ -35,17 +36,17 @@ L=watershed(I,4);
 figure; subplot(1,2,1); imagesc(I); title('Relief');
 subplot(1,2,2); imagesc(L); title('Watershed labels');
 ```
-
 <img src="watershed_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imhmin](../../../image_processing/imhmin.md), [imextendedmin](../../../image_processing/imextendedmin.md), [imregionalmin](../../../image_processing/imregionalmin.md), [imimposemin](../../../image_processing/imimposemin.md), [activecontour](../../../image_processing/activecontour.md).
+[imhmin](../../../image_processing/2_image_analysis/7_segmentation/imhmin.md), [imextendedmin](../../../image_processing/2_image_analysis/7_segmentation/imextendedmin.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md), [imimposemin](../../../image_processing/2_image_analysis/7_segmentation/imimposemin.md), [activecontour](../../../image_processing/2_image_analysis/7_segmentation/activecontour.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

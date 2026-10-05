@@ -27,11 +27,14 @@ F-test for equal variances
 
 ## 📄 Description
 
-<b>vartest2</b> performs an F-test comparing two sample variances along the first non-singleton dimension unless <b>Dim</b> is specified.
+
+<b>vartest2</b> performs an F-test comparing two sample variances along the first non-singleton dimension unless <b>Dim</b> is specified. 
 
 NaN values are omitted independently from each tested sample.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [4.5 4.8 5.1 5.4 5.7 6.0];
@@ -39,13 +42,14 @@ y = [3.9 4.1 4.2 4.4 4.5];
 [h, p, ci, stats] = vartest2(x, y);
 ```
 
+
 ## 🔗 See also
 
-[vartest](../../statistics/vartest.md), [var](../../statistics/var.md).
+[vartest](../../statistics/3_hypothesis_tests/vartest.md), [var](../../statistics/1_descriptive_statistics_visualization/var.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -26,7 +26,8 @@ Set or get x-axis tick values.
 
 ## 📄 Description
 
-<b>xticks</b> gets or sets the tick values along the x-axis of the current axes.
+
+<b>xticks</b> gets or sets the tick values along the x-axis of the current axes. 
 
 Specifying tick values switches the x-tick mode to <b>manual</b>.
 
@@ -43,13 +44,14 @@ ticks = xticks()
 
 ```
 
+
 ## 🔗 See also
 
 [xticklabels](../../../graphics/3_labels_styling/1_axes_appearance/xticklabels.md), [xtickangle](../../../graphics/3_labels_styling/1_axes_appearance/xtickangle.md), [xlim](../../../graphics/3_labels_styling/1_axes_appearance/xlim.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

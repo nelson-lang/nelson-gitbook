@@ -33,15 +33,18 @@ Minimum elements of an array.
 
 ## 📄 Description
 
-<b>min</b> find minimum values in an array.
 
-If <b>A</b> is a matrix then <b>M = min(A)</b> is a row vector containing the minimum value of each column.
+<b>min</b> find minimum values in an array. 
 
-If <b>A</b> is a vector then <b>M = min(A)</b> will return the minimum of <b>A</b>.
+If <b>A</b> is a matrix then <b>M = min(A)</b> is a row vector containing the minimum value of each column. 
+
+If <b>A</b> is a vector then <b>M = min(A)</b> will return the minimum of <b>A</b>. 
 
 If <b>A</b> If A is complex number then <b>M = min(A)</b> will return founded complex number with the largest magnitude.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [1 2 3; 4 5 6];
@@ -49,13 +52,14 @@ M = min(A)
 M = min(A, [], 'all')
 ```
 
+
 ## 🔗 See also
 
 [max](../data_analysis/max.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

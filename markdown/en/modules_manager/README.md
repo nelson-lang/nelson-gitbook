@@ -1,14 +1,22 @@
 # Modules manager
 
+
+    
 The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.
 
+    
 It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.
 
+    
 With support for both internal and external modules, the manager handles module metadata, paths, and versioning.
 
+    
 It also provides utilities for organizing user-defined toolboxes, managing gateways, and ensuring that dependencies are properly loaded.
 
+    
 This framework simplifies module distribution, integration, and maintenance, forming the backbone of Nelson’s modular architecture.
+
+  
 
 ## Functions
 
@@ -34,3 +42,4 @@ This framework simplifies module distribution, integration, and maintenance, for
 - [standaloneApplicationCompiler](standaloneApplicationCompiler.md) - Open the standalone application project editor.
 - [toolboxdir](toolboxdir.md) - Returns path of a module.
 - [usermodulesdir](usermodulesdir.md) - Returns path where external modules are saved.
+

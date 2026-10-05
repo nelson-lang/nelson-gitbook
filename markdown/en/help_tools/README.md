@@ -1,8 +1,13 @@
 # Documentation and Help Management
 
+
+    
 The Help Tools module provides functions to create, convert, and manage documentation for Nelson.
 
+    
 It generates help content in formats such as HTML, Markdown, PDF, and website-ready output for maintaining and distributing documentation.
+
+  
 
 ## Functions
 
@@ -10,6 +15,7 @@ It generates help content in formats such as HTML, Markdown, PDF, and website-re
 - [buildhelp](buildhelp.md) - Build help of Nelson's modules.
 - [buildhelpjson](buildhelpjson.md) - Build help of Nelson JSON format.
 - [buildhelpmd](buildhelpmd.md) - Build help of Nelson's modules for GitBook.
+- [buildhelptypst](buildhelptypst.md) - Build help of Nelson's modules as Typst sources.
 - [buildhelpweb](buildhelpweb.md) - Build help of Nelson's modules for website.
 - [deployhelp](deployhelp.md) - Install, uninstall and manage the local Nelson help system and module help files.
 - [doc](doc.md) - Displays documentation.
@@ -23,6 +29,7 @@ It generates help content in formats such as HTML, Markdown, PDF, and website-re
 - [xmldocchecker](xmldocchecker.md) - Checks a xml documentation file.
 - [xmldoclinkchecker](xmldoclinkchecker.md) - Checks unresolved cross-references in Nelson help XML files.
 - [xmldocrenderimages](xmldocrenderimages.md) - Render the example images of Nelson help files.
-- [xmldoctohelp](xmldoctohelp.md) - Converts xml Nelson help files to Nelson format.
 - [xmldoctohtml](xmldoctohtml.md) - Converts xml Nelson help files to html.
 - [xmldoctomd](xmldoctomd.md) - Converts xml Nelson help files to markdown format.
+- [xmldoctotypst](xmldoctotypst.md) - Converts xml Nelson help files to Typst sources.
+

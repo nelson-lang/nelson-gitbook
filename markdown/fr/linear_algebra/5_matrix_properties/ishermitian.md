@@ -18,24 +18,28 @@ Teste si une matrice est hermitienne ou skew-hermitienne.
 
 ## 📄 Description
 
-<b>ishermitian(x)</b> teste si une matrice est hermitienne ou skew-hermitienne.
+
+<b>ishermitian(x)</b> teste si une matrice est hermitienne ou skew-hermitienne. 
 
 Une matrice est skew-hermitienne si la transposée conjuguée est égale à l'opposé de la matrice originale.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 ishermitian([1 0 1i; 0 1 0; -1i 0 1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[issymmetric](../../linear_algebra/issymmetric.md).
+[issymmetric](../../linear_algebra/5_matrix_properties/issymmetric.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

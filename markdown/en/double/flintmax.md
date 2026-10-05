@@ -19,9 +19,12 @@ Largest consecutive integer in floating-point format.
 
 ## 📄 Description
 
+
 <b>flintmax</b> returns largest consecutive integer in floating-point format.
 
 ## 💡 Example
+
+
 
 ```matlab
 flintmax
@@ -30,13 +33,14 @@ flintmax('like', pi)
 flintmax('single')
 ```
 
+
 ## 🔗 See also
 
 [intmax](../integer/intmax.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

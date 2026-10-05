@@ -10,13 +10,16 @@ Valeurs silhouette pour des donnees groupees.
 
 ## 📄 Description
 
+
 <b>silhouette</b> calcule les valeurs silhouette a partir des distances deux a deux. Les handles graphiques sont retournes sous forme de tableau vide.
 
 ## Fonction(s) utilisée(s)
 
+
     pdist2
     kmeans
     kmedoids
+  
 
 ## 💡 Exemples
 
@@ -27,7 +30,6 @@ X = [0; 1; 10; 11];
 clust = [1; 1; 2; 2];
 s = silhouette(X, clust)
 ```
-
 Calculer les silhouettes apres une classification k-means.
 
 ```matlab

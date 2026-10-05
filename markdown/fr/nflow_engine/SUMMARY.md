@@ -12,7 +12,7 @@
   - [delete_line](delete_line.md)
   - [find_system](find_system.md)
   - [gcbh](gcbh.md)
-  - [getSimulinkBlockHandle](getSimulinkBlockHandle.md)
+  - [getNFlowBlockHandle](getNFlowBlockHandle.md)
   - [get_param](get_param.md)
   - [getfullname](getfullname.md)
   - [linmod](linmod.md)

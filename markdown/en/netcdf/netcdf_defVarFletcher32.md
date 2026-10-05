@@ -10,7 +10,7 @@ Configure or inspect netCDF-4 variable storage options.
 
 - ncid - Open netCDF file or group identifier.
 - varid - Variable identifier.
-- storage - NC_CHUNKED or NC_CONTIGUOUS.
+- storage - NC\_CHUNKED or NC\_CONTIGUOUS.
 - chunksizes - Chunk size vector.
 - fillValue - Default value used for unwritten data.
 
@@ -20,7 +20,8 @@ Configure or inspect netCDF-4 variable storage options.
 
 ## 📄 Description
 
-netcdf.defVarFletcher32 controls variable storage metadata for netCDF-4 files.
+
+netcdf.defVarFletcher32 controls variable storage metadata for netCDF-4 files. 
 
 Compression, chunking, fill values, and checksums must be defined before leaving define mode.
 
@@ -38,13 +39,14 @@ netcdf.defVarFletcher32(ncid, varid, 1);
 netcdf.close(ncid);
 ```
 
+
 ## 🔗 See also
 
-[netcdf.defVar](../netcdf/netcdf.defVar.md), [netcdf.endDef](../netcdf/netcdf.endDef.md).
+[netcdf.defVar](../netcdf/netcdf_defVar.md), [netcdf.endDef](../netcdf/netcdf_endDef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

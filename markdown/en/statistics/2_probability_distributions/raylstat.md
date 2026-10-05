@@ -17,21 +17,25 @@ Rayleigh mean and variance
 
 ## 📄 Description
 
+
 <b>raylstat</b> returns the element-wise mean and variance of Rayleigh distributions.
 
 ## 💡 Example
+
+
 
 ```matlab
 [m, v] = raylstat(2);
 ```
 
+
 ## 🔗 See also
 
-[raylpdf](../../statistics/raylpdf.md), [raylrnd](../../statistics/raylrnd.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylrnd](../../statistics/2_probability_distributions/raylrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

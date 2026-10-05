@@ -18,13 +18,17 @@
 
 ## 📄 Description
 
+
 Évalue l'expression fournie sous forme de chaîne dans la portée de base.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

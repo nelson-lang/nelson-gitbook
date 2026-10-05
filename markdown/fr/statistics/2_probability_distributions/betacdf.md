@@ -19,9 +19,12 @@ Fonction de repartition beta
 
 ## 📄 Description
 
+
 <b>betacdf</b> calcule par defaut les probabilites de queue inferieure beta et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 0.1 0.5 0.9 1];
@@ -29,14 +32,15 @@ p = betacdf(x, 2, 5);
 q = betacdf(x, 2, 5, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[betapdf](../../statistics/betapdf.md), [betainv](../../statistics/betainv.md).
+[betapdf](../../statistics/2_probability_distributions/betapdf.md), [betainv](../../statistics/2_probability_distributions/betainv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

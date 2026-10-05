@@ -8,21 +8,25 @@ Boundary for alphanumeric text.
 
 ## 📄 Description
 
+
 <b>alphanumericBoundary</b> Boundary for alphanumeric text.
 
 ## 💡 Example
+
+
 
 ```matlab
 pat = alphanumericBoundary("start") + alphanumericsPattern(3); extract("ID A12", pat)
 ```
 
+
 ## 🔗 See also
 
-[digitBoundary](../../string/digitBoundary.md), [letterBoundary](../../string/letterBoundary.md), [textBoundary](../../string/textBoundary.md), [pattern](../../string/pattern.md).
+[digitBoundary](../../string/4_patterns/digitBoundary.md), [letterBoundary](../../string/4_patterns/letterBoundary.md), [textBoundary](../../string/4_patterns/textBoundary.md), [pattern](../../string/4_patterns/pattern.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

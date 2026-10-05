@@ -1,10 +1,16 @@
 # Bibliothèque de sous-programmes en théorie du contrôle
 
+
+    
 Le module SLICOT fournit des algorithmes numériques avancés pour les calculs en automatique et théorie des systèmes.
 
+    
 Il comprend des outils pour la factorisation de matrices, l'équilibrage de systèmes, l'analyse de stabilité, l'affectation de pôles et la résolution des équations de Lyapunov, Riccati et Sylvester.
 
+    
 Le module prend en charge les systèmes temps continu et discret, y compris les systèmes descripteurs et multi-entrées, permettant une analyse, une conception et un contrôle précis et efficace des systèmes dynamiques complexes.
+
+  
 
 ## Functions
 
@@ -32,3 +38,4 @@ Le module prend en charge les systèmes temps continu et discret, y compris les 
 - [slicot_sg02ad](slicot_sg02ad.md) - Résolution des équations de Riccati algébriques temps continu ou discret pour les systèmes descripteurs.
 - [slicot_tb01id](slicot_tb01id.md) - Équilibrage d'une matrice système correspondant au triplet (A, B, C).
 - [slicot_tg01ad](slicot_tg01ad.md) - Équilibrage des matrices du pinceau système correspondant au triplet descripteur (A - λ E, B, C).
+

@@ -27,11 +27,14 @@ Graphique semi-logarithmique (axe y en échelle logarithmique).
 
 ## 📄 Description
 
-<b>semilogy(X, Y)</b> trace des données en utilisant une échelle logarithmique en base 10 pour l'axe y et une échelle normale (linéaire) pour l'axe x.
+
+<b>semilogy(X, Y)</b> trace des données en utilisant une échelle logarithmique en base 10 pour l'axe y et une échelle normale (linéaire) pour l'axe x. 
 
 <b>semilogy</b> utilise exactement la même syntaxe que la commande <b>plot</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -41,8 +44,8 @@ y2 = x.^3;
 semilogy(x,y1,'--',x,y2)
 legend('x^2','x^3','Location','northwest')
 ```
-
 <img src="semilogy_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -55,8 +58,8 @@ y = [ 0.1    1     10
 semilogy(y)
 grid on
 ```
-
 <img src="semilogy_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -64,8 +67,8 @@ grid on
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -19,23 +19,27 @@ Densite de probabilite uniforme continue
 
 ## 📄 Description
 
+
 <b>unifpdf</b> calcule les valeurs de densite de la distribution uniforme continue.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:0.25:1;
 y = unifpdf(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md).
+[unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -22,23 +22,27 @@ Estimation des parametres binomiaux negatifs
 
 ## 📄 Description
 
+
 <b>nbinfit</b> estime les parametres de la loi binomiale negative.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 1 2 4 6 9 12 15];
 [phat, pci] = nbinfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[nbinlike](../../statistics/nbinlike.md), [nbinpdf](../../statistics/nbinpdf.md), [nbincdf](../../statistics/nbincdf.md), [nbinrnd](../../statistics/nbinrnd.md).
+[nbinlike](../../statistics/2_probability_distributions/nbinlike.md), [nbinpdf](../../statistics/2_probability_distributions/nbinpdf.md), [nbincdf](../../statistics/2_probability_distributions/nbincdf.md), [nbinrnd](../../statistics/2_probability_distributions/nbinrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

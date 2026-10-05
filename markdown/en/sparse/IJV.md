@@ -21,14 +21,18 @@ Returns I,J,V triplets from a sparse matrix.
 
 ## 📄 Description
 
+
 <b>IJV</b> converts a sparse matrix into its COO format.
 
 ## 💡 Example
+
+
 
 ```matlab
 sp = sparse(eye(3,3))
 [IV, JV, VV, m, n, nzmax] = IJV(sp)
 ```
+
 
 ## 🔗 See also
 
@@ -36,7 +40,7 @@ sp = sparse(eye(3,3))
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

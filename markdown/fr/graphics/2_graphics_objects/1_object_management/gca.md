@@ -12,16 +12,20 @@ Récupère l'objet axes courant.
 
 ## 📄 Description
 
-<b>ca = gca()</b> retourne l'objet axes graphique courant.
+
+<b>ca = gca()</b> retourne l'objet axes graphique courant. 
 
 Si aucun axes n'existe, <b>gca()</b> crée un axes et retourne son objet graphique.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 ca = gca()
 isgraphics(ax, 'axes')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -29,8 +33,8 @@ isgraphics(ax, 'axes')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

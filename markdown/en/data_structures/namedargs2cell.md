@@ -16,9 +16,12 @@ Converts a struct containing name-value pairs to a cell.
 
 ## 📄 Description
 
+
 <b>ce = namedargs2cell(st)</b> returns an cell containing name-value pairs.
 
 ## 💡 Example
+
+
 
 ```matlab
 S = struct();
@@ -29,13 +32,14 @@ S.logical = false;
 R = namedargs2cell(S)
 ```
 
+
 ## 🔗 See also
 
 [struct2cell](../data_structures/struct2cell.md), [struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

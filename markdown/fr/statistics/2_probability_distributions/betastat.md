@@ -18,18 +18,22 @@ Moyenne et variance beta
 
 ## 📄 Description
 
+
 <b>betastat</b> retourne la moyenne et la variance de la loi beta.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = betastat([1 2], [3 4]);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

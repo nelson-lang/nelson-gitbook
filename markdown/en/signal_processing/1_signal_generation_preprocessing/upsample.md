@@ -21,9 +21,12 @@ Upsample a sequence by an integer factor.
 
 ## 📄 Description
 
+
 <b>upsample</b> inserts n - 1 zeros between samples along the selected dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ Y = upsample([1 2 3], 2)
 
 ```
 
+
 ## 🔗 See also
 
-[downsample](../../signal_processing/downsample.md), [upfirdn](../../signal_processing/upfirdn.md).
+[downsample](../../signal_processing/1_signal_generation_preprocessing/downsample.md), [upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

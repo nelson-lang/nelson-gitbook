@@ -1,14 +1,24 @@
 # Type Chaîne
 
+
+    
 Le module Type Chaîne fournit des outils complets pour créer, manipuler et analyser du texte dans Nelson.
 
+    
 Il prend en charge la conversion entre tableaux de caractères et tableaux de chaînes, la concaténation, le nettoyage, la justification et la conversion de casse.
 
+    
 Le module inclut également des fonctions pour rechercher, faire correspondre, remplacer et formater des chaînes, permettant un traitement textuel flexible pour des opérations simples ou avancées.
+
+  
 
 ## Creation et conversion de texte
 
+
+    
 Fonctions pour creer du texte, le formater et convertir entre texte et autres donnees.
+
+  
 
 ### Functions
 
@@ -32,7 +42,11 @@ Fonctions pour creer du texte, le formater et convertir entre texte et autres do
 
 ## Proprietes du texte
 
+
+    
 Fonctions pour verifier le type, la longueur et les proprietes des caracteres.
+
+  
 
 ### Functions
 
@@ -44,7 +58,11 @@ Fonctions pour verifier le type, la longueur et les proprietes des caracteres.
 
 ## Recherche et remplacement
 
+
+    
 Fonctions pour localiser, compter, effacer et remplacer du texte.
+
+  
 
 ### Functions
 
@@ -63,7 +81,11 @@ Fonctions pour localiser, compter, effacer et remplacer du texte.
 
 ## Motifs
 
+
+    
 Fonctions de construction de motifs et definitions de limites pour la correspondance de texte.
+
+  
 
 ### Functions
 
@@ -93,7 +115,11 @@ Fonctions de construction de motifs et definitions de limites pour la correspond
 
 ## Expressions regulieres
 
+
+    
 Recherche, remplacement, traduction et aides de motifs par expressions regulieres.
+
+  
 
 ### Functions
 
@@ -105,7 +131,11 @@ Recherche, remplacement, traduction et aides de motifs par expressions reguliere
 
 ## Joindre, separer et extraire
 
+
+    
 Fonctions pour extraire des parties de texte et combiner ou separer des valeurs texte.
+
+  
 
 ### Functions
 
@@ -124,7 +154,11 @@ Fonctions pour extraire des parties de texte et combiner ou separer des valeurs 
 
 ## Edition de texte
 
+
+    
 Fonctions pour rogner, completer, inserer, inverser et changer la casse du texte.
+
+  
 
 ### Functions
 
@@ -143,7 +177,11 @@ Fonctions pour rogner, completer, inserer, inverser et changer la casse du texte
 
 ## Comparaison de texte
 
+
+    
 Fonctions pour comparer et faire correspondre des valeurs texte.
+
+  
 
 ### Functions
 
@@ -157,3 +195,4 @@ Fonctions pour comparer et faire correspondre des valeurs texte.
 
 - [symvar](symvar.md) - Determine les variables d'une expression.
 - [vectorize](vectorize.md) - Insere des operateurs element par element dans une expression texte.
+

@@ -18,6 +18,7 @@ Trouve les maxima regionaux dans une image 2-D.
 
 ## 📄 Description
 
+
 imregionalmax marque les zones plates connectees qui n'ont aucun voisin de valeur plus elevee selon la connectivite choisie.
 
 ## 💡 Exemple
@@ -30,17 +31,17 @@ BW=imregionalmax(I);
 figure; subplot(1,2,1); imagesc(I); title('Image');
 subplot(1,2,2); imagesc(BW); title('Maxima regionaux');
 ```
-
 <img src="imregionalmax_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imhmax](../../../image_processing/imhmax.md), [imextendedmax](../../../image_processing/imextendedmax.md), [imregionalmin](../../../image_processing/imregionalmin.md).
+[imhmax](../../../image_processing/2_image_analysis/7_segmentation/imhmax.md), [imextendedmax](../../../image_processing/2_image_analysis/7_segmentation/imextendedmax.md), [imregionalmin](../../../image_processing/2_image_analysis/7_segmentation/imregionalmin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

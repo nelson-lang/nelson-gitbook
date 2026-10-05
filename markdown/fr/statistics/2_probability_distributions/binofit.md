@@ -20,9 +20,12 @@ Estimation de probabilite binomiale
 
 ## 📄 Description
 
+
 <b>binofit</b> estime les probabilites binomiales a partir des succes observes et des nombres d'essais.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 2 5 8 10];
@@ -30,14 +33,15 @@ n = 10;
 [pHat, pCI] = binofit(x, n);
 ```
 
+
 ## 🔗 Voir aussi
 
-[binolike](../../statistics/binolike.md), [binopdf](../../statistics/binopdf.md), [binocdf](../../statistics/binocdf.md), [binornd](../../statistics/binornd.md).
+[binolike](../../statistics/2_probability_distributions/binolike.md), [binopdf](../../statistics/2_probability_distributions/binopdf.md), [binocdf](../../statistics/2_probability_distributions/binocdf.md), [binornd](../../statistics/2_probability_distributions/binornd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

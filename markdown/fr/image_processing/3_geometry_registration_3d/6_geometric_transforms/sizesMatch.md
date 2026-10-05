@@ -17,6 +17,7 @@ Determine si une reference spatiale correspond a une taille d'image.
 
 ## 📄 Description
 
+
 Compare les dimensions principales de l'image avec le champ ImageSize d'une reference spatiale 2-D ou 3-D.
 
 ## 💡 Exemple
@@ -28,14 +29,15 @@ R = imref2d([2 3], 2, 3);
 tf = sizesMatch(R, zeros(2, 3, 3))
 ```
 
+
 ## 🔗 Voir aussi
 
-[imref2d](../../../image_processing/imref2d.md), [imref3d](../../../image_processing/imref3d.md).
+[imref2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref2d.md), [imref3d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imref3d.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

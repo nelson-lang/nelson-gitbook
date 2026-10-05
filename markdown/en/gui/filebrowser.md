@@ -8,9 +8,13 @@ Current Folder Browser
 
 ## 📄 Description
 
-The Current Folder browser supports interactive file and folder management. Use it to navigate, create, open, move, and rename files and folders in the current directory.
+
+The Current Folder browser supports interactive file and folder management. Use it to navigate, create, open, move, and rename files and folders in the current directory. 
+
 
 <img src="filebrowser.png" align="middle"/>
+
+
 
 ## 🔗 See also
 
@@ -18,7 +22,7 @@ The Current Folder browser supports interactive file and folder management. Use 
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.1.0   | initial version |
 

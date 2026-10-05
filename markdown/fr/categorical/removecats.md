@@ -18,7 +18,8 @@ Supprimer des categories d'un tableau categoriel.
 
 ## 📄 Description
 
-<b>removecats</b> supprime des categories de la liste des categories.
+
+<b>removecats</b> supprime des categories de la liste des categories. 
 
 Les elements appartenant a des categories supprimees deviennent non definis.
 
@@ -29,12 +30,12 @@ Supprimer une categorie inutilisee.
 ```matlab
 A = categorical({'red','blue'}, {'red','blue','green'}); B = removecats(A, 'green'); categories(B)
 ```
-
 Supprimer une categorie utilisee et creer des elements non definis.
 
 ```matlab
 A = categorical({'red','blue','green'}); B = removecats(A, 'green'); isundefined(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ A = categorical({'red','blue','green'}); B = removecats(A, 'green'); isundefined
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,18 +19,22 @@ Gamma probability density function
 
 ## 📄 Description
 
+
 <b>gampdf</b> computes gamma distribution density values. Scalar inputs are expanded to match array inputs.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 0.5 1 2 5];
 y = gampdf(x, 2, 3);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -28,11 +28,14 @@ Mesh surface plot.
 
 ## 📄 Description
 
-<b>mesh</b> creates a 3-D wireframe mesh.
+
+<b>mesh</b> creates a 3-D wireframe mesh. 
 
 You can customize the appearance of the plot using various options such as color, lighting, and shading.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -42,8 +45,8 @@ Z = sin(R) ./ R;
 mesh(X, Y, Z)
 axis square
 ```
-
 <img src="mesh_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -58,16 +61,16 @@ xlabel('Real')
 ylabel('Imaginary')
 zlabel('Magnitude')
 ```
-
 <img src="mesh_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[surf](../../../graphics/1_plots/7_surfaces_volumes_polygons/surf.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

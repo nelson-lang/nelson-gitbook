@@ -22,15 +22,18 @@ Nyquist plot of frequency response.
 
 ## 📄 Description
 
-The Nyquist function,<b>nyquist(sys)</b>, generates a graphical representation known as a Nyquist plot, illustrating the frequency response of a dynamic system model represented by sys.
 
-This plot visualizes both the real and imaginary components of the system's response across varying frequencies.
+The Nyquist function,<b>nyquist(sys)</b>, generates a graphical representation known as a Nyquist plot, illustrating the frequency response of a dynamic system model represented by sys. 
 
-The contour depicted by nyquist encompasses both positive and negative frequencies.
+This plot visualizes both the real and imaginary components of the system's response across varying frequencies. 
+
+The contour depicted by nyquist encompasses both positive and negative frequencies. 
 
 Additionally, the plot incorporates arrows that signify the direction of increasing frequency for each branch.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure();
@@ -38,8 +41,8 @@ sys = tf([1, 1, 3, 3], [1, -3, 3, -1])
 nyquist(sys);
 
 ```
-
 <img src="nyquist_1.svg" align="middle"/>
+
 
 ```matlab
 H = tf([2 5 1], [1 2 3]);
@@ -47,22 +50,23 @@ H = tf([2 5 1], [1 2 3]);
 
 ```
 
+
 ```matlab
 f = figure();
       H = tf([2 5 1], [1 2 3]);
 nyquist(H);
 
 ```
-
 <img src="nyquist_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
-[bode](../../control_system/bode.md).
+[bode](../../control_system/3_linear_analysis/bode.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

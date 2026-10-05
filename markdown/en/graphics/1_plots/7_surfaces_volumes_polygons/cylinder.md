@@ -24,17 +24,20 @@ Create cylinder.
 
 ## 📄 Description
 
+
 <b>cylinder</b> creates cylinder and plots it.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f1 = figure();
 colormap(spring)
 cylinder()
 ```
-
 <img src="cylinder_1.svg" align="middle"/>
+
 
 ```matlab
 f2 = figure();
@@ -42,8 +45,8 @@ colormap(summer)
 r = 4;
 cylinder(r);
 ```
-
 <img src="cylinder_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -51,7 +54,7 @@ cylinder(r);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

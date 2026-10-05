@@ -1,10 +1,10 @@
-# audiorecorder_used
+# audiorecorder\_used
 
 Retourne la liste des poignées audiorecorder actuellement utilisées.
 
 ## 📝 Syntaxe
 
-- r = audiorecorder_used()
+- r = audiorecorder\_used()
 
 ## 📤 Argument de sortie
 
@@ -12,13 +12,17 @@ Retourne la liste des poignées audiorecorder actuellement utilisées.
 
 ## 📄 Description
 
+
 Retourne la liste des poignées audiorecorder actuellement utilisées.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 used = audiorecorder_used()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -26,9 +30,9 @@ used = audiorecorder_used()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

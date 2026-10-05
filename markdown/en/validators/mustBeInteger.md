@@ -15,14 +15,18 @@ Checks that value is integer or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeInteger</b> checks that value is integer or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeInteger(-1)
 mustBeInteger(Inf)
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ mustBeInteger(Inf)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

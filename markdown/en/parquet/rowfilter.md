@@ -20,13 +20,16 @@ Create a row filter expression.
 
 ## 📄 Description
 
-<b>rowfilter</b> creates a filter object that exposes variable names through dot notation.
 
-Use relational operators <b>></b>, <b>>=</b>, <b><</b>, <b><=</b>, <b>==</b>, and <b>~=</b> to create comparisons. Use logical operators <b>&</b>, <b>\|</b>, and <b>~</b> to combine expressions.
+<b>rowfilter</b> creates a filter object that exposes variable names through dot notation. 
+
+Use relational operators <b>></b>, <b>>=</b>, <b><</b>, <b><=</b>, <b>==</b>, and <b>~=</b> to create comparisons. Use logical operators <b>&</b>, <b>\|</b>, and <b>~</b> to combine expressions. 
 
 The resulting object can be passed to <b>parquetread</b> or <b>parquetDatastore</b> with the <b>RowFilter</b> name-value pair. It can also be applied directly to a table with <b>rf.apply(T)</b>.
 
 ## 💡 Examples
+
+
 
 ```matlab
 T = table([1; 2; 3; 4], [10; 20; 30; 40], ...
@@ -34,6 +37,7 @@ T = table([1; 2; 3; 4], [10; 20; 30; 40], ...
 rf = rowfilter(T);
 R = (rf.Id >= 2 & rf.Value < 40).apply(T)
 ```
+
 
 ```matlab
 filename = [tempdir(), 'doc_rowfilter.parquet'];
@@ -44,13 +48,14 @@ rf = rowfilter(info);
 R = parquetread(filename, 'RowFilter', rf.Value >= 30)
 ```
 
+
 ## 🔗 See also
 
 [nelson.io.RowFilter](../parquet/class_RowFilter.md), [parquetread](../parquet/parquetread.md), [parquetDatastore](../parquet/parquetDatastore.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

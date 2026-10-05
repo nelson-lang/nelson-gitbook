@@ -33,56 +33,62 @@ Random Number Generator.
 
 ## 📄 Description
 
-<b>lst = rng('enginelist')</b> returns the list of available random number generator.
 
-<b>rng('default')</b> puts the settings of the random number generator to default values.
+<b>lst = rng('enginelist')</b> returns the list of available random number generator. 
 
-<b>s = rng('default')</b> puts the settings of the random number generator to default values.
+<b>rng('default')</b> puts the settings of the random number generator to default values. 
 
-<b>rng('shuffle')</b> puts the settings of the random number generator to default values and returns previous generator as an struct.
+<b>s = rng('default')</b> puts the settings of the random number generator to default values. 
 
-<b>s = rng('shuffle')</b> seeds the random number generator based on the current time.
+<b>rng('shuffle')</b> puts the settings of the random number generator to default values and returns previous generator as an struct. 
 
-<b>rng(seed)</b> seeds the random number generator using the nonnegative integer.
+<b>s = rng('shuffle')</b> seeds the random number generator based on the current time. 
 
-<b>s = rng(seed)</b> seeds the random number generator using the nonnegative integer and returns previous generator as an struct.
+<b>rng(seed)</b> seeds the random number generator using the nonnegative integer. 
 
-<b>rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used.
+<b>s = rng(seed)</b> seeds the random number generator using the nonnegative integer and returns previous generator as an struct. 
 
-<b>s = rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct.
+<b>rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used. 
 
-<b>rng('shuffle', generator)</b> seeds the random number generator based on the current time and specify also the type of generator used.
+<b>s = rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct. 
 
-<b>s = rng('shuffle', generator)</b> seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct.
+<b>rng('shuffle', generator)</b> seeds the random number generator based on the current time and specify also the type of generator used. 
 
-<b>s = rng</b> returns current generator as an struct.
+<b>s = rng('shuffle', generator)</b> seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct. 
 
-<b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by<b>s = rng</b>. <b>rng(stream)</b> restores the generator from a <b>RandStream</b> object.
+<b>s = rng</b> returns current generator as an struct. 
 
-Available generators are:
+<b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by<b>s = rng</b>. <b>rng(stream)</b> restores the generator from a <b>RandStream</b> object. 
 
-| Value           | Generator Name                                                        | Generator Keyword |
-| --------------- | --------------------------------------------------------------------- | ----------------- |
-| "twister"       | Mersenne Twister                                                      | mt19937ar         |
-| "simdTwister"   | SIMD-Oriented Fast Mersenne Twister                                   | dsfmt19937        |
-| "combRecursive" | Combined Multiple Recursive                                           | mrg32k3a          |
-| "multFibonacci" | Multiplicative Lagged Fibonacci                                       | mlfg6331_64       |
-| "philox"        | Philox 4x32 generator with 10 rounds                                  | philox4x32_10     |
-| "pcg"           | 64-bit permuted congruential generator with double xor-shift multiply | pcg64dxsm         |
-| "xoshiro"       | Xor-shift-rotate generator with 256-bit state and double addition     | xoshiro256pp      |
+ 
 
-The "pcg" and "xoshiro" generators produce 64-bit outputs: each double uses 53 random bits and <b>randn</b> uses the inversion method (inverse normal cumulative distribution of a uniform value). Their state (<b>s.State</b>) is a uint64 column vector: the engine words (128-bit state and increment for "pcg", 256-bit state for "xoshiro"), the precision mode (0: full precision, 1: reduced precision set by the <b>FullPrecision</b> property of <b>RandStream</b>) and a cached 32-bit half output used by the reduced precision mode. The seed is expanded into the engine state with the SplitMix64 generator.
+Available generators are: 
+
+| Value | Generator Name | Generator Keyword | 
+| --- | --- | --- | 
+| "twister" | Mersenne Twister | mt19937ar | 
+| "simdTwister" | SIMD-Oriented Fast Mersenne Twister | dsfmt19937 | 
+| "combRecursive" | Combined Multiple Recursive | mrg32k3a | 
+| "multFibonacci" | Multiplicative Lagged Fibonacci | mlfg6331\_64 | 
+| "philox" | Philox 4x32 generator with 10 rounds | philox4x32\_10 | 
+| "pcg" | 64-bit permuted congruential generator with double xor-shift multiply | pcg64dxsm | 
+| "xoshiro" | Xor-shift-rotate generator with 256-bit state and double addition | xoshiro256pp | 
+
+ 
+
+The "pcg" and "xoshiro" generators produce 64-bit outputs: each double uses 53 random bits and <b>randn</b> uses the inversion method (inverse normal cumulative distribution of a uniform value). Their state (<b>s.State</b>) is a uint64 column vector: the engine words (128-bit state and increment for "pcg", 256-bit state for "xoshiro"), the precision mode (0: full precision, 1: reduced precision set by the <b>FullPrecision</b> property of <b>RandStream</b>) and a cached 32-bit half output used by the reduced precision mode. The seed is expanded into the engine state with the SplitMix64 generator. 
 
 Default generator is "twister".
 
 ## 💡 Examples
+
+
 
 ```matlab
 rng('default');
 r = rng()
 lst = rng('enginelist')
 ```
-
 Reproducible numbers with the xoshiro256++ generator
 
 ```matlab
@@ -95,16 +101,17 @@ isequal(a, b)
 s.Type
 ```
 
+
 ## 🔗 See also
 
 [rand](../random/rand.md), [randn](../random/randn.md), [randi](../random/randi.md), [RandStream](../random/RandStream.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                           |
-| ------- | ------------------------------------------------------------------------ |
-| 1.0.0   | initial version                                                          |
-| 1.15.0  | New random number generator: simdTwister, combRecursive, philox          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.15.0   | New random number generator: simdTwister, combRecursive, philox |
 | 2.0.0   | New random number generators: pcg (pcg64dxsm) and xoshiro (xoshiro256pp) |
 
 <!--

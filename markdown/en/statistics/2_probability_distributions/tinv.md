@@ -17,22 +17,26 @@ Student t inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>tinv</b> computes inverse lower-tail Student t probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = tinv(p, 5);
 ```
 
+
 ## 🔗 See also
 
-[tcdf](../../statistics/tcdf.md), [tpdf](../../statistics/tpdf.md).
+[tcdf](../../statistics/2_probability_distributions/tcdf.md), [tpdf](../../statistics/2_probability_distributions/tpdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

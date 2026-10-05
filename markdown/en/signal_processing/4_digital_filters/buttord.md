@@ -20,9 +20,12 @@ Minimum order for a Butterworth filter.
 
 ## 📄 Description
 
+
 <b>buttord</b> estimates the lowest Butterworth order satisfying the frequency specifications.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -30,13 +33,14 @@ Minimum order for a Butterworth filter.
 
 ```
 
+
 ## 🔗 See also
 
-[butter](../../signal_processing/butter.md).
+[butter](../../signal_processing/4_digital_filters/butter.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

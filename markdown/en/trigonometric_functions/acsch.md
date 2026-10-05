@@ -15,15 +15,17 @@ Inverse hyperbolic cosecant.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>acsch</b> computes the inverse hyperbolic cosecant for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = acsch(X)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ R = acsch(X)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

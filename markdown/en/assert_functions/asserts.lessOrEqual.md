@@ -19,7 +19,8 @@ Check that every value is less than or equal to a limit.
 
 ## 📄 Description
 
-The assertion passes when value <= limit for every compared element.
+
+The assertion passes when value <= limit for every compared element. 
 
 Arrays must have the same dimensions unless one input is scalar.
 
@@ -30,12 +31,12 @@ Element-wise comparison
 ```matlab
 asserts.lessOrEqual([1 2], [1 2]);
 ```
-
 Capture a relation failure
 
 ```matlab
 [res, msg] = asserts.lessOrEqual([1 4], 3);
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ Capture a relation failure
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

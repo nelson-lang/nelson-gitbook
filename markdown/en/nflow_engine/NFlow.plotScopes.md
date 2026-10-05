@@ -17,7 +17,8 @@ Open one figure per scope of an nflow simulation result.
 
 ## 📄 Description
 
-<b>NFlow.plotScopes</b> opens one figure per logged signal in <b>out.logsout</b>, drawing every channel of a scope as a line on the same axes. Each figure is titled with the scope identifier.
+
+<b>NFlow.plotScopes</b> opens one figure per logged signal in <b>out.logsout</b>, drawing every channel of a scope as a line on the same axes. Each figure is titled with the scope identifier. 
 
 It is handy as a model <b>stopFcn</b>: set a model's StopFcn to <b>NFlow.plotScopes(out)</b> so the scope traces pop up automatically when the simulation stops, both from <b>sim</b> and from the nflow editor's Run button.
 
@@ -31,13 +32,14 @@ out = sim(model);
 NFlow.plotScopes(out);
 ```
 
+
 ## 🔗 See also
 
 [sim](../nflow_engine/sim.md), [scope](../nflow_blocks/sink/scope.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

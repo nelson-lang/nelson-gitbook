@@ -18,10 +18,11 @@ Convertit en tableau de caractères.
 - res - un tableau de caractères
 
 ## 📄 Description
-
 <b>char</b> convertit une entrée numérique en données de caractères en utilisant le caractère Unicode correspondant pour chaque élément.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 M = [ 104   101   108   108   111;
@@ -29,13 +30,16 @@ M = [ 104   101   108   108   111;
 char(M)
 ```
 
+
 ```matlab
 R = char('these', 'are', 'test', 'strings')
 ```
 
+
 ```matlab
 R = char(["these"; "are"; "test"; "strings"])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +47,8 @@ R = char(["these"; "are"; "test"; "strings"])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

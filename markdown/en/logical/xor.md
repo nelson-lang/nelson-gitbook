@@ -19,9 +19,12 @@ Exclusive or.
 
 ## 📄 Description
 
+
 <b>xor</b> performs a logical exclusive-OR.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 1 0 1];
@@ -29,13 +32,14 @@ y = [0 0 1 1];
 R = xor(x, y)
 ```
 
+
 ## 🔗 See also
 
 [or](../operators/or.md), [and](../operators/and.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

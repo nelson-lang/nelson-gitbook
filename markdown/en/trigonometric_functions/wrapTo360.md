@@ -16,13 +16,17 @@ Wrap angle in degrees to [0, 360].
 
 ## 📄 Description
 
+
 <b>wrapTo360(alpha)</b> wraps angles in degrees to the interval <b>[0, 360]</b>. Positive multiples of 360 map to 360, and zero maps to 0.
 
 ## 💡 Example
 
+
+
 ```matlab
 wrapTo360([-10 370 720])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ wrapTo360([-10 370 720])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

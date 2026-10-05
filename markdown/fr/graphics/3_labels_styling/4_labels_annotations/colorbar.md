@@ -30,15 +30,16 @@ Ajoute une echelle de couleurs aux axes.
 
 ## 📄 Description
 
-<b>colorbar</b> ajoute une echelle de couleurs a un graphique. La barre de couleur est un objet graphique rattache a la figure et associe a des axes.
 
-L'emplacement par defaut est <b>eastoutside</b>. Les emplacements externes reservent de la place pres des axes. Les emplacements internes dessinent la barre de couleur dans la zone des axes. Affecter la propriete <b>Position</b> passe <b>Location</b> a <b>manual</b>.
+<b>colorbar</b> ajoute une echelle de couleurs a un graphique. La barre de couleur est un objet graphique rattache a la figure et associe a des axes. 
 
-La propriete <b>Location</b> accepte aussi <b>layout</b> pour les dispositions en tuiles. Utilisez <b>colorbar(ax, 'Location', 'layout')</b> puis affectez <b>c.Layout.Tile</b> avec un numero de tuile ou avec 'east', 'west', 'north' ou 'south'. La forme positionnelle <b>colorbar(ax, 'layout')</b> n'est pas acceptee.
+L'emplacement par defaut est <b>eastoutside</b>. Les emplacements externes reservent de la place pres des axes. Les emplacements internes dessinent la barre de couleur dans la zone des axes. Affecter la propriete <b>Position</b> passe <b>Location</b> a <b>manual</b>. 
 
-Les proprietes visuelles importantes incluent <b>Box</b>, <b>Color</b>, <b>Direction</b>, <b>FontAngle</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontWeight</b>, <b>Limits</b>, <b>LineWidth</b>, <b>AxisLocation</b>, <b>TickDirection</b>, <b>TickLabelInterpreter</b>, <b>TickLabels</b>, <b>TickLength</b>, <b>Ticks</b>, <b>Units</b>, <b>Visible</b> et <b>Label</b>.
+La propriete <b>Location</b> accepte aussi <b>layout</b> pour les dispositions en tuiles. Utilisez <b>colorbar(ax, 'Location', 'layout')</b> puis affectez <b>c.Layout.Tile</b> avec un numero de tuile ou avec 'east', 'west', 'north' ou 'south'. La forme positionnelle <b>colorbar(ax, 'layout')</b> n'est pas acceptee. 
 
-Les valeurs automatiques de <b>Limits</b>, <b>Ticks</b> et <b>TickLabels</b> sont mises a jour depuis les limites de couleur et la palette des axes associes. Affecter <b>Limits</b>, <b>Ticks</b>, <b>TickLabels</b>, <b>AxisLocation</b> ou <b>Position</b> passe la propriete de mode correspondante en manuel lorsque c'est approprie.
+Les proprietes visuelles importantes incluent <b>Box</b>, <b>Color</b>, <b>Direction</b>, <b>FontAngle</b>, <b>FontName</b>, <b>FontSize</b>, <b>FontWeight</b>, <b>Limits</b>, <b>LineWidth</b>, <b>AxisLocation</b>, <b>TickDirection</b>, <b>TickLabelInterpreter</b>, <b>TickLabels</b>, <b>TickLength</b>, <b>Ticks</b>, <b>Units</b>, <b>Visible</b> et <b>Label</b>. 
+
+Les valeurs automatiques de <b>Limits</b>, <b>Ticks</b> et <b>TickLabels</b> sont mises a jour depuis les limites de couleur et la palette des axes associes. Affecter <b>Limits</b>, <b>Ticks</b>, <b>TickLabels</b>, <b>AxisLocation</b> ou <b>Position</b> passe la propriete de mode correspondante en manuel lorsque c'est approprie. 
 
 Voir [proprietes de colorbar](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.colorbar.properties.md) pour la liste complete des proprietes.
 
@@ -52,7 +53,6 @@ surf(peaks);
 colormap('summer');
 colorbar;
 ```
-
 <img src="colorbar_1.svg" align="middle"/>
 Placer une barre horizontale sous des contours remplis.
 
@@ -62,7 +62,6 @@ contourf(peaks);
 colormap('parula');
 colorbar('southoutside');
 ```
-
 <img src="colorbar_2.svg" align="middle"/>
 Personnaliser les graduations, leurs textes et le libelle de la barre.
 
@@ -74,7 +73,6 @@ cb = colorbar('Ticks', [-6 -3 0 3 6], ...
 cb.Label.String = 'Scale';
 cb.Direction = 'reverse';
 ```
-
 <img src="colorbar_3.svg" align="middle"/>
 Associer une barre de couleur au bord d'une disposition en tuiles.
 
@@ -90,7 +88,6 @@ title(ax2, 'Tile 2');
 cb = colorbar(ax2, 'Location', 'layout');
 cb.Layout.Tile = 'east';
 ```
-
 <img src="colorbar_4.svg" align="middle"/>
 Essayer tous les emplacements standards.
 
@@ -106,16 +103,17 @@ for k = 1:length(locations)
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [proprietes de colorbar](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.colorbar.properties.md), [colormap](../../../graphics/3_labels_styling/2_color_styling/colormaps/colormap.md), [clim](../../../graphics/3_labels_styling/2_color_styling/clim.md), [contourf](../../../graphics/1_plots/3_contour_plots/contourf.md), [tiledlayout](../../../graphics/2_graphics_objects/2_layout_objects/tiledlayout.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                        |
-| ------- | ----------------------------------------------------- |
-| 1.0.0   | version initiale                                      |
-| 1.15.0  | ajout du support de l'argument location               |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.15.0   | ajout du support de l'argument location |
 | 2.0.0   | reimplementation comme objet graphique colorbar natif |
 
 <!--

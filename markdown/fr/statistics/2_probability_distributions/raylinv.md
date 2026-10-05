@@ -17,23 +17,27 @@ Inverse de repartition Rayleigh
 
 ## 📄 Description
 
+
 <b>raylinv</b> evalue les inverses Rayleigh element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0 0.3934693402873666 0.8646647167633873];
 x = raylinv(p, 2);
 ```
 
+
 ## 🔗 Voir aussi
 
-[raylpdf](../../statistics/raylpdf.md), [raylcdf](../../statistics/raylcdf.md).
+[raylpdf](../../statistics/2_probability_distributions/raylpdf.md), [raylcdf](../../statistics/2_probability_distributions/raylcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

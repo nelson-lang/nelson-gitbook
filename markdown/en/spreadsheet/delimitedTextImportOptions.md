@@ -17,15 +17,19 @@ Create options for importing delimited text data.
 
 ## 📄 Description
 
-<b>delimitedTextImportOptions</b> creates an import options object for delimited text files.
+
+<b>delimitedTextImportOptions</b> creates an import options object for delimited text files. 
 
 The object uses the Nelson class <b>nelson.io.text.DelimitedTextImportOptions</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 opts = delimitedTextImportOptions('NumVariables', 3) opts.Delimiter = {';'} opts.DataLines = [2 Inf]
 ```
+
 
 ## 🔗 See also
 
@@ -33,7 +37,7 @@ opts = delimitedTextImportOptions('NumVariables', 3) opts.Delimiter = {';'} opts
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

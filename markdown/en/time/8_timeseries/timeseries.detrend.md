@@ -18,9 +18,11 @@ Remove a trend from timeseries data.
 
 ## 📄 Description
 
+
 <b>detrend</b> Applies detrend to the numeric data and preserves the time axis and metadata.
 
 ## 💡 Example
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [1; 2; 3]);
@@ -29,13 +31,14 @@ ts.Data
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

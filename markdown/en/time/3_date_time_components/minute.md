@@ -18,11 +18,14 @@ Minutes part of the input date and time.
 
 ## 📄 Description
 
-<b>m = minute(t)</b> extracts the minute component from each date and time specified in<b>t</b>.
+
+<b>m = minute(t)</b> extracts the minute component from each date and time specified in<b>t</b>. 
 
 The output<b>m</b> is a double array containing integer values ranging from 0 to 59.
 
 ## 💡 Example
+
+
 
 ```matlab
 m = minute(738427.656845093)
@@ -30,15 +33,16 @@ m = minute("2021/09/28 15:45:51", 'YYYY/M/DD HH:MM:SS')
 
 ```
 
+
 ## 🔗 See also
 
-[hour](../../time/hour.md), [second](../../time/second.md).
+[hour](../../time/3_date_time_components/hour.md), [second](../../time/3_date_time_components/second.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

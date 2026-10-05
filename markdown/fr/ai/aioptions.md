@@ -9,11 +9,12 @@ Cree les options pour les requetes a un fournisseur IA.
 
 ## 📄 Description
 
-<b>aioptions</b> cree une structure scalaire utilisee par <b>aiask</b>.
 
-Le fournisseur par defaut est <b>ollama</b>, le modele par defaut est <b>llama3</b>, et l'endpoint par defaut est <b>http://127.0.0.1:11434/api/generate</b>.
+<b>aioptions</b> cree une structure scalaire utilisee par <b>aiask</b>. 
 
-Les options supportees sont <b>Provider</b>, <b>Model</b>, <b>Endpoint</b>, <b>TokenEnvVar</b>, <b>Timeout</b>, <b>SystemPrompt</b>, <b>Think</b>, <b>NumPredict</b> et <b>Temperature</b>.
+Le fournisseur par defaut est <b>ollama</b>, le modele par defaut est <b>llama3</b>, et l'endpoint par defaut est <b>http://127.0.0.1:11434/api/generate</b>. 
+
+Les options supportees sont <b>Provider</b>, <b>Model</b>, <b>Endpoint</b>, <b>TokenEnvVar</b>, <b>Timeout</b>, <b>SystemPrompt</b>, <b>Think</b>, <b>NumPredict</b> et <b>Temperature</b>. 
 
 Pour Ollama, <b>Think</b>, <b>NumPredict</b> et <b>Temperature</b> sont envoyes dans la requete. Utilisez-les pour limiter les reponses des modeles locaux.
 
@@ -33,12 +34,13 @@ opts = aioptions('Provider', 'ollama', ...
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [aiask](../ai/aiask.md), [aimodels](../ai/aimodels.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |

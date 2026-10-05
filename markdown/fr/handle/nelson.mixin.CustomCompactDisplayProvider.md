@@ -18,9 +18,10 @@ Fournir un affichage compact d'un objet dans les conteneurs.
 
 ## 📄 Description
 
-Dérivez de <b>nelson.mixin.CustomCompactDisplayProvider</b> pour contrôler l'affichage compact d'un objet lorsqu'il apparaît dans un conteneur tel qu'une cellule ou une structure.
 
-Une sous-classe implémente <b>compactRepresentationForSingleLine(obj, config, width)</b>, qui renvoie un objet <b>nelson.display.CompactDisplayRepresentation</b> décrivant l'objet sur une ligne. La représentation est habituellement construite avec la méthode héritée <b>widthConstrainedDataRepresentation(obj, config, width, 'StringArray', texte)</b>, qui assemble les données fournies avec le délimiteur défini par <b>config</b> (un <b>nelson.display.DisplayConfiguration</b>) et les tronque avec les points de suspension configurés lorsqu'elles dépassent <b>width</b> caractères. Lorsqu'une instance est affichée dans un conteneur tel qu'une cellule, un champ de structure ou une colonne de <b>table</b>, le texte obtenu est utilisé à la place du <b>[1x1 ClassName]</b> par défaut.
+Dérivez de <b>nelson.mixin.CustomCompactDisplayProvider</b> pour contrôler l'affichage compact d'un objet lorsqu'il apparaît dans un conteneur tel qu'une cellule ou une structure. 
+
+Une sous-classe implémente <b>compactRepresentationForSingleLine(obj, config, width)</b>, qui renvoie un objet <b>nelson.display.CompactDisplayRepresentation</b> décrivant l'objet sur une ligne. La représentation est habituellement construite avec la méthode héritée <b>widthConstrainedDataRepresentation(obj, config, width, 'StringArray', texte)</b>, qui assemble les données fournies avec le délimiteur défini par <b>config</b> (un <b>nelson.display.DisplayConfiguration</b>) et les tronque avec les points de suspension configurés lorsqu'elles dépassent <b>width</b> caractères. Lorsqu'une instance est affichée dans un conteneur tel qu'une cellule, un champ de structure ou une colonne de <b>table</b>, le texte obtenu est utilisé à la place du <b>[1x1 ClassName]</b> par défaut. 
 
 Une méthode compagnon <b>compactRepresentationForColumn(obj, config, width)</b> peut être implémentée pour les dispositions en colonne, et <b>fullDataRepresentation(obj, config, ...)</b>construit une représentation sans contrainte de largeur. Lorsque ces méthodes ne sont pas surchargées, la représentation par défaut est utilisée.
 
@@ -48,14 +49,15 @@ end
 c = {Temp(20), Temp(37)}   % affiche {20 degC}  {37 degC}
 ```
 
+
 ## 🔗 Voir aussi
 
 [nelson.mixin.CustomDisplay](../handle/nelson.mixin.CustomDisplay.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

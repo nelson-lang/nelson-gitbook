@@ -17,6 +17,7 @@ Référence par indice.
 
 ## 📄 Description
 
+
 <b>B = subsref(A, S)</b> est invoqué lors de l'utilisation de la syntaxe <b>A(i)</b>, <b>A{i}</b> ou <b>A.i</b> avec un objet <b>A</b>.
 
 ## 💡 Exemples
@@ -29,7 +30,6 @@ S.type='()';
 S.subs={1:2,':'};
 R = subsref(A, S)
 ```
-
 Indexation par accolades
 
 ```matlab
@@ -39,7 +39,6 @@ S.type = '{}';
 S.subs = {[1 2]};
 [R1, R2] = subsref(C, S);
 ```
-
 Indexation par point
 
 ```matlab
@@ -50,14 +49,15 @@ S.subs = 'number';
 R = subsref(A, S)
 ```
 
+
 ## 🔗 Voir aussi
 
 [subsasgn](../operators/subsasgn.md), [subsindex](../operators/subsindex.md), [colon](../operators/colon.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,9 +18,12 @@ Pseudo-inverse de Moore-Penrose
 
 ## 📄 Description
 
+
 <b>pinv</b> renvoie la pseudo-inverse de Moore-Penrose de la matrice A.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1, 2, 3; 4, 5, 6];
@@ -28,14 +31,15 @@ R = pinv(A)
 R = pinv(A, 2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[inv](../../linear_algebra/inv.md), [svd](../../linear_algebra/svd.md).
+[inv](../../linear_algebra/1_linear_systems/inv.md), [svd](../../linear_algebra/3_eigen_singular_values/svd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

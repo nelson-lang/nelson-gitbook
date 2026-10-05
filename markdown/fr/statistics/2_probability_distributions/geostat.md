@@ -17,22 +17,26 @@ Moyenne et variance geometriques
 
 ## 📄 Description
 
+
 <b>geostat</b> retourne la moyenne et la variance de la loi geometrique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = geostat(0.25);
 ```
 
+
 ## 🔗 Voir aussi
 
-[geopdf](../../statistics/geopdf.md), [geocdf](../../statistics/geocdf.md), [geoinv](../../statistics/geoinv.md).
+[geopdf](../../statistics/2_probability_distributions/geopdf.md), [geocdf](../../statistics/2_probability_distributions/geocdf.md), [geoinv](../../statistics/2_probability_distributions/geoinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

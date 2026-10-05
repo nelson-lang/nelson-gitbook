@@ -12,9 +12,12 @@ Get audio file supported formats.
 
 ## 📄 Description
 
+
 <b>audiosupportedformats</b> returns a structure with supported audio file formats.
 
 ## 💡 Example
+
+
 
 ```matlab
 formats = audiosupportedformats();
@@ -25,9 +28,10 @@ for k = [1: length(formats)]
 end
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

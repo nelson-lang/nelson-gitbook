@@ -12,6 +12,7 @@ Return the maximum variable name length.
 
 ## 📄 Description
 
+
 <b>namelengthmax</b>: Nelson allows 4096 as maximum length for variables and structures field names.
 
 ## 💡 Examples
@@ -25,7 +26,6 @@ STR = [ID, ' = 3'];
 execstr(STR)
 
 ```
-
 Not Working: identifier length 4097 characters
 
 ```matlab
@@ -36,13 +36,14 @@ execstr(STR)
 
 ```
 
+
 ## 🔗 See also
 
 [execstr](../core/execstr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

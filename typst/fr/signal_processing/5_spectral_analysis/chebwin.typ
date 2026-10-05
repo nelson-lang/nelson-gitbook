@@ -1,0 +1,47 @@
+#import "../nelson_help.typ": *
+
+= chebwin <signal_processing:5_spectral_analysis.chebwin>
+
+Fenêtre de Dolph-Chebyshev.
+
+== Syntaxe
+
+- #raw("W = chebwin(M)");
+- #raw("W = chebwin(M, ripple)");
+
+== Argument d'entrée
+
+/ M: longueur de la fenêtre.
+/ ripple: atténuation des lobes secondaires en décibels.
+
+== Argument de sortie
+
+/ W: vecteur colonne contenant la fenêtre.
+
+== Description
+
+#strong[chebwin]; retourne une fenêtre de Dolph-Chebyshev normalisée à une amplitude maximale unitaire.
+
+
+== Exemple
+
+``````matlab
+
+w = chebwin(5, 40);
+
+``````
+
+
+== Voir aussi
+
+#nlink(<signal_processing:5_spectral_analysis.kaiser>)[kaiser];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

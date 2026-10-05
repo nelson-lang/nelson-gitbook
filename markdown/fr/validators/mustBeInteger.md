@@ -15,14 +15,18 @@ Vérifie que la valeur est entière ou renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeInteger</b> vérifie que la valeur est entière ou renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeInteger(-1)
 mustBeInteger(Inf)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ mustBeInteger(Inf)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

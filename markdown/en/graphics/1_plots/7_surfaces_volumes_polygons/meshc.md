@@ -14,7 +14,8 @@ Display a mesh with contour lines below it.
 
 ## 📄 Description
 
-<b>meshc</b> displays a mesh and contour lines projected at the base of the mesh.
+
+<b>meshc</b> displays a mesh and contour lines projected at the base of the mesh. 
 
 The returned value is a two-element graphics vector containing the surface object followed by the contour object.
 
@@ -25,7 +26,6 @@ Mesh with contours.
 ```matlab
 meshc(peaks(30));
 ```
-
 <img src="meshc_1.svg" align="middle"/>
 Use separate color data and a parent axes.
 
@@ -36,8 +36,8 @@ Z = peaks(20);
 C = abs(Z);
 meshc('Parent', ax, Z, C, 'LineWidth', 1.5);
 ```
-
 <img src="meshc_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 

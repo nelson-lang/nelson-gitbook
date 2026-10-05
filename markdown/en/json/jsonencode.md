@@ -5,12 +5,12 @@ encodes a Nelson object into a JSON string.
 ## 📝 Syntax
 
 - res = jsonencode(obj)
-- res = jsonencode(obj, 'ConvertInfAndNaN', true_or_false)
+- res = jsonencode(obj, 'ConvertInfAndNaN', true\_or\_false)
 
 ## 📥 Input argument
 
 - obj - a Nelson object: struct, cell, matrix.
-- true_or_false - a logical: if true, Inf, NaN are converted to 'Inf' or 'Nan'.
+- true\_or\_false - a logical: if true, Inf, NaN are converted to 'Inf' or 'Nan'.
 
 ## 📤 Output argument
 
@@ -18,13 +18,14 @@ encodes a Nelson object into a JSON string.
 
 ## 📄 Description
 
-<b>jsonencode</b> converts a Nelson variable to JSON text.
 
-<b>jsonencode</b> does not support complex numbers, sparse arrays, function handle, and others handle.
+<b>jsonencode</b> converts a Nelson variable to JSON text. 
 
-<b>jsonencode</b> can be overloaded to manage your own type.
+<b>jsonencode</b> does not support complex numbers, sparse arrays, function handle, and others handle. 
 
-By default<b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.
+<b>jsonencode</b> can be overloaded to manage your own type. 
+
+By default<b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'. 
 
 Warning: The shape of a matrix and data type are not always preserved.
 
@@ -33,6 +34,8 @@ Warning: The shape of a matrix and data type are not always preserved.
 http://www.rfc-editor.org/rfc/rfc7159.txt
 
 ## 💡 Example
+
+
 
 ```matlab
 field1 = 'f1';  value1 = zeros(1,10);
@@ -45,13 +48,14 @@ filewrite([tempdir(), 'example.json'], r);
 
 ```
 
+
 ## 🔗 See also
 
 [jsondecode](../json/jsondecode.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

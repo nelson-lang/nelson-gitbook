@@ -1,10 +1,10 @@
-# qml_importpathlist
+# qml\_importpathlist
 
 Returns the list of directories where the engine searches for installed modules in a URL-based directory structure.
 
 ## 📝 Syntax
 
-- p = qml_importpathlist()
+- p = qml\_importpathlist()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns the list of directories where the engine searches for installed modules 
 
 ## 📄 Description
 
+
 Returns the list of directories where the engine searches for installed modules in a URL-based directory structure.
 
 ## 💡 Example
 
+
+
 ```matlab
 qml_importpathlist()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ qml_importpathlist()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

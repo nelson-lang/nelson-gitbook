@@ -15,14 +15,18 @@ Checks that input path refers to folder.
 
 ## 📄 Description
 
+
 <b>mustBeFolder</b> checks that input path refers to folder or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeFolder(tempdir())
 mustBeFolder('hello_nelson')
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ mustBeFolder('hello_nelson')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

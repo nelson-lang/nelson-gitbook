@@ -23,15 +23,19 @@ Checks that value is in the specified range.
 
 ## 📄 Description
 
-<b>mustBeInRange</b> checks that value is in the specified range or raise an error.
+
+<b>mustBeInRange</b> checks that value is in the specified range or raise an error. 
 
 The only valid combination of the flags is<b>exclude-lower</b> with <b>exclude-upper</b>.
 
 ## 💡 Example
 
+
+
 ```matlab
 mustBeInRange(3, 2, 4)
 ```
+
 
 ## 🔗 See also
 
@@ -39,7 +43,7 @@ mustBeInRange(3, 2, 4)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

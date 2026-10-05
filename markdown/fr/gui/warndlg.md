@@ -19,6 +19,7 @@ Cree une boite de dialogue d'avertissement.
 
 ## 📄 Description
 
+
 warndlg creates a warning message dialog and returns a graphics figure handle.
 
 ## 💡 Exemples
@@ -29,7 +30,6 @@ Creer une boite d avertissement.
 f = warndlg('Check the input value.', 'Warning', 'non-modal');
 drawnow();
 ```
-
 <img src="warndlg_example.svg" align="middle"/>
 Create a warning dialog with several lines.
 
@@ -38,14 +38,15 @@ h = warndlg({'Input is empty.', 'Default values will be used.'}, 'Warning', 'non
 close(h)
 ```
 
+
 ## 🔗 Voir aussi
 
 [msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--

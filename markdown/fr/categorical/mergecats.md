@@ -19,7 +19,8 @@ Fusionner des categories dans un tableau categoriel.
 
 ## 📄 Description
 
-<b>mergecats</b> remplace plusieurs categories par une seule categorie et reaffecte tous les elements correspondants.
+
+<b>mergecats</b> remplace plusieurs categories par une seule categorie et reaffecte tous les elements correspondants. 
 
 Les categories non listees dans <b>oldCategories</b> conservent leurs valeurs et leur ordre relatif.
 
@@ -31,14 +32,15 @@ Fusionner plusieurs categories en une categorie.
 A = categorical({'red','blue','green'}); B = mergecats(A, {'blue','green'}, 'other'); categories(B)
 ```
 
+
 ## 🔗 Voir aussi
 
 [addcats](../categorical/addcats.md), [removecats](../categorical/removecats.md), [renamecats](../categorical/renamecats.md), [setcats](../categorical/setcats.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

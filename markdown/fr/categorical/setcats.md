@@ -17,7 +17,8 @@ Definir la liste des categories d'un tableau categoriel.
 
 ## 📄 Description
 
-<b>setcats</b> remplace la liste des categories d'un tableau categoriel.
+
+<b>setcats</b> remplace la liste des categories d'un tableau categoriel. 
 
 Les elements dont l'ancienne categorie n'est pas presente dans <b>newCategories</b> deviennent non definis. Les nouvelles categories absentes auparavant sont ajoutees comme categories inutilisees.
 
@@ -28,12 +29,12 @@ Conserver seulement certaines categories.
 ```matlab
 A = categorical({'red','blue','green'}); B = setcats(A, {'red','blue'}); isundefined(B)
 ```
-
 Ajouter une categorie inutilisee avec une liste complete.
 
 ```matlab
 A = categorical({'red','blue'}); B = setcats(A, {'red','blue','green'}); categories(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -41,8 +42,8 @@ A = categorical({'red','blue'}); B = setcats(A, {'red','blue','green'}); categor
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

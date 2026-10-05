@@ -20,22 +20,26 @@ Weibull probability density function
 
 ## 📄 Description
 
+
 <b>wblpdf</b> evaluates Weibull probability density values element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 2 4];
 y = wblpdf(x, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[wblcdf](../../statistics/wblcdf.md), [wblinv](../../statistics/wblinv.md), [wblrnd](../../statistics/wblrnd.md), [wblstat](../../statistics/wblstat.md).
+[wblcdf](../../statistics/2_probability_distributions/wblcdf.md), [wblinv](../../statistics/2_probability_distributions/wblinv.md), [wblrnd](../../statistics/2_probability_distributions/wblrnd.md), [wblstat](../../statistics/2_probability_distributions/wblstat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,0 +1,54 @@
+#import "nelson_help.typ": *
+
+= xlsread <spreadsheet:xlsread>
+
+Read data from an Open XML spreadsheet file.
+
+== Syntax
+
+- #raw("num = xlsread(filename)");
+- #raw("num = xlsread(filename, sheet)");
+- #raw("num = xlsread(filename, sheet, range)");
+- #raw("[num, txt, raw] = xlsread(...)");
+
+== Input argument
+
+/ filename: a string: .xlsx file name.
+/ sheet: a string sheet name or a positive sheet index.
+/ range: a string range in A1 notation, such as 'A1' or 'A1:C4'.
+
+== Output argument
+
+/ num: numeric matrix. Text cells are returned as NaN.
+/ txt: cell array containing text values.
+/ raw: cell array containing imported cell values.
+
+== Description
+
+#strong[xlsread]; imports data from .xlsx files using the Open XML backend.
+
+ Other workbook formats, remote URLs, and interactive application automation are not supported by this backend.
+
+
+== Example
+
+Read numeric data from a named sheet and range.
+
+``````matlab
+filename = [tempdir(), 'xlsread_example.xlsx']; xlswrite(filename, [1 2; 3 4], 'Data', 'B2'); [num, txt, raw] = xlsread(filename, 'Data', 'B2:C3')
+``````
+
+
+== See also
+
+#nlink(<spreadsheet:xlswrite>)[xlswrite];, #nlink(<spreadsheet:xlsfinfo>)[xlsfinfo];, #nlink(<spreadsheet:readmatrix>)[readmatrix];, #nlink(<spreadsheet:readcell>)[readcell];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [Open XML .xlsx support added.],
+)
+
+// Author: Allan CORNET

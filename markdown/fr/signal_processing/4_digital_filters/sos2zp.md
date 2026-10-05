@@ -18,9 +18,12 @@ Convertit des sections du second ordre en zéros-pôles-gain.
 
 ## 📄 Description
 
+
 <b>sos2zp</b> convertit les sections en coefficients de fonction de transfert puis en représentation zéros-pôles-gain.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ Convertit des sections du second ordre en zéros-pôles-gain.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[sos2tf](../../signal_processing/sos2tf.md), [zp2sos](../../signal_processing/zp2sos.md).
+[sos2tf](../../signal_processing/4_digital_filters/sos2tf.md), [zp2sos](../../signal_processing/4_digital_filters/zp2sos.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

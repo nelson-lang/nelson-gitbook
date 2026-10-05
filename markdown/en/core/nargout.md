@@ -5,13 +5,13 @@ Returns the number of output arguments.
 ## 📝 Syntax
 
 - R = nargout()
-- R = nargout(function_name)
-- R = nargout(function_handle)
+- R = nargout(function\_name)
+- R = nargout(function\_handle)
 
 ## 📥 Input argument
 
-- function_name - a string: function name
-- function_handle - a function handle
+- function\_name - a string: function name
+- function\_handle - a function handle
 
 ## 📤 Output argument
 
@@ -19,7 +19,8 @@ Returns the number of output arguments.
 
 ## 📄 Description
 
-<b>nargout</b> returns the number of output arguments of an function.
+
+<b>nargout</b> returns the number of output arguments of an function. 
 
 If the last output argument of the function is <b>varargout</b> the returned value is negative.
 
@@ -30,12 +31,12 @@ With an macro function:
 ```matlab
 nargout('cellstr')
 ```
-
 With an builtin function:
 
 ```matlab
 nargout('cos')
 ```
+
 
 ## 🔗 See also
 
@@ -43,7 +44,7 @@ nargout('cos')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

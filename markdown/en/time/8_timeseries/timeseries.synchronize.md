@@ -19,9 +19,11 @@ Synchronize two or more timeseries objects.
 
 ## 📄 Description
 
+
 <b>synchronize</b> Builds a common time vector from all input objects and resamples each series on that vector.
 
 ## 💡 Example
+
 
 ```matlab
 a = timeseries([1; 2], [1; 2]);
@@ -31,13 +33,14 @@ b2.Time
 
 ```
 
+
 ## 🔗 See also
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

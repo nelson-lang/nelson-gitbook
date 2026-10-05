@@ -16,9 +16,11 @@ Restaure un objet tscollection depuis des donnees sauvegardees.
 
 ## 📄 Description
 
+
 <b>tscollection.loadobj</b> reconstruit une collection depuis un objet ou une structure sauvegardee.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12], 'Name', 'speed');
@@ -29,14 +31,15 @@ gettimeseriesnames(copy)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tscollection](../../time/tscollection.md).
+[tscollection](../../time/8_timeseries/tscollection.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

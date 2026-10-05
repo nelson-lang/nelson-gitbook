@@ -26,7 +26,8 @@ Set or get angular tick values for polar axes.
 
 ## 📄 Description
 
-<b>thetaticks</b> gets or sets angular tick values on the current polar axes. Tick values are expressed in degrees.
+
+<b>thetaticks</b> gets or sets angular tick values on the current polar axes. Tick values are expressed in degrees. 
 
 Setting numeric tick values switches angular tick mode to <b>manual</b>. If angular tick labels are in automatic mode, labels are regenerated from the new values.
 
@@ -42,13 +43,14 @@ ticks = thetaticks()
 
 ```
 
+
 ## 🔗 See also
 
 [thetaticklabels](../../../graphics/3_labels_styling/1_axes_appearance/thetaticklabels.md), [thetalim](../../../graphics/3_labels_styling/1_axes_appearance/thetalim.md), [rticks](../../../graphics/3_labels_styling/1_axes_appearance/rticks.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

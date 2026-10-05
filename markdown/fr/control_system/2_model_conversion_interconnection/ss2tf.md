@@ -22,9 +22,12 @@ Convertit une représentation état-espace en fonction de transfert.
 
 ## 📄 Description
 
+
 Convertit les matrices d'état A, B, C, D en numérateur et dénominateur d'une fonction de transfert.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 Fs = 16;
@@ -39,14 +42,15 @@ D = eye(2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf2ss](../../control_system/tf2ss.md), [ss](../../control_system/ss.md), [tf](../../control_system/tf.md).
+[tf2ss](../../control_system/2_model_conversion_interconnection/tf2ss.md), [ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

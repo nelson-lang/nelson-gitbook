@@ -28,11 +28,14 @@ Z-test for a mean with known standard deviation
 
 ## 📄 Description
 
-<b>ztest</b> performs a z-test along the first non-singleton dimension unless <b>Dim</b> is specified.
+
+<b>ztest</b> performs a z-test along the first non-singleton dimension unless <b>Dim</b> is specified. 
 
 NaN values are omitted from each tested slice.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [72 75 77 70 74 76];
@@ -40,13 +43,14 @@ x = [72 75 77 70 74 76];
 [h2, p2] = ztest(x, 72, 10, 'Tail', 'right');
 ```
 
+
 ## 🔗 See also
 
-[ttest](../../statistics/ttest.md), [normcdf](../../statistics/normcdf.md), [norminv](../../statistics/norminv.md).
+[ttest](../../statistics/3_hypothesis_tests/ttest.md), [normcdf](../../statistics/2_probability_distributions/normcdf.md), [norminv](../../statistics/2_probability_distributions/norminv.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

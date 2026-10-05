@@ -13,7 +13,8 @@ Display vector field direction on a slice or plane.
 
 ## 📄 Description
 
-<b>streamslice</b> displays vector field direction using line objects for stream paths and direction arrows.
+
+<b>streamslice</b> displays vector field direction using line objects for stream paths and direction arrows. 
 
 With two outputs, <b>streamslice</b> returns cell arrays of streamline vertices and arrow vertices instead of drawing.
 
@@ -25,8 +26,8 @@ Display direction in a 2-D field.
 [x, y] = meshgrid(-2:2, -2:2);
 streamslice(x, y, -y, x);
 ```
-
 <img src="streamslice_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

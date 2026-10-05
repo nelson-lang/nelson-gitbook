@@ -1,10 +1,10 @@
-# set_param
+# set\_param
 
 Set model or block parameters atomically.
 
 ## 📝 Syntax
 
-- set_param(object, name, value, ...)
+- set\_param(object, name, value, ...)
 
 ## 📥 Input argument
 
@@ -16,9 +16,12 @@ Set model or block parameters atomically.
 
 ## 📄 Description
 
-<b>set_param</b> sets model or block parameters atomically.
+
+<b>set\_param</b> sets model or block parameters atomically.
 
 ## 💡 Example
+
+
 
 ```matlab
 new_system('demo');
@@ -28,13 +31,14 @@ add_line('demo', 'Sine/1', 'Gain/1');
 bdclose('demo');
 ```
 
+
 ## 🔗 See also
 
 [new_system](../nflow_engine/new_system.md), [add_block](../nflow_engine/add_block.md), [add_line](../nflow_engine/add_line.md), [get_param](../nflow_engine/get_param.md), [save_system](../nflow_engine/save_system.md), [close_system](../nflow_engine/close_system.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

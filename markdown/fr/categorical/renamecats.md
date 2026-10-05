@@ -19,7 +19,8 @@ Renommer les categories d'un tableau categoriel.
 
 ## 📄 Description
 
-<b>renamecats</b> modifie les libelles de categories tout en conservant les elements dans leurs categories.
+
+<b>renamecats</b> modifie les libelles de categories tout en conservant les elements dans leurs categories. 
 
 Les nouveaux noms doivent etre valides et uniques apres l'operation.
 
@@ -30,12 +31,12 @@ Renommer une categorie.
 ```matlab
 A = categorical({'red','blue'}); B = renamecats(A, 'red', 'rouge'); categories(B)
 ```
-
 Renommer toutes les categories.
 
 ```matlab
 A = categorical({'red','blue'}); B = renamecats(A, {'bleu','rouge'}); categories(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ A = categorical({'red','blue'}); B = renamecats(A, {'bleu','rouge'}); categories
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

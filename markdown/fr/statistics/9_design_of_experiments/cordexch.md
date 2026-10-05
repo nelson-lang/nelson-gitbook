@@ -9,14 +9,17 @@ Plan D-optimal avec une interface de type echange de coordonnees.
 
 ## 📄 Description
 
+
 <b>cordexch</b> fournit une interface compatible echange de coordonnees adossee a l'implementation par echange de lignes.
 
 ## Fonction(s) utilisée(s)
+
 
     rowexch
     candgen
     candexch
     rng
+  
 
 ## 💡 Exemple
 

@@ -23,7 +23,8 @@ Charge des donnees depuis un fichier .nh5 ou .mat dans l'espace de travail de Ne
 
 ## 📄 Description
 
-<b>load</b> charge des donnees depuis un fichier .nh5 ou .mat vers l'espace de travail de Nelson.
+
+<b>load</b> charge des donnees depuis un fichier .nh5 ou .mat vers l'espace de travail de Nelson. 
 
 Les objets classdef sauvegardes par Nelson sont restaures comme objets classdef lorsque leur definition de classe est disponible dans le chemin.
 
@@ -41,7 +42,6 @@ st = load(filename);
 st.A
 st.B
 ```
-
 Charger un objet classdef sauvegarde.
 
 ```matlab
@@ -62,15 +62,16 @@ className = class(loaded.point)
 coordinates = [loaded.point.X, loaded.point.Y]
 ```
 
+
 ## 🔗 Voir aussi
 
 [save](../stream_manager/save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                           |
-| ------- | -------------------------------------------------------- |
-| 1.0.0   | version initiale                                         |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | comportement de chargement des objets classdef documente |
 
 <!--

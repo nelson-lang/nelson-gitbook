@@ -16,9 +16,12 @@ Retrieve results from function running in the background pool.
 
 ## 📄 Description
 
-<b>[y1, ... , ym] = fetchOutputs(f)</b> retrieves <b>m</b> results from a <b>Future</b> array <b>f</b>.
 
-<b>fetchOutputs</b> waits for the function associated to <b>f</b> to finish before retrieving results.
+<b>[y1, ... , ym] = fetchOutputs(f)</b> retrieves <b>m</b> results from a <b>Future</b> array <b>f</b>. 
+
+ 
+
+<b>fetchOutputs</b> waits for the function associated to <b>f</b> to finish before retrieving results. 
 
 If <b>fetchOutputs</b> is called, Read property of each element in <b>f</b> is set to true.
 
@@ -35,7 +38,6 @@ toc()
 size(R1)
 
 ```
-
 Parallel version
 
 ```matlab
@@ -54,13 +56,14 @@ f1
 f2
 ```
 
+
 ## 🔗 See also
 
 [parfeval](../parallel/parfeval.md), [backgroundPool](../parallel/backgroundPool.md), [fetchNext](../parallel/fetchNext.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

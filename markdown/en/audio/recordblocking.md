@@ -13,7 +13,8 @@ Record audio to audiorecorder object; hold control until recording completes.
 
 ## 📄 Description
 
-<b>recordblocking(recorderObj, length)</b> records audio from an input device for the specified number of seconds. This method does not return control until recording completes.
+
+<b>recordblocking(recorderObj, length)</b> records audio from an input device for the specified number of seconds. This method does not return control until recording completes. 
 
 The <b>audiorecorder</b> object defines the sample rate, bit depth, and other properties of the recording.
 
@@ -28,8 +29,9 @@ disp('Start speaking.');
 recordblocking(myVoice, 5);
 disp('End of recording. Playing back ...');
 play(myVoice);
-
+      
 ```
+
 
 ## 🔗 See also
 
@@ -37,9 +39,9 @@ play(myVoice);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

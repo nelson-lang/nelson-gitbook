@@ -22,9 +22,12 @@ Informations sur le système.
 
 ## 📄 Description
 
+
 <b>computer</b> identifie le type d'ordinateur sur lequel Nelson s'exécute.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 c = computer()
@@ -33,16 +36,17 @@ c = computer()
 arch = computer('arch')
 ```
 
+
 ## 🔗 Voir aussi
 
 [ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md), [isunix](../os_functions/isunix.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description            |
-| ------- | ------------------------- |
-| 1.0.0   | version initiale          |
-| 1.16.0  | PCWOA64 and woa64 ajoutés |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.16.0   | PCWOA64 and woa64 ajoutés |
 
 <!--
 ## 👤 Auteur

@@ -18,13 +18,16 @@ Run function after each function finish running in the background.
 
 ## 📄 Description
 
-<b>B = afterEach(F, fcn, n)</b> returns a AfterEachFuture object<b>B</b>.
 
-Function<b>fcn</b> is automatically run after each element in the Future array<b>F</b> was finished.
+<b>B = afterEach(F, fcn, n)</b> returns a AfterEachFuture object<b>B</b>. 
+
+Function<b>fcn</b> is automatically run after each element in the Future array<b>F</b> was finished. 
 
 If any of the elements in <b>F</b> encounters an error, the <b>Error</b> property of <b>B</b> contains an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 pool = backgroundPool()
@@ -40,13 +43,14 @@ fetchOutputs(minFuture)
 fetchOutputs(maxFuture)
 ```
 
+
 ## 🔗 See also
 
 [backgroundPool](../parallel/backgroundPool.md), [fetchOutputs](../parallel/fetchOutputs.md), [afterAll](../parallel/afterAll.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

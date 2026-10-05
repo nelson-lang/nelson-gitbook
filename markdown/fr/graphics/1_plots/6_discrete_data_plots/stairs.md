@@ -29,19 +29,22 @@ Graphique en escalier.
 
 ## 📄 Description
 
-Les graphiques en escalier sont un outil précieux pour créer des graphiques temporels de données échantillonnées numériquement.
 
-La fonction<b>stairs(Y)</b> permet de générer de tels graphiques en traçant les éléments du vecteur<b>Y</b>.
+Les graphiques en escalier sont un outil précieux pour créer des graphiques temporels de données échantillonnées numériquement. 
 
-Si<b>Y</b> est une matrice, une ligne est tracée pour chaque colonne, la couleur des lignes étant déterminée par la propriété ColorOrder des axes.
+La fonction<b>stairs(Y)</b> permet de générer de tels graphiques en traçant les éléments du vecteur<b>Y</b>. 
 
-Dans le cas d'un vecteur <b>Y</b>, l'axe x s'étend de 1 à la longueur de <b>Y</b>, tandis que pour une matrice <b>Y</b>, l'axe x va de 1 au nombre de lignes de <b>Y</b>.
+Si<b>Y</b> est une matrice, une ligne est tracée pour chaque colonne, la couleur des lignes étant déterminée par la propriété ColorOrder des axes. 
 
-<b>stairs(X, Y)</b> permet de tracer les éléments de <b>Y</b> aux emplacements spécifiques définis par le vecteur <b>X</b>.
+Dans le cas d'un vecteur <b>Y</b>, l'axe x s'étend de 1 à la longueur de <b>Y</b>, tandis que pour une matrice <b>Y</b>, l'axe x va de 1 au nombre de lignes de <b>Y</b>. 
+
+<b>stairs(X, Y)</b> permet de tracer les éléments de <b>Y</b> aux emplacements spécifiques définis par le vecteur <b>X</b>. 
 
 Les éléments de <b>X</b> doivent être dans un ordre monotone pour créer un graphique en escalier valide.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -53,8 +56,8 @@ ax = gca();
 stairs(ax, X,Y)
 
 ```
-
 <img src="stairs_1.svg" align="middle"/>
+
 
 ```matlab
 X = linspace(0,1,45)';
@@ -66,8 +69,8 @@ h(2).Marker = '+';
 h(2).MarkerFaceColor = 'm';
 
 ```
-
 <img src="stairs_2.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -75,8 +78,8 @@ h(2).MarkerFaceColor = 'm';
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

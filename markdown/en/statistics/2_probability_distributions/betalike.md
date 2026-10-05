@@ -19,22 +19,26 @@ Beta negative log-likelihood
 
 ## 📄 Description
 
+
 <b>betalike</b> returns the negative log-likelihood for beta distribution data and the asymptotic covariance estimate.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.12 0.2 0.35 0.5 0.7 0.85];
 [nlogL, avar] = betalike([1.5 1.8], x);
 ```
 
+
 ## 🔗 See also
 
-[betafit](../../statistics/betafit.md), [betapdf](../../statistics/betapdf.md), [betacdf](../../statistics/betacdf.md).
+[betafit](../../statistics/2_probability_distributions/betafit.md), [betapdf](../../statistics/2_probability_distributions/betapdf.md), [betacdf](../../statistics/2_probability_distributions/betacdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

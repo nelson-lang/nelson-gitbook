@@ -26,7 +26,8 @@
 
 ## 📄 Description
 
-<b>vq = interp1(x, v, xq)</b> returns interpolated values of a 1-D function at specific query points. The default method is linear interpolation.
+
+<b>vq = interp1(x, v, xq)</b> returns interpolated values of a 1-D function at specific query points. The default method is linear interpolation. 
 
 <b>pp = interp1(x, v, method, 'pp')</b> returns a piecewise polynomial structure that can be evaluated with <b>ppval</b>.
 
@@ -36,6 +37,8 @@ de Boor, C., A Practical Guide to Splines, Springer-Verlag, 1978.
 
 ## 💡 Example
 
+
+
 ```matlab
 f = figure();
 v = [0  1.41  2  1.41  0  -1.41  -2  -1.41 0];
@@ -44,8 +47,8 @@ vq = interp1(v,xq);
 plot(1:9, v, 'o', xq, vq, '*');
 legend('v','vq');
 ```
-
 <img src="interp1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -53,7 +56,7 @@ legend('v','vq');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

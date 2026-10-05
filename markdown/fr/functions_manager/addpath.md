@@ -26,15 +26,18 @@ Ajouter des répertoires au chemin de recherche des fonctions.
 
 ## 📄 Description
 
-<b>addpath</b> ajoute des répertoires au chemin de recherche.
 
-Il est également possible d'ajouter des listes de noms de répertoires séparés par pathsep.
+<b>addpath</b> ajoute des répertoires au chemin de recherche. 
 
-Les chemins inexistants ne seront pas ajoutés et un avertissement sera émis.
+Il est également possible d'ajouter des listes de noms de répertoires séparés par pathsep. 
+
+Les chemins inexistants ne seront pas ajoutés et un avertissement sera émis. 
 
 Les observateurs de fichiers sont désactivés pour les modules internes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 path()
@@ -44,14 +47,15 @@ rmpath(tempdir())
 path
 ```
 
+
 ## 🔗 Voir aussi
 
 [path](../functions_manager/path.md), [rmpath](../functions_manager/rmpath.md), [restoredefaultpath](../functions_manager/restoredefaultpath.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

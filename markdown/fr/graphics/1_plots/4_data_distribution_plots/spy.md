@@ -16,9 +16,12 @@ Visualiser le motif de parcimonie d'une matrice.
 
 ## 📄 Description
 
+
 <b>spy(S)</b> trace le motif de parcimonie de la matrice creuse <b>S</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 f = figure();
@@ -26,8 +29,8 @@ rng('default');
 S = sparse(round((rand(1, 10) + 1) * 100), round((rand(1, 10) + 1) * 100) , (rand(1, 10) + 1) * 10);
 spy(S);
 ```
-
 <img src="spy_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
@@ -35,15 +38,15 @@ rng('default');
 S = sparse(round((rand(1, 10) + 1) * 100), round((rand(1, 10) + 1) * 100) , (rand(1, 10) + 1) * 100);
 spy(S, 45);
 ```
-
 <img src="spy_2.svg" align="middle"/>
+
 
 ```matlab
 f = figure();
 spy();
 ```
-
 <img src="spy_3.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -51,8 +54,8 @@ spy();
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

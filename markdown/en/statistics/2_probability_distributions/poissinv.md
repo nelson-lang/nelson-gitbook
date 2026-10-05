@@ -17,22 +17,26 @@ Poisson inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>poissinv</b> computes inverse lower-tail Poisson probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 y = [0.025 0.5 0.975];
 x = poissinv(y, 4);
 ```
 
+
 ## 🔗 See also
 
-[poisscdf](../../statistics/poisscdf.md), [poisspdf](../../statistics/poisspdf.md).
+[poisscdf](../../statistics/2_probability_distributions/poisscdf.md), [poisspdf](../../statistics/2_probability_distributions/poisspdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -11,9 +11,12 @@ Create or position a light from angles.
 
 ## 📄 Description
 
+
 <b>lightangle</b> converts azimuth and elevation angles to a light position. If no light handle is supplied, it creates one.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -23,8 +26,8 @@ material('shiny');
 view(35, 28);
 
 ```
-
 <img src="lightangle_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -32,7 +35,7 @@ view(35, 28);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

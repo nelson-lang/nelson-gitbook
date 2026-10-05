@@ -20,24 +20,28 @@ Converts numbers to character array.
 
 ## 📄 Description
 
-<b>num2str</b> converts numbers to character array.
+
+<b>num2str</b> converts numbers to character array. 
 
 <b>num2str</b> trims any leading spaces from a character array. For better control over the results, use <b>sprintf</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 R = num2str(pi, 4)
 R = num2str(magic(3))
 ```
 
+
 ## 🔗 See also
 
-[int2str](../../string/int2str.md), [sprintf](../../string/sprintf.md), [mat2str](../../string/mat2str.md).
+[int2str](../../string/1_create_convert_text/int2str.md), [sprintf](../../string/1_create_convert_text/sprintf.md), [mat2str](../../string/1_create_convert_text/mat2str.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

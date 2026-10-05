@@ -1,0 +1,50 @@
+#import "nelson_help.typ": *
+
+= compiler.build.standaloneApplication <compiler:compiler.build.standaloneApplication>
+
+Build a native standalone application.
+
+== Syntax
+
+- #raw("result = compiler.build.standaloneApplication(AppFile)");
+- #raw("result = compiler.build.standaloneApplication(AppFile, Name, Value, ...)");
+- #raw("result = compiler.build.standaloneApplication(options)");
+
+== Description
+
+Load the optional module first with ncc('--help') or addmodule(fullfile(nelsonroot(), 'modules', 'compiler'), 'compiler'). This function uses the existing application packager, without a source-code toolchain.
+
+ Pass an existing .m entry and name-value options, or one scalar compiler.build.StandaloneApplicationOptions object. Name-value overrides after an options object are rejected. The output is optional.
+
+ The result is a compiler.build.Results object. Files contains the native executable, the .nca archive if EmbedArchive is false, and readme.txt. Windows uses the Console subsystem; other platforms use their native executable format. Cross-compilation is not provided.
+
+ On macOS the launcher is built for the host architecture. A dependency-selected graphical application runs with the native event loop and is wrapped in a .app bundle by compiler.package.installer; console applications remain directly executable. compiler.build.standaloneWindowsApplication remains Windows-only.
+
+ No runtime or installer is copied or embedded by this build function. Set NELSONC\_RUNTIME\_ROOT to a compatible installed runtime on the receiving machine. Use ncc with RuntimeMode\='bundled' for the existing adjacent-runtime path.
+
+ By default, the executable embeds application code and selected data files. EmbedArchive\=false places them in an adjacent .nca archive that must be distributed with the executable. AdditionalFiles accepts files, directories and patterns, including .nh5 and .mat resources. Automatic detection follows AutoDetectDataFiles. Graphical runtime services are selected from dependencies, independently of console visibility.
+
+ A verified previous build of the same ExecutableName and architecture can be rebuilt in OutputDir. The compiler checks buildresult.json and every recorded output before building, then checks their fingerprints again before replacement. Missing, modified or unrelated output files are not overwritten; choose a new directory in that case. Unrelated files and directories are preserved. Switching EmbedArchive back to true removes the previous verified .nca file.
+
+ The new outputs and an integrity journal are prepared before replacement. Publication retains the previous files and restores them on recoverable errors, including locked outputs on Windows. An operating-system lock refuses simultaneous publication and is released when the process exits. Its empty .nelsonc-publish.lock file remains in OutputDir and must not be deleted while a build is running.
+
+ After a process interruption, the next build automatically checks .nelsonc-publish before reading the previous report. It restores the recorded previous outputs, or finishes cleanup when every new output is already verified in place. A first build interrupted during publication is rolled back to no generated outputs. Changed or unknown files, invalid journals and missing backups stop recovery without deleting those files. Older unjournaled publication directories still require inspection. Only compiler-owned, hash-verified files participate in recovery; hashes are not publisher signatures.
+
+ Do not run the application or edit output files during publication. This is not an atomic directory swap or a power-loss guarantee. Stopping a process during preparation can leave a private .nelsonc-stage-\* directory, before existing outputs are touched; it does not block future builds and is not automatically deleted. The journal, lock and preparation files are build-time state, not application resources or runtime dependencies.
+
+ Only the options listed in StandaloneApplicationOptions are operational. Unsupported option names fail explicitly; encryption, input-conversion and support-package policy features remain unimplemented.
+
+ The output directory also contains buildresult.json, a build-time distribution report. It is not part of Results.Files and is not required to run the executable. A verified rebuild publishes the new report last. Use the new Results object after rebuilding; earlier results remain snapshots of the earlier files. See compiler.build.Results for report contents and limits.
+
+ Native loading failures return exit code 2 before the application entry runs. On Windows the diagnostic includes the attempted library path and the system error code: 126 for a missing library or dependency, 193 for an invalid binary, and 127 when the startup export is absent. These diagnostics are written to standard error and, when configured, to RuntimeLogFile.
+
+ #strong[TreatInputsAsNumeric]; (false by default) enables one-time built-in str2double conversion of function arguments. The command forms are #strong[-n]; and #strong[--numeric-inputs];. Invalid text becomes NaN, arguments are never evaluated as code, and argv('user') retains the original text. See #nlink(<compiler:compiler.build.StandaloneApplicationOptions>)[compiler.build.StandaloneApplicationOptions]; for supported values and runtime requirements.
+
+ #strong[SupportPackages]; selects automatic detection, no registered packages, or a list of allowed nmm names. See #nlink(<compiler:compiler.build.StandaloneApplicationOptions>)[compiler.build.StandaloneApplicationOptions]; for the dependency policy and limitations.
+
+
+== See also
+
+#nlink(<compiler:compiler.build.StandaloneApplicationOptions>)[compiler.build.StandaloneApplicationOptions];, #nlink(<compiler:compiler.build.Results>)[compiler.build.Results];, #nlink(<compiler:compiler_build_tutorial>)[compiler\_build\_tutorial];.
+
+// Author: Allan CORNET

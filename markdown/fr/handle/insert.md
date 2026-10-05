@@ -19,13 +19,16 @@ Inserer des entrees dans un objet prenant en charge l'insertion par cle.
 
 ## 📄 Description
 
-insert delegue l'insertion au type de l'objet passe en premier argument.
+
+insert delegue l'insertion au type de l'objet passe en premier argument. 
 
 Si le premier argument n'implemente pas l'insertion, Nelson signale que la fonction n'est pas implementee pour ce type.
 
 ## Fonction(s) utilisée(s)
 
+
     dictionary
+  
 
 ## 💡 Exemple
 
@@ -36,14 +39,15 @@ d = dictionary(["one" "two"], [1 2]);
 d = insert(d, "three", 3)
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [lookup](../handle/lookup.md), [isKey](../handle/isKey.md), [remove](../handle/remove.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

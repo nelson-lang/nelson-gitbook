@@ -25,32 +25,41 @@ Moyenne des éléments d'un tableau.
 
 ## 📄 Description
 
-<b>R = mean(M)</b> renvoie la moyenne (valeur moyenne) des éléments du tableau M.
 
-La moyenne arithmétique d'un ensemble de valeurs
+<b>R = mean(M)</b> renvoie la moyenne (valeur moyenne) des éléments du tableau M. 
+
+La moyenne arithmétique d'un ensemble de valeurs 
 $$x_1, x_2, \ldots, x_n$$
+ 
 
-est définie comme :
+est définie comme : 
 $$\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i$$
+ 
 
-où
+où 
 $$n$$
+ 
 
 est le nombre d'éléments.
 
 ## Fonction(s) utilisée(s)
 
+
     median
     mode
     std
     var
+  
 
 ## 💡 Exemple
+
+
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
 R = mean(M, 'native')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -58,8 +67,8 @@ R = mean(M, 'native')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

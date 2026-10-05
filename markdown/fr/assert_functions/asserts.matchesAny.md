@@ -19,7 +19,8 @@ Verifie qu'un texte correspond a au moins une expression reguliere.
 
 ## 📄 Description
 
-L'assertion reussit lorsqu'au moins une expression reguliere correspond a text.
+
+L'assertion reussit lorsqu'au moins une expression reguliere correspond a text. 
 
 Les expressions regulieres invalides levent immediatement une erreur d'argument.
 
@@ -30,12 +31,12 @@ One expression matches
 ```matlab
 asserts.matchesAny('abc123', {'^xyz', '[0-9]+$'});
 ```
-
 Capture missing matches
 
 ```matlab
 [res, msg] = asserts.matchesAny('abc123', {'^xyz', 'zzz'});
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture missing matches
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

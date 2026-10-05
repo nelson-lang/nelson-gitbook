@@ -1,10 +1,10 @@
-# QObject_findchildren
+# QObject\_findchildren
 
 Returns all children of this object with the given name.
 
 ## 📝 Syntax
 
-- hr = QObject_findchildren(h, objectName, recursive)
+- hr = QObject\_findchildren(h, objectName, recursive)
 
 ## 📥 Input argument
 
@@ -18,9 +18,12 @@ Returns all children of this object with the given name.
 
 ## 📄 Description
 
+
 Returns all children of this object with the given name.
 
 ## 💡 Example
+
+
 
 ```matlab
 h1 = errordlg()
@@ -28,13 +31,14 @@ h2 = errordlg()
 hr = QObject_findchildren(QObject_root(), 'errordlg', true)
 ```
 
+
 ## 🔗 See also
 
 [QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

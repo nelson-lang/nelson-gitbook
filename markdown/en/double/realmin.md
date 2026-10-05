@@ -14,9 +14,12 @@ Smallest positive floating-point number.
 
 ## 📄 Description
 
+
 <b>realmin</b> returns smallest positive floating-point number.
 
 ## 💡 Example
+
+
 
 ```matlab
 realmin
@@ -24,15 +27,16 @@ realmin('double')
 realmin('single')
 ```
 
+
 ## 🔗 See also
 
 [realmax](../double/realmax.md), [intmin](../integer/intmin.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

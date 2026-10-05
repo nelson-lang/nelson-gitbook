@@ -16,9 +16,12 @@ Calcule la racine carrée matricielle d'une matrice carrée.
 
 ## 📄 Description
 
+
 <b>sqrtm(x)</b> calcule la racine carrée matricielle de x.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -26,10 +29,11 @@ res = sqrtm(A)
 res = sqrtm(A+i)
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

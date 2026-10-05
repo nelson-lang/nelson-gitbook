@@ -22,11 +22,14 @@ Add title.
 
 ## 📄 Description
 
-<b>title('text')</b> adds the title to the current axes.
+
+<b>title('text')</b> adds the title to the current axes. 
 
 <b>Visible</b> property is inherited from the parent if not explicitly defined.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -35,8 +38,8 @@ y = sin(2*pi*x);
 plot(x, y);
 title('Unicode ドラゴンボールZ(ゼット)', 'FontSize', 14);
 ```
-
 <img src="title.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -44,10 +47,10 @@ title('Unicode ドラゴンボールZ(ゼット)', 'FontSize', 14);
 
 ## 🕔 History
 
-| Version | 📄 Description                                                           |
-| ------- | ------------------------------------------------------------------------ |
-| 1.0.0   | initial version                                                          |
-| 1.10.0  | Visible property is inherited from the parent if not explicitly defined. |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.10.0   | Visible property is inherited from the parent if not explicitly defined. |
 
 <!--
 ## 👤 Author

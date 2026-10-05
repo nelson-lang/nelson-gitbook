@@ -24,23 +24,27 @@ Estimation des parametres de la loi extreme value
 
 ## 📄 Description
 
+
 <b>evfit</b> estime les parametres de la loi extreme value.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-2 -1 0 1 2 3];
 [phat, pci] = evfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[evlike](../../statistics/evlike.md), [evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md).
+[evlike](../../statistics/2_probability_distributions/evlike.md), [evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -11,26 +11,30 @@ Maximum, en ignorant les valeurs NaN.
 
 ## 📄 Description
 
-<b>nanmax</b> renvoie le maximum apres suppression des valeurs <b>NaN</b> ; une tranche uniquement composee de <b>NaN</b> donne <b>NaN</b>.
 
-<b>nanmax(X, Y)</b> renvoie le maximum element par element de <b>X</b> et <b>Y</b>, en ignorant les <b>NaN</b>.
+<b>nanmax</b> renvoie le maximum apres suppression des valeurs <b>NaN</b> ; une tranche uniquement composee de <b>NaN</b> donne <b>NaN</b>. 
+
+<b>nanmax(X, Y)</b> renvoie le maximum element par element de <b>X</b> et <b>Y</b>, en ignorant les <b>NaN</b>. 
 
 La deuxieme sortie optionnelle <b>idx</b> contient les indices des maxima. Equivalent a <b>max(X, ..., 'omitnan')</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 [y, idx] = nanmax([1 NaN 5 NaN 3])
 ```
 
+
 ## 🔗 Voir aussi
 
-[max](../../data_analysis/max.md), [nanmin](../../statistics/nanmin.md), [nansum](../../statistics/nansum.md).
+[max](../../data_analysis/max.md), [nanmin](../../statistics/1_descriptive_statistics_visualization/nanmin.md), [nansum](../../statistics/1_descriptive_statistics_visualization/nansum.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,13 +18,16 @@ Get top rows of table or array.
 
 ## 📄 Description
 
-<b>head(A)</b> displays the first eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.
 
-<b>head(A, k)</b> displays the first k rows of A.
+<b>head(A)</b> displays the first eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable. 
+
+<b>head(A, k)</b> displays the first k rows of A. 
 
 <b>B = head(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with<b>B</b> having the same data type as <b>A</b>.
 
 ## 💡 Examples
+
+
 
 ```matlab
 LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
@@ -37,18 +40,20 @@ T = table(LastName, Age, Smoker, Height, Weight, BloodPressure)
 head(T, 2)
 ```
 
+
 ```matlab
 A = repmat((1:50)',1, 3);
 head(A)
 ```
 
+
 ## 🔗 See also
 
-[tail](../../table/tail.md), [table](../../table/table.md).
+[tail](../../table/3_summary_information/tail.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.9.0   | initial version |
 

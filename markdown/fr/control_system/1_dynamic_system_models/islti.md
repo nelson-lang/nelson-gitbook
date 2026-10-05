@@ -16,9 +16,12 @@ Vérifie si la variable est un modèle linéaire de type tf, ss ou zpk.
 
 ## 📄 Description
 
+
 Vérifie si la variable est un modèle linéaire (tf, ss ou zpk).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -30,14 +33,15 @@ islti(sys)
 islti(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [isa](../../types/isa.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

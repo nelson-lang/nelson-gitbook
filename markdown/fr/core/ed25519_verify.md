@@ -21,9 +21,10 @@ Vérifie une signature Ed25519.
 
 ## 📄 Description
 
-<b>crypto.ed25519.verify</b> vérifie une signature Ed25519 pure (RFC 8032, section 5.1) sur les octets exacts d'un message.
 
-Une signature invalide renvoie <b>false</b> sans lever d'erreur. Les signatures produites par <b>crypto.ed25519.sign</b> ou par toute implémentation RFC 8032 (par exemple <b>openssl pkeyutl -sign -rawin</b>) sont acceptées.
+<b>crypto.ed25519.verify</b> vérifie une signature Ed25519 pure (RFC 8032, section 5.1) sur les octets exacts d'un message. 
+
+Une signature invalide renvoie <b>false</b> sans lever d'erreur. Les signatures produites par <b>crypto.ed25519.sign</b> ou par toute implémentation RFC 8032 (par exemple <b>openssl pkeyutl -sign -rawin</b>) sont acceptées. 
 
 La clé publique est la clé Ed25519 brute de 32 octets, donnée en octets ou en texte hexadécimal minuscule ou majuscule.
 
@@ -47,7 +48,6 @@ message = uint8([175, 130]);
 tf = crypto.ed25519.verify(message, signature, publicKey)
 tf = crypto.ed25519.verify(uint8([175, 131]), signature, publicKey)
 ```
-
 signer puis vérifier un fichier
 
 ```matlab
@@ -58,14 +58,15 @@ filewrite(filename, '{"packages": []}');
 tf = crypto.ed25519.verify(filename, signature, publicKey, '-file')
 ```
 
+
 ## 🔗 Voir aussi
 
-[crypto.ed25519.sign](../core/crypto.ed25519.sign.md), [sha256](../core/sha256.md).
+[crypto.ed25519.sign](../core/ed25519_sign.md), [sha256](../core/sha256.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

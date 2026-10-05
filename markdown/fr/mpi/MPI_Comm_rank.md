@@ -1,20 +1,21 @@
-# MPI_Comm_rank
+# MPI\_Comm\_rank
 
 Détermine le rang du processus appelant dans le communicateur.
 
 ## 📝 Syntaxe
 
-- r = MPI_Comm_rank(Comm)
+- r = MPI\_Comm\_rank(Comm)
 
 ## 📥 Argument d'entrée
 
-- Comm - un objet MPI_Comm.
+- Comm - un objet MPI\_Comm.
 
 ## 📤 Argument de sortie
 
 - r - un entier : rang du processus appelant dans le groupe de Comm.
 
 ## 📄 Description
+
 
 Renvoie le rang du processus appelant dans le communicateur spécifié.
 
@@ -48,14 +49,15 @@ if MPI_Initialized()
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Comm_size](../mpi/MPI_Comm_size.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -24,9 +24,12 @@ Conception d'un estimateur de Kalman pour systèmes en temps continu.
 
 ## 📄 Description
 
+
 La fonction calcule le gain optimal de l'estimateur (L), la matrice de covariance d'état (P) et les valeurs propres associées pour un système continu.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 c = 1;
@@ -41,14 +44,15 @@ R = 0.02;
 [l, p, e] = lqe(A, G, C, Q, R)
 ```
 
+
 ## 🔗 Voir aussi
 
-[lqr](../../control_system/lqr.md).
+[lqr](../../control_system/5_control_design_tuning/lqr.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

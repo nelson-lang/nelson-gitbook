@@ -1,10 +1,10 @@
-# test_makeref
+# test\_makeref
 
 Creates a '.ref' file for a test
 
 ## 📝 Syntax
 
-- status = test_makeref(filename)
+- status = test\_makeref(filename)
 
 ## 📥 Input argument
 
@@ -16,11 +16,13 @@ Creates a '.ref' file for a test
 
 ## 📄 Description
 
-<b>test_makeref</b> function creates a '.ref' file from a test file.
 
-<b>test_makeref</b> is a compatibility wrapper over <b>nelson.unittest.makeref</b>.
+<b>test\_makeref</b> function creates a '.ref' file from a test file. 
+
+<b>test\_makeref</b> is a compatibility wrapper over <b>nelson.unittest.makeref</b>. 
 
 test file must have <--CHECK REF--> tag.
+
 
 ## 🔗 See also
 
@@ -28,7 +30,7 @@ test file must have <--CHECK REF--> tag.
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

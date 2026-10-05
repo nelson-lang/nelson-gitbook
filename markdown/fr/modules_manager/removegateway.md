@@ -4,17 +4,18 @@ Supprime dynamiquement un builtin au moment de l'exécution.
 
 ## 📝 Syntaxe
 
-- removegateway(dyn_lib_path)
+- removegateway(dyn\_lib\_path)
 
 ## 📥 Argument d'entrée
 
-- dyn_lib_path - chaîne : chemin d'une bibliothèque dynamique préparée pour Nelson.
+- dyn\_lib\_path - chaîne : chemin d'une bibliothèque dynamique préparée pour Nelson.
 
 ## 📄 Description
 
-<b>removegateway(dyn_lib_path)</b> supprime dynamiquement un builtin au moment de l'exécution.
 
-La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé<b>RemoveGateway</b>.
+<b>removegateway(dyn\_lib\_path)</b> supprime dynamiquement un builtin au moment de l'exécution. 
+
+La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé<b>RemoveGateway</b>. 
 
 Si la gateway n'était pas chargée, aucune erreur ni avertissement ne sera levé. Si le fichier n'existe pas, une erreur est levée.
 
@@ -28,14 +29,15 @@ removegateway(modulepath('time', 'builtin'))
 calendar
 ```
 
+
 ## 🔗 Voir aussi
 
 [addgateway](../modules_manager/addgateway.md), [gatewayinfo](../modules_manager/gatewayinfo.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

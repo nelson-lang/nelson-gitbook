@@ -15,14 +15,18 @@ Checks that input path refers to file.
 
 ## 📄 Description
 
+
 <b>mustBeFile</b> checks that input path refers to file or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeFile(tempdir())
  mustBeFile([nelsonroot(), '/etc/startup.m'])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ mustBeFile(tempdir())
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

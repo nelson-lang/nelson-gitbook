@@ -16,22 +16,26 @@ Checks if model is static or dynamic.
 
 ## 📄 Description
 
+
 Checks if model is static.
 
 ## 💡 Example
+
+
 
 ```matlab
 sys = tf(magic(3));
 isstatic(sys)
 ```
 
+
 ## 🔗 See also
 
-[isct](../../control_system/isct.md).
+[isct](../../control_system/1_dynamic_system_models/isct.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

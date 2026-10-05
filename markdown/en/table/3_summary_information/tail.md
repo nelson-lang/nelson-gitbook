@@ -18,13 +18,16 @@ Get bottom rows of table or array.
 
 ## 📄 Description
 
-<b>tail(A)</b> displays the last eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.
 
-<b>tail(A, k)</b> displays the last k rows of A.
+<b>tail(A)</b> displays the last eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable. 
+
+<b>tail(A, k)</b> displays the last k rows of A. 
 
 <b>B = tail(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with<b>B</b> having the same data type as <b>A</b>.
 
 ## 💡 Examples
+
+
 
 ```matlab
 LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
@@ -37,18 +40,20 @@ T = table(LastName, Age, Smoker, Height, Weight, BloodPressure)
 tail(T, 2)
 ```
 
+
 ```matlab
 A = repmat((1:50)',1, 3);
 tail(A)
 ```
 
+
 ## 🔗 See also
 
-[head](../../table/head.md), [table](../../table/table.md).
+[head](../../table/3_summary_information/head.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.9.0   | initial version |
 

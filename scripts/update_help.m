@@ -10,7 +10,6 @@
 % Nelson help update script (refactored into subfunctions)
 %=============================================================================
 function update_help()
-  ensurePrettierInstalled();
   buildhelp()
   version_string = getVersionString();
   current_path = fileparts(mfilename('fullpath'));
@@ -25,15 +24,17 @@ function update_help()
   prepareMarkdownDir(doc_markdown_path);
   disp(['Building the markdown files into ', doc_markdown_path]);
   buildhelpmd(doc_markdown_path);
-  runPrettierFormatting();
+  doc_typst_path = fullfile(current_path, '..', 'typst');
+  prepareTypstDir(doc_typst_path);
+  disp(['Building the Typst sources into ', doc_typst_path]);
+  buildhelptypst(doc_typst_path);
 end
 %=============================================================================
-function ensurePrettierInstalled()
-  disp(['Checking if prettier are installed']);
-  [status, message] = unix('npm run prettier:version');
-  if status ~= 0
-    error('prettier is not installed. Please install it');
+function prepareTypstDir(doc_typst_path)
+  if isfolder(doc_typst_path)
+    rmdir(doc_typst_path, 's');
   end
+  mkdir(doc_typst_path);
 end
 %=============================================================================
 function version_string = getVersionString()
@@ -174,14 +175,6 @@ function buildIndexHTML(current_path, all_languages)
     language = lang{1};
     docs_path = fullfile(current_path, '..', 'docs','releases', language);
     markdown(fullfile(docs_path, '../../index.md'), fullfile(docs_path, '../../index.html'));
-  end
-end
-%=============================================================================
-function runPrettierFormatting()
-  disp('Prettier the markdown and html files');
-  [status, message] = unix('npm run prettier');
-  if status ~= 0
-    error(['Error running prettier: ', message]);
   end
 end
 %=============================================================================

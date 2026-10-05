@@ -21,6 +21,7 @@ Met l'exécution en pause.
 
 ## 📄 Description
 
+
 Met l'exécution du script ou de l'environnement en pause pendant une durée donnée ou jusqu'à une action de l'utilisateur.
 
 ## 💡 Exemple
@@ -37,14 +38,15 @@ pause('on')
 pause(5)
 ```
 
+
 ## 🔗 Voir aussi
 
-[sleep](../time/sleep.md).
+[sleep](../time/7_timers/sleep.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

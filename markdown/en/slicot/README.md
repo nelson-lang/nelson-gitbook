@@ -1,10 +1,16 @@
 # Subroutine Library In COntrol Theory
 
+
+    
 The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.
 
+    
 It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.
 
+    
 The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.
+
+  
 
 ## Functions
 
@@ -32,3 +38,4 @@ The module supports both continuous- and discrete-time systems, including descri
 - [slicot_sg02ad](slicot_sg02ad.md) - Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.
 - [slicot_tb01id](slicot_tb01id.md) - Balancing a system matrix corresponding to a triplet (A, B, C).
 - [slicot_tg01ad](slicot_tg01ad.md) - Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C).
+

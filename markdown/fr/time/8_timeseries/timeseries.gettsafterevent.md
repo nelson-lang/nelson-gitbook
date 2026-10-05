@@ -17,9 +17,11 @@ Renvoie les echantillons apres un evenement.
 
 ## 📄 Description
 
+
 <b>gettsafterevent</b> Recherche l'evenement nomme et conserve les echantillons dont le temps est superieur au temps de l'evenement.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; 2; 3], [10; 11; 12]);
@@ -28,14 +30,15 @@ gettsafterevent(ts, 'middle').Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -1,10 +1,10 @@
-# slicot_ab08nd
+# slicot\_ab08nd
 
 Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system.
 
 ## 📝 Syntax
 
-- [NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
+- [NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot\_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
 
 ## 📥 Input argument
 
@@ -34,7 +34,8 @@ Construction of a regular pencil for a given system such that its generalized ei
 
 ## 📄 Description
 
-To construct for a linear multivariable system described by a state-space model (A,B,C,D) a regular pencil (A - lambda\*B ) which has the invariant zeros of the system as generalized eigenvalues.
+
+To construct for a linear multivariable system described by a state-space model (A,B,C,D) a regular pencil (A - lambda\*B ) which has the invariant zeros of the system as generalized eigenvalues. 
 
 The routine also computes the orders of the infinite zeros and the right and left Kronecker indices of the system (A,B,C,D).
 
@@ -47,6 +48,8 @@ AB08ND
 http://slicot.org/objects/software/shared/doc/AB08ND.html
 
 ## 💡 Example
+
+
 
 ```matlab
 N = 6;
@@ -87,13 +90,14 @@ D = [0.0   0.0;
 
 ```
 
+
 ## 🔗 See also
 
-[slicot_ag08bd](../slicot/slicot_ag08bd.md), [tzero](../control_system/tzero.md).
+[slicot_ag08bd](../slicot/slicot_ag08bd.md), [tzero](../control_system/1_dynamic_system_models/tzero.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

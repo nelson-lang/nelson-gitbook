@@ -17,6 +17,7 @@ Create a 2-D projective transformation structure.
 
 ## 📄 Description
 
+
 Create a 2-D projective transformation structure containing a nonsingular 3-by-3 matrix T. The structure can be passed to imwarp.
 
 ## 💡 Example
@@ -30,16 +31,16 @@ J=imwarp(I,tform,'Interpolation','nearest');
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Projective');
 ```
-
 <img src="projective2d_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[affine2d](../../../image_processing/affine2d.md), [imwarp](../../../image_processing/imwarp.md), [fitgeotrans](../../../image_processing/fitgeotrans.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md), [fitgeotrans](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/fitgeotrans.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

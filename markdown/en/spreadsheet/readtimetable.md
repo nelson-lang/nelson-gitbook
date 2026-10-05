@@ -20,15 +20,16 @@ Create timetable from file.
 
 ## 📄 Description
 
-<b>readtimetable</b> imports column-oriented delimited text data and returns a timetable.
 
-Row times can be selected with <b>RowTimes</b> and a variable name, supplied with <b>RowTimes</b> and a time vector, generated from <b>StartTime</b> and <b>SampleRate</b>, or generated from <b>StartTime</b> and <b>TimeStep</b>.
+<b>readtimetable</b> imports column-oriented delimited text data and returns a timetable. 
 
-If no row-time option is specified, the first datetime-compatible or duration-compatible variable is used as row times.
+Row times can be selected with <b>RowTimes</b> and a variable name, supplied with <b>RowTimes</b> and a time vector, generated from <b>StartTime</b> and <b>SampleRate</b>, or generated from <b>StartTime</b> and <b>TimeStep</b>. 
 
-When a file column is used as row times, that column is removed from timetable data variables. When row times are supplied or generated, all file variables remain data variables.
+If no row-time option is specified, the first datetime-compatible or duration-compatible variable is used as row times. 
 
-Delimited text files are supported. Unsupported external formats raise an error.
+When a file column is used as row times, that column is removed from timetable data variables. When row times are supplied or generated, all file variables remain data variables. 
+
+Delimited text files are supported. Unsupported external formats raise an error. 
 
 <b>JSON files</b> (<b>.json</b> extension or <b>'FileType', 'json'</b>) are read as with <b>readtable</b>, with the same JSON name-value arguments or a <b>nelson.io.json.JSONImportOptions</b> object. The first datetime or duration variable gives the row times, unless a row-time option is specified.
 
@@ -48,7 +49,6 @@ TT = readtimetable(filename)
 TT.Properties.RowTimes
 
 ```
-
 Select the row-time column by name.
 
 ```matlab
@@ -63,7 +63,6 @@ TT = readtimetable(filename, 'RowTimes', 'Date')
 TT.Properties.VariableNames
 
 ```
-
 Supply row times explicitly.
 
 ```matlab
@@ -78,7 +77,6 @@ TT = readtimetable(filename, 'RowTimes', rowTimes)
 TT.Properties.RowTimes
 
 ```
-
 Generate regular row times with StartTime and SampleRate.
 
 ```matlab
@@ -91,22 +89,22 @@ TT = readtimetable(filename, 'StartTime', seconds(0), 'SampleRate', 0.5)
 TT.Properties.RowTimes
 
 ```
-
 Read a JSON file as a timetable:
 
 ```matlab
 TT = timetable(datetime(2024, 1, 1) + days(0:2)', [12.5; 13; 11.75], 'VariableNames', {'Temperature'}); f = [tempdir, 'timetable_json.json']; writetimetable(TT, f, 'PrettyPrint', false); fileread(f) TT2 = readtimetable(f)
 ```
 
+
 ## 🔗 See also
 
-[readtable](../spreadsheet/readtable.md), [writetimetable](../spreadsheet/writetimetable.md), [timetable](../table/timetable.md), [jsonImportOptions](../spreadsheet/jsonImportOptions.md).
+[readtable](../spreadsheet/readtable.md), [writetimetable](../spreadsheet/writetimetable.md), [timetable](../table/1_create_convert_tables/timetable.md), [jsonImportOptions](../spreadsheet/jsonImportOptions.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                             |
-| ------- | ------------------------------------------ |
-| 2.0.0   | initial version                            |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | JSON files: read JSON data as a timetable. |
 
 <!--

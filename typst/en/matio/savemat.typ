@@ -1,0 +1,99 @@
+#import "nelson_help.typ": *
+
+= savemat <matio:savemat>
+
+save workspace variables to .mat file
+
+== Syntax
+
+- #raw("savemat(filename)");
+- #raw("savemat(filename, version, var1, ..., varN)");
+- #raw("savemat(filename, '-append', ...)");
+- #raw("savemat(filename, '-nocompression', ...)");
+
+== Input argument
+
+/ filename: a string: .nh5 filename.
+/ var1, ..., varN: string: Names of variables to save from Nelson's workspace.
+/ '-v7.3': default mat file used.
+/ '-v7': mat file version 7 used as output format.
+/ '-v6', '-v4': mat file version 6 or 4 used as output format.
+/ '-append': append variables to an existing .mat file (-v7.3 only).
+/ '-nocompression': disable .mat file compression.
+
+== Description
+
+#strong[savemat]; save workspace variables to .mat file.
+
+ Nelson's data types are converted into the Mat file equivalents.
+
+
+== Bibliography
+
+Thanks to MATIO library (http:\/\/sourceforge.net\/projects\/matio\/).
+
+== Examples
+
+``````matlab
+A = ones(3, 4);
+B = 'hello for open mat users';
+savemat([tempdir(), 'example_loadmat.mat'], 'A', 'B')
+clear;
+st = loadmat([tempdir(), 'example_loadmat.mat']);
+who
+st.A
+st.B
+clear
+who
+loadmat([tempdir(), 'example_loadmat.mat']);
+who
+A
+B
+
+``````
+
+append variables
+
+``````matlab
+C = eye(3, 4);
+savemat([tempdir(), 'example_loadmat.mat'], 'C', '-append')
+clear;
+st = loadmat([tempdir(), 'example_loadmat.mat']);
+who
+st.A
+st.B
+st.C
+clear
+who
+loadmat([tempdir(), 'example_loadmat.mat']);
+who
+A
+B
+C
+
+``````
+
+compression
+
+``````matlab
+C = eye(1000, 1000);
+savemat([tempdir(), 'example_savemat_with_compression.mat'], 'C')
+savemat([tempdir(), 'example_savemat_no_compression.mat'], 'C', '-nocompression')
+with_compression = dir([tempdir(), 'example_savemat_with_compression.mat'])
+no_compression = dir([tempdir(), 'example_savemat_no_compression.mat'])
+``````
+
+
+== See also
+
+#nlink(<matio:loadmat>)[loadmat];, #nlink(<stream_manager:save>)[save];, #nlink(<hdf5:savenh5>)[savenh5];.
+
+== History
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.0.0], [initial version],
+)
+
+// Author: Allan CORNET

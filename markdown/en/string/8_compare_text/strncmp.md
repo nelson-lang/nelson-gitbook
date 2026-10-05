@@ -17,10 +17,11 @@ Compares first n characters of strings.
 - res - a logical: true if the two are identical and false otherwise.
 
 ## 📄 Description
-
 <b>strncmp</b> compares the first n characters of two strings (case sensitive).
 
 ## 💡 Example
+
+
 
 ```matlab
 strncmp('Nelson', 'nelSon', 3)
@@ -35,13 +36,14 @@ strncmp(C, 'C', 4)
 
 ```
 
+
 ## 🔗 See also
 
-[strcmp](../../string/strcmp.md).
+[strcmp](../../string/8_compare_text/strcmp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

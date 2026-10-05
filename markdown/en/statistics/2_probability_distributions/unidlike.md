@@ -19,22 +19,26 @@ Discrete uniform negative log-likelihood
 
 ## 📄 Description
 
+
 <b>unidlike</b> returns the negative log-likelihood for discrete uniform distribution data.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1 2 4 5 5];
 [nlogL, avar] = unidlike(5, x);
 ```
 
+
 ## 🔗 See also
 
-[unidfit](../../statistics/unidfit.md), [unidpdf](../../statistics/unidpdf.md), [unidcdf](../../statistics/unidcdf.md), [unidrnd](../../statistics/unidrnd.md).
+[unidfit](../../statistics/2_probability_distributions/unidfit.md), [unidpdf](../../statistics/2_probability_distributions/unidpdf.md), [unidcdf](../../statistics/2_probability_distributions/unidcdf.md), [unidrnd](../../statistics/2_probability_distributions/unidrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

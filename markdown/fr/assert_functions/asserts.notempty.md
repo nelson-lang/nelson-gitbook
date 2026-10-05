@@ -18,7 +18,8 @@ Verifie qu'une valeur n'est pas vide.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value a au moins un element.
+
+L'assertion reussit lorsque value a au moins un element. 
 
 Utiliser asserts.empty pour l'assertion inverse.
 
@@ -29,12 +30,12 @@ Non-empty value
 ```matlab
 asserts.notempty(1);
 ```
-
 Capture an empty value
 
 ```matlab
 [res, msg] = asserts.notempty([]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture an empty value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -16,19 +16,24 @@ Renvoie vrai si la variable var est un tableau de cellules.
 
 ## 📄 Description
 
+
 <b>iscell</b> renvoie 1 logique (vrai) si l'argument est un tableau de cellules et 0 logique (faux) sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
 res = iscell(A)
 ```
 
+
 ```matlab
 B = {'NelSon', 3, true};
 res = iscell(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +41,8 @@ res = iscell(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

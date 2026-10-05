@@ -23,7 +23,8 @@ Segmente une image depuis un masque initial de contour.
 
 ## 📄 Description
 
-Segmente une image 2-D reelle finie en faisant evoluer un masque initial binaire. Les images RGB et RGBA sont converties en luminance, et le canal alpha est ignore. La methode par defaut est chan-vese. La methode edge utilise le meme modele de regions avec un lissage pondere par les contours.
+
+Segmente une image 2-D reelle finie en faisant evoluer un masque initial binaire. Les images RGB et RGBA sont converties en luminance, et le canal alpha est ignore. La methode par defaut est chan-vese. La methode edge utilise le meme modele de regions avec un lissage pondere par les contours. 
 
 Les options nom-valeur prises en charge sont <b>Iterations</b>, <b>Method</b>, <b>SmoothFactor</b>, un scalaire fini non negatif, et <b>ContractionBias</b>, un scalaire fini dans l intervalle [-1, 1]. Les valeurs par defaut sont 100, chan-vese, 1 et 0.
 
@@ -41,7 +42,6 @@ figure; subplot(1,3,1); imagesc(I); title('Input');
 subplot(1,3,2); imagesc(mask); title('Initial');
 subplot(1,3,3); imagesc(BW); title('Segmented');
 ```
-
 <img src="activecontour_1.png" align="middle"/>
 Utiliser le mode edge avec un lissage explicite
 
@@ -53,14 +53,15 @@ mask(4,4)=true;
 BW=activecontour(I,mask,'Iterations',8,'Method','edge','SmoothFactor',1,'ContractionBias',0);
 ```
 
+
 ## 🔗 Voir aussi
 
-[watershed](../../../image_processing/watershed.md), [imreconstruct](../../../image_processing/imreconstruct.md), [graythresh](../../../image_processing/graythresh.md).
+[watershed](../../../image_processing/2_image_analysis/7_segmentation/watershed.md), [imreconstruct](../../../image_processing/2_image_analysis/7_segmentation/imreconstruct.md), [graythresh](../../../image_processing/1_image_basics/2_contrast_thresholding/graythresh.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

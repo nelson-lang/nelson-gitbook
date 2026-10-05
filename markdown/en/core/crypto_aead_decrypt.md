@@ -20,7 +20,8 @@ Authenticated decryption (XChaCha20-Poly1305).
 
 ## 📄 Description
 
-<b>crypto.aead.decrypt</b> verifies the authentication tag and returns the plaintext of a message produced by <b>crypto.aead.encrypt</b>.
+
+<b>crypto.aead.decrypt</b> verifies the authentication tag and returns the plaintext of a message produced by <b>crypto.aead.encrypt</b>. 
 
 It raises <b>Nelson:core:aeadAuthenticationFailed</b> when the key, nonce, associated data or encrypted message has been altered; never use unauthenticated data.
 
@@ -43,13 +44,14 @@ boxed = crypto.aead.encrypt(key, nonce, uint8([1 2 3 4]));
 crypto.aead.decrypt(key, nonce, boxed)
 ```
 
+
 ## 🔗 See also
 
-[crypto.aead.encrypt](../core/crypto.aead.encrypt.md), [crypto.random](../core/crypto.random.md).
+[crypto.aead.encrypt](../core/crypto_aead_encrypt.md), [crypto.random](../core/crypto_random.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

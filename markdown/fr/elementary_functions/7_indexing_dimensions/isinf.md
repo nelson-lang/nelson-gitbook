@@ -16,9 +16,12 @@ Recherche les éléments infinis.
 
 ## 📄 Description
 
+
 <b>isinf</b> renvoie un tableau logique qui vaut true là où les éléments de M sont des valeurs infinies.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 isnan(pi)
@@ -29,14 +32,15 @@ X = sparse([1 2 NaN 3 0 Inf 0 4]);
 R = isinf(X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[isnan](../../elementary_functions/isnan.md).
+[isnan](../../elementary_functions/7_indexing_dimensions/isnan.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

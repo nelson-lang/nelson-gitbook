@@ -18,9 +18,12 @@ Fonction de repartition de Student t
 
 ## 📄 Description
 
+
 <b>tcdf</b> calcule par defaut les probabilites de queue inferieure de Student t et les probabilites de queue superieure avec <b>'upper'</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-3 -1 0 1 3];
@@ -28,14 +31,15 @@ p = tcdf(x, 5);
 q = tcdf(x, 5, 'upper');
 ```
 
+
 ## 🔗 Voir aussi
 
-[tpdf](../../statistics/tpdf.md), [tinv](../../statistics/tinv.md).
+[tpdf](../../statistics/2_probability_distributions/tpdf.md), [tinv](../../statistics/2_probability_distributions/tinv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

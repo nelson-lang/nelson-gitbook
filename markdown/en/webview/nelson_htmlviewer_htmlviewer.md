@@ -20,6 +20,7 @@ Handle to a Nelson HTML viewer window.
 
 ## 📄 Description
 
+
 The <b>nelson.htmlviewer.htmlviewer</b> class represents an HTML viewer window. Its public properties are <b>Input</b> and <b>Visible</b>.
 
 ## 💡 Example
@@ -33,13 +34,14 @@ close(h);
 
 ```
 
+
 ## 🔗 See also
 
 [web](../webview/web.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

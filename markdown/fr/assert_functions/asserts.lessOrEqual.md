@@ -19,7 +19,8 @@ Verifie que chaque valeur est inferieure ou egale a une limite.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value <= limit pour chaque element compare.
+
+L'assertion reussit lorsque value <= limit pour chaque element compare. 
 
 Les tableaux doivent avoir les memes dimensions sauf si une entree est scalaire.
 
@@ -30,12 +31,12 @@ Element-wise comparison
 ```matlab
 asserts.lessOrEqual([1 2], [1 2]);
 ```
-
 Capture a relation failure
 
 ```matlab
 [res, msg] = asserts.lessOrEqual([1 4], 3);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a relation failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

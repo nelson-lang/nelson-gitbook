@@ -20,28 +20,32 @@ Laplacien discret.
 
 ## 📄 Description
 
-<b>del2(U)</b> retourne une approximation discrete du Laplacien de U divisee par 2\*ndims(U).
 
-Pour un element interieur d'une matrice, la valeur est la moyenne de ses quatre voisins moins l'element lui-meme : L(i,j) = (U(i-1,j) + U(i+1,j) + U(i,j-1) + U(i,j+1))/4 - U(i,j).
+<b>del2(U)</b> retourne une approximation discrete du Laplacien de U divisee par 2\*ndims(U). 
 
-Sur les bords, une extrapolation par difference seconde est utilisee afin que L ait la meme taille que U.
+Pour un element interieur d'une matrice, la valeur est la moyenne de ses quatre voisins moins l'element lui-meme : L(i,j) = (U(i-1,j) + U(i+1,j) + U(i,j-1) + U(i,j+1))/4 - U(i,j). 
+
+Sur les bords, une extrapolation par difference seconde est utilisee afin que L ait la meme taille que U. 
 
 <b>del2(U, h)</b> utilise l'espacement uniforme h dans chaque direction, et <b>del2(U, hx, hy)</b> utilise l'espacement hx le long des colonnes et hy le long des lignes.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 L = del2(magic(4))
 ```
 
+
 ## 🔗 Voir aussi
 
-[gradient](../../linear_algebra/gradient.md), [diff](../../linear_algebra/diff.md).
+[gradient](../../linear_algebra/1_linear_systems/gradient.md), [diff](../../linear_algebra/1_linear_systems/diff.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

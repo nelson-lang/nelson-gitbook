@@ -16,7 +16,8 @@ Demarrer un timer a une date et une heure specifiees.
 
 ## 📄 Description
 
-<b>startat</b> demarre le timer a une date et une heure futures. L'heure de demarrage doit etre dans le futur et a au plus 25 jours de l'heure courante.
+
+<b>startat</b> demarre le timer a une date et une heure futures. L'heure de demarrage doit etre dans le futur et a au plus 25 jours de l'heure courante. 
 
 Pour un tableau de timers, l'heure de demarrage peut etre scalaire ou contenir une heure de demarrage pour chaque timer du tableau.
 
@@ -30,7 +31,6 @@ startat(t, now() + 2 / 86400);
 wait(t);
 delete(t);
 ```
-
 Utiliser les composants de date et d'heure pour planifier un timer.
 
 ```matlab
@@ -41,14 +41,15 @@ wait(t);
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [start](../../time/start.md), [wait](../../time/wait.md).
+[timer](../../time/7_timers/timer.md), [start](../../time/7_timers/start.md), [wait](../../time/7_timers/wait.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

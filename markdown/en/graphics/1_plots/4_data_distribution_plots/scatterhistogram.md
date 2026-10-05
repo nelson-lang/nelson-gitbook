@@ -11,7 +11,8 @@ Display a scatter plot with marginal histograms.
 
 ## 📄 Description
 
-<b>scatterhistogram</b> creates a scatter plot and displays histograms for the x and y data distributions.
+
+<b>scatterhistogram</b> creates a scatter plot and displays histograms for the x and y data distributions. 
 
 The returned object has type <b>scatterhistogram</b>. See [scatterhistogram properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.scatterhistogram.properties.md) for the complete property list.
 
@@ -24,8 +25,8 @@ x = randn(200, 1);
 y = 0.5 * x + randn(200, 1);
 scatterhistogram(x, y, 'NumBins', 20);
 ```
-
 <img src="scatterhistogram_1.svg" align="middle"/>
+
 
 ## 🔗 See also
 

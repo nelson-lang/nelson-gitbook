@@ -17,17 +17,20 @@ tableau de colormap blanc.
 
 ## 📄 Description
 
+
 <b>white</b> retourne la colormap avec des couleurs blanches.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('white');
 ```
-
 <img src="white.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('white');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

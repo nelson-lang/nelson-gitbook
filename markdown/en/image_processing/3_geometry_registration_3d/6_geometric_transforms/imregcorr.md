@@ -21,6 +21,7 @@ Estimate a 2-D image registration transform by phase correlation.
 
 ## 📄 Description
 
+
 imregcorr estimates the integer-pixel translation between two same-size images using normalized phase correlation. RGB inputs are converted to grayscale before registration. The result is returned as an affine2d transformation.
 
 ## 💡 Example
@@ -36,16 +37,16 @@ figure; subplot(1,3,1); imagesc(I); axis image; title('Moving');
 subplot(1,3,2); imagesc(J); axis image; title('Fixed');
 subplot(1,3,3); imagesc(K); axis image; title('Registered');
 ```
-
 <img src="imregcorr_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[affine2d](../../../image_processing/affine2d.md), [imregconfig](../../../image_processing/imregconfig.md), [imregister](../../../image_processing/imregister.md), [imregtform](../../../image_processing/imregtform.md), [imtranslate](../../../image_processing/imtranslate.md), [imwarp](../../../image_processing/imwarp.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [imregconfig](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregconfig.md), [imregister](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregister.md), [imregtform](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregtform.md), [imtranslate](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imtranslate.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

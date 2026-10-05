@@ -17,37 +17,42 @@ Return the smallest integer that can be represented in an integer type.
 
 ## 📄 Description
 
-<b>imin = intmin(classname)</b> the smallest integer that can be represented in an integer type.
 
-Supported values for the string <b>classname</b> are:
+<b>imin = intmin(classname)</b> the smallest integer that can be represented in an integer type. 
 
-'int8'
+Supported values for the string <b>classname</b> are: 
 
-'uint8'
+'int8' 
 
-'int16'
+'uint8' 
 
-'uint16'
+'int16' 
 
-'int32'
+'uint16' 
 
-'uint32'
+'int32' 
 
-'int64'
+'uint32' 
+
+'int64' 
 
 'uint64'
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = intmin('int64')
 res = class(A)
 ```
 
+
 ```matlab
 A = intmin('uint32')
 res = class(C)
 ```
+
 
 ## 🔗 See also
 
@@ -55,7 +60,7 @@ res = class(C)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

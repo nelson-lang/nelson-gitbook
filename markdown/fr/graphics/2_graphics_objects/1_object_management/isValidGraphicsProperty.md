@@ -17,16 +17,20 @@ Vérifie si le nom de propriété est valide.
 
 ## 📄 Description
 
-<b>isValidGraphicsProperty</b> vérifie si le nom de propriété existe pour une classe d'objet graphique.
+
+<b>isValidGraphicsProperty</b> vérifie si le nom de propriété existe pour une classe d'objet graphique. 
 
 Cette fonction est une aide pour vérifier les paramètres d'entrée des fonctions graphiques.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 tf = isValidGraphicsProperty('figure', 'Type')
 tf = isValidGraphicsProperty('figure', 'TypeType')
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ tf = isValidGraphicsProperty('figure', 'TypeType')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

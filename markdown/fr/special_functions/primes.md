@@ -16,15 +16,19 @@ Nombres premiers inférieurs ou égaux à la valeur d'entrée
 
 ## 📄 Description
 
-<b>p = primes(n)</b> retourne un vecteur ligne contenant tous les nombres premiers inférieurs ou égaux à n.
+
+<b>p = primes(n)</b> retourne un vecteur ligne contenant tous les nombres premiers inférieurs ou égaux à n. 
 
 Le type de données de p est le même que celui de n.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 p = primes(15)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +36,8 @@ p = primes(15)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

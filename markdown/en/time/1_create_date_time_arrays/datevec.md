@@ -18,13 +18,16 @@ Convert a serial date number into a date vector.
 
 ## 📄 Description
 
-<b>datevec</b> converts a serial date number into a date vector.
 
-For sparse input, <b>datevec</b> converts the stored nonzero values and returns dense outputs.
+<b>datevec</b> converts a serial date number into a date vector. 
+
+For sparse input, <b>datevec</b> converts the stored nonzero values and returns dense outputs. 
 
 To measure performance, it is better to use tic and toc functions.
 
 ## 💡 Example
+
+
 
 ```matlab
 datevec(now())
@@ -35,15 +38,16 @@ V = datevec(sparse([720840, now()]))
 
 ```
 
+
 ## 🔗 See also
 
-[tic](../../time/tic.md), [toc](../../time/toc.md).
+[tic](../../time/7_timers/tic.md), [toc](../../time/7_timers/toc.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
-| 1.0.0   | initial version                        |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | sparse double input supported natively |
 
 <!--

@@ -24,23 +24,27 @@ Estimation des parametres de la loi extreme generalisee
 
 ## 📄 Description
 
+
 <b>gevfit</b> estime les parametres de la loi extreme generalisee.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-1.2 -0.4 0.1 0.8 1.5 2.8 4.0];
 [phat, pci] = gevfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[gevlike](../../statistics/gevlike.md), [gevpdf](../../statistics/gevpdf.md), [gevcdf](../../statistics/gevcdf.md).
+[gevlike](../../statistics/2_probability_distributions/gevlike.md), [gevpdf](../../statistics/2_probability_distributions/gevpdf.md), [gevcdf](../../statistics/2_probability_distributions/gevcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -4,28 +4,32 @@ Obtient le texte traduit pour la locale courante.
 
 ## 📝 Syntaxe
 
-- translated_string = gettext(your_string)
-- translated_string = \_(your_string))
+- translated\_string = gettext(your\_string)
+- translated\_string = \_(your\_string))
 
 ## 📥 Argument d'entrée
 
-- your_string - une chaîne : message à traduire.
+- your\_string - une chaîne : message à traduire.
 
 ## 📤 Argument de sortie
 
-- translated_string - une chaîne : message traduit.
+- translated\_string - une chaîne : message traduit.
 
 ## 📄 Description
 
-<b>translated_string = gettext(your_string)</b> obtient la traduction d'une chaîne <b>your_string</b> pour la locale courante dans le domaine Nelson.
 
-<b>\_(your_string)</b> est un alias de <b>gettext(your_string)</b>.
+<b>translated\_string = gettext(your\_string)</b> obtient la traduction d'une chaîne <b>your\_string</b> pour la locale courante dans le domaine Nelson. 
+
+<b>\_(your\_string)</b> est un alias de <b>gettext(your\_string)</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 disp(_('function not found.'))
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -33,8 +37,8 @@ disp(_('function not found.'))
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -8,21 +8,25 @@ Select first token in text.
 
 ## 📄 Description
 
+
 <b>strtok</b> Select first token in text.
 
 ## 💡 Example
+
+
 
 ```matlab
 [token, rest] = strtok("one two")
 ```
 
+
 ## 🔗 See also
 
-[strsplit](../../string/strsplit.md), [strtrim](../../string/strtrim.md), [strread](../../string/strread.md).
+[strsplit](../../string/6_join_split_extract/strsplit.md), [strtrim](../../string/7_edit_text/strtrim.md), [strread](../../string/6_join_split_extract/strread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,7 +17,8 @@ Set timer property values.
 
 ## 📄 Description
 
-<b>set</b> changes writable timer properties. Writable properties include <b>BusyMode</b>, <b>ErrorFcn</b>, <b>ExecutionMode</b>, <b>Name</b>, <b>ObjectVisibility</b>, <b>Period</b>, <b>StartDelay</b>, <b>StartFcn</b>, <b>StopFcn</b>, <b>Tag</b>, <b>TasksToExecute</b>, <b>TimerFcn</b>, and <b>UserData</b>.
+
+<b>set</b> changes writable timer properties. Writable properties include <b>BusyMode</b>, <b>ErrorFcn</b>, <b>ExecutionMode</b>, <b>Name</b>, <b>ObjectVisibility</b>, <b>Period</b>, <b>StartDelay</b>, <b>StartFcn</b>, <b>StopFcn</b>, <b>Tag</b>, <b>TasksToExecute</b>, <b>TimerFcn</b>, and <b>UserData</b>. 
 
 Do not change scheduling properties such as <b>BusyMode</b>, <b>ExecutionMode</b>, <b>Period</b>, or <b>StartDelay</b> while a timer is running.
 
@@ -36,7 +37,6 @@ start(t);
 wait(t);
 delete(t);
 ```
-
 Set multiple properties from a structure.
 
 ```matlab
@@ -49,13 +49,14 @@ get(t, 'Tag')
 delete(t);
 ```
 
+
 ## 🔗 See also
 
-[timer](../../time/timer.md), [get](../../time/timer.get.md).
+[timer](../../time/7_timers/timer.md), [get](../../time/7_timers/timer.get.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

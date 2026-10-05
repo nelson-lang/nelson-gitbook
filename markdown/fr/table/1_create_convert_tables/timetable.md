@@ -19,13 +19,16 @@ Creer une timetable a partir de variables et de temps de lignes.
 
 ## 📄 Description
 
-<b>timetable</b> cree une timetable, un objet tabulaire dont les lignes sont identifiees par des temps.
 
-Les temps de lignes peuvent etre fournis comme premier argument ou avec l'argument nom-valeur <b>'RowTimes'</b>.
+<b>timetable</b> cree une timetable, un objet tabulaire dont les lignes sont identifiees par des temps. 
+
+Les temps de lignes peuvent etre fournis comme premier argument ou avec l'argument nom-valeur <b>'RowTimes'</b>. 
 
 Les noms de variables, noms de dimensions, description, donnees utilisateur et proprietes personnalisees sont stockes dans <b>TT.Properties</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:2)';
@@ -33,14 +36,15 @@ TT = timetable(t, [10; 20; 30], 'VariableNames', {'A'});
 TT.Properties.RowTimes
 ```
 
+
 ## 🔗 Voir aussi
 
-[table](../../table/table.md), [array2timetable](../../table/array2timetable.md), [table2timetable](../../table/table2timetable.md).
+[table](../../table/1_create_convert_tables/table.md), [array2timetable](../../table/1_create_convert_tables/array2timetable.md), [table2timetable](../../table/1_create_convert_tables/table2timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

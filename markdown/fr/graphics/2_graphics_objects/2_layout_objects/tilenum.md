@@ -20,9 +20,10 @@ Obtenir le numéro de tuile à partir d'indices ligne-colonne ou d'un objet grap
 
 ## 📄 Description
 
-<b>tilenum(t, row, col)</b> retourne le numéro de tuile pour la ligne et la colonne données dans la disposition TiledChartLayout t.
 
-<b>tilenum(obj)</b> retourne le numéro de tuile occupée par l'objet axes obj.
+<b>tilenum(t, row, col)</b> retourne le numéro de tuile pour la ligne et la colonne données dans la disposition TiledChartLayout t. 
+
+<b>tilenum(obj)</b> retourne le numéro de tuile occupée par l'objet axes obj. 
 
 Retourne NaN pour les indices hors limites ou pour les axes de tuile de bord.
 
@@ -36,15 +37,16 @@ n = tilenum(t, 1, 2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [tiledlayout](../../2_graphics_objects/2_layout_objects/tiledlayout.md), [nexttile](../../2_graphics_objects/2_layout_objects/nexttile.md), [tilerowcol](../../2_graphics_objects/2_layout_objects/tilerowcol.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.17.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.17.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -1,10 +1,16 @@
 # Special functions
 
+
+    
 The Special Functions module provides tools for performing advanced mathematical operations in Nelson.
 
+    
 It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.
 
+    
 This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.
+
+  
 
 ## Functions
 
@@ -35,7 +41,9 @@ This module enhances Nelson's capabilities by offering a range of functions that
 - [isprime](isprime.md) - Determine which array elements are prime.
 - [lcm](lcm.md) - Least common multiple.
 - [makima](makima.md) - Modified Akima piecewise cubic interpolation.
+- [pchip](pchip.md) - Piecewise Cubic Hermite Interpolating Polynomial (PCHIP).
 - [peaks](peaks.md) - Peaks function
 - [primes](primes.md) - Prime numbers less than or equal to input value
 - [quadgk](quadgk.md) - Numerically evaluate an integral with Gauss-Kronrod quadrature.
 - [spline](spline.md) - Cubic spline interpolation.
+

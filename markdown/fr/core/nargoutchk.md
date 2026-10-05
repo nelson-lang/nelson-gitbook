@@ -21,6 +21,7 @@ Vérifie le nombre d'arguments de sortie.
 
 ## 📄 Description
 
+
 Lance une erreur si le nombre d'arguments de sortie demandé n'est pas dans l'intervalle attendu.
 
 ## 💡 Exemple
@@ -32,16 +33,17 @@ nargoutchk(1, 2, 3)
 nargoutchk(1, 2, 3, 'struct')
 ```
 
+
 ## 🔗 Voir aussi
 
 [nargout](../core/nargin.md), [narginchk](../core/narginchk.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description          |
-| ------- | ----------------------- |
-| 1.0.0   | version initiale        |
-| 1.10.0  | nargoutchk(3, Inf) géré |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.10.0   | nargoutchk(3, Inf) géré |
 
 <!--
 ## 👤 Auteur

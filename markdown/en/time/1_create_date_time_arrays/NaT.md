@@ -20,9 +20,10 @@ Create not-a-time datetime values.
 
 ## 📄 Description
 
-Create not-a-time datetime values.
 
-NaT is the missing value marker for datetime arrays. isnat returns true for these elements, and display functions show them as NaT.
+Create not-a-time datetime values. 
+
+NaT is the missing value marker for datetime arrays. isnat returns true for these elements, and display functions show them as NaT. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -36,13 +37,14 @@ isnat(t)
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

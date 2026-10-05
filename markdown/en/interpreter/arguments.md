@@ -12,27 +12,28 @@ function argument validation block.
 
 ## 📄 Description
 
-<b>arguments ... end</b> declares input arguments for a function. The block is optional. If one or more <b>arguments</b> blocks are included, they must all appear before the first executable line of the function. A block with no qualifier is treated as an input block.
 
-Each argument declaration follows this form:
+<b>arguments ... end</b> declares input arguments for a function. The block is optional. If one or more <b>arguments</b> blocks are included, they must all appear before the first executable line of the function. A block with no qualifier is treated as an input block. 
 
-<code>argName (dimensions) class {validators} = defaultValue</code>
+Each argument declaration follows this form: 
 
-<b>(dimensions)</b>: Input size specified as a comma-separated list of integers or colons, e.g. <code>(1,1)</code>, <code>(1,:)</code>, or <code>(3,5,2)</code>. A colon allows any length in that dimension. The input must match the declared dimensions exactly, or be compatible with them (for example a column vector is compatible with <code>(1,:)</code> and is reshaped automatically). Expressions are not allowed inside dimensions.
+<code>argName (dimensions) class {validators} = defaultValue</code> 
 
-<b>class</b>: A single class name such as <code>double</code>, <code>char</code>, or <code>string</code>. The value is converted to that class when possible. If omitted, any class is accepted.
+<b>(dimensions)</b>: Input size specified as a comma-separated list of integers or colons, e.g. <code>(1,1)</code>, <code>(1,:)</code>, or <code>(3,5,2)</code>. A colon allows any length in that dimension. The input must match the declared dimensions exactly, or be compatible with them (for example a column vector is compatible with <code>(1,:)</code> and is reshaped automatically). Expressions are not allowed inside dimensions. 
 
-<b>{validators}</b>: A comma-separated list of validation functions enclosed in braces, e.g. <code>{mustBeNumeric, mustBeReal}</code>. Validation functions throw an error when the condition is not met; unlike class, they never modify the argument value.
+<b>class</b>: A single class name such as <code>double</code>, <code>char</code>, or <code>string</code>. The value is converted to that class when possible. If omitted, any class is accepted. 
 
-<b>= defaultValue</b>: An expression that provides a default value and makes the argument optional. The expression may reference previously declared arguments. Optional arguments must be positioned after all required arguments in the function signature and in the <b>arguments</b> block.
+<b>{validators}</b>: A comma-separated list of validation functions enclosed in braces, e.g. <code>{mustBeNumeric, mustBeReal}</code>. Validation functions throw an error when the condition is not met; unlike class, they never modify the argument value. 
 
-<b>arguments (Repeating) ... end</b> declares repeating input arguments. A function may contain only one repeating input block. Nelson creates a cell array for each repeating argument containing all values passed for that argument. If the function also has name-value arguments, those must be declared in a separate <b>arguments</b> block after the repeating block.
+<b>= defaultValue</b>: An expression that provides a default value and makes the argument optional. The expression may reference previously declared arguments. Optional arguments must be positioned after all required arguments in the function signature and in the <b>arguments</b> block. 
 
-<b>arguments (Output) ... end</b> declares output arguments. Output blocks must appear after all input blocks but before the first executable line of the function. When both input and output blocks are present, using the explicit <b>(Input)</b> and <b>(Output)</b> qualifiers is recommended for readability. Output arguments cannot define default values, and validation functions applied to an output argument cannot reference other output arguments.
+<b>arguments (Repeating) ... end</b> declares repeating input arguments. A function may contain only one repeating input block. Nelson creates a cell array for each repeating argument containing all values passed for that argument. If the function also has name-value arguments, those must be declared in a separate <b>arguments</b> block after the repeating block. 
 
-<b>arguments (Output,Repeating) ... end</b> declares a single repeating output argument. At most one repeating output argument is allowed per function.<code>varargout</code> may appear in a repeating output block only when it is the sole output argument.
+<b>arguments (Output) ... end</b> declares output arguments. Output blocks must appear after all input blocks but before the first executable line of the function. When both input and output blocks are present, using the explicit <b>(Input)</b> and <b>(Output)</b> qualifiers is recommended for readability. Output arguments cannot define default values, and validation functions applied to an output argument cannot reference other output arguments. 
 
-For name-value arguments, use <code>nv.name</code> notation in the <b>arguments</b> block, where <code>nv</code> matches the structure name used in the function signature.
+<b>arguments (Output,Repeating) ... end</b> declares a single repeating output argument. At most one repeating output argument is allowed per function.<code>varargout</code> may appear in a repeating output block only when it is the sole output argument. 
+
+For name-value arguments, use <code>nv.name</code> notation in the <b>arguments</b> block, where <code>nv</code> matches the structure name used in the function signature. 
 
 <b>arguments</b> blocks cannot be used in nested functions, abstract methods, or handle class destructor methods.
 
@@ -51,7 +52,6 @@ function [m, s] = twoStats(x)
 end
 
 ```
-
 Optional argument with a default value derived from a previously declared argument.
 
 ```matlab
@@ -65,7 +65,6 @@ function c = myMul(a, b, c)
 end
 
 ```
-
 Use validation functions to restrict argument values. The method argument is optional and defaults to 'linear'.
 
 ```matlab
@@ -79,7 +78,6 @@ function r = myInterp(x, method)
 end
 
 ```
-
 Declare optional name-value arguments using a structure. Both options.LineStyle and options.LineWidth have default values, so they are optional.
 
 ```matlab
@@ -95,7 +93,6 @@ function myRectangle(X, Y, options)
 end
 
 ```
-
 Declare repeating input arguments. Nelson creates a cell array for each repeating argument.
 
 ```matlab
@@ -113,7 +110,6 @@ function fRepeat(x, y, style)
 end
 
 ```
-
 Validate both input and output arguments using separate blocks.
 
 ```matlab
@@ -131,7 +127,6 @@ function out = myFunction(A, B, C)
 end
 
 ```
-
 Repeating input and output arguments with validation. Restricts both inputs and outputs to row vectors.
 
 ```matlab
@@ -153,15 +148,16 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [function](../interpreter/function.md), [iskeyword](../interpreter/iskeyword.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

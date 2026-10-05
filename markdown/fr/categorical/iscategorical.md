@@ -16,6 +16,7 @@ Determiner si un tableau est categoriel.
 
 ## 📄 Description
 
+
 <b>iscategorical</b> verifie le type de stockage de son entree sans la modifier.
 
 ## 💡 Exemple
@@ -26,14 +27,15 @@ Tester un tableau categoriel.
 A = categorical({'red','blue'}); tf = iscategorical(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [categorical](../categorical/categorical.md), [isordinal](../categorical/isordinal.md), [isprotected](../categorical/isprotected.md), [isundefined](../categorical/isundefined.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

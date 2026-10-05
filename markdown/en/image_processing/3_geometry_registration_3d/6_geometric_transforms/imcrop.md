@@ -18,6 +18,7 @@ Crop an image using a rectangle.
 
 ## 📄 Description
 
+
 Crop an image using a rectangle [x y width height]. The rectangle must be a numeric 4-element vector with nonnegative width and height.
 
 ## 💡 Example
@@ -30,16 +31,16 @@ J=imcrop(I,[16 16 31 31]);
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Crop');
 ```
-
 <img src="imcrop_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[imresize](../../../image_processing/imresize.md), [imrotate](../../../image_processing/imrotate.md), [imtranslate](../../../image_processing/imtranslate.md).
+[imresize](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imresize.md), [imrotate](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imrotate.md), [imtranslate](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imtranslate.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

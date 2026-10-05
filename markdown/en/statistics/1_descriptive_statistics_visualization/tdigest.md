@@ -20,32 +20,33 @@ t-digest algorithm data structure for accurate quantile estimation with configur
 
 ## 📄 Description
 
-<b>td = tdigest(compression, X)</b> returns a t-digest representation of the array elements of X.
 
-TDigest is a data structure for accurate on-line accumulation of rank-based statistics such as quantiles and cumulative distribution functions. It is particularly effective for large data sets and for estimating extreme quantiles. The algorithm is described in detail in the paper "Computing Extremely Accurate Quantiles Using t-Digests" by Ted Dunning and Otmar Ertl.
+<b>td = tdigest(compression, X)</b> returns a t-digest representation of the array elements of X. 
 
-The t-digest is particularly useful for:
+TDigest is a data structure for accurate on-line accumulation of rank-based statistics such as quantiles and cumulative distribution functions. It is particularly effective for large data sets and for estimating extreme quantiles. The algorithm is described in detail in the paper "Computing Extremely Accurate Quantiles Using t-Digests" by Ted Dunning and Otmar Ertl. 
 
-- Large datasets where you need memory-efficient quantile estimation
-- Streaming data where data arrives continuously
-- Accurate extreme quantiles (like 99th percentile) even with limited memory
-- Online algorithms where you can't store all the data
+The t-digest is particularly useful for: 
 
-The compression factor (100 in the examples) controls the trade-off between accuracy and memory usage - higher values give more accuracy but use more memory.
+- Large datasets where you need memory-efficient quantile estimation 
+- Streaming data where data arrives continuously 
+- Accurate extreme quantiles (like 99th percentile) even with limited memory 
+- Online algorithms where you can't store all the data 
 
-Once you have a t-digest object, you can add new data points to it using the <code>+</code> operator, and compute percentiles or quantiles using the <code>percentile</code> or <code>quantile</code> methods.
+The compression factor (100 in the examples) controls the trade-off between accuracy and memory usage - higher values give more accuracy but use more memory. 
 
-For more details, see the original paper linked in the bibliography.
+Once you have a t-digest object, you can add new data points to it using the <code>+</code> operator, and compute percentiles or quantiles using the <code>percentile</code> or <code>quantile</code> methods. 
 
-Methods available:
+For more details, see the original paper linked in the bibliography. 
 
-- <b>percentile(p)</b>: Returns the value(s) at the given percentile(s) <code>p</code> (in [0, 100]).
-- <b>quantile(q)</b>: Returns the value(s) at the given quantile(s) <code>q</code> (in [0, 1]).
-- <b>+</b>: Adds new data points to the t-digest object.
+Methods available: 
 
-Properties:
+- <b>percentile(p)</b>: Returns the value(s) at the given percentile(s) <code>p</code> (in [0, 100]). 
+- <b>quantile(q)</b>: Returns the value(s) at the given quantile(s) <code>q</code> (in [0, 1]). 
+- <b>+</b>: Adds new data points to the t-digest object. 
 
-- <b>compression</b>: The compression factor used to create the t-digest.
+Properties: 
+
+- <b>compression</b>: The compression factor used to create the t-digest. 
 - <b>totalWeight</b>: The total weight of all the centroids in the t-digest.
 
 ## Used function(s)
@@ -58,6 +59,8 @@ https://www.sciencedirect.com/science/article/pii/S2665963820300403
 
 ## 💡 Examples
 
+
+
 ```matlab
 M = rand(1, 15000);
 td = tdigest(100, M);
@@ -65,7 +68,6 @@ td = td + [1:15000];
 td.percentile([5, 50, 95])
 td.quantile([0.05 0.5 0.95])
 ```
-
 streaming updates
 
 ```matlab
@@ -77,15 +79,16 @@ while(1)
 end
 ```
 
+
 ## 🔗 See also
 
-[mean](../../statistics/mean.md).
+[mean](../../statistics/1_descriptive_statistics_visualization/mean.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

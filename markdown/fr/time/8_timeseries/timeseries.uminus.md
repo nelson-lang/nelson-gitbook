@@ -17,9 +17,11 @@ Change le signe des donnees timeseries.
 
 ## 📄 Description
 
+
 <b>uminus</b> Change le signe de la propriete Data et preserve le temps et les metadonnees.
 
 ## 💡 Exemple
+
 
 ```matlab
 ts = timeseries([1; -2], [1; 2]);
@@ -28,14 +30,15 @@ out.Data
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[timeseries](../../time/timeseries.md).
+[timeseries](../../time/8_timeseries/timeseries.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

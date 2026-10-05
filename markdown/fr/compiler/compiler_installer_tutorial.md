@@ -1,4 +1,4 @@
-# compiler_installer_tutorial
+# compiler\_installer\_tutorial
 
 Construire, installer et executer une application Windows.
 
@@ -8,19 +8,20 @@ Construire, installer et executer une application Windows.
 
 ## 📄 Description
 
-Ce tutoriel requiert Windows et Inno Setup 6 sur la machine de construction. Executer les trois blocs dans la meme session. Ils utilisent uniquement un dossier temporaire, sans enregistrement de desinstallation ni raccourci global.
 
-Le premier bloc construit l'application ; le deuxieme cree un installateur hors ligne avec son runtime minimal ; le troisieme installe et execute l'application sans utiliser un runtime externe. La sortie attendue est INSTALLER_TUTORIAL_OK. Reconstruire les applications avec les lanceurs actuels pour utiliser la decouverte du runtime adjacent.
+Ce tutoriel requiert Windows et Inno Setup 6 sur la machine de construction. Executer les trois blocs dans la meme session. Ils utilisent uniquement un dossier temporaire, sans enregistrement de desinstallation ni raccourci global. 
 
-Pour une distribution normale, transmettre le fichier .exe genere et lancer l'installateur interactivement. Ne pas utiliser /PORTABLE=1 pour enregistrer normalement l'application et son raccourci. L'installateur requiert une confirmation d'elevation par defaut ; /CURRENTUSER permet une installation par utilisateur.
+Le premier bloc construit l'application ; le deuxieme cree un installateur hors ligne avec son runtime minimal ; le troisieme installe et execute l'application sans utiliser un runtime externe. La sortie attendue est INSTALLER\_TUTORIAL\_OK. Reconstruire les applications avec les lanceurs actuels pour utiliser la decouverte du runtime adjacent. 
 
-RuntimeDelivery='none' permet de livrer seulement l'application lorsqu'un runtime compatible est deja disponible. RuntimeDelivery='web' n'est pas encore disponible. Pour une archive ZIP de l'installateur, fixer PackageType='zip'. AdditionalFiles au niveau de l'installateur installe des fichiers externes ; utiliser cette option au niveau du build pour les embarquer dans l'executable.
+Pour une distribution normale, transmettre le fichier .exe genere et lancer l'installateur interactivement. Ne pas utiliser /PORTABLE=1 pour enregistrer normalement l'application et son raccourci. L'installateur requiert une confirmation d'elevation par defaut ; /CURRENTUSER permet une installation par utilisateur. 
 
-Le dossier installe contient un desinstallateur unins\*.exe. La desinstallation retire les fichiers distribues, mais conserve les fichiers crees ensuite par l'utilisateur. La generation ne modifie pas l'executable construit ni le runtime Nelson source.
+RuntimeDelivery='none' permet de livrer seulement l'application lorsqu'un runtime compatible est deja disponible. RuntimeDelivery='web' n'est pas encore disponible. Pour une archive ZIP de l'installateur, fixer PackageType='zip'. AdditionalFiles au niveau de l'installateur installe des fichiers externes ; utiliser cette option au niveau du build pour les embarquer dans l'executable. 
 
-Pour partager un runtime, utiliser le meme installateur hors ligne avec -applicationFolder "C:\\Apps\\Hello" -runtimeFolder "C:\\NelsonRuntimes" /CURRENTUSER, apres -agreeToLicense yes. Ne pas utiliser /PORTABLE=1 ni -destinationFolder. Le runtime est enregistre sous C:\\NelsonRuntimes dans un sous-dossier nomme par l'empreinte du moteur. D'autres applications compatibles peuvent reutiliser ce parent et completer son inventaire de dependances. Desinstaller une ancienne installation privee avant de changer de mode ; le runtime partage survit a la suppression applicative et possede son propre unins\*.exe.
+Le dossier installe contient un desinstallateur unins\*.exe. La desinstallation retire les fichiers distribues, mais conserve les fichiers crees ensuite par l'utilisateur. La generation ne modifie pas l'executable construit ni le runtime Nelson source. 
 
-Le dernier bloc utilise les arguments de deploiement non interactif et cree un nouveau journal. L'alternative -inputFile accepte un fichier UTF-8 commencant par agreeToLicense=yes, puis applicationFolder=chemin-absolu et outputFile=nouveau-journal sur des lignes distinctes. desktopShortcut et startMenuShortcut peuvent etre actives uniquement dans ce fichier ; leur valeur par defaut est false. /PORTABLE=1 desactive toujours les raccourcis globaux.
+Pour partager un runtime, utiliser le meme installateur hors ligne avec -applicationFolder "C:\\Apps\\Hello" -runtimeFolder "C:\\NelsonRuntimes" /CURRENTUSER, apres -agreeToLicense yes. Ne pas utiliser /PORTABLE=1 ni -destinationFolder. Le runtime est enregistre sous C:\\NelsonRuntimes dans un sous-dossier nomme par l'empreinte du moteur. D'autres applications compatibles peuvent reutiliser ce parent et completer son inventaire de dependances. Desinstaller une ancienne installation privee avant de changer de mode ; le runtime partage survit a la suppression applicative et possede son propre unins\*.exe. 
+
+Le dernier bloc utilise les arguments de deploiement non interactif et cree un nouveau journal. L'alternative -inputFile accepte un fichier UTF-8 commencant par agreeToLicense=yes, puis applicationFolder=chemin-absolu et outputFile=nouveau-journal sur des lignes distinctes. desktopShortcut et startMenuShortcut peuvent etre actives uniquement dans ce fichier ; leur valeur par defaut est false. /PORTABLE=1 desactive toujours les raccourcis globaux. 
 
 Le deuxieme bloc reconstruit aussi l'installateur dans un autre repertoire de sortie et compare son empreinte SHA-256. Avec des entrees inchangees et la meme distribution Inno Setup, les deux installateurs non signes sont identiques octet par octet. Voir les conditions de reproductibilite dans [compiler.package.installer](../compiler/compiler.package.installer.md).
 
@@ -37,7 +38,6 @@ filewrite(entry, 'function hello_install(); disp(''INSTALLER_TUTORIAL_OK''); end
 result = compiler.build.standaloneApplication(entry, ...
   'OutputDir', fullfile(work, 'build'));
 ```
-
 Etape 2
 
 ```matlab
@@ -55,7 +55,6 @@ compiler.package.installer(result, 'Options', options);
 repeatedSetup = fullfile(options.OutputDir, [options.InstallerName, '.exe']);
 asserts.isequal(sha256(setup, '-file'), sha256(repeatedSetup, '-file'));
 ```
-
 Etape 3
 
 ```matlab
@@ -77,10 +76,10 @@ end
 disp(output);
 ```
 
+
 ## 🔗 Voir aussi
 
 [compiler.package.installer](../compiler/compiler.package.installer.md), [compiler.package.InstallerOptions](../compiler/compiler.package.InstallerOptions.md).
-
 <!--
 ## 👤 Auteur
 

@@ -20,6 +20,7 @@ charge des données depuis un fichier .mat dans l'espace de travail de Nelson.
 
 ## 📄 Description
 
+
 <b>loadmat</b> charge des données depuis un fichier .mat vers l'espace de travail de Nelson.
 
 ## 📚 Bibliographie
@@ -27,6 +28,8 @@ charge des données depuis un fichier .mat dans l'espace de travail de Nelson.
 Remerciements à la bibliothèque MATIO (http://sourceforge.net/projects/matio/).
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -46,14 +49,15 @@ B
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](../matio/savemat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

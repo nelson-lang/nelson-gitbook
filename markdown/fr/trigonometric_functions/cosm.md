@@ -16,9 +16,12 @@ Calcule le cosinus matriciel d'une matrice carrée.
 
 ## 📄 Description
 
+
 <b>cosm(x)</b> calcule le cosinus matriciel de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = eye(3, 3);
@@ -27,14 +30,15 @@ A = [1, 2; 3, 4];
 res = cosm(A)
 ```
 
+
 ## 🔗 Voir aussi
 
 [cos](../trigonometric_functions/cos.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

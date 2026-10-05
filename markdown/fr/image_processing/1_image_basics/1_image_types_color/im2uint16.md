@@ -18,7 +18,8 @@ Convertit une image en entier non signe 16 bits.
 
 ## 📄 Description
 
-Convertit une image en entier non signe 16 bits.
+
+Convertit une image en entier non signe 16 bits. 
 
 Pour les images indexees, les entrees entieres sont traitees comme des indices base zero et les entrees double comme des indices base un.
 
@@ -31,17 +32,17 @@ I=reshape(linspace(0,1,20),[5 4]);
 J=im2uint16(I);
 figure; imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('uint16 image');
 ```
-
 <img src="im2uint16_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[im2uint8](../../../image_processing/im2uint8.md), [im2single](../../../image_processing/im2single.md), [im2double](../../../image_processing/im2double.md).
+[im2uint8](../../../image_processing/1_image_basics/1_image_types_color/im2uint8.md), [im2single](../../../image_processing/1_image_basics/1_image_types_color/im2single.md), [im2double](../../../image_processing/1_image_basics/1_image_types_color/im2double.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

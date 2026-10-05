@@ -1,10 +1,10 @@
-# QObject_classname
+# QObject\_classname
 
 Renvoie le nom de classe d'une poignée (handle) QObject.
 
 ## 📝 Syntaxe
 
-- s = QObject_classname(h)
+- s = QObject\_classname(h)
 
 ## 📥 Argument d'entrée
 
@@ -16,9 +16,12 @@ Renvoie le nom de classe d'une poignée (handle) QObject.
 
 ## 📄 Description
 
+
 Renvoie le nom de classe d'une poignée (handle) QObject.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 h1 = QObject_root()
@@ -26,14 +29,15 @@ h1.className
 QObject_classname(h1)
 ```
 
+
 ## 🔗 Voir aussi
 
 [QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

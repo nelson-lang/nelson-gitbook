@@ -11,12 +11,15 @@ Echantillon aleatoire depuis une population.
 
 ## 📄 Description
 
+
 <b>randsample</b> tire des valeurs avec le generateur aleatoire de Nelson. Le tirage pondere est pris en charge avec remise.
 
 ## Fonction(s) utilisée(s)
 
+
     rng
     bootstrp
+  
 
 ## 💡 Exemples
 
@@ -26,7 +29,6 @@ Tirer un echantillon reproductible sans remise.
 rng(10);
 y = randsample(10, 4)
 ```
-
 Tirer un echantillon pondere avec remise.
 
 ```matlab

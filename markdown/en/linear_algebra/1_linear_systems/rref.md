@@ -21,7 +21,8 @@ Gauss-Jordan elimination.
 
 ## 📄 Description
 
-<b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.
+
+<b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>. 
 
 <b>[R, p] = rref(A)</b> returns also the nonzero pivots<b>p</b>.
 
@@ -31,18 +32,21 @@ https://en.wikipedia.org/wiki/Gaussian_elimination
 
 ## 💡 Example
 
+
+
 ```matlab
 A = [magic(4), eye(4)]
 [R, p] = rref(A)
 ```
 
+
 ## 🔗 See also
 
-[rank](../../linear_algebra/rank.md).
+[rank](../../linear_algebra/1_linear_systems/rank.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

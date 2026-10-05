@@ -10,13 +10,16 @@ Silhouette values for clustered data.
 
 ## 📄 Description
 
+
 <b>silhouette</b> computes silhouette values from pairwise distances. Plot handles are returned as an empty array.
 
 ## Used function(s)
 
+
     pdist2
     kmeans
     kmedoids
+  
 
 ## 💡 Examples
 
@@ -27,7 +30,6 @@ X = [0; 1; 10; 11];
 clust = [1; 1; 2; 2];
 s = silhouette(X, clust)
 ```
-
 Compute silhouettes after k-means clustering.
 
 ```matlab

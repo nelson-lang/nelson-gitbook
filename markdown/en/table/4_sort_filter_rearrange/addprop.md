@@ -18,6 +18,7 @@ Add custom table property.
 
 ## 📄 Description
 
+
 <b>addprop</b> adds a custom property under <b>T.Properties.CustomProperties</b>. The custom property type follows table custom properties: <b>'table'</b> or <b>'variable'</b>.
 
 ## 💡 Example
@@ -31,13 +32,14 @@ T.Properties.CustomProperties.Source = 'demo';
 T.Properties.CustomProperties.Source
 ```
 
+
 ## 🔗 See also
 
-[rmprop](../../table/rmprop.md), [table](../../table/table.md).
+[rmprop](../../table/4_sort_filter_rearrange/rmprop.md), [table](../../table/1_create_convert_tables/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,23 +17,27 @@ Densite de probabilite Rayleigh
 
 ## 📄 Description
 
+
 <b>raylpdf</b> evalue les densites Rayleigh element par element.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 2 4];
 y = raylpdf(x, 2);
 ```
 
+
 ## 🔗 Voir aussi
 
-[raylcdf](../../statistics/raylcdf.md), [raylinv](../../statistics/raylinv.md), [raylrnd](../../statistics/raylrnd.md).
+[raylcdf](../../statistics/2_probability_distributions/raylcdf.md), [raylinv](../../statistics/2_probability_distributions/raylinv.md), [raylrnd](../../statistics/2_probability_distributions/raylrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

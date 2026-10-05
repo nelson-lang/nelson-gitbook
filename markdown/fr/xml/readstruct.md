@@ -18,7 +18,8 @@ Lire des données XML comme structure
 
 ## 📄 Description
 
-readstruct lit les éléments XML sous forme de valeurs Nelson. Les attributs sont importés par défaut avec le suffixe 'Attribute'.
+
+readstruct lit les éléments XML sous forme de valeurs Nelson. Les attributs sont importés par défaut avec le suffixe 'Attribute'. 
 
 Les noms XML qui ne sont pas des noms de champs valides sont convertis en noms de champs Nelson valides. Les espaces de noms peuvent être utilisés dans 'StructSelector' au moyen de 'RegisteredNamespaces'.
 
@@ -39,7 +40,6 @@ s.book(1).idAttribute
 s.book(1).title
 s.book(1).year
 ```
-
 Lire un élément XML sélectionné avec un sélecteur XPath.
 
 ```matlab
@@ -54,14 +54,15 @@ book.idAttribute
 book.title
 ```
 
+
 ## 🔗 Voir aussi
 
 [writestruct](../xml/writestruct.md), [xmlread](../xml/xmlread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

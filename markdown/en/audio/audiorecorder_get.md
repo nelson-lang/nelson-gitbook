@@ -1,11 +1,11 @@
-# audiorecorder_get
+# audiorecorder\_get
 
 Get property value from audiorecorder interface.
 
 ## 📝 Syntax
 
 - v = get(h, propertyname)
-- v = audiorecorder_get(h, propertyname)
+- v = audiorecorder\_get(h, propertyname)
 - v = h.propertyname
 
 ## 📥 Input argument
@@ -19,9 +19,12 @@ Get property value from audiorecorder interface.
 
 ## 📄 Description
 
+
 The function returns the value of the property specified in the string, propertyname.
 
 ## 💡 Example
+
+
 
 ```matlab
 recObj = audiorecorder()
@@ -29,15 +32,16 @@ recObj.Running
 
 ```
 
+
 ## 🔗 See also
 
 [audiorecorder_set](../audio/audiorecorder_set.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

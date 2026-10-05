@@ -19,21 +19,26 @@ Rename field names of a struct or struct array.
 
 ## 📄 Description
 
-<b>renameStructField</b> renames the field names of a struct or struct array.
+
+<b>renameStructField</b> renames the field names of a struct or struct array. 
 
 It supports renaming all field names at once or renaming selected field names individually.
 
 ## 💡 Examples
+
+
 
 ```matlab
 date_st = struct('day', 15, 'month' ,'August','year', 1974)
 date_st = renameStructField(date_st, {'Day', 'Month', 'Year'})
 ```
 
+
 ```matlab
 date_st = struct('day', 15, 'month' ,'August','year', 1974)
 date_st = renameStructField(date_st, 'day', 'jour')
 ```
+
 
 ## 🔗 See also
 
@@ -41,9 +46,9 @@ date_st = renameStructField(date_st, 'day', 'jour')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

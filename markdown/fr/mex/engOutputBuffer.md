@@ -19,15 +19,19 @@ Spécifie le tampon de caractères pour la sortie de Nelson
 
 ## 📄 Description
 
-Specify char buffer for Nelson output.
+
+Specify char buffer for Nelson output. 
 
 To turn off output buffering in C, use:<b>engOutputBuffer(ep, NULL, 0);</b>
 
 ## 💡 Exemple
 
+
+
 ```matlab
 edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +39,8 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

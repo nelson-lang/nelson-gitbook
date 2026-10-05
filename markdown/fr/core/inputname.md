@@ -16,9 +16,12 @@ Renvoie le nom d'une variable d'entrée d'une fonction.
 
 ## 📄 Description
 
+
 Renvoie le nom symbolique d'une variable d'entrée donné l'index de l'argument dans la signature d'une fonction.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 function R = getinputname(varargin)
@@ -29,14 +32,15 @@ function R = getinputname(varargin)
 end
 ```
 
+
 ## 🔗 Voir aussi
 
 [nargin](../core/nargin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

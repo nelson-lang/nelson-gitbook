@@ -1,10 +1,16 @@
 # Geometry
 
+
+    
 The Geometry module provides tools for performing geometric transformations and computations in Nelson.
 
+    
 It supports rotation operations in three-dimensional space, convex hulls, Delaunay triangulations, Voronoi diagrams, spatial searches, and scattered data interpolation.
 
+    
 This module is useful for applications in computer graphics, robotics, computational geometry, interpolation, and spatial analysis.
+
+  
 
 ## Functions
 
@@ -27,3 +33,4 @@ This module is useful for applications in computer graphics, robotics, computati
 - [tsearchn](tsearchn.md) - Point location in a triangulation
 - [voronoi](voronoi.md) - Voronoi diagram of planar points
 - [voronoin](voronoin.md) - Voronoi diagram in N dimensions
+

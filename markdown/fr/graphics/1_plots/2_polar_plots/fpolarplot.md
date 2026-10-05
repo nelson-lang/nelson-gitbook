@@ -17,7 +17,8 @@ Trace une fonction en coordonnees polaires.
 
 ## 📄 Description
 
-<b>fpolarplot</b> echantillonne une fonction sur un intervalle d'angles et trace les rayons obtenus en coordonnees polaires. L'objet retourne est un <b>functionline</b>.
+
+<b>fpolarplot</b> echantillonne une fonction sur un intervalle d'angles et trace les rayons obtenus en coordonnees polaires. L'objet retourne est un <b>functionline</b>. 
 
 Les paires nom-valeur peuvent definir les proprietes de ligne et les proprietes de functionline comme <b>MeshDensity</b>.
 
@@ -28,8 +29,8 @@ Tracer une fonction polaire.
 ```matlab
 fpolarplot(@(t) 1 + sin(4*t), [0 2*pi], 'r-');
 ```
-
 <img src="fpolarplot_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

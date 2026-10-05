@@ -19,23 +19,27 @@ Fonction de repartition inverse uniforme continue
 
 ## 📄 Description
 
+
 <b>unifinv</b> calcule les probabilites inverses de queue inferieure de la distribution uniforme continue.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.25 0.5 0.75];
 x = unifinv(p, -1, 1);
 ```
 
+
 ## 🔗 Voir aussi
 
-[unifcdf](../../statistics/unifcdf.md), [unifpdf](../../statistics/unifpdf.md).
+[unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifpdf](../../statistics/2_probability_distributions/unifpdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

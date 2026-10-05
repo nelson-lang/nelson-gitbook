@@ -15,24 +15,28 @@ Checks that value is finite or raise an error.
 
 ## 📄 Description
 
-<b>mustBeFinite</b> checks that value is finite or raise an error.
+
+<b>mustBeFinite</b> checks that value is finite or raise an error. 
 
 Empty values are ignored.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeFinite(1)
 mustBeFinite(Inf)
 ```
 
+
 ## 🔗 See also
 
-[isfinite](../elementary_functions/isfinite.md), [isempty](../types/isempty.md).
+[isfinite](../elementary_functions/7_indexing_dimensions/isfinite.md), [isempty](../types/isempty.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

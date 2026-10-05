@@ -4,15 +4,16 @@ remove a module from Nelson.
 
 ## 📝 Syntax
 
-- removemodule(module_short_name)
+- removemodule(module\_short\_name)
 
 ## 📥 Input argument
 
-- module_short_name - a string: short module's name.
+- module\_short\_name - a string: short module's name.
 
 ## 📄 Description
 
-<b>removemodule</b> remove a module designed by his short name.
+
+<b>removemodule</b> remove a module designed by his short name. 
 
 all core's modules are protected and cannot removed during an nelson's session.
 
@@ -28,13 +29,14 @@ removemodule('module_skeleton')
 ismodule('module_skeleton')
 ```
 
+
 ## 🔗 See also
 
 [ismodule](../modules_manager/ismodule.md), [addmodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

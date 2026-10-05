@@ -24,22 +24,26 @@ Weibull parameter estimates
 
 ## 📄 Description
 
+
 <b>wblfit</b> estimates the parameters of the Weibull distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [phat, pci] = wblfit(x);
 ```
 
+
 ## 🔗 See also
 
-[wbllike](../../statistics/wbllike.md), [wblpdf](../../statistics/wblpdf.md), [wblcdf](../../statistics/wblcdf.md).
+[wbllike](../../statistics/2_probability_distributions/wbllike.md), [wblpdf](../../statistics/2_probability_distributions/wblpdf.md), [wblcdf](../../statistics/2_probability_distributions/wblcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

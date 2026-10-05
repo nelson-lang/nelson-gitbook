@@ -18,9 +18,12 @@ Efface les axes.
 
 ## 📄 Description
 
+
 <b>cla</b> efface les axes courants.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -31,14 +34,15 @@ sleep(5)
 cla
 ```
 
+
 ## 🔗 Voir aussi
 
 [gca](../../../graphics/2_graphics_objects/1_object_management/gca.md), [clf](../../../graphics/2_graphics_objects/1_object_management/clf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -21,7 +21,8 @@ Renvoie true si une methode publique appartient a un objet ou une classe.
 
 ## 📄 Description
 
-<b>ismethod</b> renvoie un logique 1 si la methode est publique pour l'objet ou la classe, et 0 sinon.
+
+<b>ismethod</b> renvoie un logique 1 si la methode est publique pour l'objet ou la classe, et 0 sinon. 
 
 Pour les classes classdef, les methodes privees et protegees ne sont pas exposees comme methodes publiques.
 
@@ -37,15 +38,16 @@ addpath(d);
 tf = ismethod('NelsonHelpIsMethodPoint', 'value')
 ```
 
+
 ## 🔗 Voir aussi
 
 [isprop](../handle/isprop.md), [methods](../handle/methods.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                             |
-| ------- | ------------------------------------------ |
-| 1.0.0   | version initiale                           |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | support des noms de classe classdef ajoute |
 
 <!--

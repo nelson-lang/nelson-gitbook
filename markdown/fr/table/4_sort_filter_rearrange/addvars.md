@@ -22,9 +22,10 @@ Ajoute des variables a une table ou a une timetable.
 
 ## 📄 Description
 
-<b>addvars</b> ajoute une ou plusieurs variables et met a jour <b>T.Properties.VariableNames</b>.
 
-Les nouvelles variables sont ajoutees a la fin par defaut. Utilisez <b>Before</b> ou <b>After</b> pour choisir la position.
+<b>addvars</b> ajoute une ou plusieurs variables et met a jour <b>T.Properties.VariableNames</b>. 
+
+Les nouvelles variables sont ajoutees a la fin par defaut. Utilisez <b>Before</b> ou <b>After</b> pour choisir la position. 
 
 Pour une timetable, les temps des lignes et les proprietes de la timetable sont conserves.
 
@@ -36,7 +37,6 @@ Ajouter une variable a la fin d'une table
 T = table([1; 2], 'VariableNames', {'A'});
 T = addvars(T, [3; 4], 'NewVariableNames', {'B'})
 ```
-
 Ajouter une variable avant une variable existante
 
 ```matlab
@@ -44,14 +44,15 @@ T = table([1; 2], [5; 6], 'VariableNames', {'A', 'C'});
 T = addvars(T, [3; 4], 'NewVariableNames', {'B'}, 'Before', 'C')
 ```
 
+
 ## 🔗 Voir aussi
 
-[table](../../table/table.md), [movevars](../../table/movevars.md), [removevars](../../table/removevars.md).
+[table](../../table/1_create_convert_tables/table.md), [movevars](../../table/4_sort_filter_rearrange/movevars.md), [removevars](../../table/4_sort_filter_rearrange/removevars.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -18,7 +18,8 @@ Verifie qu'une valeur est bidimensionnelle.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value est un tableau bidimensionnel.
+
+L'assertion reussit lorsque value est un tableau bidimensionnel. 
 
 Utiliser asserts.squareMatrix pour les controles de matrice carree.
 
@@ -29,12 +30,12 @@ Matrix value
 ```matlab
 asserts.matrix(ones(2, 2));
 ```
-
 Capture a non-matrix value
 
 ```matlab
 [res, msg] = asserts.matrix(ones(2, 2, 2));
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a non-matrix value
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

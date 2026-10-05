@@ -8,11 +8,13 @@ Modifie la langue utilisée dans Nelson.
 
 ## 📥 Argument d'entrée
 
-- language - une chaîne : 'fr_FR', 'fr_FR' ou d'autres par défaut.
+- language - une chaîne : 'fr\_FR', 'fr\_FR' ou d'autres par défaut.
 
 ## 📄 Description
 
+
 <b>setlanguage</b> modifie la langue utilisée par Nelson et enregistre ce changement pour les exécutions ultérieures de Nelson.
+
 
 ## 🔗 Voir aussi
 
@@ -20,8 +22,8 @@ Modifie la langue utilisée dans Nelson.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

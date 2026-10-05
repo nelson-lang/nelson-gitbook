@@ -25,25 +25,30 @@ Terminal shell en mode GUI
 
 ## 📄 Description
 
-<code>terminal</code> ouvre un processus shell dans la GUI Nelson et retourne un objet handle.
 
-L'objet terminal prend en charge les proprietes <code>Name</code>, <code>Shell</code>, <code>Place</code>, <code>WindowStyle</code>, <code>Running</code>, <code>ExitCode</code>, <code>ProcessId</code> et <code>Theme</code>.
+<code>terminal</code> ouvre un processus shell dans la GUI Nelson et retourne un objet handle. 
 
-Options du constructeur :
+L'objet terminal prend en charge les proprietes <code>Name</code>, <code>Shell</code>, <code>Place</code>, <code>WindowStyle</code>, <code>Running</code>, <code>ExitCode</code>, <code>ProcessId</code> et <code>Theme</code>. 
 
-| Option         | Valeurs                                  | Defaut                  | Description                                                                                                                                |
-| -------------- | ---------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Name           | scalaire string ou vecteur de caracteres | Terminal                | Titre du terminal. Cette propriete peut etre modifiee apres la creation.                                                                   |
-| WindowStyle    | docked, normal                           | docked                  | docked cree un terminal ancre dans la fenetre principale Nelson. normal cree une fenetre de terminal flottante.                            |
-| Shell          | executable shell                         | defaut de la plateforme | Si la valeur est vide, Nelson utilise %COMSPEC% avec cmd.exe en secours sur Windows, et $SHELL avec /bin/sh en secours sur Linux et macOS. |
-| Theme          | auto, light, dark                        | auto                    | Theme de couleurs du terminal. Cette propriete peut etre modifiee apres la creation.                                                       |
-| StartupCommand | scalaire string ou vecteur de caracteres | chaine vide             | Commande envoyee au shell apres son demarrage.                                                                                             |
+Options du constructeur : 
 
-Les proprietes <code>Name</code> et <code>Theme</code> peuvent etre modifiees apres la creation. Les autres proprietes d'etat du terminal sont en lecture seule.
+| Option | Valeurs | Defaut | Description | 
+| --- | --- | --- | --- | 
+| Name | scalaire string ou vecteur de caracteres | Terminal | Titre du terminal. Cette propriete peut etre modifiee apres la creation. | 
+| WindowStyle | docked, normal | docked | docked cree un terminal ancre dans la fenetre principale Nelson. normal cree une fenetre de terminal flottante. | 
+| Shell | executable shell | defaut de la plateforme | Si la valeur est vide, Nelson utilise %COMSPEC% avec cmd.exe en secours sur Windows, et $SHELL avec /bin/sh en secours sur Linux et macOS. | 
+| Theme | auto, light, dark | auto | Theme de couleurs du terminal. Cette propriete peut etre modifiee apres la creation. | 
+| StartupCommand | scalaire string ou vecteur de caracteres | chaine vide | Commande envoyee au shell apres son demarrage. | 
+
+ 
+
+Les proprietes <code>Name</code> et <code>Theme</code> peuvent etre modifiees apres la creation. Les autres proprietes d'etat du terminal sont en lecture seule. 
 
 La propriete <code>Place</code> retourne <code>nelson</code> dans cette version.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 
@@ -61,6 +66,7 @@ delete(t);
 
 ```
 
+
 ```matlab
 
 terminal.closeAll();
@@ -74,6 +80,7 @@ delete(dockedTerminal);
 delete(floatingTerminal);
 
 ```
+
 
 ```matlab
 
@@ -94,6 +101,7 @@ delete(t);
 
 ```
 
+
 ```matlab
 
 terminal.closeAll();
@@ -106,14 +114,15 @@ terminal.closeAll();
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [commandhistory](../gui/commandhistory.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -8,13 +8,16 @@ Convert factor settings to a design matrix.
 
 ## 📄 Description
 
+
 <b>x2fx</b> creates a design matrix with a constant column and terms requested by the model specification.
 
 ## Used function(s)
 
+
     candgen
     rowexch
     cordexch
+  
 
 ## 💡 Examples
 
@@ -25,7 +28,6 @@ X = [1 2; 3 4];
 Dlinear = x2fx(X, 'linear')
 Dquadratic = x2fx(X, 'quadratic')
 ```
-
 Use an explicit model specification matrix.
 
 ```matlab

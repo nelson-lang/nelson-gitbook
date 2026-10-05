@@ -17,17 +17,20 @@ Hue-saturation-value colormap array.
 
 ## 📄 Description
 
+
 <b>hsv</b> returns a colormap that varies the hue around the color wheel.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('hsv');
 ```
-
 <img src="hsv.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -35,9 +38,9 @@ colormap('hsv');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

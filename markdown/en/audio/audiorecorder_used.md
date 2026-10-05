@@ -1,10 +1,10 @@
-# audiorecorder_used
+# audiorecorder\_used
 
 Returns the current valid audiorecorder handles.
 
 ## 📝 Syntax
 
-- r = audiorecorder_used()
+- r = audiorecorder\_used()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns the current valid audiorecorder handles.
 
 ## 📄 Description
 
+
 Returns the current valid audiorecorder handles.
 
 ## 💡 Example
 
+
+
 ```matlab
 used = audiorecorder_used()
 ```
+
 
 ## 🔗 See also
 
@@ -26,9 +30,9 @@ used = audiorecorder_used()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

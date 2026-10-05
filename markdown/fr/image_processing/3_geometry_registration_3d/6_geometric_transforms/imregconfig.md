@@ -17,6 +17,7 @@ Cree des structures d'optimiseur et de metrique pour le recalage d'images.
 
 ## 📄 Description
 
+
 imregconfig retourne des structures legeres d'optimiseur et de metrique pour le recalage d'images. Ces structures sont des valeurs Nelson ordinaires et peuvent etre modifiees avant imregtform ou imregister.
 
 ## 💡 Exemple
@@ -29,14 +30,15 @@ optimizer.AngleSearch = 10;
 optimizer.ShearSearch = 0.1;
 ```
 
+
 ## 🔗 Voir aussi
 
-[imregtform](../../../image_processing/imregtform.md), [imregister](../../../image_processing/imregister.md).
+[imregtform](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregtform.md), [imregister](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregister.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

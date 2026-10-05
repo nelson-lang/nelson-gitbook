@@ -19,18 +19,22 @@ Set structure field contents.
 
 ## 📄 Description
 
-Set the contents of the specified field to the value.
 
-Alternative syntax: S.(fieldname) = fieldvalue
+Set the contents of the specified field to the value. 
+
+Alternative syntax: S.(fieldname) = fieldvalue 
 
 Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue
 
 ## 💡 Example
 
+
+
 ```matlab
 A = {};
 setfield(A, 'vv', 3)
 ```
+
 
 ## 🔗 See also
 
@@ -38,7 +42,7 @@ setfield(A, 'vv', 3)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

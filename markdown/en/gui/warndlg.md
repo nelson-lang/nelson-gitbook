@@ -19,6 +19,7 @@ Creates a warning dialog box.
 
 ## 📄 Description
 
+
 warndlg creates a warning message dialog and returns a graphics figure handle.
 
 ## 💡 Examples
@@ -29,7 +30,6 @@ Create a warning dialog.
 f = warndlg('Check the input value.', 'Warning', 'non-modal');
 drawnow();
 ```
-
 <img src="warndlg_example.svg" align="middle"/>
 Create a warning dialog with several lines.
 
@@ -38,14 +38,15 @@ h = warndlg({'Input is empty.', 'Default values will be used.'}, 'Warning', 'non
 close(h)
 ```
 
+
 ## 🔗 See also
 
 [msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description           |
-| ------- | ------------------------ |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Updated dialog API help. |
 
 <!--

@@ -17,13 +17,17 @@ Close Nelson engine session
 
 ## 📄 Description
 
+
 engClose closes engine session and terminates the connection.
 
 ## 💡 Example
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

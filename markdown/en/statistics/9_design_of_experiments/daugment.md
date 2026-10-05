@@ -9,14 +9,17 @@ Augment a D-optimal design.
 
 ## 📄 Description
 
+
 <b>daugment</b> augments an existing design by selecting additional rows from generated candidates.
 
 ## Used function(s)
+
 
     candgen
     candexch
     rowexch
     rng
+  
 
 ## 💡 Examples
 
@@ -29,7 +32,6 @@ dCE = [-1 -1];
 dCE2
 X
 ```
-
 Augment a design with bounded candidate levels.
 
 ```matlab

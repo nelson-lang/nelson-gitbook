@@ -12,15 +12,19 @@ Command separator for current operating system.
 
 ## 📄 Description
 
-<b>cmdsep</b> returns the command separator for current operating system.
+
+<b>cmdsep</b> returns the command separator for current operating system. 
 
 This function is used by Nelson to build command lines for unix and dos operating systems.
 
 ## 💡 Example
 
+
+
 ```matlab
 unix("cd c:/ " + cmdsep() + " nelson")
 ```
+
 
 ## 🔗 See also
 
@@ -28,9 +32,9 @@ unix("cd c:/ " + cmdsep() + " nelson")
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.11.0  | initial version |
+| 1.11.0   | initial version |
 
 <!--
 ## 👤 Author

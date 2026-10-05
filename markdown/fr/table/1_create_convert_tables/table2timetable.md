@@ -18,9 +18,12 @@ Convertir une table en timetable.
 
 ## 📄 Description
 
+
 <b>table2timetable</b> convertit une table en timetable et attribue des temps aux lignes de sortie.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 T = table([1; 2; 3], 'VariableNames', {'A'});
@@ -28,14 +31,15 @@ t = datetime(2024, 1, 1) + days(0:2)';
 TT = table2timetable(T, 'RowTimes', t)
 ```
 
+
 ## 🔗 Voir aussi
 
-[timetable2table](../../table/timetable2table.md), [timetable](../../table/timetable.md).
+[timetable2table](../../table/1_create_convert_tables/timetable2table.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

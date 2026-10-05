@@ -17,13 +17,17 @@ Logarithme de la fonction bêta
 
 ## 📄 Description
 
+
 <b>betaln</b> calcule le logarithme naturel de la fonction bêta, log(beta(Z,W)), sans les dépassements que peut provoquer un calcul direct pour de grands Z et W.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 L = betaln(10, 20)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ L = betaln(10, 20)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

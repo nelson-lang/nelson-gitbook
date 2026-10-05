@@ -20,6 +20,7 @@ Display particle markers along stream paths.
 
 ## 📄 Description
 
+
 <b>streamparticles</b> draws markers at sampled positions from precomputed streamline vertices.
 
 ## 💡 Examples
@@ -30,7 +31,6 @@ Display stream particles.
 vertices = {[0 0; 0.5 0.2; 1 0.5; 1.5 0.8]};
 streamparticles(vertices);
 ```
-
 <img src="streamparticles_1.svg" align="middle"/>
 Display particles from precomputed streamline vertices.
 
@@ -38,8 +38,8 @@ Display particles from precomputed streamline vertices.
 vertices = {[0 0; 0.5 0.2; 1 0.5; 1.5 0.8]};
 streamparticles(vertices, 4, 'MarkerFaceColor', 'red');
 ```
-
 <img src="streamparticles_2.svg" align="middle"/>
+
 
 ## 🔗 See also
 

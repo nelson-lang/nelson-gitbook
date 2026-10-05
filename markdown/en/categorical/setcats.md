@@ -17,7 +17,8 @@ Set the category list of a categorical array.
 
 ## 📄 Description
 
-<b>setcats</b> replaces the category list of a categorical array.
+
+<b>setcats</b> replaces the category list of a categorical array. 
 
 Elements whose previous category is not present in <b>newCategories</b> become undefined. Categories in <b>newCategories</b> that were not previously present are added as unused categories.
 
@@ -28,12 +29,12 @@ Keep only selected categories.
 ```matlab
 A = categorical({'red','blue','green'}); B = setcats(A, {'red','blue'}); isundefined(B)
 ```
-
 Add an unused category through a complete category list.
 
 ```matlab
 A = categorical({'red','blue'}); B = setcats(A, {'red','blue','green'}); categories(B)
 ```
+
 
 ## 🔗 See also
 
@@ -41,7 +42,7 @@ A = categorical({'red','blue'}); B = setcats(A, {'red','blue','green'}); categor
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -16,13 +16,17 @@ Wrap angle in radians to [-pi, pi].
 
 ## 📄 Description
 
+
 <b>wrapToPi(alpha)</b> wraps angles in radians to the interval <b>[-pi, pi]</b>. Positive multiples of pi map to pi, negative multiples map to -pi.
 
 ## 💡 Example
 
+
+
 ```matlab
 wrapToPi([4 -4])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ wrapToPi([4 -4])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

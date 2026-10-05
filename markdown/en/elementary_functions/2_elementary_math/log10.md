@@ -16,24 +16,28 @@ Common logarithm (base 10).
 
 ## 📄 Description
 
-<b>log10</b> computes common logarithm (base 10).
+
+<b>log10</b> computes common logarithm (base 10). 
 
 For negative real and complex values of M,<b>log10</b> function returns complex values.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = log10(x)
 ```
 
+
 ## 🔗 See also
 
-[log](../../elementary_functions/log.md).
+[log](../../elementary_functions/2_elementary_math/log.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

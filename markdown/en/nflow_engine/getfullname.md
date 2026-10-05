@@ -16,29 +16,33 @@ Return the full path of a block or model from its handle.
 
 ## 📄 Description
 
-<b>getfullname</b> returns the full path that identifies the block or model named by a handle. A block handle yields <b>'model/BlockName'</b>; a model handle yields <b>'model'</b>.
 
-It is the inverse of <b>getSimulinkBlockHandle</b>. A char path is already a full name and is returned unchanged. A cell array of handles yields a cell array of paths of the same shape.
+<b>getfullname</b> returns the full path that identifies the block or model named by a handle. A block handle yields <b>'model/BlockName'</b>; a model handle yields <b>'model'</b>. 
+
+It is the inverse of <b>getNFlowBlockHandle</b>. A char path is already a full name and is returned unchanged. A cell array of handles yields a cell array of paths of the same shape. 
 
 An unknown handle raises an error.
 
 ## 💡 Example
 
+
+
 ```matlab
 new_system('demo');
 add_block('nflow/math/gain', 'demo/Gain');
-h = getSimulinkBlockHandle('demo/Gain');
+h = getNFlowBlockHandle('demo/Gain');
 path = getfullname(h)
 bdclose('demo');
 ```
 
+
 ## 🔗 See also
 
-[getSimulinkBlockHandle](../nflow_engine/getSimulinkBlockHandle.md), [get_param](../nflow_engine/get_param.md), [find_system](../nflow_engine/find_system.md), [bdroot](../nflow_engine/bdroot.md).
+[getNFlowBlockHandle](../nflow_engine/getNFlowBlockHandle.md), [get_param](../nflow_engine/get_param.md), [find_system](../nflow_engine/find_system.md), [bdroot](../nflow_engine/bdroot.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

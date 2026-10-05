@@ -16,7 +16,8 @@ Restreindre une classe à des instances scalaires.
 
 ## 📄 Description
 
-Dérivez de <b>nelson.mixin.Scalar</b> pour déclarer qu'une classe ne peut avoir que des instances scalaires. Concaténer des instances de la classe en un tableau non scalaire, avec <b>[a b]</b> ou <b>[a; b]</b>, lève une erreur d'identifiant <b>Nelson:class:concatenationScalar</b>.
+
+Dérivez de <b>nelson.mixin.Scalar</b> pour déclarer qu'une classe ne peut avoir que des instances scalaires. Concaténer des instances de la classe en un tableau non scalaire, avec <b>[a b]</b> ou <b>[a; b]</b>, lève une erreur d'identifiant <b>Nelson:class:concatenationScalar</b>. 
 
 Utilisez ce mixin pour des objets représentant une entité unique et pour lesquels un tableau d'objets n'a pas de sens.
 
@@ -33,14 +34,15 @@ end
 % a = [Config(), Config()]   % erreur : les objets ne peuvent être que scalaires
 ```
 
+
 ## 🔗 Voir aussi
 
 [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

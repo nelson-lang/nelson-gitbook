@@ -22,14 +22,17 @@ Bootstrap sampling.
 
 ## 📄 Description
 
+
 <b>bootstrp</b> draws bootstrap samples using Nelson's random generator and applies a statistic function to each sample.
 
 ## Used function(s)
+
 
     bootci
     jackknife
     randsample
     rng
+  
 
 ## 💡 Example
 

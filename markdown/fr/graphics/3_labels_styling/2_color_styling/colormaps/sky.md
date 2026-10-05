@@ -17,17 +17,20 @@ Table de couleurs 'sky'.
 
 ## 📄 Description
 
+
 <b>sky</b> retourne la table de couleurs avec des couleurs de ciel.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('sky');
 ```
-
 <img src="sky.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('sky');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

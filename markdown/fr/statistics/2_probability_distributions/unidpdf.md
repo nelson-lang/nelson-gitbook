@@ -17,19 +17,23 @@ Probabilites de loi uniforme discrete
 
 ## 📄 Description
 
+
 <b>unidpdf</b> calcule les probabilites de la loi uniforme discrete sur les entiers de 1 a <b>n</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = 0:6;
 y = unidpdf(x, 5);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

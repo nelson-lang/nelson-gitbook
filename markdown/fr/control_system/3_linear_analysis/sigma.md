@@ -20,21 +20,25 @@ Reponse en valeurs singulieres d'un modele LTI.
 
 ## 📄 Description
 
+
 <b>sigma</b> calcule les valeurs singulieres de la reponse frequentielle.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 sys = tf(2, [1 1]); [sv, w] = sigma(sys, [1 2 4])
 ```
 
+
 ## 🔗 Voir aussi
 
-[freqresp](../../control_system/freqresp.md), [bode](../../control_system/bode.md).
+[freqresp](../../control_system/3_linear_analysis/freqresp.md), [bode](../../control_system/3_linear_analysis/bode.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

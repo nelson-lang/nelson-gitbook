@@ -18,22 +18,26 @@ Beta inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>betainv</b> computes inverse lower-tail beta probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = betainv(p, 2, 5);
 ```
 
+
 ## 🔗 See also
 
-[betacdf](../../statistics/betacdf.md), [betapdf](../../statistics/betapdf.md).
+[betacdf](../../statistics/2_probability_distributions/betacdf.md), [betapdf](../../statistics/2_probability_distributions/betapdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

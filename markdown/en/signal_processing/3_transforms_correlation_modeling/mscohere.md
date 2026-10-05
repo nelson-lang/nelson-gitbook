@@ -24,9 +24,12 @@ Magnitude-squared coherence estimate.
 
 ## 📄 Description
 
+
 <b>mscohere</b> estimates normalized linear correlation in the frequency domain.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Magnitude-squared coherence estimate.
 
 ```
 
+
 ## 🔗 See also
 
-[cpsd](../../signal_processing/cpsd.md), [tfestimate](../../signal_processing/tfestimate.md).
+[cpsd](../../signal_processing/3_transforms_correlation_modeling/cpsd.md), [tfestimate](../../signal_processing/3_transforms_correlation_modeling/tfestimate.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

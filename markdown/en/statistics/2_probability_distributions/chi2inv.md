@@ -17,22 +17,26 @@ Chi-square inverse cumulative distribution function
 
 ## 📄 Description
 
+
 <b>chi2inv</b> computes inverse lower-tail chi-square probabilities.
 
 ## 💡 Example
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = chi2inv(p, 4);
 ```
 
+
 ## 🔗 See also
 
-[chi2cdf](../../statistics/chi2cdf.md), [chi2pdf](../../statistics/chi2pdf.md).
+[chi2cdf](../../statistics/2_probability_distributions/chi2cdf.md), [chi2pdf](../../statistics/2_probability_distributions/chi2pdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

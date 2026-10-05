@@ -15,15 +15,17 @@ Inverse tangent in degrees.
 - res - a numeric value
 
 ## 📄 Description
-
 <b>atand</b> computes the inverse tangent in degrees for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-50 -20 0 20 50];
 y = atand(x)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +33,7 @@ y = atand(x)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,14 +16,18 @@ Cosécante hyperbolique.
 
 ## 📄 Description
 
+
 <b>csch</b> calcule la cosécante hyperbolique pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = csch(X)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ R = csch(X)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

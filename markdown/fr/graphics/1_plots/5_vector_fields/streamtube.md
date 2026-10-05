@@ -12,7 +12,8 @@ Afficher des chemins de courant avec un style tube.
 
 ## 📄 Description
 
-<b>streamtube</b> affiche des chemins de courant 3-D sous forme de surfaces tube.
+
+<b>streamtube</b> affiche des chemins de courant 3-D sous forme de surfaces tube. 
 
 <b>streamtube(vertices)</b> utilise des sommets de lignes de courant pre-calcules. Les handles retournes sont des objets surface.
 
@@ -25,8 +26,8 @@ t = 0:.15:2;
 vertices = {[cos(t)' sin(t)' t']};
 streamtube(vertices);
 ```
-
 <img src="streamtube_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

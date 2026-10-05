@@ -16,14 +16,18 @@ Renvoie vrai si la variable var est un objet handle.
 
 ## 📄 Description
 
+
 <b>ishandle</b> renvoie 1 logique (vrai) si l'argument est un objet handle et 0 logique (faux) sinon.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = 3;
 res = ishandle(A)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ res = ishandle(A)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

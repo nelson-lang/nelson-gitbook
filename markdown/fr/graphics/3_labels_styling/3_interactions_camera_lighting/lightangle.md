@@ -11,9 +11,12 @@ Cree ou positionne une lumiere a partir d'angles.
 
 ## 📄 Description
 
+
 <b>lightangle</b> convertit un azimut et une elevation en position de lumiere.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -23,8 +26,8 @@ material('shiny');
 view(35, 28);
 
 ```
-
 <img src="lightangle_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -32,8 +35,8 @@ view(35, 28);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

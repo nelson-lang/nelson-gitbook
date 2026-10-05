@@ -22,9 +22,12 @@ GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...).
 
 ## 📄 Description
 
+
 GÃ©nÃ¨re des signaux de test pÃ©riodiques ou non (par ex. carrÃ©, impulsion, bruit) pour la simulation de rÃ©ponses temporelles.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -58,17 +61,17 @@ plot(t, u)
 title('tan')
 
 ```
-
 <img src="gensig.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[lsim](../../control_system/lsim.md).
+[lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

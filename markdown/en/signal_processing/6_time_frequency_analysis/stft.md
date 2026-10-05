@@ -26,9 +26,12 @@ Short-time Fourier transform.
 
 ## 📄 Description
 
+
 <b>stft</b> splits the input vector into overlapping windowed frames and computes one FFT per frame. The output can be centered, two-sided, or one-sided.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -36,13 +39,14 @@ Short-time Fourier transform.
 
 ```
 
+
 ## 🔗 See also
 
-[istft](../../signal_processing/istft.md), [spectrogram](../../signal_processing/spectrogram.md).
+[istft](../../signal_processing/6_time_frequency_analysis/istft.md), [spectrogram](../../signal_processing/6_time_frequency_analysis/spectrogram.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -17,17 +17,21 @@ Read HDF5 data set.
 
 ## 📄 Description
 
-<b>h5read</b> reads data set in <b>location</b> from the HDF5 file.
+
+<b>h5read</b> reads data set in <b>location</b> from the HDF5 file. 
 
 If <b>location</b> identifies a Nelson object group, <b>h5read</b> reconstructs the stored legacy class object or classdef value/handle object.
 
 ## 💡 Examples
+
+
 
 ```matlab
 h5_directory = [modulepath('hdf5','tests'), '/h5'];
 double_data = [h5_directory, '/h5ex_t_float.h5'];
 R = h5read(double_data,'/DS1')
 ```
+
 
 ```matlab
 h5filename = [tempdir(), 'doc_h5read_class.h5'];
@@ -41,15 +45,16 @@ R.r
 R.i
 ```
 
+
 ## 🔗 See also
 
 [h5write](../hdf5/h5write.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                  |
-| ------- | --------------------------------------------------------------- |
-| 1.0.0   | initial version                                                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | Nelson class objects can be reconstructed from object metadata. |
 
 <!--

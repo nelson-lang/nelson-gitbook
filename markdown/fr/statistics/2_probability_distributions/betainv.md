@@ -18,23 +18,27 @@ Fonction de repartition inverse beta
 
 ## 📄 Description
 
+
 <b>betainv</b> calcule les probabilites inverses de queue inferieure beta.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 p = [0.025 0.5 0.975];
 x = betainv(p, 2, 5);
 ```
 
+
 ## 🔗 Voir aussi
 
-[betacdf](../../statistics/betacdf.md), [betapdf](../../statistics/betapdf.md).
+[betacdf](../../statistics/2_probability_distributions/betacdf.md), [betapdf](../../statistics/2_probability_distributions/betapdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

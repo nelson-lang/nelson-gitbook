@@ -19,6 +19,7 @@ Create toggle button in a button group.
 
 ## 📄 Description
 
+
 <b>tb = uitogglebutton(bg)</b> creates a toggle button inside a uibuttongroup with exclusive selection. Properties: <b>Value</b>, <b>Text</b>, <b>Icon</b>, <b>IconAlignment</b>, alignments, <b>BackgroundColor</b>, fonts.
 
 ## 💡 Examples
@@ -33,7 +34,6 @@ tb2 = uitogglebutton(bg, 'Text', 'B', 'Position', [125 70 70 30]);
 tb2.Value = true;
 drawnow();
 ```
-
 <img src="uitogglebutton_example.svg" align="middle"/>
 uitogglebutton
 
@@ -46,13 +46,14 @@ tb2 = uitogglebutton(bg, 'Text', 'B');
 
 ```
 
+
 ## 🔗 See also
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -1,12 +1,19 @@
 # Message Passing Interface
 
+
+    
 In the world of parallel computing, the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.
 
+    
 This module provides functions to initialize, manage, and finalize MPI environments, as well as to perform communication between processes, both point-to-point and collective.
 
+    
 It enables Nelson programs to run efficiently on distributed-memory systems and clusters.
 
+    
 Note: MPI support is not available on Windows on ARM64 (woa64) architecture.
+
+  
 
 ## Functions
 
@@ -32,3 +39,4 @@ Note: MPI support is not available on Windows on ARM64 (woa64) architecture.
 - [MPI_Reduce](MPI_Reduce.md) - Reduces values on all processes to a single value.
 - [MPI_Send](MPI_Send.md) - Performs a blocking send.
 - [mpiexec](mpiexec.md) - Run an MPI script.
+

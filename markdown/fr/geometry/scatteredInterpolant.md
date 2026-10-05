@@ -14,6 +14,7 @@ Objet d'interpolation de donnees dispersees
 
 ## 📄 Description
 
+
 <b>scatteredInterpolant</b> stocke des points et valeurs disperses pour des requetes d'interpolation repetees.
 
 ## 💡 Exemple
@@ -27,14 +28,15 @@ F = scatteredInterpolant(P, V);
 Vq = evaluate(F, [0.25 0.25])
 ```
 
+
 ## 🔗 Voir aussi
 
 [griddata](../geometry/griddata.md), [delaunayTriangulation](../geometry/delaunayTriangulation.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | Version initiale. |
 
 <!--

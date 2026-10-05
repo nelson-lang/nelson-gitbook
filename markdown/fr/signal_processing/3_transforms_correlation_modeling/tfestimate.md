@@ -24,9 +24,12 @@ Estimation de fonction de transfert.
 
 ## 📄 Description
 
+
 <b>tfestimate</b> estime une reponse frequentielle a partir de signaux d'entree et de sortie.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Estimation de fonction de transfert.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[cpsd](../../signal_processing/cpsd.md), [mscohere](../../signal_processing/mscohere.md).
+[cpsd](../../signal_processing/3_transforms_correlation_modeling/cpsd.md), [mscohere](../../signal_processing/3_transforms_correlation_modeling/mscohere.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

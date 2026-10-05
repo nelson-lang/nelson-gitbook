@@ -29,15 +29,18 @@ Find Non-zero Elements
 
 ## 📄 Description
 
-<b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>.
 
-<b>find(M, Inf)</b> returns all nonzero indices and can be combined with the direction argument.
+<b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>. 
 
-For sparse input, <b>find</b> accepts double, single, logical, complex double, and complex single sparse matrices. Stored zero values are ignored; only entries whose value is actually nonzero are returned.
+<b>find(M, Inf)</b> returns all nonzero indices and can be combined with the direction argument. 
+
+For sparse input, <b>find</b> accepts double, single, logical, complex double, and complex single sparse matrices. Stored zero values are ignored; only entries whose value is actually nonzero are returned. 
 
 With three outputs, <b>V</b> keeps the value class of the input sparse matrix, including single and logical values.
 
 ## 💡 Examples
+
+
 
 ```matlab
 M = rand(4, 3, 5);
@@ -45,25 +48,28 @@ M = rand(4, 3, 5);
 M(R(1),C(1),V(1))
 ```
 
+
 ```matlab
 K = find([0 2 0 3], Inf, 'LAST')
 ```
+
 
 ```matlab
 S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
 [R, C, V] = find(S)
 ```
 
+
 ## 🔗 See also
 
-[strfind](../../string/strfind.md), [sparse](../../sparse/sparse.md), [nonzeros](../../sparse/nonzeros.md).
+[strfind](../../string/3_find_replace/strfind.md), [sparse](../../sparse/sparse.md), [nonzeros](../../sparse/nonzeros.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                    |
-| ------- | ------------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | extended sparse single and complex single support |
-| 1.0.0   | initial version                                   |
+| 1.0.0   | initial version |
 
 <!--
 ## 👤 Author

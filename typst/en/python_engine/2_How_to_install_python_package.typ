@@ -1,0 +1,56 @@
+#import "nelson_help.typ": *
+
+= How to install python package <python_engine:2_How_to_install_python_package>
+
+
+
+== Description
+
+Nelson can use Python packages from Nelson workflows.
+
+ Installing Python packages makes libraries for data analysis, machine learning, and scientific computing available from Nelson.
+
+ This help page describes how to install Python packages from Nelson.
+
+ 
+
+ Tips and Considerations:
+
+ 
+
+ - Package Availability: Ensure that the Python package you intend to install is available on the Python Package Index (PyPI) or another compatible repository.
+
+ - Dependencies: Some Python packages may have dependencies on other packages. Make sure to install any required dependencies beforehand.
+
+ - Version Compatibility: Check the compatibility of the package with your current Python environment and Nelson version to avoid compatibility issues.
+
+ - Virtual Environments: Consider using virtual environments within Nelson to isolate package installations and manage dependencies for different projects.
+
+ - Permission Rights: When installing packages that require write access to the Python directory, ensure that you have the necessary permissions. On some systems, administrative privileges may be required to install packages globally. If you encounter permission errors, consider using a virtual environment or contacting your system administrator for assistance.
+
+
+== Examples
+
+Get info from the pyenv environment:
+
+``````matlab
+pe = pyenv
+``````
+
+Construct the command to install the package:
+
+``````matlab
+package_to_install = "scipy";
+command_to_install = '"' + pe.Executable +  '"' + " -m pip install " + package_to_install;
+``````
+
+Construct the command to install the package:
+
+``````matlab
+[status, msg] = system(command_to_install);
+``````
+
+
+== See also
+
+#nlink(<os_functions:system>)[system];, #nlink(<python_engine:pyenv>)[pyenv];.

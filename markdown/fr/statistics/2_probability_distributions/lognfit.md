@@ -24,23 +24,27 @@ Estimations des parametres lognormaux
 
 ## 📄 Description
 
+
 <b>lognfit</b> estime les parametres de la distribution lognormale.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0.5 1 2 3 5 8];
 [phat, pci] = lognfit(x);
 ```
 
+
 ## 🔗 Voir aussi
 
-[lognlike](../../statistics/lognlike.md), [lognpdf](../../statistics/lognpdf.md), [logncdf](../../statistics/logncdf.md).
+[lognlike](../../statistics/2_probability_distributions/lognlike.md), [lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [logncdf](../../statistics/2_probability_distributions/logncdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

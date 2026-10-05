@@ -16,17 +16,20 @@ Charge une bibliothèque dynamique
 
 ## 📄 Description
 
-<b>dlopen</b> charge une bibliothèque dynamique.
 
-<b>dlopen</b> renvoie un handle <b>dllib</b> possédant une propriété <b>Path</b>.
+<b>dlopen</b> charge une bibliothèque dynamique. 
 
-Les méthodes <b>get</b>, <b>ismethod</b>, <b>isprop</b>,<b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>,<b>ne</b>, <b>isequal</b>, <b>horzcat</b>,<b>vertcat</b> sont surchargées pour le type <b>dllib</b>.
+<b>dlopen</b> renvoie un handle <b>dllib</b> possédant une propriété <b>Path</b>. 
 
-La bibliothèque est d'abord recherchée dans NELSON_LIBRARY_PATH puis dans PATH sous Windows ou LD_LIBRARY_PATH / DYLD_LIBRARY_PATH sur Linux/MacOS.
+Les méthodes <b>get</b>, <b>ismethod</b>, <b>isprop</b>,<b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>,<b>ne</b>, <b>isequal</b>, <b>horzcat</b>,<b>vertcat</b> sont surchargées pour le type <b>dllib</b>. 
 
-Le chemin NELSON_LIBRARY_PATH peut être modifié avec <b>setenv</b>.
+La bibliothèque est d'abord recherchée dans NELSON\_LIBRARY\_PATH puis dans PATH sous Windows ou LD\_LIBRARY\_PATH / DYLD\_LIBRARY\_PATH sur Linux/MacOS. 
+
+Le chemin NELSON\_LIBRARY\_PATH peut être modifié avec <b>setenv</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 path_1 = modulepath('dynamic_link', 'builtin');
@@ -37,14 +40,15 @@ isvalid(lib1)
 clear lib1
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlclose](../dynamic_link/dlclose.md), [dllibisloaded](../dynamic_link/dllibisloaded.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -24,9 +24,12 @@ Extrait ou cree les diagonales d'une matrice sparse.
 
 ## 📄 Description
 
+
 <b>spdiags</b> extrait les diagonales stockees d'une matrice, remplace des diagonales selectionnees, ou construit une matrice sparse a partir de colonnes de diagonales.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = sparse([1 0 2; 0 3 0; 4 0 5]);
@@ -35,14 +38,15 @@ R = spdiags([10; 20; 30], 0, A)
 S = spdiags(B, d, 3, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
 [diag](../constructors_functions/diag.md), [sparse](../sparse/sparse.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

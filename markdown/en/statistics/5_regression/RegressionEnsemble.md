@@ -20,14 +20,17 @@ Regression ensemble model.
 
 ## 📄 Description
 
-RegressionEnsemble stores a regression model that combines multiple weak learners.
+
+RegressionEnsemble stores a regression model that combines multiple weak learners. 
 
 Create this object with fitrensemble. Use predict to aggregate learner responses for new observations.
 
 ## Used function(s)
 
+
     fitrensemble
     predict
+  
 
 ## 💡 Example
 
@@ -40,13 +43,14 @@ mdl = fitrensemble(X, y, 'NumLearningCycles', 3);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitrensemble](../../statistics/fitrensemble.md).
+[predict](../../statistics/5_regression/predict.md), [fitrensemble](../../statistics/5_regression/fitrensemble.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

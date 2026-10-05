@@ -1,10 +1,10 @@
-# get_param
+# get\_param
 
 Interroge un paramètre de modèle ou de bloc.
 
 ## 📝 Syntaxe
 
-- value = get_param(object, name)
+- value = get\_param(object, name)
 
 ## 📥 Argument d'entrée
 
@@ -16,9 +16,12 @@ Interroge un paramètre de modèle ou de bloc.
 
 ## 📄 Description
 
-<b>get_param</b> interroge un paramètre de modèle ou de bloc.
+
+<b>get\_param</b> interroge un paramètre de modèle ou de bloc.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 new_system('demo');
@@ -28,13 +31,14 @@ add_line('demo', 'Sine/1', 'Gain/1');
 bdclose('demo');
 ```
 
+
 ## 🔗 Voir aussi
 
 [new_system](../nflow_engine/new_system.md), [add_block](../nflow_engine/add_block.md), [add_line](../nflow_engine/add_line.md), [set_param](../nflow_engine/set_param.md), [save_system](../nflow_engine/save_system.md), [close_system](../nflow_engine/close_system.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

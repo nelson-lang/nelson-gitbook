@@ -19,7 +19,8 @@ Merge categories in a categorical array.
 
 ## 📄 Description
 
-<b>mergecats</b> replaces multiple categories by a single category and remaps all matching elements.
+
+<b>mergecats</b> replaces multiple categories by a single category and remaps all matching elements. 
 
 Categories not listed in <b>oldCategories</b> keep their values and relative order.
 
@@ -31,13 +32,14 @@ Merge several categories into one category.
 A = categorical({'red','blue','green'}); B = mergecats(A, {'blue','green'}, 'other'); categories(B)
 ```
 
+
 ## 🔗 See also
 
 [addcats](../categorical/addcats.md), [removecats](../categorical/removecats.md), [renamecats](../categorical/renamecats.md), [setcats](../categorical/setcats.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

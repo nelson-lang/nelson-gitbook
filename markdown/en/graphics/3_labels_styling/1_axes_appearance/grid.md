@@ -19,9 +19,12 @@ Display or hide axes grid lines.
 
 ## 📄 Description
 
+
 <b>grid()</b> toggles the visibility of the major grid lines.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure();
@@ -30,8 +33,8 @@ y = cos(x);
 plot(x, y)
 grid on
 ```
-
 <img src="grid.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -39,7 +42,7 @@ grid on
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

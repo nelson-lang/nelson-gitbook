@@ -20,15 +20,16 @@ Create datetime arrays from calendar parts, text, or numeric date representation
 
 ## 📄 Description
 
-Create datetime arrays from calendar parts, text, or numeric date representations.
 
-Use datetime to construct temporal values used by the other date and time functions. Numeric matrices with three or six columns are interpreted as date vectors; scalar and array components are expanded to a common size.
+Create datetime arrays from calendar parts, text, or numeric date representations. 
 
-<b>string</b> returns the formatted text of each element and <b><missing></b> for <b>NaT</b>; the display, <b>char</b> and <b>cellstr</b> keep the text NaT (<b>cellstr(d, fmt)</b> uses the format <b>fmt</b>). <b>datetime(missing)</b>, and assigning <b>missing</b> into a datetime array, give <b>NaT</b>.
+Use datetime to construct temporal values used by the other date and time functions. Numeric matrices with three or six columns are interpreted as date vectors; scalar and array components are expanded to a common size. 
 
-<b>datetime.empty(m, n, ...)</b> returns an empty datetime array; growing an array by assignment fills the new elements with <b>NaT</b>. A comparison with <b>missing</b> is false (<b>~=</b> is true), as with <b>NaT</b>.
+<b>string</b> returns the formatted text of each element and <b><missing></b> for <b>NaT</b>; the display, <b>char</b> and <b>cellstr</b> keep the text NaT (<b>cellstr(d, fmt)</b> uses the format <b>fmt</b>). <b>datetime(missing)</b>, and assigning <b>missing</b> into a datetime array, give <b>NaT</b>. 
 
-<b>TimeZone</b> names a time zone (for example <b>'Europe/Paris'</b>, <b>'UTC'</b>, a fixed offset <b>'+05:30'</b>, a duration offset, or <b>'local'</b> for the system time zone). Setting it on a datetime that has a time zone keeps the same instants and moves the wall clock; on a datetime without one it keeps the wall clock. <b>posixtime</b> and <b>juliandate</b> inputs are UTC instants. Datetimes of different time zones compare, subtract and concatenate by instant (in the time zone of the first operand); a datetime with a time zone never combines with one without. A wall-clock time skipped by a daylight saving change moves after the gap, an ambiguous one is standard time, and fixed-length durations count elapsed time.
+<b>datetime.empty(m, n, ...)</b> returns an empty datetime array; growing an array by assignment fills the new elements with <b>NaT</b>. A comparison with <b>missing</b> is false (<b>~=</b> is true), as with <b>NaT</b>. 
+
+<b>TimeZone</b> names a time zone (for example <b>'Europe/Paris'</b>, <b>'UTC'</b>, a fixed offset <b>'+05:30'</b>, a duration offset, or <b>'local'</b> for the system time zone). Setting it on a datetime that has a time zone keeps the same instants and moves the wall clock; on a datetime without one it keeps the wall clock. <b>posixtime</b> and <b>juliandate</b> inputs are UTC instants. Datetimes of different time zones compare, subtract and concatenate by instant (in the time zone of the first operand); a datetime with a time zone never combines with one without. A wall-clock time skipped by a daylight saving change moves after the gap, an ambiguous one is standard time, and fixed-length durations count elapsed time. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -43,13 +44,14 @@ posixtime(datetime(1970, 1, 2))
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

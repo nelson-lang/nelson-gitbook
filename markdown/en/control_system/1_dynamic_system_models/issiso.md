@@ -16,9 +16,12 @@ Checks if dynamic system model is single input and single output.
 
 ## 📄 Description
 
+
 Checks if dynamic system model is single input and single output.
 
 ## 💡 Example
+
+
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -36,13 +39,14 @@ sys = ss(A, B, C, D);
 issiso(sys)
 ```
 
+
 ## 🔗 See also
 
-[isdt](../../control_system/isdt.md).
+[isdt](../../control_system/1_dynamic_system_models/isdt.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

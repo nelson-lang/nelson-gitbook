@@ -19,12 +19,15 @@ Access field values in statistics options structures.
 
 ## 📄 Description
 
+
 <b>statget</b> returns a value from an options structure. Field names are matched case-insensitively and can be abbreviated when the abbreviation is unique.
 
 ## Used function(s)
 
+
     statset
     kmeans
+  
 
 ## 💡 Examples
 
@@ -34,7 +37,6 @@ Read a value from an options structure.
 opts = statset('kmeans');
 statget(opts, 'MaxI')
 ```
-
 Return a default value when a field is empty.
 
 ```matlab

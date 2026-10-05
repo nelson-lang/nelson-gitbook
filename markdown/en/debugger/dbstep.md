@@ -15,13 +15,14 @@ Execute next executable line during debugging.
 
 ## 📄 Description
 
-<b>dbstep</b> executes the next executable line of the current file during debugging, skipping breakpoints in functions called by that line.
 
-<b>dbstep in</b> steps into any function called on the current line, pausing at the first executable line of the called function.
+<b>dbstep</b> executes the next executable line of the current file during debugging, skipping breakpoints in functions called by that line. 
 
-<b>dbstep out</b> completes execution of the current function and pauses just after returning to the caller. Execution pauses at any breakpoint encountered along the way.
+<b>dbstep in</b> steps into any function called on the current line, pausing at the first executable line of the called function. 
 
-<b>dbstep nlines</b> executes the specified number of lines, pausing at any breakpoint encountered.
+<b>dbstep out</b> completes execution of the current function and pauses just after returning to the caller. Execution pauses at any breakpoint encountered along the way. 
+
+<b>dbstep nlines</b> executes the specified number of lines, pausing at any breakpoint encountered. 
 
 These commands can only be used from the command line while debugging.
 
@@ -44,7 +45,6 @@ myfile(2);
 dbstep
 
 ```
-
         Step into a called function.
 
 ```matlab
@@ -54,7 +54,6 @@ myfile(2);
 dbstep in
 
 ```
-
         Step out of the current function.
 
 ```matlab
@@ -62,7 +61,6 @@ dbstep in
 dbstep out
 
 ```
-
         Step multiple lines in one command.
 
 ```matlab
@@ -71,15 +69,16 @@ dbstep 4
 
 ```
 
+
 ## 🔗 See also
 
 [dbstop](../debugger/dbstop.md), [dbcont](../debugger/dbcont.md), [dbquit](../debugger/dbquit.md), [dbstatus](../debugger/dbstatus.md), [dbstack](../debugger/dbstack.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

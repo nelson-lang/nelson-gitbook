@@ -18,15 +18,18 @@ Inverse multidimensional fast Fourier transform.
 
 ## 📄 Description
 
-<b>Y = ifftn(X, sz)</b> pads <b>X</b> with zeros, or truncates<b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.
 
-The size of the result <b>Y</b> is <b>sz</b>.
+<b>Y = ifftn(X, sz)</b> pads <b>X</b> with zeros, or truncates<b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform. 
 
-<b>Y = ifftn(X)</b> performs the N-dimensional inverse fast Fourier transform.
+The size of the result <b>Y</b> is <b>sz</b>. 
+
+<b>Y = ifftn(X)</b> performs the N-dimensional inverse fast Fourier transform. 
 
 The result <b>Y</b> is the same size as <b>X</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = zeros(5, 5);
@@ -34,13 +37,14 @@ f(1:5,4:5) = 1;
 Y = ifftn(fftn(f));
 ```
 
+
 ## 🔗 See also
 
 [fftn](../fftw/fftn.md), [fft](../fftw/fft.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -16,6 +16,7 @@ Ouvre une boite de dialogue de selection dans une liste.
 
 ## 📄 Description
 
+
 listdlg displays selectable text entries and returns the selected indices.
 
 ## 💡 Exemples
@@ -29,7 +30,6 @@ uicontrol(f, 'Style', 'listbox', 'String', {'red', 'green', 'blue'}, 'Value', 2,
 uicontrol(f, 'Style', 'pushbutton', 'String', 'OK', 'Position', [170 28 70 24]);
 uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [250 28 70 24]);
 ```
-
 <img src="listdlg_example.svg" align="middle"/>
 Select several entries from a list.
 
@@ -39,14 +39,15 @@ items = {'low', 'medium', 'high'};
 if ok, disp(selection); end
 ```
 
+
 ## 🔗 Voir aussi
 
 [inputdlg](../gui/inputdlg.md), [questdlg](../gui/questdlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                         |
-| ------- | -------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--

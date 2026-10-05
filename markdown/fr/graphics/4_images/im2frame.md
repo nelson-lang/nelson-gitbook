@@ -20,13 +20,16 @@ Convertit une image en image de film.
 
 ## 📄 Description
 
-<b>F = im2frame(RGB)</b> convertit l'image en vraies couleurs <b>RGB</b> en une image de film <b>F</b>.
 
-<b>F = im2frame(X, map)</b> convertit l'image indexée <b>X</b> ainsi que sa palette de couleurs <b>map</b> en une image de film<b>F</b>.
+<b>F = im2frame(RGB)</b> convertit l'image en vraies couleurs <b>RGB</b> en une image de film <b>F</b>. 
+
+<b>F = im2frame(X, map)</b> convertit l'image indexée <b>X</b> ainsi que sa palette de couleurs <b>map</b> en une image de film<b>F</b>. 
 
 <b>F = im2frame(X)</b> convertit l'image indexée <b>X</b> en une image de film <b>F</b>, en utilisant la palette de couleurs courante.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 examples_directory = [modulepath('graphics', 'root'), '/', 'examples/'];
@@ -34,15 +37,16 @@ edit([examples_directory, 'movie/demo_movie.m']);
 run([examples_directory, 'movie/demo_movie.m']);
 ```
 
+
 ## 🔗 Voir aussi
 
 [movie](../../graphics/4_images/movie.md), [frame2im](../../graphics/4_images/frame2im.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.13.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.13.0   | version initiale |
 
 <!--
 ## 👤 Auteur

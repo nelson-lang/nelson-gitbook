@@ -29,17 +29,20 @@ Generalized minimum residual method.
 
 ## 📄 Description
 
-<b>gmres</b> solves <b>A \* x = b</b> with the restarted generalized minimum residual method.
 
-The method supports sparse double, single, complex double, and complex single matrices.
+<b>gmres</b> solves <b>A \* x = b</b> with the restarted generalized minimum residual method. 
 
-If any compatible input, preconditioner, or initial guess is complex, the iteration is performed in the matching complex class.
+The method supports sparse double, single, complex double, and complex single matrices. 
 
-Preconditioners can be supplied as diagonal vectors, sparse triangular factors, sparse or dense square matrices, or function handles returning vectors. Zero diagonal preconditioners and inconsistent dimensions are rejected before iteration.
+If any compatible input, preconditioner, or initial guess is complex, the iteration is performed in the matching complex class. 
+
+Preconditioners can be supplied as diagonal vectors, sparse triangular factors, sparse or dense square matrices, or function handles returning vectors. Zero diagonal preconditioners and inconsistent dimensions are rejected before iteration. 
 
 <b>flag</b> is 0 on convergence, 1 when the iteration limit is reached, and 4 when a numerical breakdown is detected.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
@@ -48,6 +51,7 @@ b = [1; 2; 3];
 
 ```
 
+
 ```matlab
 A = sparse([4 1 0; 2 3 1; 0 1 2]);
 b = [1; 2; 3];
@@ -55,7 +59,6 @@ b = [1; 2; 3];
 x = gmres(A, b, [], 1e-12, 20, L, U)
 
 ```
-
 Solve with split matrix preconditioners.
 
 ```matlab
@@ -66,6 +69,7 @@ M2 = [2 0.5; 2 3];
 [x, flag, relres, iter] = gmres(A, b, [], 1e-12, 10, M1, M2)
 ```
 
+
 ```matlab
 A = sparse(single([3 + 1i 1; 0 2 - 1i]));
 b = single([4 + 2i; 3 - 1i]);
@@ -74,15 +78,16 @@ D = single(diag(full(A)));
 
 ```
 
+
 ## 🔗 See also
 
-[bicgstab](../../linear_algebra/bicgstab.md), [ilu](../../linear_algebra/ilu.md).
+[bicgstab](../../linear_algebra/6_iterative_solvers/bicgstab.md), [ilu](../../linear_algebra/7_preconditioners/ilu.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                                                      |
-| ------- | ----------------------------------------------------------------------------------- |
-| 2.0.0   | initial version                                                                     |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | initial version |
 | 2.0.0   | added single, complex single, preconditioner, initial guess, and breakdown coverage |
 
 <!--

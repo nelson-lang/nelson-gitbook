@@ -24,9 +24,12 @@ Frequency response of a digital filter.
 
 ## 📄 Description
 
+
 <b>freqz</b> evaluates the transfer function defined by B and A on the unit circle.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ Frequency response of a digital filter.
 
 ```
 
+
 ## 🔗 See also
 
-[phasez](../../signal_processing/phasez.md), [grpdelay](../../signal_processing/grpdelay.md).
+[phasez](../../signal_processing/4_digital_filters/phasez.md), [grpdelay](../../signal_processing/4_digital_filters/grpdelay.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

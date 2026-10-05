@@ -1,14 +1,22 @@
 # Core
 
+
+    
 The Core module provides the fundamental building blocks of the Nelson environment.
 
+    
 It includes essential services for program execution, environment management, and system interaction.
 
+    
 Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.
 
+    
 It also offers basic utilities for file identification, checksums, cryptography (the **crypto** namespace: hashes, HMAC, Ed25519 and X25519, Argon2, authenticated encryption and secure random), and terminal capabilities.
 
+    
 Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.
+
+  
 
 ## Functions
 
@@ -57,3 +65,4 @@ Together, these features form the foundation upon which all other modules and us
 - [run](run.md) - Executes a script file (.m).
 - [sha256](sha256.md) - Get sha256 checksum.
 - [version](version.md) - Return the version of Nelson.
+

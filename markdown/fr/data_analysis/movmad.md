@@ -19,23 +19,27 @@ Ecart absolu median mobile.
 
 ## 📄 Description
 
+
 <b>movmad</b> calcule l'ecart absolu median sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmad(A, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[median](../statistics/median.md).
+[median](../statistics/1_descriptive_statistics_visualization/median.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

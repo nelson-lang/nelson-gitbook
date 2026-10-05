@@ -17,11 +17,14 @@ Valeurs du dictionnaire.
 
 ## 📄 Description
 
-<b>v = values(d)</b> récupère un tableau contenant les valeurs du dictionnaire spécifié,<b>d</b>.
+
+<b>v = values(d)</b> récupère un tableau contenant les valeurs du dictionnaire spécifié,<b>d</b>. 
 
 <b>v = values(d, 'cell')</b> renvoie éventuellement les valeurs sous forme de tableau cellulaire.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -32,14 +35,15 @@ v = values(d, 'cell')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [keys](../dictionary/keys.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

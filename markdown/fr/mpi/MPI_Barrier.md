@@ -1,22 +1,23 @@
-# MPI_Barrier
+# MPI\_Barrier
 
 Bloque jusqu'à ce que tous les processus du communicateur atteignent cette routine.
 
 ## 📝 Syntaxe
 
-- r = MPI_Barrier(Comm)
+- r = MPI\_Barrier(Comm)
 
 ## 📥 Argument d'entrée
 
-- Comm - objet MPI_Comm.
+- Comm - objet MPI\_Comm.
 
 ## 📤 Argument de sortie
 
-- r - entier : MPI_SUCCESS (0) ou MPI_ERR_COMM (5).
+- r - entier : MPI\_SUCCESS (0) ou MPI\_ERR\_COMM (5).
 
 ## 📄 Description
 
-Cette fonction est utilisée comme point de synchronisation pour tous les processus d'un groupe. Tous les processus sont bloqués jusqu'à ce que chacun appelle MPI_Barrier.
+
+Cette fonction est utilisée comme point de synchronisation pour tous les processus d'un groupe. Tous les processus sont bloqués jusqu'à ce que chacun appelle MPI\_Barrier.
 
 ## 💡 Exemple
 
@@ -39,14 +40,15 @@ end
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [MPI_Initialized](../mpi/MPI_Initialized.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

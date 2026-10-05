@@ -16,19 +16,24 @@ Renvoie vrai si la variable var est un tableau d'entiers signés 8 bits.
 
 ## 📄 Description
 
+
 <b>isint8</b> renvoie 1 logique si l'argument est un tableau d'entiers signés 8 bits et 0 logique sinon.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = 3;
 res = isint8(A)
 ```
 
+
 ```matlab
 B = int8(3);
 res = isint8(B)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -36,8 +41,8 @@ res = isint8(B)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

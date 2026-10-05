@@ -4,7 +4,7 @@ Return a function handle constructed from a string.
 
 ## 📝 Syntax
 
-- func_handle = str2func(str)
+- func\_handle = str2func(str)
 
 ## 📥 Input argument
 
@@ -12,18 +12,22 @@ Return a function handle constructed from a string.
 
 ## 📤 Output argument
 
-- func_handle - a function handle
+- func\_handle - a function handle
 
 ## 📄 Description
 
-<b>func_handle = str2func(str)</b> returns a function handle constructed from the string<b>str</b>.
+
+<b>func\_handle = str2func(str)</b> returns a function handle constructed from the string<b>str</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 fh = str2func('cos')
 class(fh)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ class(fh)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

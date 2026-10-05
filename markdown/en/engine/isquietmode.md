@@ -12,13 +12,17 @@ Return true if Nelson started with --quiet option.
 
 ## 📄 Description
 
+
 <b>isquietmode</b> returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.
 
 ## 💡 Example
 
+
+
 ```matlab
 disp(isquietmode());
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ disp(isquietmode());
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

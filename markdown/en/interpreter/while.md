@@ -4,13 +4,16 @@ while loop.
 
 ## 📝 Syntax
 
-- while test_expression, statements, end
+- while test\_expression, statements, end
 
 ## 📄 Description
+
 
 <b>while</b> loop executes a set of statements as long as a the test condition remains<b>true</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -22,13 +25,14 @@ end
 
 ```
 
+
 ## 🔗 See also
 
 [for](../interpreter/for.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -21,6 +21,7 @@ Estime une transformation de recalage 2-D a partir d'images.
 
 ## 📄 Description
 
+
 imregtform estime une transformation de recalage 2-D simple sans dependance externe. La translation utilise une correlation de phase. Les modes rigid, similarity et affine utilisent une recherche deterministe en angle, echelle et cisaillement, notee avec la metrique choisie.
 
 ## 💡 Exemple
@@ -40,17 +41,17 @@ figure; subplot(1,3,1); imagesc(I); axis image; title('Mobile');
 subplot(1,3,2); imagesc(J); axis image; title('Fixe');
 subplot(1,3,3); imagesc(K); axis image; title('Recalee');
 ```
-
 <img src="imregtform_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imregconfig](../../../image_processing/imregconfig.md), [imregcorr](../../../image_processing/imregcorr.md), [imregister](../../../image_processing/imregister.md), [imwarp](../../../image_processing/imwarp.md).
+[imregconfig](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregconfig.md), [imregcorr](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregcorr.md), [imregister](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imregister.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

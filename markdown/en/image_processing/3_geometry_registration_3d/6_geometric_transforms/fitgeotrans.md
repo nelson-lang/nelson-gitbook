@@ -18,6 +18,7 @@ Fit a 2-D geometric transformation from control points.
 
 ## 📄 Description
 
+
 Fit affine or projective 2-D transformations from matching N-by-2 control point arrays. Supported transform types are affine and projective.
 
 ## 💡 Example
@@ -33,16 +34,16 @@ J=imwarp(I,tform,'Interpolation','nearest');
 figure; subplot(1,2,1); imagesc(I); title('Input');
 subplot(1,2,2); imagesc(J); title('Fitted');
 ```
-
 <img src="fitgeotrans_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[affine2d](../../../image_processing/affine2d.md), [projective2d](../../../image_processing/projective2d.md), [imwarp](../../../image_processing/imwarp.md).
+[affine2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/affine2d.md), [projective2d](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/projective2d.md), [imwarp](../../../image_processing/3_geometry_registration_3d/6_geometric_transforms/imwarp.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

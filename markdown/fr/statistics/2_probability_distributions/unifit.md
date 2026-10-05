@@ -22,11 +22,14 @@ Estimations des parametres uniformes continus
 
 ## 📄 Description
 
-<b>unifit</b> renvoie les estimations du maximum de vraisemblance pour les parametres de bornes uniformes continues.
+
+<b>unifit</b> renvoie les estimations du maximum de vraisemblance pour les parametres de bornes uniformes continues. 
 
 Les vecteurs sont traites comme un seul echantillon. Les matrices sont traitees colonne par colonne.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [2 5 3 4];
@@ -34,14 +37,15 @@ x = [2 5 3 4];
 [aHat2, bHat2] = unifit([1 2; 3 4; 4 9]);
 ```
 
+
 ## 🔗 Voir aussi
 
-[uniflike](../../statistics/uniflike.md), [unifpdf](../../statistics/unifpdf.md), [unifcdf](../../statistics/unifcdf.md), [unifinv](../../statistics/unifinv.md), [unifstat](../../statistics/unifstat.md), [unifrnd](../../statistics/unifrnd.md).
+[uniflike](../../statistics/2_probability_distributions/uniflike.md), [unifpdf](../../statistics/2_probability_distributions/unifpdf.md), [unifcdf](../../statistics/2_probability_distributions/unifcdf.md), [unifinv](../../statistics/2_probability_distributions/unifinv.md), [unifstat](../../statistics/2_probability_distributions/unifstat.md), [unifrnd](../../statistics/2_probability_distributions/unifrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

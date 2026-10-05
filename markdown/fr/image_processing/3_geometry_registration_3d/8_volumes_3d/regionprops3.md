@@ -21,7 +21,8 @@ Mesurer les proprietes de regions de volumes 3-D
 
 ## 📄 Description
 
-<b>regionprops3</b> mesure les regions connexes de volumes 3-D. Les proprietes geometriques prises en charge incluent Volume, Centroid, BoundingBox, VoxelIdxList, VoxelList, Image, SubarrayIdx, Extent et EquivDiameter.
+
+<b>regionprops3</b> mesure les regions connexes de volumes 3-D. Les proprietes geometriques prises en charge incluent Volume, Centroid, BoundingBox, VoxelIdxList, VoxelList, Image, SubarrayIdx, Extent et EquivDiameter. 
 
 Lorsqu'un volume d'intensite est fourni, les proprietes d'intensite prises en charge incluent MeanIntensity, MinIntensity, MaxIntensity, VoxelValues et WeightedCentroid.
 
@@ -39,8 +40,8 @@ figure;
 imagesc(L(:, :, 10));
 title('Measured volume regions');
 ```
-
 <img src="regionprops3_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -48,8 +49,8 @@ title('Measured volume regions');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -8,13 +8,17 @@ Construire l'aide de Nelson au format JSON.
 
 ## 📄 Description
 
+
 <b>buildhelpjson</b> génère des fichiers d'aide (au format JSON) (fonctionnalité interne).
 
 ## 💡 Exemple
 
+
+
 ```matlab
 buildhelpjson();
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -22,9 +26,9 @@ buildhelpjson();
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

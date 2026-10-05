@@ -26,11 +26,14 @@ Fonction de repartition normale
 
 ## 📄 Description
 
-<b>normcdf</b> evalue la fonction de repartition de la loi normale.
+
+<b>normcdf</b> evalue la fonction de repartition de la loi normale. 
 
 Les scalaires sont etendus pour correspondre aux tableaux. Une entree en simple precision donne une sortie en simple precision.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-2 -1 0 1 2];
@@ -39,14 +42,15 @@ upperTail = normcdf(x, 0, 1, 'upper');
 [p, pLo, pUp] = normcdf(0, 0, 1, [0.04 0; 0 0.01]);
 ```
 
+
 ## 🔗 Voir aussi
 
-[normpdf](../../statistics/normpdf.md), [norminv](../../statistics/norminv.md).
+[normpdf](../../statistics/2_probability_distributions/normpdf.md), [norminv](../../statistics/2_probability_distributions/norminv.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

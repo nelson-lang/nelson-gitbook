@@ -20,22 +20,26 @@ Extreme value probability density function
 
 ## 📄 Description
 
+
 <b>evpdf</b> evaluates extreme value probability density values element by element.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 2];
 y = evpdf(x, 0, 1);
 ```
 
+
 ## 🔗 See also
 
-[evcdf](../../statistics/evcdf.md), [evinv](../../statistics/evinv.md), [evrnd](../../statistics/evrnd.md).
+[evcdf](../../statistics/2_probability_distributions/evcdf.md), [evinv](../../statistics/2_probability_distributions/evinv.md), [evrnd](../../statistics/2_probability_distributions/evrnd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

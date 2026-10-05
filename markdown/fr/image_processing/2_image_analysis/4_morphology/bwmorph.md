@@ -19,9 +19,10 @@ Applique des operations morphologiques aux images binaires.
 
 ## 📄 Description
 
-Applique des operations morphologiques binaires a une image 2-D.
 
-Dilate, erode, open, close, tophat et bothat utilisent un voisinage carre 3-by-3.
+Applique des operations morphologiques binaires a une image 2-D. 
+
+Dilate, erode, open, close, tophat et bothat utilisent un voisinage carre 3-by-3. 
 
 Le nombre d iterations n peut etre un entier positif ou nul, ou Inf.
 
@@ -35,17 +36,17 @@ BW2=bwmorph(BW,'spur',4);
 figure; subplot(1,2,1); imagesc(BW); title('Input');
 subplot(1,2,2); imagesc(BW2); title('After spur');
 ```
-
 <img src="bwmorph_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imdilate](../../../image_processing/imdilate.md), [imerode](../../../image_processing/imerode.md), [bwperim](../../../image_processing/bwperim.md).
+[imdilate](../../../image_processing/2_image_analysis/4_morphology/imdilate.md), [imerode](../../../image_processing/2_image_analysis/4_morphology/imerode.md), [bwperim](../../../image_processing/2_image_analysis/4_morphology/bwperim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

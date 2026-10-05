@@ -17,17 +17,20 @@ Palette de couleurs flag.
 
 ## 📄 Description
 
+
 <b>flag</b> retourne la palette de couleurs flag.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('flag');
 ```
-
 <img src="flag.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('flag');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

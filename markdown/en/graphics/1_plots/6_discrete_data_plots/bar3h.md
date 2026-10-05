@@ -27,7 +27,8 @@ Display a 3-D horizontal bar chart.
 
 ## 📄 Description
 
-<b>bar3h</b> displays horizontal 3-D bars extending from x = 0.
+
+<b>bar3h</b> displays horizontal 3-D bars extending from x = 0. 
 
 Use <b>'grouped'</b> to group matrix columns at each row position and <b>'stacked'</b> to stack matrix columns at each row position.
 
@@ -41,7 +42,6 @@ Y = [1 3; 2 4; 5 2];
 bar3h(Y);
 
 ```
-
 <img src="bar3h_1.svg" align="middle"/>
 Horizontal 3-D bars from a vector.
 
@@ -51,7 +51,6 @@ y = [50 40 30 20 10];
 bar3h(y);
 
 ```
-
 <img src="bar3h_2.svg" align="middle"/>
 Horizontal 3-D bars with explicit row positions.
 
@@ -62,7 +61,6 @@ y = [16 8 4 2 1];
 bar3h(z, y);
 
 ```
-
 <img src="bar3h_3.svg" align="middle"/>
 Horizontal 3-D bars from a matrix.
 
@@ -72,7 +70,6 @@ y = [1 4 7; 2 5 8; 3 6 9; 4 7 10];
 bar3h(y);
 
 ```
-
 <img src="bar3h_4.svg" align="middle"/>
 Horizontal 3-D bars from a matrix with explicit row positions.
 
@@ -83,7 +80,6 @@ y = [1 5 9; 2 6 10; 3 7 11; 4 8 12];
 bar3h(z, y);
 
 ```
-
 <img src="bar3h_5.svg" align="middle"/>
 Horizontal 3-D bars with width and a color.
 
@@ -94,7 +90,6 @@ y = [sin(z') / 4, sin(z') / 2, sin(z')];
 bar3h(z, y, 1, "r");
 
 ```
-
 <img src="bar3h_6.svg" align="middle"/>
 Grouped horizontal 3-D bars.
 
@@ -104,7 +99,6 @@ y = [1 2; 3 4; 5 6];
 bar3h(y, 'grouped');
 
 ```
-
 <img src="bar3h_7.svg" align="middle"/>
 Stacked horizontal 3-D bars with positive and negative values.
 
@@ -114,8 +108,8 @@ y = [1 -2; -3 4];
 bar3h(y, 'stacked');
 
 ```
-
 <img src="bar3h_8.svg" align="middle"/>
+
 
 ## 🔗 See also
 

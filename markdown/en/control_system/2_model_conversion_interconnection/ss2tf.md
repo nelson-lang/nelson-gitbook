@@ -22,13 +22,16 @@ Convert state-space representation to transfer function.
 
 ## 📄 Description
 
-<b>[b, a] = ss2tf(A, B, C, D)</b> transforms a state-space representation of a system into an equivalent transfer function.
 
-The function <b>ss2tf</b> returns the Laplace-transform transfer function for continuous-time systems and the Z-transform transfer function for discrete-time systems.
+<b>[b, a] = ss2tf(A, B, C, D)</b> transforms a state-space representation of a system into an equivalent transfer function. 
+
+The function <b>ss2tf</b> returns the Laplace-transform transfer function for continuous-time systems and the Z-transform transfer function for discrete-time systems. 
 
 <b>[b, a] = ss2tf(A, B, C, D, ni)</b> computes the transfer function resulting from exciting the nith input of a system with multiple inputs using a unit impulse.
 
 ## 💡 Example
+
+
 
 ```matlab
 Fs = 16;
@@ -43,13 +46,14 @@ D = eye(2);
 
 ```
 
+
 ## 🔗 See also
 
-[tf2ss](../../control_system/tf2ss.md), [ss](../../control_system/ss.md), [tf](../../control_system/tf.md).
+[tf2ss](../../control_system/2_model_conversion_interconnection/tf2ss.md), [ss](../../control_system/1_dynamic_system_models/ss.md), [tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

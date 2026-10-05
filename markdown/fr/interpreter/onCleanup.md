@@ -4,12 +4,12 @@ Tâches de nettoyage à la fin de l'exécution d'une fonction
 
 ## 📝 Syntaxe
 
-- onCleanup(function_handle)
-- obj = onCleanup(function_handle)
+- onCleanup(function\_handle)
+- obj = onCleanup(function\_handle)
 
 ## 📥 Argument d'entrée
 
-- function_handle - un handle de fonction à exécuter lors du nettoyage.
+- function\_handle - un handle de fonction à exécuter lors du nettoyage.
 
 ## 📤 Argument de sortie
 
@@ -17,16 +17,20 @@ Tâches de nettoyage à la fin de l'exécution d'une fonction
 
 ## 📄 Description
 
-<b>onCleanup</b> crée un objet qui exécute un handle de fonction spécifié lorsque l'objet est effacé ou sort de la portée, permettant ainsi d'effectuer automatiquement des tâches de nettoyage à la fin de l'exécution d'une fonction.
+
+<b>onCleanup</b> crée un objet qui exécute un handle de fonction spécifié lorsque l'objet est effacé ou sort de la portée, permettant ainsi d'effectuer automatiquement des tâches de nettoyage à la fin de l'exécution d'une fonction. 
 
 <b>cancel(obj)</b> ou <b>obj.cancel()</b> empêche l'exécution de la fonction de nettoyage.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 a = onCleanup(@() disp('Cleanup executed'))
 clear a
 ```
+
 
 ```matlab
 function cleanupExample(doCancel)
@@ -50,11 +54,12 @@ cleanupExample(true);
 
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.16.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.16.0   | version initiale |
 
 <!--
 ## 👤 Auteur

@@ -15,27 +15,30 @@ Détermine quels caractères sont des lettres.
 - res - tableau logique
 
 ## 📄 Description
-
 <b>isletter</b> détermine quels caractères sont des lettres.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 isletter('Nel Son')
 ```
 
+
 ```matlab
 isletter("六書 six writings")
 ```
 
+
 ## 🔗 Voir aussi
 
-[toupper](../../string/toupper.md).
+[toupper](../../string/7_edit_text/toupper.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -19,6 +19,7 @@ Crée un bouton bascule dans un groupe de boutons.
 
 ## 📄 Description
 
+
 <b>tb = uitogglebutton(bg)</b> crée un bouton bascule dans un uibuttongroup à sélection exclusive. Propriétés : <b>Value</b>, <b>Text</b>, <b>Icon</b>, <b>IconAlignment</b>, alignements, <b>BackgroundColor</b>, polices.
 
 ## 💡 Exemples
@@ -33,7 +34,6 @@ tb2 = uitogglebutton(bg, 'Text', 'B', 'Position', [125 70 70 30]);
 tb2.Value = true;
 drawnow();
 ```
-
 <img src="uitogglebutton_example.svg" align="middle"/>
 uitogglebutton
 
@@ -46,14 +46,15 @@ tb2 = uitogglebutton(bg, 'Text', 'B');
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

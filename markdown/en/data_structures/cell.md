@@ -23,13 +23,16 @@ Create cell array of empty matrices.
 
 ## 📄 Description
 
-<b>cell</b> returns a cell array of empty matrices.
 
-<b>cell()</b> is equivalent to <b>cell(0)</b>
+<b>cell</b> returns a cell array of empty matrices. 
+
+<b>cell()</b> is equivalent to <b>cell(0)</b> 
 
 <b>cell(A)</b> with A a string array converts to cell.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = eye(2, 4);
@@ -37,10 +40,12 @@ sz = size(A)
 C = cell(sz)
 ```
 
+
 ```matlab
 A = ["Nel", "son"; "open", "source"];
 C = cell(A)
 ```
+
 
 ## 🔗 See also
 
@@ -48,7 +53,7 @@ C = cell(A)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -15,14 +15,16 @@ Cosécante de l'argument en degrés.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>cscd</b> calcule la cosécante de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = cscd([35+i 15+2i 10+3i])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +32,8 @@ R = cscd([35+i 15+2i 10+3i])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

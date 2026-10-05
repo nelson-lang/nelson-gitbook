@@ -19,6 +19,7 @@ Return information about an Open XML spreadsheet file.
 
 ## 📄 Description
 
+
 <b>xlsfinfo</b> returns workbook metadata for .xlsx files supported by the Open XML backend.
 
 ## 💡 Example
@@ -29,13 +30,14 @@ List workbook sheets.
 filename = [tempdir(), 'xlsfinfo_example.xlsx']; xlswrite(filename, [1 2], 'Run1', 'A1'); [status, sheets, format] = xlsfinfo(filename)
 ```
 
+
 ## 🔗 See also
 
 [xlsread](../spreadsheet/xlsread.md), [xlswrite](../spreadsheet/xlswrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -4,13 +4,16 @@ boucle while.
 
 ## 📝 Syntaxe
 
-- while test_expression, statements, end
+- while test\_expression, statements, end
 
 ## 📄 Description
+
 
 La boucle <b>while</b> exécute un ensemble d'instructions tant que la condition de test reste <b>true</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -22,14 +25,15 @@ end
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [for](../interpreter/for.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -18,13 +18,16 @@ Low-level NetCDF package interface.
 
 ## 📄 Description
 
-netcdf is a class that groups low-level NetCDF operations as static methods.
+
+netcdf is a class that groups low-level NetCDF operations as static methods. 
 
 Use the high-level ncinfo, ncread, ncwrite, and related functions when they fit the task.
 
 ## Used function(s)
 
+
     NetCDF C library
+  
 
 ## 💡 Example
 
@@ -34,13 +37,14 @@ Query the linked NetCDF library version.
 versionText = netcdf.inqLibVers()
 ```
 
+
 ## 🔗 See also
 
 [ncinfo](../netcdf/ncinfo.md), [ncread](../netcdf/ncread.md), [ncwrite](../netcdf/ncwrite.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

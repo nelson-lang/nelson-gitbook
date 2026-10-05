@@ -9,11 +9,14 @@ Construire des classes depuis un arbre hierarchique.
 
 ## 📄 Description
 
-<b>cluster</b> affecte les observations a des classes en coupant un arbre hierarchique.
+
+<b>cluster</b> affecte les observations a des classes en coupant un arbre hierarchique. 
 
 Cette version prend en charge le critere distance avec MaxClust ou Cutoff.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [0 0; 1 0; 0 2; 4 4];
@@ -21,14 +24,15 @@ Z = linkage(X);
 T = cluster(Z, 'MaxClust', 2)
 ```
 
+
 ## 🔗 Voir aussi
 
-[linkage](../../statistics/linkage.md).
+[linkage](../../statistics/7_clustering_anomaly_detection/linkage.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

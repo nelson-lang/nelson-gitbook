@@ -17,13 +17,17 @@ Préparer la création d'un nouveau graphique.
 
 ## 📄 Description
 
+
 <b>newplot</b> prépare une figure et des axes pour les commandes graphiques.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 h = newplot()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ h = newplot()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

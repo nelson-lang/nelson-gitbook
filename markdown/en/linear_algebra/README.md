@@ -1,14 +1,24 @@
 # Linear algebra
 
+
+    
 The Linear Algebra module provides matrix and vector computation functions in Nelson.
 
+    
 It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.
 
+    
 The module includes numerical methods for evaluating matrix properties, condition numbers, and transformations used in linear algebra problems.
+
+  
 
 ## Linear Systems
 
+
+    
 Functions for solving, analyzing, and measuring linear systems and vector or matrix quantities.
+
+  
 
 ### Functions
 
@@ -31,7 +41,11 @@ Functions for solving, analyzing, and measuring linear systems and vector or mat
 
 ## Decompositions
 
+
+    
 Matrix factorization and plane rotation functions.
+
+  
 
 ### Functions
 
@@ -43,7 +57,11 @@ Matrix factorization and plane rotation functions.
 
 ## Eigenvalues and Singular Values
 
+
+    
 Functions for eigenvalue, singular-value, and Schur computations.
+
+  
 
 ### Functions
 
@@ -57,7 +75,11 @@ Functions for eigenvalue, singular-value, and Schur computations.
 
 ## Matrix Functions
 
+
+    
 Functions that evaluate elementary functions on matrices.
+
+  
 
 ### Functions
 
@@ -72,7 +94,11 @@ Functions that evaluate elementary functions on matrices.
 
 ## Matrix Properties
 
+
+    
 Functions for condition estimates, structure checks, and matrix properties.
+
+  
 
 ### Functions
 
@@ -87,7 +113,11 @@ Functions for condition estimates, structure checks, and matrix properties.
 
 ## Iterative Solvers
 
+
+    
 Iterative solvers for linear systems.
+
+  
 
 ### Functions
 
@@ -103,9 +133,14 @@ Iterative solvers for linear systems.
 
 ## Preconditioners
 
+
+    
 Incomplete factorization functions used as preconditioners.
+
+  
 
 ### Functions
 
 - [ichol](7_preconditioners/ichol.md) - Incomplete Cholesky factorization.
 - [ilu](7_preconditioners/ilu.md) - Incomplete LU factorization.
+

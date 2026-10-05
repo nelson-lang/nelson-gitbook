@@ -16,17 +16,21 @@ Logarithme de la fonction gamma
 
 ## 📄 Description
 
-La fonction<b>gammaln(A)</b> calcule le logarithme naturel de la fonction gamma pour une entrée donnée <b>A</b>, exprimé comme <b>gammaln(A) = log(gamma(A))</b>.
 
-A doit être un nombre réel non négatif.
+La fonction<b>gammaln(A)</b> calcule le logarithme naturel de la fonction gamma pour une entrée donnée <b>A</b>, exprimé comme <b>gammaln(A) = log(gamma(A))</b>. 
+
+A doit être un nombre réel non négatif. 
 
 L'utilisation de gammaln aide à prévenir les problèmes potentiels de sous-débordement et de débordement qui pourraient survenir si l'on calculait directement<b>log(gamma(A))</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = gammaln([0:0.1:pi])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ R = gammaln([0:0.1:pi])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

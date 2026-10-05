@@ -17,11 +17,14 @@ Determine whether dictionaries are equal.
 
 ## 📄 Description
 
-<b>tf = isequal(d1, d2)</b> returns true when both dictionaries have the same configuration and the same key-value associations.
+
+<b>tf = isequal(d1, d2)</b> returns true when both dictionaries have the same configuration and the same key-value associations. 
 
 Dictionary equality is independent of insertion order. If a key appears more than once during construction, only the last value kept by the dictionary is compared.
 
 ## 💡 Example
+
+
 
 ```matlab
 d1 = dictionary([1 2], ["one", "two"]);
@@ -29,14 +32,15 @@ d2 = dictionary([2 1], ["two", "one"]);
 tf = isequal(d1, d2)
 ```
 
+
 ## 🔗 See also
 
-[dictionary](../dictionary/dictionary.md), [entries](../dictionary/entries.md), [isequal](../elementary_functions/isequal.md).
+[dictionary](../dictionary/dictionary.md), [entries](../dictionary/entries.md), [isequal](../elementary_functions/7_indexing_dimensions/isequal.md).
 
 ## 🕔 History
 
-| Version | 📄 Description               |
-| ------- | ---------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | dictionary classdef equality |
 
 <!--

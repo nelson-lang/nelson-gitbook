@@ -20,9 +20,12 @@ Jointure interne de deux tables.
 
 ## 📄 Description
 
+
 <b>innerjoin</b> conserve seulement les lignes avec des cles correspondantes dans les deux tables.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 L = table([1; 2; 3], [10; 20; 30], 'VariableNames', {'Key', 'LeftValue'});
@@ -30,14 +33,15 @@ R = table([2; 3; 4], [200; 300; 400], 'VariableNames', {'Key', 'RightValue'});
 J = innerjoin(L, R, 'Keys', 'Key')
 ```
 
+
 ## 🔗 Voir aussi
 
-[join](../../table/join.md), [outerjoin](../../table/outerjoin.md).
+[join](../../table/5_join_set_operations/join.md), [outerjoin](../../table/5_join_set_operations/outerjoin.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

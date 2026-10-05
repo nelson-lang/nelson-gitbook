@@ -16,13 +16,17 @@ Cotangente d'un angle en radians
 
 ## 📄 Description
 
+
 <b>cot</b> calcule la cotangente d'un angle pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = cot([-i pi+i*pi/2 -1+i*4])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +34,8 @@ R = cot([-i pi+i*pi/2 -1+i*4])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

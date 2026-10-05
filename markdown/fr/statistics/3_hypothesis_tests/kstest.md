@@ -26,11 +26,14 @@ Test de Kolmogorov-Smirnov a un echantillon
 
 ## 📄 Description
 
-<b>kstest</b> compare la distribution empirique de <b>x</b> avec la loi normale standard ou une distribution cumulee fournie.
+
+<b>kstest</b> compare la distribution empirique de <b>x</b> avec la loi normale standard ou une distribution cumulee fournie. 
 
 Les valeurs NaN sont ignorees avant le tri et le calcul de la distribution empirique.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [-1.2 -0.4 0.1 0.3 0.8];
@@ -40,14 +43,15 @@ h2 = kstest(x, 'CDF', cdf);
 h3 = kstest([0 1 2], 'CDF', @(z) 0.2 + 0.3 .* z);
 ```
 
+
 ## 🔗 Voir aussi
 
-[normcdf](../../statistics/normcdf.md).
+[normcdf](../../statistics/2_probability_distributions/normcdf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

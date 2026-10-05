@@ -15,29 +15,33 @@ Obtenir des informations sur la mémoire.
 
 ## 📄 Description
 
-<b>memory</b> fournit des informations sur la mémoire.
 
-<b>Mémoire utilisateur</b> : renvoie Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).
+<b>memory</b> fournit des informations sur la mémoire. 
 
-<b>Mémoire système</b> :
+<b>Mémoire utilisateur</b> : renvoie Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson). 
 
-VirtualAddressSpace.Available : espace d'échange disponible
+<b>Mémoire système</b> : 
 
-VirtualAddressSpace.Total : espace d'échange total
+VirtualAddressSpace.Available : espace d'échange disponible 
 
-SystemMemory.Available : mémoire système disponible
+VirtualAddressSpace.Total : espace d'échange total 
 
-PhysicalMemory.Available : mémoire physique disponible
+SystemMemory.Available : mémoire système disponible 
+
+PhysicalMemory.Available : mémoire physique disponible 
 
 PhysicalMemory.Total : mémoire physique totale
 
 ## 💡 Exemples
+
+
 
 ```matlab
 memory()
 A = ones(1000);
 memory()
 ```
+
 
 ```matlab
 clear('A');
@@ -50,9 +54,11 @@ clear('A');
 disp(u3.MemUsedNelson - u2.MemUsedNelson);
 ```
 
+
 ```matlab
 [u1, s1] = memory()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -60,8 +66,8 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

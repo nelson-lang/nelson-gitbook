@@ -17,9 +17,10 @@ Create durations from hours or convert durations to hours.
 
 ## 📄 Description
 
-Create durations from hours or convert durations to hours.
 
-hours is an elapsed-time conversion helper. Numeric input is stored as seconds in a duration object with hour display format.
+Create durations from hours or convert durations to hours. 
+
+hours is an elapsed-time conversion helper. Numeric input is stored as seconds in a duration object with hour display format. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -34,13 +35,14 @@ hours(minutes(90))
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

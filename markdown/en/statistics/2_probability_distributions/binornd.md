@@ -20,22 +20,26 @@ Binomial random numbers
 
 ## 📄 Description
 
+
 <b>binornd</b> generates binomial distributed random values. Scalar parameters are expanded to match array inputs or the requested output size.
 
 ## 💡 Example
+
+
 
 ```matlab
 rng(0);
 r = binornd(10, 0.3, 2, 3);
 ```
 
+
 ## 🔗 See also
 
-[binopdf](../../statistics/binopdf.md), [binocdf](../../statistics/binocdf.md), [binoinv](../../statistics/binoinv.md), [binostat](../../statistics/binostat.md).
+[binopdf](../../statistics/2_probability_distributions/binopdf.md), [binocdf](../../statistics/2_probability_distributions/binocdf.md), [binoinv](../../statistics/2_probability_distributions/binoinv.md), [binostat](../../statistics/2_probability_distributions/binostat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

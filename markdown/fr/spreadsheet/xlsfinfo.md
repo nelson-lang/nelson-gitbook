@@ -19,6 +19,7 @@ Retourner les informations d'un fichier tableur Open XML.
 
 ## 📄 Description
 
+
 <b>xlsfinfo</b> retourne les metadonnees des fichiers .xlsx pris en charge par le backend Open XML.
 
 ## 💡 Exemple
@@ -29,14 +30,15 @@ Lister les feuilles d'un classeur.
 filename = [tempdir(), 'xlsfinfo_example.xlsx']; xlswrite(filename, [1 2], 'Run1', 'A1'); [status, sheets, format] = xlsfinfo(filename)
 ```
 
+
 ## 🔗 Voir aussi
 
 [xlsread](../spreadsheet/xlsread.md), [xlswrite](../spreadsheet/xlswrite.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

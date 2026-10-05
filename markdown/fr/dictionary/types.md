@@ -18,11 +18,14 @@ Types des clés et valeurs du dictionnaire.
 
 ## 📄 Description
 
-<b>keyType = types(d)</b> renvoie le type de données des clés du dictionnaire.
+
+<b>keyType = types(d)</b> renvoie le type de données des clés du dictionnaire. 
 
 <b>[keyType, valueType] = types(d)</b> renvoie les types de données des clés et valeurs du dictionnaire spécifié. Si le dictionnaire d n'est pas configuré, types renvoie un scalaire string indiquant <b>missing</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -32,14 +35,15 @@ d = dictionary(wheels, names)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [keys](../dictionary/keys.md), [values](../dictionary/values.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.5.0   | version initiale |
 
 <!--

@@ -22,9 +22,12 @@ Butterworth digital filter design.
 
 ## 📄 Description
 
+
 <b>butter</b> designs a Butterworth IIR digital filter.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -33,13 +36,14 @@ Butterworth digital filter design.
 
 ```
 
+
 ## 🔗 See also
 
-[buttord](../../signal_processing/buttord.md), [freqz](../../signal_processing/freqz.md).
+[buttord](../../signal_processing/4_digital_filters/buttord.md), [freqz](../../signal_processing/4_digital_filters/freqz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

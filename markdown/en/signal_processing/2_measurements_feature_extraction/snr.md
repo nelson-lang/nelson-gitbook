@@ -22,9 +22,12 @@ Signal-to-noise ratio.
 
 ## 📄 Description
 
+
 <b>snr</b> computes a direct signal-to-noise ratio when a noise vector is supplied. With a scalar sample rate, it estimates sinusoidal SNR from the spectrum.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -32,13 +35,14 @@ Signal-to-noise ratio.
 
 ```
 
+
 ## 🔗 See also
 
-[thd](../../signal_processing/thd.md).
+[thd](../../signal_processing/2_measurements_feature_extraction/thd.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

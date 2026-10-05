@@ -19,13 +19,16 @@ Test des erreurs d'E/S lecture/écriture.
 
 ## 📄 Description
 
-<b>ferror</b> interroge le statut d'erreur d'un fichier.
 
-<b>ferror(fid, 'clear')</b> efface l'indicateur d'erreur pour le fichier spécifié.
+<b>ferror</b> interroge le statut d'erreur d'un fichier. 
+
+<b>ferror(fid, 'clear')</b> efface l'indicateur d'erreur pour le fichier spécifié. 
 
 Pour plus d'informations sur le message retourné, consultez le manuel de la bibliothèque d'exécution C.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 filename = [tempdir(), 'test_ferror.csv'];
@@ -35,14 +38,15 @@ res = fgets(fid);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [fopen](../stream_manager/fopen.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

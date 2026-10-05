@@ -21,9 +21,12 @@ Interpolate a vector by an integer factor.
 
 ## 📄 Description
 
+
 <b>interp</b> inserts R-1 samples between input samples and applies a least-squares interpolation FIR filter. Linear edge extrapolation is used before filtering so the returned vector has the expected phase and length.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -31,13 +34,14 @@ y = interp(1:8, 2, 2);
 
 ```
 
+
 ## 🔗 See also
 
-[upsample](../../signal_processing/upsample.md), [resample](../../signal_processing/resample.md), [upfirdn](../../signal_processing/upfirdn.md).
+[upsample](../../signal_processing/1_signal_generation_preprocessing/upsample.md), [resample](../../signal_processing/1_signal_generation_preprocessing/resample.md), [upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -19,6 +19,7 @@ Crée un nœud d'arbre.
 
 ## 📄 Description
 
+
 <b>n = uitreenode(parent)</b> crée un nœud dans un uitree ou sous un autre TreeNode. Propriétés : <b>Text</b>, <b>NodeData</b>, <b>Icon</b>, <b>ContextMenu</b>.
 
 ## 💡 Exemples
@@ -34,7 +35,6 @@ uitreenode(n1, 'Text', 'Results');
 expand(tr);
 drawnow();
 ```
-
 <img src="uitreenode_example.svg" align="middle"/>
 uitreenode
 
@@ -46,13 +46,14 @@ n = uitreenode(t, 'Text', 'Nœud 1', 'NodeData', [1 2 3]);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [uifigure](../../../gui/uifigure.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

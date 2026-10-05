@@ -12,7 +12,8 @@ Attendre l'arret d'objets timer.
 
 ## 📄 Description
 
-<b>wait</b> bloque jusqu'a ce que chaque timer de <b>t</b> soit arrete. Pendant l'attente, Nelson continue de traiter les callbacks de timer afin que les callbacks planifies puissent se terminer.
+
+<b>wait</b> bloque jusqu'a ce que chaque timer de <b>t</b> soit arrete. Pendant l'attente, Nelson continue de traiter les callbacks de timer afin que les callbacks planifies puissent se terminer. 
 
 Utilisez <b>wait</b> dans les scripts et les tests lorsque les commandes suivantes dependent de la fin des callbacks de timer.
 
@@ -32,14 +33,15 @@ get(t, 'TasksExecuted')
 delete(t);
 ```
 
+
 ## 🔗 Voir aussi
 
-[timer](../../time/timer.md), [start](../../time/start.md), [stop](../../time/stop.md).
+[timer](../../time/7_timers/timer.md), [start](../../time/7_timers/start.md), [stop](../../time/7_timers/stop.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

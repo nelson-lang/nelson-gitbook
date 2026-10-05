@@ -26,15 +26,18 @@ Bivariate histogram bin counts.
 
 ## 📄 Description
 
-histcounts2 partitions the (X, Y) pairs into a two-dimensional grid of bins and counts how many pairs fall into each bin.
 
-N(i, j) counts the pairs for which Xedges(i) <= X < Xedges(i+1) and Yedges(j) <= Y < Yedges(j+1). The last bin of each dimension is closed on both ends.
+histcounts2 partitions the (X, Y) pairs into a two-dimensional grid of bins and counts how many pairs fall into each bin. 
 
-You can supply the number of bins (a scalar, or [nx ny]) or the explicit edge vectors Xedges and Yedges. When a number of bins is requested, the edges are chosen on a 'nice' grid, the same way as [histcounts](../../elementary_functions/histcounts.md). Pairs with a NaN coordinate are ignored.
+N(i, j) counts the pairs for which Xedges(i) <= X < Xedges(i+1) and Yedges(j) <= Y < Yedges(j+1). The last bin of each dimension is closed on both ends. 
+
+You can supply the number of bins (a scalar, or [nx ny]) or the explicit edge vectors Xedges and Yedges. When a number of bins is requested, the edges are chosen on a 'nice' grid, the same way as [histcounts](../../elementary_functions/7_indexing_dimensions/histcounts.md). Pairs with a NaN coordinate are ignored.
 
 ## Used function(s)
 
+
     histcounts2
+  
 
 ## 💡 Examples
 
@@ -45,20 +48,20 @@ x = [1 2 3];
 y = [1 2 3];
 N = histcounts2(x, y, [0 2 4], [0 2 4])
 ```
-
 Automatically chosen edges with a number of bins.
 
 ```matlab
 [N, xe, ye] = histcounts2([1 5 10 3 7], [2 4 6 8 1], 3)
 ```
 
+
 ## 🔗 See also
 
-[histcounts](../../elementary_functions/histcounts.md), [discretize](../../data_analysis/discretize.md).
+[histcounts](../../elementary_functions/7_indexing_dimensions/histcounts.md), [discretize](../../data_analysis/discretize.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

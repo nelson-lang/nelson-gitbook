@@ -18,9 +18,12 @@ Check for graphics object.
 
 ## 📄 Description
 
+
 <b>isgraphics</b> checks is variable is an graphics object.
 
 ## 💡 Example
+
+
 
 ```matlab
 f = figure()
@@ -31,13 +34,14 @@ f = 3
 tf = isgraphics(f)
 ```
 
+
 ## 🔗 See also
 
 [isprop](../../../handle/isprop.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

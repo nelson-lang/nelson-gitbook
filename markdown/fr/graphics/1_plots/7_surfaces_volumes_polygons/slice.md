@@ -26,6 +26,7 @@ Afficher des coupes orthogonales dans des donnees volumiques.
 
 ## 📄 Description
 
+
 <b>slice</b> echantillonne des donnees volumiques sur les plans demandes ou sur une surface demandee et affiche chaque resultat comme une surface coloree.
 
 ## 💡 Exemple
@@ -37,8 +38,8 @@ Afficher deux coupes dans un volume.
 v = x.^2 + y.^2 + z.^2;
 slice(x, y, z, v, 0, [], 0);
 ```
-
 <img src="slice_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 

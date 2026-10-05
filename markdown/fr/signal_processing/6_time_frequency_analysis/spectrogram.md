@@ -24,9 +24,12 @@ Spectrogramme par transformees de Fourier locales.
 
 ## 📄 Description
 
+
 <b>spectrogram</b> decoupe le signal en segments fenetres recouvrants et calcule une FFT pour chaque segment.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -34,14 +37,15 @@ Spectrogramme par transformees de Fourier locales.
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[stft](../../signal_processing/stft.md), [periodogram](../../signal_processing/periodogram.md).
+[stft](../../signal_processing/6_time_frequency_analysis/stft.md), [periodogram](../../signal_processing/5_spectral_analysis/periodogram.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

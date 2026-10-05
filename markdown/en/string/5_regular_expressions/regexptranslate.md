@@ -18,9 +18,12 @@ Translate text into regular expression.
 
 ## 📄 Description
 
+
 <b>regexptranslate</b> escapes regular expression metacharacters or translates wildcard characters into regular expression syntax.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -29,15 +32,16 @@ regexptranslate('wildcard', '*.m')
 
 ```
 
+
 ## 🔗 See also
 
-[regexp](../../string/regexp.md), [regexprep](../../string/regexprep.md).
+[regexp](../../string/5_regular_expressions/regexp.md), [regexprep](../../string/5_regular_expressions/regexprep.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.17.0  | initial version |
+| 1.17.0   | initial version |
 
 <!--
 ## 👤 Author

@@ -17,6 +17,7 @@ Applique un filtrage chapeau haut.
 
 ## 📄 Description
 
+
 Applique un filtrage chapeau haut.
 
 ## 💡 Exemple
@@ -29,17 +30,17 @@ J=imtophat(I,strel('disk',5));
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(J); g=linspace(0,1,64)'; colormap([g g g]); title('Top-hat');
 ```
-
 <img src="imtophat_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[imbothat](../../../image_processing/imbothat.md), [imopen](../../../image_processing/imopen.md), [strel](../../../image_processing/strel.md).
+[imbothat](../../../image_processing/2_image_analysis/4_morphology/imbothat.md), [imopen](../../../image_processing/2_image_analysis/4_morphology/imopen.md), [strel](../../../image_processing/2_image_analysis/4_morphology/strel.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

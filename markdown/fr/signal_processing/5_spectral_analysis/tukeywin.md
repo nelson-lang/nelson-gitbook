@@ -18,9 +18,12 @@ Fenêtre de Tukey.
 
 ## 📄 Description
 
+
 <b>tukeywin</b> retourne une fenêtre cosinus apodisée.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -28,14 +31,15 @@ w = tukeywin(6, 0.5);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[hann](../../signal_processing/hann.md).
+[hann](../../signal_processing/5_spectral_analysis/hann.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -22,9 +22,12 @@
 
 ## 📄 Description
 
+
 <b>zlabel('text')</b> étiquette l'axe des z des axes actuels.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f  = figure();
@@ -33,8 +36,8 @@ L = plot3(sin(t), cos(t), t);
 axis square
 zlabel('Étiquette de l’axe Z - Unicode ドラゴンボールZ(ゼット)')
 ```
-
 <img src="zlabel.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +45,8 @@ zlabel('Étiquette de l’axe Z - Unicode ドラゴンボールZ(ゼット)')
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

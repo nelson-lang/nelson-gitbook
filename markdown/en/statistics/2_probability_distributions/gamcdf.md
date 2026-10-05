@@ -20,9 +20,12 @@ Gamma cumulative distribution function
 
 ## 📄 Description
 
+
 <b>gamcdf</b> computes lower-tail gamma probabilities by default and upper-tail probabilities with <b>'upper'</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [0 0.5 1 2 5];
@@ -30,9 +33,10 @@ p = gamcdf(x, 2, 3);
 q = gamcdf(x, 2, 3, 'upper');
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

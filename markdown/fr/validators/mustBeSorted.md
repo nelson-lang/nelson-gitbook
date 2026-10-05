@@ -21,13 +21,14 @@ Vérifie que les éléments d'un tableau sont triés ou signale une erreur.
 
 ## 📄 Description
 
-<b>mustBeSorted(A)</b> signale une erreur si les éléments de <b>A</b> ne sont pas triés. Elle ne retourne pas de valeur.
 
-Les vecteurs sont vérifiés dans leur ensemble, les matrices colonne par colonne, et les tableaux multidimensionnels selon la première dimension dont la taille est différente de 1.
+<b>mustBeSorted(A)</b> signale une erreur si les éléments de <b>A</b> ne sont pas triés. Elle ne retourne pas de valeur. 
 
-Les valeurs vides et les scalaires sont toujours triés.
+Les vecteurs sont vérifiés dans leur ensemble, les matrices colonne par colonne, et les tableaux multidimensionnels selon la première dimension dont la taille est différente de 1. 
 
-Les tableaux réels denses numériques, logiques et char sont vérifiés nativement en un seul parcours ; les autres types utilisent les opérateurs de comparaison de leur classe.
+Les valeurs vides et les scalaires sont toujours triés. 
+
+Les tableaux réels denses numériques, logiques et char sont vérifiés nativement en un seul parcours ; les autres types utilisent les opérateurs de comparaison de leur classe. 
 
 <b>mustBeSorted</b> est destinée à la validation des propriétés et des arguments de fonctions.
 
@@ -40,7 +41,6 @@ A = [5 3 3 1];
 mustBeSorted(A, 'descend')
 mustBeSorted(A)
 ```
-
 Valeurs manquantes et valeurs complexes
 
 ```matlab
@@ -50,14 +50,15 @@ mustBeSorted([1 -2 3], 'ComparisonMethod', 'abs')
 mustBeSorted([1+1i, 1-1i])
 ```
 
+
 ## 🔗 Voir aussi
 
 [issorted](../data_analysis/issorted.md), [sort](../data_analysis/sort.md), [mustBeVector](../validators/mustBeVector.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

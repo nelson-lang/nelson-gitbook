@@ -17,13 +17,17 @@ Permutation aléatoire de valeurs entières.
 
 ## 📄 Description
 
+
 <b>p = randperm(n)</b> renvoie un vecteur ligne contenant une permutation aléatoire de <b>1:n</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 randperm(7)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,10 +35,10 @@ randperm(7)
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                             |
-| ------- | -------------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                           |
-| 1.15.0  | ajout du second argument d'entrée pour le nombre d'éléments à sélectionner |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
+| 1.15.0   | ajout du second argument d'entrée pour le nombre d'éléments à sélectionner |
 
 <!--
 ## 👤 Auteur

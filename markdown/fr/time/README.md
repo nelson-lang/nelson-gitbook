@@ -1,14 +1,24 @@
 # Date et Heure
 
+
+    
 Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.
 
+    
 Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.
 
+    
 Ce module permet une gestion précise du temps, la planification et la mesure de performance dans les scripts et applications.
+
+  
 
 ## Creation de tableaux de date et heure
 
+
+    
 Fonctions pour creer des valeurs date et heure et des representations de date alternatives.
+
+  
 
 ### Functions
 
@@ -28,7 +38,11 @@ Fonctions pour creer des valeurs date et heure et des representations de date al
 
 ## Durees et durees calendaires
 
+
+    
 Fonctions pour durees de longueur fixe et durees calendaires.
+
+  
 
 ### Functions
 
@@ -48,7 +62,11 @@ Fonctions pour durees de longueur fixe et durees calendaires.
 
 ## Composants de date et heure
 
+
+    
 Fonctions pour extraire et separer les composants de date et heure.
+
+  
 
 ### Functions
 
@@ -68,7 +86,11 @@ Fonctions pour extraire et separer les composants de date et heure.
 
 ## Calculs et intervalles de dates
 
+
+    
 Fonctions pour decalages, differences, intervalles de dates et temps ecoule.
+
+  
 
 ### Functions
 
@@ -82,7 +104,11 @@ Fonctions pour decalages, differences, intervalles de dates et temps ecoule.
 
 ## Requetes sur les tableaux de date et heure
 
+
+    
 Predicats et fonctions de requete pour dates, heures, durees et fuseaux horaires.
+
+  
 
 ### Functions
 
@@ -101,7 +127,11 @@ Predicats et fonctions de requete pour dates, heures, durees et fuseaux horaires
 
 ## Texte et systemes de temps externes
 
+
+    
 Conversions entre valeurs de date et heure, texte et systemes numeriques de temps externes.
+
+  
 
 ### Functions
 
@@ -116,7 +146,11 @@ Conversions entre valeurs de date et heure, texte et systemes numeriques de temp
 
 ## Timers et mesure du temps
 
+
+    
 Objets timer, planification, attentes et utilitaires de mesure du temps.
+
+  
 
 ### Functions
 
@@ -155,7 +189,11 @@ Objets timer, planification, attentes et utilitaires de mesure du temps.
 
 ## Series temporelles
 
+
+    
 Series temporelles, collections, evenements, metadonnees et operations associees.
+
+  
 
 ### Functions
 
@@ -236,3 +274,4 @@ Series temporelles, collections, evenements, metadonnees et operations associees
 - [tsdata.interpolation](8_timeseries/tsdata.interpolation.md) - Fonction pour objets de serie temporelle.
 - [tsdata.qualmetadata](8_timeseries/tsdata.qualmetadata.md) - Fonction pour objets de serie temporelle.
 - [tsdata.timemetadata](8_timeseries/tsdata.timemetadata.md) - Fonction pour objets de serie temporelle.
+

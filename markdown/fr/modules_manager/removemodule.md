@@ -4,15 +4,16 @@ Supprime un module de Nelson.
 
 ## 📝 Syntaxe
 
-- removemodule(module_short_name)
+- removemodule(module\_short\_name)
 
 ## 📥 Argument d'entrée
 
-- module_short_name - chaîne : nom court du module.
+- module\_short\_name - chaîne : nom court du module.
 
 ## 📄 Description
 
-<b>removemodule</b> supprime un module identifié par son nom court.
+
+<b>removemodule</b> supprime un module identifié par son nom court. 
 
 Tous les modules du cœur sont protégés et ne peuvent pas être supprimés pendant une session Nelson.
 
@@ -28,14 +29,15 @@ removemodule('module_skeleton')
 ismodule('module_skeleton')
 ```
 
+
 ## 🔗 Voir aussi
 
 [ismodule](../modules_manager/ismodule.md), [addmodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

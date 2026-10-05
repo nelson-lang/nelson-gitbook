@@ -16,17 +16,20 @@ concatène des chaînes horizontalement.
 
 ## 📄 Description
 
-<b>strcat</b> concatène les chaînes horizontalement.
 
-Si toutes les entrées sont des tableaux de caractères, alors<b>res</b> est un tableau de caractères.
+<b>strcat</b> concatène les chaînes horizontalement. 
 
-Si une entrée est un tableau de chaînes, alors<b>res</b> est un tableau de chaînes.
+Si toutes les entrées sont des tableaux de caractères, alors<b>res</b> est un tableau de caractères. 
 
-Si une entrée est une cellule et qu'aucune n'est un tableau de chaînes, alors<b>res</b> est une cellule de vecteurs de caractères.
+Si une entrée est un tableau de chaînes, alors<b>res</b> est un tableau de chaînes. 
+
+Si une entrée est une cellule et qu'aucune n'est un tableau de chaînes, alors<b>res</b> est une cellule de vecteurs de caractères. 
 
 <b>append</b> ne supprime pas les espaces finaux.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 append("Nelson", 'nelSon')
@@ -35,14 +38,15 @@ B = {'jkl','mn'};
 C = append(A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
-[strcat](../../string/strcat.md).
+[strcat](../../string/1_create_convert_text/strcat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

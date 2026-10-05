@@ -15,14 +15,16 @@ Sécante inverse de l'argument en degrés.
 - res - une valeur numérique
 
 ## 📄 Description
-
 <b>asecd</b> calcule la sécante inverse de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 R = asecd([1, 10+3i, 15+2i, 35+i])
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +32,8 @@ R = asecd([1, 10+3i, 15+2i, 35+i])
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

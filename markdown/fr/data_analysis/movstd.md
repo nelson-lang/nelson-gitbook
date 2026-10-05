@@ -23,15 +23,17 @@ Ecart type mobile.
 
 ## 📄 Description
 
+
 <b>movstd</b> calcule les ecarts types sur une fenetre mobile centree.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movstd(A, 3)
 ```
-
 Écart type mobile et moyenne mobile
 
 ```matlab
@@ -39,15 +41,16 @@ A = [4 8 6 -1 -2 -3 -1 3 4 5];
 [R, M] = movstd(A, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[std](../statistics/std.md).
+[std](../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                              |
-| ------- | ------------------------------------------- |
-| 2.0.0   | version initiale                            |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | moyenne mobile renvoyée en deuxième sortie. |
 
 <!--

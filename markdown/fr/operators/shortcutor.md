@@ -17,9 +17,12 @@ Opérateur OR à court-circuit, \|\|
 
 ## 📄 Description
 
+
 <b>C = A \|\| B</b> effectue une opération logique <b>OR</b> : le second opérande n'est évalué que lorsque le résultat ne peut pas être déterminé par le premier opérande.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
@@ -28,17 +31,18 @@ C = A || B
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [or](../operators/or.md), [
-&
-&
-](../operators/shortcutand.md), [xor](../logical/xor.md).
+        &
+        &
+      ](../operators/shortcutand.md), [xor](../logical/xor.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

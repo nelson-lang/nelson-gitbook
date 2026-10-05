@@ -16,11 +16,14 @@ determines whether input is matrix or not
 
 ## 📄 Description
 
-<b>TF = ismatrix(A)</b> returns true if A is a matrix.
+
+<b>TF = ismatrix(A)</b> returns true if A is a matrix. 
 
 A matrix is a two-dimensional array that has a size of m-by-n, where m and n are nonnegative integers.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [1+i,-i;i,2i];
@@ -28,13 +31,14 @@ ismatrix(x)
 ismatrix(ones(3,1,2))
 ```
 
+
 ## 🔗 See also
 
-[isvector](../../elementary_functions/isvector.md).
+[isvector](../../elementary_functions/7_indexing_dimensions/isvector.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

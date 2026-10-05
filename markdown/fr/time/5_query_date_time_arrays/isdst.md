@@ -16,9 +16,10 @@ Teste si des valeurs datetime avec fuseau sont en heure d ete.
 
 ## 📄 Description
 
-Teste si des valeurs datetime avec fuseau sont en heure d ete.
 
-isdst utilise les regles timezone embarquees pour les fuseaux nommes. Les decalages fixes n ont pas de transitions d heure d ete.
+Teste si des valeurs datetime avec fuseau sont en heure d ete. 
+
+isdst utilise les regles timezone embarquees pour les fuseaux nommes. Les decalages fixes n ont pas de transitions d heure d ete. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,14 +33,15 @@ isdst(datetime(2024, 7, 1, 'TimeZone', 'Europe/Paris'))
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

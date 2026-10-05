@@ -24,9 +24,12 @@ Swept-frequency cosine signal.
 
 ## 📄 Description
 
+
 <b>chirp</b> generates a cosine whose frequency changes over time.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -34,13 +37,14 @@ y = chirp(0:0.01:1, 0, 1, 10);
 
 ```
 
+
 ## 🔗 See also
 
-[sawtooth](../../signal_processing/sawtooth.md), [square](../../signal_processing/square.md).
+[sawtooth](../../signal_processing/1_signal_generation_preprocessing/sawtooth.md), [square](../../signal_processing/1_signal_generation_preprocessing/square.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

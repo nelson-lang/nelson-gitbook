@@ -18,22 +18,26 @@ Moyenne et variance lognormales
 
 ## 📄 Description
 
+
 <b>lognstat</b> renvoie la moyenne et la variance element par element de lois lognormales.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 [m, v] = lognstat(0, 1);
 ```
 
+
 ## 🔗 Voir aussi
 
-[lognpdf](../../statistics/lognpdf.md), [lognrnd](../../statistics/lognrnd.md).
+[lognpdf](../../statistics/2_probability_distributions/lognpdf.md), [lognrnd](../../statistics/2_probability_distributions/lognrnd.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

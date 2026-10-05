@@ -26,7 +26,8 @@ Set or get radial tick values for polar axes.
 
 ## 📄 Description
 
-<b>rticks</b> gets or sets radial tick values on the current polar axes.
+
+<b>rticks</b> gets or sets radial tick values on the current polar axes. 
 
 Setting numeric tick values switches radial tick mode to <b>manual</b>. If radial tick labels are in automatic mode, labels are regenerated from the new values.
 
@@ -42,13 +43,14 @@ ticks = rticks()
 
 ```
 
+
 ## 🔗 See also
 
 [rticklabels](../../../graphics/3_labels_styling/1_axes_appearance/rticklabels.md), [rlim](../../../graphics/3_labels_styling/1_axes_appearance/rlim.md), [thetaticks](../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

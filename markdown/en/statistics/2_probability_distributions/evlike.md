@@ -21,9 +21,12 @@ Extreme value negative log-likelihood
 
 ## 📄 Description
 
+
 <b>evlike</b> evaluates the negative log-likelihood of the extreme value distribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-2 -1 0 1 2 3];
@@ -31,13 +34,14 @@ phat = evfit(x);
 nlogL = evlike(phat, x);
 ```
 
+
 ## 🔗 See also
 
-[evfit](../../statistics/evfit.md), [evpdf](../../statistics/evpdf.md), [evcdf](../../statistics/evcdf.md).
+[evfit](../../statistics/2_probability_distributions/evfit.md), [evpdf](../../statistics/2_probability_distributions/evpdf.md), [evcdf](../../statistics/2_probability_distributions/evcdf.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

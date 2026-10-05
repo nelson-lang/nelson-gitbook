@@ -21,7 +21,8 @@ Measure properties of 3-D volume regions
 
 ## 📄 Description
 
-<b>regionprops3</b> measures connected regions in 3-D volumes. Supported geometric properties include Volume, Centroid, BoundingBox, VoxelIdxList, VoxelList, Image, SubarrayIdx, Extent, and EquivDiameter.
+
+<b>regionprops3</b> measures connected regions in 3-D volumes. Supported geometric properties include Volume, Centroid, BoundingBox, VoxelIdxList, VoxelList, Image, SubarrayIdx, Extent, and EquivDiameter. 
 
 When an intensity volume is provided, supported intensity properties include MeanIntensity, MinIntensity, MaxIntensity, VoxelValues, and WeightedCentroid.
 
@@ -39,8 +40,8 @@ figure;
 imagesc(L(:, :, 10));
 title('Measured volume regions');
 ```
-
 <img src="regionprops3_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -48,7 +49,7 @@ title('Measured volume regions');
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

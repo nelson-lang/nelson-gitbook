@@ -19,14 +19,18 @@ Minimum mobile.
 
 ## 📄 Description
 
+
 <b>movmin</b> calcule les valeurs minimales sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmin(A, 3)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +38,8 @@ R = movmin(A, 3)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

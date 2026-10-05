@@ -22,7 +22,8 @@ Check that two numeric values are not approximately equal.
 
 ## 📄 Description
 
-The assertion passes when asserts.isapprox would fail.
+
+The assertion passes when asserts.isapprox would fail. 
 
 Both tolerances must be finite nonnegative numeric scalars.
 
@@ -33,12 +34,12 @@ Different numeric values
 ```matlab
 asserts.notApprox(1, 2, eps);
 ```
-
 Capture approximate equality
 
 ```matlab
 [res, msg] = asserts.notApprox(1, 1, eps);
 ```
+
 
 ## 🔗 See also
 
@@ -46,7 +47,7 @@ Capture approximate equality
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

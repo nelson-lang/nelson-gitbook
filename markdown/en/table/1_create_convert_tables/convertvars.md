@@ -18,22 +18,26 @@ Convert table variables.
 
 ## 📄 Description
 
+
 <b>convertvars</b> applies a conversion function to selected variables.
 
 ## 💡 Example
+
+
 
 ```matlab
 T = table([1; 2], 'VariableNames', {'A'});
 R = convertvars(T, 'A', @(x) single(x))
 ```
 
+
 ## 🔗 See also
 
-[vartype](../../table/vartype.md).
+[vartype](../../table/1_create_convert_tables/vartype.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

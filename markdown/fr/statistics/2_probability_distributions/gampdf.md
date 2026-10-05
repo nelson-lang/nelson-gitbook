@@ -19,19 +19,23 @@ Densite de probabilite gamma
 
 ## 📄 Description
 
+
 <b>gampdf</b> calcule les valeurs de densite de la distribution gamma.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [0 0.5 1 2 5];
 y = gampdf(x, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

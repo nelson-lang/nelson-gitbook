@@ -1,16 +1,29 @@
 # Fonctions de traitement d'image
 
+
+    
 Le module Image Processing fournit des operations pour manipuler les images et volumes, notamment conversion de type, conversion couleur, ajustement du contraste, filtrage, morphologie, composants connexes, mesures de regions, transformations geometriques, redimensionnement, rotation, detection de points caracteristiques, bases du traitement 3-D et recalage d'images.
 
+    
 Les pages d'aide sont regroupees en chapitres thematiques : bases de l'image, analyse et segmentation d'images, puis geometrie, recalage et traitement 3-D.
+
+  
 
 ## Bases de l'image
 
+
+    
 Fonctions pour classes d'images, espaces couleur, ajustement du contraste, seuillage, filtrage, padding et detection de contours.
+
+  
 
 ### Types d'image et couleur
 
+
+    
 Fonctions pour la conversion de type d'image, la conversion d'espace couleur et la conversion d'images indexees.
+
+  
 
 #### Functions
 
@@ -30,7 +43,11 @@ Fonctions pour la conversion de type d'image, la conversion d'espace couleur et 
 
 ### Contraste et seuillage
 
+
+    
 Fonctions pour l'ajustement du contraste, le choix de seuil, l'analyse d'histogramme et la creation d'images binaires.
+
+  
 
 #### Functions
 
@@ -44,7 +61,11 @@ Fonctions pour l'ajustement du contraste, le choix de seuil, l'analyse d'histogr
 
 ### Filtrage et contours
 
+
+    
 Fonctions pour le filtrage spatial, le filtrage gaussien ou median, le remplissage, les noyaux de filtre et la detection de contours.
+
+  
 
 #### Functions
 
@@ -58,11 +79,19 @@ Fonctions pour le filtrage spatial, le filtrage gaussien ou median, le remplissa
 
 ## Analyse et segmentation d'images
 
+
+    
 Fonctions pour morphologie, composants connexes, suivi de frontieres, mesures de regions, reconstruction et segmentation.
+
+  
 
 ### Morphologie
 
+
+    
 Fonctions pour les operations morphologiques binaires et en niveaux de gris, le nettoyage d'objets, le nettoyage des bords et les elements structurants.
+
+  
 
 #### Functions
 
@@ -81,7 +110,11 @@ Fonctions pour les operations morphologiques binaires et en niveaux de gris, le 
 
 ### Regions et frontieres
 
+
+    
 Fonctions pour les composants connexes, les etiquettes, les mesures de regions, la selection et le suivi de frontieres.
+
+  
 
 #### Functions
 
@@ -95,7 +128,11 @@ Fonctions pour les composants connexes, les etiquettes, les mesures de regions, 
 
 ### Segmentation
 
+
+    
 Fonctions pour segmenter les images avec la croissance de region, les contours actifs, la reconstruction morphologique, les h-minima/maxima, les extrema regionaux, les minima imposes et les transformations watershed.
+
+  
 
 #### Functions
 
@@ -113,7 +150,11 @@ Fonctions pour segmenter les images avec la croissance de region, les contours a
 
 ### Detection de points caracteristiques
 
+
+    
 Fonctions pour les metriques de coins et la detection de points caracteristiques locaux.
+
+  
 
 #### Functions
 
@@ -123,11 +164,19 @@ Fonctions pour les metriques de coins et la detection de points caracteristiques
 
 ## Geometrie, recalage et 3-D
 
+
+    
 Fonctions pour transformations geometriques, references spatiales, recalage d'images, filtrage volumique, redimensionnement et mesures 3-D.
+
+  
 
 ### Transformations geometriques
 
+
+    
 Fonctions et objets pour le recadrage, le redimensionnement, la rotation, la translation, le referencement spatial et les transformations geometriques dans les workflows 2-D et les bases 3-D.
+
+  
 
 #### Functions
 
@@ -155,7 +204,11 @@ Fonctions et objets pour le recadrage, le redimensionnement, la rotation, la tra
 
 ### Volumes 3-D
 
+
+    
 Fonctions de filtrage et traitement de donnees d'image volumetriques.
+
+  
 
 #### Functions
 
@@ -165,8 +218,13 @@ Fonctions de filtrage et traitement de donnees d'image volumetriques.
 
 ### Recalage d'images
 
+
+    
 Guides et points d'entree pour aligner des images, estimer des transformations de recalage et appliquer les sorties recalees.
+
+  
 
 #### Functions
 
 - [image_registration](3_geometry_registration_3d/9a_image_registration/image_registration.md) - Vue d'ensemble du recalage d'images.
+

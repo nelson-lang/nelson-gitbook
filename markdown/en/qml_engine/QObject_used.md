@@ -1,10 +1,10 @@
-# QObject_used
+# QObject\_used
 
 Returns the current valid QObject handles.
 
 ## 📝 Syntax
 
-- r = QObject_used()
+- r = QObject\_used()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns the current valid QObject handles.
 
 ## 📄 Description
 
+
 Returns the current valid QObject handles.
 
 ## 💡 Example
 
+
+
 ```matlab
 used = QObject_used()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ used = QObject_used()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

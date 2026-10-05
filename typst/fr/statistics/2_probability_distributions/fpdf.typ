@@ -1,0 +1,46 @@
+#import "../nelson_help.typ": *
+
+= fpdf <statistics:2_probability_distributions.fpdf>
+
+Densite de probabilite F
+
+== Syntaxe
+
+- #raw("y = fpdf(x, v1, v2)");
+
+== Argument d'entrée
+
+/ x: tableau numerique reel : valeurs ou la distribution est evaluee.
+/ v1: tableau numerique reel positif ou scalaire : degres de liberte du numerateur.
+/ v2: tableau numerique reel positif ou scalaire : degres de liberte du denominateur.
+
+== Argument de sortie
+
+/ y: valeurs de densite de probabilite.
+
+== Description
+
+#strong[fpdf]; calcule les valeurs de densite de probabilite de la distribution F. Les entrees scalaires sont etendues a la taille des tableaux.
+
+
+== Exemple
+
+``````matlab
+x = [0.5 1 2 5];
+y = fpdf(x, 5, 20);
+``````
+
+
+== Voir aussi
+
+#nlink(<statistics:2_probability_distributions.fcdf>)[fcdf];, #nlink(<statistics:2_probability_distributions.finv>)[finv];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [2.0.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

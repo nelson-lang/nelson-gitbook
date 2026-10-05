@@ -10,24 +10,28 @@ Principal component analysis on a covariance matrix.
 
 ## 📄 Description
 
-<b>pcacov</b> performs principal component analysis on a square covariance matrix.
+
+<b>pcacov</b> performs principal component analysis on a square covariance matrix. 
 
 The coefficients are returned in columns ordered by decreasing component variance. The vector latent contains the eigenvalues of V, and explained contains the percentage of total variance represented by each component.
 
 ## 💡 Example
+
+
 
 ```matlab
 V = [4 2; 2 3];
 [coeff, latent, explained] = pcacov(V)
 ```
 
+
 ## 🔗 See also
 
-[pca](../../statistics/pca.md), [cov](../../statistics/cov.md).
+[pca](../../statistics/8_dimension_reduction_feature_selection/pca.md), [cov](../../statistics/1_descriptive_statistics_visualization/cov.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

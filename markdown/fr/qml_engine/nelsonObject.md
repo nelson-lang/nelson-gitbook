@@ -7,19 +7,21 @@ objet nelson appelable depuis QML.
 - nelson.disp(msg)
 - nelson.evaluate(cmd)
 - nelson.processevent()
-- nelson.call(function_name)
-- nelson.call(function_name, arg1, ..., arg5)
+- nelson.call(function\_name)
+- nelson.call(function\_name, arg1, ..., arg5)
 
 ## 📥 Argument d'entrée
 
 - msg - une chaîne.
 - cmd - une chaîne.
-- function_name - une chaîne : nom de la fonction nelson à appeler
+- function\_name - une chaîne : nom de la fonction nelson à appeler
 - arg1, ..., arg5 - variables JavaScript
 
 ## 📄 Description
 
+
 <b>nelson</b> contient des méthodes utilisées comme callbacks pour appeler nelson depuis QML
+
 
 ## 🔗 Voir aussi
 
@@ -27,8 +29,8 @@ objet nelson appelable depuis QML.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

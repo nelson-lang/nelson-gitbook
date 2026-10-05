@@ -15,9 +15,12 @@ Verifie que la valeur est un vecteur ou vide, sinon renvoie une erreur.
 
 ## 📄 Description
 
+
 <b>mustBeVectorOrEmpty</b> verifie que la valeur est un vecteur ou vide, sinon renvoie une erreur.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 mustBeVectorOrEmpty([1 2])
@@ -25,15 +28,16 @@ mustBeVectorOrEmpty(zeros(0, 3))
 mustBeVectorOrEmpty(ones(2))
 ```
 
+
 ## 🔗 Voir aussi
 
-[isvector](../elementary_functions/isvector.md), [isempty](../types/isempty.md), [mustBeVector](../validators/mustBeVector.md).
+[isvector](../elementary_functions/7_indexing_dimensions/isvector.md), [isempty](../types/isempty.md), [mustBeVector](../validators/mustBeVector.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.15.0  | version initiale |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.15.0   | version initiale |
 
 <!--
 ## 👤 Auteur

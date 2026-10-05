@@ -21,11 +21,14 @@ Downsample a signal by an integer factor.
 
 ## 📄 Description
 
-The <b>downsample</b> function returns every n-th sample of the input sequence X, beginning at sample index (phase + 1). For example,<b>downsample(X, 2)</b> returns the odd-indexed samples of X (1,3,5,...). If X is a matrix, the operation is applied column-wise by default unless a dimension is provided.
+
+The <b>downsample</b> function returns every n-th sample of the input sequence X, beginning at sample index (phase + 1). For example,<b>downsample(X, 2)</b> returns the odd-indexed samples of X (1,3,5,...). If X is a matrix, the operation is applied column-wise by default unless a dimension is provided. 
 
 No anti-aliasing filtering is performed; if you need to reduce high-frequency content before decimation, consider using<b>decimate</b> or applying a low-pass filter first.
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -44,15 +47,16 @@ B = downsample(A, 2);
 
 ```
 
+
 ## 🔗 See also
 
 [interp1](../../special_functions/interp1.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.15.0  | initial version |
+| 1.15.0   | initial version |
 
 <!--
 ## 👤 Author

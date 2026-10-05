@@ -4,11 +4,11 @@ Get SHA-512 checksum.
 
 ## 📝 Syntax
 
-- hexa_hash = crypto.sha512(str)
-- hexa_hash = crypto.sha512(filename)
-- hexa_hash = crypto.sha512(bytes)
-- hexa_hash = crypto.sha512(str, '-file')
-- hexa_hash = crypto.sha512(str, '-string')
+- hexa\_hash = crypto.sha512(str)
+- hexa\_hash = crypto.sha512(filename)
+- hexa\_hash = crypto.sha512(bytes)
+- hexa\_hash = crypto.sha512(str, '-file')
+- hexa\_hash = crypto.sha512(str, '-string')
 
 ## 📥 Input argument
 
@@ -19,9 +19,10 @@ Get SHA-512 checksum.
 
 ## 📤 Output argument
 
-- hexa_hash - a character vector, cell of strings or string array: 128 lowercase hexadecimal characters per input (empty when a file cannot be read).
+- hexa\_hash - a character vector, cell of strings or string array: 128 lowercase hexadecimal characters per input (empty when a file cannot be read).
 
 ## 📄 Description
+
 
 <b>crypto.sha512</b> computes the SHA-512 digest (FIPS 180-4) of text, raw bytes or a file, with the same conventions as <b>sha256</b>.
 
@@ -35,12 +36,13 @@ https://monocypher.org/
 
 ## 💡 Examples
 
+
+
 ```matlab
 R = crypto.sha512('abc')
 R = crypto.sha512(uint8('abc'))
 R = crypto.sha512({'Hello', 'World'})
 ```
-
 hash a file
 
 ```matlab
@@ -49,13 +51,14 @@ filewrite(filename, 'abc');
 R = crypto.sha512(filename, '-file')
 ```
 
+
 ## 🔗 See also
 
-[sha256](../core/sha256.md), [crypto.hmac](../core/crypto.hmac.md).
+[sha256](../core/sha256.md), [crypto.hmac](../core/crypto_hmac.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

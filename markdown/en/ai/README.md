@@ -1,5 +1,7 @@
 # AI and MCP integration.
 
+
+
 ## Functions
 
 - [aiask](aiask.md) - Ask an external AI provider from Nelson.
@@ -8,3 +10,4 @@
 - [mcpinfo](mcpinfo.md) - Return Nelson MCP server information.
 - [mcpserver](mcpserver.md) - Start Nelson MCP server on standard input and output.
 - [mcpusage](mcpusage.md) - Use Nelson through MCP from an AI agent.
+

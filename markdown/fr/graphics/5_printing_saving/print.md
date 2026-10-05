@@ -19,22 +19,25 @@ Exporte une figure vers un fichier image ou document.
 
 ## 📄 Description
 
-<b>print</b> exporte une figure vers un fichier image ou document. C'est une enveloppe legere autour de <b>saveas</b> : l'option de peripherique <b>-d</b> selectionne le format de sortie et la figure est exportee via le moteur de rendu partage bureau, web et sans affichage.
 
-Si aucune option <b>-d</b> n'est fournie, le format est deduit de l'extension du fichier, et PNG est utilise lorsque le nom de fichier n'a pas d'extension. Une option de resolution <b>-r</b> est acceptee pour compatibilite mais ne reechantillonne pas la sortie.
+<b>print</b> exporte une figure vers un fichier image ou document. C'est une enveloppe legere autour de <b>saveas</b> : l'option de peripherique <b>-d</b> selectionne le format de sortie et la figure est exportee via le moteur de rendu partage bureau, web et sans affichage. 
 
-L'option de peripherique correspond au meme registre de formats que <b>saveas</b> :
+Si aucune option <b>-d</b> n'est fournie, le format est deduit de l'extension du fichier, et PNG est utilise lorsque le nom de fichier n'a pas d'extension. Une option de resolution <b>-r</b> est acceptee pour compatibilite mais ne reechantillonne pas la sortie. 
 
-| Option de peripherique | Format                      | Extension |
-| ---------------------- | --------------------------- | --------- |
-| -dpng                  | Portable Network Graphics   | .png      |
-| -djpeg, -djpg          | JPEG                        | .jpg      |
-| -dtiff, -dtiffn, -dtif | TIFF                        | .tif      |
-| -dbmp                  | Bitmap                      | .bmp      |
-| -dgif                  | Graphics Interchange Format | .gif      |
-| -dwebp                 | WebP                        | .webp     |
-| -dsvg                  | Scalable Vector Graphics    | .svg      |
-| -dpdf                  | Portable Document Format    | .pdf      |
+L'option de peripherique correspond au meme registre de formats que <b>saveas</b> : 
+
+| Option de peripherique | Format | Extension | 
+| --- | --- | --- | 
+| -dpng | Portable Network Graphics | .png | 
+| -djpeg, -djpg | JPEG | .jpg | 
+| -dtiff, -dtiffn, -dtif | TIFF | .tif | 
+| -dbmp | Bitmap | .bmp | 
+| -dgif | Graphics Interchange Format | .gif | 
+| -dwebp | WebP | .webp | 
+| -dsvg | Scalable Vector Graphics | .svg | 
+| -dpdf | Portable Document Format | .pdf | 
+
+ 
 
 <b>Arriere-plan :</b> comme pour <b>saveas</b>, tant que la propriete <b>InvertHardcopy</b> de la figure vaut <b>'on'</b> (valeur par defaut), l'arriere-plan exporte est blanc quelle que soit la couleur <b>Color</b> de la figure a l'ecran.
 
@@ -53,7 +56,6 @@ print(f, [tempname(), '.svg'], '-dsvg', '-r150');
 close(f);
 
 ```
-
 Deduire le format de l'extension du fichier.
 
 ```matlab
@@ -67,13 +69,14 @@ close(f);
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [saveas](../../graphics_io/saveas.md), [savefig](../../graphics/5_printing_saving/savefig.md), [gcf](../../graphics/2_graphics_objects/1_object_management/gcf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

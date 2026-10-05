@@ -17,13 +17,17 @@ Creer des options pour importer des donnees texte delimitees.
 
 ## 📄 Description
 
+
 <b>delimitedTextImportOptions</b> cree un objet d'options d'importation pour les fichiers texte delimites.
 
 ## 💡 Exemple
 
+
+
 ```matlab
 opts = delimitedTextImportOptions('NumVariables', 3) opts.Delimiter = {';'} opts.DataLines = [2 Inf]
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ opts = delimitedTextImportOptions('NumVariables', 3) opts.Delimiter = {';'} opts
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

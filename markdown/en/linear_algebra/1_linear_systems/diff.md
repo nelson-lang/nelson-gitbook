@@ -20,11 +20,14 @@ Differences and approximate derivatives.
 
 ## 📄 Description
 
-If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences<b>X(2) - X(1), ..., X(n) - X(n-1)</b>.
+
+If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences<b>X(2) - X(1), ..., X(n) - X(n-1)</b>. 
 
 If <b>X</b> is a matrix, result of <b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.
 
 ## 💡 Example
+
+
 
 ```matlab
 h = .01; x = 0:h:pi;
@@ -32,13 +35,14 @@ X = sin(x.^2);
 R = diff(X)
 ```
 
+
 ## 🔗 See also
 
 [sum](../../data_analysis/sum.md), [prod](../../data_analysis/prod.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

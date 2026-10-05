@@ -24,9 +24,12 @@ RÃ©ponse indicielle d'un systÃ¨me dynamique.
 
 ## 📄 Description
 
+
 La fonction calcule et trace la rÃ©ponse indicielle du systÃ¨me dynamique pour les conditions et l'intervalle de temps fournis.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [-10 -20 -30;1  0  0; 0  1  0];
@@ -40,17 +43,17 @@ sys = ss(A, B, C, D);
 step(sys);
 
 ```
-
 <img src="step.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[gensig](../../control_system/gensig.md), [lsim](../../control_system/lsim.md).
+[gensig](../../control_system/2_model_conversion_interconnection/gensign.md), [lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

@@ -23,26 +23,30 @@ Construct array by accumulation.
 
 ## 📄 Description
 
-<b>accumarray(subs, val)</b> groups the elements of <b>val</b> by the subscripts in <b>subs</b> and applies <b>@sum</b> to each group.
 
-Each row of <b>subs</b> is the position in the output where the corresponding value of <b>val</b> is accumulated.
+<b>accumarray(subs, val)</b> groups the elements of <b>val</b> by the subscripts in <b>subs</b> and applies <b>@sum</b> to each group. 
+
+Each row of <b>subs</b> is the position in the output where the corresponding value of <b>val</b> is accumulated. 
 
 <b>fun</b> replaces the default sum, and <b>fillval</b> sets the value of positions that receive no contribution.
 
 ## 💡 Example
+
+
 
 ```matlab
 accumarray([1;2;1;3], [10;20;30;40])
 accumarray([1;1;2], [3;5;7], [], @max)
 ```
 
+
 ## 🔗 See also
 
-[sum](../data_analysis/sum.md), [unique](../elementary_functions/unique.md).
+[sum](../data_analysis/sum.md), [unique](../data_analysis/unique.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

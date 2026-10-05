@@ -4,12 +4,12 @@ semantic versioner.
 
 ## 📝 Syntax
 
-- r = semver(version_str, version_range)
+- r = semver(version\_str, version\_range)
 
 ## 📥 Input argument
 
-- version_str - a string: current version.
-- version_range - a string: version to compare or range.
+- version\_str - a string: current version.
+- version\_range - a string: version to compare or range.
 
 ## 📤 Output argument
 
@@ -17,31 +17,32 @@ semantic versioner.
 
 ## 📄 Description
 
-<b>semver</b> compares a version string to an version or an range version.
 
-if an range version is used,<b>r</b> return 0 (not satisfied) or 1 (satisfied).
+<b>semver</b> compares a version string to an version or an range version. 
 
-if an simple version is used, an comparison value <b>r</b> is returned -1 (inferior), 0 (equal) or 1 (superior).
+if an range version is used,<b>r</b> return 0 (not satisfied) or 1 (satisfied). 
 
-supported range operators:
+if an simple version is used, an comparison value <b>r</b> is returned -1 (inferior), 0 (equal) or 1 (superior). 
 
-<b>=</b> - Equality
+supported range operators: 
 
-<b>
-        >=</b> - Higher or equal to
+<b>=</b> - Equality 
 
 <b>
-        <=</b> - Lower or equal to
+        >=</b> - Higher or equal to 
+
+<b>
+        <=</b> - Lower or equal to 
 
 <b>
         <
-      </b> - Lower than
+      </b> - Lower than 
 
 <b>
         >
-      </b> - Higher than
+      </b> - Higher than 
 
-<b>^</b> - Caret operator comparison
+<b>^</b> - Caret operator comparison 
 
 <b>~</b> - Tilde operator comparison
 
@@ -54,6 +55,8 @@ semver.c
 https://semver.org/
 
 ## 💡 Example
+
+
 
 ```matlab
 
@@ -72,13 +75,14 @@ semver('1.9.9', '^1.2.3')
 semver('2.0.1', '^1.2.3')
 ```
 
+
 ## 🔗 See also
 
 [version](../core/version.md), [getmodules](../modules_manager/getmodules.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

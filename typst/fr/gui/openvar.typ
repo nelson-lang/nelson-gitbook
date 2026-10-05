@@ -1,0 +1,57 @@
+#import "nelson_help.typ": *
+
+= openvar <gui:openvar>
+
+Ouvre une variable dans l'Ã©diteur de variables
+
+== Syntaxe
+
+- #raw("openvar(varname)");
+
+== Argument d'entrée
+
+/ varname: a string or row vector characters: Name of the variable to open. Must exist in the current workspace.
+
+== Description
+
+#strong[openvar(varname)]; ouvre la variable nommÃ©e #strong[varname]; dans l'Ã©diteur de variables de Nelson pour inspection et Ã©dition graphique.
+
+ Toutes les modifications effectuÃ©es dans l'Ã©diteur sont appliquÃ©es immÃ©diatement dans le workspace.
+
+ L'Ã©diteur de variables supporte les scalaires, vecteurs, matrices, chaÃ®nes, cellules, tables et structures. Les tableaux multidimensionnels peuvent Ãªtre visualisÃ©s mais leur Ã©dition peut Ãªtre limitÃ©e.
+
+ Vous pouvez Ã©galement ouvrir une variable en double-cliquant dessus dans le panneau Variables.
+
+ L'Ã©diteur se synchronise automatiquement avec le workspace courant.
+
+ Contenu Ã©ditable : dans les structures (struct), cellules (cell) et tables (table), seuls les Ã©lÃ©ments scalaires sont Ã©ditables.
+
+ Nelson offre une intÃ©gration complÃ¨te du presse-papiers avec des tableurs tels que #strong[Microsoft Excel];, #strong[LibreOffice Calc]; et #strong[OpenOffice Calc];.
+
+ Vous pouvez copier des variables depuis l'Ã©diteur de variables et les coller directement dans ces applications, et inversement.
+
+ 
+#align(center)[#image("openvar.png")]
+
+
+
+== Exemple
+
+``````matlab
+A = [1 2 3; 4 5 6]; openvar("A");
+``````
+
+
+== Voir aussi
+
+#nlink(<gui:workspace>)[workspace];, #nlink(<gui:filebrowser>)[filebrowser];.
+
+== Historique
+
+#table(
+  columns: 2,
+  table.header([Version], [Description]),
+  [1.15.0], [version initiale],
+)
+
+// Auteur: Allan CORNET

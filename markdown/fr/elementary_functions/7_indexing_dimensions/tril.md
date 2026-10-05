@@ -18,19 +18,21 @@ Partie triangulaire inférieure d'une matrice
 
 ## 📄 Description
 
-<b>tril</b> calcule la partie triangulaire inférieure d'une matrice.
 
-<b>R = tril(M, k)</b> renvoie les éléments situés sur et au-dessous de la k-ième diagonale de M.
+<b>tril</b> calcule la partie triangulaire inférieure d'une matrice. 
+
+<b>R = tril(M, k)</b> renvoie les éléments situés sur et au-dessous de la k-ième diagonale de M. 
 
 Les matrices sparse single et sparse single complexes sont prises en charge. Le resultat conserve le stockage sparse et la precision de l'entree.
 
 ## 💡 Exemples
 
+
+
 ```matlab
 x = [1+i,-i;i,2i];
 r = tril(x)
 ```
-
 Partie triangulaire inferieure sparse single.
 
 ```matlab
@@ -38,15 +40,16 @@ S = sparse(single([1 2; 3 4]));
 R = tril(S)
 ```
 
+
 ## 🔗 Voir aussi
 
-[diag](../../constructors_functions/diag.md), [triu](../../elementary_functions/triu.md).
+[diag](../../constructors_functions/diag.md), [triu](../../elementary_functions/7_indexing_dimensions/triu.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                         |
-| ------- | ---------------------------------------------------------------------- |
-| 1.0.0   | version initiale                                                       |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | version initiale |
 | 2.0.0   | prise en charge des matrices sparse single et sparse single complexes. |
 
 <!--

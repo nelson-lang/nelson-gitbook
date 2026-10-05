@@ -1,4 +1,4 @@
-# libpointer_setdatatype
+# libpointer\_setdatatype
 
 Set type of an libpointer handle.
 
@@ -13,9 +13,12 @@ Set type of an libpointer handle.
 
 ## 📄 Description
 
+
 Set data type from libpointer object.
 
 ## 💡 Example
+
+
 
 ```matlab
 a = libpointer();
@@ -25,13 +28,14 @@ a.reshape(1, 1)
 a.Value
 ```
 
+
 ## 🔗 See also
 
 [libpointer](../dynamic_link/libpointer.md), [C/Nelson equivalent data types](../dynamic_link/C_datatype.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

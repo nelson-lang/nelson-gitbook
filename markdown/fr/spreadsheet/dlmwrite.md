@@ -26,9 +26,12 @@
 
 ## 📄 Description
 
+
 <b>dlmwrite</b> écrit une matrice numérique dans un fichier au format ASCII.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -41,14 +44,15 @@ R = fileread(filename)
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

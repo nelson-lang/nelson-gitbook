@@ -16,11 +16,14 @@ Number of key-value pairs in dictionary.
 
 ## 📄 Description
 
-<b>n = numEntries(d)</b> retrieves the number of key-value pairs stored in the dictionary.
+
+<b>n = numEntries(d)</b> retrieves the number of key-value pairs stored in the dictionary. 
 
 If d is an unconfigured dictionary, then numEntries returns 0.
 
 ## 💡 Example
+
+
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -30,13 +33,14 @@ n = numEntries(d)
 
 ```
 
+
 ## 🔗 See also
 
 [dictionary](../dictionary/dictionary.md), [entries](../dictionary/entries.md), [keys](../dictionary/keys.md), [values](../dictionary/values.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.5.0   | initial version |
 

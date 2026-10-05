@@ -19,7 +19,8 @@ Verifie que chaque valeur est strictement superieure a une limite.
 
 ## 📄 Description
 
-L'assertion reussit lorsque value > limit pour chaque element compare.
+
+L'assertion reussit lorsque value > limit pour chaque element compare. 
 
 Les tableaux doivent avoir les memes dimensions sauf si une entree est scalaire.
 
@@ -30,12 +31,12 @@ Scalar expansion
 ```matlab
 asserts.greaterThan([2 3], 1);
 ```
-
 Capture a relation failure
 
 ```matlab
 [res, msg] = asserts.greaterThan([0 3], 1);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -43,8 +44,8 @@ Capture a relation failure
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

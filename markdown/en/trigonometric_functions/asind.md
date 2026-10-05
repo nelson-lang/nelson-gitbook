@@ -16,14 +16,18 @@ Inverse sine in degrees.
 
 ## 📄 Description
 
+
 <b>asind</b> computes the inverse sine in degrees for each element of <b>x</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = [-50 -20 0 20 50];
 y = asind(x)
 ```
+
 
 ## 🔗 See also
 
@@ -31,7 +35,7 @@ y = asind(x)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

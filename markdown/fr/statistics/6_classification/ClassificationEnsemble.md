@@ -22,14 +22,17 @@ Modele d'ensemble pour la classification.
 
 ## 📄 Description
 
-ClassificationEnsemble stocke un modele de classification qui combine plusieurs apprenants faibles.
+
+ClassificationEnsemble stocke un modele de classification qui combine plusieurs apprenants faibles. 
 
 Creez cet objet avec fitcensemble. Utilisez predict pour agreger les reponses des apprenants sur de nouvelles observations.
 
 ## Fonction(s) utilisée(s)
 
+
     fitcensemble
     predict
+  
 
 ## 💡 Exemple
 
@@ -42,14 +45,15 @@ mdl = fitcensemble(X, Y, 'NumLearningCycles', 3);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 Voir aussi
 
-[predict](../../statistics/predict.md), [fitcensemble](../../statistics/fitcensemble.md).
+[predict](../../statistics/5_regression/predict.md), [fitcensemble](../../statistics/6_classification/fitcensemble.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -16,9 +16,12 @@ Recherche les éléments Not a Number.
 
 ## 📄 Description
 
+
 <b>isnan</b> renvoie un tableau logique qui vaut true là où les éléments de M sont des valeurs "Not a Number".
 
 ## 💡 Exemple
+
+
 
 ```matlab
 isnan(pi)
@@ -28,14 +31,15 @@ X = sparse([1 2 NaN 3 0 NaN 0 4]);
 R = isnan(X)
 ```
 
+
 ## 🔗 Voir aussi
 
-[isinf](../../elementary_functions/isinf.md).
+[isinf](../../elementary_functions/7_indexing_dimensions/isinf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

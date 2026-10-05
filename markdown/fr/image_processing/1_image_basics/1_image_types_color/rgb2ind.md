@@ -5,10 +5,10 @@ Convertit une image RGB en image indexee.
 ## 📝 Syntaxe
 
 - [X, map] = rgb2ind(RGB, n)
-- [X, map] = rgb2ind(RGB, n, dither_option)
+- [X, map] = rgb2ind(RGB, n, dither\_option)
 - [X, map] = rgb2ind(RGB, tol)
 - X = rgb2ind(RGB, map)
-- X = rgb2ind(RGB, map, dither_option)
+- X = rgb2ind(RGB, map, dither\_option)
 
 ## 📥 Argument d'entrée
 
@@ -16,7 +16,7 @@ Convertit une image RGB en image indexee.
 - n - Nombre de couleurs de la palette de sortie, un entier scalaire superieur ou egal a 1. Une quantification a variance minimale est utilisee.
 - tol - Tolerance dans l'intervalle (0, 1). Une quantification uniforme est utilisee et la palette contient les couleurs distinctes de la grille qui apparaissent.
 - map - Palette, un tableau M-par-3 de valeurs dans l'intervalle [0, 1]. Chaque pixel est associe a la couleur la plus proche de la palette.
-- dither_option - 'dither' (defaut) applique la diffusion d'erreur de Floyd-Steinberg, 'nodither' associe chaque pixel a sa couleur la plus proche sans tramage.
+- dither\_option - 'dither' (defaut) applique la diffusion d'erreur de Floyd-Steinberg, 'nodither' associe chaque pixel a sa couleur la plus proche sans tramage.
 
 ## 📤 Argument de sortie
 
@@ -25,7 +25,8 @@ Convertit une image RGB en image indexee.
 
 ## 📄 Description
 
-Convertit une image RGB en image indexee et sa palette associee. Lorsque le deuxieme argument est un entier scalaire, une quantification a variance minimale construit une palette d'au plus ce nombre de couleurs ; lorsque l'image a ce nombre de couleurs distinctes ou moins, le resultat est sans perte. Lorsque le deuxieme argument est un scalaire dans l'intervalle (0, 1), une quantification uniforme est utilisee. Lorsque le deuxieme argument est une palette M-par-3, chaque pixel est associe a la couleur la plus proche de la palette.
+
+Convertit une image RGB en image indexee et sa palette associee. Lorsque le deuxieme argument est un entier scalaire, une quantification a variance minimale construit une palette d'au plus ce nombre de couleurs ; lorsque l'image a ce nombre de couleurs distinctes ou moins, le resultat est sans perte. Lorsque le deuxieme argument est un scalaire dans l'intervalle (0, 1), une quantification uniforme est utilisee. Lorsque le deuxieme argument est une palette M-par-3, chaque pixel est associe a la couleur la plus proche de la palette. 
 
 Les indices de <b>X</b> sont en base zero, comme les images indexees produites a partir d'entrees entieres. Le tramage de Floyd-Steinberg est applique par defaut et peut etre desactive avec 'nodither'.
 
@@ -39,7 +40,6 @@ R = uint8(255 * rand(32, 32, 3));
 size(map)
 max(X(:))
 ```
-
 Associer une image RGB a une palette fixe
 
 ```matlab
@@ -49,14 +49,15 @@ map = [0 0 0; 1 1 1; 1 0 0; 0 0 1];
 X = rgb2ind(RGB, map, 'nodither')
 ```
 
+
 ## 🔗 Voir aussi
 
-[ind2rgb](../../../image_processing/ind2rgb.md), [ind2gray](../../../image_processing/ind2gray.md), [rgb2gray](../../../image_processing/rgb2gray.md).
+[ind2rgb](../../../image_processing/1_image_basics/1_image_types_color/ind2rgb.md), [ind2gray](../../../image_processing/1_image_basics/1_image_types_color/ind2gray.md), [rgb2gray](../../../image_processing/1_image_basics/1_image_types_color/rgb2gray.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

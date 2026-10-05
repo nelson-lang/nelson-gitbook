@@ -16,13 +16,17 @@ Determine whether the input is an enumeration.
 
 ## 📄 Description
 
+
 <b>isenum</b> returns true if X is an instance of an enumeration class, and false otherwise.
 
 ## 💡 Example
 
+
+
 ```matlab
 tf = isenum(3)
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ tf = isenum(3)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

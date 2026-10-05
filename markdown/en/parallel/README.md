@@ -1,8 +1,13 @@
 # Parallel
 
+
+    
 The parallel module provides tools for running computations asynchronously in the background, managing task scheduling, and retrieving results.
 
+    
 It enables Nelson programs to execute functions concurrently, improving efficiency and responsiveness by offloading work to background workers.
+
+  
 
 ## Functions
 
@@ -15,3 +20,4 @@ It enables Nelson programs to execute functions concurrently, improving efficien
 - [fetchOutputs](fetchOutputs.md) - Retrieve results from function running in the background pool.
 - [parfeval](parfeval.md) - Run function in background.
 - [wait](wait.md) - Wait for futures to be completed.
+

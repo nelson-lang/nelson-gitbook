@@ -17,18 +17,22 @@ Discrete uniform cumulative distribution function
 
 ## 📄 Description
 
+
 <b>unidcdf</b> computes cumulative probabilities for the discrete uniform distribution on integers from 1 to <b>n</b>.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = 0:6;
 p = unidcdf(x, 5);
 ```
 
+
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

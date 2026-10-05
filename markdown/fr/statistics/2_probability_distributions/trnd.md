@@ -19,19 +19,23 @@ Nombres aleatoires Student t
 
 ## 📄 Description
 
+
 <b>trnd</b> genere des valeurs aleatoires de loi Student t.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 r = trnd(5, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

@@ -19,23 +19,26 @@ Construit un polynome par morceaux
 
 ## 📄 Description
 
-<b>mkpp</b> construit une structure polynomiale par morceaux a partir de ses points de rupture et de ses coefficients. La structure peut ensuite etre evaluee avec <b>ppval</b>.
 
-Pour chaque morceau, le polynome est evalue dans la variable locale x - breaks(i), ou breaks(i) est le point de rupture gauche du morceau.
+<b>mkpp</b> construit une structure polynomiale par morceaux a partir de ses points de rupture et de ses coefficients. La structure peut ensuite etre evaluee avec <b>ppval</b>. 
+
+Pour chaque morceau, le polynome est evalue dans la variable locale x - breaks(i), ou breaks(i) est le point de rupture gauche du morceau. 
 
 Le nombre de morceaux vaut numel(breaks) - 1 et l'ordre est le nombre de colonnes de coefs.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 pp = mkpp([0 1 2], [1 0; 1 1]);
 ppval(pp, 0.5)
 ```
 
+
 ## 🔗 Voir aussi
 
 [ppval](../polynomial_functions/ppval.md), [interp1](../special_functions/interp1.md).
-
 <!--
 ## 👤 Auteur
 

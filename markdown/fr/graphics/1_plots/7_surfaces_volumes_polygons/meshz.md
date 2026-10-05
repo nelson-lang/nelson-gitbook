@@ -28,11 +28,14 @@ Tracé de surface en maillage (mesh) avec rideau.
 
 ## 📄 Description
 
-<b>meshz</b> crée un tracé de surface 3D avec un maillage (wireframe) au-dessus.
+
+<b>meshz</b> crée un tracé de surface 3D avec un maillage (wireframe) au-dessus. 
 
 La fonction prend les mêmes arguments d'entrée que la fonction <b>mesh</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
@@ -40,17 +43,17 @@ f = figure();
 Z = Y.*sin(X) - X.*cos(Y);
 s = meshz(X,Y,Z)
 ```
-
 <img src="meshz_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md), [meshgrid](../../../elementary_functions/meshgrid.md).
+[mesh](../../../graphics/1_plots/7_surfaces_volumes_polygons/mesh.md), [meshgrid](../../../elementary_functions/1_array_creation_shape/meshgrid.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

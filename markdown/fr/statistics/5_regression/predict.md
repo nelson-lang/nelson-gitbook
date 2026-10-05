@@ -21,11 +21,12 @@ Prédire des réponses ou des étiquettes de classe à partir d'un modèle ajust
 
 ## 📄 Description
 
-<b>predict</b> est la méthode commune utilisée pour évaluer un modèle ajusté sur de nouvelles données de prédicteurs.
 
-Pour les modèles de régression (par exemple l'objet renvoyé par <b>fitlm</b> ou <b>fitglm</b>), <b>predict</b> renvoie la réponse prédite <b>yfit</b> pour chaque ligne de <b>Xnew</b>.
+<b>predict</b> est la méthode commune utilisée pour évaluer un modèle ajusté sur de nouvelles données de prédicteurs. 
 
-Pour les modèles de classification (par exemple l'objet renvoyé par <b>fitcsvm</b> ou <b>fitctree</b>), <b>predict</b> renvoie l'étiquette de classe prédite <b>label</b> pour chaque observation, et éventuellement une matrice de <b>score</b> de classification.
+Pour les modèles de régression (par exemple l'objet renvoyé par <b>fitlm</b> ou <b>fitglm</b>), <b>predict</b> renvoie la réponse prédite <b>yfit</b> pour chaque ligne de <b>Xnew</b>. 
+
+Pour les modèles de classification (par exemple l'objet renvoyé par <b>fitcsvm</b> ou <b>fitctree</b>), <b>predict</b> renvoie l'étiquette de classe prédite <b>label</b> pour chaque observation, et éventuellement une matrice de <b>score</b> de classification. 
 
 Les colonnes de <b>Xnew</b> doivent correspondre aux prédicteurs utilisés lors de l'ajustement du modèle.
 
@@ -40,14 +41,15 @@ mdl = fitlm(X, y);
 yfit = predict(mdl, [7 4; 8 5])
 ```
 
+
 ## 🔗 Voir aussi
 
-[fitlm](../../statistics/fitlm.md), [fitglm](../../statistics/fitglm.md), [fitcsvm](../../statistics/fitcsvm.md), [fitctree](../../statistics/fitctree.md), [LinearModel](../../statistics/LinearModel.md).
+[fitlm](../../statistics/5_regression/fitlm.md), [fitglm](../../statistics/5_regression/fitglm.md), [fitcsvm](../../statistics/6_classification/fitcsvm.md), [fitctree](../../statistics/6_classification/fitctree.md), [LinearModel](../../statistics/5_regression/LinearModel.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

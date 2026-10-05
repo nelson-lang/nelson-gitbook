@@ -23,13 +23,16 @@ Ajuster les donnees d'une timetable a de nouveaux temps de lignes.
 
 ## 📄 Description
 
-<b>retime</b> renvoie une timetable dont les temps de lignes correspondent a <b>newTimes</b> ou a une grille reguliere.
 
-Les methodes de remplissage et de voisinage incluent fillwithmissing, fillwithconstant, nearest, previous et next.
+<b>retime</b> renvoie une timetable dont les temps de lignes correspondent a <b>newTimes</b> ou a une grille reguliere. 
+
+Les methodes de remplissage et de voisinage incluent fillwithmissing, fillwithconstant, nearest, previous et next. 
 
 Les methodes d'interpolation numerique incluent linear, spline, pchip et makima. Les methodes d'agregation incluent sum, mean, min, max, median, prod, count, firstvalue et lastvalue.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 t = datetime(2024, 1, 1) + days(0:2)';
@@ -37,14 +40,15 @@ TT = timetable(t, [1; 3; 5]);
 TT2 = retime(TT, t(1):days(1):t(3), 'nearest')
 ```
 
+
 ## 🔗 Voir aussi
 
-[synchronize](../../table/synchronize.md), [timetable](../../table/timetable.md).
+[synchronize](../../table/8_timetables_events/synchronize.md), [timetable](../../table/1_create_convert_tables/timetable.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

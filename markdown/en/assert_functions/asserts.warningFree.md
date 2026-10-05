@@ -18,7 +18,8 @@ Check that a command completes without warning.
 
 ## 📄 Description
 
-The assertion passes when the command emits no warning and raises no error.
+
+The assertion passes when the command emits no warning and raises no error. 
 
 Unexpected warnings are returned in msg when outputs are requested.
 
@@ -29,12 +30,12 @@ Warning-free command
 ```matlab
 asserts.warningFree('1 + 1');
 ```
-
 Capture an unexpected warning
 
 ```matlab
 [res, msg] = asserts.warningFree('warning(''Nelson:asserts:example'', ''expected warning'');');
 ```
+
 
 ## 🔗 See also
 
@@ -42,7 +43,7 @@ Capture an unexpected warning
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

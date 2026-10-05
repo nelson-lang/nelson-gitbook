@@ -21,17 +21,18 @@ Objet qui associe des cles uniques a des valeurs.
 
 ## 📄 Description
 
-<b>m = containers.Map()</b> cree une map vide avec des cles de type vecteur de caracteres et des valeurs de tout type.
 
-<b>m = containers.Map(keys, values)</b> cree une map scalaire a partir de paires cle-valeur. Les cles sont uniques dans la map obtenue. Si une meme cle apparait plusieurs fois pendant la construction, seule la derniere valeur est conservee.
+<b>m = containers.Map()</b> cree une map vide avec des cles de type vecteur de caracteres et des valeurs de tout type. 
 
-Si <b>values</b> est scalaire et que plusieurs cles sont fournies, cette valeur scalaire est affectee a chaque cle. Sinon, le nombre de cles et de valeurs doit correspondre.
+<b>m = containers.Map(keys, values)</b> cree une map scalaire a partir de paires cle-valeur. Les cles sont uniques dans la map obtenue. Si une meme cle apparait plusieurs fois pendant la construction, seule la derniere valeur est conservee. 
 
-<b>m = containers.Map('KeyType', keyType, 'ValueType', valueType)</b> cree une map vide typee. Les proprietes <b>Count</b>, <b>KeyType</b> et <b>ValueType</b> sont en lecture seule.
+Si <b>values</b> est scalaire et que plusieurs cles sont fournies, cette valeur scalaire est affectee a chaque cle. Sinon, le nombre de cles et de valeurs doit correspondre. 
 
-Quand les cles sont fournies sous forme de tableaux logical, int8, uint8, int16 ou uint16, le type de cle deduit est <b>double</b>.
+<b>m = containers.Map('KeyType', keyType, 'ValueType', valueType)</b> cree une map vide typee. Les proprietes <b>Count</b>, <b>KeyType</b> et <b>ValueType</b> sont en lecture seule. 
 
-Les valeurs sont lues avec l'indexation par parentheses, par exemple <b>m('name')</b>. L'affectation <b>m(key) = value</b> insere une nouvelle entree ou remplace une valeur existante. La methode <b>remove</b> supprime des entrees.
+Quand les cles sont fournies sous forme de tableaux logical, int8, uint8, int16 ou uint16, le type de cle deduit est <b>double</b>. 
+
+Les valeurs sont lues avec l'indexation par parentheses, par exemple <b>m('name')</b>. L'affectation <b>m(key) = value</b> insere une nouvelle entree ou remplace une valeur existante. La methode <b>remove</b> supprime des entrees. 
 
 Les methodes <b>keys</b> et <b>values</b> retournent des tableaux de cellules. La methode <b>isKey</b> verifie la presence de cles et accepte une cle scalaire ou un tableau de cellules de cles.
 
@@ -47,7 +48,6 @@ isKey(m, {'apple', 'kiwi'})
 keys(m)
 values(m)
 ```
-
 Creer une map typee.
 
 ```matlab
@@ -56,7 +56,6 @@ m('payload') = struct('name', 'Nelson', 'value', [1 2 3])
 m.Count
 m.ValueType
 ```
-
 Utiliser des cles numeriques.
 
 ```matlab
@@ -66,14 +65,15 @@ remove(m, 1)
 m.Count
 ```
 
+
 ## 🔗 Voir aussi
 
 [dictionary](../dictionary/dictionary.md), [keys](../dictionary/keys.md), [values](../dictionary/values.md), [isKey](../dictionary/isKey.md), [remove](../dictionary/remove.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description        |
-| ------- | --------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | classe containers.Map |
 
 <!--

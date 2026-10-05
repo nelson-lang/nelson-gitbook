@@ -19,11 +19,14 @@ Matrix to String.
 
 ## 📄 Description
 
-<b>mat2str</b> converts a matrix to a string.
+
+<b>mat2str</b> converts a matrix to a string. 
 
 This string may be used to reconstruct the original matrix with<b>execstr</b> function.
 
 ## 💡 Example
+
+
 
 ```matlab
 R = mat2str(pi)
@@ -34,13 +37,14 @@ execstr(['RB = ', R])
 
 ```
 
+
 ## 🔗 See also
 
 [execstr](../../core/execstr.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

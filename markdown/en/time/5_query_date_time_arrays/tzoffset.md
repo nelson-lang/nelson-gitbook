@@ -16,9 +16,10 @@ Return UTC offsets for timezone-aware datetime values.
 
 ## 📄 Description
 
-Return UTC offsets for timezone-aware datetime values.
 
-Named timezone offsets are read from the embedded timezone data. Fixed offsets such as +02:30 are parsed directly.
+Return UTC offsets for timezone-aware datetime values. 
+
+Named timezone offsets are read from the embedded timezone data. Fixed offsets such as +02:30 are parsed directly. 
 
 Array-valued inputs keep their data shape when the operation supports arrays. Scalar operands are expanded where the implementation defines scalar expansion.
 
@@ -32,13 +33,14 @@ tzoffset(datetime(2024, 1, 1, 'TimeZone', '+02:30'))
 
 ```
 
+
 ## 🔗 See also
 
-[datetime](../../time/datetime.md), [duration](../../time/duration.md).
+[datetime](../../time/1_create_date_time_arrays/datetime.md), [duration](../../time/2_duration_calendar_duration/duration.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

@@ -19,6 +19,7 @@ Compute a corner strength metric.
 
 ## 📄 Description
 
+
 cornermetric computes a 2-D corner response from image gradients smoothed by a Gaussian window. Supported name-value options are FilterSize and SensitivityFactor.
 
 ## 💡 Example
@@ -31,16 +32,16 @@ C=cornermetric(I);
 figure; subplot(1,2,1); imagesc(I); axis image; title('Image');
 subplot(1,2,2); imagesc(C); axis image; title('Corner metric');
 ```
-
 <img src="cornermetric_1.png" align="middle"/>
+
 
 ## 🔗 See also
 
-[detectHarrisFeatures](../../../image_processing/detectHarrisFeatures.md), [detectFASTFeatures](../../../image_processing/detectFASTFeatures.md).
+[detectHarrisFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectHarrisFeatures.md), [detectFASTFeatures](../../../image_processing/2_image_analysis/9_feature_detection/detectFASTFeatures.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

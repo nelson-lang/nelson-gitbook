@@ -24,18 +24,22 @@ Valeurs singulieres et vecteurs singuliers selectionnes d'une matrice creuse.
 
 ## 📄 Description
 
-<b>svds</b> calcule des valeurs singulieres selectionnees et, optionnellement, les vecteurs singuliers correspondants d'une matrice creuse flottante.
 
-Pour une matrice <b>A</b>, les facteurs retournes verifient :
+<b>svds</b> calcule des valeurs singulieres selectionnees et, optionnellement, les vecteurs singuliers correspondants d'une matrice creuse flottante. 
+
+Pour une matrice <b>A</b>, les facteurs retournes verifient : 
 $$A V = U S$$
+ 
 
-Les matrices hautes utilisent le plus petit probleme normal possible, et les matrices larges utilisent le probleme normal transpose correspondant.
+Les matrices hautes utilisent le plus petit probleme normal possible, et les matrices larges utilisent le probleme normal transpose correspondant. 
 
-Lorsque le backend optionnel ARPACK n'est pas disponible, <b>svds</b> utilise un fallback dense pour les petites matrices creuses. Les matrices creuses plus grandes necessitent toujours ARPACK afin d'eviter une utilisation memoire excessive.
+Lorsque le backend optionnel ARPACK n'est pas disponible, <b>svds</b> utilise un fallback dense pour les petites matrices creuses. Les matrices creuses plus grandes necessitent toujours ARPACK afin d'eviter une utilisation memoire excessive. 
 
 Les entrees sparse single et sparse single complexes sont acceptees. Le probleme de valeurs singulieres selectionne est calcule par le backend sparse en double precision, puis les sorties denses sont reconverties en single ou single complexe lorsque cela s'applique.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = sparse([1 0 0; 0 2 0; 3 0 0; 0 4 0; 0 0 5]);
@@ -44,11 +48,13 @@ s = svds(A, 2)
 
 ```
 
+
 ```matlab
 A = sparse([1 + 1i 0 0; 0 2i 0; 3 0 0; 0 4 0; 0 0 5i]);
 s = svds(A, 2)
 
 ```
+
 
 ```matlab
 A = sparse(single([1 + 1i 0 0; 0 2i 0; 3 0 0; 0 4 0; 0 0 5i]));
@@ -56,15 +62,16 @@ s = svds(A, 2)
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[svd](../../linear_algebra/svd.md), [eigs](../../linear_algebra/eigs.md).
+[svd](../../linear_algebra/3_eigen_singular_values/svd.md), [eigs](../../linear_algebra/3_eigen_singular_values/eigs.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                                                                               |
-| ------- | ------------------------------------------------------------------------------------------------------------ |
-| 2.0.0   | fallback dense ajoute pour les petites matrices creuses lorsque ARPACK n'est pas disponible.                 |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | fallback dense ajoute pour les petites matrices creuses lorsque ARPACK n'est pas disponible. |
 | 2.0.0   | entrees sparse single et sparse single complexes prises en charge via le backend sparse en double precision. |
 
 <!--

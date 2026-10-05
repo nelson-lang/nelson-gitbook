@@ -27,11 +27,14 @@ Test du chi-square pour une variance
 
 ## 📄 Description
 
-<b>vartest</b> effectue un test de variance chi-square le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie.
+
+<b>vartest</b> effectue un test de variance chi-square le long de la premiere dimension non singleton sauf si <b>Dim</b> est specifie. 
 
 Les valeurs NaN sont ignorees dans chaque tranche testee.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 x = [4.5 4.8 5.1 5.4 5.7 6.0];
@@ -39,14 +42,15 @@ x = [4.5 4.8 5.1 5.4 5.7 6.0];
 [h2, p2] = vartest(x, 0.2, 'Tail', 'right');
 ```
 
+
 ## 🔗 Voir aussi
 
-[var](../../statistics/var.md), [std](../../statistics/std.md).
+[var](../../statistics/1_descriptive_statistics_visualization/var.md), [std](../../statistics/1_descriptive_statistics_visualization/std.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

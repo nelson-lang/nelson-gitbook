@@ -16,13 +16,17 @@ Determine which array elements are prime.
 
 ## 📄 Description
 
+
 <b>isprime</b> returns a logical array the same size as X, containing true where the elements of X are prime numbers and false where they are not.
 
 ## 💡 Example
 
+
+
 ```matlab
 isprime([2 3 4 5 6 7 8 9 10 11])
 ```
+
 
 ## 🔗 See also
 
@@ -30,7 +34,7 @@ isprime([2 3 4 5 6 7 8 9 10 11])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

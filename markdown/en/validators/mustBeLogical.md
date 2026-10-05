@@ -15,11 +15,14 @@ Checks that value is logical or raise an error.
 
 ## 📄 Description
 
-<b>mustBeLogical</b> checks that value is logical or raise an error.
+
+<b>mustBeLogical</b> checks that value is logical or raise an error. 
 
 Empty values are ignored.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeLogical(true)
@@ -27,13 +30,14 @@ mustBeLogical([])
 mustBeLogical([true false])
 ```
 
+
 ## 🔗 See also
 
 [isempty](../types/isempty.md), [islogical](../types/islogical.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

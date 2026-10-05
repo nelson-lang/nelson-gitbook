@@ -12,9 +12,12 @@ Positionne le flux au début du fichier.
 
 ## 📄 Description
 
+
 <b>frewind</b> positionne le pointeur au début du fichier
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -26,14 +29,15 @@ fclose(fileID);
 R = fileread([tempdir(), 'frewind.txt'])
 ```
 
+
 ## 🔗 Voir aussi
 
 [fclose](../stream_manager/fclose.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

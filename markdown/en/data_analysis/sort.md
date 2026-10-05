@@ -25,13 +25,14 @@ Sort array elements by quick sort algorithm.
 
 ## 📄 Description
 
-<b>sort</b> implements quick sort algorithm.
 
-With two outputs, elements with equivalent sort keys retain their original order. The indices returned for equivalent values are increasing within each group, in either sorting direction.
+<b>sort</b> implements quick sort algorithm. 
 
-Name-value pairs can be used after the dimension and sorting direction.
+With two outputs, elements with equivalent sort keys retain their original order. The indices returned for equivalent values are increasing within each group, in either sorting direction. 
 
-name-value pair arguments:
+Name-value pairs can be used after the dimension and sorting direction. 
+
+name-value pair arguments: 
 
 <b>
         'MissingPlacement'
@@ -41,7 +42,7 @@ name-value pair arguments:
         'first'
       </b>, <b>
         'last'
-      </b>.
+      </b>. 
 
 <b>
         'ComparisonMethod'
@@ -51,9 +52,9 @@ name-value pair arguments:
         'real'
       </b>, <b>
         'abs'
-      </b>.
+      </b>. 
 
-With 'MissingPlacement' set to 'last', nonmissing values are sorted in the requested direction and missing values follow them. This applies with one or two outputs. A missing string is distinct from an empty string.
+With 'MissingPlacement' set to 'last', nonmissing values are sorted in the requested direction and missing values follow them. This applies with one or two outputs. A missing string is distinct from an empty string. 
 
 Complex values with a NaN in either component are missing. They retain their input order with one or two outputs, including the non-NaN component, for every missing placement and sorting direction.
 
@@ -76,7 +77,6 @@ B = sort(A, 'ComparisonMethod', 'real')
 B = sort(A, 'ComparisonMethod', 'abs')
 
 ```
-
 MissingPlacement
 
 ```matlab
@@ -87,13 +87,14 @@ A = [NaN 3 6 0 NaN];
 
 ```
 
+
 ## 🔗 See also
 
 [issorted](../data_analysis/issorted.md), [unique](../data_analysis/unique.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

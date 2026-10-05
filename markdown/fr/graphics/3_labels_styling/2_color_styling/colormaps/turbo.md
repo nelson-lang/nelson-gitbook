@@ -17,17 +17,20 @@ Tableau de couleurs Turbo.
 
 ## 📄 Description
 
+
 <b>turbo</b> retourne la carte de couleurs avec les couleurs Turbo.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 f = figure();
 surf(peaks);
 colormap('turbo');
 ```
-
 <img src="turbo.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -35,8 +38,8 @@ colormap('turbo');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | Version initiale |
 
 <!--

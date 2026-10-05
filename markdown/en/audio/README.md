@@ -1,10 +1,16 @@
 # Audio playback functions
 
+
+    
 The audio module provides functions for reading, writing, analyzing, and playing audio files.
 
+    
 It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.
 
+    
 It also includes utilities for signal conversion and sound generation.
+
+  
 
 ## Functions
 
@@ -44,3 +50,4 @@ It also includes utilities for signal conversion and sound generation.
 - [sound](sound.md) - Convert matrix of signal data to sound and play it.
 - [soundsc](soundsc.md) - Scale data and play as sound.
 - [stop](stop.md) - Stops an audioplayer object.
+

@@ -19,23 +19,27 @@ Moyenne mobile.
 
 ## 📄 Description
 
+
 <b>movmean</b> calcule les moyennes sur une fenetre mobile centree.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movmean(A, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[mean](../statistics/mean.md).
+[mean](../statistics/1_descriptive_statistics_visualization/mean.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

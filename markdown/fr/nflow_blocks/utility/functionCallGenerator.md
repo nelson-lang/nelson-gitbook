@@ -16,29 +16,35 @@ Pilote un sous-système function-call un nombre fixe de fois par pas.
 
 ## 📄 Description
 
-Pilote un sous-système function-call un nombre fixe de fois par pas.
 
-À chaque pas majeur, le générateur invoque chaque sous-système function-call câblé sur sa sortie événement, en l'exécutant <code>NumberOfIterations</code> fois (sa passe ALGEBRAIC suivie d'un UPDATE interne immédiat). C'est une exécution pilotée par l'appelant : le callee s'exécute à la demande, hors de l'ordonnancement topologique normal, au lieu d'une fois par pas comme un bloc ordinaire. Un sous-système function-call est un sous-système dont le port de contrôle est de type <code>functionCall</code>.
+Pilote un sous-système function-call un nombre fixe de fois par pas. 
 
-Les sous-systèmes function-call nécessitent le moteur par défaut (discret / pas fixe) ; la sélection d'un solveur continu explicite est rejetée dans cette version.
+À chaque pas majeur, le générateur invoque chaque sous-système function-call câblé sur sa sortie événement, en l'exécutant <code>NumberOfIterations</code> fois (sa passe ALGEBRAIC suivie d'un UPDATE interne immédiat). C'est une exécution pilotée par l'appelant : le callee s'exécute à la demande, hors de l'ordonnancement topologique normal, au lieu d'une fois par pas comme un bloc ordinaire. Un sous-système function-call est un sous-système dont le port de contrôle est de type <code>functionCall</code>. 
 
-<b>Paramètres</b>
+Les sous-systèmes function-call nécessitent le moteur par défaut (discret / pas fixe) ; la sélection d'un solveur continu explicite est rejetée dans cette version. 
 
-| Paramètre                       | Valeur par défaut |
-| ------------------------------- | ----------------- |
-| <code>NumberOfIterations</code> | 1                 |
+<b>Paramètres</b> 
 
-<b>Caractéristiques du bloc</b>
+| Paramètre | Valeur par défaut | 
+| --- | --- | 
+| <code>NumberOfIterations</code> | 1 | 
 
-| Champ        | Valeur                |
-| ------------ | --------------------- |
-| Type de bloc | functionCallGenerator |
-| Famille      | Blocs utilitaires     |
-| Phases       | ALGEBRAIC             |
+ 
 
-<b>Capacites etendues</b>
+<b>Caractéristiques du bloc</b> 
+
+| Champ | Valeur |
+| --- | --- |
+| Type de bloc | functionCallGenerator | 
+| Famille | Blocs utilitaires | 
+| Phases | ALGEBRAIC | 
+
+ 
+
+<b>Capacites etendues</b> 
 
 Generation de code : prise en charge pour C et Rust.
+
 
 ## 🔗 Voir aussi
 
@@ -46,8 +52,8 @@ Generation de code : prise en charge pour C et Rust.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

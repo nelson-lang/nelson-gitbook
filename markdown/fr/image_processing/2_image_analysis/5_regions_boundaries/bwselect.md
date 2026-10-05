@@ -22,6 +22,7 @@ Selectionne des objets binaires connexes.
 
 ## 📄 Description
 
+
 Selectionne les composantes connexes d une image binaire 2-D qui contiennent au moins un point de requete. Les coordonnees sont passees sous forme de colonnes c et lignes r. Les connectivites prises en charge sont 4 et 8.
 
 ## 💡 Exemple
@@ -34,17 +35,17 @@ BW2=bwselect(BW, 16, 18, 8);
 figure; subplot(1,2,1); imagesc(BW); title('Input');
 subplot(1,2,2); imagesc(BW2); title('Selected');
 ```
-
 <img src="bwselect_1.png" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
-[bwlabel](../../../image_processing/bwlabel.md), [bwconncomp](../../../image_processing/bwconncomp.md).
+[bwlabel](../../../image_processing/2_image_analysis/5_regions_boundaries/bwlabel.md), [bwconncomp](../../../image_processing/2_image_analysis/5_regions_boundaries/bwconncomp.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

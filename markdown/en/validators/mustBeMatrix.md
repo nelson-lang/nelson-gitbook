@@ -15,9 +15,12 @@ Checks that value is a matrix or raise an error.
 
 ## 📄 Description
 
+
 <b>mustBeMatrix</b> checks that value is a matrix or raise an error.
 
 ## 💡 Example
+
+
 
 ```matlab
 mustBeMatrix(true)
@@ -25,15 +28,16 @@ mustBeMatrix([])
 mustBeMatrix(ones(3, 2, 4))
 ```
 
+
 ## 🔗 See also
 
-[ismatrix](../elementary_functions/ismatrix.md).
+[ismatrix](../elementary_functions/7_indexing_dimensions/ismatrix.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.10.0  | initial version |
+| 1.10.0   | initial version |
 
 <!--
 ## 👤 Author

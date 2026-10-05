@@ -12,27 +12,31 @@ Retourne le mode courant de Nelson.
 
 ## 📄 Description
 
-<b>getnelsonmode()</b> renvoie le mode courant utilisé par Nelson.
 
-Les modes possibles sont :
+<b>getnelsonmode()</b> renvoie le mode courant utilisé par Nelson. 
 
-<b>BASIC_ENGINE</b> : Nelson utilisé comme moteur sans graphisme.
+Les modes possibles sont : 
 
-<b>ADVANCED_ENGINE</b> : Nelson utilisé comme moteur avec graphisme/GUI.
+<b>BASIC\_ENGINE</b> : Nelson utilisé comme moteur sans graphisme. 
 
-<b>BASIC_TERMINAL</b> : Nelson lancé en terminal sans graphisme.
+<b>ADVANCED\_ENGINE</b> : Nelson utilisé comme moteur avec graphisme/GUI. 
 
-<b>ADVANCED_TERMINAL</b> : Nelson lancé en terminal avec graphisme/GUI.
+<b>BASIC\_TERMINAL</b> : Nelson lancé en terminal sans graphisme. 
 
-<b>GUI</b> : Nelson lancé comme application graphique (par défaut).
+<b>ADVANCED\_TERMINAL</b> : Nelson lancé en terminal avec graphisme/GUI. 
 
-<b>WEB_GUI</b> : Nelson lancé comme application web.
+<b>GUI</b> : Nelson lancé comme application graphique (par défaut). 
+
+<b>WEB\_GUI</b> : Nelson lancé comme application web.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 getnelsonmode()
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +44,8 @@ getnelsonmode()
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

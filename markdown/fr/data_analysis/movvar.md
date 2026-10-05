@@ -23,15 +23,17 @@ Variance mobile.
 
 ## 📄 Description
 
+
 <b>movvar</b> calcule les variances sur une fenetre mobile centree.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 A = [1 2 8 4 5];
 R = movvar(A, 3)
 ```
-
 Variance mobile et moyenne mobile
 
 ```matlab
@@ -39,15 +41,16 @@ A = [4 8 6 -1 -2 -3 -1 3 4 5];
 [R, M] = movvar(A, 3)
 ```
 
+
 ## 🔗 Voir aussi
 
-[var](../statistics/var.md).
+[var](../statistics/1_descriptive_statistics_visualization/var.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description                              |
-| ------- | ------------------------------------------- |
-| 2.0.0   | version initiale                            |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 2.0.0   | version initiale |
 | 2.0.0   | moyenne mobile renvoyée en deuxième sortie. |
 
 <!--

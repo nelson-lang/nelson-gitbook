@@ -1,10 +1,10 @@
-# libpointer_used
+# libpointer\_used
 
 Returns the current valid libpointer handles.
 
 ## 📝 Syntax
 
-- r = libpointer_used()
+- r = libpointer\_used()
 
 ## 📤 Output argument
 
@@ -12,13 +12,17 @@ Returns the current valid libpointer handles.
 
 ## 📄 Description
 
+
 Returns the current valid libpointer handles.
 
 ## 💡 Example
 
+
+
 ```matlab
 used = libpointer_used()
 ```
+
 
 ## 🔗 See also
 
@@ -26,7 +30,7 @@ used = libpointer_used()
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

@@ -14,9 +14,12 @@ Definit le mode d'eclairage des surfaces et patchs.
 
 ## 📄 Description
 
+
 <b>lighting</b> definit <b>FaceLighting</b> et <b>EdgeLighting</b> pour les surfaces et patchs des axes.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -25,8 +28,8 @@ light();
 lighting gouraud;
 
 ```
-
 <img src="lighting_1.svg" align="middle"/>
+
 
 ## 🔗 Voir aussi
 
@@ -34,8 +37,8 @@ lighting gouraud;
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

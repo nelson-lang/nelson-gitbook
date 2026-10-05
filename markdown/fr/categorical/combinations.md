@@ -16,7 +16,8 @@ Generer toutes les combinaisons de valeurs.
 
 ## 📄 Description
 
-<b>combinations</b> construit une table contenant le produit cartesien des tableaux fournis.
+
+<b>combinations</b> construit une table contenant le produit cartesien des tableaux fournis. 
 
 Quand une variable d'entree a un nom, ce nom est reutilise comme nom de variable de table.
 
@@ -28,14 +29,15 @@ Combiner deux tableaux categoriels.
 A = categorical({'small','large'}); B = categorical({'red','blue'}); T = combinations(A, B)
 ```
 
+
 ## 🔗 Voir aussi
 
-[categorical](../categorical/categorical.md), [table](../table/table.md), [height](../table/height.md), [width](../table/width.md).
+[categorical](../categorical/categorical.md), [table](../table/1_create_convert_tables/table.md), [height](../table/3_summary_information/height.md), [width](../table/3_summary_information/width.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

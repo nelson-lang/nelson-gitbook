@@ -20,9 +20,12 @@ View and set current colormap.
 
 ## 📄 Description
 
+
 <b>colormap</b> allows to view and set the colormap used into a plot.
 
 ## 💡 Examples
+
+
 
 ```matlab
 f = figure()
@@ -33,8 +36,8 @@ imagesc(Z);
 colormap('summer')
 
 ```
-
 <img src="colormap_1.svg" align="middle"/>
+
 
 ```matlab
 f = figure()
@@ -44,8 +47,8 @@ Z = exp(-(x .^ 2 + y .^ 2) / 0.4);
 imagesc(Z);
 colormap('gray')
 ```
-
 <img src="colormap_2.svg" align="middle"/>
+
 
 ```matlab
 f = figure()
@@ -62,8 +65,8 @@ map = [0 0 0.3;
     0 0 1.0];
 colormap(map)
 ```
-
 <img src="colormap_3.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -71,7 +74,7 @@ colormap(map)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

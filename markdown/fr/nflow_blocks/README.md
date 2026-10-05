@@ -1,12 +1,21 @@
 # Blocs NFlow
 
+
+    
 Le module nflow_blocks fournit les blocs de simulation utilisés par NFlow, avec leurs ports, paramètres, phases et comportements à l'exécution.
 
+    
 NFlow est actuellement publié en version **1.0.0-beta.1** : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours.
+
+  
 
 ## Electrical (acausal)
 
+
+    
 Blocs acausals (physiques) a broches non dirigees, simules nativement par le moteur differentiel-algebrique.
+
+  
 
 ### Functions
 
@@ -24,7 +33,7 @@ Blocs acausals (physiques) a broches non dirigees, simules nativement par le mot
 - [Gyrator](acausal_electrical/Gyrator.md) - Gyrateur : i1 = G2 v2, i2 = -G1 v1 (transducteur across<->through).
 - [HeatingResistor](acausal_electrical/HeatingResistor.md) - Resistance qui dissipe sa puissance P = v^2 / R sous forme de chaleur dans un port thermique.
 - [IdealDiode](acausal_electrical/IdealDiode.md) - Diode ideale commutant a la tension de coude Vknee : bloquee en dessous (conductance de fuite Goff), passante au-dessus (resistance Ron en serie avec Vknee) ; le changement de mode est un evenement.
-- [IdealOpAmp](acausal_electrical/IdealOpAmp.md) - Amplificateur operationnel ideal (nullor) : court-circuit virtuel e*+ = e*-, courant de sortie libre.
+- [IdealOpAmp](acausal_electrical/IdealOpAmp.md) - Amplificateur operationnel ideal (nullor) : court-circuit virtuel e_+ = e_-, courant de sortie libre.
 - [IdealSwitch](acausal_electrical/IdealSwitch.md) - Interrupteur ideal : commande > 0.5 -> court-circuit ferme, sinon ouvert (i = 0).
 - [IdealTransformer](acausal_electrical/IdealTransformer.md) - Transformateur ideal : v1 = n v2, i2 = -n i1 (structurel, sans stockage d etat).
 - [Idle](acausal_electrical/Idle.md) - Branche ouverte ideale : i = 0 (tension de branche libre).
@@ -55,7 +64,11 @@ Blocs acausals (physiques) a broches non dirigees, simules nativement par le mot
 
 ## Planar (acausal)
 
+
+    
 Blocs acausals (physiques) a broches non dirigees, simules nativement par le moteur differentiel-algebrique.
+
+  
 
 ### Functions
 
@@ -81,7 +94,11 @@ Blocs acausals (physiques) a broches non dirigees, simules nativement par le mot
 
 ## Rotational (acausal)
 
+
+    
 Blocs acausals (physiques) a broches non dirigees, simules nativement par le moteur differentiel-algebrique.
+
+  
 
 ### Functions
 
@@ -116,7 +133,11 @@ Blocs acausals (physiques) a broches non dirigees, simules nativement par le mot
 
 ## Thermal (acausal)
 
+
+    
 Blocs acausals (physiques) a broches non dirigees, simules nativement par le moteur differentiel-algebrique.
+
+  
 
 ### Functions
 
@@ -136,7 +157,11 @@ Blocs acausals (physiques) a broches non dirigees, simules nativement par le mot
 
 ## Translational (acausal)
 
+
+    
 Blocs acausals (physiques) a broches non dirigees, simules nativement par le moteur differentiel-algebrique.
+
+  
 
 ### Functions
 
@@ -173,7 +198,11 @@ Blocs acausals (physiques) a broches non dirigees, simules nativement par le mot
 
 ## Blocs continus
 
+
+    
 Blocs continus avec etat, mis a jour avec le pas de simulation.
+
+  
 
 ### Functions
 
@@ -189,7 +218,11 @@ Blocs continus avec etat, mis a jour avec le pas de simulation.
 
 ## Blocs tableau de bord
 
+
+    
 Widgets interactifs de tableau de bord lies aux signaux et parametres pour observer ou piloter un modele en cours d execution.
+
+  
 
 ### Functions
 
@@ -216,7 +249,11 @@ Widgets interactifs de tableau de bord lies aux signaux et parametres pour obser
 
 ## Blocs discrets
 
+
+    
 Blocs echantillonnes qui stockent des valeurs, historiques ou etats discrets.
+
+  
 
 ### Functions
 
@@ -236,7 +273,11 @@ Blocs echantillonnes qui stockent des valeurs, historiques ou etats discrets.
 
 ## Blocs FMI et Modelica
 
+
+    
 Blocs pour importer, executer ou compiler des unites de simulation et des modeles.
+
+  
 
 ### Functions
 
@@ -246,7 +287,11 @@ Blocs pour importer, executer ou compiler des unites de simulation et des modele
 
 ## Blocs logiques
 
+
+    
 Blocs booleens et de comparaison pour signaux numeriques.
+
+  
 
 ### Functions
 
@@ -271,7 +316,11 @@ Blocs booleens et de comparaison pour signaux numeriques.
 
 ## Tables de consultation
 
+
+    
 Blocs de tables de consultation interpolees et directes (1-D, 2-D, n-D et directe).
+
+  
 
 ### Functions
 
@@ -285,7 +334,11 @@ Blocs de tables de consultation interpolees et directes (1-D, 2-D, n-D et direct
 
 ## Blocs mathematiques
 
+
+    
 Operations mathematiques scalaires algebriques.
+
+  
 
 ### Functions
 
@@ -319,7 +372,11 @@ Operations mathematiques scalaires algebriques.
 
 ## Blocs non lineaires
 
+
+    
 Blocs avec saturation, seuils, hysteresis ou limites de vitesse.
+
+  
 
 ### Functions
 
@@ -334,7 +391,11 @@ Blocs avec saturation, seuils, hysteresis ou limites de vitesse.
 
 ## Blocs recepteurs
 
+
+    
 Blocs qui consomment, affichent ou nomment les signaux.
+
+  
 
 ### Functions
 
@@ -350,7 +411,11 @@ Blocs qui consomment, affichent ou nomment les signaux.
 
 ## Blocs sources
 
+
+    
 Blocs qui generent des signaux depuis des parametres, le temps, des etiquettes ou des fichiers.
+
+  
 
 ### Functions
 
@@ -375,7 +440,11 @@ Blocs qui generent des signaux depuis des parametres, le temps, des etiquettes o
 
 ## Blocs fonctions utilisateur
 
+
+    
 Blocs évaluant des expressions ou des fonctions Nelson fournies par l'utilisateur.
+
+  
 
 ### Functions
 
@@ -384,7 +453,11 @@ Blocs évaluant des expressions ou des fonctions Nelson fournies par l'utilisate
 
 ## Blocs utilitaires
 
+
+    
 Blocs de routage, regroupement, annotation et commutation interactive.
+
+  
 
 ### Functions
 
@@ -414,3 +487,4 @@ Blocs de routage, regroupement, annotation et commutation interactive.
 - [switch](utility/switch.md) - Selectionne l entree haute ou basse avec une entree de condition.
 - [toggleSwitch](utility/toggleSwitch.md) - Produit l une de deux valeurs configurees depuis state.
 - [width](utility/width.md) - Sort le nombre d elements (largeur) de son signal d entree, sous forme scalaire.
+

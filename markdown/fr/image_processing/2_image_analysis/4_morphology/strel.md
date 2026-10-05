@@ -31,6 +31,7 @@ Cree un element structurant.
 
 ## 📄 Description
 
+
 Cree un element structurant plat. Les formes 2-D prises en charge incluent arbitrary, square, rectangle, line, disk, diamond et octagon. Les formes 3-D prises en charge incluent arbitrary, cube, cuboid et sphere. L argument optionnel n de disk peut valoir 0, 4, 6 ou 8; Nelson renvoie actuellement le voisinage disk exact. Le rayon octagon doit etre un multiple non negatif de 3.
 
 ## 💡 Exemples
@@ -41,7 +42,6 @@ Afficher un element structurant
 SE=strel('disk',8);
 figure; imagesc(SE.nhood); g=linspace(0,1,64)'; colormap([g g g]); title('Structuring element');
 ```
-
 <img src="strel_1.png" align="middle"/>
 Creer des voisinages diamond et arbitraire
 
@@ -49,7 +49,6 @@ Creer des voisinages diamond et arbitraire
 D = strel('diamond', 1);
 A = strel([0 1 0; 1 1 1; 0 1 0])
 ```
-
 Creer un voisinage sphere 3-D
 
 ```matlab
@@ -57,14 +56,15 @@ SE = strel('sphere', 1);
 sum(SE.nhood(:))
 ```
 
+
 ## 🔗 Voir aussi
 
-[imdilate](../../../image_processing/imdilate.md), [imerode](../../../image_processing/imerode.md), [imopen](../../../image_processing/imopen.md), [imclose](../../../image_processing/imclose.md).
+[imdilate](../../../image_processing/2_image_analysis/4_morphology/imdilate.md), [imerode](../../../image_processing/2_image_analysis/4_morphology/imerode.md), [imopen](../../../image_processing/2_image_analysis/4_morphology/imopen.md), [imclose](../../../image_processing/2_image_analysis/4_morphology/imclose.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

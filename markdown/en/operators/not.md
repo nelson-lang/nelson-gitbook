@@ -17,14 +17,18 @@ not logical, ~ operator
 
 ## 📄 Description
 
+
 <b>C = not(A)</b> performs not logical ~A.
 
 ## 💡 Example
+
+
 
 ```matlab
 M = false(3, 3);
 ~M
 ```
+
 
 ## 🔗 See also
 
@@ -32,7 +36,7 @@ M = false(3, 3);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

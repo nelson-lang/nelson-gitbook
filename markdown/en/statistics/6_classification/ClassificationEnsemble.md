@@ -22,14 +22,17 @@ Classification ensemble model.
 
 ## 📄 Description
 
-ClassificationEnsemble stores a classification model that combines multiple weak learners.
+
+ClassificationEnsemble stores a classification model that combines multiple weak learners. 
 
 Create this object with fitcensemble. Use predict to aggregate learner responses for new observations.
 
 ## Used function(s)
 
+
     fitcensemble
     predict
+  
 
 ## 💡 Example
 
@@ -42,13 +45,14 @@ mdl = fitcensemble(X, Y, 'NumLearningCycles', 3);
 label = predict(mdl, [0.2 0.1; 5.2 5.1])
 ```
 
+
 ## 🔗 See also
 
-[predict](../../statistics/predict.md), [fitcensemble](../../statistics/fitcensemble.md).
+[predict](../../statistics/5_regression/predict.md), [fitcensemble](../../statistics/6_classification/fitcensemble.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

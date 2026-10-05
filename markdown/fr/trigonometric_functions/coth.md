@@ -16,14 +16,18 @@ Cotangente hyperbolique.
 
 ## 📄 Description
 
+
 <b>coth</b> calcule la cotangente hyperbolique pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = coth(X)
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -31,8 +35,8 @@ R = coth(X)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

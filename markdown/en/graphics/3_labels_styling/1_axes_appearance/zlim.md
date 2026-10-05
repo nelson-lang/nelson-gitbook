@@ -33,9 +33,12 @@ set or get z-axis limits.
 
 ## 📄 Description
 
+
 <b>zlim</b> get or set the limits of the z-axis for the current plot.
 
 ## 💡 Example
+
+
 
 ```matlab
 x = linspace(-1, 1);
@@ -46,13 +49,14 @@ m = zlim('mode')
 
 ```
 
+
 ## 🔗 See also
 
 [axes](../../../graphics/2_graphics_objects/1_object_management/axes.md), [axis](../../../graphics/3_labels_styling/1_axes_appearance/axis.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

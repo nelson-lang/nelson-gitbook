@@ -23,11 +23,14 @@ save workspace variables to .nh5 or .mat file
 
 ## 📄 Description
 
-<b>save</b> save workspace variables to .nh5 or .mat file.
+
+<b>save</b> save workspace variables to .nh5 or .mat file. 
 
 Classdef value objects and classdef handle objects can be saved when their class definition is available on the path when the file is loaded.
 
 ## 💡 Examples
+
+
 
 ```matlab
 A = ones(3, 4);
@@ -46,7 +49,6 @@ A
 B
 
 ```
-
 append variables
 
 ```matlab
@@ -67,7 +69,6 @@ B
 C
 
 ```
-
 compression
 
 ```matlab
@@ -77,7 +78,6 @@ save([tempdir(), 'example_save_no_compression.mat'], 'C', '-nocompression')
 with_compression = dir([tempdir(), 'example_save_with_compression.mat'])
 no_compression = dir([tempdir(), 'example_save_no_compression.mat'])
 ```
-
 Save and load a classdef object.
 
 ```matlab
@@ -98,15 +98,16 @@ className = class(loaded.point)
 coordinates = [loaded.point.X, loaded.point.Y]
 ```
 
+
 ## 🔗 See also
 
 [load](../stream_manager/load.md), [savenh5](../hdf5/savenh5.md), [savemat](../matio/savemat.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                           |
-| ------- | ---------------------------------------- |
-| 1.0.0   | initial version                          |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 | 2.0.0   | classdef object save behavior documented |
 
 <!--

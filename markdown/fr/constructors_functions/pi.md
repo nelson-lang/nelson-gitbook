@@ -8,21 +8,27 @@ Rapport de la circonférence d'un cercle à son diamètre.
 
 ## 📄 Description
 
+
 <b>pi</b> retourne le nombre à virgule flottante le plus proche de la valeur de <b>π</b>.
 
 ## 💡 Exemples
+
+
 
 ```matlab
 cos(pi)
 ```
 
+
 ```matlab
 sin(pi)
 ```
 
+
 ```matlab
 4*atan(1) == pi
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -30,8 +36,8 @@ sin(pi)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

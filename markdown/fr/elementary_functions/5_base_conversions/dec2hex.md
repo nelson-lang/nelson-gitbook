@@ -18,22 +18,26 @@ Convertit un nombre décimal en base 16.
 
 ## 📄 Description
 
+
 <b>dec2hex</b> converts decimal number to base 16.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 Y = dec2hex(12)
 ```
 
+
 ## 🔗 Voir aussi
 
-[dec2base](../../elementary_functions/base2dec.md), [hex2dec](../../elementary_functions/hex2dec.md).
+[dec2base](../../elementary_functions/5_base_conversions/base2dec.md), [hex2dec](../../elementary_functions/5_base_conversions/hex2dec.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

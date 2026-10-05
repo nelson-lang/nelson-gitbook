@@ -13,7 +13,8 @@ Imaginary unit.
 
 ## 📄 Description
 
-j returns the imaginary unit sqrt(-1), like i.
+
+j returns the imaginary unit sqrt(-1), like i. 
 
 j can be redefined as an ordinary variable. Use clear to restore the default behavior.
 
@@ -25,13 +26,14 @@ Build a complex number with the imaginary unit.
 z = 2 + 3*j
 ```
 
+
 ## 🔗 See also
 
-[i](../constructors_functions/i.md), [complex](../elementary_functions/complex.md).
+[i](../constructors_functions/i.md), [complex](../elementary_functions/3_complex_numbers/complex.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

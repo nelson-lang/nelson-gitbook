@@ -16,23 +16,27 @@ Distribue un function-call à plusieurs callees, dans l'ordre.
 
 ## 📄 Description
 
-Distribue un function-call à plusieurs callees, dans l'ordre.
 
-Un unique appel entrant est routé vers chaque callee câblé, dans l'ordre des ports de sortie : la sortie 0 s'exécute d'abord, puis la sortie 1, et ainsi de suite. Le bloc est un routeur résolu à la compilation ; il ne porte aucun état et ne s'exécute jamais de lui-même ; le moteur le résout en la liste ordonnée de callees du [functionCallGenerator](../../nflow_blocks/utility/functionCallGenerator.md)pilote. Les sorties peuvent aller vers des sous-systèmes function-call ou vers d'autres splits.
+Distribue un function-call à plusieurs callees, dans l'ordre. 
 
-Ce bloc n'a pas de paramètre.
+Un unique appel entrant est routé vers chaque callee câblé, dans l'ordre des ports de sortie : la sortie 0 s'exécute d'abord, puis la sortie 1, et ainsi de suite. Le bloc est un routeur résolu à la compilation ; il ne porte aucun état et ne s'exécute jamais de lui-même ; le moteur le résout en la liste ordonnée de callees du [functionCallGenerator](../../nflow_blocks/utility/functionCallGenerator.md)pilote. Les sorties peuvent aller vers des sous-systèmes function-call ou vers d'autres splits. 
 
-<b>Caractéristiques du bloc</b>
+Ce bloc n'a pas de paramètre. 
 
-| Champ        | Valeur                            |
-| ------------ | --------------------------------- |
-| Type de bloc | functionCallSplit                 |
-| Famille      | Blocs utilitaires                 |
-| Phases       | (aucune, résolu à la compilation) |
+<b>Caractéristiques du bloc</b> 
 
-<b>Capacites etendues</b>
+| Champ | Valeur |
+| --- | --- |
+| Type de bloc | functionCallSplit | 
+| Famille | Blocs utilitaires | 
+| Phases | (aucune, résolu à la compilation) | 
+
+ 
+
+<b>Capacites etendues</b> 
 
 Generation de code : prise en charge pour C et Rust.
+
 
 ## 🔗 Voir aussi
 
@@ -40,8 +44,8 @@ Generation de code : prise en charge pour C et Rust.
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

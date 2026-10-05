@@ -20,19 +20,23 @@ Nombres aleatoires binomiaux negatifs
 
 ## 📄 Description
 
+
 <b>nbinrnd</b> genere des valeurs aleatoires de loi binomiale negative.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 rng(0);
 rout = nbinrnd(3, 0.4, 2, 3);
 ```
 
+
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

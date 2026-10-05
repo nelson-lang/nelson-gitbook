@@ -18,7 +18,8 @@ Verifie que chaque entree logique vaut false.
 
 ## 📄 Description
 
-L'assertion reussit lorsque chaque entree logique vaut false.
+
+L'assertion reussit lorsque chaque entree logique vaut false. 
 
 Les entrees non logiques levent immediatement une erreur d'argument.
 
@@ -29,12 +30,12 @@ All false
 ```matlab
 asserts.allfalse([false false]);
 ```
-
 Capture a true entry
 
 ```matlab
 [res, msg] = asserts.allfalse([false true]);
 ```
+
 
 ## 🔗 Voir aussi
 
@@ -42,8 +43,8 @@ Capture a true entry
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

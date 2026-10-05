@@ -21,9 +21,12 @@ Interpole un vecteur par un facteur entier.
 
 ## 📄 Description
 
+
 <b>interp</b> insere R-1 echantillons entre les echantillons d'entree puis applique un filtre FIR d'interpolation aux moindres carres. Une extrapolation lineaire aux bords est appliquee avant le filtrage pour retourner un vecteur avec la phase et la longueur attendues.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 
@@ -31,14 +34,15 @@ y = interp(1:8, 2, 2);
 
 ```
 
+
 ## 🔗 Voir aussi
 
-[upsample](../../signal_processing/upsample.md), [resample](../../signal_processing/resample.md), [upfirdn](../../signal_processing/upfirdn.md).
+[upsample](../../signal_processing/1_signal_generation_preprocessing/upsample.md), [resample](../../signal_processing/1_signal_generation_preprocessing/resample.md), [upfirdn](../../signal_processing/1_signal_generation_preprocessing/upfirdn.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--

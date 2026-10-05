@@ -18,11 +18,14 @@ Verifie l'existence d'une variable, fonction ou fichier.
 
 ## 📄 Description
 
-Verifie si une entite (variable, fonction, fichier, dossier, classe, etc.) existe et retourne un code indiquant son type.
+
+Verifie si une entite (variable, fonction, fichier, dossier, classe, etc.) existe et retourne un code indiquant son type. 
 
 <b>8</b> indique une classe.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 exist('fileread')
@@ -33,14 +36,15 @@ exist('fileread')
 
 ```
 
+
 ## 🔗 Voir aussi
 
 [isbuiltin](../functions_manager/isbuiltin.md), [ismacro](../functions_manager/ismacro.md), [isfile](../files_folders_functions/isfile.md), [isdir](../files_folders_functions/isdir.md), [isvar](../memory_manager/isvar.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

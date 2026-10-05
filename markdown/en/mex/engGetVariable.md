@@ -18,15 +18,19 @@ Copy variable from Nelson engine workspace
 
 ## 📄 Description
 
-Copy variable from Nelson engine workspace.
+
+Copy variable from Nelson engine workspace. 
 
 The limit for the size of data transferred is 2048 MB.
 
 ## 💡 Example
 
+
+
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
+
 
 ## 🔗 See also
 
@@ -34,7 +38,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 

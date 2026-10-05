@@ -21,9 +21,12 @@ Accède aux données d'un modèle en fonction de transfert.
 
 ## 📄 Description
 
+
 La fonction <b>tfdata(sys)</b> récupère les coefficients du numérateur et du dénominateur ainsi que le temps d'échantillonnage (si présent) du modèle de fonction de transfert.
 
 ## 💡 Exemple
+
+
 
 ```matlab
 numerator = 10;
@@ -32,14 +35,15 @@ sys = tf(numerator, denominator)
 [num, den] = tfdata(sys)
 ```
 
+
 ## 🔗 Voir aussi
 
-[tf](../../control_system/tf.md).
+[tf](../../control_system/1_dynamic_system_models/tf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 1.0.0   | version initiale |
 
 <!--

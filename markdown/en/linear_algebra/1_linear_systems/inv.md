@@ -16,9 +16,12 @@ Matrix inverse.
 
 ## 📄 Description
 
+
 <b>inv(x)</b> computes the matrix inverse of x.
 
 ## 💡 Example
+
+
 
 ```matlab
 X = rand(10, 10);
@@ -27,17 +30,18 @@ Y * X
 
 ```
 
+
 ## 🔗 See also
 
-[expm](../../linear_algebra/expm.md).
+[expm](../../linear_algebra/4_matrix_functions/expm.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                                          |
-| ------- | ------------------------------------------------------- |
-| 1.0.0   | initial version                                         |
-| 1.4.0   | warning about 'Matrix is singular to working precision' |
-|  |
+| Version | 📄 Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+| 1.4.0   | warning about 'Matrix is singular to working precision'
+       |
 
 <!--
 ## 👤 Author

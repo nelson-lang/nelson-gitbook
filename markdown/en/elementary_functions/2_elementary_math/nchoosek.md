@@ -20,13 +20,16 @@ Binomial coefficient or combinations.
 
 ## 📄 Description
 
-nchoosek(n, k) returns the binomial coefficient for nonnegative integer scalar n.
+
+nchoosek(n, k) returns the binomial coefficient for nonnegative integer scalar n. 
 
 nchoosek(v, k) returns a matrix containing all k-element combinations of the elements of vector v.
 
 ## Used function(s)
 
+
     factorial
+  
 
 ## 💡 Example
 
@@ -37,13 +40,14 @@ b = nchoosek(5, 2)
 C = nchoosek([10 20 30 40], 2)
 ```
 
+
 ## 🔗 See also
 
-[factorial](../../elementary_functions/factorial.md), [prod](../../data_analysis/prod.md).
+[factorial](../../elementary_functions/2_elementary_math/factorial.md), [prod](../../data_analysis/prod.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
 | 2.0.0   | initial version |
 

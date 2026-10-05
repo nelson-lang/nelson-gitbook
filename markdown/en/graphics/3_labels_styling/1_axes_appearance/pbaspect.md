@@ -13,51 +13,47 @@ Control relative lengths of each axis in the plot box.
 
 ## 📥 Input argument
 
-- ratio -
+- ratio - 
 
 Three-element vector of positive values specifying the relative lengths of the x, y, and z axes in the plot box.
-
-- 'auto' -
+- 'auto' - 
 
 Set the plot box aspect ratio mode to automatic.
-
-- 'manual' -
+- 'manual' - 
 
 Set the plot box aspect ratio mode to manual.
-
-- 'mode' -
+- 'mode' - 
 
 Query the current plot box aspect ratio mode ('auto' or 'manual').
-
-- ax -
+- ax - 
 
 Target axes object. If not specified, uses current axes.
 
 ## 📤 Output argument
 
-- pb -
+- pb - 
 
 Three-element vector representing the current plot box aspect ratio.
-
-- m -
+- m - 
 
 Current plot box aspect ratio mode: 'auto' or 'manual'.
 
 ## 📄 Description
 
-<b>pbaspect</b> controls the relative lengths of the x, y, and z axes in the plot box.
 
-<b>pbaspect(ratio)</b> sets the plot box aspect ratio for the current axes. <b>ratio</b> is a three-element vector of positive values. For example, [3 1 1] means the x-axis is three times as long as the y- and z-axes.
+<b>pbaspect</b> controls the relative lengths of the x, y, and z axes in the plot box. 
 
-<b>pb = pbaspect()</b> returns the current plot box aspect ratio as a three-element vector.
+<b>pbaspect(ratio)</b> sets the plot box aspect ratio for the current axes. <b>ratio</b> is a three-element vector of positive values. For example, [3 1 1] means the x-axis is three times as long as the y- and z-axes. 
 
-<b>pbaspect('auto')</b> sets the plot box aspect ratio mode to automatic, enabling the axes to choose the ratio.
+<b>pb = pbaspect()</b> returns the current plot box aspect ratio as a three-element vector. 
 
-<b>pbaspect('manual')</b> sets the mode to manual and uses the ratio stored in the axes.
+<b>pbaspect('auto')</b> sets the plot box aspect ratio mode to automatic, enabling the axes to choose the ratio. 
 
-<b>m = pbaspect('mode')</b> returns the current mode, either 'auto' or 'manual'.
+<b>pbaspect('manual')</b> sets the mode to manual and uses the ratio stored in the axes. 
 
-<b>pbaspect(ax, ...)</b> operates on the axes specified by <b>ax</b> instead of the current axes.
+<b>m = pbaspect('mode')</b> returns the current mode, either 'auto' or 'manual'. 
+
+<b>pbaspect(ax, ...)</b> operates on the axes specified by <b>ax</b> instead of the current axes. 
 
 Setting the plot box aspect ratio disables the stretch-to-fill behavior of the axes.
 
@@ -73,7 +69,6 @@ plot(x, y)
 pbaspect([1 1 1])
 
 ```
-
 <img src="pbaspect_1.svg" align="middle"/>
 Use different axis lengths
 
@@ -86,7 +81,6 @@ pbaspect([2 1 1])
 disp(pbaspect('mode'))
 
 ```
-
 <img src="pbaspect_2.svg" align="middle"/>
 Revert back to default plot box aspect ratio
 
@@ -100,7 +94,6 @@ pbaspect([3 2 1])
 pbaspect('auto')
 
 ```
-
 <img src="pbaspect_3.svg" align="middle"/>
 Query plot box aspect ratio
 
@@ -113,7 +106,6 @@ pb = pbaspect()
 disp(pb)
 
 ```
-
 <img src="pbaspect_4.svg" align="middle"/>
 Set plot box aspect ratio for specific axes object
 
@@ -127,8 +119,8 @@ plot(ax2, 1:10)
 pbaspect(ax2, [2 2 1])
 
 ```
-
 <img src="pbaspect_5.svg" align="middle"/>
+
 
 ## 🔗 See also
 
@@ -136,9 +128,9 @@ pbaspect(ax2, [2 2 1])
 
 ## 🕔 History
 
-| Version | 📄 Description  |
+| Version | 📄 Description     |
 | ------- | --------------- |
-| 1.16.0  | initial version |
+| 1.16.0   | initial version |
 
 <!--
 ## 👤 Author

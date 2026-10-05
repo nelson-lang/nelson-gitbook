@@ -16,13 +16,16 @@ Return the number of nonzero elements.
 
 ## 📄 Description
 
-<b>nnz</b> returns the number of non zero elements in an matrix.
 
-Dense inputs can be multidimensional. Sparse inputs are 2-D and may store double, single, logical, complex double, or complex single values.
+<b>nnz</b> returns the number of non zero elements in an matrix. 
+
+Dense inputs can be multidimensional. Sparse inputs are 2-D and may store double, single, logical, complex double, or complex single values. 
 
 For sparse matrices, <b>nnz</b> counts only values that are actually nonzero. Stored zero values are ignored.
 
 ## 💡 Examples
+
+
 
 ```matlab
 I = [1 2 3];
@@ -34,10 +37,12 @@ nnz(sp)
 nzmax(sp)
 ```
 
+
 ```matlab
 S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
 n = nnz(S)
 ```
+
 
 ## 🔗 See also
 
@@ -45,10 +50,10 @@ n = nnz(S)
 
 ## 🕔 History
 
-| Version | 📄 Description                                    |
-| ------- | ------------------------------------------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | documented sparse single and stored zero behavior |
-| 1.0.0   | initial version                                   |
+| 1.0.0   | initial version |
 
 <!--
 ## 👤 Author

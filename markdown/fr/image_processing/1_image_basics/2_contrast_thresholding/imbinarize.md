@@ -25,6 +25,7 @@ Binarise une image avec un seuil.
 
 ## 📄 Description
 
+
 Binarise une image avec un seuil. La methode globale utilise graythresh quand aucun seuil n est fourni. Un seuil numerique peut etre scalaire ou de meme taille que l entree. La methode adaptive utilise adaptthresh et prend en charge une polarite de premier plan bright ou dark.
 
 ## 💡 Exemples
@@ -37,7 +38,6 @@ BW=imbinarize(I,0.5);
 figure; subplot(1,2,1); imagesc(I); g=linspace(0,1,64)'; colormap([g g g]); title('Input');
 subplot(1,2,2); imagesc(BW); g=linspace(0,1,64)'; colormap([g g g]); title('Binary');
 ```
-
 <img src="imbinarize_1.png" align="middle"/>
 Binariser avec un seuil adaptatif
 
@@ -46,14 +46,15 @@ I=[0.1 0.1 0.1; 0.1 0.9 0.1; 0.1 0.1 0.1];
 BW=imbinarize(I,'adaptive','Sensitivity',0.4)
 ```
 
+
 ## 🔗 Voir aussi
 
-[graythresh](../../../image_processing/graythresh.md), [adaptthresh](../../../image_processing/adaptthresh.md), [imcomplement](../../../image_processing/imcomplement.md).
+[graythresh](../../../image_processing/1_image_basics/2_contrast_thresholding/graythresh.md), [adaptthresh](../../../image_processing/1_image_basics/2_contrast_thresholding/adaptthresh.md), [imcomplement](../../../image_processing/1_image_basics/2_contrast_thresholding/imcomplement.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
+| Version | 📄 Description     |
+| ------- | --------------- |
 | 2.0.0   | version initiale |
 
 <!--
