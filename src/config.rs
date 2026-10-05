@@ -158,8 +158,24 @@ mod tests {
 
     #[test]
     fn normalize_removes_current_and_parent_components() {
+        // Built with join so that the separators are the platform's own:
+        // a backslash is a plain character on Linux, not a separator.
+        let path = normalize_lexically(
+            PathBuf::from("root")
+                .join("a")
+                .join(".")
+                .join("b")
+                .join("..")
+                .join("c"),
+        );
+        assert_eq!(path, PathBuf::from("root").join("a").join("c"));
+    }
+
+    #[cfg(windows)]
+    #[test]
+    fn normalize_keeps_the_drive_prefix() {
         let path = normalize_lexically(PathBuf::from(r"C:\a\.\b\..\c"));
-        assert_eq!(path.to_string_lossy().replace('\\', "/"), "C:/a/c");
+        assert_eq!(path.to_string_lossy(), r"C:\a\c");
     }
 
     #[test]

@@ -27,11 +27,11 @@ jobs:
       - name: Cache cargo registry and build
         uses: Swatinem/rust-cache@v2.9.2
 
-      - name: Build PDF builder
-        run: cargo build --release --locked
-
       - name: Run unit tests
         run: cargo test --release --locked
+
+      - name: Build PDF builder
+        run: cargo build --release --locked
 
       - name: Build PDF (${{ matrix.lang }})
         run: sh ./build-pdf.sh ${{ matrix.lang }}
