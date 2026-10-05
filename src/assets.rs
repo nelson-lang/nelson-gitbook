@@ -12,7 +12,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
-use anyhow::Result;
+use anyhow::{bail, Context, Result};
 use base64::Engine;
 use regex::Regex;
 
@@ -20,13 +20,28 @@ use crate::config::Logger;
 use crate::markdown::file_uri;
 use crate::tools::SvgConverter;
 
-#[derive(Debug)]
+/// Target width (in pixels) of rasterized SVG images. Matches the historical
+/// ImageMagick `-resize 1200x` setting so the PDF layout stays unchanged.
+const SVG_RASTER_WIDTH: f32 = 1200.0;
+
 pub struct AssetProcessor {
     converted_dir: PathBuf,
     svg_converter: Option<SvgConverter>,
     inline_png_as_data_uri: bool,
     logger: Logger,
+    svg_fonts: std::sync::Arc<resvg::usvg::fontdb::Database>,
     pub converted_count: usize,
+}
+
+impl std::fmt::Debug for AssetProcessor {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("AssetProcessor")
+            .field("converted_dir", &self.converted_dir)
+            .field("svg_converter", &self.svg_converter)
+            .field("inline_png_as_data_uri", &self.inline_png_as_data_uri)
+            .field("converted_count", &self.converted_count)
+            .finish()
+    }
 }
 
 impl AssetProcessor {
@@ -36,11 +51,17 @@ impl AssetProcessor {
         inline_png_as_data_uri: bool,
         logger: Logger,
     ) -> Self {
+        // System fonts are loaded once; this is the only expensive part of
+        // in-process SVG rasterization.
+        let mut svg_fonts = resvg::usvg::fontdb::Database::new();
+        svg_fonts.load_system_fonts();
+        let svg_fonts = std::sync::Arc::new(svg_fonts);
         Self {
             converted_dir,
             svg_converter,
             inline_png_as_data_uri,
             logger,
+            svg_fonts,
             converted_count: 0,
         }
     }
@@ -86,7 +107,14 @@ impl AssetProcessor {
                 continue;
             }
 
-            let dest_path = self.hashed_dest_path(&png_local);
+            // PNGs produced by the SVG rasterization step already live in the
+            // converted directory: reference them directly instead of copying
+            // them a second time.
+            let dest_path = if png_local.starts_with(&self.converted_dir) {
+                png_local.clone()
+            } else {
+                self.hashed_dest_path(&png_local)
+            };
             if !dest_path.exists() {
                 if let Err(err) = fs::copy(&png_local, &dest_path) {
                     self.logger.info(format!("Error copying PNG file: {err}"));
@@ -141,6 +169,15 @@ impl AssetProcessor {
             return Some(png_path);
         }
 
+        // Fast path: in-process rasterization with resvg (no external process).
+        match self.run_resvg(&svg_local, &png_path) {
+            Ok(()) => return Some(png_path),
+            Err(err) => self.logger.info(format!(
+                "resvg could not rasterize {}: {err}; trying external converters",
+                svg_local.display()
+            )),
+        }
+
         let Some(converter) = &self.svg_converter else {
             return self
                 .run_magick(&svg_local, &png_path)
@@ -153,6 +190,44 @@ impl AssetProcessor {
             self.run_magick(&svg_local, &png_path)
         };
         converted.or_else(|| self.sanitize_svg_for_pdf(&svg_local))
+    }
+
+    fn run_resvg(&self, svg: &Path, png: &Path) -> Result<()> {
+        use resvg::tiny_skia;
+        use resvg::usvg;
+
+        let data = fs::read(svg).with_context(|| format!("failed to read {}", svg.display()))?;
+        let options = usvg::Options {
+            resources_dir: svg.parent().map(Path::to_path_buf),
+            fontdb: std::sync::Arc::clone(&self.svg_fonts),
+            ..usvg::Options::default()
+        };
+        let tree = usvg::Tree::from_data(&data, &options)
+            .with_context(|| format!("failed to parse {}", svg.display()))?;
+
+        let size = tree.size();
+        if size.width() <= 0.0 || size.height() <= 0.0 {
+            bail!("SVG has an empty size");
+        }
+        let scale = (SVG_RASTER_WIDTH / size.width()).max(1.0);
+        let width = (size.width() * scale).ceil() as u32;
+        let height = (size.height() * scale).ceil() as u32;
+        let mut pixmap = tiny_skia::Pixmap::new(width.max(1), height.max(1))
+            .context("failed to allocate pixmap")?;
+        resvg::render(
+            &tree,
+            tiny_skia::Transform::from_scale(scale, scale),
+            &mut pixmap.as_mut(),
+        );
+        pixmap
+            .save_png(png)
+            .with_context(|| format!("failed to write {}", png.display()))?;
+        self.logger.verbose(format!(
+            "Rasterized SVG with resvg: {} -> {} ({width}x{height})",
+            svg.display(),
+            png.display()
+        ));
+        Ok(())
     }
 
     fn run_inkscape(&self, svg: &Path, png: &Path, new_syntax: bool) -> Option<PathBuf> {
@@ -504,6 +579,38 @@ mod tests {
 
         assert_eq!(out, "![A](missing.png)");
         assert_eq!(processor.converted_count, 0);
+        Ok(())
+    }
+
+    #[test]
+    fn svg_is_rasterized_in_process_with_resvg() -> Result<()> {
+        let dir = tempdir()?;
+        let svg = dir.path().join("a.svg");
+        fs::write(
+            &svg,
+            r#"<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150"><rect width="300" height="150" fill="red"/></svg>"#,
+        )?;
+        let converted = tempdir()?;
+        let mut processor = AssetProcessor::new(
+            converted.path().to_path_buf(),
+            None,
+            false,
+            Logger::new(false),
+        );
+
+        let out = processor.convert_svg_references("![A](a.svg)", dir.path())?;
+
+        assert_eq!(processor.converted_count, 1);
+        assert!(out.contains("file:///"), "{out}");
+        assert!(out.ends_with(".png)"), "{out}");
+        let png = fs::read_dir(converted.path())?
+            .flatten()
+            .map(|entry| entry.path())
+            .find(|path| path.extension().is_some_and(|ext| ext == "png"))
+            .expect("png produced");
+        let decoded = resvg::tiny_skia::Pixmap::load_png(&png)?;
+        assert_eq!(decoded.width(), 1200);
+        assert_eq!(decoded.height(), 600);
         Ok(())
     }
 

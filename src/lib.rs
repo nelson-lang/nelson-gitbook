@@ -8,7 +8,9 @@
 // LICENCE_BLOCK_END
 //=============================================================================
 pub mod assets;
+pub mod chunks;
 pub mod config;
+pub mod emoji;
 pub mod errors;
 pub mod files;
 pub mod markdown;
@@ -17,15 +19,18 @@ pub mod tools;
 
 use std::fs;
 use std::path::{Path, PathBuf};
+use std::time::Instant;
 
 use anyhow::{bail, Context, Result};
 use walkdir::WalkDir;
 
 use crate::assets::AssetProcessor;
+use crate::chunks::{ChunkPlan, MAX_FILES_PER_CHUNK};
 use crate::config::{BuildMode, Config, Logger, SingleBuild};
-use crate::files::{build_anchor_map, read_file_list, sort_files, AnchorMap};
-use crate::markdown::{transform_markdown, TransformContext};
-use crate::tools::{command_path, detect_pdf_engine, detect_svg_converter};
+use crate::emoji::EmojiResolver;
+use crate::files::{build_anchor_map, full_path, read_file_list, sort_files, AnchorMap};
+use crate::markdown::{file_uri, transform_markdown, TransformContext};
+use crate::tools::{command_path, detect_pdf_engine, detect_svg_converter, PdfEngine};
 
 pub fn run(config: Config) -> Result<()> {
     let logger = Logger::new(config.verbose);
@@ -87,26 +92,28 @@ pub fn run_single_build(build: &SingleBuild, config: &Config, logger: Logger) ->
 
     let anchor_map = build_anchor_map(&build.markdown_dir, &sorted_files)?;
 
+    let started = Instant::now();
     let svg_converter = detect_svg_converter();
-    match &svg_converter {
+    let fallback = match &svg_converter {
         Some(converter) if converter.use_inkscape => {
-            logger.info(format!(
-                "Using Inkscape for SVG->PNG conversion. New syntax: {}",
-                converter.inkscape_new_syntax
-            ));
+            format!("Inkscape (new syntax: {})", converter.inkscape_new_syntax)
         }
-        _ if command_path("magick").is_some() => {
-            logger.info("Inkscape not found; using ImageMagick (magick) for SVG->PNG conversion")
-        }
-        _ => logger.info("No SVG rasterizer found; using sanitized SVG copies for PDF output"),
-    }
+        _ if command_path("magick").is_some() => "ImageMagick (magick)".to_string(),
+        _ => "sanitized SVG copies".to_string(),
+    };
+    logger.info(format!(
+        "Using built-in resvg for SVG->PNG conversion (fallback: {fallback})"
+    ));
 
     let pdf_engine = detect_pdf_engine()?;
     logger.info(format!("Using {} as pdf-engine", pdf_engine.name()));
 
-    let temp_markdown = temp_markdown_path(&build.output_file);
-    if temp_markdown.exists() {
-        let _ = fs::remove_file(&temp_markdown);
+    let mut emoji = EmojiResolver::new(emoji_dir());
+    match emoji.dir() {
+        Some(dir) => logger.info(format!("Using local emoji images from {}", dir.display())),
+        None => {
+            logger.info("No local emoji directory (theme/emoji); emoji will be kept as plain text")
+        }
     }
 
     let converted_dir = tempfile::Builder::new()
@@ -117,6 +124,10 @@ pub fn run_single_build(build: &SingleBuild, config: &Config, logger: Logger) ->
         "Temporary image conversion dir: {}",
         converted_dir.path().display()
     ));
+    let chunk_dir = tempfile::Builder::new()
+        .prefix("nelson_pdf_chunks_")
+        .tempdir()
+        .context("failed to create temporary chunk directory")?;
 
     let mut processor = AssetProcessor::new(
         converted_dir.path().to_path_buf(),
@@ -125,68 +136,159 @@ pub fn run_single_build(build: &SingleBuild, config: &Config, logger: Logger) ->
         logger,
     );
 
-    let combined = build_combined_markdown(&sorted_files, &anchor_map, &mut processor, logger)?;
+    // wkhtmltopdf receives one HTML object per chapter chunk; other engines
+    // get the whole manual as a single document.
+    let chunked = matches!(pdf_engine, PdfEngine::Wkhtmltopdf(_));
+    let plan = ChunkPlan::new(
+        &build.markdown_dir,
+        &sorted_files,
+        chunk_dir.path().to_path_buf(),
+    );
+    if chunked {
+        logger.info(format!(
+            "Chapter chunks: {} (max {MAX_FILES_PER_CHUNK} files per chunk)",
+            plan.len()
+        ));
+    }
 
-    fs::write(&temp_markdown, combined)
-        .with_context(|| format!("failed to write {}", temp_markdown.display()))?;
+    let mut total_bytes = 0usize;
+    let mut single_document = String::new();
+    for (index, files) in plan.chunks.iter().enumerate() {
+        let combined = build_combined_markdown(
+            files,
+            &anchor_map,
+            chunked.then_some(&plan),
+            index,
+            &mut emoji,
+            &mut processor,
+            logger,
+        )?;
+        total_bytes += combined.len();
+        if chunked {
+            let path = plan.markdown_path(index);
+            fs::write(&path, &combined)
+                .with_context(|| format!("failed to write {}", path.display()))?;
+        } else {
+            single_document.push_str(&combined);
+        }
+    }
+    logger.info(format!(
+        "Combined markdown ready: {total_bytes} bytes in {} chunk(s), {} images converted, {:.1}s elapsed",
+        plan.len(),
+        processor.converted_count,
+        started.elapsed().as_secs_f64()
+    ));
+    report_missing_emoji(&emoji, logger);
 
     let resource_paths = pandoc::resource_paths(&build.markdown_dir)?;
     logger.info(format!(
         "Resource paths configured: {} directories",
         resource_paths.len()
     ));
+    let css_uri = file_uri(&full_path(Path::new("pdf-style-v2.css"))?);
 
-    if config.dry_run {
-        logger.info("Dry run: skipping Pandoc execution");
-        logger.info(format!(
-            "Combined markdown generated: {}",
-            temp_markdown.display()
-        ));
-        for arg in pandoc::build_pandoc_args(
-            &pdf_engine,
-            &resource_paths,
-            &temp_markdown,
-            &build.output_file,
-        ) {
-            logger.verbose(format!("pandoc arg: {arg}"));
-        }
-        if !config.keep_temp {
-            let _ = fs::remove_file(&temp_markdown);
-        } else {
-            logger.info(format!(
-                "Keeping temporary image directory: {}",
-                converted_dir.keep().display()
-            ));
-        }
-        return Ok(());
+    let temp_markdown = temp_markdown_path(&build.output_file);
+    if !chunked {
+        fs::write(&temp_markdown, &single_document)
+            .with_context(|| format!("failed to write {}", temp_markdown.display()))?;
     }
 
-    logger.info("Running Pandoc on combined markdown...");
-
-    pandoc::run_pandoc(
-        &pdf_engine,
-        &resource_paths,
-        &temp_markdown,
-        &build.output_file,
-    )?;
-
-    if config.keep_temp {
-        logger.info(format!(
-            "Keeping temporary markdown: {}",
-            temp_markdown.display()
-        ));
+    let keep_temp_dirs = |converted_dir: tempfile::TempDir, chunk_dir: tempfile::TempDir| {
         logger.info(format!(
             "Keeping temporary image directory: {}",
             converted_dir.keep().display()
         ));
-    } else {
+        logger.info(format!(
+            "Keeping temporary chunk directory: {}",
+            chunk_dir.keep().display()
+        ));
+    };
+
+    if config.dry_run {
+        logger.info("Dry run: skipping Pandoc and PDF engine execution");
+        if chunked {
+            for index in 0..plan.len() {
+                logger.verbose(format!(
+                    "chunk {index:03}: {} files -> {}",
+                    plan.chunks[index].len(),
+                    plan.markdown_path(index).display()
+                ));
+            }
+        } else {
+            logger.info(format!(
+                "Combined markdown generated: {}",
+                temp_markdown.display()
+            ));
+            for arg in pandoc::build_pandoc_args(
+                &pdf_engine,
+                &resource_paths,
+                &temp_markdown,
+                &build.output_file,
+            ) {
+                logger.verbose(format!("pandoc arg: {arg}"));
+            }
+        }
+        if config.keep_temp {
+            keep_temp_dirs(converted_dir, chunk_dir);
+        } else if !chunked {
+            let _ = fs::remove_file(&temp_markdown);
+        }
+        return Ok(());
+    }
+
+    let render_started = Instant::now();
+    match &pdf_engine {
+        PdfEngine::Wkhtmltopdf(wkhtmltopdf) => {
+            pandoc::run_pandoc_html_chunks(&plan, &resource_paths, &css_uri, logger)?;
+            logger.info(format!(
+                "Pandoc finished in {:.1}s",
+                render_started.elapsed().as_secs_f64()
+            ));
+            let html_files: Vec<PathBuf> = (0..plan.len()).map(|i| plan.html_path(i)).collect();
+            logger.info(format!(
+                "Running wkhtmltopdf on {} HTML objects...",
+                html_files.len()
+            ));
+            let wk_started = Instant::now();
+            pandoc::run_wkhtmltopdf(wkhtmltopdf, &html_files, &build.output_file)?;
+            logger.info(format!(
+                "wkhtmltopdf finished in {:.1}s",
+                wk_started.elapsed().as_secs_f64()
+            ));
+        }
+        PdfEngine::Weasyprint => {
+            logger.info("Running Pandoc on combined markdown...");
+            pandoc::run_pandoc(
+                &pdf_engine,
+                &resource_paths,
+                &temp_markdown,
+                &build.output_file,
+            )?;
+            logger.info(format!(
+                "Pandoc + {} finished in {:.1}s",
+                pdf_engine.name(),
+                render_started.elapsed().as_secs_f64()
+            ));
+        }
+    }
+
+    if config.keep_temp {
+        if !chunked {
+            logger.info(format!(
+                "Keeping temporary markdown: {}",
+                temp_markdown.display()
+            ));
+        }
+        keep_temp_dirs(converted_dir, chunk_dir);
+    } else if !chunked {
         let _ = fs::remove_file(&temp_markdown);
     }
 
     pandoc::verify_pdf(&build.output_file)?;
     logger.info(format!(
-        "SUCCESS: PDF generated: {}",
-        build.output_file.display()
+        "SUCCESS: PDF generated: {} (total {:.1}s)",
+        build.output_file.display(),
+        started.elapsed().as_secs_f64()
     ));
     Ok(())
 }
@@ -194,6 +296,9 @@ pub fn run_single_build(build: &SingleBuild, config: &Config, logger: Logger) ->
 pub fn build_combined_markdown(
     sorted_files: &[PathBuf],
     anchor_map: &AnchorMap,
+    chunks: Option<&ChunkPlan>,
+    chunk_index: usize,
+    emoji: &mut EmojiResolver,
     processor: &mut AssetProcessor,
     logger: Logger,
 ) -> Result<String> {
@@ -210,13 +315,24 @@ pub fn build_combined_markdown(
             file,
             file_dir: &file_dir,
             anchor_map,
+            chunks,
+            chunk_index,
         };
-        let content = transform_markdown(content, &ctx, processor)?;
+        let content = transform_markdown(content, &ctx, processor, emoji)?;
         combined.push_str(&content);
-        combined.push_str("\n\n<div style='page-break-after: always;'></div>\n\n");
+        combined.push_str(PAGE_BREAK);
+    }
+    // A trailing page break makes wkhtmltopdf emit a blank page at the end of
+    // every chunk (each HTML object already starts on a new page) and at the
+    // end of the manual.
+    if let Some(trimmed) = combined.strip_suffix(PAGE_BREAK) {
+        combined.truncate(trimmed.len());
+        combined.push('\n');
     }
     Ok(combined)
 }
+
+const PAGE_BREAK: &str = "\n\n<div style='page-break-after: always;'></div>\n\n";
 
 pub fn collect_markdown_files(markdown_dir: &Path) -> Result<Vec<PathBuf>> {
     let mut files = Vec::new();
@@ -233,6 +349,39 @@ pub fn collect_markdown_files(markdown_dir: &Path) -> Result<Vec<PathBuf>> {
         }
     }
     Ok(files)
+}
+
+/// Local Twemoji PNG directory (`theme/emoji/<codepoints>.png` under the
+/// current directory), if it exists.
+fn emoji_dir() -> Option<PathBuf> {
+    let dir = std::env::current_dir().ok()?.join("theme").join("emoji");
+    dir.is_dir().then_some(dir)
+}
+
+/// Lists emoji sequences that were kept as text because no local PNG exists.
+fn report_missing_emoji(emoji: &EmojiResolver, logger: Logger) {
+    let missing = emoji.missing();
+    if missing.is_empty() {
+        return;
+    }
+    let dir = emoji
+        .dir()
+        .map(|dir| dir.display().to_string())
+        .unwrap_or_else(|| "theme/emoji".to_string());
+    logger.info(format!(
+        "WARNING: {} emoji sequence(s) have no local PNG in {dir} and were kept as text:",
+        missing.len()
+    ));
+    for (name, entry) in missing {
+        logger.info(format!(
+            "  {}  {name}.png  ({} occurrence(s))",
+            entry.sequence, entry.count
+        ));
+    }
+    logger.info("Download them with, for each name:");
+    logger.info(
+        "  curl -sSL -o theme/emoji/<name>.png https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/<name>.png",
+    );
 }
 
 fn temp_markdown_path(output_file: &Path) -> PathBuf {
@@ -266,8 +415,15 @@ mod tests {
             Logger::new(false),
         );
 
-        let combined =
-            build_combined_markdown(&sorted, &anchors, &mut processor, Logger::new(false))?;
+        let combined = build_combined_markdown(
+            &sorted,
+            &anchors,
+            None,
+            0,
+            &mut EmojiResolver::new(None),
+            &mut processor,
+            Logger::new(false),
+        )?;
 
         assert!(combined.contains("<a id='nelson-readme' name='nelson-readme'></a>"));
         assert!(combined.contains("<a href='#nelson-target'>Target</a>"));

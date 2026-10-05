@@ -3,8 +3,13 @@ name: CI
 on: [push]
 
 jobs:
-  build-windows:
+  build-pdf:
     runs-on: windows-2025-vs2026
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [en, fr]
 
     steps:
       - uses: actions/checkout@v4
@@ -14,6 +19,17 @@ jobs:
           rustc --version
           cargo --version
         shell: powershell
+
+      - name: Cache cargo registry and build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
 
       - name: Install tools via Chocolatey
         run: |
@@ -25,8 +41,7 @@ jobs:
           # Install wkhtmltopdf
           choco install wkhtmltopdf -y
 
-          # Install Inkscape
-          choco install inkscape -y
+          # Inkscape is no longer required: SVG rasterization is done in-process by resvg.
 
           Write-Host "All tools installed successfully via Chocolatey"
         shell: powershell
@@ -38,18 +53,15 @@ jobs:
 
           Write-Host "`nVerifying wkhtmltopdf..."
           wkhtmltopdf --version
-
-          Write-Host "`nVerifying Inkscape..."
-          inkscape --version
         shell: powershell
 
-      - name: Build PDF
+      - name: Build PDF (${{ matrix.lang }})
         run: |
-          .\pandoc-build-pdf.bat
+          .\pandoc-build-pdf.bat ${{ matrix.lang }}
         shell: cmd
 
-      - name: Upload PDF artifacts
+      - name: Upload PDF artifact
         uses: actions/upload-artifact@v7
         with:
-          name: nelson-pdf
-          path: "*.pdf"
+          name: nelson-pdf-${{ matrix.lang }}
+          path: nelson-${{ matrix.lang }}.pdf

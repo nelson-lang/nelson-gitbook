@@ -7,24 +7,32 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 // LICENCE_BLOCK_END
 //=============================================================================
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use anyhow::Result;
 use regex::{Captures, Regex};
 
 use crate::assets::AssetProcessor;
+use crate::chunks::ChunkPlan;
+use crate::emoji::EmojiResolver;
 use crate::files::{full_path, AnchorMap};
 
 pub struct TransformContext<'a> {
     pub file: &'a Path,
     pub file_dir: &'a Path,
     pub anchor_map: &'a AnchorMap,
+    /// Chapter chunking plan and the chunk the current file belongs to. Links
+    /// to anchors located in another chunk are prefixed with that chunk's HTML
+    /// file URI so wkhtmltopdf can resolve them across objects.
+    pub chunks: Option<&'a ChunkPlan>,
+    pub chunk_index: usize,
 }
 
 pub fn transform_markdown(
     mut content: String,
     ctx: &TransformContext<'_>,
     assets: &mut AssetProcessor,
+    emoji: &mut EmojiResolver,
 ) -> Result<String> {
     let full = full_path(ctx.file)?;
     if let Some(anchor_id) = ctx.anchor_map.get(&full) {
@@ -33,7 +41,7 @@ pub fn transform_markdown(
 
     content = remove_html_only_elements(&content);
     content = mark_readme_subchapter_headings(&content, ctx.file);
-    content = replace_known_emojis(&content);
+    content = emoji.replace(&content);
     content = remove_image_size_attrs(&content);
     content = rewrite_markdown_md_links(&content, ctx)?;
     content = remove_img_style_attrs(&content);
@@ -75,30 +83,6 @@ pub fn remove_html_only_elements(content: &str) -> String {
     scripts
         .replace_all(&links.replace_all(content, ""), "")
         .to_string()
-}
-
-pub fn replace_known_emojis(content: &str) -> String {
-    let emojis = [
-        ("1f4dd", '\u{1F4DD}', "memo"),
-        ("1f4e5", '\u{1F4E5}', "inbox"),
-        ("1f4e4", '\u{1F4E4}', "outbox"),
-        ("1f4c4", '\u{1F4C4}', "page"),
-        ("1f4a1", '\u{1F4A1}', "bulb"),
-        ("1f517", '\u{1F517}', "link"),
-        ("1f554", '\u{1F554}', "clock"),
-        ("1f464", '\u{1F464}', "user"),
-        ("1f4da", '\u{1F4DA}', "books"),
-        ("26a0", '\u{26A0}', "warning"),
-        ("2705", '\u{2705}', "check"),
-        ("274c", '\u{274C}', "cross"),
-    ];
-
-    let mut out = content.to_string();
-    for (codepoint, ch, desc) in emojis {
-        let img = format!("<img data-emoji='true' src='https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/{codepoint}.png' alt='{desc}' style='display: inline-block; width: 0.9em; height: 0.9em; vertical-align: -0.1em; margin: 0 0.05em;'>");
-        out = out.replace(ch, &img);
-    }
-    out
 }
 
 pub fn remove_image_size_attrs(content: &str) -> String {
@@ -149,12 +133,23 @@ fn rewrite_single_md_link(captures: &Captures<'_>, ctx: &TransformContext<'_>) -
     if !is_absolute_like(link_path) {
         resolved = ctx.file_dir.join(link_path);
     }
-    let resolved_full = full_path(&resolved.with_extension("md"))?;
+    // `Path::with_extension` would replace the last dotted segment of names
+    // such as `nelson.graphics.errorbar`, so the extension is appended instead.
+    let resolved_full = full_path(&PathBuf::from(format!("{}.md", resolved.to_string_lossy())))?;
 
     if let Some(anchor) = ctx.anchor_map.get(&resolved_full) {
-        Ok(format!("[{link_text}](#{anchor})"))
+        let prefix = ctx
+            .chunks
+            .and_then(|plan| {
+                plan.chunk_of(&resolved_full)
+                    .map(|target| plan.link_prefix(ctx.chunk_index, target))
+            })
+            .unwrap_or_default();
+        Ok(format!("[{link_text}]({prefix}#{anchor})"))
     } else {
-        Ok(format!("[{link_text}]({})", file_uri(&resolved_full)))
+        // The target page is not part of the manual: a `file://` link would be
+        // useless in a distributed PDF, so only the link text is kept.
+        Ok(link_text.to_string())
     }
 }
 
@@ -253,10 +248,12 @@ pub fn wrap_html_png_images(content: &str) -> String {
     .to_string()
 }
 
+/// Turns `[text](#anchor)` and `[text](file:///chunk.html#anchor)` links into
+/// raw HTML anchors so Pandoc leaves them untouched.
 pub fn markdown_anchor_links_to_html(content: &str) -> String {
-    Regex::new(r"\[([^\]]+)\]\(#([A-Za-z0-9\-_:]+)\)")
+    Regex::new(r"\[([^\]]+)\]\(((?:file:///[^)#\s]+)?#[A-Za-z0-9\-_:]+)\)")
         .unwrap()
-        .replace_all(content, "<a href='#$2'>$1</a>")
+        .replace_all(content, "<a href='$2'>$1</a>")
         .to_string()
 }
 
@@ -319,11 +316,14 @@ mod tests {
             file: &source,
             file_dir: dir.path(),
             anchor_map: &anchors,
+            chunks: None,
+            chunk_index: 0,
         };
 
         let out = rewrite_markdown_md_links("[Target](target.md) [Missing](missing.md)", &ctx)?;
         assert!(out.contains("[Target](#nelson-target)"));
-        assert!(out.contains("[Missing](file:///"));
+        assert!(out.contains(" Missing"), "{out}");
+        assert!(!out.contains("file:///"), "{out}");
         Ok(())
     }
 
@@ -361,13 +361,6 @@ mod tests {
     }
 
     #[test]
-    fn replaces_known_emoji_with_twemoji_img() {
-        let out = replace_known_emojis("⚠ ok");
-        assert!(out.contains("data-emoji='true'"));
-        assert!(out.contains("26a0.png"));
-    }
-
-    #[test]
     fn marks_only_readme_subchapter_headings() {
         let readme = Path::new("graphics/README.md");
         let out = mark_readme_subchapter_headings(
@@ -393,11 +386,68 @@ mod tests {
             file: &source,
             file_dir: dir.path(),
             anchor_map: &anchors,
+            chunks: None,
+            chunk_index: 0,
         };
 
         let out = rewrite_markdown_md_links("[$x$](target.md)", &ctx)?;
 
         assert_eq!(out, "[$x$](target.md)");
+        Ok(())
+    }
+
+    #[test]
+    fn dotted_file_names_resolve_to_anchors() -> Result<()> {
+        let dir = tempdir()?;
+        let source = dir.path().join("errorbar.md");
+        let target = dir.path().join("nelson.graphics.errorbar.md");
+        fs::write(&source, "")?;
+        fs::write(&target, "")?;
+        let anchors = build_anchor_map(dir.path(), std::slice::from_ref(&target))?;
+        let ctx = TransformContext {
+            file: &source,
+            file_dir: dir.path(),
+            anchor_map: &anchors,
+            chunks: None,
+            chunk_index: 0,
+        };
+
+        let out = rewrite_markdown_md_links("[props](nelson.graphics.errorbar.md)", &ctx)?;
+
+        assert_eq!(out, "[props](#nelson-nelson-graphics-errorbar)");
+        Ok(())
+    }
+
+    #[test]
+    fn cross_chunk_links_get_the_target_chunk_uri() -> Result<()> {
+        let dir = tempdir()?;
+        let source = dir.path().join("a.md");
+        let target = dir.path().join("sub").join("b.md");
+        fs::create_dir_all(target.parent().unwrap())?;
+        fs::write(&source, "")?;
+        fs::write(&target, "")?;
+        let sorted = vec![source.clone(), target.clone()];
+        let anchors = build_anchor_map(dir.path(), &sorted)?;
+        let plan = ChunkPlan::with_max_files(dir.path(), &sorted, dir.path().join("chunks"), 100);
+        assert_eq!(plan.len(), 2);
+        let ctx = TransformContext {
+            file: &source,
+            file_dir: dir.path(),
+            anchor_map: &anchors,
+            chunks: Some(&plan),
+            chunk_index: 0,
+        };
+
+        let out = rewrite_markdown_md_links("[B](sub/b.md) [A](a.md)", &ctx)?;
+        assert!(out.contains("chunk_001.html#nelson-sub-b)"), "{out}");
+        assert!(out.contains("[A](#nelson-a)"), "{out}");
+        let html = markdown_anchor_links_to_html(&out);
+        assert!(html.contains("<a href='file:///"), "{html}");
+        assert!(
+            html.contains("chunk_001.html#nelson-sub-b'>B</a>"),
+            "{html}"
+        );
+        assert!(html.contains("<a href='#nelson-a'>A</a>"), "{html}");
         Ok(())
     }
 

@@ -129,13 +129,17 @@ fn build_mode_from_cli(cli: &Cli, cwd: &Path) -> Result<BuildMode> {
     }))
 }
 
+/// PNG images are referenced as `file://` URIs by default. Inlining them as
+/// base64 data URIs (`NELSON_INLINE_PNG=1`) duplicates every shared image in the
+/// combined markdown (37 MB instead of 13 MB for the English manual) and slows
+/// down both Pandoc and wkhtmltopdf.
 pub fn inline_png_from_env() -> bool {
     match env::var("NELSON_INLINE_PNG") {
         Ok(value) => {
             let lowered = value.to_ascii_lowercase();
-            !(lowered == "0" || lowered == "false")
+            lowered == "1" || lowered == "true"
         }
-        Err(_) => true,
+        Err(_) => false,
     }
 }
 
