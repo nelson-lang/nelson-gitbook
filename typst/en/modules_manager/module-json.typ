@@ -36,7 +36,9 @@ A module.json file is required for each Nelson external module and is used by th
 
  "glnxa64": linux 64 bits build
 
- "glnxa32": linux 64 bits build
+ "glnxa32": linux 32 bits build
+
+ "wasm32": WebAssembly browser build (Emscripten side module)
 
  example: #strong[\["win64", "glnxa64"\]];, module will be available only on windows and linux 64 bits platforms.
 

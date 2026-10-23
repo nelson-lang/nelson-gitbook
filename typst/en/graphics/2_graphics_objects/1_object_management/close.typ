@@ -11,6 +11,8 @@ Close one or more figures
 - #raw("close(name)");
 - #raw("close(ID)");
 - #raw("close(GO)");
+- #raw("close('all', 'force')");
+- #raw("close(ID, 'force')");
 - #raw("tf = close(...)");
 
 == Input argument
@@ -32,6 +34,8 @@ Close one or more figures
  #strong[close(GO)]; closes the figure specified by figure graphics object.
 
  #strong[close('all')]; closes all figures.
+
+ #strong[close(..., 'force')]; closes the specified figures even when a #strong[CloseRequestFcn]; callback would otherwise prevent them from closing.
 
 
 == Example

@@ -42,15 +42,15 @@ nelson-cli options -- user_arg1 ... user_argn
 <th>Description</th>
 </tr>
 <tr>
-<td class="param-name">-cli</td>
+<td class="param-name">--cli</td>
 <td>selects <b>nelson-cli</b> when passed to the <b>nelson</b> launcher.</td>
 </tr>
 <tr>
-<td class="param-name">-adv-cli</td>
+<td class="param-name">--adv-cli</td>
 <td>selects <b>nelson-adv-cli</b> when passed to the <b>nelson</b> launcher.</td>
 </tr>
 <tr>
-<td class="param-name">-gui</td>
+<td class="param-name">--gui</td>
 <td>selects <b>nelson-gui</b> when passed to the <b>nelson</b> launcher.</td>
 </tr>
 <tr>
@@ -106,15 +106,15 @@ nelson-cli options -- user_arg1 ... user_argn
 <td>loads one or more valid existing .nh5 or .mat files.</td>
 </tr>
 <tr>
-<td class="param-name">--nostartup</td>
+<td class="param-name">--no-startup</td>
 <td>disables the main Nelson startup script.</td>
 </tr>
 <tr>
-<td class="param-name">--nousermodules</td>
+<td class="param-name">--no-user-modules</td>
 <td>disables loading user modules.</td>
 </tr>
 <tr>
-<td class="param-name">--nouserstartup</td>
+<td class="param-name">--no-user-startup</td>
 <td>disables the user startup script.</td>
 </tr>
 <tr>
@@ -122,19 +122,19 @@ nelson-cli options -- user_arg1 ... user_argn
 <td>minimizes the main window. GUI mode only.</td>
 </tr>
 <tr>
-<td class="param-name">--noipc</td>
+<td class="param-name">--no-ipc</td>
 <td>disables interprocess features.</td>
 </tr>
 <tr>
-<td class="param-name">--withoutfilewatcher</td>
+<td class="param-name">--without-file-watcher</td>
 <td>disables file watcher features for this session.</td>
 </tr>
 <tr>
-<td class="param-name">--noaudio</td>
+<td class="param-name">--no-audio</td>
 <td>disables audio module startup code.</td>
 </tr>
 <tr>
-<td class="param-name">--without_python</td>
+<td class="param-name">--without-python</td>
 <td>disables python_engine module startup code.</td>
 </tr>
 <tr>
@@ -163,9 +163,9 @@ nelson-cli options -- user_arg1 ... user_argn
       <b>nelson-gui</b>: graphical console, history and completion available.</p>
     <p><b>nelson --webview</b> and <b>nelson-webview</b> open a native desktop webview by default with a private localhost port that is not printed. Supplying <b>--url</b> or <b>--port</b> keeps the webview open and publishes the same session at the selected HTTP address. If the native webview is unavailable, Nelson stops with an error.</p>
     <p><b>nelson --web</b> and <b>nelson-webview --web</b> start an HTTP server without opening a desktop window and print the served URL.</p>
-    <p>Mode selector options <b>-cli</b>, <b>-adv-cli</b>, <b>-gui</b>, <b>--webview</b> and launcher-level <b>--web</b> are only valid for the generic <b>nelson</b> launcher. Direct executables such as <b>nelson-cli</b>, <b>nelson-adv-cli</b> and <b>nelson-gui</b> reject them before <b>--</b>. The single exception is <b>nelson-adv-cli --webview</b>, where <b>--webview</b> is accepted as an option that switches the figure backend to web (RenderWeb) rendering.</p>
+    <p>Mode selector options <b>--cli</b>, <b>--adv-cli</b>, <b>--gui</b>, <b>--webview</b> and launcher-level <b>--web</b> are only valid for the generic <b>nelson</b> launcher. Direct executables such as <b>nelson-cli</b>, <b>nelson-adv-cli</b> and <b>nelson-gui</b> reject them before <b>--</b>. The single exception is <b>nelson-adv-cli --webview</b>, where <b>--webview</b> is accepted as an option that switches the figure backend to web (RenderWeb) rendering.</p>
     <p>After <b>--</b>, mode selector tokens are normal user arguments and can be read with <b>argv('user')</b>.</p>
-    <p>Module startup arguments such as <b>--noaudio</b> and <b>--without_python</b> remain visible in <b>argv()</b> for compatibility. New command builders should place user arguments after <b>--</b> and read them with <b>argv('user')</b>.</p>
+    <p>Module startup arguments such as <b>--no-audio</b> and <b>--without-python</b> remain visible in <b>argv()</b> for compatibility. New command builders should place user arguments after <b>--</b> and read them with <b>argv('user')</b>.</p>
     <p>Quotes used to group arguments are interpreted by the operating system or shell before Nelson starts. Use a portable form such as <b>nelson-cli -e "disp('hello world'); quit"</b>.</p>
     <p>If Nelson is installed on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable is defined and can be used to call <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
   </div>
@@ -207,7 +207,7 @@ nelson-cli options -- user_arg1 ... user_argn
 </tr>
 <tr>
 <td class="version">1.4.0</td>
-<td>--without_python added</td>
+<td>--without-python added</td>
 </tr>
 <tr>
 <td class="version">1.11.0</td>
@@ -216,6 +216,10 @@ nelson-cli options -- user_arg1 ... user_argn
 <tr>
 <td class="version">1.11.0</td>
 <td>--vscode argument</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>command line options standardized: mode selectors now use the double dash form (--cli, --adv-cli, --gui) and multi-word options use kebab-case (--no-startup, --no-user-startup, --no-user-modules, --no-ipc, --no-audio, --without-file-watcher, --without-python, --without-julia)</td>
 </tr>
 </table>
 </div>

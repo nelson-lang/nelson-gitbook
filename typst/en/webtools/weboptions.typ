@@ -28,7 +28,7 @@ Specify parameters for RESTful web service
 
  #strong[UserAgent]; User agent identification: a string or character vector.
 
- #strong[Timeout]; Time out connection duration: positive numeric scalar or Inf value.
+ #strong[Timeout]; Time to wait for the server, in seconds: positive numeric scalar or Inf value (5 by default). It bounds the connection and any stall of the transfer, not the duration of the whole download.
 
  #strong[Username]; User identifier: a string or character vector.
 
@@ -58,7 +58,7 @@ Specify parameters for RESTful web service
 
  #strong[CertificateFilename]; Filename of root certificates: 'default', empty, or an existing file.
 
- #strong[FollowLocation]; tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, false by default.
+ #strong[FollowLocation]; tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, true by default.
 
 
 == Example

@@ -35,13 +35,13 @@ Nom historique de asserts.checkerror.
 Appel historique
 
 ``````matlab
-assert_checkerror('cos', _('Wrong number of input arguments.'));
+assert_checkerror('cos', 'Not enough input arguments.');
 ``````
 
 Appel canonique
 
 ``````matlab
-asserts.checkerror('cos', _('Wrong number of input arguments.'));
+asserts.checkerror('cos', 'Not enough input arguments.');
 ``````
 
 

@@ -222,8 +222,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -598,13 +598,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -727,9 +727,8 @@ Nelson::NFlow::handleConstant(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     const int w = ps ? ps-&gt;width() : 1;
     const SigType ty = ps ? ps-&gt;type : SigType::Double;
     if (ps &amp;&amp; portUsesI64(*ps)) {
-        // Exact-64 constant: read the Value entries straight from the JSON
-        // (integer literals stay exact, no double round-trip) and fill both
-        // lanes.
+        // Exact-64 constant: read Value straight from the JSON (integer literals
+        // stay exact) and fill both lanes.
         auto exactAt = [&amp;](size_t i) -&gt; long long {
             const json* v = nullptr;
             if (b.params.contains(nflow::kValue)) {
@@ -788,8 +787,8 @@ Nelson::NFlow::handleConstant(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
 }
 //=============================================================================
 namespace {
-// Exact-64 constant emission: read the Value entry straight from the JSON
-// (integer literals stay exact, no double round-trip).
+// Exact-64 constant emission: read Value straight from the JSON (integer
+// literals stay exact).
 Nelson::NFlow::BlockCodegenEmitFn
 constantTypedEmitter(bool cLang)
 {
@@ -814,6 +813,7 @@ constantTypedEmitter(bool cLang)
         a.line("out_" + a.id + " = " + codegenI64Literal(v, uns, cLang) + ";");
     };
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate

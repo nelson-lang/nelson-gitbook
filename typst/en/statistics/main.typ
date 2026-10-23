@@ -277,6 +277,7 @@ Unsupervised learning, nearest-neighbor search, outlier handling, and sequence m
 
 === Functions
 
+- #nlink(<statistics:7_clustering_anomaly_detection.KDTreeSearcher>)[KDTreeSearcher]: Nearest neighbor searcher object.
 - #nlink(<statistics:7_clustering_anomaly_detection.cluster>)[cluster]: Construct clusters from a hierarchical cluster tree.
 - #nlink(<statistics:7_clustering_anomaly_detection.clusterdata>)[clusterdata]: Cluster observations from data.
 - #nlink(<statistics:7_clustering_anomaly_detection.dbscan>)[dbscan]: Density-based spatial clustering.
@@ -782,6 +783,8 @@ Functions for experimental design and model configuration.
 #include "6_classification/fitctree.typ"
 #pagebreak(weak: true)
 #include "6_classification/grp2idx.typ"
+#pagebreak(weak: true)
+#include "7_clustering_anomaly_detection/KDTreeSearcher.typ"
 #pagebreak(weak: true)
 #include "7_clustering_anomaly_detection/cluster.typ"
 #pagebreak(weak: true)

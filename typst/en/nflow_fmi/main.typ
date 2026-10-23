@@ -10,7 +10,7 @@ The NFlow FMI module imports Functional Mock-up Units (FMUs) that follow the FMI
 
  Functions accept either a #strong[.fmu]; archive or an already-extracted FMU directory. Archives are unpacked with a ZIP-slip-hardened extractor into a temporary directory that is removed automatically.
 
- The same import also backs two blocks in the NFlow editor (category #strong[FMI];): an #strong[FMU]; block (Co-Simulation) and an #strong[FMU (ME)]; block (Model Exchange, whose continuous states join the diagram's global solver). Drop a block, click #strong[Browse FMU...]; to pick a #strong[.fmu];, and its input and output ports are configured automatically from the model description. Ready-to-open demo diagrams for several reference FMUs (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) ship in the module #strong[examples]; directory.
+ The same import also backs two blocks in the NFlow editor (category #strong[FMI];): an #strong[FMU (CS)]; block (Co-Simulation) and an #strong[FMU (ME)]; block (Model Exchange, whose continuous states join the diagram's global solver). Drop a block, click #strong[Browse FMU...]; to pick a #strong[.fmu];, and its input and output ports are configured automatically from the model description. Ready-to-open demo diagrams for several reference FMUs (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) ship in the module #strong[examples]; directory.
 
  
 #table(
@@ -25,6 +25,8 @@ The NFlow FMI module imports Functional Mock-up Units (FMUs) that follow the FMI
  The #strong[FMU import assistant]; (#strong[fmuToBlock];) turns any FMU into a native-looking nflow block -- input and output ports from the model description, parameters, and the FMU icon -- ready to drop into a library. It pairs with the Modelica bridge: #strong[modelicaToFmu]; produces an FMU, #strong[fmuToBlock]; wraps it as a block.
 
  The #strong[Modelica bridge]; lets an nflow model include a #strong[modelica]; block that references a Modelica model. At simulation time the model is compiled to an FMU with a user-installed #strong[OpenModelica]; and imported through the FMI path above, so physical (acausal) Modelica models simulate alongside ordinary blocks. #strong[modelicaInfo]; and #strong[modelicaConfigure]; report and select the OpenModelica used; #strong[modelicaToFmu]; performs the compilation. Worked examples (RC, RLC, mass-spring-damper) ship in the module #strong[examples\/modelica]; directory.
+
+ #strong[Prerequisite:]; the Modelica bridge is the only part of this module that needs an external tool. OpenModelica is #strong[not bundled]; with Nelson; install it yourself (from the OpenModelica project), and make sure the install is complete enough to export FMUs -- it must provide the FMI export runtime under #strong[share\/omc\/runtime\/c\/fmi];, which a minimal install may omit. nflow auto-detects OpenModelica from, in order, a path set with #strong[modelicaConfigure];, the #strong[NELSON\_OPENMODELICA\_HOME]; and #strong[OPENMODELICAHOME]; environment variables, the standard install directories, then #strong[PATH];. Run #strong[modelicaInfo]; to check whether a usable OpenModelica is found. The rest of the module (FMU import, Co-Simulation, Model Exchange) needs no external tool.
 
 == Functions
 

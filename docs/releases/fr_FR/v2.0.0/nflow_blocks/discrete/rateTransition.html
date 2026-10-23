@@ -625,9 +625,8 @@
 // default -1 = inherit) means "every step"; a larger value Ts holds the output
 // for Ts / base-step steps. st.scalar carries the next sample time.
 //
-// The tick answers the input it samples, in the SAME step: sampling in UPDATE
-// and answering from OUTPUT put a whole output period between the two, so every
-// value was reported one tick late.
+// The tick answers the input it samples in the SAME step. Sampling in UPDATE and
+// answering from OUTPUT would put a whole output period between the two.
 //=============================================================================
 bool
 Nelson::NFlow::handleRateTransition(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
@@ -647,7 +646,7 @@ Nelson::NFlow::handleRateTransition(SimCtx&amp; ctx, const Block&amp; b, Phase p
                     : (i &lt; (int)iniList.size() ? iniList[i] : iniList.back());
             }
         }
-        st.scalar = 0.0; // next sample time
+        st.scalar = 0.0;
         return false;
     }
     // Is the step now running a sample tick? Read the same way from both
@@ -694,7 +693,6 @@ Nelson::NFlow::handleRateTransition(SimCtx&amp; ctx, const Block&amp; b, Phase p
             return false; // hold between sample ticks
         }
         if (ts &gt; base) {
-            // Advance to the next sample time strictly after the current time.
             if (st.scalar &lt;= 0.0) {
                 st.scalar = ctx.t;
             }
@@ -708,10 +706,10 @@ Nelson::NFlow::handleRateTransition(SimCtx&amp; ctx, const Block&amp; b, Phase p
 }
 //=============================================================================
 // Single language-parameterized emitter (CodegenLang), the zoh shape: a held
-// sample with time-based self-scheduling on OutPortSampleTime. Output-then-
-// update mirrors the simulator: the tick samples FIRST and the output answers
-// with what it just sampled; OutPortSampleTime &lt;= the base step (or the default
-// -1 = inherit) samples every step.
+// sample with time-based self-scheduling on OutPortSampleTime. The tick samples
+// FIRST and the output answers with what it just sampled, as in the simulator.
+// OutPortSampleTime &lt;= the base step (or the default -1 = inherit) samples every
+// step.
 static Nelson::NFlow::BlockCodegenTemplate
 makeRateTransitionCodegen(Nelson::NFlow::CodegenLang L)
 {

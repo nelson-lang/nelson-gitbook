@@ -74,6 +74,7 @@ Functions for spatial filtering, Gaussian and median filtering, padding, filter 
 - [imboxfilt](1_image_basics/3_filtering_edges/imboxfilt.md) - Apply box filtering to an image.
 - [imfilter](1_image_basics/3_filtering_edges/imfilter.md) - Filter an image with a 2-D kernel.
 - [imgaussfilt](1_image_basics/3_filtering_edges/imgaussfilt.md) - Apply Gaussian filtering to an image.
+- [imnoise](1_image_basics/3_filtering_edges/imnoise.md) - Add noise to an image.
 - [medfilt2](1_image_basics/3_filtering_edges/medfilt2.md) - Apply 2-D median filtering.
 - [padarray](1_image_basics/3_filtering_edges/padarray.md) - Pad an array before image filtering or morphology.
 
@@ -199,6 +200,7 @@ Functions and objects for cropping, resizing, rotation, translation, spatial ref
 - [sizesMatch](3_geometry_registration_3d/6_geometric_transforms/sizesMatch.md) - Determine whether a spatial reference matches an image size.
 - [transformPointsForward](3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.md) - Apply a forward geometric transformation to points.
 - [transformPointsInverse](3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.md) - Apply an inverse geometric transformation to points.
+- [warp](3_geometry_registration_3d/6_geometric_transforms/warp.md) - Display an image as a texture mapped onto a surface.
 - [worldToIntrinsic](3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.md) - Convert world coordinates to intrinsic image coordinates.
 - [worldToSubscript](3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.md) - Convert world coordinates to image subscripts.
 

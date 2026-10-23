@@ -37,7 +37,7 @@ R = dec2base(D, B, N)
 </tr>
 <tr>
 <td class="param-name">D</td>
-<td>a nonnegative integer smaller than the value returned by flintmax.</td>
+<td>a nonnegative integer smaller than the value returned by flintmax, or a negative value of a signed integer class (int8, int16, int32, int64).</td>
 </tr>
 <tr>
 <td class="param-name">B</td>
@@ -70,6 +70,7 @@ R = dec2base(D, B, N)
     <p>
       <b>dec2base</b> converts decimal number to another base.</p>
     <p>values are cached to speed up next computation<b>dec2base([], 2)</b> to clear cache.</p>
+    <p>A negative value of a signed integer class is converted using the two's complement representation over the native bit width of the type (8, 16, 32 or 64 bits), so <b>dec2base(int8(-1), 16)</b> returns <b>'FF'</b>.</p>
   </div>
 </div>
 <div class="section">
@@ -79,6 +80,10 @@ R = dec2base(D, B, N)
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [65535 128; 1 0]
 Y = dec2base(X, 2)
 Y = dec2base(X, 2, 26)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Y = dec2base(int8(-1), 16)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 </div>

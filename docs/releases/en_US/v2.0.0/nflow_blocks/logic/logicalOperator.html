@@ -210,8 +210,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "and-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-and-formula",
         "formula": "\\text{AND}",
         "textSize": "16px"
       }
@@ -246,8 +246,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "or-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-or-formula",
         "formula": "\\text{OR}",
         "textSize": "16px"
       }
@@ -282,8 +282,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "xor-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-xor-formula",
         "formula": "\\text{XOR}",
         "textSize": "16px"
       }
@@ -313,8 +313,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "not-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-not-formula",
         "formula": "\\text{NOT}",
         "textSize": "16px"
       }
@@ -909,8 +909,7 @@
 // Operator is AND / OR / NAND / NOR / XOR / XNOR / NOT; it reduces the N boolean
 // inputs element-wise (a nonzero input is true). NOT takes a single input and
 // negates it. Pure algebraic feedthrough over the input width; C / Rust code
-// generation. Complements the fixed and / or / xor / not blocks with one
-// dispatchable block (matching the standard Logical Operator).
+// generation. Complements the fixed and / or / xor / not blocks with one dispatchable block.
 //=============================================================================
 #include "SimEngineTypes.hpp"
 #include "BlockRegistry.hpp"
@@ -923,6 +922,7 @@
 #include "logic_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     // Operator codes: 0 AND, 1 OR, 2 NAND, 3 NOR, 4 XOR, 5 XNOR, 6 NOT.
@@ -1090,6 +1090,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

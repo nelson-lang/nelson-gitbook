@@ -598,11 +598,13 @@ deadZoneCrossing(const Nelson::NFlow::BlockCodegenArgs&amp; a)
     a.line(a.rk4Arr + "[" + std::to_string(a.crossingOffset + 1) + "] = (" + a.in[0] + ") - "
         + a.fmt(hi) + ";");
 }
+//=============================================================================
 int
 deadZoneCrossingCount(const Nelson::NFlow::BlockCodegenArgs&amp;)
 {
     return 2;
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate

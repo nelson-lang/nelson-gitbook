@@ -567,12 +567,11 @@
 //=============================================================================
 // prelookup (Prelookup): computes the interval index k and the fraction f for a
 // scalar input over a strictly increasing breakpoint vector, so several tables
-// can share one interval search via interpolationPrelookup. The output is the
-// 2-element vector [k, f] where bp[k] &lt;= u &lt; bp[k+1] and f = (u - bp[k]) /
-// (bp[k+1] - bp[k]). Out-of-range inputs are clipped: below the first
-// breakpoint -&gt; [0, 0]; at/above the last -&gt; [N-2, 1]. Feedthrough (ALGEBRAIC),
-// real double, no state. Native runtime (the 2-vector output is a follow-up for
-// code generation).
+// can share one interval search via interpolationPrelookup. The index k leaves
+// on port 0 and the fraction f on port 1, where bp[k] &lt;= u &lt; bp[k+1] and
+// f = (u - bp[k]) / (bp[k+1] - bp[k]). Out-of-range inputs are clipped: below
+// the first breakpoint -&gt; [0, 0]; at/above the last -&gt; [N-2, 1]. Feedthrough
+// (ALGEBRAIC), real double, no state. Native runtime only.
 //=============================================================================
 #include "SimEngineTypes.hpp"
 #include "BlockRegistry.hpp"
@@ -583,6 +582,7 @@
 #include &lt;vector&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     namespace {
@@ -597,7 +597,7 @@ namespace NFlow {
             }
             return 0;
         }
-
+        //=============================================================================
         bool
         preIsStrictlyIncreasing(const std::vector&lt;double&gt;&amp; v)
         {
@@ -608,6 +608,7 @@ namespace NFlow {
             }
             return true;
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     bool
@@ -638,9 +639,6 @@ namespace NFlow {
                 f = (d != 0.0) ? (u - bp[i]) / d : 0.0;
             }
         }
-        // Index and fraction leave on two ports, the way the pair is wired: the
-        // index on port 0, the fraction on port 1. They used to share one
-        // two-wide port, which no other block reads that way.
         setOutput(ctx, b.nid, k);
         if (numOutputs(ctx, b.nid) &gt; 1) {
             double* f1 = outputSlice(ctx, b.nid, 1);
@@ -651,7 +649,6 @@ namespace NFlow {
         return false;
     }
     //=============================================================================
-    // Scalar input; the index and the fraction leave on their own ports.
     bool
     resolvePrelookupDims(const Block&amp; b, const ValMap&amp; vars, const std::vector&lt;PortSig&gt;&amp;,
         std::vector&lt;PortSig&gt;&amp; outSigs, std::string&amp; err)
@@ -674,6 +671,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

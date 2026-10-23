@@ -146,6 +146,7 @@
         <keyword name="ndims" link="7_indexing_dimensions/ndims.html" description="Number of dimensions of an array."/>
         <keyword name="numel" link="7_indexing_dimensions/numel.html" description="Number of elements."/>
         <keyword name="permute" link="7_indexing_dimensions/permute.html" description="Permute array dimensions."/>
+        <keyword name="resize" link="7_indexing_dimensions/resize.html" description="Resize an array by truncating or padding."/>
         <keyword name="rot90" link="7_indexing_dimensions/rot90.html" description="Rotate array 90 degrees."/>
         <keyword name="shiftdim" link="7_indexing_dimensions/shiftdim.html" description="Shift array dimensions"/>
         <keyword name="size" link="7_indexing_dimensions/size.html" description="Size of an object."/>

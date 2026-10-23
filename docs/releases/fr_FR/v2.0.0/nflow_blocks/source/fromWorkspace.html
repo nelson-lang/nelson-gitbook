@@ -156,8 +156,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -532,13 +532,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -651,14 +651,14 @@
 //=============================================================================
 // fromWorkspace: emits a signal read from a Nelson workspace variable.
 //
-// The variable itself is resolved on the interpreter thread BEFORE the
-// simulation starts (nflow_simulateBuiltin / the GUI launch path): its
-// samples are injected into the block params as 'times' (N entries),
-// 'values' (N*width entries, per-sample layout) and 'width', exactly like
-// fileSource. The handler therefore never touches the workspace and OUTPUT
-// stays a pure function of ctx.t (variable-step safe).
+// The variable is resolved on the interpreter thread before the simulation
+// starts (nflow_simulateBuiltin / the GUI launch path): its samples are
+// injected into the block params as 'times' (N entries), 'values' (N*width
+// entries, per-sample layout) and 'width', like fileSource. The handler never
+// touches the workspace, so OUTPUT stays a pure function of ctx.t (variable-step
+// safe).
 //
-// Reference semantics (measured):
+// Semantics:
 // - time must be non-decreasing (duplicates describe discontinuities);
 // - Interpolate 'on': linear; at a duplicated time the NEW value wins;
 //   before the first point: linear extrapolation from the first two points;
@@ -677,7 +677,7 @@ enum AfterFinalMode
     AFTER_HOLD = 2
 };
 //=============================================================================
-}
+} // namespace
 //=============================================================================
 bool
 Nelson::NFlow::handleFromWorkspace(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
@@ -786,11 +786,9 @@ Nelson::NFlow::handleFromWorkspace(SimCtx&amp; ctx, const Block&amp; b, Phase ph
         for (int i = 0; i &lt; std::min(outW, w); ++i) {
             double v = 0.0;
             if (t &lt; t0) {
-                // before the first point
                 v = (interpolate &amp;&amp; n &gt;= 2) ? linearFrom(0, 1, i)
                                             : (interpolate ? sample(0, i) : 0.0);
             } else if (t &gt; tN) {
-                // after the final point
                 switch ((int)st.scalar2) {
                 case AFTER_ZERO:
                     v = 0.0;

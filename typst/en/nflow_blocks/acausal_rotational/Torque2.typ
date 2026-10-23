@@ -31,7 +31,7 @@ Equal and opposite torque between two flanges: +tau on a, -tau on b (signal-driv
   [Library], [Rotational (acausal)], 
   [Type], [#raw("Torque2");], 
   [Label], [Torque2], 
-  [Solver], [Lowered to #raw("mechanicalTranslationalIsland");. Reference solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
+  [Solver], [Lowered to #raw("mechanicalTranslationalIsland");. Default solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
 )
   #strong[Implementation Sources];
 

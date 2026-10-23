@@ -50,6 +50,7 @@ histogram(x);
 
 #align(center)[#image("histogram_1.svg")]
 ``````matlab
+rng(0);
 x = randn(200, 1);
 histogram(x, 12, 'Normalization', 'probability', 'FaceAlpha', 0.5);
 

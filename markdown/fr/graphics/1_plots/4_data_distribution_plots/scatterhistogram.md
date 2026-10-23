@@ -21,6 +21,7 @@ L'objet retourne a le type <b>scatterhistogram</b>. Voir [proprietes de scatterh
 Creer un nuage avec histogrammes marginaux.
 
 ```matlab
+rng(0);
 x = randn(200, 1);
 y = 0.5 * x + randn(200, 1);
 scatterhistogram(x, y, 'NumBins', 20);

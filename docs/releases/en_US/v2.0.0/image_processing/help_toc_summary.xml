@@ -50,6 +50,7 @@
           <keyword name="imboxfilt" link="1_image_basics/3_filtering_edges/imboxfilt.html" description="Apply box filtering to an image."/>
           <keyword name="imfilter" link="1_image_basics/3_filtering_edges/imfilter.html" description="Filter an image with a 2-D kernel."/>
           <keyword name="imgaussfilt" link="1_image_basics/3_filtering_edges/imgaussfilt.html" description="Apply Gaussian filtering to an image."/>
+          <keyword name="imnoise" link="1_image_basics/3_filtering_edges/imnoise.html" description="Add noise to an image."/>
           <keyword name="medfilt2" link="1_image_basics/3_filtering_edges/medfilt2.html" description="Apply 2-D median filtering."/>
           <keyword name="padarray" link="1_image_basics/3_filtering_edges/padarray.html" description="Pad an array before image filtering or morphology."/>
         </section>
@@ -139,6 +140,7 @@
           <keyword name="sizesMatch" link="3_geometry_registration_3d/6_geometric_transforms/sizesMatch.html" description="Determine whether a spatial reference matches an image size."/>
           <keyword name="transformPointsForward" link="3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.html" description="Apply a forward geometric transformation to points."/>
           <keyword name="transformPointsInverse" link="3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.html" description="Apply an inverse geometric transformation to points."/>
+          <keyword name="warp" link="3_geometry_registration_3d/6_geometric_transforms/warp.html" description="Display an image as a texture mapped onto a surface."/>
           <keyword name="worldToIntrinsic" link="3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.html" description="Convert world coordinates to intrinsic image coordinates."/>
           <keyword name="worldToSubscript" link="3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.html" description="Convert world coordinates to image subscripts."/>
         </section>

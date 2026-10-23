@@ -3,6 +3,7 @@
 - Algèbre linéaire
   - Systemes lineaires
     - #nlink(<linear_algebra:1_linear_systems.cumtrapz>)[cumtrapz]
+    - #nlink(<linear_algebra:1_linear_systems.curl>)[curl]
     - #nlink(<linear_algebra:1_linear_systems.del2>)[del2]
     - #nlink(<linear_algebra:1_linear_systems.det>)[det]
     - #nlink(<linear_algebra:1_linear_systems.diff>)[diff]

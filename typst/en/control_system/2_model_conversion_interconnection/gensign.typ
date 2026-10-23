@@ -12,7 +12,7 @@ Create periodic signals for simulating system response.
 
 == Input argument
 
-/ type: Type of periodic signal: 'cos', 'tan', 'sin', 'pulse', 'square'
+/ type: Type of periodic signal: 'sin', 'square', 'pulse'
 / tau: Period: positive scalar
 / Tf: Duration: positive scalar or 5\*tau (default)
 / Ts: positive scalar or tau\/64 (default)
@@ -49,30 +49,20 @@ tau = 3;
 Tf = 6;
 Ts = 0.1;
 
-subplot(3, 2, 1)
-[u,t] = gensig("sine",tau,Tf,Ts);
+subplot(3, 1, 1)
+[u,t] = gensig("sin",tau,Tf,Ts);
 plot(t, u)
-title('sine')
+title('sin')
 
-subplot(3, 2, 2)
+subplot(3, 1, 2)
 [u,t] = gensig("square",tau,Tf,Ts);
 plot(t, u)
 title('square')
 
-subplot(3, 2, 3)
-[u,t] = gensig("cos",tau,Tf,Ts);
+subplot(3, 1, 3)
+[u,t] = gensig("pulse",tau,Tf,Ts);
 plot(t, u)
-title('cosine')
-
-subplot(3, 2, 4)
-[u,t] = gensig("sin",tau,Tf,Ts);
-plot(t, u)
-title('sine')
-
-subplot(3, 2, 5)
-[u,t] = gensig("tan",tau,Tf,Ts);
-plot(t, u)
-title('tan')
+title('pulse')
 
 ``````
 

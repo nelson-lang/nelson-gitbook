@@ -1,6 +1,7 @@
 - [linear_algebra](README.md)
   - Systemes lineaires
     - [cumtrapz](1_linear_systems/cumtrapz.md)
+    - [curl](1_linear_systems/curl.md)
     - [del2](1_linear_systems/del2.md)
     - [det](1_linear_systems/det.md)
     - [diff](1_linear_systems/diff.md)

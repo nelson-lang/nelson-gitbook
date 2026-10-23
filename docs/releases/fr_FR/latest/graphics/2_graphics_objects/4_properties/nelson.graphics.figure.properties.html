@@ -288,7 +288,7 @@
       </tr>
       <tr>
         <td><b>SelectionType</b></td>
-        <td>valeur calculee par Nelson; les operations graphiques la mettent a jour.</td>
+        <td>dernier appui de bouton souris, defini avant l'execution de WindowButtonDownFcn: 'normal' pour un clic gauche, 'extend' pour maj-gauche ou le bouton du milieu, 'alt' pour ctrl-gauche ou le bouton droit, 'open' pour un double clic.</td>
         <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'normal', 'extend', 'alt', 'open'.</td>
       </tr>
       <tr>
@@ -368,7 +368,7 @@
       </tr>
       <tr>
         <td><b>WindowScrollWheelFcn</b></td>
-        <td>le systeme d'evenements graphiques l'invoque pour l'evenement associe.</td>
+        <td>le systeme d'evenements graphiques l'invoque pour l'evenement associe ; une fois defini, il remplace le zoom integre des axes a la molette.</td>
         <td>Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.</td>
       </tr>
       <tr>

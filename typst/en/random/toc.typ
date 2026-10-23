@@ -3,6 +3,7 @@
 - Random
   - #nlink(<random:RandStream>)[RandStream]
   - #nlink(<random:rand>)[rand]
+  - #nlink(<random:randg>)[randg]
   - #nlink(<random:randi>)[randi]
   - #nlink(<random:randn>)[randn]
   - #nlink(<random:randperm>)[randperm]

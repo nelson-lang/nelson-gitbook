@@ -44,8 +44,10 @@ The Trigonometric Functions module provides functions for trigonometric calculat
 - #nlink(<trigonometric_functions:cscd>)[cscd]: Cosecant of argument in degrees.
 - #nlink(<trigonometric_functions:csch>)[csch]: Hyperbolic cosecant.
 - #nlink(<trigonometric_functions:deg2rad>)[deg2rad]: Convert angle from degrees to radians.
+- #nlink(<trigonometric_functions:degtorad>)[degtorad]: Convert angle from degrees to radians.
 - #nlink(<trigonometric_functions:pol2cart>)[pol2cart]: Transforms polar or cylindrical coordinates to Cartesian.
 - #nlink(<trigonometric_functions:rad2deg>)[rad2deg]: Convert angle from radians to degrees.
+- #nlink(<trigonometric_functions:radtodeg>)[radtodeg]: Convert angle from radians to degrees.
 - #nlink(<trigonometric_functions:sec>)[sec]: Secant of angle in radians.
 - #nlink(<trigonometric_functions:secd>)[secd]: Secant of argument in degrees.
 - #nlink(<trigonometric_functions:sech>)[sech]: Hyperbolic secant.
@@ -135,9 +137,13 @@ The Trigonometric Functions module provides functions for trigonometric calculat
 #pagebreak(weak: true)
 #include "deg2rad.typ"
 #pagebreak(weak: true)
+#include "degtorad.typ"
+#pagebreak(weak: true)
 #include "pol2cart.typ"
 #pagebreak(weak: true)
 #include "rad2deg.typ"
+#pagebreak(weak: true)
+#include "radtodeg.typ"
 #pagebreak(weak: true)
 #include "sec.typ"
 #pagebreak(weak: true)

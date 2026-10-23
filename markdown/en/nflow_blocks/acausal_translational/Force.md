@@ -29,7 +29,7 @@ External force on a flange, driven by the input signal.
 | Library | Translational (acausal) | 
 | Type | <code>Force</code> | 
 | Label | Force | 
-| Solver | Lowered to <code>mechanicalTranslationalIsland</code>. Reference solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
+| Solver | Lowered to <code>mechanicalTranslationalIsland</code>. Default solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
 
   
 

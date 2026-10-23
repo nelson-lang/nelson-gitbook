@@ -29,7 +29,7 @@ Ideal switch: control > 0.5 -> closed short, else open (i = 0).
 | Library | Electrical (acausal) | 
 | Type | <code>IdealSwitch</code> | 
 | Label | IdealSwitch | 
-| Solver | Lowered to <code>physicalIsland</code>. Reference solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
+| Solver | Lowered to <code>physicalIsland</code>. Default solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
 
   
 

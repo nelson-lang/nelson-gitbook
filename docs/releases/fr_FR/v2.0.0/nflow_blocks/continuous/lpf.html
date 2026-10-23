@@ -266,9 +266,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -281,7 +281,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -292,24 +292,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -339,13 +339,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -357,7 +357,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -368,7 +368,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -377,13 +377,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -483,9 +483,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -515,7 +515,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -523,9 +523,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -558,8 +558,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -657,16 +657,14 @@ Nelson::NFlow::handleLpf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     return false;
 }
 //=============================================================================
-// Single language-parameterized emitter (CodegenLang): the C and Rust
-// templates were byte-for-byte clones apart from the state-field access.
+// One emitter for C and Rust (CodegenLang); they differ only in state-field access.
 static Nelson::NFlow::BlockCodegenTemplate
 makeLpfCodegen(Nelson::NFlow::CodegenLang L)
 {
     using namespace Nelson::NFlow;
     BlockCodegenTemplate t;
-    // Forward-Euler on x' = wc*(u - x), matching the interpreter (the generators
-    // no longer use a Tustin discretization for lpf/hpf/tf). Output-then-update
-    // reproduces the interpreter's one-sample-latched output timing.
+    // Forward-Euler on x' = wc*(u - x), matching the interpreter.
+    // Output-then-update reproduces its one-sample-latched output timing.
     t.emitState = [](const BlockCodegenStateArgs&amp; a) { a.addState("lpf_x_" + a.id, "", ""); };
     t.emitStep = [L](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
@@ -675,9 +673,8 @@ makeLpfCodegen(Nelson::NFlow::CodegenLang L)
         a.line("out_" + a.id + " = " + x + ";");
         a.line(x + " = " + x + " + dt * " + a.fmt(wc) + " * (" + a.in[0] + " - " + x + ");");
     };
-    // Unified variable-step codegen: one continuous state with
-    // x' = wc*(u - x), output y = x. Joins the shared RK4 rhs so an ode4 model
-    // matches its generated code.
+    // Variable-step codegen: one continuous state x' = wc*(u - x), output y = x,
+    // part of the shared RK4 rhs.
     t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
     t.emitRk4 = [L](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);

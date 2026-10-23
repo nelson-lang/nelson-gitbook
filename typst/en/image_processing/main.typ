@@ -55,6 +55,7 @@ Functions for spatial filtering, Gaussian and median filtering, padding, filter 
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.imboxfilt>)[imboxfilt]: Apply box filtering to an image.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.imfilter>)[imfilter]: Filter an image with a 2-D kernel.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.imgaussfilt>)[imgaussfilt]: Apply Gaussian filtering to an image.
+- #nlink(<image_processing:1_image_basics.3_filtering_edges.imnoise>)[imnoise]: Add noise to an image.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.medfilt2>)[medfilt2]: Apply 2-D median filtering.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.padarray>)[padarray]: Pad an array before image filtering or morphology.
 
@@ -152,6 +153,7 @@ Functions and objects for cropping, resizing, rotation, translation, spatial ref
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.sizesMatch>)[sizesMatch]: Determine whether a spatial reference matches an image size.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.transformPointsForward>)[transformPointsForward]: Apply a forward geometric transformation to points.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.transformPointsInverse>)[transformPointsInverse]: Apply an inverse geometric transformation to points.
+- #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.warp>)[warp]: Display an image as a texture mapped onto a surface.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.worldToIntrinsic>)[worldToIntrinsic]: Convert world coordinates to intrinsic image coordinates.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.worldToSubscript>)[worldToSubscript]: Convert world coordinates to image subscripts.
 
@@ -225,6 +227,8 @@ Guides and entry points for aligning images, estimating registration transforms,
 #include "1_image_basics/3_filtering_edges/imfilter.typ"
 #pagebreak(weak: true)
 #include "1_image_basics/3_filtering_edges/imgaussfilt.typ"
+#pagebreak(weak: true)
+#include "1_image_basics/3_filtering_edges/imnoise.typ"
 #pagebreak(weak: true)
 #include "1_image_basics/3_filtering_edges/medfilt2.typ"
 #pagebreak(weak: true)
@@ -333,6 +337,8 @@ Guides and entry points for aligning images, estimating registration transforms,
 #include "3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.typ"
 #pagebreak(weak: true)
 #include "3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.typ"
+#pagebreak(weak: true)
+#include "3_geometry_registration_3d/6_geometric_transforms/warp.typ"
 #pagebreak(weak: true)
 #include "3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.typ"
 #pagebreak(weak: true)

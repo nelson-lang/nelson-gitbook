@@ -11,6 +11,7 @@ Le module Geometrie fournit des outils pour effectuer des transformations et cal
 == Functions
 
 - #nlink(<geometry:alphaShape>)[alphaShape]: Objet alpha shape
+- #nlink(<geometry:axes2ecc>)[axes2ecc]: Excentricité d'une ellipse à partir de ses demi-axes.
 - #nlink(<geometry:boundary>)[boundary]: Facettes frontiere d'un ensemble de points
 - #nlink(<geometry:convhull>)[convhull]: Enveloppe convexe de points 2-D ou 3-D
 - #nlink(<geometry:convhulln>)[convhulln]: Enveloppe convexe en N dimensions
@@ -18,7 +19,13 @@ Le module Geometrie fournit des outils pour effectuer des transformations et cal
 - #nlink(<geometry:delaunayTriangulation>)[delaunayTriangulation]: Objet de triangulation de Delaunay
 - #nlink(<geometry:delaunayn>)[delaunayn]: Triangulation de Delaunay en N dimensions
 - #nlink(<geometry:dsearchn>)[dsearchn]: Recherche du point le plus proche
+- #nlink(<geometry:ellipse1>)[ellipse1]: Points d'une petite ellipse sur une sphère.
 - #nlink(<geometry:griddata>)[griddata]: Interpolation de donnees dispersees
+- #nlink(<geometry:nsidedpoly>)[nsidedpoly]: Crée un polygone régulier.
+- #nlink(<geometry:polyarea>)[polyarea]: Aire d'un polygone.
+- #nlink(<geometry:polyshape>)[polyshape]: Crée un polygone.
+- #nlink(<geometry:reckon>)[reckon]: Point à une distance sphérique et un azimut donnés.
+- #nlink(<geometry:rectint>)[rectint]: Aire d'intersection de rectangles.
 - #nlink(<geometry:rotx>)[rotx]: Matrice de transformation 3x3 pour rotation autour de l'axe x
 - #nlink(<geometry:roty>)[roty]: Matrice de transformation 3x3 pour rotation autour de l'axe y
 - #nlink(<geometry:rotz>)[rotz]: Matrice de transformation 3x3 pour rotation autour de l'axe z
@@ -35,6 +42,8 @@ Le module Geometrie fournit des outils pour effectuer des transformations et cal
 #pagebreak(weak: true)
 #include "alphaShape.typ"
 #pagebreak(weak: true)
+#include "axes2ecc.typ"
+#pagebreak(weak: true)
 #include "boundary.typ"
 #pagebreak(weak: true)
 #include "convhull.typ"
@@ -49,7 +58,19 @@ Le module Geometrie fournit des outils pour effectuer des transformations et cal
 #pagebreak(weak: true)
 #include "dsearchn.typ"
 #pagebreak(weak: true)
+#include "ellipse1.typ"
+#pagebreak(weak: true)
 #include "griddata.typ"
+#pagebreak(weak: true)
+#include "nsidedpoly.typ"
+#pagebreak(weak: true)
+#include "polyarea.typ"
+#pagebreak(weak: true)
+#include "polyshape.typ"
+#pagebreak(weak: true)
+#include "reckon.typ"
+#pagebreak(weak: true)
+#include "rectint.typ"
 #pagebreak(weak: true)
 #include "rotx.typ"
 #pagebreak(weak: true)

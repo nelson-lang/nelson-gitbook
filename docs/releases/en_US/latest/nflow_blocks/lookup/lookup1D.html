@@ -496,8 +496,7 @@
 //   ExtrapMethod             : Clip | Linear
 //   IndexSearchMethod        : (perf only, does not change the value)
 //   UseLastTableValue        : on | off  (Flat: input &gt;= last bp -&gt; last value)
-// Feedthrough (ALGEBRAIC), real double, no state. Splines and the Warning /
-// Error out-of-range diagnostics are a follow-up (V1 = None, silent extrap).
+// Feedthrough (ALGEBRAIC), real double, no state.
 //=============================================================================
 #include "SimEngineTypes.hpp"
 #include "BlockRegistry.hpp"
@@ -510,11 +509,12 @@
 #include &lt;algorithm&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     namespace {
-        // Locate i such that bp[i] &lt;= u &lt; bp[i+1] for an in-range u (bp[0] &lt;= u
-        // &lt; bp[N-1]); linear scan (the search method is a perf choice only).
+        // Finds i with bp[i] &lt;= u &lt; bp[i+1] for bp[0] &lt;= u &lt; bp[N-1]. Linear scan:
+        // the search method does not change the value.
         int
         findInterval(const std::vector&lt;double&gt;&amp; bp, double u)
         {
@@ -526,7 +526,7 @@ namespace NFlow {
             }
             return 0;
         }
-
+        //=============================================================================
         // Second derivatives M[i] of the not-a-knot cubic spline through
         // (bp, tbl). For n == 3 the two end conditions become natural (M0 =
         // M_{n-1} = 0); n &lt; 3 has no spline (linear is used instead). Solved by
@@ -596,10 +596,9 @@ namespace NFlow {
             }
             return M;
         }
-
-        // Evaluate the cubic spline (second-derivative form) over interval i.
-        // For an out-of-range u the caller passes the nearest end interval,
-        // which extends the end cubic polynomial (cubic extrapolation).
+        //=============================================================================
+        // For an out-of-range u the caller passes the nearest end interval, which
+        // extends the end cubic polynomial.
         double
         cubicSplineEval(const std::vector&lt;double&gt;&amp; x, const std::vector&lt;double&gt;&amp; y,
             const std::vector&lt;double&gt;&amp; M, int i, double u)
@@ -613,10 +612,10 @@ namespace NFlow {
             return A * y[i] + B * y[i + 1]
                 + ((A * A * A - A) * M[i] + (B * B * B - B) * M[i + 1]) * (h * h) / 6.0;
         }
-
-        // Endpoint derivatives of the Akima spline at each breakpoint. The
-        // secant slopes are extended by two on each side (Akima 1970); n &lt; 3
-        // has no Akima spline (linear is used instead).
+        //=============================================================================
+        // Derivatives of the Akima spline at each breakpoint. The secant slopes
+        // are extended by two on each side (Akima 1970); n &lt; 3 has no Akima
+        // spline (linear is used instead).
         std::vector&lt;double&gt;
         akimaDerivs(const std::vector&lt;double&gt;&amp; x, const std::vector&lt;double&gt;&amp; y)
         {
@@ -642,9 +641,8 @@ namespace NFlow {
             }
             return t;
         }
-
-        // Evaluate the Akima Hermite cubic over interval i (extends the end
-        // cubic for out-of-range u).
+        //=============================================================================
+        // Hermite cubic over interval i; extends the end cubic for out-of-range u.
         double
         akimaEval(const std::vector&lt;double&gt;&amp; x, const std::vector&lt;double&gt;&amp; y,
             const std::vector&lt;double&gt;&amp; t, int i, double u)
@@ -659,7 +657,7 @@ namespace NFlow {
             const double a3 = (t[i] + t[i + 1] - 2.0 * p) / (h * h);
             return y[i] + t[i] * dx + a2 * dx * dx + a3 * dx * dx * dx;
         }
-
+        //=============================================================================
         double
         interp1d(const std::vector&lt;double&gt;&amp; bp, const std::vector&lt;double&gt;&amp; tbl, double u,
             const std::string&amp; interp, const std::string&amp; extrap, bool useLast,
@@ -674,7 +672,6 @@ namespace NFlow {
             }
             const bool spline = (interp == "Cubic spline") &amp;&amp; n &gt;= 3 &amp;&amp; !splM.empty();
             const bool akima = (interp == "Akima spline") &amp;&amp; n &gt;= 3 &amp;&amp; !splM.empty();
-            // Below the first breakpoint.
             if (u &lt;= bp[0]) {
                 if (u == bp[0]) {
                     return tbl[0];
@@ -691,7 +688,6 @@ namespace NFlow {
                 }
                 return tbl[0]; // Clip
             }
-            // At or above the last breakpoint.
             if (u &gt;= bp[n - 1]) {
                 if (u == bp[n - 1] || useLast) {
                     return tbl[n - 1];
@@ -708,7 +704,6 @@ namespace NFlow {
                 }
                 return tbl[n - 1]; // Clip
             }
-            // In range.
             const int i = findInterval(bp, u);
             const double f = (u - bp[i]) / (bp[i + 1] - bp[i]);
             if (interp == "Flat") {
@@ -729,7 +724,7 @@ namespace NFlow {
             // "Linear point-slope" (default).
             return tbl[i] + f * (tbl[i + 1] - tbl[i]);
         }
-
+        //=============================================================================
         bool
         isStrictlyIncreasing(const std::vector&lt;double&gt;&amp; v)
         {
@@ -740,7 +735,7 @@ namespace NFlow {
             }
             return true;
         }
-
+        //=============================================================================
         // Parse a list-valued param through BlockDescriptor so both JSON arrays
         // and string expressions ("[0 1 2]", "k*[1 2]") resolve, matching the
         // simulator (an inspector edit turns an array into a string).
@@ -753,10 +748,9 @@ namespace NFlow {
             nflow::BlockDescriptor bd(*a.block, *a.variables);
             return bd.paramList(key);
         }
-
-        // Cubic-spline code generation: bake the breakpoint / table / second-
-        // derivative arrays (M computed at generation time) and emit the interval
-        // search + cubic evaluation, mirroring interp1d for Cubic spline.
+        //=============================================================================
+        // Bakes the breakpoint / table / second-derivative arrays (M is computed
+        // at generation time) and emits the interval search and cubic evaluation.
         void
         emitSpline1D(const BlockCodegenArgs&amp; a, bool rust, const std::vector&lt;double&gt;&amp; bp,
             const std::vector&lt;double&gt;&amp; tbl, const std::string&amp; extrap, bool useLast)
@@ -784,7 +778,6 @@ namespace NFlow {
             a.line(arr(bpv, bp));
             a.line(arr(tv, tbl));
             a.line(arr(mv, M));
-            // cubic(idx): evaluate the spline over interval `idx` at su.
             auto cubic = [&amp;](const std::string&amp; idx) {
                 const std::string h = "(" + bpv + "[" + idx + "+1] - " + bpv + "[" + idx + "])";
                 const std::string A = "((" + bpv + "[" + idx + "+1] - " + su + ") / " + h + ")";
@@ -836,10 +829,9 @@ namespace NFlow {
                 a.line("out_" + id + " = " + sy + ";");
             }
         }
-
-        // Akima code generation: bake the breakpoint / table / endpoint-derivative
-        // arrays (t computed at generation time) and emit the interval search +
-        // Hermite cubic, mirroring interp1d for Akima spline.
+        //=============================================================================
+        // Bakes the breakpoint / table / derivative arrays (T is computed at
+        // generation time) and emits the interval search and Hermite cubic.
         void
         emitAkima1D(const BlockCodegenArgs&amp; a, bool rust, const std::vector&lt;double&gt;&amp; bp,
             const std::vector&lt;double&gt;&amp; tbl, const std::string&amp; extrap, bool useLast)
@@ -921,10 +913,9 @@ namespace NFlow {
                 a.line("out_" + id + " = " + sy + ";");
             }
         }
-
-        // Emit the static breakpoint / table arrays plus the baked-in search +
-        // interpolation for the block's InterpMethod / ExtrapMethod. The C and
-        // Rust bodies share this structure with a few token differences.
+        //=============================================================================
+        // Static breakpoint / table arrays plus the search and interpolation for
+        // InterpMethod / ExtrapMethod. C and Rust share this structure.
         void
         emitLookup1D(const BlockCodegenArgs&amp; a, bool rust)
         {
@@ -951,7 +942,6 @@ namespace NFlow {
             const std::string bpv = "__lu_bp_" + a.id;
             const std::string tv = "__lu_tbl_" + a.id;
             const std::string N = std::to_string(n);
-            // Array declarations.
             std::string bpd
                 = (rust ? "let " + bpv + " = [" : "static const double " + bpv + "[] = {");
             std::string tvd
@@ -964,7 +954,6 @@ namespace NFlow {
             tvd += rust ? "];" : "};";
             a.line(bpd);
             a.line(tvd);
-            // Interpolation body, sharing a scope.
             const std::string idx1 = std::to_string(n - 1);
             const std::string idx2 = std::to_string(n - 2);
             auto below = [&amp;]() {
@@ -1035,6 +1024,7 @@ namespace NFlow {
                 a.line("out_" + a.id + " = " + y + ";");
             }
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     bool
@@ -1053,8 +1043,7 @@ namespace NFlow {
         const std::string extrap = bd.paramStr("ExtrapMethod", "Linear");
         const std::string useLastStr = bd.paramStr("UseLastTableValue", "off");
         const bool useLast = (useLastStr == "on" || useLastStr == "true");
-        // Spline coefficients, computed once for all elements: cubic-spline
-        // second derivatives, or Akima endpoint derivatives.
+        // Spline coefficients, computed once for all elements.
         std::vector&lt;double&gt; splM;
         if (interp == "Cubic spline") {
             splM = cubicSplineM(bp, tbl);
@@ -1062,10 +1051,9 @@ namespace NFlow {
             splM = akimaDerivs(bp, tbl);
         }
         SigView u = getInputSig(ctx, b.nid, 0);
-        // Out-of-range diagnostic (None / Warning / Error) via the structured
-        // diagnostic channel. None (default) stays silent and extrapolates per
-        // ExtrapMethod. Code generation has no diagnostic channel, so this is a
-        // simulation-time action only.
+        // Out-of-range diagnostic (None / Warning / Error). None extrapolates
+        // silently per ExtrapMethod. Code generation has no diagnostic channel,
+        // so this only applies to simulation.
         const std::string oorAction = bd.paramStr("DiagnosticForOutOfRangeInput", "None");
         if (ctx.diag != nullptr &amp;&amp; oorAction != "None" &amp;&amp; !bp.empty()) {
             const double lo = bp.front();
@@ -1096,9 +1084,9 @@ namespace NFlow {
             [&amp;](int i) { return interp1d(bp, tbl, sigAt(u, i), interp, extrap, useLast, splM); });
     }
     //=============================================================================
-    // Output dims follow the input (element-wise). Validate the breakpoint /
-    // table pair here so a bad table is a clean compile-time error, not a
-    // silent wrong result.
+    // Output dims follow the input (element-wise). The breakpoint / table pair
+    // is validated here so a bad table is a compile-time error, not a silent
+    // wrong result.
     bool
     resolveLookup1DDims(const Block&amp; b, const ValMap&amp; vars, const std::vector&lt;PortSig&gt;&amp; inSigs,
         std::vector&lt;PortSig&gt;&amp; outSigs, std::string&amp; err)
@@ -1144,6 +1132,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

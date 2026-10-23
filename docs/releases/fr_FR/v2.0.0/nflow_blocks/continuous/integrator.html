@@ -284,9 +284,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -299,7 +299,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -310,24 +310,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -357,13 +357,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -375,7 +375,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -386,7 +386,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -395,13 +395,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -501,9 +501,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -533,7 +533,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -541,9 +541,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -576,8 +576,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -614,11 +614,10 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
     const int w = outputWidth(ctx, b.nid, 0);
     const double mn = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
     const double mx = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
-    // External reset and external initial condition. The extra ports follow the
-    // signal in that order, so port 1 is the reset when there is one and the
-    // initial condition otherwise. 'level' holds the state at the initial
-    // condition while the line is non-zero; the edge kinds reset once, on the
-    // edge, under the shared rule in EdgeDetect.hpp.
+    // The extra ports follow the signal: reset first (when there is one), then
+    // the initial condition. 'level' holds the state at the initial condition
+    // while the line is non-zero; the edge kinds reset once, on the edge, under
+    // the rule in EdgeDetect.hpp.
     const std::string extReset = bd.paramStr("ExternalReset", "none");
     const int resetEdge = edgeTypeOf(extReset);
     const bool levelReset = (extReset == "level");
@@ -626,8 +625,8 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
     const bool externalIC = (bd.paramStr("InitialConditionSource", "internal") == "external");
     const int resetPort = hasReset ? 1 : -1;
     const int icPort = externalIC ? (hasReset ? 2 : 1) : -1;
-    // The initial condition an element resets to: the wired signal when it is
-    // external, the parameter otherwise (scalar broadcast or per element).
+    // The wired signal when the initial condition is external, the parameter
+    // otherwise (scalar broadcast or per element).
     auto initialOf = [&amp;](int i) -&gt; double {
         if (icPort &gt;= 0 &amp;&amp; hasInput(ctx, b.nid, icPort)) {
             SigView v = getInputSig(ctx, b.nid, icPort);
@@ -655,8 +654,7 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
             double ini = bd.paramDouble(nflow::kInitial, 0.0);
             st.scalar = clampVal(ini, mn, mx);
         } else {
-            // Vector integrator: Initial may be a scalar (broadcast) or a
-            // list matching the signal width.
+            // Initial is a scalar (broadcast) or a list of the signal width.
             std::vector&lt;double&gt; iniList = bd.paramList(nflow::kInitial);
             st.vec.assign(w, 0.0);
             for (int i = 0; i &lt; w; ++i) {
@@ -669,16 +667,13 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::OUTPUT) {
-        // Under a variable-step solver the output is read from the scattered
-        // global state (a true function of x for the minor step); otherwise the
-        // block's own latched state (fixed-step path, unchanged). The output is
-        // clamped to [min, max] so a limited integrator never reports a value
-        // outside its bounds even if the solver's raw state drifts slightly.
-        // A reset in effect this step reports the initial condition rather than
-        // the state. The decision is the one ALGEBRAIC stamped for this step,
-        // never a fresh one: the first OUTPUT pass can see a stale reset line.
-        // The solver re-runs OUTPUT after the algebraic solve, which is why this
-        // has to be applied here and not in ALGEBRAIC alone.
+        // A variable-step solver supplies the scattered global state; otherwise
+        // the block's latched state is used. The output is clamped to [min, max]
+        // in case the solver's raw state drifts slightly past a bound.
+        // A reset in effect this step reports the initial condition. It follows
+        // the decision ALGEBRAIC stamped for this step, never a fresh one: the
+        // first OUTPUT pass can see a stale reset line. The solver re-runs OUTPUT
+        // after the algebraic solve, so this cannot live in ALGEBRAIC alone.
         if (hasReset &amp;&amp; !ctx.sideEffectFree &amp;&amp; st.resetStamp == ctx.stepIndex &amp;&amp; st.resetActive) {
             if (w &lt;= 1) {
                 setOutput(ctx, b.nid, clampVal(initialOf(0), mn, mx));
@@ -702,8 +697,8 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // The one phase where the reset line is settled: decide here, stamp the
-        // decision for this step, and let OUTPUT and UPDATE follow it.
+        // The reset line is settled here: decide, stamp the decision for this
+        // step, and let OUTPUT and UPDATE follow it.
         if (!hasReset || ctx.sideEffectFree) {
             return false;
         }
@@ -723,22 +718,18 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::UPDATE) {
-        // Under a solver the state lives in the global vector and the solver
-        // advances it; this pass runs only for a reset integrator, and then only
-        // to put the initial condition back. Writing the global slice too is
-        // what makes the reset visible: re-seeding the block's own copy alone
-        // would be discarded on the next step.
+        // Under a solver the state lives in the global vector; this pass then
+        // runs only for a reset integrator, to put the initial condition back.
+        // The global slice must be written too, or the reset is discarded on the
+        // next step.
         double* xs = blockX(ctx, b.nid);
         const bool solverOwnsState = (xs != nullptr);
-        // Follow the decision ALGEBRAIC stamped for this step so the state and
-        // the reported output cannot disagree.
+        // Follows the ALGEBRAIC decision so the state and the output agree.
         const bool doReset = (st.resetStamp == ctx.stepIndex) ? st.resetActive : resetNow;
-        // An edge puts the state back and integration carries on from there, so
-        // on the fixed-step path - where this pass produces the state of the NEXT
-        // sample - the step is integrated from the initial condition rather than
-        // skipped. A held level stays put. Under a solver the initial condition
-        // is written into the global vector and the solver integrates the step
-        // itself, so nothing is added here.
+        // After an edge reset the fixed-step path (this pass produces the NEXT
+        // sample) integrates the step from the initial condition. A held level
+        // stays put. Under a solver the step is integrated by the solver, so
+        // nothing is added here.
         SigView u = getInputSig(ctx, b.nid, 0);
         for (int i = 0; i &lt; w; ++i) {
             const double inp = sigAt(u, i);
@@ -773,20 +764,16 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::DERIVATIVE) {
-        // Continuous state derivative: x' = u, except a limited integrator holds
-        // its state at an engaged saturation limit. When x has reached the upper
-        // (resp. lower) limit and the input still pushes further out, the
-        // derivative is forced to 0 so the state stays on the limit; it resumes
-        // as soon as the input reverses. The exact engage/leave instants are
-        // caught by the ZERO_CROSSING surfaces below, so the solver never
-        // integrates across a saturation kink.
+        // x' = u, except that a limited integrator holds its state at an engaged
+        // limit: the derivative is 0 while the input pushes further out. The
+        // engage/leave instants come from the ZERO_CROSSING surfaces, so the
+        // solver never integrates across a saturation kink.
         double* xdot = blockXdot(ctx, b.nid);
         const double* xs = blockX(ctx, b.nid);
         if (xdot) {
             if (levelReset &amp;&amp; st.resetHeld) {
-                // Held at its initial condition while the reset line is up. The
-                // level is the one latched at the major step this integration
-                // covers, so every stage of the step agrees.
+                // Held at the initial condition while the reset line is up. The
+                // level is latched at the major step, so every stage agrees.
                 for (int i = 0; i &lt; w; ++i) {
                     xdot[i] = 0.0;
                 }
@@ -807,10 +794,8 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::ZERO_CROSSING) {
-        // Two surfaces per element: x - min and x - max. A variable-step solver
-        // stops exactly where the state engages/leaves a limit. An unbounded
-        // integrator allocates no surfaces (see zeroCrossingCount); write
-        // nothing so we never touch a zero-length g slice.
+        // Two surfaces per element: x - min and x - max. An unbounded integrator
+        // has no surfaces (see zeroCrossingCount), so g may be zero-length.
         if (!std::isfinite(mn) &amp;&amp; !std::isfinite(mx)) {
             return false;
         }
@@ -830,7 +815,6 @@ Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase
     return false;
 }
 //=============================================================================
-// Derivative of a limited integrator element: hold at an engaged limit.
 static inline double
 holdAtLimit(double x, double u, double mn, double mx)
 {
@@ -850,9 +834,7 @@ Nelson::NFlow::getCodeGenCIntegrator()
     t.emitState = [](const BlockCodegenStateArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         double initVal = bd.paramDouble(nflow::kInitial, 0.0);
-        // Unbounded by default (matches the interpreter and the Rust generator).
-        // A [0, 0] default would clamp the state to zero, so the integrator would
-        // never respond to its input.
+        // Unbounded by default; a [0, 0] default would clamp the state to zero.
         double minVal = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
         double maxVal = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
         a.addState("int_" + a.id,
@@ -862,25 +844,19 @@ Nelson::NFlow::getCodeGenCIntegrator()
     };
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
-        // Unbounded by default (matches the interpreter and the Rust generator);
-        // a [0, 0] default would clamp the state to zero every step, so the
-        // integrator would ignore its input and always output zero.
+        // Unbounded by default; a [0, 0] default would clamp the state to zero.
         std::string minVal = nflow::formatNumber(
             bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity()));
         std::string maxVal = nflow::formatNumber(
             bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity()));
-        // Output-then-update (output is the pre-step state), matching the Rust
-        // generator and the interpreter. The former update-then-output emission
-        // was one sample ahead.
+        // Output-then-update: the output is the pre-step state.
         a.line("out_" + a.id + " = s-&gt;int_" + a.id + ";");
         a.line("s-&gt;int_" + a.id + " = fmin(fmax(s-&gt;int_" + a.id + " + " + a.in[0] + " * dt, "
             + minVal + "), " + maxVal + ");");
     };
-    // Unified variable-step codegen. One scalar continuous state.
-    // A bounded integrator joins too (width 1): the derivative holds at an
-    // engaged limit and the state is clamped after the step. This is exact while
-    // the state stays within its limits; only the crossing instant differs from
-    // the simulator's zero-crossing localization by O(dt).
+    // A bounded integrator joins too: the derivative holds at an engaged limit
+    // and the state is clamped after the step. Only the crossing instant differs
+    // from the simulator's zero-crossing localization, by O(dt).
     t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
     t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
@@ -921,8 +897,7 @@ Nelson::NFlow::getCodeGenCIntegrator()
             }
             break;
         case Rk4Crossing: {
-            // Sim parity (integrator ZERO_CROSSING): x - min and x - max; an
-            // infinite limit never crosses (constant surface 1.0).
+            // x - min and x - max; an infinite limit never crosses (constant 1.0).
             const std::string co = std::to_string(a.crossingOffset);
             const std::string co1 = std::to_string(a.crossingOffset + 1);
             a.line(a.rk4Arr + "[" + co + "] = "
@@ -964,9 +939,6 @@ Nelson::NFlow::getCodeGenRustIntegrator()
         a.line("s.int_" + a.id + " = libm::fmin(libm::fmax(s.int_" + a.id + " + dt * " + a.in[0]
             + ", " + a.fmt(mn) + "), " + a.fmt(mx) + ");");
     };
-    // Unified variable-step codegen, Rust backend: one scalar
-    // continuous state x' = u; a bounded integrator joins too (hold-at-limit
-    // derivative + post-step clamp).
     t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
     t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
@@ -975,8 +947,7 @@ Nelson::NFlow::getCodeGenRustIntegrator()
         const bool bounded = std::isfinite(mn) || std::isfinite(mx);
         const std::string off = std::to_string(a.stateOffset);
         const std::string x = "s.int_" + a.id;
-        // The Rust backend has no INFINITY literal, so an open bound uses the
-        // 1e308 sentinel the rest of the Rust integrator emission already uses.
+        // Rust has no INFINITY literal: an open bound uses the 1e308 sentinel.
         const std::string mnS = a.fmt(std::isfinite(mn) ? mn : -1e308);
         const std::string mxS = a.fmt(std::isfinite(mx) ? mx : 1e308);
         switch (a.rk4Op) {
@@ -1011,7 +982,7 @@ Nelson::NFlow::getCodeGenRustIntegrator()
             }
             break;
         case Rk4Crossing: {
-            // Sim parity: x - min and x - max; infinite limit = constant 1.0.
+            // x - min and x - max; an infinite limit is the constant 1.0.
             const std::string co = std::to_string(a.crossingOffset);
             const std::string co1 = std::to_string(a.crossingOffset + 1);
             a.line(a.rk4Arr + "[" + co + "] = "

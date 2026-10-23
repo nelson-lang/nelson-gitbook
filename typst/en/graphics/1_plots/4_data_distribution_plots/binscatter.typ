@@ -29,6 +29,7 @@ Display binned scatter plot.
 Display binned scatter density.
 
 ``````matlab
+rng(0);
 x = randn(1000, 1);
 y = x + 0.5 * randn(1000, 1);
 h = binscatter(x, y, [30 30]);

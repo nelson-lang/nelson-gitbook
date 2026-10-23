@@ -582,8 +582,8 @@
 // table can change at run time. Port 0 = value x; port 1 = breakpoint vector
 // xdat (strictly increasing); port 2 = table vector ydat (same length). Output =
 // linear interpolation of (xdat, ydat) at x, clipped outside the range.
-// Feedthrough (ALGEBRAIC), real double, scalar output. Native runtime (the
-// run-time vector table is a follow-up for code generation).
+// Feedthrough (ALGEBRAIC), real double, scalar output. Native runtime only: no
+// code generation for the run-time vector table.
 //=============================================================================
 #include "SimEngineTypes.hpp"
 #include "BlockRegistry.hpp"
@@ -593,14 +593,13 @@
 #include &lt;vector&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
-    // Read the table (port 2) safely. The table is indexed with breakpoint
-    // indices (0..n-1, n = breakpoint width). When a saved model wires a table
-    // port narrower than the breakpoint vector, clamp the index so it can never
-    // read past the table region. A width-1 table still broadcasts through
-    // sigAt(); an equal-or-wider table is read unchanged, so well-formed models
-    // behave identically.
+    // Read the table (port 2) with breakpoint indices (0..n-1, n = breakpoint
+    // width). The index is clamped so a saved model that wires a table port
+    // narrower than the breakpoint vector cannot read past the table region.
+    // A width-1 table still broadcasts through sigAt().
     static inline double
     lookupTableAt(const SigView&amp; yd, int i)
     {
@@ -629,9 +628,9 @@ namespace NFlow {
         } else if (n == 1) {
             out = lookupTableAt(yd, 0);
         } else if (x &lt;= sigAt(xd, 0)) {
-            out = lookupTableAt(yd, 0); // clip below
+            out = lookupTableAt(yd, 0);
         } else if (x &gt;= sigAt(xd, n - 1)) {
-            out = lookupTableAt(yd, n - 1); // clip above
+            out = lookupTableAt(yd, n - 1);
         } else {
             int i = n - 2;
             while (i &gt; 0 &amp;&amp; x &lt; sigAt(xd, i)) {
@@ -649,7 +648,6 @@ namespace NFlow {
         return false;
     }
     //=============================================================================
-    // Three inputs (value, breakpoints, table); scalar output.
     bool
     resolveLookupDynamicDims(const Block&amp; b, const ValMap&amp; vars, const std::vector&lt;PortSig&gt;&amp;,
         std::vector&lt;PortSig&gt;&amp; outSigs, std::string&amp;)
@@ -662,6 +660,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

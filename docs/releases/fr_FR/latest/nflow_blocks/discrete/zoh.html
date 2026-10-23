@@ -737,11 +737,9 @@ Nelson::NFlow::handleZoh(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     }
     if (phase == Phase::ALGEBRAIC) {
         // A hold samples at t = kT and holds until the next hit, so at a hit
-        // instant the output is the value taken THERE; emitting only the value
-        // committed by the previous UPDATE turned the block into a full
-        // sample-period delay. Direct feedthrough at a hit, hence ALGEBRAIC:
-        // the input may itself come from the algebraic schedule. Pure - UPDATE
-        // owns the latch - so an RK stage may re-enter this freely.
+        // instant the output is the value taken THERE. Direct feedthrough at a
+        // hit, hence ALGEBRAIC: the input may itself come from the algebraic
+        // schedule. Pure: UPDATE owns the latch, so an RK stage may re-enter this.
         const bool hit = (ctx.t + 1e-6 &gt;= st.dNextTime);
         SigView u = getInputSig(ctx, b.nid, 0);
         return emitElementwise(ctx, b.nid, [&amp;](int i) {
@@ -783,8 +781,7 @@ Nelson::NFlow::getCodeGenCZoh()
         a.addState("zoh_next_" + a.id, "", "");
     };
     // No emitOutput: the hold is direct feedthrough at a hit instant, so the
-    // sample has to be taken BEFORE the output is read. Emitting the latch
-    // first delayed the block by a whole sample period.
+    // sample has to be taken BEFORE the output is read.
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         double ts = std::fmax(0.001, bd.paramDouble(nflow::kTs, 0.0));

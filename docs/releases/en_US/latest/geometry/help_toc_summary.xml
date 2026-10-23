@@ -9,6 +9,7 @@
     <p>This module is useful for applications in computer graphics, robotics, computational geometry, interpolation, and spatial analysis.</p>
   </chapter_description>
       <keyword name="alphaShape" link="alphaShape.html" description="Alpha shape object"/>
+      <keyword name="axes2ecc" link="axes2ecc.html" description="Eccentricity of an ellipse from its semi-axes."/>
       <keyword name="boundary" link="boundary.html" description="Boundary facets of a set of points"/>
       <keyword name="convhull" link="convhull.html" description="Convex hull of 2-D or 3-D points"/>
       <keyword name="convhulln" link="convhulln.html" description="Convex hull in N dimensions"/>
@@ -16,7 +17,13 @@
       <keyword name="delaunayTriangulation" link="delaunayTriangulation.html" description="Delaunay triangulation object"/>
       <keyword name="delaunayn" link="delaunayn.html" description="Delaunay triangulation in N dimensions"/>
       <keyword name="dsearchn" link="dsearchn.html" description="Nearest point search"/>
+      <keyword name="ellipse1" link="ellipse1.html" description="Points on a small ellipse on a sphere."/>
       <keyword name="griddata" link="griddata.html" description="Interpolate scattered data"/>
+      <keyword name="nsidedpoly" link="nsidedpoly.html" description="Create a regular polygon."/>
+      <keyword name="polyarea" link="polyarea.html" description="Area of a polygon."/>
+      <keyword name="polyshape" link="polyshape.html" description="Create a polygon."/>
+      <keyword name="reckon" link="reckon.html" description="Point at a given spherical range and azimuth."/>
+      <keyword name="rectint" link="rectint.html" description="Area of intersection of rectangles."/>
       <keyword name="rotx" link="rotx.html" description="3x3 transformation matrix for rotations around x-axis"/>
       <keyword name="roty" link="roty.html" description="3x3 transformation matrix for rotations around y-axis"/>
       <keyword name="rotz" link="rotz.html" description="3x3 transformation matrix for rotations around z-axis"/>

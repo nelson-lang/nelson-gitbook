@@ -15,6 +15,7 @@ Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites
 === Functions
 
 - #nlink(<linear_algebra:1_linear_systems.cumtrapz>)[cumtrapz]: Integration numerique cumulative par la methode des trapezes.
+- #nlink(<linear_algebra:1_linear_systems.curl>)[curl]: Rotationnel et vitesse angulaire d'un champ de vecteurs.
 - #nlink(<linear_algebra:1_linear_systems.del2>)[del2]: Laplacien discret.
 - #nlink(<linear_algebra:1_linear_systems.det>)[det]: Déterminant d'une matrice.
 - #nlink(<linear_algebra:1_linear_systems.diff>)[diff]: Différences et dérivées approximatives.
@@ -116,6 +117,8 @@ Fonctions de factorisation incomplete utilisees comme preconditionneurs.
 #nested[
 #pagebreak(weak: true)
 #include "1_linear_systems/cumtrapz.typ"
+#pagebreak(weak: true)
+#include "1_linear_systems/curl.typ"
 #pagebreak(weak: true)
 #include "1_linear_systems/del2.typ"
 #pagebreak(weak: true)

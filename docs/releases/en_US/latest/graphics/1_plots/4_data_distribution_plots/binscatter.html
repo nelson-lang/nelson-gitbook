@@ -47,7 +47,8 @@ h = binscatter(...)
 <div class="example">
 <div class="example-title">Display binned scatter density.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">x = randn(1000, 1);
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+x = randn(1000, 1);
 y = x + 0.5 * randn(1000, 1);
 h = binscatter(x, y, [30 30]);
 h.FaceAlpha = 0.9;</code></pre>

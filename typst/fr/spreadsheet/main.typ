@@ -16,12 +16,16 @@ Le module Feuille de calcul fournit des fonctions pour lire et écrire des donn�
 - #nlink(<spreadsheet:detectImportOptions>)[detectImportOptions]: Créer des options d'importation basées sur le contenu du fichier.
 - #nlink(<spreadsheet:dlmread>)[dlmread]: Lire une matrice numérique depuis un fichier texte utilisant un délimiteur.
 - #nlink(<spreadsheet:dlmwrite>)[dlmwrite]: Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur.
+- #nlink(<spreadsheet:getvaropts>)[getvaropts]: Obtenir les options d'importation des variables selectionnees.
 - #nlink(<spreadsheet:jsonImportOptions>)[jsonImportOptions]: Créer des options pour importer des données JSON.
 - #nlink(<spreadsheet:readcell>)[readcell]: Créer une cellule à partir d'un fichier.
 - #nlink(<spreadsheet:readmatrix>)[readmatrix]: Créer une matrice à partir d'un fichier.
 - #nlink(<spreadsheet:readtable>)[readtable]: Créer une table à partir d'un fichier.
 - #nlink(<spreadsheet:readtimetable>)[readtimetable]: Crée une timetable depuis un fichier.
 - #nlink(<spreadsheet:readvars>)[readvars]: Créer des variables en lisant les colonnes d'un fichier.
+- #nlink(<spreadsheet:setvaropts>)[setvaropts]: Definir les options d'importation des variables selectionnees.
+- #nlink(<spreadsheet:setvartype>)[setvartype]: Definir les types de donnees des variables selectionnees.
+- #nlink(<spreadsheet:spreadsheetImportOptions>)[spreadsheetImportOptions]: Creer des options pour importer des donnees de feuille de calcul.
 - #nlink(<spreadsheet:writecell>)[writecell]: Écrire un tableau de cellules dans un fichier.
 - #nlink(<spreadsheet:writematrix>)[writematrix]: Écrire une matrice dans un fichier.
 - #nlink(<spreadsheet:writetable>)[writetable]: Écrire une table dans un fichier.
@@ -45,6 +49,8 @@ Le module Feuille de calcul fournit des fonctions pour lire et écrire des donn�
 #pagebreak(weak: true)
 #include "dlmwrite.typ"
 #pagebreak(weak: true)
+#include "getvaropts.typ"
+#pagebreak(weak: true)
 #include "jsonImportOptions.typ"
 #pagebreak(weak: true)
 #include "readcell.typ"
@@ -56,6 +62,12 @@ Le module Feuille de calcul fournit des fonctions pour lire et écrire des donn�
 #include "readtimetable.typ"
 #pagebreak(weak: true)
 #include "readvars.typ"
+#pagebreak(weak: true)
+#include "setvaropts.typ"
+#pagebreak(weak: true)
+#include "setvartype.typ"
+#pagebreak(weak: true)
+#include "spreadsheetImportOptions.typ"
 #pagebreak(weak: true)
 #include "writecell.typ"
 #pagebreak(weak: true)

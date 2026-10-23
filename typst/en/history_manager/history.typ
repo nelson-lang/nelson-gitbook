@@ -100,7 +100,7 @@ history manager.
 
  #strong[Tips];: You can share your history file in the cloud by adding a few lines of code to your user startup file.
 
- If nelson launched with '--nouserstartup' option, history file will be not loaded at startup and not saved at exit.
+ If nelson launched with '--no-user-startup' option, history file will be not loaded at startup and not saved at exit.
 
 
 == Examples

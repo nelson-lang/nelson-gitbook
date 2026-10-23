@@ -37,7 +37,7 @@
 <div class="example">
 <div class="example-title">Demarrer le serveur MCP Nelson manuellement.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"</code></pre>
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
@@ -45,7 +45,7 @@
 <div class="example-title">Declarer Nelson comme serveur MCP dans Codex.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab"># Executer cette commande une fois par configuration Codex. La relancer seulement pour changer la commande ou les options.
-codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"</code></pre>
+codex mcp add nelson -- nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
@@ -63,9 +63,9 @@ codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nouserm
       "command": "nelson-adv-cli",
       "args": [
         "--quiet",
-        "--noipc",
-        "--nouserstartup",
-        "--nousermodules",
+        "--no-ipc",
+        "--no-user-startup",
+        "--no-user-modules",
         "-e",
         "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"
       ]
@@ -112,7 +112,7 @@ create_nelson_plot        Execute du code graphique et retourne un chemin PNG.</
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Si le client ne liste pas les outils:
   Verifier que le serveur MCP a ete declare dans la configuration du client.
   Verifier que nelson-adv-cli est dans PATH ou utiliser un chemin absolu.
-  Garder --quiet --noipc dans la commande.
+  Garder --quiet --no-ipc dans la commande.
   Ne pas ecrire de diagnostic sur la sortie standard.
 
 Si le workspace ou les options ont change:

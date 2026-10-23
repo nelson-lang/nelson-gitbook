@@ -28,6 +28,7 @@
       - [imboxfilt](1_image_basics/3_filtering_edges/imboxfilt.md)
       - [imfilter](1_image_basics/3_filtering_edges/imfilter.md)
       - [imgaussfilt](1_image_basics/3_filtering_edges/imgaussfilt.md)
+      - [imnoise](1_image_basics/3_filtering_edges/imnoise.md)
       - [medfilt2](1_image_basics/3_filtering_edges/medfilt2.md)
       - [padarray](1_image_basics/3_filtering_edges/padarray.md)
   - Analyse et segmentation d'images
@@ -89,6 +90,7 @@
       - [sizesMatch](3_geometry_registration_3d/6_geometric_transforms/sizesMatch.md)
       - [transformPointsForward](3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.md)
       - [transformPointsInverse](3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.md)
+      - [warp](3_geometry_registration_3d/6_geometric_transforms/warp.md)
       - [worldToIntrinsic](3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.md)
       - [worldToSubscript](3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.md)
     - Volumes 3-D

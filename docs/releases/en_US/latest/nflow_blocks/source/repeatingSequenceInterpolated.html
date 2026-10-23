@@ -194,8 +194,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -570,13 +570,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -696,6 +696,7 @@
 #include "source_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     // Evaluate the periodic piecewise-linear table at absolute time t.
@@ -818,7 +819,6 @@ namespace NFlow {
             const std::string tm = "rsi_tm_" + a.id;
             a.line("let mut " + tm + ": f64 = t % " + per + ";");
             a.line("if " + tm + " &lt; 0.0_f64 { " + tm + " += " + per + "; }");
-            // Build the nested chain with the Rust formatter.
             const int nn = n;
             std::string expr = a.fmt(ov[nn - 1]);
             for (int i = nn - 2; i &gt;= 0; --i) {
@@ -835,6 +835,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

@@ -20,12 +20,16 @@ Ce module permet d'échanger des données avec des logiciels de tableur (Excel, 
 - [detectImportOptions](detectImportOptions.md) - Créer des options d'importation basées sur le contenu du fichier.
 - [dlmread](dlmread.md) - Lire une matrice numérique depuis un fichier texte utilisant un délimiteur.
 - [dlmwrite](dlmwrite.md) - Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur.
+- [getvaropts](getvaropts.md) - Obtenir les options d'importation des variables selectionnees.
 - [jsonImportOptions](jsonImportOptions.md) - Créer des options pour importer des données JSON.
 - [readcell](readcell.md) - Créer une cellule à partir d'un fichier.
 - [readmatrix](readmatrix.md) - Créer une matrice à partir d'un fichier.
 - [readtable](readtable.md) - Créer une table à partir d'un fichier.
 - [readtimetable](readtimetable.md) - Crée une timetable depuis un fichier.
 - [readvars](readvars.md) - Créer des variables en lisant les colonnes d'un fichier.
+- [setvaropts](setvaropts.md) - Definir les options d'importation des variables selectionnees.
+- [setvartype](setvartype.md) - Definir les types de donnees des variables selectionnees.
+- [spreadsheetImportOptions](spreadsheetImportOptions.md) - Creer des options pour importer des donnees de feuille de calcul.
 - [writecell](writecell.md) - Écrire un tableau de cellules dans un fichier.
 - [writematrix](writematrix.md) - Écrire une matrice dans un fichier.
 - [writetable](writetable.md) - Écrire une table dans un fichier.

@@ -277,6 +277,7 @@ Fonctions d apprentissage non supervise, recherche de plus proches voisins, gest
 
 === Functions
 
+- #nlink(<statistics:7_clustering_anomaly_detection.KDTreeSearcher>)[KDTreeSearcher]: Objet de recherche de plus proches voisins.
 - #nlink(<statistics:7_clustering_anomaly_detection.cluster>)[cluster]: Construire des classes depuis un arbre hierarchique.
 - #nlink(<statistics:7_clustering_anomaly_detection.clusterdata>)[clusterdata]: Regrouper les observations depuis les donnees.
 - #nlink(<statistics:7_clustering_anomaly_detection.dbscan>)[dbscan]: Regroupement spatial fonde sur la densite.
@@ -782,6 +783,8 @@ Fonctions pour plans d experiences et configuration de modeles.
 #include "6_classification/fitctree.typ"
 #pagebreak(weak: true)
 #include "6_classification/grp2idx.typ"
+#pagebreak(weak: true)
+#include "7_clustering_anomaly_detection/KDTreeSearcher.typ"
 #pagebreak(weak: true)
 #include "7_clustering_anomaly_detection/cluster.typ"
 #pagebreak(weak: true)

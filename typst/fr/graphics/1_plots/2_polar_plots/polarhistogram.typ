@@ -21,6 +21,7 @@ Affiche des angles sous forme d'histogramme polaire.
 Creer un histogramme polaire.
 
 ``````matlab
+rng(0);
 theta = 2*pi*rand(200, 1);
 polarhistogram(theta, 16);
 ``````

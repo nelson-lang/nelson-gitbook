@@ -16,12 +16,16 @@ The Spreadsheet module provides functions for reading and writing tabular data f
 - #nlink(<spreadsheet:detectImportOptions>)[detectImportOptions]: Create import options based on file content.
 - #nlink(<spreadsheet:dlmread>)[dlmread]: Read an numeric matrix from a text file file using a delimiter.
 - #nlink(<spreadsheet:dlmwrite>)[dlmwrite]: Write an numeric matrix to a text file file using a delimiter.
+- #nlink(<spreadsheet:getvaropts>)[getvaropts]: Get variable import options for selected variables.
 - #nlink(<spreadsheet:jsonImportOptions>)[jsonImportOptions]: Create options for importing JSON data.
 - #nlink(<spreadsheet:readcell>)[readcell]: Create cell array from file.
 - #nlink(<spreadsheet:readmatrix>)[readmatrix]: Create matrix array from file.
 - #nlink(<spreadsheet:readtable>)[readtable]: Create table from file.
 - #nlink(<spreadsheet:readtimetable>)[readtimetable]: Create timetable from file.
 - #nlink(<spreadsheet:readvars>)[readvars]: Create variables by reading column-oriented data from a file.
+- #nlink(<spreadsheet:setvaropts>)[setvaropts]: Set variable import options for selected variables.
+- #nlink(<spreadsheet:setvartype>)[setvartype]: Set variable data types for selected variables.
+- #nlink(<spreadsheet:spreadsheetImportOptions>)[spreadsheetImportOptions]: Create options for importing spreadsheet data.
 - #nlink(<spreadsheet:writecell>)[writecell]: Write a cell to a file.
 - #nlink(<spreadsheet:writematrix>)[writematrix]: Write a matrix to a file.
 - #nlink(<spreadsheet:writetable>)[writetable]: Write table to file.
@@ -45,6 +49,8 @@ The Spreadsheet module provides functions for reading and writing tabular data f
 #pagebreak(weak: true)
 #include "dlmwrite.typ"
 #pagebreak(weak: true)
+#include "getvaropts.typ"
+#pagebreak(weak: true)
 #include "jsonImportOptions.typ"
 #pagebreak(weak: true)
 #include "readcell.typ"
@@ -56,6 +62,12 @@ The Spreadsheet module provides functions for reading and writing tabular data f
 #include "readtimetable.typ"
 #pagebreak(weak: true)
 #include "readvars.typ"
+#pagebreak(weak: true)
+#include "setvaropts.typ"
+#pagebreak(weak: true)
+#include "setvartype.typ"
+#pagebreak(weak: true)
+#include "spreadsheetImportOptions.typ"
 #pagebreak(weak: true)
 #include "writecell.typ"
 #pagebreak(weak: true)

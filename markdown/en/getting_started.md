@@ -27,8 +27,8 @@ The `nelson` command accepts a mode option:
 
 ```bash
 nelson              # desktop with command window, editor and workspace browser
-nelson -cli         # text mode in the terminal
-nelson -adv-cli     # text mode with graphics support
+nelson --cli        # text mode in the terminal
+nelson --adv-cli    # text mode with graphics support
 nelson-webview      # the desktop in a native web window
 nelson-webview --web   # the same desktop served over HTTP for a browser
 ```
@@ -36,8 +36,8 @@ nelson-webview --web   # the same desktop served over HTTP for a browser
 Two options are useful for automation:
 
 ```bash
-nelson -cli -e "disp(2 + 2)"      # run one command and show the result
-nelson -cli -f my_script.m        # run a file, then stay at the prompt
+nelson --cli -e "disp(2 + 2)"     # run one command and show the result
+nelson --cli -f my_script.m       # run a file, then stay at the prompt
 ```
 
 To leave Nelson, type `quit` or `exit`.
@@ -252,7 +252,7 @@ run('example1.m')
 example1
 ```
 
-From the terminal: `nelson -cli -f example1.m`.
+From the terminal: `nelson --cli -f example1.m`.
 
 The `edit` command opens a file in the built-in editor. In the editor, `%%` starts a section that can be run on its own.
 

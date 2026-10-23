@@ -158,6 +158,7 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - #nlink(<elementary_functions:7_indexing_dimensions.ndims>)[ndims]: Nombre de dimensions d'un tableau.
 - #nlink(<elementary_functions:7_indexing_dimensions.numel>)[numel]: Nombre d'éléments.
 - #nlink(<elementary_functions:7_indexing_dimensions.permute>)[permute]: Permute les dimensions d'un tableau.
+- #nlink(<elementary_functions:7_indexing_dimensions.resize>)[resize]: Redimensionne un tableau par troncature ou remplissage.
 - #nlink(<elementary_functions:7_indexing_dimensions.rot90>)[rot90]: Fait pivoter un tableau de 90 degrés.
 - #nlink(<elementary_functions:7_indexing_dimensions.shiftdim>)[shiftdim]: Décale les dimensions d'un tableau
 - #nlink(<elementary_functions:7_indexing_dimensions.size>)[size]: Taille d'un objet.
@@ -387,6 +388,8 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 #include "7_indexing_dimensions/numel.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/permute.typ"
+#pagebreak(weak: true)
+#include "7_indexing_dimensions/resize.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/rot90.typ"
 #pagebreak(weak: true)

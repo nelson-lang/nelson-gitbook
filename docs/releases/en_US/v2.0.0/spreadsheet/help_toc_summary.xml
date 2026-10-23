@@ -14,12 +14,16 @@
       <keyword name="detectImportOptions" link="detectImportOptions.html" description="Create import options based on file content."/>
       <keyword name="dlmread" link="dlmread.html" description="Read an numeric matrix from a text file file using a delimiter."/>
       <keyword name="dlmwrite" link="dlmwrite.html" description="Write an numeric matrix to a text file file using a delimiter."/>
+      <keyword name="getvaropts" link="getvaropts.html" description="Get variable import options for selected variables."/>
       <keyword name="jsonImportOptions" link="jsonImportOptions.html" description="Create options for importing JSON data."/>
       <keyword name="readcell" link="readcell.html" description="Create cell array from file."/>
       <keyword name="readmatrix" link="readmatrix.html" description="Create matrix array from file."/>
       <keyword name="readtable" link="readtable.html" description="Create table from file."/>
       <keyword name="readtimetable" link="readtimetable.html" description="Create timetable from file."/>
       <keyword name="readvars" link="readvars.html" description="Create variables by reading column-oriented data from a file."/>
+      <keyword name="setvaropts" link="setvaropts.html" description="Set variable import options for selected variables."/>
+      <keyword name="setvartype" link="setvartype.html" description="Set variable data types for selected variables."/>
+      <keyword name="spreadsheetImportOptions" link="spreadsheetImportOptions.html" description="Create options for importing spreadsheet data."/>
       <keyword name="writecell" link="writecell.html" description="Write a cell to a file."/>
       <keyword name="writematrix" link="writematrix.html" description="Write a matrix to a file."/>
       <keyword name="writetable" link="writetable.html" description="Write table to file."/>

@@ -14,7 +14,7 @@ Il lit la description de modèle d'une FMU, expose ses variables et ses interfac
 Les fonctions acceptent aussi bien une archive **.fmu** qu'un répertoire de FMU déjà extrait. Les archives sont décompressées avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire supprimé automatiquement.
 
     
-Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie **FMI**) : un bloc **FMU** (co-simulation) et un bloc **FMU (ME)** (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur **Browse FMU...** pour choisir un **.fmu**, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire **examples** du module.
+Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie **FMI**) : un bloc **FMU (CS)** (co-simulation) et un bloc **FMU (ME)** (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur **Browse FMU...** pour choisir un **.fmu**, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire **examples** du module.
 
     
 | Domaine | Entrées principales |
@@ -31,6 +31,9 @@ L'**assistant d'import FMU** (**fmuToBlock**) transforme n'importe quelle FMU en
 
     
 Le **pont Modelica** permet à un modèle nflow d'inclure un bloc **modelica** qui référence un modèle Modelica. À la simulation, le modèle est compilé en FMU avec un **OpenModelica** installé par l'utilisateur puis importé via le chemin FMI ci-dessus, de sorte que des modèles Modelica physiques (acausaux) se simulent aux côtés des blocs ordinaires. **modelicaInfo** et **modelicaConfigure** indiquent et sélectionnent l'OpenModelica utilisé ; **modelicaToFmu** réalise la compilation. Des exemples (RC, RLC, masse-ressort-amortisseur) sont fournis dans le répertoire **examples/modelica** du module.
+
+    
+**Prérequis :** le pont Modelica est la seule partie de ce module qui nécessite un outil externe. OpenModelica n'est **pas fourni** avec Nelson ; installez-le vous-même (depuis le projet OpenModelica), et assurez-vous que l'installation est suffisamment complète pour exporter des FMU -- elle doit fournir le runtime d'export FMI sous **share/omc/runtime/c/fmi**, qu'une installation minimale peut omettre. nflow détecte automatiquement OpenModelica dans l'ordre suivant : un chemin défini avec **modelicaConfigure**, les variables d'environnement **NELSON_OPENMODELICA_HOME** et **OPENMODELICAHOME**, les répertoires d'installation standard, puis **PATH**. Exécutez **modelicaInfo** pour vérifier qu'un OpenModelica utilisable est trouvé. Le reste du module (import de FMU, co-simulation, Model Exchange) ne requiert aucun outil externe.
 
   
 

@@ -30,6 +30,7 @@ Fonctions pour creer, inspecter et reduire des modeles de systemes dynamiques.
 - #nlink(<control_system:1_dynamic_system_models.tfdata>)[tfdata]: Accède aux données d'un modèle en fonction de transfert.
 - #nlink(<control_system:1_dynamic_system_models.tzero>)[tzero]: Zéros invariants d'un système linéaire.
 - #nlink(<control_system:1_dynamic_system_models.zero>)[zero]: Zéros et gain d'un système SISO.
+- #nlink(<control_system:1_dynamic_system_models.zpk>)[zpk]: Construit un modèle zéros-pôles-gain.
 
 == Conversion et interconnexion de modeles
 
@@ -59,12 +60,17 @@ Fonctions pour analyse temporelle, frequentielle et reponse de modeles.
 === Functions
 
 - #nlink(<control_system:3_linear_analysis.bode>)[bode]: Diagramme de Bode de la rÃƒÂ©ponse en frÃƒÂ©quence, donnÃƒÂ©es de magnitude et de phase.
+- #nlink(<control_system:3_linear_analysis.bodeoptions>)[bodeoptions]: Options d'un diagramme de Bode.
+- #nlink(<control_system:3_linear_analysis.bodeplot>)[bodeplot]: Diagramme de Bode d'un système LTI SISO avec options de tracé.
 - #nlink(<control_system:3_linear_analysis.damp>)[damp]: Fréquence naturelle et rapport d'amortissement.
 - #nlink(<control_system:3_linear_analysis.dcgain>)[dcgain]: Gain en basse fréquence (DC) du système LTI.
 - #nlink(<control_system:3_linear_analysis.evalfr>)[evalfr]: Évalue la réponse en fréquence à une fréquence donnée.
 - #nlink(<control_system:3_linear_analysis.freqresp>)[freqresp]: RÃ©ponse en frÃ©quence du systÃ¨me.
 - #nlink(<control_system:3_linear_analysis.hsvd>)[hsvd]: Décomposition en valeurs singulières de Hankel.
+- #nlink(<control_system:3_linear_analysis.margin>)[margin]: Marges de gain et de phase d'un système LTI SISO.
 - #nlink(<control_system:3_linear_analysis.nyquist>)[nyquist]: Diagramme de Nyquist de la rÃ©ponse en frÃ©quence.
+- #nlink(<control_system:3_linear_analysis.pzmap>)[pzmap]: Carte des pôles et des zéros d'un système dynamique.
+- #nlink(<control_system:3_linear_analysis.rlocus>)[rlocus]: Lieu des racines d'un modèle SISO.
 - #nlink(<control_system:3_linear_analysis.sigma>)[sigma]: Reponse en valeurs singulieres d'un modele LTI.
 
 == Reponses temporelles et frequentielles
@@ -95,6 +101,7 @@ Fonctions pour conception de controleurs, estimateurs et calculs de regulateurs.
 - #nlink(<control_system:5_control_design_tuning.lqr>)[lqr]: Conception d'un régulateur linéaire-quadratique (LQR).
 - #nlink(<control_system:5_control_design_tuning.lqry>)[lqry]: Forme un régulateur LQ (rétroaction d'état) avec pondération sur la sortie.
 - #nlink(<control_system:5_control_design_tuning.ord2>)[ord2]: Génère des systèmes du second ordre continus.
+- #nlink(<control_system:5_control_design_tuning.place>)[place]: Placement de pôles par retour d'état avec assignation robuste.
 
 == Calculs matriciels
 
@@ -147,6 +154,8 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 #pagebreak(weak: true)
 #include "1_dynamic_system_models/zero.typ"
 #pagebreak(weak: true)
+#include "1_dynamic_system_models/zpk.typ"
+#pagebreak(weak: true)
 #include "2_model_conversion_interconnection/abcdchk.typ"
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/append.typ"
@@ -177,6 +186,10 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 #pagebreak(weak: true)
 #include "3_linear_analysis/bode.typ"
 #pagebreak(weak: true)
+#include "3_linear_analysis/bodeoptions.typ"
+#pagebreak(weak: true)
+#include "3_linear_analysis/bodeplot.typ"
+#pagebreak(weak: true)
 #include "3_linear_analysis/damp.typ"
 #pagebreak(weak: true)
 #include "3_linear_analysis/dcgain.typ"
@@ -187,7 +200,13 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 #pagebreak(weak: true)
 #include "3_linear_analysis/hsvd.typ"
 #pagebreak(weak: true)
+#include "3_linear_analysis/margin.typ"
+#pagebreak(weak: true)
 #include "3_linear_analysis/nyquist.typ"
+#pagebreak(weak: true)
+#include "3_linear_analysis/pzmap.typ"
+#pagebreak(weak: true)
+#include "3_linear_analysis/rlocus.typ"
 #pagebreak(weak: true)
 #include "3_linear_analysis/sigma.typ"
 #pagebreak(weak: true)
@@ -220,6 +239,8 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 #include "5_control_design_tuning/lqry.typ"
 #pagebreak(weak: true)
 #include "5_control_design_tuning/ord2.typ"
+#pagebreak(weak: true)
+#include "5_control_design_tuning/place.typ"
 #pagebreak(weak: true)
 #include "6_matrix_computations/bdschur.typ"
 #pagebreak(weak: true)

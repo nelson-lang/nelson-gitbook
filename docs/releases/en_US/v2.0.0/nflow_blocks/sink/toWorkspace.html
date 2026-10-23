@@ -310,8 +310,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "label-sink-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-label-sink-formula",
         "formula": "{params.GotoTag}"
       }
     },
@@ -341,8 +341,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "display-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-display-formula",
         "formula": "\\mathsf{Disp}"
       }
     },
@@ -449,9 +449,8 @@
 // builtin layer (see NFlowWorkspaceIO / NelsonWorkspaceBridge), according to
 // the SaveFormat parameter.
 //
-// Reference semantics (measured): Decimation keeps one sample out of k
-// (starting with the first), applied BEFORE the MaxDataPoints window, which
-// keeps the LAST N decimated samples.
+// Decimation keeps one sample out of k (starting with the first), applied
+// BEFORE the MaxDataPoints window, which keeps the LAST N decimated samples.
 //=============================================================================
 bool
 Nelson::NFlow::handleToWorkspace(SimCtx&amp; ctx, const Block&amp; b, Phase phase)

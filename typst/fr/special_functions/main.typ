@@ -37,6 +37,7 @@ Le module Fonctions Spéciales fournit des outils pour effectuer des opérations
 - #nlink(<special_functions:isprime>)[isprime]: Détermine quels éléments d'un tableau sont premiers
 - #nlink(<special_functions:lcm>)[lcm]: Plus petit commun multiple
 - #nlink(<special_functions:makima>)[makima]: Interpolation cubique d'Akima modifiee.
+- #nlink(<special_functions:membrane>)[membrane]: Fonctions propres de la membrane en L.
 - #nlink(<special_functions:pchip>)[pchip]: Interpolation polynomiale cubique de Hermite par morceaux (PCHIP).
 - #nlink(<special_functions:peaks>)[peaks]: Fonction peaks
 - #nlink(<special_functions:primes>)[primes]: Nombres premiers inférieurs ou égaux à la valeur d'entrée
@@ -99,6 +100,8 @@ Le module Fonctions Spéciales fournit des outils pour effectuer des opérations
 #include "lcm.typ"
 #pagebreak(weak: true)
 #include "makima.typ"
+#pagebreak(weak: true)
+#include "membrane.typ"
 #pagebreak(weak: true)
 #include "pchip.typ"
 #pagebreak(weak: true)

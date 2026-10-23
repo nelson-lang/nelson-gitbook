@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1791214208
+// Auto-generated on 1792778819
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -4180,6 +4180,12 @@ window.searchIndex = [
     "content": "Permute les dimensions d'un tableau."
   },
   {
+    "title": "resize",
+    "url": "./elementary_functions/7_indexing_dimensions/resize.html",
+    "path": "./elementary_functions/7_indexing_dimensions/resize.html",
+    "content": "Redimensionne un tableau par troncature ou remplissage."
+  },
+  {
     "title": "rot90",
     "url": "./elementary_functions/7_indexing_dimensions/rot90.html",
     "path": "./elementary_functions/7_indexing_dimensions/rot90.html",
@@ -4438,6 +4444,12 @@ window.searchIndex = [
     "content": "Convertit un angle de degrés en radians."
   },
   {
+    "title": "degtorad",
+    "url": "./trigonometric_functions/degtorad.html",
+    "path": "./trigonometric_functions/degtorad.html",
+    "content": "Convertit un angle de degrés en radians."
+  },
+  {
     "title": "pol2cart",
     "url": "./trigonometric_functions/pol2cart.html",
     "path": "./trigonometric_functions/pol2cart.html",
@@ -4447,6 +4459,12 @@ window.searchIndex = [
     "title": "rad2deg",
     "url": "./trigonometric_functions/rad2deg.html",
     "path": "./trigonometric_functions/rad2deg.html",
+    "content": "Convertit un angle de radians en degrés."
+  },
+  {
+    "title": "radtodeg",
+    "url": "./trigonometric_functions/radtodeg.html",
+    "path": "./trigonometric_functions/radtodeg.html",
     "content": "Convertit un angle de radians en degrés."
   },
   {
@@ -4720,6 +4738,12 @@ window.searchIndex = [
     "content": "Interpolation cubique d'Akima modifiee."
   },
   {
+    "title": "membrane",
+    "url": "./special_functions/membrane.html",
+    "path": "./special_functions/membrane.html",
+    "content": "Fonctions propres de la membrane en L."
+  },
+  {
     "title": "pchip",
     "url": "./special_functions/pchip.html",
     "path": "./special_functions/pchip.html",
@@ -4766,6 +4790,12 @@ window.searchIndex = [
     "url": "./linear_algebra/1_linear_systems/cumtrapz.html",
     "path": "./linear_algebra/1_linear_systems/cumtrapz.html",
     "content": "Integration numerique cumulative par la methode des trapezes."
+  },
+  {
+    "title": "curl",
+    "url": "./linear_algebra/1_linear_systems/curl.html",
+    "path": "./linear_algebra/1_linear_systems/curl.html",
+    "content": "Rotationnel et vitesse angulaire d'un champ de vecteurs."
   },
   {
     "title": "del2",
@@ -6502,6 +6532,12 @@ window.searchIndex = [
     "content": "Fonctions d apprentissage non supervise, recherche de plus proches voisins, gestion des valeurs aberrantes et modeles de sequences."
   },
   {
+    "title": "KDTreeSearcher",
+    "url": "./statistics/7_clustering_anomaly_detection/KDTreeSearcher.html",
+    "path": "./statistics/7_clustering_anomaly_detection/KDTreeSearcher.html",
+    "content": "Objet de recherche de plus proches voisins."
+  },
+  {
     "title": "cluster",
     "url": "./statistics/7_clustering_anomaly_detection/cluster.html",
     "path": "./statistics/7_clustering_anomaly_detection/cluster.html",
@@ -7528,6 +7564,12 @@ window.searchIndex = [
     "content": "Objet alpha shape"
   },
   {
+    "title": "axes2ecc",
+    "url": "./geometry/axes2ecc.html",
+    "path": "./geometry/axes2ecc.html",
+    "content": "Excentricité d'une ellipse à partir de ses demi-axes."
+  },
+  {
     "title": "boundary",
     "url": "./geometry/boundary.html",
     "path": "./geometry/boundary.html",
@@ -7570,10 +7612,46 @@ window.searchIndex = [
     "content": "Recherche du point le plus proche"
   },
   {
+    "title": "ellipse1",
+    "url": "./geometry/ellipse1.html",
+    "path": "./geometry/ellipse1.html",
+    "content": "Points d'une petite ellipse sur une sphère."
+  },
+  {
     "title": "griddata",
     "url": "./geometry/griddata.html",
     "path": "./geometry/griddata.html",
     "content": "Interpolation de donnees dispersees"
+  },
+  {
+    "title": "nsidedpoly",
+    "url": "./geometry/nsidedpoly.html",
+    "path": "./geometry/nsidedpoly.html",
+    "content": "Crée un polygone régulier."
+  },
+  {
+    "title": "polyarea",
+    "url": "./geometry/polyarea.html",
+    "path": "./geometry/polyarea.html",
+    "content": "Aire d'un polygone."
+  },
+  {
+    "title": "polyshape",
+    "url": "./geometry/polyshape.html",
+    "path": "./geometry/polyshape.html",
+    "content": "Crée un polygone."
+  },
+  {
+    "title": "reckon",
+    "url": "./geometry/reckon.html",
+    "path": "./geometry/reckon.html",
+    "content": "Point à une distance sphérique et un azimut donnés."
+  },
+  {
+    "title": "rectint",
+    "url": "./geometry/rectint.html",
+    "path": "./geometry/rectint.html",
+    "content": "Aire d'intersection de rectangles."
   },
   {
     "title": "rotx",
@@ -7732,6 +7810,12 @@ window.searchIndex = [
     "content": "Zéros et gain d'un système SISO."
   },
   {
+    "title": "zpk",
+    "url": "./control_system/1_dynamic_system_models/zpk.html",
+    "path": "./control_system/1_dynamic_system_models/zpk.html",
+    "content": "Construit un modèle zéros-pôles-gain."
+  },
+  {
     "title": "Conversion et interconnexion de modeles",
     "url": "./control_system/index.html",
     "path": "sections/control_system",
@@ -7834,6 +7918,18 @@ window.searchIndex = [
     "content": "Diagramme de Bode de la rÃƒÂ©ponse en frÃƒÂ©quence, donnÃƒÂ©es de magnitude et de phase."
   },
   {
+    "title": "bodeoptions",
+    "url": "./control_system/3_linear_analysis/bodeoptions.html",
+    "path": "./control_system/3_linear_analysis/bodeoptions.html",
+    "content": "Options d'un diagramme de Bode."
+  },
+  {
+    "title": "bodeplot",
+    "url": "./control_system/3_linear_analysis/bodeplot.html",
+    "path": "./control_system/3_linear_analysis/bodeplot.html",
+    "content": "Diagramme de Bode d'un système LTI SISO avec options de tracé."
+  },
+  {
     "title": "damp",
     "url": "./control_system/3_linear_analysis/damp.html",
     "path": "./control_system/3_linear_analysis/damp.html",
@@ -7864,10 +7960,28 @@ window.searchIndex = [
     "content": "Décomposition en valeurs singulières de Hankel."
   },
   {
+    "title": "margin",
+    "url": "./control_system/3_linear_analysis/margin.html",
+    "path": "./control_system/3_linear_analysis/margin.html",
+    "content": "Marges de gain et de phase d'un système LTI SISO."
+  },
+  {
     "title": "nyquist",
     "url": "./control_system/3_linear_analysis/nyquist.html",
     "path": "./control_system/3_linear_analysis/nyquist.html",
     "content": "Diagramme de Nyquist de la rÃ©ponse en frÃ©quence."
+  },
+  {
+    "title": "pzmap",
+    "url": "./control_system/3_linear_analysis/pzmap.html",
+    "path": "./control_system/3_linear_analysis/pzmap.html",
+    "content": "Carte des pôles et des zéros d'un système dynamique."
+  },
+  {
+    "title": "rlocus",
+    "url": "./control_system/3_linear_analysis/rlocus.html",
+    "path": "./control_system/3_linear_analysis/rlocus.html",
+    "content": "Lieu des racines d'un modèle SISO."
   },
   {
     "title": "sigma",
@@ -7976,6 +8090,12 @@ window.searchIndex = [
     "url": "./control_system/5_control_design_tuning/ord2.html",
     "path": "./control_system/5_control_design_tuning/ord2.html",
     "content": "Génère des systèmes du second ordre continus."
+  },
+  {
+    "title": "place",
+    "url": "./control_system/5_control_design_tuning/place.html",
+    "path": "./control_system/5_control_design_tuning/place.html",
+    "content": "Placement de pôles par retour d'état avec assignation robuste."
   },
   {
     "title": "Calculs matriciels",
@@ -8864,6 +8984,12 @@ window.searchIndex = [
     "url": "./random/rand.html",
     "path": "./random/rand.html",
     "content": "Nombre aléatoire."
+  },
+  {
+    "title": "randg",
+    "url": "./random/randg.html",
+    "path": "./random/randg.html",
+    "content": "Nombre aléatoire distribué selon une loi gamma."
   },
   {
     "title": "randi",
@@ -11242,6 +11368,12 @@ window.searchIndex = [
     "content": "Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."
   },
   {
+    "title": "getvaropts",
+    "url": "./spreadsheet/getvaropts.html",
+    "path": "./spreadsheet/getvaropts.html",
+    "content": "Obtenir les options d'importation des variables selectionnees."
+  },
+  {
     "title": "jsonImportOptions",
     "url": "./spreadsheet/jsonImportOptions.html",
     "path": "./spreadsheet/jsonImportOptions.html",
@@ -11276,6 +11408,24 @@ window.searchIndex = [
     "url": "./spreadsheet/readvars.html",
     "path": "./spreadsheet/readvars.html",
     "content": "Créer des variables en lisant les colonnes d'un fichier."
+  },
+  {
+    "title": "setvaropts",
+    "url": "./spreadsheet/setvaropts.html",
+    "path": "./spreadsheet/setvaropts.html",
+    "content": "Definir les options d'importation des variables selectionnees."
+  },
+  {
+    "title": "setvartype",
+    "url": "./spreadsheet/setvartype.html",
+    "path": "./spreadsheet/setvartype.html",
+    "content": "Definir les types de donnees des variables selectionnees."
+  },
+  {
+    "title": "spreadsheetImportOptions",
+    "url": "./spreadsheet/spreadsheetImportOptions.html",
+    "path": "./spreadsheet/spreadsheetImportOptions.html",
+    "content": "Creer des options pour importer des donnees de feuille de calcul."
   },
   {
     "title": "writecell",
@@ -12208,6 +12358,12 @@ window.searchIndex = [
     "content": "Graphique semi-logarithmique (axe y en échelle logarithmique)."
   },
   {
+    "title": "viscircles",
+    "url": "./graphics/1_plots/1_line_plots/viscircles.html",
+    "path": "./graphics/1_plots/1_line_plots/viscircles.html",
+    "content": "Trace des cercles."
+  },
+  {
     "title": "xline",
     "url": "./graphics/1_plots/1_line_plots/xline.html",
     "path": "./graphics/1_plots/1_line_plots/xline.html",
@@ -12640,6 +12796,12 @@ window.searchIndex = [
     "content": "Créer un cylindre."
   },
   {
+    "title": "ellipsoid",
+    "url": "./graphics/1_plots/7_surfaces_volumes_polygons/ellipsoid.html",
+    "path": "./graphics/1_plots/7_surfaces_volumes_polygons/ellipsoid.html",
+    "content": "Crée un ellipsoïde."
+  },
+  {
     "title": "fill",
     "url": "./graphics/1_plots/7_surfaces_volumes_polygons/fill.html",
     "path": "./graphics/1_plots/7_surfaces_volumes_polygons/fill.html",
@@ -12686,6 +12848,12 @@ window.searchIndex = [
     "url": "./graphics/1_plots/7_surfaces_volumes_polygons/isosurface.html",
     "path": "./graphics/1_plots/7_surfaces_volumes_polygons/isosurface.html",
     "content": "Extraire une isosurface depuis des donnees volumiques."
+  },
+  {
+    "title": "knot",
+    "url": "./graphics/1_plots/7_surfaces_volumes_polygons/knot.html",
+    "path": "./graphics/1_plots/7_surfaces_volumes_polygons/knot.html",
+    "content": "Créer une surface en nœud de trèfle."
   },
   {
     "title": "mesh",
@@ -12758,6 +12926,12 @@ window.searchIndex = [
     "url": "./graphics/1_plots/7_surfaces_volumes_polygons/surf.html",
     "path": "./graphics/1_plots/7_surfaces_volumes_polygons/surf.html",
     "content": "tracé de surface."
+  },
+  {
+    "title": "surf2patch",
+    "url": "./graphics/1_plots/7_surfaces_volumes_polygons/surf2patch.html",
+    "path": "./graphics/1_plots/7_surfaces_volumes_polygons/surf2patch.html",
+    "content": "Convertit des données de surface en données de patch."
   },
   {
     "title": "surface",
@@ -12874,6 +13048,12 @@ window.searchIndex = [
     "content": "Créer des axes cartésiens."
   },
   {
+    "title": "axescheck",
+    "url": "./graphics/2_graphics_objects/1_object_management/axescheck.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/axescheck.html",
+    "content": "Extrait un handle d'axes d'une liste d'arguments."
+  },
+  {
     "title": "cla",
     "url": "./graphics/2_graphics_objects/1_object_management/cla.html",
     "path": "./graphics/2_graphics_objects/1_object_management/cla.html",
@@ -12922,6 +13102,12 @@ window.searchIndex = [
     "content": "Récupère l'objet figure courant."
   },
   {
+    "title": "getappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/getappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/getappdata.html",
+    "content": "Récupère des données applicatives d'un objet."
+  },
+  {
     "title": "groot",
     "url": "./graphics/2_graphics_objects/1_object_management/groot.html",
     "path": "./graphics/2_graphics_objects/1_object_management/groot.html",
@@ -12940,6 +13126,12 @@ window.searchIndex = [
     "content": "Conserver le tracé courant lors de l'ajout de nouveaux tracés."
   },
   {
+    "title": "inspect",
+    "url": "./graphics/2_graphics_objects/1_object_management/inspect.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/inspect.html",
+    "content": "Ouvre l'inspecteur de propriétés des objets graphiques."
+  },
+  {
     "title": "is2D",
     "url": "./graphics/2_graphics_objects/1_object_management/is2D.html",
     "path": "./graphics/2_graphics_objects/1_object_management/is2D.html",
@@ -12950,6 +13142,12 @@ window.searchIndex = [
     "url": "./graphics/2_graphics_objects/1_object_management/isValidGraphicsProperty.html",
     "path": "./graphics/2_graphics_objects/1_object_management/isValidGraphicsProperty.html",
     "content": "Vérifie si le nom de propriété est valide."
+  },
+  {
+    "title": "isappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/isappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/isappdata.html",
+    "content": "Vrai si des données applicatives existent."
   },
   {
     "title": "isgraphics",
@@ -12964,10 +13162,40 @@ window.searchIndex = [
     "content": "Obtient l'état actuel du mode hold."
   },
   {
+    "title": "makehgtform",
+    "url": "./graphics/2_graphics_objects/1_object_management/makehgtform.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/makehgtform.html",
+    "content": "Crée une matrice de transformation 4 par 4."
+  },
+  {
     "title": "newplot",
     "url": "./graphics/2_graphics_objects/1_object_management/newplot.html",
     "path": "./graphics/2_graphics_objects/1_object_management/newplot.html",
     "content": "Préparer la création d'un nouveau graphique."
+  },
+  {
+    "title": "rmappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/rmappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/rmappdata.html",
+    "content": "Supprime des données applicatives d'un objet."
+  },
+  {
+    "title": "rotate",
+    "url": "./graphics/2_graphics_objects/1_object_management/rotate.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/rotate.html",
+    "content": "Fait tourner des objets graphiques autour d'un axe."
+  },
+  {
+    "title": "setappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/setappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/setappdata.html",
+    "content": "Stocke des données applicatives sur un objet."
+  },
+  {
+    "title": "shg",
+    "url": "./graphics/2_graphics_objects/1_object_management/shg.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/shg.html",
+    "content": "Affiche la fenêtre graphique courante."
   },
   {
     "title": "Objets de disposition",
@@ -13792,6 +14020,12 @@ window.searchIndex = [
     "content": "Palette de couleurs bone."
   },
   {
+    "title": "brighten",
+    "url": "./graphics/3_labels_styling/2_color_styling/colormaps/brighten.html",
+    "path": "./graphics/3_labels_styling/2_color_styling/colormaps/brighten.html",
+    "content": "Éclaircit ou assombrit une palette de couleurs."
+  },
+  {
     "title": "colorcube",
     "url": "./graphics/3_labels_styling/2_color_styling/colormaps/colorcube.html",
     "path": "./graphics/3_labels_styling/2_color_styling/colormaps/colorcube.html",
@@ -13930,10 +14164,82 @@ window.searchIndex = [
     "content": "Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage."
   },
   {
+    "title": "axtoolbar",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/axtoolbar.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/axtoolbar.html",
+    "content": "Obtient ou configure la barre d'outils des axes."
+  },
+  {
+    "title": "camdolly",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camdolly.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camdolly.html",
+    "content": "Déplace la position et la cible de la caméra."
+  },
+  {
     "title": "camlight",
     "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlight.html",
     "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlight.html",
     "content": "Cree ou positionne une lumiere par rapport a la camera."
+  },
+  {
+    "title": "camlookat",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlookat.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlookat.html",
+    "content": "Pointe la caméra vers un objet."
+  },
+  {
+    "title": "camorbit",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camorbit.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camorbit.html",
+    "content": "Fait orbiter la position de la caméra autour de la cible."
+  },
+  {
+    "title": "campan",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/campan.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/campan.html",
+    "content": "Fait pivoter la cible de la caméra autour de la position."
+  },
+  {
+    "title": "campos",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/campos.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/campos.html",
+    "content": "Définit ou interroge la position de la caméra."
+  },
+  {
+    "title": "camproj",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camproj.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camproj.html",
+    "content": "Définit ou interroge le type de projection de la caméra."
+  },
+  {
+    "title": "camroll",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camroll.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camroll.html",
+    "content": "Fait rouler la caméra autour de l'axe de visée."
+  },
+  {
+    "title": "camtarget",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camtarget.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camtarget.html",
+    "content": "Définit ou interroge la cible de la caméra."
+  },
+  {
+    "title": "camup",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camup.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camup.html",
+    "content": "Définit ou interroge le vecteur vertical de la caméra."
+  },
+  {
+    "title": "camva",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camva.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camva.html",
+    "content": "Définit ou interroge l'angle de vue de la caméra."
+  },
+  {
+    "title": "camzoom",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camzoom.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camzoom.html",
+    "content": "Zoome la caméra en avant ou en arrière."
   },
   {
     "title": "drawnow",
@@ -14132,6 +14438,12 @@ window.searchIndex = [
     "url": "./graphics/index.html",
     "path": "sections/graphics",
     "content": "Fonctions pour ouvrir et sauvegarder des fichiers figure."
+  },
+  {
+    "title": "exportapp",
+    "url": "./graphics/5_printing_saving/exportapp.html",
+    "path": "./graphics/5_printing_saving/exportapp.html",
+    "content": "Enregistre une figure avec ses composants d'interface dans un fichier image."
   },
   {
     "title": "openfig",
@@ -14366,6 +14678,12 @@ window.searchIndex = [
     "url": "./image_processing/1_image_basics/3_filtering_edges/imgaussfilt.html",
     "path": "./image_processing/1_image_basics/3_filtering_edges/imgaussfilt.html",
     "content": "Applique un filtrage gaussien a une image."
+  },
+  {
+    "title": "imnoise",
+    "url": "./image_processing/1_image_basics/3_filtering_edges/imnoise.html",
+    "path": "./image_processing/1_image_basics/3_filtering_edges/imnoise.html",
+    "content": "Ajoute du bruit à une image."
   },
   {
     "title": "medfilt2",
@@ -14732,6 +15050,12 @@ window.searchIndex = [
     "url": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.html",
     "path": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.html",
     "content": "Applique une transformation geometrique inverse a des points."
+  },
+  {
+    "title": "warp",
+    "url": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/warp.html",
+    "path": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/warp.html",
+    "content": "Affiche une image plaquée en texture sur une surface."
   },
   {
     "title": "worldToIntrinsic",
@@ -20233,7 +20557,7 @@ window.searchIndex = [
     "title": "Import FMI NFlow",
     "url": "./nflow_fmi/index.html",
     "path": "sections/nflow_fmi",
-    "content": "Le module FMI de NFlow importe des unités de maquette fonctionnelle (FMU) conformes au standard FMI 3.0 et les exécute comme composants de co-simulation ou de Model Exchange. NFlow est actuellement publié en version 1.0.0-beta.1 : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours. Il lit la description de modèle d'une FMU, expose ses variables et ses interfaces, et soit pilote une co-simulation à pas fixe (la FMU possède son solveur), soit intègre une FMU Model Exchange avec le solveur de NFlow, en enregistrant les sorties de la FMU au cours du temps. Les fonctions acceptent aussi bien une archive .fmu qu'un répertoire de FMU déjà extrait. Les archives sont décompressées avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire supprimé automatiquement. Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie FMI) : un bloc FMU (co-simulation) et un bloc FMU (ME) (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur Browse FMU... pour choisir un .fmu, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire examples du module. Domaine Entrées principales Description de modèle fmiInfo Co-simulation fmiCoSimulate Model Exchange fmiModelExchange Pont Modelica modelicaInfo, modelicaConfigure, modelicaToFmu Assistant d'import FMU fmuToBlock L'assistant d'import FMU (fmuToBlock) transforme n'importe quelle FMU en bloc nflow d'aspect natif -- ports d'entrée et de sortie d'après la description de modèle, paramètres et icône de la FMU -- prêt à déposer dans une bibliothèque. Il se marie avec le pont Modelica : modelicaToFmu produit une FMU, fmuToBlock l'enveloppe en bloc. Le pont Modelica permet à un modèle nflow d'inclure un bloc modelica qui référence un modèle Modelica. À la simulation, le modèle est compilé en FMU avec un OpenModelica installé par l'utilisateur puis importé via le chemin FMI ci-dessus, de sorte que des modèles Modelica physiques (acausaux) se simulent aux côtés des blocs ordinaires. modelicaInfo et modelicaConfigure indiquent et sélectionnent l'OpenModelica utilisé ; modelicaToFmu réalise la compilation. Des exemples (RC, RLC, masse-ressort-amortisseur) sont fournis dans le répertoire examples\/modelica du module."
+    "content": "Le module FMI de NFlow importe des unités de maquette fonctionnelle (FMU) conformes au standard FMI 3.0 et les exécute comme composants de co-simulation ou de Model Exchange. NFlow est actuellement publié en version 1.0.0-beta.1 : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours. Il lit la description de modèle d'une FMU, expose ses variables et ses interfaces, et soit pilote une co-simulation à pas fixe (la FMU possède son solveur), soit intègre une FMU Model Exchange avec le solveur de NFlow, en enregistrant les sorties de la FMU au cours du temps. Les fonctions acceptent aussi bien une archive .fmu qu'un répertoire de FMU déjà extrait. Les archives sont décompressées avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire supprimé automatiquement. Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie FMI) : un bloc FMU (CS) (co-simulation) et un bloc FMU (ME) (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur Browse FMU... pour choisir un .fmu, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire examples du module. Domaine Entrées principales Description de modèle fmiInfo Co-simulation fmiCoSimulate Model Exchange fmiModelExchange Pont Modelica modelicaInfo, modelicaConfigure, modelicaToFmu Assistant d'import FMU fmuToBlock L'assistant d'import FMU (fmuToBlock) transforme n'importe quelle FMU en bloc nflow d'aspect natif -- ports d'entrée et de sortie d'après la description de modèle, paramètres et icône de la FMU -- prêt à déposer dans une bibliothèque. Il se marie avec le pont Modelica : modelicaToFmu produit une FMU, fmuToBlock l'enveloppe en bloc. Le pont Modelica permet à un modèle nflow d'inclure un bloc modelica qui référence un modèle Modelica. À la simulation, le modèle est compilé en FMU avec un OpenModelica installé par l'utilisateur puis importé via le chemin FMI ci-dessus, de sorte que des modèles Modelica physiques (acausaux) se simulent aux côtés des blocs ordinaires. modelicaInfo et modelicaConfigure indiquent et sélectionnent l'OpenModelica utilisé ; modelicaToFmu réalise la compilation. Des exemples (RC, RLC, masse-ressort-amortisseur) sont fournis dans le répertoire examples\/modelica du module. Prérequis : le pont Modelica est la seule partie de ce module qui nécessite un outil externe. OpenModelica n'est pas fourni avec Nelson ; installez-le vous-même (depuis le projet OpenModelica), et assurez-vous que l'installation est suffisamment complète pour exporter des FMU -- elle doit fournir le runtime d'export FMI sous share\/omc\/runtime\/c\/fmi, qu'une installation minimale peut omettre. nflow détecte automatiquement OpenModelica dans l'ordre suivant : un chemin défini avec modelicaConfigure, les variables d'environnement NELSON_OPENMODELICA_HOME et OPENMODELICAHOME, les répertoires d'installation standard, puis PATH. Exécutez modelicaInfo pour vérifier qu'un OpenModelica utilisable est trouvé. Le reste du module (import de FMU, co-simulation, Model Exchange) ne requiert aucun outil externe."
   },
   {
     "title": "fmiCoSimulate",
@@ -20714,5 +21038,23 @@ window.searchIndex = [
     "url": "./compiler/nelson.compiler.build.html",
     "path": "./compiler/nelson.compiler.build.html",
     "content": "Construire un executable natif avec des options structurees."
+  },
+  {
+    "title": "Notebook",
+    "url": "./notebook/index.html",
+    "path": "sections/notebook",
+    "content": "Le module Notebook exécute des documents Notebook en dehors de l'éditeur. Un Notebook mêle texte mis en forme, code et ses sorties dans un même document. Ce module lit le conteneur natif .nlx et le format texte .m, et exécute leurs cellules de code dans l'espace de travail de base — un document peut donc être lancé depuis la ligne de commande ou un script."
+  },
+  {
+    "title": "nlx",
+    "url": "./notebook/nlx.html",
+    "path": "./notebook/nlx.html",
+    "content": "Le format de document Notebook de Nelson (.nlx)."
+  },
+  {
+    "title": "notebook",
+    "url": "./notebook/notebook.html",
+    "path": "./notebook/notebook.html",
+    "content": "Exécute un document Notebook."
   }
 ];

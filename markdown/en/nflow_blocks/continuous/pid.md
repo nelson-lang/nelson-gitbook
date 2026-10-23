@@ -59,7 +59,7 @@ Proportional-Integral-Derivative controller block. Computes a PID control action
 | Parameter | Default value | 
 | --- | --- | 
 | <code>kp</code> | 1 | 
-| <code>ki</code> | 0 | 
+| <code>ki</code> | 1 | 
 | <code>kd</code> | 0 | 
 | <code>min</code> | -inf | 
 | <code>max</code> | inf | 

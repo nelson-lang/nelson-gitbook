@@ -29,6 +29,7 @@ Afficher un nuage de points regroupe par bins.
 Afficher une densite de points par bins.
 
 ``````matlab
+rng(0);
 x = randn(1000, 1);
 y = x + 0.5 * randn(1000, 1);
 h = binscatter(x, y, [30 30]);

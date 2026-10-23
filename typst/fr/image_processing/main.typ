@@ -55,6 +55,7 @@ Fonctions pour le filtrage spatial, le filtrage gaussien ou median, le remplissa
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.imboxfilt>)[imboxfilt]: Applique un filtrage par moyenne locale.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.imfilter>)[imfilter]: Filtre une image avec un noyau 2D.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.imgaussfilt>)[imgaussfilt]: Applique un filtrage gaussien a une image.
+- #nlink(<image_processing:1_image_basics.3_filtering_edges.imnoise>)[imnoise]: Ajoute du bruit à une image.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.medfilt2>)[medfilt2]: Applique un filtrage median 2D.
 - #nlink(<image_processing:1_image_basics.3_filtering_edges.padarray>)[padarray]: Ajoute des marges a un tableau pour le filtrage ou la morphologie.
 
@@ -152,6 +153,7 @@ Fonctions et objets pour le recadrage, le redimensionnement, la rotation, la tra
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.sizesMatch>)[sizesMatch]: Determine si une reference spatiale correspond a une taille d'image.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.transformPointsForward>)[transformPointsForward]: Applique une transformation geometrique directe a des points.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.transformPointsInverse>)[transformPointsInverse]: Applique une transformation geometrique inverse a des points.
+- #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.warp>)[warp]: Affiche une image plaquée en texture sur une surface.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.worldToIntrinsic>)[worldToIntrinsic]: Convertit des coordonnees monde en coordonnees intrinseques.
 - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.worldToSubscript>)[worldToSubscript]: Convertit des coordonnees monde en indices d'image.
 
@@ -225,6 +227,8 @@ Guides et points d'entree pour aligner des images, estimer des transformations d
 #include "1_image_basics/3_filtering_edges/imfilter.typ"
 #pagebreak(weak: true)
 #include "1_image_basics/3_filtering_edges/imgaussfilt.typ"
+#pagebreak(weak: true)
+#include "1_image_basics/3_filtering_edges/imnoise.typ"
 #pagebreak(weak: true)
 #include "1_image_basics/3_filtering_edges/medfilt2.typ"
 #pagebreak(weak: true)
@@ -333,6 +337,8 @@ Guides et points d'entree pour aligner des images, estimer des transformations d
 #include "3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.typ"
 #pagebreak(weak: true)
 #include "3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.typ"
+#pagebreak(weak: true)
+#include "3_geometry_registration_3d/6_geometric_transforms/warp.typ"
 #pagebreak(weak: true)
 #include "3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.typ"
 #pagebreak(weak: true)

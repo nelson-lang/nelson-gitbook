@@ -547,11 +547,10 @@ Nelson::NFlow::handleBacklash(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // Direct feedthrough, as the emitted C/Rust step is: the play is
-        // resolved against the current input, not against the value latched at
-        // the end of the previous step (which delayed the block by one step).
-        // Pure: only UPDATE commits, so RK stages and algebraic sweeps may
-        // re-enter this freely.
+        // Direct feedthrough, as the emitted C/Rust step: the play is resolved
+        // against the current input, not the value latched at the end of the
+        // previous step. Pure: only UPDATE commits, so RK stages and algebraic
+        // sweeps may re-enter this freely.
         nflow::BlockDescriptor bd(b, ctx.variables);
         const double width = std::max(0.0, bd.paramDouble(nflow::kBacklashWidth, 0.0));
         SigView u = getInputSig(ctx, b.nid, 0);

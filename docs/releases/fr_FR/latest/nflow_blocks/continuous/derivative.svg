@@ -10,7 +10,7 @@
     <g transform="translate(-24.67 -27.33) rotate(0)">
     <path d="M-55.33 87.33 Q-19.33 -40.67 86.67 -52.67" fill="none" stroke="#085041" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <g transform="translate(28,37) scale(1,-1)"><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-size="36.8" fill="#085041">DT1</text></g>
+    <g transform="translate(28,37) scale(1,-1)"><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-size="56" fill="#085041">s</text></g>
     <g transform="translate(0,-130) scale(1,-1)"><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-size="32" fill="#085041">k=1</text></g>
   </g>
 </svg>

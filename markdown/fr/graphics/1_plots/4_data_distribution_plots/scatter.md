@@ -61,6 +61,7 @@ s = scatter(x,y ,'filled');
 
 ```matlab
 
+rng(0);
 f = figure();
 x = linspace(0,3*pi,255);
 y = cos(x) + rand(1,255);
@@ -74,6 +75,7 @@ scatter(x, y, sz, c, 'd', 'filled')
 
 ```matlab
 
+rng(0);
 f = figure();
 x = linspace(0, 3*pi, 255);
 y = cos(x) + rand(1, 255);
@@ -86,6 +88,7 @@ scatter(x, y, [], c, 'filled')
 
 ```matlab
 
+rng(0);
 f = figure();
 theta = linspace(0,2*pi,244);
 x = sin(theta) + 0.75*rand(1,244);
@@ -99,6 +102,7 @@ scatter(x,y,sz,'MarkerEdgeColor',[0 .6 .5], 'MarkerFaceColor',[0 .6 .7],  'LineW
 
 ```matlab
 
+rng(0);
 f = figure(),
 x = linspace(0,3*pi,200);
 y = cos(x) + rand(1,200);
@@ -115,6 +119,7 @@ scatter(ax2,x,y,'filled','d')
 
 ```matlab
 
+rng(0);
 f = figure();
 x = rand(500,5);
 y = randn(500,5) + (5:5:25);

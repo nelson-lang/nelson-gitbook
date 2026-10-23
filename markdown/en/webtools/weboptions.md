@@ -27,7 +27,7 @@ Name-Value Pair Arguments:
 
 <b>UserAgent</b> User agent identification: a string or character vector. 
 
-<b>Timeout</b> Time out connection duration: positive numeric scalar or Inf value. 
+<b>Timeout</b> Time to wait for the server, in seconds: positive numeric scalar or Inf value (5 by default). It bounds the connection and any stall of the transfer, not the duration of the whole download. 
 
 <b>Username</b> User identifier: a string or character vector. 
 
@@ -57,7 +57,7 @@ supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch'
 
 <b>CertificateFilename</b> Filename of root certificates: 'default', empty, or an existing file. 
 
-<b>FollowLocation</b> tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, false by default.
+<b>FollowLocation</b> tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, true by default.
 
 ## 💡 Example
 

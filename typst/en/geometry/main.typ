@@ -11,6 +11,7 @@ The Geometry module provides tools for performing geometric transformations and 
 == Functions
 
 - #nlink(<geometry:alphaShape>)[alphaShape]: Alpha shape object
+- #nlink(<geometry:axes2ecc>)[axes2ecc]: Eccentricity of an ellipse from its semi-axes.
 - #nlink(<geometry:boundary>)[boundary]: Boundary facets of a set of points
 - #nlink(<geometry:convhull>)[convhull]: Convex hull of 2-D or 3-D points
 - #nlink(<geometry:convhulln>)[convhulln]: Convex hull in N dimensions
@@ -18,7 +19,13 @@ The Geometry module provides tools for performing geometric transformations and 
 - #nlink(<geometry:delaunayTriangulation>)[delaunayTriangulation]: Delaunay triangulation object
 - #nlink(<geometry:delaunayn>)[delaunayn]: Delaunay triangulation in N dimensions
 - #nlink(<geometry:dsearchn>)[dsearchn]: Nearest point search
+- #nlink(<geometry:ellipse1>)[ellipse1]: Points on a small ellipse on a sphere.
 - #nlink(<geometry:griddata>)[griddata]: Interpolate scattered data
+- #nlink(<geometry:nsidedpoly>)[nsidedpoly]: Create a regular polygon.
+- #nlink(<geometry:polyarea>)[polyarea]: Area of a polygon.
+- #nlink(<geometry:polyshape>)[polyshape]: Create a polygon.
+- #nlink(<geometry:reckon>)[reckon]: Point at a given spherical range and azimuth.
+- #nlink(<geometry:rectint>)[rectint]: Area of intersection of rectangles.
 - #nlink(<geometry:rotx>)[rotx]: 3x3 transformation matrix for rotations around x-axis
 - #nlink(<geometry:roty>)[roty]: 3x3 transformation matrix for rotations around y-axis
 - #nlink(<geometry:rotz>)[rotz]: 3x3 transformation matrix for rotations around z-axis
@@ -35,6 +42,8 @@ The Geometry module provides tools for performing geometric transformations and 
 #pagebreak(weak: true)
 #include "alphaShape.typ"
 #pagebreak(weak: true)
+#include "axes2ecc.typ"
+#pagebreak(weak: true)
 #include "boundary.typ"
 #pagebreak(weak: true)
 #include "convhull.typ"
@@ -49,7 +58,19 @@ The Geometry module provides tools for performing geometric transformations and 
 #pagebreak(weak: true)
 #include "dsearchn.typ"
 #pagebreak(weak: true)
+#include "ellipse1.typ"
+#pagebreak(weak: true)
 #include "griddata.typ"
+#pagebreak(weak: true)
+#include "nsidedpoly.typ"
+#pagebreak(weak: true)
+#include "polyarea.typ"
+#pagebreak(weak: true)
+#include "polyshape.typ"
+#pagebreak(weak: true)
+#include "reckon.typ"
+#pagebreak(weak: true)
+#include "rectint.typ"
 #pagebreak(weak: true)
 #include "rotx.typ"
 #pagebreak(weak: true)

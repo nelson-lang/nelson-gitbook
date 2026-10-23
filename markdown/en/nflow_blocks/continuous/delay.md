@@ -58,7 +58,7 @@ Continuous-time transport delay block. Delays the input signal by a specified ti
 
 | Parameter | Default value | 
 | --- | --- | 
-| <code>delay</code> | 0.1 | 
+| <code>delay</code> | 1 | 
 
  
 

@@ -24,6 +24,7 @@
           <keyword name="plot3" link="1_plots/1_line_plots/plot3.html" description="Tracé de courbe 3D."/>
           <keyword name="semilogx" link="1_plots/1_line_plots/semilogx.html" description="Graphique semi-logarithmique (axe x en échelle logarithmique)."/>
           <keyword name="semilogy" link="1_plots/1_line_plots/semilogy.html" description="Graphique semi-logarithmique (axe y en échelle logarithmique)."/>
+          <keyword name="viscircles" link="1_plots/1_line_plots/viscircles.html" description="Trace des cercles."/>
           <keyword name="xline" link="1_plots/1_line_plots/xline.html" description="Ligne constante verticale."/>
           <keyword name="yline" link="1_plots/1_line_plots/yline.html" description="Ligne constante horizontale."/>
         </section>
@@ -120,6 +121,7 @@
           <keyword name="area" link="1_plots/7_surfaces_volumes_polygons/area.html" description="Creer des graphes d'aires."/>
           <keyword name="contourslice" link="1_plots/7_surfaces_volumes_polygons/contourslice.html" description="Afficher des lignes de contour sur des coupes de volume."/>
           <keyword name="cylinder" link="1_plots/7_surfaces_volumes_polygons/cylinder.html" description="Créer un cylindre."/>
+          <keyword name="ellipsoid" link="1_plots/7_surfaces_volumes_polygons/ellipsoid.html" description="Crée un ellipsoïde."/>
           <keyword name="fill" link="1_plots/7_surfaces_volumes_polygons/fill.html" description="Créer des formes 2D remplies."/>
           <keyword name="fill3" link="1_plots/7_surfaces_volumes_polygons/fill3.html" description="Creer des patchs 3-D remplis."/>
           <keyword name="fimplicit" link="1_plots/7_surfaces_volumes_polygons/fimplicit.html" description="Tracer une courbe de fonction implicite."/>
@@ -128,6 +130,7 @@
           <keyword name="fsurf" link="1_plots/7_surfaces_volumes_polygons/fsurf.html" description="Trace une surface definie par une fonction."/>
           <keyword name="isonormals" link="1_plots/7_surfaces_volumes_polygons/isonormals.html" description="Calculer les normales des sommets d'une isosurface."/>
           <keyword name="isosurface" link="1_plots/7_surfaces_volumes_polygons/isosurface.html" description="Extraire une isosurface depuis des donnees volumiques."/>
+          <keyword name="knot" link="1_plots/7_surfaces_volumes_polygons/knot.html" description="Créer une surface en nœud de trèfle."/>
           <keyword name="mesh" link="1_plots/7_surfaces_volumes_polygons/mesh.html" description="Tracé de surface en maillage (mesh)."/>
           <keyword name="meshc" link="1_plots/7_surfaces_volumes_polygons/meshc.html" description="Afficher un maillage avec des contours en dessous."/>
           <keyword name="meshz" link="1_plots/7_surfaces_volumes_polygons/meshz.html" description="Tracé de surface en maillage (mesh) avec rideau."/>
@@ -140,6 +143,7 @@
           <keyword name="smooth3" link="1_plots/7_surfaces_volumes_polygons/smooth3.html" description="Lisser des donnees 3-D."/>
           <keyword name="sphere" link="1_plots/7_surfaces_volumes_polygons/sphere.html" description="Créer une sphère."/>
           <keyword name="surf" link="1_plots/7_surfaces_volumes_polygons/surf.html" description="tracé de surface."/>
+          <keyword name="surf2patch" link="1_plots/7_surfaces_volumes_polygons/surf2patch.html" description="Convertit des données de surface en données de patch."/>
           <keyword name="surface" link="1_plots/7_surfaces_volumes_polygons/surface.html" description="Tracé de surface primitif."/>
           <keyword name="surfc" link="1_plots/7_surfaces_volumes_polygons/surfc.html" description="Afficher une surface avec des contours en dessous."/>
           <keyword name="surfl" link="1_plots/7_surfaces_volumes_polygons/surfl.html" description="Afficher une surface eclairee."/>
@@ -171,6 +175,7 @@
           <keyword name="allchild" link="2_graphics_objects/1_object_management/allchild.html" description="Retourne tous les enfants directs d'objets graphiques."/>
           <keyword name="ancestor" link="2_graphics_objects/1_object_management/ancestor.html" description="Ancêtre d'un objet graphique."/>
           <keyword name="axes" link="2_graphics_objects/1_object_management/axes.html" description="Créer des axes cartésiens."/>
+          <keyword name="axescheck" link="2_graphics_objects/1_object_management/axescheck.html" description="Extrait un handle d'axes d'une liste d'arguments."/>
           <keyword name="cla" link="2_graphics_objects/1_object_management/cla.html" description="Efface les axes."/>
           <keyword name="clf" link="2_graphics_objects/1_object_management/clf.html" description="Efface la figure."/>
           <keyword name="close" link="2_graphics_objects/1_object_management/close.html" description="Ferme une ou plusieurs figures"/>
@@ -179,14 +184,22 @@
           <keyword name="findobj" link="2_graphics_objects/1_object_management/findobj.html" description="Trouve des objets graphiques avec des proprietes donnees."/>
           <keyword name="gca" link="2_graphics_objects/1_object_management/gca.html" description="Récupère l'objet axes courant."/>
           <keyword name="gcf" link="2_graphics_objects/1_object_management/gcf.html" description="Récupère l'objet figure courant."/>
+          <keyword name="getappdata" link="2_graphics_objects/1_object_management/getappdata.html" description="Récupère des données applicatives d'un objet."/>
           <keyword name="groot" link="2_graphics_objects/1_object_management/groot.html" description="Objet racine graphique."/>
           <keyword name="hggroup" link="2_graphics_objects/1_object_management/hggroup.html" description="Créer un objet groupe."/>
           <keyword name="hold" link="2_graphics_objects/1_object_management/hold.html" description="Conserver le tracé courant lors de l'ajout de nouveaux tracés."/>
+          <keyword name="inspect" link="2_graphics_objects/1_object_management/inspect.html" description="Ouvre l'inspecteur de propriétés des objets graphiques."/>
           <keyword name="is2D" link="2_graphics_objects/1_object_management/is2D.html" description="Vérifie si ax est un axe 2D polaire ou cartésien."/>
           <keyword name="isValidGraphicsProperty" link="2_graphics_objects/1_object_management/isValidGraphicsProperty.html" description="Vérifie si le nom de propriété est valide."/>
+          <keyword name="isappdata" link="2_graphics_objects/1_object_management/isappdata.html" description="Vrai si des données applicatives existent."/>
           <keyword name="isgraphics" link="2_graphics_objects/1_object_management/isgraphics.html" description="Vérifie si l'objet est graphique."/>
           <keyword name="ishold" link="2_graphics_objects/1_object_management/ishold.html" description="Obtient l'état actuel du mode hold."/>
+          <keyword name="makehgtform" link="2_graphics_objects/1_object_management/makehgtform.html" description="Crée une matrice de transformation 4 par 4."/>
           <keyword name="newplot" link="2_graphics_objects/1_object_management/newplot.html" description="Préparer la création d'un nouveau graphique."/>
+          <keyword name="rmappdata" link="2_graphics_objects/1_object_management/rmappdata.html" description="Supprime des données applicatives d'un objet."/>
+          <keyword name="rotate" link="2_graphics_objects/1_object_management/rotate.html" description="Fait tourner des objets graphiques autour d'un axe."/>
+          <keyword name="setappdata" link="2_graphics_objects/1_object_management/setappdata.html" description="Stocke des données applicatives sur un objet."/>
+          <keyword name="shg" link="2_graphics_objects/1_object_management/shg.html" description="Affiche la fenêtre graphique courante."/>
         </section>
         <section name="Objets de disposition">
           <chapter_description>
@@ -351,6 +364,7 @@
             <keyword name="abyss" link="3_labels_styling/2_color_styling/colormaps/abyss.html" description="Palette de couleurs abyss."/>
             <keyword name="autumn" link="3_labels_styling/2_color_styling/colormaps/autumn.html" description="Palette de couleurs autumn."/>
             <keyword name="bone" link="3_labels_styling/2_color_styling/colormaps/bone.html" description="Palette de couleurs bone."/>
+            <keyword name="brighten" link="3_labels_styling/2_color_styling/colormaps/brighten.html" description="Éclaircit ou assombrit une palette de couleurs."/>
             <keyword name="colorcube" link="3_labels_styling/2_color_styling/colormaps/colorcube.html" description="Tableau de colormap RGB en cube ameliore."/>
             <keyword name="colormap" link="3_labels_styling/2_color_styling/colormaps/colormap.html" description="Afficher et définir la palette de couleurs courante."/>
             <keyword name="colormaplist" link="3_labels_styling/2_color_styling/colormaps/colormaplist.html" description="Fournit la liste des palettes de couleurs."/>
@@ -379,7 +393,19 @@
           <chapter_description>
     <p>Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.</p>
   </chapter_description>
+          <keyword name="axtoolbar" link="3_labels_styling/3_interactions_camera_lighting/axtoolbar.html" description="Obtient ou configure la barre d'outils des axes."/>
+          <keyword name="camdolly" link="3_labels_styling/3_interactions_camera_lighting/camdolly.html" description="Déplace la position et la cible de la caméra."/>
           <keyword name="camlight" link="3_labels_styling/3_interactions_camera_lighting/camlight.html" description="Cree ou positionne une lumiere par rapport a la camera."/>
+          <keyword name="camlookat" link="3_labels_styling/3_interactions_camera_lighting/camlookat.html" description="Pointe la caméra vers un objet."/>
+          <keyword name="camorbit" link="3_labels_styling/3_interactions_camera_lighting/camorbit.html" description="Fait orbiter la position de la caméra autour de la cible."/>
+          <keyword name="campan" link="3_labels_styling/3_interactions_camera_lighting/campan.html" description="Fait pivoter la cible de la caméra autour de la position."/>
+          <keyword name="campos" link="3_labels_styling/3_interactions_camera_lighting/campos.html" description="Définit ou interroge la position de la caméra."/>
+          <keyword name="camproj" link="3_labels_styling/3_interactions_camera_lighting/camproj.html" description="Définit ou interroge le type de projection de la caméra."/>
+          <keyword name="camroll" link="3_labels_styling/3_interactions_camera_lighting/camroll.html" description="Fait rouler la caméra autour de l'axe de visée."/>
+          <keyword name="camtarget" link="3_labels_styling/3_interactions_camera_lighting/camtarget.html" description="Définit ou interroge la cible de la caméra."/>
+          <keyword name="camup" link="3_labels_styling/3_interactions_camera_lighting/camup.html" description="Définit ou interroge le vecteur vertical de la caméra."/>
+          <keyword name="camva" link="3_labels_styling/3_interactions_camera_lighting/camva.html" description="Définit ou interroge l'angle de vue de la caméra."/>
+          <keyword name="camzoom" link="3_labels_styling/3_interactions_camera_lighting/camzoom.html" description="Zoome la caméra en avant ou en arrière."/>
           <keyword name="drawnow" link="3_labels_styling/3_interactions_camera_lighting/drawnow.html" description="Met à jour les figures et traite les callbacks"/>
           <keyword name="Gestion des interruptions de callback dans Nelson" link="3_labels_styling/3_interactions_camera_lighting/graphical_callback.html" description=""/>
           <keyword name="light" link="3_labels_styling/3_interactions_camera_lighting/light.html" description="Cree un objet lumiere dans des axes."/>
@@ -426,6 +452,7 @@
         <chapter_description>
     <p>Fonctions pour ouvrir et sauvegarder des fichiers figure.</p>
   </chapter_description>
+        <keyword name="exportapp" link="5_printing_saving/exportapp.html" description="Enregistre une figure avec ses composants d'interface dans un fichier image."/>
         <keyword name="openfig" link="5_printing_saving/openfig.html" description="Ouvre un fichier FIG Nelson."/>
         <keyword name="print" link="5_printing_saving/print.html" description="Exporte une figure vers un fichier image ou document."/>
         <keyword name="savefig" link="5_printing_saving/savefig.html" description="Enregistre une figure dans un fichier FIG Nelson."/>

@@ -74,6 +74,7 @@ Nelson Modules Manager.
 - report = nmm('pack', module\_path, '-dry-run')
 - report = nmm('pack', module\_path, destination\_dir, '-dry-run')
 - package\_filename = nmm('pack', module\_path, destination\_dir, '-no-tests')
+- package\_filename = nmm('pack', module\_path, destination\_dir, '-target', platform)
 - report = nmm('publish', package\_filename)
 - report = nmm('publish', package\_filename, '-dry-run')
 - report = nmm('publish', package\_filename, '-check')
@@ -280,6 +281,8 @@ Packaging also writes <b>package\_filename.sha256</b>. This sidecar is optional 
 <b>nmm('pack', module\_path, destination\_dir)</b> validates and builds a source module in a temporary staging directory, runs the module tests with fail-fast behavior, generates <b>module-lock.json</b>, then creates a <b>.nmz</b> archive and its <b>.sha256</b> checksum. 
 
 <b>nmm('pack', module\_path, '-dry-run')</b> validates, builds, tests and computes the lockfile without creating an archive. With a destination directory, the report also includes the archive path that would be written. 
+
+<b>nmm('pack', module\_path, destination\_dir, '-target', 'wasm32')</b> cross-builds a binary module for the WebAssembly engine from any host: <b>module.json</b> must list <b>wasm32</b> in <b>platforms</b>, the builder runs with <b>NELSON\_DL\_TARGET=wasm32</b> so <b>dlgeneratemake</b>, <b>dlmake</b> and <b>getdynlibext</b> produce an Emscripten side module (<b>lib\*.so</b>, see <b>dltarget</b>), the tests are skipped because that gateway cannot run on the host, and the archive is named <b><module>-wasm32-<version>.nmz</b> with a lockfile for the <b>wasm32</b> architecture. The Emscripten SDK of the engine build must be active (<b>EMSDK</b>, see BUILDING\_WebAssembly.md). The target may also be the running architecture, which is the default. 
 
 <b>nmm('pack', module\_path, destination\_dir, '-no-tests')</b> creates the archive without running package tests. This is intended for local development archives only. 
 

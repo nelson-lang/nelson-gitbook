@@ -30,6 +30,8 @@ Retourne le mode courant de Nelson.
 
  #strong[WEB\_GUI]; : Nelson lancé comme application web.
 
+ #strong[WASM\_TERMINAL]; : Nelson exécuté dans un worker WebAssembly avec une interface de bureau dans le navigateur. L'évaluateur reste un terminal portable et utilise un traitement coopératif des événements.
+
 
 == Exemple
 

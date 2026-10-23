@@ -23,6 +23,7 @@ Display a scatter plot with marginal histograms.
 Create a scatter histogram.
 
 ``````matlab
+rng(0);
 x = randn(200, 1);
 y = 0.5 * x + randn(200, 1);
 scatterhistogram(x, y, 'NumBins', 20);

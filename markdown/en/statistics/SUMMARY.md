@@ -227,6 +227,7 @@
     - [fitctree](6_classification/fitctree.md)
     - [grp2idx](6_classification/grp2idx.md)
   - Clustering and Anomaly Detection
+    - [KDTreeSearcher](7_clustering_anomaly_detection/KDTreeSearcher.md)
     - [cluster](7_clustering_anomaly_detection/cluster.md)
     - [clusterdata](7_clustering_anomaly_detection/clusterdata.md)
     - [dbscan](7_clustering_anomaly_detection/dbscan.md)

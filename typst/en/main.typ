@@ -182,6 +182,8 @@
 #pagebreak(weak: true)
 #include "compiler/main.typ"
 #pagebreak(weak: true)
+#include "notebook/main.typ"
+#pagebreak(weak: true)
 #include "changelogs/CHANGELOG.typ"
 #pagebreak(weak: true)
 #include "changelogs/CHANGELOG-1.x.x.typ"

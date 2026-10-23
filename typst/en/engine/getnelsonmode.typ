@@ -16,7 +16,7 @@ Returns current Nelson mode.
 
 #strong[getnelsonmode()]; returns current Nelson mode used.
 
- There are #strong[6]; modes:
+ There are #strong[7]; modes:
 
  #strong[BASIC\_ENGINE];: Nelson used as engine without any graphics.
 
@@ -29,6 +29,8 @@ Returns current Nelson mode.
  #strong[GUI];: Nelson launched as a graphical application (default).
 
  #strong[WEB\_GUI];: Nelson launched as a web application.
+
+ #strong[WASM\_TERMINAL];: Nelson running in a WebAssembly worker with a browser desktop host. The evaluator remains a portable terminal and uses cooperative event processing.
 
 
 == Example

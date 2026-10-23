@@ -11,6 +11,8 @@ Enable zoom mode.
 - #raw("zoom(factor)");
 - #raw("zoom(fig, ...)");
 - #raw("zoom(ax, ...)");
+- #raw("z = zoom(fig)");
+- #raw("z = zoom(ax)");
 
 == Input argument
 
@@ -18,6 +20,10 @@ Enable zoom mode.
 / factor: positive number: To zoom in, indicate a factor greater than 1. To zoom out, specify a factor between 0 and 1. When zooming out, the axes will zoom out by a factor of 1\/factor.
 / fig: Figure object: Target figure
 / ax: a scalar graphics object value: parent container, specified as a axes.
+
+== Output argument
+
+/ z: zoom mode object. It designates the target figure through its #strong[Figure]; property and exposes the #strong[Enable];, #strong[Motion]; and #strong[Direction]; properties. Call #strong[z.setAxes3DPanAndZoomStyle(ax, style)]; to store the 3-D pan and zoom style ('limits' or 'camera') on an axes.
 
 == Description
 
@@ -57,6 +63,10 @@ Use zoom mode to adjust axis limits during interactive data exploration.
 
  #strong['out'];: Restores the current axes to its baseline zoom level.
 
+ 
+
+ #strong[z \= zoom(fig)]; or #strong[z \= zoom(ax)]; returns the zoom mode object for the target figure without changing the current zoom state. Use #strong[z.setAxes3DPanAndZoomStyle(ax, 'camera')]; or #strong[z.setAxes3DPanAndZoomStyle(ax, 'limits')]; to select how an axes behaves during 3-D pan and zoom.
+
 
 == Example
 
@@ -80,6 +90,7 @@ zoom out
   columns: 2,
   table.header([Version], [Description]),
   [1.2.0], [initial version],
+  [2.0.0], [z \= zoom(fig) returns a zoom mode object with setAxes3DPanAndZoomStyle.],
 )
 
 // Author: Allan CORNET

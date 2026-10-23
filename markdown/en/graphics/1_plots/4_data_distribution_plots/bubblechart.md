@@ -30,7 +30,7 @@ See [bubblechart properties](../../../graphics/2_graphics_objects/4_properties/n
 Display a bubble chart.
 
 ```matlab
-bubblechart(1:5, [3 5 2 8 4], [20 50 30 80 40], 'BubbleColor', 'r');
+bubblechart(1:5, [3 5 2 8 4], [20 50 30 80 40], 'r');
 ```
 <img src="bubblechart_1.svg" align="middle"/>
 Display several series from matrix data.

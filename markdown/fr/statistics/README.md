@@ -309,6 +309,7 @@ Fonctions d apprentissage non supervise, recherche de plus proches voisins, gest
 
 ### Functions
 
+- [KDTreeSearcher](7_clustering_anomaly_detection/KDTreeSearcher.md) - Objet de recherche de plus proches voisins.
 - [cluster](7_clustering_anomaly_detection/cluster.md) - Construire des classes depuis un arbre hierarchique.
 - [clusterdata](7_clustering_anomaly_detection/clusterdata.md) - Regrouper les observations depuis les donnees.
 - [dbscan](7_clustering_anomaly_detection/dbscan.md) - Regroupement spatial fonde sur la densite.

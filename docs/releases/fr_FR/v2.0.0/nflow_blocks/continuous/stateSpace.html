@@ -167,7 +167,7 @@
           <td>
             <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">D</code>
           </td>
-          <td>0</td>
+          <td>1</td>
         </tr>
       
     </table>
@@ -292,9 +292,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -307,7 +307,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -318,24 +318,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -365,13 +365,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -383,7 +383,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -394,7 +394,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -403,13 +403,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -509,9 +509,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -541,7 +541,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -549,9 +549,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -584,8 +584,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -612,11 +612,11 @@
 #include "continuous_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
-    // Resolved MIMO state-space matrices (row-major) with their dimensions.
-    // A is nx x nx, B is nx x nu, C is ny x nx, D is ny x nu. A scalar param
-    // (SISO) yields nx = nu = ny = 1, identical to the historical behavior.
+    // Row-major state-space matrices: A is nx x nx, B is nx x nu, C is ny x nx,
+    // D is ny x nu. A scalar param (SISO) yields nx = nu = ny = 1.
     struct SsMatrices
     {
         int nx = 1, nu = 1, ny = 1;
@@ -631,13 +631,11 @@ namespace NFlow {
         if (a.empty()) {
             return 1;
         }
-        // A is square nx x nx (row-major flat list).
         const int nx = (int)std::llround(std::sqrt((double)a.size()));
         return std::max(1, nx);
     }
     //=============================================================================
-    // Output width (ny) for the dimension-propagation pass: ny = rows(C) =
-    // len(C) / nx.
+    // Output width for dimension propagation: ny = rows(C) = len(C) / nx.
     int
     stateSpaceOutputWidth(const Block&amp; b, const ValMap&amp; vars)
     {
@@ -650,11 +648,8 @@ namespace NFlow {
         return std::max(1, (int)c.size() / nx);
     }
     //=============================================================================
-    // Initial continuous state. A scalar broadcasts over the nx states, a list
-    // gives them one by one, and an absent parameter keeps the historical all
-    // zeros. Without it a state space could only ever start at the origin, so a
-    // diagram that starts one away from it - an observer seeded off the plant,
-    // say - had no way to say so.
+    // Initial continuous state: a scalar broadcasts over the nx states, a list
+    // gives them one by one, an absent parameter means all zeros.
     static std::vector&lt;double&gt;
     ssInitialState(const nflow::BlockDescriptor&amp; bd, int nx)
     {
@@ -684,7 +679,7 @@ namespace NFlow {
         m.nx = std::max(1, (int)std::llround(std::sqrt((double)m.A.size())));
         m.nu = std::max(1, nu);
         m.ny = m.C.empty() ? 1 : std::max(1, (int)m.C.size() / m.nx);
-        // Pad missing matrices with zeros so index math never overruns.
+        // zero padding keeps the index math in range
         m.A.resize((size_t)m.nx * m.nx, 0.0);
         m.B.resize((size_t)m.nx * m.nu, 0.0);
         m.C.resize((size_t)m.ny * m.nx, 0.0);
@@ -692,7 +687,6 @@ namespace NFlow {
         return m;
     }
     //=============================================================================
-    // y = C*x + D*u  (row-major matrices, x length nx, u length nu).
     static void
     ssOutput(const SsMatrices&amp; m, const double* x, const SigView&amp; u, double* y)
     {
@@ -708,9 +702,9 @@ namespace NFlow {
         }
     }
     //=============================================================================
-    // y = C*x + D*u with u from a raw latch (nullptr = zeros). Fixed-step
-    // OUTPUT runs before the algebraic wave recomputes this step's sources,
-    // so the D feedthrough reads the PREVIOUS step's inputs latched by UPDATE.
+    // u comes from a raw latch (nullptr = zeros). Fixed-step OUTPUT runs before
+    // the algebraic wave recomputes this step's sources, so the D feedthrough
+    // reads the PREVIOUS step's inputs latched by UPDATE.
     static void
     ssOutputU(const SsMatrices&amp; m, const double* x, const double* u, double* y)
     {
@@ -726,7 +720,6 @@ namespace NFlow {
         }
     }
     //=============================================================================
-    // xdot = A*x + B*u.
     static void
     ssDeriv(const SsMatrices&amp; m, const double* x, const SigView&amp; u, double* xdot)
     {
@@ -743,6 +736,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 bool
@@ -754,7 +748,7 @@ Nelson::NFlow::handleStateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phase
 
     if (phase == Phase::INIT) {
         // x in [0, nx), then the input latch in [nx, nx+nu); the continuous
-        // seeding only reads the first xLength (= nx) entries.
+        // seeding reads only the first nx entries.
         st.vec.assign((size_t)m.nx + m.nu, 0.0);
         const std::vector&lt;double&gt; x0
             = ssInitialState(nflow::BlockDescriptor(b, ctx.variables), m.nx);
@@ -770,19 +764,17 @@ Nelson::NFlow::handleStateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         double* xs = blockX(ctx, b.nid);
         std::vector&lt;double&gt; y(m.ny, 0.0);
         if (xs) {
-            // Variable-step minor step: y = C*x + D*u from the scattered state.
             ssOutput(m, xs, u, y.data());
         } else if ((int)st.vec.size() &gt;= m.nx) {
-            // Fixed-step path: latched state, and D reads the previous step's
-            // latched inputs (this phase runs before the algebraic wave, so
-            // the live input slots still hold this step's reset values).
+            // Fixed-step: D reads the previous step's latched inputs, because
+            // the live input slots still hold this step's reset values.
             const double* ulat
                 = ((int)st.vec.size() &gt;= m.nx + m.nu) ? (st.vec.data() + m.nx) : nullptr;
             ssOutputU(m, st.vec.data(), ulat, y.data());
         }
         double* out = outputSlice(ctx, b.nid, 0);
-        // Clamp to the resolved port width (defensive: a hand-written diagram
-        // declaring extra output ports must not overrun the port-0 buffer).
+        // A hand-written diagram declaring extra output ports must not overrun
+        // the port-0 buffer.
         const int wlim = std::min(m.ny, std::max(1, b.outWidth(0)));
         for (int i = 0; i &lt; wlim; ++i) {
             out[i] = y[i];
@@ -790,11 +782,9 @@ Nelson::NFlow::handleStateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // Direct feedthrough (D != 0): re-emit y = C*x + D*u with the CURRENT
-        // inputs so downstream algebraic consumers see the live D term (the
-        // OUTPUT phase ran before this step's sources settled; a D != 0 loop
-        // becomes a real algebraic cycle the Gauss-Seidel pass relaxes).
-        // No-op when D is all zero; the historical scheduling stays intact.
+        // Direct feedthrough (D != 0): re-emit y with the CURRENT inputs, since
+        // OUTPUT ran before this step's sources settled. A D != 0 loop becomes a
+        // real algebraic cycle for the Gauss-Seidel pass. No-op when D is zero.
         bool anyD = false;
         for (double v : m.D) {
             if (v != 0.0) {
@@ -826,8 +816,7 @@ Nelson::NFlow::handleStateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return changed;
     }
     if (phase == Phase::UPDATE) {
-        // Fixed-step Euler on the state (current inputs), then latch u for
-        // the next step's OUTPUT feedthrough.
+        // Euler step, then latch u for the next step's OUTPUT feedthrough.
         if ((int)st.vec.size() &lt; m.nx + m.nu) {
             st.vec.resize((size_t)m.nx + m.nu, 0.0);
         }
@@ -856,20 +845,20 @@ Nelson::NFlow::handleStateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phase
 }
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
+    //=============================================================================
     namespace {
-        // Resolved matrices for the code generator (row-major, zero-padded):
-        // nu = wired scalar input ports (the vector expansion turns the nu-wide
-        // input wire into nu scalar ports, mirroring the runtime's wired-width
-        // rule), ny = rows of C. A multi-STATE scalar-I/O system (nx&gt;1,
-        // nu=ny=1, what a reduced linear island yields) and a true MIMO both
-        // join the RK4 seam; a MIMO emits one output variable per row
-        // (out_&lt;id&gt;, out_&lt;id&gt;_p1, ...).
+        // Matrices for the code generator (row-major, zero-padded). nu is the
+        // number of wired scalar input ports (the vector expansion turns an
+        // nu-wide wire into nu scalar ports), ny the rows of C. A MIMO system
+        // emits one output variable per row (out_&lt;id&gt;, out_&lt;id&gt;_p1, ...).
         struct SsCg
         {
             int nx = 1, nu = 1, ny = 1;
             std::vector&lt;double&gt; A, B, C, D;
         };
+        //=============================================================================
         static SsCg
         buildSsCg(const BlockCodegenArgs&amp; a)
         {
@@ -883,9 +872,8 @@ namespace NFlow {
             if (s.nx &lt; 1) {
                 s.nx = 1;
             }
-            // Declared port count (the expansion declares one scalar port per
-            // input element); a declared-but-unwired trailing port still
-            // counts, its expression falls back to 0.0.
+            // A declared but unwired trailing port still counts; its expression
+            // falls back to 0.0.
             int declIn = 0;
             if (a.block &amp;&amp; a.block-&gt;contains(nflow::kInputs)
                 &amp;&amp; (*a.block)[nflow::kInputs].is_number()) {
@@ -899,35 +887,36 @@ namespace NFlow {
             s.D.resize((size_t)s.ny * s.nu, 0.0);
             return s;
         }
-        // State field name: SISO keeps the historical single field so its
-        // generated code stays byte-identical; nx&gt;1 uses per-state fields.
+        //=============================================================================
+        // SISO uses a single state field; nx&gt;1 uses one field per state.
         static std::string
         ssName(const std::string&amp; id, int i, int nx, const std::string&amp; pfx)
         {
             return nx == 1 ? (pfx + "ss_x_" + id) : (pfx + "ss_x_" + id + "_" + std::to_string(i));
         }
-        // Output variable of row r (port r): out_&lt;id&gt;, then out_&lt;id&gt;_p&lt;r&gt;.
+        //=============================================================================
+        // Output variable of row r: out_&lt;id&gt;, then out_&lt;id&gt;_p&lt;r&gt;.
         static std::string
         ssOutName(const std::string&amp; id, int r)
         {
             return r &gt; 0 ? ("out_" + id + "_p" + std::to_string(r)) : ("out_" + id);
         }
-        // Current input expression of column k ("0.0" for a declared but
-        // unwired trailing port beyond the generator's expression list).
+        //=============================================================================
+        // "0.0" for a declared but unwired trailing port.
         static std::string
         ssUin(const BlockCodegenArgs&amp; a, int k)
         {
             return ((size_t)k &lt; a.in.size()) ? a.in[(size_t)k] : std::string("0.0");
         }
-        // Latched-input state field of column k (MIMO fixed-step outputs).
+        //=============================================================================
         static std::string
         ssUlatch(const std::string&amp; id, int k, const std::string&amp; pfx)
         {
             return pfx + "ss_u_" + id + "_" + std::to_string(k);
         }
-        // True when any D entry is nonzero: the runtime then re-emits the
-        // output during ALGEBRAIC with the CURRENT inputs (real feedthrough),
-        // so the generated output must read the current expressions too.
+        //=============================================================================
+        // With a nonzero D the runtime re-emits the output during ALGEBRAIC with
+        // the CURRENT inputs, so the generated output must read them too.
         static bool
         ssAnyD(const SsCg&amp; s)
         {
@@ -938,8 +927,8 @@ namespace NFlow {
             }
             return false;
         }
-        // Row r of y = C*x + D*u (all terms, so nx&gt;1 is never empty); `u`
-        // supplies the per-column input expression (current or latched).
+        //=============================================================================
+        // `u` supplies the per-column input expression (current or latched).
         static std::string
         ssOutputExpr(const BlockCodegenArgs&amp; a, const SsCg&amp; s, int r, const std::string&amp; pfx,
             const std::function&lt;std::string(int)&gt;&amp; u)
@@ -954,7 +943,7 @@ namespace NFlow {
             }
             return e;
         }
-        // xdot_i = A row i * x + B row i * u (current inputs).
+        //=============================================================================
         static std::string
         ssDerivExpr(const BlockCodegenArgs&amp; a, const SsCg&amp; s, int i, const std::string&amp; pfx)
         {
@@ -968,8 +957,11 @@ namespace NFlow {
             }
             return e;
         }
+        //=============================================================================
     } // namespace
+    //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate
@@ -980,8 +972,8 @@ Nelson::NFlow::getCodeGenCStateSpace()
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         std::vector&lt;double&gt; A = bd.paramList(nflow::kA);
         int nx = A.empty() ? 1 : (int)std::llround(std::sqrt((double)A.size()));
-        // Seed the emitted state from InitialCondition, as INIT does, so the
-        // generated program starts where the simulation starts.
+        // Same initial state as INIT, so the generated program starts where the
+        // simulation starts.
         const std::vector&lt;double&gt; x0 = ssInitialState(bd, nx);
         if (nx &lt;= 1) {
             a.addState("ss_x_" + a.id, x0.empty() ? "" : a.fmt(x0[0]), "");
@@ -991,16 +983,14 @@ Nelson::NFlow::getCodeGenCStateSpace()
                     (i &lt; (int)x0.size()) ? a.fmt(x0[(size_t)i]) : "", "");
             }
         }
-        // Fixed-step outputs read the LATCHED previous-step inputs (the
-        // runtime emits OUTPUT before the algebraic wave recomputes sources),
-        // for every form, SISO included.
+        // Fixed-step outputs read the LATCHED previous-step inputs, because the
+        // runtime emits OUTPUT before the algebraic wave recomputes sources.
         const int nu = std::max(1,
             (a.block-&gt;contains(nflow::kInputs) &amp;&amp; (*a.block)[nflow::kInputs].is_number())
                 ? (*a.block)[nflow::kInputs].get&lt;int&gt;()
                 : 1);
         // Latch fields only when D is all zero: a live D reads the current
-        // input expressions instead (runtime ALGEBRAIC re-run), so the
-        // latches would be dead weight.
+        // input expressions instead.
         std::vector&lt;double&gt; Dv = bd.paramList(nflow::kD);
         bool anyDv = false;
         for (double v : Dv) {
@@ -1015,11 +1005,9 @@ Nelson::NFlow::getCodeGenCStateSpace()
     };
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         SsCg s = buildSsCg(a);
-        // Forward Euler, runtime parity for every form: report every output
-        // row at the PRE-step state, then advance with the current inputs.
-        // The D term reads the CURRENT inputs when D != 0 (the runtime
-        // re-emits during ALGEBRAIC, real feedthrough) and the latched
-        // previous-step inputs otherwise (OUTPUT-before-ALGEBRAIC parity).
+        // Forward Euler: outputs at the PRE-step state, then advance with the
+        // current inputs. The D term reads the CURRENT inputs when D != 0 and the
+        // latched previous-step inputs otherwise.
         const bool liveD = ssAnyD(s);
         auto uOut = [&amp;](int k) { return liveD ? ssUin(a, k) : ssUlatch(a.id, k, "s-&gt;"); };
         for (int r = 0; r &lt; s.ny; ++r) {
@@ -1039,9 +1027,7 @@ Nelson::NFlow::getCodeGenCStateSpace()
             }
         }
     };
-    // Unified variable-step codegen: nx scalar continuous states (MIMO included).
     t.continuousWidth = [](const BlockCodegenArgs&amp; a) -&gt; int { return buildSsCg(a).nx; };
-    // x' = A*x + B*u, y = C*x + D*u over the scattered state(s).
     t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
         SsCg s = buildSsCg(a);
         switch (a.rk4Op) {
@@ -1058,11 +1044,9 @@ Nelson::NFlow::getCodeGenCStateSpace()
             }
             break;
         case Rk4Output:
-            // D != 0: the runtime's per-stage ALGEBRAIC re-run delivers the
-            // CURRENT stage inputs to the D term; read the live expressions.
-            // D == 0: the latch fields (never written on the RK4 path) stay
-            // 0.0, reproducing the zeroed-slot OUTPUT exactly (and the D term
-            // is zero anyway).
+            // D != 0: read the live stage inputs (per-stage ALGEBRAIC re-run).
+            // D == 0: the latch fields are never written on the RK4 path and
+            // stay 0.0, which is harmless since the D term is zero.
             {
                 const bool liveD = ssAnyD(s);
                 for (int r = 0; r &lt; s.ny; ++r) {
@@ -1093,8 +1077,8 @@ Nelson::NFlow::getCodeGenRustStateSpace()
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         std::vector&lt;double&gt; A = bd.paramList(nflow::kA);
         int nx = A.empty() ? 1 : (int)std::llround(std::sqrt((double)A.size()));
-        // Seed the emitted state from InitialCondition, as INIT does, so the
-        // generated program starts where the simulation starts.
+        // Same initial state as INIT, so the generated program starts where the
+        // simulation starts.
         const std::vector&lt;double&gt; x0 = ssInitialState(bd, nx);
         if (nx &lt;= 1) {
             a.addState("ss_x_" + a.id, x0.empty() ? "" : a.fmt(x0[0]), "");
@@ -1109,8 +1093,7 @@ Nelson::NFlow::getCodeGenRustStateSpace()
                 ? (*a.block)[nflow::kInputs].get&lt;int&gt;()
                 : 1);
         // Latch fields only when D is all zero: a live D reads the current
-        // input expressions instead (runtime ALGEBRAIC re-run), so the
-        // latches would be dead weight.
+        // input expressions instead.
         std::vector&lt;double&gt; Dv = bd.paramList(nflow::kD);
         bool anyDv = false;
         for (double v : Dv) {
@@ -1161,8 +1144,7 @@ Nelson::NFlow::getCodeGenRustStateSpace()
             }
             break;
         case Rk4Output:
-            // See the C emitter: live inputs when D != 0 (per-stage ALGEBRAIC
-            // re-run), never-written latch fields (0.0) otherwise.
+            // Same as the C emitter.
             {
                 const bool liveD = ssAnyD(s);
                 for (int r = 0; r &lt; s.ny; ++r) {

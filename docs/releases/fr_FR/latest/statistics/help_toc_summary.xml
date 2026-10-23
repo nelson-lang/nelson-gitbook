@@ -263,6 +263,7 @@
         <chapter_description>
     <p>Fonctions d apprentissage non supervise, recherche de plus proches voisins, gestion des valeurs aberrantes et modeles de sequences.</p>
   </chapter_description>
+        <keyword name="KDTreeSearcher" link="7_clustering_anomaly_detection/KDTreeSearcher.html" description="Objet de recherche de plus proches voisins."/>
         <keyword name="cluster" link="7_clustering_anomaly_detection/cluster.html" description="Construire des classes depuis un arbre hierarchique."/>
         <keyword name="clusterdata" link="7_clustering_anomaly_detection/clusterdata.html" description="Regrouper les observations depuis les donnees."/>
         <keyword name="dbscan" link="7_clustering_anomaly_detection/dbscan.html" description="Regroupement spatial fonde sur la densite."/>

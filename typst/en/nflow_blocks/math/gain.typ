@@ -63,7 +63,7 @@ Multiplies the input by a scalar gain.
 #table(
   columns: 2,
   table.header([Parameter], [Default value], ),
-  [#raw("gain");], [2], 
+  [#raw("gain");], [1], 
 )
  #strong[Inspector Keys];
 

@@ -41,6 +41,7 @@ This module enhances Nelson's capabilities by offering a range of functions that
 - [isprime](isprime.md) - Determine which array elements are prime.
 - [lcm](lcm.md) - Least common multiple.
 - [makima](makima.md) - Modified Akima piecewise cubic interpolation.
+- [membrane](membrane.md) - Eigenfunctions of the L-shaped membrane.
 - [pchip](pchip.md) - Piecewise Cubic Hermite Interpolating Polynomial (PCHIP).
 - [peaks](peaks.md) - Peaks function
 - [primes](primes.md) - Prime numbers less than or equal to input value

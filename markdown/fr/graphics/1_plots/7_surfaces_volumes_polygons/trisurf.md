@@ -20,6 +20,7 @@ Trace de surface triangulaire
 Tracer les facettes de l'enveloppe convexe de points 3-D aleatoires.
 
 ```matlab
+rng(0);
 P = randn(30, 3);
 T = convhulln(P);
 trisurf(T, P(:, 1), P(:, 2), P(:, 3), 'FaceAlpha', 0.4)

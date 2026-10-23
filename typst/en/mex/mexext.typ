@@ -15,7 +15,7 @@ Binary MEX file-name extension
 
  #strong[extlist \= mexext('all')]; returns the extensions for all platforms.
 
- A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.
+ A mex file is a type of computer file that provides an interface between Octave or the host numerical environment and functions written in C, C++.
 
  Nelson also provides its own C++ API to manage internal Nelson objects.
 

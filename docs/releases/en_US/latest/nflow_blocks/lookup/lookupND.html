@@ -507,6 +507,7 @@
 #include &lt;functional&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     namespace {
@@ -530,7 +531,7 @@ namespace NFlow {
             }
             f = (u - bp[i]) / (bp[i + 1] - bp[i]);
         }
-
+        //=============================================================================
         double
         axisWeight(double f, const std::string&amp; interp)
         {
@@ -542,7 +543,7 @@ namespace NFlow {
             }
             return f;
         }
-
+        //=============================================================================
         bool
         isStrictlyIncreasing(const std::vector&lt;double&gt;&amp; v)
         {
@@ -553,22 +554,21 @@ namespace NFlow {
             }
             return true;
         }
-
+        //=============================================================================
         int
         numDims(const nflow::BlockDescriptor&amp; bd)
         {
             const int n = (int)bd.paramDouble("NumberOfTableDimensions", 0.0);
             return (n &gt;= 1) ? n : 0;
         }
-
+        //=============================================================================
         std::string
         dimKey(int k)
         {
             return "BreakpointsForDimension" + std::to_string(k + 1);
         }
-
-        // Parse via BlockDescriptor so JSON arrays and string expressions both
-        // resolve (matching the simulator / inspector-edited params).
+        //=============================================================================
+        // Parse via BlockDescriptor so JSON arrays and string expressions both resolve.
         std::vector&lt;double&gt;
         paramVec(const BlockCodegenArgs&amp; a, const std::string&amp; key)
         {
@@ -578,7 +578,7 @@ namespace NFlow {
             nflow::BlockDescriptor bd(*a.block, *a.variables);
             return bd.paramList(key.c_str());
         }
-
+        //=============================================================================
         std::string
         emitArray(const BlockCodegenArgs&amp; a, const std::string&amp; name, const std::vector&lt;double&gt;&amp; v,
             bool rust)
@@ -591,8 +591,7 @@ namespace NFlow {
             s += rust ? "];" : "};";
             return s;
         }
-
-        // Per-axis (index i, fraction f) locate emitting an i32/int index.
+        //=============================================================================
         void
         emitLocate(const BlockCodegenArgs&amp; a, bool rust, const std::string&amp; arr,
             const std::string&amp; uv, const std::string&amp; iv, const std::string&amp; fv, int n,
@@ -629,7 +628,7 @@ namespace NFlow {
             }
             (void)ix;
         }
-
+        //=============================================================================
         std::string
         weightExpr(const std::string&amp; fv, const std::string&amp; interp, bool rust)
         {
@@ -642,7 +641,7 @@ namespace NFlow {
             }
             return fv;
         }
-
+        //=============================================================================
         void
         emitLookupND(const BlockCodegenArgs&amp; a, bool rust)
         {
@@ -696,7 +695,6 @@ namespace NFlow {
                 idxNames.push_back(iv);
                 wNames.push_back(wv);
             }
-            // Corner blend: sum over 2^N corners of the weighted table value.
             const std::string y = "__yN_" + a.id;
             std::string idxArr, wArr, strArr;
             for (int k = 0; k &lt; N; ++k) {
@@ -741,6 +739,7 @@ namespace NFlow {
                 a.line("out_" + a.id + " = " + y + ";");
             }
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     bool
@@ -894,6 +893,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

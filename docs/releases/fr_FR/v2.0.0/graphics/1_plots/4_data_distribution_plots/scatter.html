@@ -115,7 +115,8 @@ s = scatter(x,y ,'filled');</code></pre>
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+f = figure();
 x = linspace(0,3*pi,255);
 y = cos(x) + rand(1,255);
 sz = 1:255;
@@ -127,7 +128,8 @@ scatter(x, y, sz, c, 'd', 'filled')</code></pre>
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+f = figure();
 x = linspace(0, 3*pi, 255);
 y = cos(x) + rand(1, 255);
 c = linspace(1,10,length(x));
@@ -138,7 +140,8 @@ scatter(x, y, [], c, 'filled')</code></pre>
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+f = figure();
 theta = linspace(0,2*pi,244);
 x = sin(theta) + 0.75*rand(1,244);
 y = cos(theta) + 0.75*rand(1,244);
@@ -150,7 +153,8 @@ scatter(x,y,sz,'MarkerEdgeColor',[0 .6 .5], 'MarkerFaceColor',[0 .6 .7],  'LineW
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure(),
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+f = figure(),
 x = linspace(0,3*pi,200);
 y = cos(x) + rand(1,200);
 % Top plot
@@ -165,7 +169,8 @@ scatter(ax2,x,y,'filled','d')</code></pre>
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+f = figure();
 x = rand(500,5);
 y = randn(500,5) + (5:5:25);
 s = scatter(x,y, 'filled');</code></pre>

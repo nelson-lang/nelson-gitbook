@@ -36,6 +36,7 @@ Functions for line plots, function plots, and plots with error bars.
 - [plot3](1_plots/1_line_plots/plot3.md) - 3-D line plot.
 - [semilogx](1_plots/1_line_plots/semilogx.md) - Semilog plot (x-axis has log scale).
 - [semilogy](1_plots/1_line_plots/semilogy.md) - Semilog plot (y-axis has log scale).
+- [viscircles](1_plots/1_line_plots/viscircles.md) - Draw circles.
 - [xline](1_plots/1_line_plots/xline.md) - Vertical constant line.
 - [yline](1_plots/1_line_plots/yline.md) - Horizontal constant line.
 
@@ -168,6 +169,7 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 - [area](1_plots/7_surfaces_volumes_polygons/area.md) - Create area plots.
 - [contourslice](1_plots/7_surfaces_volumes_polygons/contourslice.md) - Display contour lines on slices through volume data.
 - [cylinder](1_plots/7_surfaces_volumes_polygons/cylinder.md) - Create cylinder.
+- [ellipsoid](1_plots/7_surfaces_volumes_polygons/ellipsoid.md) - Create an ellipsoid.
 - [fill](1_plots/7_surfaces_volumes_polygons/fill.md) - Create filled 2-D patches.
 - [fill3](1_plots/7_surfaces_volumes_polygons/fill3.md) - Create filled 3-D patches.
 - [fimplicit](1_plots/7_surfaces_volumes_polygons/fimplicit.md) - Plot an implicit function curve.
@@ -176,6 +178,7 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 - [fsurf](1_plots/7_surfaces_volumes_polygons/fsurf.md) - Plot a function surface.
 - [isonormals](1_plots/7_surfaces_volumes_polygons/isonormals.md) - Compute normals of isosurface vertices.
 - [isosurface](1_plots/7_surfaces_volumes_polygons/isosurface.md) - Extract isosurface data from volume data.
+- [knot](1_plots/7_surfaces_volumes_polygons/knot.md) - Create a trefoil knot surface.
 - [mesh](1_plots/7_surfaces_volumes_polygons/mesh.md) - Mesh surface plot.
 - [meshc](1_plots/7_surfaces_volumes_polygons/meshc.md) - Display a mesh with contour lines below it.
 - [meshz](1_plots/7_surfaces_volumes_polygons/meshz.md) - Mesh surface plot with curtain.
@@ -188,6 +191,7 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 - [smooth3](1_plots/7_surfaces_volumes_polygons/smooth3.md) - Smooth 3-D data.
 - [sphere](1_plots/7_surfaces_volumes_polygons/sphere.md) - Create sphere.
 - [surf](1_plots/7_surfaces_volumes_polygons/surf.md) - surface plot.
+- [surf2patch](1_plots/7_surfaces_volumes_polygons/surf2patch.md) - Convert surface data to patch data.
 - [surface](1_plots/7_surfaces_volumes_polygons/surface.md) - Primitive surface plot.
 - [surfc](1_plots/7_surfaces_volumes_polygons/surfc.md) - Display a surface with contour lines below it.
 - [surfl](1_plots/7_surfaces_volumes_polygons/surfl.md) - Display a lighted surface.
@@ -234,6 +238,7 @@ Functions for creating, finding, querying, clearing, and closing graphics object
 - [allchild](2_graphics_objects/1_object_management/allchild.md) - Return all direct children of graphics objects.
 - [ancestor](2_graphics_objects/1_object_management/ancestor.md) - Ancestor of graphics object.
 - [axes](2_graphics_objects/1_object_management/axes.md) - Create cartesian axes.
+- [axescheck](2_graphics_objects/1_object_management/axescheck.md) - Extract an axes handle from an argument list.
 - [cla](2_graphics_objects/1_object_management/cla.md) - Clear axes.
 - [clf](2_graphics_objects/1_object_management/clf.md) - Clear figure.
 - [close](2_graphics_objects/1_object_management/close.md) - Close one or more figures
@@ -242,14 +247,23 @@ Functions for creating, finding, querying, clearing, and closing graphics object
 - [findobj](2_graphics_objects/1_object_management/findobj.md) - Find graphics objects with specific properties.
 - [gca](2_graphics_objects/1_object_management/gca.md) - get current axes graphics object.
 - [gcf](2_graphics_objects/1_object_management/gcf.md) - get current figure graphics object.
+- [getappdata](2_graphics_objects/1_object_management/getappdata.md) - Retrieve application-defined data from an object.
 - [groot](2_graphics_objects/1_object_management/groot.md) - graphic root object.
 - [hggroup](2_graphics_objects/1_object_management/hggroup.md) - Create group object.
+- [hgtransform](2_graphics_objects/1_object_management/hgtransform.md) - Create transform object.
 - [hold](2_graphics_objects/1_object_management/hold.md) - Retain current plot when adding new plots.
+- [inspect](2_graphics_objects/1_object_management/inspect.md) - Open the property inspector for graphics objects.
 - [is2D](2_graphics_objects/1_object_management/is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
 - [isValidGraphicsProperty](2_graphics_objects/1_object_management/isValidGraphicsProperty.md) - Check property name is valid.
+- [isappdata](2_graphics_objects/1_object_management/isappdata.md) - True if application-defined data exists.
 - [isgraphics](2_graphics_objects/1_object_management/isgraphics.md) - Check for graphics object.
 - [ishold](2_graphics_objects/1_object_management/ishold.md) - Get current hold state.
+- [makehgtform](2_graphics_objects/1_object_management/makehgtform.md) - Create a 4-by-4 transform matrix.
 - [newplot](2_graphics_objects/1_object_management/newplot.md) - Prepare to produce a new plot.
+- [rmappdata](2_graphics_objects/1_object_management/rmappdata.md) - Remove application-defined data from an object.
+- [rotate](2_graphics_objects/1_object_management/rotate.md) - Rotate graphics objects about an axis.
+- [setappdata](2_graphics_objects/1_object_management/setappdata.md) - Store application-defined data on an object.
+- [shg](2_graphics_objects/1_object_management/shg.md) - Show the current graph window.
 
 ### Layout Objects
 
@@ -442,6 +456,7 @@ Functions for creating, selecting, and listing colormaps.
 - [abyss](3_labels_styling/2_color_styling/colormaps/abyss.md) - Abyss colormap array.
 - [autumn](3_labels_styling/2_color_styling/colormaps/autumn.md) - Autumn colormap array.
 - [bone](3_labels_styling/2_color_styling/colormaps/bone.md) - Bone colormap array.
+- [brighten](3_labels_styling/2_color_styling/colormaps/brighten.md) - Brighten or darken a colormap.
 - [colorcube](3_labels_styling/2_color_styling/colormaps/colorcube.md) - Enhanced RGB color cube colormap array.
 - [colormap](3_labels_styling/2_color_styling/colormaps/colormap.md) - View and set current colormap.
 - [colormaplist](3_labels_styling/2_color_styling/colormaps/colormaplist.md) - Provide list of colormaps.
@@ -486,7 +501,19 @@ Functions for interactive graphics, callbacks, camera views, and lighting.
 
 #### Functions
 
+- [axtoolbar](3_labels_styling/3_interactions_camera_lighting/axtoolbar.md) - Get or configure the axes toolbar.
+- [camdolly](3_labels_styling/3_interactions_camera_lighting/camdolly.md) - Move the camera position and target.
 - [camlight](3_labels_styling/3_interactions_camera_lighting/camlight.md) - Create or position a light relative to the camera.
+- [camlookat](3_labels_styling/3_interactions_camera_lighting/camlookat.md) - Aim the camera at an object.
+- [camorbit](3_labels_styling/3_interactions_camera_lighting/camorbit.md) - Rotate the camera position around the target.
+- [campan](3_labels_styling/3_interactions_camera_lighting/campan.md) - Rotate the camera target around the position.
+- [campos](3_labels_styling/3_interactions_camera_lighting/campos.md) - Set or query the camera position.
+- [camproj](3_labels_styling/3_interactions_camera_lighting/camproj.md) - Set or query the camera projection type.
+- [camroll](3_labels_styling/3_interactions_camera_lighting/camroll.md) - Roll the camera about the viewing axis.
+- [camtarget](3_labels_styling/3_interactions_camera_lighting/camtarget.md) - Set or query the camera target.
+- [camup](3_labels_styling/3_interactions_camera_lighting/camup.md) - Set or query the camera up vector.
+- [camva](3_labels_styling/3_interactions_camera_lighting/camva.md) - Set or query the camera view angle.
+- [camzoom](3_labels_styling/3_interactions_camera_lighting/camzoom.md) - Zoom the camera in or out.
 - [drawnow](3_labels_styling/3_interactions_camera_lighting/drawnow.md) - Update figures and process callbacks
 - [Managing Callback Interruptions in Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) - 
 - [light](3_labels_styling/3_interactions_camera_lighting/light.md) - Create a light object in axes.
@@ -554,6 +581,7 @@ Functions for opening and saving figure files.
 
 ### Functions
 
+- [exportapp](5_printing_saving/exportapp.md) - Save figure including UI components as an image file.
 - [openfig](5_printing_saving/openfig.md) - Open a Nelson FIG file.
 - [print](5_printing_saving/print.md) - Export a figure to an image or document file.
 - [savefig](5_printing_saving/savefig.md) - Save figure to a Nelson FIG file.

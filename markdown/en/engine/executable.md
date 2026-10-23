@@ -15,9 +15,9 @@ Executables to start Nelson software.
 
 ## 📥 Input argument
 
-- -cli - selects <b>nelson-cli</b> when passed to the <b>nelson</b> launcher.
-- -adv-cli - selects <b>nelson-adv-cli</b> when passed to the <b>nelson</b> launcher.
-- -gui - selects <b>nelson-gui</b> when passed to the <b>nelson</b> launcher.
+- --cli - selects <b>nelson-cli</b> when passed to the <b>nelson</b> launcher.
+- --adv-cli - selects <b>nelson-adv-cli</b> when passed to the <b>nelson</b> launcher.
+- --gui - selects <b>nelson-gui</b> when passed to the <b>nelson</b> launcher.
 - --webview - selects <b>nelson-webview</b> in desktop webview mode when passed to the <b>nelson</b> launcher. Passed directly to <b>nelson-adv-cli</b> it is instead an option that renders figures with the web (RenderWeb) backend, with no Qt figure windows, while keeping the terminal REPL.
 - --web - selects <b>nelson-webview</b> in HTTP server mode when passed to the <b>nelson</b> launcher. The same option selects server mode for the direct <b>nelson-webview</b> executable.
 - --url host - sets the HTTP host. This option is valid only with <b>--web</b>, <b>--webview</b>, or the direct <b>nelson-webview</b> executable.
@@ -31,14 +31,14 @@ Executables to start Nelson software.
 - --vscode - enables Visual Studio Code mode.
 - --open, -o filename1 [filename2 ...] - opens one or more valid existing files in the text editor. GUI mode only.
 - --mat, -m filename1 [filename2 ...] - loads one or more valid existing .nh5 or .mat files.
-- --nostartup - disables the main Nelson startup script.
-- --nousermodules - disables loading user modules.
-- --nouserstartup - disables the user startup script.
+- --no-startup - disables the main Nelson startup script.
+- --no-user-modules - disables loading user modules.
+- --no-user-startup - disables the user startup script.
 - --minimize - minimizes the main window. GUI mode only.
-- --noipc - disables interprocess features.
-- --withoutfilewatcher - disables file watcher features for this session.
-- --noaudio - disables audio module startup code.
-- --without\_python - disables python\_engine module startup code.
+- --no-ipc - disables interprocess features.
+- --without-file-watcher - disables file watcher features for this session.
+- --no-audio - disables audio module startup code.
+- --without-python - disables python\_engine module startup code.
 - --language, -l lang - sets the session language. Currently, lang can be: fr\_FR en\_US.
 - --quiet, -q - starts without displaying the banner and version.
 - --timeout seconds - kills the Nelson process after the specified positive number of seconds.
@@ -56,11 +56,11 @@ Executables to start Nelson software.
 
 <b>nelson --web</b> and <b>nelson-webview --web</b> start an HTTP server without opening a desktop window and print the served URL. 
 
-Mode selector options <b>-cli</b>, <b>-adv-cli</b>, <b>-gui</b>, <b>--webview</b> and launcher-level <b>--web</b> are only valid for the generic <b>nelson</b> launcher. Direct executables such as <b>nelson-cli</b>, <b>nelson-adv-cli</b> and <b>nelson-gui</b> reject them before <b>--</b>. The single exception is <b>nelson-adv-cli --webview</b>, where <b>--webview</b> is accepted as an option that switches the figure backend to web (RenderWeb) rendering. 
+Mode selector options <b>--cli</b>, <b>--adv-cli</b>, <b>--gui</b>, <b>--webview</b> and launcher-level <b>--web</b> are only valid for the generic <b>nelson</b> launcher. Direct executables such as <b>nelson-cli</b>, <b>nelson-adv-cli</b> and <b>nelson-gui</b> reject them before <b>--</b>. The single exception is <b>nelson-adv-cli --webview</b>, where <b>--webview</b> is accepted as an option that switches the figure backend to web (RenderWeb) rendering. 
 
 After <b>--</b>, mode selector tokens are normal user arguments and can be read with <b>argv('user')</b>. 
 
-Module startup arguments such as <b>--noaudio</b> and <b>--without\_python</b> remain visible in <b>argv()</b> for compatibility. New command builders should place user arguments after <b>--</b> and read them with <b>argv('user')</b>. 
+Module startup arguments such as <b>--no-audio</b> and <b>--without-python</b> remain visible in <b>argv()</b> for compatibility. New command builders should place user arguments after <b>--</b> and read them with <b>argv('user')</b>. 
 
 Quotes used to group arguments are interpreted by the operating system or shell before Nelson starts. Use a portable form such as <b>nelson-cli -e "disp('hello world'); quit"</b>. 
 
@@ -94,9 +94,10 @@ nelson-gui --help
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
-| 1.4.0   | --without_python added |
+| 1.4.0   | --without-python added |
 | 1.11.0   | About NELSON_RUNTIME_PATH environment variable added |
 | 1.11.0   | --vscode argument |
+| 2.0.0   | command line options standardized: mode selectors now use the double dash form (--cli, --adv-cli, --gui) and multi-word options use kebab-case (--no-startup, --no-user-startup, --no-user-modules, --no-ipc, --no-audio, --without-file-watcher, --without-python, --without-julia) |
 
 <!--
 ## 👤 Author

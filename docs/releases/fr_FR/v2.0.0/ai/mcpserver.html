@@ -51,14 +51,14 @@ mcpserver('--nelson-display-mode=gui')
 <div class="example">
 <div class="example-title">Declarer Nelson dans Codex.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"</code></pre>
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">codex mcp add nelson -- nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver"</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
 <div class="example">
 <div class="example-title">Declarer Nelson avec le mode graphique visible.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--nelson-display-mode=gui')"</code></pre>
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">codex mcp add nelson -- nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--nelson-display-mode=gui')"</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
@@ -75,7 +75,7 @@ ollama pull llama3.2
 #   nom du modele: llama3.2
 #   nom du serveur MCP: nelson
 #   commande du serveur MCP:
-nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"</code></pre>
+nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
@@ -93,9 +93,9 @@ nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--
       "command": "nelson-adv-cli",
       "args": [
         "--quiet",
-        "--noipc",
-        "--nouserstartup",
-        "--nousermodules",
+        "--no-ipc",
+        "--no-user-startup",
+        "--no-user-modules",
         "-e",
         "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --allow-execution=true --allow-format=true')"
       ]

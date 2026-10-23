@@ -59,7 +59,7 @@ Implemente un controleur PID scalaire avec limites de sortie.
 | Parametre | Valeur par defaut | 
 | --- | --- | 
 | <code>kp</code> | 1 | 
-| <code>ki</code> | 0 | 
+| <code>ki</code> | 1 | 
 | <code>kd</code> | 0 | 
 | <code>min</code> | -inf | 
 | <code>max</code> | inf | 

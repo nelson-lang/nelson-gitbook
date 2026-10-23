@@ -28,7 +28,7 @@ The returned structure <b>info</b> has the following fields:
 
  
 
-Presence is not capability: an <b>omc</b> executable can run yet be unable to build an FMU when its installation is missing the FMI export runtime. In that case <b>available</b> is <b>true</b> but <b>capable</b> is <b>false</b>, and a <b>modelica</b> block blocks the simulation with a clear message. 
+Presence is not capability: an <b>omc</b> executable can run yet be unable to build an FMU when its installation is missing the FMI export runtime. Concretely, the probe checks for the directory <b>share/omc/runtime/c/fmi</b> under the OpenModelica home; when it is absent (an incomplete install, without the C runtime / FMI export support), <b>available</b> is <b>true</b> but <b>capable</b> is <b>false</b>, and a <b>modelica</b> block blocks the simulation with a clear message. Install a complete OpenModelica, or point nflow at one with <b>modelicaConfigure</b>. 
 
 The OpenModelica location is resolved from, in order: a path configured with <b>modelicaConfigure</b> (authoritative when set), the <b>NELSON\_OPENMODELICA\_HOME</b> environment variable (Nelson-scoped), the <b>OPENMODELICAHOME</b> environment variable, the standard install directories, then <b>PATH</b>.
 

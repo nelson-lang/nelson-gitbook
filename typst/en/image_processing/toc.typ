@@ -30,6 +30,7 @@
       - #nlink(<image_processing:1_image_basics.3_filtering_edges.imboxfilt>)[imboxfilt]
       - #nlink(<image_processing:1_image_basics.3_filtering_edges.imfilter>)[imfilter]
       - #nlink(<image_processing:1_image_basics.3_filtering_edges.imgaussfilt>)[imgaussfilt]
+      - #nlink(<image_processing:1_image_basics.3_filtering_edges.imnoise>)[imnoise]
       - #nlink(<image_processing:1_image_basics.3_filtering_edges.medfilt2>)[medfilt2]
       - #nlink(<image_processing:1_image_basics.3_filtering_edges.padarray>)[padarray]
   - Image Analysis and Segmentation
@@ -91,6 +92,7 @@
       - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.sizesMatch>)[sizesMatch]
       - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.transformPointsForward>)[transformPointsForward]
       - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.transformPointsInverse>)[transformPointsInverse]
+      - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.warp>)[warp]
       - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.worldToIntrinsic>)[worldToIntrinsic]
       - #nlink(<image_processing:3_geometry_registration_3d.6_geometric_transforms.worldToSubscript>)[worldToSubscript]
     - 3-D Volumes

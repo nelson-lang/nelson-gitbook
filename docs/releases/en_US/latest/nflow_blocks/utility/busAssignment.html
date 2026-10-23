@@ -202,7 +202,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -244,8 +244,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -362,8 +362,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -1072,6 +1072,7 @@ assignedPaths(const Nelson::NFlow::Block&amp; b)
     }
     return paths;
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 bool
@@ -1080,7 +1081,6 @@ Nelson::NFlow::handleBusAssignment(SimCtx&amp; ctx, const Block&amp; b, Phase ph
     if (phase != Phase::ALGEBRAIC) {
         return false;
     }
-    // The base bus id comes from port 0's signal descriptor.
     int busId = -1;
     if (ctx.inputSigs &amp;&amp; ctx.sigs &amp;&amp; b.nid &lt; (int)ctx.inputSigs-&gt;size()) {
         const auto&amp; sIds = (*ctx.inputSigs)[b.nid];
@@ -1098,7 +1098,6 @@ Nelson::NFlow::handleBusAssignment(SimCtx&amp; ctx, const Block&amp; b, Phase ph
     const int outW = outputWidth(ctx, b.nid, 0);
     bool changed = false;
 
-    // 1. Pass the whole base bus through (all lanes).
     for (int k = 0; k &lt; outW; ++k) {
         const double val = sigAt(base, k);
         if (y[k] != val) {
@@ -1124,7 +1123,6 @@ Nelson::NFlow::handleBusAssignment(SimCtx&amp; ctx, const Block&amp; b, Phase ph
         }
     }
 
-    // 2. Overwrite each assigned member's region from its replacement port.
     const std::vector&lt;std::string&gt; paths = assignedPaths(b);
     for (size_t p = 0; p &lt; paths.size(); ++p) {
         const int off = ctx.busRegistry-&gt;memberOffset(busId, paths[p]);
@@ -1167,10 +1165,9 @@ Nelson::NFlow::resolveBusAssignmentDims(const Block&amp; /*b*/, const ValMap&amp
     const std::vector&lt;PortSig&gt;&amp; inSigs, std::vector&lt;PortSig&gt;&amp; outSigs, BusRegistry&amp; /*busReg*/,
     std::string&amp; /*err*/)
 {
-    // The output is the base bus (port 0) unchanged in shape/type; only the
-    // member values differ. Copy the input descriptor, keeping the output's own
-    // packed offset. Until the base bus resolves (first fixed-point pass) leave
-    // the output as-is.
+    // The output keeps the shape and type of the base bus (port 0). Copy its
+    // descriptor but keep the output's own packed offset; leave the output
+    // as-is until the base bus resolves.
     const int busId = inSigs.empty() ? -1 : inSigs[0].busTypeId;
     if (busId &lt; 0 || outSigs.empty()) {
         return true;

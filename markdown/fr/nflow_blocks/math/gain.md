@@ -58,7 +58,7 @@ Multiplie l entree par un gain scalaire.
 
 | Parametre | Valeur par defaut | 
 | --- | --- | 
-| <code>gain</code> | 2 | 
+| <code>gain</code> | 1 | 
 
  
 

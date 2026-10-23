@@ -42,7 +42,7 @@ Start the server from an MCP client.
 
 ``````matlab
 
-nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"
+nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver"
 
 ``````
 
@@ -50,7 +50,7 @@ Register Nelson in Codex.
 
 ``````matlab
 
-codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"
+codex mcp add nelson -- nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver"
 
 ``````
 
@@ -58,7 +58,7 @@ Register Nelson with visible graphical mode.
 
 ``````matlab
 
-codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--nelson-display-mode=gui')"
+codex mcp add nelson -- nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--nelson-display-mode=gui')"
 
 ``````
 
@@ -76,7 +76,7 @@ ollama pull llama3.2
 #   model name: llama3.2
 #   MCP server name: nelson
 #   MCP server command:
-nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"
+nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"
 
 ``````
 
@@ -95,9 +95,9 @@ Generic JSON-style MCP client configuration for an Ollama-backed agent.
       "command": "nelson-adv-cli",
       "args": [
         "--quiet",
-        "--noipc",
-        "--nouserstartup",
-        "--nousermodules",
+        "--no-ipc",
+        "--no-user-startup",
+        "--no-user-modules",
         "-e",
         "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --allow-execution=true --allow-format=true')"
       ]

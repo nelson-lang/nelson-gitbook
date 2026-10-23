@@ -22,6 +22,7 @@
   - [dlsym](dlsym.md)
   - [dlsym_delete](dlsym_delete.md)
   - [dlsym_used](dlsym_used.md)
+  - [dltarget](dltarget.md)
   - [findcmake](findcmake.md)
   - [getdynlibext](getdynlibext.md)
   - [havecompiler](havecompiler.md)

@@ -43,6 +43,7 @@ Un histogramme est une représentation graphique qui illustre la distribution de
 == Exemple
 
 ``````matlab
+rng(0);
 f = figure();
 for i = 1:4
   subplot(2, 2, i)

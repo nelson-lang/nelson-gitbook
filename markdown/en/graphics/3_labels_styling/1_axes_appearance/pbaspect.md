@@ -86,6 +86,7 @@ Revert back to default plot box aspect ratio
 
 ```matlab
 
+rng(0);
 X = rand(100,1);
 Y = rand(100,1);
 Z = rand(100,1);

@@ -51,10 +51,10 @@ A = magic(5)
 [L, U, P] = lu(A);
 subplot(1, 2, 1)
 spy(L)
-title(_('L factor'))
+title('L factor')
 subplot(1, 2, 2)
 spy(U)
-title(_('U factor'))
+title('U factor')
 
 ```
 <img src="lu.svg" align="middle"/>

@@ -31,6 +31,7 @@
       <keyword name="dlsym" link="dlsym.html" description="Loads a C/Fortran symbol for an dynamic library."/>
       <keyword name="dlsym_delete" link="dlsym_delete.html" description="Removes dlsym object."/>
       <keyword name="dlsym_used" link="dlsym_used.html" description="Returns the current valid dlsym handles."/>
+      <keyword name="dltarget" link="dltarget.html" description="Returns the architecture the dynamic-link tools build for."/>
       <keyword name="findcmake" link="findcmake.html" description="find CMake path."/>
       <keyword name="getdynlibext" link="getdynlibext.html" description="Returns the extension of dynamic libraries."/>
       <keyword name="havecompiler" link="havecompiler.html" description="Detect if a C/C++ compiler is configured."/>

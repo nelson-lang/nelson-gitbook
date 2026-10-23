@@ -24,6 +24,10 @@ Read data from RESTful web service to Nelson's variable
 
 #strong[webread()]; reads content from the web to nelson's variable.
 
+ HTTP redirects are followed by default (see #strong[FollowLocation]; in #strong[weboptions];).
+
+ When #strong[ContentType]; is #strong['auto']; (the default), the Content-Type header of the response selects the decoder: an #strong[image\/\*]; response is read with #strong[imread];, an #strong[audio\/\*]; response with #strong[audioread]; and a JSON response with #strong[jsondecode];. Other media types are detected from the content.
+
 
 == Examples
 
@@ -65,6 +69,7 @@ edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
   columns: 2,
   table.header([Version], [Description]),
   [1.0.0], [initial version],
+  [2.0.0], [redirects followed by default, 'auto' content type uses the response Content-Type header],
 )
 
 // Author: Allan CORNET

@@ -28,6 +28,8 @@ zoom option
 zoom(factor)
 zoom(fig, ...)
 zoom(ax, ...)
+z = zoom(fig)
+z = zoom(ax)
 </code></pre>
 </div>
 <div class="section">
@@ -53,6 +55,20 @@ zoom(ax, ...)
 <tr>
 <td class="param-name">ax</td>
 <td>a scalar graphics object value: parent container, specified as a axes.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">z</td>
+<td>zoom mode object. It designates the target figure through its <b>Figure</b> property and exposes the <b>Enable</b>, <b>Motion</b> and <b>Direction</b> properties. Call <b>z.setAxes3DPanAndZoomStyle(ax, style)</b> to store the 3-D pan and zoom style ('limits' or 'camera') on an axes.</td>
 </tr>
 </table>
 </div>
@@ -100,6 +116,9 @@ zoom(ax, ...)
       <b>
         'out'
       </b>: Restores the current axes to its baseline zoom level.</p>
+    <p></p>
+    <p>
+      <b>z = zoom(fig)</b> or <b>z = zoom(ax)</b> returns the zoom mode object for the target figure without changing the current zoom state. Use <b>z.setAxes3DPanAndZoomStyle(ax, 'camera')</b> or <b>z.setAxes3DPanAndZoomStyle(ax, 'limits')</b> to select how an axes behaves during 3-D pan and zoom.</p>
   </div>
 </div>
 <div class="section">
@@ -133,6 +152,10 @@ zoom out</code></pre>
 <tr>
 <td class="version">1.2.0</td>
 <td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>z = zoom(fig) returns a zoom mode object with setAxes3DPanAndZoomStyle.</td>
 </tr>
 </table>
 </div>

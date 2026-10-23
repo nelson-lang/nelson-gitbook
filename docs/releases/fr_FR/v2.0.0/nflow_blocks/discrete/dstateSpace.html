@@ -816,13 +816,10 @@ bool
 Nelson::NFlow::handleDstateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
 {
     auto&amp; st = getState(ctx, b.nid);
-    // Two forms share this block. Scalar A/B/C/D is the historical one: each is
-    // a single number applied INDEPENDENTLY per signal element, so a width-3
-    // input carries three unrelated first-order states. A matrix anywhere makes
-    // it a MIMO state space - A is nx x nx, B nx x nu, C ny x nx, D ny x nu -
-    // read exactly as the continuous stateSpace reads it. A matrix used to be
-    // refused outright, so a discrete MIMO plant had to be written as a
-    // continuous one.
+    // Two forms share this block. Scalar A/B/C/D is applied INDEPENDENTLY per signal
+    // element, so a width-3 input carries three unrelated first-order states. A
+    // matrix anywhere makes it a MIMO state space (A is nx x nx, B nx x nu, C ny x nx,
+    // D ny x nu), read exactly as the continuous stateSpace reads it.
     if (!ssIsScalarForm(b, ctx.variables)) {
         return dstateSpaceMimo(ctx, b, phase);
     }
@@ -841,10 +838,7 @@ Nelson::NFlow::handleDstateSpace(SimCtx&amp; ctx, const Block&amp; b, Phase phas
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // y(k) = C x(k) + D u(k): the state as it stands, and the input of THIS
-        // step. It used to emit C x(k+1) + D u(k-1) - the state already advanced
-        // and the whole thing a step late - so a block with a non-zero D
-        // answered a step after its input moved.
+        // y(k) = C x(k) + D u(k): the state as it stands and the input of THIS step.
         nflow::BlockDescriptor bd(b, ctx.variables);
         const double C_ = bd.paramDouble(nflow::kC, 0.0);
         const double D_ = bd.paramDouble(nflow::kD, 0.0);

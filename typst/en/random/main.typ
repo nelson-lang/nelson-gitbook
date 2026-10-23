@@ -12,6 +12,7 @@ The Random module provides tools for generating random numbers and random sequen
 
 - #nlink(<random:RandStream>)[RandStream]: Random number stream object.
 - #nlink(<random:rand>)[rand]: Random Number.
+- #nlink(<random:randg>)[randg]: Gamma distributed random number.
 - #nlink(<random:randi>)[randi]: Random Integer.
 - #nlink(<random:randn>)[randn]: Normally distributed random number.
 - #nlink(<random:randperm>)[randperm]: Random permutation of integers values.
@@ -23,6 +24,8 @@ The Random module provides tools for generating random numbers and random sequen
 #include "RandStream.typ"
 #pagebreak(weak: true)
 #include "rand.typ"
+#pagebreak(weak: true)
+#include "randg.typ"
 #pagebreak(weak: true)
 #include "randi.typ"
 #pagebreak(weak: true)

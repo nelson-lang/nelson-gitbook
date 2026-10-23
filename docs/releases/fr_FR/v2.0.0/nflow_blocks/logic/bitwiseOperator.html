@@ -214,8 +214,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "and-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-and-formula",
         "formula": "\\text{AND}",
         "textSize": "16px"
       }
@@ -250,8 +250,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "or-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-or-formula",
         "formula": "\\text{OR}",
         "textSize": "16px"
       }
@@ -286,8 +286,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "xor-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-xor-formula",
         "formula": "\\text{XOR}",
         "textSize": "16px"
       }
@@ -317,8 +317,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "not-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-not-formula",
         "formula": "\\text{NOT}",
         "textSize": "16px"
       }
@@ -927,6 +927,7 @@
 #include "logic_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     // Operation codes: 0 AND, 1 OR, 2 XOR, 3 NAND, 4 NOR, 5 NOT.
@@ -1086,6 +1087,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

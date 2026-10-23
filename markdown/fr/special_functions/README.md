@@ -41,6 +41,7 @@ Ce module améliore les capacités de Nelson en offrant une gamme de fonctions q
 - [isprime](isprime.md) - Détermine quels éléments d'un tableau sont premiers
 - [lcm](lcm.md) - Plus petit commun multiple
 - [makima](makima.md) - Interpolation cubique d'Akima modifiee.
+- [membrane](membrane.md) - Fonctions propres de la membrane en L.
 - [pchip](pchip.md) - Interpolation polynomiale cubique de Hermite par morceaux (PCHIP).
 - [peaks](peaks.md) - Fonction peaks
 - [primes](primes.md) - Nombres premiers inférieurs ou égaux à la valeur d'entrée

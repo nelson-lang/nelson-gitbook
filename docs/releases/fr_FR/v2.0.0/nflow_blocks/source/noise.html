@@ -223,8 +223,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -599,13 +599,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -760,12 +760,10 @@ Nelson::NFlow::getCodeGenRustNoise()
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         // Same linear congruential generator and [-1, 1] mapping as the
-        // interpreter (handleNoise) and the C backend, so a generated Rust
-        // program reproduces the interpreter's noise stream bit-for-bit. The
-        // former xorshift32 helper produced an unrelated sequence, silently
-        // diverging any diagram that feeds a noise block. u32 arithmetic wraps
-        // modulo 2^32, matching C's unsigned int; wrapping_mul/wrapping_add
-        // keep that behaviour (and avoid a debug-build overflow panic).
+        // interpreter (handleNoise) and the C backend, so the Rust program
+        // reproduces the noise stream bit-for-bit. u32 arithmetic wraps modulo
+        // 2^32 like C's unsigned int; wrapping_mul/wrapping_add keep that and
+        // avoid a debug-build overflow panic.
         a.line("s.rng_state = 1664525_u32.wrapping_mul(s.rng_state)"
                ".wrapping_add(1013904223_u32);");
         a.line("out_" + a.id + " = " + a.fmt(bd.paramDouble(nflow::kAmp, 0.0))

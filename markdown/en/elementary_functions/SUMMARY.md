@@ -114,6 +114,7 @@
     - [ndims](7_indexing_dimensions/ndims.md)
     - [numel](7_indexing_dimensions/numel.md)
     - [permute](7_indexing_dimensions/permute.md)
+    - [resize](7_indexing_dimensions/resize.md)
     - [rot90](7_indexing_dimensions/rot90.md)
     - [shiftdim](7_indexing_dimensions/shiftdim.md)
     - [size](7_indexing_dimensions/size.md)

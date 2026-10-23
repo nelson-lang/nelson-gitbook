@@ -29,7 +29,7 @@ Constant heat flow Q into the connected port.
 | Library | Thermal (acausal) | 
 | Type | <code>FixedHeatFlow</code> | 
 | Label | FixedHeatFlow | 
-| Solver | Lowered to <code>physicalIsland</code>. Reference solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
+| Solver | Lowered to <code>physicalIsland</code>. Default solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
 
   
 

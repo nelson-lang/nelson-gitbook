@@ -214,8 +214,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "and-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-and-formula",
         "formula": "\\text{AND}",
         "textSize": "16px"
       }
@@ -250,8 +250,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "or-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-or-formula",
         "formula": "\\text{OR}",
         "textSize": "16px"
       }
@@ -286,8 +286,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "xor-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-xor-formula",
         "formula": "\\text{XOR}",
         "textSize": "16px"
       }
@@ -317,8 +317,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "not-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-not-formula",
         "formula": "\\text{NOT}",
         "textSize": "16px"
       }
@@ -927,6 +927,7 @@
 #include "logic_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     static uint64_t
@@ -963,17 +964,13 @@ namespace NFlow {
         extractMask = (n &gt;= 64) ? ~0ULL : ((1ULL &lt;&lt; static_cast&lt;unsigned&gt;(n)) - 1ULL);
     }
     //=============================================================================
-    // Where the extracted bits land. 'rightAligned' (the default) returns them
-    // as a number in their own right - bits 2..5 of 214 read 5 - which is the
-    // only reading that means anything in a double. 'keepWeight' leaves them at
-    // the weight they had, so the same extraction reads 5 * 2^2 = 20: the value
-    // a fixed-point type would carry.
+    // Where the extracted bits land. 'keepWeight' (the default) leaves them at
+    // their weight, so bits 2..5 of 214 read 5 * 2^2 = 20, the value a
+    // fixed-point type would carry. 'rightAligned' returns them as a number in
+    // their own right (5).
     static bool
     ebKeepsWeight(const nflow::BlockDescriptor&amp; bd)
     {
-        // Extracting a range yields those bits AT THEIR WEIGHT: bits 2..5 of
-        // 214 read 20, not 5. Right-aligning them is the other reading, and
-        // stays available under 'rightAligned'.
         return bd.paramStr("OutputScaling", "keepWeight") != "rightAligned";
     }
     //=============================================================================
@@ -1043,6 +1040,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

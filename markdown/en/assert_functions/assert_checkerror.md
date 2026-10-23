@@ -33,12 +33,12 @@ Use [asserts.throws](../assert_functions/asserts.throws.md) when only a message 
 Historical call
 
 ```matlab
-assert_checkerror('cos', _('Wrong number of input arguments.'));
+assert_checkerror('cos', 'Not enough input arguments.');
 ```
 Canonical call
 
 ```matlab
-asserts.checkerror('cos', _('Wrong number of input arguments.'));
+asserts.checkerror('cos', 'Not enough input arguments.');
 ```
 
 

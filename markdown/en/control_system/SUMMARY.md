@@ -14,6 +14,7 @@
     - [tfdata](1_dynamic_system_models/tfdata.md)
     - [tzero](1_dynamic_system_models/tzero.md)
     - [zero](1_dynamic_system_models/zero.md)
+    - [zpk](1_dynamic_system_models/zpk.md)
   - Model Conversion and Interconnection
     - [abcdchk](2_model_conversion_interconnection/abcdchk.md)
     - [append](2_model_conversion_interconnection/append.md)
@@ -31,12 +32,17 @@
     - [tf2ss](2_model_conversion_interconnection/tf2ss.md)
   - Linear Analysis
     - [bode](3_linear_analysis/bode.md)
+    - [bodeoptions](3_linear_analysis/bodeoptions.md)
+    - [bodeplot](3_linear_analysis/bodeplot.md)
     - [damp](3_linear_analysis/damp.md)
     - [dcgain](3_linear_analysis/dcgain.md)
     - [evalfr](3_linear_analysis/evalfr.md)
     - [freqresp](3_linear_analysis/freqresp.md)
     - [hsvd](3_linear_analysis/hsvd.md)
+    - [margin](3_linear_analysis/margin.md)
     - [nyquist](3_linear_analysis/nyquist.md)
+    - [pzmap](3_linear_analysis/pzmap.md)
+    - [rlocus](3_linear_analysis/rlocus.md)
     - [sigma](3_linear_analysis/sigma.md)
   - Time and Frequency Responses
     - [impulse](4_time_frequency_response/impulse.md)
@@ -55,6 +61,7 @@
     - [lqr](5_control_design_tuning/lqr.md)
     - [lqry](5_control_design_tuning/lqry.md)
     - [ord2](5_control_design_tuning/ord2.md)
+    - [place](5_control_design_tuning/place.md)
   - Matrix Computations
     - [bdschur](6_matrix_computations/bdschur.md)
     - [cloop](6_matrix_computations/cloop.md)

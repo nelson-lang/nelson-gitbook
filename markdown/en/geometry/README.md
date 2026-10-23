@@ -15,6 +15,7 @@ This module is useful for applications in computer graphics, robotics, computati
 ## Functions
 
 - [alphaShape](alphaShape.md) - Alpha shape object
+- [axes2ecc](axes2ecc.md) - Eccentricity of an ellipse from its semi-axes.
 - [boundary](boundary.md) - Boundary facets of a set of points
 - [convhull](convhull.md) - Convex hull of 2-D or 3-D points
 - [convhulln](convhulln.md) - Convex hull in N dimensions
@@ -22,7 +23,13 @@ This module is useful for applications in computer graphics, robotics, computati
 - [delaunayTriangulation](delaunayTriangulation.md) - Delaunay triangulation object
 - [delaunayn](delaunayn.md) - Delaunay triangulation in N dimensions
 - [dsearchn](dsearchn.md) - Nearest point search
+- [ellipse1](ellipse1.md) - Points on a small ellipse on a sphere.
 - [griddata](griddata.md) - Interpolate scattered data
+- [nsidedpoly](nsidedpoly.md) - Create a regular polygon.
+- [polyarea](polyarea.md) - Area of a polygon.
+- [polyshape](polyshape.md) - Create a polygon.
+- [reckon](reckon.md) - Point at a given spherical range and azimuth.
+- [rectint](rectint.md) - Area of intersection of rectangles.
 - [rotx](rotx.md) - 3x3 transformation matrix for rotations around x-axis
 - [roty](roty.md) - 3x3 transformation matrix for rotations around y-axis
 - [rotz](rotz.md) - 3x3 transformation matrix for rotations around z-axis

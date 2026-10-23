@@ -574,8 +574,8 @@ Nelson::NFlow::handleSaturation(SimCtx&amp; ctx, const Block&amp; b, Phase phase
 }
 //=============================================================================
 namespace {
-// Zero-crossing seam: the clamp kinks u - lower and u - upper (sim
-// ZERO_CROSSING parity; an infinite limit never crosses, constant 1.0).
+// Zero-crossing seam: the clamp kinks u - lower and u - upper (an infinite
+// limit never crosses, constant 1.0).
 void
 saturationCrossing(const Nelson::NFlow::BlockCodegenArgs&amp; a)
 {
@@ -592,6 +592,7 @@ saturationCrossing(const Nelson::NFlow::BlockCodegenArgs&amp; a)
     a.line(a.rk4Arr + "[" + co1 + "] = "
         + (std::isfinite(mx) ? ("(" + a.in[0] + ") - " + a.fmt(mx)) : std::string("1.0")) + ";");
 }
+//=============================================================================
 int
 saturationCrossingCount(const Nelson::NFlow::BlockCodegenArgs&amp; a)
 {
@@ -600,15 +601,15 @@ saturationCrossingCount(const Nelson::NFlow::BlockCodegenArgs&amp; a)
     const double mx = bd.paramDouble(nflow::kUpperLimit, std::numeric_limits&lt;double&gt;::infinity());
     return (std::isfinite(mn) || std::isfinite(mx)) ? 2 : 0;
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenCSaturation()
 {
     BlockCodegenTemplate t;
-    // Absent limits default to a wide-open clamp (matching the interpreter's
-    // -inf/+inf and the Rust backend's +/-1e308). A 0.0/0.0 default clamped
-    // every unset-limit saturation output to exactly zero.
+    // Absent limits default to a wide-open clamp (the interpreter's -inf/+inf,
+    // the Rust backend's +/-1e308), not 0.0/0.0.
     t.step = "out_{id} = fmin(fmax({in0}, {param:LowerLimit:-1e308}), {param:UpperLimit:1e308});";
     t.emitRk4 = saturationCrossing;
     t.crossingCount = saturationCrossingCount;

@@ -50,6 +50,7 @@
           <keyword name="imboxfilt" link="1_image_basics/3_filtering_edges/imboxfilt.html" description="Applique un filtrage par moyenne locale."/>
           <keyword name="imfilter" link="1_image_basics/3_filtering_edges/imfilter.html" description="Filtre une image avec un noyau 2D."/>
           <keyword name="imgaussfilt" link="1_image_basics/3_filtering_edges/imgaussfilt.html" description="Applique un filtrage gaussien a une image."/>
+          <keyword name="imnoise" link="1_image_basics/3_filtering_edges/imnoise.html" description="Ajoute du bruit à une image."/>
           <keyword name="medfilt2" link="1_image_basics/3_filtering_edges/medfilt2.html" description="Applique un filtrage median 2D."/>
           <keyword name="padarray" link="1_image_basics/3_filtering_edges/padarray.html" description="Ajoute des marges a un tableau pour le filtrage ou la morphologie."/>
         </section>
@@ -139,6 +140,7 @@
           <keyword name="sizesMatch" link="3_geometry_registration_3d/6_geometric_transforms/sizesMatch.html" description="Determine si une reference spatiale correspond a une taille d'image."/>
           <keyword name="transformPointsForward" link="3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.html" description="Applique une transformation geometrique directe a des points."/>
           <keyword name="transformPointsInverse" link="3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.html" description="Applique une transformation geometrique inverse a des points."/>
+          <keyword name="warp" link="3_geometry_registration_3d/6_geometric_transforms/warp.html" description="Affiche une image plaquée en texture sur une surface."/>
           <keyword name="worldToIntrinsic" link="3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.html" description="Convertit des coordonnees monde en coordonnees intrinseques."/>
           <keyword name="worldToSubscript" link="3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.html" description="Convertit des coordonnees monde en indices d'image."/>
         </section>

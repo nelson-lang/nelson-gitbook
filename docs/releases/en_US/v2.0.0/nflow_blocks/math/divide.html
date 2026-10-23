@@ -418,12 +418,12 @@
         }
       ],
       "defaultParams": {
-        "Gain": 2
+        "Gain": 1
       },
       "render": {
         "type": "math",
         "formula": "{params.Gain}",
-        "mathGroupClass": "gain-math",
+        "mathGroupClass": "nf-gain-formula",
         "textSize": "16px",
         "width": 100,
         "height": 80
@@ -476,7 +476,7 @@
       "render": {
         "type": "math",
         "formula": "\\oplus",
-        "mathGroupClass": "sum-math",
+        "mathGroupClass": "nf-sum-formula",
         "textSize": "16px",
         "width": 20,
         "height": 20
@@ -527,7 +527,7 @@
       "render": {
         "type": "math",
         "formula": "\\otimes",
-        "mathGroupClass": "mult-math",
+        "mathGroupClass": "nf-mult-formula",
         "textSize": "16px",
         "width": 20,
         "height": 20
@@ -560,7 +560,7 @@
       "render": {
         "type": "math",
         "formula": "|x|",
-        "mathGroupClass": "abs-math",
+        "mathGroupClass": "nf-abs-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -893,7 +893,7 @@
       "render": {
         "type": "math",
         "formula": "min(x,y)",
-        "mathGroupClass": "min-math",
+        "mathGroupClass": "nf-min-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -931,7 +931,7 @@
       "render": {
         "type": "math",
         "formula": "max(x,y)",
-        "mathGroupClass": "max-math",
+        "mathGroupClass": "nf-max-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -1225,9 +1225,7 @@ Nelson::NFlow::handleDivide(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     if (const PortSig* ps = exact64OutPort(ctx, b.nid)) {
         const SigType ty = ps-&gt;type;
         const bool sat = blockSaturates(ctx, b.nid);
-        // Integer division rounding follows the block's Rounding parameter;
-        // the floor default matches the reference behavior of an integer
-        // divide block.
+        // Integer division rounds per the Rounding parameter (floor by default).
         nflow::BlockDescriptor dbd(b, ctx.variables);
         const std::string rname = dbd.paramStr(nflow::kRounding, "floor");
         SigRounding rounding = SigRounding::Floor;
@@ -1292,8 +1290,7 @@ Nelson::NFlow::getCodeGenRustDivide()
 {
     BlockCodegenTemplate t;
     // Preserve the divisor's sign, matching the interpreter (handleDivide) and
-    // the C backend. The former fabs() guard forced a positive divisor, so
-    // every negative denominator produced a result of the WRONG SIGN.
+    // the C backend.
     t.step = "{ let denom = {in1};\n"
              "  let denom = if libm::fabs(denom) &lt; 1e-300_f64 { if denom &lt; 0.0_f64 { -1e-300_f64 } "
              "else { 1e-300_f64 } } else { denom };\n"

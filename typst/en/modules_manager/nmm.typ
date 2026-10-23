@@ -76,6 +76,7 @@ Nelson Modules Manager.
 - #raw("report = nmm('pack', module_path, '-dry-run')");
 - #raw("report = nmm('pack', module_path, destination_dir, '-dry-run')");
 - #raw("package_filename = nmm('pack', module_path, destination_dir, '-no-tests')");
+- #raw("package_filename = nmm('pack', module_path, destination_dir, '-target', platform)");
 - #raw("report = nmm('publish', package_filename)");
 - #raw("report = nmm('publish', package_filename, '-dry-run')");
 - #raw("report = nmm('publish', package_filename, '-check')");
@@ -281,6 +282,8 @@ Nelson Modules Manager.
  #strong[nmm('pack', module\_path, destination\_dir)]; validates and builds a source module in a temporary staging directory, runs the module tests with fail-fast behavior, generates #strong[module-lock.json];, then creates a #strong[.nmz]; archive and its #strong[.sha256]; checksum.
 
  #strong[nmm('pack', module\_path, '-dry-run')]; validates, builds, tests and computes the lockfile without creating an archive. With a destination directory, the report also includes the archive path that would be written.
+
+ #strong[nmm('pack', module\_path, destination\_dir, '-target', 'wasm32')]; cross-builds a binary module for the WebAssembly engine from any host: #strong[module.json]; must list #strong[wasm32]; in #strong[platforms];, the builder runs with #strong[NELSON\_DL\_TARGET\=wasm32]; so #strong[dlgeneratemake];, #strong[dlmake]; and #strong[getdynlibext]; produce an Emscripten side module (#strong[lib\*.so];, see #strong[dltarget];), the tests are skipped because that gateway cannot run on the host, and the archive is named #strong[\<module\>-wasm32-\<version\>.nmz]; with a lockfile for the #strong[wasm32]; architecture. The Emscripten SDK of the engine build must be active (#strong[EMSDK];, see BUILDING\_WebAssembly.md). The target may also be the running architecture, which is the default.
 
  #strong[nmm('pack', module\_path, destination\_dir, '-no-tests')]; creates the archive without running package tests. This is intended for local development archives only.
 

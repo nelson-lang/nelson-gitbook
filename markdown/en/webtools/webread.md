@@ -21,7 +21,11 @@ Read data from RESTful web service to Nelson's variable
 ## 📄 Description
 
 
-<b>webread()</b> reads content from the web to nelson's variable.
+<b>webread()</b> reads content from the web to nelson's variable. 
+
+HTTP redirects are followed by default (see <b>FollowLocation</b> in <b>weboptions</b>). 
+
+When <b>ContentType</b> is <b>'auto'</b> (the default), the Content-Type header of the response selects the decoder: an <b>image/\*</b> response is read with <b>imread</b>, an <b>audio/\*</b> response with <b>audioread</b> and a JSON response with <b>jsondecode</b>. Other media types are detected from the content.
 
 ## 💡 Examples
 
@@ -61,6 +65,7 @@ edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
+| 2.0.0   | redirects followed by default, 'auto' content type uses the response Content-Type header |
 
 <!--
 ## 👤 Author

@@ -30,6 +30,7 @@ Functions for creating, inspecting, and reducing dynamic system models.
 - #nlink(<control_system:1_dynamic_system_models.tfdata>)[tfdata]: Access transfer function model data.
 - #nlink(<control_system:1_dynamic_system_models.tzero>)[tzero]: Invariant zeros of linear system.
 - #nlink(<control_system:1_dynamic_system_models.zero>)[zero]: Zeros and gain of SISO dynamic system.
+- #nlink(<control_system:1_dynamic_system_models.zpk>)[zpk]: Constructs a zero-pole-gain model.
 
 == Model Conversion and Interconnection
 
@@ -59,12 +60,17 @@ Functions for time-domain, frequency-domain, and model-response analysis.
 === Functions
 
 - #nlink(<control_system:3_linear_analysis.bode>)[bode]: Bode plot of frequency response, magnitude and phase data.
+- #nlink(<control_system:3_linear_analysis.bodeoptions>)[bodeoptions]: Options for a Bode plot.
+- #nlink(<control_system:3_linear_analysis.bodeplot>)[bodeplot]: Bode plot of a SISO LTI system with plotting options.
 - #nlink(<control_system:3_linear_analysis.damp>)[damp]: Natural frequency and damping ratio.
 - #nlink(<control_system:3_linear_analysis.dcgain>)[dcgain]: Low-frequency (DC) gain of LTI system.
 - #nlink(<control_system:3_linear_analysis.evalfr>)[evalfr]: Evaluate frequency response at given frequency.
 - #nlink(<control_system:3_linear_analysis.freqresp>)[freqresp]: Evaluate system response over a grid of frequencies.
 - #nlink(<control_system:3_linear_analysis.hsvd>)[hsvd]: Hankel singular values of dynamic system.
+- #nlink(<control_system:3_linear_analysis.margin>)[margin]: Gain and phase margins of a SISO LTI system.
 - #nlink(<control_system:3_linear_analysis.nyquist>)[nyquist]: Nyquist plot of frequency response.
+- #nlink(<control_system:3_linear_analysis.pzmap>)[pzmap]: Pole-zero map of a dynamic system.
+- #nlink(<control_system:3_linear_analysis.rlocus>)[rlocus]: Root locus of a SISO model.
 - #nlink(<control_system:3_linear_analysis.sigma>)[sigma]: Singular value response of an LTI model.
 
 == Time and Frequency Responses
@@ -95,6 +101,7 @@ Functions for controller design, estimators, and regulator computations.
 - #nlink(<control_system:5_control_design_tuning.lqr>)[lqr]: Linear-Quadratic Regulator (LQR) design.
 - #nlink(<control_system:5_control_design_tuning.lqry>)[lqry]: Form linear-quadratic (LQ) state-feedback regulator with output weighting.
 - #nlink(<control_system:5_control_design_tuning.ord2>)[ord2]: Generate continuous second-order systems.
+- #nlink(<control_system:5_control_design_tuning.place>)[place]: Pole placement gain selection using robust eigenstructure assignment.
 
 == Matrix Computations
 
@@ -147,6 +154,8 @@ Control-oriented matrix computations for state-space analysis.
 #pagebreak(weak: true)
 #include "1_dynamic_system_models/zero.typ"
 #pagebreak(weak: true)
+#include "1_dynamic_system_models/zpk.typ"
+#pagebreak(weak: true)
 #include "2_model_conversion_interconnection/abcdchk.typ"
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/append.typ"
@@ -177,6 +186,10 @@ Control-oriented matrix computations for state-space analysis.
 #pagebreak(weak: true)
 #include "3_linear_analysis/bode.typ"
 #pagebreak(weak: true)
+#include "3_linear_analysis/bodeoptions.typ"
+#pagebreak(weak: true)
+#include "3_linear_analysis/bodeplot.typ"
+#pagebreak(weak: true)
 #include "3_linear_analysis/damp.typ"
 #pagebreak(weak: true)
 #include "3_linear_analysis/dcgain.typ"
@@ -187,7 +200,13 @@ Control-oriented matrix computations for state-space analysis.
 #pagebreak(weak: true)
 #include "3_linear_analysis/hsvd.typ"
 #pagebreak(weak: true)
+#include "3_linear_analysis/margin.typ"
+#pagebreak(weak: true)
 #include "3_linear_analysis/nyquist.typ"
+#pagebreak(weak: true)
+#include "3_linear_analysis/pzmap.typ"
+#pagebreak(weak: true)
+#include "3_linear_analysis/rlocus.typ"
 #pagebreak(weak: true)
 #include "3_linear_analysis/sigma.typ"
 #pagebreak(weak: true)
@@ -220,6 +239,8 @@ Control-oriented matrix computations for state-space analysis.
 #include "5_control_design_tuning/lqry.typ"
 #pagebreak(weak: true)
 #include "5_control_design_tuning/ord2.typ"
+#pagebreak(weak: true)
+#include "5_control_design_tuning/place.typ"
 #pagebreak(weak: true)
 #include "6_matrix_computations/bdschur.typ"
 #pagebreak(weak: true)

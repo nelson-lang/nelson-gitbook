@@ -15,6 +15,7 @@ Functions for solving, analyzing, and measuring linear systems and vector or mat
 === Functions
 
 - #nlink(<linear_algebra:1_linear_systems.cumtrapz>)[cumtrapz]: Cumulative trapezoidal numerical integration.
+- #nlink(<linear_algebra:1_linear_systems.curl>)[curl]: Curl and angular velocity of a vector field.
 - #nlink(<linear_algebra:1_linear_systems.del2>)[del2]: Discrete Laplacian.
 - #nlink(<linear_algebra:1_linear_systems.det>)[det]: Matrix determinant.
 - #nlink(<linear_algebra:1_linear_systems.diff>)[diff]: Differences and approximate derivatives.
@@ -116,6 +117,8 @@ Incomplete factorization functions used as preconditioners.
 #nested[
 #pagebreak(weak: true)
 #include "1_linear_systems/cumtrapz.typ"
+#pagebreak(weak: true)
+#include "1_linear_systems/curl.typ"
 #pagebreak(weak: true)
 #include "1_linear_systems/del2.typ"
 #pagebreak(weak: true)

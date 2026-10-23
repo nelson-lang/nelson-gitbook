@@ -23,7 +23,7 @@ Start the Nelson MCP server manually.
 
 ``````matlab
 
-nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
+nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
 
 ``````
 
@@ -32,7 +32,7 @@ Register Nelson as an MCP server in Codex.
 ``````matlab
 
 # Run this once per Codex configuration. Run it again only to change the command or options.
-codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
+codex mcp add nelson -- nelson-adv-cli --quiet --no-ipc --no-user-startup --no-user-modules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"
 
 ``````
 
@@ -51,9 +51,9 @@ Generic MCP client configuration using a local Ollama model.
       "command": "nelson-adv-cli",
       "args": [
         "--quiet",
-        "--noipc",
-        "--nouserstartup",
-        "--nousermodules",
+        "--no-ipc",
+        "--no-user-startup",
+        "--no-user-modules",
         "-e",
         "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"
       ]
@@ -103,7 +103,7 @@ Diagnose common MCP setup problems.
 If the client cannot list tools:
   Check that the MCP server was registered in the client configuration.
   Check that nelson-adv-cli is in PATH or use an absolute path.
-  Keep --quiet --noipc in the command.
+  Keep --quiet --no-ipc in the command.
   Do not write diagnostic text to standard output.
 
 If the workspace or options changed:

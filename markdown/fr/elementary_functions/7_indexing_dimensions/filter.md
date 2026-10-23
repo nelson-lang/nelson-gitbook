@@ -53,7 +53,7 @@ y = filter(b, a, X);
 plot(t, X)
 hold on
 plot(t, y)
-legend(_('Input Data'), _('Filtered Data'));
+legend('Input Data', 'Filtered Data');
 
 ```
 

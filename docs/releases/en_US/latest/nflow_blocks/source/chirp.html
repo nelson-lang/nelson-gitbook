@@ -250,8 +250,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -626,13 +626,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -770,10 +770,8 @@ Nelson::NFlow::getCodeGenCChirp()
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         double f0 = bd.paramDouble(nflow::kF0, 0.0);
         double f1 = bd.paramDouble(nflow::kF1, 0.0);
-        // Floor the sweep duration at 1 ms, matching the interpreter
-        // (handleChirp) and the Rust backend. The former `t1raw != 0 ? ...`
-        // guard promoted an explicit T1 = 0 to 1.0 s, a 1000x chirp-rate
-        // divergence from the simulator on that single edge case.
+        // Floor the sweep duration at 1 ms, as the interpreter (handleChirp) and
+        // the Rust backend do. An explicit T1 = 0 must not become 1.0 s.
         double t1 = std::fmax(0.001, bd.paramDouble(nflow::kT1, 1.0));
         a.line("{ double k = (" + a.fmt(f1) + " - " + a.fmt(f0) + ") / " + a.fmt(t1) + ";");
         a.line("  double phase = 2.0 * M_PI * (" + a.fmt(f0) + " * t + 0.5 * k * t * t);");

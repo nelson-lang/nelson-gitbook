@@ -757,10 +757,8 @@ Nelson::NFlow::handleDtf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
             return v;
         };
         // Same reading as the emitted code: buildDiscreteTf normalises by the
-        // leading denominator coefficient AND pads a lower-degree numerator on
-        // the left, so both lists are polynomials in z. The runtime used to
-        // normalise here on its own without the padding, which gave a system
-        // with no delay where the emitted code had one.
+        // leading denominator coefficient and pads a lower-degree numerator on
+        // the left, so both lists are polynomials in z.
         const nflow::DiscreteTf model
             = nflow::buildDiscreteTf(toPolyD(b.params.value(nflow::kNum, json::array())),
                 toPolyD(b.params.value(nflow::kDen, json::array())));
@@ -779,15 +777,11 @@ Nelson::NFlow::handleDtf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // The output answers the CURRENT input: with the numerator and the
-        // denominator read as polynomials in z, a biproper system feeds through
-        // and only a lower-degree numerator delays. Emitting what UPDATE had
-        // latched put every form one step behind, so a biproper system answered
-        // a step after its input moved.
+        // The output answers the CURRENT input: a biproper system feeds through
+        // and only a lower-degree numerator delays.
         const int w = std::max(1, outputWidth(ctx, b.nid, 0));
         const bool onHit = (ctx.t + 1e-6 &gt;= st.dNextTime);
         if (!onHit) {
-            // Between this block's own sample hits it holds what it last said.
             if (w &lt;= 1) {
                 setOutput(ctx, b.nid, st.outLatch.empty() ? st.output : st.outLatch[0]);
             } else {

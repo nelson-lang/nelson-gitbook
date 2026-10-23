@@ -149,7 +149,8 @@ disp(pbaspect('mode'))</code></pre>
 <div class="example">
 <div class="example-title">Revenir au rapport d'aspect par défaut de la boîte de tracé</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = rand(100,1);
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+X = rand(100,1);
 Y = rand(100,1);
 Z = rand(100,1);
 scatter3(X, Y, Z)

@@ -123,7 +123,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -165,8 +165,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -283,8 +283,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -1045,7 +1045,6 @@ Nelson::NFlow::resolveBusCreatorDims(const Block&amp; b, const ValMap&amp; vars,
         }
         t.members.push_back(std::move(m));
     }
-    // Named bus type: validate structural agreement with the declaration.
     const std::string declared = bd.paramStr(nflow::kBusType, "");
     if (!declared.empty()) {
         const int want = busReg.idOf(declared);
@@ -1067,8 +1066,7 @@ Nelson::NFlow::resolveBusCreatorDims(const Block&amp; b, const ValMap&amp; vars,
         outSigs[0].isComplex = false;
         return true;
     }
-    // Anonymous (inferred) bus: reuse a structurally equal registered type
-    // so the fixed-point iteration converges to a stable id.
+    // Anonymous (inferred) bus: reuse a structurally equal registered type.
     int id = -1;
     const int probe = busReg.add(t); // candidate at the end
     for (int k = 0; k &lt; probe; ++k) {
@@ -1078,7 +1076,7 @@ Nelson::NFlow::resolveBusCreatorDims(const Block&amp; b, const ValMap&amp; vars,
         }
     }
     if (id &gt;= 0) {
-        busReg.types.pop_back(); // discard the duplicate candidate
+        busReg.types.pop_back();
     } else {
         id = probe;
     }

@@ -36,6 +36,7 @@ Fonctions pour les courbes, les traces de fonctions et les traces avec barres d'
 - [plot3](1_plots/1_line_plots/plot3.md) - Tracé de courbe 3D.
 - [semilogx](1_plots/1_line_plots/semilogx.md) - Graphique semi-logarithmique (axe x en échelle logarithmique).
 - [semilogy](1_plots/1_line_plots/semilogy.md) - Graphique semi-logarithmique (axe y en échelle logarithmique).
+- [viscircles](1_plots/1_line_plots/viscircles.md) - Trace des cercles.
 - [xline](1_plots/1_line_plots/xline.md) - Ligne constante verticale.
 - [yline](1_plots/1_line_plots/yline.md) - Ligne constante horizontale.
 
@@ -168,6 +169,7 @@ Fonctions pour les surfaces, maillages, volumes, zones remplies et graphiques po
 - [area](1_plots/7_surfaces_volumes_polygons/area.md) - Creer des graphes d'aires.
 - [contourslice](1_plots/7_surfaces_volumes_polygons/contourslice.md) - Afficher des lignes de contour sur des coupes de volume.
 - [cylinder](1_plots/7_surfaces_volumes_polygons/cylinder.md) - Créer un cylindre.
+- [ellipsoid](1_plots/7_surfaces_volumes_polygons/ellipsoid.md) - Crée un ellipsoïde.
 - [fill](1_plots/7_surfaces_volumes_polygons/fill.md) - Créer des formes 2D remplies.
 - [fill3](1_plots/7_surfaces_volumes_polygons/fill3.md) - Creer des patchs 3-D remplis.
 - [fimplicit](1_plots/7_surfaces_volumes_polygons/fimplicit.md) - Tracer une courbe de fonction implicite.
@@ -176,6 +178,7 @@ Fonctions pour les surfaces, maillages, volumes, zones remplies et graphiques po
 - [fsurf](1_plots/7_surfaces_volumes_polygons/fsurf.md) - Trace une surface definie par une fonction.
 - [isonormals](1_plots/7_surfaces_volumes_polygons/isonormals.md) - Calculer les normales des sommets d'une isosurface.
 - [isosurface](1_plots/7_surfaces_volumes_polygons/isosurface.md) - Extraire une isosurface depuis des donnees volumiques.
+- [knot](1_plots/7_surfaces_volumes_polygons/knot.md) - Créer une surface en nœud de trèfle.
 - [mesh](1_plots/7_surfaces_volumes_polygons/mesh.md) - Tracé de surface en maillage (mesh).
 - [meshc](1_plots/7_surfaces_volumes_polygons/meshc.md) - Afficher un maillage avec des contours en dessous.
 - [meshz](1_plots/7_surfaces_volumes_polygons/meshz.md) - Tracé de surface en maillage (mesh) avec rideau.
@@ -188,6 +191,7 @@ Fonctions pour les surfaces, maillages, volumes, zones remplies et graphiques po
 - [smooth3](1_plots/7_surfaces_volumes_polygons/smooth3.md) - Lisser des donnees 3-D.
 - [sphere](1_plots/7_surfaces_volumes_polygons/sphere.md) - Créer une sphère.
 - [surf](1_plots/7_surfaces_volumes_polygons/surf.md) - tracé de surface.
+- [surf2patch](1_plots/7_surfaces_volumes_polygons/surf2patch.md) - Convertit des données de surface en données de patch.
 - [surface](1_plots/7_surfaces_volumes_polygons/surface.md) - Tracé de surface primitif.
 - [surfc](1_plots/7_surfaces_volumes_polygons/surfc.md) - Afficher une surface avec des contours en dessous.
 - [surfl](1_plots/7_surfaces_volumes_polygons/surfl.md) - Afficher une surface eclairee.
@@ -234,6 +238,7 @@ Fonctions pour creer, rechercher, interroger, effacer et fermer des objets graph
 - [allchild](2_graphics_objects/1_object_management/allchild.md) - Retourne tous les enfants directs d'objets graphiques.
 - [ancestor](2_graphics_objects/1_object_management/ancestor.md) - Ancêtre d'un objet graphique.
 - [axes](2_graphics_objects/1_object_management/axes.md) - Créer des axes cartésiens.
+- [axescheck](2_graphics_objects/1_object_management/axescheck.md) - Extrait un handle d'axes d'une liste d'arguments.
 - [cla](2_graphics_objects/1_object_management/cla.md) - Efface les axes.
 - [clf](2_graphics_objects/1_object_management/clf.md) - Efface la figure.
 - [close](2_graphics_objects/1_object_management/close.md) - Ferme une ou plusieurs figures
@@ -242,14 +247,22 @@ Fonctions pour creer, rechercher, interroger, effacer et fermer des objets graph
 - [findobj](2_graphics_objects/1_object_management/findobj.md) - Trouve des objets graphiques avec des proprietes donnees.
 - [gca](2_graphics_objects/1_object_management/gca.md) - Récupère l'objet axes courant.
 - [gcf](2_graphics_objects/1_object_management/gcf.md) - Récupère l'objet figure courant.
+- [getappdata](2_graphics_objects/1_object_management/getappdata.md) - Récupère des données applicatives d'un objet.
 - [groot](2_graphics_objects/1_object_management/groot.md) - Objet racine graphique.
 - [hggroup](2_graphics_objects/1_object_management/hggroup.md) - Créer un objet groupe.
 - [hold](2_graphics_objects/1_object_management/hold.md) - Conserver le tracé courant lors de l'ajout de nouveaux tracés.
+- [inspect](2_graphics_objects/1_object_management/inspect.md) - Ouvre l'inspecteur de propriétés des objets graphiques.
 - [is2D](2_graphics_objects/1_object_management/is2D.md) - Vérifie si ax est un axe 2D polaire ou cartésien.
 - [isValidGraphicsProperty](2_graphics_objects/1_object_management/isValidGraphicsProperty.md) - Vérifie si le nom de propriété est valide.
+- [isappdata](2_graphics_objects/1_object_management/isappdata.md) - Vrai si des données applicatives existent.
 - [isgraphics](2_graphics_objects/1_object_management/isgraphics.md) - Vérifie si l'objet est graphique.
 - [ishold](2_graphics_objects/1_object_management/ishold.md) - Obtient l'état actuel du mode hold.
+- [makehgtform](2_graphics_objects/1_object_management/makehgtform.md) - Crée une matrice de transformation 4 par 4.
 - [newplot](2_graphics_objects/1_object_management/newplot.md) - Préparer la création d'un nouveau graphique.
+- [rmappdata](2_graphics_objects/1_object_management/rmappdata.md) - Supprime des données applicatives d'un objet.
+- [rotate](2_graphics_objects/1_object_management/rotate.md) - Fait tourner des objets graphiques autour d'un axe.
+- [setappdata](2_graphics_objects/1_object_management/setappdata.md) - Stocke des données applicatives sur un objet.
+- [shg](2_graphics_objects/1_object_management/shg.md) - Affiche la fenêtre graphique courante.
 
 ### Objets de disposition
 
@@ -442,6 +455,7 @@ Fonctions pour creer, selectionner et lister les palettes de couleurs.
 - [abyss](3_labels_styling/2_color_styling/colormaps/abyss.md) - Palette de couleurs abyss.
 - [autumn](3_labels_styling/2_color_styling/colormaps/autumn.md) - Palette de couleurs autumn.
 - [bone](3_labels_styling/2_color_styling/colormaps/bone.md) - Palette de couleurs bone.
+- [brighten](3_labels_styling/2_color_styling/colormaps/brighten.md) - Éclaircit ou assombrit une palette de couleurs.
 - [colorcube](3_labels_styling/2_color_styling/colormaps/colorcube.md) - Tableau de colormap RGB en cube ameliore.
 - [colormap](3_labels_styling/2_color_styling/colormaps/colormap.md) - Afficher et définir la palette de couleurs courante.
 - [colormaplist](3_labels_styling/2_color_styling/colormaps/colormaplist.md) - Fournit la liste des palettes de couleurs.
@@ -486,7 +500,19 @@ Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.
 
 #### Functions
 
+- [axtoolbar](3_labels_styling/3_interactions_camera_lighting/axtoolbar.md) - Obtient ou configure la barre d'outils des axes.
+- [camdolly](3_labels_styling/3_interactions_camera_lighting/camdolly.md) - Déplace la position et la cible de la caméra.
 - [camlight](3_labels_styling/3_interactions_camera_lighting/camlight.md) - Cree ou positionne une lumiere par rapport a la camera.
+- [camlookat](3_labels_styling/3_interactions_camera_lighting/camlookat.md) - Pointe la caméra vers un objet.
+- [camorbit](3_labels_styling/3_interactions_camera_lighting/camorbit.md) - Fait orbiter la position de la caméra autour de la cible.
+- [campan](3_labels_styling/3_interactions_camera_lighting/campan.md) - Fait pivoter la cible de la caméra autour de la position.
+- [campos](3_labels_styling/3_interactions_camera_lighting/campos.md) - Définit ou interroge la position de la caméra.
+- [camproj](3_labels_styling/3_interactions_camera_lighting/camproj.md) - Définit ou interroge le type de projection de la caméra.
+- [camroll](3_labels_styling/3_interactions_camera_lighting/camroll.md) - Fait rouler la caméra autour de l'axe de visée.
+- [camtarget](3_labels_styling/3_interactions_camera_lighting/camtarget.md) - Définit ou interroge la cible de la caméra.
+- [camup](3_labels_styling/3_interactions_camera_lighting/camup.md) - Définit ou interroge le vecteur vertical de la caméra.
+- [camva](3_labels_styling/3_interactions_camera_lighting/camva.md) - Définit ou interroge l'angle de vue de la caméra.
+- [camzoom](3_labels_styling/3_interactions_camera_lighting/camzoom.md) - Zoome la caméra en avant ou en arrière.
 - [drawnow](3_labels_styling/3_interactions_camera_lighting/drawnow.md) - Met à jour les figures et traite les callbacks
 - [Gestion des interruptions de callback dans Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) - 
 - [light](3_labels_styling/3_interactions_camera_lighting/light.md) - Cree un objet lumiere dans des axes.
@@ -554,6 +580,7 @@ Fonctions pour ouvrir et sauvegarder des fichiers figure.
 
 ### Functions
 
+- [exportapp](5_printing_saving/exportapp.md) - Enregistre une figure avec ses composants d'interface dans un fichier image.
 - [openfig](5_printing_saving/openfig.md) - Ouvre un fichier FIG Nelson.
 - [print](5_printing_saving/print.md) - Exporte une figure vers un fichier image ou document.
 - [savefig](5_printing_saving/savefig.md) - Enregistre une figure dans un fichier FIG Nelson.

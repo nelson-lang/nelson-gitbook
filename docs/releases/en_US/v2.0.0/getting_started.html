@@ -57,14 +57,14 @@ border-color: #333;
 <h2>2. Starting Nelson</h2>
 <p>The <code>nelson</code> command accepts a mode option:</p>
 <pre><code class="language-bash">nelson              # desktop with command window, editor and workspace browser
-nelson -cli         # text mode in the terminal
-nelson -adv-cli     # text mode with graphics support
+nelson --cli        # text mode in the terminal
+nelson --adv-cli    # text mode with graphics support
 nelson-webview      # the desktop in a native web window
 nelson-webview --web   # the same desktop served over HTTP for a browser
 </code></pre>
 <p>Two options are useful for automation:</p>
-<pre><code class="language-bash">nelson -cli -e &quot;disp(2 + 2)&quot;      # run one command and show the result
-nelson -cli -f my_script.m        # run a file, then stay at the prompt
+<pre><code class="language-bash">nelson --cli -e &quot;disp(2 + 2)&quot;     # run one command and show the result
+nelson --cli -f my_script.m       # run a file, then stay at the prompt
 </code></pre>
 <p>To leave Nelson, type <code>quit</code> or <code>exit</code>.</p>
 <h2>3. First commands</h2>
@@ -202,7 +202,7 @@ x = A \ b
 <pre><code class="language-matlab">run('example1.m')
 example1
 </code></pre>
-<p>From the terminal: <code>nelson -cli -f example1.m</code>.</p>
+<p>From the terminal: <code>nelson --cli -f example1.m</code>.</p>
 <p>The <code>edit</code> command opens a file in the built-in editor. In the editor, <code>%%</code> starts a section that can be run on its own.</p>
 <p>Variables created by a script go into the workspace. They are still there after the script ends.</p>
 <h3>Functions</h3>

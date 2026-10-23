@@ -260,8 +260,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "and-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-and-formula",
         "formula": "\\text{AND}",
         "textSize": "16px"
       }
@@ -296,8 +296,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "or-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-or-formula",
         "formula": "\\text{OR}",
         "textSize": "16px"
       }
@@ -332,8 +332,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "xor-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-xor-formula",
         "formula": "\\text{XOR}",
         "textSize": "16px"
       }
@@ -363,8 +363,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "not-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-not-formula",
         "formula": "\\text{NOT}",
         "textSize": "16px"
       }
@@ -990,11 +990,9 @@ Nelson::NFlow::handleRelationalOperator(SimCtx&amp; ctx, const Block&amp; b, Pha
         ctx, b.nid, [&amp;](int i) { return compareValues(sigAt(a, i), sigAt(c, i), op) ? 1.0 : 0.0; });
 }
 //=============================================================================
-// Single language-parameterized emitter (CodegenLang); the exact-64 lane
-// mirrors the simulator: operands of the SAME exact-64 kind compare in
-// integer space (the double projection collapses neighbours above 2^53);
-// a mixed pairing falls back to the double comparison (Rust casts the typed
-// side so the emitted crate still compiles).
+// One emitter for both languages (CodegenLang). Operands of the SAME exact-64
+// kind compare in integer space (doubles collapse neighbours above 2^53); a
+// mixed pairing compares as double (Rust casts the typed side).
 static Nelson::NFlow::BlockCodegenTemplate
 makeRelationalOperatorCodegen(Nelson::NFlow::CodegenLang L)
 {
@@ -1012,8 +1010,8 @@ makeRelationalOperatorCodegen(Nelson::NFlow::CodegenLang L)
             codegenEmitTypedCompare(a, op, a.in[0], a.in[1], !L.rust);
             return;
         }
-        // Mixed operands: double-space comparison (the historical behavior);
-        // Rust needs an explicit cast on the typed side.
+        // Mixed operands: double-space comparison; Rust needs an explicit cast on
+        // the typed side.
         auto asDouble = [&amp;L](const std::string&amp; expr, const std::string&amp; tn) {
             if (L.rust &amp;&amp; codegenIsExact64(tn)) {
                 return "(" + expr + " as f64)";

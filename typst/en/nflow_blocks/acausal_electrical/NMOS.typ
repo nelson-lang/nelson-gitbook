@@ -31,7 +31,7 @@ N-channel MOSFET (square law): drain, gate and source pins.
   [Library], [Electrical (acausal)], 
   [Type], [#raw("NMOS");], 
   [Label], [NMOS], 
-  [Solver], [Lowered to #raw("physicalIsland");. Reference solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
+  [Solver], [Lowered to #raw("physicalIsland");. Default solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
 )
   #strong[Implementation Sources];
 

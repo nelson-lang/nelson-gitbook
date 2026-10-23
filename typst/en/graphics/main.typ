@@ -25,6 +25,7 @@ Functions for line plots, function plots, and plots with error bars.
 - #nlink(<graphics:1_plots.1_line_plots.plot3>)[plot3]: 3-D line plot.
 - #nlink(<graphics:1_plots.1_line_plots.semilogx>)[semilogx]: Semilog plot (x-axis has log scale).
 - #nlink(<graphics:1_plots.1_line_plots.semilogy>)[semilogy]: Semilog plot (y-axis has log scale).
+- #nlink(<graphics:1_plots.1_line_plots.viscircles>)[viscircles]: Draw circles.
 - #nlink(<graphics:1_plots.1_line_plots.xline>)[xline]: Vertical constant line.
 - #nlink(<graphics:1_plots.1_line_plots.yline>)[yline]: Horizontal constant line.
 
@@ -133,6 +134,7 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.area>)[area]: Create area plots.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.contourslice>)[contourslice]: Display contour lines on slices through volume data.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.cylinder>)[cylinder]: Create cylinder.
+- #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.ellipsoid>)[ellipsoid]: Create an ellipsoid.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.fill>)[fill]: Create filled 2-D patches.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.fill3>)[fill3]: Create filled 3-D patches.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.fimplicit>)[fimplicit]: Plot an implicit function curve.
@@ -141,6 +143,7 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.fsurf>)[fsurf]: Plot a function surface.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.isonormals>)[isonormals]: Compute normals of isosurface vertices.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.isosurface>)[isosurface]: Extract isosurface data from volume data.
+- #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.knot>)[knot]: Create a trefoil knot surface.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.mesh>)[mesh]: Mesh surface plot.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.meshc>)[meshc]: Display a mesh with contour lines below it.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.meshz>)[meshz]: Mesh surface plot with curtain.
@@ -153,6 +156,7 @@ Functions for surfaces, meshes, volumes, filled areas, and polygon graphics.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.smooth3>)[smooth3]: Smooth 3-D data.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.sphere>)[sphere]: Create sphere.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.surf>)[surf]: surface plot.
+- #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.surf2patch>)[surf2patch]: Convert surface data to patch data.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.surface>)[surface]: Primitive surface plot.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.surfc>)[surfc]: Display a surface with contour lines below it.
 - #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.surfl>)[surfl]: Display a lighted surface.
@@ -187,6 +191,7 @@ Functions for creating, finding, querying, clearing, and closing graphics object
 - #nlink(<graphics:2_graphics_objects.1_object_management.allchild>)[allchild]: Return all direct children of graphics objects.
 - #nlink(<graphics:2_graphics_objects.1_object_management.ancestor>)[ancestor]: Ancestor of graphics object.
 - #nlink(<graphics:2_graphics_objects.1_object_management.axes>)[axes]: Create cartesian axes.
+- #nlink(<graphics:2_graphics_objects.1_object_management.axescheck>)[axescheck]: Extract an axes handle from an argument list.
 - #nlink(<graphics:2_graphics_objects.1_object_management.cla>)[cla]: Clear axes.
 - #nlink(<graphics:2_graphics_objects.1_object_management.clf>)[clf]: Clear figure.
 - #nlink(<graphics:2_graphics_objects.1_object_management.close>)[close]: Close one or more figures
@@ -195,14 +200,23 @@ Functions for creating, finding, querying, clearing, and closing graphics object
 - #nlink(<graphics:2_graphics_objects.1_object_management.findobj>)[findobj]: Find graphics objects with specific properties.
 - #nlink(<graphics:2_graphics_objects.1_object_management.gca>)[gca]: get current axes graphics object.
 - #nlink(<graphics:2_graphics_objects.1_object_management.gcf>)[gcf]: get current figure graphics object.
+- #nlink(<graphics:2_graphics_objects.1_object_management.getappdata>)[getappdata]: Retrieve application-defined data from an object.
 - #nlink(<graphics:2_graphics_objects.1_object_management.groot>)[groot]: graphic root object.
 - #nlink(<graphics:2_graphics_objects.1_object_management.hggroup>)[hggroup]: Create group object.
+- #nlink(<graphics:2_graphics_objects.1_object_management.hgtransform>)[hgtransform]: Create transform object.
 - #nlink(<graphics:2_graphics_objects.1_object_management.hold>)[hold]: Retain current plot when adding new plots.
+- #nlink(<graphics:2_graphics_objects.1_object_management.inspect>)[inspect]: Open the property inspector for graphics objects.
 - #nlink(<graphics:2_graphics_objects.1_object_management.is2D>)[is2D]: Checks if ax is a 2-D Polar or Cartesian axes.
 - #nlink(<graphics:2_graphics_objects.1_object_management.isValidGraphicsProperty>)[isValidGraphicsProperty]: Check property name is valid.
+- #nlink(<graphics:2_graphics_objects.1_object_management.isappdata>)[isappdata]: True if application-defined data exists.
 - #nlink(<graphics:2_graphics_objects.1_object_management.isgraphics>)[isgraphics]: Check for graphics object.
 - #nlink(<graphics:2_graphics_objects.1_object_management.ishold>)[ishold]: Get current hold state.
+- #nlink(<graphics:2_graphics_objects.1_object_management.makehgtform>)[makehgtform]: Create a 4-by-4 transform matrix.
 - #nlink(<graphics:2_graphics_objects.1_object_management.newplot>)[newplot]: Prepare to produce a new plot.
+- #nlink(<graphics:2_graphics_objects.1_object_management.rmappdata>)[rmappdata]: Remove application-defined data from an object.
+- #nlink(<graphics:2_graphics_objects.1_object_management.rotate>)[rotate]: Rotate graphics objects about an axis.
+- #nlink(<graphics:2_graphics_objects.1_object_management.setappdata>)[setappdata]: Store application-defined data on an object.
+- #nlink(<graphics:2_graphics_objects.1_object_management.shg>)[shg]: Show the current graph window.
 
 === Layout Objects
 
@@ -382,6 +396,7 @@ Functions for creating, selecting, and listing colormaps.
 - #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.abyss>)[abyss]: Abyss colormap array.
 - #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.autumn>)[autumn]: Autumn colormap array.
 - #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.bone>)[bone]: Bone colormap array.
+- #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.brighten>)[brighten]: Brighten or darken a colormap.
 - #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.colorcube>)[colorcube]: Enhanced RGB color cube colormap array.
 - #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.colormap>)[colormap]: View and set current colormap.
 - #nlink(<graphics:3_labels_styling.2_color_styling.colormaps.colormaplist>)[colormaplist]: Provide list of colormaps.
@@ -411,7 +426,19 @@ Functions for interactive graphics, callbacks, camera views, and lighting.
 
 ==== Functions
 
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.axtoolbar>)[axtoolbar]: Get or configure the axes toolbar.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camdolly>)[camdolly]: Move the camera position and target.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camlight>)[camlight]: Create or position a light relative to the camera.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camlookat>)[camlookat]: Aim the camera at an object.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camorbit>)[camorbit]: Rotate the camera position around the target.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.campan>)[campan]: Rotate the camera target around the position.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.campos>)[campos]: Set or query the camera position.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camproj>)[camproj]: Set or query the camera projection type.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camroll>)[camroll]: Roll the camera about the viewing axis.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camtarget>)[camtarget]: Set or query the camera target.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camup>)[camup]: Set or query the camera up vector.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camva>)[camva]: Set or query the camera view angle.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camzoom>)[camzoom]: Zoom the camera in or out.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.drawnow>)[drawnow]: Update figures and process callbacks
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.graphical_callback>)[Managing Callback Interruptions in Nelson]: 
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.light>)[light]: Create a light object in axes.
@@ -463,6 +490,7 @@ Functions for opening and saving figure files.
 
 === Functions
 
+- #nlink(<graphics:5_printing_saving.exportapp>)[exportapp]: Save figure including UI components as an image file.
 - #nlink(<graphics:5_printing_saving.openfig>)[openfig]: Open a Nelson FIG file.
 - #nlink(<graphics:5_printing_saving.print>)[print]: Export a figure to an image or document file.
 - #nlink(<graphics:5_printing_saving.savefig>)[savefig]: Save figure to a Nelson FIG file.
@@ -487,6 +515,8 @@ Functions for opening and saving figure files.
 #include "1_plots/1_line_plots/semilogx.typ"
 #pagebreak(weak: true)
 #include "1_plots/1_line_plots/semilogy.typ"
+#pagebreak(weak: true)
+#include "1_plots/1_line_plots/viscircles.typ"
 #pagebreak(weak: true)
 #include "1_plots/1_line_plots/xline.typ"
 #pagebreak(weak: true)
@@ -620,6 +650,8 @@ Functions for opening and saving figure files.
 #pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/cylinder.typ"
 #pagebreak(weak: true)
+#include "1_plots/7_surfaces_volumes_polygons/ellipsoid.typ"
+#pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/fill.typ"
 #pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/fill3.typ"
@@ -635,6 +667,8 @@ Functions for opening and saving figure files.
 #include "1_plots/7_surfaces_volumes_polygons/isonormals.typ"
 #pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/isosurface.typ"
+#pagebreak(weak: true)
+#include "1_plots/7_surfaces_volumes_polygons/knot.typ"
 #pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/mesh.typ"
 #pagebreak(weak: true)
@@ -659,6 +693,8 @@ Functions for opening and saving figure files.
 #include "1_plots/7_surfaces_volumes_polygons/sphere.typ"
 #pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/surf.typ"
+#pagebreak(weak: true)
+#include "1_plots/7_surfaces_volumes_polygons/surf2patch.typ"
 #pagebreak(weak: true)
 #include "1_plots/7_surfaces_volumes_polygons/surface.typ"
 #pagebreak(weak: true)
@@ -692,6 +728,8 @@ Functions for opening and saving figure files.
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/axes.typ"
 #pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/axescheck.typ"
+#pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/cla.typ"
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/clf.typ"
@@ -708,21 +746,39 @@ Functions for opening and saving figure files.
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/gcf.typ"
 #pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/getappdata.typ"
+#pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/groot.typ"
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/hggroup.typ"
 #pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/hgtransform.typ"
+#pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/hold.typ"
+#pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/inspect.typ"
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/is2D.typ"
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/isValidGraphicsProperty.typ"
 #pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/isappdata.typ"
+#pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/isgraphics.typ"
 #pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/ishold.typ"
 #pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/makehgtform.typ"
+#pagebreak(weak: true)
 #include "2_graphics_objects/1_object_management/newplot.typ"
+#pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/rmappdata.typ"
+#pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/rotate.typ"
+#pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/setappdata.typ"
+#pagebreak(weak: true)
+#include "2_graphics_objects/1_object_management/shg.typ"
 #pagebreak(weak: true)
 #include "2_graphics_objects/2_layout_objects/nexttile.typ"
 #pagebreak(weak: true)
@@ -984,6 +1040,8 @@ Functions for opening and saving figure files.
 #pagebreak(weak: true)
 #include "3_labels_styling/2_color_styling/colormaps/bone.typ"
 #pagebreak(weak: true)
+#include "3_labels_styling/2_color_styling/colormaps/brighten.typ"
+#pagebreak(weak: true)
 #include "3_labels_styling/2_color_styling/colormaps/colorcube.typ"
 #pagebreak(weak: true)
 #include "3_labels_styling/2_color_styling/colormaps/colormap.typ"
@@ -1028,7 +1086,31 @@ Functions for opening and saving figure files.
 #pagebreak(weak: true)
 #include "3_labels_styling/2_color_styling/colormaps/winter.typ"
 #pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/axtoolbar.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camdolly.typ"
+#pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/camlight.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camlookat.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camorbit.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/campan.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/campos.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camproj.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camroll.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camtarget.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camup.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camva.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/camzoom.typ"
 #pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/drawnow.typ"
 #pagebreak(weak: true)
@@ -1089,6 +1171,8 @@ Functions for opening and saving figure files.
 #include "4_images/imshow.typ"
 #pagebreak(weak: true)
 #include "4_images/movie.typ"
+#pagebreak(weak: true)
+#include "5_printing_saving/exportapp.typ"
 #pagebreak(weak: true)
 #include "5_printing_saving/openfig.typ"
 #pagebreak(weak: true)

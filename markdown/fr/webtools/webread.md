@@ -21,7 +21,11 @@ Lire des données depuis un service web RESTful vers une variable Nelson
 ## 📄 Description
 
 
-<b>webread()</b> lit du contenu depuis le web et le charge dans une variable Nelson.
+<b>webread()</b> lit du contenu depuis le web et le charge dans une variable Nelson. 
+
+Les redirections HTTP sont suivies par défaut (voir <b>FollowLocation</b> dans <b>weboptions</b>). 
+
+Quand <b>ContentType</b> vaut <b>'auto'</b> (valeur par défaut), l'en-tête Content-Type de la réponse choisit le décodeur : une réponse <b>image/\*</b> est lue avec <b>imread</b>, une réponse <b>audio/\*</b> avec <b>audioread</b> et une réponse JSON avec <b>jsondecode</b>. Les autres types sont détectés depuis le contenu.
 
 ## 💡 Exemples
 
@@ -61,6 +65,7 @@ edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.0.0   | version initiale |
+| 2.0.0   | redirections suivies par défaut, le type de contenu 'auto' utilise l'en-tête Content-Type de la réponse |
 
 <!--
 ## 👤 Auteur

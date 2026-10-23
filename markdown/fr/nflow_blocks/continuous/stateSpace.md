@@ -61,7 +61,7 @@ Implemente un modele d etat continu scalaire.
 | <code>A</code> | 1 | 
 | <code>B</code> | 1 | 
 | <code>C</code> | 1 | 
-| <code>D</code> | 0 | 
+| <code>D</code> | 1 | 
 
  
 

@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1791214193
+// Auto-generated on 1792778792
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -4186,6 +4186,12 @@ window.searchIndex = [
     "content": "Permute array dimensions."
   },
   {
+    "title": "resize",
+    "url": "./elementary_functions/7_indexing_dimensions/resize.html",
+    "path": "./elementary_functions/7_indexing_dimensions/resize.html",
+    "content": "Resize an array by truncating or padding."
+  },
+  {
     "title": "rot90",
     "url": "./elementary_functions/7_indexing_dimensions/rot90.html",
     "path": "./elementary_functions/7_indexing_dimensions/rot90.html",
@@ -4444,6 +4450,12 @@ window.searchIndex = [
     "content": "Convert angle from degrees to radians."
   },
   {
+    "title": "degtorad",
+    "url": "./trigonometric_functions/degtorad.html",
+    "path": "./trigonometric_functions/degtorad.html",
+    "content": "Convert angle from degrees to radians."
+  },
+  {
     "title": "pol2cart",
     "url": "./trigonometric_functions/pol2cart.html",
     "path": "./trigonometric_functions/pol2cart.html",
@@ -4453,6 +4465,12 @@ window.searchIndex = [
     "title": "rad2deg",
     "url": "./trigonometric_functions/rad2deg.html",
     "path": "./trigonometric_functions/rad2deg.html",
+    "content": "Convert angle from radians to degrees."
+  },
+  {
+    "title": "radtodeg",
+    "url": "./trigonometric_functions/radtodeg.html",
+    "path": "./trigonometric_functions/radtodeg.html",
     "content": "Convert angle from radians to degrees."
   },
   {
@@ -4726,6 +4744,12 @@ window.searchIndex = [
     "content": "Modified Akima piecewise cubic interpolation."
   },
   {
+    "title": "membrane",
+    "url": "./special_functions/membrane.html",
+    "path": "./special_functions/membrane.html",
+    "content": "Eigenfunctions of the L-shaped membrane."
+  },
+  {
     "title": "pchip",
     "url": "./special_functions/pchip.html",
     "path": "./special_functions/pchip.html",
@@ -4772,6 +4796,12 @@ window.searchIndex = [
     "url": "./linear_algebra/1_linear_systems/cumtrapz.html",
     "path": "./linear_algebra/1_linear_systems/cumtrapz.html",
     "content": "Cumulative trapezoidal numerical integration."
+  },
+  {
+    "title": "curl",
+    "url": "./linear_algebra/1_linear_systems/curl.html",
+    "path": "./linear_algebra/1_linear_systems/curl.html",
+    "content": "Curl and angular velocity of a vector field."
   },
   {
     "title": "del2",
@@ -6508,6 +6538,12 @@ window.searchIndex = [
     "content": "Unsupervised learning, nearest-neighbor search, outlier handling, and sequence model functions."
   },
   {
+    "title": "KDTreeSearcher",
+    "url": "./statistics/7_clustering_anomaly_detection/KDTreeSearcher.html",
+    "path": "./statistics/7_clustering_anomaly_detection/KDTreeSearcher.html",
+    "content": "Nearest neighbor searcher object."
+  },
+  {
     "title": "cluster",
     "url": "./statistics/7_clustering_anomaly_detection/cluster.html",
     "path": "./statistics/7_clustering_anomaly_detection/cluster.html",
@@ -7534,6 +7570,12 @@ window.searchIndex = [
     "content": "Alpha shape object"
   },
   {
+    "title": "axes2ecc",
+    "url": "./geometry/axes2ecc.html",
+    "path": "./geometry/axes2ecc.html",
+    "content": "Eccentricity of an ellipse from its semi-axes."
+  },
+  {
     "title": "boundary",
     "url": "./geometry/boundary.html",
     "path": "./geometry/boundary.html",
@@ -7576,10 +7618,46 @@ window.searchIndex = [
     "content": "Nearest point search"
   },
   {
+    "title": "ellipse1",
+    "url": "./geometry/ellipse1.html",
+    "path": "./geometry/ellipse1.html",
+    "content": "Points on a small ellipse on a sphere."
+  },
+  {
     "title": "griddata",
     "url": "./geometry/griddata.html",
     "path": "./geometry/griddata.html",
     "content": "Interpolate scattered data"
+  },
+  {
+    "title": "nsidedpoly",
+    "url": "./geometry/nsidedpoly.html",
+    "path": "./geometry/nsidedpoly.html",
+    "content": "Create a regular polygon."
+  },
+  {
+    "title": "polyarea",
+    "url": "./geometry/polyarea.html",
+    "path": "./geometry/polyarea.html",
+    "content": "Area of a polygon."
+  },
+  {
+    "title": "polyshape",
+    "url": "./geometry/polyshape.html",
+    "path": "./geometry/polyshape.html",
+    "content": "Create a polygon."
+  },
+  {
+    "title": "reckon",
+    "url": "./geometry/reckon.html",
+    "path": "./geometry/reckon.html",
+    "content": "Point at a given spherical range and azimuth."
+  },
+  {
+    "title": "rectint",
+    "url": "./geometry/rectint.html",
+    "path": "./geometry/rectint.html",
+    "content": "Area of intersection of rectangles."
   },
   {
     "title": "rotx",
@@ -7738,6 +7816,12 @@ window.searchIndex = [
     "content": "Zeros and gain of SISO dynamic system."
   },
   {
+    "title": "zpk",
+    "url": "./control_system/1_dynamic_system_models/zpk.html",
+    "path": "./control_system/1_dynamic_system_models/zpk.html",
+    "content": "Constructs a zero-pole-gain model."
+  },
+  {
     "title": "Model Conversion and Interconnection",
     "url": "./control_system/index.html",
     "path": "sections/control_system",
@@ -7840,6 +7924,18 @@ window.searchIndex = [
     "content": "Bode plot of frequency response, magnitude and phase data."
   },
   {
+    "title": "bodeoptions",
+    "url": "./control_system/3_linear_analysis/bodeoptions.html",
+    "path": "./control_system/3_linear_analysis/bodeoptions.html",
+    "content": "Options for a Bode plot."
+  },
+  {
+    "title": "bodeplot",
+    "url": "./control_system/3_linear_analysis/bodeplot.html",
+    "path": "./control_system/3_linear_analysis/bodeplot.html",
+    "content": "Bode plot of a SISO LTI system with plotting options."
+  },
+  {
     "title": "damp",
     "url": "./control_system/3_linear_analysis/damp.html",
     "path": "./control_system/3_linear_analysis/damp.html",
@@ -7870,10 +7966,28 @@ window.searchIndex = [
     "content": "Hankel singular values of dynamic system."
   },
   {
+    "title": "margin",
+    "url": "./control_system/3_linear_analysis/margin.html",
+    "path": "./control_system/3_linear_analysis/margin.html",
+    "content": "Gain and phase margins of a SISO LTI system."
+  },
+  {
     "title": "nyquist",
     "url": "./control_system/3_linear_analysis/nyquist.html",
     "path": "./control_system/3_linear_analysis/nyquist.html",
     "content": "Nyquist plot of frequency response."
+  },
+  {
+    "title": "pzmap",
+    "url": "./control_system/3_linear_analysis/pzmap.html",
+    "path": "./control_system/3_linear_analysis/pzmap.html",
+    "content": "Pole-zero map of a dynamic system."
+  },
+  {
+    "title": "rlocus",
+    "url": "./control_system/3_linear_analysis/rlocus.html",
+    "path": "./control_system/3_linear_analysis/rlocus.html",
+    "content": "Root locus of a SISO model."
   },
   {
     "title": "sigma",
@@ -7982,6 +8096,12 @@ window.searchIndex = [
     "url": "./control_system/5_control_design_tuning/ord2.html",
     "path": "./control_system/5_control_design_tuning/ord2.html",
     "content": "Generate continuous second-order systems."
+  },
+  {
+    "title": "place",
+    "url": "./control_system/5_control_design_tuning/place.html",
+    "path": "./control_system/5_control_design_tuning/place.html",
+    "content": "Pole placement gain selection using robust eigenstructure assignment."
   },
   {
     "title": "Matrix Computations",
@@ -8870,6 +8990,12 @@ window.searchIndex = [
     "url": "./random/rand.html",
     "path": "./random/rand.html",
     "content": "Random Number."
+  },
+  {
+    "title": "randg",
+    "url": "./random/randg.html",
+    "path": "./random/randg.html",
+    "content": "Gamma distributed random number."
   },
   {
     "title": "randi",
@@ -11248,6 +11374,12 @@ window.searchIndex = [
     "content": "Write an numeric matrix to a text file file using a delimiter."
   },
   {
+    "title": "getvaropts",
+    "url": "./spreadsheet/getvaropts.html",
+    "path": "./spreadsheet/getvaropts.html",
+    "content": "Get variable import options for selected variables."
+  },
+  {
     "title": "jsonImportOptions",
     "url": "./spreadsheet/jsonImportOptions.html",
     "path": "./spreadsheet/jsonImportOptions.html",
@@ -11282,6 +11414,24 @@ window.searchIndex = [
     "url": "./spreadsheet/readvars.html",
     "path": "./spreadsheet/readvars.html",
     "content": "Create variables by reading column-oriented data from a file."
+  },
+  {
+    "title": "setvaropts",
+    "url": "./spreadsheet/setvaropts.html",
+    "path": "./spreadsheet/setvaropts.html",
+    "content": "Set variable import options for selected variables."
+  },
+  {
+    "title": "setvartype",
+    "url": "./spreadsheet/setvartype.html",
+    "path": "./spreadsheet/setvartype.html",
+    "content": "Set variable data types for selected variables."
+  },
+  {
+    "title": "spreadsheetImportOptions",
+    "url": "./spreadsheet/spreadsheetImportOptions.html",
+    "path": "./spreadsheet/spreadsheetImportOptions.html",
+    "content": "Create options for importing spreadsheet data."
   },
   {
     "title": "writecell",
@@ -12214,6 +12364,12 @@ window.searchIndex = [
     "content": "Semilog plot (y-axis has log scale)."
   },
   {
+    "title": "viscircles",
+    "url": "./graphics/1_plots/1_line_plots/viscircles.html",
+    "path": "./graphics/1_plots/1_line_plots/viscircles.html",
+    "content": "Draw circles."
+  },
+  {
     "title": "xline",
     "url": "./graphics/1_plots/1_line_plots/xline.html",
     "path": "./graphics/1_plots/1_line_plots/xline.html",
@@ -12646,6 +12802,12 @@ window.searchIndex = [
     "content": "Create cylinder."
   },
   {
+    "title": "ellipsoid",
+    "url": "./graphics/1_plots/7_surfaces_volumes_polygons/ellipsoid.html",
+    "path": "./graphics/1_plots/7_surfaces_volumes_polygons/ellipsoid.html",
+    "content": "Create an ellipsoid."
+  },
+  {
     "title": "fill",
     "url": "./graphics/1_plots/7_surfaces_volumes_polygons/fill.html",
     "path": "./graphics/1_plots/7_surfaces_volumes_polygons/fill.html",
@@ -12692,6 +12854,12 @@ window.searchIndex = [
     "url": "./graphics/1_plots/7_surfaces_volumes_polygons/isosurface.html",
     "path": "./graphics/1_plots/7_surfaces_volumes_polygons/isosurface.html",
     "content": "Extract isosurface data from volume data."
+  },
+  {
+    "title": "knot",
+    "url": "./graphics/1_plots/7_surfaces_volumes_polygons/knot.html",
+    "path": "./graphics/1_plots/7_surfaces_volumes_polygons/knot.html",
+    "content": "Create a trefoil knot surface."
   },
   {
     "title": "mesh",
@@ -12764,6 +12932,12 @@ window.searchIndex = [
     "url": "./graphics/1_plots/7_surfaces_volumes_polygons/surf.html",
     "path": "./graphics/1_plots/7_surfaces_volumes_polygons/surf.html",
     "content": "surface plot."
+  },
+  {
+    "title": "surf2patch",
+    "url": "./graphics/1_plots/7_surfaces_volumes_polygons/surf2patch.html",
+    "path": "./graphics/1_plots/7_surfaces_volumes_polygons/surf2patch.html",
+    "content": "Convert surface data to patch data."
   },
   {
     "title": "surface",
@@ -12880,6 +13054,12 @@ window.searchIndex = [
     "content": "Create cartesian axes."
   },
   {
+    "title": "axescheck",
+    "url": "./graphics/2_graphics_objects/1_object_management/axescheck.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/axescheck.html",
+    "content": "Extract an axes handle from an argument list."
+  },
+  {
     "title": "cla",
     "url": "./graphics/2_graphics_objects/1_object_management/cla.html",
     "path": "./graphics/2_graphics_objects/1_object_management/cla.html",
@@ -12928,6 +13108,12 @@ window.searchIndex = [
     "content": "get current figure graphics object."
   },
   {
+    "title": "getappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/getappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/getappdata.html",
+    "content": "Retrieve application-defined data from an object."
+  },
+  {
     "title": "groot",
     "url": "./graphics/2_graphics_objects/1_object_management/groot.html",
     "path": "./graphics/2_graphics_objects/1_object_management/groot.html",
@@ -12940,10 +13126,22 @@ window.searchIndex = [
     "content": "Create group object."
   },
   {
+    "title": "hgtransform",
+    "url": "./graphics/2_graphics_objects/1_object_management/hgtransform.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/hgtransform.html",
+    "content": "Create transform object."
+  },
+  {
     "title": "hold",
     "url": "./graphics/2_graphics_objects/1_object_management/hold.html",
     "path": "./graphics/2_graphics_objects/1_object_management/hold.html",
     "content": "Retain current plot when adding new plots."
+  },
+  {
+    "title": "inspect",
+    "url": "./graphics/2_graphics_objects/1_object_management/inspect.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/inspect.html",
+    "content": "Open the property inspector for graphics objects."
   },
   {
     "title": "is2D",
@@ -12958,6 +13156,12 @@ window.searchIndex = [
     "content": "Check property name is valid."
   },
   {
+    "title": "isappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/isappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/isappdata.html",
+    "content": "True if application-defined data exists."
+  },
+  {
     "title": "isgraphics",
     "url": "./graphics/2_graphics_objects/1_object_management/isgraphics.html",
     "path": "./graphics/2_graphics_objects/1_object_management/isgraphics.html",
@@ -12970,10 +13174,40 @@ window.searchIndex = [
     "content": "Get current hold state."
   },
   {
+    "title": "makehgtform",
+    "url": "./graphics/2_graphics_objects/1_object_management/makehgtform.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/makehgtform.html",
+    "content": "Create a 4-by-4 transform matrix."
+  },
+  {
     "title": "newplot",
     "url": "./graphics/2_graphics_objects/1_object_management/newplot.html",
     "path": "./graphics/2_graphics_objects/1_object_management/newplot.html",
     "content": "Prepare to produce a new plot."
+  },
+  {
+    "title": "rmappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/rmappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/rmappdata.html",
+    "content": "Remove application-defined data from an object."
+  },
+  {
+    "title": "rotate",
+    "url": "./graphics/2_graphics_objects/1_object_management/rotate.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/rotate.html",
+    "content": "Rotate graphics objects about an axis."
+  },
+  {
+    "title": "setappdata",
+    "url": "./graphics/2_graphics_objects/1_object_management/setappdata.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/setappdata.html",
+    "content": "Store application-defined data on an object."
+  },
+  {
+    "title": "shg",
+    "url": "./graphics/2_graphics_objects/1_object_management/shg.html",
+    "path": "./graphics/2_graphics_objects/1_object_management/shg.html",
+    "content": "Show the current graph window."
   },
   {
     "title": "Layout Objects",
@@ -13798,6 +14032,12 @@ window.searchIndex = [
     "content": "Bone colormap array."
   },
   {
+    "title": "brighten",
+    "url": "./graphics/3_labels_styling/2_color_styling/colormaps/brighten.html",
+    "path": "./graphics/3_labels_styling/2_color_styling/colormaps/brighten.html",
+    "content": "Brighten or darken a colormap."
+  },
+  {
     "title": "colorcube",
     "url": "./graphics/3_labels_styling/2_color_styling/colormaps/colorcube.html",
     "path": "./graphics/3_labels_styling/2_color_styling/colormaps/colorcube.html",
@@ -13936,10 +14176,82 @@ window.searchIndex = [
     "content": "Functions for interactive graphics, callbacks, camera views, and lighting."
   },
   {
+    "title": "axtoolbar",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/axtoolbar.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/axtoolbar.html",
+    "content": "Get or configure the axes toolbar."
+  },
+  {
+    "title": "camdolly",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camdolly.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camdolly.html",
+    "content": "Move the camera position and target."
+  },
+  {
     "title": "camlight",
     "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlight.html",
     "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlight.html",
     "content": "Create or position a light relative to the camera."
+  },
+  {
+    "title": "camlookat",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlookat.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camlookat.html",
+    "content": "Aim the camera at an object."
+  },
+  {
+    "title": "camorbit",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camorbit.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camorbit.html",
+    "content": "Rotate the camera position around the target."
+  },
+  {
+    "title": "campan",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/campan.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/campan.html",
+    "content": "Rotate the camera target around the position."
+  },
+  {
+    "title": "campos",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/campos.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/campos.html",
+    "content": "Set or query the camera position."
+  },
+  {
+    "title": "camproj",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camproj.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camproj.html",
+    "content": "Set or query the camera projection type."
+  },
+  {
+    "title": "camroll",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camroll.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camroll.html",
+    "content": "Roll the camera about the viewing axis."
+  },
+  {
+    "title": "camtarget",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camtarget.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camtarget.html",
+    "content": "Set or query the camera target."
+  },
+  {
+    "title": "camup",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camup.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camup.html",
+    "content": "Set or query the camera up vector."
+  },
+  {
+    "title": "camva",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camva.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camva.html",
+    "content": "Set or query the camera view angle."
+  },
+  {
+    "title": "camzoom",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/camzoom.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/camzoom.html",
+    "content": "Zoom the camera in or out."
   },
   {
     "title": "drawnow",
@@ -14138,6 +14450,12 @@ window.searchIndex = [
     "url": "./graphics/index.html",
     "path": "sections/graphics",
     "content": "Functions for opening and saving figure files."
+  },
+  {
+    "title": "exportapp",
+    "url": "./graphics/5_printing_saving/exportapp.html",
+    "path": "./graphics/5_printing_saving/exportapp.html",
+    "content": "Save figure including UI components as an image file."
   },
   {
     "title": "openfig",
@@ -14372,6 +14690,12 @@ window.searchIndex = [
     "url": "./image_processing/1_image_basics/3_filtering_edges/imgaussfilt.html",
     "path": "./image_processing/1_image_basics/3_filtering_edges/imgaussfilt.html",
     "content": "Apply Gaussian filtering to an image."
+  },
+  {
+    "title": "imnoise",
+    "url": "./image_processing/1_image_basics/3_filtering_edges/imnoise.html",
+    "path": "./image_processing/1_image_basics/3_filtering_edges/imnoise.html",
+    "content": "Add noise to an image."
   },
   {
     "title": "medfilt2",
@@ -14740,6 +15064,12 @@ window.searchIndex = [
     "content": "Apply an inverse geometric transformation to points."
   },
   {
+    "title": "warp",
+    "url": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/warp.html",
+    "path": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/warp.html",
+    "content": "Display an image as a texture mapped onto a surface."
+  },
+  {
     "title": "worldToIntrinsic",
     "url": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.html",
     "path": "./image_processing/3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.html",
@@ -15002,6 +15332,12 @@ window.searchIndex = [
     "url": "./dynamic_link/dlsym_used.html",
     "path": "./dynamic_link/dlsym_used.html",
     "content": "Returns the current valid dlsym handles."
+  },
+  {
+    "title": "dltarget",
+    "url": "./dynamic_link/dltarget.html",
+    "path": "./dynamic_link/dltarget.html",
+    "content": "Returns the architecture the dynamic-link tools build for."
   },
   {
     "title": "findcmake",
@@ -20239,7 +20575,7 @@ window.searchIndex = [
     "title": "NFlow FMI import",
     "url": "./nflow_fmi/index.html",
     "path": "sections/nflow_fmi",
-    "content": "The NFlow FMI module imports Functional Mock-up Units (FMUs) that follow the FMI 3.0 standard and runs them as Co-Simulation or Model Exchange components. NFlow is currently released as 1.0.0-beta.1: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback. It reads the model description of an FMU, exposes its variables and interfaces, and either drives a fixed-step Co-Simulation (the FMU owns its solver) or integrates a Model Exchange FMU with NFlow's own solver, recording the FMU outputs over time. Functions accept either a .fmu archive or an already-extracted FMU directory. Archives are unpacked with a ZIP-slip-hardened extractor into a temporary directory that is removed automatically. The same import also backs two blocks in the NFlow editor (category FMI): an FMU block (Co-Simulation) and an FMU (ME) block (Model Exchange, whose continuous states join the diagram's global solver). Drop a block, click Browse FMU... to pick a .fmu, and its input and output ports are configured automatically from the model description. Ready-to-open demo diagrams for several reference FMUs (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) ship in the module examples directory. Area Main entries Model description fmiInfo Co-Simulation fmiCoSimulate Model Exchange fmiModelExchange Modelica bridge modelicaInfo, modelicaConfigure, modelicaToFmu FMU import assistant fmuToBlock The FMU import assistant (fmuToBlock) turns any FMU into a native-looking nflow block -- input and output ports from the model description, parameters, and the FMU icon -- ready to drop into a library. It pairs with the Modelica bridge: modelicaToFmu produces an FMU, fmuToBlock wraps it as a block. The Modelica bridge lets an nflow model include a modelica block that references a Modelica model. At simulation time the model is compiled to an FMU with a user-installed OpenModelica and imported through the FMI path above, so physical (acausal) Modelica models simulate alongside ordinary blocks. modelicaInfo and modelicaConfigure report and select the OpenModelica used; modelicaToFmu performs the compilation. Worked examples (RC, RLC, mass-spring-damper) ship in the module examples\/modelica directory."
+    "content": "The NFlow FMI module imports Functional Mock-up Units (FMUs) that follow the FMI 3.0 standard and runs them as Co-Simulation or Model Exchange components. NFlow is currently released as 1.0.0-beta.1: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback. It reads the model description of an FMU, exposes its variables and interfaces, and either drives a fixed-step Co-Simulation (the FMU owns its solver) or integrates a Model Exchange FMU with NFlow's own solver, recording the FMU outputs over time. Functions accept either a .fmu archive or an already-extracted FMU directory. Archives are unpacked with a ZIP-slip-hardened extractor into a temporary directory that is removed automatically. The same import also backs two blocks in the NFlow editor (category FMI): an FMU (CS) block (Co-Simulation) and an FMU (ME) block (Model Exchange, whose continuous states join the diagram's global solver). Drop a block, click Browse FMU... to pick a .fmu, and its input and output ports are configured automatically from the model description. Ready-to-open demo diagrams for several reference FMUs (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) ship in the module examples directory. Area Main entries Model description fmiInfo Co-Simulation fmiCoSimulate Model Exchange fmiModelExchange Modelica bridge modelicaInfo, modelicaConfigure, modelicaToFmu FMU import assistant fmuToBlock The FMU import assistant (fmuToBlock) turns any FMU into a native-looking nflow block -- input and output ports from the model description, parameters, and the FMU icon -- ready to drop into a library. It pairs with the Modelica bridge: modelicaToFmu produces an FMU, fmuToBlock wraps it as a block. The Modelica bridge lets an nflow model include a modelica block that references a Modelica model. At simulation time the model is compiled to an FMU with a user-installed OpenModelica and imported through the FMI path above, so physical (acausal) Modelica models simulate alongside ordinary blocks. modelicaInfo and modelicaConfigure report and select the OpenModelica used; modelicaToFmu performs the compilation. Worked examples (RC, RLC, mass-spring-damper) ship in the module examples\/modelica directory. Prerequisite: the Modelica bridge is the only part of this module that needs an external tool. OpenModelica is not bundled with Nelson; install it yourself (from the OpenModelica project), and make sure the install is complete enough to export FMUs -- it must provide the FMI export runtime under share\/omc\/runtime\/c\/fmi, which a minimal install may omit. nflow auto-detects OpenModelica from, in order, a path set with modelicaConfigure, the NELSON_OPENMODELICA_HOME and OPENMODELICAHOME environment variables, the standard install directories, then PATH. Run modelicaInfo to check whether a usable OpenModelica is found. The rest of the module (FMU import, Co-Simulation, Model Exchange) needs no external tool."
   },
   {
     "title": "fmiCoSimulate",
@@ -20720,5 +21056,23 @@ window.searchIndex = [
     "url": "./compiler/nelson.compiler.build.html",
     "path": "./compiler/nelson.compiler.build.html",
     "content": "Build a native executable from structured options."
+  },
+  {
+    "title": "Notebook",
+    "url": "./notebook/index.html",
+    "path": "sections/notebook",
+    "content": "The Notebook module runs Notebook documents outside the editor. A Notebook mixes formatted text, code and its output in one document. This module reads the native .nlx container and the plain-text .m Notebook format, and executes their code cells against the base workspace — so a document can be run from the command line or a script."
+  },
+  {
+    "title": "nlx",
+    "url": "./notebook/nlx.html",
+    "path": "./notebook/nlx.html",
+    "content": "The Nelson Notebook document format (.nlx)."
+  },
+  {
+    "title": "notebook",
+    "url": "./notebook/notebook.html",
+    "path": "./notebook/notebook.html",
+    "content": "Run a Notebook document."
   }
 ];

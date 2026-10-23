@@ -11,6 +11,8 @@ Activer le mode zoom.
 - #raw("zoom(factor)");
 - #raw("zoom(fig, ...)");
 - #raw("zoom(ax, ...)");
+- #raw("z = zoom(fig)");
+- #raw("z = zoom(ax)");
 
 == Argument d'entrée
 
@@ -18,6 +20,10 @@ Activer le mode zoom.
 / factor: nombre positif : Pour zoomer, indiquez un facteur supérieur à 1. Pour dézoomer, spécifiez un facteur entre 0 et 1. Lors du dézoom, les axes se dézoomeront d'un facteur de 1\/factor.
 / fig: Objet figure : Figure cible
 / ax: une valeur scalaire d'objet graphique : conteneur parent, spécifié comme un axes.
+
+== Argument de sortie
+
+/ z: objet mode zoom. Il désigne la figure cible via sa propriété #strong[Figure]; et expose les propriétés #strong[Enable];, #strong[Motion]; et #strong[Direction];. Appelez #strong[z.setAxes3DPanAndZoomStyle(ax, style)]; pour mémoriser le style de pan et de zoom 3D ('limits' ou 'camera') sur un axes.
 
 == Description
 
@@ -55,6 +61,10 @@ Utilisez le mode zoom pour ajuster dynamiquement les limites des axes pour une e
 
  #strong['out']; : Restaure les axes actuels à leur niveau de zoom de base.
 
+ 
+
+ #strong[z \= zoom(fig)]; ou #strong[z \= zoom(ax)]; renvoie l'objet mode zoom de la figure cible sans modifier l'état de zoom courant. Utilisez #strong[z.setAxes3DPanAndZoomStyle(ax, 'camera')]; ou #strong[z.setAxes3DPanAndZoomStyle(ax, 'limits')]; pour choisir le comportement d'un axes lors du pan et du zoom 3D.
+
 
 == Exemple
 
@@ -78,6 +88,7 @@ zoom out
   columns: 2,
   table.header([Version], [Description]),
   [1.2.0], [version initiale],
+  [2.0.0], [z \= zoom(fig) renvoie un objet mode zoom avec setAxes3DPanAndZoomStyle.],
 )
 
 // Auteur: Allan CORNET

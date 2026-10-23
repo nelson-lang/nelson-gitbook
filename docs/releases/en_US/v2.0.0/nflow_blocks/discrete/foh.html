@@ -744,9 +744,7 @@ Nelson::NFlow::handleFoh(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     if (phase == Phase::ALGEBRAIC) {
         // At a hit the hold takes the sample THERE, so the output at that
         // instant is the current input; between hits it rides the slope built
-        // from the last two samples. Emitting only what the previous UPDATE had
-        // committed delayed the block by a whole sample period, the same way the
-        // zero-order hold used to be delayed. Pure: UPDATE owns the state.
+        // from the last two samples. Pure: UPDATE owns the state.
         nflow::BlockDescriptor bd(b, ctx.variables);
         const double ts = std::max(0.001, bd.paramDouble(nflow::kTs, ctx.dt));
         const bool hit = (ctx.t + 1e-6 &gt;= st.dNextTime);
@@ -816,8 +814,7 @@ Nelson::NFlow::getCodeGenCFoh()
         a.addState("foh_out_" + a.id, "", "");
     };
     // No emitOutput: the hold takes its sample AT the hit instant, so the sample
-    // has to be taken before the output is formed. Forming it first delayed the
-    // block by a whole sample period, exactly as the zero-order hold used to be.
+    // has to be taken before the output is formed.
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         double ts = std::fmax(0.001, bd.paramDouble(nflow::kTs, 0.0));

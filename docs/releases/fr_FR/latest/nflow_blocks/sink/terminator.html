@@ -339,8 +339,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "label-sink-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-label-sink-formula",
         "formula": "{params.GotoTag}"
       }
     },
@@ -370,8 +370,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "display-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-display-formula",
         "formula": "\\mathsf{Disp}"
       }
     },
@@ -481,18 +481,16 @@ Nelson::NFlow::handleTerminator(SimCtx&amp; /*ctx*/, const Block&amp; /*b*/, Pha
 Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenCTerminator()
 {
-    // Code generation for this block still lives in the C generator
-    // (emission entangled with generator-wide analysis). Explicitly not
-    // implemented here yet - the generator keeps its native path.
+    // Code generation stays in the C generator (emission is entangled with
+    // generator-wide analysis).
     return BlockCodegenTemplate::unimplemented();
 }
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenRustTerminator()
 {
-    // Code generation for this block still lives in the Rust generator
-    // (emission entangled with generator-wide analysis). Explicitly not
-    // implemented here yet - the generator keeps its native path.
+    // Code generation stays in the Rust generator (emission is entangled with
+    // generator-wide analysis).
     return BlockCodegenTemplate::unimplemented();
 }
 //=============================================================================

@@ -66,7 +66,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -108,8 +108,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -226,8 +226,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -937,12 +937,10 @@ Nelson::NFlow::handleConvert(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
             return quantizeDoubleToI64(sigAt(u, i), ty, saturate, rounding);
         });
     }
-    // Exact-64 source into a non-exact target: the double lane already
-    // carries the projection, so the double path below is the honest cast
-    // (loss above 2^53 is inherent to the narrowing).
-    // emitElementwise re-quantizes with round-to-nearest; the convert block
-    // owns its rounding mode, so quantize here (idempotent for the second
-    // pass: an already-conforming value is unchanged).
+    // Exact-64 source into a non-exact target: the double lane already carries the
+    // projection, so the double path below is the cast (loss above 2^53 is inherent
+    // to the narrowing). emitElementwise re-quantizes with round-to-nearest, but the
+    // convert block owns its rounding mode, so quantize here (idempotent on a second pass).
     return emitElementwise(
         ctx, b.nid, [&amp;](int i) { return quantizeToType(sigAt(u, i), ty, saturate, rounding); });
 }
@@ -950,7 +948,6 @@ Nelson::NFlow::handleConvert(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
 // Scalar-path code generation. The generated model stores signals as double;
 // convert emits the round + saturate/wrap of a scalar cast (double result).
 namespace {
-// Build the rounding sub-expression for language "c" / "rust".
 std::string
 roundExpr(const std::string&amp; lang, const std::string&amp; rname, const std::string&amp; x)
 {
@@ -966,7 +963,7 @@ roundExpr(const std::string&amp; lang, const std::string&amp; rname, const std::
     }
     return c ? "round(" + x + ")" : "libm::round(" + x + ")";
 }
-
+//=============================================================================
 Nelson::NFlow::BlockCodegenTemplate
 convertTemplate(const std::string&amp; lang)
 {
@@ -1003,9 +1000,8 @@ convertTemplate(const std::string&amp; lang)
             &amp;&amp; (*a.params)[nflow::kSaturateOnOverflow].is_boolean()
             &amp;&amp; !(*a.params)[nflow::kSaturateOnOverflow].get&lt;bool&gt;());
         if (!saturate) {
-            // Emit the rounded raw value: the generator's small-type
-            // quantization pass appends the modular wrap right after this
-            // block (nflow_quant_i with sat=0), matching the simulator.
+            // Emit the rounded raw value. The small-type quantization pass appends the
+            // modular wrap after this block (nflow_quant_i with sat=0).
             a.line("out_" + a.id + " = " + r + ";");
             return;
         }
@@ -1110,6 +1106,7 @@ convertTemplate(const std::string&amp; lang)
     };
     return t;
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate

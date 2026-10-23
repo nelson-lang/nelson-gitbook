@@ -31,7 +31,7 @@ Convective resistor: Q\_flow \= (T\_a - T\_b) \/ Rc with a signal-driven Rc.
   [Library], [Thermal (acausal)], 
   [Type], [#raw("ConvectiveResistor");], 
   [Label], [ConvectiveResistor], 
-  [Solver], [Lowered to #raw("physicalIsland");. Reference solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
+  [Solver], [Lowered to #raw("physicalIsland");. Default solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
 )
   #strong[Implementation Sources];
 

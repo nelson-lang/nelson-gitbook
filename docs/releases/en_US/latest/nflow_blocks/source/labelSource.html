@@ -223,8 +223,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -599,13 +599,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -776,18 +776,16 @@ Nelson::NFlow::handleLabelSource(SimCtx&amp; ctx, const Block&amp; b, Phase phas
 Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenCLabelSource()
 {
-    // Code generation for this block still lives in the C generator
-    // (emission entangled with generator-wide analysis). Explicitly not
-    // implemented here yet - the generator keeps its native path.
+    // Not implemented here: the C generator keeps its native path for this
+    // block (emission is entangled with generator-wide analysis).
     return BlockCodegenTemplate::unimplemented();
 }
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenRustLabelSource()
 {
-    // Code generation for this block still lives in the Rust generator
-    // (emission entangled with generator-wide analysis). Explicitly not
-    // implemented here yet - the generator keeps its native path.
+    // Not implemented here: the Rust generator keeps its native path for this
+    // block (emission is entangled with generator-wide analysis).
     return BlockCodegenTemplate::unimplemented();
 }
 //=============================================================================

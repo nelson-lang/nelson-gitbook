@@ -31,7 +31,7 @@ Ideal op-amp (nullor): virtual short e\_+ \= e\_-, output current free.
   [Library], [Electrical (acausal)], 
   [Type], [#raw("IdealOpAmp");], 
   [Label], [IdealOpAmp], 
-  [Solver], [Lowered to #raw("physicalIsland");. Reference solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
+  [Solver], [Lowered to #raw("physicalIsland");. Default solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
 )
   #strong[Implementation Sources];
 

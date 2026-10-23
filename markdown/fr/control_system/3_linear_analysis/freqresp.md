@@ -42,11 +42,11 @@ w = linspace(0, 100, 60);
 f = figure();
 subplot(2, 1, 1);
 plot(freq, 20 * log10(abs(squeeze(resp))));
-ylabel(_('Amplitude (dB)'));
+ylabel('Amplitude (dB)');
 subplot(2, 1, 2);
 plot(freq, angle(squeeze(resp)) * 180/pi);
-ylabel(_('Phase (degrees)'));
-xlabel(_('Frequency (Hz)'));
+ylabel('Phase (degrees)');
+xlabel('Frequency (Hz)');
 
 ```
 <img src="freqresp.svg" align="middle"/>

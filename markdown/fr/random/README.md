@@ -16,6 +16,7 @@ Ce module est essentiel pour les simulations, la modélisation probabiliste et l
 
 - [RandStream](RandStream.md) - Objet de flux de nombres aléatoires.
 - [rand](rand.md) - Nombre aléatoire.
+- [randg](randg.md) - Nombre aléatoire distribué selon une loi gamma.
 - [randi](randi.md) - Entier aléatoire.
 - [randn](randn.md) - Nombre aléatoire normalement distribué.
 - [randperm](randperm.md) - Permutation aléatoire de valeurs entières.

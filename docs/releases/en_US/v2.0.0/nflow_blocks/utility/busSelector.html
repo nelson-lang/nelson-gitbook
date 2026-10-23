@@ -122,7 +122,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -164,8 +164,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -282,8 +282,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -965,7 +965,6 @@
 #include &lt;algorithm&gt;
 //=============================================================================
 namespace {
-// Selected paths from the SelectedSignals parameter.
 std::vector&lt;std::string&gt;
 selectedPaths(const Nelson::NFlow::Block&amp; b)
 {
@@ -980,14 +979,14 @@ selectedPaths(const Nelson::NFlow::Block&amp; b)
     }
     return paths;
 }
-
+//=============================================================================
 bool
 outputAsBus(const Nelson::NFlow::Block&amp; b)
 {
     return b.params.contains(nflow::kOutputAsBus) &amp;&amp; b.params[nflow::kOutputAsBus].is_boolean()
         &amp;&amp; b.params[nflow::kOutputAsBus].get&lt;bool&gt;();
 }
-
+//=============================================================================
 std::string
 memberNameForPath(const std::vector&lt;std::string&gt;&amp; paths, size_t idx)
 {
@@ -1010,6 +1009,7 @@ memberNameForPath(const std::vector&lt;std::string&gt;&amp; paths, size_t idx)
     }
     return name;
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 bool
@@ -1020,7 +1020,6 @@ Nelson::NFlow::handleBusSelector(SimCtx&amp; ctx, const Block&amp; b, Phase phas
     }
     SigView v = getInputSig(ctx, b.nid, 0);
     const std::vector&lt;std::string&gt; paths = selectedPaths(b);
-    // The input port's descriptor carries the bus id.
     int busId = -1;
     if (ctx.inputSigs &amp;&amp; ctx.sigs &amp;&amp; b.nid &lt; (int)ctx.inputSigs-&gt;size()) {
         const auto&amp; sIds = (*ctx.inputSigs)[b.nid];

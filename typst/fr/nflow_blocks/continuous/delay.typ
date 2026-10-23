@@ -63,7 +63,7 @@ Retarde un signal avec un tampon circulaire.
 #table(
   columns: 2,
   table.header([Parametre], [Valeur par defaut], ),
-  [#raw("delay");], [0.1], 
+  [#raw("delay");], [1], 
 )
  #strong[Cles de l inspecteur];
 

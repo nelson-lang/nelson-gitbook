@@ -555,11 +555,10 @@ Nelson::NFlow::handleRate(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // Direct feedthrough, as the emitted C/Rust step is: the output at t is
-        // the current input slewed from the state committed at the end of the
-        // previous step. Emitting the committed state instead delayed the block
-        // by one step. Pure: the state is committed by UPDATE, never here, so
-        // re-entering this from an RK stage or an algebraic-loop sweep is safe.
+        // Direct feedthrough, as the emitted C/Rust step: the output at t is the
+        // current input slewed from the state committed at the end of the
+        // previous step. Pure: UPDATE commits the state, never this, so an RK
+        // stage or an algebraic-loop sweep may re-enter it safely.
         nflow::BlockDescriptor bd(b, ctx.variables);
         const double rise = std::max(0.0, bd.paramDouble(nflow::kRise, 0.0));
         const double fall = std::max(0.0, bd.paramDouble(nflow::kFall, 0.0));

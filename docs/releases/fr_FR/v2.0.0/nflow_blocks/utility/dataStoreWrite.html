@@ -181,7 +181,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -223,8 +223,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -341,8 +341,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -1033,6 +1033,7 @@
 #include "routing_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     // Per-thread named store. A sim run is synchronous on one thread, so this
@@ -1100,15 +1101,11 @@ namespace NFlow {
         return false;
     }
     //=============================================================================
-    // ---- Code generation ----
-    // The named store becomes ONE shared ModelState field ds_&lt;name&gt; per
-    // DataStoreName. Ordering mirrors the simulator's one-step latency
-    // (Read in OUTPUT, Write in UPDATE) without synthetic edges: a Read has
-    // no wired input, so the topological sort always emits it in the first
-    // wave, before any Write (which needs its producer first). The field is
-    // declared once (any of the three blocks triggers it, seeded 0.0 like a
-    // lone Write/Read pair); a Memory block appends its InitialValue init
-    // AFTER the seed, so it wins whatever the block order.
+    // The named store becomes ONE shared ModelState field ds_&lt;name&gt; per DataStoreName.
+    // A Read has no wired input, so the topological sort emits it in the first wave,
+    // before any Write. That gives the simulator's one-step latency without synthetic
+    // edges. The field is declared once (seeded 0.0); a Memory block appends its
+    // InitialValue init after the seed, so it wins whatever the block order.
     //=============================================================================
     static std::string
     dataStoreField(const BlockCodegenStateArgs&amp; a)
@@ -1199,26 +1196,31 @@ namespace NFlow {
     {
         return makeDataStoreMemoryCodegen({ false });
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenRustDataStoreMemory()
     {
         return makeDataStoreMemoryCodegen({ true });
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenCDataStoreWrite()
     {
         return makeDataStoreWriteCodegen({ false });
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenRustDataStoreWrite()
     {
         return makeDataStoreWriteCodegen({ true });
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenCDataStoreRead()
     {
         return makeDataStoreReadCodegen({ false });
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenRustDataStoreRead()
     {
@@ -1226,6 +1228,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

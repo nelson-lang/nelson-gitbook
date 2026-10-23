@@ -263,6 +263,7 @@
         <chapter_description>
     <p>Unsupervised learning, nearest-neighbor search, outlier handling, and sequence model functions.</p>
   </chapter_description>
+        <keyword name="KDTreeSearcher" link="7_clustering_anomaly_detection/KDTreeSearcher.html" description="Nearest neighbor searcher object."/>
         <keyword name="cluster" link="7_clustering_anomaly_detection/cluster.html" description="Construct clusters from a hierarchical cluster tree."/>
         <keyword name="clusterdata" link="7_clustering_anomaly_detection/clusterdata.html" description="Cluster observations from data."/>
         <keyword name="dbscan" link="7_clustering_anomaly_detection/dbscan.html" description="Density-based spatial clustering."/>

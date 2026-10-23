@@ -30,6 +30,7 @@ plotmatrix(X);
 Compare columns from two matrices.
 
 ``````matlab
+rng(0);
 X = rand(30, 2);
 Y = [X(:, 1).^2, sin(X(:, 2)), X(:, 1) + X(:, 2)];
 plotmatrix(X, Y, 'o');

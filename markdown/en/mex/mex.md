@@ -29,7 +29,7 @@ To use mex, C/C++ compiler must be available and configured. See Supported C/C++
 
 Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson. 
 
-A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++. 
+A mex file is a type of computer file that provides an interface between Octave or the host numerical environment and functions written in C, C++. 
 
 Nelson also provides its own C++ API to manage internal Nelson objects. 
 

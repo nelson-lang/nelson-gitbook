@@ -33,13 +33,13 @@ L'assertion reussit seulement lorsque la commande leve l'erreur attendue.
 Check an expected error
 
 ``````matlab
-asserts.checkerror('cos', _('Wrong number of input arguments.'));
+asserts.checkerror('cos', 'Not enough input arguments.');
 ``````
 
 Capture missing error
 
 ``````matlab
-[res, msg] = asserts.checkerror('1 + 1', _('unused'));
+[res, msg] = asserts.checkerror('1 + 1', 'unused');
 ``````
 
 

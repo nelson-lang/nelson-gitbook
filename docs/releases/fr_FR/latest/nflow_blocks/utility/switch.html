@@ -268,7 +268,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -310,8 +310,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -428,8 +428,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -1165,13 +1165,9 @@ Nelson::NFlow::handleSwitch(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         ctx, b.nid, [&amp;](int i) { return takeTopAt(i) ? sigAt(top, i) : sigAt(bottom, i); });
 }
 //=============================================================================
-// Single language-parameterized emitter (CodegenLang). The Rust template
-// used to hardcode `cond != 0.0` -- ignoring the Threshold and Condition
-// parameters entirely, so any threshold other than zero (and the default
-// &gt;= condition at exactly zero) silently diverged from the C emission and
-// the simulator. Both targets now share the simulator's comparison; a
+// Both targets use the simulator's comparison (Threshold and Condition). A
 // typed (exact-64) control signal is compared in double space like the
-// simulator's sigAt view (Rust needs the explicit cast to compile).
+// simulator's sigAt view; Rust needs the explicit cast to compile.
 static Nelson::NFlow::BlockCodegenTemplate
 makeSwitchCodegen(Nelson::NFlow::CodegenLang L)
 {

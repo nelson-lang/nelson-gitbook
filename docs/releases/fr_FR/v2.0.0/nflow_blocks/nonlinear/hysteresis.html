@@ -504,6 +504,7 @@
 #include "nonlinear_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -517,11 +518,10 @@ namespace NFlow {
             return false;
         }
         if (phase == Phase::ALGEBRAIC) {
-            // Direct feedthrough, as the emitted C/Rust step is: the relay
-            // answers the current input and only holds the latched branch
-            // inside the dead band. Emitting the latch alone delayed every
-            // switch by one step. Pure: UPDATE owns the latch, so an RK stage
-            // or an algebraic sweep may re-enter this freely.
+            // Direct feedthrough, as the emitted C/Rust step: the relay answers
+            // the current input and only holds the latched branch inside the
+            // dead band. Pure: UPDATE owns the latch, so an RK stage or an
+            // algebraic sweep may re-enter this.
             nflow::BlockDescriptor bd(b, ctx.variables);
             const double uHigh = bd.paramDouble("uHigh", 1.0);
             const double uLow = bd.paramDouble("uLow", -1.0);
@@ -599,6 +599,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nlx</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nlx</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Le format de document Notebook de Nelson (.nlx).</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Un fichier <b>.nlx</b> est le document Notebook natif de Nelson. C'est un conteneur <b>zip</b> (de type OPC) qui garde séparés la source, les résultats sauvegardés et les figures dans un seul fichier portable.</p>
+    <p>Le conteneur comporte ces entrées :</p>
+    <p><b>manifest.json</b> - le marqueur de format : <b>format</b> (<b>nelson-notebook</b>) et <b>version</b>.</p>
+    <p><b>document.json</b> - la source : un objet avec un tableau <b>blocks</b> (le contenu ordonné du Notebook). Cette partie reste légère et se compare proprement, et le lecteur headless l'analyse directement.</p>
+    <p><b>output.json</b> - les résultats sauvegardés : pour chaque cellule de code, sa dernière sortie texte, son erreur et ses références de figures, indexés par identifiant de bloc. Régénérables en réexécutant le document, et tenus à part pour ne jamais polluer la source.</p>
+    <p><b>media/</b> - les figures produites par une cellule de code, extraites en fichiers image (par exemple <b>media/fig0.png</b>) pour garder les parties JSON légères et conserver les images sans perte.</p>
+    <p>Chaque élément de <b>blocks</b> est un objet avec un <b>type</b> et un objet <b>props</b> :</p>
+    <p><b>heading</b> / <b>paragraph</b> - texte mis en forme (un titre porte <b>props.level</b>).</p>
+    <p><b>codecell</b> - une cellule de code Nelson ; <b>props.code</b> est le code. Ses résultats vivent dans <b>output.json</b>, pas dans la cellule.</p>
+    <p><b>equation</b> - une équation LaTeX (<b>props.latex</b>).</p>
+    <p>les contrôles interactifs (slider, liste déroulante, case à cocher, ...) et les live tasks - stockés avec leur variable liée et leur valeur dans <b>props</b>.</p>
+    <p>Seules les cellules <b>codecell</b> sont exécutables. <b>notebook</b> et <b>run</b> évaluent leur <b>props.code</b> dans l'ordre dans l'espace de travail de base ; <b>edit</b> ouvre le document dans l'éditeur Notebook.</p>
+    <p>Un Notebook peut aussi être enregistré en texte brut <b>.m</b>, où chaque bloc est écrit sous un marqueur <b>%% [kind]</b> : il s'ouvre dans n'importe quel éditeur et s'exécute comme un script ordinaire.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Les entrées d'un conteneur .nlx.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">manifest.json
+document.json
+output.json
+media/fig0.png</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Un document.json minimal.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "blocks": [
+    { "type": "heading", "props": { "level": 1 }, "content": "Mon Notebook" },
+    { "type": "paragraph", "content": "Une courte description." },
+    { "type": "codecell", "props": { "code": "x = linspace(0, 1, 10);\nplot(x)" } }
+  ]
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../notebook/notebook.html">notebook</a><a class="see-also-link" href="../core/run.html">run</a><a class="see-also-link" href="../text_editor/edit.html">edit</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

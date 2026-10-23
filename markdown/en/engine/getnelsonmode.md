@@ -15,7 +15,7 @@ Returns current Nelson mode.
 
 <b>getnelsonmode()</b> returns current Nelson mode used. 
 
-There are <b>6</b> modes: 
+There are <b>7</b> modes: 
 
 <b>BASIC\_ENGINE</b>: Nelson used as engine without any graphics. 
 
@@ -27,7 +27,9 @@ There are <b>6</b> modes:
 
 <b>GUI</b>: Nelson launched as a graphical application (default). 
 
-<b>WEB\_GUI</b>: Nelson launched as a web application.
+<b>WEB\_GUI</b>: Nelson launched as a web application. 
+
+<b>WASM\_TERMINAL</b>: Nelson running in a WebAssembly worker with a browser desktop host. The evaluator remains a portable terminal and uses cooperative event processing.
 
 ## 💡 Example
 

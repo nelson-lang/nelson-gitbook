@@ -35,7 +35,9 @@ others platforms:
 
 "glnxa64": linux 64 bits build 
 
-"glnxa32": linux 64 bits build 
+"glnxa32": linux 32 bits build 
+
+"wasm32": WebAssembly browser build (Emscripten side module) 
 
 example: <b>["win64", "glnxa64"]</b>, module will be available only on windows and linux 64 bits platforms. 
 

@@ -16,6 +16,7 @@ This module is essential for simulations, probabilistic modeling, and stochastic
 
 - [RandStream](RandStream.md) - Random number stream object.
 - [rand](rand.md) - Random Number.
+- [randg](randg.md) - Gamma distributed random number.
 - [randi](randi.md) - Random Integer.
 - [randn](randn.md) - Normally distributed random number.
 - [randperm](randperm.md) - Random permutation of integers values.

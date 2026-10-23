@@ -28,7 +28,7 @@ Compile un modèle Modelica en FMU avec OpenModelica.
 
  Pour qu'une variable Modelica devienne un port de sortie exploitable après import, déclarez-la #strong[output]; (par exemple #strong[output Real vC;];) ; une variable ordinaire est exportée avec la causalité #strong[local];.
 
- Deux erreurs typées peuvent être levées. #strong[Nelson:nflow\_fmi:modelicaUnavailable]; lorsqu'OpenModelica est absent ou incapable d'exporter une FMU (la construction est bloquée) ; vérifiez l'installation avec #strong[modelicaInfo]; et définissez-la avec #strong[modelicaConfigure];. #strong[Nelson:nflow\_fmi:modelicaCompileFailed]; lorsqu'#strong[omc]; s'est exécuté sans produire la FMU ; le message contient les diagnostics d'OpenModelica.
+ Deux erreurs typées peuvent être levées. #strong[Nelson:nflow\_fmi:modelicaUnavailable]; lorsqu'OpenModelica est absent ou incapable d'exporter une FMU (la construction est bloquée) -- un #strong[omc]; présent reste incapable d'exporter lorsque le runtime FMI #strong[share\/omc\/runtime\/c\/fmi]; est absent de l'installation ; vérifiez l'installation avec #strong[modelicaInfo]; et définissez-la avec #strong[modelicaConfigure];. #strong[Nelson:nflow\_fmi:modelicaCompileFailed]; lorsqu'#strong[omc]; s'est exécuté sans produire la FMU ; le message contient les diagnostics d'OpenModelica.
 
 
 == Exemples

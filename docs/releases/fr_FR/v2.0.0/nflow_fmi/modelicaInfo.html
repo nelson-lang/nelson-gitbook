@@ -85,7 +85,7 @@
         <td>un état lisible ; en cas d'indisponibilité, il explique la cause et la solution.</td>
       </tr>
     </table>
-    <p>La présence n'est pas la capacité : un exécutable <b>omc</b> peut s'exécuter tout en étant incapable de construire une FMU si son installation ne comporte pas le runtime d'export FMI. Dans ce cas <b>available</b> vaut <b>true</b> mais <b>capable</b> vaut <b>false</b>, et un bloc <b>modelica</b> bloque la simulation avec un message clair.</p>
+    <p>La présence n'est pas la capacité : un exécutable <b>omc</b> peut s'exécuter tout en étant incapable de construire une FMU si son installation ne comporte pas le runtime d'export FMI. Concrètement, la détection vérifie la présence du répertoire <b>share/omc/runtime/c/fmi</b> sous le répertoire d'installation d'OpenModelica ; lorsqu'il est absent (installation incomplète, sans le runtime C / le support d'export FMI), <b>available</b> vaut <b>true</b> mais <b>capable</b> vaut <b>false</b>, et un bloc <b>modelica</b> bloque la simulation avec un message clair. Installez un OpenModelica complet, ou pointez nflow vers un tel OpenModelica avec <b>modelicaConfigure</b>.</p>
     <p>L'emplacement d'OpenModelica est résolu dans l'ordre suivant : un chemin configuré avec <b>modelicaConfigure</b>, la variable d'environnement <b>NELSON_OPENMODELICA_HOME</b> (spécifique à Nelson), la variable d'environnement <b>OPENMODELICAHOME</b>, les répertoires d'installation standard, puis <b>PATH</b>.</p>
   </div>
 </div>

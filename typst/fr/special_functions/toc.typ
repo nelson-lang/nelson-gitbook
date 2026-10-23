@@ -28,6 +28,7 @@
   - #nlink(<special_functions:isprime>)[isprime]
   - #nlink(<special_functions:lcm>)[lcm]
   - #nlink(<special_functions:makima>)[makima]
+  - #nlink(<special_functions:membrane>)[membrane]
   - #nlink(<special_functions:pchip>)[pchip]
   - #nlink(<special_functions:peaks>)[peaks]
   - #nlink(<special_functions:primes>)[primes]

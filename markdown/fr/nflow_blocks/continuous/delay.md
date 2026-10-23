@@ -58,7 +58,7 @@ Retarde un signal avec un tampon circulaire.
 
 | Parametre | Valeur par defaut | 
 | --- | --- | 
-| <code>delay</code> | 0.1 | 
+| <code>delay</code> | 1 | 
 
  
 

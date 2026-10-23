@@ -34,7 +34,7 @@ Afficher des boites a moustaches pour des donnees numeriques.
 Boites pour les colonnes d'une matrice.
 
 ``````matlab
-X = [1 2 3; 2 4 6; 3 6 9; 8 7 12];
+X = [2 2 3; 3 4 6; 4 6 9; 5 7 12; 6 5 8; 20 6 10];
 boxplot(X, 'Labels', {'A', 'B', 'C'});
 ``````
 

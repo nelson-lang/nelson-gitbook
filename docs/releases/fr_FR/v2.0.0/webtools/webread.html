@@ -70,6 +70,8 @@ var = webread(url, name1, value1, ... , nameN, valueN, options)
 <div>
     <p>
       <b>webread()</b> lit du contenu depuis le web et le charge dans une variable Nelson.</p>
+    <p>Les redirections HTTP sont suivies par défaut (voir <b>FollowLocation</b> dans <b>weboptions</b>).</p>
+    <p>Quand <b>ContentType</b> vaut <b>'auto'</b> (valeur par défaut), l'en-tête Content-Type de la réponse choisit le décodeur : une réponse <b>image/*</b> est lue avec <b>imread</b>, une réponse <b>audio/*</b> avec <b>audioread</b> et une réponse JSON avec <b>jsondecode</b>. Les autres types sont détectés depuis le contenu.</p>
   </div>
 </div>
 <div class="section">
@@ -120,6 +122,10 @@ res = webread(url,weboptions('ContentType','json'));</code></pre>
 <tr>
 <td class="version">1.0.0</td>
 <td>version initiale</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>redirections suivies par défaut, le type de contenu 'auto' utilise l'en-tête Content-Type de la réponse</td>
 </tr>
 </table>
 </div>

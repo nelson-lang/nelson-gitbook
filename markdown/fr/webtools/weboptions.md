@@ -27,7 +27,7 @@ Arguments Nom-Valeur :
 
 <b>UserAgent</b> Identification de l'agent utilisateur : chaîne ou vecteur de caractères. 
 
-<b>Timeout</b> Durée du timeout de connexion : scalaire numérique positif ou valeur Inf. 
+<b>Timeout</b> Délai d'attente du serveur, en secondes : scalaire numérique positif ou valeur Inf (5 par défaut). Il borne la connexion et tout blocage du transfert, pas la durée totale du téléchargement. 
 
 <b>Username</b> Identifiant utilisateur : chaîne ou vecteur de caractères. 
 
@@ -51,7 +51,7 @@ Arguments Nom-Valeur :
 
 <b>CertificateFilename</b> Nom de fichier des certificats racine : 'default', vide ou fichier existant. 
 
-<b>FollowLocation</b> indique à la bibliothèque de suivre les redirections Location: envoyées par un serveur HTTP dans une réponse 30x : logique, false par défaut.
+<b>FollowLocation</b> indique à la bibliothèque de suivre les redirections Location: envoyées par un serveur HTTP dans une réponse 30x : logique, true par défaut.
 
 ## 💡 Exemple
 

@@ -29,7 +29,7 @@ Lumped heat capacity: C dT/dt = Q\_flow (port referenced to 0).
 | Library | Thermal (acausal) | 
 | Type | <code>HeatCapacitor</code> | 
 | Label | HeatCapacitor | 
-| Solver | Lowered to <code>physicalIsland</code>. Reference solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
+| Solver | Lowered to <code>physicalIsland</code>. Default solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
 
   
 

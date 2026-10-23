@@ -13,6 +13,7 @@
     <p>Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites vectorielles ou matricielles.</p>
   </chapter_description>
         <keyword name="cumtrapz" link="1_linear_systems/cumtrapz.html" description="Integration numerique cumulative par la methode des trapezes."/>
+        <keyword name="curl" link="1_linear_systems/curl.html" description="Rotationnel et vitesse angulaire d'un champ de vecteurs."/>
         <keyword name="del2" link="1_linear_systems/del2.html" description="Laplacien discret."/>
         <keyword name="det" link="1_linear_systems/det.html" description="Déterminant d'une matrice."/>
         <keyword name="diff" link="1_linear_systems/diff.html" description="Différences et dérivées approximatives."/>

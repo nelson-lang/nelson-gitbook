@@ -44,8 +44,10 @@ Le module Fonctions trigonometriques fournit les fonctions de base pour les calc
 - #nlink(<trigonometric_functions:cscd>)[cscd]: Cosécante de l'argument en degrés.
 - #nlink(<trigonometric_functions:csch>)[csch]: Cosécante hyperbolique.
 - #nlink(<trigonometric_functions:deg2rad>)[deg2rad]: Convertit un angle de degrés en radians.
+- #nlink(<trigonometric_functions:degtorad>)[degtorad]: Convertit un angle de degrés en radians.
 - #nlink(<trigonometric_functions:pol2cart>)[pol2cart]: Transforme des coordonnées polaires ou cylindriques en coordonnées cartésiennes.
 - #nlink(<trigonometric_functions:rad2deg>)[rad2deg]: Convertit un angle de radians en degrés.
+- #nlink(<trigonometric_functions:radtodeg>)[radtodeg]: Convertit un angle de radians en degrés.
 - #nlink(<trigonometric_functions:sec>)[sec]: Sécante d'un angle en radians.
 - #nlink(<trigonometric_functions:secd>)[secd]: Sécante de l'argument en degrés.
 - #nlink(<trigonometric_functions:sech>)[sech]: Sécante hyperbolique.
@@ -135,9 +137,13 @@ Le module Fonctions trigonometriques fournit les fonctions de base pour les calc
 #pagebreak(weak: true)
 #include "deg2rad.typ"
 #pagebreak(weak: true)
+#include "degtorad.typ"
+#pagebreak(weak: true)
 #include "pol2cart.typ"
 #pagebreak(weak: true)
 #include "rad2deg.typ"
+#pagebreak(weak: true)
+#include "radtodeg.typ"
 #pagebreak(weak: true)
 #include "sec.typ"
 #pagebreak(weak: true)

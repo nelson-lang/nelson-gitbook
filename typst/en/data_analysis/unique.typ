@@ -39,7 +39,7 @@ Unique values.
 
  #strong[C \= unique(A, 'first')]; (default) or #strong[C \= unique(A, 'last')]; selects, respectively, the first or the last occurrence of each repeated value for the index #strong[ia];.
 
- #strong[C \= unique(A, 'legacy')]; preserves the behavior of #strong[unique]; from releases prior to R2013a. Values are returned in sorted order, #strong[ia]; points at the #strong[last]; occurrence of each repeated value, and, unless the 'rows' option is used, the index vectors #strong[ia]; and #strong[ic]; follow the orientation of a vector #strong[A]; (row vectors for a row-vector input). The 'legacy' flag cannot be combined with 'sorted', 'stable', 'first' or 'last'.
+ #strong[C \= unique(A, 'legacy')]; preserves the older behavior of #strong[unique];. Values are returned in sorted order, #strong[ia]; points at the #strong[last]; occurrence of each repeated value, and, unless the 'rows' option is used, the index vectors #strong[ia]; and #strong[ic]; follow the orientation of a vector #strong[A]; (row vectors for a row-vector input). The 'legacy' flag cannot be combined with 'sorted', 'stable', 'first' or 'last'.
 
  #strong[C \= unique(..., 'TreatMissingAsDistinct', false)]; treats each repeated missing value as a duplicate: at most one missing value is included in #strong[C];. By default (true), each missing value of #strong[A]; is included in #strong[C];. With 'rows', rows are duplicates when they have missing values in the same columns and equal nonmissing values in the other columns. This option applies to numeric, string, categorical and table inputs and cannot be combined with 'legacy'.
 

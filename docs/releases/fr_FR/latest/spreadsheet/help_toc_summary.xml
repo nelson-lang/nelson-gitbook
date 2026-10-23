@@ -14,12 +14,16 @@
       <keyword name="detectImportOptions" link="detectImportOptions.html" description="Créer des options d'importation basées sur le contenu du fichier."/>
       <keyword name="dlmread" link="dlmread.html" description="Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."/>
       <keyword name="dlmwrite" link="dlmwrite.html" description="Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."/>
+      <keyword name="getvaropts" link="getvaropts.html" description="Obtenir les options d'importation des variables selectionnees."/>
       <keyword name="jsonImportOptions" link="jsonImportOptions.html" description="Créer des options pour importer des données JSON."/>
       <keyword name="readcell" link="readcell.html" description="Créer une cellule à partir d'un fichier."/>
       <keyword name="readmatrix" link="readmatrix.html" description="Créer une matrice à partir d'un fichier."/>
       <keyword name="readtable" link="readtable.html" description="Créer une table à partir d'un fichier."/>
       <keyword name="readtimetable" link="readtimetable.html" description="Crée une timetable depuis un fichier."/>
       <keyword name="readvars" link="readvars.html" description="Créer des variables en lisant les colonnes d'un fichier."/>
+      <keyword name="setvaropts" link="setvaropts.html" description="Definir les options d'importation des variables selectionnees."/>
+      <keyword name="setvartype" link="setvartype.html" description="Definir les types de donnees des variables selectionnees."/>
+      <keyword name="spreadsheetImportOptions" link="spreadsheetImportOptions.html" description="Creer des options pour importer des donnees de feuille de calcul."/>
       <keyword name="writecell" link="writecell.html" description="Écrire un tableau de cellules dans un fichier."/>
       <keyword name="writematrix" link="writematrix.html" description="Écrire une matrice dans un fichier."/>
       <keyword name="writetable" link="writetable.html" description="Écrire une table dans un fichier."/>

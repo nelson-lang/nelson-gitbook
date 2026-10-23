@@ -493,8 +493,6 @@
 // flat offset is sum_k idx_k * stride_k (stride_0 = 1, stride_k = prod_{m&lt;k}
 // n_m), with each index rounded to the nearest integer and clamped to
 // [0, n_k-1] (zero-based). ALGEBRAIC feedthrough, real double, no state.
-// The Column / 2-D Matrix output modes and a table-driven-by-input port are a
-// follow-up.
 //=============================================================================
 #include "SimEngineTypes.hpp"
 #include "BlockRegistry.hpp"
@@ -506,6 +504,7 @@
 #include &lt;vector&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     namespace {
@@ -515,7 +514,7 @@ namespace NFlow {
             const int n = (int)bd.paramDouble("NumberOfTableDimensions", 0.0);
             return (n &gt;= 1) ? n : 0;
         }
-
+        //=============================================================================
         int
         clampIndex(double u, int n)
         {
@@ -528,9 +527,8 @@ namespace NFlow {
             }
             return idx;
         }
-
-        // Parse via BlockDescriptor so JSON arrays and string expressions both
-        // resolve (matching the simulator / inspector-edited params).
+        //=============================================================================
+        // BlockDescriptor resolves both JSON arrays and string expressions.
         std::vector&lt;double&gt;
         paramVec(const BlockCodegenArgs&amp; a, const char* key)
         {
@@ -540,7 +538,7 @@ namespace NFlow {
             nflow::BlockDescriptor bd(*a.block, *a.variables);
             return bd.paramList(key);
         }
-
+        //=============================================================================
         void
         emitDirectLookup(const BlockCodegenArgs&amp; a, bool rust)
         {
@@ -589,6 +587,7 @@ namespace NFlow {
             a.line((rust ? "let " : "int ") + off + " = " + offExpr + ";");
             a.line("out_" + a.id + " = " + tv + "[" + off + (rust ? " as usize" : "") + "];");
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     bool
@@ -680,6 +679,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

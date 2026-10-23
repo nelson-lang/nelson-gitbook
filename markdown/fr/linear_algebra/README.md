@@ -23,6 +23,7 @@ Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites
 ### Functions
 
 - [cumtrapz](1_linear_systems/cumtrapz.md) - Integration numerique cumulative par la methode des trapezes.
+- [curl](1_linear_systems/curl.md) - Rotationnel et vitesse angulaire d'un champ de vecteurs.
 - [del2](1_linear_systems/del2.md) - Laplacien discret.
 - [det](1_linear_systems/det.md) - Déterminant d'une matrice.
 - [diff](1_linear_systems/diff.md) - Différences et dérivées approximatives.

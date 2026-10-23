@@ -146,6 +146,7 @@
         <keyword name="ndims" link="7_indexing_dimensions/ndims.html" description="Nombre de dimensions d'un tableau."/>
         <keyword name="numel" link="7_indexing_dimensions/numel.html" description="Nombre d'éléments."/>
         <keyword name="permute" link="7_indexing_dimensions/permute.html" description="Permute les dimensions d'un tableau."/>
+        <keyword name="resize" link="7_indexing_dimensions/resize.html" description="Redimensionne un tableau par troncature ou remplissage."/>
         <keyword name="rot90" link="7_indexing_dimensions/rot90.html" description="Fait pivoter un tableau de 90 degrés."/>
         <keyword name="shiftdim" link="7_indexing_dimensions/shiftdim.html" description="Décale les dimensions d'un tableau"/>
         <keyword name="size" link="7_indexing_dimensions/size.html" description="Taille d'un objet."/>

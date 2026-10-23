@@ -63,7 +63,7 @@ Multiplie l entree par un gain scalaire.
 #table(
   columns: 2,
   table.header([Parametre], [Valeur par defaut], ),
-  [#raw("gain");], [2], 
+  [#raw("gain");], [1], 
 )
  #strong[Cles de l inspecteur];
 

@@ -63,7 +63,7 @@ Delays a signal with a circular buffer.
 #table(
   columns: 2,
   table.header([Parameter], [Default value], ),
-  [#raw("delay");], [0.1], 
+  [#raw("delay");], [1], 
 )
  #strong[Inspector Keys];
 

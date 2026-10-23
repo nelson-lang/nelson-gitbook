@@ -24,6 +24,7 @@
   - #nlink(<dynamic_link:dlsym>)[dlsym]
   - #nlink(<dynamic_link:dlsym_delete>)[dlsym\_delete]
   - #nlink(<dynamic_link:dlsym_used>)[dlsym\_used]
+  - #nlink(<dynamic_link:dltarget>)[dltarget]
   - #nlink(<dynamic_link:findcmake>)[findcmake]
   - #nlink(<dynamic_link:getdynlibext>)[getdynlibext]
   - #nlink(<dynamic_link:havecompiler>)[havecompiler]

@@ -21,6 +21,7 @@ Display angle data as a polar histogram.
 Create a polar histogram.
 
 ``````matlab
+rng(0);
 theta = 2*pi*rand(200, 1);
 polarhistogram(theta, 16);
 ``````

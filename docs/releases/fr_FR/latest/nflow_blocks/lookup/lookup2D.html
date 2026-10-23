@@ -508,6 +508,7 @@
 #include &lt;vector&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     namespace {
@@ -534,8 +535,7 @@ namespace NFlow {
             }
             f = (u - bp[i]) / (bp[i + 1] - bp[i]);
         }
-
-        // Per-axis interpolation weight from the raw fraction f.
+        //=============================================================================
         double
         axisWeight(double f, const std::string&amp; interp)
         {
@@ -545,9 +545,9 @@ namespace NFlow {
             if (interp == "Nearest") {
                 return (f &lt; 0.5) ? 0.0 : 1.0;
             }
-            return f; // Linear point-slope / Linear Lagrange
+            return f;
         }
-
+        //=============================================================================
         bool
         isStrictlyIncreasing(const std::vector&lt;double&gt;&amp; v)
         {
@@ -558,9 +558,8 @@ namespace NFlow {
             }
             return true;
         }
-
-        // Parse via BlockDescriptor so JSON arrays and string expressions both
-        // resolve (matching the simulator / inspector-edited params).
+        //=============================================================================
+        // Parse via BlockDescriptor so JSON arrays and string expressions both resolve.
         std::vector&lt;double&gt;
         paramVec(const BlockCodegenArgs&amp; a, const char* key)
         {
@@ -570,7 +569,7 @@ namespace NFlow {
             nflow::BlockDescriptor bd(*a.block, *a.variables);
             return bd.paramList(key);
         }
-
+        //=============================================================================
         std::string
         emitArray(const BlockCodegenArgs&amp; a, const std::string&amp; name, const std::vector&lt;double&gt;&amp; v,
             bool rust)
@@ -583,7 +582,7 @@ namespace NFlow {
             s += rust ? "];" : "};";
             return s;
         }
-
+        //=============================================================================
         // Emit the per-axis (index, fraction) locate for a strictly increasing
         // breakpoint array of length n, into integer var `iv` and double var
         // `fv`. `linExtrap` extends the edge segment's slope; otherwise clip.
@@ -620,7 +619,7 @@ namespace NFlow {
                     + iv + "]) / (" + arr + "[" + iv + "+1] - " + arr + "[" + iv + "]); }");
             }
         }
-
+        //=============================================================================
         std::string
         weightExpr(const std::string&amp; fv, const std::string&amp; interp, bool rust)
         {
@@ -633,7 +632,7 @@ namespace NFlow {
             }
             return fv;
         }
-
+        //=============================================================================
         void
         emitLookup2D(const BlockCodegenArgs&amp; a, bool rust)
         {
@@ -684,15 +683,13 @@ namespace NFlow {
                 + w1 + ") * " + w2 + " + " + T(ip1, jp1) + " * " + w1 + " * " + w2;
             a.line("out_" + a.id + " = " + blend + ";");
         }
-
+        //=============================================================================
         double
         interp2d(const std::vector&lt;double&gt;&amp; bp1, const std::vector&lt;double&gt;&amp; bp2,
             const std::vector&lt;double&gt;&amp; tbl, double u1, double u2, const std::string&amp; interp,
             bool linExtrap, const std::string&amp; extrap)
         {
             const int R = (int)bp1.size();
-            // Separable tensor-product spline: spline along dim1 for every dim2
-            // column, then spline along dim2 through the intermediate values.
             if (lookupspline::isSpline(interp)) {
                 const int C = (int)bp2.size();
                 std::vector&lt;double&gt; v((size_t)C, 0.0);
@@ -715,6 +712,7 @@ namespace NFlow {
             return T(i, j) * (1.0 - w1) * (1.0 - w2) + T(i + 1, j) * w1 * (1.0 - w2)
                 + T(i, j + 1) * (1.0 - w1) * w2 + T(i + 1, j + 1) * w1 * w2;
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     bool
@@ -760,7 +758,6 @@ namespace NFlow {
             err = "lookup2D breakpoints must be strictly increasing";
             return false;
         }
-        // Output width follows the wider input (element-wise pairing).
         int w = 1;
         for (const auto&amp; s : inSigs) {
             w = std::max(w, s.width());
@@ -804,6 +801,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

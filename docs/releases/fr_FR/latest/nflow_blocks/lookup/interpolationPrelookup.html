@@ -567,13 +567,13 @@
 //=============================================================================
 // interpolationPrelookup (Interpolation Using Prelookup): interpolates a static
 // Table using a precomputed index/fraction pair produced by a prelookup block.
-// Input port 0 is the 2-element vector [k, f]; the output is
+// The index k comes on port 0 and the fraction f on port 1 (a 2-element vector
+// [k, f] on port 0 is also accepted); the output is
 //   tbl[k] + f * (tbl[k+1] - tbl[k]),
 // i.e. linear interpolation over the Table at the shared interval. k is clamped
 // to a valid table index. Sharing one prelookup across several of these blocks
 // avoids repeating the interval search per table. Feedthrough (ALGEBRAIC), real
-// double, scalar output. Native runtime (the 2-vector input is a follow-up for
-// code generation).
+// double, scalar output. Native runtime only.
 //=============================================================================
 #include "SimEngineTypes.hpp"
 #include "BlockRegistry.hpp"
@@ -585,6 +585,7 @@
 #include &lt;cmath&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -599,9 +600,6 @@ namespace NFlow {
         nflow::BlockDescriptor bd(b, ctx.variables);
         const std::vector&lt;double&gt; tbl = bd.paramList("Table");
         const int m = (int)tbl.size();
-        // Index on port 0, fraction on port 1 - the two ports a prelookup
-        // produces. A single two-wide input is still read the old way, so a
-        // diagram wired before the split keeps working.
         SigView u = getInputSig(ctx, b.nid, 0);
         double kd = sigAt(u, 0);
         double f = 0.0;
@@ -627,7 +625,6 @@ namespace NFlow {
         return false;
     }
     //=============================================================================
-    // Index and fraction in; scalar out.
     bool
     resolveInterpolationPrelookupDims(const Block&amp; b, const ValMap&amp; vars,
         const std::vector&lt;PortSig&gt;&amp;, std::vector&lt;PortSig&gt;&amp; outSigs, std::string&amp; err)
@@ -644,6 +641,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

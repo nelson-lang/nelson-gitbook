@@ -242,9 +242,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -257,7 +257,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -268,24 +268,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -315,13 +315,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -333,7 +333,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -344,7 +344,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -353,13 +353,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -459,9 +459,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -491,7 +491,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -499,9 +499,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -534,8 +534,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -566,6 +566,7 @@
 #include "continuous_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -596,6 +597,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

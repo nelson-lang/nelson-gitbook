@@ -198,8 +198,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -574,13 +574,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -698,6 +698,7 @@
 #include "source_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     // Waveform codes: 0 sine, 1 square, 2 sawtooth.
@@ -733,7 +734,6 @@ namespace NFlow {
             const double ph = freq * t;
             v = ((ph - std::floor(ph)) &lt; 0.5) ? -1.0 : 1.0;
         } else if (wave == 2) {
-            // A period opens at +A and ramps down to -A.
             const double ph = freq * t;
             v = 1.0 - 2.0 * (ph - std::floor(ph));
         } else {
@@ -795,6 +795,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

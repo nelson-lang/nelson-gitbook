@@ -208,8 +208,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "and-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-and-formula",
         "formula": "\\text{AND}",
         "textSize": "16px"
       }
@@ -244,8 +244,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "or-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-or-formula",
         "formula": "\\text{OR}",
         "textSize": "16px"
       }
@@ -280,8 +280,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "xor-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-xor-formula",
         "formula": "\\text{XOR}",
         "textSize": "16px"
       }
@@ -311,8 +311,8 @@
       ],
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "not-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-not-formula",
         "formula": "\\text{NOT}",
         "textSize": "16px"
       }
@@ -907,8 +907,7 @@
 // input is a vector of N boolean elements forming a binary index (element 0 is
 // the most-significant bit); the output is TruthTable[index], where TruthTable
 // is a 2^N-entry column read from the parameter list. Non-zero inputs count as
-// 1. Pure algebraic feedthrough with a scalar output. Native-only for now (the
-// vector-input row lookup is not yet code-generated); an out-of-range index or
+// 1. Pure algebraic feedthrough with a scalar output. An out-of-range index or
 // an empty table yields 0.
 //=============================================================================
 #include "SimEngineTypes.hpp"
@@ -922,6 +921,7 @@
 #include "logic_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -949,7 +949,6 @@ namespace NFlow {
         return false;
     }
     //=============================================================================
-    // ---- Code generation ----
     // The vector expansion keeps ONE block whose input elements become N
     // scalar ports (MSB-first, the runtime's bit-fold order). The truth
     // table is baked as a constant array and indexed at runtime; an index
@@ -1007,6 +1006,7 @@ namespace NFlow {
     {
         return makeCombinatorialLogicCodegen({ false });
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenRustCombinatorialLogic()
     {
@@ -1014,6 +1014,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

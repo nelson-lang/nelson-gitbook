@@ -20,6 +20,7 @@ Triangular surface plot
 Plot the convex hull facets of random 3-D points.
 
 ```matlab
+rng(0);
 P = randn(30, 3);
 T = convhulln(P);
 trisurf(T, P(:, 1), P(:, 2), P(:, 3), 'FaceAlpha', 0.4)

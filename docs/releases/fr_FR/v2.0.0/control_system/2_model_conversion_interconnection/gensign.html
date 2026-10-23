@@ -38,7 +38,7 @@
 </tr>
 <tr>
 <td class="param-name">type</td>
-<td>Type de signal pÃ©riodique : 'cos', 'tan', 'sin', 'pulse', 'square'
+<td>Type de signal pÃ©riodique : 'sin', 'square', 'pulse'
       </td>
 </tr>
 <tr>
@@ -90,30 +90,20 @@ tau = 3;
 Tf = 6;
 Ts = 0.1;
 
-subplot(3, 2, 1)
-[u,t] = gensig("sine",tau,Tf,Ts);
+subplot(3, 1, 1)
+[u,t] = gensig("sin",tau,Tf,Ts);
 plot(t, u)
-title('sine')
+title('sin')
 
-subplot(3, 2, 2)
+subplot(3, 1, 2)
 [u,t] = gensig("square",tau,Tf,Ts);
 plot(t, u)
 title('square')
 
-subplot(3, 2, 3)
-[u,t] = gensig("cos",tau,Tf,Ts);
+subplot(3, 1, 3)
+[u,t] = gensig("pulse",tau,Tf,Ts);
 plot(t, u)
-title('cosine')
-
-subplot(3, 2, 4)
-[u,t] = gensig("sin",tau,Tf,Ts);
-plot(t, u)
-title('sine')
-
-subplot(3, 2, 5)
-[u,t] = gensig("tan",tau,Tf,Ts);
-plot(t, u)
-title('tan')</code></pre>
+title('pulse')</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./gensig.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">

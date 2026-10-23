@@ -335,8 +335,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "label-sink-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-label-sink-formula",
         "formula": "{params.GotoTag}"
       }
     },
@@ -366,8 +366,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "display-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-display-formula",
         "formula": "\\mathsf{Disp}"
       }
     },
@@ -496,10 +496,9 @@ Nelson::NFlow::handleStopSimulation(SimCtx&amp; ctx, const Block&amp; b, Phase p
     return false;
 }
 //=============================================================================
-// Single language-parameterized emitter (CodegenLang). The stop flag is one
-// SHARED state field however many stopSimulation blocks (or expanded vector
-// elements) the model carries: `once` guards the declaration, every copy
-// OR-raises it.
+// The stop flag is one SHARED state field however many stopSimulation blocks
+// (or expanded vector elements) the model carries: `once` guards the
+// declaration, every copy OR-raises it.
 static Nelson::NFlow::BlockCodegenTemplate
 makeStopSimulationCodegen(Nelson::NFlow::CodegenLang L)
 {

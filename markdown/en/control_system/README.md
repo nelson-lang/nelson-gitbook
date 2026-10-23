@@ -39,6 +39,7 @@ Functions for creating, inspecting, and reducing dynamic system models.
 - [tfdata](1_dynamic_system_models/tfdata.md) - Access transfer function model data.
 - [tzero](1_dynamic_system_models/tzero.md) - Invariant zeros of linear system.
 - [zero](1_dynamic_system_models/zero.md) - Zeros and gain of SISO dynamic system.
+- [zpk](1_dynamic_system_models/zpk.md) - Constructs a zero-pole-gain model.
 
 ## Model Conversion and Interconnection
 
@@ -76,12 +77,17 @@ Functions for time-domain, frequency-domain, and model-response analysis.
 ### Functions
 
 - [bode](3_linear_analysis/bode.md) - Bode plot of frequency response, magnitude and phase data.
+- [bodeoptions](3_linear_analysis/bodeoptions.md) - Options for a Bode plot.
+- [bodeplot](3_linear_analysis/bodeplot.md) - Bode plot of a SISO LTI system with plotting options.
 - [damp](3_linear_analysis/damp.md) - Natural frequency and damping ratio.
 - [dcgain](3_linear_analysis/dcgain.md) - Low-frequency (DC) gain of LTI system.
 - [evalfr](3_linear_analysis/evalfr.md) - Evaluate frequency response at given frequency.
 - [freqresp](3_linear_analysis/freqresp.md) - Evaluate system response over a grid of frequencies.
 - [hsvd](3_linear_analysis/hsvd.md) - Hankel singular values of dynamic system.
+- [margin](3_linear_analysis/margin.md) - Gain and phase margins of a SISO LTI system.
 - [nyquist](3_linear_analysis/nyquist.md) - Nyquist plot of frequency response.
+- [pzmap](3_linear_analysis/pzmap.md) - Pole-zero map of a dynamic system.
+- [rlocus](3_linear_analysis/rlocus.md) - Root locus of a SISO model.
 - [sigma](3_linear_analysis/sigma.md) - Singular value response of an LTI model.
 
 ## Time and Frequency Responses
@@ -120,6 +126,7 @@ Functions for controller design, estimators, and regulator computations.
 - [lqr](5_control_design_tuning/lqr.md) - Linear-Quadratic Regulator (LQR) design.
 - [lqry](5_control_design_tuning/lqry.md) - Form linear-quadratic (LQ) state-feedback regulator with output weighting.
 - [ord2](5_control_design_tuning/ord2.md) - Generate continuous second-order systems.
+- [place](5_control_design_tuning/place.md) - Pole placement gain selection using robust eigenstructure assignment.
 
 ## Matrix Computations
 

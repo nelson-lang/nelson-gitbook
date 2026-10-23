@@ -11,7 +11,7 @@ Convertit un nombre décimal en base 16.
 
 == Argument d'entrée
 
-/ D: un entier non négatif inférieur à la valeur retournée par flintmax.
+/ D: un entier non négatif inférieur à la valeur retournée par flintmax, ou une valeur négative d'un type entier signé (int8, int16, int32, int64).
 / N: un entier : nombre de chiffres.
 
 == Argument de sortie
@@ -22,11 +22,17 @@ Convertit un nombre décimal en base 16.
 
 #strong[dec2hex]; converts decimal number to base 16.
 
+ Une valeur négative d'un type entier signé est convertie en utilisant la représentation en complément à deux sur la largeur native du type (8, 16, 32 ou 64 bits) ; ainsi #strong[dec2hex(int8(-1))]; retourne #strong['FF'];.
 
-== Exemple
+
+== Exemples
 
 ``````matlab
 Y = dec2hex(12)
+``````
+
+``````matlab
+Y = dec2hex(int8(-92))
 ``````
 
 

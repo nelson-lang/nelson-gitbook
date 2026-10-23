@@ -972,6 +972,7 @@
         <keyword name="ndims" link="./elementary_functions/7_indexing_dimensions/ndims.html" description="Nombre de dimensions d'un tableau."></keyword>
         <keyword name="numel" link="./elementary_functions/7_indexing_dimensions/numel.html" description="Nombre d'éléments."></keyword>
         <keyword name="permute" link="./elementary_functions/7_indexing_dimensions/permute.html" description="Permute les dimensions d'un tableau."></keyword>
+        <keyword name="resize" link="./elementary_functions/7_indexing_dimensions/resize.html" description="Redimensionne un tableau par troncature ou remplissage."></keyword>
         <keyword name="rot90" link="./elementary_functions/7_indexing_dimensions/rot90.html" description="Fait pivoter un tableau de 90 degrés."></keyword>
         <keyword name="shiftdim" link="./elementary_functions/7_indexing_dimensions/shiftdim.html" description="Décale les dimensions d'un tableau"></keyword>
         <keyword name="size" link="./elementary_functions/7_indexing_dimensions/size.html" description="Taille d'un objet."></keyword>
@@ -1022,8 +1023,10 @@
       <keyword name="cscd" link="./trigonometric_functions/cscd.html" description="Cosécante de l'argument en degrés."></keyword>
       <keyword name="csch" link="./trigonometric_functions/csch.html" description="Cosécante hyperbolique."></keyword>
       <keyword name="deg2rad" link="./trigonometric_functions/deg2rad.html" description="Convertit un angle de degrés en radians."></keyword>
+      <keyword name="degtorad" link="./trigonometric_functions/degtorad.html" description="Convertit un angle de degrés en radians."></keyword>
       <keyword name="pol2cart" link="./trigonometric_functions/pol2cart.html" description="Transforme des coordonnées polaires ou cylindriques en coordonnées cartésiennes."></keyword>
       <keyword name="rad2deg" link="./trigonometric_functions/rad2deg.html" description="Convertit un angle de radians en degrés."></keyword>
+      <keyword name="radtodeg" link="./trigonometric_functions/radtodeg.html" description="Convertit un angle de radians en degrés."></keyword>
       <keyword name="sec" link="./trigonometric_functions/sec.html" description="Sécante d'un angle en radians."></keyword>
       <keyword name="secd" link="./trigonometric_functions/secd.html" description="Sécante de l'argument en degrés."></keyword>
       <keyword name="sech" link="./trigonometric_functions/sech.html" description="Sécante hyperbolique."></keyword>
@@ -1075,6 +1078,7 @@
       <keyword name="isprime" link="./special_functions/isprime.html" description="Détermine quels éléments d'un tableau sont premiers"></keyword>
       <keyword name="lcm" link="./special_functions/lcm.html" description="Plus petit commun multiple"></keyword>
       <keyword name="makima" link="./special_functions/makima.html" description="Interpolation cubique d'Akima modifiee."></keyword>
+      <keyword name="membrane" link="./special_functions/membrane.html" description="Fonctions propres de la membrane en L."></keyword>
       <keyword name="pchip" link="./special_functions/pchip.html" description="Interpolation polynomiale cubique de Hermite par morceaux (PCHIP)."></keyword>
       <keyword name="peaks" link="./special_functions/peaks.html" description="Fonction peaks"></keyword>
       <keyword name="primes" link="./special_functions/primes.html" description="Nombres premiers inférieurs ou égaux à la valeur d'entrée"></keyword>
@@ -1092,6 +1096,7 @@
     <p>Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites vectorielles ou matricielles.</p>
   </chapter_description>
         <keyword name="cumtrapz" link="./linear_algebra/1_linear_systems/cumtrapz.html" description="Integration numerique cumulative par la methode des trapezes."></keyword>
+        <keyword name="curl" link="./linear_algebra/1_linear_systems/curl.html" description="Rotationnel et vitesse angulaire d'un champ de vecteurs."></keyword>
         <keyword name="del2" link="./linear_algebra/1_linear_systems/del2.html" description="Laplacien discret."></keyword>
         <keyword name="det" link="./linear_algebra/1_linear_systems/det.html" description="Déterminant d'une matrice."></keyword>
         <keyword name="diff" link="./linear_algebra/1_linear_systems/diff.html" description="Différences et dérivées approximatives."></keyword>
@@ -1439,6 +1444,7 @@
         <chapter_description>
     <p>Fonctions d apprentissage non supervise, recherche de plus proches voisins, gestion des valeurs aberrantes et modeles de sequences.</p>
   </chapter_description>
+        <keyword name="KDTreeSearcher" link="./statistics/7_clustering_anomaly_detection/KDTreeSearcher.html" description="Objet de recherche de plus proches voisins."></keyword>
         <keyword name="cluster" link="./statistics/7_clustering_anomaly_detection/cluster.html" description="Construire des classes depuis un arbre hierarchique."></keyword>
         <keyword name="clusterdata" link="./statistics/7_clustering_anomaly_detection/clusterdata.html" description="Regrouper les observations depuis les donnees."></keyword>
         <keyword name="dbscan" link="./statistics/7_clustering_anomaly_detection/dbscan.html" description="Regroupement spatial fonde sur la densite."></keyword>
@@ -1666,6 +1672,7 @@
     <p>Ce module est utile pour l'infographie, la robotique, la geometrie algorithmique, l'interpolation et l'analyse spatiale.</p>
   </chapter_description>
       <keyword name="alphaShape" link="./geometry/alphaShape.html" description="Objet alpha shape"></keyword>
+      <keyword name="axes2ecc" link="./geometry/axes2ecc.html" description="Excentricité d'une ellipse à partir de ses demi-axes."></keyword>
       <keyword name="boundary" link="./geometry/boundary.html" description="Facettes frontiere d'un ensemble de points"></keyword>
       <keyword name="convhull" link="./geometry/convhull.html" description="Enveloppe convexe de points 2-D ou 3-D"></keyword>
       <keyword name="convhulln" link="./geometry/convhulln.html" description="Enveloppe convexe en N dimensions"></keyword>
@@ -1673,7 +1680,13 @@
       <keyword name="delaunayTriangulation" link="./geometry/delaunayTriangulation.html" description="Objet de triangulation de Delaunay"></keyword>
       <keyword name="delaunayn" link="./geometry/delaunayn.html" description="Triangulation de Delaunay en N dimensions"></keyword>
       <keyword name="dsearchn" link="./geometry/dsearchn.html" description="Recherche du point le plus proche"></keyword>
+      <keyword name="ellipse1" link="./geometry/ellipse1.html" description="Points d'une petite ellipse sur une sphère."></keyword>
       <keyword name="griddata" link="./geometry/griddata.html" description="Interpolation de donnees dispersees"></keyword>
+      <keyword name="nsidedpoly" link="./geometry/nsidedpoly.html" description="Crée un polygone régulier."></keyword>
+      <keyword name="polyarea" link="./geometry/polyarea.html" description="Aire d'un polygone."></keyword>
+      <keyword name="polyshape" link="./geometry/polyshape.html" description="Crée un polygone."></keyword>
+      <keyword name="reckon" link="./geometry/reckon.html" description="Point à une distance sphérique et un azimut donnés."></keyword>
+      <keyword name="rectint" link="./geometry/rectint.html" description="Aire d'intersection de rectangles."></keyword>
       <keyword name="rotx" link="./geometry/rotx.html" description="Matrice de transformation 3x3 pour rotation autour de l'axe x"></keyword>
       <keyword name="roty" link="./geometry/roty.html" description="Matrice de transformation 3x3 pour rotation autour de l'axe y"></keyword>
       <keyword name="rotz" link="./geometry/rotz.html" description="Matrice de transformation 3x3 pour rotation autour de l'axe z"></keyword>
@@ -1710,6 +1723,7 @@
         <keyword name="tfdata" link="./control_system/1_dynamic_system_models/tfdata.html" description="Accède aux données d'un modèle en fonction de transfert."></keyword>
         <keyword name="tzero" link="./control_system/1_dynamic_system_models/tzero.html" description="Zéros invariants d'un système linéaire."></keyword>
         <keyword name="zero" link="./control_system/1_dynamic_system_models/zero.html" description="Zéros et gain d'un système SISO."></keyword>
+        <keyword name="zpk" link="./control_system/1_dynamic_system_models/zpk.html" description="Construit un modèle zéros-pôles-gain."></keyword>
       </section>
       <section name="Conversion et interconnexion de modeles">
         <chapter_description>
@@ -1735,12 +1749,17 @@
     <p>Fonctions pour analyse temporelle, frequentielle et reponse de modeles.</p>
   </chapter_description>
         <keyword name="bode" link="./control_system/3_linear_analysis/bode.html" description="Diagramme de Bode de la rÃƒÂ©ponse en frÃƒÂ©quence, donnÃƒÂ©es de magnitude et de phase."></keyword>
+        <keyword name="bodeoptions" link="./control_system/3_linear_analysis/bodeoptions.html" description="Options d'un diagramme de Bode."></keyword>
+        <keyword name="bodeplot" link="./control_system/3_linear_analysis/bodeplot.html" description="Diagramme de Bode d'un système LTI SISO avec options de tracé."></keyword>
         <keyword name="damp" link="./control_system/3_linear_analysis/damp.html" description="Fréquence naturelle et rapport d'amortissement."></keyword>
         <keyword name="dcgain" link="./control_system/3_linear_analysis/dcgain.html" description="Gain en basse fréquence (DC) du système LTI."></keyword>
         <keyword name="evalfr" link="./control_system/3_linear_analysis/evalfr.html" description="Évalue la réponse en fréquence à une fréquence donnée."></keyword>
         <keyword name="freqresp" link="./control_system/3_linear_analysis/freqresp.html" description="RÃ©ponse en frÃ©quence du systÃ¨me."></keyword>
         <keyword name="hsvd" link="./control_system/3_linear_analysis/hsvd.html" description="Décomposition en valeurs singulières de Hankel."></keyword>
+        <keyword name="margin" link="./control_system/3_linear_analysis/margin.html" description="Marges de gain et de phase d'un système LTI SISO."></keyword>
         <keyword name="nyquist" link="./control_system/3_linear_analysis/nyquist.html" description="Diagramme de Nyquist de la rÃ©ponse en frÃ©quence."></keyword>
+        <keyword name="pzmap" link="./control_system/3_linear_analysis/pzmap.html" description="Carte des pôles et des zéros d'un système dynamique."></keyword>
+        <keyword name="rlocus" link="./control_system/3_linear_analysis/rlocus.html" description="Lieu des racines d'un modèle SISO."></keyword>
         <keyword name="sigma" link="./control_system/3_linear_analysis/sigma.html" description="Reponse en valeurs singulieres d'un modele LTI."></keyword>
       </section>
       <section name="Reponses temporelles et frequentielles">
@@ -1767,6 +1786,7 @@
         <keyword name="lqr" link="./control_system/5_control_design_tuning/lqr.html" description="Conception d'un régulateur linéaire-quadratique (LQR)."></keyword>
         <keyword name="lqry" link="./control_system/5_control_design_tuning/lqry.html" description="Forme un régulateur LQ (rétroaction d'état) avec pondération sur la sortie."></keyword>
         <keyword name="ord2" link="./control_system/5_control_design_tuning/ord2.html" description="Génère des systèmes du second ordre continus."></keyword>
+        <keyword name="place" link="./control_system/5_control_design_tuning/place.html" description="Placement de pôles par retour d'état avec assignation robuste."></keyword>
       </section>
       <section name="Calculs matriciels">
         <chapter_description>
@@ -1968,6 +1988,7 @@
   </chapter_description>
       <keyword name="RandStream" link="./random/RandStream.html" description="Objet de flux de nombres aléatoires."></keyword>
       <keyword name="rand" link="./random/rand.html" description="Nombre aléatoire."></keyword>
+      <keyword name="randg" link="./random/randg.html" description="Nombre aléatoire distribué selon une loi gamma."></keyword>
       <keyword name="randi" link="./random/randi.html" description="Entier aléatoire."></keyword>
       <keyword name="randn" link="./random/randn.html" description="Nombre aléatoire normalement distribué."></keyword>
       <keyword name="randperm" link="./random/randperm.html" description="Permutation aléatoire de valeurs entières."></keyword>
@@ -2470,12 +2491,16 @@
       <keyword name="detectImportOptions" link="./spreadsheet/detectImportOptions.html" description="Créer des options d'importation basées sur le contenu du fichier."></keyword>
       <keyword name="dlmread" link="./spreadsheet/dlmread.html" description="Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."></keyword>
       <keyword name="dlmwrite" link="./spreadsheet/dlmwrite.html" description="Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."></keyword>
+      <keyword name="getvaropts" link="./spreadsheet/getvaropts.html" description="Obtenir les options d'importation des variables selectionnees."></keyword>
       <keyword name="jsonImportOptions" link="./spreadsheet/jsonImportOptions.html" description="Créer des options pour importer des données JSON."></keyword>
       <keyword name="readcell" link="./spreadsheet/readcell.html" description="Créer une cellule à partir d'un fichier."></keyword>
       <keyword name="readmatrix" link="./spreadsheet/readmatrix.html" description="Créer une matrice à partir d'un fichier."></keyword>
       <keyword name="readtable" link="./spreadsheet/readtable.html" description="Créer une table à partir d'un fichier."></keyword>
       <keyword name="readtimetable" link="./spreadsheet/readtimetable.html" description="Crée une timetable depuis un fichier."></keyword>
       <keyword name="readvars" link="./spreadsheet/readvars.html" description="Créer des variables en lisant les colonnes d'un fichier."></keyword>
+      <keyword name="setvaropts" link="./spreadsheet/setvaropts.html" description="Definir les options d'importation des variables selectionnees."></keyword>
+      <keyword name="setvartype" link="./spreadsheet/setvartype.html" description="Definir les types de donnees des variables selectionnees."></keyword>
+      <keyword name="spreadsheetImportOptions" link="./spreadsheet/spreadsheetImportOptions.html" description="Creer des options pour importer des donnees de feuille de calcul."></keyword>
       <keyword name="writecell" link="./spreadsheet/writecell.html" description="Écrire un tableau de cellules dans un fichier."></keyword>
       <keyword name="writematrix" link="./spreadsheet/writematrix.html" description="Écrire une matrice dans un fichier."></keyword>
       <keyword name="writetable" link="./spreadsheet/writetable.html" description="Écrire une table dans un fichier."></keyword>
@@ -2683,6 +2708,7 @@
           <keyword name="plot3" link="./graphics/1_plots/1_line_plots/plot3.html" description="Tracé de courbe 3D."></keyword>
           <keyword name="semilogx" link="./graphics/1_plots/1_line_plots/semilogx.html" description="Graphique semi-logarithmique (axe x en échelle logarithmique)."></keyword>
           <keyword name="semilogy" link="./graphics/1_plots/1_line_plots/semilogy.html" description="Graphique semi-logarithmique (axe y en échelle logarithmique)."></keyword>
+          <keyword name="viscircles" link="./graphics/1_plots/1_line_plots/viscircles.html" description="Trace des cercles."></keyword>
           <keyword name="xline" link="./graphics/1_plots/1_line_plots/xline.html" description="Ligne constante verticale."></keyword>
           <keyword name="yline" link="./graphics/1_plots/1_line_plots/yline.html" description="Ligne constante horizontale."></keyword>
         </section>
@@ -2779,6 +2805,7 @@
           <keyword name="area" link="./graphics/1_plots/7_surfaces_volumes_polygons/area.html" description="Creer des graphes d'aires."></keyword>
           <keyword name="contourslice" link="./graphics/1_plots/7_surfaces_volumes_polygons/contourslice.html" description="Afficher des lignes de contour sur des coupes de volume."></keyword>
           <keyword name="cylinder" link="./graphics/1_plots/7_surfaces_volumes_polygons/cylinder.html" description="Créer un cylindre."></keyword>
+          <keyword name="ellipsoid" link="./graphics/1_plots/7_surfaces_volumes_polygons/ellipsoid.html" description="Crée un ellipsoïde."></keyword>
           <keyword name="fill" link="./graphics/1_plots/7_surfaces_volumes_polygons/fill.html" description="Créer des formes 2D remplies."></keyword>
           <keyword name="fill3" link="./graphics/1_plots/7_surfaces_volumes_polygons/fill3.html" description="Creer des patchs 3-D remplis."></keyword>
           <keyword name="fimplicit" link="./graphics/1_plots/7_surfaces_volumes_polygons/fimplicit.html" description="Tracer une courbe de fonction implicite."></keyword>
@@ -2787,6 +2814,7 @@
           <keyword name="fsurf" link="./graphics/1_plots/7_surfaces_volumes_polygons/fsurf.html" description="Trace une surface definie par une fonction."></keyword>
           <keyword name="isonormals" link="./graphics/1_plots/7_surfaces_volumes_polygons/isonormals.html" description="Calculer les normales des sommets d'une isosurface."></keyword>
           <keyword name="isosurface" link="./graphics/1_plots/7_surfaces_volumes_polygons/isosurface.html" description="Extraire une isosurface depuis des donnees volumiques."></keyword>
+          <keyword name="knot" link="./graphics/1_plots/7_surfaces_volumes_polygons/knot.html" description="Créer une surface en nœud de trèfle."></keyword>
           <keyword name="mesh" link="./graphics/1_plots/7_surfaces_volumes_polygons/mesh.html" description="Tracé de surface en maillage (mesh)."></keyword>
           <keyword name="meshc" link="./graphics/1_plots/7_surfaces_volumes_polygons/meshc.html" description="Afficher un maillage avec des contours en dessous."></keyword>
           <keyword name="meshz" link="./graphics/1_plots/7_surfaces_volumes_polygons/meshz.html" description="Tracé de surface en maillage (mesh) avec rideau."></keyword>
@@ -2799,6 +2827,7 @@
           <keyword name="smooth3" link="./graphics/1_plots/7_surfaces_volumes_polygons/smooth3.html" description="Lisser des donnees 3-D."></keyword>
           <keyword name="sphere" link="./graphics/1_plots/7_surfaces_volumes_polygons/sphere.html" description="Créer une sphère."></keyword>
           <keyword name="surf" link="./graphics/1_plots/7_surfaces_volumes_polygons/surf.html" description="tracé de surface."></keyword>
+          <keyword name="surf2patch" link="./graphics/1_plots/7_surfaces_volumes_polygons/surf2patch.html" description="Convertit des données de surface en données de patch."></keyword>
           <keyword name="surface" link="./graphics/1_plots/7_surfaces_volumes_polygons/surface.html" description="Tracé de surface primitif."></keyword>
           <keyword name="surfc" link="./graphics/1_plots/7_surfaces_volumes_polygons/surfc.html" description="Afficher une surface avec des contours en dessous."></keyword>
           <keyword name="surfl" link="./graphics/1_plots/7_surfaces_volumes_polygons/surfl.html" description="Afficher une surface eclairee."></keyword>
@@ -2830,6 +2859,7 @@
           <keyword name="allchild" link="./graphics/2_graphics_objects/1_object_management/allchild.html" description="Retourne tous les enfants directs d'objets graphiques."></keyword>
           <keyword name="ancestor" link="./graphics/2_graphics_objects/1_object_management/ancestor.html" description="Ancêtre d'un objet graphique."></keyword>
           <keyword name="axes" link="./graphics/2_graphics_objects/1_object_management/axes.html" description="Créer des axes cartésiens."></keyword>
+          <keyword name="axescheck" link="./graphics/2_graphics_objects/1_object_management/axescheck.html" description="Extrait un handle d'axes d'une liste d'arguments."></keyword>
           <keyword name="cla" link="./graphics/2_graphics_objects/1_object_management/cla.html" description="Efface les axes."></keyword>
           <keyword name="clf" link="./graphics/2_graphics_objects/1_object_management/clf.html" description="Efface la figure."></keyword>
           <keyword name="close" link="./graphics/2_graphics_objects/1_object_management/close.html" description="Ferme une ou plusieurs figures"></keyword>
@@ -2838,14 +2868,22 @@
           <keyword name="findobj" link="./graphics/2_graphics_objects/1_object_management/findobj.html" description="Trouve des objets graphiques avec des proprietes donnees."></keyword>
           <keyword name="gca" link="./graphics/2_graphics_objects/1_object_management/gca.html" description="Récupère l'objet axes courant."></keyword>
           <keyword name="gcf" link="./graphics/2_graphics_objects/1_object_management/gcf.html" description="Récupère l'objet figure courant."></keyword>
+          <keyword name="getappdata" link="./graphics/2_graphics_objects/1_object_management/getappdata.html" description="Récupère des données applicatives d'un objet."></keyword>
           <keyword name="groot" link="./graphics/2_graphics_objects/1_object_management/groot.html" description="Objet racine graphique."></keyword>
           <keyword name="hggroup" link="./graphics/2_graphics_objects/1_object_management/hggroup.html" description="Créer un objet groupe."></keyword>
           <keyword name="hold" link="./graphics/2_graphics_objects/1_object_management/hold.html" description="Conserver le tracé courant lors de l'ajout de nouveaux tracés."></keyword>
+          <keyword name="inspect" link="./graphics/2_graphics_objects/1_object_management/inspect.html" description="Ouvre l'inspecteur de propriétés des objets graphiques."></keyword>
           <keyword name="is2D" link="./graphics/2_graphics_objects/1_object_management/is2D.html" description="Vérifie si ax est un axe 2D polaire ou cartésien."></keyword>
           <keyword name="isValidGraphicsProperty" link="./graphics/2_graphics_objects/1_object_management/isValidGraphicsProperty.html" description="Vérifie si le nom de propriété est valide."></keyword>
+          <keyword name="isappdata" link="./graphics/2_graphics_objects/1_object_management/isappdata.html" description="Vrai si des données applicatives existent."></keyword>
           <keyword name="isgraphics" link="./graphics/2_graphics_objects/1_object_management/isgraphics.html" description="Vérifie si l'objet est graphique."></keyword>
           <keyword name="ishold" link="./graphics/2_graphics_objects/1_object_management/ishold.html" description="Obtient l'état actuel du mode hold."></keyword>
+          <keyword name="makehgtform" link="./graphics/2_graphics_objects/1_object_management/makehgtform.html" description="Crée une matrice de transformation 4 par 4."></keyword>
           <keyword name="newplot" link="./graphics/2_graphics_objects/1_object_management/newplot.html" description="Préparer la création d'un nouveau graphique."></keyword>
+          <keyword name="rmappdata" link="./graphics/2_graphics_objects/1_object_management/rmappdata.html" description="Supprime des données applicatives d'un objet."></keyword>
+          <keyword name="rotate" link="./graphics/2_graphics_objects/1_object_management/rotate.html" description="Fait tourner des objets graphiques autour d'un axe."></keyword>
+          <keyword name="setappdata" link="./graphics/2_graphics_objects/1_object_management/setappdata.html" description="Stocke des données applicatives sur un objet."></keyword>
+          <keyword name="shg" link="./graphics/2_graphics_objects/1_object_management/shg.html" description="Affiche la fenêtre graphique courante."></keyword>
         </section>
         <section name="Objets de disposition">
           <chapter_description>
@@ -3010,6 +3048,7 @@
             <keyword name="abyss" link="./graphics/3_labels_styling/2_color_styling/colormaps/abyss.html" description="Palette de couleurs abyss."></keyword>
             <keyword name="autumn" link="./graphics/3_labels_styling/2_color_styling/colormaps/autumn.html" description="Palette de couleurs autumn."></keyword>
             <keyword name="bone" link="./graphics/3_labels_styling/2_color_styling/colormaps/bone.html" description="Palette de couleurs bone."></keyword>
+            <keyword name="brighten" link="./graphics/3_labels_styling/2_color_styling/colormaps/brighten.html" description="Éclaircit ou assombrit une palette de couleurs."></keyword>
             <keyword name="colorcube" link="./graphics/3_labels_styling/2_color_styling/colormaps/colorcube.html" description="Tableau de colormap RGB en cube ameliore."></keyword>
             <keyword name="colormap" link="./graphics/3_labels_styling/2_color_styling/colormaps/colormap.html" description="Afficher et définir la palette de couleurs courante."></keyword>
             <keyword name="colormaplist" link="./graphics/3_labels_styling/2_color_styling/colormaps/colormaplist.html" description="Fournit la liste des palettes de couleurs."></keyword>
@@ -3038,7 +3077,19 @@
           <chapter_description>
     <p>Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.</p>
   </chapter_description>
+          <keyword name="axtoolbar" link="./graphics/3_labels_styling/3_interactions_camera_lighting/axtoolbar.html" description="Obtient ou configure la barre d'outils des axes."></keyword>
+          <keyword name="camdolly" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camdolly.html" description="Déplace la position et la cible de la caméra."></keyword>
           <keyword name="camlight" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camlight.html" description="Cree ou positionne une lumiere par rapport a la camera."></keyword>
+          <keyword name="camlookat" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camlookat.html" description="Pointe la caméra vers un objet."></keyword>
+          <keyword name="camorbit" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camorbit.html" description="Fait orbiter la position de la caméra autour de la cible."></keyword>
+          <keyword name="campan" link="./graphics/3_labels_styling/3_interactions_camera_lighting/campan.html" description="Fait pivoter la cible de la caméra autour de la position."></keyword>
+          <keyword name="campos" link="./graphics/3_labels_styling/3_interactions_camera_lighting/campos.html" description="Définit ou interroge la position de la caméra."></keyword>
+          <keyword name="camproj" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camproj.html" description="Définit ou interroge le type de projection de la caméra."></keyword>
+          <keyword name="camroll" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camroll.html" description="Fait rouler la caméra autour de l'axe de visée."></keyword>
+          <keyword name="camtarget" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camtarget.html" description="Définit ou interroge la cible de la caméra."></keyword>
+          <keyword name="camup" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camup.html" description="Définit ou interroge le vecteur vertical de la caméra."></keyword>
+          <keyword name="camva" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camva.html" description="Définit ou interroge l'angle de vue de la caméra."></keyword>
+          <keyword name="camzoom" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camzoom.html" description="Zoome la caméra en avant ou en arrière."></keyword>
           <keyword name="drawnow" link="./graphics/3_labels_styling/3_interactions_camera_lighting/drawnow.html" description="Met à jour les figures et traite les callbacks"></keyword>
           <keyword name="Gestion des interruptions de callback dans Nelson" link="./graphics/3_labels_styling/3_interactions_camera_lighting/graphical_callback.html" description=""></keyword>
           <keyword name="light" link="./graphics/3_labels_styling/3_interactions_camera_lighting/light.html" description="Cree un objet lumiere dans des axes."></keyword>
@@ -3085,6 +3136,7 @@
         <chapter_description>
     <p>Fonctions pour ouvrir et sauvegarder des fichiers figure.</p>
   </chapter_description>
+        <keyword name="exportapp" link="./graphics/5_printing_saving/exportapp.html" description="Enregistre une figure avec ses composants d'interface dans un fichier image."></keyword>
         <keyword name="openfig" link="./graphics/5_printing_saving/openfig.html" description="Ouvre un fichier FIG Nelson."></keyword>
         <keyword name="print" link="./graphics/5_printing_saving/print.html" description="Exporte une figure vers un fichier image ou document."></keyword>
         <keyword name="savefig" link="./graphics/5_printing_saving/savefig.html" description="Enregistre une figure dans un fichier FIG Nelson."></keyword>
@@ -3149,6 +3201,7 @@
           <keyword name="imboxfilt" link="./image_processing/1_image_basics/3_filtering_edges/imboxfilt.html" description="Applique un filtrage par moyenne locale."></keyword>
           <keyword name="imfilter" link="./image_processing/1_image_basics/3_filtering_edges/imfilter.html" description="Filtre une image avec un noyau 2D."></keyword>
           <keyword name="imgaussfilt" link="./image_processing/1_image_basics/3_filtering_edges/imgaussfilt.html" description="Applique un filtrage gaussien a une image."></keyword>
+          <keyword name="imnoise" link="./image_processing/1_image_basics/3_filtering_edges/imnoise.html" description="Ajoute du bruit à une image."></keyword>
           <keyword name="medfilt2" link="./image_processing/1_image_basics/3_filtering_edges/medfilt2.html" description="Applique un filtrage median 2D."></keyword>
           <keyword name="padarray" link="./image_processing/1_image_basics/3_filtering_edges/padarray.html" description="Ajoute des marges a un tableau pour le filtrage ou la morphologie."></keyword>
         </section>
@@ -3238,6 +3291,7 @@
           <keyword name="sizesMatch" link="./image_processing/3_geometry_registration_3d/6_geometric_transforms/sizesMatch.html" description="Determine si une reference spatiale correspond a une taille d'image."></keyword>
           <keyword name="transformPointsForward" link="./image_processing/3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.html" description="Applique une transformation geometrique directe a des points."></keyword>
           <keyword name="transformPointsInverse" link="./image_processing/3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.html" description="Applique une transformation geometrique inverse a des points."></keyword>
+          <keyword name="warp" link="./image_processing/3_geometry_registration_3d/6_geometric_transforms/warp.html" description="Affiche une image plaquée en texture sur une surface."></keyword>
           <keyword name="worldToIntrinsic" link="./image_processing/3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.html" description="Convertit des coordonnees monde en coordonnees intrinseques."></keyword>
           <keyword name="worldToSubscript" link="./image_processing/3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.html" description="Convertit des coordonnees monde en indices d'image."></keyword>
         </section>
@@ -4329,7 +4383,7 @@
     <p>NFlow est actuellement publié en version <b>1.0.0-beta.1</b> : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours.</p>
     <p>Il lit la description de modèle d'une FMU, expose ses variables et ses interfaces, et soit pilote une co-simulation à pas fixe (la FMU possède son solveur), soit intègre une FMU Model Exchange avec le solveur de NFlow, en enregistrant les sorties de la FMU au cours du temps.</p>
     <p>Les fonctions acceptent aussi bien une archive <b>.fmu</b> qu'un répertoire de FMU déjà extrait. Les archives sont décompressées avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire supprimé automatiquement.</p>
-    <p>Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie <b>FMI</b>) : un bloc <b>FMU</b> (co-simulation) et un bloc <b>FMU (ME)</b> (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur <b>Browse FMU...</b> pour choisir un <b>.fmu</b>, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire <b>examples</b> du module.</p>
+    <p>Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie <b>FMI</b>) : un bloc <b>FMU (CS)</b> (co-simulation) et un bloc <b>FMU (ME)</b> (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur <b>Browse FMU...</b> pour choisir un <b>.fmu</b>, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire <b>examples</b> du module.</p>
     <table style="width:100%">
       <tr>
         <th>Domaine</th>
@@ -4363,6 +4417,7 @@
     </table>
     <p>L'<b>assistant d'import FMU</b> (<b>fmuToBlock</b>) transforme n'importe quelle FMU en bloc nflow d'aspect natif -- ports d'entrée et de sortie d'après la description de modèle, paramètres et icône de la FMU -- prêt à déposer dans une bibliothèque. Il se marie avec le pont Modelica : <b>modelicaToFmu</b> produit une FMU, <b>fmuToBlock</b> l'enveloppe en bloc.</p>
     <p>Le <b>pont Modelica</b> permet à un modèle nflow d'inclure un bloc <b>modelica</b> qui référence un modèle Modelica. À la simulation, le modèle est compilé en FMU avec un <b>OpenModelica</b> installé par l'utilisateur puis importé via le chemin FMI ci-dessus, de sorte que des modèles Modelica physiques (acausaux) se simulent aux côtés des blocs ordinaires. <b>modelicaInfo</b> et <b>modelicaConfigure</b> indiquent et sélectionnent l'OpenModelica utilisé ; <b>modelicaToFmu</b> réalise la compilation. Des exemples (RC, RLC, masse-ressort-amortisseur) sont fournis dans le répertoire <b>examples/modelica</b> du module.</p>
+    <p><b>Prérequis :</b> le pont Modelica est la seule partie de ce module qui nécessite un outil externe. OpenModelica n'est <b>pas fourni</b> avec Nelson ; installez-le vous-même (depuis le projet OpenModelica), et assurez-vous que l'installation est suffisamment complète pour exporter des FMU -- elle doit fournir le runtime d'export FMI sous <b>share/omc/runtime/c/fmi</b>, qu'une installation minimale peut omettre. nflow détecte automatiquement OpenModelica dans l'ordre suivant : un chemin défini avec <b>modelicaConfigure</b>, les variables d'environnement <b>NELSON_OPENMODELICA_HOME</b> et <b>OPENMODELICAHOME</b>, les répertoires d'installation standard, puis <b>PATH</b>. Exécutez <b>modelicaInfo</b> pour vérifier qu'un OpenModelica utilisable est trouvé. Le reste du module (import de FMU, co-simulation, Model Exchange) ne requiert aucun outil externe.</p>
   </chapter_description>
       <keyword name="fmiCoSimulate" link="./nflow_fmi/fmiCoSimulate.html" description="Exécute une co-simulation à pas fixe d'une FMU FMI 2.0 ou 3.0."></keyword>
       <keyword name="fmiInfo" link="./nflow_fmi/fmiInfo.html" description="Lit la description de modèle d'une FMU FMI 2.0 ou 3.0."></keyword>
@@ -4460,6 +4515,14 @@
       <keyword name="nelson.compiler.analyze" link="./compiler/nelson.compiler.analyze.html" description="Examiner les dependances sans produire d'executable."></keyword>
       <keyword name="nelson.compiler.build" link="./compiler/nelson.compiler.build.html" description="Construire un executable natif avec des options structurees."></keyword>
       <keyword name="nelson.compiler.build" link="./compiler/nelson.compiler.build.html" description="Construire un executable natif avec des options structurees."></keyword>
+    </section>
+    <section name="Notebook">
+      <chapter_description>
+    <p>Le module Notebook exécute des documents Notebook en dehors de l'éditeur.</p>
+    <p>Un Notebook mêle texte mis en forme, code et ses sorties dans un même document. Ce module lit le conteneur natif <b>.nlx</b> et le format texte <b>.m</b>, et exécute leurs cellules de code dans l'espace de travail de base — un document peut donc être lancé depuis la ligne de commande ou un script.</p>
+  </chapter_description>
+      <keyword name="nlx" link="./notebook/nlx.html" description="Le format de document Notebook de Nelson (.nlx)."></keyword>
+      <keyword name="notebook" link="./notebook/notebook.html" description="Exécute un document Notebook."></keyword>
     </section>
   </toc>
 </help_summary>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>notebook</module>
+    <section name="Notebook">
+      <chapter_description>
+    <p>The Notebook module runs Notebook documents outside the editor.</p>
+    <p>A Notebook mixes formatted text, code and its output in one document. This module reads the native <b>.nlx</b> container and the plain-text <b>.m</b> Notebook format, and executes their code cells against the base workspace — so a document can be run from the command line or a script.</p>
+  </chapter_description>
+      <keyword name="nlx" link="nlx.html" description="The Nelson Notebook document format (.nlx)."/>
+      <keyword name="notebook" link="notebook.html" description="Run a Notebook document."/>
+    </section>
+  </toc>
+</help_summary>

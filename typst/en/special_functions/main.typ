@@ -37,6 +37,7 @@ The Special Functions module provides tools for performing advanced mathematical
 - #nlink(<special_functions:isprime>)[isprime]: Determine which array elements are prime.
 - #nlink(<special_functions:lcm>)[lcm]: Least common multiple.
 - #nlink(<special_functions:makima>)[makima]: Modified Akima piecewise cubic interpolation.
+- #nlink(<special_functions:membrane>)[membrane]: Eigenfunctions of the L-shaped membrane.
 - #nlink(<special_functions:pchip>)[pchip]: Piecewise Cubic Hermite Interpolating Polynomial (PCHIP).
 - #nlink(<special_functions:peaks>)[peaks]: Peaks function
 - #nlink(<special_functions:primes>)[primes]: Prime numbers less than or equal to input value
@@ -99,6 +100,8 @@ The Special Functions module provides tools for performing advanced mathematical
 #include "lcm.typ"
 #pagebreak(weak: true)
 #include "makima.typ"
+#pagebreak(weak: true)
+#include "membrane.typ"
 #pagebreak(weak: true)
 #include "pchip.typ"
 #pagebreak(weak: true)

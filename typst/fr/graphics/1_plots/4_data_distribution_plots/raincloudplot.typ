@@ -49,6 +49,7 @@ Visualiser des donnees numeriques groupees avec des graphiques en nuage de pluie
 Nuages de pluie de donnees groupees.
 
 ``````matlab
+rng(0);
 ydata = randn(100, 1);
 xgroupdata = categorical(repelem(["group1"; "group2"; "group3"], [20, 50, 30]));
 raincloudplot(xgroupdata, ydata)

@@ -288,7 +288,7 @@
       </tr>
       <tr>
         <td><b>SelectionType</b></td>
-        <td>Nelson computes this value; graphics operations update it.</td>
+        <td>last mouse button press, set before WindowButtonDownFcn runs: 'normal' for a left click, 'extend' for shift-left or the middle button, 'alt' for ctrl-left or the right button, 'open' for a double click.</td>
         <td>Type: text scalar or character row vector. Supported values: 'normal', 'extend', 'alt', 'open'.</td>
       </tr>
       <tr>
@@ -368,7 +368,7 @@
       </tr>
       <tr>
         <td><b>WindowScrollWheelFcn</b></td>
-        <td>the graphics event system invokes it for the associated event.</td>
+        <td>the graphics event system invokes it for the associated event; when set, it replaces the built-in scroll wheel zoom of the axes.</td>
         <td>Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array.</td>
       </tr>
       <tr>

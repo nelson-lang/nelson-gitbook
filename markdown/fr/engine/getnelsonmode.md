@@ -27,7 +27,9 @@ Les modes possibles sont :
 
 <b>GUI</b> : Nelson lancé comme application graphique (par défaut). 
 
-<b>WEB\_GUI</b> : Nelson lancé comme application web.
+<b>WEB\_GUI</b> : Nelson lancé comme application web. 
+
+<b>WASM\_TERMINAL</b> : Nelson exécuté dans un worker WebAssembly avec une interface de bureau dans le navigateur. L'évaluateur reste un terminal portable et utilise un traitement coopératif des événements.
 
 ## 💡 Exemple
 

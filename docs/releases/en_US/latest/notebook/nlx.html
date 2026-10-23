@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nlx</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nlx</span></div></div>
+<div class="section syntax-section"><div class="subtitle">The Nelson Notebook document format (.nlx).</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>A <b>.nlx</b> file is the native Nelson Notebook document. It is a <b>zip</b> (OPC-style) container that keeps the source, the saved results and the figures apart in one portable file.</p>
+    <p>The container has these entries:</p>
+    <p><b>manifest.json</b> - the format marker: <b>format</b> (<b>nelson-notebook</b>) and <b>version</b>.</p>
+    <p><b>document.json</b> - the source: an object with a <b>blocks</b> array (the ordered content of the Notebook). This part stays small and diffs cleanly, and the headless reader parses it directly.</p>
+    <p><b>output.json</b> - the saved results: for each code cell, its last text output, error and figure references, keyed by block id. It is regenerable by re-running the document, and kept apart so it never pollutes the source.</p>
+    <p><b>media/</b> - the figures a code cell produced, extracted as image files (for example <b>media/fig0.png</b>) so the JSON parts stay small and the images round-trip losslessly.</p>
+    <p>Each entry of <b>blocks</b> is an object with a <b>type</b> and a <b>props</b> object:</p>
+    <p><b>heading</b> / <b>paragraph</b> - formatted text (a heading carries <b>props.level</b>).</p>
+    <p><b>codecell</b> - a Nelson code cell; <b>props.code</b> is the code. Its results live in <b>output.json</b>, not in the cell.</p>
+    <p><b>equation</b> - a LaTeX equation (<b>props.latex</b>).</p>
+    <p>the interactive controls (slider, drop-down, check box, ...) and live tasks - stored with their bound variable and value in <b>props</b>.</p>
+    <p>Only the <b>codecell</b> blocks are executable. <b>notebook</b> and <b>run</b> evaluate their <b>props.code</b> in order against the base workspace; <b>edit</b> opens the document in the Notebook editor.</p>
+    <p>A Notebook can also be saved as a plain-text <b>.m</b> file, where each block is written under a <b>%% [kind]</b> marker, so it opens in any editor and runs as an ordinary script.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">The entries inside a .nlx container.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">manifest.json
+document.json
+output.json
+media/fig0.png</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">A minimal document.json.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "blocks": [
+    { "type": "heading", "props": { "level": 1 }, "content": "My Notebook" },
+    { "type": "paragraph", "content": "A short description." },
+    { "type": "codecell", "props": { "code": "x = linspace(0, 1, 10);\nplot(x)" } }
+  ]
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../notebook/notebook.html">notebook</a><a class="see-also-link" href="../core/run.html">run</a><a class="see-also-link" href="../text_editor/edit.html">edit</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

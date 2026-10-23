@@ -9,6 +9,7 @@
     <p>Ce module est utile pour l'infographie, la robotique, la geometrie algorithmique, l'interpolation et l'analyse spatiale.</p>
   </chapter_description>
       <keyword name="alphaShape" link="alphaShape.html" description="Objet alpha shape"/>
+      <keyword name="axes2ecc" link="axes2ecc.html" description="Excentricité d'une ellipse à partir de ses demi-axes."/>
       <keyword name="boundary" link="boundary.html" description="Facettes frontiere d'un ensemble de points"/>
       <keyword name="convhull" link="convhull.html" description="Enveloppe convexe de points 2-D ou 3-D"/>
       <keyword name="convhulln" link="convhulln.html" description="Enveloppe convexe en N dimensions"/>
@@ -16,7 +17,13 @@
       <keyword name="delaunayTriangulation" link="delaunayTriangulation.html" description="Objet de triangulation de Delaunay"/>
       <keyword name="delaunayn" link="delaunayn.html" description="Triangulation de Delaunay en N dimensions"/>
       <keyword name="dsearchn" link="dsearchn.html" description="Recherche du point le plus proche"/>
+      <keyword name="ellipse1" link="ellipse1.html" description="Points d'une petite ellipse sur une sphère."/>
       <keyword name="griddata" link="griddata.html" description="Interpolation de donnees dispersees"/>
+      <keyword name="nsidedpoly" link="nsidedpoly.html" description="Crée un polygone régulier."/>
+      <keyword name="polyarea" link="polyarea.html" description="Aire d'un polygone."/>
+      <keyword name="polyshape" link="polyshape.html" description="Crée un polygone."/>
+      <keyword name="reckon" link="reckon.html" description="Point à une distance sphérique et un azimut donnés."/>
+      <keyword name="rectint" link="rectint.html" description="Aire d'intersection de rectangles."/>
       <keyword name="rotx" link="rotx.html" description="Matrice de transformation 3x3 pour rotation autour de l'axe x"/>
       <keyword name="roty" link="roty.html" description="Matrice de transformation 3x3 pour rotation autour de l'axe y"/>
       <keyword name="rotz" link="rotz.html" description="Matrice de transformation 3x3 pour rotation autour de l'axe z"/>

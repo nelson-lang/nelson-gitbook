@@ -43,6 +43,7 @@ Le module <b>statistics</b> fournit son propre <b>hist</b>, auquel celui-ci se s
 
 
 ```matlab
+rng(0);
 f = figure();
 for i = 1:4
   subplot(2, 2, i)

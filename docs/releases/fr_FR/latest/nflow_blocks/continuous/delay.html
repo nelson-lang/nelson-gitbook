@@ -149,7 +149,7 @@
           <td>
             <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">delay</code>
           </td>
-          <td>0.1</td>
+          <td>1</td>
         </tr>
       
     </table>
@@ -265,9 +265,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -280,7 +280,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -291,24 +291,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -338,13 +338,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -356,7 +356,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -367,7 +367,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -376,13 +376,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -482,9 +482,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -514,7 +514,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -522,9 +522,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -557,8 +557,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -617,10 +617,9 @@ Nelson::NFlow::handleDelay(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
             frac = 1.0;
         }
         const int base = st.delayIndex;
-        // buf[base - j] holds u(k - j) for j &gt;= 1; u(k - 0) is the input of the
-        // step now running, which is not in the ring yet. A delay of less than
-        // one step needs it: with DelayTime 0 the block IS a wire, and reading
-        // buf[base] instead handed back a sample from a whole ring ago.
+        // buf[base - j] holds u(k - j) for j &gt;= 1; u(k) is the input of the step
+        // now running and is not in the ring yet. A delay under one step needs
+        // it: with DelayTime 0 the block IS a wire.
         const int i0 = ((base - d0) % len + len) % len;
         const int i1 = ((base - d0 - 1) % len + len) % len;
         SigView live = getInputSig(ctx, b.nid, 0);
@@ -706,10 +705,8 @@ Nelson::NFlow::getCodeGenRustDelay()
     t.emitState = [](const BlockCodegenStateArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
         double ds = std::fmax(0.0, bd.paramDouble(nflow::kDelay, 0.0) / a.dt);
-        // Keep the +1 INSIDE the max, exactly as the C backend and the
-        // interpreter (handleDelay INIT) compute the ring length. With the
-        // +1 outside, a zero delay time sized the buffer one element too
-        // long, shifting its output by a whole sample versus the simulator.
+        // Keep the +1 INSIDE the max, as the C backend and handleDelay INIT do:
+        // outside, a zero delay time sizes the buffer one element too long.
         int steps = std::max(1, static_cast&lt;int&gt;(std::ceil(ds)) + 1);
         a.declState("    pub delay_buf_" + a.id + ": [f64; " + std::to_string(steps + 1) + "],");
         a.declState("    pub delay_idx_" + a.id + ": usize,");

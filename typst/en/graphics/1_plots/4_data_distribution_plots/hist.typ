@@ -43,6 +43,7 @@ A histogram is a graphical representation that illustrates the distribution of d
 == Example
 
 ``````matlab
+rng(0);
 f = figure();
 for i = 1:4
   subplot(2, 2, i)

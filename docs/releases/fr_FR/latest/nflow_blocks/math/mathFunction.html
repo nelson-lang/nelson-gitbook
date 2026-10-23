@@ -317,12 +317,12 @@
         }
       ],
       "defaultParams": {
-        "Gain": 2
+        "Gain": 1
       },
       "render": {
         "type": "math",
         "formula": "{params.Gain}",
-        "mathGroupClass": "gain-math",
+        "mathGroupClass": "nf-gain-formula",
         "textSize": "16px",
         "width": 100,
         "height": 80
@@ -375,7 +375,7 @@
       "render": {
         "type": "math",
         "formula": "\\oplus",
-        "mathGroupClass": "sum-math",
+        "mathGroupClass": "nf-sum-formula",
         "textSize": "16px",
         "width": 20,
         "height": 20
@@ -426,7 +426,7 @@
       "render": {
         "type": "math",
         "formula": "\\otimes",
-        "mathGroupClass": "mult-math",
+        "mathGroupClass": "nf-mult-formula",
         "textSize": "16px",
         "width": 20,
         "height": 20
@@ -459,7 +459,7 @@
       "render": {
         "type": "math",
         "formula": "|x|",
-        "mathGroupClass": "abs-math",
+        "mathGroupClass": "nf-abs-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -792,7 +792,7 @@
       "render": {
         "type": "math",
         "formula": "min(x,y)",
-        "mathGroupClass": "min-math",
+        "mathGroupClass": "nf-min-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -830,7 +830,7 @@
       "render": {
         "type": "math",
         "formula": "max(x,y)",
-        "mathGroupClass": "max-math",
+        "mathGroupClass": "nf-max-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -1116,6 +1116,7 @@
 #include &lt;string&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     namespace {
@@ -1162,9 +1163,8 @@ namespace NFlow {
                 return std::pow(10.0, x);
             }
             if (fn == "square" || fn == "magnitude^2") {
-                // 'magnitude^2' is what diagrams from other tools carry for the
-                // same thing on a real signal; without it the block fell through
-                // to the identity below and quietly passed its input on.
+                // 'magnitude^2' is another tool's name for the same thing on a real signal.
+                // Without it the block falls through to the identity below.
                 return x * x;
             }
             if (fn == "sqrt") {
@@ -1176,21 +1176,19 @@ namespace NFlow {
             if (fn == "sign") {
                 return (x &gt; 0.0) ? 1.0 : ((x &lt; 0.0) ? -1.0 : 0.0);
             }
-            return x; // unknown -&gt; identity
+            return x;
         }
-
+        //=============================================================================
         bool
         isBinaryFn(const std::string&amp; fn)
         {
             return fn == "pow" || fn == "hypot" || fn == "rem" || fn == "mod";
         }
-
-        // Every name applyMathFn / applyBinaryFn actually implement. Anything
-        // else used to fall through to the identity below, which turned the
-        // block into a plain wire and answered with its own input - a wrong
-        // result with nothing to see. Unlike its siblings (trigFunction,
-        // roundingFunction, sqrt), 'Math Function' has no natural default
-        // operation to fall back on, so an unknown name is reported instead.
+        //=============================================================================
+        // Every name applyMathFn / applyBinaryFn implement. An unknown name would fall
+        // through to the identity below and turn the block into a wire. Unlike its
+        // siblings (trigFunction, roundingFunction, sqrt), 'Math Function' has no natural
+        // default operation, so an unknown name is reported.
         bool
         isKnownMathFn(const std::string&amp; fn)
         {
@@ -1204,7 +1202,7 @@ namespace NFlow {
             }
             return isBinaryFn(fn);
         }
-
+        //=============================================================================
         // Two-input functions. rem keeps the sign of the dividend (fmod); mod
         // keeps the sign of the divisor (floor modulo), with mod(a,0)=a.
         double
@@ -1219,7 +1217,6 @@ namespace NFlow {
             if (fn == "rem") {
                 return std::fmod(a, b);
             }
-            // "mod"
             if (b == 0.0) {
                 return a;
             }
@@ -1229,8 +1226,7 @@ namespace NFlow {
             }
             return r;
         }
-
-        // C / Rust expression for the selected function applied to `arg`.
+        //=============================================================================
         std::string
         codegenExpr(const std::string&amp; fn, const std::string&amp; arg, bool rust)
         {
@@ -1258,7 +1254,7 @@ namespace NFlow {
             }
             return arg;
         }
-
+        //=============================================================================
         BlockCodegenTemplate
         makeCodegen(bool rust)
         {
@@ -1301,6 +1297,7 @@ namespace NFlow {
             };
             return t;
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     bool
@@ -1357,6 +1354,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

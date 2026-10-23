@@ -29,8 +29,8 @@ La commande #raw("nelson"); accepte une option de mode :
 
 ``````bash
 nelson              # bureau avec fenêtre de commandes, éditeur et explorateur de variables
-nelson -cli         # mode texte dans le terminal
-nelson -adv-cli     # mode texte avec prise en charge des graphiques
+nelson --cli        # mode texte dans le terminal
+nelson --adv-cli    # mode texte avec prise en charge des graphiques
 nelson-webview      # le bureau dans une fenêtre web native
 nelson-webview --web   # le même bureau servi en HTTP pour un navigateur
 ``````
@@ -39,8 +39,8 @@ nelson-webview --web   # le même bureau servi en HTTP pour un navigateur
 Deux options servent à l'automatisation :
 
 ``````bash
-nelson -cli -e "disp(2 + 2)"      # exécuter une commande et afficher le résultat
-nelson -cli -f mon_script.m       # exécuter un fichier, puis rester à l'invite
+nelson --cli -e "disp(2 + 2)"     # exécuter une commande et afficher le résultat
+nelson --cli -f mon_script.m      # exécuter un fichier, puis rester à l'invite
 ``````
 
 
@@ -289,7 +289,7 @@ example1
 ``````
 
 
-Depuis le terminal : #raw("nelson -cli -f example1.m");.
+Depuis le terminal : #raw("nelson --cli -f example1.m");.
 
 La commande #raw("edit"); ouvre un fichier dans l'éditeur intégré. Dans l'éditeur, #raw("%%"); commence une section qui peut être exécutée seule.
 

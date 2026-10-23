@@ -66,7 +66,7 @@ Implements a scalar continuous state-space model.
   [#raw("A");], [1], 
   [#raw("B");], [1], 
   [#raw("C");], [1], 
-  [#raw("D");], [0], 
+  [#raw("D");], [1], 
 )
  #strong[Inspector Keys];
 

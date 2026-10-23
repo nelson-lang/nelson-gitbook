@@ -13,6 +13,7 @@
     <p>Functions for solving, analyzing, and measuring linear systems and vector or matrix quantities.</p>
   </chapter_description>
         <keyword name="cumtrapz" link="1_linear_systems/cumtrapz.html" description="Cumulative trapezoidal numerical integration."/>
+        <keyword name="curl" link="1_linear_systems/curl.html" description="Curl and angular velocity of a vector field."/>
         <keyword name="del2" link="1_linear_systems/del2.html" description="Discrete Laplacian."/>
         <keyword name="det" link="1_linear_systems/det.html" description="Matrix determinant."/>
         <keyword name="diff" link="1_linear_systems/diff.html" description="Differences and approximate derivatives."/>

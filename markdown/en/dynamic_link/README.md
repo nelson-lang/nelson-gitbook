@@ -37,6 +37,7 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [dlsym](dlsym.md) - Loads a C/Fortran symbol for an dynamic library.
 - [dlsym_delete](dlsym_delete.md) - Removes dlsym object.
 - [dlsym_used](dlsym_used.md) - Returns the current valid dlsym handles.
+- [dltarget](dltarget.md) - Returns the architecture the dynamic-link tools build for.
 - [findcmake](findcmake.md) - find CMake path.
 - [getdynlibext](getdynlibext.md) - Returns the extension of dynamic libraries.
 - [havecompiler](havecompiler.md) - Detect if a C/C++ compiler is configured.

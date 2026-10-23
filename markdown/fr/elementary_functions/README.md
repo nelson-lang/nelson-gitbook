@@ -186,6 +186,7 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - [ndims](7_indexing_dimensions/ndims.md) - Nombre de dimensions d'un tableau.
 - [numel](7_indexing_dimensions/numel.md) - Nombre d'éléments.
 - [permute](7_indexing_dimensions/permute.md) - Permute les dimensions d'un tableau.
+- [resize](7_indexing_dimensions/resize.md) - Redimensionne un tableau par troncature ou remplissage.
 - [rot90](7_indexing_dimensions/rot90.md) - Fait pivoter un tableau de 90 degrés.
 - [shiftdim](7_indexing_dimensions/shiftdim.md) - Décale les dimensions d'un tableau
 - [size](7_indexing_dimensions/size.md) - Taille d'un objet.

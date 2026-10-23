@@ -74,6 +74,7 @@ Fonctions pour le filtrage spatial, le filtrage gaussien ou median, le remplissa
 - [imboxfilt](1_image_basics/3_filtering_edges/imboxfilt.md) - Applique un filtrage par moyenne locale.
 - [imfilter](1_image_basics/3_filtering_edges/imfilter.md) - Filtre une image avec un noyau 2D.
 - [imgaussfilt](1_image_basics/3_filtering_edges/imgaussfilt.md) - Applique un filtrage gaussien a une image.
+- [imnoise](1_image_basics/3_filtering_edges/imnoise.md) - Ajoute du bruit à une image.
 - [medfilt2](1_image_basics/3_filtering_edges/medfilt2.md) - Applique un filtrage median 2D.
 - [padarray](1_image_basics/3_filtering_edges/padarray.md) - Ajoute des marges a un tableau pour le filtrage ou la morphologie.
 
@@ -199,6 +200,7 @@ Fonctions et objets pour le recadrage, le redimensionnement, la rotation, la tra
 - [sizesMatch](3_geometry_registration_3d/6_geometric_transforms/sizesMatch.md) - Determine si une reference spatiale correspond a une taille d'image.
 - [transformPointsForward](3_geometry_registration_3d/6_geometric_transforms/transformPointsForward.md) - Applique une transformation geometrique directe a des points.
 - [transformPointsInverse](3_geometry_registration_3d/6_geometric_transforms/transformPointsInverse.md) - Applique une transformation geometrique inverse a des points.
+- [warp](3_geometry_registration_3d/6_geometric_transforms/warp.md) - Affiche une image plaquée en texture sur une surface.
 - [worldToIntrinsic](3_geometry_registration_3d/6_geometric_transforms/worldToIntrinsic.md) - Convertit des coordonnees monde en coordonnees intrinseques.
 - [worldToSubscript](3_geometry_registration_3d/6_geometric_transforms/worldToSubscript.md) - Convertit des coordonnees monde en indices d'image.
 

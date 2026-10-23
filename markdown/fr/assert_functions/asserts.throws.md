@@ -31,7 +31,7 @@ Utiliser asserts.checkerror lorsque le message complet doit correspondre.
 Expected error substring
 
 ```matlab
-asserts.throws('cos', _('Wrong number of input arguments.'));
+asserts.throws('cos', 'Not enough input arguments.');
 ```
 Capture missing error
 

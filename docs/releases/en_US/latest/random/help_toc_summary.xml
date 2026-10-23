@@ -10,6 +10,7 @@
   </chapter_description>
       <keyword name="RandStream" link="RandStream.html" description="Random number stream object."/>
       <keyword name="rand" link="rand.html" description="Random Number."/>
+      <keyword name="randg" link="randg.html" description="Gamma distributed random number."/>
       <keyword name="randi" link="randi.html" description="Random Integer."/>
       <keyword name="randn" link="randn.html" description="Normally distributed random number."/>
       <keyword name="randperm" link="randperm.html" description="Random permutation of integers values."/>

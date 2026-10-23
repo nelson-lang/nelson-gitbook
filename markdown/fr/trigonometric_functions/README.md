@@ -48,8 +48,10 @@ Il fournit aussi les conversions entre degres et radians.
 - [cscd](cscd.md) - Cosécante de l'argument en degrés.
 - [csch](csch.md) - Cosécante hyperbolique.
 - [deg2rad](deg2rad.md) - Convertit un angle de degrés en radians.
+- [degtorad](degtorad.md) - Convertit un angle de degrés en radians.
 - [pol2cart](pol2cart.md) - Transforme des coordonnées polaires ou cylindriques en coordonnées cartésiennes.
 - [rad2deg](rad2deg.md) - Convertit un angle de radians en degrés.
+- [radtodeg](radtodeg.md) - Convertit un angle de radians en degrés.
 - [sec](sec.md) - Sécante d'un angle en radians.
 - [secd](secd.md) - Sécante de l'argument en degrés.
 - [sech](sech.md) - Sécante hyperbolique.

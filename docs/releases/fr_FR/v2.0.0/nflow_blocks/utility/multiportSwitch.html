@@ -121,7 +121,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -163,8 +163,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -281,8 +281,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -968,6 +968,7 @@
 #include &lt;string&gt;
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -983,8 +984,7 @@ namespace NFlow {
         }
         SigView ctrl = getInputSig(ctx, b.nid, 0);
         // A fractional control selects the port its integer PART names: 1.5
-        // is still port 1, and port 2 is reached at 2.0. Rounding to nearest
-        // moved every switching instant half a port early.
+        // is still port 1, and port 2 is reached at 2.0.
         int idx = (int)std::trunc(sigAt(ctrl, 0));
         if (idx &lt; 1) {
             idx = 1;
@@ -1059,6 +1059,7 @@ namespace NFlow {
             }
             return std::max(1, n - 1); // exclude the control port
         }
+        //=============================================================================
     } // namespace
     //=============================================================================
     BlockCodegenTemplate
@@ -1104,6 +1105,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

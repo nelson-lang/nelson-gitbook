@@ -30,7 +30,7 @@ Report the OpenModelica used by the nflow Modelica bridge.
   [version], [char], [the version string reported by #strong[omc];.], 
   [reason], [char], [a human-readable status; when not usable, it explains why and how to fix it.], 
 )
- Presence is not capability: an #strong[omc]; executable can run yet be unable to build an FMU when its installation is missing the FMI export runtime. In that case #strong[available]; is #strong[true]; but #strong[capable]; is #strong[false];, and a #strong[modelica]; block blocks the simulation with a clear message.
+ Presence is not capability: an #strong[omc]; executable can run yet be unable to build an FMU when its installation is missing the FMI export runtime. Concretely, the probe checks for the directory #strong[share\/omc\/runtime\/c\/fmi]; under the OpenModelica home; when it is absent (an incomplete install, without the C runtime \/ FMI export support), #strong[available]; is #strong[true]; but #strong[capable]; is #strong[false];, and a #strong[modelica]; block blocks the simulation with a clear message. Install a complete OpenModelica, or point nflow at one with #strong[modelicaConfigure];.
 
  The OpenModelica location is resolved from, in order: a path configured with #strong[modelicaConfigure]; (authoritative when set), the #strong[NELSON\_OPENMODELICA\_HOME]; environment variable (Nelson-scoped), the #strong[OPENMODELICAHOME]; environment variable, the standard install directories, then #strong[PATH];.
 

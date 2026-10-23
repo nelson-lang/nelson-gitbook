@@ -64,7 +64,7 @@ This page documents the visible properties returned by #strong[properties]; for 
   [#strong[RendererMode];], ['auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.], [Type: text scalar or character row vector. Supported values: 'auto', 'manual'.], 
   [#strong[Resize];], [updates rendered output on the next graphics refresh.], [Type: on\/off value. Supported values: 'on', 'off', true, or false.], 
   [#strong[Scrollable];], [updates rendered output on the next graphics refresh.], [Type: on\/off value. Supported values: 'on', 'off', true, or false.], 
-  [#strong[SelectionType];], [Nelson computes this value; graphics operations update it.], [Type: text scalar or character row vector. Supported values: 'normal', 'extend', 'alt', 'open'.], 
+  [#strong[SelectionType];], [last mouse button press, set before WindowButtonDownFcn runs: 'normal' for a left click, 'extend' for shift-left or the middle button, 'alt' for ctrl-left or the right button, 'open' for a double click.], [Type: text scalar or character row vector. Supported values: 'normal', 'extend', 'alt', 'open'.], 
   [#strong[SizeChangedFcn];], [the graphics event system invokes it for the associated event.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
   [#strong[Tag];], [updates the stored object state.], [Type: text scalar or character row vector. Supported values: empty text or an object identifier.], 
   [#strong[Theme];], [returns the active graphics theme object; assigning 'light' or 'dark' updates rendered output on the next graphics refresh.], [Type: graphics theme object for reads, text scalar or character row vector for writes. Supported assigned values: 'light', 'dark'.], 
@@ -80,7 +80,7 @@ This page documents the visible properties returned by #strong[properties]; for 
   [#strong[WindowButtonUpFcn];], [the graphics event system invokes it for the associated event.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
   [#strong[WindowKeyPressFcn];], [the graphics event system invokes it for the associated event.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
   [#strong[WindowKeyReleaseFcn];], [the graphics event system invokes it for the associated event.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
-  [#strong[WindowScrollWheelFcn];], [the graphics event system invokes it for the associated event.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
+  [#strong[WindowScrollWheelFcn];], [the graphics event system invokes it for the associated event; when set, it replaces the built-in scroll wheel zoom of the axes.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
   [#strong[WindowState];], [recomputes geometry, limits, or layout.], [Type: text scalar or character row vector. Supported values: 'normal', 'minimized', 'maximized', 'fullscreen'.], 
   [#strong[WindowStyle];], ['docked' hosts the figure inside the Nelson desktop (GUI mode); 'alwaysontop' keeps the window above the other windows; 'normal' makes it a regular separate window again.], [Type: text scalar or character row vector. Supported values: 'normal', 'modal', 'docked', 'alwaysontop'.], 
 )

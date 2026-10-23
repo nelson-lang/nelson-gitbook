@@ -158,6 +158,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - #nlink(<elementary_functions:7_indexing_dimensions.ndims>)[ndims]: Number of dimensions of an array.
 - #nlink(<elementary_functions:7_indexing_dimensions.numel>)[numel]: Number of elements.
 - #nlink(<elementary_functions:7_indexing_dimensions.permute>)[permute]: Permute array dimensions.
+- #nlink(<elementary_functions:7_indexing_dimensions.resize>)[resize]: Resize an array by truncating or padding.
 - #nlink(<elementary_functions:7_indexing_dimensions.rot90>)[rot90]: Rotate array 90 degrees.
 - #nlink(<elementary_functions:7_indexing_dimensions.shiftdim>)[shiftdim]: Shift array dimensions
 - #nlink(<elementary_functions:7_indexing_dimensions.size>)[size]: Size of an object.
@@ -387,6 +388,8 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 #include "7_indexing_dimensions/numel.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/permute.typ"
+#pagebreak(weak: true)
+#include "7_indexing_dimensions/resize.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/rot90.typ"
 #pagebreak(weak: true)

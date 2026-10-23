@@ -28,7 +28,7 @@ Spécifier les paramètres pour les services web RESTful
 
  #strong[UserAgent]; Identification de l'agent utilisateur : chaîne ou vecteur de caractères.
 
- #strong[Timeout]; Durée du timeout de connexion : scalaire numérique positif ou valeur Inf.
+ #strong[Timeout]; Délai d'attente du serveur, en secondes : scalaire numérique positif ou valeur Inf (5 par défaut). Il borne la connexion et tout blocage du transfert, pas la durée totale du téléchargement.
 
  #strong[Username]; Identifiant utilisateur : chaîne ou vecteur de caractères.
 
@@ -52,7 +52,7 @@ Spécifier les paramètres pour les services web RESTful
 
  #strong[CertificateFilename]; Nom de fichier des certificats racine : 'default', vide ou fichier existant.
 
- #strong[FollowLocation]; indique à la bibliothèque de suivre les redirections Location: envoyées par un serveur HTTP dans une réponse 30x : logique, false par défaut.
+ #strong[FollowLocation]; indique à la bibliothèque de suivre les redirections Location: envoyées par un serveur HTTP dans une réponse 30x : logique, true par défaut.
 
 
 == Exemple

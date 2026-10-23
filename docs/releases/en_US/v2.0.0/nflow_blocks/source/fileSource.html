@@ -223,8 +223,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -599,13 +599,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -744,9 +744,8 @@ Nelson::NFlow::handleFileSource(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     // Stateless, rewind-safe lookup: largest index with fsrcTimes[idx] &lt;= t.
-    // On a monotone time grid this matches the former advancing cursor exactly,
-    // but it makes OUTPUT a pure function of ctx.t (safe to re-run at any stage
-    // time under a variable-step solver).
+    // OUTPUT is a pure function of ctx.t, so it can re-run at any stage time
+    // under a variable-step solver.
     int idx = static_cast&lt;int&gt;(std::upper_bound(st.fsrcTimes.begin(), st.fsrcTimes.end(), ctx.t)
                   - st.fsrcTimes.begin())
         - 1;
@@ -809,7 +808,6 @@ Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenRustFileSource()
 {
     BlockCodegenTemplate t;
-    // Mirrors the C generator: static table + rewind-safe piecewise-constant lookup.
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         std::vector&lt;double&gt; times, values;
         if (a.params &amp;&amp; a.params-&gt;contains(nflow::kTimes)

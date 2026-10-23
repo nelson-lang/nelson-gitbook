@@ -47,6 +47,7 @@ histogram2(x, y, [0 2 4], [0 2 4]);
 
 
 ```matlab
+rng(0);
 x = randn(400, 1);
 y = 0.5 * x + randn(400, 1);
 histogram2(x, y, [12 10], 'Normalization', 'probability');

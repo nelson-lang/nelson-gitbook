@@ -31,7 +31,7 @@ Absolute position of the frame-a point along the chosen axis (x, y) or the body 
   [Library], [Planar (acausal)], 
   [Type], [#raw("PlanarPositionSensor");], 
   [Label], [PlanarPositionSensor], 
-  [Solver], [Lowered to #raw("planarMechanicalIsland");. Reference solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
+  [Solver], [Lowered to #raw("planarMechanicalIsland");. Default solver #raw("dae"); (differential-algebraic); the fixed-step loop and the native explicit solvers (#raw("ode1");\/#raw("ode4");\/#raw("ode45");) are also supported (a jointed multibody island requires #raw("dae");).], 
 )
   #strong[Implementation Sources];
 

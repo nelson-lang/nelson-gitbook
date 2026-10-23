@@ -309,6 +309,7 @@ Unsupervised learning, nearest-neighbor search, outlier handling, and sequence m
 
 ### Functions
 
+- [KDTreeSearcher](7_clustering_anomaly_detection/KDTreeSearcher.md) - Nearest neighbor searcher object.
 - [cluster](7_clustering_anomaly_detection/cluster.md) - Construct clusters from a hierarchical cluster tree.
 - [clusterdata](7_clustering_anomaly_detection/clusterdata.md) - Cluster observations from data.
 - [dbscan](7_clustering_anomaly_detection/dbscan.md) - Density-based spatial clustering.

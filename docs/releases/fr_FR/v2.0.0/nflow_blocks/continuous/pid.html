@@ -155,7 +155,7 @@
           <td>
             <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">ki</code>
           </td>
-          <td>0</td>
+          <td>1</td>
         </tr>
         <tr>
           <td>
@@ -302,9 +302,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -317,7 +317,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -328,24 +328,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -375,13 +375,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -393,7 +393,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -404,7 +404,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -413,13 +413,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -519,9 +519,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -551,7 +551,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -559,9 +559,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -594,8 +594,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -624,12 +624,11 @@ Nelson::NFlow::handlePid(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
 {
     auto&amp; st = getState(ctx, b.nid);
     const int w = outputWidth(ctx, b.nid, 0);
-    // Filter coefficient of the derivative term. Absent (or not positive) keeps
-    // the ideal derivative this block has always had; a positive N makes the
-    // term D N s / (s + N), which carries one state per element: x' = N (u - x)
-    // and the term is D N (u - x). The state the ideal form differences against
-    // (pidPrev / vec2) is unused then, so it holds the filter state instead and
-    // no new state field is needed.
+    // Filter coefficient of the derivative term. Absent or not positive keeps the
+    // ideal derivative; a positive N makes the term D N s / (s + N), with one
+    // state per element: x' = N (u - x), term = D N (u - x). The state the ideal
+    // form differences against (pidPrev / vec2) is unused then, so it holds the
+    // filter state.
     nflow::BlockDescriptor bdN(b, ctx.variables);
     const double filtN = bdN.paramDouble(nflow::kPidN, 0.0);
     const bool filtered = (filtN &gt; 0.0) &amp;&amp; std::isfinite(filtN);
@@ -648,14 +647,12 @@ Nelson::NFlow::handlePid(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // Direct feedthrough: the output answers the CURRENT input. Under a
-        // solver the integral comes from the scattered continuous state; on the
-        // fixed-step path it is the committed integral plus this step's
-        // contribution, which is what the emitted C/Rust computes. Emitting the
-        // value UPDATE had latched instead put the whole PID a step behind. The
-        // derivative term differences against the input committed at the last
-        // step; reading that (and the integral) is pure - UPDATE owns both - so
-        // an RK stage or an algebraic sweep may re-enter this freely.
+        // Direct feedthrough: the output answers the CURRENT input. Under a solver
+        // the integral comes from the scattered continuous state; on the fixed-step
+        // path it is the committed integral plus this step's contribution, as in
+        // the emitted C/Rust. The derivative term differences against the input
+        // committed at the last step. Both reads are pure (UPDATE owns them), so an
+        // RK stage or an algebraic sweep may re-enter freely.
         double* xs = blockX(ctx, b.nid);
         if (w &lt;= 1) {
             if (xs) {
@@ -739,9 +736,9 @@ Nelson::NFlow::handlePid(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
                 st.pidIntegral = nextInt;
             }
             // Filtered: pidPrev holds the filter state, advanced by its own
-            // equation. Ideal: it is simply the input this step differenced
-            // against next time. Under a solver the filter state lives in the
-            // global vector, so only the ideal form latches here.
+            // equation. Ideal: it is the input to difference against next time.
+            // Under a solver the filter state lives in the global vector, so only
+            // the ideal form latches here.
             if (filtered) {
                 if (!solverOwnsIntegral) {
                     st.pidPrev += ctx.dt * filtN * (inp - st.pidPrev);
@@ -782,9 +779,9 @@ Nelson::NFlow::handlePid(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         return false;
     }
     if (phase == Phase::DERIVATIVE) {
-        // (integral)' = u. Without a filter coefficient the derivative term is
-        // a discrete backward difference with no continuous form; with one it is
-        // a state of its own, x' = N (u - x), laid out after the integrals.
+        // (integral)' = u. Without a filter coefficient the derivative term is a
+        // discrete backward difference with no continuous form; with one it is a
+        // state of its own, x' = N (u - x), laid out after the integrals.
         double* xdot = blockXdot(ctx, b.nid);
         const double* xs = blockX(ctx, b.nid);
         if (xdot) {
@@ -863,12 +860,11 @@ Nelson::NFlow::getCodeGenCPid()
             + a.fmt(ki) + ", " + a.fmt(kd) + ", " + nflow::formatNumber(minV) + ", "
             + nflow::formatNumber(maxV) + ", " + a.fmt(nV) + " };");
     };
-    // Unified variable-step codegen: the integral is one scalar
-    // continuous state (integral' = u, hold-at-limit + post-step clamp if
-    // bounded, exactly like the integrator). The output is P + I from the
-    // continuous integral; the derivative term (kd) is a discrete backward
-    // difference with no continuous form, so it is dropped under variable-step;
-    // this matches the interpreter's OUTPUT phase (kp*u + ki*x, no kd term).
+    // Variable-step codegen: the integral is one scalar continuous state
+    // (integral' = u, hold at limit and clamp after the step if bounded, like the
+    // integrator). The output is kp*u + ki*x. The kd term is a discrete backward
+    // difference with no continuous form and is dropped, as in the interpreter's
+    // OUTPUT phase.
     t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
     t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);
@@ -937,7 +933,7 @@ Nelson::NFlow::getCodeGenRustPid()
         a.line("    s.pid_integ_" + a.id + " = libm::fmin(libm::fmax(s.pid_integ_" + a.id
             + ", PID_MIN_" + cu + "), PID_MAX_" + cu + ");");
         // A positive filter coefficient makes pid_prev the filter state, read
-        // before it moves; otherwise it is the previous input, as before.
+        // before it moves; otherwise it is the previous input.
         a.line("    let deriv = if PID_N_" + cu + " &gt; 0.0_f64 {");
         a.line("        let d = PID_N_" + cu + " * (" + a.in[0] + " - s.pid_prev_" + a.id + ");");
         a.line("        s.pid_prev_" + a.id + " += dt * PID_N_" + cu + " * (" + a.in[0]
@@ -975,10 +971,8 @@ Nelson::NFlow::getCodeGenRustPid()
         }
         a.addConst("const PID_N_" + cu + ": f64 = " + a.fmt(nV) + ";");
     };
-    // Unified variable-step codegen, Rust backend: one scalar
-    // continuous integral state (integral' = u, hold-at-limit + clamp if bounded).
-    // Output = P + I from the continuous integral; the discrete kd term is dropped
-    // under variable-step (matches the interpreter's OUTPUT phase).
+    // Variable-step codegen, Rust backend: same as the C one (one scalar integral
+    // state, output kp*u + ki*x, kd term dropped).
     t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
     t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
         nflow::BlockDescriptor bd(*a.block, *a.variables);

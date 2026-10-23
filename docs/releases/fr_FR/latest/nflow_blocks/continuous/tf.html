@@ -275,9 +275,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -290,7 +290,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -301,24 +301,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -348,13 +348,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -366,7 +366,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -377,7 +377,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -386,13 +386,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -492,9 +492,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -524,7 +524,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -532,9 +532,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -567,8 +567,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -620,7 +620,7 @@ Nelson::NFlow::handleTf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         st.output = 0.0;
         return false;
     }
-    const int n = (int)st.xHist.size(); // per-element state order
+    const int n = (int)st.xHist.size();
 
     if (phase == Phase::OUTPUT) {
         SigView u = getInputSig(ctx, b.nid, 0);
@@ -646,7 +646,6 @@ Nelson::NFlow::handleTf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
         if (n != 0) {
             return false; // has state: handled in OUTPUT/UPDATE
         }
-        // Pure gain (n == 0): element-wise D*u.
         SigView u = getInputSig(ctx, b.nid, 0);
         return emitElementwise(ctx, b.nid, [&amp;](int e) { return st.tfD * sigAt(u, e); });
     }
@@ -757,9 +756,7 @@ Nelson::NFlow::getCodeGenCTf()
     };
     t.emitShared = [](const BlockCodegenStateArgs&amp; a) {
         // Companion-form RK4 stepper matching the interpreter (y = D*u + C.x,
-        // then classical RK4 on x' = A_companion.x + B.u). Replaces the former
-        // Tustin direct-form discretization so generated code and interactive
-        // simulation agree numerically.
+        // then classical RK4 on x' = A_companion.x + B.u).
         auto companion = [](const std::vector&lt;double&gt;&amp; numIn, const std::vector&lt;double&gt;&amp; denIn,
                              int&amp; n, double&amp; D, std::vector&lt;double&gt;&amp; C, std::vector&lt;double&gt;&amp; A) {
             auto trim = [](std::vector&lt;double&gt; v) {
@@ -930,7 +927,6 @@ Nelson::NFlow::getCodeGenRustTf()
         (void)n;
     };
     t.emitShared = [](const BlockCodegenStateArgs&amp; a) {
-        // Companion-form RK4, matching the interpreter (see the C generator).
         auto companion = [](const std::vector&lt;double&gt;&amp; numIn, const std::vector&lt;double&gt;&amp; denIn,
                              int&amp; n, double&amp; D, std::vector&lt;double&gt;&amp; C, std::vector&lt;double&gt;&amp; A) {
             auto trim = [](std::vector&lt;double&gt; v) {
@@ -1024,7 +1020,6 @@ Nelson::NFlow::getCodeGenRustTf()
             a.addHelper("    for j in 0..n { last += a[j] * x[j]; }");
             a.addHelper("    if n &gt; 0 { dx[n - 1] = last; }");
             a.addHelper("}");
-            // Output-only y = D*u + C.x for the unified RK4 rhs (no state advance).
             a.addHelper("#[allow(dead_code)]");
             a.addHelper("fn tf_out(n: usize, d: f64, c: &amp;[f64], x: &amp;[f64], u: f64) -&gt; f64 {");
             a.addHelper("    let mut y = d * u;");

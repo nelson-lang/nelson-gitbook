@@ -9,6 +9,8 @@ Ferme une ou plusieurs figures
 - close(name)
 - close(ID)
 - close(GO)
+- close('all', 'force')
+- close(ID, 'force')
 - tf = close(...)
 
 ## 📥 Argument d'entrée
@@ -30,7 +32,9 @@ Ferme une ou plusieurs figures
 
 <b>close(GO)</b> ferme la figure spécifiée par l'objet graphique de la figure. 
 
-<b>close('all')</b> ferme toutes les figures.
+<b>close('all')</b> ferme toutes les figures. 
+
+<b>close(..., 'force')</b> ferme les figures spécifiées même lorsqu'un rappel <b>CloseRequestFcn</b> empêcherait leur fermeture.
 
 ## 💡 Exemple
 

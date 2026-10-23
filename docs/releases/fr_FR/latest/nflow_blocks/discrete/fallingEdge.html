@@ -695,15 +695,12 @@ Nelson::NFlow::handleFallingEdge(SimCtx&amp; ctx, const Block&amp; b, Phase phas
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // Direct-feedthrough: the output reads the CURRENT input, so it is
-        // produced in the topologically-ordered ALGEBRAIC phase (not the
-        // declaration-ordered OUTPUT phase, where a block declared ahead of its
-        // source would sample a not-yet-computed input). Recomputed on every
-        // committed sample; a pure rhs / zero-crossing sub-step (sideEffectFree)
-        // replays the last held value (zero-order hold). Under a slower
-        // SampleTime the output is still recomputed every base step (exempt from
-        // the sub-rate hold); only st.scalar / st.vec advance on the sample hit
-        // in UPDATE.
+        // Direct feedthrough: the output reads the CURRENT input, so it belongs
+        // in the topologically ordered ALGEBRAIC phase (the declaration-ordered
+        // OUTPUT phase could sample a not-yet-computed input). A sideEffectFree
+        // sub-step replays the last held value. The output is recomputed every
+        // base step even under a slower SampleTime; only st.scalar / st.vec
+        // advance on the sample hit, in UPDATE.
         if (!ctx.sideEffectFree) {
             if (w &lt;= 1) {
                 const double inp = getInput(ctx, b.nid, 0, 0.0);

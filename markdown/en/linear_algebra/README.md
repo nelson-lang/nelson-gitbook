@@ -23,6 +23,7 @@ Functions for solving, analyzing, and measuring linear systems and vector or mat
 ### Functions
 
 - [cumtrapz](1_linear_systems/cumtrapz.md) - Cumulative trapezoidal numerical integration.
+- [curl](1_linear_systems/curl.md) - Curl and angular velocity of a vector field.
 - [del2](1_linear_systems/del2.md) - Discrete Laplacian.
 - [det](1_linear_systems/det.md) - Matrix determinant.
 - [diff](1_linear_systems/diff.md) - Differences and approximate derivatives.

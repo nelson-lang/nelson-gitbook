@@ -33,6 +33,7 @@ The Dynamic Link module enables Nelson to build, load, and call C\/C++ and Fortr
 - #nlink(<dynamic_link:dlsym>)[dlsym]: Loads a C\/Fortran symbol for an dynamic library.
 - #nlink(<dynamic_link:dlsym_delete>)[dlsym\_delete]: Removes dlsym object.
 - #nlink(<dynamic_link:dlsym_used>)[dlsym\_used]: Returns the current valid dlsym handles.
+- #nlink(<dynamic_link:dltarget>)[dltarget]: Returns the architecture the dynamic-link tools build for.
 - #nlink(<dynamic_link:findcmake>)[findcmake]: find CMake path.
 - #nlink(<dynamic_link:getdynlibext>)[getdynlibext]: Returns the extension of dynamic libraries.
 - #nlink(<dynamic_link:havecompiler>)[havecompiler]: Detect if a C\/C++ compiler is configured.
@@ -96,6 +97,8 @@ The Dynamic Link module enables Nelson to build, load, and call C\/C++ and Fortr
 #include "dlsym_delete.typ"
 #pagebreak(weak: true)
 #include "dlsym_used.typ"
+#pagebreak(weak: true)
+#include "dltarget.typ"
 #pagebreak(weak: true)
 #include "findcmake.typ"
 #pagebreak(weak: true)

@@ -39,6 +39,7 @@ Fonctions pour creer, inspecter et reduire des modeles de systemes dynamiques.
 - [tfdata](1_dynamic_system_models/tfdata.md) - Accède aux données d'un modèle en fonction de transfert.
 - [tzero](1_dynamic_system_models/tzero.md) - Zéros invariants d'un système linéaire.
 - [zero](1_dynamic_system_models/zero.md) - Zéros et gain d'un système SISO.
+- [zpk](1_dynamic_system_models/zpk.md) - Construit un modèle zéros-pôles-gain.
 
 ## Conversion et interconnexion de modeles
 
@@ -76,12 +77,17 @@ Fonctions pour analyse temporelle, frequentielle et reponse de modeles.
 ### Functions
 
 - [bode](3_linear_analysis/bode.md) - Diagramme de Bode de la rÃƒÂ©ponse en frÃƒÂ©quence, donnÃƒÂ©es de magnitude et de phase.
+- [bodeoptions](3_linear_analysis/bodeoptions.md) - Options d'un diagramme de Bode.
+- [bodeplot](3_linear_analysis/bodeplot.md) - Diagramme de Bode d'un système LTI SISO avec options de tracé.
 - [damp](3_linear_analysis/damp.md) - Fréquence naturelle et rapport d'amortissement.
 - [dcgain](3_linear_analysis/dcgain.md) - Gain en basse fréquence (DC) du système LTI.
 - [evalfr](3_linear_analysis/evalfr.md) - Évalue la réponse en fréquence à une fréquence donnée.
 - [freqresp](3_linear_analysis/freqresp.md) - RÃ©ponse en frÃ©quence du systÃ¨me.
 - [hsvd](3_linear_analysis/hsvd.md) - Décomposition en valeurs singulières de Hankel.
+- [margin](3_linear_analysis/margin.md) - Marges de gain et de phase d'un système LTI SISO.
 - [nyquist](3_linear_analysis/nyquist.md) - Diagramme de Nyquist de la rÃ©ponse en frÃ©quence.
+- [pzmap](3_linear_analysis/pzmap.md) - Carte des pôles et des zéros d'un système dynamique.
+- [rlocus](3_linear_analysis/rlocus.md) - Lieu des racines d'un modèle SISO.
 - [sigma](3_linear_analysis/sigma.md) - Reponse en valeurs singulieres d'un modele LTI.
 
 ## Reponses temporelles et frequentielles
@@ -120,6 +126,7 @@ Fonctions pour conception de controleurs, estimateurs et calculs de regulateurs.
 - [lqr](5_control_design_tuning/lqr.md) - Conception d'un régulateur linéaire-quadratique (LQR).
 - [lqry](5_control_design_tuning/lqry.md) - Forme un régulateur LQ (rétroaction d'état) avec pondération sur la sortie.
 - [ord2](5_control_design_tuning/ord2.md) - Génère des systèmes du second ordre continus.
+- [place](5_control_design_tuning/place.md) - Placement de pôles par retour d'état avec assignation robuste.
 
 ## Calculs matriciels
 

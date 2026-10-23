@@ -32,7 +32,7 @@ Afficher un graphique a bulles.
 Afficher un graphique a bulles.
 
 ``````matlab
-bubblechart(1:5, [3 5 2 8 4], [20 50 30 80 40], 'BubbleColor', 'r');
+bubblechart(1:5, [3 5 2 8 4], [20 50 30 80 40], 'r');
 ``````
 
 

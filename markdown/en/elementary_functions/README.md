@@ -186,6 +186,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - [ndims](7_indexing_dimensions/ndims.md) - Number of dimensions of an array.
 - [numel](7_indexing_dimensions/numel.md) - Number of elements.
 - [permute](7_indexing_dimensions/permute.md) - Permute array dimensions.
+- [resize](7_indexing_dimensions/resize.md) - Resize an array by truncating or padding.
 - [rot90](7_indexing_dimensions/rot90.md) - Rotate array 90 degrees.
 - [shiftdim](7_indexing_dimensions/shiftdim.md) - Shift array dimensions
 - [size](7_indexing_dimensions/size.md) - Size of an object.

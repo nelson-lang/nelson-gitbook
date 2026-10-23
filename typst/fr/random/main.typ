@@ -12,6 +12,7 @@ Le module Random fournit des outils pour générer des nombres aléatoires et de
 
 - #nlink(<random:RandStream>)[RandStream]: Objet de flux de nombres aléatoires.
 - #nlink(<random:rand>)[rand]: Nombre aléatoire.
+- #nlink(<random:randg>)[randg]: Nombre aléatoire distribué selon une loi gamma.
 - #nlink(<random:randi>)[randi]: Entier aléatoire.
 - #nlink(<random:randn>)[randn]: Nombre aléatoire normalement distribué.
 - #nlink(<random:randperm>)[randperm]: Permutation aléatoire de valeurs entières.
@@ -23,6 +24,8 @@ Le module Random fournit des outils pour générer des nombres aléatoires et de
 #include "RandStream.typ"
 #pagebreak(weak: true)
 #include "rand.typ"
+#pagebreak(weak: true)
+#include "randg.typ"
 #pagebreak(weak: true)
 #include "randi.typ"
 #pagebreak(weak: true)

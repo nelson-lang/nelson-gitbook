@@ -206,8 +206,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -582,13 +582,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -691,7 +691,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 // LICENCE_BLOCK_END
 //=============================================================================
-// Periodic waveform sources filling Coselica parity: pulse and sawTooth.
+// Periodic waveform sources: pulse and sawTooth.
 //   pulse:    offset + (mod(t-start, period) &lt; width%*period ? amplitude : 0)
 //   sawTooth: offset + amplitude * mod(t-start, period) / period
 // Both feedthrough (OUTPUT phase) and codegen-eligible (plain time expressions).
@@ -704,6 +704,7 @@
 #include "source_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -721,13 +722,12 @@ namespace NFlow {
         double out = offset;
         if (ctx.t &gt;= start &amp;&amp; period &gt; 0.0) {
             const double tau = std::fmod(ctx.t - start, period);
-            // (width * period) / 100 keeps the boundary exact when the duty
-            // cycle lands on a sample: width/100 first rounds up (40/100*1.5
-            // exceeds 0.6) and stretched the pulse by one sample. The epsilon
-            // closes the same seam from the other side: 'tau' loses a few ulps
-            // in (t - start) and fmod, so a sample landing exactly on the
-            // falling edge read as just inside the pulse and stayed high for
-            // one extra sample. Well below any usable step size.
+            // (width * period) / 100 keeps the boundary exact when the duty cycle lands
+            // on a sample: width/100 first rounds up (40/100*1.5 exceeds 0.6) and
+            // stretches the pulse by one sample. The epsilon covers the other side:
+            // 'tau' loses a few ulps in (t - start) and fmod, so a sample exactly on
+            // the falling edge would read as inside the pulse. It is well below any
+            // usable step size.
             if (tau &lt; (width * period) / 100.0 - 1e-12 * period) {
                 out += amp;
             }
@@ -929,7 +929,6 @@ namespace NFlow {
                 ? (a.fmt(amp) + " * (1.0 - (" + tau + " - " + a.fmt(rising + width) + ") / "
                       + a.fmt(falling) + ")")
                 : a.fmt(0.0);
-            // Nested conditional (C ternary / Rust if-else).
             const double plateauEnd = rising + width;
             const double fallEnd = rising + width + falling;
             std::string body;
@@ -947,11 +946,13 @@ namespace NFlow {
         };
         return t;
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenCTrapezoid()
     {
         return makeTrapezoid(false);
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenRustTrapezoid()
     {
@@ -989,11 +990,13 @@ namespace NFlow {
         };
         return t;
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenCExponentials()
     {
         return makeExponentials(false);
     }
+    //=============================================================================
     BlockCodegenTemplate
     getCodeGenRustExponentials()
     {
@@ -1001,6 +1004,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

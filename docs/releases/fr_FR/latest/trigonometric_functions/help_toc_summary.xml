@@ -42,8 +42,10 @@
       <keyword name="cscd" link="cscd.html" description="Cosécante de l'argument en degrés."/>
       <keyword name="csch" link="csch.html" description="Cosécante hyperbolique."/>
       <keyword name="deg2rad" link="deg2rad.html" description="Convertit un angle de degrés en radians."/>
+      <keyword name="degtorad" link="degtorad.html" description="Convertit un angle de degrés en radians."/>
       <keyword name="pol2cart" link="pol2cart.html" description="Transforme des coordonnées polaires ou cylindriques en coordonnées cartésiennes."/>
       <keyword name="rad2deg" link="rad2deg.html" description="Convertit un angle de radians en degrés."/>
+      <keyword name="radtodeg" link="radtodeg.html" description="Convertit un angle de radians en degrés."/>
       <keyword name="sec" link="sec.html" description="Sécante d'un angle en radians."/>
       <keyword name="secd" link="secd.html" description="Sécante de l'argument en degrés."/>
       <keyword name="sech" link="sech.html" description="Sécante hyperbolique."/>

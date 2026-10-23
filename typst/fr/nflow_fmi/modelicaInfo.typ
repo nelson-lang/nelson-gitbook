@@ -30,7 +30,7 @@ Indique l'OpenModelica utilisé par le pont Modelica de nflow.
   [version], [char], [la chaîne de version renvoyée par #strong[omc];.], 
   [reason], [char], [un état lisible ; en cas d'indisponibilité, il explique la cause et la solution.], 
 )
- La présence n'est pas la capacité : un exécutable #strong[omc]; peut s'exécuter tout en étant incapable de construire une FMU si son installation ne comporte pas le runtime d'export FMI. Dans ce cas #strong[available]; vaut #strong[true]; mais #strong[capable]; vaut #strong[false];, et un bloc #strong[modelica]; bloque la simulation avec un message clair.
+ La présence n'est pas la capacité : un exécutable #strong[omc]; peut s'exécuter tout en étant incapable de construire une FMU si son installation ne comporte pas le runtime d'export FMI. Concrètement, la détection vérifie la présence du répertoire #strong[share\/omc\/runtime\/c\/fmi]; sous le répertoire d'installation d'OpenModelica ; lorsqu'il est absent (installation incomplète, sans le runtime C \/ le support d'export FMI), #strong[available]; vaut #strong[true]; mais #strong[capable]; vaut #strong[false];, et un bloc #strong[modelica]; bloque la simulation avec un message clair. Installez un OpenModelica complet, ou pointez nflow vers un tel OpenModelica avec #strong[modelicaConfigure];.
 
  L'emplacement d'OpenModelica est résolu dans l'ordre suivant : un chemin configuré avec #strong[modelicaConfigure];, la variable d'environnement #strong[NELSON\_OPENMODELICA\_HOME]; (spécifique à Nelson), la variable d'environnement #strong[OPENMODELICAHOME];, les répertoires d'installation standard, puis #strong[PATH];.
 

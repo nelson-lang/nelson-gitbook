@@ -61,7 +61,7 @@ Continuous-time state-space block defined by matrices A, B, C, D. Represents lin
 | <code>A</code> | 1 | 
 | <code>B</code> | 1 | 
 | <code>C</code> | 1 | 
-| <code>D</code> | 0 | 
+| <code>D</code> | 1 | 
 
  
 

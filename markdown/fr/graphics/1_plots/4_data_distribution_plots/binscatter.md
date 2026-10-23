@@ -27,6 +27,7 @@ Voir [proprietes de binscatter](../../../graphics/2_graphics_objects/4_propertie
 Afficher une densite de points par bins.
 
 ```matlab
+rng(0);
 x = randn(1000, 1);
 y = x + 0.5 * randn(1000, 1);
 h = binscatter(x, y, [30 30]);

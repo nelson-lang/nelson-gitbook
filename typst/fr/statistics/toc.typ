@@ -229,6 +229,7 @@
     - #nlink(<statistics:6_classification.fitctree>)[fitctree]
     - #nlink(<statistics:6_classification.grp2idx>)[grp2idx]
   - Regroupement et detection d anomalies
+    - #nlink(<statistics:7_clustering_anomaly_detection.KDTreeSearcher>)[KDTreeSearcher]
     - #nlink(<statistics:7_clustering_anomaly_detection.cluster>)[cluster]
     - #nlink(<statistics:7_clustering_anomaly_detection.clusterdata>)[clusterdata]
     - #nlink(<statistics:7_clustering_anomaly_detection.dbscan>)[dbscan]

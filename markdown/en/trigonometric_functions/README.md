@@ -48,8 +48,10 @@ The module also provides utilities for converting between degrees and radians in
 - [cscd](cscd.md) - Cosecant of argument in degrees.
 - [csch](csch.md) - Hyperbolic cosecant.
 - [deg2rad](deg2rad.md) - Convert angle from degrees to radians.
+- [degtorad](degtorad.md) - Convert angle from degrees to radians.
 - [pol2cart](pol2cart.md) - Transforms polar or cylindrical coordinates to Cartesian.
 - [rad2deg](rad2deg.md) - Convert angle from radians to degrees.
+- [radtodeg](radtodeg.md) - Convert angle from radians to degrees.
 - [sec](sec.md) - Secant of angle in radians.
 - [secd](secd.md) - Secant of argument in degrees.
 - [sech](sech.md) - Hyperbolic secant.

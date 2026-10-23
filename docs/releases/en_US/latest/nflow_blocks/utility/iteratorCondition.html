@@ -159,7 +159,7 @@
       },
       "render": {
         "type": "comment",
-        "bodyClass": "block-body"
+        "bodyClass": "nf-block"
       }
     },
     {
@@ -201,8 +201,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "switch-math"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-switch-formula"
       }
     },
     {
@@ -319,8 +319,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "subsystem-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-subsystem-formula",
         "formula": "\\mathsf{Sub}"
       }
     },
@@ -1013,6 +1013,7 @@
 #include "routing_blocks.hpp"
 //=============================================================================
 namespace Nelson {
+//=============================================================================
 namespace NFlow {
     //=============================================================================
     bool
@@ -1032,11 +1033,10 @@ namespace NFlow {
         if (phase != Phase::ALGEBRAIC) {
             return false;
         }
-        // Read the condition through the normal signal path (consistent with how
-        // the upstream block wrote it) and stash it in this block's state, which
-        // the subsystem handler reads back after each iteration -- avoiding any
-        // legacy-slot vs signal-offset ambiguity. Mirror it on the output too so a
-        // probe can observe it. An unconnected condition holds the loop.
+        // Read the condition through the normal signal path and stash it in this
+        // block's state, which the subsystem handler reads back after each iteration.
+        // Mirror it on the output so a probe can observe it. An unconnected condition
+        // holds the loop.
         const double cond = hasInput(ctx, b.nid, 0) ? getInput(ctx, b.nid, 0, 1.0) : 1.0;
         ctx.blockState[b.nid].output = cond;
         setOutput(ctx, b.nid, cond);
@@ -1044,6 +1044,7 @@ namespace NFlow {
     }
     //=============================================================================
 } // namespace NFlow
+//=============================================================================
 } // namespace Nelson
 //=============================================================================
 </code></pre></details>

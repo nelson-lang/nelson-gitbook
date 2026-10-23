@@ -80,6 +80,7 @@
 == Example
 
 ``````matlab
+rng(0);
 f = figure();
 n = 100;
 x = randn(n,1);

@@ -116,6 +116,7 @@
     - #nlink(<elementary_functions:7_indexing_dimensions.ndims>)[ndims]
     - #nlink(<elementary_functions:7_indexing_dimensions.numel>)[numel]
     - #nlink(<elementary_functions:7_indexing_dimensions.permute>)[permute]
+    - #nlink(<elementary_functions:7_indexing_dimensions.resize>)[resize]
     - #nlink(<elementary_functions:7_indexing_dimensions.rot90>)[rot90]
     - #nlink(<elementary_functions:7_indexing_dimensions.shiftdim>)[shiftdim]
     - #nlink(<elementary_functions:7_indexing_dimensions.size>)[size]

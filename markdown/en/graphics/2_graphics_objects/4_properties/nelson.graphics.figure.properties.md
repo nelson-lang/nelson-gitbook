@@ -60,7 +60,7 @@ This page documents the visible properties returned by <b>properties</b> for a <
 | **RendererMode** | 'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value. | Type: text scalar or character row vector. Supported values: 'auto', 'manual'. | 
 | **Resize** | updates rendered output on the next graphics refresh. | Type: on/off value. Supported values: 'on', 'off', true, or false. | 
 | **Scrollable** | updates rendered output on the next graphics refresh. | Type: on/off value. Supported values: 'on', 'off', true, or false. | 
-| **SelectionType** | Nelson computes this value; graphics operations update it. | Type: text scalar or character row vector. Supported values: 'normal', 'extend', 'alt', 'open'. | 
+| **SelectionType** | last mouse button press, set before WindowButtonDownFcn runs: 'normal' for a left click, 'extend' for shift-left or the middle button, 'alt' for ctrl-left or the right button, 'open' for a double click. | Type: text scalar or character row vector. Supported values: 'normal', 'extend', 'alt', 'open'. | 
 | **SizeChangedFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
 | **Tag** | updates the stored object state. | Type: text scalar or character row vector. Supported values: empty text or an object identifier. | 
 | **Theme** | returns the active graphics theme object; assigning 'light' or 'dark' updates rendered output on the next graphics refresh. | Type: graphics theme object for reads, text scalar or character row vector for writes. Supported assigned values: 'light', 'dark'. | 
@@ -76,7 +76,7 @@ This page documents the visible properties returned by <b>properties</b> for a <
 | **WindowButtonUpFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
 | **WindowKeyPressFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
 | **WindowKeyReleaseFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
-| **WindowScrollWheelFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
+| **WindowScrollWheelFcn** | the graphics event system invokes it for the associated event; when set, it replaces the built-in scroll wheel zoom of the axes. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
 | **WindowState** | recomputes geometry, limits, or layout. | Type: text scalar or character row vector. Supported values: 'normal', 'minimized', 'maximized', 'fullscreen'. | 
 | **WindowStyle** | 'docked' hosts the figure inside the Nelson desktop (GUI mode); 'alwaysontop' keeps the window above the other windows; 'normal' makes it a regular separate window again. | Type: text scalar or character row vector. Supported values: 'normal', 'modal', 'docked', 'alwaysontop'. | 
 

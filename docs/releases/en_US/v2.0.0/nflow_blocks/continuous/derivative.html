@@ -242,9 +242,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body integrator-body",
-        "mathGroupClass": "integrator-math",
-        "formula": "\\frac{1}{s}"
+        "bodyClass": "nf-block nf-integrator",
+        "mathGroupClass": "nf-integrator-formula",
+        "formula": "\\displaystyle\\int"
       }
     },
     {
@@ -257,7 +257,7 @@
         "ALGEBRAIC",
         "UPDATE"
       ],
-      "width": 85,
+      "width": 100,
       "height": 80,
       "inputs": [
         {
@@ -268,24 +268,24 @@
       ],
       "outputs": [
         {
-          "x": 85,
+          "x": 100,
           "y": 40,
           "side": "right"
         }
       ],
       "defaultParams": {
         "Numerator": [
-          3
+          1
         ],
         "Denominator": [
           1,
-          3
+          1
         ]
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "tf-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-tf-formula",
         "formula": "\\frac{N(s)}{D(s)}"
       }
     },
@@ -315,13 +315,13 @@
         }
       ],
       "defaultParams": {
-        "DelayTime": 0.1
+        "DelayTime": 1
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "delay-math",
-        "formula": "e^{-sT}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-delay-formula",
+        "formula": "e^{-\\tau s}"
       }
     },
     {
@@ -333,7 +333,7 @@
         "OUTPUT",
         "UPDATE"
       ],
-      "width": 160,
+      "width": 120,
       "height": 80,
       "inputs": [
         {
@@ -344,7 +344,7 @@
       ],
       "outputs": [
         {
-          "x": 160,
+          "x": 120,
           "y": 40,
           "side": "right"
         }
@@ -353,13 +353,13 @@
         "A": 1,
         "B": 1,
         "C": 1,
-        "D": 0,
+        "D": 1,
         "InitialCondition": 0
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "state-space-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-state-space-formula",
         "formula": "\\dot{x}=Ax+Bu",
         "textSize": "16px"
       }
@@ -459,9 +459,9 @@
       "render": {
         "type": "math",
         "useRectElement": true,
-        "bodyClass": "block-body",
-        "mathGroupClass": "derivative-math",
-        "formula": "\\frac{d}{dt}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-derivative-formula",
+        "formula": "s"
       }
     },
     {
@@ -491,7 +491,7 @@
       ],
       "defaultParams": {
         "P": 1,
-        "I": 0,
+        "I": 1,
         "D": 0,
         "N": 0,
         "LowerSaturationLimit": "-inf",
@@ -499,9 +499,9 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "pid-math",
-        "formula": "\\mathsf{PID}"
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-pid-formula",
+        "formula": "K_p\\!+\\!\\frac{K_i}{s}\\!+\\!K_d s"
       }
     },
     {
@@ -534,8 +534,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constraint-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constraint-formula",
         "formula": "g=0"
       }
     }
@@ -577,29 +577,23 @@ Nelson::NFlow::handleDerivative(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::ALGEBRAIC) {
-        // The output is feedthrough (it reads the CURRENT input), so it is
-        // produced in the topologically-ordered ALGEBRAIC phase rather than the
-        // declaration-ordered OUTPUT phase: the source feeding this block is
-        // then guaranteed to have run first (an OUTPUT-phase derivative could be
-        // scheduled ahead of its source and read a not-yet-computed input).
-        // Recompute the backward difference (u_k - u_{k-1}) / dt at every
-        // committed sample point, so the sample the sink records is the current
-        // step's derivative (no one-sample lag). A committed pass is the
-        // fixed-step loop (always) and the solver loop's recordAt /
-        // located-event passes (ctx.sideEffectFree == false). A pure rhs /
-        // zero-crossing sub-step evaluation (sideEffectFree == true) instead
-        // replays the value held at the last sample: a continuous consumer
-        // integrating this signal then sees the current step's derivative held
-        // across the interval (zero-order hold), not a spurious intra-step slope
-        // that would collapse to zero at the step boundary.
+        // Feedthrough (reads the CURRENT input), so it runs in the topologically
+        // ordered ALGEBRAIC phase: the source feeding this block has then run
+        // first (an OUTPUT-phase derivative could be scheduled ahead of its source
+        // and read a stale input).
+        // The backward difference (u_k - u_{k-1}) / dt is recomputed at every
+        // committed sample point, so the recorded sample is the current step's
+        // derivative. Committed passes are the fixed-step loop and the solver
+        // loop's recordAt / located-event passes (ctx.sideEffectFree == false). A
+        // pure rhs / zero-crossing evaluation (sideEffectFree == true) replays the
+        // held value instead: a continuous consumer then sees a zero-order hold,
+        // not an intra-step slope that collapses to zero at the step boundary.
         if (!ctx.sideEffectFree) {
             const double invDt = 1.0 / std::max(ctx.dt, 1e-6);
-            // The first committed sample has nothing behind it to difference
-            // against, so the derivative is zero there and the stored previous
-            // input is seeded with what the block actually sees. Assuming a
-            // previous input of 0 fired a u(0)/dt spike for any input that does
-            // not start at 0 - the derivative of a constant 5 came out as 500 at
-            // t = 0 - which then rang through everything downstream.
+            // The first committed sample has nothing to difference against: the
+            // derivative is zero there and the previous input is seeded with the
+            // current one. A previous input of 0 fired a u(0)/dt spike for any
+            // input not starting at 0 (a constant 5 gave 500 at t = 0).
             const bool prime = !st.derivPrimed;
             st.derivPrimed = true;
             if (w &lt;= 1) {
@@ -635,9 +629,9 @@ Nelson::NFlow::handleDerivative(SimCtx&amp; ctx, const Block&amp; b, Phase phase
         return false;
     }
     if (phase == Phase::UPDATE) {
-        // Advance the stored previous-sample input for the next step's backward
-        // difference. Latched here, at the sample point, so the solver loop's
-        // sub-step OUTPUT replays a stable held derivative.
+        // Advance the stored previous-sample input for the next backward
+        // difference. Latched at the sample point so the solver loop's sub-step
+        // OUTPUT replays a stable held derivative.
         if (w &lt;= 1) {
             st.scalar = getInput(ctx, b.nid, 0, 0.0);
         } else {
@@ -654,13 +648,11 @@ Nelson::NFlow::handleDerivative(SimCtx&amp; ctx, const Block&amp; b, Phase phase
     return false;
 }
 //=============================================================================
-// Runtime parity: the ALGEBRAIC phase recomputes (u_k - u_{k-1}) / dt from the
-// current input at each sample, so the emitted step mirrors the simulator's
-// committed pass: compute the backward difference from the current input, then
-// advance the stored previous input (the discrete-`difference` shape, plus the
-// / dt). Codegen already emits blocks in topological order, so the source is
-// available; and the generated code only ever runs the committed step, so the
-// solver loop's zero-order-hold branch needs no separate generated state.
+// The emitted step mirrors the simulator's committed pass: backward difference
+// from the current input, then advance the stored previous input. Codegen emits
+// blocks in topological order, so the source is available. Generated code only
+// runs the committed step, so the solver's zero-order-hold branch needs no
+// generated state.
 Nelson::NFlow::BlockCodegenTemplate
 Nelson::NFlow::getCodeGenCDerivative()
 {
@@ -670,9 +662,9 @@ Nelson::NFlow::getCodeGenCDerivative()
         a.addState("der_primed_" + a.id, "0.0", "");
     };
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
-        // Seed the previous input on the first step: there is nothing behind it
-        // to difference against, so the derivative is zero there (a previous
-        // input of 0 fired a u(0)/dt spike for any input not starting at 0).
+        // Seed the previous input on the first step: nothing to difference
+        // against, so the derivative is zero (a previous input of 0 fired a
+        // u(0)/dt spike).
         a.line("if (s-&gt;der_primed_" + a.id + " == 0.0) {");
         a.line("  s-&gt;der_prev_" + a.id + " = " + a.in[0] + ";");
         a.line("  s-&gt;der_primed_" + a.id + " = 1.0;");
@@ -692,7 +684,6 @@ Nelson::NFlow::getCodeGenRustDerivative()
         a.addState("der_primed_" + a.id, "0.0", "");
     };
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
-        // Same first-step seeding as the C template and the simulator.
         a.line("if s.der_primed_" + a.id + " == 0.0 {");
         a.line("    s.der_prev_" + a.id + " = " + a.in[0] + ";");
         a.line("    s.der_primed_" + a.id + " = 1.0;");

@@ -27,6 +27,7 @@
         <keyword name="tfdata" link="1_dynamic_system_models/tfdata.html" description="Access transfer function model data."/>
         <keyword name="tzero" link="1_dynamic_system_models/tzero.html" description="Invariant zeros of linear system."/>
         <keyword name="zero" link="1_dynamic_system_models/zero.html" description="Zeros and gain of SISO dynamic system."/>
+        <keyword name="zpk" link="1_dynamic_system_models/zpk.html" description="Constructs a zero-pole-gain model."/>
       </section>
       <section name="Model Conversion and Interconnection">
         <chapter_description>
@@ -52,12 +53,17 @@
     <p>Functions for time-domain, frequency-domain, and model-response analysis.</p>
   </chapter_description>
         <keyword name="bode" link="3_linear_analysis/bode.html" description="Bode plot of frequency response, magnitude and phase data."/>
+        <keyword name="bodeoptions" link="3_linear_analysis/bodeoptions.html" description="Options for a Bode plot."/>
+        <keyword name="bodeplot" link="3_linear_analysis/bodeplot.html" description="Bode plot of a SISO LTI system with plotting options."/>
         <keyword name="damp" link="3_linear_analysis/damp.html" description="Natural frequency and damping ratio."/>
         <keyword name="dcgain" link="3_linear_analysis/dcgain.html" description="Low-frequency (DC) gain of LTI system."/>
         <keyword name="evalfr" link="3_linear_analysis/evalfr.html" description="Evaluate frequency response at given frequency."/>
         <keyword name="freqresp" link="3_linear_analysis/freqresp.html" description="Evaluate system response over a grid of frequencies."/>
         <keyword name="hsvd" link="3_linear_analysis/hsvd.html" description="Hankel singular values of dynamic system."/>
+        <keyword name="margin" link="3_linear_analysis/margin.html" description="Gain and phase margins of a SISO LTI system."/>
         <keyword name="nyquist" link="3_linear_analysis/nyquist.html" description="Nyquist plot of frequency response."/>
+        <keyword name="pzmap" link="3_linear_analysis/pzmap.html" description="Pole-zero map of a dynamic system."/>
+        <keyword name="rlocus" link="3_linear_analysis/rlocus.html" description="Root locus of a SISO model."/>
         <keyword name="sigma" link="3_linear_analysis/sigma.html" description="Singular value response of an LTI model."/>
       </section>
       <section name="Time and Frequency Responses">
@@ -84,6 +90,7 @@
         <keyword name="lqr" link="5_control_design_tuning/lqr.html" description="Linear-Quadratic Regulator (LQR) design."/>
         <keyword name="lqry" link="5_control_design_tuning/lqry.html" description="Form linear-quadratic (LQ) state-feedback regulator with output weighting."/>
         <keyword name="ord2" link="5_control_design_tuning/ord2.html" description="Generate continuous second-order systems."/>
+        <keyword name="place" link="5_control_design_tuning/place.html" description="Pole placement gain selection using robust eigenstructure assignment."/>
       </section>
       <section name="Matrix Computations">
         <chapter_description>

@@ -17,9 +17,9 @@ Executables to start Nelson software.
 
 == Input argument
 
-/ -cli: selects #strong[nelson-cli]; when passed to the #strong[nelson]; launcher.
-/ -adv-cli: selects #strong[nelson-adv-cli]; when passed to the #strong[nelson]; launcher.
-/ -gui: selects #strong[nelson-gui]; when passed to the #strong[nelson]; launcher.
+/ --cli: selects #strong[nelson-cli]; when passed to the #strong[nelson]; launcher.
+/ --adv-cli: selects #strong[nelson-adv-cli]; when passed to the #strong[nelson]; launcher.
+/ --gui: selects #strong[nelson-gui]; when passed to the #strong[nelson]; launcher.
 / --webview: selects #strong[nelson-webview]; in desktop webview mode when passed to the #strong[nelson]; launcher. Passed directly to #strong[nelson-adv-cli]; it is instead an option that renders figures with the web (RenderWeb) backend, with no Qt figure windows, while keeping the terminal REPL.
 / --web: selects #strong[nelson-webview]; in HTTP server mode when passed to the #strong[nelson]; launcher. The same option selects server mode for the direct #strong[nelson-webview]; executable.
 / --url host: sets the HTTP host. This option is valid only with #strong[--web];, #strong[--webview];, or the direct #strong[nelson-webview]; executable.
@@ -33,14 +33,14 @@ Executables to start Nelson software.
 / --vscode: enables Visual Studio Code mode.
 / --open, -o filename1 \[filename2 ...\]: opens one or more valid existing files in the text editor. GUI mode only.
 / --mat, -m filename1 \[filename2 ...\]: loads one or more valid existing .nh5 or .mat files.
-/ --nostartup: disables the main Nelson startup script.
-/ --nousermodules: disables loading user modules.
-/ --nouserstartup: disables the user startup script.
+/ --no-startup: disables the main Nelson startup script.
+/ --no-user-modules: disables loading user modules.
+/ --no-user-startup: disables the user startup script.
 / --minimize: minimizes the main window. GUI mode only.
-/ --noipc: disables interprocess features.
-/ --withoutfilewatcher: disables file watcher features for this session.
-/ --noaudio: disables audio module startup code.
-/ --without\_python: disables python\_engine module startup code.
+/ --no-ipc: disables interprocess features.
+/ --without-file-watcher: disables file watcher features for this session.
+/ --no-audio: disables audio module startup code.
+/ --without-python: disables python\_engine module startup code.
 / --language, -l lang: sets the session language. Currently, lang can be: fr\_FR en\_US.
 / --quiet, -q: starts without displaying the banner and version.
 / --timeout seconds: kills the Nelson process after the specified positive number of seconds.
@@ -57,11 +57,11 @@ Executables to start Nelson software.
 
  #strong[nelson --web]; and #strong[nelson-webview --web]; start an HTTP server without opening a desktop window and print the served URL.
 
- Mode selector options #strong[-cli];, #strong[-adv-cli];, #strong[-gui];, #strong[--webview]; and launcher-level #strong[--web]; are only valid for the generic #strong[nelson]; launcher. Direct executables such as #strong[nelson-cli];, #strong[nelson-adv-cli]; and #strong[nelson-gui]; reject them before #strong[--];. The single exception is #strong[nelson-adv-cli --webview];, where #strong[--webview]; is accepted as an option that switches the figure backend to web (RenderWeb) rendering.
+ Mode selector options #strong[--cli];, #strong[--adv-cli];, #strong[--gui];, #strong[--webview]; and launcher-level #strong[--web]; are only valid for the generic #strong[nelson]; launcher. Direct executables such as #strong[nelson-cli];, #strong[nelson-adv-cli]; and #strong[nelson-gui]; reject them before #strong[--];. The single exception is #strong[nelson-adv-cli --webview];, where #strong[--webview]; is accepted as an option that switches the figure backend to web (RenderWeb) rendering.
 
  After #strong[--];, mode selector tokens are normal user arguments and can be read with #strong[argv('user')];.
 
- Module startup arguments such as #strong[--noaudio]; and #strong[--without\_python]; remain visible in #strong[argv()]; for compatibility. New command builders should place user arguments after #strong[--]; and read them with #strong[argv('user')];.
+ Module startup arguments such as #strong[--no-audio]; and #strong[--without-python]; remain visible in #strong[argv()]; for compatibility. New command builders should place user arguments after #strong[--]; and read them with #strong[argv('user')];.
 
  Quotes used to group arguments are interpreted by the operating system or shell before Nelson starts. Use a portable form such as #strong[nelson-cli -e "disp('hello world'); quit"];.
 
@@ -93,9 +93,10 @@ nelson-gui --help
   columns: 2,
   table.header([Version], [Description]),
   [1.0.0], [initial version],
-  [1.4.0], [--without\_python added],
+  [1.4.0], [--without-python added],
   [1.11.0], [About NELSON\_RUNTIME\_PATH environment variable added],
   [1.11.0], [--vscode argument],
+  [2.0.0], [command line options standardized: mode selectors now use the double dash form (--cli, --adv-cli, --gui) and multi-word options use kebab-case (--no-startup, --no-user-startup, --no-user-modules, --no-ipc, --no-audio, --without-file-watcher, --without-python, --without-julia)],
 )
 
 // Author: Allan CORNET

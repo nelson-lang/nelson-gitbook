@@ -222,8 +222,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "constant-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-constant-formula",
         "formula": "{params.Value}"
       }
     },
@@ -598,13 +598,13 @@
       "phases": [
         "OUTPUT"
       ],
-      "width": 40,
-      "height": 40,
+      "width": 32,
+      "height": 32,
       "inputs": [],
       "outputs": [
         {
-          "x": 40,
-          "y": 20,
+          "x": 32,
+          "y": 16,
           "side": "right"
         }
       ],
@@ -742,8 +742,8 @@ Nelson::NFlow::getCodeGenCStep()
 {
     BlockCodegenTemplate t;
     t.step = "out_{id} = (t &gt;= {param:Time:0.0} ? 1.0 : 0.0);";
-    // Zero-crossing seam: the simulator declares one surface (t - Time) so
-    // the variable-step solvers stop exactly at the discontinuity; mirror it.
+    // Zero-crossing seam: one surface (t - Time), as in the simulator, so the
+    // variable-step solvers stop exactly at the discontinuity.
     t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
         if (a.rk4Op != Rk4Crossing) {
             return;

@@ -33,7 +33,7 @@ The assertion passes when the command raises an error whose message contains exp
 Expected error substring
 
 ``````matlab
-asserts.throws('cos', _('Wrong number of input arguments.'));
+asserts.throws('cos', 'Not enough input arguments.');
 ``````
 
 Capture missing error

@@ -57,14 +57,14 @@ border-color: #333;
 <h2>2. Démarrer Nelson</h2>
 <p>La commande <code>nelson</code> accepte une option de mode :</p>
 <pre><code class="language-bash">nelson              # bureau avec fenêtre de commandes, éditeur et explorateur de variables
-nelson -cli         # mode texte dans le terminal
-nelson -adv-cli     # mode texte avec prise en charge des graphiques
+nelson --cli        # mode texte dans le terminal
+nelson --adv-cli    # mode texte avec prise en charge des graphiques
 nelson-webview      # le bureau dans une fenêtre web native
 nelson-webview --web   # le même bureau servi en HTTP pour un navigateur
 </code></pre>
 <p>Deux options servent à l’automatisation :</p>
-<pre><code class="language-bash">nelson -cli -e &quot;disp(2 + 2)&quot;      # exécuter une commande et afficher le résultat
-nelson -cli -f mon_script.m       # exécuter un fichier, puis rester à l'invite
+<pre><code class="language-bash">nelson --cli -e &quot;disp(2 + 2)&quot;     # exécuter une commande et afficher le résultat
+nelson --cli -f mon_script.m      # exécuter un fichier, puis rester à l'invite
 </code></pre>
 <p>Pour quitter Nelson, tapez <code>quit</code> ou <code>exit</code>.</p>
 <h2>3. Premières commandes</h2>
@@ -202,7 +202,7 @@ x = A \ b
 <pre><code class="language-matlab">run('example1.m')
 example1
 </code></pre>
-<p>Depuis le terminal : <code>nelson -cli -f example1.m</code>.</p>
+<p>Depuis le terminal : <code>nelson --cli -f example1.m</code>.</p>
 <p>La commande <code>edit</code> ouvre un fichier dans l’éditeur intégré. Dans l’éditeur, <code>%%</code> commence une section qui peut être exécutée seule.</p>
 <p>Les variables créées par un script vont dans l’espace de travail. Elles y restent après la fin du script.</p>
 <h3>Fonctions</h3>

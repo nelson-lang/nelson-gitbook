@@ -64,7 +64,7 @@ Implements a scalar PID controller with output limits.
   columns: 2,
   table.header([Parameter], [Default value], ),
   [#raw("kp");], [1], 
-  [#raw("ki");], [0], 
+  [#raw("ki");], [1], 
   [#raw("kd");], [0], 
   [#raw("min");], [-inf], 
   [#raw("max");], [inf], 

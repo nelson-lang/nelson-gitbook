@@ -16,6 +16,7 @@
     - #nlink(<control_system:1_dynamic_system_models.tfdata>)[tfdata]
     - #nlink(<control_system:1_dynamic_system_models.tzero>)[tzero]
     - #nlink(<control_system:1_dynamic_system_models.zero>)[zero]
+    - #nlink(<control_system:1_dynamic_system_models.zpk>)[zpk]
   - Conversion et interconnexion de modeles
     - #nlink(<control_system:2_model_conversion_interconnection.abcdchk>)[abcdchk]
     - #nlink(<control_system:2_model_conversion_interconnection.append>)[append]
@@ -33,12 +34,17 @@
     - #nlink(<control_system:2_model_conversion_interconnection.tf2ss>)[tf2ss]
   - Analyse lineaire
     - #nlink(<control_system:3_linear_analysis.bode>)[bode]
+    - #nlink(<control_system:3_linear_analysis.bodeoptions>)[bodeoptions]
+    - #nlink(<control_system:3_linear_analysis.bodeplot>)[bodeplot]
     - #nlink(<control_system:3_linear_analysis.damp>)[damp]
     - #nlink(<control_system:3_linear_analysis.dcgain>)[dcgain]
     - #nlink(<control_system:3_linear_analysis.evalfr>)[evalfr]
     - #nlink(<control_system:3_linear_analysis.freqresp>)[freqresp]
     - #nlink(<control_system:3_linear_analysis.hsvd>)[hsvd]
+    - #nlink(<control_system:3_linear_analysis.margin>)[margin]
     - #nlink(<control_system:3_linear_analysis.nyquist>)[nyquist]
+    - #nlink(<control_system:3_linear_analysis.pzmap>)[pzmap]
+    - #nlink(<control_system:3_linear_analysis.rlocus>)[rlocus]
     - #nlink(<control_system:3_linear_analysis.sigma>)[sigma]
   - Reponses temporelles et frequentielles
     - #nlink(<control_system:4_time_frequency_response.impulse>)[impulse]
@@ -57,6 +63,7 @@
     - #nlink(<control_system:5_control_design_tuning.lqr>)[lqr]
     - #nlink(<control_system:5_control_design_tuning.lqry>)[lqry]
     - #nlink(<control_system:5_control_design_tuning.ord2>)[ord2]
+    - #nlink(<control_system:5_control_design_tuning.place>)[place]
   - Calculs matriciels
     - #nlink(<control_system:6_matrix_computations.bdschur>)[bdschur]
     - #nlink(<control_system:6_matrix_computations.cloop>)[cloop]

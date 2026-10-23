@@ -424,12 +424,12 @@
         }
       ],
       "defaultParams": {
-        "Gain": 2
+        "Gain": 1
       },
       "render": {
         "type": "math",
         "formula": "{params.Gain}",
-        "mathGroupClass": "gain-math",
+        "mathGroupClass": "nf-gain-formula",
         "textSize": "16px",
         "width": 100,
         "height": 80
@@ -482,7 +482,7 @@
       "render": {
         "type": "math",
         "formula": "\\oplus",
-        "mathGroupClass": "sum-math",
+        "mathGroupClass": "nf-sum-formula",
         "textSize": "16px",
         "width": 20,
         "height": 20
@@ -533,7 +533,7 @@
       "render": {
         "type": "math",
         "formula": "\\otimes",
-        "mathGroupClass": "mult-math",
+        "mathGroupClass": "nf-mult-formula",
         "textSize": "16px",
         "width": 20,
         "height": 20
@@ -566,7 +566,7 @@
       "render": {
         "type": "math",
         "formula": "|x|",
-        "mathGroupClass": "abs-math",
+        "mathGroupClass": "nf-abs-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -899,7 +899,7 @@
       "render": {
         "type": "math",
         "formula": "min(x,y)",
-        "mathGroupClass": "min-math",
+        "mathGroupClass": "nf-min-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -937,7 +937,7 @@
       "render": {
         "type": "math",
         "formula": "max(x,y)",
-        "mathGroupClass": "max-math",
+        "mathGroupClass": "nf-max-formula",
         "textSize": "16px",
         "width": 80,
         "height": 80
@@ -1285,13 +1285,12 @@ multTypedEmitter(bool cLang)
         a.line("out_" + a.id + " = " + acc + ";");
     };
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 // Variable-arity product over the connected inputs (the empty product is 1),
-// matching the interpreter's fold. A fixed "{in0} * {in1} * {in2}" template
-// silently dropped inputs past a hard-coded count -- and dropped a DIFFERENT
-// count per language (C stopped at 3, Rust at 2), so a 3-input Product gave
-// two different results.
+// as in the interpreter's fold. A fixed "{in0} * {in1} * {in2}" template drops
+// inputs past a hard-coded count, and a different count per language.
 static Nelson::NFlow::BlockCodegenTemplate
 makeMultCodegen(bool cLang)
 {

@@ -29,7 +29,7 @@ Measures the relative angular velocity w\_a - w\_b between two flanges.
 | Library | Rotational (acausal) | 
 | Type | <code>RelRotSpeedSensor</code> | 
 | Label | RelRotSpeedSensor | 
-| Solver | Lowered to <code>mechanicalTranslationalIsland</code>. Reference solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
+| Solver | Lowered to <code>mechanicalTranslationalIsland</code>. Default solver <code>dae</code> (differential-algebraic); the fixed-step loop and the native explicit solvers (<code>ode1</code>/<code>ode4</code>/<code>ode45</code>) are also supported (a jointed multibody island requires <code>dae</code>). | 
 
   
 

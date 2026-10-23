@@ -2,6 +2,7 @@
 
 - Geometrie
   - #nlink(<geometry:alphaShape>)[alphaShape]
+  - #nlink(<geometry:axes2ecc>)[axes2ecc]
   - #nlink(<geometry:boundary>)[boundary]
   - #nlink(<geometry:convhull>)[convhull]
   - #nlink(<geometry:convhulln>)[convhulln]
@@ -9,7 +10,13 @@
   - #nlink(<geometry:delaunayTriangulation>)[delaunayTriangulation]
   - #nlink(<geometry:delaunayn>)[delaunayn]
   - #nlink(<geometry:dsearchn>)[dsearchn]
+  - #nlink(<geometry:ellipse1>)[ellipse1]
   - #nlink(<geometry:griddata>)[griddata]
+  - #nlink(<geometry:nsidedpoly>)[nsidedpoly]
+  - #nlink(<geometry:polyarea>)[polyarea]
+  - #nlink(<geometry:polyshape>)[polyshape]
+  - #nlink(<geometry:reckon>)[reckon]
+  - #nlink(<geometry:rectint>)[rectint]
   - #nlink(<geometry:rotx>)[rotx]
   - #nlink(<geometry:roty>)[roty]
   - #nlink(<geometry:rotz>)[rotz]

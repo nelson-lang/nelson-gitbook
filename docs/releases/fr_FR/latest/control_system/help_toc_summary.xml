@@ -27,6 +27,7 @@
         <keyword name="tfdata" link="1_dynamic_system_models/tfdata.html" description="Accède aux données d'un modèle en fonction de transfert."/>
         <keyword name="tzero" link="1_dynamic_system_models/tzero.html" description="Zéros invariants d'un système linéaire."/>
         <keyword name="zero" link="1_dynamic_system_models/zero.html" description="Zéros et gain d'un système SISO."/>
+        <keyword name="zpk" link="1_dynamic_system_models/zpk.html" description="Construit un modèle zéros-pôles-gain."/>
       </section>
       <section name="Conversion et interconnexion de modeles">
         <chapter_description>
@@ -52,12 +53,17 @@
     <p>Fonctions pour analyse temporelle, frequentielle et reponse de modeles.</p>
   </chapter_description>
         <keyword name="bode" link="3_linear_analysis/bode.html" description="Diagramme de Bode de la rÃƒÂ©ponse en frÃƒÂ©quence, donnÃƒÂ©es de magnitude et de phase."/>
+        <keyword name="bodeoptions" link="3_linear_analysis/bodeoptions.html" description="Options d'un diagramme de Bode."/>
+        <keyword name="bodeplot" link="3_linear_analysis/bodeplot.html" description="Diagramme de Bode d'un système LTI SISO avec options de tracé."/>
         <keyword name="damp" link="3_linear_analysis/damp.html" description="Fréquence naturelle et rapport d'amortissement."/>
         <keyword name="dcgain" link="3_linear_analysis/dcgain.html" description="Gain en basse fréquence (DC) du système LTI."/>
         <keyword name="evalfr" link="3_linear_analysis/evalfr.html" description="Évalue la réponse en fréquence à une fréquence donnée."/>
         <keyword name="freqresp" link="3_linear_analysis/freqresp.html" description="RÃ©ponse en frÃ©quence du systÃ¨me."/>
         <keyword name="hsvd" link="3_linear_analysis/hsvd.html" description="Décomposition en valeurs singulières de Hankel."/>
+        <keyword name="margin" link="3_linear_analysis/margin.html" description="Marges de gain et de phase d'un système LTI SISO."/>
         <keyword name="nyquist" link="3_linear_analysis/nyquist.html" description="Diagramme de Nyquist de la rÃ©ponse en frÃ©quence."/>
+        <keyword name="pzmap" link="3_linear_analysis/pzmap.html" description="Carte des pôles et des zéros d'un système dynamique."/>
+        <keyword name="rlocus" link="3_linear_analysis/rlocus.html" description="Lieu des racines d'un modèle SISO."/>
         <keyword name="sigma" link="3_linear_analysis/sigma.html" description="Reponse en valeurs singulieres d'un modele LTI."/>
       </section>
       <section name="Reponses temporelles et frequentielles">
@@ -84,6 +90,7 @@
         <keyword name="lqr" link="5_control_design_tuning/lqr.html" description="Conception d'un régulateur linéaire-quadratique (LQR)."/>
         <keyword name="lqry" link="5_control_design_tuning/lqry.html" description="Forme un régulateur LQ (rétroaction d'état) avec pondération sur la sortie."/>
         <keyword name="ord2" link="5_control_design_tuning/ord2.html" description="Génère des systèmes du second ordre continus."/>
+        <keyword name="place" link="5_control_design_tuning/place.html" description="Placement de pôles par retour d'état avec assignation robuste."/>
       </section>
       <section name="Calculs matriciels">
         <chapter_description>

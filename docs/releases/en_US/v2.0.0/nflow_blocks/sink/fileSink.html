@@ -364,8 +364,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "label-sink-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-label-sink-formula",
         "formula": "{params.GotoTag}"
       }
     },
@@ -395,8 +395,8 @@
       },
       "render": {
         "type": "math",
-        "bodyClass": "block-body",
-        "mathGroupClass": "display-math",
+        "bodyClass": "nf-block",
+        "mathGroupClass": "nf-display-formula",
         "formula": "\\mathsf{Disp}"
       }
     },
@@ -523,6 +523,7 @@ fileSinkPath(const Nelson::NFlow::Block&amp; b, const Nelson::NFlow::ValMap&amp;
     }
     return p;
 }
+//=============================================================================
 } // namespace
 //=============================================================================
 bool

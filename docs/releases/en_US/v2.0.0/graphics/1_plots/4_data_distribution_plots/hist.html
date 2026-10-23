@@ -89,7 +89,8 @@ counts = hist(...)
 <span class="syntax-icon">💡</span>Examples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">rng(0);
+f = figure();
 for i = 1:4
   subplot(2, 2, i)
   hist(randn(1000, 1), 50)

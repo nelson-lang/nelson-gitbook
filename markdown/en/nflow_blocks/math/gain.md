@@ -58,7 +58,7 @@ Simple multiplicative gain block. Multiplies the input by a constant gain.
 
 | Parameter | Default value | 
 | --- | --- | 
-| <code>gain</code> | 2 | 
+| <code>gain</code> | 1 | 
 
  
 
