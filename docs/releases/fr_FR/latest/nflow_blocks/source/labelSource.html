@@ -722,12 +722,14 @@ Nelson::NFlow::handleLabelSource(SimCtx&amp; ctx, const Block&amp; b, Phase phas
     if (phase != Phase::OUTPUT) {
         return false;
     }
-    if (b.params.contains(nflow::kIsExternalPort) &amp;&amp; b.params[nflow::kIsExternalPort].get&lt;bool&gt;()) {
+    if (asJson(b.params).contains(nflow::kIsExternalPort)
+        &amp;&amp; asJson(b.params)[nflow::kIsExternalPort].get&lt;bool&gt;()) {
         return false;
     }
     std::string name;
-    if (b.params.contains(nflow::kGotoTag) &amp;&amp; b.params[nflow::kGotoTag].is_string()) {
-        name = b.params[nflow::kGotoTag].get&lt;std::string&gt;();
+    if (asJson(b.params).contains(nflow::kGotoTag)
+        &amp;&amp; asJson(b.params)[nflow::kGotoTag].is_string()) {
+        name = asJson(b.params)[nflow::kGotoTag].get&lt;std::string&gt;();
     }
     const int w = outputWidth(ctx, b.nid, 0);
     double* y = outputSlice(ctx, b.nid, 0);

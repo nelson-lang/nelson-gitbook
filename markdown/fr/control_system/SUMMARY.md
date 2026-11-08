@@ -22,7 +22,7 @@
     - [c2d](2_model_conversion_interconnection/c2d.md)
     - [d2c](2_model_conversion_interconnection/d2c.md)
     - [feedback](2_model_conversion_interconnection/feedback.md)
-    - [gensig](2_model_conversion_interconnection/gensign.md)
+    - [gensig](2_model_conversion_interconnection/gensig.md)
     - [padecoef](2_model_conversion_interconnection/padecoef.md)
     - [parallel](2_model_conversion_interconnection/parallel.md)
     - [series](2_model_conversion_interconnection/series.md)
@@ -30,6 +30,7 @@
     - [ssdelete](2_model_conversion_interconnection/ssdelete.md)
     - [ssselect](2_model_conversion_interconnection/ssselect.md)
     - [tf2ss](2_model_conversion_interconnection/tf2ss.md)
+    - [zpk2tf](2_model_conversion_interconnection/zpk2tf.md)
   - Analyse lineaire
     - [bode](3_linear_analysis/bode.md)
     - [bodeoptions](3_linear_analysis/bodeoptions.md)

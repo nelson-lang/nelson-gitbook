@@ -6,9 +6,10 @@
       <chapter_description>
     <p>Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer, éditer et formater des scripts et fichiers Nelson.</p>
   </chapter_description>
-      <keyword name="débogage" link="debugging_workflow.html" description="Flux de travail de débogage pour les fichiers de code Nelson."/>
+      <keyword name="debugging workflow" link="debugging_workflow.html" description="Déroulement d'une session de débogage des fichiers Nelson dans l'éditeur."/>
       <keyword name="edit" link="edit.html" description="éditeur de fonctions."/>
       <keyword name="editor" link="editor.html" description="appelle l'éditeur de texte intégré."/>
+      <keyword name="opentoline" link="opentoline.html" description="ouvre un fichier dans l'éditeur à une ligne donnée."/>
     </section>
   </toc>
 </help_summary>

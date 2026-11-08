@@ -2,11 +2,14 @@
 <help_summary>
   <toc>
     <module>nflow_engine</module>
-    <section name="moteur nflow">
+    <section name="moteur NFlow">
       <chapter_description><p>Création et édition programmatiques de modèles de blocs-diagrammes nflow.</p>
     <p>NFlow est actuellement publié en version <b>1.0.0-beta.1</b> : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours.</p></chapter_description>
+      <keyword name="NFlow.addlibrarypath" link="NFlow.addlibrarypath.html" description="Ajoute un répertoire de recherche de bibliothèques de blocs nflow."/>
       <keyword name="NFlow.exportfmu" link="NFlow.exportfmu.html" description="Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation."/>
+      <keyword name="NFlow.librarypaths" link="NFlow.librarypaths.html" description="Renvoie les répertoires de recherche de bibliothèques de blocs nflow."/>
       <keyword name="NFlow.plotScopes" link="NFlow.plotScopes.html" description="Ouvre une figure par scope d'un résultat de simulation nflow."/>
+      <keyword name="NFlow.rmlibrarypath" link="NFlow.rmlibrarypath.html" description="Retire un répertoire de recherche de bibliothèques de blocs nflow."/>
       <keyword name="add_block" link="add_block.html" description="Ajoute un bloc à un modèle nflow depuis une source de bibliothèque."/>
       <keyword name="add_line" link="add_line.html" description="Connecte deux ports de blocs dans un modèle nflow."/>
       <keyword name="bdIsDirty" link="bdIsDirty.html" description="Retourne vrai lorsqu'un modèle nflow a des modifications non sauvegardées."/>
@@ -25,6 +28,8 @@
       <keyword name="load_system" link="load_system.html" description="Charge un modèle nflow depuis un fichier .nflow sans ouvrir l'éditeur."/>
       <keyword name="new_system" link="new_system.html" description="Crée et charge un modèle nflow vide."/>
       <keyword name="nflow_codegenerate" link="nflow_codegenerate.html" description="Genere du code C ou Rust autonome depuis un modele nflow."/>
+      <keyword name="nflow_layout" link="nflow_layout.html" description="Dispose automatiquement les blocs d'un (sous-)système nflow."/>
+      <keyword name="nflow_reroute" link="nflow_reroute.html" description="Recalcule le tracé des fils d'un (sous-)système nflow."/>
       <keyword name="save_system" link="save_system.html" description="Sauvegarde un modèle nflow dans un fichier .nflow."/>
       <keyword name="set_param" link="set_param.html" description="Définit atomiquement des paramètres de modèle ou de bloc."/>
       <keyword name="sim" link="sim.html" description="Simule un modèle nflow et retourne ses résultats."/>

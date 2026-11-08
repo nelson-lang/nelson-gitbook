@@ -334,6 +334,15 @@ Blocs avec saturation, seuils, hysteresis ou limites de vitesse.
 - #nlink(<nflow_blocks:nonlinear.rate>)[rate]: Limite les vitesses de montee et de descente du signal.
 - #nlink(<nflow_blocks:nonlinear.saturation>)[saturation]: Borne l entree entre min et max.
 
+== Développement de plugins natifs
+
+Fonctions utilisées pour compiler des plugins de blocs natifs (C++) pour NFlow.
+
+=== Functions
+
+- #nlink(<nflow_blocks:plugin_development.dlgetnflowincludes>)[dlgetnflowincludes]: Renvoie les répertoires d'includes nécessaires pour compiler un plugin de bloc natif nflow.
+- #nlink(<nflow_blocks:plugin_development.dlgetnflowlibraries>)[dlgetnflowlibraries]: Renvoie les bibliothèques auxquelles un plugin de bloc natif nflow doit être lié.
+
 == Blocs recepteurs
 
 Blocs qui consomment, affichent ou nomment les signaux.
@@ -893,6 +902,10 @@ Blocs de routage, regroupement, annotation et commutation interactive.
 #include "nonlinear/rate.typ"
 #pagebreak(weak: true)
 #include "nonlinear/saturation.typ"
+#pagebreak(weak: true)
+#include "plugin_development/dlgetnflowincludes.typ"
+#pagebreak(weak: true)
+#include "plugin_development/dlgetnflowlibraries.typ"
 #pagebreak(weak: true)
 #include "sink/display.typ"
 #pagebreak(weak: true)

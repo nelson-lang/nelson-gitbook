@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nflow_tutorial_continuous</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nflow_tutorial_continuous</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Tutoriel 2 sur 3 : simuler un système continu et choisir un solveur.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Tutoriel : construire un système du premier ordre avec rebouclage, puis choisir un solveur.
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Ce deuxième tutoriel construit un système continu et montre comment le solveur change sa façon d'être intégré. Le modèle est un retard du premier ordre : une entrée en échelon pilote un état qui tend vers l'entrée avec la constante de temps tau. L'équation est dx/dt = (u - x) / tau, que vous construisez avec un Sum, un Gain et un Integrator reliés en boucle de rebouclage. Il suppose que vous avez fait <b>nflow_tutorial_first_model</b>.</p>
+    <p><b>Poser les blocs</b></p>
+    
+      <li>Depuis le groupe <b>Source</b>, faites glisser un bloc <b>Step</b> sur le diagramme.</li>
+      <li>Depuis le groupe <b>Math</b>, faites glisser un bloc <b>Sum</b> et un bloc <b>Gain</b>.</li>
+      <li>Depuis le groupe <b>Continuous</b>, faites glisser un bloc <b>Integrator</b>.</li>
+      <li>Depuis le groupe <b>Sinks</b>, faites glisser un bloc <b>Scope</b>.</li>
+    
+    <p><b>Régler les paramètres des blocs</b></p>
+    <p>Sélectionnez le bloc <b>Sum</b> et réglez ses signes sur un plus et un moins, afin qu'il calcule l'entrée moins l'état rebouclé. Sélectionnez le bloc <b>Gain</b> et réglez <b>Gain</b> sur 1 / tau ; pour tau = 0,5 s, réglez-le sur 2. Laissez l'<b>Integrator</b> avec une condition initiale de 0.</p>
+    <p><b>Relier les blocs</b></p>
+    
+      <li>Reliez la sortie du <b>Step</b> à l'entrée plus du <b>Sum</b>.</li>
+      <li>Reliez la sortie du <b>Sum</b> au <b>Gain</b>, et la sortie du <b>Gain</b> à l'<b>Integrator</b>.</li>
+      <li>Reliez la sortie de l'<b>Integrator</b> au <b>Scope</b>, et aussi à l'entrée moins du <b>Sum</b> pour fermer la boucle.</li>
+    
+    <p>Le fil qui part de l'Integrator vers le Sum est le chemin de rebouclage. C'est lui qui fait que l'état se stabilise au lieu de croître sans limite.</p>
+    <p><img src="./nflow_tutorial_continuous_diagram.png" width="680" style="max-width:680px;width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Exécuter avec le moteur par défaut</b></p>
+    <p>Réglez <b>Temps d'arrêt (s)</b> sur environ 5 dans l'onglet Modèle et appuyez sur <b>Exécuter</b>. Sans solveur sélectionné, nflow utilise le moteur discret à pas fixe, et chaque bloc continu s'intègre avec un pas d'Euler propre au bloc, au <b>Temps d'échantillonnage (s)</b> du modèle. Le Scope montre l'état qui monte vers la valeur de l'échelon selon une courbe exponentielle.</p>
+    <p><b>Choisir un solveur</b></p>
+    <p>Ouvrez l'onglet Modèle et réglez le <b>Solveur</b>. La valeur par défaut (discrete) conserve le moteur à pas fixe. Choisissez <b>ode4</b> pour une intégration Runge-Kutta d'ordre quatre à pas fixe, plus précise qu'Euler au même pas. Choisissez <b>ode45</b> pour un pas adaptatif piloté par les tolérances. Quand un solveur adaptatif est sélectionné, réglez <b>Tolérance relative</b> et <b>Tolérance absolue</b>, ainsi qu'un plafond optionnel <b>Pas maximal (0 = auto)</b>. Des tolérances plus serrées donnent une trajectoire plus précise au prix de plus de sous-pas. Voir <b>nflow_solvers</b> pour la liste complète et la correspondance de chaque solveur avec le code C et Rust généré.</p>
+    <p><img src="./nflow_tutorial_continuous_solver.png" width="260" style="max-width:260px;width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Comparer le pas</b></p>
+    <p>Réduisez le <b>Temps d'échantillonnage (s)</b> et relancez avec le moteur discret pour voir le résultat d'Euler se rapprocher de celui d'ode4. C'est l'arbitrage qu'un solveur gère pour vous : la précision contre le nombre de pas.</p>
+    <p><b>Pour aller plus loin</b></p>
+    <p>Ajoutez un second Integrator et un gain de rebouclage pour obtenir un système du second ordre tel qu'un système masse-ressort-amortisseur, puis poursuivez avec <b>nflow_tutorial_dashboard</b> pour piloter le modèle avec des commandes en direct pendant l'exécution.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Ouvrir un modèle continu et essayer différents solveurs dessus.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks', 'root'), '/examples/causal/Second_Order_Responses_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../nflow_gui/nflow_solvers.html">nflow_solvers</a><a class="see-also-link" href="../nflow_gui/nflow_multirate.html">nflow_multirate</a><a class="see-also-link" href="../nflow_gui/1_nflow_tutorial_first_model.html">nflow_tutorial_first_model</a><a class="see-also-link" href="../nflow_gui/3_nflow_tutorial_dashboard.html">nflow_tutorial_dashboard</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

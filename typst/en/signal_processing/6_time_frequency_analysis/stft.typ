@@ -31,7 +31,7 @@ Short-time Fourier transform.
 #strong[stft]; splits the input vector into overlapping windowed frames and computes one FFT per frame. The output can be centered, two-sided, or one-sided.
 
 
-== Example
+== Examples
 
 ``````matlab
 
@@ -39,6 +39,14 @@ Short-time Fourier transform.
 
 ``````
 
+Display the short-time Fourier transform.
+
+``````matlab
+stft(sin((0:127)' * 0.2), 10, 'Window', hamming(16), 'OverlapLength', 8, 'FFTLength', 32, 'FrequencyRange', 'onesided');
+``````
+
+
+#align(center)[#image("stft.svg")]
 
 == See also
 

@@ -36,6 +36,7 @@ f = figure();
 plot(lon, lat);
 axis equal
 ```
+<img src="ellipse1.svg" align="middle"/>
 
 
 ## 🔗 See also

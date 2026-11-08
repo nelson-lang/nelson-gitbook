@@ -61,6 +61,7 @@ dbstep nlines
     <p>
       <b>dbstep nlines</b> exécute le nombre spécifié de lignes, s'interrompant à
       tout point d'arrêt rencontré.</p>
+    <p>Hors d'une session de débogage, <b>dbstep</b> lève <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Debug commands only allowed when stopped in debug mode.</code> Quand le pas est tapé à l'invite <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">K&gt;&gt;</code>, la console affiche la ligne qui va s'exécuter, sous la forme <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">4   r = r * 2;</code> ; un pas déclenché depuis l'éditeur déplace la flèche sans rien afficher. À un arrêt sur une erreur non attrapée, <b>dbstep</b> termine la session.</p>
   </div>
 </div>
 <div class="section">
@@ -123,6 +124,10 @@ dbstep in</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>version initiale</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>message uniforme hors session de débogage, écho de la ligne à chaque pas, termine la session à un arrêt sur erreur</td>
 </tr>
 </table>
 </div>

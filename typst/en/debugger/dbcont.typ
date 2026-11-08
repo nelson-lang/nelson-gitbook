@@ -16,6 +16,8 @@ Resume execution from a paused breakpoint.
 
  Note: If you want to edit a file during debugging, it is recommended to first exit debug mode using #strong[dbquit]; to avoid unexpected behavior.
 
+ Outside a debug session, #strong[dbcont]; raises #raw("Debug commands only allowed when stopped in debug mode."); At a stop on an uncaught error, #strong[dbcont]; ends the session without displaying the error again; at a stop on a caught error, execution resumes in the #raw("catch"); block.
+
 
 == Example
 
@@ -45,6 +47,7 @@ dbcont
   columns: 2,
   table.header([Version], [Description]),
   [1.16.0], [initial version],
+  [2.0.0], [uniform message outside a debug session, behaviour at error stops],
 )
 
 // Author: Allan CORNET

@@ -19,34 +19,65 @@
 </head>
 <body>
 <a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">debugging workflow</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Debugging workflow for Nelson code files.</div></div>
+<div class="section syntax-section"><div class="subtitle">Debugging workflow for Nelson code files in the editor.</div></div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
     <p>      The Nelson debugger provides interactive tools to diagnose and fix
       problems in scripts and functions by controlling execution and
-      inspecting program state.</p>
-    <p>      A typical debugging workflow consists of preparing the code,
-      pausing execution at specific locations, examining variable values,
-      stepping through instructions, and resuming or stopping execution.</p>
-    <p>      Before starting a debugging session, ensure that all code files
-      are saved and accessible from the current folder or search path.
-      Unsaved changes may not be taken into account when running code
-      from the command line.</p>
-    <p>      Execution can be paused by setting breakpoints or interrupting
-      a running program. When execution is paused, Nelson enters debug
-      mode and the command prompt changes to indicate that the debugger
-      has control.</p>
-    <p>      While execution is paused, the current line has not yet been
-      executed. You can inspect variables in the current workspace,
-      execute code line by line, step into or out of functions, or
-      continue execution until the next breakpoint.</p>
-    <p>      Each function has its own workspace. When stepping into a function,
-      the active workspace changes to reflect the function context.</p>
-    <p>      After identifying the problem, end the debugging session to return
-      to normal execution mode. Ending the session restores the standard
-      command prompt and clears the debugger context.</p>
+      inspecting program state. The Qt desktop and the web desktop expose
+      the same controls, keys, marker colours and menu labels.</p>
+    <p>      Before starting a debugging session, save the code files. Breakpoints
+      belong to the saved file: while a file has unsaved changes its markers
+      turn dark gray (invalid) and are re-applied to their new lines when the
+      file is saved. Saving a file while execution is paused ends the
+      debugging session.</p>
+    <p><b>Breakpoints</b></p>
+    <p>      Click in the left margin next to a line number, or press
+      <b>F12</b> on the line, to set or clear a standard breakpoint (red).
+      A breakpoint requested on a comment, a blank line or a
+      <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">function</code> line moves to the next executable line; the
+      <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">end</code> of a loop or of a function is a stop line of its own.
+      Lines such as <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">else</code>, <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">elseif</code>, <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">case</code>,
+      <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">otherwise</code> and <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">catch</code> move to the next statement.</p>
+    <p>      Right-click the margin to open the breakpoint menu:
+      <b>Set/Clear Breakpoint</b>, <b>Set/Modify Condition...</b> (orange
+      conditional breakpoint: execution pauses only when the expression is
+      true; an expression that fails or is not a scalar prints a warning and
+      pauses), <b>Enable/Disable Breakpoint</b> (light gray when disabled),
+      <b>Enable/Disable All Breakpoints in File</b>,
+      <b>Clear All Breakpoints in File</b> and <b>Clear All Breakpoints</b>.
+      The same operations are available from the command line with
+      <b>dbstop</b>, <b>dbclear</b> and <b>dbstatus</b>; the editor and the
+      Breakpoints panel follow them.</p>
+    <p>      <b>Pause on Errors</b> (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dbstop if error</code>) pauses on an
+      uncaught error: the error is displayed, then the line; the workspace of
+      the failing function can be inspected and the session ends with
+      <b>Continue</b>, <b>Step</b> or <b>Stop</b>. <b>Pause on Caught Errors</b>
+      (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dbstop if caught error</code>) pauses before a
+      <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">catch</code> block runs; <b>Continue</b> resumes in it.</p>
+    <p><b>Running and stepping</b></p>
+    <p>      When execution pauses, the file opens in the editor, the current line is
+      highlighted in green with an arrow in the margin, and the command prompt
+      becomes <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">K&gt;&gt;</code>. The current line has not been executed yet.</p>
+    <p>      A stop reached from a command typed in the console also prints the line
+      there, as <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">3   r = r * 2;</code>; a stop reached from the editor (Step,
+      Continue, Run to Here, Run) moves the arrow without printing it. The printed
+      line number is a link: a click opens the editor at that line.</p>
+    <p>      Keys: <b>F5</b> Run, or Continue while paused;
+      <b>F10</b> Step; <b>F11</b> Step In; <b>Shift+F11</b> Step Out;
+      <b>Shift+F5</b> Stop (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dbquit</code>); <b>F12</b> Set/Clear
+      Breakpoint; <b>F9</b> Evaluate Selection; <b>F6</b> Pause, which pauses
+      a running program at its next statement; <b>Ctrl+F10</b> Run to Here,
+      which runs to the cursor line and pauses before it.</p>
+    <p>      While paused, hovering a variable name shows its value (data tip); the
+      Breakpoints panel lists every breakpoint with its condition and enabled
+      state, and the Call Stack panel lists the active functions (click a
+      frame to open it). Each function has its own workspace: stepping into a
+      function switches the Workspace browser to it.</p>
+    <p>      Breakpoints last until they are cleared or Nelson exits; they are not
+      saved between sessions.</p>
   </div>
 </div>
 <div class="section">
@@ -75,12 +106,26 @@ title("Mean of Random Uniform Data")</code></pre>
 <div class="example-title">Start debugging by calling the demo_debugger function from the command line or "Run file" button.</div>
 <img src="./stop_at_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
+<div class="example">
+<div class="example-title">Conditional breakpoint and pause on errors from the command line.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop in demo_debugger at 5 if n &gt; 10
+dbstop if error
+dbstatus
+% Breakpoint for demo_debugger is on line 5.
+%   Breakpoint on line 5 has conditional expression "n &gt; 10".
+%
+% Stop if error.
+dbclear all</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
 </div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">🔗</span>See Also</div>
 <div>
-<a class="see-also-link" href="../text_editor/edit.html">edit</a><a class="see-also-link" href="../debugger/dbstop.html">dbstop</a><a class="see-also-link" href="../debugger/dbstep.html">dbstep</a><a class="see-also-link" href="../debugger/dbcont.html">dbcont</a><a class="see-also-link" href="../debugger/dbquit.html">dbquit</a><a class="see-also-link" href="../debugger/dbstatus.html">dbstatus</a>
+<a class="see-also-link" href="../text_editor/edit.html">edit</a><a class="see-also-link" href="../debugger/dbstop.html">dbstop</a><a class="see-also-link" href="../debugger/dbclear.html">dbclear</a><a class="see-also-link" href="../debugger/dbstep.html">dbstep</a><a class="see-also-link" href="../debugger/dbcont.html">dbcont</a><a class="see-also-link" href="../debugger/dbquit.html">dbquit</a><a class="see-also-link" href="../debugger/dbstatus.html">dbstatus</a>
 </div>
 </div>
 <div class="section">
@@ -94,6 +139,10 @@ title("Mean of Random Uniform Data")</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>Initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Conditional breakpoints, enable/disable, pause on errors, Pause, Run to Here, data tips, function keys and markers, web editor parity.</td>
 </tr>
 </table>
 </div>

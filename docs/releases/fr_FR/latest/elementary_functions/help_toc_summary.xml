@@ -139,6 +139,7 @@
         <keyword name="isnan" link="7_indexing_dimensions/isnan.html" description="Recherche les éléments Not a Number."/>
         <keyword name="isrow" link="7_indexing_dimensions/isrow.html" description="Déterminer si l'entrée est un vecteur ligne."/>
         <keyword name="isscalar" link="7_indexing_dimensions/isscalar.html" description="Tester si l'entrée est un scalaire"/>
+        <keyword name="issortedrows" link="7_indexing_dimensions/issortedrows.html" description="Détermine si les lignes d'une matrice sont triées."/>
         <keyword name="istril" link="7_indexing_dimensions/istril.html" description="Tester si une matrice est triangulaire infÃ©rieure"/>
         <keyword name="istriu" link="7_indexing_dimensions/istriu.html" description="Vérifie si une matrice est triangulaire supérieure."/>
         <keyword name="isvector" link="7_indexing_dimensions/isvector.html" description="Vérifie si l'entrée est un vecteur."/>
@@ -153,6 +154,7 @@
         <keyword name="sortrows" link="7_indexing_dimensions/sortrows.html" description="Trier les lignes d'un tableau."/>
         <keyword name="sub2ind" link="7_indexing_dimensions/sub2ind.html" description="Indices d'une matrice vers un indice linéaire"/>
         <keyword name="substruct" link="7_indexing_dimensions/substruct.html" description="Crée un argument structure pour subsasgn ou subsref"/>
+        <keyword name="topkrows" link="7_indexing_dimensions/topkrows.html" description="Les k premières lignes triées d'une matrice."/>
         <keyword name="tril" link="7_indexing_dimensions/tril.html" description="Partie triangulaire inférieure d'une matrice"/>
         <keyword name="triu" link="7_indexing_dimensions/triu.html" description="Partie triangulaire supérieure d'une matrice"/>
       </section>

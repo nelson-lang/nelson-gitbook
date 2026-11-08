@@ -23,6 +23,8 @@ function editor.
 
  #strong[edit(dirname)]; opens all .m available in #strong[dirname];.
 
+ A Notebook document (#strong[.nlx];) opens in the Notebook editor, not in the text editor: a tab of the web desktop, or the Notebook window of the Qt desktop. Without a desktop (nelson-cli, nelson-adv-cli) it is an error.
+
 
 == Example
 

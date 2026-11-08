@@ -140,7 +140,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - #nlink(<elementary_functions:7_indexing_dimensions.ipermute>)[ipermute]: Inverse permute array dimensions.
 - #nlink(<elementary_functions:7_indexing_dimensions.isapprox>)[isapprox]: Return true if arguments are approximately equal, within the precision.
 - #nlink(<elementary_functions:7_indexing_dimensions.iscolumn>)[iscolumn]: Determine whether input is column vector.
-- #nlink(<elementary_functions:7_indexing_dimensions.isdiag>)[istriu]: Checks if matrix is diagonal.
+- #nlink(<elementary_functions:7_indexing_dimensions.isdiag>)[isdiag]: Checks if matrix is diagonal.
 - #nlink(<elementary_functions:7_indexing_dimensions.isequal>)[isequal]: Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
 - #nlink(<elementary_functions:7_indexing_dimensions.isequaln>)[isequaln]: Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
 - #nlink(<elementary_functions:7_indexing_dimensions.isequalto>)[isequalto]: Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
@@ -151,6 +151,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - #nlink(<elementary_functions:7_indexing_dimensions.isnan>)[isnan]: Check for Not a Number entries.
 - #nlink(<elementary_functions:7_indexing_dimensions.isrow>)[isrow]: Determine whether input is row vector.
 - #nlink(<elementary_functions:7_indexing_dimensions.isscalar>)[isscalar]: Check if the input is a scalar
+- #nlink(<elementary_functions:7_indexing_dimensions.issortedrows>)[issortedrows]: Determine whether matrix rows are sorted.
 - #nlink(<elementary_functions:7_indexing_dimensions.istril>)[istril]: Checks if matrix is lower triangular.
 - #nlink(<elementary_functions:7_indexing_dimensions.istriu>)[istriu]: Checks if matrix is upper triangular.
 - #nlink(<elementary_functions:7_indexing_dimensions.isvector>)[isvector]: Checks input is vector.
@@ -165,6 +166,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - #nlink(<elementary_functions:7_indexing_dimensions.sortrows>)[sortrows]: Sort rows of an array.
 - #nlink(<elementary_functions:7_indexing_dimensions.sub2ind>)[sub2ind]: Matrix subscript values to linear index
 - #nlink(<elementary_functions:7_indexing_dimensions.substruct>)[substruct]: Create structure argument for subsasgn or subsref
+- #nlink(<elementary_functions:7_indexing_dimensions.topkrows>)[topkrows]: Top k sorted rows of a matrix.
 - #nlink(<elementary_functions:7_indexing_dimensions.tril>)[tril]: Lower triangular part of matrix
 - #nlink(<elementary_functions:7_indexing_dimensions.triu>)[triu]: Upper triangular part of matrix
 
@@ -375,6 +377,8 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/isscalar.typ"
 #pagebreak(weak: true)
+#include "7_indexing_dimensions/issortedrows.typ"
+#pagebreak(weak: true)
 #include "7_indexing_dimensions/istril.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/istriu.typ"
@@ -402,6 +406,8 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 #include "7_indexing_dimensions/sub2ind.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/substruct.typ"
+#pagebreak(weak: true)
+#include "7_indexing_dimensions/topkrows.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/tril.typ"
 #pagebreak(weak: true)

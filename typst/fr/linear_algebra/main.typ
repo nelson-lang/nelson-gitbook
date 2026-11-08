@@ -22,6 +22,7 @@ Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites
 - #nlink(<linear_algebra:1_linear_systems.gradient>)[gradient]: Gradient numérique.
 - #nlink(<linear_algebra:1_linear_systems.inv>)[inv]: Inverse de matrice.
 - #nlink(<linear_algebra:1_linear_systems.kron>)[kron]: Produit tensoriel de Kronecker.
+- #nlink(<linear_algebra:1_linear_systems.linsolve>)[linsolve]: Résout un système d'équations linéaires.
 - #nlink(<linear_algebra:1_linear_systems.null>)[null]: Noyau d'une matrice
 - #nlink(<linear_algebra:1_linear_systems.orth>)[orth]: Base orthonormée de l'espace image d'une matrice.
 - #nlink(<linear_algebra:1_linear_systems.rank>)[rank]: Rang d'une matrice.
@@ -131,6 +132,8 @@ Fonctions de factorisation incomplete utilisees comme preconditionneurs.
 #include "1_linear_systems/inv.typ"
 #pagebreak(weak: true)
 #include "1_linear_systems/kron.typ"
+#pagebreak(weak: true)
+#include "1_linear_systems/linsolve.typ"
 #pagebreak(weak: true)
 #include "1_linear_systems/null.typ"
 #pagebreak(weak: true)

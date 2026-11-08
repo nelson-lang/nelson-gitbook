@@ -49,7 +49,7 @@ The workspace keeps the diagram in the center, with the block library on the lef
 
 == See also
 
-#nlink(<nflow_gui:nflow_wire_editing>)[nflow\_wire\_editing];, #nlink(<nflow_gui:nflow_solvers>)[nflow\_solvers];.
+#nlink(<nflow_gui:1_nflow_tutorial_first_model>)[nflow\_tutorial\_first\_model];, #nlink(<nflow_gui:nflow_wire_editing>)[nflow\_wire\_editing];, #nlink(<nflow_gui:nflow_solvers>)[nflow\_solvers];.
 
 == History
 

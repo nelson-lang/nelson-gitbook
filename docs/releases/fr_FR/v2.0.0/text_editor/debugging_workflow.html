@@ -2,7 +2,7 @@
 <html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>débogage</title>
+<title>debugging workflow</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
 <script src="nelson_help.js"></script><style>
@@ -18,46 +18,85 @@
             </style>
 </head>
 <body>
-<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">débogage</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Flux de travail de débogage pour les fichiers de code Nelson.</div></div>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">debugging workflow</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Déroulement d'une session de débogage des fichiers Nelson dans l'éditeur.</div></div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-    <p>      Le débogueur Nelson fournit des outils interactifs pour diagnostiquer et corriger
-      les problèmes dans les scripts et les fonctions en contrôlant l'exécution et
-      en inspectant l'état du programme.</p>
-    <p>      Un flux de travail typique de débogage consiste à préparer le code,
-      à interrompre l'exécution à des emplacements spécifiques, à examiner les valeurs des variables,
-      à exécuter les instructions pas à pas, et à reprendre ou arrêter l'exécution.</p>
-    <p>      Avant de commencer une session de débogage, assurez-vous que tous les fichiers de code
-      sont enregistrés et accessibles depuis le dossier actuel ou le chemin de recherche.
-      Les modifications non enregistrées peuvent ne pas être prises en compte lors de l'exécution du code
-      depuis la ligne de commande.</p>
-    <p>      L'exécution peut être interrompue en définissant des points d'arrêt ou en interrompant
-      un programme en cours d'exécution. Lorsque l'exécution est interrompue, Nelson entre en mode débogage
-      et l'invite de commande change pour indiquer que le débogueur
-      a le contrôle.</p>
-    <p>      Pendant que l'exécution est interrompue, la ligne courante n'a pas encore été
-      exécutée. Vous pouvez inspecter les variables dans l'espace de travail actuel,
-      exécuter le code ligne par ligne, entrer ou sortir des fonctions, ou
-      continuer l'exécution jusqu'au prochain point d'arrêt.</p>
-    <p>      Chaque fonction a son propre espace de travail. Lorsqu'on entre dans une fonction,
-      l'espace de travail actif change pour refléter le contexte de la fonction.</p>
-    <p>      Après avoir identifié le problème, terminez la session de débogage pour revenir
-      au mode d'exécution normal. La fin de la session restaure l'invite de commande standard
-      et efface le contexte du débogueur.</p>
+    <p>      Le débogueur de Nelson fournit des outils interactifs pour diagnostiquer
+      et corriger les scripts et fonctions en contrôlant l'exécution et en
+      inspectant l'état du programme. Le bureau Qt et le bureau web exposent
+      les mêmes commandes, touches, couleurs de marqueurs et libellés.</p>
+    <p>      Avant de déboguer, enregistrez les fichiers. Les points d'arrêt
+      appartiennent au fichier enregistré : tant qu'un fichier a des
+      modifications non enregistrées, ses marqueurs deviennent gris foncé
+      (invalides) et sont réappliqués sur leurs nouvelles lignes à
+      l'enregistrement. Enregistrer un fichier pendant une pause termine la
+      session de débogage.</p>
+    <p><b>Points d'arrêt</b></p>
+    <p>      Cliquez dans la marge gauche à côté du numéro de ligne, ou appuyez sur
+      <b>F12</b> sur la ligne, pour poser ou retirer un point d'arrêt standard
+      (rouge). Un point d'arrêt demandé sur un commentaire, une ligne vide ou
+      une ligne <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">function</code> glisse vers la ligne exécutable suivante ;
+      le <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">end</code> d'une boucle ou d'une fonction est une ligne d'arrêt
+      à part entière. Les lignes <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">else</code>, <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">elseif</code>,
+      <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">case</code>, <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">otherwise</code> et <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">catch</code> glissent
+      vers l'instruction suivante.</p>
+    <p>      Un clic droit dans la marge ouvre le menu des points d'arrêt :
+      <b>Set/Clear Breakpoint</b>, <b>Set/Modify Condition...</b> (point
+      d'arrêt conditionnel, orange : l'exécution ne s'arrête que si
+      l'expression est vraie ; une expression en erreur ou non scalaire
+      affiche un avertissement et s'arrête), <b>Enable/Disable
+      Breakpoint</b> (gris clair quand désactivé), <b>Enable/Disable All
+      Breakpoints in File</b>, <b>Clear All Breakpoints in File</b> et
+      <b>Clear All Breakpoints</b>. Les mêmes opérations existent en ligne de
+      commande avec <b>dbstop</b>, <b>dbclear</b> et <b>dbstatus</b> ;
+      l'éditeur et le panneau Breakpoints les suivent.</p>
+    <p>      <b>Pause on Errors</b> (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dbstop if error</code>) s'arrête sur une
+      erreur non attrapée : l'erreur est affichée, puis la ligne ; l'espace de
+      travail de la fonction fautive reste inspectable et la session se
+      termine avec <b>Continue</b>, <b>Step</b> ou <b>Stop</b>. <b>Pause on
+      Caught Errors</b> (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dbstop if caught error</code>) s'arrête avant
+      l'exécution d'un bloc <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">catch</code> ; <b>Continue</b> reprend dans
+      celui-ci.</p>
+    <p><b>Exécution pas à pas</b></p>
+    <p>      Quand l'exécution s'arrête, le fichier s'ouvre dans l'éditeur, la ligne
+      courante est surlignée en vert avec une flèche dans la marge, et
+      l'invite devient <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">K&gt;&gt;</code>. La ligne courante n'a pas encore été
+      exécutée.</p>
+    <p>      Un arrêt obtenu par une commande tapée dans la console y affiche aussi la
+      ligne, sous la forme <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">3   r = r * 2;</code> ; un arrêt obtenu depuis
+      l'éditeur (Step, Continue, Run to Here, Run) déplace la flèche sans rien
+      afficher. Le numéro de ligne imprimé est un lien : un clic ouvre l'éditeur
+      à cette ligne.</p>
+    <p>      Touches : <b>F5</b> Run, ou Continue pendant une pause ;
+      <b>F10</b> Step ; <b>F11</b> Step In ; <b>Shift+F11</b> Step Out ;
+      <b>Shift+F5</b> Stop (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dbquit</code>) ; <b>F12</b> Set/Clear
+      Breakpoint ; <b>F9</b> évaluer la sélection ; <b>F6</b> Pause, qui
+      arrête un programme en cours à sa prochaine instruction ; <b>Ctrl+F10</b>
+      Run to Here, qui exécute jusqu'à la ligne du curseur et s'arrête avant
+      elle.</p>
+    <p>      Pendant une pause, survoler un nom de variable affiche sa valeur (data
+      tip) ; le panneau Breakpoints liste tous les points d'arrêt avec leur
+      condition et leur état, et le panneau Call Stack liste les fonctions
+      actives (cliquer sur une trame l'ouvre). Chaque fonction a son propre
+      espace de travail : entrer dans une fonction bascule le navigateur
+      d'espace de travail sur elle.</p>
+    <p>      Les points d'arrêt durent jusqu'à leur suppression ou la fin de Nelson ;
+      ils ne sont pas conservés entre deux sessions.</p>
   </div>
 </div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
-<div class="example-title"> Crée demo_debugger.m pour des exemples de débogage.</div>
+<div class="example-title">Crée demo_debugger.m pour les exemples de débogage.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">n = 50;
 r = rand(n,1);
 plot(r)
+
 m = mean(r);
 hold on
 plot([0,n],[m,m])
@@ -67,19 +106,33 @@ title("Mean of Random Uniform Data")</code></pre>
 </div>
 </div>
 <div class="example">
-<div class="example-title">Définissez un point d'arrêt dans la fonction demo_debugger. Cliquez sur la marge gauche à côté du numéro de ligne pour basculer un point d'arrêt.</div>
+<div class="example-title">Posez un point d'arrêt dans la fonction demo_debugger : cliquez dans la marge gauche à côté du numéro de ligne.</div>
 <img src="./set_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
 <div class="example">
-<div class="example-title">Démarrez le débogage en appelant la fonction demo_debugger depuis la ligne de commande ou le bouton "Exécuter le fichier".</div>
+<div class="example-title">Lancez le débogage en appelant demo_debugger depuis la ligne de commande ou le bouton "Run file".</div>
 <img src="./stop_at_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Point d'arrêt conditionnel et arrêt sur erreur depuis la ligne de commande.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop in demo_debugger at 5 if n &gt; 10
+dbstop if error
+dbstatus
+% Breakpoint for demo_debugger is on line 5.
+%   Breakpoint on line 5 has conditional expression "n &gt; 10".
+%
+% Stop if error.
+dbclear all</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
-<a class="see-also-link" href="../text_editor/edit.html">edit</a><a class="see-also-link" href="../debugger/dbstop.html">dbstop</a><a class="see-also-link" href="../debugger/dbstep.html">dbstep</a><a class="see-also-link" href="../debugger/dbcont.html">dbcont</a><a class="see-also-link" href="../debugger/dbquit.html">dbquit</a><a class="see-also-link" href="../debugger/dbstatus.html">dbstatus</a>
+<a class="see-also-link" href="../text_editor/edit.html">edit</a><a class="see-also-link" href="../debugger/dbstop.html">dbstop</a><a class="see-also-link" href="../debugger/dbclear.html">dbclear</a><a class="see-also-link" href="../debugger/dbstep.html">dbstep</a><a class="see-also-link" href="../debugger/dbcont.html">dbcont</a><a class="see-also-link" href="../debugger/dbquit.html">dbquit</a><a class="see-also-link" href="../debugger/dbstatus.html">dbstatus</a>
 </div>
 </div>
 <div class="section">
@@ -93,6 +146,10 @@ title("Mean of Random Uniform Data")</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>Version initiale</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Points d'arrêt conditionnels, activation/désactivation, arrêt sur erreur, Pause, Run to Here, data tips, touches de fonction et marqueurs, parité de l'éditeur web.</td>
 </tr>
 </table>
 </div>

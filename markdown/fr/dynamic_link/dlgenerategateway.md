@@ -19,10 +19,10 @@ Génère une gateway C++
 
 ## 💡 Exemple
 
-See module skeleton for example
+Génère la passerelle d'un module nommé my_module avec deux fonctions natives
 
 ```matlab
-dlgenerategateway(tempdir(), 'module_skeleton', {{'cpp_sum', 1, 2}; {'cpp_sub', 2, 3}});
+dlgenerategateway(tempdir(), 'my_module', {{'cpp_sum', 1, 2}; {'cpp_sub', 2, 3}});
 text = fileread([tempdir(), 'Gateway.cpp'])
 ```
 

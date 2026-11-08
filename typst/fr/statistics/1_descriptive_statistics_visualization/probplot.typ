@@ -28,6 +28,8 @@ probplot(x)
 ``````
 
 
+#align(center)[#image("probplot.svg")]
+
 == Voir aussi
 
 #nlink(<statistics:1_descriptive_statistics_visualization.qqplot>)[qqplot];, #nlink(<statistics:1_descriptive_statistics_visualization.ecdf>)[ecdf];.

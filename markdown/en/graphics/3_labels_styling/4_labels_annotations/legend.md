@@ -69,7 +69,7 @@ When labels are omitted, labels are taken from the <b>DisplayName</b> property o
 
 'southwest' or 'SW': bottom left. 
 
-Outside locations are also supported: 'northoutside', 'southoutside', 'eastoutside', and 'westoutside'. 
+Outside locations are also supported: 'northoutside', 'southoutside', 'eastoutside', 'westoutside', 'northeastoutside', 'northwestoutside', 'southeastoutside', 'southwestoutside' and 'bestoutside'. 
 
 See [legend properties](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.legend.properties.md) for the complete property list.
 

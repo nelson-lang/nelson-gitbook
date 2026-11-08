@@ -546,6 +546,13 @@
         <keyword name="saturation" link="nonlinear/saturation.html" description="Clamps the input between min and max."/>
         <keyword name="block:saturation" link="nonlinear/saturation.html" description="Clamps the input between min and max." alias="true"/>
       </section>
+      <section name="Native plugin development">
+        <chapter_description>
+    <p>Functions used to build native (C++) block plugins for NFlow.</p>
+  </chapter_description>
+        <keyword name="dlgetnflowincludes" link="plugin_development/dlgetnflowincludes.html" description="Returns the include directories required to build a native nflow block plugin."/>
+        <keyword name="dlgetnflowlibraries" link="plugin_development/dlgetnflowlibraries.html" description="Returns the libraries a native nflow block plugin must link against."/>
+      </section>
       <section name="Sink blocks">
         <chapter_description>
     <p>Blocks that consume, display, or name signals.</p>

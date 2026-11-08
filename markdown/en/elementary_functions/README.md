@@ -168,7 +168,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - [ipermute](7_indexing_dimensions/ipermute.md) - Inverse permute array dimensions.
 - [isapprox](7_indexing_dimensions/isapprox.md) - Return true if arguments are approximately equal, within the precision.
 - [iscolumn](7_indexing_dimensions/iscolumn.md) - Determine whether input is column vector.
-- [istriu](7_indexing_dimensions/isdiag.md) - Checks if matrix is diagonal.
+- [isdiag](7_indexing_dimensions/isdiag.md) - Checks if matrix is diagonal.
 - [isequal](7_indexing_dimensions/isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
 - [isequaln](7_indexing_dimensions/isequaln.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
 - [isequalto](7_indexing_dimensions/isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
@@ -179,6 +179,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - [isnan](7_indexing_dimensions/isnan.md) - Check for Not a Number entries.
 - [isrow](7_indexing_dimensions/isrow.md) - Determine whether input is row vector.
 - [isscalar](7_indexing_dimensions/isscalar.md) - Check if the input is a scalar
+- [issortedrows](7_indexing_dimensions/issortedrows.md) - Determine whether matrix rows are sorted.
 - [istril](7_indexing_dimensions/istril.md) - Checks if matrix is lower triangular.
 - [istriu](7_indexing_dimensions/istriu.md) - Checks if matrix is upper triangular.
 - [isvector](7_indexing_dimensions/isvector.md) - Checks input is vector.
@@ -193,6 +194,7 @@ Functions for indexing, dimensions, shape checks, rearrangement, and structural 
 - [sortrows](7_indexing_dimensions/sortrows.md) - Sort rows of an array.
 - [sub2ind](7_indexing_dimensions/sub2ind.md) - Matrix subscript values to linear index
 - [substruct](7_indexing_dimensions/substruct.md) - Create structure argument for subsasgn or subsref
+- [topkrows](7_indexing_dimensions/topkrows.md) - Top k sorted rows of a matrix.
 - [tril](7_indexing_dimensions/tril.md) - Lower triangular part of matrix
 - [triu](7_indexing_dimensions/triu.md) - Upper triangular part of matrix
 

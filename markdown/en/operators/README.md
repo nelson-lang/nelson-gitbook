@@ -19,8 +19,10 @@ This module enables flexible manipulation of data structures and numerical array
   
 - [any](any.md) - any of the elements of a matrix satisfy some condition.
 - [bitand](bitand.md) - Bit-wise AND
+- [bitcmp](bitcmp.md) - Bitwise complement.
 - [bitget](bitget.md) - Get selected bits.
 - [bitor](bitor.md) - Bit-wise OR
+- [bitset](bitset.md) - Set bit at a specified position.
 - [bitxor](bitxor.md) - Bit-wise XOR
 - [cat](cat.md) - Concatenate arrays.
 - [colon](colon.md) - colon operator ':'.

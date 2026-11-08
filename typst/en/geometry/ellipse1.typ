@@ -38,6 +38,8 @@ axis equal
 ``````
 
 
+#align(center)[#image("ellipse1.svg")]
+
 == See also
 
 #nlink(<geometry:reckon>)[reckon];, #nlink(<geometry:axes2ecc>)[axes2ecc];.

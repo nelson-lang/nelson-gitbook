@@ -2,11 +2,14 @@
 <help_summary>
   <toc>
     <module>nflow_engine</module>
-    <section name="nflow engine">
+    <section name="NFlow engine">
       <chapter_description><p>Programmatic creation and editing of nflow block-diagram models.</p>
     <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p></chapter_description>
+      <keyword name="NFlow.addlibrarypath" link="NFlow.addlibrarypath.html" description="Add an nflow block library search path."/>
       <keyword name="NFlow.exportfmu" link="NFlow.exportfmu.html" description="Export an nflow model as an FMI 3.0 Co-Simulation source FMU."/>
+      <keyword name="NFlow.librarypaths" link="NFlow.librarypaths.html" description="Return the nflow block library search paths."/>
       <keyword name="NFlow.plotScopes" link="NFlow.plotScopes.html" description="Open one figure per scope of an nflow simulation result."/>
+      <keyword name="NFlow.rmlibrarypath" link="NFlow.rmlibrarypath.html" description="Remove an nflow block library search path."/>
       <keyword name="add_block" link="add_block.html" description="Add a block to an nflow model from a library source."/>
       <keyword name="add_line" link="add_line.html" description="Connect two block ports in an nflow model."/>
       <keyword name="bdIsDirty" link="bdIsDirty.html" description="Return true when an nflow model has unsaved changes."/>
@@ -25,6 +28,8 @@
       <keyword name="load_system" link="load_system.html" description="Load an nflow model from a .nflow file without opening the editor."/>
       <keyword name="new_system" link="new_system.html" description="Create and load an empty nflow model."/>
       <keyword name="nflow_codegenerate" link="nflow_codegenerate.html" description="Generate standalone C or Rust code from an nflow model."/>
+      <keyword name="nflow_layout" link="nflow_layout.html" description="Automatically arrange the blocks of an nflow (sub)system."/>
+      <keyword name="nflow_reroute" link="nflow_reroute.html" description="Recompute the wire routes of an nflow (sub)system."/>
       <keyword name="save_system" link="save_system.html" description="Save an nflow model to a .nflow file."/>
       <keyword name="set_param" link="set_param.html" description="Set model or block parameters atomically."/>
       <keyword name="sim" link="sim.html" description="Run an nflow simulation of a model and return its results."/>

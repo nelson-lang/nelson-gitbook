@@ -47,6 +47,7 @@ Il fournit aussi l'espace de noms **crypto** : hachages, HMAC, Ed25519 et X25519
 - [exit](exit.md) - Quitte l'environnement Nelson.
 - [feature](feature.md) - Interroge les fonctionnalités disponibles.
 - [inputname](inputname.md) - Renvoie le nom d'une variable d'entrée d'une fonction.
+- [isMATLABReleaseOlderThan](isMATLABReleaseOlderThan.md) - Compare la version courante à une version MATLAB.
 - [isstr](isstr.md) - Détermine si l'entrée est un tableau de caractères (obsolète).
 - [isunicodesupported](isunicodesupported.md) - Indique si Unicode est supporté.
 - [license](license.md) - Affiche les informations de licence.
@@ -66,5 +67,8 @@ Il fournit aussi l'espace de noms **crypto** : hachages, HMAC, Ed25519 et X25519
 - [quit](quit.md) - Ferme l'application Nelson.
 - [run](run.md) - Exécute un script ou un fichier.
 - [sha256](sha256.md) - Calcule le hash SHA-256.
+- [usejava](usejava.md) - Teste la disponibilité d'une fonctionnalité Java.
+- [ver](ver.md) - Informations de version.
+- [verLessThan](verLessThan.md) - Compare la version d'un produit à une chaîne de version.
 - [version](version.md) - Version de l'environnement Nelson.
 

@@ -1,4 +1,4 @@
-# istriu
+# isdiag
 
 Checks if matrix is diagonal.
 
@@ -32,7 +32,7 @@ R = isdiag(A(:,1))
 
 ## 🔗 See also
 
-[istriu](../../elementary_functions/7_indexing_dimensions/isdiag.md), [istril](../../elementary_functions/7_indexing_dimensions/istril.md).
+[istriu](../../elementary_functions/7_indexing_dimensions/istriu.md), [istril](../../elementary_functions/7_indexing_dimensions/istril.md).
 
 ## 🕔 History
 

@@ -3,6 +3,7 @@
 - Types module
   - #nlink(<types:class>)[class]
   - #nlink(<types:cpp_api>)[cpp\_api]
+  - #nlink(<types:inferiorto>)[inferiorto]
   - #nlink(<types:isa>)[isa]
   - #nlink(<types:iscell>)[iscell]
   - #nlink(<types:ischar>)[ischar]
@@ -40,4 +41,5 @@
   - #nlink(<types:nelson.mixin.indexing.RedefinesDot>)[nelson.mixin.indexing.RedefinesDot]
   - #nlink(<types:nelson.mixin.indexing.RedefinesParen>)[nelson.mixin.indexing.RedefinesParen]
   - #nlink(<types:nelson.mixin.util.PropertyGroup>)[nelson.mixin.util.PropertyGroup]
+  - #nlink(<types:superiorto>)[superiorto]
   - #nlink(<types:underlyingType>)[underlyingType]

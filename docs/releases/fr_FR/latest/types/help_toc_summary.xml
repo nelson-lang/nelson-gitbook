@@ -11,6 +11,7 @@
   </chapter_description>
       <keyword name="class" link="class.html" description="Renvoie le nom de classe d'une variable ou cree un objet nomme ancien style."/>
       <keyword name="cpp_api" link="cpp_api.html" description="Conventions de l'API C++ des valeurs pour les types noyau de Nelson."/>
+      <keyword name="inferiorto" link="inferiorto.html" description="Déclare une précédence de classe inférieure."/>
       <keyword name="isa" link="isa.html" description="Renvoie true si une variable a la classe ou le type demande."/>
       <keyword name="iscell" link="iscell.html" description="Renvoie vrai si la variable var est un tableau de cellules."/>
       <keyword name="ischar" link="ischar.html" description="Renvoie vrai si la variable var est un tableau de caractères (char)."/>
@@ -48,6 +49,7 @@
       <keyword name="nelson.mixin.indexing.RedefinesDot" link="nelson.mixin.indexing.RedefinesDot.html" description="Personnaliser l'indexation par point d'une classe."/>
       <keyword name="nelson.mixin.indexing.RedefinesParen" link="nelson.mixin.indexing.RedefinesParen.html" description="Personnaliser l'indexation par parenthèses d'une classe."/>
       <keyword name="nelson.mixin.util.PropertyGroup" link="nelson.mixin.util.PropertyGroup.html" description="Un groupe titré de propriétés pour l'affichage personnalisé d'objets."/>
+      <keyword name="superiorto" link="superiorto.html" description="Déclare une précédence de classe supérieure."/>
       <keyword name="underlyingType" link="underlyingType.html" description="Type sous-jacent d'un tableau"/>
     </section>
   </toc>

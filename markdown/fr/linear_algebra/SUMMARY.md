@@ -8,6 +8,7 @@
     - [gradient](1_linear_systems/gradient.md)
     - [inv](1_linear_systems/inv.md)
     - [kron](1_linear_systems/kron.md)
+    - [linsolve](1_linear_systems/linsolve.md)
     - [null](1_linear_systems/null.md)
     - [orth](1_linear_systems/orth.md)
     - [rank](1_linear_systems/rank.md)

@@ -10,6 +10,7 @@
     - #nlink(<linear_algebra:1_linear_systems.gradient>)[gradient]
     - #nlink(<linear_algebra:1_linear_systems.inv>)[inv]
     - #nlink(<linear_algebra:1_linear_systems.kron>)[kron]
+    - #nlink(<linear_algebra:1_linear_systems.linsolve>)[linsolve]
     - #nlink(<linear_algebra:1_linear_systems.null>)[null]
     - #nlink(<linear_algebra:1_linear_systems.orth>)[orth]
     - #nlink(<linear_algebra:1_linear_systems.rank>)[rank]

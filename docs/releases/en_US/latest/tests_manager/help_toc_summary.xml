@@ -20,9 +20,9 @@
       <keyword name="nelson.unittest.skip" link="nelson_unittest_skip.html" description="Skip the current test."/>
       <keyword name="nelson.unittest.tuneReuse" link="nelson_unittest_tuneReuse.html" description="Calibrate explicit child-process reuse for tests and benches."/>
       <keyword name="nelson.unittest.tuneWeights" link="nelson_unittest_tuneWeights.html" description="Calibrate scheduling weights from measured test durations."/>
+      <keyword name="skip_testsuite" link="skip_testsuite.html" description="Skip test suite on condition"/>
       <keyword name="test_makeref" link="test_makeref.html" description="Creates a '.ref' file for a test"/>
       <keyword name="test_run" link="test_run.html" description="Runs tests"/>
-      <keyword name="skip_testsuite" link="test_skip_testsuite.html" description="Skip test suite on condition"/>
     </section>
   </toc>
 </help_summary>

@@ -31,6 +31,7 @@
       <keyword name="interp1" link="interp1.html" description="1-D data interpolation"/>
       <keyword name="interp2" link="interp2.html" description="Interpolation for 2-D gridded data in meshgrid format"/>
       <keyword name="interp3" link="interp3.html" description="Interpolation for 3-D gridded data in meshgrid format"/>
+      <keyword name="interpft" link="interpft.html" description="1-D interpolation using the FFT method."/>
       <keyword name="interpn" link="interpn.html" description="Interpolation for N-D gridded data in ndgrid format"/>
       <keyword name="isprime" link="isprime.html" description="Determine which array elements are prime."/>
       <keyword name="lcm" link="lcm.html" description="Least common multiple."/>

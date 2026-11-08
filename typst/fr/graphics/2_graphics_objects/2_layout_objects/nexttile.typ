@@ -50,6 +50,8 @@ end
 ``````
 
 
+#align(center)[#image("nexttile.svg")]
+
 == Voir aussi
 
 #nlink(<graphics:2_graphics_objects.2_layout_objects.tiledlayout>)[tiledlayout];, #nlink(<graphics:2_graphics_objects.2_layout_objects.tilenum>)[tilenum];, #nlink(<graphics:2_graphics_objects.2_layout_objects.tilerowcol>)[tilerowcol];.

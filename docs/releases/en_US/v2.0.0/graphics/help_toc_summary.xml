@@ -407,7 +407,9 @@
           <keyword name="camup" link="3_labels_styling/3_interactions_camera_lighting/camup.html" description="Set or query the camera up vector."/>
           <keyword name="camva" link="3_labels_styling/3_interactions_camera_lighting/camva.html" description="Set or query the camera view angle."/>
           <keyword name="camzoom" link="3_labels_styling/3_interactions_camera_lighting/camzoom.html" description="Zoom the camera in or out."/>
+          <keyword name="disableDefaultInteractivity" link="3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.html" description="Disable the built-in axes interactions."/>
           <keyword name="drawnow" link="3_labels_styling/3_interactions_camera_lighting/drawnow.html" description="Update figures and process callbacks"/>
+          <keyword name="enableDefaultInteractivity" link="3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.html" description="Enable the built-in axes interactions."/>
           <keyword name="Managing Callback Interruptions in Nelson" link="3_labels_styling/3_interactions_camera_lighting/graphical_callback.html" description=""/>
           <keyword name="light" link="3_labels_styling/3_interactions_camera_lighting/light.html" description="Create a light object in axes."/>
           <keyword name="lightangle" link="3_labels_styling/3_interactions_camera_lighting/lightangle.html" description="Create or position a light from angles."/>

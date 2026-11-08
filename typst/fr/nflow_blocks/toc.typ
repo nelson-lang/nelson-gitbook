@@ -251,6 +251,9 @@
     - #nlink(<nflow_blocks:nonlinear.quantizer>)[quantizer]
     - #nlink(<nflow_blocks:nonlinear.rate>)[rate]
     - #nlink(<nflow_blocks:nonlinear.saturation>)[saturation]
+  - Développement de plugins natifs
+    - #nlink(<nflow_blocks:plugin_development.dlgetnflowincludes>)[dlgetnflowincludes]
+    - #nlink(<nflow_blocks:plugin_development.dlgetnflowlibraries>)[dlgetnflowlibraries]
   - Blocs recepteurs
     - #nlink(<nflow_blocks:sink.display>)[display]
     - #nlink(<nflow_blocks:sink.fileSink>)[fileSink]

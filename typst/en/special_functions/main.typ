@@ -33,6 +33,7 @@ The Special Functions module provides tools for performing advanced mathematical
 - #nlink(<special_functions:interp1>)[interp1]: 1-D data interpolation
 - #nlink(<special_functions:interp2>)[interp2]: Interpolation for 2-D gridded data in meshgrid format
 - #nlink(<special_functions:interp3>)[interp3]: Interpolation for 3-D gridded data in meshgrid format
+- #nlink(<special_functions:interpft>)[interpft]: 1-D interpolation using the FFT method.
 - #nlink(<special_functions:interpn>)[interpn]: Interpolation for N-D gridded data in ndgrid format
 - #nlink(<special_functions:isprime>)[isprime]: Determine which array elements are prime.
 - #nlink(<special_functions:lcm>)[lcm]: Least common multiple.
@@ -92,6 +93,8 @@ The Special Functions module provides tools for performing advanced mathematical
 #include "interp2.typ"
 #pagebreak(weak: true)
 #include "interp3.typ"
+#pagebreak(weak: true)
+#include "interpft.typ"
 #pagebreak(weak: true)
 #include "interpn.typ"
 #pagebreak(weak: true)

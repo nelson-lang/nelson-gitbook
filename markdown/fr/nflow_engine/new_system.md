@@ -29,7 +29,7 @@ Les blocs s'ajoutent avec <b>add\_block</b>, se connectent avec <b>add\_line</b>
 ```matlab
 new_system('demo');
 add_block('nflow/source/sine', 'demo/Sine');
-add_block('nflow/math/gain', 'demo/Gain', 'gain', 2);
+add_block('nflow/math/gain', 'demo/Gain', 'Gain', 2);
 add_block('nflow/sink/scope', 'demo/Scope');
 add_line('demo', 'Sine/1', 'Gain/1');
 add_line('demo', 'Gain/1', 'Scope/1');

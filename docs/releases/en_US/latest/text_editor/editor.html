@@ -25,6 +25,8 @@
 <span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block"><code class="language-matlab">editor()
 editor(filename)
+editor(filename, line)
+editor(filename, line, column)
 editor('editor_command', cmd)
 </code></pre>
 </div>
@@ -39,6 +41,14 @@ editor('editor_command', cmd)
 <tr>
 <td class="param-name">filename</td>
 <td>a string: filename to open.</td>
+</tr>
+<tr>
+<td class="param-name">line</td>
+<td>a number: line to place the cursor on.</td>
+</tr>
+<tr>
+<td class="param-name">column</td>
+<td>a number: column of that line.</td>
 </tr>
 <tr>
 <td class="param-name">cmd</td>
@@ -64,6 +74,7 @@ editor('editor_command', cmd)
         ')</code>
     </p>
     <p>Change text editor is persistent and will be saved in a configuration file.</p>
+    <p>Debugger keys in the editor: F12 set/clear breakpoint, F5 run or continue, F10 step, F11 step in, Shift+F11 step out, Shift+F5 stop, F9 evaluate selection, F6 pause, Ctrl+F10 run to here. See the debugging workflow page.</p>
   </div>
 </div>
 <div class="section">
@@ -102,6 +113,14 @@ editor('editor_command ', '')</code></pre>
 <tr>
 <td class="version">1.10.0</td>
 <td>Option to change default text editor</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Debugger keys and breakpoint markers</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>editor(filename, line, column) added</td>
 </tr>
 </table>
 </div>

@@ -1046,7 +1046,7 @@ handleDashboardObserver(SimCtx&amp; ctx, const Block&amp; block, Phase phase)
     if (phase != Phase::AFTER_STEP) {
         return false;
     }
-    const nlohmann::json binding = block.params.value("Binding", nlohmann::json());
+    const nlohmann::json binding = asJson(block.params).value("Binding", nlohmann::json());
     std::vector&lt;double&gt; values;
     std::vector&lt;double&gt; valuesImag;
     std::vector&lt;long long&gt; valuesI64;

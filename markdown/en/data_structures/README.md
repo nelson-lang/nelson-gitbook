@@ -33,6 +33,7 @@ This module handles complex data through programmatic operations and dynamic dat
 - [rmfield](rmfield.md) - Remove fields from structure.
 - [setfield](setfield.md) - Set structure field contents.
 - [struct](struct.md) - Create a structure or convert an object to a structure.
+- [struct2array](struct2array.md) - Concatenate structure field values into an array.
 - [struct2cell](struct2cell.md) - Creates a cell from a structure.
 - [structfun](structfun.md) - Apply a function to each field of a scalar structure.
 

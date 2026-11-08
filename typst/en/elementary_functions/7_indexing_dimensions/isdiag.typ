@@ -1,6 +1,6 @@
 #import "../nelson_help.typ": *
 
-= istriu <elementary_functions:7_indexing_dimensions.isdiag>
+= isdiag <elementary_functions:7_indexing_dimensions.isdiag>
 
 Checks if matrix is diagonal.
 
@@ -32,7 +32,7 @@ R = isdiag(A(:,1))
 
 == See also
 
-#nlink(<elementary_functions:7_indexing_dimensions.isdiag>)[istriu];, #nlink(<elementary_functions:7_indexing_dimensions.istril>)[istril];.
+#nlink(<elementary_functions:7_indexing_dimensions.istriu>)[istriu];, #nlink(<elementary_functions:7_indexing_dimensions.istril>)[istril];.
 
 == History
 

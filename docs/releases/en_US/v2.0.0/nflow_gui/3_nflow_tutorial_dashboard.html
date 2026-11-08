@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nflow_tutorial_dashboard</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nflow_tutorial_dashboard</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Tutorial 3 of 3: add interactive dashboard controls and run in real time.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Tutorial: bind a slider, a display, and a gauge, then run and adjust live.
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>This third tutorial adds interactive controls to a running model. You place a Slider, a Display, and a Gauge, bind them to the model, and run in real time so you can change a parameter and watch the response. It continues from the model built in <b>nflow_tutorial_continuous</b>, but any model with an adjustable parameter and an output signal works.</p>
+    <p><b>Place the dashboard blocks</b></p>
+    
+      <li>From the <b>Dashboard</b> group, drag a <b>Slider</b> onto the canvas.</li>
+      <li>Drag a <b>Display</b> next to it.</li>
+      <li>Drag a <b>Gauge</b> next to the Display.</li>
+    
+    <p>Dashboard blocks have no input or output ports. Each one reads or writes a target that you choose in the inspector, so they are placed anywhere on the canvas without wires.</p>
+    <p><img src="./nflow_tutorial_dashboard_diagram.png" width="500" style="max-width:500px;width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Bind the controls</b></p>
+    
+      <li>Select the <b>Slider</b>. In the inspector <b>Binding</b> section, set the kind to <b>Parameter</b>, then pick a block and one of its adjustable parameters, for example the Gain of the model. Set the slider limits.</li>
+      <li>Select the <b>Display</b>. Set the binding kind to <b>Signal</b>, then pick a block output and its one-based port.</li>
+      <li>Select the <b>Gauge</b>. Bind it to a signal the same way and set its limits.</li>
+    
+    <p>The status under the binding selector reports whether the binding is valid or why it is not. Bindings use stable block identifiers, so renaming or moving a block does not break them. See <b>nflow_dashboard</b> for every control and display and for the signal, parameter, and variable targets.</p>
+    <p><img src="./nflow_tutorial_dashboard_binding.png" width="280" style="max-width:280px;width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Set the execution mode</b></p>
+    <p>Select nothing to show the Model tab, then open <b>Simulation</b> and set <b>Execution</b>. <b>Real-time</b> paces the run to the wall clock, so one second of simulated time takes about one second, which is what you want when adjusting controls by hand. <b>Fast</b> runs as quickly as the machine allows. <b>Auto</b> lets the model decide.</p>
+    <p>The execution mode is read when a run starts. Set it before you press <b>Run</b>. Changing it while a simulation is running does not affect that run; it applies to the next one. This is different from a dashboard control bound to a parameter, whose change is applied during the run at the next step.</p>
+    <p><b>Run and interact</b></p>
+    <p>Press <b>Run</b>. While the model runs, drag the Slider to change its bound parameter. The Display and the Gauge update at each major step, and the Scope shows how the response changes. A pointer gesture that starts on a control stays with that control until you release it, so you can drag a slider without moving the block. To move the block instead, drag its body outside the control area.</p>
+    <p><b>What to try next</b></p>
+    <p>Add a <b>Lamp</b> or a <b>Gauge</b> with colored ranges to flag a threshold, or a <b>Push Button</b> to switch a parameter between two states. Open the runnable examples below to see a full interactive panel.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Open a model with live signal displays and a bound Slider.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks', 'root'), '/examples/dashboard/Dashboard_Runtime_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Open the gallery containing all dashboard blocks.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks', 'root'), '/examples/dashboard/Dashboard_Gallery_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../nflow_gui/nflow_dashboard.html">nflow_dashboard</a><a class="see-also-link" href="../nflow_gui/nflow_workspace.html">nflow_workspace</a><a class="see-also-link" href="../nflow_gui/1_nflow_tutorial_first_model.html">nflow_tutorial_first_model</a><a class="see-also-link" href="../nflow_gui/2_nflow_tutorial_continuous.html">nflow_tutorial_continuous</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

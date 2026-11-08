@@ -23,9 +23,13 @@
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntaxe</div>
-<pre class="syntax-block"><code class="language-matlab">dbclear all
+<pre class="syntax-block"><code class="language-matlab">dbclear
+dbclear all
 dbclear in file
+dbclear all in file
 dbclear in file at location
+dbclear if error
+dbclear if caught error
 </code></pre>
 </div>
 <div class="section">
@@ -39,12 +43,12 @@ dbclear in file at location
 <tr>
 <td class="param-name">file</td>
 <td>        Nom du fichier dans lequel les points d'arrêt doivent être supprimés, spécifié en tant que vecteur de caractères ou chaîne de caractères.
-        Un marqueur de fichier (&gt;) peut être utilisé pour spécifier une fonction locale ou imbriquée.</td>
+        Un marqueur de fichier (&gt;) peut être utilisé pour spécifier une fonction locale.</td>
 </tr>
 <tr>
 <td class="param-name">location</td>
-<td>        Numéro de ligne, numéro de ligne avec indice de fonction anonyme (par exemple, 3@2), ou nom de fonction locale
-        du point d'arrêt à supprimer.</td>
+<td>        Numéro de ligne du point d'arrêt à supprimer. La ligne est ajustée comme le fait
+        <b>dbstop</b>, si bien que la ligne utilisée avec <b>dbstop</b> supprime le point d'arrêt.</td>
 </tr>
 </table>
 </div>
@@ -54,13 +58,18 @@ dbclear in file at location
 <div>
     <p>
       <b>dbclear</b> supprime les points d'arrêt définis pour le débogage. Vous pouvez supprimer tous les points d'arrêt,
-      les points d'arrêt dans un fichier spécifique, les points d'arrêt à un emplacement spécifique.</p>
+      les points d'arrêt d'un fichier, un point d'arrêt à un emplacement donné, ou les points d'arrêt sur erreur.</p>
     <p>
-      <b>dbclear all</b> supprime tous les points d'arrêt dans tous les fichiers et pour toutes les conditions.</p>
+      <b>dbclear</b> et <b>dbclear all</b> suppriment tous les points d'arrêt de tous les fichiers,
+      y compris <b>dbstop if error</b> et <b>dbstop if caught error</b>.</p>
     <p>
-      <b>dbclear in file</b> supprime tous les points d'arrêt dans le fichier spécifié.</p>
+      <b>dbclear in file</b> et <b>dbclear all in file</b> suppriment tous les points d'arrêt du fichier
+      spécifié ; les points d'arrêt sur erreur sont conservés.</p>
     <p>
       <b>dbclear in file at location</b> supprime le point d'arrêt à l'emplacement spécifié dans le fichier.</p>
+    <p>
+      <b>dbclear if error</b> et <b>dbclear if caught error</b> suppriment le point d'arrêt sur erreur correspondant.</p>
+    <p>      Rien n'est signalé quand aucun point d'arrêt ne correspond.</p>
   </div>
 </div>
 <div class="section">
@@ -87,6 +96,16 @@ dbstatus</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
+<div class="example">
+<div class="example-title">        Ne plus s'arrêter sur les erreurs.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop if error
+dbstatus
+dbclear if error
+dbstatus</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
 </div>
 <div class="section">
 <div class="section-title">
@@ -106,6 +125,10 @@ dbstatus</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>version initiale</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>dbclear all in file, dbclear if error, dbclear if caught error ; ajustement de ligne ; silencieux quand aucun point d'arrêt ne correspond</td>
 </tr>
 </table>
 </div>

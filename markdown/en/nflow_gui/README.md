@@ -1,4 +1,4 @@
-# nflow editor
+# NFlow editor
 
 
     
@@ -17,6 +17,9 @@ NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, bu
 
 ## Functions
 
+- [nflow_tutorial_first_model](1_nflow_tutorial_first_model.md) - Tutorial 1 of 3: build, wire, and run a first nflow model.
+- [nflow_tutorial_continuous](2_nflow_tutorial_continuous.md) - Tutorial 2 of 3: simulate a continuous system and choose a solver.
+- [nflow_tutorial_dashboard](3_nflow_tutorial_dashboard.md) - Tutorial 3 of 3: add interactive dashboard controls and run in real time.
 - [nflow](nflow.md) - Launch the nflow editor, optionally on a model file.
 - [nflow_dashboard](nflow_dashboard.md) - Monitor and adjust NFlow simulations with interactive Dashboard blocks.
 - [nflow_multirate](nflow_multirate.md) - Running blocks at different sample rates (multi-rate).

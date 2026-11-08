@@ -14,6 +14,9 @@ The module also supports session logging and workspace load/save operations for 
 
 ## Functions
 
+- [SEEK_CUR](SEEK_CUR.md) - Origin value for fseek: the current position.
+- [SEEK_END](SEEK_END.md) - Origin value for fseek: the end of the file.
+- [SEEK_SET](SEEK_SET.md) - Origin value for fseek: the beginning of the file.
 - [cprintf](cprintf.md) - Writes styled formatted text to stdout.
 - [diary](diary.md) - Diary of a session.
 - [fclose](fclose.md) - Close an opened file.
@@ -36,5 +39,8 @@ The module also supports session logging and workspace load/save operations for 
 - [readlines](readlines.md) - Read lines of a text file as a string array.
 - [save](save.md) - save workspace variables to .nh5 or .mat file
 - [sscanf](sscanf.md) - Read formatted data from strings.
+- [stderr](stderr.md) - File identifier of the standard error stream.
+- [stdin](stdin.md) - File identifier of the standard input stream.
+- [stdout](stdout.md) - File identifier of the standard output stream.
 - [textscan](textscan.md) - Read formatted data from a character vector, string or file.
 

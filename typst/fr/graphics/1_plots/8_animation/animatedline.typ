@@ -50,6 +50,8 @@ drawnow
 ``````
 
 
+#align(center)[#image("animatedline.svg")]
+
 == Voir aussi
 
 #nlink(<graphics:2_graphics_objects.4_properties.nelson.graphics.animatedline.properties>)[proprietes de animatedline];, #nlink(<graphics:1_plots.8_animation.addpoints>)[addpoints];, #nlink(<graphics:1_plots.8_animation.clearpoints>)[clearpoints];, #nlink(<graphics:1_plots.8_animation.getpoints>)[getpoints];, #nlink(<graphics:1_plots.8_animation.comet>)[comet];.

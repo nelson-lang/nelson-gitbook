@@ -27,7 +27,7 @@ Spectrogramme par transformees de Fourier locales.
 
 <b>spectrogram</b> decoupe le signal en segments fenetres recouvrants et calcule une FFT pour chaque segment.
 
-## 💡 Exemple
+## 💡 Exemples
 
 
 
@@ -36,6 +36,12 @@ Spectrogramme par transformees de Fourier locales.
 [s, f, t] = spectrogram(sin((0:255)' * 0.1), 64, 32, 128, 10);
 
 ```
+Afficher le spectrogramme (transformee de Fourier a court terme).
+
+```matlab
+spectrogram(sin((0:255)' * 0.1), 64, 32, 128, 10);
+```
+<img src="spectrogram.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

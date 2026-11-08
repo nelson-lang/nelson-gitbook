@@ -35,6 +35,8 @@ comet3(sin(5 * t), cos(3 * t), t, 0.2)
 ``````
 
 
+#align(center)[#image("comet3.svg")]
+
 == Voir aussi
 
 #nlink(<graphics:1_plots.8_animation.comet>)[comet];, #nlink(<graphics:1_plots.8_animation.animatedline>)[animatedline];.

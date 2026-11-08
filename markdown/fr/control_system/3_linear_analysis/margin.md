@@ -37,7 +37,7 @@ La forme <b>margin(mag, phase, w)</b> calcule les marges directement à partir d
 
 Appelée sans argument de sortie, <b>margin(sys)</b> trace le diagramme de Bode du système.
 
-## 💡 Exemple
+## 💡 Exemples
 
 
 
@@ -45,6 +45,12 @@ Appelée sans argument de sortie, <b>margin(sys)</b> trace le diagramme de Bode 
 H = tf(1, [1 3 2 0]);
 [Gm, Pm, Wcg, Wcp] = margin(H)
 ```
+Tracer la reponse de Bode avec les marges de gain et de phase.
+
+```matlab
+margin(tf(1, [1 3 2 0]));
+```
+<img src="margin.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

@@ -37,6 +37,7 @@
     <p>      Utilisez <b>dbcont</b> pour continuer l'exécution après avoir examiné les variables de l'espace de travail ou débogué le code.</p>
     <p>      Remarque : Si vous souhaitez modifier un fichier pendant le débogage, il est recommandé de quitter d'abord
       le mode débogage en utilisant <b>dbquit</b> pour éviter un comportement inattendu.</p>
+    <p>Hors d'une session de débogage, <b>dbcont</b> lève <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Debug commands only allowed when stopped in debug mode.</code> À un arrêt sur une erreur non attrapée, <b>dbcont</b> termine la session sans réafficher l'erreur ; à un arrêt sur une erreur attrapée, l'exécution reprend dans le bloc <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">catch</code>.</p>
   </div>
 </div>
 <div class="section">
@@ -75,6 +76,10 @@ dbcont</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>version initiale</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>message uniforme hors session de débogage, comportement aux arrêts sur erreur</td>
 </tr>
 </table>
 </div>

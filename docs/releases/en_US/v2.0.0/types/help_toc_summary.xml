@@ -11,6 +11,7 @@
   </chapter_description>
       <keyword name="class" link="class.html" description="Return a variable class name or create an old-style named object."/>
       <keyword name="cpp_api" link="cpp_api.html" description="C++ value API conventions for Nelson core types."/>
+      <keyword name="inferiorto" link="inferiorto.html" description="Declare inferior class precedence."/>
       <keyword name="isa" link="isa.html" description="Return true if a variable has the requested class or type."/>
       <keyword name="iscell" link="iscell.html" description="Return true if variable var is a cell array."/>
       <keyword name="ischar" link="ischar.html" description="Return true if variable var is a char array."/>
@@ -48,6 +49,7 @@
       <keyword name="nelson.mixin.indexing.RedefinesDot" link="nelson.mixin.indexing.RedefinesDot.html" description="Customize dot indexing of a class."/>
       <keyword name="nelson.mixin.indexing.RedefinesParen" link="nelson.mixin.indexing.RedefinesParen.html" description="Customize parentheses indexing of a class."/>
       <keyword name="nelson.mixin.util.PropertyGroup" link="nelson.mixin.util.PropertyGroup.html" description="A titled group of properties for custom object display."/>
+      <keyword name="superiorto" link="superiorto.html" description="Declare superior class precedence."/>
       <keyword name="underlyingType" link="underlyingType.html" description="Underlying type of an array."/>
     </section>
   </toc>

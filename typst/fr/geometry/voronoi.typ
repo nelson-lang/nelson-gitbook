@@ -29,6 +29,8 @@ voronoi(P)
 ``````
 
 
+#align(center)[#image("voronoi.svg")]
+
 == Voir aussi
 
 #nlink(<geometry:voronoin>)[voronoin];, #nlink(<geometry:delaunay>)[delaunay];.

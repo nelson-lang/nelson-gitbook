@@ -42,20 +42,6 @@ border-color: #333;
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2>[unreleased]</h2>
-<h3>Changed</h3>
-<ul>
-<li>Boost is no longer a dependency. The <code>ipc</code> module now uses native process
-primitives: named pipes on Windows and AF_UNIX sockets on POSIX for the
-transport, <code>std::thread</code> for the receiver, a fixed-layout shared-memory PID
-registry, and a dependency-free binary serializer for exchanged variables.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li><code>ipc</code>: function handles (including anonymous handles with captured variables)
-and <code>missing</code> values now transfer correctly between instances; variables
-larger than the former queue limit are no longer rejected.</li>
-</ul>
 <h2>1.17.0 - (2026-05-25)</h2>
 <p>🕯️ <strong>In memory of Cleve Moler (1939–2026)</strong></p>
 <p>This release is dedicated to the memory of Cleve Moler, creator of MATLAB and a towering figure in numerical computing. His vision of making linear algebra accessible to engineers and scientists changed the way the world writes scientific software and inspired every project that followed in his footsteps, including Nelson.

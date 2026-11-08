@@ -35,6 +35,8 @@ axis equal
 ``````
 
 
+#align(center)[#image("ellipsoid.svg")]
+
 == See also
 
 #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.sphere>)[sphere];, #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.surf>)[surf];.

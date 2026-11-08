@@ -30,6 +30,7 @@ Functions for solving, analyzing, and measuring linear systems and vector or mat
 - [gradient](1_linear_systems/gradient.md) - Numerical gradient.
 - [inv](1_linear_systems/inv.md) - Matrix inverse.
 - [kron](1_linear_systems/kron.md) - Kronecker tensor product.
+- [linsolve](1_linear_systems/linsolve.md) - Solve a linear system of equations.
 - [null](1_linear_systems/null.md) - Null space of a matrix.
 - [orth](1_linear_systems/orth.md) - Range space of a matrix.
 - [rank](1_linear_systems/rank.md) - Rank of matrix.

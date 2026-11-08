@@ -23,6 +23,8 @@
 
  #strong[edit(dirname)]; ouvre tous les fichiers .m disponibles dans #strong[dirname];.
 
+ Un document Notebook (#strong[.nlx];) s'ouvre dans l'éditeur Notebook, pas dans l'éditeur de texte : un onglet du bureau web, ou la fenêtre Notebook du bureau Qt. Sans bureau (nelson-cli, nelson-adv-cli), c'est une erreur.
+
 
 == Exemple
 

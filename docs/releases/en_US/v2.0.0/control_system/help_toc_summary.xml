@@ -39,7 +39,7 @@
         <keyword name="c2d" link="2_model_conversion_interconnection/c2d.html" description="Convert model from continuous to discrete time."/>
         <keyword name="d2c" link="2_model_conversion_interconnection/d2c.html" description="Convert model from discrete to continuous time."/>
         <keyword name="feedback" link="2_model_conversion_interconnection/feedback.html" description="Feedback connection of multiple models."/>
-        <keyword name="gensig" link="2_model_conversion_interconnection/gensign.html" description="Create periodic signals for simulating system response."/>
+        <keyword name="gensig" link="2_model_conversion_interconnection/gensig.html" description="Create periodic signals for simulating system response."/>
         <keyword name="padecoef" link="2_model_conversion_interconnection/padecoef.html" description="Computes the Pade approximation of time delays."/>
         <keyword name="parallel" link="2_model_conversion_interconnection/parallel.html" description="Parallel connection of two models."/>
         <keyword name="series" link="2_model_conversion_interconnection/series.html" description="Series connection of two models."/>
@@ -47,6 +47,7 @@
         <keyword name="ssdelete" link="2_model_conversion_interconnection/ssdelete.html" description="Remove inputs, outputs and states from state-space system."/>
         <keyword name="ssselect" link="2_model_conversion_interconnection/ssselect.html" description="Extract subsystem from larger system."/>
         <keyword name="tf2ss" link="2_model_conversion_interconnection/tf2ss.html" description="Convert transfer function filter parameters to state-space form."/>
+        <keyword name="zpk2tf" link="2_model_conversion_interconnection/zpk2tf.html" description="Convert zero-pole-gain model to transfer function."/>
       </section>
       <section name="Linear Analysis">
         <chapter_description>

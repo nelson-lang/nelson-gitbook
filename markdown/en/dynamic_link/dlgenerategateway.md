@@ -19,10 +19,10 @@ Generates C++ gateway.
 
 ## 💡 Example
 
-See module skeleton for example
+Generate the gateway of a module named my_module with two builtins
 
 ```matlab
-dlgenerategateway(tempdir(), 'module_skeleton', {{'cpp_sum', 1, 2}; {'cpp_sub', 2, 3}});
+dlgenerategateway(tempdir(), 'my_module', {{'cpp_sum', 1, 2}; {'cpp_sub', 2, 3}});
 text = fileread([tempdir(), 'Gateway.cpp'])
 ```
 

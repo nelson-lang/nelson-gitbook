@@ -20,7 +20,7 @@ Informations sur le système.
 / c: une chaîne : type d'ordinateur : 'PCWIN', 'PCWIN64', 'PCWOA64', 'GLNXA64', 'GLNXA32', 'MACI32', 'MACI64', 'MACA64'
 / maxsize: un entier : nombre maximal d'éléments autorisés dans un tableau.
 / endian: une chaîne : 'L' pour little-endian, 'B' pour big-endian.
-/ arch: une chaîne : type d'architecture : 'woa64', 'win64', 'win32', 'glnxa64', 'glnxa32', 'maci64', 'maci32', 'maca64'.
+/ arch: une chaîne : type d'architecture : 'woa64', 'win64', 'win32', 'glnxa64', 'glnxa64arm', 'glnxa32', 'maci64', 'maci32', 'maca64'.
 
 == Description
 
@@ -48,6 +48,7 @@ arch = computer('arch')
   table.header([Version], [Description]),
   [1.0.0], [version initiale],
   [1.16.0], [PCWOA64 and woa64 ajoutés],
+  [2.0.0], [GLNXA64ARM and glnxa64arm ajoutés],
 )
 
 // Auteur: Allan CORNET

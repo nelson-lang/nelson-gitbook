@@ -33,6 +33,7 @@ Ce module gère les données complexes au moyen d'opérations programmatiques et
 - [rmfield](rmfield.md) - Supprimer des champs d'une structure.
 - [setfield](setfield.md) - Définir le contenu d'un champ de structure.
 - [struct](struct.md) - Cree une structure ou convertit un objet en structure.
+- [struct2array](struct2array.md) - Concatène les valeurs des champs d'une structure en un tableau.
 - [struct2cell](struct2cell.md) - Créer un tableau cellulaire à partir d'une structure.
 - [structfun](structfun.md) - Applique une fonction a chaque champ d'une structure scalaire.
 

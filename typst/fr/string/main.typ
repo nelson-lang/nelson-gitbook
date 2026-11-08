@@ -33,6 +33,7 @@ Fonctions pour creer du texte, le formater et convertir entre texte et autres do
 - #nlink(<string:1_create_convert_text.num2str>)[num2str]: Convertit des nombres en tableau de caractères.
 - #nlink(<string:1_create_convert_text.sprintf>)[sprintf]: Écrit des données dans une chaîne.
 - #nlink(<string:1_create_convert_text.str2double>)[str2double]: Convertit une chaîne en double.
+- #nlink(<string:1_create_convert_text.str2num>)[str2num]: Convertit un tableau de caractères en tableau numérique.
 - #nlink(<string:1_create_convert_text.strcat>)[strcat]: concatène des chaînes horizontalement.
 - #nlink(<string:1_create_convert_text.string>)[string]: Constructeur de tableau de chaînes.
 - #nlink(<string:1_create_convert_text.strings>)[strings]: Crée un tableau de chaînes vide.
@@ -194,6 +195,8 @@ Fonctions pour comparer et faire correspondre des valeurs texte.
 #include "1_create_convert_text/sprintf.typ"
 #pagebreak(weak: true)
 #include "1_create_convert_text/str2double.typ"
+#pagebreak(weak: true)
+#include "1_create_convert_text/str2num.typ"
 #pagebreak(weak: true)
 #include "1_create_convert_text/strcat.typ"
 #pagebreak(weak: true)

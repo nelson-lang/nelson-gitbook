@@ -28,4 +28,4 @@ nelson.unittest.assume(ispc(), 'Requires Windows');
 
 == Voir aussi
 
-#nlink(<tests_manager:nelson_unittest_skip>)[nelson.unittest.skip];, #nlink(<tests_manager:test_skip_testsuite>)[skip\_testsuite];.
+#nlink(<tests_manager:nelson_unittest_skip>)[nelson.unittest.skip];, #nlink(<tests_manager:skip_testsuite>)[skip\_testsuite];.

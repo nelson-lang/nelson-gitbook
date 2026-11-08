@@ -645,6 +645,7 @@
 #include "BlockRegistry.hpp"
 #include "FieldNames.hpp"
 #include "NFlowBlockDescriptor.hpp"
+#include &lt;cctype&gt;
 #include &lt;cmath&gt;
 #include &lt;algorithm&gt;
 #include "source_blocks.hpp"
@@ -689,19 +690,21 @@ Nelson::NFlow::handleFromWorkspace(SimCtx&amp; ctx, const Block&amp; b, Phase ph
         // scalar = interpolate flag, scalar2 = after-final mode.
         st.fsrcTimes.clear();
         st.fsrcValues.clear();
-        if (b.params.contains(nflow::kTimes) &amp;&amp; b.params[nflow::kTimes].is_array()) {
-            for (const auto&amp; v : b.params[nflow::kTimes]) {
+        if (asJson(b.params).contains(nflow::kTimes)
+            &amp;&amp; asJson(b.params)[nflow::kTimes].is_array()) {
+            for (const auto&amp; v : asJson(b.params)[nflow::kTimes]) {
                 st.fsrcTimes.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
-        if (b.params.contains(nflow::kValues) &amp;&amp; b.params[nflow::kValues].is_array()) {
-            for (const auto&amp; v : b.params[nflow::kValues]) {
+        if (asJson(b.params).contains(nflow::kValues)
+            &amp;&amp; asJson(b.params)[nflow::kValues].is_array()) {
+            for (const auto&amp; v : asJson(b.params)[nflow::kValues]) {
                 st.fsrcValues.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
         st.fsrcValuesImag.clear();
-        if (b.params.contains("valuesImag") &amp;&amp; b.params["valuesImag"].is_array()) {
-            for (const auto&amp; v : b.params["valuesImag"]) {
+        if (asJson(b.params).contains("valuesImag") &amp;&amp; asJson(b.params)["valuesImag"].is_array()) {
+            for (const auto&amp; v : asJson(b.params)["valuesImag"]) {
                 st.fsrcValuesImag.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
@@ -904,6 +907,17 @@ numberList(const std::vector&lt;double&gt;&amp; values, const std::function&lt;s
     return out;
 }
 //=============================================================================
+// Block id in upper case, for Rust const names (`non_upper_case_globals`).
+std::string
+upperId(const std::string&amp; id)
+{
+    std::string r = id;
+    for (auto&amp; c : r) {
+        c = static_cast&lt;char&gt;(std::toupper(static_cast&lt;unsigned char&gt;(c)));
+    }
+    return r;
+}
+//=============================================================================
 } // namespace
 //=============================================================================
 Nelson::NFlow::BlockCodegenTemplate
@@ -940,7 +954,7 @@ Nelson::NFlow::getCodeGenCFromWorkspace()
                         "+ 1] - ts[idx]);");
             a.addHelper("}");
         }
-        BakedData d = bakedDataOf(*a.params);
+        BakedData d = bakedDataOf(*asJson(a.params));
         if (!d.scalar) {
             return;
         }
@@ -951,7 +965,7 @@ Nelson::NFlow::getCodeGenCFromWorkspace()
             + numberList(d.values, a.fmt) + " };");
     };
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
-        BakedData d = bakedDataOf(*a.params);
+        BakedData d = bakedDataOf(*asJson(a.params));
         if (!d.scalar) {
             a.line("out_" + a.id
                 + " = 0.0; /* fromWorkspace: no baked data (vector or "
@@ -1000,26 +1014,27 @@ Nelson::NFlow::getCodeGenRustFromWorkspace()
                         "- ts[idx])");
             a.addHelper("}");
         }
-        BakedData d = bakedDataOf(*a.params);
+        BakedData d = bakedDataOf(*asJson(a.params));
         if (!d.scalar) {
             return;
         }
         const std::string n = std::to_string(d.times.size());
-        a.addConst(
-            "const FW_T_" + a.id + ": [f64; " + n + "] = [ " + numberList(d.times, a.fmt) + " ];");
-        a.addConst(
-            "const FW_V_" + a.id + ": [f64; " + n + "] = [ " + numberList(d.values, a.fmt) + " ];");
+        a.addConst("const FW_T_" + upperId(a.id) + ": [f64; " + n + "] = [ "
+            + numberList(d.times, a.fmt) + " ];");
+        a.addConst("const FW_V_" + upperId(a.id) + ": [f64; " + n + "] = [ "
+            + numberList(d.values, a.fmt) + " ];");
     };
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
-        BakedData d = bakedDataOf(*a.params);
+        BakedData d = bakedDataOf(*asJson(a.params));
         if (!d.scalar) {
             a.line("out_" + a.id
                 + " = 0.0_f64; // fromWorkspace: no baked data (vector or unresolved "
                   "variable)");
             return;
         }
-        a.line("out_" + a.id + " = nflow_from_workspace(&amp;FW_T_" + a.id + ", &amp;FW_V_" + a.id + ", t, "
-            + (d.interpolate ? "true" : "false") + ", " + std::to_string(d.afterMode) + ");");
+        a.line("out_" + a.id + " = nflow_from_workspace(&amp;FW_T_" + upperId(a.id) + ", &amp;FW_V_"
+            + upperId(a.id) + ", t, " + (d.interpolate ? "true" : "false") + ", "
+            + std::to_string(d.afterMode) + ");");
     };
     return t;
 }

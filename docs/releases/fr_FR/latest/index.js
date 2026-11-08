@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1792778819
+// Auto-generated on 1794156531
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -412,6 +412,12 @@ window.searchIndex = [
     "content": "Renvoie le nom d'une variable d'entrée d'une fonction."
   },
   {
+    "title": "isMATLABReleaseOlderThan",
+    "url": "./core/isMATLABReleaseOlderThan.html",
+    "path": "./core/isMATLABReleaseOlderThan.html",
+    "content": "Compare la version courante à une version MATLAB."
+  },
+  {
     "title": "isstr",
     "url": "./core/isstr.html",
     "path": "./core/isstr.html",
@@ -524,6 +530,24 @@ window.searchIndex = [
     "url": "./core/sha256.html",
     "path": "./core/sha256.html",
     "content": "Calcule le hash SHA-256."
+  },
+  {
+    "title": "usejava",
+    "url": "./core/usejava.html",
+    "path": "./core/usejava.html",
+    "content": "Teste la disponibilité d'une fonctionnalité Java."
+  },
+  {
+    "title": "ver",
+    "url": "./core/ver.html",
+    "path": "./core/ver.html",
+    "content": "Informations de version."
+  },
+  {
+    "title": "verLessThan",
+    "url": "./core/verLessThan.html",
+    "path": "./core/verLessThan.html",
+    "content": "Compare la version d'un produit à une chaîne de version."
   },
   {
     "title": "version",
@@ -1114,6 +1138,12 @@ window.searchIndex = [
     "content": "Conventions de l'API C++ des valeurs pour les types noyau de Nelson."
   },
   {
+    "title": "inferiorto",
+    "url": "./types/inferiorto.html",
+    "path": "./types/inferiorto.html",
+    "content": "Déclare une précédence de classe inférieure."
+  },
+  {
     "title": "isa",
     "url": "./types/isa.html",
     "path": "./types/isa.html",
@@ -1334,6 +1364,12 @@ window.searchIndex = [
     "url": "./types/nelson.mixin.util.PropertyGroup.html",
     "path": "./types/nelson.mixin.util.PropertyGroup.html",
     "content": "Un groupe titré de propriétés pour l'affichage personnalisé d'objets."
+  },
+  {
+    "title": "superiorto",
+    "url": "./types/superiorto.html",
+    "path": "./types/superiorto.html",
+    "content": "Déclare une précédence de classe supérieure."
   },
   {
     "title": "underlyingType",
@@ -1694,6 +1730,12 @@ window.searchIndex = [
     "url": "./string/1_create_convert_text/str2double.html",
     "path": "./string/1_create_convert_text/str2double.html",
     "content": "Convertit une chaîne en double."
+  },
+  {
+    "title": "str2num",
+    "url": "./string/1_create_convert_text/str2num.html",
+    "path": "./string/1_create_convert_text/str2num.html",
+    "content": "Convertit un tableau de caractères en tableau numérique."
   },
   {
     "title": "strcat",
@@ -2554,6 +2596,12 @@ window.searchIndex = [
     "content": "Cree une structure ou convertit un objet en structure."
   },
   {
+    "title": "struct2array",
+    "url": "./data_structures/struct2array.html",
+    "path": "./data_structures/struct2array.html",
+    "content": "Concatène les valeurs des champs d'une structure en un tableau."
+  },
+  {
     "title": "struct2cell",
     "url": "./data_structures/struct2cell.html",
     "path": "./data_structures/struct2cell.html",
@@ -3208,6 +3256,12 @@ window.searchIndex = [
     "content": "Opération ET bit à bit"
   },
   {
+    "title": "bitcmp",
+    "url": "./operators/bitcmp.html",
+    "path": "./operators/bitcmp.html",
+    "content": "Complément bit à bit."
+  },
+  {
     "title": "bitget",
     "url": "./operators/bitget.html",
     "path": "./operators/bitget.html",
@@ -3218,6 +3272,12 @@ window.searchIndex = [
     "url": "./operators/bitor.html",
     "path": "./operators/bitor.html",
     "content": "Opération OR bit à bit"
+  },
+  {
+    "title": "bitset",
+    "url": "./operators/bitset.html",
+    "path": "./operators/bitset.html",
+    "content": "Positionne un bit à une position donnée."
   },
   {
     "title": "bitxor",
@@ -4138,6 +4198,12 @@ window.searchIndex = [
     "content": "Tester si l'entrée est un scalaire"
   },
   {
+    "title": "issortedrows",
+    "url": "./elementary_functions/7_indexing_dimensions/issortedrows.html",
+    "path": "./elementary_functions/7_indexing_dimensions/issortedrows.html",
+    "content": "Détermine si les lignes d'une matrice sont triées."
+  },
+  {
     "title": "istril",
     "url": "./elementary_functions/7_indexing_dimensions/istril.html",
     "path": "./elementary_functions/7_indexing_dimensions/istril.html",
@@ -4220,6 +4286,12 @@ window.searchIndex = [
     "url": "./elementary_functions/7_indexing_dimensions/substruct.html",
     "path": "./elementary_functions/7_indexing_dimensions/substruct.html",
     "content": "Crée un argument structure pour subsasgn ou subsref"
+  },
+  {
+    "title": "topkrows",
+    "url": "./elementary_functions/7_indexing_dimensions/topkrows.html",
+    "path": "./elementary_functions/7_indexing_dimensions/topkrows.html",
+    "content": "Les k premières lignes triées d'une matrice."
   },
   {
     "title": "tril",
@@ -4714,6 +4786,12 @@ window.searchIndex = [
     "content": "Interpolation de donnees grillees 3-D au format meshgrid"
   },
   {
+    "title": "interpft",
+    "url": "./special_functions/interpft.html",
+    "path": "./special_functions/interpft.html",
+    "content": "Interpolation 1-D par la méthode FFT."
+  },
+  {
     "title": "interpn",
     "url": "./special_functions/interpn.html",
     "path": "./special_functions/interpn.html",
@@ -4832,6 +4910,12 @@ window.searchIndex = [
     "url": "./linear_algebra/1_linear_systems/kron.html",
     "path": "./linear_algebra/1_linear_systems/kron.html",
     "content": "Produit tensoriel de Kronecker."
+  },
+  {
+    "title": "linsolve",
+    "url": "./linear_algebra/1_linear_systems/linsolve.html",
+    "path": "./linear_algebra/1_linear_systems/linsolve.html",
+    "content": "Résout un système d'équations linéaires."
   },
   {
     "title": "null",
@@ -6844,6 +6928,12 @@ window.searchIndex = [
     "content": "Determine si tous les elements sont compris entre des bornes."
   },
   {
+    "title": "anymissing",
+    "url": "./data_analysis/anymissing.html",
+    "path": "./data_analysis/anymissing.html",
+    "content": "Teste la présence de valeurs manquantes."
+  },
+  {
     "title": "bounds",
     "url": "./data_analysis/bounds.html",
     "path": "./data_analysis/bounds.html",
@@ -6902,6 +6992,12 @@ window.searchIndex = [
     "url": "./data_analysis/fillmissing.html",
     "path": "./data_analysis/fillmissing.html",
     "content": "Remplit les valeurs manquantes."
+  },
+  {
+    "title": "findgroups",
+    "url": "./data_analysis/findgroups.html",
+    "path": "./data_analysis/findgroups.html",
+    "content": "Trouve les groupes et renvoie les numéros de groupe."
   },
   {
     "title": "groupcounts",
@@ -7036,6 +7132,12 @@ window.searchIndex = [
     "content": "Produit des éléments d'un tableau."
   },
   {
+    "title": "rescale",
+    "url": "./data_analysis/rescale.html",
+    "path": "./data_analysis/rescale.html",
+    "content": "Met à l'échelle les éléments dans un intervalle fixé."
+  },
+  {
     "title": "rmmissing",
     "url": "./data_analysis/rmmissing.html",
     "path": "./data_analysis/rmmissing.html",
@@ -7064,6 +7166,12 @@ window.searchIndex = [
     "url": "./data_analysis/sort.html",
     "path": "./data_analysis/sort.html",
     "content": "Trier les éléments d'un tableau (algorithme de tri rapide)."
+  },
+  {
+    "title": "splitapply",
+    "url": "./data_analysis/splitapply.html",
+    "path": "./data_analysis/splitapply.html",
+    "content": "Découpe les données en groupes et applique une fonction."
   },
   {
     "title": "standardizeMissing",
@@ -7859,8 +7967,8 @@ window.searchIndex = [
   },
   {
     "title": "gensig",
-    "url": "./control_system/2_model_conversion_interconnection/gensign.html",
-    "path": "./control_system/2_model_conversion_interconnection/gensign.html",
+    "url": "./control_system/2_model_conversion_interconnection/gensig.html",
+    "path": "./control_system/2_model_conversion_interconnection/gensig.html",
     "content": "GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...)."
   },
   {
@@ -7904,6 +8012,12 @@ window.searchIndex = [
     "url": "./control_system/2_model_conversion_interconnection/tf2ss.html",
     "path": "./control_system/2_model_conversion_interconnection/tf2ss.html",
     "content": "Convertit les paramètres d'un filtre en fonction de transfert en forme état-espace."
+  },
+  {
+    "title": "zpk2tf",
+    "url": "./control_system/2_model_conversion_interconnection/zpk2tf.html",
+    "path": "./control_system/2_model_conversion_interconnection/zpk2tf.html",
+    "content": "Convertit un modèle zéros-pôles-gain en fonction de transfert."
   },
   {
     "title": "Analyse lineaire",
@@ -10516,6 +10630,24 @@ window.searchIndex = [
     "content": "Le module Stream Manager fournit des outils pour gerer les flux d'entree et de sortie dans Nelson. Il prend en charge la lecture et l'ecriture de donnees texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la detection de la fin de fichier et la gestion des erreurs de fichier. Le module gere aussi la journalisation de session ainsi que le chargement et la sauvegarde des donnees de l'espace de travail."
   },
   {
+    "title": "SEEK_CUR",
+    "url": "./stream_manager/SEEK_CUR.html",
+    "path": "./stream_manager/SEEK_CUR.html",
+    "content": "Valeur d'origine pour fseek : à la position courante."
+  },
+  {
+    "title": "SEEK_END",
+    "url": "./stream_manager/SEEK_END.html",
+    "path": "./stream_manager/SEEK_END.html",
+    "content": "Valeur d'origine pour fseek : à la fin du fichier."
+  },
+  {
+    "title": "SEEK_SET",
+    "url": "./stream_manager/SEEK_SET.html",
+    "path": "./stream_manager/SEEK_SET.html",
+    "content": "Valeur d'origine pour fseek : au début du fichier."
+  },
+  {
     "title": "cprintf",
     "url": "./stream_manager/cprintf.html",
     "path": "./stream_manager/cprintf.html",
@@ -10646,6 +10778,24 @@ window.searchIndex = [
     "url": "./stream_manager/sscanf.html",
     "path": "./stream_manager/sscanf.html",
     "content": "Lire des données formatées depuis des chaînes."
+  },
+  {
+    "title": "stderr",
+    "url": "./stream_manager/stderr.html",
+    "path": "./stream_manager/stderr.html",
+    "content": "Identifiant du flux d'erreur standard."
+  },
+  {
+    "title": "stdin",
+    "url": "./stream_manager/stdin.html",
+    "path": "./stream_manager/stdin.html",
+    "content": "Identifiant du flux d'entrée standard."
+  },
+  {
+    "title": "stdout",
+    "url": "./stream_manager/stdout.html",
+    "path": "./stream_manager/stdout.html",
+    "content": "Identifiant du flux de sortie standard."
   },
   {
     "title": "textscan",
@@ -12268,10 +12418,10 @@ window.searchIndex = [
     "content": "Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer, éditer et formater des scripts et fichiers Nelson."
   },
   {
-    "title": "débogage",
+    "title": "debugging workflow",
     "url": "./text_editor/debugging_workflow.html",
     "path": "./text_editor/debugging_workflow.html",
-    "content": "Flux de travail de débogage pour les fichiers de code Nelson."
+    "content": "Déroulement d'une session de débogage des fichiers Nelson dans l'éditeur."
   },
   {
     "title": "edit",
@@ -12284,6 +12434,48 @@ window.searchIndex = [
     "url": "./text_editor/editor.html",
     "path": "./text_editor/editor.html",
     "content": "appelle l'éditeur de texte intégré."
+  },
+  {
+    "title": "opentoline",
+    "url": "./text_editor/opentoline.html",
+    "path": "./text_editor/opentoline.html",
+    "content": "ouvre un fichier dans l'éditeur à une ligne donnée."
+  },
+  {
+    "title": "Notebook",
+    "url": "./notebook/index.html",
+    "path": "sections/notebook",
+    "content": "Le module Notebook exécute des documents Notebook en dehors de l'éditeur. Un Notebook mêle texte mis en forme, code et ses sorties dans un même document. Ce module lit le conteneur natif .nlx et le format texte .m, et exécute leurs cellules de code dans l'espace de travail de base — un document peut donc être lancé depuis la ligne de commande ou un script. Trois tutoriels pas à pas présentent la création d'un premier Notebook, ses cellules et contrôles, et la manière d'exécuter et de partager un document."
+  },
+  {
+    "title": "Votre premier Notebook Nelson",
+    "url": "./notebook/1_notebook_first_steps.html",
+    "path": "./notebook/1_notebook_first_steps.html",
+    "content": "Créer, exécuter et enregistrer votre premier document Notebook."
+  },
+  {
+    "title": "Cellules et contrôles d'un Notebook",
+    "url": "./notebook/2_notebook_cells_and_controls.html",
+    "path": "./notebook/2_notebook_cells_and_controls.html",
+    "content": "Les types de blocs d'un Notebook et les contrôles interactifs."
+  },
+  {
+    "title": "Exécuter et partager un Notebook",
+    "url": "./notebook/3_notebook_run_and_share.html",
+    "path": "./notebook/3_notebook_run_and_share.html",
+    "content": "Exécuter un Notebook sans l'éditeur, puis l'exporter ou l'importer."
+  },
+  {
+    "title": "nlx",
+    "url": "./notebook/nlx.html",
+    "path": "./notebook/nlx.html",
+    "content": "Le format de document Notebook de Nelson (.nlx)."
+  },
+  {
+    "title": "notebook",
+    "url": "./notebook/notebook.html",
+    "path": "./notebook/notebook.html",
+    "content": "Exécute un document Notebook ou ouvre l'éditeur Notebook."
   },
   {
     "title": "Fonctions graphiques",
@@ -14242,10 +14434,22 @@ window.searchIndex = [
     "content": "Zoome la caméra en avant ou en arrière."
   },
   {
+    "title": "disableDefaultInteractivity",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.html",
+    "content": "Desactive les interactions integrees des axes."
+  },
+  {
     "title": "drawnow",
     "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/drawnow.html",
     "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/drawnow.html",
     "content": "Met à jour les figures et traite les callbacks"
+  },
+  {
+    "title": "enableDefaultInteractivity",
+    "url": "./graphics/3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.html",
+    "path": "./graphics/3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.html",
+    "content": "Active les interactions integrees des axes."
   },
   {
     "title": "Gestion des interruptions de callback dans Nelson",
@@ -16096,6 +16300,12 @@ window.searchIndex = [
     "content": "Calibrer les poids de planification avec les durees mesurees."
   },
   {
+    "title": "skip_testsuite",
+    "url": "./tests_manager/skip_testsuite.html",
+    "path": "./tests_manager/skip_testsuite.html",
+    "content": "Sauter la suite de tests selon une condition"
+  },
+  {
     "title": "test_makeref",
     "url": "./tests_manager/test_makeref.html",
     "path": "./tests_manager/test_makeref.html",
@@ -16106,12 +16316,6 @@ window.searchIndex = [
     "url": "./tests_manager/test_run.html",
     "path": "./tests_manager/test_run.html",
     "content": "Exécute les tests"
-  },
-  {
-    "title": "skip_testsuite",
-    "url": "./tests_manager/test_skip_testsuite.html",
-    "path": "./tests_manager/test_skip_testsuite.html",
-    "content": "Sauter la suite de tests selon une condition"
   },
   {
     "title": "Fonctions d'assertion",
@@ -19714,6 +19918,24 @@ window.searchIndex = [
     "content": "Borne l entree entre min et max."
   },
   {
+    "title": "Développement de plugins natifs",
+    "url": "./nflow_blocks/index.html",
+    "path": "sections/nflow_blocks",
+    "content": "Fonctions utilisées pour compiler des plugins de blocs natifs (C++) pour NFlow."
+  },
+  {
+    "title": "dlgetnflowincludes",
+    "url": "./nflow_blocks/plugin_development/dlgetnflowincludes.html",
+    "path": "./nflow_blocks/plugin_development/dlgetnflowincludes.html",
+    "content": "Renvoie les répertoires d'includes nécessaires pour compiler un plugin de bloc natif nflow."
+  },
+  {
+    "title": "dlgetnflowlibraries",
+    "url": "./nflow_blocks/plugin_development/dlgetnflowlibraries.html",
+    "path": "./nflow_blocks/plugin_development/dlgetnflowlibraries.html",
+    "content": "Renvoie les bibliothèques auxquelles un plugin de bloc natif nflow doit être lié."
+  },
+  {
     "title": "Blocs recepteurs",
     "url": "./nflow_blocks/index.html",
     "path": "sections/nflow_blocks",
@@ -20398,10 +20620,16 @@ window.searchIndex = [
     "content": "Sort le nombre d elements (largeur) de son signal d entree, sous forme scalaire."
   },
   {
-    "title": "moteur nflow",
+    "title": "moteur NFlow",
     "url": "./nflow_engine/index.html",
     "path": "sections/nflow_engine",
     "content": "Création et édition programmatiques de modèles de blocs-diagrammes nflow. NFlow est actuellement publié en version 1.0.0-beta.1 : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours."
+  },
+  {
+    "title": "NFlow.addlibrarypath",
+    "url": "./nflow_engine/NFlow.addlibrarypath.html",
+    "path": "./nflow_engine/NFlow.addlibrarypath.html",
+    "content": "Ajoute un répertoire de recherche de bibliothèques de blocs nflow."
   },
   {
     "title": "NFlow.exportfmu",
@@ -20410,10 +20638,22 @@ window.searchIndex = [
     "content": "Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation."
   },
   {
+    "title": "NFlow.librarypaths",
+    "url": "./nflow_engine/NFlow.librarypaths.html",
+    "path": "./nflow_engine/NFlow.librarypaths.html",
+    "content": "Renvoie les répertoires de recherche de bibliothèques de blocs nflow."
+  },
+  {
     "title": "NFlow.plotScopes",
     "url": "./nflow_engine/NFlow.plotScopes.html",
     "path": "./nflow_engine/NFlow.plotScopes.html",
     "content": "Ouvre une figure par scope d'un résultat de simulation nflow."
+  },
+  {
+    "title": "NFlow.rmlibrarypath",
+    "url": "./nflow_engine/NFlow.rmlibrarypath.html",
+    "path": "./nflow_engine/NFlow.rmlibrarypath.html",
+    "content": "Retire un répertoire de recherche de bibliothèques de blocs nflow."
   },
   {
     "title": "add_block",
@@ -20524,6 +20764,18 @@ window.searchIndex = [
     "content": "Genere du code C ou Rust autonome depuis un modele nflow."
   },
   {
+    "title": "nflow_layout",
+    "url": "./nflow_engine/nflow_layout.html",
+    "path": "./nflow_engine/nflow_layout.html",
+    "content": "Dispose automatiquement les blocs d'un (sous-)système nflow."
+  },
+  {
+    "title": "nflow_reroute",
+    "url": "./nflow_engine/nflow_reroute.html",
+    "path": "./nflow_engine/nflow_reroute.html",
+    "content": "Recalcule le tracé des fils d'un (sous-)système nflow."
+  },
+  {
     "title": "save_system",
     "url": "./nflow_engine/save_system.html",
     "path": "./nflow_engine/save_system.html",
@@ -20602,10 +20854,28 @@ window.searchIndex = [
     "content": "Compile un modèle Modelica en FMU avec OpenModelica."
   },
   {
-    "title": "éditeur nflow",
+    "title": "éditeur NFlow",
     "url": "./nflow_gui/index.html",
     "path": "sections/nflow_gui",
     "content": "L'éditeur nflow est l'environnement de schéma-blocs de Nelson pour construire et simuler des systèmes dynamiques. Il fournit un éditeur visuel pour câbler blocs et sous-systèmes, enregistrer et charger des diagrammes au format JSON .nflow, et lancer des simulations avec le moteur à pas fixe ou le solveur à pas variable (CVODES), avec détection de franchissement de zéro pour les blocs discontinus. Les diagrammes peuvent aussi être transformés en code C ou Rust autonome via le générateur de code. NFlow est actuellement publié en version 1.0.0-beta.1 : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours."
+  },
+  {
+    "title": "nflow_tutorial_first_model",
+    "url": "./nflow_gui/1_nflow_tutorial_first_model.html",
+    "path": "./nflow_gui/1_nflow_tutorial_first_model.html",
+    "content": "Tutoriel 1 sur 3 : construire, câbler et exécuter un premier modèle nflow."
+  },
+  {
+    "title": "nflow_tutorial_continuous",
+    "url": "./nflow_gui/2_nflow_tutorial_continuous.html",
+    "path": "./nflow_gui/2_nflow_tutorial_continuous.html",
+    "content": "Tutoriel 2 sur 3 : simuler un système continu et choisir un solveur."
+  },
+  {
+    "title": "nflow_tutorial_dashboard",
+    "url": "./nflow_gui/3_nflow_tutorial_dashboard.html",
+    "path": "./nflow_gui/3_nflow_tutorial_dashboard.html",
+    "content": "Tutoriel 3 sur 3 : ajouter des commandes dashboard interactives et exécuter en temps réel."
   },
   {
     "title": "nflow",
@@ -21038,23 +21308,5 @@ window.searchIndex = [
     "url": "./compiler/nelson.compiler.build.html",
     "path": "./compiler/nelson.compiler.build.html",
     "content": "Construire un executable natif avec des options structurees."
-  },
-  {
-    "title": "Notebook",
-    "url": "./notebook/index.html",
-    "path": "sections/notebook",
-    "content": "Le module Notebook exécute des documents Notebook en dehors de l'éditeur. Un Notebook mêle texte mis en forme, code et ses sorties dans un même document. Ce module lit le conteneur natif .nlx et le format texte .m, et exécute leurs cellules de code dans l'espace de travail de base — un document peut donc être lancé depuis la ligne de commande ou un script."
-  },
-  {
-    "title": "nlx",
-    "url": "./notebook/nlx.html",
-    "path": "./notebook/nlx.html",
-    "content": "Le format de document Notebook de Nelson (.nlx)."
-  },
-  {
-    "title": "notebook",
-    "url": "./notebook/notebook.html",
-    "path": "./notebook/notebook.html",
-    "content": "Exécute un document Notebook."
   }
 ];

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Notebook cells and controls</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Notebook cells and controls</span></div></div>
+<div class="section syntax-section"><div class="subtitle">The block kinds of a Notebook and the interactive controls.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>A Notebook is a sequence of <b>blocks</b>. Some blocks are narrative, one runs code, and others are interactive controls that drive a variable. You insert any of them by typing <b>/</b> in the document, or from the <b>Insert</b> menu of the toolbar.</p>
+    <p>
+      <img src="./notebook_blocks.svg" align="middle" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+    </p>
+
+    <p><b>Text blocks</b></p>
+    <p>A <b>heading</b> and a <b>paragraph</b> hold formatted text: titles, bold and italic words, and lists. They carry the explanation around the code and never run.</p>
+
+    <p><b>Equations</b></p>
+    <p>An <b>equation</b> block holds a LaTeX formula and renders it inline, next to your text. For example <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">f(x) = \sin(x)\,e^{-\lambda x}</code> is typeset as a mathematical expression. Equations are for display only; they are not evaluated.</p>
+
+    <p><b>Code cells</b></p>
+    <p>A <b>code cell</b> holds Nelson code. Its left margin has three run buttons: run this cell, run up to this cell, and run the section (a code cell together with the text and controls above it, up to the previous heading). The toolbar adds <b>Run all</b> for the whole document.</p>
+    <p>When you change a cell, the cells whose result may now be out of date are marked. <b>Run stale</b> re-runs only those and the cells that depend on them, instead of the whole document. <b>Clear</b> removes every saved output.</p>
+
+    <p><b>Live task</b></p>
+    <p>A <b>live task</b> is a point-and-click cell: you choose an operation and its inputs, and the cell writes the Nelson code for you and runs it. It is a quick way to build a step without writing the code by hand.</p>
+
+    <p><b>Interactive controls</b></p>
+    <p>A control is bound to a workspace variable. When you move or change the control, it sets that variable and re-runs the cells that use it, so a figure updates while you adjust a value. The available controls are:</p>
+    <ul>
+      <li>
+<b>Slider</b> and <b>range slider</b> - a number, or a low and high pair, from a continuous range.</li>
+      <li>
+<b>Number field</b> - a single number typed or stepped.</li>
+      <li>
+<b>Drop-down</b> - one value chosen from a list.</li>
+      <li>
+<b>Check box</b> and <b>state button</b> - a logical on or off.</li>
+      <li>
+<b>Text field</b> - a short text or number.</li>
+      <li>
+<b>Color picker</b> - a colour, as an RGB triplet.</li>
+      <li>
+<b>Date picker</b> - a date, as text.</li>
+      <li>
+<b>File browser</b> - a file path.</li>
+      <li>
+<b>Variable selector</b> - an existing workspace variable, passed on under a new name.</li>
+      <li>
+<b>Button</b> - runs the cells on demand, without binding a variable.</li>
+    </ul>
+    <p>For example, a slider labelled <b>Frequency</b> bound to the variable <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">frequency</code> sets that variable each time you move it, and a cell that plots <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">sin(frequency * x)</code> redraws at once.</p>
+
+    <p><b>A shareable view</b></p>
+    <p><b>Hide code</b> folds the code cells away and keeps the text, the controls and the output, which turns the document into a short report a reader can use without seeing the code. <b>Outline</b> lists the headings so you can move through a long document.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../notebook/1_notebook_first_steps.html">Your first Nelson Notebook</a><a class="see-also-link" href="../notebook/3_notebook_run_and_share.html">Run and share a Notebook</a><a class="see-also-link" href="../notebook/nlx.html">nlx</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

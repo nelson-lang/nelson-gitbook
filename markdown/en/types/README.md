@@ -19,6 +19,7 @@ For C++ extension and embedding code, see [C++ value API](../types/cpp_api.md).
 
 - [class](class.md) - Return a variable class name or create an old-style named object.
 - [cpp_api](cpp_api.md) - C++ value API conventions for Nelson core types.
+- [inferiorto](inferiorto.md) - Declare inferior class precedence.
 - [isa](isa.md) - Return true if a variable has the requested class or type.
 - [iscell](iscell.md) - Return true if variable var is a cell array.
 - [ischar](ischar.md) - Return true if variable var is a char array.
@@ -56,5 +57,6 @@ For C++ extension and embedding code, see [C++ value API](../types/cpp_api.md).
 - [nelson.mixin.indexing.RedefinesDot](nelson.mixin.indexing.RedefinesDot.md) - Customize dot indexing of a class.
 - [nelson.mixin.indexing.RedefinesParen](nelson.mixin.indexing.RedefinesParen.md) - Customize parentheses indexing of a class.
 - [nelson.mixin.util.PropertyGroup](nelson.mixin.util.PropertyGroup.md) - A titled group of properties for custom object display.
+- [superiorto](superiorto.md) - Declare superior class precedence.
 - [underlyingType](underlyingType.md) - Underlying type of an array.
 

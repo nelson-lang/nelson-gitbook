@@ -25,6 +25,7 @@ La distribution par defaut est normale. Les noms de distribution pris en charge 
 x = randn(100, 1);
 histfit(x, 12)
 ```
+<img src="histfit.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

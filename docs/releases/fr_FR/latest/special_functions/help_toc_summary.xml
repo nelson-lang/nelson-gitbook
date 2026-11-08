@@ -31,6 +31,7 @@
       <keyword name="interp1" link="interp1.html" description="Interpolation de donnees 1-D"/>
       <keyword name="interp2" link="interp2.html" description="Interpolation de donnees grillees 2-D au format meshgrid"/>
       <keyword name="interp3" link="interp3.html" description="Interpolation de donnees grillees 3-D au format meshgrid"/>
+      <keyword name="interpft" link="interpft.html" description="Interpolation 1-D par la méthode FFT."/>
       <keyword name="interpn" link="interpn.html" description="Interpolation de donnees grillees N-D au format ndgrid"/>
       <keyword name="isprime" link="isprime.html" description="Détermine quels éléments d'un tableau sont premiers"/>
       <keyword name="lcm" link="lcm.html" description="Plus petit commun multiple"/>

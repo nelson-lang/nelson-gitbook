@@ -44,6 +44,8 @@ yline(50, '-.b', 'mean');
 
 ``````
 
+
+#align(center)[#image("yline_1.svg")]
 ``````matlab
 f = figure();
 plot(1:10, sin(1:10));
@@ -51,6 +53,8 @@ yline([-1 0 1], 'Color', [0 0 1]);
 
 ``````
 
+
+#align(center)[#image("yline_2.svg")]
 
 == Voir aussi
 

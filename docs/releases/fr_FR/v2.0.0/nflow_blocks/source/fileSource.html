@@ -723,13 +723,15 @@ Nelson::NFlow::handleFileSource(SimCtx&amp; ctx, const Block&amp; b, Phase phase
 {
     auto&amp; st = getState(ctx, b.nid);
     if (phase == Phase::INIT) {
-        if (b.params.contains(nflow::kTimes) &amp;&amp; b.params[nflow::kTimes].is_array()) {
-            for (const auto&amp; v : b.params[nflow::kTimes]) {
+        if (asJson(b.params).contains(nflow::kTimes)
+            &amp;&amp; asJson(b.params)[nflow::kTimes].is_array()) {
+            for (const auto&amp; v : asJson(b.params)[nflow::kTimes]) {
                 st.fsrcTimes.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
-        if (b.params.contains(nflow::kValues) &amp;&amp; b.params[nflow::kValues].is_array()) {
-            for (const auto&amp; v : b.params[nflow::kValues]) {
+        if (asJson(b.params).contains(nflow::kValues)
+            &amp;&amp; asJson(b.params)[nflow::kValues].is_array()) {
+            for (const auto&amp; v : asJson(b.params)[nflow::kValues]) {
                 st.fsrcValues.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
@@ -765,15 +767,15 @@ Nelson::NFlow::getCodeGenCFileSource()
     // lookup the simulator uses (largest index with times[i] &lt;= t, clamped to 0).
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         std::vector&lt;double&gt; times, values;
-        if (a.params &amp;&amp; a.params-&gt;contains(nflow::kTimes)
-            &amp;&amp; (*a.params)[nflow::kTimes].is_array()) {
-            for (const auto&amp; v : (*a.params)[nflow::kTimes]) {
+        if (asJson(a.params) &amp;&amp; asJson(a.params)-&gt;contains(nflow::kTimes)
+            &amp;&amp; (*asJson(a.params))[nflow::kTimes].is_array()) {
+            for (const auto&amp; v : (*asJson(a.params))[nflow::kTimes]) {
                 times.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
-        if (a.params &amp;&amp; a.params-&gt;contains(nflow::kValues)
-            &amp;&amp; (*a.params)[nflow::kValues].is_array()) {
-            for (const auto&amp; v : (*a.params)[nflow::kValues]) {
+        if (asJson(a.params) &amp;&amp; asJson(a.params)-&gt;contains(nflow::kValues)
+            &amp;&amp; (*asJson(a.params))[nflow::kValues].is_array()) {
+            for (const auto&amp; v : (*asJson(a.params))[nflow::kValues]) {
                 values.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
@@ -781,8 +783,8 @@ Nelson::NFlow::getCodeGenCFileSource()
             a.line("out_" + a.id + " = 0.0;");
             return;
         }
-        std::string ts = "static const double __fsrc_t_" + a.id + "[] = {";
-        std::string vs = "static const double __fsrc_v_" + a.id + "[] = {";
+        std::string ts = "static const double nf_fsrc_t_" + a.id + "[] = {";
+        std::string vs = "static const double nf_fsrc_v_" + a.id + "[] = {";
         for (size_t i = 0; i &lt; times.size(); ++i) {
             ts += (i ? ", " : "") + a.fmt(times[i]);
         }
@@ -795,10 +797,10 @@ Nelson::NFlow::getCodeGenCFileSource()
         a.line(vs);
         const std::string n = std::to_string(times.size());
         const std::string vn = std::to_string(values.size());
-        a.line("{ int __fi = " + n + " - 1; while (__fi &gt; 0 &amp;&amp; __fsrc_t_" + a.id
-            + "[__fi] &gt; t) "
-              "__fi--;");
-        a.line("  out_" + a.id + " = __fsrc_v_" + a.id + "[__fi &lt; " + vn + " ? __fi : " + vn
+        a.line("{ int nf_fi = " + n + " - 1; while (nf_fi &gt; 0 &amp;&amp; nf_fsrc_t_" + a.id
+            + "[nf_fi] &gt; t) "
+              "nf_fi--;");
+        a.line("  out_" + a.id + " = nf_fsrc_v_" + a.id + "[nf_fi &lt; " + vn + " ? nf_fi : " + vn
             + " - 1]; }");
     };
     return t;
@@ -810,15 +812,15 @@ Nelson::NFlow::getCodeGenRustFileSource()
     BlockCodegenTemplate t;
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
         std::vector&lt;double&gt; times, values;
-        if (a.params &amp;&amp; a.params-&gt;contains(nflow::kTimes)
-            &amp;&amp; (*a.params)[nflow::kTimes].is_array()) {
-            for (const auto&amp; v : (*a.params)[nflow::kTimes]) {
+        if (asJson(a.params) &amp;&amp; asJson(a.params)-&gt;contains(nflow::kTimes)
+            &amp;&amp; (*asJson(a.params))[nflow::kTimes].is_array()) {
+            for (const auto&amp; v : (*asJson(a.params))[nflow::kTimes]) {
                 times.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
-        if (a.params &amp;&amp; a.params-&gt;contains(nflow::kValues)
-            &amp;&amp; (*a.params)[nflow::kValues].is_array()) {
-            for (const auto&amp; v : (*a.params)[nflow::kValues]) {
+        if (asJson(a.params) &amp;&amp; asJson(a.params)-&gt;contains(nflow::kValues)
+            &amp;&amp; (*asJson(a.params))[nflow::kValues].is_array()) {
+            for (const auto&amp; v : (*asJson(a.params))[nflow::kValues]) {
                 values.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
             }
         }
@@ -826,8 +828,8 @@ Nelson::NFlow::getCodeGenRustFileSource()
             a.line("out_" + a.id + " = 0.0_f64;");
             return;
         }
-        std::string ts = "let __fsrc_t_" + a.id + " = [";
-        std::string vs = "let __fsrc_v_" + a.id + " = [";
+        std::string ts = "let nf_fsrc_t_" + a.id + " = [";
+        std::string vs = "let nf_fsrc_v_" + a.id + " = [";
         for (size_t i = 0; i &lt; times.size(); ++i) {
             ts += (i ? ", " : "") + a.fmt(times[i]);
         }
@@ -838,11 +840,11 @@ Nelson::NFlow::getCodeGenRustFileSource()
         vs += "];";
         a.line(ts);
         a.line(vs);
-        a.line("let mut __fi: usize = " + std::to_string(times.size() - 1) + ";");
-        a.line("while __fi &gt; 0 &amp;&amp; __fsrc_t_" + a.id + "[__fi] &gt; t { __fi -= 1; }");
-        a.line("let __fj: usize = if __fi &lt; " + std::to_string(values.size()) + " { __fi } else { "
-            + std::to_string(values.size() - 1) + " };");
-        a.line("out_" + a.id + " = __fsrc_v_" + a.id + "[__fj];");
+        a.line("let mut nf_fi: usize = " + std::to_string(times.size() - 1) + ";");
+        a.line("while nf_fi &gt; 0 &amp;&amp; nf_fsrc_t_" + a.id + "[nf_fi] &gt; t { nf_fi -= 1; }");
+        a.line("let nf_fj: usize = if nf_fi &lt; " + std::to_string(values.size())
+            + " { nf_fi } else { " + std::to_string(values.size() - 1) + " };");
+        a.line("out_" + a.id + " = nf_fsrc_v_" + a.id + "[nf_fj];");
     };
     return t;
 }

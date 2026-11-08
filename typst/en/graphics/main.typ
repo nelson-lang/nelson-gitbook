@@ -439,7 +439,9 @@ Functions for interactive graphics, callbacks, camera views, and lighting.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camup>)[camup]: Set or query the camera up vector.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camva>)[camva]: Set or query the camera view angle.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camzoom>)[camzoom]: Zoom the camera in or out.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.disableDefaultInteractivity>)[disableDefaultInteractivity]: Disable the built-in axes interactions.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.drawnow>)[drawnow]: Update figures and process callbacks
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.enableDefaultInteractivity>)[enableDefaultInteractivity]: Enable the built-in axes interactions.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.graphical_callback>)[Managing Callback Interruptions in Nelson]: 
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.light>)[light]: Create a light object in axes.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.lightangle>)[lightangle]: Create or position a light from angles.
@@ -1112,7 +1114,11 @@ Functions for opening and saving figure files.
 #pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/camzoom.typ"
 #pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.typ"
+#pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/drawnow.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.typ"
 #pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/graphical_callback.typ"
 #pagebreak(weak: true)

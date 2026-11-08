@@ -16,6 +16,7 @@
     - #nlink(<string:1_create_convert_text.num2str>)[num2str]
     - #nlink(<string:1_create_convert_text.sprintf>)[sprintf]
     - #nlink(<string:1_create_convert_text.str2double>)[str2double]
+    - #nlink(<string:1_create_convert_text.str2num>)[str2num]
     - #nlink(<string:1_create_convert_text.strcat>)[strcat]
     - #nlink(<string:1_create_convert_text.string>)[string]
     - #nlink(<string:1_create_convert_text.strings>)[strings]

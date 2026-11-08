@@ -24,7 +24,7 @@ This module supports creating reference outputs, running test suites, and condit
 - [nelson.unittest.skip](nelson_unittest_skip.md) - Skip the current test.
 - [nelson.unittest.tuneReuse](nelson_unittest_tuneReuse.md) - Calibrate explicit child-process reuse for tests and benches.
 - [nelson.unittest.tuneWeights](nelson_unittest_tuneWeights.md) - Calibrate scheduling weights from measured test durations.
+- [skip_testsuite](skip_testsuite.md) - Skip test suite on condition
 - [test_makeref](test_makeref.md) - Creates a '.ref' file for a test
 - [test_run](test_run.md) - Runs tests
-- [skip_testsuite](test_skip_testsuite.md) - Skip test suite on condition
 

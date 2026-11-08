@@ -33,6 +33,7 @@ f = figure();
 ellipsoid(0, 0, 0, 3, 2, 1);
 axis equal
 ```
+<img src="ellipsoid.svg" align="middle"/>
 
 
 ## 🔗 See also

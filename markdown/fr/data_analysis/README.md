@@ -16,6 +16,7 @@ Ce module couvre le traitement, le resume et l'exploration de jeux de donnees so
 
 - [accumarray](accumarray.md) - Construit un tableau par accumulation.
 - [allbetween](allbetween.md) - Determine si tous les elements sont compris entre des bornes.
+- [anymissing](anymissing.md) - Teste la présence de valeurs manquantes.
 - [bounds](bounds.md) - Plus petits et plus grands elements d'un tableau.
 - [conv](conv.md) - Convolution et multiplication de polynômes.
 - [conv2](conv2.md) - Convolution 2D.
@@ -26,6 +27,7 @@ Ce module couvre le traitement, le resume et l'exploration de jeux de donnees so
 - [detrend](detrend.md) - Retire une tendance polynomiale.
 - [discretize](discretize.md) - Regrouper des donnees numeriques en intervalles.
 - [fillmissing](fillmissing.md) - Remplit les valeurs manquantes.
+- [findgroups](findgroups.md) - Trouve les groupes et renvoie les numéros de groupe.
 - [groupcounts](groupcounts.md) - Compte les groupes.
 - [groupsummary](groupsummary.md) - Calcule des resumes groupes de table.
 - [intersect](intersect.md) - Intersection ensembliste de deux tableaux.
@@ -48,11 +50,13 @@ Ce module couvre le traitement, le resume et l'exploration de jeux de donnees so
 - [movvar](movvar.md) - Variance mobile.
 - [normalize](normalize.md) - Normalise les données
 - [prod](prod.md) - Produit des éléments d'un tableau.
+- [rescale](rescale.md) - Met à l'échelle les éléments dans un intervalle fixé.
 - [rmmissing](rmmissing.md) - Supprime les donnees manquantes.
 - [setdiff](setdiff.md) - Difference ensembliste de deux tableaux.
 - [setxor](setxor.md) - Ou exclusif ensembliste de deux tableaux.
 - [smoothdata](smoothdata.md) - Lisse des donnees bruitees.
 - [sort](sort.md) - Trier les éléments d'un tableau (algorithme de tri rapide).
+- [splitapply](splitapply.md) - Découpe les données en groupes et applique une fonction.
 - [standardizeMissing](standardizeMissing.md) - Convertit des indicateurs en valeurs manquantes standard.
 - [subspace](subspace.md) - Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices.
 - [sum](sum.md) - Somme des éléments d'un tableau.

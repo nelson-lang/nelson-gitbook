@@ -33,6 +33,7 @@ Le module Fonctions Spéciales fournit des outils pour effectuer des opérations
 - #nlink(<special_functions:interp1>)[interp1]: Interpolation de donnees 1-D
 - #nlink(<special_functions:interp2>)[interp2]: Interpolation de donnees grillees 2-D au format meshgrid
 - #nlink(<special_functions:interp3>)[interp3]: Interpolation de donnees grillees 3-D au format meshgrid
+- #nlink(<special_functions:interpft>)[interpft]: Interpolation 1-D par la méthode FFT.
 - #nlink(<special_functions:interpn>)[interpn]: Interpolation de donnees grillees N-D au format ndgrid
 - #nlink(<special_functions:isprime>)[isprime]: Détermine quels éléments d'un tableau sont premiers
 - #nlink(<special_functions:lcm>)[lcm]: Plus petit commun multiple
@@ -92,6 +93,8 @@ Le module Fonctions Spéciales fournit des outils pour effectuer des opérations
 #include "interp2.typ"
 #pagebreak(weak: true)
 #include "interp3.typ"
+#pagebreak(weak: true)
+#include "interpft.typ"
 #pagebreak(weak: true)
 #include "interpn.typ"
 #pagebreak(weak: true)

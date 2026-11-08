@@ -27,6 +27,8 @@ Execute next executable line during debugging.
 
  These commands can only be used from the command line while debugging.
 
+ Outside a debug session, #strong[dbstep]; raises #raw("Debug commands only allowed when stopped in debug mode."); When the step is typed at the #raw("K>>"); prompt, the console prints the line about to run, as #raw("4   r = r * 2;");; a step driven from the editor moves the arrow without printing it. At a stop on an uncaught error, #strong[dbstep]; ends the session.
+
 
 == Examples
 
@@ -85,6 +87,7 @@ dbstep 4
   columns: 2,
   table.header([Version], [Description]),
   [1.16.0], [initial version],
+  [2.0.0], [uniform message outside a debug session, per-step echo of the line, ends the session at an error stop],
 )
 
 // Author: Allan CORNET

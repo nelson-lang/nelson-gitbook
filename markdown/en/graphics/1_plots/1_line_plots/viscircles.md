@@ -34,6 +34,7 @@ f = figure();
 axis equal
 viscircles([0 0; 2 1], [1; 0.5], 'Color', 'b');
 ```
+<img src="viscircles.svg" align="middle"/>
 
 
 ## 🔗 See also

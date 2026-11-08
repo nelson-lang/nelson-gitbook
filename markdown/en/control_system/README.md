@@ -57,7 +57,7 @@ Functions for model conversion, composition, selection, and interconnection.
 - [c2d](2_model_conversion_interconnection/c2d.md) - Convert model from continuous to discrete time.
 - [d2c](2_model_conversion_interconnection/d2c.md) - Convert model from discrete to continuous time.
 - [feedback](2_model_conversion_interconnection/feedback.md) - Feedback connection of multiple models.
-- [gensig](2_model_conversion_interconnection/gensign.md) - Create periodic signals for simulating system response.
+- [gensig](2_model_conversion_interconnection/gensig.md) - Create periodic signals for simulating system response.
 - [padecoef](2_model_conversion_interconnection/padecoef.md) - Computes the Pade approximation of time delays.
 - [parallel](2_model_conversion_interconnection/parallel.md) - Parallel connection of two models.
 - [series](2_model_conversion_interconnection/series.md) - Series connection of two models.
@@ -65,6 +65,7 @@ Functions for model conversion, composition, selection, and interconnection.
 - [ssdelete](2_model_conversion_interconnection/ssdelete.md) - Remove inputs, outputs and states from state-space system.
 - [ssselect](2_model_conversion_interconnection/ssselect.md) - Extract subsystem from larger system.
 - [tf2ss](2_model_conversion_interconnection/tf2ss.md) - Convert transfer function filter parameters to state-space form.
+- [zpk2tf](2_model_conversion_interconnection/zpk2tf.md) - Convert zero-pole-gain model to transfer function.
 
 ## Linear Analysis
 

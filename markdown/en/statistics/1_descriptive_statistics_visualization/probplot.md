@@ -26,6 +26,7 @@ The default distribution is normal. Supported distribution names include normal,
 x = randn(100, 1);
 probplot(x)
 ```
+<img src="probplot.svg" align="middle"/>
 
 
 ## 🔗 See also

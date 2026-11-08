@@ -1,6 +1,6 @@
 #import "nelson_help.typ": *
 
-= nflow editor
+= NFlow editor
 
 The nflow editor is Nelson's block-diagram environment for building and simulating dynamic systems.
 
@@ -12,6 +12,9 @@ The nflow editor is Nelson's block-diagram environment for building and simulati
 
 == Functions
 
+- #nlink(<nflow_gui:1_nflow_tutorial_first_model>)[nflow\_tutorial\_first\_model]: Tutorial 1 of 3: build, wire, and run a first nflow model.
+- #nlink(<nflow_gui:2_nflow_tutorial_continuous>)[nflow\_tutorial\_continuous]: Tutorial 2 of 3: simulate a continuous system and choose a solver.
+- #nlink(<nflow_gui:3_nflow_tutorial_dashboard>)[nflow\_tutorial\_dashboard]: Tutorial 3 of 3: add interactive dashboard controls and run in real time.
 - #nlink(<nflow_gui:nflow>)[nflow]: Launch the nflow editor, optionally on a model file.
 - #nlink(<nflow_gui:nflow_dashboard>)[nflow\_dashboard]: Monitor and adjust NFlow simulations with interactive Dashboard blocks.
 - #nlink(<nflow_gui:nflow_multirate>)[nflow\_multirate]: Running blocks at different sample rates (multi-rate).
@@ -22,6 +25,12 @@ The nflow editor is Nelson's block-diagram environment for building and simulati
 
 
 #nested[
+#pagebreak(weak: true)
+#include "1_nflow_tutorial_first_model.typ"
+#pagebreak(weak: true)
+#include "2_nflow_tutorial_continuous.typ"
+#pagebreak(weak: true)
+#include "3_nflow_tutorial_dashboard.typ"
 #pagebreak(weak: true)
 #include "nflow.typ"
 #pagebreak(weak: true)

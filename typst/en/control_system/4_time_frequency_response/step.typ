@@ -57,7 +57,7 @@ step(sys);
 
 == See also
 
-#nlink(<control_system:2_model_conversion_interconnection.gensign>)[gensig];, #nlink(<control_system:4_time_frequency_response.lsim>)[lsim];.
+#nlink(<control_system:2_model_conversion_interconnection.gensig>)[gensig];, #nlink(<control_system:4_time_frequency_response.lsim>)[lsim];.
 
 == History
 

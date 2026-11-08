@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Your first Nelson Notebook</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Your first Nelson Notebook</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Create, run and save your first Notebook document.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>A <b>Notebook</b> is a single document that holds formatted text, Nelson code and the output of that code, in the order you arrange them. It is built from <b>blocks</b>: a heading, a paragraph, a code cell, an equation or an interactive control. Running a code cell shows its text output and its figures just below the code, so the explanation, the computation and the result stay together.</p>
+    <p>All the code cells of one document share a single workspace, the same base workspace used at the command line. A variable created in one cell is visible to the cells that run after it. This tutorial creates a document, runs it and saves it.</p>
+
+    <p><b>Open the editor</b></p>
+    <p>The <b>notebook</b> function opens the Notebook editor:</p>
+    <ul>
+      <li>
+<b>notebook()</b> with no argument opens a new, empty document.</li>
+      <li>
+<b>notebook(filename, 'edit')</b> opens an existing document, and <b>edit(filename)</b> does the same for a <b>.nlx</b> file.</li>
+    </ul>
+    <p>On the Nelson desktop you can also use the <b>New Notebook</b> button of the toolbar, or the <b>Window</b> menu. The editor opens as a tab of the web desktop, or, on the Qt desktop, as the Notebook window (one window, one tab per document). Without a desktop (nelson-cli, nelson-adv-cli) the editor cannot open and the call reports an error.</p>
+    <p>The editor shows a toolbar at the top and the document below. A new document already contains a short example you can run and edit.</p>
+    <p>
+      <img src="./notebook_editor.png" align="middle" style="width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+    </p>
+
+    <p><b>Add text and code</b></p>
+    <p>Click in the document and type to write text. Press <b>Enter</b> to start a new block. To insert anything other than a paragraph, type <b>/</b> at the start of a line and pick an item from the list, or use the <b>Insert</b> menu of the toolbar. Choose <b>Code cell</b> to add a cell and type Nelson code in it, for example:</p>
+    <p><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">x = linspace(0, 2 * pi, 200);</code></p>
+    <p><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">plot(x, sin(x))</code></p>
+
+    <p><b>Run a cell</b></p>
+    <p>Each code cell has a run button in its left margin. Click it to run that one cell, or click <b>Run all</b> in the toolbar to run every code cell from top to bottom. The text output appears under the cell, and any figure the cell draws is shown inline, in the document, instead of a separate figure window.</p>
+
+    <p><b>The shared workspace</b></p>
+    <p>Because the cells share one workspace, you can split a computation across several cells. The value set in an earlier cell is used by a later one:</p>
+    
+      <li>First cell: <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">N = 200;</code>
+</li>
+      <li>Second cell: <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">x = linspace(0, 2 * pi, N);</code>
+</li>
+      <li>Third cell: <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">plot(x, sin(x))</code>
+</li>
+    
+    <p>What matters is the order in which the cells run, not their position on the page. If a later cell reports an unknown variable, run the earlier cells first, or use <b>Run all</b>.</p>
+
+    <p><b>Save your work</b></p>
+    <p>Use <b>Save</b> in the toolbar to write the document as a <b>.nlx</b> file, the native Notebook format. The <b>.nlx</b> container keeps the text, the code, the saved output and the figures together in one portable file. You can also save the document as a plain-text <b>.m</b> script with <b>Save as Script</b>. Reopen a saved document with <b>Open</b>, with <b>edit(filename)</b> or with <b>notebook(filename, 'edit')</b>.</p>
+
+    <p><b>What next</b></p>
+    <p>The next tutorials describe the block kinds and the interactive controls, and how to run or share a document without the editor.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../notebook/2_notebook_cells_and_controls.html">Notebook cells and controls</a><a class="see-also-link" href="../notebook/3_notebook_run_and_share.html">Run and share a Notebook</a><a class="see-also-link" href="../notebook/notebook.html">notebook</a><a class="see-also-link" href="../notebook/nlx.html">nlx</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

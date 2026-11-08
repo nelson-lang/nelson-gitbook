@@ -95,7 +95,7 @@ This page documents the visible properties returned by #strong[properties]; for 
   [#strong[PositionMode];], ['auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.], [Type: text scalar or character row vector. Supported values: 'auto', 'manual'.], 
   [#strong[Projection];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'orthographic', 'perspective'.], 
   [#strong[Selected];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'on', 'off'.], 
-  [#strong[SelectionHighlight];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'on', 'off'.], 
+  [#strong[SelectionHighlight];], ['off' hides the frame drawn around the axes under the pointer; navigation gestures stay available. The figure SelectionHighlight applies to all its axes.], [Type: text scalar or character row vector. Supported values: 'on', 'off'.], 
   [#strong[SortMethod];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'childorder', 'depth'.], 
   [#strong[Subtitle];], [updates the displayed subtitle or subtitle object.], [Type: text graphics object or text value, depending on the object class. Supported values: a subtitle text object, character row vector, string scalar, or empty text.], 
   [#strong[SubtitleFontWeight];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'normal', 'bold'.], 

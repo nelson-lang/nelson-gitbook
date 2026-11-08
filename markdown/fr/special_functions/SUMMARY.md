@@ -22,6 +22,7 @@
   - [interp1](interp1.md)
   - [interp2](interp2.md)
   - [interp3](interp3.md)
+  - [interpft](interpft.md)
   - [interpn](interpn.md)
   - [isprime](isprime.md)
   - [lcm](lcm.md)

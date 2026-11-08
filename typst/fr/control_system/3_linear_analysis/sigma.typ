@@ -25,12 +25,20 @@ Reponse en valeurs singulieres d'un modele LTI.
 #strong[sigma]; calcule les valeurs singulieres de la reponse frequentielle.
 
 
-== Exemple
+== Exemples
 
 ``````matlab
 sys = tf(2, [1 1]); [sv, w] = sigma(sys, [1 2 4])
 ``````
 
+Tracer la reponse frequentielle en valeurs singulieres.
+
+``````matlab
+sigma(tf(2, [1 1]));
+``````
+
+
+#align(center)[#image("sigma.svg")]
 
 == Voir aussi
 

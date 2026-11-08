@@ -11,6 +11,6 @@
   - [nelson.unittest.skip](nelson_unittest_skip.md)
   - [nelson.unittest.tuneReuse](nelson_unittest_tuneReuse.md)
   - [nelson.unittest.tuneWeights](nelson_unittest_tuneWeights.md)
+  - [skip_testsuite](skip_testsuite.md)
   - [test_makeref](test_makeref.md)
   - [test_run](test_run.md)
-  - [skip_testsuite](test_skip_testsuite.md)

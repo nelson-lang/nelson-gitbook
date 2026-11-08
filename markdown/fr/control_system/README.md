@@ -57,7 +57,7 @@ Fonctions pour conversion, composition, selection et interconnexion de modeles.
 - [c2d](2_model_conversion_interconnection/c2d.md) - Convertit le modèle du temps continu au temps discret.
 - [d2c](2_model_conversion_interconnection/d2c.md) - Convertit un modèle du temps discret au temps continu.
 - [feedback](2_model_conversion_interconnection/feedback.md) - Connexion en boucle fermée de plusieurs modèles.
-- [gensig](2_model_conversion_interconnection/gensign.md) - GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...).
+- [gensig](2_model_conversion_interconnection/gensig.md) - GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...).
 - [padecoef](2_model_conversion_interconnection/padecoef.md) - Calcule l'approximation de Padé des délais temporels.
 - [parallel](2_model_conversion_interconnection/parallel.md) - Connexion parallèle de deux modèles.
 - [series](2_model_conversion_interconnection/series.md) - Connexion en série de deux modèles.
@@ -65,6 +65,7 @@ Fonctions pour conversion, composition, selection et interconnexion de modeles.
 - [ssdelete](2_model_conversion_interconnection/ssdelete.md) - Supprime des entrées, sorties et états d'un système en espace d'état.
 - [ssselect](2_model_conversion_interconnection/ssselect.md) - Extraire un sous-système d'un système plus grand.
 - [tf2ss](2_model_conversion_interconnection/tf2ss.md) - Convertit les paramètres d'un filtre en fonction de transfert en forme état-espace.
+- [zpk2tf](2_model_conversion_interconnection/zpk2tf.md) - Convertit un modèle zéros-pôles-gain en fonction de transfert.
 
 ## Analyse lineaire
 

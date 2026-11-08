@@ -30,6 +30,7 @@ Fonctions pour resoudre, analyser et mesurer des systemes lineaires et quantites
 - [gradient](1_linear_systems/gradient.md) - Gradient numérique.
 - [inv](1_linear_systems/inv.md) - Inverse de matrice.
 - [kron](1_linear_systems/kron.md) - Produit tensoriel de Kronecker.
+- [linsolve](1_linear_systems/linsolve.md) - Résout un système d'équations linéaires.
 - [null](1_linear_systems/null.md) - Noyau d'une matrice
 - [orth](1_linear_systems/orth.md) - Base orthonormée de l'espace image d'une matrice.
 - [rank](1_linear_systems/rank.md) - Rang d'une matrice.

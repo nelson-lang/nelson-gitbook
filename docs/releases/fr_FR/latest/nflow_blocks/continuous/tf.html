@@ -606,9 +606,9 @@ Nelson::NFlow::handleTf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     if (phase == Phase::INIT) {
         int n = 0;
         std::vector&lt;double&gt; state1;
-        bool ok = buildTfState(b.params.value(nflow::kNum, json::array()),
-            b.params.value(nflow::kDen, json::array()), st.xHist, st.yHist, st.tfD, state1, n,
-            ctx.variables);
+        bool ok = buildTfState(asJson(b.params).value(nflow::kNum, json::array()),
+            asJson(b.params).value(nflow::kDen, json::array()), st.xHist, st.yHist, st.tfD, state1,
+            n, ctx.variables);
         if (!ok) {
             st.tfState.clear();
             st.xHist.clear();
@@ -735,12 +735,12 @@ Nelson::NFlow::getCodeGenCTf()
         const std::string nStr = std::to_string(n);
         switch (a.rk4Op) {
         case Rk4Gather:
-            a.line("for (int __i = 0; __i &lt; " + nStr + "; ++__i) " + a.rk4Arr + "[" + off
-                + " + __i] = s-&gt;tf_" + a.id + "[__i];");
+            a.line("for (int nf_i = 0; nf_i &lt; " + nStr + "; ++nf_i) " + a.rk4Arr + "[" + off
+                + " + nf_i] = s-&gt;tf_" + a.id + "[nf_i];");
             break;
         case Rk4Scatter:
-            a.line("for (int __i = 0; __i &lt; " + nStr + "; ++__i) s-&gt;tf_" + a.id
-                + "[__i] = " + a.rk4Arr + "[" + off + " + __i];");
+            a.line("for (int nf_i = 0; nf_i &lt; " + nStr + "; ++nf_i) s-&gt;tf_" + a.id
+                + "[nf_i] = " + a.rk4Arr + "[" + off + " + nf_i];");
             break;
         case Rk4Output:
             a.line("out_" + a.id + " = tf_out(&amp;tf_params_" + a.id + ", s-&gt;tf_" + a.id + ", "
@@ -906,12 +906,12 @@ Nelson::NFlow::getCodeGenRustTf()
         const std::string nc = "TF_N_" + cu;
         switch (a.rk4Op) {
         case Rk4Gather:
-            a.line("for __i in 0.." + nc + " { " + a.rk4Arr + "[" + off + " + __i] = s.tf_x_" + a.id
-                + "[__i]; }");
+            a.line("for nf_i in 0.." + nc + " { " + a.rk4Arr + "[" + off + " + nf_i] = s.tf_x_"
+                + a.id + "[nf_i]; }");
             break;
         case Rk4Scatter:
-            a.line("for __i in 0.." + nc + " { s.tf_x_" + a.id + "[__i] = " + a.rk4Arr + "[" + off
-                + " + __i]; }");
+            a.line("for nf_i in 0.." + nc + " { s.tf_x_" + a.id + "[nf_i] = " + a.rk4Arr + "[" + off
+                + " + nf_i]; }");
             break;
         case Rk4Output:
             a.line("out_" + a.id + " = tf_out(" + nc + ", TF_D_" + cu + ", &amp;TF_C_" + cu
@@ -1020,7 +1020,6 @@ Nelson::NFlow::getCodeGenRustTf()
             a.addHelper("    for j in 0..n { last += a[j] * x[j]; }");
             a.addHelper("    if n &gt; 0 { dx[n - 1] = last; }");
             a.addHelper("}");
-            a.addHelper("#[allow(dead_code)]");
             a.addHelper("fn tf_out(n: usize, d: f64, c: &amp;[f64], x: &amp;[f64], u: f64) -&gt; f64 {");
             a.addHelper("    let mut y = d * u;");
             a.addHelper("    for i in 0..n { y += c[i] * x[i]; }");

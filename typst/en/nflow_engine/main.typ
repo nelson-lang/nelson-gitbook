@@ -1,6 +1,6 @@
 #import "nelson_help.typ": *
 
-= nflow engine
+= NFlow engine
 
 Programmatic creation and editing of nflow block-diagram models.
 
@@ -8,8 +8,11 @@ Programmatic creation and editing of nflow block-diagram models.
 
 == Functions
 
+- #nlink(<nflow_engine:NFlow.addlibrarypath>)[NFlow.addlibrarypath]: Add an nflow block library search path.
 - #nlink(<nflow_engine:NFlow.exportfmu>)[NFlow.exportfmu]: Export an nflow model as an FMI 3.0 Co-Simulation source FMU.
+- #nlink(<nflow_engine:NFlow.librarypaths>)[NFlow.librarypaths]: Return the nflow block library search paths.
 - #nlink(<nflow_engine:NFlow.plotScopes>)[NFlow.plotScopes]: Open one figure per scope of an nflow simulation result.
+- #nlink(<nflow_engine:NFlow.rmlibrarypath>)[NFlow.rmlibrarypath]: Remove an nflow block library search path.
 - #nlink(<nflow_engine:add_block>)[add\_block]: Add a block to an nflow model from a library source.
 - #nlink(<nflow_engine:add_line>)[add\_line]: Connect two block ports in an nflow model.
 - #nlink(<nflow_engine:bdIsDirty>)[bdIsDirty]: Return true when an nflow model has unsaved changes.
@@ -28,6 +31,8 @@ Programmatic creation and editing of nflow block-diagram models.
 - #nlink(<nflow_engine:load_system>)[load\_system]: Load an nflow model from a .nflow file without opening the editor.
 - #nlink(<nflow_engine:new_system>)[new\_system]: Create and load an empty nflow model.
 - #nlink(<nflow_engine:nflow_codegenerate>)[nflow\_codegenerate]: Generate standalone C or Rust code from an nflow model.
+- #nlink(<nflow_engine:nflow_layout>)[nflow\_layout]: Automatically arrange the blocks of an nflow (sub)system.
+- #nlink(<nflow_engine:nflow_reroute>)[nflow\_reroute]: Recompute the wire routes of an nflow (sub)system.
 - #nlink(<nflow_engine:save_system>)[save\_system]: Save an nflow model to a .nflow file.
 - #nlink(<nflow_engine:set_param>)[set\_param]: Set model or block parameters atomically.
 - #nlink(<nflow_engine:sim>)[sim]: Run an nflow simulation of a model and return its results.
@@ -37,9 +42,15 @@ Programmatic creation and editing of nflow block-diagram models.
 
 #nested[
 #pagebreak(weak: true)
+#include "NFlow.addlibrarypath.typ"
+#pagebreak(weak: true)
 #include "NFlow.exportfmu.typ"
 #pagebreak(weak: true)
+#include "NFlow.librarypaths.typ"
+#pagebreak(weak: true)
 #include "NFlow.plotScopes.typ"
+#pagebreak(weak: true)
+#include "NFlow.rmlibrarypath.typ"
 #pagebreak(weak: true)
 #include "add_block.typ"
 #pagebreak(weak: true)
@@ -76,6 +87,10 @@ Programmatic creation and editing of nflow block-diagram models.
 #include "new_system.typ"
 #pagebreak(weak: true)
 #include "nflow_codegenerate.typ"
+#pagebreak(weak: true)
+#include "nflow_layout.typ"
+#pagebreak(weak: true)
+#include "nflow_reroute.typ"
 #pagebreak(weak: true)
 #include "save_system.typ"
 #pagebreak(weak: true)

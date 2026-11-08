@@ -33,6 +33,8 @@ Z = [1 + 2i, 2 - 1i, -1 + 1i];
 compass(Z);
 ``````
 
+
+#align(center)[#image("compass_1.svg")]
 Utiliser des composantes cartesiennes avec un style et des proprietes de ligne.
 
 ``````matlab
@@ -42,6 +44,8 @@ h = compass(U, V, '-r');
 set(h, 'LineWidth', 1.5);
 ``````
 
+
+#align(center)[#image("compass_2.svg")]
 
 == Voir aussi
 

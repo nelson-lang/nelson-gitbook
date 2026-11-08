@@ -26,6 +26,8 @@ qqplot(x)
 ``````
 
 
+#align(center)[#image("qqplot.svg")]
+
 == Voir aussi
 
 #nlink(<statistics:1_descriptive_statistics_visualization.quantile>)[quantile];, #nlink(<statistics:2_probability_distributions.norminv>)[norminv];.

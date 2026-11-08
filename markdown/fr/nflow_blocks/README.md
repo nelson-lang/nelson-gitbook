@@ -389,6 +389,19 @@ Blocs avec saturation, seuils, hysteresis ou limites de vitesse.
 - [rate](nonlinear/rate.md) - Limite les vitesses de montee et de descente du signal.
 - [saturation](nonlinear/saturation.md) - Borne l entree entre min et max.
 
+## Développement de plugins natifs
+
+
+    
+Fonctions utilisées pour compiler des plugins de blocs natifs (C++) pour NFlow.
+
+  
+
+### Functions
+
+- [dlgetnflowincludes](plugin_development/dlgetnflowincludes.md) - Renvoie les répertoires d'includes nécessaires pour compiler un plugin de bloc natif nflow.
+- [dlgetnflowlibraries](plugin_development/dlgetnflowlibraries.md) - Renvoie les bibliothèques auxquelles un plugin de bloc natif nflow doit être lié.
+
 ## Blocs recepteurs
 
 

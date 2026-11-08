@@ -59,7 +59,7 @@ initial(sys, X0);
 
 == See also
 
-#nlink(<control_system:2_model_conversion_interconnection.gensign>)[step];, #nlink(<control_system:4_time_frequency_response.step>)[lsim];.
+#nlink(<control_system:2_model_conversion_interconnection.gensig>)[step];, #nlink(<control_system:4_time_frequency_response.step>)[lsim];.
 
 == History
 

@@ -70,7 +70,7 @@ Add a legend to axes.
 
  'southwest' or 'SW': bottom left.
 
- Outside locations are also supported: 'northoutside', 'southoutside', 'eastoutside', and 'westoutside'.
+ Outside locations are also supported: 'northoutside', 'southoutside', 'eastoutside', 'westoutside', 'northeastoutside', 'northwestoutside', 'southeastoutside', 'southwestoutside' and 'bestoutside'.
 
  See #nlink(<graphics:2_graphics_objects.4_properties.nelson.graphics.legend.properties>)[legend properties]; for the complete property list.
 

@@ -1,8 +1,11 @@
 #import "nelson_help.typ": *
 
-- nflow engine
+- NFlow engine
+  - #nlink(<nflow_engine:NFlow.addlibrarypath>)[NFlow.addlibrarypath]
   - #nlink(<nflow_engine:NFlow.exportfmu>)[NFlow.exportfmu]
+  - #nlink(<nflow_engine:NFlow.librarypaths>)[NFlow.librarypaths]
   - #nlink(<nflow_engine:NFlow.plotScopes>)[NFlow.plotScopes]
+  - #nlink(<nflow_engine:NFlow.rmlibrarypath>)[NFlow.rmlibrarypath]
   - #nlink(<nflow_engine:add_block>)[add\_block]
   - #nlink(<nflow_engine:add_line>)[add\_line]
   - #nlink(<nflow_engine:bdIsDirty>)[bdIsDirty]
@@ -21,6 +24,8 @@
   - #nlink(<nflow_engine:load_system>)[load\_system]
   - #nlink(<nflow_engine:new_system>)[new\_system]
   - #nlink(<nflow_engine:nflow_codegenerate>)[nflow\_codegenerate]
+  - #nlink(<nflow_engine:nflow_layout>)[nflow\_layout]
+  - #nlink(<nflow_engine:nflow_reroute>)[nflow\_reroute]
   - #nlink(<nflow_engine:save_system>)[save\_system]
   - #nlink(<nflow_engine:set_param>)[set\_param]
   - #nlink(<nflow_engine:sim>)[sim]

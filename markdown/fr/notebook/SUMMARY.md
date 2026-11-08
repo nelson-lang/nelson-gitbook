@@ -1,3 +1,6 @@
 - [notebook](README.md)
+  - [Votre premier Notebook Nelson](1_notebook_first_steps.md)
+  - [Cellules et contrôles d'un Notebook](2_notebook_cells_and_controls.md)
+  - [Exécuter et partager un Notebook](3_notebook_run_and_share.md)
   - [nlx](nlx.md)
   - [notebook](notebook.md)

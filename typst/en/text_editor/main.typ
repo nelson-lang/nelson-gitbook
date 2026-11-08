@@ -6,9 +6,10 @@ The Text Editor module provides an embedded Nelson editor for creating, editing,
 
 == Functions
 
-- #nlink(<text_editor:debugging_workflow>)[debugging workflow]: Debugging workflow for Nelson code files.
+- #nlink(<text_editor:debugging_workflow>)[debugging workflow]: Debugging workflow for Nelson code files in the editor.
 - #nlink(<text_editor:edit>)[edit]: function editor.
 - #nlink(<text_editor:editor>)[editor]: call the embedded text editor.
+- #nlink(<text_editor:opentoline>)[opentoline]: opens a file in the editor at a line.
 
 
 #nested[
@@ -18,4 +19,6 @@ The Text Editor module provides an embedded Nelson editor for creating, editing,
 #include "edit.typ"
 #pagebreak(weak: true)
 #include "editor.typ"
+#pagebreak(weak: true)
+#include "opentoline.typ"
 ]

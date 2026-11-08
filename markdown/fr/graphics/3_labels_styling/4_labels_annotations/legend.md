@@ -71,7 +71,7 @@ L'objet renvoye a le type <b>legend</b> et prend en charge les proprietes <b>Aut
 
 'southwest' ou 'SW' : en bas a gauche. 
 
-Les emplacements exterieurs sont aussi pris en charge : 'northoutside', 'southoutside', 'eastoutside' et 'westoutside'. 
+Les emplacements exterieurs sont aussi pris en charge : 'northoutside', 'southoutside', 'eastoutside', 'westoutside', 'northeastoutside', 'northwestoutside', 'southeastoutside', 'southwestoutside' et 'bestoutside'. 
 
 Voir [proprietes de legend](../../../graphics/2_graphics_objects/4_properties/nelson.graphics.legend.properties.md) pour la liste complete des proprietes.
 

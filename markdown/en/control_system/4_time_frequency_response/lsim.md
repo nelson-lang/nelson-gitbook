@@ -82,7 +82,7 @@ lsim(sys,u,t)
 
 ## 🔗 See also
 
-[gensig](../../control_system/2_model_conversion_interconnection/gensign.md), [step](../../control_system/4_time_frequency_response/step.md).
+[gensig](../../control_system/2_model_conversion_interconnection/gensig.md), [step](../../control_system/4_time_frequency_response/step.md).
 
 ## 🕔 History
 

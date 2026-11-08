@@ -19,8 +19,10 @@ Ce module permet une manipulation flexible des structures de données et des tab
   
 - [any](any.md) - Vérifie si au moins un élément d'une matrice satisfait une condition.
 - [bitand](bitand.md) - Opération ET bit à bit
+- [bitcmp](bitcmp.md) - Complément bit à bit.
 - [bitget](bitget.md) - Retourne des bits selectionnes.
 - [bitor](bitor.md) - Opération OR bit à bit
+- [bitset](bitset.md) - Positionne un bit à une position donnée.
 - [bitxor](bitxor.md) - Opération XOR bit à bit
 - [cat](cat.md) - Concatène des tableaux.
 - [colon](colon.md) - Opérateur deux-points ':'

@@ -25,6 +25,8 @@ Quitter le mode débogage.
 
  Cette fonction ne peut être appelée que depuis la ligne de commande en mode débogage.
 
+ Hors d'une session de débogage, #strong[dbquit]; lève #raw("Debug commands only allowed when stopped in debug mode."); Le bouton Stop de l'éditeur (Shift+F5) et l'enregistrement d'un fichier pendant une pause appellent #strong[dbquit];.
+
 
 == Exemples
 
@@ -62,6 +64,7 @@ dbquit all
   columns: 2,
   table.header([Version], [Description]),
   [1.16.0], [version initiale],
+  [2.0.0], [message uniforme hors session de débogage, Stop et enregistrement de l'éditeur terminent la session],
 )
 
 // Auteur: Allan CORNET

@@ -29,7 +29,7 @@ Estimation spectrale par la methode de Welch.
 
 <b>pwelch</b> estime un spectre en moyennant des periodogrammes de segments recouvrants.
 
-## 💡 Exemple
+## 💡 Exemples
 
 
 
@@ -38,6 +38,12 @@ Estimation spectrale par la methode de Welch.
 [pxx, f] = pwelch(rand(256, 1), hamming(64), 32, 128, 1, 'centered');
 
 ```
+Tracer la densite spectrale de puissance par la methode de Welch.
+
+```matlab
+pwelch(sin((0:255)' * 0.1) + 0.5 * sin((0:255)' * 0.4), hamming(64), 32, 128, 1, 'centered');
+```
+<img src="pwelch.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

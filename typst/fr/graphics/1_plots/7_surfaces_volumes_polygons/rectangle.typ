@@ -55,6 +55,8 @@ axis off
 ``````
 
 
+#align(center)[#image("rectangle.svg")]
+
 == Voir aussi
 
 #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.patch>)[patch];, #nlink(<graphics:1_plots.7_surfaces_volumes_polygons.fill>)[fill];, #nlink(<graphics:3_labels_styling.4_labels_annotations.annotation>)[annotation];.

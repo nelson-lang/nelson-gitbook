@@ -29,7 +29,7 @@ Spectrogram using short-time Fourier transforms.
 #strong[spectrogram]; splits the signal into overlapping windowed segments and computes an FFT for each segment.
 
 
-== Example
+== Examples
 
 ``````matlab
 
@@ -37,6 +37,14 @@ Spectrogram using short-time Fourier transforms.
 
 ``````
 
+Display the short-time Fourier transform spectrogram.
+
+``````matlab
+spectrogram(sin((0:255)' * 0.1), 64, 32, 128, 10);
+``````
+
+
+#align(center)[#image("spectrogram.svg")]
 
 == See also
 

@@ -48,6 +48,7 @@ x = linspace(0, 2*pi, 120);
 addpoints(an, x, sin(x));
 drawnow
 ```
+<img src="animatedline.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

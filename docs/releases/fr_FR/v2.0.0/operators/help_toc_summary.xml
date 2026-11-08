@@ -12,8 +12,10 @@
       <keyword name="and" link="and.html" description="opérateur logique 'AND', &amp;&#10;  "/>
       <keyword name="any" link="any.html" description="Vérifie si au moins un élément d'une matrice satisfait une condition."/>
       <keyword name="bitand" link="bitand.html" description="Opération ET bit à bit"/>
+      <keyword name="bitcmp" link="bitcmp.html" description="Complément bit à bit."/>
       <keyword name="bitget" link="bitget.html" description="Retourne des bits selectionnes."/>
       <keyword name="bitor" link="bitor.html" description="Opération OR bit à bit"/>
+      <keyword name="bitset" link="bitset.html" description="Positionne un bit à une position donnée."/>
       <keyword name="bitxor" link="bitxor.html" description="Opération XOR bit à bit"/>
       <keyword name="cat" link="cat.html" description="Concatène des tableaux."/>
       <keyword name="colon" link="colon.html" description="Opérateur deux-points ':'&#10;  "/>

@@ -37,7 +37,7 @@ The alternate form <b>margin(mag, phase, w)</b> computes the margins directly fr
 
 Called without output arguments, <b>margin(sys)</b> draws the Bode diagram of the system.
 
-## 💡 Example
+## 💡 Examples
 
 
 
@@ -45,6 +45,12 @@ Called without output arguments, <b>margin(sys)</b> draws the Bode diagram of th
 H = tf(1, [1 3 2 0]);
 [Gm, Pm, Wcg, Wcp] = margin(H)
 ```
+Plot the Bode response with gain and phase margins.
+
+```matlab
+margin(tf(1, [1 3 2 0]));
+```
+<img src="margin.svg" align="middle"/>
 
 
 ## 🔗 See also

@@ -51,6 +51,7 @@ ylim([-0.3 1.3]);
 axis equal
 axis off
 ```
+<img src="rectangle.svg" align="middle"/>
 
 
 ## 🔗 See also

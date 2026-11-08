@@ -10,6 +10,9 @@ Le module Stream Manager fournit des outils pour gerer les flux d'entree et de s
 
 == Functions
 
+- #nlink(<stream_manager:SEEK_CUR>)[SEEK\_CUR]: Valeur d'origine pour fseek : à la position courante.
+- #nlink(<stream_manager:SEEK_END>)[SEEK\_END]: Valeur d'origine pour fseek : à la fin du fichier.
+- #nlink(<stream_manager:SEEK_SET>)[SEEK\_SET]: Valeur d'origine pour fseek : au début du fichier.
 - #nlink(<stream_manager:cprintf>)[cprintf]: Ecrit du texte formatte et style vers stdout.
 - #nlink(<stream_manager:diary>)[diary]: Journal d'une session.
 - #nlink(<stream_manager:fclose>)[fclose]: Ferme un fichier ouvert.
@@ -32,10 +35,19 @@ Le module Stream Manager fournit des outils pour gerer les flux d'entree et de s
 - #nlink(<stream_manager:readlines>)[readlines]: Lire les lignes d'un fichier texte en tableau de chaînes.
 - #nlink(<stream_manager:save>)[save]: enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat
 - #nlink(<stream_manager:sscanf>)[sscanf]: Lire des données formatées depuis des chaînes.
+- #nlink(<stream_manager:stderr>)[stderr]: Identifiant du flux d'erreur standard.
+- #nlink(<stream_manager:stdin>)[stdin]: Identifiant du flux d'entrée standard.
+- #nlink(<stream_manager:stdout>)[stdout]: Identifiant du flux de sortie standard.
 - #nlink(<stream_manager:textscan>)[textscan]: Lit des données formatées depuis une chaîne ou un fichier.
 
 
 #nested[
+#pagebreak(weak: true)
+#include "SEEK_CUR.typ"
+#pagebreak(weak: true)
+#include "SEEK_END.typ"
+#pagebreak(weak: true)
+#include "SEEK_SET.typ"
 #pagebreak(weak: true)
 #include "cprintf.typ"
 #pagebreak(weak: true)
@@ -80,6 +92,12 @@ Le module Stream Manager fournit des outils pour gerer les flux d'entree et de s
 #include "save.typ"
 #pagebreak(weak: true)
 #include "sscanf.typ"
+#pagebreak(weak: true)
+#include "stderr.typ"
+#pagebreak(weak: true)
+#include "stdin.typ"
+#pagebreak(weak: true)
+#include "stdout.typ"
 #pagebreak(weak: true)
 #include "textscan.typ"
 ]

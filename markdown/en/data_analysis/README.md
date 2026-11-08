@@ -16,6 +16,7 @@ This module supports processing, summarization, and exploration of datasets for 
 
 - [accumarray](accumarray.md) - Construct array by accumulation.
 - [allbetween](allbetween.md) - Determine whether all array elements are between lower and upper bounds.
+- [anymissing](anymissing.md) - Check whether an array contains missing values.
 - [bounds](bounds.md) - Smallest and largest array elements.
 - [conv](conv.md) - Convolution and polynomial multiplication.
 - [conv2](conv2.md) - 2-D convolution.
@@ -26,6 +27,7 @@ This module supports processing, summarization, and exploration of datasets for 
 - [detrend](detrend.md) - Remove polynomial trend.
 - [discretize](discretize.md) - Group numeric data into bins.
 - [fillmissing](fillmissing.md) - Fill missing values.
+- [findgroups](findgroups.md) - Find groups and return group numbers.
 - [groupcounts](groupcounts.md) - Count groups.
 - [groupsummary](groupsummary.md) - Compute grouped table summaries.
 - [intersect](intersect.md) - Set intersection of two arrays.
@@ -48,11 +50,13 @@ This module supports processing, summarization, and exploration of datasets for 
 - [movvar](movvar.md) - Moving variance.
 - [normalize](normalize.md) - Normalize data.
 - [prod](prod.md) - Product of array elements.
+- [rescale](rescale.md) - Scale array elements to a fixed interval.
 - [rmmissing](rmmissing.md) - Remove missing data.
 - [setdiff](setdiff.md) - Set difference of two arrays.
 - [setxor](setxor.md) - Set exclusive OR of two arrays.
 - [smoothdata](smoothdata.md) - Smooth noisy data.
 - [sort](sort.md) - Sort array elements by quick sort algorithm.
+- [splitapply](splitapply.md) - Split data into groups and apply a function.
 - [standardizeMissing](standardizeMissing.md) - Convert indicator values to standard missing values.
 - [subspace](subspace.md) - Measure of distance (angle) between two subspaces spanned by columns of matrices.
 - [sum](sum.md) - Sum of array elements.

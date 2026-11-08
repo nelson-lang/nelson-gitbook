@@ -334,6 +334,15 @@ Blocks with saturation, thresholds, hysteresis, or rate limits.
 - #nlink(<nflow_blocks:nonlinear.rate>)[rate]: Limits rising and falling signal rates.
 - #nlink(<nflow_blocks:nonlinear.saturation>)[saturation]: Clamps the input between min and max.
 
+== Native plugin development
+
+Functions used to build native (C++) block plugins for NFlow.
+
+=== Functions
+
+- #nlink(<nflow_blocks:plugin_development.dlgetnflowincludes>)[dlgetnflowincludes]: Returns the include directories required to build a native nflow block plugin.
+- #nlink(<nflow_blocks:plugin_development.dlgetnflowlibraries>)[dlgetnflowlibraries]: Returns the libraries a native nflow block plugin must link against.
+
 == Sink blocks
 
 Blocks that consume, display, or name signals.
@@ -893,6 +902,10 @@ Blocks for routing, grouping, annotation, and interactive switching.
 #include "nonlinear/rate.typ"
 #pagebreak(weak: true)
 #include "nonlinear/saturation.typ"
+#pagebreak(weak: true)
+#include "plugin_development/dlgetnflowincludes.typ"
+#pagebreak(weak: true)
+#include "plugin_development/dlgetnflowlibraries.typ"
 #pagebreak(weak: true)
 #include "sink/display.typ"
 #pagebreak(weak: true)

@@ -20,6 +20,7 @@
         <keyword name="gradient" link="1_linear_systems/gradient.html" description="Gradient numérique."/>
         <keyword name="inv" link="1_linear_systems/inv.html" description="Inverse de matrice."/>
         <keyword name="kron" link="1_linear_systems/kron.html" description="Produit tensoriel de Kronecker."/>
+        <keyword name="linsolve" link="1_linear_systems/linsolve.html" description="Résout un système d'équations linéaires."/>
         <keyword name="null" link="1_linear_systems/null.html" description="Noyau d'une matrice"/>
         <keyword name="orth" link="1_linear_systems/orth.html" description="Base orthonormée de l'espace image d'une matrice."/>
         <keyword name="rank" link="1_linear_systems/rank.html" description="Rang d'une matrice."/>

@@ -103,6 +103,7 @@
       <keyword name="exit" link="./core/exit.html" description="Terminate Nelson program (same as quit)"></keyword>
       <keyword name="feature" link="./core/feature.html" description="undocumented features."></keyword>
       <keyword name="inputname" link="./core/inputname.html" description="Get variable name of function input."></keyword>
+      <keyword name="isMATLABReleaseOlderThan" link="./core/isMATLABReleaseOlderThan.html" description="Compare current release to a MATLAB release."></keyword>
       <keyword name="isstr" link="./core/isstr.html" description="Determine whether input is a character array (deprecated)."></keyword>
       <keyword name="isunicodesupported" link="./core/isunicodesupported.html" description="Detect whether the current terminal supports Unicode."></keyword>
       <keyword name="license" link="./core/license.html" description="Get license information for Nelson."></keyword>
@@ -123,6 +124,9 @@
       <keyword name="quit" link="./core/quit.html" description="Terminate Nelson application"></keyword>
       <keyword name="run" link="./core/run.html" description="Executes a script file (.m)."></keyword>
       <keyword name="sha256" link="./core/sha256.html" description="Get sha256 checksum."></keyword>
+      <keyword name="usejava" link="./core/usejava.html" description="Check whether a Java feature is available."></keyword>
+      <keyword name="ver" link="./core/ver.html" description="Version information."></keyword>
+      <keyword name="verLessThan" link="./core/verLessThan.html" description="Compare toolbox version to a version string."></keyword>
       <keyword name="version" link="./core/version.html" description="Return the version of Nelson."></keyword>
     </section>
     <section name="Engine">
@@ -284,6 +288,7 @@
   </chapter_description>
       <keyword name="class" link="./types/class.html" description="Return a variable class name or create an old-style named object."></keyword>
       <keyword name="cpp_api" link="./types/cpp_api.html" description="C++ value API conventions for Nelson core types."></keyword>
+      <keyword name="inferiorto" link="./types/inferiorto.html" description="Declare inferior class precedence."></keyword>
       <keyword name="isa" link="./types/isa.html" description="Return true if a variable has the requested class or type."></keyword>
       <keyword name="iscell" link="./types/iscell.html" description="Return true if variable var is a cell array."></keyword>
       <keyword name="ischar" link="./types/ischar.html" description="Return true if variable var is a char array."></keyword>
@@ -321,6 +326,7 @@
       <keyword name="nelson.mixin.indexing.RedefinesDot" link="./types/nelson.mixin.indexing.RedefinesDot.html" description="Customize dot indexing of a class."></keyword>
       <keyword name="nelson.mixin.indexing.RedefinesParen" link="./types/nelson.mixin.indexing.RedefinesParen.html" description="Customize parentheses indexing of a class."></keyword>
       <keyword name="nelson.mixin.util.PropertyGroup" link="./types/nelson.mixin.util.PropertyGroup.html" description="A titled group of properties for custom object display."></keyword>
+      <keyword name="superiorto" link="./types/superiorto.html" description="Declare superior class precedence."></keyword>
       <keyword name="underlyingType" link="./types/underlyingType.html" description="Underlying type of an array."></keyword>
     </section>
     <section name="Logical type functions">
@@ -417,6 +423,7 @@
         <keyword name="num2str" link="./string/1_create_convert_text/num2str.html" description="Converts numbers to character array."></keyword>
         <keyword name="sprintf" link="./string/1_create_convert_text/sprintf.html" description="Writes data to a string."></keyword>
         <keyword name="str2double" link="./string/1_create_convert_text/str2double.html" description="Converts a string to double."></keyword>
+        <keyword name="str2num" link="./string/1_create_convert_text/str2num.html" description="Convert character array to numeric array."></keyword>
         <keyword name="strcat" link="./string/1_create_convert_text/strcat.html" description="concatenate strings horizontally."></keyword>
         <keyword name="string" link="./string/1_create_convert_text/string.html" description="string array constructor."></keyword>
         <keyword name="strings" link="./string/1_create_convert_text/strings.html" description="Create string array without characters."></keyword>
@@ -608,6 +615,7 @@
       <keyword name="rmfield" link="./data_structures/rmfield.html" description="Remove fields from structure."></keyword>
       <keyword name="setfield" link="./data_structures/setfield.html" description="Set structure field contents."></keyword>
       <keyword name="struct" link="./data_structures/struct.html" description="Create a structure or convert an object to a structure."></keyword>
+      <keyword name="struct2array" link="./data_structures/struct2array.html" description="Concatenate structure field values into an array."></keyword>
       <keyword name="struct2cell" link="./data_structures/struct2cell.html" description="Creates a cell from a structure."></keyword>
       <keyword name="structfun" link="./data_structures/structfun.html" description="Apply a function to each field of a scalar structure."></keyword>
     </section>
@@ -774,8 +782,10 @@
       <keyword name="and" link="./operators/and.html" description="logical 'AND' operator, &amp;&#10;  "></keyword>
       <keyword name="any" link="./operators/any.html" description="any of the elements of a matrix satisfy some condition."></keyword>
       <keyword name="bitand" link="./operators/bitand.html" description="Bit-wise AND"></keyword>
+      <keyword name="bitcmp" link="./operators/bitcmp.html" description="Bitwise complement."></keyword>
       <keyword name="bitget" link="./operators/bitget.html" description="Get selected bits."></keyword>
       <keyword name="bitor" link="./operators/bitor.html" description="Bit-wise OR"></keyword>
+      <keyword name="bitset" link="./operators/bitset.html" description="Set bit at a specified position."></keyword>
       <keyword name="bitxor" link="./operators/bitxor.html" description="Bit-wise XOR"></keyword>
       <keyword name="cat" link="./operators/cat.html" description="Concatenate arrays."></keyword>
       <keyword name="colon" link="./operators/colon.html" description="colon operator ':'."></keyword>
@@ -953,7 +963,7 @@
         <keyword name="ipermute" link="./elementary_functions/7_indexing_dimensions/ipermute.html" description="Inverse permute array dimensions."></keyword>
         <keyword name="isapprox" link="./elementary_functions/7_indexing_dimensions/isapprox.html" description="Return true if arguments are approximately equal, within the precision."></keyword>
         <keyword name="iscolumn" link="./elementary_functions/7_indexing_dimensions/iscolumn.html" description="Determine whether input is column vector."></keyword>
-        <keyword name="istriu" link="./elementary_functions/7_indexing_dimensions/isdiag.html" description="Checks if matrix is diagonal."></keyword>
+        <keyword name="isdiag" link="./elementary_functions/7_indexing_dimensions/isdiag.html" description="Checks if matrix is diagonal."></keyword>
         <keyword name="isequal" link="./elementary_functions/7_indexing_dimensions/isequal.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values)."></keyword>
         <keyword name="isequaln" link="./elementary_functions/7_indexing_dimensions/isequaln.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs)."></keyword>
         <keyword name="isequalto" link="./elementary_functions/7_indexing_dimensions/isequalto.html" description="Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs)."></keyword>
@@ -964,6 +974,7 @@
         <keyword name="isnan" link="./elementary_functions/7_indexing_dimensions/isnan.html" description="Check for Not a Number entries."></keyword>
         <keyword name="isrow" link="./elementary_functions/7_indexing_dimensions/isrow.html" description="Determine whether input is row vector."></keyword>
         <keyword name="isscalar" link="./elementary_functions/7_indexing_dimensions/isscalar.html" description="Check if the input is a scalar"></keyword>
+        <keyword name="issortedrows" link="./elementary_functions/7_indexing_dimensions/issortedrows.html" description="Determine whether matrix rows are sorted."></keyword>
         <keyword name="istril" link="./elementary_functions/7_indexing_dimensions/istril.html" description="Checks if matrix is lower triangular."></keyword>
         <keyword name="istriu" link="./elementary_functions/7_indexing_dimensions/istriu.html" description="Checks if matrix is upper triangular."></keyword>
         <keyword name="isvector" link="./elementary_functions/7_indexing_dimensions/isvector.html" description="Checks input is vector."></keyword>
@@ -978,6 +989,7 @@
         <keyword name="sortrows" link="./elementary_functions/7_indexing_dimensions/sortrows.html" description="Sort rows of an array."></keyword>
         <keyword name="sub2ind" link="./elementary_functions/7_indexing_dimensions/sub2ind.html" description="Matrix subscript values to linear index"></keyword>
         <keyword name="substruct" link="./elementary_functions/7_indexing_dimensions/substruct.html" description="Create structure argument for subsasgn or subsref"></keyword>
+        <keyword name="topkrows" link="./elementary_functions/7_indexing_dimensions/topkrows.html" description="Top k sorted rows of a matrix."></keyword>
         <keyword name="tril" link="./elementary_functions/7_indexing_dimensions/tril.html" description="Lower triangular part of matrix"></keyword>
         <keyword name="triu" link="./elementary_functions/7_indexing_dimensions/triu.html" description="Upper triangular part of matrix"></keyword>
       </section>
@@ -1073,6 +1085,7 @@
       <keyword name="interp1" link="./special_functions/interp1.html" description="1-D data interpolation"></keyword>
       <keyword name="interp2" link="./special_functions/interp2.html" description="Interpolation for 2-D gridded data in meshgrid format"></keyword>
       <keyword name="interp3" link="./special_functions/interp3.html" description="Interpolation for 3-D gridded data in meshgrid format"></keyword>
+      <keyword name="interpft" link="./special_functions/interpft.html" description="1-D interpolation using the FFT method."></keyword>
       <keyword name="interpn" link="./special_functions/interpn.html" description="Interpolation for N-D gridded data in ndgrid format"></keyword>
       <keyword name="isprime" link="./special_functions/isprime.html" description="Determine which array elements are prime."></keyword>
       <keyword name="lcm" link="./special_functions/lcm.html" description="Least common multiple."></keyword>
@@ -1102,6 +1115,7 @@
         <keyword name="gradient" link="./linear_algebra/1_linear_systems/gradient.html" description="Numerical gradient."></keyword>
         <keyword name="inv" link="./linear_algebra/1_linear_systems/inv.html" description="Matrix inverse."></keyword>
         <keyword name="kron" link="./linear_algebra/1_linear_systems/kron.html" description="Kronecker tensor product."></keyword>
+        <keyword name="linsolve" link="./linear_algebra/1_linear_systems/linsolve.html" description="Solve a linear system of equations."></keyword>
         <keyword name="null" link="./linear_algebra/1_linear_systems/null.html" description="Null space of a matrix."></keyword>
         <keyword name="orth" link="./linear_algebra/1_linear_systems/orth.html" description="Range space of a matrix."></keyword>
         <keyword name="rank" link="./linear_algebra/1_linear_systems/rank.html" description="Rank of matrix."></keyword>
@@ -1510,6 +1524,7 @@
   </chapter_description>
       <keyword name="accumarray" link="./data_analysis/accumarray.html" description="Construct array by accumulation."></keyword>
       <keyword name="allbetween" link="./data_analysis/allbetween.html" description="Determine whether all array elements are between lower and upper bounds."></keyword>
+      <keyword name="anymissing" link="./data_analysis/anymissing.html" description="Check whether an array contains missing values."></keyword>
       <keyword name="bounds" link="./data_analysis/bounds.html" description="Smallest and largest array elements."></keyword>
       <keyword name="conv" link="./data_analysis/conv.html" description="Convolution and polynomial multiplication."></keyword>
       <keyword name="conv2" link="./data_analysis/conv2.html" description="2-D convolution."></keyword>
@@ -1520,6 +1535,7 @@
       <keyword name="detrend" link="./data_analysis/detrend.html" description="Remove polynomial trend."></keyword>
       <keyword name="discretize" link="./data_analysis/discretize.html" description="Group numeric data into bins."></keyword>
       <keyword name="fillmissing" link="./data_analysis/fillmissing.html" description="Fill missing values."></keyword>
+      <keyword name="findgroups" link="./data_analysis/findgroups.html" description="Find groups and return group numbers."></keyword>
       <keyword name="groupcounts" link="./data_analysis/groupcounts.html" description="Count groups."></keyword>
       <keyword name="groupsummary" link="./data_analysis/groupsummary.html" description="Compute grouped table summaries."></keyword>
       <keyword name="intersect" link="./data_analysis/intersect.html" description="Set intersection of two arrays."></keyword>
@@ -1542,11 +1558,13 @@
       <keyword name="movvar" link="./data_analysis/movvar.html" description="Moving variance."></keyword>
       <keyword name="normalize" link="./data_analysis/normalize.html" description="Normalize data."></keyword>
       <keyword name="prod" link="./data_analysis/prod.html" description="Product of array elements."></keyword>
+      <keyword name="rescale" link="./data_analysis/rescale.html" description="Scale array elements to a fixed interval."></keyword>
       <keyword name="rmmissing" link="./data_analysis/rmmissing.html" description="Remove missing data."></keyword>
       <keyword name="setdiff" link="./data_analysis/setdiff.html" description="Set difference of two arrays."></keyword>
       <keyword name="setxor" link="./data_analysis/setxor.html" description="Set exclusive OR of two arrays."></keyword>
       <keyword name="smoothdata" link="./data_analysis/smoothdata.html" description="Smooth noisy data."></keyword>
       <keyword name="sort" link="./data_analysis/sort.html" description="Sort array elements by quick sort algorithm."></keyword>
+      <keyword name="splitapply" link="./data_analysis/splitapply.html" description="Split data into groups and apply a function."></keyword>
       <keyword name="standardizeMissing" link="./data_analysis/standardizeMissing.html" description="Convert indicator values to standard missing values."></keyword>
       <keyword name="subspace" link="./data_analysis/subspace.html" description="Measure of distance (angle) between two subspaces spanned by columns of matrices."></keyword>
       <keyword name="sum" link="./data_analysis/sum.html" description="Sum of array elements."></keyword>
@@ -1734,7 +1752,7 @@
         <keyword name="c2d" link="./control_system/2_model_conversion_interconnection/c2d.html" description="Convert model from continuous to discrete time."></keyword>
         <keyword name="d2c" link="./control_system/2_model_conversion_interconnection/d2c.html" description="Convert model from discrete to continuous time."></keyword>
         <keyword name="feedback" link="./control_system/2_model_conversion_interconnection/feedback.html" description="Feedback connection of multiple models."></keyword>
-        <keyword name="gensig" link="./control_system/2_model_conversion_interconnection/gensign.html" description="Create periodic signals for simulating system response."></keyword>
+        <keyword name="gensig" link="./control_system/2_model_conversion_interconnection/gensig.html" description="Create periodic signals for simulating system response."></keyword>
         <keyword name="padecoef" link="./control_system/2_model_conversion_interconnection/padecoef.html" description="Computes the Pade approximation of time delays."></keyword>
         <keyword name="parallel" link="./control_system/2_model_conversion_interconnection/parallel.html" description="Parallel connection of two models."></keyword>
         <keyword name="series" link="./control_system/2_model_conversion_interconnection/series.html" description="Series connection of two models."></keyword>
@@ -1742,6 +1760,7 @@
         <keyword name="ssdelete" link="./control_system/2_model_conversion_interconnection/ssdelete.html" description="Remove inputs, outputs and states from state-space system."></keyword>
         <keyword name="ssselect" link="./control_system/2_model_conversion_interconnection/ssselect.html" description="Extract subsystem from larger system."></keyword>
         <keyword name="tf2ss" link="./control_system/2_model_conversion_interconnection/tf2ss.html" description="Convert transfer function filter parameters to state-space form."></keyword>
+        <keyword name="zpk2tf" link="./control_system/2_model_conversion_interconnection/zpk2tf.html" description="Convert zero-pole-gain model to transfer function."></keyword>
       </section>
       <section name="Linear Analysis">
         <chapter_description>
@@ -2309,6 +2328,9 @@
     <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p>
     <p>The module also supports session logging and workspace load/save operations for controlled file I/O in scripts and applications.</p>
   </chapter_description>
+      <keyword name="SEEK_CUR" link="./stream_manager/SEEK_CUR.html" description="Origin value for fseek: the current position."></keyword>
+      <keyword name="SEEK_END" link="./stream_manager/SEEK_END.html" description="Origin value for fseek: the end of the file."></keyword>
+      <keyword name="SEEK_SET" link="./stream_manager/SEEK_SET.html" description="Origin value for fseek: the beginning of the file."></keyword>
       <keyword name="cprintf" link="./stream_manager/cprintf.html" description="Writes styled formatted text to stdout."></keyword>
       <keyword name="diary" link="./stream_manager/diary.html" description="Diary of a session."></keyword>
       <keyword name="fclose" link="./stream_manager/fclose.html" description="Close an opened file."></keyword>
@@ -2331,6 +2353,9 @@
       <keyword name="readlines" link="./stream_manager/readlines.html" description="Read lines of a text file as a string array."></keyword>
       <keyword name="save" link="./stream_manager/save.html" description="save workspace variables to .nh5 or .mat file"></keyword>
       <keyword name="sscanf" link="./stream_manager/sscanf.html" description="Read formatted data from strings."></keyword>
+      <keyword name="stderr" link="./stream_manager/stderr.html" description="File identifier of the standard error stream."></keyword>
+      <keyword name="stdin" link="./stream_manager/stdin.html" description="File identifier of the standard input stream."></keyword>
+      <keyword name="stdout" link="./stream_manager/stdout.html" description="File identifier of the standard output stream."></keyword>
       <keyword name="textscan" link="./stream_manager/textscan.html" description="Read formatted data from a character vector, string or file."></keyword>
     </section>
     <section name="HDF5">
@@ -2681,9 +2706,22 @@
       <chapter_description>
     <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and formatting Nelson scripts and files.</p>
   </chapter_description>
-      <keyword name="debugging workflow" link="./text_editor/debugging_workflow.html" description="Debugging workflow for Nelson code files."></keyword>
+      <keyword name="debugging workflow" link="./text_editor/debugging_workflow.html" description="Debugging workflow for Nelson code files in the editor."></keyword>
       <keyword name="edit" link="./text_editor/edit.html" description="function editor."></keyword>
       <keyword name="editor" link="./text_editor/editor.html" description="call the embedded text editor."></keyword>
+      <keyword name="opentoline" link="./text_editor/opentoline.html" description="opens a file in the editor at a line."></keyword>
+    </section>
+    <section name="Notebook">
+      <chapter_description>
+    <p>The Notebook module runs Notebook documents outside the editor.</p>
+    <p>A Notebook mixes formatted text, code and its output in one document. This module reads the native <b>.nlx</b> container and the plain-text <b>.m</b> Notebook format, and executes their code cells against the base workspace — so a document can be run from the command line or a script.</p>
+    <p>Three step-by-step tutorials cover creating your first Notebook, its cells and controls, and how to run and share a document.</p>
+  </chapter_description>
+      <keyword name="Your first Nelson Notebook" link="./notebook/1_notebook_first_steps.html" description="Create, run and save your first Notebook document."></keyword>
+      <keyword name="Notebook cells and controls" link="./notebook/2_notebook_cells_and_controls.html" description="The block kinds of a Notebook and the interactive controls."></keyword>
+      <keyword name="Run and share a Notebook" link="./notebook/3_notebook_run_and_share.html" description="Run a Notebook without the editor, and export or import it."></keyword>
+      <keyword name="nlx" link="./notebook/nlx.html" description="The Nelson Notebook document format (.nlx)."></keyword>
+      <keyword name="notebook" link="./notebook/notebook.html" description="Run a Notebook document or open the Notebook editor."></keyword>
     </section>
     <section name="Graphics functions">
       <chapter_description>
@@ -3090,7 +3128,9 @@
           <keyword name="camup" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camup.html" description="Set or query the camera up vector."></keyword>
           <keyword name="camva" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camva.html" description="Set or query the camera view angle."></keyword>
           <keyword name="camzoom" link="./graphics/3_labels_styling/3_interactions_camera_lighting/camzoom.html" description="Zoom the camera in or out."></keyword>
+          <keyword name="disableDefaultInteractivity" link="./graphics/3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.html" description="Disable the built-in axes interactions."></keyword>
           <keyword name="drawnow" link="./graphics/3_labels_styling/3_interactions_camera_lighting/drawnow.html" description="Update figures and process callbacks"></keyword>
+          <keyword name="enableDefaultInteractivity" link="./graphics/3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.html" description="Enable the built-in axes interactions."></keyword>
           <keyword name="Managing Callback Interruptions in Nelson" link="./graphics/3_labels_styling/3_interactions_camera_lighting/graphical_callback.html" description=""></keyword>
           <keyword name="light" link="./graphics/3_labels_styling/3_interactions_camera_lighting/light.html" description="Create a light object in axes."></keyword>
           <keyword name="lightangle" link="./graphics/3_labels_styling/3_interactions_camera_lighting/lightangle.html" description="Create or position a light from angles."></keyword>
@@ -3540,9 +3580,9 @@
       <keyword name="nelson.unittest.skip" link="./tests_manager/nelson_unittest_skip.html" description="Skip the current test."></keyword>
       <keyword name="nelson.unittest.tuneReuse" link="./tests_manager/nelson_unittest_tuneReuse.html" description="Calibrate explicit child-process reuse for tests and benches."></keyword>
       <keyword name="nelson.unittest.tuneWeights" link="./tests_manager/nelson_unittest_tuneWeights.html" description="Calibrate scheduling weights from measured test durations."></keyword>
+      <keyword name="skip_testsuite" link="./tests_manager/skip_testsuite.html" description="Skip test suite on condition"></keyword>
       <keyword name="test_makeref" link="./tests_manager/test_makeref.html" description="Creates a '.ref' file for a test"></keyword>
       <keyword name="test_run" link="./tests_manager/test_run.html" description="Runs tests"></keyword>
-      <keyword name="skip_testsuite" link="./tests_manager/test_skip_testsuite.html" description="Skip test suite on condition"></keyword>
     </section>
     <section name="Assertion functions">
       <chapter_description>
@@ -4216,6 +4256,13 @@
         <keyword name="saturation" link="./nflow_blocks/nonlinear/saturation.html" description="Clamps the input between min and max."></keyword>
         <keyword name="block:saturation" link="./nflow_blocks/nonlinear/saturation.html" description="Clamps the input between min and max."></keyword>
       </section>
+      <section name="Native plugin development">
+        <chapter_description>
+    <p>Functions used to build native (C++) block plugins for NFlow.</p>
+  </chapter_description>
+        <keyword name="dlgetnflowincludes" link="./nflow_blocks/plugin_development/dlgetnflowincludes.html" description="Returns the include directories required to build a native nflow block plugin."></keyword>
+        <keyword name="dlgetnflowlibraries" link="./nflow_blocks/plugin_development/dlgetnflowlibraries.html" description="Returns the libraries a native nflow block plugin must link against."></keyword>
+      </section>
       <section name="Sink blocks">
         <chapter_description>
     <p>Blocks that consume, display, or name signals.</p>
@@ -4347,11 +4394,14 @@
         <keyword name="block:width" link="./nflow_blocks/utility/width.html" description="Outputs the number of elements (width) of its input signal, as a scalar."></keyword>
       </section>
     </section>
-    <section name="nflow engine">
+    <section name="NFlow engine">
       <chapter_description><p>Programmatic creation and editing of nflow block-diagram models.</p>
     <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p></chapter_description>
+      <keyword name="NFlow.addlibrarypath" link="./nflow_engine/NFlow.addlibrarypath.html" description="Add an nflow block library search path."></keyword>
       <keyword name="NFlow.exportfmu" link="./nflow_engine/NFlow.exportfmu.html" description="Export an nflow model as an FMI 3.0 Co-Simulation source FMU."></keyword>
+      <keyword name="NFlow.librarypaths" link="./nflow_engine/NFlow.librarypaths.html" description="Return the nflow block library search paths."></keyword>
       <keyword name="NFlow.plotScopes" link="./nflow_engine/NFlow.plotScopes.html" description="Open one figure per scope of an nflow simulation result."></keyword>
+      <keyword name="NFlow.rmlibrarypath" link="./nflow_engine/NFlow.rmlibrarypath.html" description="Remove an nflow block library search path."></keyword>
       <keyword name="add_block" link="./nflow_engine/add_block.html" description="Add a block to an nflow model from a library source."></keyword>
       <keyword name="add_line" link="./nflow_engine/add_line.html" description="Connect two block ports in an nflow model."></keyword>
       <keyword name="bdIsDirty" link="./nflow_engine/bdIsDirty.html" description="Return true when an nflow model has unsaved changes."></keyword>
@@ -4370,6 +4420,8 @@
       <keyword name="load_system" link="./nflow_engine/load_system.html" description="Load an nflow model from a .nflow file without opening the editor."></keyword>
       <keyword name="new_system" link="./nflow_engine/new_system.html" description="Create and load an empty nflow model."></keyword>
       <keyword name="nflow_codegenerate" link="./nflow_engine/nflow_codegenerate.html" description="Generate standalone C or Rust code from an nflow model."></keyword>
+      <keyword name="nflow_layout" link="./nflow_engine/nflow_layout.html" description="Automatically arrange the blocks of an nflow (sub)system."></keyword>
+      <keyword name="nflow_reroute" link="./nflow_engine/nflow_reroute.html" description="Recompute the wire routes of an nflow (sub)system."></keyword>
       <keyword name="save_system" link="./nflow_engine/save_system.html" description="Save an nflow model to a .nflow file."></keyword>
       <keyword name="set_param" link="./nflow_engine/set_param.html" description="Set model or block parameters atomically."></keyword>
       <keyword name="sim" link="./nflow_engine/sim.html" description="Run an nflow simulation of a model and return its results."></keyword>
@@ -4426,13 +4478,16 @@
       <keyword name="modelicaInfo" link="./nflow_fmi/modelicaInfo.html" description="Report the OpenModelica used by the nflow Modelica bridge."></keyword>
       <keyword name="modelicaToFmu" link="./nflow_fmi/modelicaToFmu.html" description="Compile a Modelica model to an FMU with OpenModelica."></keyword>
     </section>
-    <section name="nflow editor">
+    <section name="NFlow editor">
       <chapter_description>
     <p>The nflow editor is Nelson's block-diagram environment for building and simulating dynamic systems.</p>
     <p>It provides a visual editor for wiring blocks and subsystems, saving and loading diagrams in the <b>.nflow</b> JSON format, and running simulations with either the fixed-step engine or the variable-step (CVODES) solver, with zero-crossing detection for discontinuous blocks.</p>
     <p>Diagrams can also be turned into standalone C or Rust code through the code generator.</p>
     <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p>
   </chapter_description>
+      <keyword name="nflow_tutorial_first_model" link="./nflow_gui/1_nflow_tutorial_first_model.html" description="Tutorial 1 of 3: build, wire, and run a first nflow model."></keyword>
+      <keyword name="nflow_tutorial_continuous" link="./nflow_gui/2_nflow_tutorial_continuous.html" description="Tutorial 2 of 3: simulate a continuous system and choose a solver."></keyword>
+      <keyword name="nflow_tutorial_dashboard" link="./nflow_gui/3_nflow_tutorial_dashboard.html" description="Tutorial 3 of 3: add interactive dashboard controls and run in real time."></keyword>
       <keyword name="nflow" link="./nflow_gui/nflow.html" description="Launch the nflow editor, optionally on a model file."></keyword>
       <keyword name="nflow_dashboard" link="./nflow_gui/nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."></keyword>
       <keyword name="block:dashboardScope" link="./nflow_gui/nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."></keyword>
@@ -4512,14 +4567,6 @@
       <keyword name="nelson.compiler.analyze" link="./compiler/nelson.compiler.analyze.html" description="Inspect application dependencies without producing an executable."></keyword>
       <keyword name="nelson.compiler.build" link="./compiler/nelson.compiler.build.html" description="Build a native executable from structured options."></keyword>
       <keyword name="nelson.compiler.build" link="./compiler/nelson.compiler.build.html" description="Build a native executable from structured options."></keyword>
-    </section>
-    <section name="Notebook">
-      <chapter_description>
-    <p>The Notebook module runs Notebook documents outside the editor.</p>
-    <p>A Notebook mixes formatted text, code and its output in one document. This module reads the native <b>.nlx</b> container and the plain-text <b>.m</b> Notebook format, and executes their code cells against the base workspace — so a document can be run from the command line or a script.</p>
-  </chapter_description>
-      <keyword name="nlx" link="./notebook/nlx.html" description="The Nelson Notebook document format (.nlx)."></keyword>
-      <keyword name="notebook" link="./notebook/notebook.html" description="Run a Notebook document."></keyword>
     </section>
   </toc>
 </help_summary>

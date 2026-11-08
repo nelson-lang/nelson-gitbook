@@ -36,6 +36,7 @@ Functions for creating text, formatting text, and converting between text and ot
 - [num2str](1_create_convert_text/num2str.md) - Converts numbers to character array.
 - [sprintf](1_create_convert_text/sprintf.md) - Writes data to a string.
 - [str2double](1_create_convert_text/str2double.md) - Converts a string to double.
+- [str2num](1_create_convert_text/str2num.md) - Convert character array to numeric array.
 - [strcat](1_create_convert_text/strcat.md) - concatenate strings horizontally.
 - [string](1_create_convert_text/string.md) - string array constructor.
 - [strings](1_create_convert_text/strings.md) - Create string array without characters.

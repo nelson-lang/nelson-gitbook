@@ -8,6 +8,9 @@
     <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p>
     <p>The module also supports session logging and workspace load/save operations for controlled file I/O in scripts and applications.</p>
   </chapter_description>
+      <keyword name="SEEK_CUR" link="SEEK_CUR.html" description="Origin value for fseek: the current position."/>
+      <keyword name="SEEK_END" link="SEEK_END.html" description="Origin value for fseek: the end of the file."/>
+      <keyword name="SEEK_SET" link="SEEK_SET.html" description="Origin value for fseek: the beginning of the file."/>
       <keyword name="cprintf" link="cprintf.html" description="Writes styled formatted text to stdout."/>
       <keyword name="diary" link="diary.html" description="Diary of a session."/>
       <keyword name="fclose" link="fclose.html" description="Close an opened file."/>
@@ -30,6 +33,9 @@
       <keyword name="readlines" link="readlines.html" description="Read lines of a text file as a string array."/>
       <keyword name="save" link="save.html" description="save workspace variables to .nh5 or .mat file"/>
       <keyword name="sscanf" link="sscanf.html" description="Read formatted data from strings."/>
+      <keyword name="stderr" link="stderr.html" description="File identifier of the standard error stream."/>
+      <keyword name="stdin" link="stdin.html" description="File identifier of the standard input stream."/>
+      <keyword name="stdout" link="stdout.html" description="File identifier of the standard output stream."/>
       <keyword name="textscan" link="textscan.html" description="Read formatted data from a character vector, string or file."/>
     </section>
   </toc>

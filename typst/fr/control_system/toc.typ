@@ -24,7 +24,7 @@
     - #nlink(<control_system:2_model_conversion_interconnection.c2d>)[c2d]
     - #nlink(<control_system:2_model_conversion_interconnection.d2c>)[d2c]
     - #nlink(<control_system:2_model_conversion_interconnection.feedback>)[feedback]
-    - #nlink(<control_system:2_model_conversion_interconnection.gensign>)[gensig]
+    - #nlink(<control_system:2_model_conversion_interconnection.gensig>)[gensig]
     - #nlink(<control_system:2_model_conversion_interconnection.padecoef>)[padecoef]
     - #nlink(<control_system:2_model_conversion_interconnection.parallel>)[parallel]
     - #nlink(<control_system:2_model_conversion_interconnection.series>)[series]
@@ -32,6 +32,7 @@
     - #nlink(<control_system:2_model_conversion_interconnection.ssdelete>)[ssdelete]
     - #nlink(<control_system:2_model_conversion_interconnection.ssselect>)[ssselect]
     - #nlink(<control_system:2_model_conversion_interconnection.tf2ss>)[tf2ss]
+    - #nlink(<control_system:2_model_conversion_interconnection.zpk2tf>)[zpk2tf]
   - Analyse lineaire
     - #nlink(<control_system:3_linear_analysis.bode>)[bode]
     - #nlink(<control_system:3_linear_analysis.bodeoptions>)[bodeoptions]

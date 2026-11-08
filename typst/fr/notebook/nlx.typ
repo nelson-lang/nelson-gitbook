@@ -26,7 +26,7 @@ Un fichier #strong[.nlx]; est le document Notebook natif de Nelson. C'est un con
 
  #strong[equation]; - une équation LaTeX (#strong[props.latex];).
 
- les contrôles interactifs (slider, liste déroulante, case à cocher, ...) et les live tasks - stockés avec leur variable liée et leur valeur dans #strong[props];.
+ les contrôles interactifs (curseur, liste déroulante, case à cocher, ...) et les tâches interactives - stockés avec leur variable liée et leur valeur dans #strong[props];.
 
  Seules les cellules #strong[codecell]; sont exécutables. #strong[notebook]; et #strong[run]; évaluent leur #strong[props.code]; dans l'ordre dans l'espace de travail de base ; #strong[edit]; ouvre le document dans l'éditeur Notebook.
 

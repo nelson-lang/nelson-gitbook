@@ -44,6 +44,8 @@ xline(5, '--r', 'threshold');
 
 ``````
 
+
+#align(center)[#image("xline_1.svg")]
 ``````matlab
 f = figure();
 plot(-10:10, (-10:10).^2);
@@ -51,6 +53,8 @@ xline([-3 3], 'Color', [0 0 1], 'LineWidth', 2);
 
 ``````
 
+
+#align(center)[#image("xline_2.svg")]
 
 == Voir aussi
 

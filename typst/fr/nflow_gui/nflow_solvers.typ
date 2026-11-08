@@ -14,7 +14,7 @@ nflow integre un diagramme de deux manieres. Par defaut il execute un moteur #st
 
  #strong[Selectionner un solveur];
 
- Renseignez le champ #strong[solver]; du modèle, en script avec #strong[set\_param(model, 'Solver', nom)];, ou depuis #strong[Simulation Settings]; dans le menu Simulation de l'éditeur. Les réglages s'ouvrent dans l'onglet Model de l'inspecteur. Le défaut (pas de solveur, ou #strong['discrete'];) garde le moteur à pas fixe, donc les modèles existants sont inchangés — le chemin global est purement optionnel.
+ Renseignez le champ #strong[solver]; du modèle, en script avec #strong[set\_param(model, 'Solver', nom)];, ou depuis #strong[Paramètres de simulation]; dans le menu Simulation de l'éditeur. Les réglages s'ouvrent dans l'onglet Modèle de l'inspecteur. Le défaut (pas de solveur, ou #strong['discrete'];) garde le moteur à pas fixe, donc les modèles existants sont inchangés — le chemin global est purement optionnel.
 
  #strong[Solveurs disponibles];
 

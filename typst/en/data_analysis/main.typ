@@ -12,6 +12,7 @@ The Data Analysis module provides tools for performing numerical and array-based
 
 - #nlink(<data_analysis:accumarray>)[accumarray]: Construct array by accumulation.
 - #nlink(<data_analysis:allbetween>)[allbetween]: Determine whether all array elements are between lower and upper bounds.
+- #nlink(<data_analysis:anymissing>)[anymissing]: Check whether an array contains missing values.
 - #nlink(<data_analysis:bounds>)[bounds]: Smallest and largest array elements.
 - #nlink(<data_analysis:conv>)[conv]: Convolution and polynomial multiplication.
 - #nlink(<data_analysis:conv2>)[conv2]: 2-D convolution.
@@ -22,6 +23,7 @@ The Data Analysis module provides tools for performing numerical and array-based
 - #nlink(<data_analysis:detrend>)[detrend]: Remove polynomial trend.
 - #nlink(<data_analysis:discretize>)[discretize]: Group numeric data into bins.
 - #nlink(<data_analysis:fillmissing>)[fillmissing]: Fill missing values.
+- #nlink(<data_analysis:findgroups>)[findgroups]: Find groups and return group numbers.
 - #nlink(<data_analysis:groupcounts>)[groupcounts]: Count groups.
 - #nlink(<data_analysis:groupsummary>)[groupsummary]: Compute grouped table summaries.
 - #nlink(<data_analysis:intersect>)[intersect]: Set intersection of two arrays.
@@ -44,11 +46,13 @@ The Data Analysis module provides tools for performing numerical and array-based
 - #nlink(<data_analysis:movvar>)[movvar]: Moving variance.
 - #nlink(<data_analysis:normalize>)[normalize]: Normalize data.
 - #nlink(<data_analysis:prod>)[prod]: Product of array elements.
+- #nlink(<data_analysis:rescale>)[rescale]: Scale array elements to a fixed interval.
 - #nlink(<data_analysis:rmmissing>)[rmmissing]: Remove missing data.
 - #nlink(<data_analysis:setdiff>)[setdiff]: Set difference of two arrays.
 - #nlink(<data_analysis:setxor>)[setxor]: Set exclusive OR of two arrays.
 - #nlink(<data_analysis:smoothdata>)[smoothdata]: Smooth noisy data.
 - #nlink(<data_analysis:sort>)[sort]: Sort array elements by quick sort algorithm.
+- #nlink(<data_analysis:splitapply>)[splitapply]: Split data into groups and apply a function.
 - #nlink(<data_analysis:standardizeMissing>)[standardizeMissing]: Convert indicator values to standard missing values.
 - #nlink(<data_analysis:subspace>)[subspace]: Measure of distance (angle) between two subspaces spanned by columns of matrices.
 - #nlink(<data_analysis:sum>)[sum]: Sum of array elements.
@@ -63,6 +67,8 @@ The Data Analysis module provides tools for performing numerical and array-based
 #include "accumarray.typ"
 #pagebreak(weak: true)
 #include "allbetween.typ"
+#pagebreak(weak: true)
+#include "anymissing.typ"
 #pagebreak(weak: true)
 #include "bounds.typ"
 #pagebreak(weak: true)
@@ -83,6 +89,8 @@ The Data Analysis module provides tools for performing numerical and array-based
 #include "discretize.typ"
 #pagebreak(weak: true)
 #include "fillmissing.typ"
+#pagebreak(weak: true)
+#include "findgroups.typ"
 #pagebreak(weak: true)
 #include "groupcounts.typ"
 #pagebreak(weak: true)
@@ -128,6 +136,8 @@ The Data Analysis module provides tools for performing numerical and array-based
 #pagebreak(weak: true)
 #include "prod.typ"
 #pagebreak(weak: true)
+#include "rescale.typ"
+#pagebreak(weak: true)
 #include "rmmissing.typ"
 #pagebreak(weak: true)
 #include "setdiff.typ"
@@ -137,6 +147,8 @@ The Data Analysis module provides tools for performing numerical and array-based
 #include "smoothdata.typ"
 #pagebreak(weak: true)
 #include "sort.typ"
+#pagebreak(weak: true)
+#include "splitapply.typ"
 #pagebreak(weak: true)
 #include "standardizeMissing.typ"
 #pagebreak(weak: true)

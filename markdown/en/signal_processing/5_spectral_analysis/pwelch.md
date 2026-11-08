@@ -29,7 +29,7 @@ Welch power spectral density estimate.
 
 <b>pwelch</b> estimates a spectrum by averaging periodograms of overlapped segments.
 
-## 💡 Example
+## 💡 Examples
 
 
 
@@ -38,6 +38,12 @@ Welch power spectral density estimate.
 [pxx, f] = pwelch(rand(256, 1), hamming(64), 32, 128, 1, 'centered');
 
 ```
+Plot Welch's power spectral density estimate.
+
+```matlab
+pwelch(sin((0:255)' * 0.1) + 0.5 * sin((0:255)' * 0.4), hamming(64), 32, 128, 1, 'centered');
+```
+<img src="pwelch.svg" align="middle"/>
 
 
 ## 🔗 See also

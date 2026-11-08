@@ -25,6 +25,8 @@
 <span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block"><code class="language-matlab">editor()
 editor(filename)
+editor(filename, line)
+editor(filename, line, column)
 editor('editor_command', cmd)
 </code></pre>
 </div>
@@ -39,6 +41,14 @@ editor('editor_command', cmd)
 <tr>
 <td class="param-name">filename</td>
 <td>une chaîne : nom de fichier à ouvrir.</td>
+</tr>
+<tr>
+<td class="param-name">line</td>
+<td>un nombre : ligne où placer le curseur.</td>
+</tr>
+<tr>
+<td class="param-name">column</td>
+<td>un nombre : colonne de cette ligne.</td>
 </tr>
 <tr>
 <td class="param-name">cmd</td>
@@ -64,6 +74,7 @@ editor('editor_command', cmd)
         ')</code>
     </p>
     <p>Le changement d'éditeur est persistant et sera enregistré dans un fichier de configuration.</p>
+    <p>Touches du débogueur dans l'éditeur : F12 pose/retire un point d'arrêt, F5 exécute ou continue, F10 pas à pas, F11 entre dans la fonction, Shift+F11 sort de la fonction, Shift+F5 arrête, F9 évalue la sélection, F6 pause, Ctrl+F10 exécuter jusqu'ici. Voir la page sur le déroulement du débogage.</p>
   </div>
 </div>
 <div class="section">
@@ -102,6 +113,14 @@ editor('editor_command ', '')</code></pre>
 <tr>
 <td class="version">1.10.0</td>
 <td>Option pour changer l'éditeur de texte par défaut</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Touches du débogueur et marqueurs de points d'arrêt</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>editor(filename, line, column) ajouté</td>
 </tr>
 </table>
 </div>

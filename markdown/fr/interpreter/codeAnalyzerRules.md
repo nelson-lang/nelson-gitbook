@@ -13,7 +13,7 @@ Chaque identifiant est stable et peut etre utilise dans les fichiers de configur
 | --- | --- | --- | --- | 
 | NLS0001 | error | Syntax | Erreur de syntaxe, lexique, entree ou lecture. Le fichier source ne peut pas etre analyse ou ne peut pas etre lu. | 
 | NLS0002 | warning | Naming | Le nom de la fonction principale ou de la classe differe du nom du fichier source. | 
-| NLS0003 | warning | Flow | Du code place apres **return**, **break** ou **continue** est inaccessible dans le bloc courant. | 
+| NLS0003 | warning | Flow | Du code ne peut jamais s'executer : apres **return**, **break**, **continue**, **error(id, message)**, **rethrow** ou **throw** dans le bloc courant, dans une branche sous une condition constante **false** ou apres une branche **if true**, et apres une boucle **while true** sans **break**. | 
 | NLS0004 | info | Dataflow | Une variable locale est assignee mais n'est jamais reutilisee ensuite. L'analyseur ignore le texte dans les commentaires et les chaines de caracteres, ne compte pas la partie gauche d'une affectation comme une utilisation, et ignore cette regle lorsque des affectations dynamiques rendent le flux local ambigu. | 
 | NLS0005 | warning | Dataflow | Une variable locale est utilisee avant sa premiere affectation locale dans un cas simple et conservateur. | 
 | NLS0006 | warning | Dataflow | Un argument de sortie declare n'est pas assigne par le corps de la fonction. | 
@@ -49,6 +49,8 @@ Chaque identifiant est stable et peut etre utilise dans les fichiers de configur
 | NLS0036 | info | Dataflow | Une affectation locale masque un nom d'argument d'entree. | 
 | NLS0037 | warning | Classdef | Une superclasse est listee plusieurs fois dans la meme classe. | 
 | NLS0038 | warning | Classdef | Un attribut de classe est liste plusieurs fois dans la meme classe. | 
+| NLS0039 | info | Performance | Une variable grandit a chaque iteration d'une boucle : **x(end + 1) = v**, **x = [x, v]**, ou **x(k) = v** avec **k** l'indice de boucle et **x** vide ou non defini avant la boucle. Il vaut mieux la preallouer, par exemple avec **zeros** ou **cell**. | 
+| NLS0040 | info | Readability | **isempty(strfind(str, pattern))** est utilise : **~contains(str, pattern)** est plus lisible, et **contains(str, pattern)** remplace **~isempty(strfind(str, pattern))**. | 
 
  
 

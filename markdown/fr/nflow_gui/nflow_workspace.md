@@ -21,15 +21,15 @@ Ouvrez <b>Gérer les bibliothèques</b> depuis l'en-tête de la bibliothèque po
 
 <b>Modifier les propriétés</b> 
 
-Sélectionnez un bloc pour ouvrir l'inspecteur <b>Block</b>. Ses paramètres restent visibles pendant l'édition du diagramme. La section Capabilities indique la prise en charge directe ou dépendante du modèle pour la génération C et Rust. La nécessité d'OpenModelica n'est affichée que pour les blocs concernés. Utilisez l'onglet <b>Model</b> pour les réglages de simulation, les variables, les métadonnées du diagramme, le routage et le mode lecture seule. 
+Sélectionnez un bloc pour ouvrir l'inspecteur <b>Bloc</b>. Ses paramètres restent visibles pendant l'édition du diagramme. La section Capabilities indique la prise en charge directe ou dépendante du modèle pour la génération C et Rust. La nécessité d'OpenModelica n'est affichée que pour les blocs concernés. Utilisez l'onglet <b>Modèle</b> pour les réglages de simulation, les variables, les métadonnées du diagramme, le routage et le mode lecture seule. 
 
 La section Informations du modèle affiche la version, le créateur et la date de création du modèle, ainsi que l'utilisateur et la date du dernier enregistrement réussi. La description, la licence et le mode lecture seule sont enregistrés avec le diagramme. Pour un ancien diagramme dépourvu de ces métadonnées, les informations de dernier enregistrement sont indiquées comme indisponibles. 
 
-Dans <b>Settings</b>, la section Modelica indique si OpenModelica a été détecté et s'il est prêt pour l'export FMU. Lorsqu'il est disponible, sa version et le chemin de l'exécutable sont affichés ; sinon, la raison de l'indisponibilité de la détection ou de l'export est précisée. 
+Dans <b>Paramètres</b>, la section Modelica indique si OpenModelica a été détecté et s'il est prêt pour l'export FMU. Lorsqu'il est disponible, sa version et le chemin de l'exécutable sont affichés ; sinon, la raison de l'indisponibilité de la détection ou de l'export est précisée. 
 
 <b>Exécuter une simulation</b> 
 
-Le menu <b>Simulation</b> et la barre compacte au-dessus du diagramme donnent accès à Run ou Resume, Pause, Stop, Reset et Simulation Settings. La barre peut être masquée ou restaurée depuis <b>View > Simulation Toolbar</b> ; ce choix est restauré à la réouverture de l'éditeur. Stop conserve les résultats déjà calculés. Reset arrête la simulation si nécessaire, remet le temps à zéro et efface les résultats affichés. 
+Le menu <b>Simulation</b> et la barre compacte au-dessus du diagramme donnent accès à Exécuter ou Reprendre, Pause, Arrêter, Réinitialiser et Paramètres de simulation. La barre peut être masquée ou restaurée depuis <b>View > Simulation Toolbar</b> ; ce choix est restauré à la réouverture de l'éditeur. Stop conserve les résultats déjà calculés. Reset arrête la simulation si nécessaire, remet le temps à zéro et efface les résultats affichés. 
 
 <b>Utiliser les diagnostics</b> 
 
@@ -43,12 +43,12 @@ Sur une fenêtre large, la bibliothèque et l'inspecteur peuvent rester ouverts 
 
 NFlow restaure la géométrie de la fenêtre, les panneaux visibles, leurs dimensions et leurs onglets, les sections ouvertes de la bibliothèque et de l'inspecteur, les positions de défilement, les filtres de diagnostics, les options de génération de code, les derniers dossiers des dialogues de fichiers et les valeurs par défaut des nouveaux diagrammes. Le zoom et le cadrage sont restaurés lorsque le même diagramme enregistré est ouvert à nouveau. NFlow ne rouvre pas automatiquement le dernier diagramme. 
 
-Utilisez <b>View > Reset UI Preferences</b> pour supprimer ces préférences d'interface. Le diagramme courant n'est pas modifié et les valeurs par défaut s'appliquent aux nouvelles fenêtres de l'éditeur.
+Utilisez <b>Affichage > Réinitialiser les préférences d'interface</b> pour supprimer ces préférences d'interface. Le diagramme courant n'est pas modifié et les valeurs par défaut s'appliquent aux nouvelles fenêtres de l'éditeur.
 
 
 ## 🔗 Voir aussi
 
-[nflow_wire_editing](../nflow_gui/nflow_wire_editing.md), [nflow_solvers](../nflow_gui/nflow_solvers.md).
+[nflow_tutorial_first_model](../nflow_gui/1_nflow_tutorial_first_model.md), [nflow_wire_editing](../nflow_gui/nflow_wire_editing.md), [nflow_solvers](../nflow_gui/nflow_solvers.md).
 
 ## 🕔 Historique
 

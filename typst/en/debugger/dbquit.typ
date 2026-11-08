@@ -25,6 +25,8 @@ Quit debug mode.
 
  This function can only be called from the command line while debugging.
 
+ Outside a debug session, #strong[dbquit]; raises #raw("Debug commands only allowed when stopped in debug mode."); The editor's Stop button (Shift+F5) and saving a file while paused call #strong[dbquit];.
+
 
 == Examples
 
@@ -62,6 +64,7 @@ dbquit all
   columns: 2,
   table.header([Version], [Description]),
   [1.16.0], [initial version],
+  [2.0.0], [uniform message outside a debug session, editor Stop and save end the session],
 )
 
 // Author: Allan CORNET

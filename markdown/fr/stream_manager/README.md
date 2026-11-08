@@ -14,6 +14,9 @@ Le module gere aussi la journalisation de session ainsi que le chargement et la 
 
 ## Functions
 
+- [SEEK_CUR](SEEK_CUR.md) - Valeur d'origine pour fseek : à la position courante.
+- [SEEK_END](SEEK_END.md) - Valeur d'origine pour fseek : à la fin du fichier.
+- [SEEK_SET](SEEK_SET.md) - Valeur d'origine pour fseek : au début du fichier.
 - [cprintf](cprintf.md) - Ecrit du texte formatte et style vers stdout.
 - [diary](diary.md) - Journal d'une session.
 - [fclose](fclose.md) - Ferme un fichier ouvert.
@@ -36,5 +39,8 @@ Le module gere aussi la journalisation de session ainsi que le chargement et la 
 - [readlines](readlines.md) - Lire les lignes d'un fichier texte en tableau de chaînes.
 - [save](save.md) - enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat
 - [sscanf](sscanf.md) - Lire des données formatées depuis des chaînes.
+- [stderr](stderr.md) - Identifiant du flux d'erreur standard.
+- [stdin](stdin.md) - Identifiant du flux d'entrée standard.
+- [stdout](stdout.md) - Identifiant du flux de sortie standard.
 - [textscan](textscan.md) - Lit des données formatées depuis une chaîne ou un fichier.
 

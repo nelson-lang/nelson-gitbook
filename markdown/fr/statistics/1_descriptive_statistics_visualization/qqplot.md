@@ -24,6 +24,7 @@ Avec un echantillon, Nelson compare les quantiles de l'echantillon aux quantiles
 x = randn(100, 1);
 qqplot(x)
 ```
+<img src="qqplot.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

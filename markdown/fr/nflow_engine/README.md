@@ -1,4 +1,4 @@
-# moteur nflow
+# moteur NFlow
 
 
 Création et édition programmatiques de modèles de blocs-diagrammes nflow.
@@ -9,8 +9,11 @@ NFlow est actuellement publié en version **1.0.0-beta.1** : fonctionnel et test
 
 ## Functions
 
+- [NFlow.addlibrarypath](NFlow.addlibrarypath.md) - Ajoute un répertoire de recherche de bibliothèques de blocs nflow.
 - [NFlow.exportfmu](NFlow.exportfmu.md) - Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation.
+- [NFlow.librarypaths](NFlow.librarypaths.md) - Renvoie les répertoires de recherche de bibliothèques de blocs nflow.
 - [NFlow.plotScopes](NFlow.plotScopes.md) - Ouvre une figure par scope d'un résultat de simulation nflow.
+- [NFlow.rmlibrarypath](NFlow.rmlibrarypath.md) - Retire un répertoire de recherche de bibliothèques de blocs nflow.
 - [add_block](add_block.md) - Ajoute un bloc à un modèle nflow depuis une source de bibliothèque.
 - [add_line](add_line.md) - Connecte deux ports de blocs dans un modèle nflow.
 - [bdIsDirty](bdIsDirty.md) - Retourne vrai lorsqu'un modèle nflow a des modifications non sauvegardées.
@@ -29,6 +32,8 @@ NFlow est actuellement publié en version **1.0.0-beta.1** : fonctionnel et test
 - [load_system](load_system.md) - Charge un modèle nflow depuis un fichier .nflow sans ouvrir l'éditeur.
 - [new_system](new_system.md) - Crée et charge un modèle nflow vide.
 - [nflow_codegenerate](nflow_codegenerate.md) - Genere du code C ou Rust autonome depuis un modele nflow.
+- [nflow_layout](nflow_layout.md) - Dispose automatiquement les blocs d'un (sous-)système nflow.
+- [nflow_reroute](nflow_reroute.md) - Recalcule le tracé des fils d'un (sous-)système nflow.
 - [save_system](save_system.md) - Sauvegarde un modèle nflow dans un fichier .nflow.
 - [set_param](set_param.md) - Définit atomiquement des paramètres de modèle ou de bloc.
 - [sim](sim.md) - Simule un modèle nflow et retourne ses résultats.

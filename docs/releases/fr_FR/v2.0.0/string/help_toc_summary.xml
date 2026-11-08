@@ -28,6 +28,7 @@
         <keyword name="num2str" link="1_create_convert_text/num2str.html" description="Convertit des nombres en tableau de caractères."/>
         <keyword name="sprintf" link="1_create_convert_text/sprintf.html" description="Écrit des données dans une chaîne."/>
         <keyword name="str2double" link="1_create_convert_text/str2double.html" description="Convertit une chaîne en double."/>
+        <keyword name="str2num" link="1_create_convert_text/str2num.html" description="Convertit un tableau de caractères en tableau numérique."/>
         <keyword name="strcat" link="1_create_convert_text/strcat.html" description="concatène des chaînes horizontalement."/>
         <keyword name="string" link="1_create_convert_text/string.html" description="Constructeur de tableau de chaînes."/>
         <keyword name="strings" link="1_create_convert_text/strings.html" description="Crée un tableau de chaînes vide."/>

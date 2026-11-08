@@ -20,5 +20,6 @@
   - #nlink(<data_structures:rmfield>)[rmfield]
   - #nlink(<data_structures:setfield>)[setfield]
   - #nlink(<data_structures:struct>)[struct]
+  - #nlink(<data_structures:struct2array>)[struct2array]
   - #nlink(<data_structures:struct2cell>)[struct2cell]
   - #nlink(<data_structures:structfun>)[structfun]

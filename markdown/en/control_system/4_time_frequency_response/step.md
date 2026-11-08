@@ -56,7 +56,7 @@ step(sys);
 
 ## 🔗 See also
 
-[gensig](../../control_system/2_model_conversion_interconnection/gensign.md), [lsim](../../control_system/4_time_frequency_response/lsim.md).
+[gensig](../../control_system/2_model_conversion_interconnection/gensig.md), [lsim](../../control_system/4_time_frequency_response/lsim.md).
 
 ## 🕔 History
 

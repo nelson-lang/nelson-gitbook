@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nflow_tutorial_continuous</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nflow_tutorial_continuous</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Tutorial 2 of 3: simulate a continuous system and choose a solver.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Tutorial: build a first-order system with feedback, then select a solver.
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>This second tutorial builds a continuous system and shows how the solver changes the way it is integrated. The model is a first-order lag: a step input drives a state that approaches the input with time constant tau. The equation is dx/dt = (u - x) / tau, which you build with a Sum, a Gain, and an Integrator wired in a feedback loop. It assumes you have done <b>nflow_tutorial_first_model</b>.</p>
+    <p><b>Place the blocks</b></p>
+    
+      <li>From the <b>Source</b> group, drag a <b>Step</b> block onto the canvas.</li>
+      <li>From the <b>Math</b> group, drag a <b>Sum</b> block and a <b>Gain</b> block.</li>
+      <li>From the <b>Continuous</b> group, drag an <b>Integrator</b> block.</li>
+      <li>From the <b>Sinks</b> group, drag a <b>Scope</b> block.</li>
+    
+    <p><b>Set the block parameters</b></p>
+    <p>Select the <b>Sum</b> block and set its signs to one plus and one minus, so it computes the input minus the fed-back state. Select the <b>Gain</b> block and set <b>Gain</b> to 1 / tau; for tau = 0.5 s, set it to 2. Leave the <b>Integrator</b> at an initial condition of 0.</p>
+    <p><b>Connect the blocks</b></p>
+    
+      <li>Wire the <b>Step</b> output to the plus input of the <b>Sum</b>.</li>
+      <li>Wire the <b>Sum</b> output to the <b>Gain</b>, and the <b>Gain</b> output to the <b>Integrator</b>.</li>
+      <li>Wire the <b>Integrator</b> output to the <b>Scope</b>, and also back to the minus input of the <b>Sum</b> to close the loop.</li>
+    
+    <p>The wire from the Integrator back to the Sum is the feedback path. It is what makes the state settle instead of growing without bound.</p>
+    <p><img src="./nflow_tutorial_continuous_diagram.png" width="680" style="max-width:680px;width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Run with the default engine</b></p>
+    <p>Set <b>Runtime (s)</b> to about 5 in the Model tab and press <b>Run</b>. With no solver selected, nflow uses the fixed-step discrete engine, and each continuous block integrates with a per-block Euler step at the model <b>Sample Time (s)</b>. The Scope shows the state rising toward the step value along an exponential curve.</p>
+    <p><b>Choose a solver</b></p>
+    <p>Open the Model tab and set the <b>Solver</b>. The default (discrete) keeps the fixed-step engine. Select <b>ode4</b> for a fixed-step fourth-order Runge-Kutta integration, which is more accurate than Euler at the same step. Select <b>ode45</b> for an adaptive step controlled by the tolerances. When an adaptive solver is selected, set <b>Relative tolerance</b> and <b>Absolute tolerance</b>, and an optional <b>Max step (0 = auto)</b> ceiling. Tighter tolerances give a more accurate trajectory at the cost of more sub-steps. See <b>nflow_solvers</b> for the full list and for how each solver maps to generated C and Rust code.</p>
+    <p><img src="./nflow_tutorial_continuous_solver.png" width="260" style="max-width:260px;width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Compare the step size</b></p>
+    <p>Lower the <b>Sample Time (s)</b> and run again with the discrete engine to see the Euler result approach the ode4 result. This is the trade-off a solver manages for you: accuracy against the number of steps.</p>
+    <p><b>What to try next</b></p>
+    <p>Add a second Integrator and a feedback gain to make a second-order system such as a mass-spring-damper, then continue with <b>nflow_tutorial_dashboard</b> to drive the model with live controls while it runs.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Open a continuous model and try different solvers on it.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks', 'root'), '/examples/causal/Second_Order_Responses_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../nflow_gui/nflow_solvers.html">nflow_solvers</a><a class="see-also-link" href="../nflow_gui/nflow_multirate.html">nflow_multirate</a><a class="see-also-link" href="../nflow_gui/1_nflow_tutorial_first_model.html">nflow_tutorial_first_model</a><a class="see-also-link" href="../nflow_gui/3_nflow_tutorial_dashboard.html">nflow_tutorial_dashboard</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

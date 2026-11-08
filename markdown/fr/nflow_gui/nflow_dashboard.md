@@ -9,7 +9,7 @@ Surveiller et régler les simulations NFlow avec des blocs Dashboard interactifs
 ## 📄 Description
 
 
-Les blocs Dashboard fournissent des contrôles et des affichages directement sur un diagramme NFlow. Ils n'ont pas de ports d'entrée ou de sortie ordinaires : chaque bloc lit ou modifie une cible choisie dans la section <b>Binding</b> de l'inspecteur. 
+Les blocs Dashboard fournissent des contrôles et des affichages directement sur un diagramme NFlow. Ils n'ont pas de ports d'entrée ou de sortie ordinaires : chaque bloc lit ou modifie une cible choisie dans la section <b>Liaison</b> de l'inspecteur. 
 
 <b>Blocs disponibles</b> 
 

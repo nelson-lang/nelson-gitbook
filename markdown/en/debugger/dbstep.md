@@ -24,7 +24,9 @@ Execute next executable line during debugging.
 
 <b>dbstep nlines</b> executes the specified number of lines, pausing at any breakpoint encountered. 
 
-These commands can only be used from the command line while debugging.
+These commands can only be used from the command line while debugging. 
+
+Outside a debug session, <b>dbstep</b> raises <code>Debug commands only allowed when stopped in debug mode.</code> When the step is typed at the <code>K>></code> prompt, the console prints the line about to run, as <code>4   r = r * 2;</code>; a step driven from the editor moves the arrow without printing it. At a stop on an uncaught error, <b>dbstep</b> ends the session.
 
 ## 💡 Examples
 
@@ -79,6 +81,7 @@ dbstep 4
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.16.0   | initial version |
+| 2.0.0   | uniform message outside a debug session, per-step echo of the line, ends the session at an error stop |
 
 <!--
 ## 👤 Author

@@ -25,6 +25,7 @@ This page documents the visible properties returned by #strong[properties]; for 
   [#strong[FontWeight];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'normal', 'bold'.], 
   [#strong[Interpreter];], [updates rendered output on the next graphics refresh.], [Type: text scalar or character row vector. Supported values: 'tex', 'none'.], 
   [#strong[ItemHitFcn];], [the graphics event system invokes it for the associated event.], [Type: callback value. Supported values: \[\], function handle, character vector, string scalar, or callback cell array.], 
+  [#strong[ItemTokenSize];], [updates rendered output on the next graphics refresh.], [Type: two-element numeric vector. Supported values: \[width; height\] in points, read back as a column; only the width changes the layout (icon column width).], 
   [#strong[LineWidth];], [updates rendered output on the next graphics refresh.], [Type: finite numeric scalar. Supported values: value greater than or equal to 0.], 
   [#strong[Location];], [recomputes geometry, limits, or layout.], [Type: text scalar or character row vector. Supported values: 'north', 'south', 'east', 'west', 'northoutside', 'southoutside', 'eastoutside', 'westoutside', 'best', 'none', 'layout', 'manual'.], 
   [#strong[NumColumns];], [updates the stored object state.], [Type: integer scalar or numeric vector. Supported values: finite integer value, finite numeric value, or vector required by the property.], 

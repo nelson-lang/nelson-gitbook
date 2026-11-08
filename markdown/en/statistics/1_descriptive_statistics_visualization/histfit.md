@@ -25,6 +25,7 @@ The default distribution is normal. Supported distribution names include normal,
 x = randn(100, 1);
 histfit(x, 12)
 ```
+<img src="histfit.svg" align="middle"/>
 
 
 ## 🔗 See also

@@ -43,6 +43,7 @@ plot(1:10, (1:10).^2);
 yline(50, '-.b', 'mean');
 
 ```
+<img src="yline_1.svg" align="middle"/>
 
 
 ```matlab
@@ -51,6 +52,7 @@ plot(1:10, sin(1:10));
 yline([-1 0 1], 'Color', [0 0 1]);
 
 ```
+<img src="yline_2.svg" align="middle"/>
 
 
 ## 🔗 See also

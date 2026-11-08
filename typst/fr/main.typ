@@ -134,6 +134,8 @@
 #pagebreak(weak: true)
 #include "text_editor/main.typ"
 #pagebreak(weak: true)
+#include "notebook/main.typ"
+#pagebreak(weak: true)
 #include "graphics/main.typ"
 #pagebreak(weak: true)
 #include "graphics_io/main.typ"
@@ -181,8 +183,6 @@
 #include "nmm_gui/main.typ"
 #pagebreak(weak: true)
 #include "compiler/main.typ"
-#pagebreak(weak: true)
-#include "notebook/main.typ"
 #pagebreak(weak: true)
 #include "changelogs/CHANGELOG.typ"
 #pagebreak(weak: true)

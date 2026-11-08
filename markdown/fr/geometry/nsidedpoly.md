@@ -34,6 +34,7 @@ f = figure();
 plot(nsidedpoly(6, 'Radius', 2));
 axis equal
 ```
+<img src="nsidedpoly.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

@@ -38,6 +38,7 @@ The Core module provides the fundamental building blocks of the Nelson environme
 - #nlink(<core:exit>)[exit]: Terminate Nelson program (same as quit)
 - #nlink(<core:feature>)[feature]: undocumented features.
 - #nlink(<core:inputname>)[inputname]: Get variable name of function input.
+- #nlink(<core:isMATLABReleaseOlderThan>)[isMATLABReleaseOlderThan]: Compare current release to a MATLAB release.
 - #nlink(<core:isstr>)[isstr]: Determine whether input is a character array (deprecated).
 - #nlink(<core:isunicodesupported>)[isunicodesupported]: Detect whether the current terminal supports Unicode.
 - #nlink(<core:license>)[license]: Get license information for Nelson.
@@ -58,6 +59,9 @@ The Core module provides the fundamental building blocks of the Nelson environme
 - #nlink(<core:quit>)[quit]: Terminate Nelson application
 - #nlink(<core:run>)[run]: Executes a script file (.m).
 - #nlink(<core:sha256>)[sha256]: Get sha256 checksum.
+- #nlink(<core:usejava>)[usejava]: Check whether a Java feature is available.
+- #nlink(<core:ver>)[ver]: Version information.
+- #nlink(<core:verLessThan>)[verLessThan]: Compare toolbox version to a version string.
 - #nlink(<core:version>)[version]: Return the version of Nelson.
 
 
@@ -111,6 +115,8 @@ The Core module provides the fundamental building blocks of the Nelson environme
 #pagebreak(weak: true)
 #include "inputname.typ"
 #pagebreak(weak: true)
+#include "isMATLABReleaseOlderThan.typ"
+#pagebreak(weak: true)
 #include "isstr.typ"
 #pagebreak(weak: true)
 #include "isunicodesupported.typ"
@@ -148,6 +154,12 @@ The Core module provides the fundamental building blocks of the Nelson environme
 #include "run.typ"
 #pagebreak(weak: true)
 #include "sha256.typ"
+#pagebreak(weak: true)
+#include "usejava.typ"
+#pagebreak(weak: true)
+#include "ver.typ"
+#pagebreak(weak: true)
+#include "verLessThan.typ"
 #pagebreak(weak: true)
 #include "version.typ"
 ]

@@ -128,7 +128,7 @@
         <keyword name="ipermute" link="7_indexing_dimensions/ipermute.html" description="Inverse permute array dimensions."/>
         <keyword name="isapprox" link="7_indexing_dimensions/isapprox.html" description="Return true if arguments are approximately equal, within the precision."/>
         <keyword name="iscolumn" link="7_indexing_dimensions/iscolumn.html" description="Determine whether input is column vector."/>
-        <keyword name="istriu" link="7_indexing_dimensions/isdiag.html" description="Checks if matrix is diagonal."/>
+        <keyword name="isdiag" link="7_indexing_dimensions/isdiag.html" description="Checks if matrix is diagonal."/>
         <keyword name="isequal" link="7_indexing_dimensions/isequal.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values)."/>
         <keyword name="isequaln" link="7_indexing_dimensions/isequaln.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs)."/>
         <keyword name="isequalto" link="7_indexing_dimensions/isequalto.html" description="Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs)."/>
@@ -139,6 +139,7 @@
         <keyword name="isnan" link="7_indexing_dimensions/isnan.html" description="Check for Not a Number entries."/>
         <keyword name="isrow" link="7_indexing_dimensions/isrow.html" description="Determine whether input is row vector."/>
         <keyword name="isscalar" link="7_indexing_dimensions/isscalar.html" description="Check if the input is a scalar"/>
+        <keyword name="issortedrows" link="7_indexing_dimensions/issortedrows.html" description="Determine whether matrix rows are sorted."/>
         <keyword name="istril" link="7_indexing_dimensions/istril.html" description="Checks if matrix is lower triangular."/>
         <keyword name="istriu" link="7_indexing_dimensions/istriu.html" description="Checks if matrix is upper triangular."/>
         <keyword name="isvector" link="7_indexing_dimensions/isvector.html" description="Checks input is vector."/>
@@ -153,6 +154,7 @@
         <keyword name="sortrows" link="7_indexing_dimensions/sortrows.html" description="Sort rows of an array."/>
         <keyword name="sub2ind" link="7_indexing_dimensions/sub2ind.html" description="Matrix subscript values to linear index"/>
         <keyword name="substruct" link="7_indexing_dimensions/substruct.html" description="Create structure argument for subsasgn or subsref"/>
+        <keyword name="topkrows" link="7_indexing_dimensions/topkrows.html" description="Top k sorted rows of a matrix."/>
         <keyword name="tril" link="7_indexing_dimensions/tril.html" description="Lower triangular part of matrix"/>
         <keyword name="triu" link="7_indexing_dimensions/triu.html" description="Upper triangular part of matrix"/>
       </section>

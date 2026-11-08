@@ -25,6 +25,8 @@ Exécuter la ligne exécutable suivante lors du débogage.
 
  #strong[dbstep nlines]; exécute le nombre spécifié de lignes, s'interrompant à tout point d'arrêt rencontré.
 
+ Hors d'une session de débogage, #strong[dbstep]; lève #raw("Debug commands only allowed when stopped in debug mode."); Quand le pas est tapé à l'invite #raw("K>>");, la console affiche la ligne qui va s'exécuter, sous la forme #raw("4   r = r * 2;"); ; un pas déclenché depuis l'éditeur déplace la flèche sans rien afficher. À un arrêt sur une erreur non attrapée, #strong[dbstep]; termine la session.
+
 
 == Exemples
 
@@ -81,6 +83,7 @@ dbstep 4
   columns: 2,
   table.header([Version], [Description]),
   [1.16.0], [version initiale],
+  [2.0.0], [message uniforme hors session de débogage, écho de la ligne à chaque pas, termine la session à un arrêt sur erreur],
 )
 
 // Auteur: Allan CORNET

@@ -179,6 +179,7 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - [isnan](7_indexing_dimensions/isnan.md) - Recherche les éléments Not a Number.
 - [isrow](7_indexing_dimensions/isrow.md) - Déterminer si l'entrée est un vecteur ligne.
 - [isscalar](7_indexing_dimensions/isscalar.md) - Tester si l'entrée est un scalaire
+- [issortedrows](7_indexing_dimensions/issortedrows.md) - Détermine si les lignes d'une matrice sont triées.
 - [istril](7_indexing_dimensions/istril.md) - Tester si une matrice est triangulaire infÃ©rieure
 - [istriu](7_indexing_dimensions/istriu.md) - Vérifie si une matrice est triangulaire supérieure.
 - [isvector](7_indexing_dimensions/isvector.md) - Vérifie si l'entrée est un vecteur.
@@ -193,6 +194,7 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - [sortrows](7_indexing_dimensions/sortrows.md) - Trier les lignes d'un tableau.
 - [sub2ind](7_indexing_dimensions/sub2ind.md) - Indices d'une matrice vers un indice linéaire
 - [substruct](7_indexing_dimensions/substruct.md) - Crée un argument structure pour subsasgn ou subsref
+- [topkrows](7_indexing_dimensions/topkrows.md) - Les k premières lignes triées d'une matrice.
 - [tril](7_indexing_dimensions/tril.md) - Partie triangulaire inférieure d'une matrice
 - [triu](7_indexing_dimensions/triu.md) - Partie triangulaire supérieure d'une matrice
 

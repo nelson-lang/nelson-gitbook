@@ -25,6 +25,7 @@ Plot a Voronoi diagram.
 P = [0 0; 1 0; 1 1; 0 1; 0.4 0.6];
 voronoi(P)
 ```
+<img src="voronoi.svg" align="middle"/>
 
 
 ## 🔗 See also

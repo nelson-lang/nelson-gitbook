@@ -44,6 +44,7 @@ Together, these features form the foundation upon which all other modules and us
 - [exit](exit.md) - Terminate Nelson program (same as quit)
 - [feature](feature.md) - undocumented features.
 - [inputname](inputname.md) - Get variable name of function input.
+- [isMATLABReleaseOlderThan](isMATLABReleaseOlderThan.md) - Compare current release to a MATLAB release.
 - [isstr](isstr.md) - Determine whether input is a character array (deprecated).
 - [isunicodesupported](isunicodesupported.md) - Detect whether the current terminal supports Unicode.
 - [license](license.md) - Get license information for Nelson.
@@ -64,5 +65,8 @@ Together, these features form the foundation upon which all other modules and us
 - [quit](quit.md) - Terminate Nelson application
 - [run](run.md) - Executes a script file (.m).
 - [sha256](sha256.md) - Get sha256 checksum.
+- [usejava](usejava.md) - Check whether a Java feature is available.
+- [ver](ver.md) - Version information.
+- [verLessThan](verLessThan.md) - Compare toolbox version to a version string.
 - [version](version.md) - Return the version of Nelson.
 

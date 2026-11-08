@@ -27,6 +27,8 @@ histfit(x, 12)
 ``````
 
 
+#align(center)[#image("histfit.svg")]
+
 == See also
 
 #nlink(<graphics:1_plots.4_data_distribution_plots.histogram>)[histogram];, #nlink(<statistics:1_descriptive_statistics_visualization.ksdensity>)[ksdensity];.

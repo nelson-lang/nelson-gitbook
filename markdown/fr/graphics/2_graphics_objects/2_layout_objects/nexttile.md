@@ -46,6 +46,7 @@ for k = 1:4
 end
 
 ```
+<img src="nexttile.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

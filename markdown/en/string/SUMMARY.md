@@ -14,6 +14,7 @@
     - [num2str](1_create_convert_text/num2str.md)
     - [sprintf](1_create_convert_text/sprintf.md)
     - [str2double](1_create_convert_text/str2double.md)
+    - [str2num](1_create_convert_text/str2num.md)
     - [strcat](1_create_convert_text/strcat.md)
     - [string](1_create_convert_text/string.md)
     - [strings](1_create_convert_text/strings.md)

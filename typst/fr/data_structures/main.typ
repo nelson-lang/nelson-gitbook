@@ -29,6 +29,7 @@ Le module Structures de données fournit des outils pour créer, manipuler et in
 - #nlink(<data_structures:rmfield>)[rmfield]: Supprimer des champs d'une structure.
 - #nlink(<data_structures:setfield>)[setfield]: Définir le contenu d'un champ de structure.
 - #nlink(<data_structures:struct>)[struct]: Cree une structure ou convertit un objet en structure.
+- #nlink(<data_structures:struct2array>)[struct2array]: Concatène les valeurs des champs d'une structure en un tableau.
 - #nlink(<data_structures:struct2cell>)[struct2cell]: Créer un tableau cellulaire à partir d'une structure.
 - #nlink(<data_structures:structfun>)[structfun]: Applique une fonction a chaque champ d'une structure scalaire.
 
@@ -72,6 +73,8 @@ Le module Structures de données fournit des outils pour créer, manipuler et in
 #include "setfield.typ"
 #pagebreak(weak: true)
 #include "struct.typ"
+#pagebreak(weak: true)
+#include "struct2array.typ"
 #pagebreak(weak: true)
 #include "struct2cell.typ"
 #pagebreak(weak: true)

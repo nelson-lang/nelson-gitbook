@@ -34,6 +34,7 @@
       <keyword name="exit" link="exit.html" description="Terminate Nelson program (same as quit)"/>
       <keyword name="feature" link="feature.html" description="undocumented features."/>
       <keyword name="inputname" link="inputname.html" description="Get variable name of function input."/>
+      <keyword name="isMATLABReleaseOlderThan" link="isMATLABReleaseOlderThan.html" description="Compare current release to a MATLAB release."/>
       <keyword name="isstr" link="isstr.html" description="Determine whether input is a character array (deprecated)."/>
       <keyword name="isunicodesupported" link="isunicodesupported.html" description="Detect whether the current terminal supports Unicode."/>
       <keyword name="license" link="license.html" description="Get license information for Nelson."/>
@@ -54,6 +55,9 @@
       <keyword name="quit" link="quit.html" description="Terminate Nelson application"/>
       <keyword name="run" link="run.html" description="Executes a script file (.m)."/>
       <keyword name="sha256" link="sha256.html" description="Get sha256 checksum."/>
+      <keyword name="usejava" link="usejava.html" description="Check whether a Java feature is available."/>
+      <keyword name="ver" link="ver.html" description="Version information."/>
+      <keyword name="verLessThan" link="verLessThan.html" description="Compare toolbox version to a version string."/>
       <keyword name="version" link="version.html" description="Return the version of Nelson."/>
     </section>
   </toc>

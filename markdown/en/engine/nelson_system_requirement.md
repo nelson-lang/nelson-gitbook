@@ -7,7 +7,7 @@ System Requirements by platforms.
 
 <b>Linux</b>: 
 
-<b>Operating system</b>: Ubuntu 24.04 LTS, Ubuntu 22.04 LTS, Ubuntu 20.04 LTS, Fedora, ArchLinux, NixOs 
+<b>Operating system</b>: Ubuntu 26.04 LTS, Ubuntu 24.04 LTS, Fedora, ArchLinux, NixOs 
 
 <b>Processor</b>: Any Intel or AMD x86-64 processor. 
 

@@ -8,6 +8,9 @@
     <p>Il prend en charge la lecture et l'ecriture de donnees texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la detection de la fin de fichier et la gestion des erreurs de fichier.</p>
     <p>Le module gere aussi la journalisation de session ainsi que le chargement et la sauvegarde des donnees de l'espace de travail.</p>
   </chapter_description>
+      <keyword name="SEEK_CUR" link="SEEK_CUR.html" description="Valeur d'origine pour fseek : à la position courante."/>
+      <keyword name="SEEK_END" link="SEEK_END.html" description="Valeur d'origine pour fseek : à la fin du fichier."/>
+      <keyword name="SEEK_SET" link="SEEK_SET.html" description="Valeur d'origine pour fseek : au début du fichier."/>
       <keyword name="cprintf" link="cprintf.html" description="Ecrit du texte formatte et style vers stdout."/>
       <keyword name="diary" link="diary.html" description="Journal d'une session."/>
       <keyword name="fclose" link="fclose.html" description="Ferme un fichier ouvert."/>
@@ -30,6 +33,9 @@
       <keyword name="readlines" link="readlines.html" description="Lire les lignes d'un fichier texte en tableau de chaînes."/>
       <keyword name="save" link="save.html" description="enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat"/>
       <keyword name="sscanf" link="sscanf.html" description="Lire des données formatées depuis des chaînes."/>
+      <keyword name="stderr" link="stderr.html" description="Identifiant du flux d'erreur standard."/>
+      <keyword name="stdin" link="stdin.html" description="Identifiant du flux d'entrée standard."/>
+      <keyword name="stdout" link="stdout.html" description="Identifiant du flux de sortie standard."/>
       <keyword name="textscan" link="textscan.html" description="Lit des données formatées depuis une chaîne ou un fichier."/>
     </section>
   </toc>

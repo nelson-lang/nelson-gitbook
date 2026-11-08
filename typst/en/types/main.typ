@@ -14,6 +14,7 @@ The Types module provides tools for managing and inspecting data types in Nelson
 
 - #nlink(<types:class>)[class]: Return a variable class name or create an old-style named object.
 - #nlink(<types:cpp_api>)[cpp\_api]: C++ value API conventions for Nelson core types.
+- #nlink(<types:inferiorto>)[inferiorto]: Declare inferior class precedence.
 - #nlink(<types:isa>)[isa]: Return true if a variable has the requested class or type.
 - #nlink(<types:iscell>)[iscell]: Return true if variable var is a cell array.
 - #nlink(<types:ischar>)[ischar]: Return true if variable var is a char array.
@@ -51,6 +52,7 @@ The Types module provides tools for managing and inspecting data types in Nelson
 - #nlink(<types:nelson.mixin.indexing.RedefinesDot>)[nelson.mixin.indexing.RedefinesDot]: Customize dot indexing of a class.
 - #nlink(<types:nelson.mixin.indexing.RedefinesParen>)[nelson.mixin.indexing.RedefinesParen]: Customize parentheses indexing of a class.
 - #nlink(<types:nelson.mixin.util.PropertyGroup>)[nelson.mixin.util.PropertyGroup]: A titled group of properties for custom object display.
+- #nlink(<types:superiorto>)[superiorto]: Declare superior class precedence.
 - #nlink(<types:underlyingType>)[underlyingType]: Underlying type of an array.
 
 
@@ -59,6 +61,8 @@ The Types module provides tools for managing and inspecting data types in Nelson
 #include "class.typ"
 #pagebreak(weak: true)
 #include "cpp_api.typ"
+#pagebreak(weak: true)
+#include "inferiorto.typ"
 #pagebreak(weak: true)
 #include "isa.typ"
 #pagebreak(weak: true)
@@ -133,6 +137,8 @@ The Types module provides tools for managing and inspecting data types in Nelson
 #include "nelson.mixin.indexing.RedefinesParen.typ"
 #pagebreak(weak: true)
 #include "nelson.mixin.util.PropertyGroup.typ"
+#pagebreak(weak: true)
+#include "superiorto.typ"
 #pagebreak(weak: true)
 #include "underlyingType.typ"
 ]

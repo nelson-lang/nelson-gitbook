@@ -23,13 +23,19 @@ Singular value response of an LTI model.
 
 <b>sigma</b> computes singular values of the frequency response.
 
-## 💡 Example
+## 💡 Examples
 
 
 
 ```matlab
 sys = tf(2, [1 1]); [sv, w] = sigma(sys, [1 2 4])
 ```
+Plot the singular value frequency response.
+
+```matlab
+sigma(tf(2, [1 1]));
+```
+<img src="sigma.svg" align="middle"/>
 
 
 ## 🔗 See also

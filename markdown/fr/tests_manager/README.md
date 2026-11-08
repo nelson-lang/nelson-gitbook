@@ -26,7 +26,7 @@ Ce module prend en charge la création de sorties de référence, l'exécution d
 - [nelson.unittest.skip](nelson_unittest_skip.md) - Ignorer le test courant.
 - [nelson.unittest.tuneReuse](nelson_unittest_tuneReuse.md) - Calibrer la reutilisation explicite des processus pour les tests et les benches.
 - [nelson.unittest.tuneWeights](nelson_unittest_tuneWeights.md) - Calibrer les poids de planification avec les durees mesurees.
+- [skip_testsuite](skip_testsuite.md) - Sauter la suite de tests selon une condition
 - [test_makeref](test_makeref.md) - Crée un fichier '.ref' pour un test
 - [test_run](test_run.md) - Exécute les tests
-- [skip_testsuite](test_skip_testsuite.md) - Sauter la suite de tests selon une condition
 

@@ -29,6 +29,7 @@ The Data Structures module provides tools for creating, manipulating, and inspec
 - #nlink(<data_structures:rmfield>)[rmfield]: Remove fields from structure.
 - #nlink(<data_structures:setfield>)[setfield]: Set structure field contents.
 - #nlink(<data_structures:struct>)[struct]: Create a structure or convert an object to a structure.
+- #nlink(<data_structures:struct2array>)[struct2array]: Concatenate structure field values into an array.
 - #nlink(<data_structures:struct2cell>)[struct2cell]: Creates a cell from a structure.
 - #nlink(<data_structures:structfun>)[structfun]: Apply a function to each field of a scalar structure.
 
@@ -72,6 +73,8 @@ The Data Structures module provides tools for creating, manipulating, and inspec
 #include "setfield.typ"
 #pagebreak(weak: true)
 #include "struct.typ"
+#pagebreak(weak: true)
+#include "struct2array.typ"
 #pagebreak(weak: true)
 #include "struct2cell.typ"
 #pagebreak(weak: true)

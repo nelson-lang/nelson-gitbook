@@ -33,6 +33,7 @@ Functions for creating text, formatting text, and converting between text and ot
 - #nlink(<string:1_create_convert_text.num2str>)[num2str]: Converts numbers to character array.
 - #nlink(<string:1_create_convert_text.sprintf>)[sprintf]: Writes data to a string.
 - #nlink(<string:1_create_convert_text.str2double>)[str2double]: Converts a string to double.
+- #nlink(<string:1_create_convert_text.str2num>)[str2num]: Convert character array to numeric array.
 - #nlink(<string:1_create_convert_text.strcat>)[strcat]: concatenate strings horizontally.
 - #nlink(<string:1_create_convert_text.string>)[string]: string array constructor.
 - #nlink(<string:1_create_convert_text.strings>)[strings]: Create string array without characters.
@@ -194,6 +195,8 @@ Functions for comparing and matching text values.
 #include "1_create_convert_text/sprintf.typ"
 #pagebreak(weak: true)
 #include "1_create_convert_text/str2double.typ"
+#pagebreak(weak: true)
+#include "1_create_convert_text/str2num.typ"
 #pagebreak(weak: true)
 #include "1_create_convert_text/strcat.typ"
 #pagebreak(weak: true)

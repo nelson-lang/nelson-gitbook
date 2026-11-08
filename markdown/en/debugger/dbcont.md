@@ -13,7 +13,9 @@ Resume execution from a paused breakpoint.
 
 Use <b>dbcont</b> to continue execution after examining workspace variables or debugging code. 
 
-Note: If you want to edit a file during debugging, it is recommended to first exit debug mode using <b>dbquit</b> to avoid unexpected behavior.
+Note: If you want to edit a file during debugging, it is recommended to first exit debug mode using <b>dbquit</b> to avoid unexpected behavior. 
+
+Outside a debug session, <b>dbcont</b> raises <code>Debug commands only allowed when stopped in debug mode.</code> At a stop on an uncaught error, <b>dbcont</b> ends the session without displaying the error again; at a stop on a caught error, execution resumes in the <code>catch</code> block.
 
 ## 💡 Example
 
@@ -42,6 +44,7 @@ dbcont
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.16.0   | initial version |
+| 2.0.0   | uniform message outside a debug session, behaviour at error stops |
 
 <!--
 ## 👤 Author

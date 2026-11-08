@@ -12,6 +12,7 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 
 - #nlink(<data_analysis:accumarray>)[accumarray]: Construit un tableau par accumulation.
 - #nlink(<data_analysis:allbetween>)[allbetween]: Determine si tous les elements sont compris entre des bornes.
+- #nlink(<data_analysis:anymissing>)[anymissing]: Teste la présence de valeurs manquantes.
 - #nlink(<data_analysis:bounds>)[bounds]: Plus petits et plus grands elements d'un tableau.
 - #nlink(<data_analysis:conv>)[conv]: Convolution et multiplication de polynômes.
 - #nlink(<data_analysis:conv2>)[conv2]: Convolution 2D.
@@ -22,6 +23,7 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 - #nlink(<data_analysis:detrend>)[detrend]: Retire une tendance polynomiale.
 - #nlink(<data_analysis:discretize>)[discretize]: Regrouper des donnees numeriques en intervalles.
 - #nlink(<data_analysis:fillmissing>)[fillmissing]: Remplit les valeurs manquantes.
+- #nlink(<data_analysis:findgroups>)[findgroups]: Trouve les groupes et renvoie les numéros de groupe.
 - #nlink(<data_analysis:groupcounts>)[groupcounts]: Compte les groupes.
 - #nlink(<data_analysis:groupsummary>)[groupsummary]: Calcule des resumes groupes de table.
 - #nlink(<data_analysis:intersect>)[intersect]: Intersection ensembliste de deux tableaux.
@@ -44,11 +46,13 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 - #nlink(<data_analysis:movvar>)[movvar]: Variance mobile.
 - #nlink(<data_analysis:normalize>)[normalize]: Normalise les données
 - #nlink(<data_analysis:prod>)[prod]: Produit des éléments d'un tableau.
+- #nlink(<data_analysis:rescale>)[rescale]: Met à l'échelle les éléments dans un intervalle fixé.
 - #nlink(<data_analysis:rmmissing>)[rmmissing]: Supprime les donnees manquantes.
 - #nlink(<data_analysis:setdiff>)[setdiff]: Difference ensembliste de deux tableaux.
 - #nlink(<data_analysis:setxor>)[setxor]: Ou exclusif ensembliste de deux tableaux.
 - #nlink(<data_analysis:smoothdata>)[smoothdata]: Lisse des donnees bruitees.
 - #nlink(<data_analysis:sort>)[sort]: Trier les éléments d'un tableau (algorithme de tri rapide).
+- #nlink(<data_analysis:splitapply>)[splitapply]: Découpe les données en groupes et applique une fonction.
 - #nlink(<data_analysis:standardizeMissing>)[standardizeMissing]: Convertit des indicateurs en valeurs manquantes standard.
 - #nlink(<data_analysis:subspace>)[subspace]: Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices.
 - #nlink(<data_analysis:sum>)[sum]: Somme des éléments d'un tableau.
@@ -63,6 +67,8 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 #include "accumarray.typ"
 #pagebreak(weak: true)
 #include "allbetween.typ"
+#pagebreak(weak: true)
+#include "anymissing.typ"
 #pagebreak(weak: true)
 #include "bounds.typ"
 #pagebreak(weak: true)
@@ -83,6 +89,8 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 #include "discretize.typ"
 #pagebreak(weak: true)
 #include "fillmissing.typ"
+#pagebreak(weak: true)
+#include "findgroups.typ"
 #pagebreak(weak: true)
 #include "groupcounts.typ"
 #pagebreak(weak: true)
@@ -128,6 +136,8 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 #pagebreak(weak: true)
 #include "prod.typ"
 #pagebreak(weak: true)
+#include "rescale.typ"
+#pagebreak(weak: true)
 #include "rmmissing.typ"
 #pagebreak(weak: true)
 #include "setdiff.typ"
@@ -137,6 +147,8 @@ Le module Analyse de donnees fournit des outils pour effectuer des operations nu
 #include "smoothdata.typ"
 #pagebreak(weak: true)
 #include "sort.typ"
+#pagebreak(weak: true)
+#include "splitapply.typ"
 #pagebreak(weak: true)
 #include "standardizeMissing.typ"
 #pagebreak(weak: true)

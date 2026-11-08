@@ -25,7 +25,7 @@ Chaque élément de <b>blocks</b> est un objet avec un <b>type</b> et un objet <
 
 <b>equation</b> - une équation LaTeX (<b>props.latex</b>). 
 
-les contrôles interactifs (slider, liste déroulante, case à cocher, ...) et les live tasks - stockés avec leur variable liée et leur valeur dans <b>props</b>. 
+les contrôles interactifs (curseur, liste déroulante, case à cocher, ...) et les tâches interactives - stockés avec leur variable liée et leur valeur dans <b>props</b>. 
 
 Seules les cellules <b>codecell</b> sont exécutables. <b>notebook</b> et <b>run</b> évaluent leur <b>props.code</b> dans l'ordre dans l'espace de travail de base ; <b>edit</b> ouvre le document dans l'éditeur Notebook. 
 

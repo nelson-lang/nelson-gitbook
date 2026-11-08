@@ -35,6 +35,8 @@ plot(IC(:, 1), IC(:, 2), '*r')
 ``````
 
 
+#align(center)[#image("delaunayTriangulation.svg")]
+
 == Voir aussi
 
 #nlink(<geometry:triangulation>)[triangulation];, #nlink(<geometry:delaunay>)[delaunay];.

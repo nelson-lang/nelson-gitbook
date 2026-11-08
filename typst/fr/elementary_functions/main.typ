@@ -151,6 +151,7 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - #nlink(<elementary_functions:7_indexing_dimensions.isnan>)[isnan]: Recherche les éléments Not a Number.
 - #nlink(<elementary_functions:7_indexing_dimensions.isrow>)[isrow]: Déterminer si l'entrée est un vecteur ligne.
 - #nlink(<elementary_functions:7_indexing_dimensions.isscalar>)[isscalar]: Tester si l'entrée est un scalaire
+- #nlink(<elementary_functions:7_indexing_dimensions.issortedrows>)[issortedrows]: Détermine si les lignes d'une matrice sont triées.
 - #nlink(<elementary_functions:7_indexing_dimensions.istril>)[istril]: Tester si une matrice est triangulaire infÃ©rieure
 - #nlink(<elementary_functions:7_indexing_dimensions.istriu>)[istriu]: Vérifie si une matrice est triangulaire supérieure.
 - #nlink(<elementary_functions:7_indexing_dimensions.isvector>)[isvector]: Vérifie si l'entrée est un vecteur.
@@ -165,6 +166,7 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 - #nlink(<elementary_functions:7_indexing_dimensions.sortrows>)[sortrows]: Trier les lignes d'un tableau.
 - #nlink(<elementary_functions:7_indexing_dimensions.sub2ind>)[sub2ind]: Indices d'une matrice vers un indice linéaire
 - #nlink(<elementary_functions:7_indexing_dimensions.substruct>)[substruct]: Crée un argument structure pour subsasgn ou subsref
+- #nlink(<elementary_functions:7_indexing_dimensions.topkrows>)[topkrows]: Les k premières lignes triées d'une matrice.
 - #nlink(<elementary_functions:7_indexing_dimensions.tril>)[tril]: Partie triangulaire inférieure d'une matrice
 - #nlink(<elementary_functions:7_indexing_dimensions.triu>)[triu]: Partie triangulaire supérieure d'une matrice
 
@@ -375,6 +377,8 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/isscalar.typ"
 #pagebreak(weak: true)
+#include "7_indexing_dimensions/issortedrows.typ"
+#pagebreak(weak: true)
 #include "7_indexing_dimensions/istril.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/istriu.typ"
@@ -402,6 +406,8 @@ Fonctions pour indexation, dimensions, controles de forme, reorganisation et pre
 #include "7_indexing_dimensions/sub2ind.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/substruct.typ"
+#pagebreak(weak: true)
+#include "7_indexing_dimensions/topkrows.typ"
 #pagebreak(weak: true)
 #include "7_indexing_dimensions/tril.typ"
 #pagebreak(weak: true)

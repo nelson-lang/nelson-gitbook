@@ -1252,7 +1252,7 @@ sumTypedEmitter(bool cLang)
     return [cLang](const BlockCodegenArgs&amp; a) {
         const bool uns = codegenIsU64(a.outType);
         const bool sat = codegenSaturates(a);
-        std::string signs = nflow::jstr(*a.params, nflow::kSumInputs, "");
+        std::string signs = nflow::jstr(*asJson(a.params), nflow::kSumInputs, "");
         std::string acc;
         bool first = true;
         for (int i = 0; i &lt; static_cast&lt;int&gt;(a.inputIds.size()); ++i) {
@@ -1292,8 +1292,9 @@ Nelson::NFlow::handleSum(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
     int n = numInputs(ctx, b.nid);
 
     std::string signs;
-    if (b.params.contains(nflow::kSumInputs) &amp;&amp; b.params[nflow::kSumInputs].is_string()) {
-        signs = b.params[nflow::kSumInputs].get&lt;std::string&gt;();
+    if (asJson(b.params).contains(nflow::kSumInputs)
+        &amp;&amp; asJson(b.params)[nflow::kSumInputs].is_string()) {
+        signs = asJson(b.params)[nflow::kSumInputs].get&lt;std::string&gt;();
     }
 
     std::vector&lt;SigView&gt; ins(n);
@@ -1339,7 +1340,7 @@ Nelson::NFlow::getCodeGenCSum()
     BlockCodegenTemplate t;
     // Variable-arity emission with per-input signs: needs a native emitter.
     t.emitStep = [](const BlockCodegenArgs&amp; a) {
-        std::string signs = nflow::jstr(*a.params, nflow::kSumInputs, "");
+        std::string signs = nflow::jstr(*asJson(a.params), nflow::kSumInputs, "");
         std::vector&lt;std::string&gt; terms;
         for (int i = 0; i &lt; static_cast&lt;int&gt;(a.inputIds.size()); ++i) {
             if (a.inputIds[i].empty()) {
@@ -1377,7 +1378,7 @@ Nelson::NFlow::getCodeGenRustSum()
             inList.push_back(a.inputIds[i].empty() || i &gt;= a.in.size() ? "0.0_f64" : a.in[i]);
         }
         std::string expr = "0.0_f64";
-        std::string signs = nflow::jstr(*a.params, nflow::kSumInputs, "");
+        std::string signs = nflow::jstr(*asJson(a.params), nflow::kSumInputs, "");
         for (int i = 0; i &lt; static_cast&lt;int&gt;(inList.size()); ++i) {
             char sign = (i &lt; static_cast&lt;int&gt;(signs.size()) &amp;&amp; signs[i] == '-') ? '-' : '+';
             expr = (i == 0 &amp;&amp; sign == '+') ? inList[i] : expr + " " + sign + " " + inList[i];

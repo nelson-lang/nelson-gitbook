@@ -44,7 +44,7 @@ Functions for model conversion, composition, selection, and interconnection.
 - #nlink(<control_system:2_model_conversion_interconnection.c2d>)[c2d]: Convert model from continuous to discrete time.
 - #nlink(<control_system:2_model_conversion_interconnection.d2c>)[d2c]: Convert model from discrete to continuous time.
 - #nlink(<control_system:2_model_conversion_interconnection.feedback>)[feedback]: Feedback connection of multiple models.
-- #nlink(<control_system:2_model_conversion_interconnection.gensign>)[gensig]: Create periodic signals for simulating system response.
+- #nlink(<control_system:2_model_conversion_interconnection.gensig>)[gensig]: Create periodic signals for simulating system response.
 - #nlink(<control_system:2_model_conversion_interconnection.padecoef>)[padecoef]: Computes the Pade approximation of time delays.
 - #nlink(<control_system:2_model_conversion_interconnection.parallel>)[parallel]: Parallel connection of two models.
 - #nlink(<control_system:2_model_conversion_interconnection.series>)[series]: Series connection of two models.
@@ -52,6 +52,7 @@ Functions for model conversion, composition, selection, and interconnection.
 - #nlink(<control_system:2_model_conversion_interconnection.ssdelete>)[ssdelete]: Remove inputs, outputs and states from state-space system.
 - #nlink(<control_system:2_model_conversion_interconnection.ssselect>)[ssselect]: Extract subsystem from larger system.
 - #nlink(<control_system:2_model_conversion_interconnection.tf2ss>)[tf2ss]: Convert transfer function filter parameters to state-space form.
+- #nlink(<control_system:2_model_conversion_interconnection.zpk2tf>)[zpk2tf]: Convert zero-pole-gain model to transfer function.
 
 == Linear Analysis
 
@@ -168,7 +169,7 @@ Control-oriented matrix computations for state-space analysis.
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/feedback.typ"
 #pagebreak(weak: true)
-#include "2_model_conversion_interconnection/gensign.typ"
+#include "2_model_conversion_interconnection/gensig.typ"
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/padecoef.typ"
 #pagebreak(weak: true)
@@ -183,6 +184,8 @@ Control-oriented matrix computations for state-space analysis.
 #include "2_model_conversion_interconnection/ssselect.typ"
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/tf2ss.typ"
+#pagebreak(weak: true)
+#include "2_model_conversion_interconnection/zpk2tf.typ"
 #pagebreak(weak: true)
 #include "3_linear_analysis/bode.typ"
 #pagebreak(weak: true)

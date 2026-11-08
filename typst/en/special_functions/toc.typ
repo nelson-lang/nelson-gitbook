@@ -24,6 +24,7 @@
   - #nlink(<special_functions:interp1>)[interp1]
   - #nlink(<special_functions:interp2>)[interp2]
   - #nlink(<special_functions:interp3>)[interp3]
+  - #nlink(<special_functions:interpft>)[interpft]
   - #nlink(<special_functions:interpn>)[interpn]
   - #nlink(<special_functions:isprime>)[isprime]
   - #nlink(<special_functions:lcm>)[lcm]

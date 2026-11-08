@@ -1,6 +1,6 @@
 #import "nelson_help.typ": *
 
-= moteur nflow
+= moteur NFlow
 
 Création et édition programmatiques de modèles de blocs-diagrammes nflow.
 
@@ -8,8 +8,11 @@ Création et édition programmatiques de modèles de blocs-diagrammes nflow.
 
 == Functions
 
+- #nlink(<nflow_engine:NFlow.addlibrarypath>)[NFlow.addlibrarypath]: Ajoute un répertoire de recherche de bibliothèques de blocs nflow.
 - #nlink(<nflow_engine:NFlow.exportfmu>)[NFlow.exportfmu]: Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation.
+- #nlink(<nflow_engine:NFlow.librarypaths>)[NFlow.librarypaths]: Renvoie les répertoires de recherche de bibliothèques de blocs nflow.
 - #nlink(<nflow_engine:NFlow.plotScopes>)[NFlow.plotScopes]: Ouvre une figure par scope d'un résultat de simulation nflow.
+- #nlink(<nflow_engine:NFlow.rmlibrarypath>)[NFlow.rmlibrarypath]: Retire un répertoire de recherche de bibliothèques de blocs nflow.
 - #nlink(<nflow_engine:add_block>)[add\_block]: Ajoute un bloc à un modèle nflow depuis une source de bibliothèque.
 - #nlink(<nflow_engine:add_line>)[add\_line]: Connecte deux ports de blocs dans un modèle nflow.
 - #nlink(<nflow_engine:bdIsDirty>)[bdIsDirty]: Retourne vrai lorsqu'un modèle nflow a des modifications non sauvegardées.
@@ -28,6 +31,8 @@ Création et édition programmatiques de modèles de blocs-diagrammes nflow.
 - #nlink(<nflow_engine:load_system>)[load\_system]: Charge un modèle nflow depuis un fichier .nflow sans ouvrir l'éditeur.
 - #nlink(<nflow_engine:new_system>)[new\_system]: Crée et charge un modèle nflow vide.
 - #nlink(<nflow_engine:nflow_codegenerate>)[nflow\_codegenerate]: Genere du code C ou Rust autonome depuis un modele nflow.
+- #nlink(<nflow_engine:nflow_layout>)[nflow\_layout]: Dispose automatiquement les blocs d'un (sous-)système nflow.
+- #nlink(<nflow_engine:nflow_reroute>)[nflow\_reroute]: Recalcule le tracé des fils d'un (sous-)système nflow.
 - #nlink(<nflow_engine:save_system>)[save\_system]: Sauvegarde un modèle nflow dans un fichier .nflow.
 - #nlink(<nflow_engine:set_param>)[set\_param]: Définit atomiquement des paramètres de modèle ou de bloc.
 - #nlink(<nflow_engine:sim>)[sim]: Simule un modèle nflow et retourne ses résultats.
@@ -37,9 +42,15 @@ Création et édition programmatiques de modèles de blocs-diagrammes nflow.
 
 #nested[
 #pagebreak(weak: true)
+#include "NFlow.addlibrarypath.typ"
+#pagebreak(weak: true)
 #include "NFlow.exportfmu.typ"
 #pagebreak(weak: true)
+#include "NFlow.librarypaths.typ"
+#pagebreak(weak: true)
 #include "NFlow.plotScopes.typ"
+#pagebreak(weak: true)
+#include "NFlow.rmlibrarypath.typ"
 #pagebreak(weak: true)
 #include "add_block.typ"
 #pagebreak(weak: true)
@@ -76,6 +87,10 @@ Création et édition programmatiques de modèles de blocs-diagrammes nflow.
 #include "new_system.typ"
 #pagebreak(weak: true)
 #include "nflow_codegenerate.typ"
+#pagebreak(weak: true)
+#include "nflow_layout.typ"
+#pagebreak(weak: true)
+#include "nflow_reroute.typ"
 #pagebreak(weak: true)
 #include "save_system.typ"
 #pagebreak(weak: true)

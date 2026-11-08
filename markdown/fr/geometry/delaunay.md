@@ -24,6 +24,7 @@ y = rand([20, 1]);
 DT = delaunay(x, y);
 triplot(DT, x, y)
 ```
+<img src="delaunay.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

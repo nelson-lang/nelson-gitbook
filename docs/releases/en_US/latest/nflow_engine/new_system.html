@@ -69,7 +69,7 @@ h = new_system(name)
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">new_system('demo');
 add_block('nflow/source/sine', 'demo/Sine');
-add_block('nflow/math/gain', 'demo/Gain', 'gain', 2);
+add_block('nflow/math/gain', 'demo/Gain', 'Gain', 2);
 add_block('nflow/sink/scope', 'demo/Scope');
 add_line('demo', 'Sine/1', 'Gain/1');
 add_line('demo', 'Gain/1', 'Scope/1');

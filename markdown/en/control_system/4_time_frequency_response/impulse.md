@@ -41,7 +41,7 @@ impulse(sys,t);
 
 ## 🔗 See also
 
-[step](../../control_system/2_model_conversion_interconnection/gensign.md), [lsim](../../control_system/4_time_frequency_response/step.md).
+[step](../../control_system/2_model_conversion_interconnection/gensig.md), [lsim](../../control_system/4_time_frequency_response/step.md).
 
 ## 🕔 History
 

@@ -969,9 +969,9 @@ std::vector&lt;std::string&gt;
 selectedPaths(const Nelson::NFlow::Block&amp; b)
 {
     std::vector&lt;std::string&gt; paths;
-    if (b.params.contains(nflow::kSelectedSignals)
-        &amp;&amp; b.params[nflow::kSelectedSignals].is_array()) {
-        for (const auto&amp; s : b.params[nflow::kSelectedSignals]) {
+    if (asJson(b.params).contains(nflow::kSelectedSignals)
+        &amp;&amp; asJson(b.params)[nflow::kSelectedSignals].is_array()) {
+        for (const auto&amp; s : asJson(b.params)[nflow::kSelectedSignals]) {
             if (s.is_string()) {
                 paths.push_back(s.get&lt;std::string&gt;());
             }
@@ -983,8 +983,9 @@ selectedPaths(const Nelson::NFlow::Block&amp; b)
 bool
 outputAsBus(const Nelson::NFlow::Block&amp; b)
 {
-    return b.params.contains(nflow::kOutputAsBus) &amp;&amp; b.params[nflow::kOutputAsBus].is_boolean()
-        &amp;&amp; b.params[nflow::kOutputAsBus].get&lt;bool&gt;();
+    return asJson(b.params).contains(nflow::kOutputAsBus)
+        &amp;&amp; asJson(b.params)[nflow::kOutputAsBus].is_boolean()
+        &amp;&amp; asJson(b.params)[nflow::kOutputAsBus].get&lt;bool&gt;();
 }
 //=============================================================================
 std::string

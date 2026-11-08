@@ -249,6 +249,9 @@
     - [quantizer](nonlinear/quantizer.md)
     - [rate](nonlinear/rate.md)
     - [saturation](nonlinear/saturation.md)
+  - Développement de plugins natifs
+    - [dlgetnflowincludes](plugin_development/dlgetnflowincludes.md)
+    - [dlgetnflowlibraries](plugin_development/dlgetnflowlibraries.md)
   - Blocs recepteurs
     - [display](sink/display.md)
     - [fileSink](sink/fileSink.md)

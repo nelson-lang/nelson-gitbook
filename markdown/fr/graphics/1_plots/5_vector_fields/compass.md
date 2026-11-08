@@ -30,6 +30,7 @@ Afficher des fleches depuis des valeurs complexes.
 Z = [1 + 2i, 2 - 1i, -1 + 1i];
 compass(Z);
 ```
+<img src="compass_1.svg" align="middle"/>
 Utiliser des composantes cartesiennes avec un style et des proprietes de ligne.
 
 ```matlab
@@ -38,6 +39,7 @@ V = [2 1 -1];
 h = compass(U, V, '-r');
 set(h, 'LineWidth', 1.5);
 ```
+<img src="compass_2.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

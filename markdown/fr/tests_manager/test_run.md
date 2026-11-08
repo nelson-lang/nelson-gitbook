@@ -239,7 +239,7 @@ nelson.unittest.tuneWeights([], ...
 
 ## 🔗 Voir aussi
 
-[bench_run](../tests_manager/bench_run.md), [assert](../assert_functions/assert.md), [test_makeref](../tests_manager/test_makeref.md), [skip_testsuite](../tests_manager/test_skip_testsuite.md), [nelson.unittest](../tests_manager/nelson_unittest.md), [nelson.unittest.tuneReuse](../tests_manager/nelson_unittest_tuneReuse.md), [nelson.unittest.tuneWeights](../tests_manager/nelson_unittest_tuneWeights.md).
+[bench_run](../tests_manager/bench_run.md), [assert](../assert_functions/assert.md), [test_makeref](../tests_manager/test_makeref.md), [skip_testsuite](../tests_manager/skip_testsuite.md), [nelson.unittest](../tests_manager/nelson_unittest.md), [nelson.unittest.tuneReuse](../tests_manager/nelson_unittest_tuneReuse.md), [nelson.unittest.tuneWeights](../tests_manager/nelson_unittest_tuneWeights.md).
 
 ## 🕔 Historique
 

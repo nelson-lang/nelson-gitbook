@@ -30,6 +30,7 @@ Display arrows from complex values.
 Z = [1 + 2i, 2 - 1i, -1 + 1i];
 compass(Z);
 ```
+<img src="compass_1.svg" align="middle"/>
 Use cartesian components with a line style and line properties.
 
 ```matlab
@@ -38,6 +39,7 @@ V = [2 1 -1];
 h = compass(U, V, '-r');
 set(h, 'LineWidth', 1.5);
 ```
+<img src="compass_2.svg" align="middle"/>
 
 
 ## 🔗 See also

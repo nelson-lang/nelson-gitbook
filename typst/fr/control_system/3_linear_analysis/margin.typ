@@ -39,13 +39,21 @@ Marges de gain et de phase d'un système LTI SISO.
  Appelée sans argument de sortie, #strong[margin(sys)]; trace le diagramme de Bode du système.
 
 
-== Exemple
+== Exemples
 
 ``````matlab
 H = tf(1, [1 3 2 0]);
 [Gm, Pm, Wcg, Wcp] = margin(H)
 ``````
 
+Tracer la reponse de Bode avec les marges de gain et de phase.
+
+``````matlab
+margin(tf(1, [1 3 2 0]));
+``````
+
+
+#align(center)[#image("margin.svg")]
 
 == Voir aussi
 

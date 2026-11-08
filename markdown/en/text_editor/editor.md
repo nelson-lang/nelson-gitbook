@@ -6,11 +6,15 @@ call the embedded text editor.
 
 - editor()
 - editor(filename)
+- editor(filename, line)
+- editor(filename, line, column)
 - editor('editor\_command', cmd)
 
 ## 📥 Input argument
 
 - filename - a string: filename to open.
+- line - a number: line to place the cursor on.
+- column - a number: column of that line.
 - cmd - a string representing the command to launch your preferred code editor.
 
 ## 📄 Description
@@ -29,7 +33,9 @@ To restore the default editor, use:
 <code>editor('editor_command', '
         ')</code> 
 
-Change text editor is persistent and will be saved in a configuration file.
+Change text editor is persistent and will be saved in a configuration file. 
+
+Debugger keys in the editor: F12 set/clear breakpoint, F5 run or continue, F10 step, F11 step in, Shift+F11 step out, Shift+F5 stop, F9 evaluate selection, F6 pause, Ctrl+F10 run to here. See the debugging workflow page.
 
 ## 💡 Example
 
@@ -59,6 +65,8 @@ editor('editor_command ', '')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 | 1.10.0   | Option to change default text editor |
+| 2.0.0   | Debugger keys and breakpoint markers |
+| 2.0.0   | editor(filename, line, column) added |
 
 <!--
 ## 👤 Author

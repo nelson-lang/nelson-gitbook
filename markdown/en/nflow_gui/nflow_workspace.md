@@ -48,7 +48,7 @@ Use <b>View > Reset UI Preferences</b> to remove these interface preferences. Th
 
 ## 🔗 See also
 
-[nflow_wire_editing](../nflow_gui/nflow_wire_editing.md), [nflow_solvers](../nflow_gui/nflow_solvers.md).
+[nflow_tutorial_first_model](../nflow_gui/1_nflow_tutorial_first_model.md), [nflow_wire_editing](../nflow_gui/nflow_wire_editing.md), [nflow_solvers](../nflow_gui/nflow_solvers.md).
 
 ## 🕔 History
 

@@ -25,6 +25,10 @@
 <span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block"><code class="language-matlab">dbstop in file
 dbstop in file at location
+dbstop in file if expression
+dbstop in file at location if expression
+dbstop if error
+dbstop if caught error
 dbstop(b)
 </code></pre>
 </div>
@@ -41,16 +45,32 @@ dbstop(b)
 <td>        file name where the breakpoint is set, specified as a character vector
         or string scalar. The file must be accessible on the search path or in
         the current folder. A filemarker (&gt;) can be used to specify a local
-        function.</td>
+        function. A filemarker cannot be combined with <b>at location</b>.</td>
 </tr>
 <tr>
 <td class="param-name">location</td>
-<td>        breakpoint location in the file. a line number.</td>
+<td>        breakpoint location in the file: a line number, or the name of a local
+        function (its first executable line is used). A breakpoint requested on a
+        comment, a blank line or a function declaration moves to the next
+        executable line. The <b>end</b> line of a for or while loop is a
+        breakpoint location of its own: execution pauses there at every iteration.</td>
+</tr>
+<tr>
+<td class="param-name">expression</td>
+<td>        condition evaluated in the workspace of the paused function each time the
+        line is reached. Execution pauses only when the expression is a scalar
+        logical or numeric value that is true. A non-scalar value or an expression
+        that fails raises a warning and pauses execution anyway. A syntax error is
+        rejected when the breakpoint is set. Setting a breakpoint again on the
+        same line replaces its condition.</td>
 </tr>
 <tr>
 <td class="param-name">b</td>
 <td>        structure array previously returned by <b>dbstatus</b>, containing
-        saved breakpoints to restore.</td>
+        saved breakpoints to restore. The seven fields <b>name</b>, <b>file</b>,
+        <b>line</b>, <b>anonymous</b>, <b>expression</b>, <b>cond</b> and
+        <b>identifier</b> are required; conditions and error breakpoints are
+        restored as well.</td>
 </tr>
 </table>
 </div>
@@ -60,10 +80,20 @@ dbstop(b)
 <div>
     <p>
       <b>dbstop</b> sets breakpoints in programs for interactive debugging.
-      When execution reaches a breakpoint, execution pauses and the interpreter
-      enters debug mode.</p>
-    <p>      Breakpoints can be set at specific files or at specific locations.</p>
-    <p>      This function can only be called from the command line.</p>
+      When execution reaches a breakpoint, execution pauses, the line about to run
+      is displayed and the interpreter enters debug mode (prompt <b>K&gt;&gt;</b>).</p>
+    <p>
+      <b>dbstop if error</b> pauses execution on the line that raises a run-time
+      error not caught by a <b>try</b>/<b>catch</b> block. The error is reported,
+      the variables of the paused function can be inspected, and <b>dbcont</b>,
+      <b>dbstep</b> or <b>dbquit</b> end the execution.</p>
+    <p>
+      <b>dbstop if caught error</b> pauses execution on a run-time error raised
+      inside the <b>try</b> part of a <b>try</b>/<b>catch</b> block; <b>dbcont</b>
+      resumes in the <b>catch</b> block. The conditions <b>warning</b> and
+      <b>naninf</b> are not supported.</p>
+    <p>      Breakpoints are kept until <b>dbclear</b> removes them or the session
+      ends. This function can only be called from the command line.</p>
     <p>Text editor debugging features integrate with these functions for interactive debugging.</p>
     <p> See also the <a href="../text_editor/debugging_workflow.html">Debugging Workflow</a> for an overview of debugging in Nelson.</p>
   </div>
@@ -87,7 +117,26 @@ buggy(1:5)</code></pre>
 <div class="example">
 <div class="example-title">        Set a breakpoint at a local function.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop in myfile&gt;myfunc</code></pre>
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop in myfile&gt;myfunc
+dbstop in myfile at myfunc</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">        Pause only when a condition holds.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop in buggy at 3 if n &gt; 2
+dbstatus</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">        Pause on the line raising an uncaught error.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop if error
+buggy(1:5)
+dbquit
+dbclear if error</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
@@ -119,6 +168,10 @@ dbstop(b)</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>conditional breakpoints, dbstop if error, dbstop if caught error, local function as location, seven-field dbstatus structure</td>
 </tr>
 </table>
 </div>

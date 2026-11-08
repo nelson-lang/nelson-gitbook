@@ -86,4 +86,4 @@ nelson.unittest.report(results, 'Format', 'html', 'OutputFile', [tempdir(), 'tes
 
 == Voir aussi
 
-#nlink(<tests_manager:test_run>)[test\_run];, #nlink(<tests_manager:test_makeref>)[test\_makeref];, #nlink(<tests_manager:test_skip_testsuite>)[skip\_testsuite];, #nlink(<tests_manager:nelson_unittest_tuneWeights>)[nelson.unittest.tuneWeights];, #nlink(<tests_manager:nelson_unittest_tuneReuse>)[nelson.unittest.tuneReuse];.
+#nlink(<tests_manager:test_run>)[test\_run];, #nlink(<tests_manager:test_makeref>)[test\_makeref];, #nlink(<tests_manager:skip_testsuite>)[skip\_testsuite];, #nlink(<tests_manager:nelson_unittest_tuneWeights>)[nelson.unittest.tuneWeights];, #nlink(<tests_manager:nelson_unittest_tuneReuse>)[nelson.unittest.tuneReuse];.

@@ -26,6 +26,7 @@ X = [0 0; 1 0; 0 2; 4 4];
 Z = linkage(X);
 dendrogram(Z, 0)
 ```
+<img src="dendrogram.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

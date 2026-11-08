@@ -22,7 +22,9 @@ Exécuter la ligne exécutable suivante lors du débogage.
 
 <b>dbstep out</b> termine l'exécution de la fonction courante et s'interrompt juste après le retour à l'appelant. L'exécution s'interrompt aux points d'arrêt rencontrés en cours de route. 
 
-<b>dbstep nlines</b> exécute le nombre spécifié de lignes, s'interrompant à tout point d'arrêt rencontré.
+<b>dbstep nlines</b> exécute le nombre spécifié de lignes, s'interrompant à tout point d'arrêt rencontré. 
+
+Hors d'une session de débogage, <b>dbstep</b> lève <code>Debug commands only allowed when stopped in debug mode.</code> Quand le pas est tapé à l'invite <code>K>></code>, la console affiche la ligne qui va s'exécuter, sous la forme <code>4   r = r * 2;</code> ; un pas déclenché depuis l'éditeur déplace la flèche sans rien afficher. À un arrêt sur une erreur non attrapée, <b>dbstep</b> termine la session.
 
 ## 💡 Exemples
 
@@ -75,6 +77,7 @@ dbstep 4
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.16.0   | version initiale |
+| 2.0.0   | message uniforme hors session de débogage, écho de la ligne à chaque pas, termine la session à un arrêt sur erreur |
 
 <!--
 ## 👤 Auteur

@@ -23,9 +23,13 @@
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntax</div>
-<pre class="syntax-block"><code class="language-matlab">dbclear all
+<pre class="syntax-block"><code class="language-matlab">dbclear
+dbclear all
 dbclear in file
+dbclear all in file
 dbclear in file at location
+dbclear if error
+dbclear if caught error
 </code></pre>
 </div>
 <div class="section">
@@ -39,12 +43,12 @@ dbclear in file at location
 <tr>
 <td class="param-name">file</td>
 <td>        File name where breakpoints should be cleared, specified as a character vector or string scalar.
-        A filemarker (&gt;) can be used to specify a local or nested function.</td>
+        A filemarker (&gt;) can be used to specify a local function.</td>
 </tr>
 <tr>
 <td class="param-name">location</td>
-<td>        Line number, line number with anonymous function index (e.g., 3@2), or local function name
-        of the breakpoint to clear.</td>
+<td>        Line number of the breakpoint to clear. The line is adjusted the same way
+        <b>dbstop</b> adjusts it, so the line used with <b>dbstop</b> clears the breakpoint.</td>
 </tr>
 </table>
 </div>
@@ -54,13 +58,20 @@ dbclear in file at location
 <div>
     <p>
       <b>dbclear</b> removes breakpoints set for debugging. You can clear all breakpoints,
-      breakpoints in a specific file, breakpoints at a specific location.</p>
+      breakpoints in a specific file, breakpoints at a specific location, or the
+      error breakpoints.</p>
     <p>
-      <b>dbclear all</b> removes all breakpoints in all files and for all conditions.</p>
+      <b>dbclear</b> and <b>dbclear all</b> remove all breakpoints in all files,
+      including <b>dbstop if error</b> and <b>dbstop if caught error</b>.</p>
     <p>
-      <b>dbclear in file</b> removes all breakpoints in the specified file.</p>
+      <b>dbclear in file</b> and <b>dbclear all in file</b> remove all breakpoints in the
+      specified file; the error breakpoints are kept.</p>
     <p>
       <b>dbclear in file at location</b> removes the breakpoint at the specified location in the file.</p>
+    <p>
+      <b>dbclear if error</b> and <b>dbclear if caught error</b> remove the matching
+      error breakpoint.</p>
+    <p>      Nothing is reported when no breakpoint matches.</p>
   </div>
 </div>
 <div class="section">
@@ -87,6 +98,16 @@ dbstatus</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
+<div class="example">
+<div class="example-title">        Stop pausing on errors.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop if error
+dbstatus
+dbclear if error
+dbstatus</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
 </div>
 <div class="section">
 <div class="section-title">
@@ -106,6 +127,10 @@ dbstatus</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>dbclear all in file, dbclear if error, dbclear if caught error; line adjustment; silent when no breakpoint matches</td>
 </tr>
 </table>
 </div>

@@ -36,14 +36,19 @@ Affiche une image.
 
 == Exemple
 
+Afficher une image RGB.
+
 ``````matlab
 f = figure();
-filename = [tempdir, 'apollo_8_earthrise_1968_as08-14-2383.jpg'];
-websave(filename, 'https://www.nasa.gov/wp-content/uploads/2025/05/3dmodels-casa-2025-astro.jpg');
-h = imshow(filename);
-
+n = 128;
+x = linspace(0, 1, n);
+[X, Y] = meshgrid(x, x);
+rgb = cat(3, X, Y, 0.5 * ones(n, n));
+h = imshow(rgb);
 ``````
 
+
+#align(center)[#image("imshow.svg")]
 
 == Voir aussi
 

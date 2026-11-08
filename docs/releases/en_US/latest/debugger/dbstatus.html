@@ -24,8 +24,29 @@
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block"><code class="language-matlab">dbstatus
-b = dbstatus()
+dbstatus file
+dbstatus -completenames
+dbstatus file -completenames
+b = dbstatus(...)
 </code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">file</td>
+<td>        Only the breakpoints of this file are listed; the error breakpoints are not included.</td>
+</tr>
+<tr>
+<td class="param-name">-completenames</td>
+<td>        Shows the full path of the file followed by the function name instead of the function name alone.</td>
+</tr>
+</table>
 </div>
 <div class="section">
 <div class="section-title">
@@ -46,17 +67,29 @@ b = dbstatus()
 <span class="syntax-icon">📄</span>Description</div>
 <div>
     <p>
-      <b>dbstatus</b> lists all breakpoints currently set.</p>
+      <b>dbstatus</b> lists all breakpoints currently set, one line per file:
+      <b>Breakpoint for buggy is on line 3.</b> or
+      <b>Breakpoints for buggy are on lines 2, 3.</b>, followed by the condition of
+      each conditional breakpoint, then by <b>Stop if error.</b> and
+      <b>Stop if caught error.</b> when these error breakpoints are set.</p>
     <p>      Assigning the output to a variable <b>b</b> allows you to save and restore breakpoints later
       using <b>dbstop(b)</b>.</p>
     <p>      The output structure array <b>b</b> contains one element per file with
-      breakpoints. Each element contains:<ul>
+      breakpoints and one element per error breakpoint. Each element contains:<ul>
         <li>
-          <b>name</b>: Function name</li>
+          <b>name</b>: function name (empty for an error breakpoint)</li>
         <li>
-          <b>file</b>: Full path to file containing breakpoints</li>
+          <b>file</b>: full path to the file containing the breakpoints</li>
         <li>
-          <b>line</b>: Vector of breakpoint line numbers</li>
+          <b>line</b>: row vector of breakpoint line numbers</li>
+        <li>
+          <b>anonymous</b>: row vector of zeros (anonymous function breakpoints are not supported)</li>
+        <li>
+          <b>expression</b>: cell row of the conditions, one per line, empty when unconditional</li>
+        <li>
+          <b>cond</b>: <b>'error'</b> or <b>'caught error'</b> for an error breakpoint, empty otherwise</li>
+        <li>
+          <b>identifier</b>: <b>{'all'}</b> for an error breakpoint, empty otherwise</li>
       </ul>
     </p>
   </div>
@@ -68,7 +101,8 @@ b = dbstatus()
 <div class="example-title">        List all breakpoints in effect.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">dbstop in myfile
-dbstatus</code></pre>
+dbstatus
+dbstatus -completenames</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
@@ -102,6 +136,10 @@ dbstop(b)</code></pre>
 <tr>
 <td class="version">1.16.0</td>
 <td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>file filter, -completenames, seven-field structure with conditions and error breakpoints</td>
 </tr>
 </table>
 </div>

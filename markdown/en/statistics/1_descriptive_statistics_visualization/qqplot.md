@@ -24,6 +24,7 @@ With one sample, Nelson compares sample quantiles with standard normal quantiles
 x = randn(100, 1);
 qqplot(x)
 ```
+<img src="qqplot.svg" align="middle"/>
 
 
 ## 🔗 See also

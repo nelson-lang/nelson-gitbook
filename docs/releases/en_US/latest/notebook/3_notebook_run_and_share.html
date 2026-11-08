@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Run and share a Notebook</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Run and share a Notebook</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Run a Notebook without the editor, and export or import it.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>A Notebook document is more than an editor view. The same file runs from the command line, saves and travels as one portable file, and converts to and from other formats.</p>
+    <p>
+      <img src="./notebook_workflow.svg" align="middle" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+    </p>
+
+    <p><b>Run without the editor</b></p>
+    <p><b>notebook(filename)</b> runs a document without opening it: it reads the code of each code cell, in order, and evaluates it against the base workspace, exactly as the editor would. <b>run(filename)</b> on a <b>.nlx</b> file does the same. This is how a document runs from nelson-cli or in a batch job, where no editor is available. The text blocks, headings, equations and controls are skipped; only the code cells run.</p>
+
+    <p><b>The .nlx container</b></p>
+    <p>The native <b>.nlx</b> file is a zip container. It keeps the source (<b>document.json</b>), the saved output (<b>output.json</b>) and the figures (<b>media/</b>) apart, so the source stays small and reads cleanly, while the saved figures travel with it. The <b>nlx</b> reference page describes every entry.</p>
+
+    <p><b>The plain-text .m form</b></p>
+    <p>A Notebook can also be saved as a plain-text <b>.m</b> script, where each block is written under a <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">%% [kind]</code> marker (for example <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">%% [code]</code> or <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">%% [text]</code>). This file opens in any text editor and runs as an ordinary script. An <b>.m</b> file with no such marker is treated as one single code cell and run whole.</p>
+
+    <p><b>Export and import</b></p>
+    <p>From the <b>Export</b> menu a document is written as <b>HTML</b>, <b>Markdown</b>, <b>Word (.docx)</b> or a <b>Jupyter notebook (.ipynb)</b>, and <b>Save as Script</b> writes the plain-text <b>.m</b> form. <b>Open</b> reads a <b>.nlx</b> document, a plain <b>.m</b> script or a <b>.ipynb</b> notebook back into the editor.</p>
+
+    <p><b>Check that a document runs top to bottom</b></p>
+    <p>A document is reliable when it runs from an empty workspace, in order, with no error. Because the cells share the base workspace, a variable left over from an earlier session can hide a missing step. To check, run the document in a fresh session, for example with <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nelson-cli</code> and <b>notebook(filename)</b>; if a cell fails, the run stops with the error. This same check fits a continuous-integration job.</p>
+
+    <p>The example below builds a minimal <b>.nlx</b> document and runs it without the editor.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Build a Notebook (.nlx) document and run it headless.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">% write the source of a one-cell document
+d = [tempdir(), createGUID()];
+mkdir(d);
+fw = fopen([d, '/document.json'], 'wt');
+fwrite(fw, '{"blocks":[{"type":"codecell","props":{"code":"answer = 6 * 7;"}}]}');
+fclose(fw);
+fw = fopen([d, '/manifest.json'], 'wt');
+fwrite(fw, '{"format":"nelson-notebook","version":1}');
+fclose(fw);
+% pack it as a .nlx container
+nlx = [tempdir(), createGUID(), '.nlx'];
+odir = pwd();
+cd(d);
+zip(nlx, '*.json');
+cd(odir);
+% run it: the code cell evaluates against the base workspace
+notebook(nlx);
+answer</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../notebook/1_notebook_first_steps.html">Your first Nelson Notebook</a><a class="see-also-link" href="../notebook/2_notebook_cells_and_controls.html">Notebook cells and controls</a><a class="see-also-link" href="../notebook/notebook.html">notebook</a><a class="see-also-link" href="../notebook/nlx.html">nlx</a><a class="see-also-link" href="../core/run.html">run</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -31,7 +31,7 @@ List the blocks of a model, optionally filtered by type.
 ``````matlab
 new_system('demo');
 add_block('nflow/source/sine', 'demo/Sine');
-add_block('nflow/math/gain', 'demo/Gain', 'gain', 2);
+add_block('nflow/math/gain', 'demo/Gain', 'Gain', 2);
 paths = find_system('demo')
 gains = find_system('demo', 'BlockType', 'gain')
 bdclose('demo');

@@ -44,7 +44,7 @@ Fonctions pour conversion, composition, selection et interconnexion de modeles.
 - #nlink(<control_system:2_model_conversion_interconnection.c2d>)[c2d]: Convertit le modèle du temps continu au temps discret.
 - #nlink(<control_system:2_model_conversion_interconnection.d2c>)[d2c]: Convertit un modèle du temps discret au temps continu.
 - #nlink(<control_system:2_model_conversion_interconnection.feedback>)[feedback]: Connexion en boucle fermée de plusieurs modèles.
-- #nlink(<control_system:2_model_conversion_interconnection.gensign>)[gensig]: GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...).
+- #nlink(<control_system:2_model_conversion_interconnection.gensig>)[gensig]: GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...).
 - #nlink(<control_system:2_model_conversion_interconnection.padecoef>)[padecoef]: Calcule l'approximation de Padé des délais temporels.
 - #nlink(<control_system:2_model_conversion_interconnection.parallel>)[parallel]: Connexion parallèle de deux modèles.
 - #nlink(<control_system:2_model_conversion_interconnection.series>)[series]: Connexion en série de deux modèles.
@@ -52,6 +52,7 @@ Fonctions pour conversion, composition, selection et interconnexion de modeles.
 - #nlink(<control_system:2_model_conversion_interconnection.ssdelete>)[ssdelete]: Supprime des entrées, sorties et états d'un système en espace d'état.
 - #nlink(<control_system:2_model_conversion_interconnection.ssselect>)[ssselect]: Extraire un sous-système d'un système plus grand.
 - #nlink(<control_system:2_model_conversion_interconnection.tf2ss>)[tf2ss]: Convertit les paramètres d'un filtre en fonction de transfert en forme état-espace.
+- #nlink(<control_system:2_model_conversion_interconnection.zpk2tf>)[zpk2tf]: Convertit un modèle zéros-pôles-gain en fonction de transfert.
 
 == Analyse lineaire
 
@@ -168,7 +169,7 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/feedback.typ"
 #pagebreak(weak: true)
-#include "2_model_conversion_interconnection/gensign.typ"
+#include "2_model_conversion_interconnection/gensig.typ"
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/padecoef.typ"
 #pagebreak(weak: true)
@@ -183,6 +184,8 @@ Calculs matriciels orientes commande pour analyse en espace d etat.
 #include "2_model_conversion_interconnection/ssselect.typ"
 #pagebreak(weak: true)
 #include "2_model_conversion_interconnection/tf2ss.typ"
+#pagebreak(weak: true)
+#include "2_model_conversion_interconnection/zpk2tf.typ"
 #pagebreak(weak: true)
 #include "3_linear_analysis/bode.typ"
 #pagebreak(weak: true)

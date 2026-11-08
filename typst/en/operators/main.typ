@@ -14,8 +14,10 @@ The Operators module provides tools for performing arithmetic, logical, relation
 - #nlink(<operators:and>)[and]: logical 'AND' operator, &
 - #nlink(<operators:any>)[any]: any of the elements of a matrix satisfy some condition.
 - #nlink(<operators:bitand>)[bitand]: Bit-wise AND
+- #nlink(<operators:bitcmp>)[bitcmp]: Bitwise complement.
 - #nlink(<operators:bitget>)[bitget]: Get selected bits.
 - #nlink(<operators:bitor>)[bitor]: Bit-wise OR
+- #nlink(<operators:bitset>)[bitset]: Set bit at a specified position.
 - #nlink(<operators:bitxor>)[bitxor]: Bit-wise XOR
 - #nlink(<operators:cat>)[cat]: Concatenate arrays.
 - #nlink(<operators:colon>)[colon]: colon operator ':'.
@@ -61,9 +63,13 @@ The Operators module provides tools for performing arithmetic, logical, relation
 #pagebreak(weak: true)
 #include "bitand.typ"
 #pagebreak(weak: true)
+#include "bitcmp.typ"
+#pagebreak(weak: true)
 #include "bitget.typ"
 #pagebreak(weak: true)
 #include "bitor.typ"
+#pagebreak(weak: true)
+#include "bitset.typ"
 #pagebreak(weak: true)
 #include "bitxor.typ"
 #pagebreak(weak: true)

@@ -17,7 +17,7 @@ This page lists the diagnostic identifiers reported by #strong[checkcode];, #str
   [ID], [Default level], [Category], [Description], 
   [NLS0001], [error], [Syntax], [Syntax, lexical, input, or read error. The source file cannot be parsed or cannot be read.], 
   [NLS0002], [warning], [Naming], [The main function or class name differs from the source file name.], 
-  [NLS0003], [warning], [Flow], [Code after #strong[return];, #strong[break];, or #strong[continue]; is unreachable in the current block.], 
+  [NLS0003], [warning], [Flow], [Code can never run: after #strong[return];, #strong[break];, #strong[continue];, #strong[error(id, message)];, #strong[rethrow];, or #strong[throw]; in the current block, in a branch under a constant #strong[false]; condition or after an #strong[if true]; branch, and after a #strong[while true]; loop without #strong[break];.], 
   [NLS0004], [info], [Dataflow], [A local variable is assigned but is never used afterwards. The analyzer ignores text inside comments and character vectors, does not count the left side of an assignment as a use, and skips this rule when dynamic assignment patterns make the local dataflow ambiguous.], 
   [NLS0005], [warning], [Dataflow], [A local variable is used before its first local assignment in a conservative, simple dataflow case.], 
   [NLS0006], [warning], [Dataflow], [A declared output argument is not assigned by the function body.], 
@@ -53,6 +53,8 @@ This page lists the diagnostic identifiers reported by #strong[checkcode];, #str
   [NLS0036], [info], [Dataflow], [A local assignment shadows an input argument name.], 
   [NLS0037], [warning], [Classdef], [A class superclass is listed more than once in the same class.], 
   [NLS0038], [warning], [Classdef], [A class attribute is listed more than once in the same class.], 
+  [NLS0039], [info], [Performance], [A variable grows on every loop iteration: #strong[x(end + 1) \= v];, #strong[x \= \[x, v\]];, or #strong[x(k) \= v]; with #strong[k]; the loop index and #strong[x]; empty or undefined before the loop. Preallocate it, for example with #strong[zeros]; or #strong[cell];.], 
+  [NLS0040], [info], [Readability], [#strong[isempty(strfind(str, pattern))]; is used: #strong[\~contains(str, pattern)]; reads better, and #strong[contains(str, pattern)]; replaces #strong[\~isempty(strfind(str, pattern))];.], 
 )
  Rule levels can be changed with the #strong[rules]; object in #strong[nelson-lint.json];. Version 2 configuration files must declare #strong["version": 2];. Accepted levels are #strong[allow];, #strong[info];, #strong[warning];, and #strong[error];.
 

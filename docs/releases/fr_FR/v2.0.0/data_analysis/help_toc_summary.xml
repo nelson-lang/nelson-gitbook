@@ -10,6 +10,7 @@
   </chapter_description>
       <keyword name="accumarray" link="accumarray.html" description="Construit un tableau par accumulation."/>
       <keyword name="allbetween" link="allbetween.html" description="Determine si tous les elements sont compris entre des bornes."/>
+      <keyword name="anymissing" link="anymissing.html" description="Teste la présence de valeurs manquantes."/>
       <keyword name="bounds" link="bounds.html" description="Plus petits et plus grands elements d'un tableau."/>
       <keyword name="conv" link="conv.html" description="Convolution et multiplication de polynômes."/>
       <keyword name="conv2" link="conv2.html" description="Convolution 2D."/>
@@ -20,6 +21,7 @@
       <keyword name="detrend" link="detrend.html" description="Retire une tendance polynomiale."/>
       <keyword name="discretize" link="discretize.html" description="Regrouper des donnees numeriques en intervalles."/>
       <keyword name="fillmissing" link="fillmissing.html" description="Remplit les valeurs manquantes."/>
+      <keyword name="findgroups" link="findgroups.html" description="Trouve les groupes et renvoie les numéros de groupe."/>
       <keyword name="groupcounts" link="groupcounts.html" description="Compte les groupes."/>
       <keyword name="groupsummary" link="groupsummary.html" description="Calcule des resumes groupes de table."/>
       <keyword name="intersect" link="intersect.html" description="Intersection ensembliste de deux tableaux."/>
@@ -42,11 +44,13 @@
       <keyword name="movvar" link="movvar.html" description="Variance mobile."/>
       <keyword name="normalize" link="normalize.html" description="Normalise les données"/>
       <keyword name="prod" link="prod.html" description="Produit des éléments d'un tableau."/>
+      <keyword name="rescale" link="rescale.html" description="Met à l'échelle les éléments dans un intervalle fixé."/>
       <keyword name="rmmissing" link="rmmissing.html" description="Supprime les donnees manquantes."/>
       <keyword name="setdiff" link="setdiff.html" description="Difference ensembliste de deux tableaux."/>
       <keyword name="setxor" link="setxor.html" description="Ou exclusif ensembliste de deux tableaux."/>
       <keyword name="smoothdata" link="smoothdata.html" description="Lisse des donnees bruitees."/>
       <keyword name="sort" link="sort.html" description="Trier les éléments d'un tableau (algorithme de tri rapide)."/>
+      <keyword name="splitapply" link="splitapply.html" description="Découpe les données en groupes et applique une fonction."/>
       <keyword name="standardizeMissing" link="standardizeMissing.html" description="Convertit des indicateurs en valeurs manquantes standard."/>
       <keyword name="subspace" link="subspace.html" description="Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices."/>
       <keyword name="sum" link="sum.html" description="Somme des éléments d'un tableau."/>

@@ -6,9 +6,13 @@
       <chapter_description>
     <p>The Notebook module runs Notebook documents outside the editor.</p>
     <p>A Notebook mixes formatted text, code and its output in one document. This module reads the native <b>.nlx</b> container and the plain-text <b>.m</b> Notebook format, and executes their code cells against the base workspace — so a document can be run from the command line or a script.</p>
+    <p>Three step-by-step tutorials cover creating your first Notebook, its cells and controls, and how to run and share a document.</p>
   </chapter_description>
+      <keyword name="Your first Nelson Notebook" link="1_notebook_first_steps.html" description="Create, run and save your first Notebook document."/>
+      <keyword name="Notebook cells and controls" link="2_notebook_cells_and_controls.html" description="The block kinds of a Notebook and the interactive controls."/>
+      <keyword name="Run and share a Notebook" link="3_notebook_run_and_share.html" description="Run a Notebook without the editor, and export or import it."/>
       <keyword name="nlx" link="nlx.html" description="The Nelson Notebook document format (.nlx)."/>
-      <keyword name="notebook" link="notebook.html" description="Run a Notebook document."/>
+      <keyword name="notebook" link="notebook.html" description="Run a Notebook document or open the Notebook editor."/>
     </section>
   </toc>
 </help_summary>

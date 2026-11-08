@@ -27,6 +27,7 @@
       <keyword name="rmfield" link="rmfield.html" description="Remove fields from structure."/>
       <keyword name="setfield" link="setfield.html" description="Set structure field contents."/>
       <keyword name="struct" link="struct.html" description="Create a structure or convert an object to a structure."/>
+      <keyword name="struct2array" link="struct2array.html" description="Concatenate structure field values into an array."/>
       <keyword name="struct2cell" link="struct2cell.html" description="Creates a cell from a structure."/>
       <keyword name="structfun" link="structfun.html" description="Apply a function to each field of a scalar structure."/>
     </section>

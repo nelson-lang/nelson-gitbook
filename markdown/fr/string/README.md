@@ -36,6 +36,7 @@ Fonctions pour creer du texte, le formater et convertir entre texte et autres do
 - [num2str](1_create_convert_text/num2str.md) - Convertit des nombres en tableau de caractères.
 - [sprintf](1_create_convert_text/sprintf.md) - Écrit des données dans une chaîne.
 - [str2double](1_create_convert_text/str2double.md) - Convertit une chaîne en double.
+- [str2num](1_create_convert_text/str2num.md) - Convertit un tableau de caractères en tableau numérique.
 - [strcat](1_create_convert_text/strcat.md) - concatène des chaînes horizontalement.
 - [string](1_create_convert_text/string.md) - Constructeur de tableau de chaînes.
 - [strings](1_create_convert_text/strings.md) - Crée un tableau de chaînes vide.

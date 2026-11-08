@@ -28,7 +28,7 @@ Power spectral density estimate using a periodogram.
 
 <b>periodogram</b> estimates signal power distribution over frequency.
 
-## 💡 Example
+## 💡 Examples
 
 
 
@@ -37,6 +37,12 @@ Power spectral density estimate using a periodogram.
 [pxx, f] = periodogram(sin((0:127)' * 0.1), [], 128, 10);
 
 ```
+Plot the power spectral density estimate.
+
+```matlab
+periodogram(sin((0:127)' * 0.1), [], 128, 10);
+```
+<img src="periodogram.svg" align="middle"/>
 
 
 ## 🔗 See also

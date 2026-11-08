@@ -85,7 +85,7 @@ lsim(sys,u,t)
 
 == Voir aussi
 
-#nlink(<control_system:2_model_conversion_interconnection.gensign>)[gensig];, #nlink(<control_system:4_time_frequency_response.step>)[step];.
+#nlink(<control_system:2_model_conversion_interconnection.gensig>)[gensig];, #nlink(<control_system:4_time_frequency_response.step>)[step];.
 
 == Historique
 

@@ -28,7 +28,7 @@ Estimation de densite spectrale de puissance par periodogramme.
 
 <b>periodogram</b> estime la repartition de puissance d'un signal en frequence.
 
-## 💡 Exemple
+## 💡 Exemples
 
 
 
@@ -37,6 +37,12 @@ Estimation de densite spectrale de puissance par periodogramme.
 [pxx, f] = periodogram(sin((0:127)' * 0.1), [], 128, 10);
 
 ```
+Tracer l'estimation de la densite spectrale de puissance.
+
+```matlab
+periodogram(sin((0:127)' * 0.1), [], 128, 10);
+```
+<img src="periodogram.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

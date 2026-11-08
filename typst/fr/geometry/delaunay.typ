@@ -28,6 +28,8 @@ triplot(DT, x, y)
 ``````
 
 
+#align(center)[#image("delaunay.svg")]
+
 == Voir aussi
 
 #nlink(<geometry:delaunayn>)[delaunayn];, #nlink(<geometry:delaunayTriangulation>)[delaunayTriangulation];.

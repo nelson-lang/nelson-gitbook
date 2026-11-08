@@ -20,9 +20,9 @@ The Test Manager module in Nelson provides tools for automated testing of code, 
 - #nlink(<tests_manager:nelson_unittest_skip>)[nelson.unittest.skip]: Skip the current test.
 - #nlink(<tests_manager:nelson_unittest_tuneReuse>)[nelson.unittest.tuneReuse]: Calibrate explicit child-process reuse for tests and benches.
 - #nlink(<tests_manager:nelson_unittest_tuneWeights>)[nelson.unittest.tuneWeights]: Calibrate scheduling weights from measured test durations.
+- #nlink(<tests_manager:skip_testsuite>)[skip\_testsuite]: Skip test suite on condition
 - #nlink(<tests_manager:test_makeref>)[test\_makeref]: Creates a '.ref' file for a test
 - #nlink(<tests_manager:test_run>)[test\_run]: Runs tests
-- #nlink(<tests_manager:test_skip_testsuite>)[skip\_testsuite]: Skip test suite on condition
 
 
 #nested[
@@ -51,9 +51,9 @@ The Test Manager module in Nelson provides tools for automated testing of code, 
 #pagebreak(weak: true)
 #include "nelson_unittest_tuneWeights.typ"
 #pagebreak(weak: true)
+#include "skip_testsuite.typ"
+#pagebreak(weak: true)
 #include "test_makeref.typ"
 #pagebreak(weak: true)
 #include "test_run.typ"
-#pagebreak(weak: true)
-#include "test_skip_testsuite.typ"
 ]

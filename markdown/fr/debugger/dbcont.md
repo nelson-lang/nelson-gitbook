@@ -13,7 +13,9 @@ Reprendre l'exécution après un point d'arrêt.
 
 Utilisez <b>dbcont</b> pour continuer l'exécution après avoir examiné les variables de l'espace de travail ou débogué le code. 
 
-Remarque : Si vous souhaitez modifier un fichier pendant le débogage, il est recommandé de quitter d'abord le mode débogage en utilisant <b>dbquit</b> pour éviter un comportement inattendu.
+Remarque : Si vous souhaitez modifier un fichier pendant le débogage, il est recommandé de quitter d'abord le mode débogage en utilisant <b>dbquit</b> pour éviter un comportement inattendu. 
+
+Hors d'une session de débogage, <b>dbcont</b> lève <code>Debug commands only allowed when stopped in debug mode.</code> À un arrêt sur une erreur non attrapée, <b>dbcont</b> termine la session sans réafficher l'erreur ; à un arrêt sur une erreur attrapée, l'exécution reprend dans le bloc <code>catch</code>.
 
 ## 💡 Exemple
 
@@ -42,6 +44,7 @@ dbcont
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.16.0   | version initiale |
+| 2.0.0   | message uniforme hors session de débogage, comportement aux arrêts sur erreur |
 
 <!--
 ## 👤 Auteur

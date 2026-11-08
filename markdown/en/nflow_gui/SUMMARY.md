@@ -1,4 +1,7 @@
 - [nflow_gui](README.md)
+  - [nflow_tutorial_first_model](1_nflow_tutorial_first_model.md)
+  - [nflow_tutorial_continuous](2_nflow_tutorial_continuous.md)
+  - [nflow_tutorial_dashboard](3_nflow_tutorial_dashboard.md)
   - [nflow](nflow.md)
   - [nflow_dashboard](nflow_dashboard.md)
   - [nflow_multirate](nflow_multirate.md)

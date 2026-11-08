@@ -546,6 +546,13 @@
         <keyword name="saturation" link="nonlinear/saturation.html" description="Borne l entree entre min et max."/>
         <keyword name="block:saturation" link="nonlinear/saturation.html" description="Borne l entree entre min et max." alias="true"/>
       </section>
+      <section name="Développement de plugins natifs">
+        <chapter_description>
+    <p>Fonctions utilisées pour compiler des plugins de blocs natifs (C++) pour NFlow.</p>
+  </chapter_description>
+        <keyword name="dlgetnflowincludes" link="plugin_development/dlgetnflowincludes.html" description="Renvoie les répertoires d'includes nécessaires pour compiler un plugin de bloc natif nflow."/>
+        <keyword name="dlgetnflowlibraries" link="plugin_development/dlgetnflowlibraries.html" description="Renvoie les bibliothèques auxquelles un plugin de bloc natif nflow doit être lié."/>
+      </section>
       <section name="Blocs recepteurs">
         <chapter_description>
     <p>Blocs qui consomment, affichent ou nomment les signaux.</p>

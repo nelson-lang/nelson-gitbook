@@ -26,6 +26,7 @@ La distribution par defaut est normale. Les noms de distribution pris en charge 
 x = randn(100, 1);
 probplot(x)
 ```
+<img src="probplot.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

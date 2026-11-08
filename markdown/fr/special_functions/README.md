@@ -37,6 +37,7 @@ Ce module améliore les capacités de Nelson en offrant une gamme de fonctions q
 - [interp1](interp1.md) - Interpolation de donnees 1-D
 - [interp2](interp2.md) - Interpolation de donnees grillees 2-D au format meshgrid
 - [interp3](interp3.md) - Interpolation de donnees grillees 3-D au format meshgrid
+- [interpft](interpft.md) - Interpolation 1-D par la méthode FFT.
 - [interpn](interpn.md) - Interpolation de donnees grillees N-D au format ndgrid
 - [isprime](isprime.md) - Détermine quels éléments d'un tableau sont premiers
 - [lcm](lcm.md) - Plus petit commun multiple

@@ -438,7 +438,9 @@ Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camup>)[camup]: Définit ou interroge le vecteur vertical de la caméra.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camva>)[camva]: Définit ou interroge l'angle de vue de la caméra.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.camzoom>)[camzoom]: Zoome la caméra en avant ou en arrière.
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.disableDefaultInteractivity>)[disableDefaultInteractivity]: Desactive les interactions integrees des axes.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.drawnow>)[drawnow]: Met à jour les figures et traite les callbacks
+- #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.enableDefaultInteractivity>)[enableDefaultInteractivity]: Active les interactions integrees des axes.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.graphical_callback>)[Gestion des interruptions de callback dans Nelson]: 
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.light>)[light]: Cree un objet lumiere dans des axes.
 - #nlink(<graphics:3_labels_styling.3_interactions_camera_lighting.lightangle>)[lightangle]: Cree ou positionne une lumiere a partir d'angles.
@@ -1109,7 +1111,11 @@ Fonctions pour ouvrir et sauvegarder des fichiers figure.
 #pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/camzoom.typ"
 #pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.typ"
+#pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/drawnow.typ"
+#pagebreak(weak: true)
+#include "3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.typ"
 #pagebreak(weak: true)
 #include "3_labels_styling/3_interactions_camera_lighting/graphical_callback.typ"
 #pagebreak(weak: true)

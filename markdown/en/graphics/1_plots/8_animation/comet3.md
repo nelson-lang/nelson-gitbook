@@ -33,6 +33,7 @@ The final axes state contains two animated line objects and one line object for 
 t = -pi:pi/120:pi;
 comet3(sin(5 * t), cos(3 * t), t, 0.2)
 ```
+<img src="comet3.svg" align="middle"/>
 
 
 ## 🔗 See also

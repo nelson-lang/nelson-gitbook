@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Cellules et contrôles d'un Notebook</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Cellules et contrôles d'un Notebook</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Les types de blocs d'un Notebook et les contrôles interactifs.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Un Notebook est une suite de <b>blocs</b>. Certains blocs sont du texte, un bloc exécute du code, et d'autres sont des contrôles interactifs qui pilotent une variable. Vous insérez chacun d'eux en tapant <b>/</b> dans le document, ou depuis le menu <b>Insert</b> de la barre d'outils.</p>
+    <p>
+      <img src="./notebook_blocks.svg" align="middle" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+    </p>
+
+    <p><b>Blocs de texte</b></p>
+    <p>Un <b>titre</b> et un <b>paragraphe</b> contiennent du texte mis en forme : des titres, des mots en gras ou en italique, et des listes. Ils portent l'explication autour du code et ne s'exécutent jamais.</p>
+
+    <p><b>Équations</b></p>
+    <p>Un bloc <b>équation</b> contient une formule LaTeX et l'affiche en ligne, à côté de votre texte. Par exemple <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">f(x) = \sin(x)\,e^{-\lambda x}</code> est composé comme une expression mathématique. Les équations servent uniquement à l'affichage ; elles ne sont pas évaluées.</p>
+
+    <p><b>Cellules de code</b></p>
+    <p>Une <b>cellule de code</b> contient du code Nelson. Sa marge de gauche a trois boutons d'exécution : exécuter cette cellule, exécuter jusqu'à cette cellule, et exécuter la section (une cellule de code avec le texte et les contrôles au-dessus, jusqu'au titre précédent). La barre d'outils ajoute <b>Run all</b> pour tout le document.</p>
+    <p>Quand vous modifiez une cellule, les cellules dont le résultat peut être périmé sont marquées. <b>Exécuter les périmées</b> ré-exécute seulement celles-ci et les cellules qui en dépendent, au lieu de tout le document. <b>Effacer</b> supprime toutes les sorties enregistrées.</p>
+
+    <p><b>Tâche interactive</b></p>
+    <p>Une <b>tâche interactive</b> est une cellule à cliquer : vous choisissez une opération et ses entrées, et la cellule écrit le code Nelson à votre place et l'exécute. C'est une manière rapide de construire une étape sans écrire le code à la main.</p>
+
+    <p><b>Contrôles interactifs</b></p>
+    <p>Un contrôle est lié à une variable de l'espace de travail. Quand vous déplacez ou modifiez le contrôle, il fixe cette variable et ré-exécute les cellules qui l'utilisent, si bien qu'une figure se met à jour pendant que vous ajustez une valeur. Les contrôles disponibles sont :</p>
+    <ul>
+      <li>
+<b>Curseur</b> et <b>curseur d’intervalle</b> - un nombre, ou un couple bas et haut, pris dans une plage continue.</li>
+      <li>
+<b>Champ numérique</b> - un nombre unique saisi ou incrémenté.</li>
+      <li>
+<b>Liste déroulante</b> - une valeur choisie dans une liste.</li>
+      <li>
+<b>Case à cocher</b> et <b>bouton d'état</b> - un logique vrai ou faux.</li>
+      <li>
+<b>Champ texte</b> - un court texte ou nombre.</li>
+      <li>
+<b>Sélecteur de couleur</b> - une couleur, sous forme de triplet RVB.</li>
+      <li>
+<b>Sélecteur de date</b> - une date, sous forme de texte.</li>
+      <li>
+<b>Sélecteur de fichier</b> - un chemin de fichier.</li>
+      <li>
+<b>Sélecteur de variable</b> - une variable existante du workspace, transmise sous un nouveau nom.</li>
+      <li>
+<b>Bouton</b> - exécute les cellules à la demande, sans lier de variable.</li>
+    </ul>
+    <p>Par exemple, un curseur nommé <b>Frequency</b> lié à la variable <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">frequency</code> fixe cette variable à chaque déplacement, et une cellule qui trace <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">sin(frequency * x)</code> se redessine aussitôt.</p>
+
+    <p><b>Une vue partageable</b></p>
+    <p><b>Masquer le code</b> replie les cellules de code et garde le texte, les contrôles et la sortie, ce qui transforme le document en un court rapport utilisable sans voir le code. <b>Plan</b> liste les titres pour parcourir un long document.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../notebook/1_notebook_first_steps.html">Votre premier Notebook Nelson</a><a class="see-also-link" href="../notebook/3_notebook_run_and_share.html">Exécuter et partager un Notebook</a><a class="see-also-link" href="../notebook/nlx.html">nlx</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

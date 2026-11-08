@@ -10,6 +10,7 @@
   </chapter_description>
       <keyword name="accumarray" link="accumarray.html" description="Construct array by accumulation."/>
       <keyword name="allbetween" link="allbetween.html" description="Determine whether all array elements are between lower and upper bounds."/>
+      <keyword name="anymissing" link="anymissing.html" description="Check whether an array contains missing values."/>
       <keyword name="bounds" link="bounds.html" description="Smallest and largest array elements."/>
       <keyword name="conv" link="conv.html" description="Convolution and polynomial multiplication."/>
       <keyword name="conv2" link="conv2.html" description="2-D convolution."/>
@@ -20,6 +21,7 @@
       <keyword name="detrend" link="detrend.html" description="Remove polynomial trend."/>
       <keyword name="discretize" link="discretize.html" description="Group numeric data into bins."/>
       <keyword name="fillmissing" link="fillmissing.html" description="Fill missing values."/>
+      <keyword name="findgroups" link="findgroups.html" description="Find groups and return group numbers."/>
       <keyword name="groupcounts" link="groupcounts.html" description="Count groups."/>
       <keyword name="groupsummary" link="groupsummary.html" description="Compute grouped table summaries."/>
       <keyword name="intersect" link="intersect.html" description="Set intersection of two arrays."/>
@@ -42,11 +44,13 @@
       <keyword name="movvar" link="movvar.html" description="Moving variance."/>
       <keyword name="normalize" link="normalize.html" description="Normalize data."/>
       <keyword name="prod" link="prod.html" description="Product of array elements."/>
+      <keyword name="rescale" link="rescale.html" description="Scale array elements to a fixed interval."/>
       <keyword name="rmmissing" link="rmmissing.html" description="Remove missing data."/>
       <keyword name="setdiff" link="setdiff.html" description="Set difference of two arrays."/>
       <keyword name="setxor" link="setxor.html" description="Set exclusive OR of two arrays."/>
       <keyword name="smoothdata" link="smoothdata.html" description="Smooth noisy data."/>
       <keyword name="sort" link="sort.html" description="Sort array elements by quick sort algorithm."/>
+      <keyword name="splitapply" link="splitapply.html" description="Split data into groups and apply a function."/>
       <keyword name="standardizeMissing" link="standardizeMissing.html" description="Convert indicator values to standard missing values."/>
       <keyword name="subspace" link="subspace.html" description="Measure of distance (angle) between two subspaces spanned by columns of matrices."/>
       <keyword name="sum" link="sum.html" description="Sum of array elements."/>

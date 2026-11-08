@@ -43,6 +43,7 @@ plot(1:10, (1:10).^2);
 xline(5, '--r', 'threshold');
 
 ```
+<img src="xline_1.svg" align="middle"/>
 
 
 ```matlab
@@ -51,6 +52,7 @@ plot(-10:10, (-10:10).^2);
 xline([-3 3], 'Color', [0 0 1], 'LineWidth', 2);
 
 ```
+<img src="xline_2.svg" align="middle"/>
 
 
 ## 🔗 See also

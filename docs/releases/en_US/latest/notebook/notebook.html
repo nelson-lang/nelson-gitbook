@@ -19,12 +19,14 @@
 </head>
 <body>
 <a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">notebook</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Run a Notebook document.</div></div>
+<div class="section syntax-section"><div class="subtitle">Run a Notebook document or open the Notebook editor.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntax</div>
-<pre class="syntax-block"><code class="language-matlab">notebook(filename)
-tf = notebook(filename)
+<pre class="syntax-block"><code class="language-matlab">notebook()
+notebook(filename)
+notebook(filename, 'edit')
+tf = notebook(...)
 </code></pre>
 </div>
 <div class="section">
@@ -39,6 +41,10 @@ tf = notebook(filename)
 <td class="param-name">filename</td>
 <td>a character vector or string scalar: a Notebook document (<b>.nlx</b>) or a Notebook plain-text file (<b>.m</b>).</td>
 </tr>
+<tr>
+<td class="param-name">'edit'</td>
+<td>open the document in the Notebook editor instead of running it.</td>
+</tr>
 </table>
 </div>
 <div class="section">
@@ -51,7 +57,7 @@ tf = notebook(filename)
 </tr>
 <tr>
 <td class="param-name">tf</td>
-<td>a logical: <b>true</b> when the document ran.</td>
+<td>a logical: <b>true</b> when the document ran or opened.</td>
 </tr>
 </table>
 </div>
@@ -62,6 +68,8 @@ tf = notebook(filename)
     <p>
       <b>notebook</b> runs a Notebook document without the editor: it reads the code of each code cell, in order, and evaluates it against the base workspace. Variables created in one cell are visible to the next, as when running the document in the editor.</p>
     <p>The native <b>.nlx</b> container (a zip holding the document) and the plain-text <b>.m</b> Notebook format are both supported; an ordinary <b>.m</b> script is run as a single cell.</p>
+    <p><b>notebook(filename, 'edit')</b> opens the document in the Notebook editor instead: a tab of the web desktop, or, in the Qt desktop, the Notebook window (one window, one tab per document). <b>edit(filename)</b> does the same for a <b>.nlx</b> file. Figures created by a cell are rendered in the document, not in a figure window.</p>
+    <p><b>notebook()</b> without argument opens a new, untitled document in the Notebook editor; the Qt desktop also offers it as the <b>Notebook</b> button of its toolbar and entry of its Window menu. Without a desktop (nelson-cli, nelson-adv-cli) opening the editor raises an error.</p>
   </div>
 </div>
 <div class="section">

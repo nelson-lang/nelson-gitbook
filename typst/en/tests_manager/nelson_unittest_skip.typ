@@ -17,4 +17,4 @@ Skip the current test.
 
 == See also
 
-#nlink(<tests_manager:test_skip_testsuite>)[skip\_testsuite];, #nlink(<tests_manager:nelson_unittest_assume>)[nelson.unittest.assume];.
+#nlink(<tests_manager:skip_testsuite>)[skip\_testsuite];, #nlink(<tests_manager:nelson_unittest_assume>)[nelson.unittest.assume];.

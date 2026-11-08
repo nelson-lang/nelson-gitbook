@@ -8,24 +8,6 @@ All notable changes to this project will be documented in this file.
 The format is based on #link("https://keepachangelog.com/en/1.0.0/")[Keep a Changelog];,
 and this project adheres to #link("https://semver.org/spec/v2.0.0.html")[Semantic Versioning];.
 
-== \[unreleased\]
-
-
-=== Changed
-
-
-- Boost is no longer a dependency. The #raw("ipc"); module now uses native process
-  primitives: named pipes on Windows and AF\_UNIX sockets on POSIX for the
-  transport, #raw("std::thread"); for the receiver, a fixed-layout shared-memory PID
-  registry, and a dependency-free binary serializer for exchanged variables.
-
-=== Fixed
-
-
-- #raw("ipc");: function handles (including anonymous handles with captured variables)
-  and #raw("missing"); values now transfer correctly between instances; variables
-  larger than the former queue limit are no longer rejected.
-
 == 1.17.0 - (2026-05-25)
 
 

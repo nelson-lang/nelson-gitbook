@@ -14,6 +14,7 @@ Le module Types fournit des outils pour gérer et inspecter les types de donnée
 
 - #nlink(<types:class>)[class]: Renvoie le nom de classe d'une variable ou cree un objet nomme ancien style.
 - #nlink(<types:cpp_api>)[cpp\_api]: Conventions de l'API C++ des valeurs pour les types noyau de Nelson.
+- #nlink(<types:inferiorto>)[inferiorto]: Déclare une précédence de classe inférieure.
 - #nlink(<types:isa>)[isa]: Renvoie true si une variable a la classe ou le type demande.
 - #nlink(<types:iscell>)[iscell]: Renvoie vrai si la variable var est un tableau de cellules.
 - #nlink(<types:ischar>)[ischar]: Renvoie vrai si la variable var est un tableau de caractères (char).
@@ -51,6 +52,7 @@ Le module Types fournit des outils pour gérer et inspecter les types de donnée
 - #nlink(<types:nelson.mixin.indexing.RedefinesDot>)[nelson.mixin.indexing.RedefinesDot]: Personnaliser l'indexation par point d'une classe.
 - #nlink(<types:nelson.mixin.indexing.RedefinesParen>)[nelson.mixin.indexing.RedefinesParen]: Personnaliser l'indexation par parenthèses d'une classe.
 - #nlink(<types:nelson.mixin.util.PropertyGroup>)[nelson.mixin.util.PropertyGroup]: Un groupe titré de propriétés pour l'affichage personnalisé d'objets.
+- #nlink(<types:superiorto>)[superiorto]: Déclare une précédence de classe supérieure.
 - #nlink(<types:underlyingType>)[underlyingType]: Type sous-jacent d'un tableau
 
 
@@ -59,6 +61,8 @@ Le module Types fournit des outils pour gérer et inspecter les types de donnée
 #include "class.typ"
 #pagebreak(weak: true)
 #include "cpp_api.typ"
+#pagebreak(weak: true)
+#include "inferiorto.typ"
 #pagebreak(weak: true)
 #include "isa.typ"
 #pagebreak(weak: true)
@@ -133,6 +137,8 @@ Le module Types fournit des outils pour gérer et inspecter les types de donnée
 #include "nelson.mixin.indexing.RedefinesParen.typ"
 #pagebreak(weak: true)
 #include "nelson.mixin.util.PropertyGroup.typ"
+#pagebreak(weak: true)
+#include "superiorto.typ"
 #pagebreak(weak: true)
 #include "underlyingType.typ"
 ]

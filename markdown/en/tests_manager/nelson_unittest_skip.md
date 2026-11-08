@@ -16,4 +16,4 @@ Skip the current test.
 
 ## 🔗 See also
 
-[skip_testsuite](../tests_manager/test_skip_testsuite.md), [nelson.unittest.assume](../tests_manager/nelson_unittest_assume.md).
+[skip_testsuite](../tests_manager/skip_testsuite.md), [nelson.unittest.assume](../tests_manager/nelson_unittest_assume.md).

@@ -31,6 +31,7 @@ triplot(DT)
 hold on
 plot(IC(:, 1), IC(:, 2), '*r')
 ```
+<img src="delaunayTriangulation.svg" align="middle"/>
 
 
 ## 🔗 See also

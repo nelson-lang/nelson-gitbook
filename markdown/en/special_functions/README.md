@@ -37,6 +37,7 @@ This module enhances Nelson's capabilities by offering a range of functions that
 - [interp1](interp1.md) - 1-D data interpolation
 - [interp2](interp2.md) - Interpolation for 2-D gridded data in meshgrid format
 - [interp3](interp3.md) - Interpolation for 3-D gridded data in meshgrid format
+- [interpft](interpft.md) - 1-D interpolation using the FFT method.
 - [interpn](interpn.md) - Interpolation for N-D gridded data in ndgrid format
 - [isprime](isprime.md) - Determine which array elements are prime.
 - [lcm](lcm.md) - Least common multiple.

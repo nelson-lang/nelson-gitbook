@@ -8,7 +8,8 @@ Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer,
 
 ## Functions
 
-- [débogage](debugging_workflow.md) - Flux de travail de débogage pour les fichiers de code Nelson.
+- [debugging workflow](debugging_workflow.md) - Déroulement d'une session de débogage des fichiers Nelson dans l'éditeur.
 - [edit](edit.md) - éditeur de fonctions.
 - [editor](editor.md) - appelle l'éditeur de texte intégré.
+- [opentoline](opentoline.md) - ouvre un fichier dans l'éditeur à une ligne donnée.
 

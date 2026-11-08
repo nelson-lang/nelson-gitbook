@@ -40,6 +40,7 @@ Le module core fournit les éléments fondamentaux de l'environnement Nelson.
 - #nlink(<core:exit>)[exit]: Quitte l'environnement Nelson.
 - #nlink(<core:feature>)[feature]: Interroge les fonctionnalités disponibles.
 - #nlink(<core:inputname>)[inputname]: Renvoie le nom d'une variable d'entrée d'une fonction.
+- #nlink(<core:isMATLABReleaseOlderThan>)[isMATLABReleaseOlderThan]: Compare la version courante à une version MATLAB.
 - #nlink(<core:isstr>)[isstr]: Détermine si l'entrée est un tableau de caractères (obsolète).
 - #nlink(<core:isunicodesupported>)[isunicodesupported]: Indique si Unicode est supporté.
 - #nlink(<core:license>)[license]: Affiche les informations de licence.
@@ -59,6 +60,9 @@ Le module core fournit les éléments fondamentaux de l'environnement Nelson.
 - #nlink(<core:quit>)[quit]: Ferme l'application Nelson.
 - #nlink(<core:run>)[run]: Exécute un script ou un fichier.
 - #nlink(<core:sha256>)[sha256]: Calcule le hash SHA-256.
+- #nlink(<core:usejava>)[usejava]: Teste la disponibilité d'une fonctionnalité Java.
+- #nlink(<core:ver>)[ver]: Informations de version.
+- #nlink(<core:verLessThan>)[verLessThan]: Compare la version d'un produit à une chaîne de version.
 - #nlink(<core:version>)[version]: Version de l'environnement Nelson.
 
 
@@ -112,6 +116,8 @@ Le module core fournit les éléments fondamentaux de l'environnement Nelson.
 #pagebreak(weak: true)
 #include "inputname.typ"
 #pagebreak(weak: true)
+#include "isMATLABReleaseOlderThan.typ"
+#pagebreak(weak: true)
 #include "isstr.typ"
 #pagebreak(weak: true)
 #include "isunicodesupported.typ"
@@ -149,6 +155,12 @@ Le module core fournit les éléments fondamentaux de l'environnement Nelson.
 #include "run.typ"
 #pagebreak(weak: true)
 #include "sha256.typ"
+#pagebreak(weak: true)
+#include "usejava.typ"
+#pagebreak(weak: true)
+#include "ver.typ"
+#pagebreak(weak: true)
+#include "verLessThan.typ"
 #pagebreak(weak: true)
 #include "version.typ"
 ]

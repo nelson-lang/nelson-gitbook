@@ -1,6 +1,9 @@
 #import "nelson_help.typ": *
 
 - Gestion des flux
+  - #nlink(<stream_manager:SEEK_CUR>)[SEEK\_CUR]
+  - #nlink(<stream_manager:SEEK_END>)[SEEK\_END]
+  - #nlink(<stream_manager:SEEK_SET>)[SEEK\_SET]
   - #nlink(<stream_manager:cprintf>)[cprintf]
   - #nlink(<stream_manager:diary>)[diary]
   - #nlink(<stream_manager:fclose>)[fclose]
@@ -23,4 +26,7 @@
   - #nlink(<stream_manager:readlines>)[readlines]
   - #nlink(<stream_manager:save>)[save]
   - #nlink(<stream_manager:sscanf>)[sscanf]
+  - #nlink(<stream_manager:stderr>)[stderr]
+  - #nlink(<stream_manager:stdin>)[stdin]
+  - #nlink(<stream_manager:stdout>)[stdout]
   - #nlink(<stream_manager:textscan>)[textscan]

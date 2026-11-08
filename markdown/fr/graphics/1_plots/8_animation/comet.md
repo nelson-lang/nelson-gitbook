@@ -30,6 +30,7 @@ L'etat final des axes contient deux objets animatedline et un objet line avec ma
 t = 0:pi/80:2*pi;
 comet(cos(t), sin(t), 0.2)
 ```
+<img src="comet.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi

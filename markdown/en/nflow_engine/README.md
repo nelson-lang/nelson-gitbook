@@ -1,4 +1,4 @@
-# nflow engine
+# NFlow engine
 
 
 Programmatic creation and editing of nflow block-diagram models.
@@ -9,8 +9,11 @@ NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, bu
 
 ## Functions
 
+- [NFlow.addlibrarypath](NFlow.addlibrarypath.md) - Add an nflow block library search path.
 - [NFlow.exportfmu](NFlow.exportfmu.md) - Export an nflow model as an FMI 3.0 Co-Simulation source FMU.
+- [NFlow.librarypaths](NFlow.librarypaths.md) - Return the nflow block library search paths.
 - [NFlow.plotScopes](NFlow.plotScopes.md) - Open one figure per scope of an nflow simulation result.
+- [NFlow.rmlibrarypath](NFlow.rmlibrarypath.md) - Remove an nflow block library search path.
 - [add_block](add_block.md) - Add a block to an nflow model from a library source.
 - [add_line](add_line.md) - Connect two block ports in an nflow model.
 - [bdIsDirty](bdIsDirty.md) - Return true when an nflow model has unsaved changes.
@@ -29,6 +32,8 @@ NFlow is currently released as **1.0.0-beta.1**: it is functional and tested, bu
 - [load_system](load_system.md) - Load an nflow model from a .nflow file without opening the editor.
 - [new_system](new_system.md) - Create and load an empty nflow model.
 - [nflow_codegenerate](nflow_codegenerate.md) - Generate standalone C or Rust code from an nflow model.
+- [nflow_layout](nflow_layout.md) - Automatically arrange the blocks of an nflow (sub)system.
+- [nflow_reroute](nflow_reroute.md) - Recompute the wire routes of an nflow (sub)system.
 - [save_system](save_system.md) - Save an nflow model to a .nflow file.
 - [set_param](set_param.md) - Set model or block parameters atomically.
 - [sim](sim.md) - Run an nflow simulation of a model and return its results.

@@ -25,7 +25,9 @@ Si l'exécution est en pause dans une fonction atteinte en entrant dans une autr
 
 <b>dbquit all</b> termine le débogage pour tous les fichiers simultanément. 
 
-Cette fonction ne peut être appelée que depuis la ligne de commande en mode débogage.
+Cette fonction ne peut être appelée que depuis la ligne de commande en mode débogage. 
+
+Hors d'une session de débogage, <b>dbquit</b> lève <code>Debug commands only allowed when stopped in debug mode.</code> Le bouton Stop de l'éditeur (Shift+F5) et l'enregistrement d'un fichier pendant une pause appellent <b>dbquit</b>.
 
 ## 💡 Exemples
 
@@ -61,6 +63,7 @@ dbquit all
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.16.0   | version initiale |
+| 2.0.0   | message uniforme hors session de débogage, Stop et enregistrement de l'éditeur terminent la session |
 
 <!--
 ## 👤 Auteur

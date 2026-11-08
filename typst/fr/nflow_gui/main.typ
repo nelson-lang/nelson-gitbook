@@ -1,6 +1,6 @@
 #import "nelson_help.typ": *
 
-= éditeur nflow
+= éditeur NFlow
 
 L'éditeur nflow est l'environnement de schéma-blocs de Nelson pour construire et simuler des systèmes dynamiques.
 
@@ -12,6 +12,9 @@ L'éditeur nflow est l'environnement de schéma-blocs de Nelson pour construire 
 
 == Functions
 
+- #nlink(<nflow_gui:1_nflow_tutorial_first_model>)[nflow\_tutorial\_first\_model]: Tutoriel 1 sur 3 : construire, câbler et exécuter un premier modèle nflow.
+- #nlink(<nflow_gui:2_nflow_tutorial_continuous>)[nflow\_tutorial\_continuous]: Tutoriel 2 sur 3 : simuler un système continu et choisir un solveur.
+- #nlink(<nflow_gui:3_nflow_tutorial_dashboard>)[nflow\_tutorial\_dashboard]: Tutoriel 3 sur 3 : ajouter des commandes dashboard interactives et exécuter en temps réel.
 - #nlink(<nflow_gui:nflow>)[nflow]: Lance l'editeur nflow, eventuellement sur un fichier modele.
 - #nlink(<nflow_gui:nflow_dashboard>)[nflow\_dashboard]: Surveiller et régler les simulations NFlow avec des blocs Dashboard interactifs.
 - #nlink(<nflow_gui:nflow_multirate>)[nflow\_multirate]: Exécuter des blocs à des cadences différentes (multi-rate).
@@ -22,6 +25,12 @@ L'éditeur nflow est l'environnement de schéma-blocs de Nelson pour construire 
 
 
 #nested[
+#pagebreak(weak: true)
+#include "1_nflow_tutorial_first_model.typ"
+#pagebreak(weak: true)
+#include "2_nflow_tutorial_continuous.typ"
+#pagebreak(weak: true)
+#include "3_nflow_tutorial_dashboard.typ"
 #pagebreak(weak: true)
 #include "nflow.typ"
 #pagebreak(weak: true)

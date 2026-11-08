@@ -18,5 +18,6 @@
   - [rmfield](rmfield.md)
   - [setfield](setfield.md)
   - [struct](struct.md)
+  - [struct2array](struct2array.md)
   - [struct2cell](struct2cell.md)
   - [structfun](structfun.md)

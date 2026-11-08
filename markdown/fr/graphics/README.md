@@ -513,7 +513,9 @@ Fonctions pour les graphiques interactifs, callbacks, vues camera et eclairage.
 - [camup](3_labels_styling/3_interactions_camera_lighting/camup.md) - Définit ou interroge le vecteur vertical de la caméra.
 - [camva](3_labels_styling/3_interactions_camera_lighting/camva.md) - Définit ou interroge l'angle de vue de la caméra.
 - [camzoom](3_labels_styling/3_interactions_camera_lighting/camzoom.md) - Zoome la caméra en avant ou en arrière.
+- [disableDefaultInteractivity](3_labels_styling/3_interactions_camera_lighting/disableDefaultInteractivity.md) - Desactive les interactions integrees des axes.
 - [drawnow](3_labels_styling/3_interactions_camera_lighting/drawnow.md) - Met à jour les figures et traite les callbacks
+- [enableDefaultInteractivity](3_labels_styling/3_interactions_camera_lighting/enableDefaultInteractivity.md) - Active les interactions integrees des axes.
 - [Gestion des interruptions de callback dans Nelson](3_labels_styling/3_interactions_camera_lighting/graphical_callback.md) - 
 - [light](3_labels_styling/3_interactions_camera_lighting/light.md) - Cree un objet lumiere dans des axes.
 - [lightangle](3_labels_styling/3_interactions_camera_lighting/lightangle.md) - Cree ou positionne une lumiere a partir d'angles.

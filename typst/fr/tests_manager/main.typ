@@ -20,9 +20,9 @@ The Test Manager de Nelson fournit des outils pour les tests automatisés de cod
 - #nlink(<tests_manager:nelson_unittest_skip>)[nelson.unittest.skip]: Ignorer le test courant.
 - #nlink(<tests_manager:nelson_unittest_tuneReuse>)[nelson.unittest.tuneReuse]: Calibrer la reutilisation explicite des processus pour les tests et les benches.
 - #nlink(<tests_manager:nelson_unittest_tuneWeights>)[nelson.unittest.tuneWeights]: Calibrer les poids de planification avec les durees mesurees.
+- #nlink(<tests_manager:skip_testsuite>)[skip\_testsuite]: Sauter la suite de tests selon une condition
 - #nlink(<tests_manager:test_makeref>)[test\_makeref]: Crée un fichier '.ref' pour un test
 - #nlink(<tests_manager:test_run>)[test\_run]: Exécute les tests
-- #nlink(<tests_manager:test_skip_testsuite>)[skip\_testsuite]: Sauter la suite de tests selon une condition
 
 
 #nested[
@@ -51,9 +51,9 @@ The Test Manager de Nelson fournit des outils pour les tests automatisés de cod
 #pagebreak(weak: true)
 #include "nelson_unittest_tuneWeights.typ"
 #pagebreak(weak: true)
+#include "skip_testsuite.typ"
+#pagebreak(weak: true)
 #include "test_makeref.typ"
 #pagebreak(weak: true)
 #include "test_run.typ"
-#pagebreak(weak: true)
-#include "test_skip_testsuite.typ"
 ]

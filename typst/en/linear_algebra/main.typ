@@ -22,6 +22,7 @@ Functions for solving, analyzing, and measuring linear systems and vector or mat
 - #nlink(<linear_algebra:1_linear_systems.gradient>)[gradient]: Numerical gradient.
 - #nlink(<linear_algebra:1_linear_systems.inv>)[inv]: Matrix inverse.
 - #nlink(<linear_algebra:1_linear_systems.kron>)[kron]: Kronecker tensor product.
+- #nlink(<linear_algebra:1_linear_systems.linsolve>)[linsolve]: Solve a linear system of equations.
 - #nlink(<linear_algebra:1_linear_systems.null>)[null]: Null space of a matrix.
 - #nlink(<linear_algebra:1_linear_systems.orth>)[orth]: Range space of a matrix.
 - #nlink(<linear_algebra:1_linear_systems.rank>)[rank]: Rank of matrix.
@@ -131,6 +132,8 @@ Incomplete factorization functions used as preconditioners.
 #include "1_linear_systems/inv.typ"
 #pagebreak(weak: true)
 #include "1_linear_systems/kron.typ"
+#pagebreak(weak: true)
+#include "1_linear_systems/linsolve.typ"
 #pagebreak(weak: true)
 #include "1_linear_systems/null.typ"
 #pagebreak(weak: true)

@@ -1,6 +1,7 @@
 - [types](README.md)
   - [class](class.md)
   - [cpp_api](cpp_api.md)
+  - [inferiorto](inferiorto.md)
   - [isa](isa.md)
   - [iscell](iscell.md)
   - [ischar](ischar.md)
@@ -38,4 +39,5 @@
   - [nelson.mixin.indexing.RedefinesDot](nelson.mixin.indexing.RedefinesDot.md)
   - [nelson.mixin.indexing.RedefinesParen](nelson.mixin.indexing.RedefinesParen.md)
   - [nelson.mixin.util.PropertyGroup](nelson.mixin.util.PropertyGroup.md)
+  - [superiorto](superiorto.md)
   - [underlyingType](underlyingType.md)

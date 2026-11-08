@@ -28,6 +28,8 @@ dendrogram(Z, 0)
 ``````
 
 
+#align(center)[#image("dendrogram.svg")]
+
 == Voir aussi
 
 #nlink(<statistics:7_clustering_anomaly_detection.linkage>)[linkage];, #nlink(<statistics:7_clustering_anomaly_detection.cluster>)[cluster];, #nlink(<statistics:7_clustering_anomaly_detection.pdist>)[pdist];.

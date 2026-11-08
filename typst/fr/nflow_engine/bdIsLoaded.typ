@@ -26,7 +26,7 @@ Retourne vrai lorsqu'un modèle nflow est chargé.
 ``````matlab
 new_system('demo');
 add_block('nflow/source/sine', 'demo/Sine');
-add_block('nflow/math/gain', 'demo/Gain', 'gain', 2);
+add_block('nflow/math/gain', 'demo/Gain', 'Gain', 2);
 add_line('demo', 'Sine/1', 'Gain/1');
 bdclose('demo');
 ``````

@@ -36,6 +36,8 @@ axis equal
 ``````
 
 
+#align(center)[#image("nsidedpoly.svg")]
+
 == See also
 
 #nlink(<geometry:polyshape>)[polyshape];.

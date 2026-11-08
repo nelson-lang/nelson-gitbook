@@ -19,6 +19,7 @@ Pour le code C++ d'extension et d'intégration, voir [API C++ des valeurs](../ty
 
 - [class](class.md) - Renvoie le nom de classe d'une variable ou cree un objet nomme ancien style.
 - [cpp_api](cpp_api.md) - Conventions de l'API C++ des valeurs pour les types noyau de Nelson.
+- [inferiorto](inferiorto.md) - Déclare une précédence de classe inférieure.
 - [isa](isa.md) - Renvoie true si une variable a la classe ou le type demande.
 - [iscell](iscell.md) - Renvoie vrai si la variable var est un tableau de cellules.
 - [ischar](ischar.md) - Renvoie vrai si la variable var est un tableau de caractères (char).
@@ -56,5 +57,6 @@ Pour le code C++ d'extension et d'intégration, voir [API C++ des valeurs](../ty
 - [nelson.mixin.indexing.RedefinesDot](nelson.mixin.indexing.RedefinesDot.md) - Personnaliser l'indexation par point d'une classe.
 - [nelson.mixin.indexing.RedefinesParen](nelson.mixin.indexing.RedefinesParen.md) - Personnaliser l'indexation par parenthèses d'une classe.
 - [nelson.mixin.util.PropertyGroup](nelson.mixin.util.PropertyGroup.md) - Un groupe titré de propriétés pour l'affichage personnalisé d'objets.
+- [superiorto](superiorto.md) - Déclare une précédence de classe supérieure.
 - [underlyingType](underlyingType.md) - Type sous-jacent d'un tableau
 

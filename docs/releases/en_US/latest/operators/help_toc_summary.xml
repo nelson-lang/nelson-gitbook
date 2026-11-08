@@ -12,8 +12,10 @@
       <keyword name="and" link="and.html" description="logical 'AND' operator, &amp;&#10;  "/>
       <keyword name="any" link="any.html" description="any of the elements of a matrix satisfy some condition."/>
       <keyword name="bitand" link="bitand.html" description="Bit-wise AND"/>
+      <keyword name="bitcmp" link="bitcmp.html" description="Bitwise complement."/>
       <keyword name="bitget" link="bitget.html" description="Get selected bits."/>
       <keyword name="bitor" link="bitor.html" description="Bit-wise OR"/>
+      <keyword name="bitset" link="bitset.html" description="Set bit at a specified position."/>
       <keyword name="bitxor" link="bitxor.html" description="Bit-wise XOR"/>
       <keyword name="cat" link="cat.html" description="Concatenate arrays."/>
       <keyword name="colon" link="colon.html" description="colon operator ':'."/>

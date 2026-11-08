@@ -389,6 +389,19 @@ Blocks with saturation, thresholds, hysteresis, or rate limits.
 - [rate](nonlinear/rate.md) - Limits rising and falling signal rates.
 - [saturation](nonlinear/saturation.md) - Clamps the input between min and max.
 
+## Native plugin development
+
+
+    
+Functions used to build native (C++) block plugins for NFlow.
+
+  
+
+### Functions
+
+- [dlgetnflowincludes](plugin_development/dlgetnflowincludes.md) - Returns the include directories required to build a native nflow block plugin.
+- [dlgetnflowlibraries](plugin_development/dlgetnflowlibraries.md) - Returns the libraries a native nflow block plugin must link against.
+
 ## Sink blocks
 
 

@@ -27,11 +27,15 @@ Create a polygon.
 
 ``````matlab
 f = figure();
-pg = polyshape([0 1 1 0], [0 0 1 1]);
+t = linspace(0, 2*pi, 6);
+t(end) = [];
+pg = polyshape(cos(t), sin(t));
 plot(pg, 'FaceColor', 'r');
 area(pg)
 ``````
 
+
+#align(center)[#image("polyshape.svg")]
 
 == See also
 

@@ -36,6 +36,8 @@ viscircles([0 0; 2 1], [1; 0.5], 'Color', 'b');
 ``````
 
 
+#align(center)[#image("viscircles.svg")]
+
 == See also
 
 #nlink(<graphics:1_plots.1_line_plots.line>)[line];.

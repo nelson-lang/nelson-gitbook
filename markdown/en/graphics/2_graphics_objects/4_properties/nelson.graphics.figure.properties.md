@@ -59,6 +59,7 @@ This page documents the visible properties returned by <b>properties</b> for a <
 | **Renderer** | updates rendered output on the next graphics refresh. | Type: text scalar or character row vector. Supported values: 'opengl', 'painters'. | 
 | **RendererMode** | 'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value. | Type: text scalar or character row vector. Supported values: 'auto', 'manual'. | 
 | **Resize** | updates rendered output on the next graphics refresh. | Type: on/off value. Supported values: 'on', 'off', true, or false. | 
+| **SelectionHighlight** | 'off' hides the frame drawn around the axes under the pointer for every axes of the figure; navigation gestures stay available. | Type: on/off value. Supported values: 'on', 'off', true, or false. | 
 | **Scrollable** | updates rendered output on the next graphics refresh. | Type: on/off value. Supported values: 'on', 'off', true, or false. | 
 | **SelectionType** | last mouse button press, set before WindowButtonDownFcn runs: 'normal' for a left click, 'extend' for shift-left or the middle button, 'alt' for ctrl-left or the right button, 'open' for a double click. | Type: text scalar or character row vector. Supported values: 'normal', 'extend', 'alt', 'open'. | 
 | **SizeChangedFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
@@ -66,7 +67,7 @@ This page documents the visible properties returned by <b>properties</b> for a <
 | **Theme** | returns the active graphics theme object; assigning 'light' or 'dark' updates rendered output on the next graphics refresh. | Type: graphics theme object for reads, text scalar or character row vector for writes. Supported assigned values: 'light', 'dark'. | 
 | **ThemeChangedFcn** | the graphics event system invokes it for the associated event. | Type: callback value. Supported values: [], function handle, character vector, string scalar, or callback cell array. | 
 | **ThemeMode** | 'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value. | Type: text scalar or character row vector. Supported values: 'auto', 'manual'. | 
-| **ToolBar** | updates rendered output on the next graphics refresh. | Type: text scalar or character row vector. Supported values: 'none', 'figure', 'auto'. | 
+| **ToolBar** | 'none' hides the navigation tools and the plot details bar, in the native window and in the web figure panel; mouse gestures and keyboard shortcuts stay available. | Type: text scalar or character row vector. Supported values: 'none', 'figure', 'auto'. | 
 | **Type** | Nelson computes this value; graphics operations update it. | Type: text scalar or character row vector. Supported values: read-only object type name, for example 'figure', 'axes', 'line', or 'scatter'. | 
 | **Units** | recomputes geometry, limits, or layout. | Type: text scalar or character row vector. Supported values: 'pixels', 'normalized', 'inches', 'centimeters', 'points', 'characters', 'data'. | 
 | **UserData** | updates the stored object state. | Type: Nelson array. Supported values: any Nelson value, including [], numeric arrays, text, cells, structures, or handles. | 

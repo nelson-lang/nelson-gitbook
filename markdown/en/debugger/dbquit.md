@@ -25,7 +25,9 @@ If execution is paused in a function that was reached by stepping into another f
 
 <b>dbquit all</b> terminates debugging for all files simultaneously. 
 
-This function can only be called from the command line while debugging.
+This function can only be called from the command line while debugging. 
+
+Outside a debug session, <b>dbquit</b> raises <code>Debug commands only allowed when stopped in debug mode.</code> The editor's Stop button (Shift+F5) and saving a file while paused call <b>dbquit</b>.
 
 ## 💡 Examples
 
@@ -61,6 +63,7 @@ dbquit all
 | Version | 📄 Description     |
 | ------- | --------------- |
 | 1.16.0   | initial version |
+| 2.0.0   | uniform message outside a debug session, editor Stop and save end the session |
 
 <!--
 ## 👤 Author

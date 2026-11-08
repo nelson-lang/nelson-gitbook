@@ -39,7 +39,7 @@
         <keyword name="c2d" link="2_model_conversion_interconnection/c2d.html" description="Convertit le modèle du temps continu au temps discret."/>
         <keyword name="d2c" link="2_model_conversion_interconnection/d2c.html" description="Convertit un modèle du temps discret au temps continu."/>
         <keyword name="feedback" link="2_model_conversion_interconnection/feedback.html" description="Connexion en boucle fermée de plusieurs modèles."/>
-        <keyword name="gensig" link="2_model_conversion_interconnection/gensign.html" description="GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...)."/>
+        <keyword name="gensig" link="2_model_conversion_interconnection/gensig.html" description="GÃ©nÃ¨re des signaux de test (carrÃ©, impulsion, bruit, ...)."/>
         <keyword name="padecoef" link="2_model_conversion_interconnection/padecoef.html" description="Calcule l'approximation de Padé des délais temporels."/>
         <keyword name="parallel" link="2_model_conversion_interconnection/parallel.html" description="Connexion parallèle de deux modèles."/>
         <keyword name="series" link="2_model_conversion_interconnection/series.html" description="Connexion en série de deux modèles."/>
@@ -47,6 +47,7 @@
         <keyword name="ssdelete" link="2_model_conversion_interconnection/ssdelete.html" description="Supprime des entrées, sorties et états d'un système en espace d'état."/>
         <keyword name="ssselect" link="2_model_conversion_interconnection/ssselect.html" description="Extraire un sous-système d'un système plus grand."/>
         <keyword name="tf2ss" link="2_model_conversion_interconnection/tf2ss.html" description="Convertit les paramètres d'un filtre en fonction de transfert en forme état-espace."/>
+        <keyword name="zpk2tf" link="2_model_conversion_interconnection/zpk2tf.html" description="Convertit un modèle zéros-pôles-gain en fonction de transfert."/>
       </section>
       <section name="Analyse lineaire">
         <chapter_description>

@@ -20,7 +20,9 @@ function editor.
 
 If <b>function\_name</b> is the name of a defined nelson function <b>edit(function\_name)</b> try to open the associated file function\_name.m . 
 
-<b>edit(dirname)</b> opens all .m available in <b>dirname</b>.
+<b>edit(dirname)</b> opens all .m available in <b>dirname</b>. 
+
+A Notebook document (<b>.nlx</b>) opens in the Notebook editor, not in the text editor: a tab of the web desktop, or the Notebook window of the Qt desktop. Without a desktop (nelson-cli, nelson-adv-cli) it is an error.
 
 ## 💡 Example
 

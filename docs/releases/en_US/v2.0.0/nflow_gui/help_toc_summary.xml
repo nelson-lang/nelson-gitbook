@@ -2,13 +2,16 @@
 <help_summary>
   <toc>
     <module>nflow_gui</module>
-    <section name="nflow editor">
+    <section name="NFlow editor">
       <chapter_description>
     <p>The nflow editor is Nelson's block-diagram environment for building and simulating dynamic systems.</p>
     <p>It provides a visual editor for wiring blocks and subsystems, saving and loading diagrams in the <b>.nflow</b> JSON format, and running simulations with either the fixed-step engine or the variable-step (CVODES) solver, with zero-crossing detection for discontinuous blocks.</p>
     <p>Diagrams can also be turned into standalone C or Rust code through the code generator.</p>
     <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p>
   </chapter_description>
+      <keyword name="nflow_tutorial_first_model" link="1_nflow_tutorial_first_model.html" description="Tutorial 1 of 3: build, wire, and run a first nflow model."/>
+      <keyword name="nflow_tutorial_continuous" link="2_nflow_tutorial_continuous.html" description="Tutorial 2 of 3: simulate a continuous system and choose a solver."/>
+      <keyword name="nflow_tutorial_dashboard" link="3_nflow_tutorial_dashboard.html" description="Tutorial 3 of 3: add interactive dashboard controls and run in real time."/>
       <keyword name="nflow" link="nflow.html" description="Launch the nflow editor, optionally on a model file."/>
       <keyword name="nflow_dashboard" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
       <keyword name="block:dashboardScope" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks." alias="true"/>

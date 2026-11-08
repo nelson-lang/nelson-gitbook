@@ -175,7 +175,7 @@ nelson.unittest.tuneWeights([], ...
 
 == Voir aussi
 
-#nlink(<tests_manager:bench_run>)[bench\_run];, #nlink(<assert_functions:assert>)[assert];, #nlink(<tests_manager:test_makeref>)[test\_makeref];, #nlink(<tests_manager:test_skip_testsuite>)[skip\_testsuite];, #nlink(<tests_manager:nelson_unittest>)[nelson.unittest];, #nlink(<tests_manager:nelson_unittest_tuneReuse>)[nelson.unittest.tuneReuse];, #nlink(<tests_manager:nelson_unittest_tuneWeights>)[nelson.unittest.tuneWeights];.
+#nlink(<tests_manager:bench_run>)[bench\_run];, #nlink(<assert_functions:assert>)[assert];, #nlink(<tests_manager:test_makeref>)[test\_makeref];, #nlink(<tests_manager:skip_testsuite>)[skip\_testsuite];, #nlink(<tests_manager:nelson_unittest>)[nelson.unittest];, #nlink(<tests_manager:nelson_unittest_tuneReuse>)[nelson.unittest.tuneReuse];, #nlink(<tests_manager:nelson_unittest_tuneWeights>)[nelson.unittest.tuneWeights];.
 
 == Historique
 

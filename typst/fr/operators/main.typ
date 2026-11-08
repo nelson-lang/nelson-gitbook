@@ -14,8 +14,10 @@ Le module Operators fournit des outils pour effectuer des opérations arithméti
 - #nlink(<operators:and>)[and]: opérateur logique 'AND', &
 - #nlink(<operators:any>)[any]: Vérifie si au moins un élément d'une matrice satisfait une condition.
 - #nlink(<operators:bitand>)[bitand]: Opération ET bit à bit
+- #nlink(<operators:bitcmp>)[bitcmp]: Complément bit à bit.
 - #nlink(<operators:bitget>)[bitget]: Retourne des bits selectionnes.
 - #nlink(<operators:bitor>)[bitor]: Opération OR bit à bit
+- #nlink(<operators:bitset>)[bitset]: Positionne un bit à une position donnée.
 - #nlink(<operators:bitxor>)[bitxor]: Opération XOR bit à bit
 - #nlink(<operators:cat>)[cat]: Concatène des tableaux.
 - #nlink(<operators:colon>)[colon]: Opérateur deux-points ':'
@@ -61,9 +63,13 @@ Le module Operators fournit des outils pour effectuer des opérations arithméti
 #pagebreak(weak: true)
 #include "bitand.typ"
 #pagebreak(weak: true)
+#include "bitcmp.typ"
+#pagebreak(weak: true)
 #include "bitget.typ"
 #pagebreak(weak: true)
 #include "bitor.typ"
+#pagebreak(weak: true)
+#include "bitset.typ"
 #pagebreak(weak: true)
 #include "bitxor.typ"
 #pagebreak(weak: true)

@@ -29,7 +29,7 @@ Transformee de Fourier court terme.
 
 <b>stft</b> decoupe le vecteur d'entree en trames fenetrees recouvrantes puis calcule une FFT par trame. La sortie peut etre centree, bilaterale ou unilaterale.
 
-## 💡 Exemple
+## 💡 Exemples
 
 
 
@@ -38,6 +38,12 @@ Transformee de Fourier court terme.
 [s, f, t] = stft(sin((0:31)' * 0.2), 10, 'Window', hamming(8), 'OverlapLength', 4, 'FFTLength', 16, 'FrequencyRange', 'onesided');
 
 ```
+Afficher la transformee de Fourier a court terme.
+
+```matlab
+stft(sin((0:127)' * 0.2), 10, 'Window', hamming(16), 'OverlapLength', 8, 'FFTLength', 32, 'FrequencyRange', 'onesided');
+```
+<img src="stft.svg" align="middle"/>
 
 
 ## 🔗 Voir aussi
